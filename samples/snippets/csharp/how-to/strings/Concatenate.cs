@@ -59,7 +59,7 @@ namespace HowToStrings
             string str = $"Hello {userName}. Today is {date}.";
             System.Console.WriteLine(str);
 
-            str += " How are you today?";
+            str = $"{str} How are you today?";
             System.Console.WriteLine(str);
             // </Snippet3>
         }

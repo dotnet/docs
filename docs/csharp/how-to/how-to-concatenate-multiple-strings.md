@@ -24,8 +24,9 @@ The following example shows how to split a long string literal into smaller stri
  [!code-csharp-interactive[Combining strings at compile time](../../../samples/snippets/csharp/how-to/strings/Concatenate.cs#1)]  
   
 
-To concatenate string variables, you can use the `+` or `+=` operators, or the <xref:System.String.Concat%2A?displayProperty=nameWithType>, <xref:System.String.Format%2A?displayProperty=nameWithType> or <xref:System.Text.StringBuilder.Append%2A?displayProperty=nameWithType> methods. The `+` operator is easy to use and makes for intuitive code. Even if you use several + operators in one statement, the string content is copied only once. But if you repeat this operation multiple times, for example in a loop, it might cause efficiency problems. For example, note the following code:  
-  
+To concatenate string variables, you can use the `+` or `+=` operators, or the <xref:System.String.Concat%2A?displayProperty=nameWithType>, <xref:System.String.Format%2A?displayProperty=nameWithType> or <xref:System.Text.StringBuilder.Append%2A?displayProperty=nameWithType> methods. The `+` operator is easy to use and makes for intuitive code. Even if you use several + operators in one statement, the string content is copied only once. The following code shows two examples of using the `+` operator to concatenate
+strings:
+
 [!code-csharp-interactive[combining strings using +](../../../samples/snippets/csharp/how-to/strings/Concatenate.cs#2)]  
 
 In some expressions, it is easier to concatenate strings using string interpolation, as the following code shows:
@@ -42,12 +43,12 @@ However, when performance is important, you should always use the <xref:System.T
 [!code-csharp-interactive[string concatenation using string builder](../../../samples/snippets/csharp/how-to/strings/Concatenate.cs#4)]  
 
 Another option to join strings from a collection is to use [LINQ](../programming-guide/linq/index.md)
-and the <xref:System.Linq.Enumerable.Aggregate%60%601> method. This method combines
+and the <xref:System.Linq.Enumerable.Aggregate%60%601%2A?displayPropery=nameWithType> method. This method combines
 the source strings using a lambda expression. The lambda expression does the
 work to add each string to the existing accumulation. The following example
 combines an array of words by adding a space between each word in the array:
 
-[!code-csharp-interactive[string concatenation using string builder](../../../samples/snippets/csharp/how-to/strings/Concatenate.cs#4)]  
+[!code-csharp-interactive[string concatenation using LINQ expressions](../../../samples/snippets/csharp/how-to/strings/Concatenate.cs#5)]  
 
 
 ## See Also  

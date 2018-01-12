@@ -48,9 +48,9 @@ Once the NuGet package is installed, build your solution. The analyzers examine
 the code in your solution and provide you with a list of
 warnings for the three security related issues:
 
-- [CA2153](~/visualstudio/code-quality/ca2153-avoid-handling-corrupted-state-exceptions): Avoid handling corrupted state exceptions
-- [CA5350](~/visualstudio/code-quality/ca5350-do-not-use-weak-cryptographic-algorithms): Do not use weak cryptographic algorithms
-- [CA5351](~/visualstudio/code-quality/ca5351-do-not-use-broken-cryptographic-algorithms): Do not use broken cryptographic algorithms
+- [CA2153](/visualstudio/code-quality/ca2153-avoid-handling-corrupted-state-exceptions): Avoid handling corrupted state exceptions
+- [CA5350](/visualstudio/code-quality/ca5350-do-not-use-weak-cryptographic-algorithms): Do not use weak cryptographic algorithms
+- [CA5351](/visualstudio/code-quality/ca5351-do-not-use-broken-cryptographic-algorithms): Do not use broken cryptographic algorithms
 
 Code that triggers any of these analyzers generates a warning by default.
 

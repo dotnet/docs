@@ -582,7 +582,7 @@ batchBlock.Complete();
         <param name="source">The source to monitor.</param>
         <param name="cancellationToken">The cancellation token with which to cancel the asynchronous operation.</param>
         <summary>Provides a  <see cref="T:System.Threading.Tasks.Task`1" /> that asynchronously monitors the source for available output.</summary>
-        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> that informs of whether and when more output is available. If, when the task completes, its <see cref="P:System.Threading.Tasks.Task`1.Result" /> is <see langword="true" />, more output is available in the source (though another consumer of the source may retrieve the data). If it returns <see langword="false" />, more output is not and will never be available, due to the source completing prior to output being available. If it returns false, more output is not and will never be available, due to the source completing prior to output being available.</returns>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> that informs of whether and when more output is available. If, when the task completes, its <see cref="P:System.Threading.Tasks.Task`1.Result" /> is <see langword="true" />, more output is available in the source (though another consumer of the source may retrieve the data). If it returns <see langword="false" />, more output is not and will never be available, due to the source completing prior to output being available.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4,7 +4,7 @@ description: An overview of the Microsoft WCF Web Service Reference Provider Too
 author: mlacouture
 manager: wpickett
 ms.author: johalex
-ms.date: 12/20/2017
+ms.date: 01/12/2017
 ms.topic: article
 ms.prod: .net-core
 ms.custom: mvc

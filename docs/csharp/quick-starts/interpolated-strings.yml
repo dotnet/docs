@@ -8,6 +8,8 @@ metadata:
   level: Beginner
   displayType: two-column
   interactive: csharp
+  nextTutorialHref: list-collection
+  nextTutorialTitle: Collections in C#
 items:
 - durationInMinutes: 2
   content: |
@@ -111,13 +113,13 @@ items:
 
       Console.WriteLine($"Inventory on {DateTime.Now:d}");
       Console.WriteLine(" ");
-      Console.WriteLine($"{"Item",25}    {"Quantity",10}");
+      Console.WriteLine($"{"Item",-25}    {"Quantity",10}");
       Console.WriteLine(" "); 
       foreach (var item in inventory)
-         Console.WriteLine($"{item.Key,25}     {item.Value,10}");
+         Console.WriteLine($"{item.Key,-25}     {item.Value,10}");
     ```
     
-    The names of authors are left-aligned, and the titles they wrote are right-aligned. You specify the alignment by adding a comma (",") after the expression and designating the field width. If the field width is a positive number, the field is right-aligned:
+    The item names are left-aligned, and their quantities are right-aligned. You specify the alignment by adding a comma (",") after the expression and designating the field width. If the field width is a positive number, the field is right-aligned:
 
     ```text
     {expression, width}
@@ -128,7 +130,7 @@ items:
     ```text
     {expression, -width}
     ```
-    Try removing the negative signs from the `{"Author",-25}` and `{title.Key,-25}` interpolated expressions and run the example again. This time, the author information is right-aligned.
+    Try removing the negative signs from the `{"Item",-25}` and `{item.Key,-25}` interpolated expressions and run the example again. This time, the item name is right-aligned.
 
     You can combine a field width and a format string in a single interpolated expression. The field width comes first, followed by a colon and the format string. Try the following simple program that displays three formatted strings with defined field widths.
 

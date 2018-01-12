@@ -46,7 +46,7 @@ dotnet new console
 
 ### Add a reference to the Microsoft.XmlSerializer.Generator package in the MyApp project
 
-Use the [`dotnet add`](../tools/dotnet-add.md) command to add the reference in your project. 
+Use the [`dotnet add package`](../tools//dotnet-add-package.md) command to add the reference in your project. 
 
 Type:
  
@@ -60,7 +60,7 @@ Open your code editor and let's get started! We're still working from the *MyApp
 
 Open *MyApp.csproj* in your text editor.
 
-After running the [`dotnet add`](../tools/dotnet-add.md) command, the following lines are added to your *MyApp.csproj* project file:
+After running the [`dotnet add package`](../tools//dotnet-add-package.md) command, the following lines are added to your *MyApp.csproj* project file:
 
  ```xml
  <ItemGroup>

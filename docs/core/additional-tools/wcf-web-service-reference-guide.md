@@ -30,11 +30,11 @@ Using the **ASP.NET Core Web Application** project template as an example, this 
 
 The **Connected Services** page appears as shown in the following image:
 
-![Connected Services tab](media/wcf-web-service-reference-guide/WCFCS-ConnectedServicesPage.png)
+![Connected Services tab](./media/wcf-web-service-reference-guide/WCFCS-ConnectedServicesPage.png)
 
 2. On the **Connected Services** page, click **Microsoft WCF Web Service Reference Provider**. This brings up the **Configure WCF Web Service Reference** wizard:
 
-![Service Endpoint tab](media/wcf-web-service-reference-guide/WCFCS-ServiceEndpointPage.png)
+![Service Endpoint tab](,/media/wcf-web-service-reference-guide/WCFCS-ServiceEndpointPage.png)
 
 3. Select a service.
 
@@ -48,7 +48,7 @@ The **Connected Services** page appears as shown in the following image:
 
 3c. Click the **Next** button to open the **Data Type Options** and the **Client Options** pages. Alternatively, click the **Finish** button to use the default options.
 
-![Data types tab](media/wcf-web-service-reference-guide/WCFCS-DataTypesPage.png)
+![Data types tab](./media/wcf-web-service-reference-guide/WCFCS-DataTypesPage.png)
 
 4. The **Data Type Options** form enables you to refine the generated service reference configuration settings. 
 
@@ -59,7 +59,7 @@ There may be a delay while type information is loaded, depending on the number o
 
 5. Click **Finish** when you are done. 
 
-![Progress window](media/wcf-web-service-reference-guide/WCFCS-ProgressWindow.png)
+![Progress window](./media/wcf-web-service-reference-guide/WCFCS-ProgressWindow.png)
 
 While displaying progress, the tool:
 

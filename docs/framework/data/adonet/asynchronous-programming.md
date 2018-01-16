@@ -7,9 +7,9 @@ ms.technology:
 ms.topic: "article"
 ms.assetid: 85da7447-7125-426e-aa5f-438a290d1f77
 caps.latest.revision: 30
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
 ms.workload: 
   - "dotnet"
 ---

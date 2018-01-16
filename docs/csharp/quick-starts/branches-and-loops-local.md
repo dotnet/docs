@@ -289,7 +289,7 @@ Try it yourself. Then check how you did. You should get 63 for an answer. You ca
 You've completed the "branches and loops" quick start.
 
 You can continue with
-the [Arrays and collections](arrays-and-collections.md) quick start in
+the [Interpolated strings](interpolated-strings-local.md) quick start in
 your own development environment.
 
 You can learn more about these concepts in these topics:

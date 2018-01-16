@@ -1,0 +1,150 @@
+### YamlMime:Tutorial
+title: Interpolated strings in C#
+metadata:
+  title:  Interpolated strings in C#. Learn to construct a string that includes other values, such as dates or numbers.
+  description: In this tutorial, you'll use your browser to use the C# interpolated string feature interactively. You write C# code and see the results of compiling and running your code directly in the browser.
+  audience: Developer
+  ms.custom: mvc
+  level: Beginner
+  displayType: two-column
+  interactive: csharp
+  nextTutorialHref: list-collection
+  nextTutorialTitle: Collections in C#
+items:
+- durationInMinutes: 2
+  content: |
+    This quick start teaches you how to use interpolated strings in C# to insert values into a single ouput string interactively. You use your browser to write C# code and can immediately see the results of compiling and running your code. The quick start contains a series of lessons that concatenate strings, insert values into strings, and format those values in different ways.
+- title: Create an interpolated string
+  durationInMinutes: 2
+  content: |
+    Run the following code in the interactive window. To do that, type the following code block in the interactive window (replace "<name>" with your name) and click the **Run** button:
+
+    ```csharp
+    var name = "<name>";
+    Console.WriteLine($"Hello, {name}. It's a pleasure to meet you!");
+    ```
+
+    When you run the program, it displays a single string that includes your name in the greeting. The string included in the <xref:System.Console.WriteLine%2A> method call is an *interpolated string*. It's a kind of template that lets you construct a single string (called the *result string*) from a string that includes embedded code. Interpolated strings are particularly useful for inserting values into a string or concatenating (joining together) strings. 
+    
+    This simple example contains the two elements that every interpolated string must have: 
+
+    - A string literal that begins with the `$` character before its opening quotation mark character. There can't be any spaces between the `$` symbol and the quotation mark character. (If you'd like to see what happens if you include one, insert a space after the `$` character in the interactive window and click the **Run** button. The C# compiler complains, "Unexpected character '$'".) 
+
+    - One or more *interpolated expressions*. An interpolated expression is indicated by an opening and closing brace (`{` and `}`). You can put any C# expression that returns a value (including `null`) inside the braces. 
+
+    Let's try a few more interpolated string examples with some other data types.
+    
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
+- title: Include different data types
+  durationInMinutes: 3
+  content: |
+    In the previous quick start, you used an interpolated string to insert one string inside of another. An interpolated string expression can be any data type, though. Let's try an interpolated string that has values of multiple data types. 
+    
+    The following example includes interpolated expressions with a `Vegetable` object, a member of the `Unit` enumeration, a <xref:System.DateTime> value, and a <xref:System.Decimal> value. Run it in the interactive window.
+
+    ```csharp
+    public class Vegetable
+    {
+       public Vegetable(string name) => Name = name;
+    
+       public string Name { get; }
+   
+       public override string ToString() => Name;
+    }
+
+    public class Example
+    {
+       public enum Unit { item, pound, ounce, dozen };
+   
+       public static void Main()
+       {
+          var item = new Vegetable("eggplant");
+          var date = DateTime.Now;
+          var price = 1.99m;
+          var unit = Unit.item;
+          Console.WriteLine($"On {date}, the price of {item} was {price} per {unit}.");
+       }
+    }
+    ```
+    
+    Note that one of the interpolated expressions includes the `item` object in the result string that's displayed to the console, and in this case the string "eggplant" is inserted into the result string. That's because, when the type of an interpolated expression is not a string, the C# compiler does the following:
+
+    - If the interpolated expression is `null`, the interpolated expression returns an empty string ("", or <xref:System.String.Empty?displayProperty=nameWithType>).
+
+    - If the interpolated expression is not `null`, the `ToString` method of the type of the interpolated expression is called. You can test this by commenting out the definition of the `Vegetable.ToString` method in the example by putting a comment symbol (`//`) in front of it. In the output, the string "eggplant" is replaced by the fully qualified type name (the namespace defined by the C# REPL along with the type name), which is the default behavior of the <xref:System.Object.ToString?displayProperty=nameWithType> method.   
+
+    In the output from this example, the date is too precise (the price of eggplant does not vary by the second), and the price value doesn't indicate a unit of currency. In the next step, you'll learn how to fix those issues by controlling the format of strings returned by interpolated expressions.
+
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
+- title: Control the formatting of interpolated expressions
+  durationInMinutes: 5
+  content: |
+    In the previous lesson, two poorly formatted strings were inserted into the result string. One was a date and time value for which only the date was appropriate. The second was a price that did not indicate its unit of currency. Both issues are easy to address. Interpolated expressions can include *format strings* that control the formatting of particular types. Modify the call to `Console.WriteLine` from the previous example to include the format specifier for the date and price fields as shown in the following line:
+
+    ```csharp
+    Console.WriteLine($"On {date:d}, the price of {item} was {price:C2} per {unit}.");
+    ```
+    
+    You specify a format string by following the interpolated expression with a colon and the format string. "d" is a [standard date and time format string](../../standard/base-types/standard-date-and-time-format-strings.md#the-short-date-d-format-specifier) that represents the short date format. "C2" is a  [standard numeric format string](../../standard/base-types/standard-numeric-format-strings.md#the-currency-c-format-specifier) that represents a number as a currency value with two digits after the decimal point.
+
+    A number of types in the .NET Standard libraries support a predefined set of format strings. These include all the numeric types and the date and time types. For a complete list of types that support format strings, see [Format Strings and .NET Class Library Types](../../standard/base-types/formatting-types.md#stringRef) in the [Formatting Types in .NET](../../standard/base-types/formatting-types.md) article. Any type can support a set of format strings, and you can also develop custom formatting extensions that provide custom formatting for existing types. For information on custom formatting by providing an <xref:System.ICustomFormatter> implementation, see [Custom Formatting with ICustomFormatter](../../standard/base-types/formatting-types.md#custom-formatting-with-icustomformatter) in the [Formatting Types in .NET](../../standard/base-types/formatting-types.md) article.
+
+    Try modifying the the format strings in the **.NET Editor** to see how they affect the formatting of the date and time and the numeric value. Change the "d" in `{date:d}` to "t" (to display the short time format), "y" (to display the year and month), and "yyyy" (to display the year as a four-digit number). Change the "C2" in `{price:C2}` to "e" (for exponential notation) and "F3" (for a numeric value with three digits after the decimal point).
+
+    In addition to controlling formatting, you can also control the field width and alignment of the strings returned by an interpolated expression. In the next step, you'll learn how to do this.
+
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
+- title: Control the field width and alignment of interpolated expressions
+  durationInMinutes: 6
+  content: |
+    Ordinarily, when the string returned by an interpolated expression is included in a result string, it has no leading or trailing spaces. Particularly for instances in which you are working with a set of data, interpolated expressions let you specify a field width and its alignment. To see this, run the following code.
+    
+    ```csharp
+      var inventory = new Dictionary<string, int>();
+      inventory.Add("hammer, ball pein", 18);
+      inventory.Add("hammer, cross pein", 5);
+      inventory.Add("screwdriver, Phillips #2", 14);
+
+      Console.WriteLine($"Inventory on {DateTime.Now:d}");
+      Console.WriteLine(" ");
+      Console.WriteLine($"{"Item",-25}    {"Quantity",10}");
+      Console.WriteLine(" "); 
+      foreach (var item in inventory)
+         Console.WriteLine($"{item.Key,-25}     {item.Value,10}");
+    ```
+    
+    The item names are left-aligned, and their quantities are right-aligned. You specify the alignment by adding a comma (",") after the expression and designating the field width. If the field width is a positive number, the field is right-aligned:
+
+    ```text
+    {expression, width}
+    ```
+
+    If the field width is a negative number, the field is left-aligned:
+
+    ```text
+    {expression, -width}
+    ```
+    Try removing the negative signs from the `{"Item",-25}` and `{item.Key,-25}` interpolated expressions and run the example again. This time, the item name is right-aligned.
+
+    You can combine a field width and a format string in a single interpolated expression. The field width comes first, followed by a colon and the format string. Try the following simple program that displays three formatted strings with defined field widths.
+
+    ```csharp
+    Console.WriteLine($"{DateTime.Now,-20:d} Hour {DateTime.Now,-10:HH} {1063.342,15:N2} feet");
+    ```
+
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
+- content: |
+    You've completed the interpolated strings quick start. 
+    
+    You can continue these quick starts on your own local development environment. Learn the basics of [local development](local-environment.md) and then pick a quick start. You can try this same exercise, move directly to the next quick start, or start again with the [numbers in C#](numbers-in-csharp-local.md) quickstart.
+
+    You can learn more about working with interpolated strings in the [Interpolated Strings](../language-reference/keywords/interpolated-strings.md) topic in the C# Reference.
+

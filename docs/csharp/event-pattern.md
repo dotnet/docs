@@ -128,7 +128,7 @@ operations available on a field-like event are add handler:
 ```csharp
 EventHandler<FileFoundArgs> onFileFound = (sender, eventArgs) =>
     Console.WriteLine(eventArgs.FoundFile);
-lister.FileFound += onFIleFound;
+lister.FileFound += onFileFound;
 ```
 
 and remove handler:

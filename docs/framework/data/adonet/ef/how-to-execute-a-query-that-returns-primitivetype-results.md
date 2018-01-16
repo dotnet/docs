@@ -14,9 +14,9 @@ dev_langs:
   - "vb"
 ms.assetid: 7139d585-4034-4dfa-916f-2120a8b72792
 caps.latest.revision: 4
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
 ms.workload: 
   - "dotnet"
 ---

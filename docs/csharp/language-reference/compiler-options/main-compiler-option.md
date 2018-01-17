@@ -16,13 +16,13 @@ caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
-# /main (C# Compiler Options)
+# -main (C# Compiler Options)
 This option specifies the class that contains the entry point to the program, if more than one class contains a **Main** method.  
   
 ## Syntax  
   
 ```console  
-/main:class  
+-main:class  
 ```  
   
 ## Arguments  
@@ -48,7 +48,7 @@ This option specifies the class that contains the entry point to the program, if
  Compile `t2.cs` and `t3.cs`, specifying that the **Main** method will be found in `Test2`:  
   
 ```console  
-csc t2.cs t3.cs /main:Test2  
+csc t2.cs t3.cs -main:Test2  
 ```  
   
 ## See Also  

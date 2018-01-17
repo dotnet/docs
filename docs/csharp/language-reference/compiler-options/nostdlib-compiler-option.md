@@ -16,19 +16,19 @@ caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
-# /nostdlib (C# Compiler Options)
-**/nostdlib** prevents the import of mscorlib.dll, which defines the entire System namespace.  
+# -nostdlib (C# Compiler Options)
+**-nostdlib** prevents the import of mscorlib.dll, which defines the entire System namespace.  
   
 ## Syntax  
   
 ```console  
-/nostdlib[+ | -]  
+-nostdlib[+ | -]  
 ```  
   
 ## Remarks  
  Use this option if you want to define or create your own System namespace and objects.  
   
- If you do not specify **/nostdlib**, mscorlib.dll will be imported into your program (same as specifying **/nostdlib-**). Specifying **/nostdlib** is the same as specifying **/nostdlib+**.  
+ If you do not specify **-nostdlib**, mscorlib.dll will be imported into your program (same as specifying **-nostdlib-**). Specifying **-nostdlib** is the same as specifying **-nostdlib+**.  
   
 ### To set this compiler option in the Visual Studio development environment  
   

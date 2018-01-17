@@ -2,12 +2,12 @@
 
 A wide variety of people including IT Pros and developers read your documents both to learn .NET and to use it in their regular work.
 Your goal is to create great documentation that helps the reader on their journey. Our guidelines
-help with that. Our style guide contains four recommendations:
+help with that. Our style guide contains the following recommendations:
 - [Use a Conversational Tone](#use-a-conversational-tone)
 - [Write in Second Person](#write-in-2nd-person)
 - [Use Active Voice](#use-active-voice)
 - [Target a 5th Grade Reading Level](#target-a-fifth-grade-reading-level)
-- [Avoid split infinitives](#avoid-split-infinitives)
+- [Use split infinitives correctly](#use-split-infinitives-correctly)
 - [Avoid future tense](#avoid-future-tense)
 - [What is it - so what?](#what-is-it-so-what)
 
@@ -80,8 +80,10 @@ need to be defined if you use it:
 >The Close() method is idempotent, meaning that you can call it multiple times and the effect is
 the same as if you called it once.
 
-### Avoid split infinitives
-While to boldly go may sound good on TV, split infinitives can reduce the readability of your content. So, to go boldly...
+### Use split infinitives correctly
+From the Chicago Manual of Style:
+
+> Sometimes it is perfectly appropriate to split an infinitive with an adverb to add emphasis, clarify meaning, or produce a natural sound. ... A verb’s infinitive or *to* form is split when an intervening word immediately follows to {to bravely assert}. If the adverb bears the emphasis in a phrase {to boldly go} {to strongly favor}, the split infinitive is justified and often even necessary. But if moving the adverb to the end of the phrase doesn’t suggest a different meaning or impair the sound, then you have an acceptable way to avoid splitting the infinitive. Recasting a sentence just to eliminate a split infinitive or to avoid splitting the infinitive can alter the nuance or meaning of the sentence. For example, *it’s best to always get up early* (always modifies get up) is not quite the same as *it’s always best to get up early* (always modifies best). It can also make the phrasing sound unnatural—e.g., *it’s best to get up early always*.
 
 ### Avoid future tense
 In some non-English languages the concept of future tense is not the same as English. Using future tense can make your documents harder to read. Additionally, when using the future tense, the obvious question is when. So if you say 'Learning PowerShell will be good for you" - the obvious question for the reader is when will it be good? Instead, just say "Learning PowerShell is good for you".

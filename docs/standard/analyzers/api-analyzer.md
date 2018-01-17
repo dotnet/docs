@@ -13,16 +13,28 @@ ms.technology: dotnet-standard
 
 The .NET API Analyzer is a Roslyn analyzer that discovers potential compatibility risks for C# APIs on different platforms and detects calls to deprecated APIs. It can be useful for all C# developers at any stage of development.
 
-API Analyzer comes as a NuGet package [Microsoft.DotNet.Analyzers.Compatibility](https://www.nuget.org/packages/Microsoft.DotNet.Analyzers.Compatibility/) and after you reference it in a project, it automatically monitors the code and indicates problematic API usage. You can also get suggestions on possible fixes by clicking on the light bulb. The drop-down menu includes an option to suppress the warnings.
+API Analyzer comes as a NuGet package [Microsoft.DotNet.Analyzers.Compatibility](https://www.nuget.org/packages/Microsoft.DotNet.Analyzers.Compatibility/). After you reference it in a project, it automatically monitors the code and indicates problematic API usage. You can also get suggestions on possible fixes by clicking on the light bulb. The drop-down menu includes an option to suppress the warnings.
 
 > [!NOTE]
 > The .NET API analyzer is still a pre-release version.
 
+## Prerequisites
+
+* Visual Studio 2017 or Roslyn 2.0
+
+
 ## Discovering deprecated APIs
 
-**What are deprecated APIs?**
+### What are deprecated APIs?
 
-The .NET family is a set of large products that are constantly upgraded to better serve customer needs. It is natural to deprecate some APIs and replace them with new ones. One way to inform that an API is deprecated and should not be used is to mark it with the `[Obsolete]` attribute. The disadvantage of this approach is that there is only one diagnostic ID for all obsolete APIs (for C#, [CS0612](../../csharp/misc/cs0612.md)) that leads to one description for all cases and ability to suppress warnings for either all cases or none of them. The API Analyzer uses API-specific error codes that begin with DE (which stands for Deprecation Error), which allows control over the display of individual warnings. To avoid confusion with the `[Obsolete]` attribute, this concept is called deprecation.
+The .NET family is a set of large products that are constantly upgraded to better serve customer needs. It is natural to deprecate some APIs and replace them with new ones. API is considered deprecated when a new better alternative exists. One way to inform that an API is deprecated and should not be used is to mark it with the <xref:System.ObsoleteAttribute> attribute. The disadvantage of this approach is that there is only one diagnostic ID for all obsolete APIs (for C#, [CS0612](../../csharp/misc/cs0612.md)). This means that:
+- It is impossible to have dedicated documents for each case.
+- It is impossible to suppress certain category of warnings. You can suppress  either all or none of them.
+- To inform users of new deprecation, a referenced assembly or targeting package has to be updated.
+
+The API Analyzer uses API-specific error codes that begin with DE (which stands for Deprecation Error), which allows control over the display of individual warnings. The deprecated APIs identified by the analyzer are defined in the [dotnet/platform-compat](https://github.com/dotnet/platform-compat) repo.
+
+### Working with API Analyzer
 
 When a deprecated API, such as <xref:System.Net.WebClient>, is used in a code, API Analyzer highlights it with a green squiggly line and shows a light bulb on the left as in the following example:
 
@@ -34,16 +46,31 @@ The **Error List** window contains warnings with a unique ID per deprecated API,
 
 By clicking on the ID, you go to a webpage with detailed information about why the API was deprecated and suggestions regarding alternative APIs that can be used.
 
-Any warnings can be suppressed by right-clicking on the highlighted member and selecting **Quick Actions and Refactorings**. There are two ways to supress warnings: 
+Any warnings can be suppressed by right-clicking on the highlighted member and selecting **Suppress *diagnostic ID***. There are two ways to supress warnings: 
 
 * locally (in source)
 * globally (in a suppression file)
+
+### Suppresing warnings localy
+
+To suppress warnings localy you need to right-click on the member you want to suppress warnings for and select **Suppress *diagnostic ID***, then click **in Source**. Your code will be framed with `#pragma` like it is shown below:
+!["Screenshot of code framed with #pragma warning disable"](media/api-analyzer/suppress-in-source.jpg)
+
+### Suppresing warnings globally
+
+To suppress warnings globally you need to right-click on the member you want to suppress warnings for and select **Suppress *diagnostic ID***, then click **in Suppression File**.
+
+!["Screenshot of WebClient API with green squiggly line and light bulb on the left"](media/api-analyzer/suppress-in-sup-file.jpg)
+
+A file **GlobalSuppressions.cs** will be created in your project. 
+
+!["Screenshot of WebClient API with green squiggly line and light bulb on the left"](media/api-analyzer/suppression-file.jpg)
 
 We encourage developers to use global suppression to ensure consistency of API usage across their projects.
 
 ## Discovering cross-platform issues
 
-Similar to deprecated APIs, the analyzer identifies all APIs that are not cross-platform supported. For example, <xref:System.Console.WindowWidth?displayProperty=nameWithType> works on Windows but not on Linux and macOS. The diagnostic ID is shown in **Error List** window. You can suppress that warning by right clicking and choosing **Quick Actions and Refactorings**. Unlike deprecation cases where you have two options (either keep using deprecated member and suppress warnings or not use it at all), here if you're developing your code only for certain platform you can suppress all warnings for all other platforms you don't plan to run your code on. To do so, you just need to edit your project file and add the `PlatformCompatIgnore` property that lists all platforms to be ignored. The accepted values are: `Linux`, `MacOSX`, and `Windows`.
+Similar to deprecated APIs, the analyzer identifies all APIs that are not supported cross-platform. For example, <xref:System.Console.WindowWidth?displayProperty=nameWithType> works on Windows but not on Linux and macOS. The diagnostic ID is shown in the **Error List** window. You can suppress that warning by right clicking and choosing **Quick Actions and Refactorings**. Unlike deprecation cases where you have two options (either keep using the deprecated member and suppress warnings or not use it at all), here if you're developing your code only for certain platforms, you can suppress all warnings for all other platforms you don't plan to run your code on. To do so, you just need to edit your project file and add the `PlatformCompatIgnore` property that lists all platforms to be ignored. The accepted values are: `Linux`, `MacOSX`, and `Windows`.
 
 ```xml
 <PropertyGroup>
@@ -60,7 +87,9 @@ if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
      // More code
 }
 ```
-You can also conditionally compile per target framework/operating system, but you currently need to do that manually.
+You can also conditionally compile per target framework/operating system, but you currently need to do that [manually](
+https://docs.microsoft.com/en-us/dotnet/standard/frameworks#how-to-specify-target-frameworks).
+
 
 ## Supported diagnostics
 

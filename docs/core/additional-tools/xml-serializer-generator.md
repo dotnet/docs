@@ -114,6 +114,8 @@ Type the following command in your console window:
 
 If everything succeeds, an assembly named *MyApp.XmlSerializers.dll* is generated in the output folder. 
 
+
+
 Congratulations! You have just:
 > [!div class="checklist"]
 > * Created a .NET Core app.
@@ -121,3 +123,9 @@ Congratulations! You have just:
 > * Edited your MyApp.csproj to add dependencies.
 > * Added a class and an XmlSerializer.
 > * Built and ran the application. 
+
+## Related Resources
+
+* [Introducing XML Serialization](../../standard/serialization/introducing-xml-serialization.md)
+* [How to: Serialize Using XmlSerializer (C#)](../../csharp/programming-guide/concepts/linq/how-to-serialize-using-xmlserializer)
+* [How to: Serialize Using XmlSerializer (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/how-to-serialize-using-xmlserializer)

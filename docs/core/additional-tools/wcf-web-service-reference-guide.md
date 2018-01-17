@@ -34,7 +34,7 @@ The **Connected Services** page appears as shown in the following image:
 
 2. On the **Connected Services** page, click **Microsoft WCF Web Service Reference Provider**. This brings up the **Configure WCF Web Service Reference** wizard:
 
-![Service Endpoint tab](,/media/wcf-web-service-reference-guide/WCFCS-ServiceEndpointPage.png)
+![Service Endpoint tab](./media/wcf-web-service-reference-guide/WCFCS-ServiceEndpointPage.png)
 
 3. Select a service.
 
@@ -57,7 +57,7 @@ The **Connected Services** page appears as shown in the following image:
 
 There may be a delay while type information is loaded, depending on the number of project dependencies and other system performance factors. The **Finish** button is disabled during loading unless the **Reuse types in referenced assemblies** check box is unchecked.
 
-5. Click **Finish** when you are done. 
+5. Click **Finish** when you are done.
 
 ![Progress window](./media/wcf-web-service-reference-guide/WCFCS-ProgressWindow.png)
 

@@ -34,7 +34,7 @@ The **-target:winexe** option causes the compiler to create an executable (EXE),
   
  When specified at the command line, all files until the next **-out** or [-target](../../../csharp/language-reference/compiler-options/target-compiler-option.md) option are used to create the Windows program.  
   
- One and only one **Main** method is required in the source code files that are compiled into an .exe file. The [/main](../../../csharp/language-reference/compiler-options/main-compiler-option.md) option lets you specify which class contains the **Main** method, in cases where your code has more than one class with a **Main** method.  
+ One and only one **Main** method is required in the source code files that are compiled into an .exe file. The [-main](../../../csharp/language-reference/compiler-options/main-compiler-option.md) option lets you specify which class contains the **Main** method, in cases where your code has more than one class with a **Main** method.  
   
 ### To set this compiler option in the Visual Studio development environment  
   

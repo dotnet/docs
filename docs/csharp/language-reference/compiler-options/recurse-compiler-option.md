@@ -49,7 +49,7 @@ csc *.cs
  Compiles all of the C# files in the dir1\dir2 directory and any directories below it and generates dir2.dll:  
   
 ```console  
-csc /target:library -out:dir2.dll -recurse:dir1\dir2\*.cs  
+csc -target:library -out:dir2.dll -recurse:dir1\dir2\*.cs  
 ```  
   
 ## See Also  

@@ -42,10 +42,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/globalization/cultureinfo.cs#e319c6636909012f). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  The <xref:System.Globalization.CultureInfo> class provides culture-specific information, such as the language, sublanguage, country/region, calendar, and conventions associated with a particular culture. This class also provides access to culture-specific instances of the <xref:System.Globalization.DateTimeFormatInfo>, <xref:System.Globalization.NumberFormatInfo>, <xref:System.Globalization.CompareInfo>, and <xref:System.Globalization.TextInfo> objects. These objects contain the information required for culture-specific operations, such as casing, formatting dates and numbers, and comparing strings. The <xref:System.Globalization.CultureInfo> class is used either directly or indirectly by classes that format, parse, or manipulate culture-specific data, such as <xref:System.String>, <xref:System.DateTime>, <xref:System.DateTimeOffset>, and the numeric types.  
   
  In this section:  

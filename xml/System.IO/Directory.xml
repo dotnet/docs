@@ -31,10 +31,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/io/directory.cs#b3ad5f0ba800bb28). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  Use the <xref:System.IO.Directory> class for typical operations such as copying, moving, renaming, creating, and deleting directories.  
   
 -   To create a directory, use one of the <xref:System.IO.Directory.CreateDirectory%2A> methods.  

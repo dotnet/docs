@@ -45,10 +45,6 @@
       <format type="text/markdown"><![CDATA[  
    
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/threading/Tasks/Task.cs#045a746eb48cbaa9). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  The <xref:System.Threading.Tasks.Task> class represents a single operation that does not return a value and that usually executes asynchronously. <xref:System.Threading.Tasks.Task> objects are one of the central components of the  [task-based asynchronous pattern](~/docs/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) first introduced in the .NET Framework 4. Because the work performed by a <xref:System.Threading.Tasks.Task> object typically executes asynchronously on a thread pool thread rather than synchronously on the main application thread, you can use the <xref:System.Threading.Tasks.Task.Status%2A> property, as well as the <xref:System.Threading.Tasks.Task.IsCanceled%2A>, <xref:System.Threading.Tasks.Task.IsCompleted%2A>, and <xref:System.Threading.Tasks.Task.IsFaulted%2A> properties, to determine the   state of a task. Most commonly, a lambda expression is used to specify the work that the task is to perform.  
   
  For operations that return values, you use the <xref:System.Threading.Tasks.Task%601> class.  

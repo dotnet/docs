@@ -47,10 +47,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/timespan.cs#865ef7b89f41b632). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  A <xref:System.TimeSpan> object represents a time interval (duration of time or elapsed time) that is measured as a positive or negative number of days, hours, minutes, seconds, and fractions of a second. The <xref:System.TimeSpan> structure can also be used to represent the time of day, but only if the time is unrelated to a particular date. Otherwise, the <xref:System.DateTime> or <xref:System.DateTimeOffset> structure should be used instead. (For more information about using the <xref:System.TimeSpan> structure to reflect the time of day, see [Choosing Between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo](~/docs/standard/datetime/choosing-between-datetime.md).)  
   
 > [!NOTE]

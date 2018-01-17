@@ -58,10 +58,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/collections/generic/list.cs#cf7f4095e4de7646). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  The <xref:System.Collections.Generic.List%601> class is the generic equivalent of the <xref:System.Collections.ArrayList> class. It implements the <xref:System.Collections.Generic.IList%601> generic interface by using an array whose size is dynamically increased as required.  
   
  You can add items to a <xref:System.Collections.Generic.List%601> by using the <xref:System.Collections.Generic.List%601.Add%2A> or <xref:System.Collections.Generic.List%601.AddRange%2A> methods.  

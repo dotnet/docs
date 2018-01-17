@@ -38,10 +38,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/collections/generic/ienumerable.cs#3acf01620172c7f0). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  <xref:System.Collections.Generic.IEnumerable%601> is the base interface for collections in the <xref:System.Collections.Generic> namespace such as <xref:System.Collections.Generic.List%601>, <xref:System.Collections.Generic.Dictionary%602>, and <xref:System.Collections.Generic.Stack%601> and other generic collections such as <xref:System.Collections.ObjectModel.ObservableCollection%601> and <xref:System.Collections.Concurrent.ConcurrentStack%601>. Collections that implement <xref:System.Collections.Generic.IEnumerable%601> can be enumerated by using the `foreach` statement. For the non-generic version of this interface, see <xref:System.Collections.IEnumerable?displayProperty=nameWithType>.  
   
  For the non-generic version of this interface, see <xref:System.Collections.IEnumerable?displayProperty=nameWithType>.  

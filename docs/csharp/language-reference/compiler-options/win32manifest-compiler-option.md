@@ -16,13 +16,13 @@ caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
-# /win32manifest (C# Compiler Options)
-Use the **/win32manifest** option to specify a user-defined Win32 application manifest file to be embedded into a project's portable executable (PE) file.  
+# -win32manifest (C# Compiler Options)
+Use the **-win32manifest** option to specify a user-defined Win32 application manifest file to be embedded into a project's portable executable (PE) file.  
   
 ## Syntax  
   
 ```console  
-/win32manifest: filename  
+-win32manifest: filename  
 ```  
   
 ## Arguments  
@@ -33,13 +33,13 @@ Use the **/win32manifest** option to specify a user-defined Win32 application ma
  By default, the [!INCLUDE[csharp_current_short](~/includes/csharp-current-short-md.md)] compiler embeds an application manifest that specifies a requested execution level of "asInvoker." It creates the manifest in the same folder in which the executable is built, typically the bin\Debug or bin\Release folder when you use Visual Studio. If you want to supply a custom manifest, for example to specify a requested execution level of "highestAvailable" or "requireAdministrator," use this option to specify the name of the file.  
   
 > [!NOTE]
->  This option and the [/win32res (C# Compiler Options)](../../../csharp/language-reference/compiler-options/win32res-compiler-option.md) option are mutually exclusive. If you try to use both options in the same command line you will get a build error.  
+>  This option and the [-win32res (C# Compiler Options)](../../../csharp/language-reference/compiler-options/win32res-compiler-option.md) option are mutually exclusive. If you try to use both options in the same command line you will get a build error.  
   
  An application that has no application manifest that specifies a requested execution level will be subject to file/registry virtualization under the User Account Control feature in Windows. For more information, see [User Account Control](/windows/access-protection/user-account-control/user-account-control-overview).  
   
  Your application will be subject to virtualization if either of these conditions is true:  
   
--   You use the **/nowin32manifest** option and you do not provide a manifest in a later build step or as part of a Windows Resource (.res) file by using the **/win32res** option.  
+-   You use the **-nowin32manifest** option and you do not provide a manifest in a later build step or as part of a Windows Resource (.res) file by using the **-win32res** option.  
   
 -   You provide a custom manifest that does not specify a requested execution level.  
   
@@ -69,5 +69,5 @@ Use the **/win32manifest** option to specify a user-defined Win32 application ma
   
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
- [/nowin32manifest (C# Compiler Options)](../../../csharp/language-reference/compiler-options/nowin32manifest-compiler-option.md)  
+ [-nowin32manifest (C# Compiler Options)](../../../csharp/language-reference/compiler-options/nowin32manifest-compiler-option.md)  
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

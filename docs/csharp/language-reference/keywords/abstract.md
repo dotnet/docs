@@ -43,7 +43,7 @@ The `abstract` modifier indicates that the thing being modified has a missing or
   
 -   Because an abstract method declaration provides no actual implementation, there is no method body; the method declaration simply ends with a semicolon and there are no curly braces ({ }) following the signature. For example:  
   
-    ```C#  
+    ```csharp  
     public abstract void MyMethod();  
     ```  
   
@@ -72,7 +72,7 @@ The `abstract` modifier indicates that the thing being modified has a missing or
   
  In the preceding example, if you attempt to instantiate the abstract class by using a statement like this:  
   
-```C#
+```csharp
 BaseClass bc = new BaseClass();   // Error  
 ```  
   

@@ -17,9 +17,9 @@ ms.author: "wiwagn"
 ---
 # How to: Concatenate Multiple Strings (C# Guide)
 
-*Concatenation* is the process of appending one string to the end of another string. When you concatenate string literals or string constants by using the `+` operator, the compiler creates a single string. No run time concatenation occurs. However, string variables can be concatenated only at run time. In this case, you should understand the performance implications of the various approaches.  
-  
-The following example shows how to split a long string literal into smaller strings in order to improve readability in the source code. These parts will be concatenated into a single string at compile time. There is no run time performance cost regardless of the number of strings involved.  
+*Concatenation* is the process of appending one string to the end of another string. You concatenate strings by using the + operator. For string literals and string constants, concatenation occurs at compile time; no run-time concatenation occurs. For string variables, concatenation occurs only at run time.
+
+The following example uses concatenation to split a long string literal into smaller strings in order to improve readability in the source code. These parts will be concatenated into a single string at compile time. There is no run-time performance cost regardless of the number of strings involved.  
   
  [!code-csharp-interactive[Combining strings at compile time](../../../samples/snippets/csharp/how-to/strings/Concatenate.cs#1)]  
   
@@ -34,16 +34,18 @@ In some expressions, it is easier to concatenate strings using string interpolat
 [!code-csharp-interactive[building strings using string interpolation](../../../samples/snippets/csharp/how-to/strings/Concatenate.cs#3)]  
   
 > [!NOTE]
->  In string concatenation operations, the C# compiler treats a null string the same as an empty string, but it does not convert the value of the original null string.  
-  
-If you are not concatenating large numbers of strings (for example, in a loop), the performance cost of either concatenation or formatting is probably not significant. The same is true for the <xref:System.String.Concat%2A?displayProperty=nameWithType> and <xref:System.String.Format%2A?displayProperty=nameWithType> methods.  
-  
-However, when performance is important, you should always use the <xref:System.Text.StringBuilder> class to concatenate strings. The following code uses the <xref:System.Text.StringBuilder.Append%2A> method of the <xref:System.Text.StringBuilder> class to concatenate strings without the chaining effect of the `+` operator.  
+>  In string concatenation operations, the C# compiler treats a null string the same as an empty string.
+
+Other methods to concatenate strings are <xref:System.String.Concat%2A?displayProperty=nameWithType> and <xref:System.String.Format%2A?displayProperty=nameWithType>. These methods work well when you are building a string from a small number of component strings. These methdos are also a great choice when you know the number of strings that make up your concatenated string.
+
+In other cases you may be combining strings in a loop, where you don't know how many source strings you are combining, and the actual number of source strings may be quite large. The <xref:System.Text.StringBuilder> class was designed for these scenarios. The following code uses the <xref:System.Text.StringBuilder.Append%2A> method of the <xref:System.Text.StringBuilder> class to concatenate strings.  
   
 [!code-csharp-interactive[string concatenation using string builder](../../../samples/snippets/csharp/how-to/strings/Concatenate.cs#4)]  
 
+You can read more about the [reasons to choose string concatenation or the `StringBuilder` class](/dotnet/api/system.text.stringbuilder#stringAndSB)
+
 Another option to join strings from a collection is to use [LINQ](../programming-guide/linq/index.md)
-and the <xref:System.Linq.Enumerable.Aggregate%60%601%2A?displayPropery=nameWithType> method. This method combines
+and the <xref:System.Linq.Enumerable.Aggregate%60%601%2A?displayPropery=nameWithType> method. This method combines 
 the source strings using a lambda expression. The lambda expression does the
 work to add each string to the existing accumulation. The following example
 combines an array of words by adding a space between each word in the array:

@@ -39,10 +39,10 @@ namespace HowToStrings
         {
             // <Snippet2>
             string userName = "<Type your name here>";
-            string date = DateTime.Today.ToShortDateString();
+            string dateString = DateTime.Today.ToShortDateString();
 
             // Use the + and += operators for one-time concatenations.
-            string str = "Hello " + userName + ". Today is " + date + ".";
+            string str = "Hello " + userName + ". Today is " + dateString + ".";
             System.Console.WriteLine(str);
 
             str += " How are you today?";

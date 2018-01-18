@@ -35,7 +35,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see the documentation for the [IStream](https://msdn.microsoft.com/en-us/library/aa380034.aspx) and [ISequentialStream](https://msdn.microsoft.com/en-us/library/aa380010.aspx) interfaces in the MSDN Library.  
+ For more information, see the documentation for the [IStream](https://msdn.microsoft.com/library/aa380034.aspx) and [ISequentialStream](https://msdn.microsoft.com/library/aa380010.aspx) interfaces in the MSDN Library.  
   
  The common language runtime throws an exception when a COM method in native code returns an `HRESULT` other than `S_OK`. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
   

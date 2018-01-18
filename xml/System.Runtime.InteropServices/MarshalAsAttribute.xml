@@ -301,7 +301,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use either the <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalType> or <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalTypeRef?displayProperty=nameWithType> field specify a custom marshaler type for the attributed parameter, field, or return type. The <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalType> field enables you to specify a string representing the fully qualified name of a custom marshaler. It is useful for late-bound references, but is less preferred than <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalTypeRef> for specifying a custom marshaler. For additional information about creating and using custom marshalers, see [Custom Marshaling](http://msdn.microsoft.com/en-us/49f9ac47-1619-4d6e-9da6-bf06bba12079).  
+ You can use either the <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalType> or <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalTypeRef?displayProperty=nameWithType> field specify a custom marshaler type for the attributed parameter, field, or return type. The <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalType> field enables you to specify a string representing the fully qualified name of a custom marshaler. It is useful for late-bound references, but is less preferred than <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalTypeRef> for specifying a custom marshaler. For additional information about creating and using custom marshalers, see [Custom Marshaling](http://msdn.microsoft.com/library/49f9ac47-1619-4d6e-9da6-bf06bba12079).  
   
  ]]></format>
         </remarks>
@@ -355,7 +355,7 @@
 [MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef = typeof(NameSpace.TypeName)]  
 ```  
   
- You can set a <xref:System.Type> object using `typeof` in C#, `GetType` in Visual Basic, or `typeid` in C++. For additional information about creating and using custom marshalers, see [Custom Marshaling](http://msdn.microsoft.com/en-us/49f9ac47-1619-4d6e-9da6-bf06bba12079).  
+ You can set a <xref:System.Type> object using `typeof` in C#, `GetType` in Visual Basic, or `typeid` in C++. For additional information about creating and using custom marshalers, see [Custom Marshaling](http://msdn.microsoft.com/library/49f9ac47-1619-4d6e-9da6-bf06bba12079).  
   
  ]]></format>
         </remarks>

@@ -149,7 +149,7 @@
 ## Web Service References  
  You can register a Web service to be called from client script by creating a <xref:System.Web.UI.ServiceReference> object and adding it to the <xref:System.Web.UI.ScriptManager.Services%2A> collection of the <xref:System.Web.UI.ScriptManager> control. ASP.NET generates a client proxy object for each <xref:System.Web.UI.ServiceReference> object in the <xref:System.Web.UI.ScriptManager.Services%2A> collection. You can programmatically add <xref:System.Web.UI.ServiceReference> objects to the <xref:System.Web.UI.ScriptManager.Services%2A> collection to register Web services at run time.  
   
- For more information about how to access Web services in script, see [Exposing Web Services to Client Script in ASP.NET AJAX](http://msdn.microsoft.com/en-us/fe3f6e9e-0acd-44c9-bf0f-0a8598fc13b8) and [Calling Web Services from Client Script in ASP.NET AJAX](http://msdn.microsoft.com/en-us/fc06c224-f01a-45be-94af-bd71afbc07b0).  
+ For more information about how to access Web services in script, see [Exposing Web Services to Client Script in ASP.NET AJAX](http://msdn.microsoft.com/library/fe3f6e9e-0acd-44c9-bf0f-0a8598fc13b8) and [Calling Web Services from Client Script in ASP.NET AJAX](http://msdn.microsoft.com/library/fc06c224-f01a-45be-94af-bd71afbc07b0).  
   
 <a name="localization"></a>   
 ## Localization  
@@ -250,7 +250,7 @@
   
  **Handling Partial-Page Update Errors and Registering Script**  
   
- The following example shows how to provide custom error handling during partial-page updates. By default, when an error occurs during partial-page updates, a JavaScript message box is displayed. This example demonstrates how to use custom error handling by providing a handler for the <xref:System.Web.UI.ScriptManager.AsyncPostBackError> event, and by setting the <xref:System.Web.UI.ScriptManager.AsyncPostBackErrorMessage%2A> property in the event handler. You can also set the <xref:System.Web.UI.ScriptManager.AllowCustomErrorsRedirect%2A> property to specify how the custom errors section of the Web.config file is used when an error occurs during partial-page updates. In this example, the default value of the <xref:System.Web.UI.ScriptManager.AllowCustomErrorsRedirect%2A> property is used. This means that if the Web.config file contains a  element, that element determines how errors are displayed. For more information, see [customErrors Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/288c32e2-df1f-4548-abda-de6b4cb989a6).  
+ The following example shows how to provide custom error handling during partial-page updates. By default, when an error occurs during partial-page updates, a JavaScript message box is displayed. This example demonstrates how to use custom error handling by providing a handler for the <xref:System.Web.UI.ScriptManager.AsyncPostBackError> event, and by setting the <xref:System.Web.UI.ScriptManager.AsyncPostBackErrorMessage%2A> property in the event handler. You can also set the <xref:System.Web.UI.ScriptManager.AllowCustomErrorsRedirect%2A> property to specify how the custom errors section of the Web.config file is used when an error occurs during partial-page updates. In this example, the default value of the <xref:System.Web.UI.ScriptManager.AllowCustomErrorsRedirect%2A> property is used. This means that if the Web.config file contains a  element, that element determines how errors are displayed. For more information, see [customErrors Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/288c32e2-df1f-4548-abda-de6b4cb989a6).  
   
  [!code-aspx-csharp[System.Web.UI.ScriptManager.OnAsyncPostBackError#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.OnAsyncPostBackError/CS/default.aspx#1)]
  [!code-aspx-vb[System.Web.UI.ScriptManager.OnAsyncPostBackError#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.OnAsyncPostBackError/VB/default.aspx#1)]  
@@ -775,7 +775,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [Combining Client Scripts into a Composite Script](http://msdn.microsoft.com/en-us/d0f608d0-b4c8-4795-990b-ede68c1239b3).  
+ For more information, see [Combining Client Scripts into a Composite Script](http://msdn.microsoft.com/library/d0f608d0-b4c8-4795-990b-ede68c1239b3).  
   
  ]]></format>
         </remarks>
@@ -945,7 +945,7 @@
 ## Remarks  
  You can add static page methods to an ASP.NET page and mark them as Web methods. You can then call these methods from script as if they were part of a Web service, but without creating a separate .asmx file. To create Web methods on a page, import the <xref:System.Web.Services> namespace and add a <xref:System.Web.Services.WebMethodAttribute> attribute to each static method that you want to expose. The methods must be marked public.  
   
- For more information, see [Exposing Web Services to Client Script in ASP.NET AJAX](http://msdn.microsoft.com/en-us/fe3f6e9e-0acd-44c9-bf0f-0a8598fc13b8).  
+ For more information, see [Exposing Web Services to Client Script in ASP.NET AJAX](http://msdn.microsoft.com/library/fe3f6e9e-0acd-44c9-bf0f-0a8598fc13b8).  
   
  ]]></format>
         </remarks>

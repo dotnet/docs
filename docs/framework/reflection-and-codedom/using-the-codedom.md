@@ -133,4 +133,4 @@ The CodeDOM provides types that represent many common types of source code eleme
   
  For documentation for the each of the CodeDOM types, see the reference documentation for the <xref:System.CodeDom> namespace.  
   
- For a quick chart to locate the CodeDOM element that represents a specific type of code element, see the [CodeDOM Quick Reference](http://msdn.microsoft.com/en-us/c77b8bfd-0a32-4e36-b59a-4f687f32c524).
+ For a quick chart to locate the CodeDOM element that represents a specific type of code element, see the [CodeDOM Quick Reference](http://msdn.microsoft.com/library/c77b8bfd-0a32-4e36-b59a-4f687f32c524).

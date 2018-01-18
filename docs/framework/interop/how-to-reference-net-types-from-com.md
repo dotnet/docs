@@ -52,5 +52,5 @@ From the point of view of client and server code, the differences between COM an
 ## See Also  
  [Exposing .NET Framework Components to COM](../../../docs/framework/interop/exposing-dotnet-components-to-com.md)  
  [Registering Assemblies with COM](../../../docs/framework/interop/registering-assemblies-with-com.md)  
- [Calling a .NET Object](http://msdn.microsoft.com/en-us/40c9626c-aea6-4bad-b8f0-c1de462efd33)  
- [Deploying an Application for COM Access](http://msdn.microsoft.com/en-us/fb63564c-c1b9-4655-a094-a235625882ce)
+ [Calling a .NET Object](http://msdn.microsoft.com/library/40c9626c-aea6-4bad-b8f0-c1de462efd33)  
+ [Deploying an Application for COM Access](http://msdn.microsoft.com/library/fb63564c-c1b9-4655-a094-a235625882ce)

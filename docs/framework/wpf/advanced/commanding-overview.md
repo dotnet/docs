@@ -199,5 +199,5 @@ ms.workload:
  [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)  
  [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
  [Implement ICommandSource](../../../../docs/framework/wpf/advanced/how-to-implement-icommandsource.md)  
- [How to: Add a Command to a MenuItem](http://msdn.microsoft.com/en-us/013d68a0-5373-4a68-bd91-5de574307370)  
+ [How to: Add a Command to a MenuItem](http://msdn.microsoft.com/library/013d68a0-5373-4a68-bd91-5de574307370)  
  [Create a Custom RoutedCommand Sample](http://go.microsoft.com/fwlink/?LinkID=159980)

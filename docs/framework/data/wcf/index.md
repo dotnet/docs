@@ -117,7 +117,7 @@ ms.workload:
  [Overview](../../../../docs/framework/data/wcf/wcf-data-services-overview.md)  
  Provides an overview of the features and functionality available in [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)].  
   
- [What's New in WCF Data Services](http://msdn.microsoft.com/en-us/cf22cad5-b8d9-472b-8d7c-b863b64eaae8)  
+ [What's New in WCF Data Services](http://msdn.microsoft.com/library/cf22cad5-b8d9-472b-8d7c-b863b64eaae8)  
  Describes new functionality in [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] and support for new [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] features.  
   
  [Getting Started](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)  

@@ -67,7 +67,7 @@
  You can create either a Submit button or a Command button. A Submit button does not have a command name associated with it. The button simply posts the Web page back to the server. By default, a <xref:System.Web.UI.WebControls.LinkButton> control is a Submit button. You can provide an event handler for the <xref:System.Web.UI.WebControls.LinkButton.Click> event to programmatically control the actions performed when the Submit button is clicked. On the other hand, a Command button has a command name associated with the button, such as `Sort`. Set the <xref:System.Web.UI.WebControls.LinkButton.CommandName%2A> property to specify the command name. This allows you to create multiple <xref:System.Web.UI.WebControls.LinkButton> controls on a Web page and programmatically determine which <xref:System.Web.UI.WebControls.LinkButton> control is clicked. You can also use the <xref:System.Web.UI.WebControls.LinkButton.CommandArgument%2A> property with a Command button to provide additional information about the command to perform, such as specifying ascending order. You can also provide an event handler for the <xref:System.Web.UI.WebControls.LinkButton.Command> event to programmatically control the action performed when the Command button is clicked.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Text is not HTML encoded before it is displayed in the <xref:System.Web.UI.WebControls.LinkButton> control. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+>  This control can be used to display user input, which might include malicious client script. Text is not HTML encoded before it is displayed in the <xref:System.Web.UI.WebControls.LinkButton> control. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
 <a name="ButtonControlsAndValidation"></a>   
 ## LinkButton Controls and Validation  
@@ -313,7 +313,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.LinkButton.Click> event is raised when the <xref:System.Web.UI.WebControls.LinkButton> control is clicked. This event is commonly used when no command name is associated with the <xref:System.Web.UI.WebControls.LinkButton> control, as in the case of a Submit button.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -352,7 +352,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.LinkButton.Command> event is raised through the control hierarchy in the form of the `BubbleEvent`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -548,7 +548,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.LinkButton.Click> event is raised when the <xref:System.Web.UI.WebControls.LinkButton> control is clicked. This event is commonly used when no command name is associated with the <xref:System.Web.UI.WebControls.LinkButton> control, as in the case of a Submit button.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.LinkButton.OnClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -640,7 +640,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.LinkButton.Command> event is raised through the control hierarchy in the form of the `BubbleEvent`.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.LinkButton.OnCommand%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -938,7 +938,7 @@ End Sub
  Use the <xref:System.Web.UI.WebControls.LinkButton.Text%2A> property to specify or determine the caption to display on the <xref:System.Web.UI.WebControls.LinkButton> control.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
  The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>This class helps resolve proxy types that were created for [persistence-ignorant](http://msdn.microsoft.com/en-us/5e0fb82a-b6d1-41a1-b37b-c12db61629d3) data classes to the actual types of persistence-ignorant objects.</summary>
+    <summary>This class helps resolve proxy types that were created for [persistence-ignorant](http://msdn.microsoft.com/library/5e0fb82a-b6d1-41a1-b37b-c12db61629d3) data classes to the actual types of persistence-ignorant objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -60,13 +60,13 @@
         <param name="typeNamespace">The namespace of the <see langword="xsi:type" />.</param>
         <param name="declaredType">The declared type.</param>
         <param name="knownTypeResolver">An instance of <see cref="T:System.Data.Objects.ProxyDataContractResolver" />.</param>
-        <summary>During deserialization, maps any <see langword="xsi:type" /> information to the actual type of the [persistence-ignorant](http://msdn.microsoft.com/en-us/5e0fb82a-b6d1-41a1-b37b-c12db61629d3) object.</summary>
+        <summary>During deserialization, maps any <see langword="xsi:type" /> information to the actual type of the [persistence-ignorant](http://msdn.microsoft.com/library/5e0fb82a-b6d1-41a1-b37b-c12db61629d3) object.</summary>
         <returns>Returns the type that the <see langword="xsi:type" /> is mapped to. Returns <see langword="null" /> if no known type was found that matches the <see langword="xsi:type" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see: [Working with POCO Entities](http://msdn.microsoft.com/en-us/5e0fb82a-b6d1-41a1-b37b-c12db61629d3).  
+ For more information, see: [Working with POCO Entities](http://msdn.microsoft.com/library/5e0fb82a-b6d1-41a1-b37b-c12db61629d3).  
   
  ]]></format>
         </remarks>
@@ -104,7 +104,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see: [Working with POCO Entities](http://msdn.microsoft.com/en-us/5e0fb82a-b6d1-41a1-b37b-c12db61629d3).  
+ For more information, see: [Working with POCO Entities](http://msdn.microsoft.com/library/5e0fb82a-b6d1-41a1-b37b-c12db61629d3).  
   
  ]]></format>
         </remarks>

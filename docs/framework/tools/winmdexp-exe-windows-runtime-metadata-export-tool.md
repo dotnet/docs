@@ -60,4 +60,4 @@ winmdexp [options] winmdmodule
  [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)  
  [Creating Windows Runtime Components in C# and Visual Basic](http://go.microsoft.com/fwlink/p/?LinkID=238313)  
  [Winmdexp.exe Error Messages](../../../docs/framework/tools/winmdexp-exe-error-messages.md)  
- [Build, Deployment, and Configuration Tools (.NET Framework)](http://msdn.microsoft.com/en-us/b8c921be-6012-4181-b8d4-ab15813fc9a7)
+ [Build, Deployment, and Configuration Tools (.NET Framework)](http://msdn.microsoft.com/library/b8c921be-6012-4181-b8d4-ab15813fc9a7)

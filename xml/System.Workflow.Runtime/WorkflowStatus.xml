@@ -29,7 +29,7 @@
 ## Examples  
  The following code example demonstrates how you can use the <xref:System.Workflow.Runtime.WorkflowStatus> values to set the <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus%2A> property. Each value constrains the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> in a different way.  
   
- This code example is part of the Workflow Monitor SDK Sample from the DatabaseService.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+ This code example is part of the Workflow Monitor SDK Sample from the DatabaseService.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/library/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
   
  [!code-csharp[WF_Samples#127](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#127)]
  [!code-vb[WF_Samples#127](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#127)]  

@@ -45,7 +45,7 @@
 ## Examples  
  The following code example demonstrates how you can obtain an instance of the <xref:System.Workflow.ComponentModel.Design.WorkflowView> class using the <xref:System.ComponentModel.Design.IRootDesigner.GetView%2A> method. The code then sets several <xref:System.Workflow.ComponentModel.Design.WorkflowView> properties, including <xref:System.Workflow.ComponentModel.Design.WorkflowView.HScrollBar%2A> and <xref:System.Workflow.ComponentModel.Design.WorkflowView.VScrollBar%2A>, and calls the <xref:System.Workflow.ComponentModel.Design.WorkflowView.FitToScreenSize%2A> method.  
   
- This code example is part of the Workflow Tracking Profile Designer SDK Sample from the WorkflowDesignerControl.cs file. For more information, see [Workflow Tracking Profile Designer](http://msdn.microsoft.com/en-us/a280199c-3000-4148-ac63-cb5aaeac07c8).  
+ This code example is part of the Workflow Tracking Profile Designer SDK Sample from the WorkflowDesignerControl.cs file. For more information, see [Workflow Tracking Profile Designer](http://msdn.microsoft.com/library/a280199c-3000-4148-ac63-cb5aaeac07c8).  
   
  [!code-csharp[wf_samples#126](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#126)]
  [!code-vb[wf_samples#126](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#126)]  
@@ -90,7 +90,7 @@
 ## Examples  
  The following example shows how to create a <xref:System.Workflow.ComponentModel.Design.WorkflowView> object. In this example, a new <xref:System.ComponentModel.Design.DesignSurface> object is created and the `BeginLoad` method is called passing a <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader> object as the parameter. After creating a new <xref:System.Workflow.Activities.SequentialWorkflowActivity>, a <xref:System.Workflow.ComponentModel.Design.WorkflowView> object is created using the <xref:System.ComponentModel.Design.DesignSurface> created earlier as a parameter to the constructor.  
   
- This code example is part of the Outlook Workflow Wizard SDK Sample from the WorkflowViewWrapper.cs file. For more information, see [Outlook Workflow Wizard Sample](http://msdn.microsoft.com/en-us/7b2ba92b-8456-43f3-87fc-184ffdec4408).  
+ This code example is part of the Outlook Workflow Wizard SDK Sample from the WorkflowViewWrapper.cs file. For more information, see [Outlook Workflow Wizard Sample](http://msdn.microsoft.com/library/7b2ba92b-8456-43f3-87fc-184ffdec4408).  
   
  [!code-csharp[wf_samples#97](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#97)]
  [!code-vb[wf_samples#97](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#97)]  
@@ -132,7 +132,7 @@
 ## Examples  
  In the following example, a <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader> is created and a <xref:System.Workflow.ComponentModel.Design.WorkflowView> object is associated with the workflow design surface. In order to retrieve notifications of messages, a <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter> is created and added to the <xref:System.Workflow.ComponentModel.Design.WorkflowView> object.  
   
- This code example is part of the Outlook Workflow Wizard SDK Sample from the WorkflowViewWrapper.cs file. For more information, see [Outlook Workflow Wizard Sample](http://msdn.microsoft.com/en-us/7b2ba92b-8456-43f3-87fc-184ffdec4408).  
+ This code example is part of the Outlook Workflow Wizard SDK Sample from the WorkflowViewWrapper.cs file. For more information, see [Outlook Workflow Wizard Sample](http://msdn.microsoft.com/library/7b2ba92b-8456-43f3-87fc-184ffdec4408).  
   
  [!code-csharp[wf_Samples#102](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#102)]
  [!code-vb[wf_Samples#102](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#102)]  
@@ -302,7 +302,7 @@
 ## Remarks  
  When the disposing parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Workflow.ComponentModel.Design.WorkflowView> references. This method invokes the `Dispose()` method of each referenced object.  
   
- For more information about `Dispose` and `Finalize`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+ For more information about `Dispose` and `Finalize`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
   
  ]]></format>
         </remarks>
@@ -1606,7 +1606,7 @@
 ## Examples  
  The following example shows how to retrieve the RootDesigner of a WorkflowView object. The workflowPanel field contains a method named GetWorkflowView that returns the active WorkflowView instance. The RootDesigner is then cast to a SequentialWorkflowRootDesigner before any action is taken on it.  
   
- This code example is part of the Basic DesignerHosting SDK Sample from the DesignerShell.cs file. For more information, see [Basic Designer Hosting Sample](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+ This code example is part of the Basic DesignerHosting SDK Sample from the DesignerShell.cs file. For more information, see [Basic Designer Hosting Sample](http://msdn.microsoft.com/library/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
   
  [!code-csharp[wf_samples#236](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#236)]
  [!code-vb[wf_samples#236](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#236)]  
@@ -1823,7 +1823,7 @@
    
   
 ## Examples  
- The following example demonstrates setting the ScrollPosition property inside an implementation of a <xref:System.Windows.Forms.Panel> control's OnMouseMove method.  This example is from the Outlook Workflow Wizard SDK sample.  For more information, see [Outlook Workflow Wizard Sample](http://msdn.microsoft.com/en-us/7b2ba92b-8456-43f3-87fc-184ffdec4408).  
+ The following example demonstrates setting the ScrollPosition property inside an implementation of a <xref:System.Windows.Forms.Panel> control's OnMouseMove method.  This example is from the Outlook Workflow Wizard SDK sample.  For more information, see [Outlook Workflow Wizard Sample](http://msdn.microsoft.com/library/7b2ba92b-8456-43f3-87fc-184ffdec4408).  
   
  [!code-csharp[wf_samples#105](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#105)]
  [!code-vb[wf_samples#105](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#105)]  
@@ -2195,7 +2195,7 @@
 ## Examples  
  The following example shows how to set the <xref:System.Workflow.ComponentModel.Design.WorkflowView.Zoom%2A> property of a <xref:System.Workflow.ComponentModel.Design.WorkflowView>.  
   
- This code example is part of the Workflow Monitor SDK Sample from the MainForm.cs file. For more information, see [Workflow Monitor Sample](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+ This code example is part of the Workflow Monitor SDK Sample from the MainForm.cs file. For more information, see [Workflow Monitor Sample](http://msdn.microsoft.com/library/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
   
  [!code-csharp[wf_samples#138](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#138)]
  [!code-vb[wf_samples#138](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#138)]  
@@ -2234,7 +2234,7 @@
 ## Examples  
  The following code example demonstrates how you can assign a handler to the <xref:System.Workflow.ComponentModel.Design.WorkflowView.ZoomChanged> event.  
   
- This code example is part of the Workflow Monitor SDK Sample from the ViewHost.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+ This code example is part of the Workflow Monitor SDK Sample from the ViewHost.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/library/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
   
  [!code-csharp[wf_samples#136](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#136)]  
   

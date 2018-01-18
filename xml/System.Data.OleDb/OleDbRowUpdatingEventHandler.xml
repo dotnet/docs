@@ -28,7 +28,7 @@
   
  The handler may use the <xref:System.Data.OleDb.OleDbRowUpdatingEventArgs> to influence the processing of the updates. For example, the handler may opt to skip the update of the current row or skip the update of all remaining rows. Note that the rows are updated in the order that they were received from the data source.  
   
- When you create an <xref:System.Data.OleDb.OleDbRowUpdatingEventArgs> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ When you create an <xref:System.Data.OleDb.OleDbRowUpdatingEventArgs> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  ]]></format>
     </remarks>

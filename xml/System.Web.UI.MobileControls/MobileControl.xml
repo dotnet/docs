@@ -884,7 +884,7 @@ public override void EnsureTemplatedUI()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To be considered templated, an object must have a [\<DeviceSpecific> element](http://msdn.microsoft.com/en-us/5984e67a-91cf-4f32-8815-7e7fab3d3b5b) with a [\<Choice> element](http://msdn.microsoft.com/en-us/c81bee77-bb45-4211-be0f-e13a040b3c2d) successfully evaluated for the target device. The selected choice must have templates defined.  
+ To be considered templated, an object must have a [\<DeviceSpecific> element](http://msdn.microsoft.com/library/5984e67a-91cf-4f32-8815-7e7fab3d3b5b) with a [\<Choice> element](http://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d) successfully evaluated for the target device. The selected choice must have templates defined.  
   
  ]]></format>
         </remarks>
@@ -1542,7 +1542,7 @@ public override void EnsureTemplatedUI()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Web.UI.MobileControls.MobileControl.StyleReference%2A> property must be the <xref:System.Web.UI.MobileControls.Style.Name%2A> property of a <xref:System.Web.UI.MobileControls.Style> object. You can use the <xref:System.Web.UI.MobileControls.MobileControl.StyleReference%2A> property to share styles across controls, either by using inheritance or by using the <xref:System.Web.UI.MobileControls.MobileControl.StyleReference%2A> property of a style sheet. For more information, see the Styles documentation. To find out how to create a new style, see [Creating New Styles](http://msdn.microsoft.com/en-us/da7f9825-3cc7-4c0f-9800-7d3cb15041d1).  
+ The value of the <xref:System.Web.UI.MobileControls.MobileControl.StyleReference%2A> property must be the <xref:System.Web.UI.MobileControls.Style.Name%2A> property of a <xref:System.Web.UI.MobileControls.Style> object. You can use the <xref:System.Web.UI.MobileControls.MobileControl.StyleReference%2A> property to share styles across controls, either by using inheritance or by using the <xref:System.Web.UI.MobileControls.MobileControl.StyleReference%2A> property of a style sheet. For more information, see the Styles documentation. To find out how to create a new style, see [Creating New Styles](http://msdn.microsoft.com/library/da7f9825-3cc7-4c0f-9800-7d3cb15041d1).  
   
  ]]></format>
         </remarks>
@@ -1658,7 +1658,7 @@ public override void EnsureTemplatedUI()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is used for form pagination. A value of -1 indicates that the default weight for the element must be used. For further information, see [Pagination Support](http://msdn.microsoft.com/en-us/78f2786d-0b5b-4760-9616-5027357713c2).  
+ This property is used for form pagination. A value of -1 indicates that the default weight for the element must be used. For further information, see [Pagination Support](http://msdn.microsoft.com/library/78f2786d-0b5b-4760-9616-5027357713c2).  
   
  ]]></format>
         </remarks>

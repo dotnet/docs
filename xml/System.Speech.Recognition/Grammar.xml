@@ -21,7 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A speech recognition grammar is a set of rules or constraints that define what a speech recognition engine can recognize as meaningful input. For more information about creating and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919),  [Create Grammars Using XML](http://msdn.microsoft.com/en-us/2d799487-49c6-4cc9-b42f-f71cd3824fe1), [Create Grammars Using GrammarBuilder](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae), and [Create Grammars Using SrgsGrammar](http://msdn.microsoft.com/en-us/e4d9f96e-2241-4c39-b9e0-ac9ef4e9a906).  
+ A speech recognition grammar is a set of rules or constraints that define what a speech recognition engine can recognize as meaningful input. For more information about creating and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/library/6a7dc524-07fc-4862-8d48-8c10dc64b919),  [Create Grammars Using XML](http://msdn.microsoft.com/library/2d799487-49c6-4cc9-b42f-f71cd3824fe1), [Create Grammars Using GrammarBuilder](http://msdn.microsoft.com/library/7e2cc577-cb05-4318-9da3-7c8675d3d9ae), and [Create Grammars Using SrgsGrammar](http://msdn.microsoft.com/library/e4d9f96e-2241-4c39-b9e0-ac9ef4e9a906).  
   
  After you author a grammar, you must build it into a <xref:System.Speech.Recognition.Grammar> object that a speech recognition engine can load and that your application can use at runtime to manage speech recognition. You can use a <xref:System.Speech.Recognition.Grammar.%23ctor%2A> constructor to create a <xref:System.Speech.Recognition.Grammar> instance from a <xref:System.Speech.Recognition.GrammarBuilder> or a <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> object, or from a file or a <xref:System.IO.Stream> that contains a description of a grammar in a supported format. Supported formats include the following:  
   
@@ -251,7 +251,7 @@ private static Grammar CreateGrammarFromStream()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about using the <xref:System.Speech.Recognition.GrammarBuilder> class to define a grammar, see [Create Grammars Using GrammarBuilder](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
+ For more information about using the <xref:System.Speech.Recognition.GrammarBuilder> class to define a grammar, see [Create Grammars Using GrammarBuilder](http://msdn.microsoft.com/library/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
   
    
   

@@ -113,7 +113,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property enables you to turn batch compilation on or off programmatically. It corresponds to the `batch` attribute of the `compilation` element in the Web.config file. For more information, see [compilation Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/7c319582-074a-4d2a-a787-03b9d4541c12).  
+ This property enables you to turn batch compilation on or off programmatically. It corresponds to the `batch` attribute of the `compilation` element in the Web.config file. For more information, see [compilation Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/7c319582-074a-4d2a-a787-03b9d4541c12).  
   
  The property can be set only in the `PreApplicationStart` method. For more information about the `PreApplicationStart` method, see <xref:System.Web.PreApplicationStartMethodAttribute>.  
   

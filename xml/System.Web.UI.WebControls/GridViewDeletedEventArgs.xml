@@ -25,7 +25,7 @@
   
  If you want to access the name/value pairs of the key fields and non-key fields of the deleted record, use the <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.Keys%2A> and <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.Values%2A> properties, respectively.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -287,7 +287,7 @@
  Use the <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.Values%2A> property to access the values of the non-key fields for a deleted record. For example, you can use these values to keep a log of deleted records.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.Values%2A> property is populated only when two-way binding expressions are used in the item template. For more information on two-way binding expressions, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742).  
+>  The <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.Values%2A> property is populated only when two-way binding expressions are used in the item template. For more information on two-way binding expressions, see [Binding to Databases](http://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742).  
   
  The <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.Values%2A> property returns an object that implements the <xref:System.Collections.Specialized.IOrderedDictionary?displayProperty=nameWithType> interface. The object contains <xref:System.Collections.DictionaryEntry?displayProperty=nameWithType> objects that represent the non-key fields of the deleted record.  
   

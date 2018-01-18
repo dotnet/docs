@@ -53,7 +53,7 @@ For more information about installing the latest version of Visual Studio, see [
 ## Creating the application project  
  In this section, you create the application infrastructure, which includes an application definition, two pages, and an image. 
   
-1. Create a new WPF Application project in Visual Basic or Visual C# named `ExpenseIt`. For more information, see [How to: Create a New WPF Application Project](http://msdn.microsoft.com/en-us/1f6aea7a-33e1-4d3f-8555-1daa42e95d82). 
+1. Create a new WPF Application project in Visual Basic or Visual C# named `ExpenseIt`. For more information, see [How to: Create a New WPF Application Project](http://msdn.microsoft.com/library/1f6aea7a-33e1-4d3f-8555-1daa42e95d82). 
   
     > [!NOTE]
     >  This walkthrough uses the <xref:System.Windows.Controls.DataGrid> control that is available in the .NET Framework 4. Be sure that your project targets the .NET Framework 4 or later. For more information, see[How to: Target a Version of the .NET Framework](/visualstudio/ide/how-to-target-a-version-of-the-dotnet-framework). 
@@ -112,7 +112,7 @@ For more information about installing the latest version of Visual Studio, see [
 ## Adding files to the application  
  In this section, you add two pages and an image to the application. 
   
-1. Add a new Page (WPF) to the project named `ExpenseItHome.xaml`. For more information, see [How to: Add New Items to a WPF Project](http://msdn.microsoft.com/en-us/17e6b238-fc32-4385-98ef-2f66ca09d9ad). 
+1. Add a new Page (WPF) to the project named `ExpenseItHome.xaml`. For more information, see [How to: Add New Items to a WPF Project](http://msdn.microsoft.com/library/17e6b238-fc32-4385-98ef-2f66ca09d9ad). 
   
      This page is the first page that is displayed when the application is launched. It will show a list of people from which a user can select a person to show an expense report for. 
   
@@ -168,7 +168,7 @@ For more information about installing the latest version of Visual Studio, see [
     [!code-csharp[ExpenseIt#5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt/ExpenseReportPage.xaml.cs#5)]
     [!code-vb[ExpenseIt#5](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ExpenseIt/VB/ExpenseIt1_A/ExpenseReportPage.xaml.vb#5)]  
   
-10. Add an image named watermark.png to the project. You can either create your own image, or copy the file from the sample code. For more information, see [NIB:How to: Add Existing Items to a Project](http://msdn.microsoft.com/en-us/15f4cfb7-78ab-457f-9f14-099a25a6a2d3). 
+10. Add an image named watermark.png to the project. You can either create your own image, or copy the file from the sample code. For more information, see [NIB:How to: Add Existing Items to a Project](http://msdn.microsoft.com/library/15f4cfb7-78ab-457f-9f14-099a25a6a2d3). 
 
 ## Building and running the application  
  In this section, you build and run the application. 
@@ -277,7 +277,7 @@ For more information about installing the latest version of Visual Studio, see [
   
 1. Open ExpenseItHome.xaml. 
   
-2. Add a <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handler to the <xref:System.Windows.Controls.Button> element. For more information, see [How to: Create a Simple Event Handler](http://msdn.microsoft.com/en-us/b1456e07-9dec-4354-99cf-18666b64f480). 
+2. Add a <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handler to the <xref:System.Windows.Controls.Button> element. For more information, see [How to: Create a Simple Event Handler](http://msdn.microsoft.com/library/b1456e07-9dec-4354-99cf-18666b64f480). 
   
     [!code-xaml[ExpenseIt#15](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt6/ExpenseItHome.xaml#15)]  
   

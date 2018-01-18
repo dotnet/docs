@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Serialization.SoapCodeExporter> class is used by the [Web Services Description Language Tool (Wsdl.exe)](http://msdn.microsoft.com/en-us/b9210348-8bc2-4367-8c91-d1a04b403e88) and the <xref:System.Web.Services.Description.ServiceDescriptionImporter> class while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of using <xref:System.Xml.Serialization.SoapCodeExporter> directly, use Wsdl.exe.  
+ The <xref:System.Xml.Serialization.SoapCodeExporter> class is used by the [Web Services Description Language Tool (Wsdl.exe)](http://msdn.microsoft.com/library/b9210348-8bc2-4367-8c91-d1a04b403e88) and the <xref:System.Web.Services.Description.ServiceDescriptionImporter> class while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of using <xref:System.Xml.Serialization.SoapCodeExporter> directly, use Wsdl.exe.  
   
  ]]></format>
     </remarks>

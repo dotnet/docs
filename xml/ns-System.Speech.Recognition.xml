@@ -17,7 +17,7 @@
   
  In addition, the <xref:System.Speech.Recognition.DictationGrammar> class provides a special-case grammar to support a conventional dictation model.  
   
- See [Create Grammars](http://msdn.microsoft.com/en-us/dbea278c-21a5-4816-aee7-5fd88ef993dd) in the [System Speech Programming Guide for .NET Framework 4.0](http://msdn.microsoft.com/en-us/610116c7-3817-40ff-857b-5d41e8511043) for more information and examples.  
+ See [Create Grammars](http://msdn.microsoft.com/library/dbea278c-21a5-4816-aee7-5fd88ef993dd) in the [System Speech Programming Guide for .NET Framework 4.0](http://msdn.microsoft.com/library/610116c7-3817-40ff-857b-5d41e8511043) for more information and examples.  
   
  **Manage Speech Recognition Engines**  
   
@@ -27,7 +27,7 @@
   
  For more control over the configuration and type of recognition engine, build an application using <xref:System.Speech.Recognition.SpeechRecognitionEngine>, which runs in-process. Using the <xref:System.Speech.Recognition.SpeechRecognitionEngine> class, you can also dynamically select audio input from devices, files, or streams.  
   
- See [Initialize and Manage a Speech Recognition Engine](http://msdn.microsoft.com/en-us/6eed5b59-1258-4013-8a4c-a1ddabd93ae4) in the [System Speech Programming Guide for .NET Framework 4.0](http://msdn.microsoft.com/en-us/610116c7-3817-40ff-857b-5d41e8511043) for more information.  
+ See [Initialize and Manage a Speech Recognition Engine](http://msdn.microsoft.com/library/6eed5b59-1258-4013-8a4c-a1ddabd93ae4) in the [System Speech Programming Guide for .NET Framework 4.0](http://msdn.microsoft.com/library/610116c7-3817-40ff-857b-5d41e8511043) for more information.  
   
  **Respond to Events**  
   
@@ -37,7 +37,7 @@
   
  You can register to be notified for events that the speech recognition engine raises and create handlers using the `EventsArgs` classes associated with each of these events to program your application's behavior when an event is raised.  
   
- See [Using Speech Recognition Events](http://msdn.microsoft.com/en-us/01c598ca-2e0e-4e89-b303-cd1cef9e8482) in the [System Speech Programming Guide for .NET Framework 4.0](http://msdn.microsoft.com/en-us/610116c7-3817-40ff-857b-5d41e8511043) for more information.  
+ See [Using Speech Recognition Events](http://msdn.microsoft.com/library/01c598ca-2e0e-4e89-b303-cd1cef9e8482) in the [System Speech Programming Guide for .NET Framework 4.0](http://msdn.microsoft.com/library/610116c7-3817-40ff-857b-5d41e8511043) for more information.  
   
  ]]></format>
     </remarks>

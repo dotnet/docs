@@ -217,7 +217,7 @@
         <summary>Gets or sets values indicating the level of authentication and impersonation used for this request.</summary>
         <value>A bitwise combination of the <see cref="T:System.Net.Security.AuthenticationLevel" /> values. The default value is <see cref="F:System.Net.Security.AuthenticationLevel.MutualAuthRequested" />.  
   
- In mutual authentication, both the client and server present credentials to establish their identity. The <see cref="F:System.Net.Security.AuthenticationLevel.MutualAuthRequired" /> and <see cref="F:System.Net.Security.AuthenticationLevel.MutualAuthRequested" /> values are relevant for Kerberos authentication. Kerberos authentication can be supported directly, or can be used if the Negotiate security protocol is used to select the actual security protocol. For more information about authentication protocols, see [Internet Authentication](http://msdn.microsoft.com/en-us/d342e87c-f672-4660-a513-41a2f2b80c4a).  
+ In mutual authentication, both the client and server present credentials to establish their identity. The <see cref="F:System.Net.Security.AuthenticationLevel.MutualAuthRequired" /> and <see cref="F:System.Net.Security.AuthenticationLevel.MutualAuthRequested" /> values are relevant for Kerberos authentication. Kerberos authentication can be supported directly, or can be used if the Negotiate security protocol is used to select the actual security protocol. For more information about authentication protocols, see [Internet Authentication](http://msdn.microsoft.com/library/d342e87c-f672-4660-a513-41a2f2b80c4a).  
   
  To determine whether mutual authentication occurred, check the <see cref="P:System.Net.WebResponse.IsMutuallyAuthenticated" /> property.  
   
@@ -602,7 +602,7 @@
  The <xref:System.Net.WebRequest.Create%2A> method uses the `requestUriString` parameter to create a <xref:System.Uri> instance that it passes to the new <xref:System.Net.WebRequest>.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [&#91;\<topic://conUsingNetworkTracing>&#93;](http://msdn.microsoft.com/en-us/e993b7c3-087f-45d8-9c02-9dded936d804).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [&#91;\<topic://conUsingNetworkTracing>&#93;](http://msdn.microsoft.com/library/e993b7c3-087f-45d8-9c02-9dded936d804).  
   
    
   
@@ -622,7 +622,7 @@
         <exception cref="T:System.UriFormatException">
           <block subset="none" type="note">
             <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](http://msdn.microsoft.com/en-us/c31e1663-c164-4e65-b66d-d3aa8750a154), catch the base class exception, <see cref="T:System.FormatException" />, instead.  
+ In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](http://msdn.microsoft.com/library/c31e1663-c164-4e65-b66d-d3aa8750a154), catch the base class exception, <see cref="T:System.FormatException" />, instead.  
   
 </para>
           </block>  
@@ -684,7 +684,7 @@
  .NET includes support for the `http://`, `https://`, `ftp://`, and `file://` URI schemes. Custom <xref:System.Net.WebRequest> descendants to handle other requests are registered with the <xref:System.Net.WebRequest.RegisterPrefix%2A> method.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [&#91;\<topic://conUsingNetworkTracing>&#93;](http://msdn.microsoft.com/en-us/e993b7c3-087f-45d8-9c02-9dded936d804).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [&#91;\<topic://conUsingNetworkTracing>&#93;](http://msdn.microsoft.com/library/e993b7c3-087f-45d8-9c02-9dded936d804).  
   
    
   

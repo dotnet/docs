@@ -22,7 +22,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use a <xref:System.DirectoryServices.DirectorySearcher> object to search and perform queries against an Active Directory Domain Services hierarchy using Lightweight Directory Access Protocol (LDAP). LDAP is the only system-supplied Active Directory Service Interfaces (ADSI) provider that supports directory searching. An administrator can make, alter, and delete objects that are found in the hierarchy. For more information, see [Using System.DirectoryServices](http://msdn.microsoft.com/en-us/ffa2f003-3a9a-4e2a-815e-825c8ddd7949).  
+ Use a <xref:System.DirectoryServices.DirectorySearcher> object to search and perform queries against an Active Directory Domain Services hierarchy using Lightweight Directory Access Protocol (LDAP). LDAP is the only system-supplied Active Directory Service Interfaces (ADSI) provider that supports directory searching. An administrator can make, alter, and delete objects that are found in the hierarchy. For more information, see [Using System.DirectoryServices](http://msdn.microsoft.com/library/ffa2f003-3a9a-4e2a-815e-825c8ddd7949).  
   
  When you create an instance of <xref:System.DirectoryServices.DirectorySearcher>, you specify the root you want to retrieve, and an optional list of properties to retrieve. The <xref:System.DirectoryServices.DirectorySearcher.SearchRoot%2A> property enables you to set additional properties to do the following tasks:  
   

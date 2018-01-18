@@ -184,7 +184,7 @@
 ## Remarks  
  The <xref:System.ComponentModel.BindingList%601.AddingNew> event occurs before a new object is added to the collection represented by the <xref:System.Collections.ObjectModel.Collection%601.Items%2A> property. This event is raised after the <xref:System.ComponentModel.BindingList%601.AddNew%2A> method is called, but before the new item is created and added to the internal list. By handling this event, the programmer can provide custom item creation and insertion behavior without being forced to derive from the <xref:System.ComponentModel.BindingList%601> class.  
   
- For more information about supplying custom new item functionality, see the <xref:System.ComponentModel.BindingList%601.AddNew%2A> method. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about supplying custom new item functionality, see the <xref:System.ComponentModel.BindingList%601.AddNew%2A> method. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -810,7 +810,7 @@
 ## Remarks  
  <xref:System.ComponentModel.BindingList%601.ListChanged> notifications for item value changes are only raised if the list item type implements the <xref:System.ComponentModel.INotifyPropertyChanged> interface.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -859,7 +859,7 @@
 ## Remarks  
  The <xref:System.ComponentModel.BindingList%601.AddingNew> event and the <xref:System.ComponentModel.BindingList%601.AddNew%2A> method allow custom-created items to be added to the list.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.ComponentModel.BindingList%601.OnAddingNew%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

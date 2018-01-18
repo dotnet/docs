@@ -52,7 +52,7 @@ This sample demonstrates how to pass string types by value as In parameters and 
   
 ## See Also  
  [Marshaling Strings](../../../docs/framework/interop/marshaling-strings.md)  
- [Platform Invoke Data Types](http://msdn.microsoft.com/en-us/16014d9f-d6bd-481e-83f0-df11377c550f)  
+ [Platform Invoke Data Types](http://msdn.microsoft.com/library/16014d9f-d6bd-481e-83f0-df11377c550f)  
  [Default Marshaling for Strings](../../../docs/framework/interop/default-marshaling-for-strings.md)  
  [Creating Prototypes in Managed Code](../../../docs/framework/interop/creating-prototypes-in-managed-code.md)  
  [Specifying a Character Set](../../../docs/framework/interop/specifying-a-character-set.md)

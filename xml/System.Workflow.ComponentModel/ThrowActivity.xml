@@ -46,7 +46,7 @@
    
   
 ## Examples  
- The following code shows the use of a single throw activity in a workflow to implement exception handling. This code example is part of the Throw SDK sample and is from the ThrowWorkflow.cs file. For more information, see [Using Throw](http://msdn.microsoft.com/en-us/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
+ The following code shows the use of a single throw activity in a workflow to implement exception handling. This code example is part of the Throw SDK sample and is from the ThrowWorkflow.cs file. For more information, see [Using Throw](http://msdn.microsoft.com/library/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
   
  [!code-csharp[WF_Samples#178](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#178)]
  [!code-vb[WF_Samples#178](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#178)]  
@@ -71,7 +71,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code shows the use of a single throw activity in a workflow to implement exception handling. This example includes invoking the constructor. This code example is part of the Throw SDK sample and is from the ThrowWorkflow.cs file. For more information, see [Using Throw](http://msdn.microsoft.com/en-us/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
+ The following code shows the use of a single throw activity in a workflow to implement exception handling. This example includes invoking the constructor. This code example is part of the Throw SDK sample and is from the ThrowWorkflow.cs file. For more information, see [Using Throw](http://msdn.microsoft.com/library/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
   
  [!code-csharp[WF_Samples#178](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#178)]
  [!code-vb[WF_Samples#178](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#178)]  
@@ -220,7 +220,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code shows the usage of a single throw activity within a workflow to implement exception handling. This example shows setting the <xref:System.Workflow.ComponentModel.ThrowActivity.FaultType%2A> to `null`. This code example is part of the Throw SDK sample and is from the ThrowWorkflow.cs file. For more information, see [Using Throw](http://msdn.microsoft.com/en-us/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
+ The following code shows the usage of a single throw activity within a workflow to implement exception handling. This example shows setting the <xref:System.Workflow.ComponentModel.ThrowActivity.FaultType%2A> to `null`. This code example is part of the Throw SDK sample and is from the ThrowWorkflow.cs file. For more information, see [Using Throw](http://msdn.microsoft.com/library/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
   
  [!code-csharp[WF_Samples#178](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#178)]
  [!code-vb[WF_Samples#178](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#178)]  

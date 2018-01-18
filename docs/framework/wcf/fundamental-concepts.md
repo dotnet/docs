@@ -163,4 +163,4 @@ HTTPS://cohowinery:8005/ServiceModelSamples/CalculatorService
 ## See Also  
  [What Is Windows Communication Foundation](../../../docs/framework/wcf/whats-wcf.md)  
  [Windows Communication Foundation Architecture](../../../docs/framework/wcf/architecture.md)  
- [Security Architecture](http://msdn.microsoft.com/en-us/16593476-d36a-408d-808c-ae6fd483e28f)
+ [Security Architecture](http://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f)

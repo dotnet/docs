@@ -32,7 +32,7 @@
 ## Examples  
  The following code example demonstrates a method, named `CreateQueue`, that initializes a <xref:System.Workflow.Runtime.WorkflowQueuingService> object by calling the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.GetService%2A?displayProperty=nameWithType> method. The code then uses the <xref:System.Workflow.Runtime.WorkflowQueuingService.Exists%2A> method to determine if a <xref:System.Workflow.Runtime.WorkflowQueue> with a specified name exists. If it does not exist, the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue%2A> method; if it does the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A> method.  
   
- This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/library/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
   
  [!code-csharp[WF_Samples#223](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#223)]
  [!code-vb[WF_Samples#223](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#223)]  
@@ -73,7 +73,7 @@
 ## Examples  
  The following code example demonstrates a method, named `CreateQueue`, that initializes a <xref:System.Workflow.Runtime.WorkflowQueuingService> object by calling the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.GetService%2A?displayProperty=nameWithType> method. The code then uses the <xref:System.Workflow.Runtime.WorkflowQueuingService.Exists%2A> method to determine if a <xref:System.Workflow.Runtime.WorkflowQueue> with a specified name exists. If it does not exist, the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue%2A> method; if it does the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A> method.  
   
- This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/library/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
   
  [!code-csharp[WF_Samples#223](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#223)]
  [!code-vb[WF_Samples#223](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#223)]  
@@ -109,7 +109,7 @@
 ## Examples  
  The following code example demonstrates a method that writes a string to the console, creates an instance of <xref:System.Workflow.Runtime.WorkflowQueuingService> by calling the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.GetService%2A?displayProperty=nameWithType> method. Finally, the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.DeleteWorkflowQueue%2A> method to delete the queue associated with a `QueueName` property on the current workflow.  
   
- This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/library/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
   
  [!code-csharp[WF_Samples#224](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#224)]
  [!code-vb[WF_Samples#224](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#224)]  
@@ -146,7 +146,7 @@
 ## Examples  
  The following code example demonstrates a method, named `CreateQueue`, that initializes a <xref:System.Workflow.Runtime.WorkflowQueuingService> object by calling the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.GetService%2A?displayProperty=nameWithType> method. The code then uses the <xref:System.Workflow.Runtime.WorkflowQueuingService.Exists%2A> method to determine if a <xref:System.Workflow.Runtime.WorkflowQueue> with a specified name exists. If it does not exist, the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue%2A> method; if it does the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A> method.  
   
- This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/library/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
   
  [!code-csharp[WF_Samples#223](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#223)]
  [!code-vb[WF_Samples#223](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#223)]  
@@ -182,7 +182,7 @@
 ## Examples  
  The following code example demonstrates a method, named `CreateQueue`, that initializes a <xref:System.Workflow.Runtime.WorkflowQueuingService> object by calling the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.GetService%2A?displayProperty=nameWithType> method. The code then uses the <xref:System.Workflow.Runtime.WorkflowQueuingService.Exists%2A> method to determine if a <xref:System.Workflow.Runtime.WorkflowQueue> with a specified name exists. If it does not exist, the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue%2A> method; if it does the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A> method.  
   
- This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/library/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
   
  [!code-csharp[WF_Samples#223](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#223)]
  [!code-vb[WF_Samples#223](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#223)]  

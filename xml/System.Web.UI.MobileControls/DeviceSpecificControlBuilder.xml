@@ -21,9 +21,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.DeviceSpecificControlBuilder> class is internally created and used by the page parser when parsing a [\<DeviceSpecific>](http://msdn.microsoft.com/en-us/6dca8eb9-d6f6-479a-abac-20fc9d485cc8) element.  
+ The <xref:System.Web.UI.MobileControls.DeviceSpecificControlBuilder> class is internally created and used by the page parser when parsing a [\<DeviceSpecific>](http://msdn.microsoft.com/library/6dca8eb9-d6f6-479a-abac-20fc9d485cc8) element.  
   
- The <xref:System.Web.UI.MobileControls.DeviceSpecificControlBuilder> class implements the following persistence behaviors: It ignores white space directly inside the control, and it allows only a [\<Choice>](http://msdn.microsoft.com/en-us/c81bee77-bb45-4211-be0f-e13a040b3c2d) element as child.  
+ The <xref:System.Web.UI.MobileControls.DeviceSpecificControlBuilder> class implements the following persistence behaviors: It ignores white space directly inside the control, and it allows only a [\<Choice>](http://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d) element as child.  
   
  ]]></format>
     </remarks>

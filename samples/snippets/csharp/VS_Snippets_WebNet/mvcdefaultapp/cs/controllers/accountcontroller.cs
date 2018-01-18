@@ -238,7 +238,7 @@ namespace MvcApplication1.Controllers
 
         private static string ErrorCodeToString(MembershipCreateStatus createStatus)
         {
-            // See http://msdn.microsoft.com/en-us/library/system.web.security.membershipcreatestatus.aspx for
+            // See http://msdn.microsoft.com/library/system.web.security.membershipcreatestatus.aspx for
             // a full list of status codes.
             switch (createStatus)
             {

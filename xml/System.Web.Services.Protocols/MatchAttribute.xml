@@ -23,7 +23,7 @@
 ## Remarks  
  Text pattern matching allows an XML Web service to leverage existing HTML content by parsing it using regular expressions. an XML Web service specifies the content it wants to parse in a Service Description using match elements. These match elements specify several items: the regular expression for parsing the contents of an existing HTML page, whether the parsing must be case-insensitive, and how many instances of content that matches the regular expression should be returned. When a client builds a proxy class using the Wsdl.exe tool, methods of the proxy class include a <xref:System.Web.Services.Protocols.MatchAttribute> detailing the match elements found in the Service Description.  
   
- For more information on text pattern matching, see [&#91;\<topic://cpconcreatingclientsthatparsecontentofotherwebpages>&#93;](http://msdn.microsoft.com/en-us/7a3be8ac-c770-43fa-8525-e318a1c9f0bf).  
+ For more information on text pattern matching, see [&#91;\<topic://cpconcreatingclientsthatparsecontentofotherwebpages>&#93;](http://msdn.microsoft.com/library/7a3be8ac-c770-43fa-8525-e318a1c9f0bf).  
   
    
   

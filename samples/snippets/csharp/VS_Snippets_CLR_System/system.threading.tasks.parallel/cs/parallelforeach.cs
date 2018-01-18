@@ -18,7 +18,7 @@ class ForEachWithThreadLocal
     //      When a thread is done, it safely adds its local sum to the global sum.
     //      After the loop is complete, the global sum is printed out.
     // Documentation:
-    //		http://msdn.microsoft.com/en-us/library/dd990270(VS.100).aspx
+    //		http://msdn.microsoft.com/library/dd990270(VS.100).aspx
     static void Main()
     {
         // The sum of these elements is 40.

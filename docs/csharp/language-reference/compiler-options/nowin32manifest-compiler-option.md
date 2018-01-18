@@ -16,13 +16,13 @@ caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
-# /nowin32manifest (C# Compiler Options)
-Use the **/nowin32manifest** option to instruct the compiler not to embed any application manifest into the executable file.  
+# -nowin32manifest (C# Compiler Options)
+Use the **-nowin32manifest** option to instruct the compiler not to embed any application manifest into the executable file.  
   
 ## Syntax  
   
 ```console  
-/nowin32manifest  
+-nowin32manifest  
 ```  
   
 ## Remarks  
@@ -30,7 +30,7 @@ Use the **/nowin32manifest** option to instruct the compiler not to embed any ap
   
  In Visual Studio, set this option in the **Application Property** page by selecting the **Create Application Without a Manifest** option in the **Manifest** drop down list. For more information, see [Application Page, Project Designer (C#)](/visualstudio/ide/reference/application-page-project-designer-csharp).  
   
- For more information about manifest creation, see [/win32manifest (C# Compiler Options)](../../../csharp/language-reference/compiler-options/win32manifest-compiler-option.md).  
+ For more information about manifest creation, see [-win32manifest (C# Compiler Options)](../../../csharp/language-reference/compiler-options/win32manifest-compiler-option.md).  
   
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  

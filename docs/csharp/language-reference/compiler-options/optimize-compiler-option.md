@@ -20,25 +20,25 @@ caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
-# /optimize (C# Compiler Options)
-The **/optimize** option enables or disables optimizations performed by the compiler to make your output file smaller, faster, and more efficient.  
+# -optimize (C# Compiler Options)
+The **-optimize** option enables or disables optimizations performed by the compiler to make your output file smaller, faster, and more efficient.  
   
 ## Syntax  
   
 ```console  
-/optimize[+ | -]  
+-optimize[+ | -]  
 ```  
   
 ## Remarks  
- **/optimize** also tells the common language runtime to optimize code at runtime.  
+ **-optimize** also tells the common language runtime to optimize code at runtime.  
   
- By default, optimizations are disabled. Specify **/optimize+** to enable optimizations.  
+ By default, optimizations are disabled. Specify **-optimize+** to enable optimizations.  
   
- When building a module to be used by an assembly, use the same **/optimize** settings as those of the assembly.  
+ When building a module to be used by an assembly, use the same **-optimize** settings as those of the assembly.  
   
- **/o** is the short form of **/optimize**.  
+ **-o** is the short form of **-optimize**.  
   
- It is possible to combine the **/optimize** and [/debug](../../../csharp/language-reference/compiler-options/debug-compiler-option.md) options.  
+ It is possible to combine the **-optimize** and [-debug](../../../csharp/language-reference/compiler-options/debug-compiler-option.md) options.  
   
 ### To set this compiler option in the Visual Studio development environment  
   
@@ -54,7 +54,7 @@ The **/optimize** option enables or disables optimizations performed by the comp
  Compile `t2.cs` and enable compiler optimizations:  
   
 ```console  
-csc t2.cs /optimize  
+csc t2.cs -optimize  
 ```  
   
 ## See Also  

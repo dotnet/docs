@@ -16,13 +16,13 @@ caps.latest.revision: 33
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
-# /langversion (C# Compiler Options)
+# -langversion (C# Compiler Options)
 Causes the compiler to accept only syntax that is included in the chosen C# language specification.  
   
 ## Syntax  
   
 ```console  
-/langversion:option  
+-langversion:option  
 ```  
   
 ## Arguments  
@@ -49,13 +49,13 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
 
   
 ## Remarks  
- Metadata referenced by your C# application is not subject to **/langversion** compiler option.  
+ Metadata referenced by your C# application is not subject to **-langversion** compiler option.  
   
- Because each version of the C# compiler contains extensions to the language specification, **/langversion** does not give you the equivalent functionality of an earlier version of the compiler.  
+ Because each version of the C# compiler contains extensions to the language specification, **-langversion** does not give you the equivalent functionality of an earlier version of the compiler.  
  
  Additionally, while C# version updates generally coincide with major .Net Framework releases, the new syntax and features are not necessarily tied to that specific framework version. While the new features will definitely require a new compiler update that is also released alongside the C# revision, each specific feature has its own minimum .Net API or common language runtime requirements that may allow it to run on downlevel frameworks by including NuGet packages or other libraries.
   
- Regardless of which **/langversion** setting you use, you will use the current version of the common language runtime to create your .exe or .dll. One exception is friend assemblies and [/moduleassemblyname (C# Compiler Option)](../../../csharp/language-reference/compiler-options/moduleassemblyname-compiler-option.md), which work under **/langversion:ISO-1**.  
+ Regardless of which **-langversion** setting you use, you will use the current version of the common language runtime to create your .exe or .dll. One exception is friend assemblies and [-moduleassemblyname (C# Compiler Option)](../../../csharp/language-reference/compiler-options/moduleassemblyname-compiler-option.md), which work under **-langversion:ISO-1**.  
   
 ### To set this compiler option in the Visual Studio development environment  
   

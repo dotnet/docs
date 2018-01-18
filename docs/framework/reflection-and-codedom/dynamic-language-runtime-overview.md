@@ -49,10 +49,10 @@ The *dynamic language runtime* (DLR) is a runtime environment that adds a set of
   
  `scriptobj.Count += 1;`  
   
- Like the CLR, the DLR is a part of the .NET Framework and is provided with the .NET Framework and Visual Studio installation packages. The open-source version of the DLR is also available for download on the [CodePlex](http://go.microsoft.com/fwlink/?LinkId=141028) Web site.  
+ Like the CLR, the DLR is a part of the .NET Framework and is provided with the .NET Framework and Visual Studio installation packages. The open-source version of the DLR is also available for download on the [Iron Languages](https://github.com/IronLanguages/dlr) Github.  
   
 > [!NOTE]
->  The open-source version of the DLR has all the features of the DLR that is included in Visual Studio and the .NET Framework. It also provides additional support for language implementers. For more information, see the documentation on the [CodePlex](http://go.microsoft.com/fwlink/?LinkId=141028) Web site.  
+>  The open-source version of the DLR has all the features of the DLR that is included in Visual Studio and the .NET Framework. It also provides additional support for language implementers. For more information, see the documentation on the [Iron Languages](https://github.com/IronLanguages/dlr) Github. 
   
  Examples of languages developed by using the DLR include the following:  
   

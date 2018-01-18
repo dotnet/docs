@@ -19,12 +19,14 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This interface is implemented by the <xref:System.Runtime.Remoting.ObjRef.ChannelInfo%2A?displayProperty=fullName> property. It provides access to transport specific information contributed by the channels that are able to receive calls in the process or application domain where the object lives. This interface might also be used when building custom <xref:System.Runtime.Remoting.ObjRef> classes.  
+ This interface is implemented by the <xref:System.Runtime.Remoting.ObjRef.ChannelInfo%2A?displayProperty=nameWithType> property. It provides access to transport specific information contributed by the channels that are able to receive calls in the process or application domain where the object lives. This interface might also be used when building custom <xref:System.Runtime.Remoting.ObjRef> classes.  
   
  When an existing object instance is marshaled to produce a <xref:System.Runtime.Remoting.ObjRef>, the <xref:System.Runtime.Remoting.IChannelInfo.ChannelData%2A> is copied from the channel (see <xref:System.Runtime.Remoting.Channels.IChannelReceiver>) for each registered channel and stored in the <xref:System.Runtime.Remoting.ObjRef>. When the <xref:System.Runtime.Remoting.ObjRef> is unmarshaled at its destination, the <xref:System.Runtime.Remoting.IChannelInfo.ChannelData%2A> provided through the <xref:System.Runtime.Remoting.IChannelInfo> interface can be examined and used by corresponding channels in that process or application domain to create a transport message sink that manages the communication between the proxy and the server object.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.Remoting.ObjRef" />
+    <altmember cref="T:System.AppDomain" />
   </Docs>
   <Members>
     <Member MemberName="ChannelData">

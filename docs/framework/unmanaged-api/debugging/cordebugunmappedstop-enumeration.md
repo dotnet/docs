@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugUnmappedStop"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugUnmappedStop enumeration [.NET Framework debugging]"
 ms.assetid: a684f7d7-d0c2-4690-b721-639e613f11f8
@@ -28,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugUnmappedStop Enumeration
 Specifies the type of unmapped code that can trigger a halt in code execution by the stepper.  

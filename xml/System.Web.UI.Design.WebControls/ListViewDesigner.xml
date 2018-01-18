@@ -36,6 +36,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListView" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,6 +59,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
       </Docs>
     </Member>
     <Member MemberName="ActionLists">
@@ -76,6 +78,7 @@
         <summary>Gets the list of items that are is used to create a smart tag panel for the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</summary>
         <value>The <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> object that is associated with this designer.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -98,10 +101,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the two required templates for the <xref:System.Web.UI.WebControls.ListView> control (<xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A?displayProperty=fullName> and <xref:System.Web.UI.WebControls.ListView.ItemTemplate%2A?displayProperty=fullName>) are not defined, the <xref:System.Web.UI.Design.WebControls.ListViewDesigner.GetDesignTimeHtml> method calls the <xref:System.Web.UI.Design.WebControls.ListViewDesigner.GetEmptyDesignTimeHtml%2A> method to generate the HTML markup.  
+ If the two required templates for the <xref:System.Web.UI.WebControls.ListView> control (<xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A?displayProperty=nameWithType> and <xref:System.Web.UI.WebControls.ListView.ItemTemplate%2A?displayProperty=nameWithType>) are not defined, the <xref:System.Web.UI.Design.WebControls.ListViewDesigner.GetDesignTimeHtml> method calls the <xref:System.Web.UI.Design.WebControls.ListViewDesigner.GetEmptyDesignTimeHtml%2A> method to generate the HTML markup.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.LayoutTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.ItemTemplate" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.ListViewDesigner.GetEmptyDesignTimeHtml" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -124,6 +131,7 @@
         <summary>Generates the HTML markup that is used to render the associated <see cref="T:System.Web.UI.WebControls.ListView" /> control at design time, and populates the specified collection with the currently selected designer region.</summary>
         <returns>The HTML markup that is used to render the associated <see cref="T:System.Web.UI.WebControls.ListView" /> control at design time.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
       </Docs>
     </Member>
     <Member MemberName="GetEditableDesignerRegionContent">
@@ -153,6 +161,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
       </Docs>
     </Member>
     <Member MemberName="GetEmptyDesignTimeHtml">
@@ -175,10 +184,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.ListViewDesigner.GetEmptyDesignTimeHtml%2A> method is used by the designer to render the <xref:System.Web.UI.WebControls.ListView> control at design time if the two required templates for the <xref:System.Web.UI.WebControls.ListView> control (<xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A?displayProperty=fullName> and <xref:System.Web.UI.WebControls.ListView.ItemTemplate%2A?displayProperty=fullName>) are not defined. The <xref:System.Web.UI.Design.WebControls.ListViewDesigner.GetEmptyDesignTimeHtml%2A> method calls the <xref:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml%28System.String%29> method to create a placeholder that displays the type and the ID of the control, and additional instructions for the user.  
+ The <xref:System.Web.UI.Design.WebControls.ListViewDesigner.GetEmptyDesignTimeHtml%2A> method is used by the designer to render the <xref:System.Web.UI.WebControls.ListView> control at design time if the two required templates for the <xref:System.Web.UI.WebControls.ListView> control (<xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A?displayProperty=nameWithType> and <xref:System.Web.UI.WebControls.ListView.ItemTemplate%2A?displayProperty=nameWithType>) are not defined. The <xref:System.Web.UI.Design.WebControls.ListViewDesigner.GetEmptyDesignTimeHtml%2A> method calls the <xref:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml%28System.String%29> method to create a placeholder that displays the type and the ID of the control, and additional instructions for the user.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.LayoutTemplate" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -209,6 +221,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
       </Docs>
     </Member>
     <Member MemberName="OnComponentChanged">
@@ -288,10 +301,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.ListViewDesigner.SampleRowCount%2A> property always returns 21. This causes 21 records to be displayed in the design surface for the <xref:System.Web.UI.WebControls.ListView> control. An exception is if there is a <xref:System.Web.UI.WebControls.DataPager> control inside the <xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A?displayProperty=fullName> template and the <xref:System.Web.UI.WebControls.DataPager.PageSize%2A?displayProperty=fullName> property is set to a value less than 21. In that case, the number of records to display is the value of the <xref:System.Web.UI.WebControls.DataPager.PageSize%2A?displayProperty=fullName> property. The maximum number of records that the <xref:System.Web.UI.WebControls.ListView> control will display on the designer surface is 21 records.  
+ The <xref:System.Web.UI.Design.WebControls.ListViewDesigner.SampleRowCount%2A> property always returns 21. This causes 21 records to be displayed in the design surface for the <xref:System.Web.UI.WebControls.ListView> control. An exception is if there is a <xref:System.Web.UI.WebControls.DataPager> control inside the <xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A?displayProperty=nameWithType> template and the <xref:System.Web.UI.WebControls.DataPager.PageSize%2A?displayProperty=nameWithType> property is set to a value less than 21. In that case, the number of records to display is the value of the <xref:System.Web.UI.WebControls.DataPager.PageSize%2A?displayProperty=nameWithType> property. The maximum number of records that the <xref:System.Web.UI.WebControls.ListView> control will display on the designer surface is 21 records.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPager.PageSize" />
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="P:System.Web.UI.WebControls.ListView.LayoutTemplate" />
       </Docs>
     </Member>
     <Member MemberName="SetEditableDesignerRegionContent">
@@ -315,6 +332,7 @@
         <param name="content">The content to assign for the editable design region.</param>
         <summary>Specifies the content for an editable region of the <see cref="T:System.Web.UI.WebControls.ListView" /> control at design time.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
       </Docs>
     </Member>
     <Member MemberName="UsePreviewControl">
@@ -334,7 +352,18 @@
         <value>
           <see langword="true" /> in all cases.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDesignTimeHtml">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Generates the HTML markup that is used to render the associated <see cref="T:System.Web.UI.WebControls.ListView" /> control at design time.</summary>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

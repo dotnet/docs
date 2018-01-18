@@ -9,13 +9,18 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "WCF Data Services, configuring"
 ms.assetid: 59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Configuring the Data Service (WCF Data Services)
 With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can create data services that expose [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feeds. Data in these feeds can come from a variety of data sources. [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] uses data providers to expose this data as an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed. These providers include an [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider, a reflection provider, and a set of custom data service provider interfaces. The provider implementation defines the data model for the service. For more information, see [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md).  
@@ -42,7 +47,7 @@ With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can create
 |<xref:System.Data.Services.DataServiceConfiguration.MaxExpandCount%2A>|Enables you to limit the size of a response by limiting the number of related entities that can be included in a single request by using the `$expand` query operator. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] see [OData: URI Conventions](http://go.microsoft.com/fwlink/?LinkId=185564) and [Loading Deferred Content](../../../../docs/framework/data/wcf/loading-deferred-content-wcf-data-services.md).|  
 |<xref:System.Data.Services.DataServiceConfiguration.MaxExpandDepth%2A>|Enables you to limit the size of a response by limiting the depth of the graph of related entities that can be included in a single request by using the `$expand` query operator. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] see [OData: URI Conventions](http://go.microsoft.com/fwlink/?LinkId=185564) and [Loading Deferred Content](../../../../docs/framework/data/wcf/loading-deferred-content-wcf-data-services.md).|  
 |<xref:System.Data.Services.DataServiceConfiguration.MaxObjectCountOnInsert%2A>|Enables you to limit the number of entities to be inserted that can be contained in a single POST request.|  
-|<xref:System.Data.Services.DataServiceBehavior.MaxProtocolVersion%2A>|Defines the version of the Atom protocol that is used by the data service. When the value of the <xref:System.Data.Services.DataServiceBehavior.MaxProtocolVersion%2A> is set to a value less than the maximum value of <xref:System.Data.Services.Common.DataServiceProtocolVersion>, the latest functionality of [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] is not available to clients accessing the data service. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Data Service Versioning](../../../../docs/framework/data/wcf/data-service-versioning-wcf-data-services.md).|  
+|<xref:System.Data.Services.DataServiceBehavior.MaxProtocolVersion%2A>|Defines the version of the Atom protocol that is used by the data service. When the value of the <xref:System.Data.Services.DataServiceBehavior.MaxProtocolVersion%2A> is set to a value less than the maximum value of <xref:System.Data.Services.Common.DataServiceProtocolVersion>, the latest functionality of [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] is not available to clients accessing the data service. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Data Service Versioning](../../../../docs/framework/data/wcf/data-service-versioning-wcf-data-services.md).|  
 |<xref:System.Data.Services.DataServiceConfiguration.MaxResultsPerCollection%2A>|Enables you to limit the size of a response by limiting the number of entities in each entity set that is returned as a data feed.|  
 |<xref:System.Data.Services.DataServiceConfiguration.RegisterKnownType%2A>|Adds a data type to the list of types that are recognized by the data service.|  
 |<xref:System.Data.Services.DataServiceConfiguration.SetEntitySetAccessRule%2A>|Sets the access rights for entity set resources that are available on the data service. An asterisk (`*`) value can be supplied for the name parameter to set access for all remaining entity sets to the same level. We recommend that you set access to entity sets to provide the least privilege access to data service resources that are required by client applications. For more information, see [Securing WCF Data Services](../../../../docs/framework/data/wcf/securing-wcf-data-services.md). For examples of the minimum access rights required for a given URI and HTTP action, see the table in the [Minimum Resource Access Requirements](../../../../docs/framework/data/wcf/configuring-the-data-service-wcf-data-services.md#accessRequirements) section.|  
@@ -87,5 +92,5 @@ With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can create
  For more information, see [Data Service Versioning](../../../../docs/framework/data/wcf/data-service-versioning-wcf-data-services.md).  
   
 ## See Also  
- [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)   
+ [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)  
  [Hosting the Data Service](../../../../docs/framework/data/wcf/hosting-the-data-service-wcf-data-services.md)

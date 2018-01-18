@@ -16,10 +16,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class corresponds to the [\&lt;performanceCounter\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/performancecounter-element-network-settings.md) configuration element. This class provides programmatic access to information that can be stored in configuration files.  
+ This class corresponds to the [&lt;performanceCounter&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/performancecounter-element-network-settings.md) configuration element. This class provides programmatic access to information that can be stored in configuration files.  
   
  ]]></format>
     </remarks>
+    <altmember cref="N:System.Diagnostics" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,6 +67,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.Diagnostics" />
       </Docs>
     </Member>
     <Member MemberName="Properties">

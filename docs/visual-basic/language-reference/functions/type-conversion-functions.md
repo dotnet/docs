@@ -1,13 +1,10 @@
 ---
 title: "Type Conversion Functions (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.CUShort"
@@ -42,73 +39,56 @@ f1_keywords:
   - "CInt"
   - "CUInt"
   - "CChar"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "CDate function"
   - "CByte function"
-  - "Integer data type, converting"
-  - "string conversion, conversion functions"
+  - "Integer data type [Visual Basic], converting"
+  - "string conversion [Visual Basic], conversion functions"
   - "fractions"
   - "data types [Visual Basic], converting"
   - "text, converting"
   - "CDec function"
-  - "Char data type, converting"
-  - "type conversion, functions for"
-  - "Single data type, converting"
-  - "numbers, rounding"
-  - "rounding numbers, type conversion"
+  - "Char data type [Visual Basic], converting"
+  - "type conversion [Visual Basic], functions for"
+  - "Single data type [Visual Basic], converting"
+  - "numbers [Visual Basic], rounding"
+  - "rounding numbers [Visual Basic], type conversion"
   - "CUShort function"
-  - "Long data type, converting"
-  - "return values, data types"
-  - "single-precision numbers, converting"
-  - "data type conversion, functions for"
+  - "Long data type [Visual Basic], converting"
+  - "return values [Visual Basic], data types"
+  - "single-precision numbers [Visual Basic], converting"
+  - "data type conversion [Visual Basic], functions for"
   - "CStr function"
-  - "times, converting"
+  - "times [Visual Basic], converting"
   - "CSng function"
-  - "conversions, type conversion functions"
+  - "conversions [Visual Basic], type conversion functions"
   - "CBool function"
   - "CDbl function"
   - "CUInt function"
-  - "Currency data type, conversion functions"
-  - "numbers, converting"
-  - "Double data type, converting"
+  - "Currency data type [Visual Basic], conversion functions"
+  - "numbers [Visual Basic], converting"
+  - "Double data type [Visual Basic], converting"
   - "CLng function"
   - "CSByte function"
   - "double-precision numbers"
-  - "Decimal data type, converting"
-  - "Boolean data type, converting"
-  - "integers, type conversion functions"
-  - "dates, converting"
+  - "Decimal data type [Visual Basic], converting"
+  - "Boolean data type [Visual Basic], converting"
+  - "integers [Visual Basic], type conversion functions"
+  - "dates [Visual Basic], converting"
   - "CULng function"
   - "CInt function"
-  - "Date data type, converting"
-  - "Byte data type, converting"
-  - "String data type, converting"
+  - "Date data type [Visual Basic], converting"
+  - "Byte data type [Visual Basic], converting"
+  - "String data type [Visual Basic], converting"
   - "CChar function"
   - "banker's rounding"
-  - "Short data type, converting"
-  - "rounding numbers, banker's rounding"
-  - "type conversion, Visual Basic vs. .NET Framework"
+  - "Short data type [Visual Basic], converting"
+  - "rounding numbers [Visual Basic], banker's rounding"
+  - "type conversion [Visual Basic], Visual Basic vs. .NET Framework"
 ms.assetid: d9d8d165-f967-44ff-a6cd-598e4740a99e
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Type Conversion Functions (Visual Basic)
 These functions are compiled inline, meaning the conversion code is part of the code that evaluates the expression. Sometimes there is no call to a procedure to accomplish the conversion, which improves performance. Each function coerces an expression to a specific data type.  
@@ -177,13 +157,13 @@ CUShort(expression)
   
      `CInt` and `CLng` differ from the <xref:Microsoft.VisualBasic.Conversion.Int%2A> and <xref:Microsoft.VisualBasic.Conversion.Fix%2A> functions, which truncate, rather than round, the fractional part of a number. Also, `Fix` and `Int` always return a value of the same data type as you pass in.  
   
--   **Date/Time Conversions.** Use the <xref:Microsoft.VisualBasic.Information.IsDate%2A> function to determine if a value can be converted to a date and time. `CDate` recognizes date literals and time literals but not numeric values. To convert a Visual Basic 6.0 `Date` value to a `Date` value in Visual Basic 2005 or later versions, you can use the <xref:System.DateTime.FromOADate%2A?displayProperty=fullName> method.  
+-   **Date/Time Conversions.** Use the <xref:Microsoft.VisualBasic.Information.IsDate%2A> function to determine if a value can be converted to a date and time. `CDate` recognizes date literals and time literals but not numeric values. To convert a Visual Basic 6.0 `Date` value to a `Date` value in Visual Basic 2005 or later versions, you can use the <xref:System.DateTime.FromOADate%2A?displayProperty=nameWithType> method.  
   
 -   **Neutral Date/Time Values.** The [Date Data Type](../../../visual-basic/language-reference/data-types/date-data-type.md) always contains both date and time information. For purposes of type conversion, Visual Basic considers 1/1/0001 (January 1 of the year 1) to be a *neutral value* for the date, and 00:00:00 (midnight) to be a neutral value for the time. If you convert a `Date` value to a string, `CStr` does not include neutral values in the resulting string. For example, if you convert `#January 1, 0001 9:30:00#` to a string, the result is "9:30:00 AM"; the date information is suppressed. However, the date information is still present in the original `Date` value and can be recovered with functions such as <xref:Microsoft.VisualBasic.DateAndTime.DatePart%2A> function.  
   
 -   **Culture Sensitivity.** The type conversion functions involving strings perform conversions based on the current culture settings for the application. For example, `CDate` recognizes date formats according to the locale setting of your system. You must provide the day, month, and year in the correct order for your locale, or the date might not be interpreted correctly. A long date format is not recognized if it contains a day-of-the-week string, such as "Wednesday".  
   
-     If you need to convert to or from a string representation of a value in a format other than the one specified by your locale, you cannot use the Visual Basic type conversion functions. To do this, use the `ToString(IFormatProvider)` and `Parse(String, IFormatProvider)` methods of that value's type. For example, use <xref:System.Double.Parse%2A?displayProperty=fullName> when converting a string to a `Double`, and use <xref:System.Double.ToString%2A?displayProperty=fullName> when converting a value of type `Double` to a string.  
+     If you need to convert to or from a string representation of a value in a format other than the one specified by your locale, you cannot use the Visual Basic type conversion functions. To do this, use the `ToString(IFormatProvider)` and `Parse(String, IFormatProvider)` methods of that value's type. For example, use <xref:System.Double.Parse%2A?displayProperty=nameWithType> when converting a string to a `Double`, and use <xref:System.Double.ToString%2A?displayProperty=nameWithType> when converting a value of type `Double` to a string.  
   
 ## CType Function  
  The [CType Function](../../../visual-basic/language-reference/functions/ctype-function.md) takes a second argument, `typename`, and coerces `expression` to `typename`, where `typename` can be any data type, structure, class, or interface to which there exists a valid conversion.  
@@ -281,16 +261,16 @@ CUShort(expression)
  [!code-vb[VbVbalrFunctions#18](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_18.vb)]  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Strings.Asc%2A>   
- <xref:Microsoft.VisualBasic.Strings.AscW%2A>   
- <xref:Microsoft.VisualBasic.Strings.Chr%2A>   
- <xref:Microsoft.VisualBasic.Strings.ChrW%2A>   
- <xref:Microsoft.VisualBasic.Conversion.Int%2A>   
- <xref:Microsoft.VisualBasic.Conversion.Fix%2A>   
- <xref:Microsoft.VisualBasic.Strings.Format%2A>   
- <xref:Microsoft.VisualBasic.Conversion.Hex%2A>   
- <xref:Microsoft.VisualBasic.Conversion.Oct%2A>   
- <xref:Microsoft.VisualBasic.Conversion.Str%2A>   
- <xref:Microsoft.VisualBasic.Conversion.Val%2A>   
- [Conversion Functions](../../../visual-basic/language-reference/functions/conversion-functions.md)   
+ <xref:Microsoft.VisualBasic.Strings.Asc%2A>  
+ <xref:Microsoft.VisualBasic.Strings.AscW%2A>  
+ <xref:Microsoft.VisualBasic.Strings.Chr%2A>  
+ <xref:Microsoft.VisualBasic.Strings.ChrW%2A>  
+ <xref:Microsoft.VisualBasic.Conversion.Int%2A>  
+ <xref:Microsoft.VisualBasic.Conversion.Fix%2A>  
+ <xref:Microsoft.VisualBasic.Strings.Format%2A>  
+ <xref:Microsoft.VisualBasic.Conversion.Hex%2A>  
+ <xref:Microsoft.VisualBasic.Conversion.Oct%2A>  
+ <xref:Microsoft.VisualBasic.Conversion.Str%2A>  
+ <xref:Microsoft.VisualBasic.Conversion.Val%2A>  
+ [Conversion Functions](../../../visual-basic/language-reference/functions/conversion-functions.md)  
  [Type Conversions in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)

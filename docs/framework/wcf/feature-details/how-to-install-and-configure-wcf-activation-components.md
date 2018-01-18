@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "HTTP activation [WCF]"
 ms.assetid: 33a7054a-73ec-464d-83e5-b203aeded658
 caps.latest.revision: 16
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Install and Configure WCF Activation Components
 This topic describes the steps required to set up Windows Process Activation Service (also known as WAS) on [!INCLUDE[wv](../../../../includes/wv-md.md)] to host [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] services that do not communicate over HTTP network protocols. The following sections outline the steps for this configuration:  
@@ -107,7 +109,7 @@ This topic describes the steps required to set up Windows Process Activation Ser
     >  This command is a single line of text.  
   
 ## See Also  
- [TCP Activation](../../../../docs/framework/wcf/samples/tcp-activation.md)   
- [MSMQ Activation](../../../../docs/framework/wcf/samples/msmq-activation.md)   
- [NamedPipe Activation](../../../../docs/framework/wcf/samples/namedpipe-activation.md)   
+ [TCP Activation](../../../../docs/framework/wcf/samples/tcp-activation.md)  
+ [MSMQ Activation](../../../../docs/framework/wcf/samples/msmq-activation.md)  
+ [NamedPipe Activation](../../../../docs/framework/wcf/samples/namedpipe-activation.md)  
  [Windows Server App Fabric Hosting Features](http://go.microsoft.com/fwlink/?LinkId=201276)

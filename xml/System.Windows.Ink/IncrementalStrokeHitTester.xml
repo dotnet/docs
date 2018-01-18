@@ -49,6 +49,7 @@
         <param name="points">The points to add</param>
         <summary>Adds points to the <see cref="T:System.Windows.Ink.IncrementalHitTester" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Ink.IncrementalHitTester.AddPointsCore(System.Collections.Generic.IEnumerable{System.Windows.Point})" />
       </Docs>
     </Member>
     <Member MemberName="OnStrokeHit">

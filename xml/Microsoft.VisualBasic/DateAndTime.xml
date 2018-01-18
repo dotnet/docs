@@ -115,6 +115,13 @@ NextTime = NextTime.AddDays(3.4)  ' Increment by 3 2/5 days.
         <exception cref="T:System.ArgumentException">
           <paramref name="Interval" /> is not valid.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">Calculated date is before 00:00:00 on January 1 of the year 1, or later than 23:59:59 on December 31, 9999.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.DateAndTime.DateDiff" />
+        <altmember cref="Overload:Microsoft.VisualBasic.DateAndTime.DatePart" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Day(System.DateTime)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Now" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Year(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="DateAdd">
@@ -195,6 +202,13 @@ NextTime = NextTime.AddDays(3.4)  ' Increment by 3 2/5 days.
         <exception cref="T:System.ArgumentException">
           <paramref name="Interval" /> is not valid.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">Calculated date is before 00:00:00 on January 1 of the year 1, or later than 23:59:59 on December 31, 9999.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.DateAndTime.DateDiff" />
+        <altmember cref="Overload:Microsoft.VisualBasic.DateAndTime.DatePart" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Day(System.DateTime)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Now" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Year(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="DateDiff">
@@ -252,7 +266,7 @@ NextTime = NextTime.AddDays(3.4)  ' Increment by 3 2/5 days.
   
      For cultures such as Japanese that have multiple eras, the `DateDiff` method does not return a difference in years if the difference spans two or more eras. Instead, you can calculate the difference in values returned by the <xref:System.DateTime.Year%2A> property, as shown in the following example: `date2.Year - date1.Year`.  
   
--   **Other Intervals.** Since every `Date` value is supported by a <xref:System.DateTime> structure, its methods give you additional options in finding time intervals. For example, you can use the `Subtract` method in either of its overloaded forms: <xref:System.DateTime.Subtract%2A?displayProperty=fullName> subtracts a <xref:System.TimeSpan> from a `Date` variable to return another `Date` value, and <xref:System.DateTime.Subtract%2A?displayProperty=fullName> subtracts a `Date` value to return a <xref:System.TimeSpan>. You can time a process to find out how many milliseconds it takes, as the following example shows.  
+-   **Other Intervals.** Since every `Date` value is supported by a <xref:System.DateTime> structure, its methods give you additional options in finding time intervals. For example, you can use the `Subtract` method in either of its overloaded forms: <xref:System.DateTime.Subtract%2A?displayProperty=nameWithType> subtracts a <xref:System.TimeSpan> from a `Date` variable to return another `Date` value, and <xref:System.DateTime.Subtract%2A?displayProperty=nameWithType> subtracts a `Date` value to return a <xref:System.TimeSpan>. You can time a process to find out how many milliseconds it takes, as the following example shows.  
   
      [!code-vb[VbVbalrFunctions#61](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#61)]  
   
@@ -306,6 +320,15 @@ NextTime = NextTime.AddDays(3.4)  ' Increment by 3 2/5 days.
           <paramref name="Date1" />, <paramref name="Date2" />, or <paramref name="DayofWeek" /> is out of range.</exception>
         <exception cref="T:System.InvalidCastException">
           <paramref name="Date1" /> or <paramref name="Date2" /> is of an invalid type.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.DateAndTime.DateAdd" />
+        <altmember cref="Overload:Microsoft.VisualBasic.DateAndTime.DatePart" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Day(System.DateTime)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Now" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Year(System.DateTime)" />
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.TimeSpan" />
       </Docs>
     </Member>
     <Member MemberName="DateDiff">
@@ -363,7 +386,7 @@ NextTime = NextTime.AddDays(3.4)  ' Increment by 3 2/5 days.
   
      For cultures such as Japanese that have multiple eras, the `DateDiff` method does not return a difference in years if the difference spans two or more eras. Instead, you can calculate the difference in values returned by the <xref:System.DateTime.Year%2A> property, as shown in the following example: `date2.Year - date1.Year`.  
   
--   **Other Intervals.** Since every `Date` value is supported by a <xref:System.DateTime> structure, its methods give you additional options in finding time intervals. For example, you can use the `Subtract` method in either of its overloaded forms: <xref:System.DateTime.Subtract%2A?displayProperty=fullName> subtracts a <xref:System.TimeSpan> from a `Date` variable to return another `Date` value, and <xref:System.DateTime.Subtract%2A?displayProperty=fullName> subtracts a `Date` value to return a <xref:System.TimeSpan>. You can time a process to find out how many milliseconds it takes, as the following example shows.  
+-   **Other Intervals.** Since every `Date` value is supported by a <xref:System.DateTime> structure, its methods give you additional options in finding time intervals. For example, you can use the `Subtract` method in either of its overloaded forms: <xref:System.DateTime.Subtract%2A?displayProperty=nameWithType> subtracts a <xref:System.TimeSpan> from a `Date` variable to return another `Date` value, and <xref:System.DateTime.Subtract%2A?displayProperty=nameWithType> subtracts a `Date` value to return a <xref:System.TimeSpan>. You can time a process to find out how many milliseconds it takes, as the following example shows.  
   
      [!code-vb[VbVbalrFunctions#61](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#61)]  
   
@@ -417,6 +440,15 @@ NextTime = NextTime.AddDays(3.4)  ' Increment by 3 2/5 days.
           <paramref name="Date1" />, <paramref name="Date2" />, or <paramref name="DayofWeek" /> is out of range.</exception>
         <exception cref="T:System.InvalidCastException">
           <paramref name="Date1" /> or <paramref name="Date2" /> is of an invalid type.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.DateAndTime.DateAdd" />
+        <altmember cref="Overload:Microsoft.VisualBasic.DateAndTime.DatePart" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Day(System.DateTime)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Now" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Year(System.DateTime)" />
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.TimeSpan" />
       </Docs>
     </Member>
     <Member MemberName="DatePart">
@@ -511,6 +543,14 @@ Dim LastMidnight As Date = CurrDatTim.Date   ' At midnight.
           <paramref name="Interval" /> is not valid.</exception>
         <exception cref="T:System.InvalidCastException">
           <paramref name="DateValue" /> is not coercible to <see langword="Date" />.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.DateAndTime.DateAdd" />
+        <altmember cref="Overload:Microsoft.VisualBasic.DateAndTime.DateDiff" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Day(System.DateTime)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Now" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Year(System.DateTime)" />
+        <altmember cref="N:System" />
       </Docs>
     </Member>
     <Member MemberName="DatePart">
@@ -605,6 +645,14 @@ Dim LastMidnight As Date = CurrDatTim.Date   ' At midnight.
           <paramref name="Interval" /> is invalid.</exception>
         <exception cref="T:System.InvalidCastException">
           <paramref name="DateValue" /> is not coercible to <see langword="Date" />.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.DateAndTime.DateAdd" />
+        <altmember cref="Overload:Microsoft.VisualBasic.DateAndTime.DateDiff" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Day(System.DateTime)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Now" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Year(System.DateTime)" />
+        <altmember cref="N:System" />
       </Docs>
     </Member>
     <Member MemberName="DateSerial">
@@ -679,6 +727,15 @@ Dim NewDateTime As Date = New Date(1978, 5, 6, 8, 29, 59, 900)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DateValue(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Day(System.DateTime)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Month(System.DateTime)" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Now" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.TimeSerial(System.Int32,System.Int32,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.TimeValue(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Year(System.DateTime)" />
+        <altmember cref="N:System" />
       </Docs>
     </Member>
     <Member MemberName="DateString">
@@ -727,6 +784,10 @@ MsgBox("The formatted date is " & Format(Now, "dddd, d MMM yyyy"))
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Invalid format used to set the value of <see langword="DateString" />.</exception>
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Now" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.TimeString" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Today" />
+        <altmember cref="T:System.DateTime" />
       </Docs>
     </Member>
     <Member MemberName="DateValue">
@@ -772,6 +833,15 @@ MsgBox("The formatted date is " & Format(Now, "dddd, d MMM yyyy"))
         </remarks>
         <exception cref="T:System.InvalidCastException">
           <paramref name="StringDate" /> includes invalid time information.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DateSerial(System.Int32,System.Int32,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Day(System.DateTime)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Month(System.DateTime)" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Now" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.TimeSerial(System.Int32,System.Int32,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.TimeValue(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Year(System.DateTime)" />
+        <altmember cref="T:System.DateTime" />
       </Docs>
     </Member>
     <Member MemberName="Day">
@@ -812,10 +882,18 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
   
  [!code-vb[VbVbalrFunctions#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#30)]  
   
- `Day` is qualified to distinguish it from the <xref:System.Windows.Forms.Day?displayProperty=fullName> enumeration.  
+ `Day` is qualified to distinguish it from the <xref:System.Windows.Forms.Day?displayProperty=nameWithType> enumeration.  
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.DateAndTime.DatePart" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Month(System.DateTime)" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Now" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Year(System.DateTime)" />
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.ArgumentOutOfRangeException" />
       </Docs>
     </Member>
     <Member MemberName="Hour">
@@ -852,6 +930,16 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Day(System.DateTime)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Minute(System.DateTime)" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Now" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Second(System.DateTime)" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.TimeOfDay" />
+        <altmember cref="Overload:Microsoft.VisualBasic.DateAndTime.DatePart" />
+        <altmember cref="N:System" />
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.ArgumentOutOfRangeException" />
       </Docs>
     </Member>
     <Member MemberName="Minute">
@@ -888,6 +976,16 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Day(System.DateTime)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Hour(System.DateTime)" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Now" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Second(System.DateTime)" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.TimeOfDay" />
+        <altmember cref="Overload:Microsoft.VisualBasic.DateAndTime.DatePart" />
+        <altmember cref="N:System" />
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.ArgumentOutOfRangeException" />
       </Docs>
     </Member>
     <Member MemberName="Month">
@@ -924,6 +1022,15 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Day(System.DateTime)" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Now" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Year(System.DateTime)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.DateAndTime.DatePart" />
+        <altmember cref="N:System" />
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.ArgumentOutOfRangeException" />
       </Docs>
     </Member>
     <Member MemberName="MonthName">
@@ -967,6 +1074,12 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Month" /> is less than 1 or greater than 13.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.WeekdayName(System.Int32,System.Boolean,Microsoft.VisualBasic.FirstDayOfWeek)" />
+        <altmember cref="N:System" />
+        <altmember cref="N:System.Globalization" />
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <Member MemberName="Now">
@@ -999,6 +1112,14 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Day(System.DateTime)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Hour(System.DateTime)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Minute(System.DateTime)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Month(System.DateTime)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Second(System.DateTime)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Year(System.DateTime)" />
+        <altmember cref="T:System.DateTime" />
       </Docs>
     </Member>
     <Member MemberName="Second">
@@ -1035,6 +1156,16 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Day(System.DateTime)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Hour(System.DateTime)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Minute(System.DateTime)" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Now" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.TimeOfDay" />
+        <altmember cref="Overload:Microsoft.VisualBasic.DateAndTime.DatePart" />
+        <altmember cref="N:System" />
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.ArgumentOutOfRangeException" />
       </Docs>
     </Member>
     <Member MemberName="TimeOfDay">
@@ -1074,6 +1205,8 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Timer" />
+        <altmember cref="T:System.DateTime" />
       </Docs>
     </Member>
     <Member MemberName="Timer">
@@ -1104,10 +1237,18 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
   
  [!code-vb[VbVbalrTimerProperty#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTimerProperty/VB/Form1.vb#1)]  
   
- Note that you must qualify the `Timer` property with the <xref:Microsoft.VisualBasic?displayProperty=fullName> namespace, because `Timer` is also a defined class in the <xref:System.Threading?displayProperty=fullName>, <xref:System.Timers?displayProperty=fullName>, and <xref:System.Windows.Forms?displayProperty=fullName> namespaces.  
+ Note that you must qualify the `Timer` property with the <xref:Microsoft.VisualBasic?displayProperty=nameWithType> namespace, because `Timer` is also a defined class in the <xref:System.Threading?displayProperty=nameWithType>, <xref:System.Timers?displayProperty=nameWithType>, and <xref:System.Windows.Forms?displayProperty=nameWithType> namespaces.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.VBMath.Randomize" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.TimeOfDay" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Today" />
+        <altmember cref="N:System" />
+        <altmember cref="N:System.Windows.Forms" />
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.ArgumentOutOfRangeException" />
       </Docs>
     </Member>
     <Member MemberName="TimeSerial">
@@ -1156,7 +1297,7 @@ MsgBox(TimeSerial(23, 75, 0))
   
  If the values of the arguments result in a negative calculated time, the date information is set to 1/1/0001 and the time information is adjusted to be between 00:00:00 and 23:59:59. However, if the calculated time is less than negative 24 hours, an <xref:System.ArgumentOutOfRangeException> error occurs.  
   
- Since every `Date` value is supported by a <xref:System.DateTime?displayProperty=fullName> structure, its methods give you additional options in assembling a `Date` value. For example, you can employ one of the overloaded <xref:System.DateTime.%23ctor%2A> constructors to populate a `Date` variable using the desired combination of components. The following example sets `newDateTime` to May 6, 1978 at one tenth of a second before 8:30 in the morning:  
+ Since every `Date` value is supported by a <xref:System.DateTime?displayProperty=nameWithType> structure, its methods give you additional options in assembling a `Date` value. For example, you can employ one of the overloaded <xref:System.DateTime.%23ctor%2A> constructors to populate a `Date` variable using the desired combination of components. The following example sets `newDateTime` to May 6, 1978 at one tenth of a second before 8:30 in the morning:  
   
 ```vb  
 Dim newDateTime As Date = New Date(1978, 5, 6, 8, 29, 59, 900)  
@@ -1173,6 +1314,13 @@ Dim newDateTime As Date = New Date(1978, 5, 6, 8, 29, 59, 900)
         </remarks>
         <exception cref="T:System.ArgumentException">An argument is outside the range -2,147,483,648 through 2,147,483,647</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">Calculated time is less than negative 24 hours.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DateSerial(System.Int32,System.Int32,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DateValue(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Hour(System.DateTime)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Minute(System.DateTime)" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Now" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Second(System.DateTime)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.TimeValue(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="TimeString">
@@ -1219,6 +1367,10 @@ MsgBox("The formatted time is " & Format(Now, "hh.mm.ss.fff tt"))
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Invalid format used to set the value of <see langword="TimeString" />.</exception>
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Now" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.DateString" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.TimeOfDay" />
+        <altmember cref="T:System.DateTime" />
       </Docs>
     </Member>
     <Member MemberName="TimeValue">
@@ -1259,6 +1411,14 @@ MsgBox("The formatted time is " & Format(Now, "hh.mm.ss.fff tt"))
         </remarks>
         <exception cref="T:System.InvalidCastException">
           <paramref name="StringTime" /> includes invalid date information.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DateSerial(System.Int32,System.Int32,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DateValue(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Hour(System.DateTime)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Minute(System.DateTime)" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Now" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Second(System.DateTime)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.TimeSerial(System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Today">
@@ -1298,6 +1458,9 @@ MsgBox("The formatted time is " & Format(Now, "hh.mm.ss.fff tt"))
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Now" />
+        <altmember cref="T:System.DateTime" />
       </Docs>
     </Member>
     <Member MemberName="Weekday">
@@ -1354,6 +1517,13 @@ MsgBox("The formatted time is " & Format(Now, "hh.mm.ss.fff tt"))
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="DayOfWeek" /> is less than 0 or more than 7.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Day(System.DateTime)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Month(System.DateTime)" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Now" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.WeekdayName(System.Int32,System.Boolean,Microsoft.VisualBasic.FirstDayOfWeek)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Year(System.DateTime)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.DateAndTime.DatePart" />
+        <altmember cref="T:System.DateTime" />
       </Docs>
     </Member>
     <Member MemberName="WeekdayName">
@@ -1412,6 +1582,13 @@ MsgBox("The formatted time is " & Format(Now, "hh.mm.ss.fff tt"))
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Weekday" /> is less than 1 or greater than 7, or <paramref name="FirstDayOfWeekValue" /> is less than 0 or greater than 7.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Day(System.DateTime)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Month(System.DateTime)" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Now" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Year(System.DateTime)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.DateAndTime.DatePart" />
+        <altmember cref="T:System.DateTime" />
       </Docs>
     </Member>
     <Member MemberName="Year">
@@ -1448,7 +1625,41 @@ MsgBox("The formatted time is " & Format(Now, "hh.mm.ss.fff tt"))
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Day(System.DateTime)" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Month(System.DateTime)" />
+        <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Now" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.Weekday(System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.DateAndTime.DatePart" />
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.ArgumentOutOfRangeException" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="DatePart">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see langword="Integer" /> value containing the specified component of a given <see langword="Date" /> value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DateAdd">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see langword="Date" /> value containing a date and time value to which a specified time interval has been added.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DateDiff">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see langword="Long" /> value specifying the number of time intervals between two <see langword="Date" /> values.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

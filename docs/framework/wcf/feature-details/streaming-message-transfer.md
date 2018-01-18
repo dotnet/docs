@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 72a47a51-e5e7-4b76-b24a-299d51e0ae5a
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Streaming Message Transfer
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] transports support two modes for transferring messages:  

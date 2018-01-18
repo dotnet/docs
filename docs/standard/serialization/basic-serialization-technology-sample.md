@@ -9,9 +9,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9d824e16-08d1-4a36-bc7f-2388c1f75f34
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Basic Serialization Technology Sample
 [Download sample](http://download.microsoft.com/download/4/7/B/47B2164C-E780-4B10-8DE4-2CB5B886E0A6/Technologies/Serialization/Runtime%20Serialization/Basic.zip.exe)  
@@ -83,20 +86,20 @@ manager: "erikre"
     -   <xref:System.IO.FileStream> Used to serialize and deserialize linked lists.  
   
 ## See Also  
- <xref:System.IO>   
- <xref:System.IO.File>   
- <xref:System.IO.FileStream>   
- <xref:System.IO.Stream>   
- <xref:System.Random>   
- <xref:System.Runtime.Serialization>   
- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>   
- <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>   
- <xref:System.Runtime.Serialization.IFormatter>   
- <xref:System.SerializableAttribute>   
- <xref:System.Xml.Serialization>   
- [Basic Serialization](../../../docs/standard/serialization/basic-serialization.md)   
- [Binary Serialization](../../../docs/standard/serialization/binary-serialization.md)   
- [Controlling XML Serialization Using Attributes](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md)   
- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)   
- [Serialization](../../../docs/standard/serialization/index.md)   
+ <xref:System.IO>  
+ <xref:System.IO.File>  
+ <xref:System.IO.FileStream>  
+ <xref:System.IO.Stream>  
+ <xref:System.Random>  
+ <xref:System.Runtime.Serialization>  
+ <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>  
+ <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>  
+ <xref:System.Runtime.Serialization.IFormatter>  
+ <xref:System.SerializableAttribute>  
+ <xref:System.Xml.Serialization>  
+ [Basic Serialization](../../../docs/standard/serialization/basic-serialization.md)  
+ [Binary Serialization](../../../docs/standard/serialization/binary-serialization.md)  
+ [Controlling XML Serialization Using Attributes](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md)  
+ [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)  
+ [Serialization](../../../docs/standard/serialization/index.md)  
  [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)

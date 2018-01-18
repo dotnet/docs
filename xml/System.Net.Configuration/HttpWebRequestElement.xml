@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class corresponds to the `maximumResponseHeadersLength` attribute of the [\&lt;httpWebRequest\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/httpwebrequest-element-network-settings.md) configuration element.  
+ This class corresponds to the `maximumResponseHeadersLength` attribute of the [&lt;httpWebRequest&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/httpwebrequest-element-network-settings.md) configuration element.  
   
  The information in this class applies to responses to requests made with the <xref:System.Net.WebRequest> and <xref:System.Net.WebClient> classes.  
   
@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Net.HttpWebRequest.MaximumResponseHeadersLength" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,6 +47,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.HttpWebRequest.MaximumResponseHeadersLength" />
       </Docs>
     </Member>
     <Member MemberName="MaximumErrorResponseLength">
@@ -101,6 +103,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.HttpWebRequest.MaximumResponseHeadersLength" />
       </Docs>
     </Member>
     <Member MemberName="MaximumUnauthorizedUploadLength">
@@ -126,6 +129,9 @@
   
  The default value for this property is -1.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.HttpWebRequest" />
+        <altmember cref="P:System.Net.HttpWebRequest.Expect" />
+        <altmember cref="P:System.Net.HttpWebRequest.Headers" />
       </Docs>
     </Member>
     <Member MemberName="PostDeserialize">

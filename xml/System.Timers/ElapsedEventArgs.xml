@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example instantiates a <xref:System.Timers.Timer> object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=fullName> event every two seconds (2000 milliseconds), sets up an event handler for the  event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=fullName> property each time it is raised.  
+ The following example instantiates a <xref:System.Timers.Timer> object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=nameWithType> event every two seconds (2000 milliseconds), sets up an event handler for the  event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=nameWithType> property each time it is raised.  
   
  [!code-cpp[System.Timers.Timer#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.timers.timer/cpp/timer1.cpp#1)]
  [!code-csharp[System.Timers.Timer#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timers.timer/cs/timer1.cs#1)]
@@ -63,12 +63,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Timers.Timer.Elapsed?displayProperty=fullName> event is raised on a <xref:System.Threading.ThreadPool> thread, so the event-handling method might run on one thread at the same time that a call to the <xref:System.Timers.Timer.Stop%2A?displayProperty=fullName> method runs on another thread. This might result in the <xref:System.Timers.Timer.Elapsed> event being raised after the <xref:System.Timers.Timer.Stop%2A> method is called. This race condition cannot be prevented simply by comparing the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A> property with the time when the <xref:System.Timers.Timer.Stop%2A> method is called, because the event-handling method might already be executing when the <xref:System.Timers.Timer.Stop%2A> method is called, or might begin executing between the moment when the <xref:System.Timers.Timer.Stop%2A> method is called and the moment when the stop time is saved. If it is critical to prevent the thread that calls the <xref:System.Timers.Timer.Stop%2A> method from proceeding while the event-handling method is still executing, use a more robust synchronization mechanism such as the <xref:System.Threading.Monitor> class or the <xref:System.Threading.Interlocked.CompareExchange%2A> method. Code that uses the <xref:System.Threading.Interlocked.CompareExchange%2A> method can be found in the example for the <xref:System.Timers.Timer.Stop%2A?displayProperty=fullName> method.  
+ The <xref:System.Timers.Timer.Elapsed?displayProperty=nameWithType> event is raised on a <xref:System.Threading.ThreadPool> thread, so the event-handling method might run on one thread at the same time that a call to the <xref:System.Timers.Timer.Stop%2A?displayProperty=nameWithType> method runs on another thread. This might result in the <xref:System.Timers.Timer.Elapsed> event being raised after the <xref:System.Timers.Timer.Stop%2A> method is called. This race condition cannot be prevented simply by comparing the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A> property with the time when the <xref:System.Timers.Timer.Stop%2A> method is called, because the event-handling method might already be executing when the <xref:System.Timers.Timer.Stop%2A> method is called, or might begin executing between the moment when the <xref:System.Timers.Timer.Stop%2A> method is called and the moment when the stop time is saved. If it is critical to prevent the thread that calls the <xref:System.Timers.Timer.Stop%2A> method from proceeding while the event-handling method is still executing, use a more robust synchronization mechanism such as the <xref:System.Threading.Monitor> class or the <xref:System.Threading.Interlocked.CompareExchange%2A> method. Code that uses the <xref:System.Threading.Interlocked.CompareExchange%2A> method can be found in the example for the <xref:System.Timers.Timer.Stop%2A?displayProperty=nameWithType> method.  
   
    
   
 ## Examples  
- The following example instantiates a <xref:System.Timers.Timer> object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=fullName> event every two seconds (2000 milliseconds), sets up an event handler for the  event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=fullName> property each time it is raised.  
+ The following example instantiates a <xref:System.Timers.Timer> object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=nameWithType> event every two seconds (2000 milliseconds), sets up an event handler for the  event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=nameWithType> property each time it is raised.  
   
  [!code-cpp[System.Timers.Timer#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.timers.timer/cpp/timer1.cpp#1)]
  [!code-csharp[System.Timers.Timer#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timers.timer/cs/timer1.cs#1)]
@@ -76,6 +76,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Timers.Timer.Stop" />
       </Docs>
     </Member>
   </Members>

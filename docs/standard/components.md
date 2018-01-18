@@ -1,17 +1,16 @@
 ---
 title: .NET architectural components
 description: Describes .NET architectural components such as the .NET Standard, .NET implementations, .NET runtimes, and tooling.
-keywords: .NET, .NET Standard, .NET Core, .NET Framework, Mono, Xamarin, MSBuild, C#, F#, VB, compilers
 author: cartermp
 ms.author: mairaw
-ms.date: 08/10/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
-ms.assetid: 2e38e9d9-8284-46ee-a15f-199adc4f26f4
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
-
 # .NET architectural components
 
 A .NET app is developed for and runs in one or more *implementations of .NET*.  Implementations of .NET include the .NET Framework, .NET Core, and Mono. There is an API specification common to all implementations of .NET that's called the .NET Standard. This article gives a brief introduction to each of these concepts.
@@ -37,9 +36,9 @@ There are four primary .NET implementations that Microsoft actively develops and
 
 ### .NET Core
 
-.NET Core is a cross-platform implementation of .NET optimized for server workloads. It's modern, efficient, and designed to handle server and cloud workloads at scale. It implements the .NET Standard, so code that targets the .NET Standard can run on .NET Core. ASP.NET Core runs on .NET Core.
+.NET Core is a cross-platform implementation of .NET and designed to handle server and cloud workloads at scale. It runs on Windows, macOS and Linux. It implements the .NET Standard, so code that targets the .NET Standard can run on .NET Core. ASP.NET Core runs on .NET Core. 
 
-To learn more about .NET Core, see the [.NET Core Guide](../core/index.md).
+To learn more about .NET Core, see the [.NET Core Guide](../core/index.md) and [Choosing between .NET Core and .NET Framework for server apps](choosing-core-framework-server.md).
 
 ### .NET Framework
 
@@ -85,7 +84,7 @@ You have access to an extensive set of tools and infrastructure components that 
 - Open-source build orchestration tools, such as [CAKE](http://cakebuild.net/) and [FAKE](https://fake.build/)
 
 ## See also
-
+[Choosing between .NET Core and .NET Framework for server apps](choosing-core-framework-server.md)   
 [.NET Standard](net-standard.md)  
 [.NET Core Guide](../core/index.md)  
 [.NET Framework Guide](../framework/index.md)  

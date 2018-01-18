@@ -16,9 +16,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridView.CellValidating?displayProperty=fullName> event lets you cancel changes to the current cell when the new value is not valid. Use the <xref:System.Windows.Forms.DataGridViewCellValidatingEventArgs.FormattedValue%2A> property to determine the current value. To determine the state of the current cell, use the <xref:System.Windows.Forms.DataGridViewCellValidatingEventArgs.RowIndex%2A> and <xref:System.Windows.Forms.DataGridViewCellValidatingEventArgs.ColumnIndex%2A> properties to access the cell through the <xref:System.Windows.Forms.DataGridView.Rows%2A?displayProperty=fullName> collection. To cancel the change, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
+ The <xref:System.Windows.Forms.DataGridView.CellValidating?displayProperty=nameWithType> event lets you cancel changes to the current cell when the new value is not valid. Use the <xref:System.Windows.Forms.DataGridViewCellValidatingEventArgs.FormattedValue%2A> property to determine the current value. To determine the state of the current cell, use the <xref:System.Windows.Forms.DataGridViewCellValidatingEventArgs.RowIndex%2A> and <xref:System.Windows.Forms.DataGridViewCellValidatingEventArgs.ColumnIndex%2A> properties to access the cell through the <xref:System.Windows.Forms.DataGridView.Rows%2A?displayProperty=nameWithType> collection. To cancel the change, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
   
- When this event is canceled in data-bound mode, the new value is not pushed to the underlying data source. When this event is canceled in virtual mode, the <xref:System.Windows.Forms.DataGridView.CellValuePushed?displayProperty=fullName> event will not be raised.  
+ When this event is canceled in data-bound mode, the new value is not pushed to the underlying data source. When this event is canceled in virtual mode, the <xref:System.Windows.Forms.DataGridView.CellValuePushed?displayProperty=nameWithType> event will not be raised.  
   
    
   
@@ -31,6 +31,17 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellValidating" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellValidated" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellValuePushed" />
+    <altmember cref="M:System.Windows.Forms.DataGridView.OnCellValidating(System.Windows.Forms.DataGridViewCellValidatingEventArgs)" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCellValidatingEventHandler" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellValidatingEventArgs.FormattedValue" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellValidatingEventArgs.RowIndex" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellValidatingEventArgs.ColumnIndex" />
+    <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
   </Docs>
   <Members>
     <Member MemberName="ColumnIndex">
@@ -59,6 +70,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellValidating" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellValidatingEventArgs.RowIndex" />
       </Docs>
     </Member>
     <Member MemberName="FormattedValue">
@@ -93,6 +108,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellValidating" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
       </Docs>
     </Member>
     <Member MemberName="RowIndex">
@@ -121,6 +140,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellValidating" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellValidatingEventArgs.ColumnIndex" />
       </Docs>
     </Member>
   </Members>

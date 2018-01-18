@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorPublish::EnumProcesses"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorPublish::EnumProcesses method [.NET Framework debugging]"
   - "EnumProcesses method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorPublish::EnumProcesses Method
 Gets an enumerator for the managed processes running on this computer.  

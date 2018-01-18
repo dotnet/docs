@@ -35,6 +35,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.SqlCacheDependencyDatabase" />
+    <altmember cref="T:System.Web.Configuration.SqlCacheDependencyDatabaseCollection" />
+    <altmember cref="T:System.Web.Caching.SqlCacheDependency" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -95,6 +98,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.SqlCacheDependencyDatabase" />
       </Docs>
     </Member>
     <Member MemberName="ElementProperty">
@@ -157,6 +161,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.SqlCacheDependency" />
+        <altmember cref="T:System.Web.Caching.Cache" />
       </Docs>
     </Member>
     <Member MemberName="PollTime">
@@ -197,6 +203,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.SqlCacheDependency" />
+        <altmember cref="T:System.Web.Caching.Cache" />
       </Docs>
     </Member>
     <Member MemberName="PostDeserialize">

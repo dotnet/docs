@@ -9,14 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "getting started, WPF"
-  - "WPF, getting started"
+  - "getting started [WPF], WPF"
+  - "WPF [WPF], getting started"
 ms.assetid: b96bed40-8946-4285-8fe4-88045ab854ed
 caps.latest.revision: 71
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: My first WPF desktop application
 This walkthrough provides an introduction to the development of a [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] application that includes the elements that are common to most [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications: [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] markup, code-behind, application definitions, controls, layout, data binding, and styles. 
@@ -223,7 +228,7 @@ For more information about installing the latest version of Visual Studio, see [
   
 -   <xref:System.Windows.Controls.Button> (to click to view the expense report for the person that is selected in the list). 
   
- Each control is placed in a row of the <xref:System.Windows.Controls.Grid> by setting the <xref:System.Windows.Controls.Grid.Row%2A?displayProperty=fullName> attached property. For more information about attached properties, see [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md). 
+ Each control is placed in a row of the <xref:System.Windows.Controls.Grid> by setting the <xref:System.Windows.Controls.Grid.Row%2A?displayProperty=nameWithType> attached property. For more information about attached properties, see [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md). 
   
 1. Open ExpenseItHome.xaml. 
   
@@ -250,7 +255,7 @@ For more information about installing the latest version of Visual Studio, see [
   
     [!code-xaml[ExpenseIt#11b](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt5/ExpenseItHome.xaml#11b)]  
   
-4. Move the controls to the second column by setting <xref:System.Windows.Controls.Grid.Column%2A?displayProperty=fullName> to 1. Move each control down a row, by increasing the <xref:System.Windows.Controls.Grid.Row%2A?displayProperty=fullName> by 1. 
+4. Move the controls to the second column by setting <xref:System.Windows.Controls.Grid.Column%2A?displayProperty=nameWithType> to 1. Move each control down a row, by increasing the <xref:System.Windows.Controls.Grid.Row%2A?displayProperty=nameWithType> by 1. 
   
     [!code-xaml[ExpenseIt#12](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt5/ExpenseItHome.xaml#12)]  
   
@@ -312,7 +317,7 @@ For more information about installing the latest version of Visual Studio, see [
   
 1. Open Application.xaml or App.xaml. 
   
-2. Add the following XAML between the <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> tags:  
+2. Add the following XAML between the <xref:System.Windows.Application.Resources%2A?displayProperty=nameWithType> tags:  
   
     [!code-xaml[ExpenseIt#18](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt7/App.xaml#18)]  
   
@@ -330,7 +335,7 @@ For more information about installing the latest version of Visual Studio, see [
   
     -  `buttonStyle`: To format the <xref:System.Windows.Controls.Button> on ExpenseItHome.xaml. 
   
-     Notice that the styles are resources and children of the <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> property element. In this location, the styles are applied to all the elements in an application. For an example of using resources in a [!INCLUDE[TLA2#tla_winfx](../../../../includes/tla2sharptla-winfx-md.md)] application, see [Use Application Resources](../../../../docs/framework/wpf/advanced/how-to-use-application-resources.md). 
+     Notice that the styles are resources and children of the <xref:System.Windows.Application.Resources%2A?displayProperty=nameWithType> property element. In this location, the styles are applied to all the elements in an application. For an example of using resources in a [!INCLUDE[TLA2#tla_winfx](../../../../includes/tla2sharptla-winfx-md.md)] application, see [Use Application Resources](../../../../docs/framework/wpf/advanced/how-to-use-application-resources.md). 
   
 3. Open ExpenseItHome.xaml. 
   
@@ -455,7 +460,7 @@ For more information about installing the latest version of Visual Studio, see [
 -   [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
   
 ## See also  
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)   
- [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md)   
- [Building a WPF Application](../../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md)   
+ [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
+ [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md)  
+ [Building a WPF Application](../../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md)  
  [Styles and Templates](../../../../docs/framework/wpf/controls/styles-and-templates.md)

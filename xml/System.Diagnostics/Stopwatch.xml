@@ -43,7 +43,7 @@
  The <xref:System.Diagnostics.Stopwatch> class assists the manipulation of timing-related performance counters within managed code. Specifically, the <xref:System.Diagnostics.Stopwatch.Frequency> field and <xref:System.Diagnostics.Stopwatch.GetTimestamp%2A> method can be used in place of the unmanaged Win32 APIs `QueryPerformanceFrequency` and `QueryPerformanceCounter`.  
   
 > [!NOTE]
->  On a multiprocessor computer, it does not matter which processor the thread runs on. However, because of bugs in the BIOS or the Hardware Abstraction Layer (HAL), you can get different timing results on different processors. To specify processor affinity for a thread, use the <xref:System.Diagnostics.ProcessThread.ProcessorAffinity%2A?displayProperty=fullName> method.  
+>  On a multiprocessor computer, it does not matter which processor the thread runs on. However, because of bugs in the BIOS or the Hardware Abstraction Layer (HAL), you can get different timing results on different processors. To specify processor affinity for a thread, use the <xref:System.Diagnostics.ProcessThread.ProcessorAffinity%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -61,6 +61,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.TimeSpan" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -105,6 +106,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Diagnostics.Stopwatch.StartNew" />
       </Docs>
     </Member>
     <Member MemberName="Elapsed">
@@ -156,6 +158,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.TimeSpan" />
+        <altmember cref="P:System.Diagnostics.Stopwatch.ElapsedMilliseconds" />
+        <altmember cref="P:System.Diagnostics.Stopwatch.ElapsedTicks" />
       </Docs>
     </Member>
     <Member MemberName="ElapsedMilliseconds">
@@ -206,6 +211,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.Stopwatch.Elapsed" />
+        <altmember cref="P:System.Diagnostics.Stopwatch.ElapsedTicks" />
       </Docs>
     </Member>
     <Member MemberName="ElapsedTicks">
@@ -246,7 +253,7 @@
  By default, the elapsed time value of a <xref:System.Diagnostics.Stopwatch> instance equals the total of all measured time intervals. Each call to <xref:System.Diagnostics.Stopwatch.Start%2A> begins counting at the cumulative elapsed time; each call to <xref:System.Diagnostics.Stopwatch.Stop%2A> ends the current interval measurement and freezes the cumulative elapsed time value. Use the <xref:System.Diagnostics.Stopwatch.Reset%2A> method to clear the cumulative elapsed time in an existing <xref:System.Diagnostics.Stopwatch> instance.  
   
 > [!NOTE]
->  <xref:System.Diagnostics.Stopwatch> ticks are different from <xref:System.DateTime.Ticks%2A?displayProperty=fullName>. Each tick in the <xref:System.DateTime.Ticks%2A?displayProperty=fullName> value represents one 100-nanosecond interval. Each tick in the <xref:System.Diagnostics.Stopwatch.ElapsedTicks%2A> value represents the time interval equal to 1 second divided by the <xref:System.Diagnostics.Stopwatch.Frequency>.  
+>  <xref:System.Diagnostics.Stopwatch> ticks are different from <xref:System.DateTime.Ticks%2A?displayProperty=nameWithType>. Each tick in the <xref:System.DateTime.Ticks%2A?displayProperty=nameWithType> value represents one 100-nanosecond interval. Each tick in the <xref:System.Diagnostics.Stopwatch.ElapsedTicks%2A> value represents the time interval equal to 1 second divided by the <xref:System.Diagnostics.Stopwatch.Frequency>.  
   
    
   
@@ -259,6 +266,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.Stopwatch.Elapsed" />
+        <altmember cref="P:System.Diagnostics.Stopwatch.ElapsedMilliseconds" />
+        <altmember cref="F:System.Diagnostics.Stopwatch.Frequency" />
       </Docs>
     </Member>
     <Member MemberName="Frequency">
@@ -308,6 +318,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Diagnostics.Stopwatch.IsHighResolution" />
       </Docs>
     </Member>
     <Member MemberName="GetTimestamp">
@@ -342,7 +353,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Diagnostics.Stopwatch> class uses a high-resolution performance counter, <xref:System.Diagnostics.Stopwatch.GetTimestamp%2A> returns the current value of that counter. If the <xref:System.Diagnostics.Stopwatch> class uses the system timer, <xref:System.Diagnostics.Stopwatch.GetTimestamp%2A> returns the current <xref:System.DateTime.Ticks%2A?displayProperty=fullName> property of the <xref:System.DateTime.Now%2A?displayProperty=fullName> instance.  
+ If the <xref:System.Diagnostics.Stopwatch> class uses a high-resolution performance counter, <xref:System.Diagnostics.Stopwatch.GetTimestamp%2A> returns the current value of that counter. If the <xref:System.Diagnostics.Stopwatch> class uses the system timer, <xref:System.Diagnostics.Stopwatch.GetTimestamp%2A> returns the current <xref:System.DateTime.Ticks%2A?displayProperty=nameWithType> property of the <xref:System.DateTime.Now%2A?displayProperty=nameWithType> instance.  
   
    
   
@@ -355,6 +366,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Diagnostics.Stopwatch.IsHighResolution" />
       </Docs>
     </Member>
     <Member MemberName="IsHighResolution">
@@ -400,6 +412,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Diagnostics.Stopwatch.Frequency" />
       </Docs>
     </Member>
     <Member MemberName="IsRunning">
@@ -438,6 +451,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Diagnostics.Stopwatch.StartNew" />
+        <altmember cref="M:System.Diagnostics.Stopwatch.Stop" />
+        <altmember cref="M:System.Diagnostics.Stopwatch.Start" />
+        <altmember cref="M:System.Diagnostics.Stopwatch.Reset" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -475,6 +492,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Diagnostics.Stopwatch.StartNew" />
+        <altmember cref="M:System.Diagnostics.Stopwatch.Stop" />
+        <altmember cref="P:System.Diagnostics.Stopwatch.IsRunning" />
+        <altmember cref="M:System.Diagnostics.Stopwatch.Start" />
       </Docs>
     </Member>
     <Member MemberName="Restart">
@@ -561,6 +582,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Diagnostics.Stopwatch.StartNew" />
+        <altmember cref="M:System.Diagnostics.Stopwatch.Stop" />
+        <altmember cref="P:System.Diagnostics.Stopwatch.IsRunning" />
+        <altmember cref="M:System.Diagnostics.Stopwatch.Reset" />
       </Docs>
     </Member>
     <Member MemberName="StartNew">
@@ -608,6 +633,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Diagnostics.Stopwatch.Start" />
+        <altmember cref="M:System.Diagnostics.Stopwatch.Stop" />
+        <altmember cref="P:System.Diagnostics.Stopwatch.IsRunning" />
+        <altmember cref="M:System.Diagnostics.Stopwatch.Reset" />
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -657,6 +686,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Diagnostics.Stopwatch.StartNew" />
+        <altmember cref="P:System.Diagnostics.Stopwatch.IsRunning" />
+        <altmember cref="M:System.Diagnostics.Stopwatch.Start" />
+        <altmember cref="M:System.Diagnostics.Stopwatch.Reset" />
       </Docs>
     </Member>
   </Members>

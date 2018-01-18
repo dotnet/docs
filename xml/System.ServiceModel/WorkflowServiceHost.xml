@@ -49,7 +49,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WorkflowServiceHost (System.IO.Stream workflowDefinition, Uri[] baseAddress);" />
+      <MemberSignature Language="C#" Value="public WorkflowServiceHost (System.IO.Stream workflowDefinition, params Uri[] baseAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream workflowDefinition, class System.Uri[] baseAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WorkflowServiceHost.#ctor(System.IO.Stream,System.Uri[])" />
       <MemberType>Constructor</MemberType>
@@ -83,7 +83,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WorkflowServiceHost (string workflowDefinitionPath, Uri[] baseAddress);" />
+      <MemberSignature Language="C#" Value="public WorkflowServiceHost (string workflowDefinitionPath, params Uri[] baseAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string workflowDefinitionPath, class System.Uri[] baseAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WorkflowServiceHost.#ctor(System.String,System.Uri[])" />
       <MemberType>Constructor</MemberType>
@@ -116,7 +116,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WorkflowServiceHost (Type workflowType, Uri[] baseAddress);" />
+      <MemberSignature Language="C#" Value="public WorkflowServiceHost (Type workflowType, params Uri[] baseAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type workflowType, class System.Uri[] baseAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WorkflowServiceHost.#ctor(System.Type,System.Uri[])" />
       <MemberType>Constructor</MemberType>
@@ -149,7 +149,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WorkflowServiceHost (System.IO.Stream workflowDefinition, System.IO.Stream ruleDefinition, Uri[] baseAddress);" />
+      <MemberSignature Language="C#" Value="public WorkflowServiceHost (System.IO.Stream workflowDefinition, System.IO.Stream ruleDefinition, params Uri[] baseAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream workflowDefinition, class System.IO.Stream ruleDefinition, class System.Uri[] baseAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WorkflowServiceHost.#ctor(System.IO.Stream,System.IO.Stream,System.Uri[])" />
       <MemberType>Constructor</MemberType>
@@ -186,7 +186,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WorkflowServiceHost (string workflowDefinitionPath, string ruleDefinitionPath, Uri[] baseAddress);" />
+      <MemberSignature Language="C#" Value="public WorkflowServiceHost (string workflowDefinitionPath, string ruleDefinitionPath, params Uri[] baseAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string workflowDefinitionPath, string ruleDefinitionPath, class System.Uri[] baseAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WorkflowServiceHost.#ctor(System.String,System.String,System.Uri[])" />
       <MemberType>Constructor</MemberType>
@@ -221,7 +221,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WorkflowServiceHost (System.IO.Stream workflowDefinition, System.IO.Stream ruleDefinition, System.Workflow.ComponentModel.Compiler.ITypeProvider typeProvider, Uri[] baseAddress);" />
+      <MemberSignature Language="C#" Value="public WorkflowServiceHost (System.IO.Stream workflowDefinition, System.IO.Stream ruleDefinition, System.Workflow.ComponentModel.Compiler.ITypeProvider typeProvider, params Uri[] baseAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream workflowDefinition, class System.IO.Stream ruleDefinition, class System.Workflow.ComponentModel.Compiler.ITypeProvider typeProvider, class System.Uri[] baseAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WorkflowServiceHost.#ctor(System.IO.Stream,System.IO.Stream,System.Workflow.ComponentModel.Compiler.ITypeProvider,System.Uri[])" />
       <MemberType>Constructor</MemberType>
@@ -260,7 +260,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WorkflowServiceHost (string workflowDefinitionPath, string ruleDefinitionPath, System.Workflow.ComponentModel.Compiler.ITypeProvider typeProvider, Uri[] baseAddress);" />
+      <MemberSignature Language="C#" Value="public WorkflowServiceHost (string workflowDefinitionPath, string ruleDefinitionPath, System.Workflow.ComponentModel.Compiler.ITypeProvider typeProvider, params Uri[] baseAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string workflowDefinitionPath, string ruleDefinitionPath, class System.Workflow.ComponentModel.Compiler.ITypeProvider typeProvider, class System.Uri[] baseAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WorkflowServiceHost.#ctor(System.String,System.String,System.Workflow.ComponentModel.Compiler.ITypeProvider,System.Uri[])" />
       <MemberType>Constructor</MemberType>
@@ -420,7 +420,7 @@
     </Member>
     <Member MemberName="CreateDescription">
       <MemberSignature Language="C#" Value="protected override System.ServiceModel.Description.ServiceDescription CreateDescription (out System.Collections.Generic.IDictionary&lt;string,System.ServiceModel.Description.ContractDescription&gt; implementedContracts);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.ServiceModel.Description.ServiceDescription CreateDescription(class System.Collections.Generic.IDictionary`2&lt;string, class System.ServiceModel.Description.ContractDescription&gt; implementedContracts) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.ServiceModel.Description.ServiceDescription CreateDescription([out] class System.Collections.Generic.IDictionary`2&lt;string, class System.ServiceModel.Description.ContractDescription&gt;&amp; implementedContracts) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WorkflowServiceHost.CreateDescription(System.Collections.Generic.IDictionary{System.String,System.ServiceModel.Description.ContractDescription}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -459,11 +459,29 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In the default implementation, <xref:System.ServiceModel.WorkflowServiceHost> calls <xref:System.Workflow.Runtime.WorkflowRuntime.StopRuntime%2A> before calling <xref:System.ServiceModel.Channels.CommunicationObject.OnClosing%2A?displayProperty=fullName>. This means the workflow runtime will shut down before the service host closes.  
+ In the default implementation, <xref:System.ServiceModel.WorkflowServiceHost> calls <xref:System.Workflow.Runtime.WorkflowRuntime.StopRuntime%2A> before calling <xref:System.ServiceModel.Channels.CommunicationObject.OnClosing%2A?displayProperty=nameWithType>. This means the workflow runtime will shut down before the service host closes.  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddServiceEndpoint">
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a service endpoint to the hosted service.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WorkflowServiceHost" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

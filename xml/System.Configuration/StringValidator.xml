@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Configuration.StringValidator> class is used to ensure that a string meets specific criteria. The criteria for validation is established when an instance of the <xref:System.Configuration.StringValidator> class is created. There are three constructor overloads for the <xref:System.Configuration.StringValidator> class. The <xref:System.Configuration.StringValidator.%23ctor%28System.Int32%29?displayProperty=fullName> constructor with one parameter verifies the minimum acceptable length of the string being validated. The <xref:System.Configuration.StringValidator.%23ctor%28System.Int32%2CSystem.Int32%29?displayProperty=fullName> constructor with two parameters ensures that the string being verified adheres to both a minimum and a maximum length. The <xref:System.Configuration.StringValidator.%23ctor%28System.Int32%2CSystem.Int32%2CSystem.String%29?displayProperty=fullName> constructor with three parameters checks both the minimum and the maximum length values of the string being verified, as well as whether specific characters are present in the string being validated.  
+ The <xref:System.Configuration.StringValidator> class is used to ensure that a string meets specific criteria. The criteria for validation is established when an instance of the <xref:System.Configuration.StringValidator> class is created. There are three constructor overloads for the <xref:System.Configuration.StringValidator> class. The <xref:System.Configuration.StringValidator.%23ctor%28System.Int32%29?displayProperty=nameWithType> constructor with one parameter verifies the minimum acceptable length of the string being validated. The <xref:System.Configuration.StringValidator.%23ctor%28System.Int32%2CSystem.Int32%29?displayProperty=nameWithType> constructor with two parameters ensures that the string being verified adheres to both a minimum and a maximum length. The <xref:System.Configuration.StringValidator.%23ctor%28System.Int32%2CSystem.Int32%2CSystem.String%29?displayProperty=nameWithType> constructor with three parameters checks both the minimum and the maximum length values of the string being verified, as well as whether specific characters are present in the string being validated.  
   
  The <xref:System.Configuration.StringValidator.CanValidate%2A> method determines whether the object type being validated matches the expected type. The object being validated is passed as a parameter of the <xref:System.Configuration.StringValidator.Validate%2A> method.  
   
@@ -34,6 +34,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.StringValidatorAttribute" />
+    <altmember cref="T:System.Configuration.ConfigurationValidatorBase" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -220,5 +222,14 @@
  <paramref name="value" /> contains invalid characters.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.StringValidator" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

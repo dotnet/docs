@@ -5,7 +5,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The encoding classes are primarily intended to convert between different encodings or code pages and a Unicode encoding. <xref:System.Text.Encoding.Unicode%2A?displayProperty=fullName> (UTF-16) encoding is used internally by the .NET Framework, and <xref:System.Text.Encoding.UTF8%2A?displayProperty=fullName> encoding is often used for storing character data to ensure portability across machines and cultures.  
+ The encoding classes are primarily intended to convert between different encodings or code pages and a Unicode encoding. <xref:System.Text.Encoding.Unicode%2A?displayProperty=nameWithType> (UTF-16) encoding is used internally by the .NET Framework, and <xref:System.Text.Encoding.UTF8%2A?displayProperty=nameWithType> encoding is often used for storing character data to ensure portability across machines and cultures.  
   
  The classes derived from <xref:System.Text.Encoding> enable you to choose a fallback strategy, which determines how characters that cannot be encoded into a sequence of bytes, or bytes that cannot be decoded into characters, are handled. You can choose one of the following:  
   
@@ -17,7 +17,7 @@
   
  The <xref:System.Text.StringBuilder> class is designed for operations that perform extensive manipulations on a single string. Unlike the <xref:System.String> class, the <xref:System.Text.StringBuilder> class is mutable and provides better performance when concatenating or deleting strings.  
   
- For more information about <xref:System.Text?displayProperty=fullName>, see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) .  
+ For more information about <xref:System.Text?displayProperty=nameWithType>, see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) .  
   
  ]]></format>
     </remarks>

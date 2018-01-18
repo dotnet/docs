@@ -18,7 +18,7 @@ class Program
             string input = Console.ReadLine();
             if (String.IsNullOrEmpty(input)) break;
             Console.WriteLine($"Input: {input} {"Begins with uppercase? ",30}: " +
-                              $"{input.StartsWithUpper() ? "Yes" : "No"}\n");
+                              $"{(input.StartsWithUpper() ? "Yes" : "No")}\n");
         } while (true);
     }
 }

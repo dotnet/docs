@@ -16,10 +16,10 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebColorConverter> class is used to convert a <xref:System.Drawing.Color?displayProperty=fullName> object to a predefined color name or an RGB color value. It is also used to convert a predefined color name or an RGB color value to a <xref:System.Drawing.Color?displayProperty=fullName> object.  
+ The <xref:System.Web.UI.WebControls.WebColorConverter> class is used to convert a <xref:System.Drawing.Color?displayProperty=nameWithType> object to a predefined color name or an RGB color value. It is also used to convert a predefined color name or an RGB color value to a <xref:System.Drawing.Color?displayProperty=nameWithType> object.  
   
 > [!CAUTION]
->  You should never access a type converter directly. Instead, call the appropriate converter by using <xref:System.ComponentModel.TypeDescriptor?displayProperty=fullName>. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter?displayProperty=fullName> class overview.  
+>  You should never access a type converter directly. Instead, call the appropriate converter by using <xref:System.ComponentModel.TypeDescriptor?displayProperty=nameWithType>. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter?displayProperty=nameWithType> class overview.  
   
  The following list contains the sixteen predefined HTML color names you can use:  
   
@@ -59,6 +59,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+    <altmember cref="T:System.ComponentModel.TypeConverter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -32,6 +32,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.SettingsGroupNameAttribute" />
+    <altmember cref="T:System.Configuration.SettingsDescriptionAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,6 +63,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Configuration.SettingsGroupDescriptionAttribute.Description" />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -90,6 +93,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Configuration.SettingsGroupDescriptionAttribute.#ctor(System.String)" />
       </Docs>
     </Member>
   </Members>

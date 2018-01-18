@@ -73,8 +73,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/logincs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/loginvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/logincs.aspx#1)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/loginvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -171,8 +171,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Membership#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/createuser2cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Membership#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/createuser2vb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.Security.Membership#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/createuser2cs.aspx#2)]
+ [!code-aspx-vb[System.Web.Security.Membership#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/createuser2vb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -222,8 +222,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Membership#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/createuser1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Membership#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/createuser1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Security.Membership#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/createuser1cs.aspx#1)]
+ [!code-aspx-vb[System.Web.Security.Membership#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/createuser1vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -232,7 +232,7 @@
     </Member>
     <Member MemberName="CreateUser">
       <MemberSignature Language="C#" Value="public static System.Web.Security.MembershipUser CreateUser (string username, string password, string email, string passwordQuestion, string passwordAnswer, bool isApproved, out System.Web.Security.MembershipCreateStatus status);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Security.MembershipUser CreateUser(string username, string password, string email, string passwordQuestion, string passwordAnswer, bool isApproved, valuetype System.Web.Security.MembershipCreateStatus status) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Security.MembershipUser CreateUser(string username, string password, string email, string passwordQuestion, string passwordAnswer, bool isApproved, [out] valuetype System.Web.Security.MembershipCreateStatus&amp; status) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.Membership.CreateUser(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Web.Security.MembershipCreateStatus@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -283,8 +283,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/CreateUsercs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/CreateUservb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/CreateUsercs.aspx#2)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/CreateUservb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -292,7 +292,7 @@
     </Member>
     <Member MemberName="CreateUser">
       <MemberSignature Language="C#" Value="public static System.Web.Security.MembershipUser CreateUser (string username, string password, string email, string passwordQuestion, string passwordAnswer, bool isApproved, object providerUserKey, out System.Web.Security.MembershipCreateStatus status);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Security.MembershipUser CreateUser(string username, string password, string email, string passwordQuestion, string passwordAnswer, bool isApproved, object providerUserKey, valuetype System.Web.Security.MembershipCreateStatus status) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Security.MembershipUser CreateUser(string username, string password, string email, string passwordQuestion, string passwordAnswer, bool isApproved, object providerUserKey, [out] valuetype System.Web.Security.MembershipCreateStatus&amp; status) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.Membership.CreateUser(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Object,System.Web.Security.MembershipCreateStatus@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -372,8 +372,8 @@
 ## Examples  
  The following code example deletes the currently logged-on user and all related data.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Membership#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/DeleteUsercs.aspx#8)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Membership#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/DeleteUservb.aspx#8)]  -->  
+ [!code-aspx-csharp[System.Web.Security.Membership#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/DeleteUsercs.aspx#8)]
+ [!code-aspx-vb[System.Web.Security.Membership#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/DeleteUservb.aspx#8)]  
   
  ]]></format>
         </remarks>
@@ -419,8 +419,8 @@
 ## Examples  
  The following code example deletes the currently logged-on user and all related data.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/DeleteUsercs.aspx#6)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/DeleteUservb.aspx#6)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/DeleteUsercs.aspx#6)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/DeleteUservb.aspx#6)]  
   
  ]]></format>
         </remarks>
@@ -474,8 +474,8 @@
   
  The following code example first verifies that <xref:System.Web.Security.Membership.EnablePasswordReset%2A> is `true`, then resets a user's password and returns the new, automatically generated password.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/ResetPasswordcs.aspx#8)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/ResetPasswordvb.aspx#8)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/ResetPasswordcs.aspx#8)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/ResetPasswordvb.aspx#8)]  
   
  ]]></format>
         </remarks>
@@ -532,8 +532,8 @@
 >   
 >  This example includes a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/RetrievePasswordcs.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/RetrievePasswordvb.aspx#4)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/RetrievePasswordcs.aspx#4)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/RetrievePasswordvb.aspx#4)]  
   
  ]]></format>
         </remarks>
@@ -576,8 +576,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Membership#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/FindUsersByEmailcs.aspx#9)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Membership#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/FindUsersByEmailvb.aspx#9)]  -->  
+ [!code-aspx-csharp[System.Web.Security.Membership#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/FindUsersByEmailcs.aspx#9)]
+ [!code-aspx-vb[System.Web.Security.Membership#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/FindUsersByEmailvb.aspx#9)]  
   
  ]]></format>
         </remarks>
@@ -585,7 +585,7 @@
     </Member>
     <Member MemberName="FindUsersByEmail">
       <MemberSignature Language="C#" Value="public static System.Web.Security.MembershipUserCollection FindUsersByEmail (string emailToMatch, int pageIndex, int pageSize, out int totalRecords);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Security.MembershipUserCollection FindUsersByEmail(string emailToMatch, int32 pageIndex, int32 pageSize, int32 totalRecords) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Security.MembershipUserCollection FindUsersByEmail(string emailToMatch, int32 pageIndex, int32 pageSize, [out] int32&amp; totalRecords) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.Membership.FindUsersByEmail(System.String,System.Int32,System.Int32,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -628,8 +628,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#13](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/FindUsersByEmailcs.aspx#13)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#13](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/FindUsersByEmailvb.aspx#13)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#13](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/FindUsersByEmailcs.aspx#13)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#13](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/FindUsersByEmailvb.aspx#13)]  
   
  ]]></format>
         </remarks>
@@ -680,8 +680,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Membership#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/FindUsersByNamecs.aspx#10)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Membership#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/FindUsersByNamevb.aspx#10)]  -->  
+ [!code-aspx-csharp[System.Web.Security.Membership#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/FindUsersByNamecs.aspx#10)]
+ [!code-aspx-vb[System.Web.Security.Membership#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/FindUsersByNamevb.aspx#10)]  
   
  ]]></format>
         </remarks>
@@ -693,7 +693,7 @@
     </Member>
     <Member MemberName="FindUsersByName">
       <MemberSignature Language="C#" Value="public static System.Web.Security.MembershipUserCollection FindUsersByName (string usernameToMatch, int pageIndex, int pageSize, out int totalRecords);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Security.MembershipUserCollection FindUsersByName(string usernameToMatch, int32 pageIndex, int32 pageSize, int32 totalRecords) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Security.MembershipUserCollection FindUsersByName(string usernameToMatch, int32 pageIndex, int32 pageSize, [out] int32&amp; totalRecords) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.Membership.FindUsersByName(System.String,System.Int32,System.Int32,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -736,8 +736,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#12](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/FindUsersByNamecs.aspx#12)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/FindUsersByNamevb.aspx#12)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#12](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/FindUsersByNamecs.aspx#12)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/FindUsersByNamevb.aspx#12)]  
   
  ]]></format>
         </remarks>
@@ -795,8 +795,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Membership#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/GeneratePasswordcs.aspx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Membership#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/GeneratePasswordvb.aspx#5)]  -->  
+ [!code-aspx-csharp[System.Web.Security.Membership#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/GeneratePasswordcs.aspx#5)]
+ [!code-aspx-vb[System.Web.Security.Membership#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/GeneratePasswordvb.aspx#5)]  
   
  ]]></format>
         </remarks>
@@ -833,8 +833,8 @@
 ## Examples  
  The following code example returns a list of users with a count of the number of users currently online.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/ShowUserscs.aspx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/ShowUsersvb.aspx#5)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/ShowUserscs.aspx#5)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/ShowUsersvb.aspx#5)]  
   
  ]]></format>
         </remarks>
@@ -842,7 +842,7 @@
     </Member>
     <Member MemberName="GetAllUsers">
       <MemberSignature Language="C#" Value="public static System.Web.Security.MembershipUserCollection GetAllUsers (int pageIndex, int pageSize, out int totalRecords);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Security.MembershipUserCollection GetAllUsers(int32 pageIndex, int32 pageSize, int32 totalRecords) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Security.MembershipUserCollection GetAllUsers(int32 pageIndex, int32 pageSize, [out] int32&amp; totalRecords) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.Membership.GetAllUsers(System.Int32,System.Int32,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -874,8 +874,8 @@
 ## Examples  
  The following code example returns a list of users in pages of data with a count of the number of users currently online.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/ShowUserscs.aspx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/ShowUsersvb.aspx#5)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/ShowUserscs.aspx#5)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/ShowUsersvb.aspx#5)]  
   
  ]]></format>
         </remarks>
@@ -914,8 +914,8 @@
 ## Examples  
  The following code example returns a list of users with a count of the number of users currently online.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/ShowUserscs.aspx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/ShowUsersvb.aspx#5)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/ShowUserscs.aspx#5)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/ShowUsersvb.aspx#5)]  
   
  ]]></format>
         </remarks>
@@ -950,8 +950,8 @@
 ## Examples  
  The following code example updates the last-activity date/time stamp for the current logged-on membership user and displays the user name in the ASP.NET page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Membership#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/default1cs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Membership#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/default1vb.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.Security.Membership#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/default1cs.aspx#3)]
+ [!code-aspx-vb[System.Web.Security.Membership#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/default1vb.aspx#3)]  
   
  ]]></format>
         </remarks>
@@ -990,8 +990,8 @@
 ## Examples  
  The following code example displays the user name for the current logged-on membership user in the ASP.NET page without updating the last-activity date/time stamp for the user.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Membership#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/default2cs.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Membership#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/default2vb.aspx#4)]  -->  
+ [!code-aspx-csharp[System.Web.Security.Membership#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/default2cs.aspx#4)]
+ [!code-aspx-vb[System.Web.Security.Membership#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/default2vb.aspx#4)]  
   
  ]]></format>
         </remarks>
@@ -1056,15 +1056,15 @@
 ## Remarks  
  The <xref:System.Web.Security.Membership.GetUser%2A> method retrieves the user information from the data source and creates a <xref:System.Web.Security.MembershipUser> object populated with the returned data. If you use one of the <xref:System.Web.Security.Membership.GetUser%2A> overloads that does not take a `username` parameter, <xref:System.Web.Security.Membership.GetUser%2A> returns the information for the current logged-on membership user. The current logged-on membership user is identified by the <xref:System.Security.Principal.IIdentity.Name%2A> of the user in the current <xref:System.Web.HttpContext>.  
   
- You can also specify whether you want <xref:System.Web.Security.Membership.GetUser%2A> to update the last-activity date/time stamp for the user being retrieved with the `userIsOnline` parameter. Of the <xref:System.Web.Security.Membership.GetUser%2A> overloads that do not take a `userIsOnline` parameter, <xref:System.Web.Security.Membership.GetUser%2A?displayProperty=fullName> implicitly updates the last-activity date/time stamp for the user. <xref:System.Web.Security.Membership.GetUser%2A?displayProperty=fullName> and <xref:System.Web.Security.Membership.GetUser%2A> do not.  
+ You can also specify whether you want <xref:System.Web.Security.Membership.GetUser%2A> to update the last-activity date/time stamp for the user being retrieved with the `userIsOnline` parameter. Of the <xref:System.Web.Security.Membership.GetUser%2A> overloads that do not take a `userIsOnline` parameter, <xref:System.Web.Security.Membership.GetUser%2A?displayProperty=nameWithType> implicitly updates the last-activity date/time stamp for the user. <xref:System.Web.Security.Membership.GetUser%2A?displayProperty=nameWithType> and <xref:System.Web.Security.Membership.GetUser%2A> do not.  
   
    
   
 ## Examples  
  The following code example uses the <xref:System.Web.Security.Membership.GetUser%2A> method to return a <xref:System.Web.Security.MembershipUser> object for the current logged-on user and updates the e-mail address for the user.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/UpdateEmailcs.aspx#11)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/UpdateEmailvb.aspx#11)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/UpdateEmailcs.aspx#11)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/UpdateEmailvb.aspx#11)]  
   
  ]]></format>
         </remarks>
@@ -1136,15 +1136,15 @@
   
  If you use one of the <xref:System.Web.Security.Membership.GetUser%2A> overloads that does not take a `username` parameter, <xref:System.Web.Security.Membership.GetUser%2A> returns the information for the current logged-on membership user. The current logged-on membership user is identified by the <xref:System.Security.Principal.IIdentity.Name%2A> of the user in the current <xref:System.Web.HttpContext>.  
   
- You can also specify whether you want <xref:System.Web.Security.Membership.GetUser%2A> to update the last-activity date/time stamp for the user being retrieved with the `userIsOnline` parameter. Of the <xref:System.Web.Security.Membership.GetUser%2A> overloads that do not take a `userIsOnline` parameter, <xref:System.Web.Security.Membership.GetUser%2A?displayProperty=fullName> implicitly updates the last-activity date/time stamp for the user. <xref:System.Web.Security.Membership.GetUser%2A?displayProperty=fullName> and <xref:System.Web.Security.Membership.GetUser%2A> do not.  
+ You can also specify whether you want <xref:System.Web.Security.Membership.GetUser%2A> to update the last-activity date/time stamp for the user being retrieved with the `userIsOnline` parameter. Of the <xref:System.Web.Security.Membership.GetUser%2A> overloads that do not take a `userIsOnline` parameter, <xref:System.Web.Security.Membership.GetUser%2A?displayProperty=nameWithType> implicitly updates the last-activity date/time stamp for the user. <xref:System.Web.Security.Membership.GetUser%2A?displayProperty=nameWithType> and <xref:System.Web.Security.Membership.GetUser%2A> do not.  
   
    
   
 ## Examples  
  The following code example retrieves the password for a specified user name and sends it to the e-mail address for the specified user. The call to <xref:System.Web.Security.Membership.GetUser%2A> specifies that the last-activity date/time stamp for the user not be updated.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/RetrievePasswordcs.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/RetrievePasswordvb.aspx#4)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/RetrievePasswordcs.aspx#4)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/RetrievePasswordvb.aspx#4)]  
   
  ]]></format>
         </remarks>
@@ -1189,8 +1189,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/GetUserByEmailcs.aspx#7)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/GetUserByEmailvb.aspx#7)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/GetUserByEmailcs.aspx#7)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/GetUserByEmailvb.aspx#7)]  
   
  ]]></format>
         </remarks>
@@ -1515,8 +1515,8 @@
 ## Examples  
  The following code example accesses the default <xref:System.Web.Security.SqlMembershipProvider> enabled for the application using the <xref:System.Web.Security.Membership.Provider%2A> property in order to determine the value of the custom <xref:System.Web.Security.SqlMembershipProvider.RequiresUniqueEmail%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Membership#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/Providercs.aspx#6)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Membership#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/Providervb.aspx#6)]  -->  
+ [!code-aspx-csharp[System.Web.Security.Membership#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/Providercs.aspx#6)]
+ [!code-aspx-vb[System.Web.Security.Membership#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/Providervb.aspx#6)]  
   
  ]]></format>
         </remarks>
@@ -1575,8 +1575,8 @@
 ## Examples  
  The following code example lists the providers enabled for an application and their respective types.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Membership#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/Providerscs.aspx#7)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Membership#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/Providersvb.aspx#7)]  -->  
+ [!code-aspx-csharp[System.Web.Security.Membership#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/Providerscs.aspx#7)]
+ [!code-aspx-vb[System.Web.Security.Membership#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/Providersvb.aspx#7)]  
   
  ]]></format>
         </remarks>
@@ -1635,8 +1635,8 @@
 > [!IMPORTANT]
 >  This example includes a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/CreateUsercs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/CreateUservb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/CreateUsercs.aspx#2)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/CreateUservb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -1674,8 +1674,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/UpdateEmailcs.aspx#11)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/UpdateEmailvb.aspx#11)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/UpdateEmailcs.aspx#11)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/UpdateEmailvb.aspx#11)]  
   
  ]]></format>
         </remarks>
@@ -1767,8 +1767,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/logincs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/loginvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/logincs.aspx#1)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/loginvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1812,5 +1812,59 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindUsersByName">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a collection of membership users where the user name contains the specified user name to match.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetUser">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the information for a membership user from the data source.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DeleteUser">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deletes a user from the database.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindUsersByEmail">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a collection of membership users where the e-mail address contains the specified e-mail address to match.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateUser">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a new user to the data store.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetAllUsers">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a collection of the users in the database.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

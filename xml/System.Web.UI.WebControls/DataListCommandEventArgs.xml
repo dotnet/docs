@@ -35,16 +35,23 @@
 ## Examples  
  The following example demonstrates how to define event handlers for the <xref:System.Web.UI.WebControls.DataList.EditCommand>, <xref:System.Web.UI.WebControls.DataList.UpdateCommand>, <xref:System.Web.UI.WebControls.DataList.CancelCommand> and <xref:System.Web.UI.WebControls.DataList.DeleteCommand> events of a <xref:System.Web.UI.WebControls.DataList> control. This example specifies the event handlers declaratively, setting the event handler for each command property of the <xref:System.Web.UI.WebControls.DataList> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]
+ [!code-aspx-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  
   
  The following example demonstrates how to specify the event handlers and programmatically add them to the events in the `Page_Load` method.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListEdit2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit2/CS/datalistedit2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListEdit2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit2/VB/datalistedit2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListEdit2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit2/CS/datalistedit2cs.aspx#1)]
+ [!code-aspx-vb[DataListEdit2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit2/VB/datalistedit2vb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataListCommandEventHandler" />
+    <altmember cref="T:System.Web.UI.WebControls.DataList" />
+    <altmember cref="E:System.Web.UI.WebControls.DataList.CancelCommand" />
+    <altmember cref="E:System.Web.UI.WebControls.DataList.DeleteCommand" />
+    <altmember cref="E:System.Web.UI.WebControls.DataList.EditCommand" />
+    <altmember cref="E:System.Web.UI.WebControls.DataList.ItemCommand" />
+    <altmember cref="E:System.Web.UI.WebControls.DataList.UpdateCommand" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -109,11 +116,17 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.DataListCommandEventArgs.CommandSource%2A> property to determine the command selected by the user. It then performs the appropriate action based, on the command.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic DataListCommandEventArgs.Item Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataListCommandEventArgs.Item Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic DataListCommandEventArgs.Item Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataListCommandEventArgs.Item Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic DataListCommandEventArgs.Item Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataListCommandEventArgs.Item Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic DataListCommandEventArgs.Item Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataListCommandEventArgs.Item Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataList" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.CancelCommand" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.DeleteCommand" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.EditCommand" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.ItemCommand" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.UpdateCommand" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -142,11 +155,17 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.DataListCommandEventArgs.Item%2A> property to display information about the selected item in the <xref:System.Web.UI.WebControls.DataList> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataListEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListEdit/CS/datalisteditcs.aspx#1)]
+ [!code-aspx-vb[DataListEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListEdit/VB/datalisteditvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataList" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.CancelCommand" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.DeleteCommand" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.EditCommand" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.ItemCommand" />
+        <altmember cref="E:System.Web.UI.WebControls.DataList.UpdateCommand" />
       </Docs>
     </Member>
   </Members>

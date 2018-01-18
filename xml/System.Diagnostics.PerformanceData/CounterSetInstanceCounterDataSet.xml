@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Diagnostics.PerformanceData.CounterSetInstance.Counters%2A?displayProperty=fullName> property returns an instance of this class.  
+ The <xref:System.Diagnostics.PerformanceData.CounterSetInstance.Counters%2A?displayProperty=nameWithType> property returns an instance of this class.  
   
  ]]></format>
     </remarks>
@@ -126,11 +126,20 @@
 ## Remarks  
  Implemented as an indexer in C#.  
   
- To use this overload, you must use the <xref:System.Diagnostics.PerformanceData.CounterSet.AddCounter%28System.Int32%2CSystem.Diagnostics.PerformanceData.CounterType%2CSystem.String%29?displayProperty=fullName> method to add the counter to the counter set.  
+ To use this overload, you must use the <xref:System.Diagnostics.PerformanceData.CounterSet.AddCounter%28System.Int32%2CSystem.Diagnostics.PerformanceData.CounterType%2CSystem.String%29?displayProperty=nameWithType> method to add the counter to the counter set.  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Accesses a counter value in the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

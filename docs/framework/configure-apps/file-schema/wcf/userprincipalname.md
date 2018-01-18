@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 68032f69-149e-4613-bae4-18314d4fd294
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;userPrincipalName&gt;
 Specifies the User Principal Name (UPN) of a service to be authenticated by the client.  
@@ -60,9 +62,9 @@ Specifies the User Principal Name (UPN) of a service to be authenticated by the 
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.IdentityElement>   
- <xref:System.ServiceModel.EndpointAddress>   
- <xref:System.ServiceModel.EndpointAddress.Identity%2A>   
- <xref:System.ServiceModel.UpnEndpointIdentity>   
- [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)   
+ <xref:System.ServiceModel.Configuration.IdentityElement>  
+ <xref:System.ServiceModel.EndpointAddress>  
+ <xref:System.ServiceModel.EndpointAddress.Identity%2A>  
+ <xref:System.ServiceModel.UpnEndpointIdentity>  
+ [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
  [\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugChain::GetThread"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetThread method, ICorDebugChain interface [.NET Framework debugging]"
   - "ICorDebugChain::GetThread method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugChain::GetThread Method
 Gets the physical thread this call chain is part of.  

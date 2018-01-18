@@ -49,7 +49,7 @@
  \<major version>.\<minor version>.\<build number>.\<revision>  
   
 > [!IMPORTANT]
->  All components of the version must be integers greater than or equal to 0. Metadata restricts the major, minor, build, and revision components for an assembly to a maximum value of <xref:System.UInt16.MaxValue?displayProperty=fullName> - 1. If a component exceeds this value, a compilation error occurs.  
+>  All components of the version must be integers greater than or equal to 0. Metadata restricts the major, minor, build, and revision components for an assembly to a maximum value of <xref:System.UInt16.MaxValue?displayProperty=nameWithType> - 1. If a component exceeds this value, a compilation error occurs.  
   
  You can specify all the values or you can accept the default build number, revision number, or both by using an asterisk (*). For example, `[assembly:AssemblyVersion("2.3.25.1")]` indicates 2 as the major version, 3 as the minor version, 25 as the build number, and 1 as the revision number. A version number such as `[assembly:AssemblyVersion("1.2.*")]` specifies 1 as the major version, 2 as the minor version, and accepts the default build and revision numbers. A version number such as `[assembly:AssemblyVersion("1.2.15.*")]` specifies 1 as the major version, 2 as the minor version, 15 as the build number, and accepts the default revision number. The default build number increments daily. The default revision number is the number of seconds since midnight local time (without taking into account time zone adjustments for daylight saving time), divided by 2.  
   
@@ -65,13 +65,14 @@
    
   
 ## Examples  
- The following example uses the <xref:System.Reflection.AssemblyVersionAttribute> attribute to assign a version number to an assembly. At compile time, this version information is stored with the assembly's metadata. At run time, the example retrieves the value of the <xref:System.Type.Assembly%2A?displayProperty=fullName> property on a type found in the assembly to get a reference to the executing assembly, and it retrieves the assembly's version information from the <xref:System.Reflection.AssemblyName.Version%2A> property of the <xref:System.Reflection.AssemblyName> object returned by the <xref:System.Reflection.Assembly.GetName%2A?displayProperty=fullName> method.  
+ The following example uses the <xref:System.Reflection.AssemblyVersionAttribute> attribute to assign a version number to an assembly. At compile time, this version information is stored with the assembly's metadata. At run time, the example retrieves the value of the <xref:System.Type.Assembly%2A?displayProperty=nameWithType> property on a type found in the assembly to get a reference to the executing assembly, and it retrieves the assembly's version information from the <xref:System.Reflection.AssemblyName.Version%2A> property of the <xref:System.Reflection.AssemblyName> object returned by the <xref:System.Reflection.Assembly.GetName%2A?displayProperty=nameWithType> method.  
   
  [!code-csharp[System.Version.Class#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Version.Class/cs/example1.cs#6)]
  [!code-vb[System.Version.Class#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Version.Class/vb/example1.vb#6)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Reflection.AssemblyName.Version" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

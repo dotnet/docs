@@ -29,7 +29,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Security.AccessControl.SemaphoreRights> enumeration to specify access control rights when you create <xref:System.Security.AccessControl.SemaphoreSecurity> objects. To apply access rights to a named system semaphore, use <xref:System.Security.AccessControl.SemaphoreSecurity> objects with the <xref:System.Threading.Semaphore.%23ctor%28System.Int32%2CSystem.Int32%2CSystem.String%2CSystem.Boolean%40%2CSystem.Security.AccessControl.SemaphoreSecurity%29?displayProperty=fullName> constructor and the <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=fullName> method.  
+ Use the <xref:System.Security.AccessControl.SemaphoreRights> enumeration to specify access control rights when you create <xref:System.Security.AccessControl.SemaphoreSecurity> objects. To apply access rights to a named system semaphore, use <xref:System.Security.AccessControl.SemaphoreSecurity> objects with the <xref:System.Threading.Semaphore.%23ctor%28System.Int32%2CSystem.Int32%2CSystem.String%2CSystem.Boolean%40%2CSystem.Security.AccessControl.SemaphoreSecurity%29?displayProperty=nameWithType> constructor and the <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=nameWithType> method.  
   
  For the numeric values of the underlying Windows access rights, see [Synchronization Object Security and Access Rights (Windows)](http://go.microsoft.com/fwlink/p/?LinkId=243073) in the MSDN Library.  
   
@@ -39,16 +39,18 @@
    
   
 ## Examples  
- The following code example demonstrates the use of <xref:System.Security.AccessControl.SemaphoreRights> values when creating and using <xref:System.Security.AccessControl.SemaphoreAccessRule> objects. The example creates a <xref:System.Security.AccessControl.SemaphoreSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType?displayProperty=fullName>rule.  
+ The following code example demonstrates the use of <xref:System.Security.AccessControl.SemaphoreRights> values when creating and using <xref:System.Security.AccessControl.SemaphoreAccessRule> objects. The example creates a <xref:System.Security.AccessControl.SemaphoreSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType.Allow?displayProperty=nameWithType> rule.  
   
 > [!NOTE]
->  This example does not attach the security object to an <xref:System.Threading.Semaphore> object; see <xref:System.Security.AccessControl.SemaphoreSecurity>, <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=fullName> method, and <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=fullName>.  
+>  This example does not attach the security object to an <xref:System.Threading.Semaphore> object; see <xref:System.Security.AccessControl.SemaphoreSecurity>, <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=nameWithType> method, and <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Security.AccessControl.SemaphoreSecurity.AddAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.SemaphoreSecurity.AddAccessRule/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.SemaphoreSecurity.AddAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.SemaphoreSecurity.AddAccessRule/VB/source.vb#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.AccessControl.SemaphoreAccessRule" />
+    <altmember cref="T:System.Security.AccessControl.SemaphoreSecurity" />
   </Docs>
   <Members>
     <Member MemberName="ChangePermissions">

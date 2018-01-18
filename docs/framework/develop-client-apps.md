@@ -25,9 +25,11 @@ caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Developing Client Applications with the .NET Framework
-There are multiple ways to develop Windows-based applications with the .NET framework that run locally on users' computers or devices. This section contains topics that describe how to create Windows-based applications by using Windows Presentation Foundation (WPF) or by using Windows Forms. However, you also create client applications using the .NET Framework and make them available to your users through the Windows Store and Windows Phone store for computers or devices, web applications that can be viewed in a browser.  
+There are multiple ways to develop Windows-based applications with the .NET framework that run locally on users' computers or devices. This section contains topics that describe how to create Windows-based applications by using Windows Presentation Foundation (WPF) or by using Windows Forms. However, you can also create web applications using the .NET Framework, and client applications for computers or devices that you make available through the Windows Store or Windows Phone Store.  
   
 ## In This Section  
  [Windows Presentation Foundation](../../docs/framework/wpf/index.md)  
@@ -56,8 +58,8 @@ There are multiple ways to develop Windows-based applications with the .NET fram
  Describes the ways you can develop web apps using ASP.NET.  
   
 ## See Also  
- [Portable Class Library](../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md)   
- [Overview](../../docs/framework/get-started/overview.md)   
- [Development Guide](../../docs/framework/development-guide.md)   
- [How to: Create a Windows Desktop Application](http://msdn.microsoft.com/library/47021403-eaca-4c34-946a-a26c42a64148)   
+ [Portable Class Library](../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md)  
+ [Overview](../../docs/framework/get-started/overview.md)  
+ [Development Guide](../../docs/framework/development-guide.md)  
+ [How to: Create a Windows Desktop Application](http://msdn.microsoft.com/library/47021403-eaca-4c34-946a-a26c42a64148)  
  [Windows Service Applications](../../docs/framework/windows-services/index.md)

@@ -27,13 +27,16 @@
 ## Remarks  
  Use this class to describe the colors in a <xref:System.Windows.Media.LinearGradientBrush> or <xref:System.Windows.Media.RadialGradientBrush>.  
   
- Note that this class does not provide an opacity property; to make a <xref:System.Windows.Media.GradientStop> semi-transparent, set its <xref:System.Windows.Media.GradientStop.Color%2A?displayProperty=fullName> property with a transparent <xref:System.Windows.Media.Color>.  
+ Note that this class does not provide an opacity property; to make a <xref:System.Windows.Media.GradientStop> semi-transparent, set its <xref:System.Windows.Media.GradientStop.Color%2A?displayProperty=nameWithType> property with a transparent <xref:System.Windows.Media.Color>.  
   
 ## Freezable Features  
  A <xref:System.Windows.Media.GradientStop> is a type of <xref:System.Windows.Freezable> object and therefore can be frozen to improve performance. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.LinearGradientBrush" />
+    <altmember cref="T:System.Windows.Media.RadialGradientBrush" />
+    <altmember cref="M:System.Windows.Freezable.Freeze" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -93,7 +96,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -121,7 +124,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -157,6 +160,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.LinearGradientBrush" />
+        <altmember cref="T:System.Windows.Media.RadialGradientBrush" />
+        <altmember cref="T:System.Windows.Media.Colors" />
+        <altmember cref="T:System.Windows.SystemColors" />
       </Docs>
     </Member>
     <Member MemberName="ColorProperty">
@@ -226,6 +233,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.LinearGradientBrush" />
+        <altmember cref="T:System.Windows.Media.RadialGradientBrush" />
       </Docs>
     </Member>
     <Member MemberName="OffsetProperty">
@@ -318,5 +327,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a string representation of this object based on the current culture.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GradientStop" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

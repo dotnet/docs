@@ -23,7 +23,7 @@
  [!code-csharp[PrincipalPermissionMode#1](~/samples/snippets/csharp/VS_Snippets_CFX/principalpermissionmode/cs/source.cs#1)]
  [!code-vb[PrincipalPermissionMode#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/principalpermissionmode/vb/source.vb#1)]  
   
- You can also set the behavior in configuration by adding a [\&lt;serviceAuthorization\&gt;](~/docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md) to the [\&lt;serviceBehaviors\&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md) of a configuration file, as shown in the following code.  
+ You can also set the behavior in configuration by adding a [&lt;serviceAuthorization&gt;](~/docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md) to the [&lt;serviceBehaviors&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md) of a configuration file, as shown in the following code.  
   
  [!code-csharp[PrincipalPermissionMode#10](~/samples/snippets/csharp/VS_Snippets_CFX/principalpermissionmode/cs/source.cs#10)]
  [!code-vb[PrincipalPermissionMode#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/principalpermissionmode/vb/source.vb#10)]  

@@ -12,13 +12,15 @@ ms.topic: "article"
 f1_keywords: 
   - "Binding"
 helpviewer_keywords: 
-  - "Binding markup extensions"
-  - "XAML, Binding markup extension"
+  - "Binding markup extensions [WPF]"
+  - "XAML [WPF], Binding markup extension"
 ms.assetid: 83d6e2a4-1b0c-4fc8-bd96-b5e98800ab63
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Binding Markup Extension
 Defers a property value to be a data-bound value, creating an intermediate expression object and interpreting the data context that applies to the element and its binding at run time.  
@@ -47,16 +49,16 @@ Defers a property value to be a data-bound value, creating an intermediate expre
 |-|-|  
 |`bindProp1, bindPropN`|The name of the <xref:System.Windows.Data.Binding> or <xref:System.Windows.Data.BindingBase> property to set. Not all <xref:System.Windows.Data.Binding> properties can be set with the `Binding` extension, and some properties are settable within a `Binding` expression only by using further nested markup extensions. See "Binding Properties That Can Be Set with the Binding Extension" section.|  
 |`value1, valueN`|The value to set the property to. The handling of the attribute value is ultimately specific to the type and logic of the specific <xref:System.Windows.Data.Binding> property being set.|  
-|`path`|The path string that sets the implicit <xref:System.Windows.Data.Binding.Path%2A?displayProperty=fullName> property. See also [PropertyPath XAML Syntax](../../../../docs/framework/wpf/advanced/propertypath-xaml-syntax.md).|  
+|`path`|The path string that sets the implicit <xref:System.Windows.Data.Binding.Path%2A?displayProperty=nameWithType> property. See also [PropertyPath XAML Syntax](../../../../docs/framework/wpf/advanced/propertypath-xaml-syntax.md).|  
   
 ## Unqualified {Binding}  
- The `{Binding}` usage shown in "Binding Expression Usage" creates a <xref:System.Windows.Data.Binding> object with default values, which includes an initial <xref:System.Windows.Data.Binding.Path%2A?displayProperty=fullName> of `null`. This is still useful in many scenarios, because the created <xref:System.Windows.Data.Binding> might be relying on key data binding properties such as <xref:System.Windows.Data.Binding.Path%2A?displayProperty=fullName> and <xref:System.Windows.Data.Binding.Source%2A?displayProperty=fullName> being set in the run-time data context. For more information on the concept of data context, see [Data Binding](../../../../docs/framework/wpf/data/data-binding-wpf.md).  
+ The `{Binding}` usage shown in "Binding Expression Usage" creates a <xref:System.Windows.Data.Binding> object with default values, which includes an initial <xref:System.Windows.Data.Binding.Path%2A?displayProperty=nameWithType> of `null`. This is still useful in many scenarios, because the created <xref:System.Windows.Data.Binding> might be relying on key data binding properties such as <xref:System.Windows.Data.Binding.Path%2A?displayProperty=nameWithType> and <xref:System.Windows.Data.Binding.Source%2A?displayProperty=nameWithType> being set in the run-time data context. For more information on the concept of data context, see [Data Binding](../../../../docs/framework/wpf/data/data-binding-wpf.md).  
   
 ## Implicit Path  
- The `Binding` markup extension uses <xref:System.Windows.Data.Binding.Path%2A?displayProperty=fullName> as a conceptual "default property", where `Path=` does not need to appear in the expression. If you specify a `Binding` expression with an implicit path, the implicit path must appear first in the expression, prior to any other `bindProp`=`value` pairs where the <xref:System.Windows.Data.Binding> property is specified by name. For example: `{Binding PathString}`, where `PathString` is a string that is evaluated to be the value of <xref:System.Windows.Data.Binding.Path%2A?displayProperty=fullName> in the <xref:System.Windows.Data.Binding> created by the markup extension usage. You can append an implicit path with other named properties after the comma separator, for example, `{Binding LastName, Mode=TwoWay}`.  
+ The `Binding` markup extension uses <xref:System.Windows.Data.Binding.Path%2A?displayProperty=nameWithType> as a conceptual "default property", where `Path=` does not need to appear in the expression. If you specify a `Binding` expression with an implicit path, the implicit path must appear first in the expression, prior to any other `bindProp`=`value` pairs where the <xref:System.Windows.Data.Binding> property is specified by name. For example: `{Binding PathString}`, where `PathString` is a string that is evaluated to be the value of <xref:System.Windows.Data.Binding.Path%2A?displayProperty=nameWithType> in the <xref:System.Windows.Data.Binding> created by the markup extension usage. You can append an implicit path with other named properties after the comma separator, for example, `{Binding LastName, Mode=TwoWay}`.  
   
 ## Binding Properties That Can Be Set with the Binding Extension  
- The syntax shown in this topic uses the generic `bindProp`=`value` approximation, because there are many read/write properties of <xref:System.Windows.Data.BindingBase> or <xref:System.Windows.Data.Binding> that can be set through the `Binding` markup extension / expression syntax. They can be set in any order, with the exception of an implicit <xref:System.Windows.Data.Binding.Path%2A?displayProperty=fullName>. (You do have the option to explicitly specify `Path=`, in which case it can be set in any order). Basically, you can set zero or more of the properties in the list below, using `bindProp`=`value` pairs separated by commas.  
+ The syntax shown in this topic uses the generic `bindProp`=`value` approximation, because there are many read/write properties of <xref:System.Windows.Data.BindingBase> or <xref:System.Windows.Data.Binding> that can be set through the `Binding` markup extension / expression syntax. They can be set in any order, with the exception of an implicit <xref:System.Windows.Data.Binding.Path%2A?displayProperty=nameWithType>. (You do have the option to explicitly specify `Path=`, in which case it can be set in any order). Basically, you can set zero or more of the properties in the list below, using `bindProp`=`value` pairs separated by commas.  
   
  Several of these property values require object types that do not support a native type conversion from a text syntax in XAML, and thus require markup extensions in order to be set as an attribute value. Check the XAML Attribute Usage section in the .NET Framework Class Library for each property for more information; the string you use for XAML attribute syntax with or without further markup extension usage is basically the same as the value you specify in a `Binding` expression, with the exception that you do not place quotation marks around each `bindProp`=`value` in the `Binding` expression.  
   
@@ -129,7 +131,7 @@ Defers a property value to be a data-bound value, creating an intermediate expre
  `Binding` is an atypical markup extension in that the <xref:System.Windows.Data.Binding> class that implements the extension functionality for WPF's XAML implementation also implements several other methods and properties that are not related to XAML. The other members are intended to make <xref:System.Windows.Data.Binding> a more versatile and self-contained class that can address many data binding scenarios in addition to functioning as a XAML markup extension.  
   
 ## See Also  
- <xref:System.Windows.Data.Binding>   
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)   
- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)   
+ <xref:System.Windows.Data.Binding>  
+ [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
+ [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
  [Markup Extensions and WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)

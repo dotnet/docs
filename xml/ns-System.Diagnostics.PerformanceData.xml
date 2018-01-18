@@ -29,13 +29,13 @@
   
 3.  Write your provider. The following steps show the calls made by a provider:  
   
-    1.  Call the <xref:System.Diagnostics.PerformanceData.CounterSet.%23ctor%2A?displayProperty=fullName> constructor to define the counter set. Call this method for each counter set defined in the manifest.  
+    1.  Call the <xref:System.Diagnostics.PerformanceData.CounterSet.%23ctor%2A?displayProperty=nameWithType> constructor to define the counter set. Call this method for each counter set defined in the manifest.  
   
-    2.  For each counter set, call one of the <xref:System.Diagnostics.PerformanceData.CounterSet.AddCounter%2A?displayProperty=fullName> methods to add the counters to the set. Call this method for each counter defined in the counter set.  
+    2.  For each counter set, call one of the <xref:System.Diagnostics.PerformanceData.CounterSet.AddCounter%2A?displayProperty=nameWithType> methods to add the counters to the set. Call this method for each counter defined in the counter set.  
   
-    3.  Call the <xref:System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance%2A?displayProperty=fullName> method to create an instance of the counter set (an instance contains the counter data). For single instance counter sets, call this method one time. For multiple instance counter sets, call this method for each instance for which you need to provide counter data (use a unique name for each instance).  
+    3.  Call the <xref:System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance%2A?displayProperty=nameWithType> method to create an instance of the counter set (an instance contains the counter data). For single instance counter sets, call this method one time. For multiple instance counter sets, call this method for each instance for which you need to provide counter data (use a unique name for each instance).  
   
-    4.  Use the <xref:System.Diagnostics.PerformanceData.CounterSetInstance.Counters%2A?displayProperty=fullName> property to access and set the counter data for the counter.  
+    4.  Use the <xref:System.Diagnostics.PerformanceData.CounterSetInstance.Counters%2A?displayProperty=nameWithType> property to access and set the counter data for the counter.  
   
 4.  After you finish your provider, use the LodCtr tool to register the counters on the computer. For example,  
   

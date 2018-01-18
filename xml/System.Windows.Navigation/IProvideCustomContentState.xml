@@ -19,21 +19,21 @@
   
 -   Calling **AddBackEntry**:  
   
-    -   <xref:System.Windows.Navigation.NavigationService.AddBackEntry%2A?displayProperty=fullName>  
+    -   <xref:System.Windows.Navigation.NavigationService.AddBackEntry%2A?displayProperty=nameWithType>  
   
-    -   <xref:System.Windows.Navigation.NavigationWindow.AddBackEntry%2A?displayProperty=fullName>  
+    -   <xref:System.Windows.Navigation.NavigationWindow.AddBackEntry%2A?displayProperty=nameWithType>  
   
-    -   <xref:System.Windows.Controls.Frame.AddBackEntry%2A?displayProperty=fullName>.  
+    -   <xref:System.Windows.Controls.Frame.AddBackEntry%2A?displayProperty=nameWithType>.  
   
--   Setting <xref:System.Windows.Navigation.NavigatingCancelEventArgs.Content%2A?displayProperty=fullName> when one of the following events are raised:  
+-   Setting <xref:System.Windows.Navigation.NavigatingCancelEventArgs.Content%2A?displayProperty=nameWithType> when one of the following events are raised:  
   
-    -   <xref:System.Windows.Navigation.NavigationService.Navigating?displayProperty=fullName>  
+    -   <xref:System.Windows.Navigation.NavigationService.Navigating?displayProperty=nameWithType>  
   
-    -   <xref:System.Windows.Navigation.NavigationWindow.Navigating?displayProperty=fullName>  
+    -   <xref:System.Windows.Navigation.NavigationWindow.Navigating?displayProperty=nameWithType>  
   
-    -   <xref:System.Windows.Controls.Frame.Navigating?displayProperty=fullName>  
+    -   <xref:System.Windows.Controls.Frame.Navigating?displayProperty=nameWithType>  
   
-    -   <xref:System.Windows.Navigation.NavigationWindow.Navigating?displayProperty=fullName>  
+    -   <xref:System.Windows.Navigation.NavigationWindow.Navigating?displayProperty=nameWithType>  
   
  You must implement <xref:System.Windows.Navigation.IProvideCustomContentState> when you add custom state to navigation history by calling **AddBackEntry**, otherwise navigation history will not function correctly; consider the following steps:  
   

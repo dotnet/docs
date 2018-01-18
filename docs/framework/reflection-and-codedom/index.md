@@ -17,6 +17,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Dynamic Programming in the .NET Framework
 This section of the documentation provides information about dynamic programming in the .NET Framework.  

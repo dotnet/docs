@@ -32,6 +32,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Design.PropertyValueUIHandler" />
+    <altmember cref="T:System.Drawing.Design.PropertyValueUIItem" />
   </Docs>
   <Members>
     <Member MemberName="AddPropertyValueUIHandler">
@@ -60,6 +62,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Design.PropertyValueUIHandler" />
       </Docs>
     </Member>
     <Member MemberName="GetPropertyUIValueItems">
@@ -102,6 +105,7 @@
       <Docs>
         <summary>Notifies the <see cref="T:System.Drawing.Design.IPropertyValueUIService" /> implementation that the global list of <see cref="T:System.Drawing.Design.PropertyValueUIItem" /> objects has been modified.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Drawing.Design.IPropertyValueUIService.PropertyUIValueItemsChanged" />
       </Docs>
     </Member>
     <Member MemberName="PropertyUIValueItemsChanged">
@@ -126,6 +130,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Design.PropertyValueUIItem" />
       </Docs>
     </Member>
     <Member MemberName="RemovePropertyValueUIHandler">
@@ -147,6 +152,7 @@
         <param name="newHandler">The handler to remove.</param>
         <summary>Removes the specified <see cref="T:System.Drawing.Design.PropertyValueUIHandler" /> from the property value UI service.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Design.PropertyValueUIHandler" />
       </Docs>
     </Member>
   </Members>

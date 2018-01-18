@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListView> control raises the <xref:System.Web.UI.WebControls.ListView.PagePropertiesChanging?displayProperty=fullName> event whenever the <xref:System.Web.UI.WebControls.ListView.SetPageProperties%2A?displayProperty=fullName> method is called. This occurs when a button in a <xref:System.Web.UI.WebControls.DataPager> control that is associated with the <xref:System.Web.UI.WebControls.ListView> control is clicked, and a new <xref:System.Web.UI.WebControls.ListView.StartRowIndex%2A?displayProperty=fullName> or <xref:System.Web.UI.WebControls.ListView.MaximumRows%2A?displayProperty=fullName> value is specified by the <xref:System.Web.UI.WebControls.DataPager> control. This enables you to provide a custom routine whenever this event occurs, such as clearing the <xref:System.Web.UI.WebControls.ListView.SelectedIndex%2A> or <xref:System.Web.UI.WebControls.ListView.EditIndex%2A> properties of the <xref:System.Web.UI.WebControls.ListView> control.  
+ The <xref:System.Web.UI.WebControls.ListView> control raises the <xref:System.Web.UI.WebControls.ListView.PagePropertiesChanging?displayProperty=nameWithType> event whenever the <xref:System.Web.UI.WebControls.ListView.SetPageProperties%2A?displayProperty=nameWithType> method is called. This occurs when a button in a <xref:System.Web.UI.WebControls.DataPager> control that is associated with the <xref:System.Web.UI.WebControls.ListView> control is clicked, and a new <xref:System.Web.UI.WebControls.ListView.StartRowIndex%2A?displayProperty=nameWithType> or <xref:System.Web.UI.WebControls.ListView.MaximumRows%2A?displayProperty=nameWithType> value is specified by the <xref:System.Web.UI.WebControls.DataPager> control. This enables you to provide a custom routine whenever this event occurs, such as clearing the <xref:System.Web.UI.WebControls.ListView.SelectedIndex%2A> or <xref:System.Web.UI.WebControls.ListView.EditIndex%2A> properties of the <xref:System.Web.UI.WebControls.ListView> control.  
   
  A <xref:System.Web.UI.WebControls.PagePropertiesChangingEventArgs> object is passed to the event handler. This object enables you to determine the index of the first item in the page that was selected by the user. You can also determine the maximum number of items to display on each page.  
   
@@ -26,6 +26,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListView" />
+    <altmember cref="E:System.Web.UI.WebControls.ListView.PagePropertiesChanging" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,6 +62,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.PagePropertiesChanging" />
+        <altmember cref="P:System.Web.UI.WebControls.PagePropertiesChangingEventArgs.StartRowIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.PagePropertiesChangingEventArgs.MaximumRows" />
       </Docs>
     </Member>
     <Member MemberName="MaximumRows">
@@ -78,6 +84,9 @@
         <summary>Gets the maximum number of items to display on each page of data.</summary>
         <value>The maximum number of items to display in a page of data in the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.PagePropertiesChanging" />
+        <altmember cref="P:System.Web.UI.WebControls.PagePropertiesChangingEventArgs.StartRowIndex" />
       </Docs>
     </Member>
     <Member MemberName="StartRowIndex">
@@ -96,6 +105,9 @@
         <summary>Gets the index of the first item of the page.</summary>
         <value>The index of the first item to display in a page of data in the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="E:System.Web.UI.WebControls.ListView.PagePropertiesChanging" />
+        <altmember cref="P:System.Web.UI.WebControls.PagePropertiesChangingEventArgs.MaximumRows" />
       </Docs>
     </Member>
   </Members>

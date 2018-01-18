@@ -14,9 +14,11 @@ helpviewer_keywords:
   - "WS-Metadata Exchange [WCF], configuring a custom binding"
 ms.assetid: cdba4d73-da64-4805-bc56-9822becfd1e4
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Configure a Custom WS-Metadata Exchange Binding
 This topic will explain how to configure a custom WS-Metadata exchange binding. [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] includes four system-defined metadata bindings, but you can publish metadata using any binding you want. This topic will show you how to publish metadata using the `wsHttpBinding`. This binding gives you the option of exposing metadata in a secure way. The code in this article is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md).  
@@ -120,8 +122,8 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
     ```  
   
 ## See Also  
- [Metadata Publishing Behavior](../../../../docs/framework/wcf/samples/metadata-publishing-behavior.md)   
- [Retrieve Metadata](../../../../docs/framework/wcf/samples/retrieve-metadata.md)   
- [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)   
- [Publishing Metadata](../../../../docs/framework/wcf/feature-details/publishing-metadata.md)   
+ [Metadata Publishing Behavior](../../../../docs/framework/wcf/samples/metadata-publishing-behavior.md)  
+ [Retrieve Metadata](../../../../docs/framework/wcf/samples/retrieve-metadata.md)  
+ [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)  
+ [Publishing Metadata](../../../../docs/framework/wcf/feature-details/publishing-metadata.md)  
  [Publishing Metadata Endpoints](../../../../docs/framework/wcf/publishing-metadata-endpoints.md)

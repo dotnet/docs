@@ -14,6 +14,9 @@
     <summary>Represents field information. This class is used to return fields of expando classes and script arrays to the debugger.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Reflection.FieldInfo" />
+    <altmember cref="T:Microsoft.JScript.IDebugType" />
+    <altmember cref="T:Microsoft.JScript.IDebuggerObject" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,6 +38,9 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.DynamicFieldInfo" /> class, using the specified name and value.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Reflection.FieldInfo" />
+        <altmember cref="T:Microsoft.JScript.IDebugType" />
+        <altmember cref="T:Microsoft.JScript.IDebuggerObject" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -58,6 +64,9 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.DynamicFieldInfo" /> class, using the specified name, value, and type.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Reflection.FieldInfo" />
+        <altmember cref="T:Microsoft.JScript.IDebugType" />
+        <altmember cref="T:Microsoft.JScript.IDebuggerObject" />
       </Docs>
     </Member>
     <Member MemberName="fieldTypeName">
@@ -76,6 +85,9 @@
         <summary>The type of the field.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Reflection.FieldInfo" />
+        <altmember cref="T:Microsoft.JScript.IDebugType" />
+        <altmember cref="T:Microsoft.JScript.IDebuggerObject" />
       </Docs>
     </Member>
     <Member MemberName="name">
@@ -94,6 +106,9 @@
         <summary>The name of the field.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Reflection.FieldInfo" />
+        <altmember cref="T:Microsoft.JScript.IDebugType" />
+        <altmember cref="T:Microsoft.JScript.IDebuggerObject" />
       </Docs>
     </Member>
     <Member MemberName="value">
@@ -112,7 +127,22 @@
         <summary>The value of the field.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Reflection.FieldInfo" />
+        <altmember cref="T:Microsoft.JScript.IDebugType" />
+        <altmember cref="T:Microsoft.JScript.IDebuggerObject" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.DynamicFieldInfo" /> class.</summary>
+        <altmember cref="T:System.Reflection.FieldInfo" />
+        <altmember cref="T:Microsoft.JScript.IDebugType" />
+        <altmember cref="T:Microsoft.JScript.IDebuggerObject" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

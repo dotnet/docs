@@ -10,18 +10,20 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "vb"
 helpviewer_keywords: 
   - "events [Windows Forms], connecting multiple to single event handler"
   - "event handlers [Windows Forms], connecting events to"
-  - "menus, event-handling methods for multiple menu items"
+  - "menus [Windows Forms], event-handling methods for multiple menu items"
   - "Windows Forms controls, events"
-  - "menu items, multicasting event-handling methods"
+  - "menu items [Windows Forms], multicasting event-handling methods"
 ms.assetid: 5a20749a-41b5-4acc-8eb1-9e5040b0a2c4
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Connect Multiple Events to a Single Event Handler in Windows Forms
 In your application design, you may find it necessary to use a single event handler for multiple events or have multiple events perform the same procedure. For example, it is often a powerful time-saver to have a menu command raise the same event as a button on your form does if they expose the same functionality. You can do this by using the Events view of the Properties window in C# or using the `Handles` keyword and the **Class Name** and **Method Name** drop-down boxes in the Visual Basic Code Editor.  
@@ -67,5 +69,5 @@ In your application design, you may find it necessary to use a single event hand
      Code will be added to the form to bind the event to the existing event handler.  
   
 ## See Also  
- [Creating Event Handlers in Windows Forms](../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)   
+ [Creating Event Handlers in Windows Forms](../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)  
  [Event Handlers Overview](../../../docs/framework/winforms/event-handlers-overview-windows-forms.md)

@@ -129,7 +129,7 @@
  For configuration file syntax, see [Remoting Settings Schema](http://msdn.microsoft.com/en-us/dc2d1e62-9af7-4ca1-99fd-98b93bb4db9e).  
   
 > [!NOTE]
->  Marshal-by-reference objects (MBRs) do not reside in memory forever. Instead, unless the type overrides <xref:System.MarshalByRefObject.InitializeLifetimeService%2A?displayProperty=fullName> to control its own lifetime policies, each MBR has a finite lifetime before the .NET Framework remoting system begins the process of deleting it and reclaiming the memory. For more information, see [Lifetime Leases](http://msdn.microsoft.com/en-us/c72d561c-1266-4c8b-b258-2c168c08da9a).  
+>  Marshal-by-reference objects (MBRs) do not reside in memory forever. Instead, unless the type overrides <xref:System.MarshalByRefObject.InitializeLifetimeService%2A?displayProperty=nameWithType> to control its own lifetime policies, each MBR has a finite lifetime before the .NET Framework remoting system begins the process of deleting it and reclaiming the memory. For more information, see [Lifetime Leases](http://msdn.microsoft.com/en-us/c72d561c-1266-4c8b-b258-2c168c08da9a).  
   
    
   
@@ -174,7 +174,7 @@
  For configuration file syntax, see [Remoting Settings Schema](http://msdn.microsoft.com/en-us/dc2d1e62-9af7-4ca1-99fd-98b93bb4db9e).  
   
 > [!NOTE]
->  Marshal-by-reference objects (MBRs) do not reside in memory forever. Instead, unless the type overrides <xref:System.MarshalByRefObject.InitializeLifetimeService%2A?displayProperty=fullName> to control its own lifetime policies, each MBR has a finite lifetime before the .NET Framework remoting system begins the process of deleting it and reclaiming the memory. For more information, see [Lifetime Leases](http://msdn.microsoft.com/en-us/c72d561c-1266-4c8b-b258-2c168c08da9a).  
+>  Marshal-by-reference objects (MBRs) do not reside in memory forever. Instead, unless the type overrides <xref:System.MarshalByRefObject.InitializeLifetimeService%2A?displayProperty=nameWithType> to control its own lifetime policies, each MBR has a finite lifetime before the .NET Framework remoting system begins the process of deleting it and reclaiming the memory. For more information, see [Lifetime Leases](http://msdn.microsoft.com/en-us/c72d561c-1266-4c8b-b258-2c168c08da9a).  
   
  ]]></format>
         </remarks>
@@ -284,6 +284,10 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
+        <altmember cref="T:System.Runtime.Remoting.ActivatedServiceTypeEntry" />
+        <altmember cref="T:System.Runtime.Remoting.ActivatedClientTypeEntry" />
+        <altmember cref="M:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType(System.Type)" />
+        <altmember cref="M:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType(System.Type,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetRegisteredActivatedServiceTypes">
@@ -320,6 +324,10 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
+        <altmember cref="T:System.Runtime.Remoting.ActivatedServiceTypeEntry" />
+        <altmember cref="T:System.Runtime.Remoting.ActivatedClientTypeEntry" />
+        <altmember cref="M:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType(System.Type)" />
+        <altmember cref="M:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType(System.Type,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetRegisteredWellKnownClientTypes">
@@ -358,6 +366,10 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
+        <altmember cref="T:System.Runtime.Remoting.WellKnownClientTypeEntry" />
+        <altmember cref="T:System.Runtime.Remoting.WellKnownServiceTypeEntry" />
+        <altmember cref="M:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownServiceType(System.Type,System.String,System.Runtime.Remoting.WellKnownObjectMode)" />
+        <altmember cref="M:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType(System.Type,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetRegisteredWellKnownServiceTypes">
@@ -396,6 +408,10 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
+        <altmember cref="T:System.Runtime.Remoting.WellKnownServiceTypeEntry" />
+        <altmember cref="T:System.Runtime.Remoting.WellKnownClientTypeEntry" />
+        <altmember cref="M:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownServiceType(System.Type,System.String,System.Runtime.Remoting.WellKnownObjectMode)" />
+        <altmember cref="M:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType(System.Type,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="IsActivationAllowed">
@@ -624,7 +640,7 @@
 ## Remarks  
  To create an instance of a client-activated object on the server, you must know its <xref:System.Type> and it must be registered on the server end by using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> method. To obtain a proxy for a new instance of the client-activated object, the client must first register a channel with <xref:System.Runtime.Remoting.Channels.ChannelServices> and then activate the object by calling `new`.  
   
- To activate a client-activated object type with the `new` keyword, you must first register the object type on the client end using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method gives the remoting infrastructure the location of the remote application where `new` attempts to create it. If, on the other hand, you use the <xref:System.Activator.CreateInstance%2A?displayProperty=fullName> method to create a new instance of the client-activated object, you must supply the remote application's URL as a parameter, so no prior registration on the client end is necessary. To supply the <xref:System.Activator.CreateInstance%2A?displayProperty=fullName> method with the URL of the server where you want to create the object, you must encapsulate the URL in an instance of the <xref:System.Runtime.Remoting.Activation.UrlAttribute> class.  
+ To activate a client-activated object type with the `new` keyword, you must first register the object type on the client end using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method gives the remoting infrastructure the location of the remote application where `new` attempts to create it. If, on the other hand, you use the <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> method to create a new instance of the client-activated object, you must supply the remote application's URL as a parameter, so no prior registration on the client end is necessary. To supply the <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> method with the URL of the server where you want to create the object, you must encapsulate the URL in an instance of the <xref:System.Runtime.Remoting.Activation.UrlAttribute> class.  
   
  For a detailed description of client-activated objects, see [&#91;\<topic://cpconClientActivation>&#93;](http://msdn.microsoft.com/en-us/4a791494-c18a-4711-a5c1-4ab0e49a8f1a).  
   
@@ -632,6 +648,8 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
+        <altmember cref="T:System.Runtime.Remoting.ActivatedClientTypeEntry" />
+        <altmember cref="T:System.Runtime.Remoting.ActivatedServiceTypeEntry" />
       </Docs>
     </Member>
     <Member MemberName="RegisterActivatedClientType">
@@ -661,7 +679,7 @@
 ## Remarks  
  To create an instance of a client-activated object on the server, you must know its <xref:System.Type> and it must be registered on the server end by using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> method. To obtain a proxy for a new instance of the client-activated object, the client must first register a channel with <xref:System.Runtime.Remoting.Channels.ChannelServices> and then activate the object by calling `new`.  
   
- To activate a client-activated object type with the `new` keyword, you must first register the object type on the client end using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method gives the remoting infrastructure the location of the remote application where `new` attempts to create it. If, on the other hand, you use the <xref:System.Activator.CreateInstance%2A?displayProperty=fullName> method to create a new instance of the client-activated object, you must supply the remote application's URL as a parameter, so no prior registration on the client end is necessary. To supply the <xref:System.Activator.CreateInstance%2A?displayProperty=fullName> method with the URL of the server where you want to create the object, you must encapsulate the URL in an instance of the <xref:System.Runtime.Remoting.Activation.UrlAttribute> class.  
+ To activate a client-activated object type with the `new` keyword, you must first register the object type on the client end using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method gives the remoting infrastructure the location of the remote application where `new` attempts to create it. If, on the other hand, you use the <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> method to create a new instance of the client-activated object, you must supply the remote application's URL as a parameter, so no prior registration on the client end is necessary. To supply the <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> method with the URL of the server where you want to create the object, you must encapsulate the URL in an instance of the <xref:System.Runtime.Remoting.Activation.UrlAttribute> class.  
   
  For a detailed description of client-activated objects, see [&#91;\<topic://cpconClientActivation>&#93;](http://msdn.microsoft.com/en-us/4a791494-c18a-4711-a5c1-4ab0e49a8f1a)  
   
@@ -679,6 +697,8 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="typeName" /> or <paramref name="URI" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
+        <altmember cref="T:System.Runtime.Remoting.ActivatedClientTypeEntry" />
+        <altmember cref="T:System.Runtime.Remoting.ActivatedServiceTypeEntry" />
       </Docs>
     </Member>
     <Member MemberName="RegisterActivatedServiceType">
@@ -704,7 +724,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To create an instance of a client-activated object on the server, you must know its <xref:System.Type> and it must be registered on the server end by using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> method. To obtain a proxy for a new instance of the client-activated object, the client must first register a channel with <xref:System.Runtime.Remoting.Channels.ChannelServices> and then activate the object by calling `new` or <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.  
+ To create an instance of a client-activated object on the server, you must know its <xref:System.Type> and it must be registered on the server end by using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> method. To obtain a proxy for a new instance of the client-activated object, the client must first register a channel with <xref:System.Runtime.Remoting.Channels.ChannelServices> and then activate the object by calling `new` or <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>.  
   
  To activate a client-activated object type with the `new` keyword, you must first register the object type on the client end using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method gives the remoting infrastructure the location of the remote application, where `new` attempts to create it. If, on the other hand, you use the <xref:System.Activator.CreateInstance%2A> method to create a new instance of the client-activated object, you must supply the remote application's URL as a parameter, so no prior registration on the client end is necessary. To supply the <xref:System.Activator.CreateInstance%2A> method with the URL of the server where you want to create the object, you must encapsulate the URL in an instance of the <xref:System.Runtime.Remoting.Activation.UrlAttribute> class.  
   
@@ -714,6 +734,8 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
+        <altmember cref="T:System.Runtime.Remoting.ActivatedServiceTypeEntry" />
+        <altmember cref="T:System.Runtime.Remoting.ActivatedClientTypeEntry" />
       </Docs>
     </Member>
     <Member MemberName="RegisterActivatedServiceType">
@@ -739,7 +761,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To create an instance of a client-activated object on the server, you must know its <xref:System.Type> and it must be registered on the server end by using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> method. To obtain a proxy for a new instance of the client-activated object, the client must first register a channel with <xref:System.Runtime.Remoting.Channels.ChannelServices> and then activate the object by calling `new` or <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.  
+ To create an instance of a client-activated object on the server, you must know its <xref:System.Type> and it must be registered on the server end by using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> method. To obtain a proxy for a new instance of the client-activated object, the client must first register a channel with <xref:System.Runtime.Remoting.Channels.ChannelServices> and then activate the object by calling `new` or <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>.  
   
  To activate a client-activated object type with the `new` keyword, you must first register the object type on the client end using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method gives the remoting infrastructure the location of the remote application, where `new` attempts to create it. If, on the other hand, you use the <xref:System.Activator.CreateInstance%2A> method to create a new instance of the client-activated object, you must supply the remote application's URL as a parameter, so no prior registration on the client end is necessary. To supply the <xref:System.Activator.CreateInstance%2A> method with the URL of the server where you want to create the object, you must encapsulate the URL in an instance of the <xref:System.Runtime.Remoting.Activation.UrlAttribute> class.  
   
@@ -764,6 +786,8 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
+        <altmember cref="T:System.Runtime.Remoting.ActivatedServiceTypeEntry" />
+        <altmember cref="T:System.Runtime.Remoting.ActivatedClientTypeEntry" />
       </Docs>
     </Member>
     <Member MemberName="RegisterWellKnownClientType">
@@ -789,7 +813,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Any client that knows the URI of a registered well-known object can obtain a proxy for the object by registering the channel it prefers with <xref:System.Runtime.Remoting.Channels.ChannelServices>, and activating the object by calling `new` or <xref:System.Activator.GetObject%2A?displayProperty=fullName>. To activate a well-known object with `new`, you must first register the well-known object type on the client using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method gives the remoting infrastructure the location of the remote object, which allows the `new` keyword to create it. If, on the other hand, you use the <xref:System.Activator.GetObject%2A?displayProperty=fullName> method to activate the well-known object, you must supply it with the object's URL as an argument, so no prior registration on the client end is necessary.  
+ Any client that knows the URI of a registered well-known object can obtain a proxy for the object by registering the channel it prefers with <xref:System.Runtime.Remoting.Channels.ChannelServices>, and activating the object by calling `new` or <xref:System.Activator.GetObject%2A?displayProperty=nameWithType>. To activate a well-known object with `new`, you must first register the well-known object type on the client using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method gives the remoting infrastructure the location of the remote object, which allows the `new` keyword to create it. If, on the other hand, you use the <xref:System.Activator.GetObject%2A?displayProperty=nameWithType> method to activate the well-known object, you must supply it with the object's URL as an argument, so no prior registration on the client end is necessary.  
   
  For a detailed description of well-known objects, see [&#91;\<topic://cpconServerActivation>&#93;](http://msdn.microsoft.com/en-us/77ded6e2-4ca8-448b-acf2-562d27fd4396).  
   
@@ -797,6 +821,8 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
+        <altmember cref="T:System.Runtime.Remoting.WellKnownClientTypeEntry" />
+        <altmember cref="T:System.Runtime.Remoting.WellKnownServiceTypeEntry" />
       </Docs>
     </Member>
     <Member MemberName="RegisterWellKnownClientType">
@@ -824,7 +850,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Any client that knows the URI of a registered well-known object can obtain a proxy for the object by registering the channel it prefers with <xref:System.Runtime.Remoting.Channels.ChannelServices>, and activating the object by calling `new` or <xref:System.Activator.GetObject%2A?displayProperty=fullName>. To activate a well-known object with `new`, you must first register the well-known object type on the client using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method gives the remoting infrastructure the location of the remote object, which allows the `new` keyword to create it. If, on the other hand, you use the <xref:System.Activator.GetObject%2A?displayProperty=fullName> method to activate the well-known object, you must supply it with the object's URL as an argument, so no prior registration on the client end is necessary.  
+ Any client that knows the URI of a registered well-known object can obtain a proxy for the object by registering the channel it prefers with <xref:System.Runtime.Remoting.Channels.ChannelServices>, and activating the object by calling `new` or <xref:System.Activator.GetObject%2A?displayProperty=nameWithType>. To activate a well-known object with `new`, you must first register the well-known object type on the client using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method gives the remoting infrastructure the location of the remote object, which allows the `new` keyword to create it. If, on the other hand, you use the <xref:System.Activator.GetObject%2A?displayProperty=nameWithType> method to activate the well-known object, you must supply it with the object's URL as an argument, so no prior registration on the client end is necessary.  
   
  For a detailed description of well-known objects, see [&#91;\<topic://cpconServerActivation>&#93;](http://msdn.microsoft.com/en-us/77ded6e2-4ca8-448b-acf2-562d27fd4396).  
   
@@ -847,6 +873,8 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
+        <altmember cref="T:System.Runtime.Remoting.WellKnownClientTypeEntry" />
+        <altmember cref="T:System.Runtime.Remoting.WellKnownServiceTypeEntry" />
       </Docs>
     </Member>
     <Member MemberName="RegisterWellKnownServiceType">
@@ -872,9 +900,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Any client that knows the URI of a registered well-known object can obtain a proxy for the object by registering the channel it prefers with <xref:System.Runtime.Remoting.Channels.ChannelServices>, and activating the object by calling `new` or the <xref:System.Activator.GetObject%2A?displayProperty=fullName> method. To activate a well-known object with `new`, you must first register the well-known object type on the client using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method gives the remoting infrastructure the location of the remote object, which allows the `new` keyword to create it. If, on the other hand, you use the <xref:System.Activator.GetObject%2A?displayProperty=fullName> method to activate the well-known object, you must supply it with the object's URL as an argument, so no prior registration on the client end is necessary.  
+ Any client that knows the URI of a registered well-known object can obtain a proxy for the object by registering the channel it prefers with <xref:System.Runtime.Remoting.Channels.ChannelServices>, and activating the object by calling `new` or the <xref:System.Activator.GetObject%2A?displayProperty=nameWithType> method. To activate a well-known object with `new`, you must first register the well-known object type on the client using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method gives the remoting infrastructure the location of the remote object, which allows the `new` keyword to create it. If, on the other hand, you use the <xref:System.Activator.GetObject%2A?displayProperty=nameWithType> method to activate the well-known object, you must supply it with the object's URL as an argument, so no prior registration on the client end is necessary.  
   
- When the call arrives at the server, the .NET Framework extracts the URI from the message, examines the remoting tables to locate the reference for the object that matches the URI, and then instantiates the object if necessary, forwarding the method call to the object. If the object is registered as <xref:System.Runtime.Remoting.WellKnownObjectMode.SingleCall>, it is destroyed after the method call is completed. A new instance of the object is created for each method called. The only difference between <xref:System.Activator.GetObject%2A?displayProperty=fullName> and `new` is that the former allows you to specify a URL as a parameter, and the latter obtains the URL from the configuration.  
+ When the call arrives at the server, the .NET Framework extracts the URI from the message, examines the remoting tables to locate the reference for the object that matches the URI, and then instantiates the object if necessary, forwarding the method call to the object. If the object is registered as <xref:System.Runtime.Remoting.WellKnownObjectMode.SingleCall>, it is destroyed after the method call is completed. A new instance of the object is created for each method called. The only difference between <xref:System.Activator.GetObject%2A?displayProperty=nameWithType> and `new` is that the former allows you to specify a URL as a parameter, and the latter obtains the URL from the configuration.  
   
  The remote object itself is not instantiated by the registration process. This only happens when a client attempts to call a method on the object or activates the object from the client side.  
   
@@ -891,6 +919,8 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
+        <altmember cref="T:System.Runtime.Remoting.WellKnownServiceTypeEntry" />
+        <altmember cref="T:System.Runtime.Remoting.WellKnownClientTypeEntry" />
       </Docs>
     </Member>
     <Member MemberName="RegisterWellKnownServiceType">
@@ -920,9 +950,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Any client that knows the URI of a registered well-known object can obtain a proxy for the object by registering the channel it prefers with <xref:System.Runtime.Remoting.Channels.ChannelServices>, and activating the object by calling `new` or the <xref:System.Activator.GetObject%2A?displayProperty=fullName> method. To activate a well-known object with `new`, you must first register the well-known object type on the client using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method gives the remoting infrastructure the location of the remote object, which allows the `new` keyword to create it. If, on the other hand, you use the <xref:System.Activator.GetObject%2A?displayProperty=fullName> method to activate the well-known object, you must supply it with the object's URL as an argument, so no prior registration on the client end is necessary.  
+ Any client that knows the URI of a registered well-known object can obtain a proxy for the object by registering the channel it prefers with <xref:System.Runtime.Remoting.Channels.ChannelServices>, and activating the object by calling `new` or the <xref:System.Activator.GetObject%2A?displayProperty=nameWithType> method. To activate a well-known object with `new`, you must first register the well-known object type on the client using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method gives the remoting infrastructure the location of the remote object, which allows the `new` keyword to create it. If, on the other hand, you use the <xref:System.Activator.GetObject%2A?displayProperty=nameWithType> method to activate the well-known object, you must supply it with the object's URL as an argument, so no prior registration on the client end is necessary.  
   
- When the call arrives at the server, the .NET Framework extracts the URI from the message, examines the remoting tables to locate the reference for the object that matches the URI, and then instantiates the object if necessary, forwarding the method call to the object. If the object is registered as <xref:System.Runtime.Remoting.WellKnownObjectMode.SingleCall>, it is destroyed after the method call is completed. A new instance of the object is created for each method called. The only difference between <xref:System.Activator.GetObject%2A?displayProperty=fullName> and `new` is that the former allows you to specify a URL as a parameter, and the latter obtains the URL from the configuration.  
+ When the call arrives at the server, the .NET Framework extracts the URI from the message, examines the remoting tables to locate the reference for the object that matches the URI, and then instantiates the object if necessary, forwarding the method call to the object. If the object is registered as <xref:System.Runtime.Remoting.WellKnownObjectMode.SingleCall>, it is destroyed after the method call is completed. A new instance of the object is created for each method called. The only difference between <xref:System.Activator.GetObject%2A?displayProperty=nameWithType> and `new` is that the former allows you to specify a URL as a parameter, and the latter obtains the URL from the configuration.  
   
  The remote object itself is not instantiated by the registration process. This only happens when a client attempts to call a method on the object or activates the object from the client side.  
   
@@ -953,7 +983,69 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
+        <altmember cref="T:System.Runtime.Remoting.WellKnownServiceTypeEntry" />
+        <altmember cref="T:System.Runtime.Remoting.WellKnownClientTypeEntry" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="RegisterWellKnownServiceType">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers an object <see cref="T:System.Type" /> on the service end as a well-known type (single call or singleton).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RegisterWellKnownClientType">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers an object <see cref="T:System.Type" /> on the client end as a well-known type (single call or singleton).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsRemotelyActivatedClientType">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Checks whether the specified object type is registered as a remotely activated client type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RegisterActivatedServiceType">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers an object <see cref="T:System.Type" /> on the service end as one that can be activated on request from a client.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsWellKnownClientType">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Checks whether the specified object type is registered as a well-known client type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RegisterActivatedClientType">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers an object <see cref="T:System.Type" /> on the client end as a type that can be activated on the server.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

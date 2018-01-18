@@ -23,6 +23,8 @@
     <block subset="none" type="overrides">
       <para>The associated control, <see cref="T:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart" />, is a <see langword="sealed" /> class and cannot be inherited. Therefore, there is little value in deriving from <see cref="T:System.Web.UI.Design.WebControls.WebParts.DeclarativeCatalogPartDesigner" /> because it cannot be overridden to apply to any other control.</para>
     </block>
+    <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

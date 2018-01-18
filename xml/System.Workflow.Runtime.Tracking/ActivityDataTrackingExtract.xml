@@ -25,7 +25,7 @@
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
   
- Each user event or activity status event that occurs during a workflow instance is associated with a specific activity. An <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract> specifies a property or a field to be extracted from this activity. You can include an <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract> in either <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.Extracts%2A?displayProperty=fullName> or <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Extracts%2A?displayProperty=fullName> to instruct the runtime tracking infrastructure to extract a field or a property from the associated activity when the infrastructure matches an <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> or a <xref:System.Workflow.Runtime.Tracking.UserTrackPoint>. The runtime tracking infrastructure puts the extracted data and any associated annotations in the <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord> or the <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord> that it returns to the tracking service.  
+ Each user event or activity status event that occurs during a workflow instance is associated with a specific activity. An <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract> specifies a property or a field to be extracted from this activity. You can include an <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract> in either <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.Extracts%2A?displayProperty=nameWithType> or <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Extracts%2A?displayProperty=nameWithType> to instruct the runtime tracking infrastructure to extract a field or a property from the associated activity when the infrastructure matches an <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> or a <xref:System.Workflow.Runtime.Tracking.UserTrackPoint>. The runtime tracking infrastructure puts the extracted data and any associated annotations in the <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord> or the <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord> that it returns to the tracking service.  
   
  Set <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract.Member%2A> to specify the field or property for the runtime tracking infrastructure to extract from the activity. You can associate additional information with the extracted data by adding to <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract.Annotations%2A>.  
   
@@ -135,5 +135,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

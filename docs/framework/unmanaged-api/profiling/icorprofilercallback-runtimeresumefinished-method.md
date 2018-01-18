@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::RuntimeResumeFinished"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "RuntimeResumeFinished method [.NET Framework profiling]"
   - "ICorProfilerCallback::RuntimeResumeFinished method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::RuntimeResumeFinished Method
 Notifies the profiler that the runtime has resumed all runtime threads and has returned to normal operation.  

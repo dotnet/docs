@@ -16,9 +16,11 @@ helpviewer_keywords:
   - "developing applications [WCF Data Services]"
 ms.assetid: 6557c0e3-5aea-4f6e-bc14-77ad317a168b
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Developing and Deploying WCF Data Services
 This topic provides information about developing and deploying [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]. For more basic information about [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], see [Getting Started](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md) and [Overview](../../../../docs/framework/data/wcf/wcf-data-services-overview.md).  
@@ -126,6 +128,6 @@ This topic provides information about developing and deploying [!INCLUDE[ssAstor
 -   Because [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] includes a basic [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] implementation, you can use Windows Server AppFabric to monitor a data service deployed to IIS running on Windows Server. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] using Windows Server AppFabric to monitor a data service, see the post [Tracking WCF Data Services with Windows Server AppFabric](http://go.microsoft.com/fwlink/?LinkID=202005).  
   
 ## See Also  
- [Hosting the Data Service](../../../../docs/framework/data/wcf/hosting-the-data-service-wcf-data-services.md)   
- [Securing WCF Data Services](../../../../docs/framework/data/wcf/securing-wcf-data-services.md)   
+ [Hosting the Data Service](../../../../docs/framework/data/wcf/hosting-the-data-service-wcf-data-services.md)  
+ [Securing WCF Data Services](../../../../docs/framework/data/wcf/securing-wcf-data-services.md)  
  [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)

@@ -1,12 +1,10 @@
 ---
 title: "Command-line build with csc.exe"
-ms.date: "2017-04-19"
+ms.date: 04/19/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "builds [C#]"
   - "command line [C#]"
@@ -14,20 +12,6 @@ ms.assetid: 66e70056-dd20-453c-a9b3-507e0478b015
 caps.latest.revision: 28
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Command-line build with csc.exe
 You can invoke the C# compiler by typing the name of its executable file (*csc.exe*) at a command prompt.
@@ -113,11 +97,11 @@ csc /target:library /out:Something.xyz *.cs
 There are no object (*.obj*) files created as a result of invoking the C# compiler; output files are created directly. As a result of this, the C# compiler does not need a linker.
 
 ## See also
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [C# Compiler Options Listed Alphabetically](../../../csharp/language-reference/compiler-options/listed-alphabetically.md)   
- [C# Compiler Options Listed by Category](../../../csharp/language-reference/compiler-options/listed-by-category.md)   
- [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md)   
- [Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/command-line-arguments.md)   
- [How to: Display Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)   
- [How to: Access Command-Line Arguments Using foreach](../../../csharp/programming-guide/main-and-command-args/how-to-access-command-line-arguments-using-foreach.md)   
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+ [C# Compiler Options Listed Alphabetically](../../../csharp/language-reference/compiler-options/listed-alphabetically.md)  
+ [C# Compiler Options Listed by Category](../../../csharp/language-reference/compiler-options/listed-by-category.md)  
+ [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md)  
+ [Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/command-line-arguments.md)  
+ [How to: Display Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)  
+ [How to: Access Command-Line Arguments Using foreach](../../../csharp/programming-guide/main-and-command-args/how-to-access-command-line-arguments-using-foreach.md)  
  [Main() Return Values](../../../csharp/programming-guide/main-and-command-args/main-return-values.md)

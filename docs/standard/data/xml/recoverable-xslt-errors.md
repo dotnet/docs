@@ -8,16 +8,14 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: 484929b0-fefb-4629-87ee-ebdde70ff1f8
 caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Recoverable XSLT Errors
 The W3C XSL Transformations (XSLT) Version 1.0 Recommendation includes areas in which the implementation provider may decide how to handle a situation. These areas are considered to be discretionary behavior. For example, in section 7.3 Creating Processing Instructions, the XSLT 1.0 recommendation states that it is an error if instantiating the content of `xsl:processing-instruction` creates nodes other than text nodes. For some problems, the XSLT 1.0 recommendation indicates what decision should be made if the processor decides to recover from the error. For the problem given in section 7.3, the W3C says that the implementation can recover from this error by ignoring the nodes and their content.  
@@ -25,11 +23,11 @@ The W3C XSL Transformations (XSLT) Version 1.0 Recommendation includes areas in 
 ## Discretionary Behaviors  
  The following table lists each of the discretionary behaviors allowed by the XSLT 1.0 recommendation, and how these behaviors are handled by the <xref:System.Xml.Xsl.XslCompiledTransform> class.  
   
--   Recover indicates that the <xref:System.Xml.Xsl.XslCompiledTransform> class will recover from this error. The <xref:System.Xml.Xsl.XsltArgumentList.XsltMessageEncountered?displayProperty=fullName> event can be used to report any events from the XSLT processor.  
+-   Recover indicates that the <xref:System.Xml.Xsl.XslCompiledTransform> class will recover from this error. The <xref:System.Xml.Xsl.XsltArgumentList.XsltMessageEncountered?displayProperty=nameWithType> event can be used to report any events from the XSLT processor.  
   
 -   Error indicates that an exception is raised for this condition.  
   
--   The section references can be found in the [W3C XSL Transformations (XSLT) Version 1.0 Recommendation](http://go.microsoft.com/fwlink/?LinkId=49919) and the [W3C XSL Transformations (XSLT) Version 1.0 Specification Errata](http://go.microsoft.com/fwlink/?LinkId=49917).  
+-   The section references can be found in the [W3C XSL Transformations (XSLT) Version 1.0 Recommendation](http://www.w3.org/TR/xslt) and the [W3C XSL Transformations (XSLT) Version 1.0 Specification Errata](http://www.w3.org/1999/11/REC-xslt-19991116-errata/).  
   
 |XSLT condition|Section|XslCompiledTransform behavior|  
 |--------------------|-------------|-----------------------------------|  

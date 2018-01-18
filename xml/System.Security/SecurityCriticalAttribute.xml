@@ -39,10 +39,12 @@
 > [!NOTE]
 >  The <xref:System.Security.SecurityCriticalAttribute> is equivalent to a link demand for full trust. A type or member marked with the <xref:System.Security.SecurityCriticalAttribute> can be called only by fully trusted code; it does not have to demand specific permissions. It cannot be called by partially trusted code.  
   
- Applying the <xref:System.Security.SecurityCriticalAttribute> at the assembly level identifies the assembly as a security-critical assembly. The entire assembly can be identified as critical by setting the scope parameter <xref:System.Security.SecurityCriticalScope?displayProperty=fullName>.  
+ Applying the <xref:System.Security.SecurityCriticalAttribute> at the assembly level identifies the assembly as a security-critical assembly. The entire assembly can be identified as critical by setting the scope parameter <xref:System.Security.SecurityCriticalScope.Everything?displayProperty=nameWithType>.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.SecurityTransparentAttribute" />
+    <altmember cref="T:System.Security.SecuritySafeCriticalAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -139,5 +141,18 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.SecurityCriticalAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

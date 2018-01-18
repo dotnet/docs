@@ -25,6 +25,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.IAuthenticationModule" />
+    <altmember cref="T:System.Net.AuthenticationManager" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,6 +54,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.IAuthenticationModule" />
+        <altmember cref="T:System.Net.AuthenticationManager" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -73,6 +77,8 @@
         <param name="element">The <see cref="T:System.Net.Configuration.AuthenticationModuleElement" /> to add to the collection.</param>
         <summary>Adds an element to the collection.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.IAuthenticationModule" />
+        <altmember cref="T:System.Net.AuthenticationManager" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -159,6 +165,8 @@
         <summary>Returns the index of the specified configuration element.</summary>
         <returns>The zero-based index of <paramref name="element" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.IAuthenticationModule" />
+        <altmember cref="T:System.Net.AuthenticationManager" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -186,6 +194,8 @@
         <summary>Gets or sets the element at the specified position in the collection.</summary>
         <value>The <see cref="T:System.Net.Configuration.AuthenticationModuleElement" /> at the specified location.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.IAuthenticationModule" />
+        <altmember cref="T:System.Net.AuthenticationManager" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -213,6 +223,8 @@
         <summary>Gets or sets the element with the specified key.</summary>
         <value>The <see cref="T:System.Net.Configuration.AuthenticationModuleElement" /> with the specified key or <see langword="null" /> if there is no element with the specified key.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.IAuthenticationModule" />
+        <altmember cref="T:System.Net.AuthenticationManager" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -234,6 +246,8 @@
         <param name="element">The <see cref="T:System.Net.Configuration.AuthenticationModuleElement" /> to remove.</param>
         <summary>Removes the specified configuration element from the collection.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.IAuthenticationModule" />
+        <altmember cref="T:System.Net.AuthenticationManager" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -255,6 +269,8 @@
         <param name="name">The key of the element to remove.</param>
         <summary>Removes the element with the specified key.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.IAuthenticationModule" />
+        <altmember cref="T:System.Net.AuthenticationManager" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -276,7 +292,29 @@
         <param name="index">The zero-based index of the element to remove.</param>
         <summary>Removes the element at the specified index.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.IAuthenticationModule" />
+        <altmember cref="T:System.Net.AuthenticationManager" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes an element from the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the element with the specified index or key.</summary>
+        <altmember cref="T:System.Net.IAuthenticationModule" />
+        <altmember cref="T:System.Net.AuthenticationManager" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

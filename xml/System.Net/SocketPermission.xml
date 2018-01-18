@@ -116,7 +116,7 @@
   
  The `hostName` can be a DNS name, an IP address, or a specified IP subnet, such as 192.168.1.*.  
   
- The `portNumber` can be any valid port number defined by the transport, or <xref:System.Net.SocketPermission?displayProperty=fullName>.  
+ The `portNumber` can be any valid port number defined by the transport, or <xref:System.Net.SocketPermission.AllPorts?displayProperty=nameWithType>.  
   
    
   
@@ -594,5 +594,15 @@
           <paramref name="target" /> is not a <see cref="T:System.Net.SocketPermission" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.SocketPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

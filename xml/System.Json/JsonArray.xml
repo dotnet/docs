@@ -46,7 +46,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public JsonArray (System.Json.JsonValue[] items);" />
+      <MemberSignature Language="C#" Value="public JsonArray (params System.Json.JsonValue[] items);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Json.JsonValue[] items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonArray.#ctor(System.Json.JsonValue[])" />
       <MemberType>Constructor</MemberType>
@@ -115,7 +115,7 @@
       </Docs>
     </Member>
     <Member MemberName="AddRange">
-      <MemberSignature Language="C#" Value="public void AddRange (System.Json.JsonValue[] items);" />
+      <MemberSignature Language="C#" Value="public void AddRange (params System.Json.JsonValue[] items);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.Json.JsonValue[] items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonArray.AddRange(System.Json.JsonValue[])" />
       <MemberType>Method</MemberType>

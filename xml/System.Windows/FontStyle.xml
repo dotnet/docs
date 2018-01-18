@@ -59,6 +59,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.FontStretch" />
+    <altmember cref="T:System.Windows.FontStyles" />
+    <altmember cref="T:System.Windows.FontWeight" />
+    <altmember cref="T:System.Windows.Media.FontFamily" />
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -213,6 +217,7 @@
         <summary>For a description of this member, see <see cref="M:System.IFormattable.ToString(System.String,System.IFormatProvider)" />.</summary>
         <returns>A <see cref="T:System.String" /> containing the value of the current instance in the specified format.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.FontStyle.ToString" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -234,5 +239,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares two instances of <see cref="T:System.Windows.FontStyle" /> for equality.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

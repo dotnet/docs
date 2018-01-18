@@ -18,7 +18,7 @@
 ## Remarks  
  Use the <xref:System.Diagnostics.EventSourceCreationData> class to configure a new source for writing localized entries to an event log. It is not necessary to use this class to read from an event log.  
   
- This class defines the configuration settings for a new event source and its associated event log. The associated event log can be on the local computer or a remote computer. To create a new source for a new or existing event log on the local computer, set the <xref:System.Diagnostics.EventSourceCreationData.LogName%2A> and <xref:System.Diagnostics.EventSourceCreationData.Source%2A> properties of an <xref:System.Diagnostics.EventSourceCreationData> and call the <xref:System.Diagnostics.EventLog.CreateEventSource%28System.Diagnostics.EventSourceCreationData%29?displayProperty=fullName> method. This method creates the event source you specify in the <xref:System.Diagnostics.EventSourceCreationData.Source%2A> property and registers it for the event log specified in <xref:System.Diagnostics.EventSourceCreationData.LogName%2A>. This behavior is similar to using the <xref:System.Diagnostics.EventLogInstaller> class to register an event source for an event log.  
+ This class defines the configuration settings for a new event source and its associated event log. The associated event log can be on the local computer or a remote computer. To create a new source for a new or existing event log on the local computer, set the <xref:System.Diagnostics.EventSourceCreationData.LogName%2A> and <xref:System.Diagnostics.EventSourceCreationData.Source%2A> properties of an <xref:System.Diagnostics.EventSourceCreationData> and call the <xref:System.Diagnostics.EventLog.CreateEventSource%28System.Diagnostics.EventSourceCreationData%29?displayProperty=nameWithType> method. This method creates the event source you specify in the <xref:System.Diagnostics.EventSourceCreationData.Source%2A> property and registers it for the event log specified in <xref:System.Diagnostics.EventSourceCreationData.LogName%2A>. This behavior is similar to using the <xref:System.Diagnostics.EventLogInstaller> class to register an event source for an event log.  
   
  Use the <xref:System.Diagnostics.EventLog.WriteEvent%2A> and <xref:System.Diagnostics.EventLog.WriteEntry%2A> methods to write events to an event log. You must specify an event source to write events; you must create and configure the event source before writing the first entry with the source.  
   
@@ -48,6 +48,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+    <altmember cref="T:System.Diagnostics.EventLog" />
+    <altmember cref="T:System.Diagnostics.EventLogInstaller" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,7 +73,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To write entries to an event log, you must first create an event source for the event log. To register a new source, initialize an <xref:System.Diagnostics.EventSourceCreationData> instance, configure the instance properties for your application, and call the <xref:System.Diagnostics.EventLog.CreateEventSource%28System.Diagnostics.EventSourceCreationData%29?displayProperty=fullName> method. After the source is registered, you can write entries from the source using the <xref:System.Diagnostics.EventLog.WriteEvent%2A> or <xref:System.Diagnostics.EventLog.WriteEntry%2A> methods.  
+ To write entries to an event log, you must first create an event source for the event log. To register a new source, initialize an <xref:System.Diagnostics.EventSourceCreationData> instance, configure the instance properties for your application, and call the <xref:System.Diagnostics.EventLog.CreateEventSource%28System.Diagnostics.EventSourceCreationData%29?displayProperty=nameWithType> method. After the source is registered, you can write entries from the source using the <xref:System.Diagnostics.EventLog.WriteEvent%2A> or <xref:System.Diagnostics.EventLog.WriteEntry%2A> methods.  
   
  You can register the event source with localized resources for your event category and message strings. Your application can write event log entries using resource identifiers, rather than specifying the actual string. The Event Viewer uses the resource identifier to find and display the corresponding string from the localized resource file based on current language settings. You can register a separate file for event categories, messages, and parameter insertion strings, or you can register the same resource file for all three types of strings. Use the <xref:System.Diagnostics.EventSourceCreationData.CategoryCount%2A>, <xref:System.Diagnostics.EventSourceCreationData.CategoryResourceFile%2A>, <xref:System.Diagnostics.EventSourceCreationData.MessageResourceFile%2A>, and <xref:System.Diagnostics.EventSourceCreationData.ParameterResourceFile%2A> properties to configure the source to write localized entries to the event log. If your application writes string values directly to the event log, you do not need to set these properties.  
   
@@ -214,6 +216,8 @@ SVC_UPDATE.EXE
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.Diagnostics.EventSourceCreationData.Source" />
+        <altmember cref="P:System.Diagnostics.EventSourceCreationData.LogName" />
       </Docs>
     </Member>
     <Member MemberName="CategoryCount">
@@ -367,6 +371,9 @@ SVC_UPDATE.EXE
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property is set to a negative value or to a value larger than <see cref="F:System.UInt16.MaxValue" />.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.Diagnostics.EventSourceCreationData.CategoryResourceFile" />
+        <altmember cref="P:System.Diagnostics.EventLogInstaller.CategoryCount" />
+        <altmember cref="Overload:System.Diagnostics.EventLog.WriteEvent" />
       </Docs>
     </Member>
     <Member MemberName="CategoryResourceFile">
@@ -519,6 +526,8 @@ SVC_UPDATE.EXE
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.Diagnostics.EventSourceCreationData.CategoryCount" />
+        <altmember cref="P:System.Diagnostics.EventLogInstaller.CategoryResourceFile" />
       </Docs>
     </Member>
     <Member MemberName="LogName">
@@ -561,6 +570,8 @@ SVC_UPDATE.EXE
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.Diagnostics.EventLogInstaller.Log" />
+        <altmember cref="M:System.Diagnostics.EventLog.Exists(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="MachineName">
@@ -599,6 +610,9 @@ SVC_UPDATE.EXE
         </remarks>
         <exception cref="T:System.ArgumentException">The computer name is invalid.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.Diagnostics.EventLog.MachineName" />
+        <altmember cref="P:System.Diagnostics.EventSourceCreationData.Source" />
+        <altmember cref="M:System.Diagnostics.EventLog.Exists(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="MessageResourceFile">
@@ -755,6 +769,7 @@ SVC_UPDATE.EXE
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.Diagnostics.EventLogInstaller.MessageResourceFile" />
       </Docs>
     </Member>
     <Member MemberName="ParameterResourceFile">
@@ -934,6 +949,7 @@ SVC_UPDATE.EXE
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.Diagnostics.EventLogInstaller.ParameterResourceFile" />
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -955,7 +971,7 @@ SVC_UPDATE.EXE
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The source name is often the name of the application, or the name of a component within a large application. The <xref:System.Diagnostics.EventLog.CreateEventSource%28System.Diagnostics.EventSourceCreationData%29?displayProperty=fullName> method uses the <xref:System.Diagnostics.EventSourceCreationData.Source%2A>, <xref:System.Diagnostics.EventSourceCreationData.LogName%2A>, and <xref:System.Diagnostics.EventSourceCreationData.MachineName%2A> properties to create registry values on the target computer for the new source and its associated event log. A new source name cannot match an existing source name or an existing event log name on the target computer.  
+ The source name is often the name of the application, or the name of a component within a large application. The <xref:System.Diagnostics.EventLog.CreateEventSource%28System.Diagnostics.EventSourceCreationData%29?displayProperty=nameWithType> method uses the <xref:System.Diagnostics.EventSourceCreationData.Source%2A>, <xref:System.Diagnostics.EventSourceCreationData.LogName%2A>, and <xref:System.Diagnostics.EventSourceCreationData.MachineName%2A> properties to create registry values on the target computer for the new source and its associated event log. A new source name cannot match an existing source name or an existing event log name on the target computer.  
   
  After the registry values for the source are created, your application can use the source to write entries to the configured event log.  
   
@@ -973,6 +989,8 @@ SVC_UPDATE.EXE
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.Diagnostics.EventLogInstaller.Source" />
+        <altmember cref="M:System.Diagnostics.EventLog.SourceExists(System.String)" />
       </Docs>
     </Member>
   </Members>

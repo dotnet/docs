@@ -51,7 +51,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.CharEnumerator> class to enumerate the individual characters in a string. It instantiates a <xref:System.CharEnumerator> object by calling the <xref:System.String.GetEnumerator%2A?displayProperty=fullName> method, moves from one character to the next by calling the <xref:System.CharEnumerator.MoveNext%2A> method, and displays the current character by retrieving the value of the <xref:System.CharEnumerator.Current%2A> property.  
+ The following example uses the <xref:System.CharEnumerator> class to enumerate the individual characters in a string. It instantiates a <xref:System.CharEnumerator> object by calling the <xref:System.String.GetEnumerator%2A?displayProperty=nameWithType> method, moves from one character to the next by calling the <xref:System.CharEnumerator.MoveNext%2A> method, and displays the current character by retrieving the value of the <xref:System.CharEnumerator.Current%2A> property.  
   
  [!code-cpp[System.CharEnumerator.Class#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.CharEnumerator.Class/cpp/charenumerator1.cpp#1)]
  [!code-csharp[System.CharEnumerator.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CharEnumerator.Class/cs/CharEnumerator1.cs#1)]
@@ -65,6 +65,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.String" />
+    <altmember cref="T:System.Collections.IEnumerator" />
+    <altmember cref="T:System.Collections.IEnumerable" />
+    <altmember cref="T:System.Collections.ICollection" />
   </Docs>
   <Members>
     <Member MemberName="Clone">
@@ -139,14 +143,14 @@
 ## Remarks  
  The <xref:System.CharEnumerator> class maintains an internal index to the enumerated string, and the <xref:System.CharEnumerator.Current%2A> property returns the character that is currently referenced by the index. This property should be invoked only when the index is valid; otherwise, an exception is thrown.  
   
- The index is always invalid for an empty string (""). The index is also invalid after the <xref:System.String.GetEnumerator%2A?displayProperty=fullName> or <xref:System.CharEnumerator.Reset%2A> method is called. After either of these methods is called, invoke the <xref:System.CharEnumerator.MoveNext%2A> method to adjust the index to the first character in the enumerated string. The index is valid whenever the <xref:System.CharEnumerator.MoveNext%2A> method returns `true`.  
+ The index is always invalid for an empty string (""). The index is also invalid after the <xref:System.String.GetEnumerator%2A?displayProperty=nameWithType> or <xref:System.CharEnumerator.Reset%2A> method is called. After either of these methods is called, invoke the <xref:System.CharEnumerator.MoveNext%2A> method to adjust the index to the first character in the enumerated string. The index is valid whenever the <xref:System.CharEnumerator.MoveNext%2A> method returns `true`.  
   
- <xref:System.CharEnumerator.Current%2A> does not move the index, and consecutive calls to <xref:System.CharEnumerator.Current%2A> return the same character until <xref:System.CharEnumerator.MoveNext%2A>, <xref:System.CharEnumerator.Reset%2A>, or <xref:System.String.GetEnumerator%2A?displayProperty=fullName> is called.  
+ <xref:System.CharEnumerator.Current%2A> does not move the index, and consecutive calls to <xref:System.CharEnumerator.Current%2A> return the same character until <xref:System.CharEnumerator.MoveNext%2A>, <xref:System.CharEnumerator.Reset%2A>, or <xref:System.String.GetEnumerator%2A?displayProperty=nameWithType> is called.  
   
    
   
 ## Examples  
- The following example uses the <xref:System.CharEnumerator> class to enumerate the individual characters in a string. It instantiates a <xref:System.CharEnumerator> object by calling the <xref:System.String.GetEnumerator%2A?displayProperty=fullName> method, moves from one character to the next by calling the <xref:System.CharEnumerator.MoveNext%2A> method, and displays the current character by retrieving the value of the <xref:System.CharEnumerator.Current%2A> property.  
+ The following example uses the <xref:System.CharEnumerator> class to enumerate the individual characters in a string. It instantiates a <xref:System.CharEnumerator> object by calling the <xref:System.String.GetEnumerator%2A?displayProperty=nameWithType> method, moves from one character to the next by calling the <xref:System.CharEnumerator.MoveNext%2A> method, and displays the current character by retrieving the value of the <xref:System.CharEnumerator.Current%2A> property.  
   
  [!code-cpp[System.CharEnumerator.Class#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.CharEnumerator.Class/cpp/charenumerator1.cpp#1)]
  [!code-csharp[System.CharEnumerator.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CharEnumerator.Class/cs/CharEnumerator1.cs#1)]
@@ -241,7 +245,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.CharEnumerator> class to enumerate the individual characters in a string. It instantiates a <xref:System.CharEnumerator> object by calling the <xref:System.String.GetEnumerator%2A?displayProperty=fullName> method, moves from one character to the next by calling the <xref:System.CharEnumerator.MoveNext%2A> method, and displays the current character by retrieving the value of the <xref:System.CharEnumerator.Current%2A> property.  
+ The following example uses the <xref:System.CharEnumerator> class to enumerate the individual characters in a string. It instantiates a <xref:System.CharEnumerator> object by calling the <xref:System.String.GetEnumerator%2A?displayProperty=nameWithType> method, moves from one character to the next by calling the <xref:System.CharEnumerator.MoveNext%2A> method, and displays the current character by retrieving the value of the <xref:System.CharEnumerator.Current%2A> property.  
   
  [!code-cpp[System.CharEnumerator.Class#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.CharEnumerator.Class/cpp/charenumerator1.cpp#1)]
  [!code-csharp[System.CharEnumerator.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CharEnumerator.Class/cs/CharEnumerator1.cs#1)]

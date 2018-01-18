@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Managed Extensibility Framework, overview"
   - "MEF, overview"
@@ -17,6 +20,8 @@ caps.latest.revision: 31
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Managed Extensibility Framework (MEF)
 This topic provides an overview of the Managed Extensibility Framework introduced in the .NET Framework 4.  
@@ -66,7 +71,7 @@ This topic provides an overview of the Managed Extensibility Framework introduce
  To download the complete code for this example, see the [SimpleCalculator sample](http://code.msdn.microsoft.com/windowsdesktop/Simple-Calculator-MEF-1152654e).  
   
 > [!NOTE]
->  The purpose of SimpleCalculator is to demonstrate the concepts and syntax of MEF, rather than to necessarily provide a realistic scenario for its use. Many of the applications that would benefit most from the power of MEF are more complex than SimpleCalculator. For more extensive examples, see the [Managed Extensibility Framework](http://go.microsoft.com/fwlink/?LinkId=144282) on Codeplex.  
+>  The purpose of SimpleCalculator is to demonstrate the concepts and syntax of MEF, rather than to necessarily provide a realistic scenario for its use. Many of the applications that would benefit most from the power of MEF are more complex than SimpleCalculator. For more extensive examples, see the [Managed Extensibility Framework](https://github.com/MicrosoftArchive/mef) on GitHub.
   
  To start, in [!INCLUDE[vs_dev10_long](../../../includes/vs-dev10-long-md.md)], create a new Console Application project named `SimpleCalculator`. Add a reference to the System.ComponentModel.Composition assembly, where MEF resides. Open Module1.vb or Program.cs and add `Imports` or `using` statements for System.ComponentModel.Composition and System.ComponentModel.Composition.Hosting. These two namespaces contain MEF types you will need to develop an extensible application. In Visual Basic, add the `Public` keyword to the line that declares the `Module1` module.  
   
@@ -352,7 +357,7 @@ public String Calculate(String input)
 }  
 ```  
   
- The initial steps parse the input string into left and right operands and an operator character.  In the `foreach` loop, every member of the `operations` collection is examined. These objects are of type <xref:System.Lazy%602>, and their metadata values and exported object can be accessed with the <xref:System.Lazy%602.Metadata%2A> property and the <xref:System.Lazy%601.Value%2A>property respectively. In this case, if the `Symbol` property of the `IOperationData` object is discovered to be a match, the calculator calls the `Operate` method of the `IOperation` object and returns the result.  
+ The initial steps parse the input string into left and right operands and an operator character.  In the `foreach` loop, every member of the `operations` collection is examined. These objects are of type <xref:System.Lazy%602>, and their metadata values and exported object can be accessed with the <xref:System.Lazy%602.Metadata%2A> property and the <xref:System.Lazy%601.Value%2A> property respectively. In this case, if the `Symbol` property of the `IOperationData` object is discovered to be a match, the calculator calls the `Operate` method of the `IOperation` object and returns the result.  
   
  To complete the calculator, you also need a helper method that returns the position of the first non-digit character in a string.  Add the following helper method to the `MySimpleCalculator` class:  
   
@@ -474,4 +479,4 @@ public class Mod : SimpleCalculator.IOperation
 ## Where Do I Go Now?  
  To download the complete code for this example, see the [SimpleCalculator sample](http://code.msdn.microsoft.com/windowsdesktop/Simple-Calculator-MEF-1152654e).  
   
- For more information and code examples, see [Managed Extensibility Framework](http://go.microsoft.com/fwlink/?LinkId=144282). For a list of the MEF types, see the <xref:System.ComponentModel.Composition?displayProperty=fullName> namespace.
+ For more information and code examples, see [Managed Extensibility Framework](http://go.microsoft.com/fwlink/?LinkId=144282). For a list of the MEF types, see the <xref:System.ComponentModel.Composition?displayProperty=nameWithType> namespace.

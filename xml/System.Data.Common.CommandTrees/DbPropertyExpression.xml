@@ -102,10 +102,17 @@
         <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbPropertyExpression" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">This property expression.</param>
+        <summary>Creates a new key/value pair based on this property expression.</summary>
+        <returns>A new key/value pair with the key and value derived from the <see cref="T:System.Data.Common.CommandTrees.DbPropertyExpression" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the returned key/value pair, the key is a string value that is the name of the referenced property, and the <xref:System.Data.Common.CommandTrees.DbExpression> value is the property expression itself.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Property">

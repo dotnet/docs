@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 04ebd329-3fbd-44c3-b3ab-1de3517e27d7
 caps.latest.revision: 30
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Deploying an Internet Information Services-Hosted WCF Service
 Developing and deploying a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service that is hosted in Internet Information Services (IIS) consists of the following tasks:  
@@ -41,7 +43,7 @@ Developing and deploying a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md
   
 -   Windows 7:  
   
- Finally you must verify that ASP.NET is configured to use the .NET Framework version 4. You do this by running the ASPNET_Regiis tool with the –i option. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][ASP.NET IIS Registration Tool](http://go.microsoft.com/fwlink/?LinkId=201186)  
+ Finally you must verify that ASP.NET is configured to use the .NET Framework version 4. You do this by running the ASPNET_Regiis tool with the –i option. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [ASP.NET IIS Registration Tool](http://go.microsoft.com/fwlink/?LinkId=201186)  
   
 ## Create a New IIS Application or Reuse an Existing ASP.NET Application  
  IIS-hosted [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services must reside inside of an IIS application. You can create a new IIS application to host [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services exclusively. Alternatively, you can deploy an [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service into an existing application that is already hosting [!INCLUDE[vstecasplong](../../../../includes/vstecasplong-md.md)] content (such as .aspx pages and ASP.NET Web services [ASMX]). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] these options, see the "Hosting WCF Side-by-Side with ASP.NET" and "Hosting WCF Services in ASP.NET Compatibility Mode" sections in [WCF Services and ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md).  
@@ -109,6 +111,6 @@ new ServiceHost( typeof( MyNamespace.MyServiceImplementationTypeName ) );
  For example, a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] endpoint configured to use HTTP digest authentication must reside in an IIS virtual directory that is also configured to allow HTTP digest authentication. Unmatched combinations of IIS settings and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] endpoint settings result in an error during service activation.  
   
 ## See Also  
- [Hosting in Internet Information Services](../../../../docs/framework/wcf/feature-details/hosting-in-internet-information-services.md)   
- [Internet Information Services Hosting Best Practices](../../../../docs/framework/wcf/feature-details/internet-information-services-hosting-best-practices.md)   
+ [Hosting in Internet Information Services](../../../../docs/framework/wcf/feature-details/hosting-in-internet-information-services.md)  
+ [Internet Information Services Hosting Best Practices](../../../../docs/framework/wcf/feature-details/internet-information-services-hosting-best-practices.md)  
  [Windows Server App Fabric Hosting Features](http://go.microsoft.com/fwlink/?LinkId=201276)

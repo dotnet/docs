@@ -9,13 +9,18 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "data transfer [WCF], architectural overview"
 ms.assetid: 343c2ca2-af53-4936-a28c-c186b3524ee9
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Data Transfer Architectural Overview
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] can be thought of as a messaging infrastructure. It can receive messages, process them, and dispatch them to user code for further action, or it can construct messages from data given by user code and deliver them to a destination. This topic, which is intended for advanced developers, describes the architecture for handling messages and the contained data. For a simpler, task-oriented view of how to send and receive data, see [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md).  
@@ -245,7 +250,7 @@ manager: "erikre"
  Describing the information to be sent or received as a simple list of operation contract parameters is the recommended approach, unless special reasons exist to move to the more-complex message contract or `Message`-based programming models.  
   
 ### 5. Stream  
- Using `Stream` or one of its subclasses in an operation contract or as a sole message body part in a message contract can be considered a separate programming model from the ones described above. Using `Stream` in this way is the only way to guarantee that your contract will be usable in a streamed fashion, short of writing your own streaming-compatible `Message` subclass. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Large Data and Streaming](../../../../docs/framework/wcf/feature-details/large-data-and-streaming.md).  
+ Using `Stream` or one of its subclasses in an operation contract or as a sole message body part in a message contract can be considered a separate programming model from the ones described above. Using `Stream` in this way is the only way to guarantee that your contract will be usable in a streamed fashion, short of writing your own streaming-compatible `Message` subclass. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Large Data and Streaming](../../../../docs/framework/wcf/feature-details/large-data-and-streaming.md).  
   
  When `Stream` or one of its subclasses is used in this way, the serializer is not invoked. For outgoing messages, a special streaming `Message` subclass is created and the stream is written out as described in the section on the <xref:System.Xml.IStreamProvider> interface. For incoming messages, the service framework creates a `Stream` subclass over the incoming message and provides it to the operation.  
   

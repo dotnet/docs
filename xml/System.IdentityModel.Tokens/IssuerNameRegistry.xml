@@ -22,11 +22,11 @@
 ## Remarks  
  The issuer name registry is used to associate a mnemonic name to the cryptographic material needed to verify signatures of tokens produced by the corresponding issuer. This name is then used to set the <xref:System.Security.Claims.Claim.Issuer%2A> or the <xref:System.Security.Claims.Claim.OriginalIssuer%2A> property of a claim. The methods exposed by the <xref:System.IdentityModel.Tokens.IssuerNameRegistry> class are called from the pipeline by the security token handler that is processing the token. Tokens signed by material that is not mapped by an issuer name registry are discarded as untrusted. The name returned by the issuer name registry should be unique within the context of an RP application.  
   
- In code, you can specify the issuer name registry to use by setting the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.IssuerNameRegistry%2A?displayProperty=fullName> property. In a configuration file, the issuer name registry can be specified by specifying the [\&lt;issuerNameRegistry\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/issuernameregistry.md) element under the [\&lt;securityTokenHandlerConfiguration\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlerconfiguration.md) element.  
+ In code, you can specify the issuer name registry to use by setting the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.IssuerNameRegistry%2A?displayProperty=nameWithType> property. In a configuration file, the issuer name registry can be specified by specifying the [&lt;issuerNameRegistry&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/issuernameregistry.md) element under the [&lt;securityTokenHandlerConfiguration&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlerconfiguration.md) element.  
   
- Windows Identity Foundation (WIF) provides an implementation of the <xref:System.IdentityModel.Tokens.IssuerNameRegistry> class out of the box: the <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> class. When you use this implementation you can specify the list of trusted issuers in the configuration file of the RP application under the [\&lt;trustedIssuers\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/trustedissuers.md) element, which is a child element of the `<issuerNameRegistry>` element when the <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry>.class is referenced in that element’s `type` attribute. Under the `<trustedIssuers>` element, each issuer name is mapped to the X.509 certificate that should be used to verify its signature.  
+ Windows Identity Foundation (WIF) provides an implementation of the <xref:System.IdentityModel.Tokens.IssuerNameRegistry> class out of the box: the <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> class. When you use this implementation you can specify the list of trusted issuers in the configuration file of the RP application under the [&lt;trustedIssuers&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/trustedissuers.md) element, which is a child element of the `<issuerNameRegistry>` element when the <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry>.class is referenced in that element’s `type` attribute. Under the `<trustedIssuers>` element, each issuer name is mapped to the X.509 certificate that should be used to verify its signature.  
   
- To create a custom issuer name registry, you must override the <xref:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName%28System.IdentityModel.Tokens.SecurityToken%29?displayProperty=fullName> method. This method returns the issuer name for the specified security token. You can optionally override the <xref:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName%28System.IdentityModel.Tokens.SecurityToken%2CSystem.String%29?displayProperty=fullName> method to provide a hinting mechanism when retrieving issuer names and the <xref:System.IdentityModel.Tokens.IssuerNameRegistry.GetWindowsIssuerName%2A> method if you want to provide an issuer name for Windows tokens that is different from <xref:System.Security.Claims.ClaimsIdentity.DefaultIssuer>. Override the <xref:System.IdentityModel.Tokens.IssuerNameRegistry.LoadCustomConfiguration%2A> method to enable your issuer name registry to be initialized from a configuration file.  
+ To create a custom issuer name registry, you must override the <xref:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName%28System.IdentityModel.Tokens.SecurityToken%29?displayProperty=nameWithType> method. This method returns the issuer name for the specified security token. You can optionally override the <xref:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName%28System.IdentityModel.Tokens.SecurityToken%2CSystem.String%29?displayProperty=nameWithType> method to provide a hinting mechanism when retrieving issuer names and the <xref:System.IdentityModel.Tokens.IssuerNameRegistry.GetWindowsIssuerName%2A> method if you want to provide an issuer name for Windows tokens that is different from <xref:System.Security.Claims.ClaimsIdentity.DefaultIssuer>. Override the <xref:System.IdentityModel.Tokens.IssuerNameRegistry.LoadCustomConfiguration%2A> method to enable your issuer name registry to be initialized from a configuration file.  
   
    
   
@@ -50,6 +50,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry" />
+    <altmember cref="T:System.IdentityModel.Tokens.SecurityTokenHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -123,6 +125,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.SecurityTokenHandler" />
       </Docs>
     </Member>
     <Member MemberName="GetIssuerName">
@@ -150,12 +153,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default implementation ignores the `requestedIssuerName` parameter and simply calls the <xref:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName%28System.IdentityModel.Tokens.SecurityToken%29?displayProperty=fullName> method.  
+ The default implementation ignores the `requestedIssuerName` parameter and simply calls the <xref:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName%28System.IdentityModel.Tokens.SecurityToken%29?displayProperty=nameWithType> method.  
   
  Called from the processing pipeline by the security token handler that is processing the token. The method should return a unique name for the issuer within the context of the RP application.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.SecurityTokenHandler" />
       </Docs>
     </Member>
     <Member MemberName="GetWindowsIssuerName">
@@ -184,6 +188,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IdentityModel.Tokens.SecurityTokenHandler" />
       </Docs>
     </Member>
     <Member MemberName="LoadCustomConfiguration">
@@ -208,7 +213,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.IssuerNameRegistry.LoadCustomConfiguration%2A> method is called by the configuration infrastructure. When this method is called, the `nodelist` will contain the top-level child elements of the [\&lt;issuerNameRegistry\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/issuernameregistry.md) element from the configuration file. Each of these may, in turn, contain attributes or child elements depending on the configuration schema you define for your derived class.  
+ The <xref:System.IdentityModel.Tokens.IssuerNameRegistry.LoadCustomConfiguration%2A> method is called by the configuration infrastructure. When this method is called, the `nodelist` will contain the top-level child elements of the [&lt;issuerNameRegistry&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/issuernameregistry.md) element from the configuration file. Each of these may, in turn, contain attributes or child elements depending on the configuration schema you define for your derived class.  
   
  The default implementation throws a <xref:System.NotImplementedException>. Override this method in your derived class to enable initialization of your issuer name registry from a configuration file.  
   

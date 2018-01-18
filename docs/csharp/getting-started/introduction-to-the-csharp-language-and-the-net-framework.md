@@ -1,12 +1,11 @@
 ---
 title: "Introduction to the C# Language and the .NET Framework"
-ms.date: "2015-07-20"
+description: Learn the basics of C# and .NET. Get an overview of the C# language and .NET ecosystem.
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "C# language, about C# language"
   - "Visual C#, about"
@@ -14,20 +13,6 @@ ms.assetid: 0a2dff4e-cd84-42ff-8141-e89889b24081
 caps.latest.revision: 32
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Introduction to the C# Language and the .NET Framework
 C# is an elegant and type-safe object-oriented language that enables developers to build a variety of secure and robust applications that run on the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. You can use C# to create Windows client applications, XML Web services, distributed components, client-server applications, database applications, and much, much more. Visual C# provides an advanced code editor, convenient user interface designers, integrated debugger, and many other tools to make it easier to develop applications based on the C# language and the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].  
@@ -62,10 +47,8 @@ C# is an elegant and type-safe object-oriented language that enables developers 
   
 -   For detailed information about specific aspects of the C# language, see the [C# Reference](../../csharp/language-reference/index.md).  
   
--   For more information about [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)], see [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
-  
--   To find the latest articles and resources from the Visual C# team, see the [Visual C# Developer Center](http://go.microsoft.com/fwlink/?LinkId=47811).  
-  
+-   For more information about [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)], see [LINQ (Language-Integrated Query)](../programming-guide/concepts/linq/index.md).  
+
 ## .NET Framework Platform Architecture  
  C# programs run on the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], an integral component of Windows that includes a virtual execution system called the common language runtime (CLR) and a unified set of class libraries. The CLR is the commercial implementation by Microsoft of the common language infrastructure (CLI), an international standard that is the basis for creating execution and development environments in which languages and libraries work together seamlessly.  
   
@@ -79,8 +62,8 @@ C# is an elegant and type-safe object-oriented language that enables developers 
   
  In addition to the run time services, the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] also includes an extensive library of over 4000 classes organized into namespaces that provide a wide variety of useful functionality for everything from file input and output to string manipulation to XML parsing, to Windows Forms controls. The typical C# application uses the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] class library extensively to handle common "plumbing" chores.  
   
- For more information about the .NET Framework, see [Overview of the Microsoft .NET Framework](http://msdn.microsoft.com/en-us/d05daf50-00fe-45c7-8383-06fe41697355).  
+ For more information about the .NET Framework, see [Overview of the Microsoft .NET Framework](../../framework/get-started/overview.md).  
   
 ## See Also  
- [C#](../../csharp/csharp.md)   
+ [C#](../../csharp/index.md)
  [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)

@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To convert a <xref:System.Drawing.PointF> to a <xref:System.Drawing.Point>, use <xref:System.Drawing.Point.Round%2A?displayProperty=fullName> or <xref:System.Drawing.Point.Truncate%2A?displayProperty=fullName>.  
+ To convert a <xref:System.Drawing.PointF> to a <xref:System.Drawing.Point>, use <xref:System.Drawing.Point.Round%2A?displayProperty=nameWithType> or <xref:System.Drawing.Point.Truncate%2A?displayProperty=nameWithType>.  
   
  ]]></format>
     </remarks>
@@ -99,6 +99,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Drawing.PointF.op_Addition(System.Drawing.PointF,System.Drawing.Size)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -147,6 +148,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Drawing.PointF.op_Addition(System.Drawing.PointF,System.Drawing.Size)" />
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -365,7 +367,7 @@
 ## Remarks  
  The <xref:System.Drawing.PointF.op_Addition%2A> operator adds the <xref:System.Drawing.SizeF.Width%2A> of the specified size to the x-coordinate of the <xref:System.Drawing.PointF> and the <xref:System.Drawing.SizeF.Height%2A> to the y-coordinate of the <xref:System.Drawing.PointF>.  
   
- The equivalent method for this operator is <xref:System.Drawing.PointF.Add%28System.Drawing.PointF%2CSystem.Drawing.SizeF%29?displayProperty=fullName>  
+ The equivalent method for this operator is <xref:System.Drawing.PointF.Add%28System.Drawing.PointF%2CSystem.Drawing.SizeF%29?displayProperty=nameWithType>  
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Drawing.PointF.op_Addition%2A> operator. To run this example, paste the following code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `opAdditionExample`, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
@@ -534,7 +536,7 @@
 ## Remarks  
  The <xref:System.Drawing.PointF.op_Subtraction%2A> operator subtracts the <xref:System.Drawing.SizeF.Width%2A> of the specified size from the x-coordinate of the <xref:System.Drawing.PointF> and the <xref:System.Drawing.SizeF.Height%2A> from the y-coordinate of the <xref:System.Drawing.PointF>.  
   
- The equivalent method for this operator is <xref:System.Drawing.PointF.Subtract%28System.Drawing.PointF%2CSystem.Drawing.SizeF%29?displayProperty=fullName>  
+ The equivalent method for this operator is <xref:System.Drawing.PointF.Subtract%28System.Drawing.PointF%2CSystem.Drawing.SizeF%29?displayProperty=nameWithType>  
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Drawing.PointF.op_Subtraction%2A> operator. To run this example, paste the following code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `opSubtractionExample`, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
@@ -584,6 +586,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Drawing.PointF.op_Subtraction(System.Drawing.PointF,System.Drawing.Size)" />
       </Docs>
     </Member>
     <Member MemberName="Subtract">
@@ -632,6 +635,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Drawing.PointF.op_Subtraction(System.Drawing.PointF,System.Drawing.Size)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -716,5 +720,45 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Subtract">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Translates a <see cref="T:System.Drawing.PointF" /> by the negative of a specified size.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Translates a given <see cref="T:System.Drawing.PointF" /> by the specified size.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Addition">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Translates the given <see cref="T:System.Drawing.PointF" /> by a specified size.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Subtraction">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Translates a <see cref="T:System.Drawing.PointF" /> by the negative of a specified size.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

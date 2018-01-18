@@ -15,10 +15,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is used by the <xref:System.Windows.Forms.WebBrowser.EncryptionLevel%2A?displayProperty=fullName> property to indicate the encryption used by a document displayed in the <xref:System.Windows.Forms.WebBrowser> control.  
+ This enumeration is used by the <xref:System.Windows.Forms.WebBrowser.EncryptionLevel%2A?displayProperty=nameWithType> property to indicate the encryption used by a document displayed in the <xref:System.Windows.Forms.WebBrowser> control.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.WebBrowser" />
+    <altmember cref="P:System.Windows.Forms.WebBrowser.EncryptionLevel" />
   </Docs>
   <Members>
     <Member MemberName="Bit128">

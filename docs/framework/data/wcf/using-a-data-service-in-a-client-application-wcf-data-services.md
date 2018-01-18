@@ -14,9 +14,11 @@ helpviewer_keywords:
   - "WCF Data Services, getting started"
 ms.assetid: 90872d0c-e989-4490-b3e9-54afb10d33d4
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using a Data Service in a Client Application (WCF Data Services)
 You can access a service that exposes an [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feed by supplying a URI to a Web browser. The URI provides the address of a resource, and request messages are sent to these addresses to access or change the underlying data that the resource represents. The browser issues an HTTP GET command and returns the requested resource as an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed. For more information, see [Accessing the Service from a Web Browser](../../../../docs/framework/data/wcf/accessing-the-service-from-a-web-browser-wcf-data-services-quickstart.md).  
@@ -58,5 +60,5 @@ You can access a service that exposes an [!INCLUDE[ssODataFull](../../../../incl
  There are programming libraries available that you can use to consume an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed in other kinds of client applications. For more information, see the [OData SDK](http://go.microsoft.com/fwlink/?LinkId=185796).  
   
 ## See Also  
- [Accessing Data Service Resources](../../../../docs/framework/data/wcf/accessing-data-service-resources-wcf-data-services.md)   
+ [Accessing Data Service Resources](../../../../docs/framework/data/wcf/accessing-data-service-resources-wcf-data-services.md)  
  [Quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)

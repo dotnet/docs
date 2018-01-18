@@ -9,19 +9,18 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "custom controls [Windows Forms], composite controls"
-  - "composite controls"
-  - "UserControl class"
-  - "composite controls, Windows Forms"
+  - "composite controls [Windows Forms]"
+  - "composite controls [Windows Forms], Windows Forms"
   - "controls [Windows Forms], composite"
 ms.assetid: d086f2a3-baa3-4e09-b40c-a5bb3cfc51a6
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Developing a Composite Windows Forms Control
 You can develop a composite Windows Forms control by combining other Windows Forms controls. Composite controls that derive from <xref:System.Web.UI.UserControl> are called user controls. The base class, <xref:System.Windows.Forms.UserControl>, provides keyboard routing for the child controls, thus ensuring that child controls can receive focus. For an example of a user control, see the <xref:System.Windows.Forms.UserControl> sample in [How to: Apply Attributes in Windows Forms Controls](../../../../docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md).  
@@ -63,6 +62,6 @@ You can develop a composite Windows Forms control by combining other Windows For
 -   [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](http://msdn.microsoft.com/library/307hck25\(v=vs.120\))  
   
 ## See Also  
- [How to: Apply Attributes in Windows Forms Controls](../../../../docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md)   
- [Developing Custom Windows Forms Controls with the .NET Framework](../../../../docs/framework/winforms/controls/developing-custom-windows-forms-controls.md)   
+ [How to: Apply Attributes in Windows Forms Controls](../../../../docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md)  
+ [Developing Custom Windows Forms Controls with the .NET Framework](../../../../docs/framework/winforms/controls/developing-custom-windows-forms-controls.md)  
  [Varieties of Custom Controls](../../../../docs/framework/winforms/controls/varieties-of-custom-controls.md)

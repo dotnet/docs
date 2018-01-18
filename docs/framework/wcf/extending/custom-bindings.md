@@ -9,20 +9,19 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "Windows Communication Foundation, endpoints"
   - "Windows Communication Foundation, configuration"
 ms.assetid: 58532b6d-4eea-4a4f-854f-a1c8c842564d
 caps.latest.revision: 33
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Custom Bindings
-You can use the <xref:System.ServiceModel.Channels.CustomBinding> class when one of the system-provided bindings does not meet the requirements of your service. All bindings are constructed from an ordered set of binding elements. Custom bindings can be built from a set of system-provided binding elements or can include user-defined custom binding elements. You can use custom binding elements, for example, to enable the use of new transports or encoders at a service endpoint. For working examples, see [Custom Binding Samples](http://msdn.microsoft.com/en-us/657e8143-beb0-472d-9cfe-ed1a19c2ab08). [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md).  
+You can use the <xref:System.ServiceModel.Channels.CustomBinding> class when one of the system-provided bindings does not meet the requirements of your service. All bindings are constructed from an ordered set of binding elements. Custom bindings can be built from a set of system-provided binding elements or can include user-defined custom binding elements. You can use custom binding elements, for example, to enable the use of new transports or encoders at a service endpoint. For working examples, see [Custom Binding Samples](http://msdn.microsoft.com/en-us/657e8143-beb0-472d-9cfe-ed1a19c2ab08). [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md).  
   
 ## Construction of a Custom Binding  
  A custom binding is constructed using the <xref:System.ServiceModel.Channels.CustomBinding.%23ctor%2A> constructor from a collection of binding elements that are "stacked" in a specific order:  
@@ -82,9 +81,9 @@ You can use the <xref:System.ServiceModel.Channels.CustomBinding> class when one
  In addition, you can define your own binding elements and insert them between any of the preceding defined layers.  
   
 ## See Also  
- [Endpoint Creation Overview](../../../../docs/framework/wcf/endpoint-creation-overview.md)   
- [Using Bindings to Configure Services and Clients](../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)   
- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)   
- [How to: Customize a System-Provided Binding](../../../../docs/framework/wcf/extending/how-to-customize-a-system-provided-binding.md)   
- [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)   
+ [Endpoint Creation Overview](../../../../docs/framework/wcf/endpoint-creation-overview.md)  
+ [Using Bindings to Configure Services and Clients](../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
+ [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)  
+ [How to: Customize a System-Provided Binding](../../../../docs/framework/wcf/extending/how-to-customize-a-system-provided-binding.md)  
+ [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)  
  [Custom Binding](../../../../docs/framework/wcf/samples/custom-binding.md)

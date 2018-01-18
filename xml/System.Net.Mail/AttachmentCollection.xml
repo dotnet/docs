@@ -32,7 +32,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Instances of the <xref:System.Net.Mail.AttachmentCollection> class are returned by the <xref:System.Net.Mail.MailMessage.AlternateViews%2A?displayProperty=fullName> and <xref:System.Net.Mail.MailMessage.Attachments%2A?displayProperty=fullName> properties.  
+ Instances of the <xref:System.Net.Mail.AttachmentCollection> class are returned by the <xref:System.Net.Mail.MailMessage.AlternateViews%2A?displayProperty=nameWithType> and <xref:System.Net.Mail.MailMessage.Attachments%2A?displayProperty=nameWithType> properties.  
   
  Use the <xref:System.Net.Mail.MailMessage.AlternateViews%2A> property to specify copies of an e-mail message in different formats. For example, if you send a message in HTML, you might also want provide a plain text version in case some of the recipients use e-mail readers that cannot display HTML content.  
   
@@ -48,6 +48,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.Mail.SmtpClient" />
   </Docs>
   <Members>
     <Member MemberName="ClearItems">

@@ -23,7 +23,7 @@
 ## Remarks  
  The <xref:System.Runtime.Caching.Configuration.MemoryCacheSettingsCollection> class represents the collection of configuration elements and settings that configure an instance of the <xref:System.Runtime.Caching.MemoryCache> class. In other words, this settings collection contains objects that represent elements and settings that are children of a `memoryCache` element. The <xref:System.Runtime.Caching.Configuration.MemoryCacheSettingsCollection> class contains a `namedCaches` element.  
   
- For more information about the configuration options that are related to this class, see [\&lt;memoryCache\&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md) and [\&lt;namedCaches\&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md).  
+ For more information about the configuration options that are related to this class, see [&lt;memoryCache&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md) and [&lt;namedCaches&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md).  
   
  ]]></format>
     </remarks>
@@ -290,5 +290,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the specified <see cref="T:System.Runtime.Caching.Configuration.MemoryCacheElement" /> item.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

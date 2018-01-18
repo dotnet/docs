@@ -1,22 +1,13 @@
 ---
 title: "&lt;mailSettings&gt; Element (Network Settings)"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#mailSettings"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/mailSettings"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "mailSettings element"
   - "<mailSettings> element"
@@ -25,20 +16,22 @@ caps.latest.revision: 20
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;mailSettings&gt; Element (Network Settings)
 Configures mail sending options.  
-  
- \<configuration>  
+
+\<configuration>  
 \<system.net>  
 \<mailSettings>  
   
 ## Syntax  
   
 ```xml  
-      <mailSettings  
+<mailSettings>
   <smtp> … </smtp>  
-/mailsettings>  
+</mailSettings>
 ```  
   
 ## Attributes and Elements  
@@ -79,5 +72,5 @@ Configures mail sending options.
 ```  
   
 ## See Also  
- <xref:System.Net.Mail.SmtpClient>   
+ <xref:System.Net.Mail.SmtpClient>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

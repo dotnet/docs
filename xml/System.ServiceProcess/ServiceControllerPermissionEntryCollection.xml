@@ -13,6 +13,11 @@
   <Docs>
     <summary>Contains a strongly-typed collection of <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> objects.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.ServiceProcess.ServiceController" />
+    <altmember cref="T:System.ServiceProcess.ServiceControllerPermission" />
+    <altmember cref="T:System.ServiceProcess.ServiceControllerPermissionAccess" />
+    <altmember cref="T:System.ServiceProcess.ServiceControllerPermissionAttribute" />
+    <altmember cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -306,5 +311,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends a set of specified permission entries to this collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

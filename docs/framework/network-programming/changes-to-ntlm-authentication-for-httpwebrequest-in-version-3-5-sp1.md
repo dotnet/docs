@@ -7,16 +7,13 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: 8bf0b428-5a21-4299-8d6e-bf8251fd978a
 caps.latest.revision: 8
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Changes to NTLM authentication for HttpWebRequest in Version 3.5 SP1
 Security changes were made in .NET Framework version 3.5 SP1 and later that affect how integrated Windows authentication is handled by the <xref:System.Net.HttpWebRequest>, <xref:System.Net.HttpListener>, <xref:System.Net.Security.NegotiateStream>, and related classes in the System.Net namespace. These changes can affect applications that use these classes to make web requests and receive responses where integrated Windows authentication based on NTLM is used. This change can impact web servers and client applications that are configured to use integrated Windows authentication.  
@@ -33,9 +30,9 @@ Security changes were made in .NET Framework version 3.5 SP1 and later that affe
   
  When configured for large deployments, it is also common for a single virtual server name to be given to the deployment with the underlying machine names never used by client applications and end users. For example, you might call the server www.contoso.com, but on an internal network simply use "contoso". This name is called the Host header in the client web request. As specified by the HTTP protocol, the Host request-header field specifies the Internet host and port number of the resource being requested. This information is obtained from the original URI given by the user or referring resource (generally an HTTP URL). On .NET Framework version 4, this information can also be set by the client using the new <xref:System.Net.HttpWebRequest.Host%2A> property.  
   
- The <xref:System.Net.AuthenticationManager> class controls the managed authentication components ("modules") that are used by <xref:System.Net.WebRequest> derivative classes and the <xref:System.Net.WebClient> class. The <xref:System.Net.AuthenticationManager> class provides a property that exposes a <xref:System.Net.AuthenticationManager.CustomTargetNameDictionary%2A?displayProperty=fullName> object, indexed by URI string, for applications to supply a custom SPN string to be used during authentication.  
+ The <xref:System.Net.AuthenticationManager> class controls the managed authentication components ("modules") that are used by <xref:System.Net.WebRequest> derivative classes and the <xref:System.Net.WebClient> class. The <xref:System.Net.AuthenticationManager> class provides a property that exposes a <xref:System.Net.AuthenticationManager.CustomTargetNameDictionary%2A?displayProperty=nameWithType> object, indexed by URI string, for applications to supply a custom SPN string to be used during authentication.  
   
- Version 3.5 SP1 now defaults to specifying the host name used in the request URL in the SPN in the NTLM (NT LAN Manager) authentication exchange when the <xref:System.Net.AuthenticationManager.CustomTargetNameDictionary%2A> property is not set. The host name used in the request URL may be different from the Host header specified in the <xref:System.Net.HttpRequestHeader?displayProperty=fullName> in the client request. The host name used in the request URL may be different from the actual host name of the server, the machine name of the server, the computer's IP address, or the loopback address. In these cases, Windows will fail the authentication request. To address the issue, we need to notify Windows that the host name used in the request URL in the client request ("contoso", for example) is actually an alternate name for the local computer.  
+ Version 3.5 SP1 now defaults to specifying the host name used in the request URL in the SPN in the NTLM (NT LAN Manager) authentication exchange when the <xref:System.Net.AuthenticationManager.CustomTargetNameDictionary%2A> property is not set. The host name used in the request URL may be different from the Host header specified in the <xref:System.Net.HttpRequestHeader?displayProperty=nameWithType> in the client request. The host name used in the request URL may be different from the actual host name of the server, the machine name of the server, the computer's IP address, or the loopback address. In these cases, Windows will fail the authentication request. To address the issue, we need to notify Windows that the host name used in the request URL in the client request ("contoso", for example) is actually an alternate name for the local computer.  
   
  There are several possible methods for a server application to work around this change. The recommended approach is to map the host name used in the request URL to the `BackConnectionHostNames` key in the registry on the server. The `BackConnectionHostNames` registry key is normally used to map a host name to a loopback address. The steps are listed below.  
   
@@ -60,6 +57,6 @@ Security changes were made in .NET Framework version 3.5 SP1 and later that affe
  A less secure work around is to disable the loop back check, as described in [http://support.microsoft.com/kb/896861](http://go.microsoft.com/fwlink/?LinkID=179657). This disables the protection against reflection attacks. So it is better to constrain the set of alternate names to only those you expect the machine to actually use.  
   
 ## See Also  
- <xref:System.Net.AuthenticationManager.CustomTargetNameDictionary%2A?displayProperty=fullName>   
- <xref:System.Net.HttpRequestHeader?displayProperty=fullName>   
- <xref:System.Net.HttpWebRequest.Host%2A?displayProperty=fullName>
+ <xref:System.Net.AuthenticationManager.CustomTargetNameDictionary%2A?displayProperty=nameWithType>  
+ <xref:System.Net.HttpRequestHeader?displayProperty=nameWithType>  
+ <xref:System.Net.HttpWebRequest.Host%2A?displayProperty=nameWithType>

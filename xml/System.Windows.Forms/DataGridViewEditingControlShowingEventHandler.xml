@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Handle the <xref:System.Windows.Forms.DataGridView.EditingControlShowing> event to perform custom initialization of the editing control when a cell enters edit mode. To customize the display characteristics of the control, set the properties of the object returned by the <xref:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.CellStyle%2A?displayProperty=fullName> property rather than setting the properties of the control returned by the <xref:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.Control%2A?displayProperty=fullName> property.  
+ Handle the <xref:System.Windows.Forms.DataGridView.EditingControlShowing> event to perform custom initialization of the editing control when a cell enters edit mode. To customize the display characteristics of the control, set the properties of the object returned by the <xref:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.CellStyle%2A?displayProperty=nameWithType> property rather than setting the properties of the control returned by the <xref:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.Control%2A?displayProperty=nameWithType> property.  
   
  For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
@@ -40,5 +40,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxEditingControl" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxEditingControl" />
+    <altmember cref="T:System.Windows.Forms.IDataGridViewEditingControl" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.CellStyle" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.Control" />
   </Docs>
 </Type>

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostMemoryManager::VirtualAlloc"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "VirtualAlloc method [.NET Framework hosting]"
   - "IHostMemoryManager::VirtualAlloc method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostMemoryManager::VirtualAlloc Method
 Serves as a logical wrapper for the corresponding Win32 function. The Win32 implementation of `VirtualAlloc` reserves or commits a region of pages in the virtual address space of the calling process.  

@@ -284,7 +284,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Uses the <xref:System.Object.Equals%2A?displayProperty=fullName> method to compare the specified object with the objects already in the collection.  
+ Uses the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method to compare the specified object with the objects already in the collection.  
   
    
   
@@ -479,7 +479,7 @@ This method calls the internal `RelatedEnd.ValidateLoad` method before loading t
 > [!NOTE]
 >  When you call the <xref:System.Data.Objects.DataClasses.EntityCollection%601.Load%2A> method during a `foreach` (C#) or `For Each` (Visual Basic) enumeration, Object Services tries to open a new data reader. This operation will fail unless you have enabled multiple active results sets by specifying `multipleactiveresultsets=true` in the connection string. You can also load the result of the query into a <xref:System.Collections.Generic.List%601> collection. This closes the data reader and enables you to enumerate over the collection to load referenced objects.  
   
- The <xref:System.Data.Objects.DataClasses.EntityCollection%601.Load%2A?displayProperty=fullName> method is synchronized with the <xref:System.Data.Objects.DataClasses.EntityReference%601.Load%2A?displayProperty=fullName> method.  
+ The <xref:System.Data.Objects.DataClasses.EntityCollection%601.Load%2A?displayProperty=nameWithType> method is synchronized with the <xref:System.Data.Objects.DataClasses.EntityReference%601.Load%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -680,5 +680,14 @@ This method calls the internal `RelatedEnd.ValidateLoad` method before loading t
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Attach">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Defines a relationship between two attached objects in an object context.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

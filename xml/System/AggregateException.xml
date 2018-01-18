@@ -80,9 +80,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "DefaultMessageDisplayedByParameterlessCtorWriterMustSupply" This message takes into account the current system culture.  
+ This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "System.AggregateException: One or more errors occurred." This message takes into account the current system culture.  
   
- The following table shows the initial property values for an instance of <xref:System.InsufficientMemoryException>.  
+ The following table shows the initial property values for an instance of <xref:System.AggregateException>.  
   
 |Property|Value|  
 |--------------|-----------|  
@@ -128,7 +128,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AggregateException (Exception[] innerExceptions);" />
+      <MemberSignature Language="C#" Value="public AggregateException (params Exception[] innerExceptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception[] innerExceptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AggregateException.#ctor(System.Exception[])" />
       <MemberType>Constructor</MemberType>
@@ -340,7 +340,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AggregateException (string message, Exception[] innerExceptions);" />
+      <MemberSignature Language="C#" Value="public AggregateException (string message, params Exception[] innerExceptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception[] innerExceptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AggregateException.#ctor(System.String,System.Exception[])" />
       <MemberType>Constructor</MemberType>
@@ -415,7 +415,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If a task has an attached child task that throws an exception, that exception is wrapped in an <xref:System.AggregateException> exception before it is propagated to the parent task, which wraps that exception in its own <xref:System.AggregateException> exception before it propagates it back to the calling thread. In such cases, the <xref:System.AggregateException.InnerExceptions%2A> property of the <xref:System.AggregateException> exception that is caught by the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=fullName>, <xref:System.Threading.Tasks.Task.Wait*>, <xref:System.Threading.Tasks.Task.WaitAny%2A?displayProperty=fullName> or <xref:System.Threading.Tasks.Task.WaitAll%2A?displayProperty=fullName> method contains one or more <xref:System.AggregateException> instances, not the original exceptions that caused the fault. To avoid having to iterate over nested <xref:System.AggregateException> exceptions, you can use the <xref:System.AggregateException.Flatten%2A> method to remove all the nested <xref:System.AggregateException> exceptions, so that the <xref:System.AggregateException.InnerExceptions%2A> property of the returned <xref:System.AggregateException> object contains the original exceptions.  
+ If a task has an attached child task that throws an exception, that exception is wrapped in an <xref:System.AggregateException> exception before it is propagated to the parent task, which wraps that exception in its own <xref:System.AggregateException> exception before it propagates it back to the calling thread. In such cases, the <xref:System.AggregateException.InnerExceptions%2A> property of the <xref:System.AggregateException> exception that is caught by the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Task.Wait*>, <xref:System.Threading.Tasks.Task.WaitAny%2A?displayProperty=nameWithType> or <xref:System.Threading.Tasks.Task.WaitAll%2A?displayProperty=nameWithType> method contains one or more <xref:System.AggregateException> instances, not the original exceptions that caused the fault. To avoid having to iterate over nested <xref:System.AggregateException> exceptions, you can use the <xref:System.AggregateException.Flatten%2A> method to remove all the nested <xref:System.AggregateException> exceptions, so that the <xref:System.AggregateException.InnerExceptions%2A> property of the returned <xref:System.AggregateException> object contains the original exceptions.  
   
  This method recursively flattens all instances of  <xref:System.AggregateException> exceptions that are inner exceptions of the current <xref:System.AggregateException> instance . The inner exceptions returned in the new <xref:System.AggregateException> are the union of all the inner exceptions from exception tree rooted at the current <xref:System.AggregateException> instance.  
   
@@ -427,7 +427,7 @@
  [!code-csharp[TPL_Exceptions#22](~/samples/snippets/csharp/VS_Snippets_Misc/tpl_exceptions/cs/flatten2.cs#22)]
  [!code-vb[TPL_Exceptions#22](~/samples/snippets/visualbasic/VS_Snippets_Misc/tpl_exceptions/vb/flatten2.vb#22)]  
   
- You can also use the <xref:System.AggregateException.Flatten%2A?displayProperty=fullName> method to rethrow the inner exceptions from multiple <xref:System.AggregateException> instances thrown by multiple tasks in a single <xref:System.AggregateException> instance, as the following example shows.  
+ You can also use the <xref:System.AggregateException.Flatten%2A?displayProperty=nameWithType> method to rethrow the inner exceptions from multiple <xref:System.AggregateException> instances thrown by multiple tasks in a single <xref:System.AggregateException> instance, as the following example shows.  
   
  [!code-csharp[TPL_Exceptions#13](~/samples/snippets/csharp/VS_Snippets_Misc/tpl_exceptions/cs/taskexceptions2.cs#13)]
  [!code-vb[TPL_Exceptions#13](~/samples/snippets/visualbasic/VS_Snippets_Misc/tpl_exceptions/vb/taskexceptions2.vb#13)]  
@@ -654,5 +654,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.AggregateException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

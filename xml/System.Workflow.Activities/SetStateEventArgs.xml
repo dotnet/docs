@@ -28,7 +28,7 @@
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
   
- The <xref:System.Workflow.Activities.StateMachineWorkflowActivity> allows for setting the state from the host application. This enables the host application to override the current state of a state machine. This can be accomplished by enqueuing an instance of the <xref:System.Workflow.Activities.SetStateEventArgs> class to the WorkflowQueue named by the constant <xref:System.Workflow.Activities.StateMachineWorkflowActivity?displayProperty=fullName>.  
+ The <xref:System.Workflow.Activities.StateMachineWorkflowActivity> allows for setting the state from the host application. This enables the host application to override the current state of a state machine. This can be accomplished by enqueuing an instance of the <xref:System.Workflow.Activities.SetStateEventArgs> class to the WorkflowQueue named by the constant <xref:System.Workflow.Activities.StateMachineWorkflowActivity.SetStateQueueName?displayProperty=nameWithType>.  
   
  A simpler way to accomplish this is to use the <xref:System.Workflow.Activities.StateMachineWorkflowInstance.SetState%2A> method in the <xref:System.Workflow.Activities.StateMachineWorkflowInstance> class.  
   
@@ -50,6 +50,7 @@ public void SetState(string targetStateName)
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Workflow.Activities.StateMachineWorkflowInstance" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

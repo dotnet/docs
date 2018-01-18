@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f362d00e-ce82-484f-9d4f-27e579d5c320
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Comparing ASP.NET Web Services to WCF Based on Development
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] has an ASP.NET compatibility mode option to enable [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications to be programmed and configured like ASP.NET Web services, and mimic their behavior. The following sections compare ASP.NET Web services and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] based on what is required to develop applications using both technologies.  
@@ -606,7 +608,7 @@ try
 }  
 catch (FaultException<MathFault> e)  
 {  
- Console.WriteLine("FaultException<MathFault>: Math fault while doing "   
+ Console.WriteLine("FaultException<MathFault>: Math fault while doing "  
   + e.Detail.operation   
   + ". Problem: "   
   + e.Detail.problemType);  

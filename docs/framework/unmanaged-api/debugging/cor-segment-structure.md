@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_SEGMENT"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_SEGMENT structure [.NET Framework debugging]"
 ms.assetid: 93aeecb9-7fef-4545-8daf-f566dfc47084
@@ -28,6 +26,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_SEGMENT Structure
 Contains information about a region of memory in the managed heap.  
@@ -67,5 +67,5 @@ typedef struct _COR_SEGMENT {
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See Also  
- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)   
+ [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)  
  [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

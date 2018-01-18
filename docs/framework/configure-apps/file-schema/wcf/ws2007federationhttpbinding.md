@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9af4ec79-cdef-457e-9dca-09d5eb821594
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;ws2007FederationHttpBinding&gt;
 A secure and interoperable binding that derives from [\<wsFederationHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md) and supports federated security.  
@@ -96,7 +98,7 @@ A secure and interoperable binding that derives from [\<wsFederationHttpBinding>
 |[\<bindings>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)|This element holds a collection of standard and custom bindings.|  
   
 ## Remarks  
- Federation is the ability to share identities across multiple enterprises or trust domains for authentication and authorization. It uses the WS-Trust protocol to map the identity representation from one trust domain to another. Federated HTTP binding supports SOAP security as well as mixed-mode security, but it does not support transport security. Services configured with this binding must use the HTTP transport. [!INCLUDE[crdefault](../../../../../includes/crdefault-md.md)][\<wsFederationHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md).  
+ Federation is the ability to share identities across multiple enterprises or trust domains for authentication and authorization. It uses the WS-Trust protocol to map the identity representation from one trust domain to another. Federated HTTP binding supports SOAP security as well as mixed-mode security, but it does not support transport security. Services configured with this binding must use the HTTP transport. [!INCLUDE[crdefault](../../../../../includes/crdefault-md.md)] [\<wsFederationHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md).  
   
 ## Example  
   
@@ -132,10 +134,10 @@ A secure and interoperable binding that derives from [\<wsFederationHttpBinding>
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.WS2007FederationHttpBinding>   
- <xref:System.ServiceModel.Configuration.WS2007FederationHttpBindingElement>   
- [\<wsFederationHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md)   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)   
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)   
+ <xref:System.ServiceModel.WS2007FederationHttpBinding>  
+ <xref:System.ServiceModel.Configuration.WS2007FederationHttpBindingElement>  
+ [\<wsFederationHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md)  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
+ [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

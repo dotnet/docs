@@ -197,7 +197,7 @@
     </MemberGroup>
     <Member MemberName="TryLookup">
       <MemberSignature Language="C#" Value="public virtual bool TryLookup (int key, out System.Xml.XmlDictionaryString result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryLookup(int32 key, class System.Xml.XmlDictionaryString result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryLookup(int32 key, [out] class System.Xml.XmlDictionaryString&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionary.TryLookup(System.Int32,System.Xml.XmlDictionaryString@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -232,7 +232,7 @@
     </Member>
     <Member MemberName="TryLookup">
       <MemberSignature Language="C#" Value="public virtual bool TryLookup (string value, out System.Xml.XmlDictionaryString result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryLookup(string value, class System.Xml.XmlDictionaryString result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryLookup(string value, [out] class System.Xml.XmlDictionaryString&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionary.TryLookup(System.String,System.Xml.XmlDictionaryString@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -269,7 +269,7 @@
     </Member>
     <Member MemberName="TryLookup">
       <MemberSignature Language="C#" Value="public virtual bool TryLookup (System.Xml.XmlDictionaryString value, out System.Xml.XmlDictionaryString result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryLookup(class System.Xml.XmlDictionaryString value, class System.Xml.XmlDictionaryString result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryLookup(class System.Xml.XmlDictionaryString value, [out] class System.Xml.XmlDictionaryString&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionary.TryLookup(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -304,5 +304,15 @@
           <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of this class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

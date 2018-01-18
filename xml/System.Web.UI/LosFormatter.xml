@@ -130,6 +130,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName="Deserialize">
@@ -162,6 +163,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextReader" />
       </Docs>
     </Member>
     <Member MemberName="Deserialize">
@@ -195,6 +197,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The view state is invalid.</exception>
+        <altmember cref="M:System.Web.UI.LosFormatter.Serialize(System.IO.Stream,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Serialize">
@@ -225,6 +228,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName="Serialize">
@@ -257,5 +261,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.LosFormatter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Serialize">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Transforms a limited object serialization (LOS)-formatted object into a view-state value.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

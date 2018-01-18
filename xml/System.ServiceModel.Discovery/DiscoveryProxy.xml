@@ -136,7 +136,7 @@
     </Member>
     <Member MemberName="EndShouldRedirectFind">
       <MemberSignature Language="C#" Value="protected virtual bool EndShouldRedirectFind (IAsyncResult result, out System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Discovery.EndpointDiscoveryMetadata&gt; redirectionEndpoints);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool EndShouldRedirectFind(class System.IAsyncResult result, class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Discovery.EndpointDiscoveryMetadata&gt; redirectionEndpoints) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool EndShouldRedirectFind(class System.IAsyncResult result, [out] class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Discovery.EndpointDiscoveryMetadata&gt;&amp; redirectionEndpoints) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryProxy.EndShouldRedirectFind(System.IAsyncResult,System.Collections.ObjectModel.Collection{System.ServiceModel.Discovery.EndpointDiscoveryMetadata}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -168,7 +168,7 @@
     </Member>
     <Member MemberName="EndShouldRedirectResolve">
       <MemberSignature Language="C#" Value="protected virtual bool EndShouldRedirectResolve (IAsyncResult result, out System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Discovery.EndpointDiscoveryMetadata&gt; redirectionEndpoints);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool EndShouldRedirectResolve(class System.IAsyncResult result, class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Discovery.EndpointDiscoveryMetadata&gt; redirectionEndpoints) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool EndShouldRedirectResolve(class System.IAsyncResult result, [out] class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Discovery.EndpointDiscoveryMetadata&gt;&amp; redirectionEndpoints) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryProxy.EndShouldRedirectResolve(System.IAsyncResult,System.Collections.ObjectModel.Collection{System.ServiceModel.Discovery.EndpointDiscoveryMetadata}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -398,5 +398,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.DiscoveryProxy" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

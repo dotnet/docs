@@ -87,6 +87,8 @@
         <param name="regions">The <see cref="T:System.Web.UI.Design.DesignerRegionCollection" /> to which regions associated with the wizard control are added.</param>
         <summary>Creates a <see cref="T:System.Web.UI.Design.DesignerRegion" /> object for each step associated with the underlying wizard control, and then adds it to the specified <see cref="T:System.Web.UI.Design.DesignerRegionCollection" /> object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerRegion" />
+        <altmember cref="T:System.Web.UI.Design.DesignerRegionCollection" />
       </Docs>
     </Member>
     <Member MemberName="AutoFormats">
@@ -209,6 +211,7 @@
         <block subset="none" type="overrides">
           <para>You can directly modify the dictionary that is accessible through the <paramref name="properties" /> parameter, or you can leave it unchanged. If you are overriding the <see cref="M:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.PreFilterProperties(System.Collections.IDictionary)" /> method, call the base implementation before you perform your own filtering.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
       </Docs>
     </Member>
     <Member MemberName="UsePreviewControl">

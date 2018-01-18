@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a6f65a00-bd1a-4d4a-955a-fe009ec02ab8
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;custom&gt;
 Specifies settings for a custom peer resolver service.  
@@ -62,9 +64,9 @@ Specifies settings for a custom peer resolver service.
  This element defines the basic settings for a custom peer resolver service, including the endpoint address of the peer hosting the service and any specific binding settings. For more information on creating a custom resolver, see [Adding a Custom Resolver to a PeerChannel Application](http://msdn.microsoft.com/en-us/12aa3787-2962-439c-ad27-46523c8b0419).  
   
 ## See Also  
- <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService>   
- <xref:System.ServiceModel.PeerResolvers.PeerCustomResolverSettings>   
- <xref:System.ServiceModel.Configuration.PeerResolverElement.Custom%2A>   
- <xref:System.ServiceModel.Configuration.PeerCustomResolverElement>   
- [Peer Resolvers](../../../../../docs/framework/wcf/feature-details/peer-resolvers.md)   
+ <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService>  
+ <xref:System.ServiceModel.PeerResolvers.PeerCustomResolverSettings>  
+ <xref:System.ServiceModel.Configuration.PeerResolverElement.Custom%2A>  
+ <xref:System.ServiceModel.Configuration.PeerCustomResolverElement>  
+ [Peer Resolvers](../../../../../docs/framework/wcf/feature-details/peer-resolvers.md)  
  [Adding a Custom Resolver to a PeerChannel Application](http://msdn.microsoft.com/en-us/12aa3787-2962-439c-ad27-46523c8b0419)

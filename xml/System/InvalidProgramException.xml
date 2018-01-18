@@ -41,6 +41,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,7 +71,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The constructor initializes the <xref:System.Exception.Message%2A?displayProperty=fullName> property of the new exception to a system-supplied message that describes the error, such as "Metadata is incorrect." This message takes into account the current system culture.  
+ The constructor initializes the <xref:System.Exception.Message%2A?displayProperty=nameWithType> property of the new exception to a system-supplied message that describes the error, such as "Metadata is incorrect." This message takes into account the current system culture.  
   
  The following table shows the initial property values for an instance of <xref:System.InvalidProgramException>.  
   
@@ -113,7 +114,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=fullName> property of the new exception using the `message` parameter. The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+ This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=nameWithType> property of the new exception using the `message` parameter. The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
   
  The following table shows the initial property values for an instance of <xref:System.InvalidProgramException>.  
   
@@ -169,7 +170,21 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
+        <altmember cref="P:System.Exception.InnerException" />
+        <altmember cref="P:System.Exception.Message" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.InvalidProgramException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

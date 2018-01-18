@@ -32,7 +32,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To obtain this value for a module, use the <xref:System.Reflection.Module.GetPEKind%2A?displayProperty=fullName> method.  
+ To obtain this value for a module, use the <xref:System.Reflection.Module.GetPEKind%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
 >  This enumeration corresponds to the `CorPEKind` enumeration in the unmanaged reflection API, which is accessed by the unmanaged `GetPEKind` function.  

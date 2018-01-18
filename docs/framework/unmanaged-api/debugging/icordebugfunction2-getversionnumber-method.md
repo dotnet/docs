@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugFunction2::GetVersionNumber"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugFunction2::GetVersionNumber method [.NET Framework debugging]"
   - "GetVersionNumber method, ICorDebugFunction2 interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugFunction2::GetVersionNumber Method
 Gets the Edit and Continue version of this function.  

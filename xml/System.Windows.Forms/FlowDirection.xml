@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.FlowDirection> enumeration describes the flow direction of consecutive UI elements, typically controls, on a design surface or container such as a form. This enumeration is used by linear layout containers such as <xref:System.Windows.Forms.FlowLayoutPanel>, which stores this information internally in the <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A?displayProperty=fullName> property.  
+ The <xref:System.Windows.Forms.FlowDirection> enumeration describes the flow direction of consecutive UI elements, typically controls, on a design surface or container such as a form. This enumeration is used by linear layout containers such as <xref:System.Windows.Forms.FlowLayoutPanel>, which stores this information internally in the <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A?displayProperty=nameWithType> property.  
   
  The <xref:System.Windows.Forms.FlowDirection> determines where a new control is placed by default when it is added to a supporting container. The flow direction of the container, along with the <xref:System.Windows.Forms.Control.Anchor%2A> and <xref:System.Windows.Forms.Control.Dock%2A> properties of each contained control, determine the rearrangement of controls when their container is resized.  
   
@@ -32,6 +32,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.FlowLayoutPanel" />
+    <altmember cref="P:System.Windows.Forms.FlowLayoutPanel.FlowDirection" />
+    <altmember cref="P:System.Windows.Forms.Control.Anchor" />
+    <altmember cref="P:System.Windows.Forms.Control.Dock" />
   </Docs>
   <Members>
     <Member MemberName="BottomUp">

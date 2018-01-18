@@ -99,7 +99,7 @@
 ## Remarks  
  There is one <xref:System.Windows.Controls.TextChange> object for each consecutive change to the control. More than one consecutive change can occur during one occurrence of the <xref:System.Windows.Controls.Primitives.TextBoxBase.TextChanged> event when the change entails changing the structure of the underlying document.  
   
- For example, suppose that a <xref:System.Windows.Controls.RichTextBox> contains the string `"This is some text."` The structure of the <xref:System.Windows.Controls.RichTextBox.Document%2A?displayProperty=fullName> is `<Paragraph><Run>This is some text.</Run></Paragraph>`. If the user bolds the words `"is some"`, the structure of the underlying <xref:System.Windows.Documents.FlowDocument> changes to `<Paragraph><Run>This </Run><Run  FontWeight="Bold">is some</Run><Run> text.</Run></Paragraph>`. There are actually four changes that took place as a result of the user's action:  
+ For example, suppose that a <xref:System.Windows.Controls.RichTextBox> contains the string `"This is some text."` The structure of the <xref:System.Windows.Controls.RichTextBox.Document%2A?displayProperty=nameWithType> is `<Paragraph><Run>This is some text.</Run></Paragraph>`. If the user bolds the words `"is some"`, the structure of the underlying <xref:System.Windows.Documents.FlowDocument> changes to `<Paragraph><Run>This </Run><Run  FontWeight="Bold">is some</Run><Run> text.</Run></Paragraph>`. There are actually four changes that took place as a result of the user's action:  
   
 1.  The `<Run>` symbol is removed and re-added before the word `This`.  
   
@@ -168,5 +168,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.TextChangedEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

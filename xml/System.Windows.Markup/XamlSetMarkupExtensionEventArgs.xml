@@ -16,10 +16,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although a class might indicate with <xref:System.Windows.Markup.XamlSetMarkupExtensionAttribute> that it handles all attempts to set a value through a markup extension, it might also use more than one markup extension to do so. Thus each set operation ultimately resolves to a separate markup extension implementation in the supporting code. The <xref:System.Windows.Markup.XamlSetMarkupExtensionEventArgs> class reports the specifics of each attempted markup extension set operation so that the callback can branch accordingly for different <xref:System.Windows.Markup.MarkupExtension>cases.  
+ Although a class might indicate with <xref:System.Windows.Markup.XamlSetMarkupExtensionAttribute> that it handles all attempts to set a value through a markup extension, it might also use more than one markup extension to do so. Thus each set operation ultimately resolves to a separate markup extension implementation in the supporting code. The <xref:System.Windows.Markup.XamlSetMarkupExtensionEventArgs> class reports the specifics of each attempted markup extension set operation so that the callback can branch accordingly for different <xref:System.Windows.Markup.MarkupExtension> cases.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Markup.XamlSetValueEventArgs" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

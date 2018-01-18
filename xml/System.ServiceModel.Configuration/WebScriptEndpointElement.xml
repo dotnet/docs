@@ -455,5 +455,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OnInitializeAndValidate">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes and verifies the format of a specified <see cref="T:System.ServiceModel.Configuration.ServiceEndpointElement" /> or <see cref="T:System.ServiceModel.Configuration.ChannelEndpointElement" /> and configures it to include web HTTP binding content.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OnApplyConfiguration">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to a <see cref="T:System.ServiceModel.Description.WebScriptEndpoint" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

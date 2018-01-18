@@ -19,6 +19,10 @@
     <summary>Defines methods that enable JScript to communicate with an external COM member. This interface is used by an external COM implementation to expose its objects to JScript because JScript requires a managed <see cref="T:System.Reflection.MemberInfo" /> to bind to an external object.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+    <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+    <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+    <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
   </Docs>
   <Members>
     <Member MemberName="Call">
@@ -48,6 +52,10 @@
         <returns>The value of the call to the external COM member.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -77,6 +85,10 @@
         <returns>The value of the external COM member.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -107,6 +119,10 @@
         <summary>When implemented in a class, enables JScript to set the value of an external COM member to the specified new value, using the specified binding information.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.MemberInfoInitializer" />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
       </Docs>
     </Member>
   </Members>

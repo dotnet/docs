@@ -28,7 +28,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Examples of events that use type-constrained delegates based on <xref:System.Windows.RoutedPropertyChangedEventHandler%601> include <xref:System.Windows.Controls.TreeView.SelectedItemChanged?displayProperty=fullName> and <xref:System.Windows.Controls.Primitives.RangeBase.ValueChanged?displayProperty=fullName>.  
+ Examples of events that use type-constrained delegates based on <xref:System.Windows.RoutedPropertyChangedEventHandler%601> include <xref:System.Windows.Controls.TreeView.SelectedItemChanged?displayProperty=nameWithType> and <xref:System.Windows.Controls.Primitives.RangeBase.ValueChanged?displayProperty=nameWithType>.  
   
    
   
@@ -47,5 +47,6 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.RoutedPropertyChangedEventArgs`1" />
   </Docs>
 </Type>

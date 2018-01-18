@@ -152,7 +152,7 @@
     </Member>
     <Member MemberName="EndCancel">
       <MemberSignature Language="C#" Value="public void EndCancel (IAsyncResult result, out System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndCancel(class System.IAsyncResult result, class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndCancel(class System.IAsyncResult result, [out] class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp; response) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.EndCancel(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -175,7 +175,7 @@
     </Member>
     <Member MemberName="EndIssue">
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityToken EndIssue (IAsyncResult result, out System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityToken EndIssue(class System.IAsyncResult result, class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityToken EndIssue(class System.IAsyncResult result, [out] class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp; response) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.EndIssue(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -199,7 +199,7 @@
     </Member>
     <Member MemberName="EndRenew">
       <MemberSignature Language="C#" Value="public void EndRenew (IAsyncResult result, out System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndRenew(class System.IAsyncResult result, class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndRenew(class System.IAsyncResult result, [out] class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp; response) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.EndRenew(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -222,7 +222,7 @@
     </Member>
     <Member MemberName="EndValidate">
       <MemberSignature Language="C#" Value="public void EndValidate (IAsyncResult result, out System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndValidate(class System.IAsyncResult result, class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndValidate(class System.IAsyncResult result, [out] class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp; response) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.EndValidate(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -267,7 +267,7 @@
     </Member>
     <Member MemberName="Issue">
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityToken Issue (System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request, out System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityToken Issue(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request, class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityToken Issue(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request, [out] class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp; response) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.Issue(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -333,5 +333,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Issue">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a WS-Trust Issue message to an endpoint STS.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

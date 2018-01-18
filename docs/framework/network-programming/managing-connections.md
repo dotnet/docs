@@ -8,10 +8,8 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Internet, connections"
   - "HTTP, classes for connecting"
@@ -29,6 +27,8 @@ caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Managing Connections
 Applications that use HTTP to connect to data resources can use the .NET Framework's <xref:System.Net.ServicePoint> and <xref:System.Net.ServicePointManager> classes to manage connections to the Internet and to help them achieve optimum scale and performance.  
@@ -71,5 +71,5 @@ sp.ConnectionLimit = newLimit
 ```  
   
 ## See Also  
- [Connection Grouping](../../../docs/framework/network-programming/connection-grouping.md)   
+ [Connection Grouping](../../../docs/framework/network-programming/connection-grouping.md)  
  [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)

@@ -39,6 +39,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.RightsManagement.UseLicense" />
+    <altmember cref="T:System.Security.RightsManagement.SecureEnvironment" />
   </Docs>
   <Members>
     <Member MemberName="BlockSize">
@@ -139,6 +141,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.RightsManagement.CryptoProvider.CanEncrypt" />
+        <altmember cref="M:System.Security.RightsManagement.UseLicense.Bind(System.Security.RightsManagement.SecureEnvironment)" />
       </Docs>
     </Member>
     <Member MemberName="CanEncrypt">
@@ -164,6 +168,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.RightsManagement.CryptoProvider.CanDecrypt" />
+        <altmember cref="M:System.Security.RightsManagement.UseLicense.Bind(System.Security.RightsManagement.SecureEnvironment)" />
       </Docs>
     </Member>
     <Member MemberName="CanMergeBlocks">
@@ -228,6 +234,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="cipherText" /> is null.</exception>
         <exception cref="T:System.Security.RightsManagement.RightsManagementException">Decryption right not granted.</exception>
+        <altmember cref="P:System.Security.RightsManagement.CryptoProvider.CanDecrypt" />
+        <altmember cref="M:System.Security.RightsManagement.CryptoProvider.Encrypt(System.Byte[])" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -337,6 +345,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="clearText" /> is null.</exception>
         <exception cref="T:System.Security.RightsManagement.RightsManagementException">Encryption is not permitted.</exception>
+        <altmember cref="P:System.Security.RightsManagement.CryptoProvider.CanEncrypt" />
+        <altmember cref="M:System.Security.RightsManagement.CryptoProvider.Decrypt(System.Byte[])" />
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -368,5 +378,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Security.RightsManagement.CryptoProvider" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

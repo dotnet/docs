@@ -43,6 +43,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Panel" />
+    <altmember cref="T:System.Windows.Forms.ContainerControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,6 +73,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.SetStyle(System.Windows.Forms.ControlStyles,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.SetScrollState(System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="AdjustFormScrollbars">
@@ -105,6 +109,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.GetScrollState(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.SetScrollState(System.Int32,System.Boolean)" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScroll" />
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.ScrollToControl(System.Windows.Forms.Control)" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScrollPosition" />
+        <altmember cref="E:System.Windows.Forms.ScrollableControl.Scroll" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.DisplayRectangle" />
       </Docs>
     </Member>
     <Member MemberName="AutoScroll">
@@ -177,6 +188,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.GetScrollState(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.SetScrollState(System.Int32,System.Boolean)" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScrollMargin" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScrollPosition" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.VerticalScroll" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.HorizontalScroll" />
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.AdjustFormScrollbars(System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.ScrollToControl(System.Windows.Forms.Control)" />
       </Docs>
     </Member>
     <Member MemberName="AutoScrollMargin">
@@ -206,12 +225,12 @@
  The auto-scroll margin is the distance between any child controls and the edges of the scrollable parent control. The <xref:System.Windows.Forms.ScrollableControl.AutoScrollMargin%2A> size is added to the size of any child controls contained in the scrollable control to determine whether or not scroll bars are needed. The <xref:System.Windows.Forms.ScrollableControl.AutoScrollMargin%2A> property is evaluated when the parent scrollable control is resized or the individual child controls are brought into view, and is used to determine if scroll bars must be displayed. Docked controls are excluded from the calculations that determine if scroll bars must be displayed.  
   
 > [!NOTE]
->  If a docked control's <xref:System.Windows.Forms.Control.Dock%2A> property is set to <xref:System.Windows.Forms.DockStyle?displayProperty=fullName>, the control fills the parent scrollable control and the docked control is ignored when using the <xref:System.Windows.Forms.ScrollableControl.AutoScrollMargin%2A> to determine whether scroll bars are needed.  
+>  If a docked control's <xref:System.Windows.Forms.Control.Dock%2A> property is set to <xref:System.Windows.Forms.DockStyle.Fill?displayProperty=nameWithType>, the control fills the parent scrollable control and the docked control is ignored when using the <xref:System.Windows.Forms.ScrollableControl.AutoScrollMargin%2A> to determine whether scroll bars are needed.  
   
  If the distance from the edge of a child control to the parent scrollable control is less than the value assigned to the <xref:System.Windows.Forms.ScrollableControl.AutoScrollMargin%2A> property and the <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property is set to `true`, the appropriate scroll bar is displayed.  
   
 > [!NOTE]
->  We recommend, when docking controls within a scrollable control, that you add a child scrollable control, such as a <xref:System.Windows.Forms.Panel>, to contain any other controls that might require scrolling. You should add the child <xref:System.Windows.Forms.Panel> control to the scrollable control and its <xref:System.Windows.Forms.Control.Dock%2A> property set to <xref:System.Windows.Forms.DockStyle?displayProperty=fullName> and its <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property set to `true`. You should set the <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property of the parent scrollable control to `false`.  
+>  We recommend, when docking controls within a scrollable control, that you add a child scrollable control, such as a <xref:System.Windows.Forms.Panel>, to contain any other controls that might require scrolling. You should add the child <xref:System.Windows.Forms.Panel> control to the scrollable control and its <xref:System.Windows.Forms.Control.Dock%2A> property set to <xref:System.Windows.Forms.DockStyle.Fill?displayProperty=nameWithType> and its <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property set to `true`. You should set the <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property of the parent scrollable control to `false`.  
   
    
   
@@ -225,6 +244,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Drawing.Size.Height" /> or <see cref="P:System.Drawing.Size.Width" /> value assigned is less than 0.</exception>
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScroll" />
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.SetAutoScrollMargin(System.Int32,System.Int32)" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScrollPosition" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScrollMinSize" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.DisplayRectangle" />
       </Docs>
     </Member>
     <Member MemberName="AutoScrollMinSize">
@@ -255,6 +279,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScroll" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScrollMargin" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScrollPosition" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.DisplayRectangle" />
+        <altmember cref="P:System.Windows.Forms.Control.ClientRectangle" />
+        <altmember cref="P:System.Windows.Forms.Control.Bounds" />
       </Docs>
     </Member>
     <Member MemberName="AutoScrollPosition">
@@ -304,6 +334,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScroll" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScrollMargin" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScrollMinSize" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.VerticalScroll" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.HorizontalScroll" />
       </Docs>
     </Member>
     <Member MemberName="CreateParams">
@@ -322,6 +357,7 @@
         <summary>Gets the required creation parameters when the control handle is created.</summary>
         <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.CreateParams" />
       </Docs>
     </Member>
     <Member MemberName="DisplayRectangle">
@@ -347,6 +383,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.SetDisplayRectLocation(System.Int32,System.Int32)" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScroll" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScrollMinSize" />
+        <altmember cref="P:System.Windows.Forms.Control.ClientRectangle" />
+        <altmember cref="P:System.Windows.Forms.Control.Bounds" />
       </Docs>
     </Member>
     <Member MemberName="DockPadding">
@@ -392,6 +433,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ScrollableControl.DockPaddingEdges" />
+        <altmember cref="P:System.Windows.Forms.Control.Padding" />
+        <altmember cref="P:System.Windows.Forms.Control.Margin" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScrollMargin" />
       </Docs>
     </Member>
     <Member MemberName="GetScrollState">
@@ -435,6 +480,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.SetScrollState(System.Int32,System.Boolean)" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScroll" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.HScroll" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.VScroll" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalScroll">
@@ -468,6 +517,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.HScrollProperties" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.VerticalScroll" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.HScroll" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScrollPosition" />
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.GetScrollState(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="HScroll">
@@ -496,6 +550,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScroll" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.VScroll" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.HorizontalScroll" />
       </Docs>
     </Member>
     <Member MemberName="OnLayout">
@@ -522,6 +579,7 @@
         <param name="levent">A <see cref="T:System.Windows.Forms.LayoutEventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.Layout" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseWheel">
@@ -562,6 +620,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ScrollableControl.OnMouseWheel(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.ScrollableControl.OnMouseWheel(System.Windows.Forms.MouseEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.HScroll" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.VScroll" />
+        <altmember cref="E:System.Windows.Forms.ScrollableControl.Scroll" />
       </Docs>
     </Member>
     <Member MemberName="OnPaddingChanged">
@@ -654,6 +715,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.RightToLeftChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnRightToLeftChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnScroll">
@@ -687,6 +749,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ScrollableControl.OnScroll(System.Windows.Forms.ScrollEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ScrollableControl.OnScroll(System.Windows.Forms.ScrollEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.ScrollableControl.Scroll" />
+        <altmember cref="T:System.Windows.Forms.ScrollEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnVisibleChanged">
@@ -713,6 +777,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.VisibleChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnVisibleChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ScaleControl">
@@ -736,6 +801,7 @@
         <param name="specified">A <see cref="T:System.Windows.Forms.BoundsSpecified" /> value that specifies the bounds of the control to use when defining its size and position.</param>
         <summary>Scales a control's location, size, padding and margin.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)" />
       </Docs>
     </Member>
     <Member MemberName="ScaleCore">
@@ -764,6 +830,7 @@
         <param name="dy">The vertical scaling factor.</param>
         <summary>This method is not relevant for this class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.ScaleCore(System.Single,System.Single)" />
       </Docs>
     </Member>
     <Member MemberName="Scroll">
@@ -793,7 +860,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ScrollableControl.Scroll> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ScrollableControl.Scroll> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ScrollableControl>, such as a <xref:System.Windows.Forms.Panel> or <xref:System.Windows.Forms.ContainerControl>. Then name the instance `ScrollableControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ScrollableControl.Scroll> event.  
   
@@ -802,6 +869,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScrollPosition" />
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.ScrollControlIntoView(System.Windows.Forms.Control)" />
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.ScrollToControl(System.Windows.Forms.Control)" />
       </Docs>
     </Member>
     <Member MemberName="ScrollControlIntoView">
@@ -843,6 +913,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScroll" />
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.SetDisplayRectLocation(System.Int32,System.Int32)" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.HScroll" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.VScroll" />
+        <altmember cref="E:System.Windows.Forms.ScrollableControl.Scroll" />
       </Docs>
     </Member>
     <Member MemberName="ScrollStateAutoScrolling">
@@ -868,6 +943,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScroll" />
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.GetScrollState(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.SetScrollState(System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="ScrollStateFullDrag">
@@ -895,6 +973,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.GetScrollState(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.SetScrollState(System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="ScrollStateHScrollVisible">
@@ -920,6 +1000,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.HScroll" />
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.GetScrollState(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.SetScrollState(System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="ScrollStateUserHasScrolled">
@@ -945,6 +1028,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.ScrollableControl.Scroll" />
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.ScrollControlIntoView(System.Windows.Forms.Control)" />
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.GetScrollState(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.SetScrollState(System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="ScrollStateVScrollVisible">
@@ -970,6 +1057,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.VScroll" />
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.GetScrollState(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.SetScrollState(System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="ScrollToControl">
@@ -1001,6 +1091,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.ScrollControlIntoView(System.Windows.Forms.Control)" />
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.SetDisplayRectLocation(System.Int32,System.Int32)" />
+        <altmember cref="P:System.Windows.Forms.Control.AutoScrollOffset" />
+        <altmember cref="E:System.Windows.Forms.ScrollableControl.Scroll" />
       </Docs>
     </Member>
     <Member MemberName="SetAutoScrollMargin">
@@ -1043,6 +1137,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScrollMargin" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScroll" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScrollMinSize" />
       </Docs>
     </Member>
     <Member MemberName="SetDisplayRectLocation">
@@ -1077,6 +1174,9 @@
           <para>
             <see cref="M:System.Windows.Forms.ScrollableControl.SetDisplayRectLocation(System.Int32,System.Int32)" /> does not update the position of the scroll bars. To update the scroll bars, call the <see cref="M:System.Windows.Forms.ScrollableControl.AdjustFormScrollbars(System.Boolean)" /> method.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.DisplayRectangle" />
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.ScrollControlIntoView(System.Windows.Forms.Control)" />
+        <altmember cref="E:System.Windows.Forms.ScrollableControl.Scroll" />
       </Docs>
     </Member>
     <Member MemberName="SetScrollState">
@@ -1107,6 +1207,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.GetScrollState(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="VerticalScroll">
@@ -1140,6 +1241,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.HScrollProperties" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.HorizontalScroll" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.VScroll" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScrollPosition" />
+        <altmember cref="M:System.Windows.Forms.ScrollableControl.GetScrollState(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="VScroll">
@@ -1168,11 +1274,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.AutoScroll" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.HScroll" />
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.VerticalScroll" />
       </Docs>
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1194,6 +1303,7 @@
         <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
         <summary>Processes Windows messages.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.WndProc(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
   </Members>

@@ -7,6 +7,12 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
   </Base>
@@ -114,6 +120,12 @@ public class OneAndTwoWay
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.OperationContractAttribute" /> class.</summary>
@@ -130,6 +142,12 @@ public class OneAndTwoWay
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -140,7 +158,7 @@ public class OneAndTwoWay
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.OperationContractAttribute.Action%2A>property to control the action of the method's input message. Because [!INCLUDE[indigo2](~/includes/indigo2-md.md)] uses this action to dispatch an incoming message to the appropriate method, messages used within a contract operation must have unique actions. The default action value is a combination of the contract namespace (the default value is "http://tempuri.org/"), the contract name (interface name or the class name, if no explicit service interface is used), the operation name, and an additional string ("Response") if the message is a correlated response. You can override this default with the <xref:System.ServiceModel.OperationContractAttribute.Action%2A> property.  
+ Use the <xref:System.ServiceModel.OperationContractAttribute.Action%2A> property to control the action of the method's input message. Because [!INCLUDE[indigo2](~/includes/indigo2-md.md)] uses this action to dispatch an incoming message to the appropriate method, messages used within a contract operation must have unique actions. The default action value is a combination of the contract namespace (the default value is "http://tempuri.org/"), the contract name (interface name or the class name, if no explicit service interface is used), the operation name, and an additional string ("Response") if the message is a correlated response. You can override this default with the <xref:System.ServiceModel.OperationContractAttribute.Action%2A> property.  
   
  To indicate that a service operation handles all messages that the service receives but cannot be directed to a service operation, specify the value "*" (an asterisk). This type of operation, called an unmatched message handler, must have one of following method signatures, or a <xref:System.InvalidOperationException> is thrown:  
   
@@ -177,6 +195,12 @@ public class OneAndTwoWay
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -264,6 +288,10 @@ public interface IAddTwoNumbers
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -278,7 +306,7 @@ public interface IAddTwoNumbers
  The <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> property controls whether an operation can be the first operation called when a session is created.  
   
 > [!NOTE]
->  The value of <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=fullName> must be either <xref:System.ServiceModel.SessionMode.Allowed> or <xref:System.ServiceModel.SessionMode.Required> and the binding used must require or allow sessions for the <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> property to work properly.  
+>  The value of <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=nameWithType> must be either <xref:System.ServiceModel.SessionMode.Allowed> or <xref:System.ServiceModel.SessionMode.Required> and the binding used must require or allow sessions for the <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> property to work properly.  
   
  The default is `true`, which means that an operation can be the first one called on a channel. Subsequent calls to the initiating method have no effect, other than to call the method. No other sessions are created. If the contract does not make use of a session, setting <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> to `false` is ignored.  
   
@@ -287,7 +315,7 @@ public interface IAddTwoNumbers
 > [!NOTE]
 >  There is an interaction between <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> and the <xref:System.ServiceModel.OperationContractAttribute.Action%2A> property. A service contract can have only one service operation with the <xref:System.ServiceModel.OperationContractAttribute.Action%2A> property set to "*". Any group of service contracts hosted at the same listen URI that a service class implements can have many service operations with the <xref:System.ServiceModel.OperationContractAttribute.Action%2A> property set to "\*" when the <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> property is set to `false`. However, only one of those service methods can have the <xref:System.ServiceModel.OperationContractAttribute.Action%2A> property set to "\*" and the <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> property set to `true`.  
   
- If a service receives a message for a non-initiating operation, the service returns an ActionNotSupported SOAP fault. The client experiences this as an <xref:System.ServiceModel.FaultException>. If a client calls a non-initiating operation first, the client runtime throws an <xref:System.InvalidOperationException?displayProperty=fullName>.  
+ If a service receives a message for a non-initiating operation, the service returns an ActionNotSupported SOAP fault. The client experiences this as an <xref:System.ServiceModel.FaultException>. If a client calls a non-initiating operation first, the client runtime throws an <xref:System.InvalidOperationException?displayProperty=nameWithType>.  
   
  For more information, see [Using Sessions](~/docs/framework/wcf/using-sessions.md).  
   
@@ -346,6 +374,12 @@ public class InitializeAndTerminateService
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -363,7 +397,7 @@ public class InitializeAndTerminateService
   
  If the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property is set to `false` (the default), even methods that return `void` result in a reply message. In this case, the infrastructure creates and sends an empty message to indicate to the caller that the method has returned. (Using this approach enables the infrastructure to send SOAP faults back to the client.) Setting <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> to `true` is the only way to cancel the creation and dispatch of a response message.  
   
- One-way methods must not return a value or have `ref` or `out` parameters; otherwise a <xref:System.InvalidOperationException?displayProperty=fullName> exception is thrown.  
+ One-way methods must not return a value or have `ref` or `out` parameters; otherwise a <xref:System.InvalidOperationException?displayProperty=nameWithType> exception is thrown.  
   
  Specifying that an operation is a one-way operation means only that there is no response message. It is possible to block if a connection cannot be made, or the outbound message is very large, or if the service cannot read inbound information fast enough. If a client requires a non-blocking call, generate <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A> operations. For more information, see [One-Way Services](~/docs/framework/wcf/feature-details/one-way-services.md) and [Accessing Services Using a WCF Client](~/docs/framework/wcf/feature-details/accessing-services-using-a-client.md).  
   
@@ -416,6 +450,10 @@ public class OneAndTwoWay
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -436,7 +474,7 @@ public class OneAndTwoWay
  For more information about using this property with sessions, see [Using Sessions](~/docs/framework/wcf/using-sessions.md).  
   
 > [!NOTE]
->  If a caller is listening for the <xref:System.ServiceModel.OperationContext.OperationCompleted?displayProperty=fullName> event for an <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A?displayProperty=fullName> operation, it is possible to block when the response is received. The proper way to handle this is to schedule work on another thread when <xref:System.ServiceModel.OperationContext.OperationCompleted> is raised and then immediately return from that event handler.  
+>  If a caller is listening for the <xref:System.ServiceModel.OperationContext.OperationCompleted?displayProperty=nameWithType> event for an <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A?displayProperty=nameWithType> operation, it is possible to block when the response is received. The proper way to handle this is to schedule work on another thread when <xref:System.ServiceModel.OperationContext.OperationCompleted> is raised and then immediately return from that event handler.  
   
    
   
@@ -493,6 +531,12 @@ public class InitializeAndTerminateService
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -544,25 +588,25 @@ public class InitializeAndTerminateService
   
  It is important to remember that the protection behavior at runtime is the combination of the protection-level values set on the following properties. These properties have a hierarchical structure. Setting the outermost value establishes the default setting for all narrower scopes unless a different value for a narrower scope is explicitly set. In this case, the outer value remains the default for all narrower scopes with the exception of that specifically set.  
   
- For example, if <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel%2A?displayProperty=fullName> is set to <xref:System.Net.Security.ProtectionLevel?displayProperty=fullName> and no other narrower scopes have protection level settings, all messages in an operation contract are encrypted and signed. If, however, one of those operations has the <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel%2A> set to <xref:System.Net.Security.ProtectionLevel?displayProperty=fullName>, then the messages for that operation are signed but all other messages in the contract are encrypted and signed.  
+ For example, if <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel%2A?displayProperty=nameWithType> is set to <xref:System.Net.Security.ProtectionLevel.EncryptAndSign?displayProperty=nameWithType> and no other narrower scopes have protection level settings, all messages in an operation contract are encrypted and signed. If, however, one of those operations has the <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel%2A> set to <xref:System.Net.Security.ProtectionLevel.Sign?displayProperty=nameWithType>, then the messages for that operation are signed but all other messages in the contract are encrypted and signed.  
   
  For details about protection levels and their assumptions and scopes, see [Understanding Protection Level](~/docs/framework/wcf/understanding-protection-level.md).  
   
  The scopes at which these values are set are:  
   
- <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel%2A?displayProperty=fullName>  
+ <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel%2A?displayProperty=nameWithType>  
   
- <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel%2A?displayProperty=fullName>  
+ <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel%2A?displayProperty=nameWithType>  
   
- <xref:System.ServiceModel.FaultContractAttribute.ProtectionLevel%2A?displayProperty=fullName>  
+ <xref:System.ServiceModel.FaultContractAttribute.ProtectionLevel%2A?displayProperty=nameWithType>  
   
- <xref:System.ServiceModel.MessageContractAttribute.ProtectionLevel%2A?displayProperty=fullName>  
+ <xref:System.ServiceModel.MessageContractAttribute.ProtectionLevel%2A?displayProperty=nameWithType>  
   
- The <xref:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel%2A?displayProperty=fullName> property on <xref:System.ServiceModel.MessageHeaderAttribute?displayProperty=fullName>.  
+ The <xref:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel%2A?displayProperty=nameWithType> property on <xref:System.ServiceModel.MessageHeaderAttribute?displayProperty=nameWithType>.  
   
- The <xref:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel%2A?displayProperty=fullName> property on <xref:System.ServiceModel.MessageBodyMemberAttribute?displayProperty=fullName>.  
+ The <xref:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel%2A?displayProperty=nameWithType> property on <xref:System.ServiceModel.MessageBodyMemberAttribute?displayProperty=nameWithType>.  
   
- When there is no protection level explicitly specified on the contract and the underlying binding supports security (whether at the transport or message level), the effective protection level for the whole contract is <xref:System.Net.Security.ProtectionLevel?displayProperty=fullName>. If the binding does not support security (such as <xref:System.ServiceModel.BasicHttpBinding>), the effective <xref:System.Net.Security.ProtectionLevel?displayProperty=fullName> is <xref:System.Net.Security.ProtectionLevel?displayProperty=fullName> for the whole contract. The result is that depending upon the endpoint binding, clients can require different message or transport level security protection even when the contract specifies <xref:System.Net.Security.ProtectionLevel?displayProperty=fullName>.  
+ When there is no protection level explicitly specified on the contract and the underlying binding supports security (whether at the transport or message level), the effective protection level for the whole contract is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign?displayProperty=nameWithType>. If the binding does not support security (such as <xref:System.ServiceModel.BasicHttpBinding>), the effective <xref:System.Net.Security.ProtectionLevel?displayProperty=nameWithType> is <xref:System.Net.Security.ProtectionLevel.None?displayProperty=nameWithType> for the whole contract. The result is that depending upon the endpoint binding, clients can require different message or transport level security protection even when the contract specifies <xref:System.Net.Security.ProtectionLevel.None?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -578,6 +622,12 @@ public class InitializeAndTerminateService
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

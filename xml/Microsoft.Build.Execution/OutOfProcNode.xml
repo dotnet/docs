@@ -32,7 +32,7 @@
     </Member>
     <Member MemberName="Run">
       <MemberSignature Language="C#" Value="public Microsoft.Build.Execution.NodeEngineShutdownReason Run (out Exception shutdownException);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Build.Execution.NodeEngineShutdownReason Run(class System.Exception shutdownException) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Build.Execution.NodeEngineShutdownReason Run([out] class System.Exception&amp; shutdownException) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.OutOfProcNode.Run(System.Exception@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

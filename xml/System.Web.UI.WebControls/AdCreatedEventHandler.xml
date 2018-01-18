@@ -33,17 +33,20 @@
 ## Examples  
  The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.AdRotator.AdCreated> event. It gets the URL associated with the advertisement when the <xref:System.Web.UI.WebControls.AdRotator> control gets created and displays it below the control. This example requires the XML file (Ads.xml) listed in the example below.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic AdCreatedEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AdCreatedEventArgs Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic AdCreatedEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AdCreatedEventArgs Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic AdCreatedEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AdCreatedEventArgs Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic AdCreatedEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AdCreatedEventArgs Example/VB/sourcevb.aspx#1)]  
   
  The following code example demonstrates how to format the XML file that contains the advertisement information. For more information on the XML file, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property of the <xref:System.Web.UI.WebControls.AdRotator> class.  
   
  [!code-xml[Classic AdCreatedEventArgs Example#2](~/samples/snippets/common/VS_Snippets_WebNet/Classic AdCreatedEventArgs Example/Common/App_Data/Ads.xml#2)]  
   
- <!-- TODO: review snippet reference [!code-csharp[AdCreatedEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AdCreatedEventHandler/CS/adcreatedeventhandlercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[AdCreatedEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AdCreatedEventHandler/VB/adcreatedeventhandlervb.aspx#1)]  -->  
+ [!code-aspx-csharp[AdCreatedEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AdCreatedEventHandler/CS/adcreatedeventhandlercs.aspx#1)]
+ [!code-aspx-vb[AdCreatedEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AdCreatedEventHandler/VB/adcreatedeventhandlervb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
+    <altmember cref="T:System.Web.UI.WebControls.AdCreatedEventArgs" />
+    <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
   </Docs>
 </Type>

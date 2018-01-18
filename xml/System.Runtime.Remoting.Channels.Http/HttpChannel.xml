@@ -33,7 +33,7 @@
   
  Channels are used by the .NET Framework remoting infrastructure to transport remote calls. When a client makes a call to a remote object, the call is serialized into a message that is sent by a client channel and received by a server channel. It is then deserialized and processed. Any returned values are transmitted by the server channel and received by the client channel.  
   
- A <xref:System.Runtime.Remoting.Channels.Http.HttpChannel> object has associated configuration properties that can be set at run time either in a configuration file (by invoking the static <xref:System.Runtime.Remoting.RemotingConfiguration.Configure%2A?displayProperty=fullName> method) or programmatically (by passing a <xref:System.Collections.IDictionary> collection to the <xref:System.Runtime.Remoting.Channels.Http.HttpChannel.%23ctor%2A> constructor). For a list of these configuration properties, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/en-us/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
+ A <xref:System.Runtime.Remoting.Channels.Http.HttpChannel> object has associated configuration properties that can be set at run time either in a configuration file (by invoking the static <xref:System.Runtime.Remoting.RemotingConfiguration.Configure%2A?displayProperty=nameWithType> method) or programmatically (by passing a <xref:System.Collections.IDictionary> collection to the <xref:System.Runtime.Remoting.Channels.Http.HttpChannel.%23ctor%2A> constructor). For a list of these configuration properties, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/en-us/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
   
    
   
@@ -172,6 +172,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Remoting.Channels.Http.HttpChannel" />
+        <altmember cref="N:System.Runtime.Remoting.Channels.Http" />
       </Docs>
     </Member>
     <Member MemberName="ChannelData">
@@ -197,6 +199,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Remoting.Channels.Http.HttpChannel" />
+        <altmember cref="N:System.Runtime.Remoting.Channels.Http" />
       </Docs>
     </Member>
     <Member MemberName="ChannelName">
@@ -272,6 +276,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Remoting.Channels.Http.HttpChannel" />
+        <altmember cref="N:System.Runtime.Remoting.Channels.Http" />
       </Docs>
     </Member>
     <Member MemberName="ChannelSinkChain">
@@ -297,11 +303,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Remoting.Channels.Http.HttpChannel" />
+        <altmember cref="N:System.Runtime.Remoting.Channels.Http" />
       </Docs>
     </Member>
     <Member MemberName="CreateMessageSink">
       <MemberSignature Language="C#" Value="public System.Runtime.Remoting.Messaging.IMessageSink CreateMessageSink (string url, object remoteChannelData, out string objectURI);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Remoting.Messaging.IMessageSink CreateMessageSink(string url, object remoteChannelData, string objectURI) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Remoting.Messaging.IMessageSink CreateMessageSink(string url, object remoteChannelData, [out] string&amp; objectURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpChannel.CreateMessageSink(System.String,System.Object,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -367,6 +375,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Remoting.Channels.Http.HttpChannel" />
+        <altmember cref="N:System.Runtime.Remoting.Channels.Http" />
       </Docs>
     </Member>
     <Member MemberName="IsSecured">
@@ -461,7 +471,7 @@
     </Member>
     <Member MemberName="Parse">
       <MemberSignature Language="C#" Value="public string Parse (string url, out string objectURI);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Parse(string url, string objectURI) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Parse(string url, [out] string&amp; objectURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpChannel.Parse(System.String,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -491,6 +501,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -516,6 +527,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Remoting.Channels.Http.HttpChannel" />
+        <altmember cref="N:System.Runtime.Remoting.Channels.Http" />
       </Docs>
     </Member>
     <Member MemberName="StartListening">
@@ -544,6 +557,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Remoting.Channels.Http.HttpChannel" />
+        <altmember cref="N:System.Runtime.Remoting.Channels.Http" />
       </Docs>
     </Member>
     <Member MemberName="StopListening">
@@ -565,6 +580,8 @@
         <param name="data">The channel URI on which the channel hook is listening.</param>
         <summary>Instructs the current channel to stop listening for requests.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Remoting.Channels.Http.HttpChannel" />
+        <altmember cref="N:System.Runtime.Remoting.Channels.Http" />
       </Docs>
     </Member>
     <Member MemberName="WantsToListen">
@@ -583,7 +600,18 @@
         <summary>Gets a Boolean value that indicates whether the current instance wants to be hooked into the outside listener service.</summary>
         <value>A Boolean value that indicates whether <see cref="T:System.Runtime.Remoting.Channels.IChannelReceiverHook" /> wants to be hooked into the outside listener service.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Remoting.Channels.Http.HttpChannel" />
+        <altmember cref="N:System.Runtime.Remoting.Channels.Http" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.Http.HttpChannel" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

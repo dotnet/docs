@@ -1077,7 +1077,7 @@
         <summary>Calculates the sum of the two <see cref="T:System.Data.OracleClient.OracleNumber" /> structures.</summary>
         <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> property contains the sum.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.Add%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.Add%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1103,7 +1103,7 @@
         <summary>Calculates the results of dividing the first <see cref="T:System.Data.OracleClient.OracleNumber" /> structure by the second.</summary>
         <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> property contains the results of the division.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.Divide%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.Divide%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1129,7 +1129,7 @@
         <summary>Performs a logical comparison of the two <see cref="T:System.Data.OracleClient.OracleNumber" /> structures to determine whether they are equal.</summary>
         <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the two instances are equal or <see cref="F:System.Data.OracleClient.OracleBoolean.False" /> if the two instances are not equal. If either instance of <see cref="T:System.Data.OracleClient.OracleNumber" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.Equals%28System.Object%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1149,9 +1149,9 @@
         <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">The <see cref="T:System.Data.OracleClient.OracleNumber" /> structure to be converted.</param>
+        <summary>Converts the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure to <see cref="T:System.Decimal" />.</summary>
+        <returns>A new <see langword="Decimal" /> structure whose value equals the <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> of the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1171,9 +1171,9 @@
         <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">The <see cref="T:System.Data.OracleClient.OracleNumber" /> structure to be converted.</param>
+        <summary>Converts the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure to <see cref="T:System.Double" />.</summary>
+        <returns>A new <see langword="Double" /> structure whose value equals the <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> of the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1193,9 +1193,9 @@
         <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">The <see cref="T:System.Data.OracleClient.OracleNumber" /> structure to be converted.</param>
+        <summary>Converts the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure to <see cref="T:System.Int32" />.</summary>
+        <returns>A new <see langword="Int32" /> structure whose value equals the <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> of the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1215,10 +1215,31 @@
         <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The <see cref="T:System.Data.OracleClient.OracleNumber" /> structure to be converted.</param>
+        <summary>Converts the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure to <see cref="T:System.Int64" />.</summary>
+        <returns>A new <see langword="Int64" /> structure whose value equals the <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> of the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates an <xref:System.Data.OracleClient.OracleNumber> and converts it to an <xref:System.Int32>.  
+  
+```csharp  
+//Create OracleNumber and cast it to an Int32.  
+OracleNumber n = new OracleNumber(42);  
+Int32 i = (Int32)n;  
+Console.WriteLine(i);  
+```  
+  
+```vb  
+'Create OracleNumber and cast it to an Int32.  
+ Dim n As OracleNumber = New OracleNumber(42)  
+ Dim i As Int32 = (Int32)n  
+ Console.WriteLine(i))  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1237,9 +1258,9 @@
         <Parameter Name="x" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">The <see langword="Decimal" /> structure to be converted.</param>
+        <summary>Converts the supplied <see langword="Decimal" /> structure to an <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</summary>
+        <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> is equal to the value of the <see langword="Decimal" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1259,9 +1280,9 @@
         <Parameter Name="x" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">The <see langword="Double" /> structure to be converted.</param>
+        <summary>Converts the supplied <see langword="Double" /> structure to an <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</summary>
+        <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> property equals the value of the <see langword="Double" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1281,9 +1302,9 @@
         <Parameter Name="x" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">The integer structure to be converted.</param>
+        <summary>Converts the supplied <see langword="Int32" /> structure to an <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</summary>
+        <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> property equals the value of the <see langword="Int32" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1303,9 +1324,9 @@
         <Parameter Name="x" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">The <see langword="Int64" /> structure to be converted.</param>
+        <summary>Converts the supplied <see langword="Int64" /> structure to an <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</summary>
+        <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> property is equal to the value of the <see langword="Int64" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1325,9 +1346,9 @@
         <Parameter Name="x" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">The <see langword="String" /> to be converted.</param>
+        <summary>Converts the supplied <see langword="String" /> to an <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</summary>
+        <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> equals the value of the <see langword="String" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1353,7 +1374,7 @@
         <summary>Performs a logical comparison of two <see cref="T:System.Data.OracleClient.OracleNumber" /> structures to determine whether the first is greater than the second.</summary>
         <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is less than the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleNumber" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.GreaterThan%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.GreaterThan%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1379,7 +1400,7 @@
         <summary>Performs a logical comparison of the two <see cref="T:System.Data.OracleClient.OracleNumber" /> parameters to determine whether the first is greater than or equal to the second.</summary>
         <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is greater than or equal to the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleNumber" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.GreaterThanOrEqual%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.GreaterThanOrEqual%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1405,7 +1426,7 @@
         <summary>Performs a logical comparison of the two <see cref="T:System.Data.OracleClient.OracleNumber" /> parameters to determine whether they are equal.</summary>
         <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.OracleClient.OracleBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.OracleClient.OracleNumber" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.NotEquals%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.NotEquals%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1431,7 +1452,7 @@
         <summary>Performs a logical comparison of two <see cref="T:System.Data.OracleClient.OracleNumber" /> structures to determine whether the first is less than the second.</summary>
         <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is less than the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleNumber" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.LessThan%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.LessThan%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1457,7 +1478,7 @@
         <summary>Performs a logical comparison of the two <see cref="T:System.Data.OracleClient.OracleNumber" /> parameters to determine whether the first is less than or equal to the second.</summary>
         <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is less than or equal to the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleNumber" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.LessThanOrEqual%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.LessThanOrEqual%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1483,7 +1504,7 @@
         <summary>Calculates the remainder left over from dividing an <see cref="T:System.Data.OracleClient.OracleNumber" /> structure by a second <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</summary>
         <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> property contains the modulus of the division.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.Modulo%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.Modulo%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1509,7 +1530,7 @@
         <summary>Calculates the product of two <see cref="T:System.Data.OracleClient.OracleNumber" /> structures.</summary>
         <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> property contains the product of the multiplication.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.Multiply%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.Multiply%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1535,7 +1556,7 @@
         <summary>Calculates the result of subtracting the second <see cref="T:System.Data.OracleClient.OracleNumber" /> structure from the first.</summary>
         <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> property contains the results of the subtraction.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.Subtract%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.Subtract%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1559,7 +1580,7 @@
         <summary>Negates the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</summary>
         <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose value contains the results of the negation.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.Negate%28System.Data.OracleClient.OracleNumber%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.Negate%28System.Data.OracleClient.OracleNumber%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1960,5 +1981,41 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Pow">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Calculates the result of raising a specified <see cref="T:System.Data.OracleClient.OracleNumber" /> structure to the specified power.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares the specified items to other items.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Log">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a logarithmic calculation on an <see cref="T:System.Data.OracleClient.OracleNumber" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

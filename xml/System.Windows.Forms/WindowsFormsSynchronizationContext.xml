@@ -17,6 +17,7 @@
   <Docs>
     <summary>Provides a synchronization context for the Windows Forms application model.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Threading.SynchronizationContext" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,6 +33,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.WindowsFormsSynchronizationContext" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Threading.SynchronizationContext" />
       </Docs>
     </Member>
     <Member MemberName="AutoInstall">
@@ -63,6 +65,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.SynchronizationContext" />
       </Docs>
     </Member>
     <Member MemberName="CreateCopy">
@@ -82,6 +85,7 @@
         <summary>Copies the synchronization context.</summary>
         <returns>A copy of the synchronization context.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Threading.SynchronizationContext" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -140,6 +144,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.SynchronizationContext" />
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -166,11 +171,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the destination thread no longer exists or the value of its <xref:System.Threading.Thread.IsAlive%2A?displayProperty=fullName> property is `false`, the <xref:System.Windows.Forms.WindowsFormsSynchronizationContext.Send%2A> method raises an <xref:System.ComponentModel.InvalidAsynchronousStateException>. It is up to the caller to determine what further action to take.  
+ If the destination thread no longer exists or the value of its <xref:System.Threading.Thread.IsAlive%2A?displayProperty=nameWithType> property is `false`, the <xref:System.Windows.Forms.WindowsFormsSynchronizationContext.Send%2A> method raises an <xref:System.ComponentModel.InvalidAsynchronousStateException>. It is up to the caller to determine what further action to take.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidAsynchronousStateException">The destination thread no longer exists.</exception>
+        <altmember cref="T:System.Threading.SynchronizationContext" />
       </Docs>
     </Member>
     <Member MemberName="Uninstall">
@@ -198,6 +204,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.SynchronizationContext" />
       </Docs>
     </Member>
   </Members>

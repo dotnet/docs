@@ -46,7 +46,7 @@
    
   
 ## Examples  
- The following example illustrates two possible approaches to handling the <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. A constant whose value is two seconds defines the maximum time-out interval. The <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=fullName> method is initially called with a time-out interval of one second. Each <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception causes the time-out interval to be increased by one second and results in another call to the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=fullName> method if the current time-out interval is less than the maximum time-out interval. However, if the current time-out interval exceeds the maximum time-out interval, the exception handler writes information to the event log and abandons the processing of the regular expression.  
+ The following example illustrates two possible approaches to handling the <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. A constant whose value is two seconds defines the maximum time-out interval. The <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType> method is initially called with a time-out interval of one second. Each <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception causes the time-out interval to be increased by one second and results in another call to the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> method if the current time-out interval is less than the maximum time-out interval. However, if the current time-out interval exceeds the maximum time-out interval, the exception handler writes information to the event log and abandons the processing of the regular expression.  
   
  [!code-csharp[System.Text.RegularExpressions.RegexMatchTimeoutException#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.regexmatchtimeoutexception/cs/class1.cs#1)]
  [!code-vb[System.Text.RegularExpressions.RegexMatchTimeoutException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.regexmatchtimeoutexception/vb/class1.vb#1)]  
@@ -122,7 +122,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `message` string is assigned to the <xref:System.Exception.Message%2A?displayProperty=fullName> property. The string should be localized for the current culture.  
+ The `message` string is assigned to the <xref:System.Exception.Message%2A?displayProperty=nameWithType> property. The string should be localized for the current culture.  
   
  ]]></format>
         </remarks>
@@ -158,7 +158,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor is not called directly by your code to instantiate the <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> object. Instead, it is called by the <xref:System.Runtime.Serialization.IFormatter.Deserialize%2A?displayProperty=fullName> method when deserializing the <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> object from a stream.  
+ This constructor is not called directly by your code to instantiate the <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> object. Instead, it is called by the <xref:System.Runtime.Serialization.IFormatter.Deserialize%2A?displayProperty=nameWithType> method when deserializing the <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> object from a stream.  
   
  ]]></format>
         </remarks>
@@ -198,9 +198,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you use this overload to handle an exception in a `try/catch` block. The `innerException` parameter should be a reference to the exception object handled in the `catch` block, or it can be `null`. This value is then assigned to the <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> object's <xref:System.Exception.InnerException%2A?displayProperty=fullName> property.  
+ Typically, you use this overload to handle an exception in a `try/catch` block. The `innerException` parameter should be a reference to the exception object handled in the `catch` block, or it can be `null`. This value is then assigned to the <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> object's <xref:System.Exception.InnerException%2A?displayProperty=nameWithType> property.  
   
- The `message` string is assigned to the <xref:System.Exception.Message%2A?displayProperty=fullName> property. The string should be localized for the current culture.  
+ The `message` string is assigned to the <xref:System.Exception.Message%2A?displayProperty=nameWithType> property. The string should be localized for the current culture.  
   
  ]]></format>
         </remarks>
@@ -280,9 +280,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property reflects the value of the `regexInput` parameter of the <xref:System.Text.RegularExpressions.RegexMatchTimeoutException.%23ctor%28System.String%2CSystem.String%2CSystem.TimeSpan%29> constructor. If this parameter is not explicitly initialized in a constructor call, its value is <xref:System.String.Empty?displayProperty=fullName>.  
+ This property reflects the value of the `regexInput` parameter of the <xref:System.Text.RegularExpressions.RegexMatchTimeoutException.%23ctor%28System.String%2CSystem.String%2CSystem.TimeSpan%29> constructor. If this parameter is not explicitly initialized in a constructor call, its value is <xref:System.String.Empty?displayProperty=nameWithType>.  
   
- When the exception is thrown by the regular expression engine, the value of the <xref:System.Text.RegularExpressions.RegexMatchTimeoutException.Input%2A> property reflects the entire input string passed to the regular expression engine. It does not reflect a partial string, such as the substring that the engine searches in the call to a method such as <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%29?displayProperty=fullName>.  
+ When the exception is thrown by the regular expression engine, the value of the <xref:System.Text.RegularExpressions.RegexMatchTimeoutException.Input%2A> property reflects the entire input string passed to the regular expression engine. It does not reflect a partial string, such as the substring that the engine searches in the call to a method such as <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%29?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -360,7 +360,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property reflects the value of the `regexPattern` parameter of the <xref:System.Text.RegularExpressions.RegexMatchTimeoutException.%23ctor%28System.String%2CSystem.String%2CSystem.TimeSpan%29> constructor. If the parameter is not properly initialized in a constructor call, its value is <xref:System.String.Empty?displayProperty=fullName>.  
+ This property reflects the value of the `regexPattern` parameter of the <xref:System.Text.RegularExpressions.RegexMatchTimeoutException.%23ctor%28System.String%2CSystem.String%2CSystem.TimeSpan%29> constructor. If the parameter is not properly initialized in a constructor call, its value is <xref:System.String.Empty?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -405,7 +405,21 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

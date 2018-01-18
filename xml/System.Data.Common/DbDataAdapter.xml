@@ -32,11 +32,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.Common.DbDataAdapter> class inherits from the <xref:System.Data.Common.DataAdapter> class and helps a class implement a **DataAdapter** designed for use with a relational database.  
+ The <xref:System.Data.Common.DbDataAdapter> class inherits from the <xref:System.Data.Common.DataAdapter> class and implements the <xref:System.Data.IDbDataAdapter> interface. It helps a class implement a **DataAdapter** designed for use with a relational database.  
   
- An application does not create an instance of the <xref:System.Data.Common.DbDataAdapter> interface directly, but creates an instance of a class that inherits <xref:System.Data.IDbDataAdapter> and <xref:System.Data.Common.DbDataAdapter>.  
+ An application does not create an instance of the <xref:System.Data.Common.DbDataAdapter> class directly, but creates an instance of a class that inherits from it.  
   
- Classes that inherit <xref:System.Data.Common.DbDataAdapter> must implement the inherited members, and typically define additional members to add provider-specific functionality. For example, the <xref:System.Data.Common.DbDataAdapter> class defines the <xref:System.Data.IDbDataAdapter.SelectCommand%2A> property, and the <xref:System.Data.Common.DbDataAdapter> interface defines eight overloads of the <xref:System.Data.IDataAdapter.Fill%2A> method. In turn, the <xref:System.Data.OleDb.OleDbDataAdapter> class inherits the <xref:System.Data.Common.DbDataAdapter.Fill%2A> method, and also defines two additional overloads of <xref:System.Data.OleDb.OleDbDataAdapter.Fill%2A> that take an ADO Recordset object as a parameter.  
+ Classes that inherit <xref:System.Data.Common.DbDataAdapter> must implement the inherited members, and typically define additional members to add provider-specific functionality. For example, the <xref:System.Data.Common.DbDataAdapter> class defines the <xref:System.Data.IDbDataAdapter.SelectCommand%2A> property, and the <xref:System.Data.Common.DbDataAdapter> class defines eight overloads of the <xref:System.Data.IDataAdapter.Fill%2A> method. In turn, the <xref:System.Data.OleDb.OleDbDataAdapter> class inherits the <xref:System.Data.Common.DbDataAdapter.Fill%2A> method, and also defines two additional overloads of <xref:System.Data.OleDb.OleDbDataAdapter.Fill%2A> that take an ADO Recordset object as a parameter.  
   
  ]]></format>
     </remarks>
@@ -751,7 +751,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       </Docs>
     </Member>
     <Member MemberName="Fill">
-      <MemberSignature Language="C#" Value="public int Fill (int startRecord, int maxRecords, System.Data.DataTable[] dataTables);" />
+      <MemberSignature Language="C#" Value="public int Fill (int startRecord, int maxRecords, params System.Data.DataTable[] dataTables);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Fill(int32 startRecord, int32 maxRecords, class System.Data.DataTable[] dataTables) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.Fill(System.Int32,System.Int32,System.Data.DataTable[])" />
       <MemberType>Method</MemberType>
@@ -1639,7 +1639,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
     </Member>
     <Member MemberName="GetBatchedRecordsAffected">
       <MemberSignature Language="C#" Value="protected virtual bool GetBatchedRecordsAffected (int commandIdentifier, out int recordsAffected, out Exception error);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool GetBatchedRecordsAffected(int32 commandIdentifier, int32 recordsAffected, class System.Exception error) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool GetBatchedRecordsAffected(int32 commandIdentifier, [out] int32&amp; recordsAffected, [out] class System.Exception&amp; error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.GetBatchedRecordsAffected(System.Int32,System.Int32@,System.Exception@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2102,7 +2102,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbDataAdapter> instance is cast to an <xref:System.ICloneable> interface.  
   
- For more information, see <xref:System.ICloneable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.ICloneable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -2687,7 +2687,7 @@ DataSet dataset = new DataSet();
   
  </description></item></list>  
   
- When setting this to a value other than 1 ,all the commands associated with the <see cref="T:System.Data.Common.DbDataAdapter" /> must have their <see cref="P:System.Data.IDbCommand.UpdatedRowSource" /> property set to **None** or **OutputParameters**. An exception will be thrown otherwise.</value>
+ When setting this to a value other than 1, all the commands associated with the <see cref="T:System.Data.Common.DbDataAdapter" /> must have their <see cref="P:System.Data.IDbCommand.UpdatedRowSource" /> property set to **None** or **OutputParameters**. An exception will be thrown otherwise.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2752,5 +2752,45 @@ DataSet dataset = new DataSet();
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of a <see langword="DataAdapter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Update">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates the values in the database by executing the respective INSERT, UPDATE, or DELETE statements for each inserted, updated, or deleted row in the <see cref="T:System.Data.DataSet" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Fill">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Fills a <see cref="T:System.Data.DataSet" /> or a <see cref="T:System.Data.DataTable" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FillSchema">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Data.DataTable" /> to a <see cref="T:System.Data.DataSet" /> and configures the schema to match that in the data source.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

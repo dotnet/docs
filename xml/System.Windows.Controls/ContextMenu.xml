@@ -25,7 +25,7 @@
   
  The properties of the <xref:System.Windows.Controls.ContextMenu> class are used to define the position and behavior of the <xref:System.Windows.Controls.ContextMenu>.  
   
- A <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement> can have a <xref:System.Windows.Controls.ContextMenu>.  If you assign a <xref:System.Windows.Controls.ContextMenu> to the <xref:System.Windows.FrameworkElement.ContextMenu%2A?displayProperty=fullName> or <xref:System.Windows.FrameworkContentElement.ContextMenu%2A?displayProperty=fullName> property, the <xref:System.Windows.Controls.ContextMenuService> class handles context menu operations in response to user interaction. Part of the work the <xref:System.Windows.Controls.ContextMenuService> does is opening the <xref:System.Windows.Controls.ContextMenu> when the user clicks the right mouse button over the control.  
+ A <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement> can have a <xref:System.Windows.Controls.ContextMenu>.  If you assign a <xref:System.Windows.Controls.ContextMenu> to the <xref:System.Windows.FrameworkElement.ContextMenu%2A?displayProperty=nameWithType> or <xref:System.Windows.FrameworkContentElement.ContextMenu%2A?displayProperty=nameWithType> property, the <xref:System.Windows.Controls.ContextMenuService> class handles context menu operations in response to user interaction. Part of the work the <xref:System.Windows.Controls.ContextMenuService> does is opening the <xref:System.Windows.Controls.ContextMenu> when the user clicks the right mouse button over the control.  
   
  The following properties are defined by the <xref:System.Windows.Controls.ContextMenu> and <xref:System.Windows.Controls.ContextMenuService> classes.  If any of these properties are set on both <xref:System.Windows.Controls.ContextMenu> and the <xref:System.Windows.Controls.ContextMenuService>, the property value from the <xref:System.Windows.Controls.ContextMenuService> is used.  
   
@@ -63,6 +63,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.ContextMenuService" />
+    <altmember cref="T:System.Windows.Controls.MenuItem" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -120,6 +122,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenuService" />
       </Docs>
     </Member>
     <Member MemberName="ClosedEvent">
@@ -246,7 +249,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Windows.Controls.ContextMenu> opens, the value is set to the value of <xref:System.Windows.SystemParameters.DropShadow%2A?displayProperty=fullName>. Setting this property to `true` has no effect if the <xref:System.Windows.SystemParameters.DropShadow%2A?displayProperty=fullName> property is `false`.  
+ When the <xref:System.Windows.Controls.ContextMenu> opens, the value is set to the value of <xref:System.Windows.SystemParameters.DropShadow%2A?displayProperty=nameWithType>. Setting this property to `true` has no effect if the <xref:System.Windows.SystemParameters.DropShadow%2A?displayProperty=nameWithType> property is `false`.  
   
 <a name="dependencyPropertyInfo_"></a>   
 ## Dependency Property Information  
@@ -265,6 +268,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenuService" />
       </Docs>
     </Member>
     <Member MemberName="HasDropShadowProperty">
@@ -364,6 +368,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenuService" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalOffsetProperty">
@@ -437,6 +442,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenuService" />
       </Docs>
     </Member>
     <Member MemberName="IsOpenProperty">
@@ -641,6 +647,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenuService" />
       </Docs>
     </Member>
     <Member MemberName="OpenedEvent">
@@ -687,7 +694,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Windows.Controls.ContextMenu> is assigned to the <xref:System.Windows.FrameworkElement.ContextMenu%2A?displayProperty=fullName> or <xref:System.Windows.FrameworkContentElement.ContextMenu%2A?displayProperty=fullName> property, the <xref:System.Windows.Controls.ContextMenuService> changes this value of this property when the <xref:System.Windows.Controls.ContextMenu> opens. If the user opens the <xref:System.Windows.Controls.ContextMenu> by using the mouse, <xref:System.Windows.Controls.ContextMenu.Placement%2A> is set to <xref:System.Windows.Controls.Primitives.PlacementMode.MousePoint>.  If the user opens the <xref:System.Windows.Controls.ContextMenu> by using the keyboard, <xref:System.Windows.Controls.ContextMenu.Placement%2A> is set to <xref:System.Windows.Controls.Primitives.PlacementMode.Center>.  If you want to change the position of the <xref:System.Windows.Controls.ContextMenu>, set the <xref:System.Windows.Controls.ContextMenuService.Placement%2A?displayProperty=fullName> property on the <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>.  
+ When the <xref:System.Windows.Controls.ContextMenu> is assigned to the <xref:System.Windows.FrameworkElement.ContextMenu%2A?displayProperty=nameWithType> or <xref:System.Windows.FrameworkContentElement.ContextMenu%2A?displayProperty=nameWithType> property, the <xref:System.Windows.Controls.ContextMenuService> changes this value of this property when the <xref:System.Windows.Controls.ContextMenu> opens. If the user opens the <xref:System.Windows.Controls.ContextMenu> by using the mouse, <xref:System.Windows.Controls.ContextMenu.Placement%2A> is set to <xref:System.Windows.Controls.Primitives.PlacementMode.MousePoint>.  If the user opens the <xref:System.Windows.Controls.ContextMenu> by using the keyboard, <xref:System.Windows.Controls.ContextMenu.Placement%2A> is set to <xref:System.Windows.Controls.Primitives.PlacementMode.Center>.  If you want to change the position of the <xref:System.Windows.Controls.ContextMenu>, set the <xref:System.Windows.Controls.ContextMenuService.Placement%2A?displayProperty=nameWithType> property on the <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>.  
   
  You can position a <xref:System.Windows.Controls.ContextMenu> by setting the <xref:System.Windows.Controls.ContextMenu.PlacementTarget%2A>, <xref:System.Windows.Controls.ContextMenu.PlacementRectangle%2A>, <xref:System.Windows.Controls.ContextMenu.Placement%2A>, <xref:System.Windows.Controls.ContextMenu.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ContextMenu.VerticalOffsetProperty> properties.  These properties behave the same as they do for a <xref:System.Windows.Controls.Primitives.Popup>. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
   
@@ -708,6 +715,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenuService" />
       </Docs>
     </Member>
     <Member MemberName="PlacementProperty">
@@ -773,6 +781,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenuService" />
       </Docs>
     </Member>
     <Member MemberName="PlacementRectangleProperty">
@@ -822,7 +831,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Windows.Controls.ContextMenu> is assigned to the <xref:System.Windows.FrameworkElement.ContextMenu%2A?displayProperty=fullName> or <xref:System.Windows.FrameworkContentElement.ContextMenu%2A?displayProperty=fullName> property, the <xref:System.Windows.Controls.ContextMenuService> changes this value of this property to the owning <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement> when the <xref:System.Windows.Controls.ContextMenu> opens. To use a different <xref:System.Windows.UIElement>, set the <xref:System.Windows.Controls.ContextMenuService.PlacementTarget%2A?displayProperty=fullName> property.  
+ When the <xref:System.Windows.Controls.ContextMenu> is assigned to the <xref:System.Windows.FrameworkElement.ContextMenu%2A?displayProperty=nameWithType> or <xref:System.Windows.FrameworkContentElement.ContextMenu%2A?displayProperty=nameWithType> property, the <xref:System.Windows.Controls.ContextMenuService> changes this value of this property to the owning <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement> when the <xref:System.Windows.Controls.ContextMenu> opens. To use a different <xref:System.Windows.UIElement>, set the <xref:System.Windows.Controls.ContextMenuService.PlacementTarget%2A?displayProperty=nameWithType> property.  
   
 <a name="dependencyPropertyInfo_PlacementTarget"></a>   
 ## Dependency Property Information  
@@ -845,6 +854,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenuService" />
       </Docs>
     </Member>
     <Member MemberName="PlacementTargetProperty">
@@ -940,6 +950,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenuService" />
       </Docs>
     </Member>
     <Member MemberName="StaysOpenProperty">
@@ -1038,6 +1049,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ContextMenuService" />
       </Docs>
     </Member>
     <Member MemberName="VerticalOffsetProperty">

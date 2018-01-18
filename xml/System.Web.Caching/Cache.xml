@@ -28,17 +28,20 @@
    
   
 ## Examples  
- The following example is a page that shows users the value assigned to an item in the cache, and then notifies them when the item is removed from the cache. It creates a `RemovedCallback` method, which has the signature of the `CacheItemRemovedCallback` delegate, to notify users when the cache item is removed, and it uses the <xref:System.Web.Caching.CacheItemRemovedReason> enumeration to tell them why it was removed. In addition, it uses the <xref:System.Web.Caching.Cache.Item%2A?displayProperty=fullName> property to add objects to the cache and retrieve the value of those objects. In the `AddItemToCache` method, it uses the <xref:System.Web.Caching.Cache.Add%2A?displayProperty=fullName> method to add an item to the cache. To use the `CacheItemRemovedCallback` delegate, you must add an item to the cache with this method or the <xref:System.Web.Caching.Cache.Insert%2A?displayProperty=fullName> method, so that that ASP.NET can automatically make the proper method calls when the item is removed. The custom `RemoveItemFromCache` method uses the <xref:System.Web.Caching.Cache.Remove%2A?displayProperty=fullName> method to explicitly delete the item from the cache, causing the `RemovedCallback` method to be invoked.  
+ The following example is a page that shows users the value assigned to an item in the cache, and then notifies them when the item is removed from the cache. It creates a `RemovedCallback` method, which has the signature of the `CacheItemRemovedCallback` delegate, to notify users when the cache item is removed, and it uses the <xref:System.Web.Caching.CacheItemRemovedReason> enumeration to tell them why it was removed. In addition, it uses the <xref:System.Web.Caching.Cache.Item%2A?displayProperty=nameWithType> property to add objects to the cache and retrieve the value of those objects. In the `AddItemToCache` method, it uses the <xref:System.Web.Caching.Cache.Add%2A?displayProperty=nameWithType> method to add an item to the cache. To use the `CacheItemRemovedCallback` delegate, you must add an item to the cache with this method or the <xref:System.Web.Caching.Cache.Insert%2A?displayProperty=nameWithType> method, so that that ASP.NET can automatically make the proper method calls when the item is removed. The custom `RemoveItemFromCache` method uses the <xref:System.Web.Caching.Cache.Remove%2A?displayProperty=nameWithType> method to explicitly delete the item from the cache, causing the `RemovedCallback` method to be invoked.  
   
 > [!NOTE]
 >  The instance of Cache that is accessed by the snippet below is a member of the <xref:System.Web.UI.Page> object that this sample inherits.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Caching Examples#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Caching Examples/CS/cachecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Caching Examples#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Caching Examples/VB/cachevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Caching Examples#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Caching Examples/CS/cachecs.aspx#1)]
+ [!code-aspx-vb[System.Web.Caching Examples#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Caching Examples/VB/cachevb.aspx#1)]
   
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <altmember cref="T:System.Web.HttpContext" />
+    <altmember cref="T:System.Web.Caching.CacheDependency" />
+    <altmember cref="T:System.Web.Caching.CacheItemRemovedCallback" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -113,6 +116,9 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> or <paramref name="value" /> parameter is set to <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="slidingExpiration" /> parameter is set to less than <see langword="TimeSpan.Zero" /> or more than one year.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="absoluteExpiration" /> and <paramref name="slidingExpiration" /> parameters are both set for the item you are trying to add to the <see langword="Cache" />.</exception>
+        <altmember cref="T:System.Web.Caching.CacheDependency" />
+        <altmember cref="T:System.Web.Caching.CacheItemPriority" />
+        <altmember cref="T:System.Web.Caching.CacheItemRemovedCallback" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -175,6 +181,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Caching.Cache.EffectivePrivateBytesLimit" />
       </Docs>
     </Member>
     <Member MemberName="EffectivePrivateBytesLimit">
@@ -353,6 +360,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> or <paramref name="value" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.Caching.CacheDependency" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -410,6 +418,8 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> or <paramref name="value" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">You set the <paramref name="slidingExpiration" /> parameter to less than <see langword="TimeSpan.Zero" /> or the equivalent of more than one year.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="absoluteExpiration" /> and <paramref name="slidingExpiration" /> parameters are both set for the item you are trying to add to the <see langword="Cache" />.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.TimeSpan" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -461,6 +471,7 @@
  -or-  
   
  The <paramref name="dependencies" /> parameter is <see langword="null" />, and the <paramref name="absoluteExpiration" /> parameter is set to <see cref="F:System.Web.Caching.Cache.NoAbsoluteExpiration" />, and the <paramref name="slidingExpiration" /> parameter is set to <see cref="F:System.Web.Caching.Cache.NoSlidingExpiration" />.</exception>
+        <altmember cref="T:System.Web.Caching.CacheItemUpdateCallback" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -519,6 +530,10 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> or <paramref name="value" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">You set the <paramref name="slidingExpiration" /> parameter to less than <see langword="TimeSpan.Zero" /> or the equivalent of more than one year.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="absoluteExpiration" /> and <paramref name="slidingExpiration" /> parameters are both set for the item you are trying to add to the <see langword="Cache" />.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.TimeSpan" />
+        <altmember cref="T:System.Web.Caching.CacheItemPriority" />
+        <altmember cref="T:System.Web.Caching.CacheItemRemovedCallback" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -544,12 +559,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use this property to retrieve the value of a specified cache item, or to add an item and a key for it to the cache. Adding a cache item using the <xref:System.Web.Caching.Cache.Item%2A> property is equivalent to calling the <xref:System.Web.Caching.Cache.Insert%2A?displayProperty=fullName> method.  
+ You can use this property to retrieve the value of a specified cache item, or to add an item and a key for it to the cache. Adding a cache item using the <xref:System.Web.Caching.Cache.Item%2A> property is equivalent to calling the <xref:System.Web.Caching.Cache.Insert%2A?displayProperty=nameWithType> method.  
   
    
   
 ## Examples  
- The following example uses the `Item` property to retrieve the value of a cached object associated with the `Key1` key. It then uses the <xref:System.Web.HttpResponse.Write%2A?displayProperty=fullName> method to write the value and introductory text and the B HTML element to a Web Forms page.  
+ The following example uses the `Item` property to retrieve the value of a cached object associated with the `Key1` key. It then uses the <xref:System.Web.HttpResponse.Write%2A?displayProperty=nameWithType> method to write the value and introductory text and the B HTML element to a Web Forms page.  
   
  [!code-csharp[System.Web.Caching Examples#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Caching Examples/CS/cachecs.aspx#5)]
  [!code-vb[System.Web.Caching Examples#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Caching Examples/VB/cachevb.aspx#5)]  
@@ -593,6 +608,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="NoSlidingExpiration">
@@ -613,7 +630,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When used, this field sets the `slidingExpiration` parameter to the <xref:System.TimeSpan?displayProperty=fullName> field, which has a constant value of zero. The cached item expires in accordance with the `absoluteExpiration` parameter associated with the `Insert` or `Add` method call.  
+ When used, this field sets the `slidingExpiration` parameter to the <xref:System.TimeSpan.Zero?displayProperty=nameWithType> field, which has a constant value of zero. The cached item expires in accordance with the `absoluteExpiration` parameter associated with the `Insert` or `Add` method call.  
   
    
   
@@ -625,6 +642,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.TimeSpan.Zero" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -678,5 +697,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Insert">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts an item into the <see cref="T:System.Web.Caching.Cache" /> object. Use one of the versions of this method to overwrite an existing <see langword="Cache" /> item with the same <paramref name="key" /> parameter.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

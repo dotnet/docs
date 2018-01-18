@@ -52,6 +52,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Object" />
+    <altmember cref="T:System.Enum" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -119,7 +121,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ValueType.Equals%28System.Object%29?displayProperty=fullName> method overrides <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> and provides the default implementation of value equality for all value types in the .NET Framework.  
+ The <xref:System.ValueType.Equals%28System.Object%29?displayProperty=nameWithType> method overrides <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> and provides the default implementation of value equality for all value types in the .NET Framework.  
   
  If none of the fields of the current instance and `obj` are reference types, the <xref:System.ValueType.Equals%2A> method performs a byte-by-byte comparison of the two objects in memory. Otherwise, it uses reflection to compare the corresponding fields of `obj` and this instance.  
   
@@ -127,7 +129,7 @@
 >  Particularly if your value type contains fields that are reference types, you should override the <xref:System.ValueType.Equals%28System.Object%29> method. This can improve performance and enable you to more closely represent the meaning of equality for the type.  
   
 ## Notes for the [!INCLUDE[wrt](~/includes/wrt-md.md)]  
- When you call the <xref:System.ValueType.Equals%2A>method on a [!INCLUDE[wrt](~/includes/wrt-md.md)] structure, it provides the default behavior for value types that don’t override <xref:System.ValueType.Equals%2A>. This is part of the support that the .NET Framework provides for the [!INCLUDE[wrt](~/includes/wrt-md.md)] (see [.NET Framework Support for Windows Store Apps and Windows Runtime](~/docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)). [!INCLUDE[wrt](~/includes/wrt-md.md)] structures can’t override <xref:System.ValueType.Equals%2A>, even if they’re written with C# or Visual Basic, because they can’t have methods. (In addition, structures in the [!INCLUDE[wrt](~/includes/wrt-md.md)] itself don’t inherit <xref:System.ValueType>.) However, they appear to have <xref:System.ValueType.ToString%2A>, <xref:System.ValueType.Equals%2A>, and <xref:System.ValueType.GetHashCode%2A> methods when you use them in your C# or Visual Basic code, and the .NET Framework provides the default behavior for these methods.  
+ When you call the <xref:System.ValueType.Equals%2A> method on a [!INCLUDE[wrt](~/includes/wrt-md.md)] structure, it provides the default behavior for value types that don’t override <xref:System.ValueType.Equals%2A>. This is part of the support that the .NET Framework provides for the [!INCLUDE[wrt](~/includes/wrt-md.md)] (see [.NET Framework Support for Windows Store Apps and Windows Runtime](~/docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)). [!INCLUDE[wrt](~/includes/wrt-md.md)] structures can’t override <xref:System.ValueType.Equals%2A>, even if they’re written with C# or Visual Basic, because they can’t have methods. (In addition, structures in the [!INCLUDE[wrt](~/includes/wrt-md.md)] itself don’t inherit <xref:System.ValueType>.) However, they appear to have <xref:System.ValueType.ToString%2A>, <xref:System.ValueType.Equals%2A>, and <xref:System.ValueType.GetHashCode%2A> methods when you use them in your C# or Visual Basic code, and the .NET Framework provides the default behavior for these methods.  
   
    
   
@@ -177,7 +179,7 @@
 ## Remarks  
  The <xref:System.ValueType.GetHashCode%2A> method applies to types derived from <xref:System.ValueType>. One or more fields of the derived type is used to calculate the return value. If you call the derived type's `GetHashCode` method, the return value is not likely to be suitable for use as a key in a hash table. Additionally, if the value of one or more of those fields changes, the return value might become unsuitable for use as a key in a hash table. In either case, consider writing your own implementation of the <xref:System.ValueType.GetHashCode%2A> method that more closely represents the concept of a hash code for the type.  
   
- For more information, see <xref:System.Object.GetHashCode%2A?displayProperty=fullName>, and <xref:System.Collections.Hashtable?displayProperty=fullName>.  
+ For more information, see <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>, and <xref:System.Collections.Hashtable?displayProperty=nameWithType>.  
   
 ## Notes for the [!INCLUDE[wrt](~/includes/wrt-md.md)]  
  When you call the <xref:System.ValueType.GetHashCode%2A> method on a [!INCLUDE[wrt](~/includes/wrt-md.md)] structure, it provides the default behavior for value types that don’t override <xref:System.ValueType.GetHashCode%2A>. This is part of the support that the .NET Framework provides for the [!INCLUDE[wrt](~/includes/wrt-md.md)] (see [.NET Framework Support for Windows Store Apps and Windows Runtime](~/docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)). [!INCLUDE[wrt](~/includes/wrt-md.md)] structures can’t override <xref:System.ValueType.GetHashCode%2A>, even if they’re written with C# or Visual Basic, because they can’t have methods. (In addition, structures in the [!INCLUDE[wrt](~/includes/wrt-md.md)] itself don’t inherit <xref:System.ValueType>.) However, they appear to have <xref:System.ValueType.ToString%2A>, <xref:System.ValueType.Equals%2A>, and <xref:System.ValueType.GetHashCode%2A> methods when you use them in your C# or Visual Basic code, and the .NET Framework provides the default behavior for these methods.  
@@ -228,14 +230,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ValueType.ToString%2A?displayProperty=fullName> method overrides the <xref:System.Object.ToString%2A?displayProperty=fullName> method and provides the default implementation of the `ToString` method for value types. (Value types are types defined by the `struct` keyword in C#, and by the `Structure`...`End Structure` construct in Visual Basic.) Functionally, however, the implementation is that same as that of <xref:System.Object.ToString%2A?displayProperty=fullName>: the method returns the fully qualified type name.  
+ The <xref:System.ValueType.ToString%2A?displayProperty=nameWithType> method overrides the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method and provides the default implementation of the `ToString` method for value types. (Value types are types defined by the `struct` keyword in C#, and by the `Structure`...`End Structure` construct in Visual Basic.) Functionally, however, the implementation is that same as that of <xref:System.Object.ToString%2A?displayProperty=nameWithType>: the method returns the fully qualified type name.  
   
- Value types defined by the `struct` keyword in C# and the `Structure`...`End Structure` construct in Visual Basic typically override the <xref:System.ValueType.ToString%2A?displayProperty=fullName> method to provide a more meaningful string representation of the value type. The following example illustrates the difference. It defines two value types, `EmployeeA` and `EmployeeB`, creates an instance of each, and calls its `ToString` method. Because the `EmployeeA` structure does not override the <xref:System.ValueType.ToString%2A?displayProperty=fullName> method, it displays only the fully qualified type name. The `EmployeeB.ToString` method, on the other hand, provides meaningful information about the object.  
+ Value types defined by the `struct` keyword in C# and the `Structure`...`End Structure` construct in Visual Basic typically override the <xref:System.ValueType.ToString%2A?displayProperty=nameWithType> method to provide a more meaningful string representation of the value type. The following example illustrates the difference. It defines two value types, `EmployeeA` and `EmployeeB`, creates an instance of each, and calls its `ToString` method. Because the `EmployeeA` structure does not override the <xref:System.ValueType.ToString%2A?displayProperty=nameWithType> method, it displays only the fully qualified type name. The `EmployeeB.ToString` method, on the other hand, provides meaningful information about the object.  
   
  [!code-csharp[System.ValueType.ToString#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ValueType.ToString/cs/ToString2.cs#1)]
  [!code-vb[System.ValueType.ToString#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ValueType.ToString/vb/ToString2.vb#1)]  
   
- Note that, although enumeration types are also value types, they derive from the <xref:System.Enum> class, which overrides  <xref:System.ValueType.ToString%2A?displayProperty=fullName>.  
+ Note that, although enumeration types are also value types, they derive from the <xref:System.Enum> class, which overrides  <xref:System.ValueType.ToString%2A?displayProperty=nameWithType>.  
   
 ## Notes for the Windows Runtime  
  When you call the <xref:System.ValueType.ToString%2A> method on a [!INCLUDE[wrt](~/includes/wrt-md.md)] structure, it provides the default behavior for value types that don’t override <xref:System.ValueType.ToString%2A>. This is part of the support that the .NET Framework provides for the [!INCLUDE[wrt](~/includes/wrt-md.md)] (see [.NET Framework Support for Windows Store Apps and Windows Runtime](~/docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)). [!INCLUDE[wrt](~/includes/wrt-md.md)] structures can’t override <xref:System.ValueType.ToString%2A>, even if they’re written with C# or Visual Basic, because they can’t have methods. (In addition, structures in the [!INCLUDE[wrt](~/includes/wrt-md.md)] itself don’t inherit <xref:System.ValueType>.) However, they appear to have <xref:System.ValueType.ToString%2A>, <xref:System.ValueType.Equals%2A>, and <xref:System.ValueType.GetHashCode%2A> methods when you use them in your C# or Visual Basic code, and the .NET Framework provides the default behavior for these methods.  

@@ -9,11 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 0365eb37-98cc-4b13-80fb-f1e78847a748
 caps.latest.revision: 18
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How the WCF Syndication Object Model Maps to Atom and RSS
 When developing a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] syndication service, you create feeds and items using the following classes:  
@@ -401,8 +406,8 @@ When developing a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] syndic
  `</content>`  
   
 ## See Also  
- [WCF Syndication Overview](../../../../docs/framework/wcf/feature-details/wcf-syndication-overview.md)   
- [Architecture of Syndication](../../../../docs/framework/wcf/feature-details/architecture-of-syndication.md)   
- [How to: Create a Basic RSS Feed](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-rss-feed.md)   
- [How to: Create a Basic Atom Feed](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-atom-feed.md)   
+ [WCF Syndication Overview](../../../../docs/framework/wcf/feature-details/wcf-syndication-overview.md)  
+ [Architecture of Syndication](../../../../docs/framework/wcf/feature-details/architecture-of-syndication.md)  
+ [How to: Create a Basic RSS Feed](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-rss-feed.md)  
+ [How to: Create a Basic Atom Feed](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-atom-feed.md)  
  [How to: Expose a Feed as Both Atom and RSS](../../../../docs/framework/wcf/feature-details/how-to-expose-a-feed-as-both-atom-and-rss.md)

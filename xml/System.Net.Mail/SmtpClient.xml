@@ -23,11 +23,6 @@
       <InterfaceName>System.IDisposable</InterfaceName>
     </Interface>
   </Interfaces>
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Obsolete("SmtpClient and its network of types are poorly designed, we strongly recommend you use https://github.com/jstedfast/MailKit and https://github.com/jstedfast/MimeKit instead")</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>Allows applications to send e-mail by using the Simple Mail Transfer Protocol (SMTP).</summary>
     <remarks>
@@ -50,15 +45,15 @@
   
 -   Credentials for authentication, if required by the SMTP server. See the <xref:System.Net.Mail.SmtpClient.Credentials%2A> property.  
   
--   The e-mail address of the sender. See the <xref:System.Net.Mail.SmtpClient.Send%2A> and <xref:System.Net.Mail.SmtpClient.SendAsync%2A> methods that take a `from` parameter. Also see the <xref:System.Net.Mail.MailMessage.From%2A?displayProperty=fullName> property.  
+-   The e-mail address of the sender. See the <xref:System.Net.Mail.SmtpClient.Send%2A> and <xref:System.Net.Mail.SmtpClient.SendAsync%2A> methods that take a `from` parameter. Also see the <xref:System.Net.Mail.MailMessage.From%2A?displayProperty=nameWithType> property.  
   
--   The e-mail address or addresses of the recipients. See the <xref:System.Net.Mail.SmtpClient.Send%2A> and <xref:System.Net.Mail.SmtpClient.SendAsync%2A> methods that take a `recipient` parameter. Also see the <xref:System.Net.Mail.MailMessage.To%2A?displayProperty=fullName> property.  
+-   The e-mail address or addresses of the recipients. See the <xref:System.Net.Mail.SmtpClient.Send%2A> and <xref:System.Net.Mail.SmtpClient.SendAsync%2A> methods that take a `recipient` parameter. Also see the <xref:System.Net.Mail.MailMessage.To%2A?displayProperty=nameWithType> property.  
   
--   The message content. See the <xref:System.Net.Mail.SmtpClient.Send%2A> and <xref:System.Net.Mail.SmtpClient.SendAsync%2A> methods that take a `body` parameter. Also see the <xref:System.Net.Mail.MailMessage.Body%2A?displayProperty=fullName> property.  
+-   The message content. See the <xref:System.Net.Mail.SmtpClient.Send%2A> and <xref:System.Net.Mail.SmtpClient.SendAsync%2A> methods that take a `body` parameter. Also see the <xref:System.Net.Mail.MailMessage.Body%2A?displayProperty=nameWithType> property.  
   
- To include an attachment with an e-mail message, first create the attachment by using the <xref:System.Net.Mail.Attachment> class, and then add it to the message by using the <xref:System.Net.Mail.MailMessage.Attachments%2A?displayProperty=fullName> property. Depending on the e-mail reader used by the recipients and the file type of the attachment, some recipients might not be able to read the attachment. For clients that cannot display the attachment in its original form, you can specify alternate views by using the <xref:System.Net.Mail.MailMessage.AlternateViews%2A?displayProperty=fullName> property.  
+ To include an attachment with an e-mail message, first create the attachment by using the <xref:System.Net.Mail.Attachment> class, and then add it to the message by using the <xref:System.Net.Mail.MailMessage.Attachments%2A?displayProperty=nameWithType> property. Depending on the e-mail reader used by the recipients and the file type of the attachment, some recipients might not be able to read the attachment. For clients that cannot display the attachment in its original form, you can specify alternate views by using the <xref:System.Net.Mail.MailMessage.AlternateViews%2A?displayProperty=nameWithType> property.  
   
- You can use the application or machine configuration files to specify default host, port, and credentials values for all <xref:System.Net.Mail.SmtpClient> objects. For more information, see [\&lt;mailSettings\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md).  
+ You can use the application or machine configuration files to specify default host, port, and credentials values for all <xref:System.Net.Mail.SmtpClient> objects. For more information, see [&lt;mailSettings&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md).  
   
  To send the e-mail message and block while waiting for the e-mail to be transmitted to the SMTP server, use one of the synchronous <xref:System.Net.Mail.SmtpClient.Send%2A> methods. To allow your program's main thread to continue executing while the e-mail is transmitted, use one of the asynchronous <xref:System.Net.Mail.SmtpClient.SendAsync%2A> methods. The <xref:System.Net.Mail.SmtpClient.SendCompleted> event is raised when a <xref:System.Net.Mail.SmtpClient.SendAsync%2A> operation completes. To receive this event, you must add a <xref:System.Net.Mail.SendCompletedEventHandler> delegate to <xref:System.Net.Mail.SmtpClient.SendCompleted>. The <xref:System.Net.Mail.SendCompletedEventHandler> delegate must reference a callback method that handles notification of <xref:System.Net.Mail.SmtpClient.SendCompleted> events. To cancel an asynchronous e-mail transmission, use the <xref:System.Net.Mail.SmtpClient.SendAsyncCancel%2A> method.  
   
@@ -86,6 +81,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="N:System.Net.Mime" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -113,7 +109,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor initializes the <xref:System.Net.Mail.SmtpClient.Host%2A>, <xref:System.Net.Mail.SmtpClient.Credentials%2A>, and <xref:System.Net.Mail.SmtpClient.Port%2A> properties for the new <xref:System.Net.Mail.SmtpClient> by using the settings in the application or machine configuration files. For more information, see [\&lt;mailSettings\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md).  
+ This constructor initializes the <xref:System.Net.Mail.SmtpClient.Host%2A>, <xref:System.Net.Mail.SmtpClient.Credentials%2A>, and <xref:System.Net.Mail.SmtpClient.Port%2A> properties for the new <xref:System.Net.Mail.SmtpClient> by using the settings in the application or machine configuration files. For more information, see [&lt;mailSettings&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md).  
   
    
   
@@ -123,7 +119,7 @@
  [!code-cpp[NclMailSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#4)]
  [!code-csharp[NclMailSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#4)]  
   
- For an example of the \<mailSettings> node in the application or machine configuration file, see [\&lt;mailSettings\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md).  
+ For an example of the \<mailSettings> node in the application or machine configuration file, see [&lt;mailSettings&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md).  
   
  ]]></format>
         </remarks>
@@ -158,9 +154,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `host` parameter is used to initialize the value of the <xref:System.Net.Mail.SmtpClient.Host%2A> property. The <xref:System.Net.Mail.SmtpClient.Credentials%2A> and <xref:System.Net.Mail.SmtpClient.Port%2A> properties are initialized by using the settings in the application or machine configuration files. If `host` is `null` or equal to <xref:System.String.Empty?displayProperty=fullName>, <xref:System.Net.Mail.SmtpClient.Host%2A> is initialized using the settings in the application or machine configuration files.  
+ The `host` parameter is used to initialize the value of the <xref:System.Net.Mail.SmtpClient.Host%2A> property. The <xref:System.Net.Mail.SmtpClient.Credentials%2A> and <xref:System.Net.Mail.SmtpClient.Port%2A> properties are initialized by using the settings in the application or machine configuration files. If `host` is `null` or equal to <xref:System.String.Empty?displayProperty=nameWithType>, <xref:System.Net.Mail.SmtpClient.Host%2A> is initialized using the settings in the application or machine configuration files.  
   
- For more information about using the application and machine configuration files, see [\&lt;mailSettings\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md). If information is specified using <xref:System.Net.Mail.SmtpClient> constructors or properties, this information overrides the configuration file settings.  
+ For more information about using the application and machine configuration files, see [&lt;mailSettings&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md). If information is specified using <xref:System.Net.Mail.SmtpClient> constructors or properties, this information overrides the configuration file settings.  
   
    
   
@@ -205,9 +201,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `host` and `port` parameters set the value of the <xref:System.Net.Mail.SmtpClient.Host%2A> and <xref:System.Net.Mail.SmtpClient.Port%2A> properties, respectively. If `host` is `null` or equal to <xref:System.String.Empty?displayProperty=fullName>, <xref:System.Net.Mail.SmtpClient.Host%2A> is initialized using the settings in the application or machine configuration files. If `port` is zero, <xref:System.Net.Mail.SmtpClient.Port%2A> is initialized using the settings in the application or machine configuration files. The <xref:System.Net.Mail.SmtpClient.Credentials%2A> property is initialized using the settings in the application or machine configuration files.  
+ The `host` and `port` parameters set the value of the <xref:System.Net.Mail.SmtpClient.Host%2A> and <xref:System.Net.Mail.SmtpClient.Port%2A> properties, respectively. If `host` is `null` or equal to <xref:System.String.Empty?displayProperty=nameWithType>, <xref:System.Net.Mail.SmtpClient.Host%2A> is initialized using the settings in the application or machine configuration files. If `port` is zero, <xref:System.Net.Mail.SmtpClient.Port%2A> is initialized using the settings in the application or machine configuration files. The <xref:System.Net.Mail.SmtpClient.Credentials%2A> property is initialized using the settings in the application or machine configuration files.  
   
- For more information about using the application and machine configuration files, see [\&lt;mailSettings\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md). If information is specified using <xref:System.Net.Mail.SmtpClient> constructors or properties, this information overrides the configuration file settings.  
+ For more information about using the application and machine configuration files, see [&lt;mailSettings&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md). If information is specified using <xref:System.Net.Mail.SmtpClient> constructors or properties, this information overrides the configuration file settings.  
   
    
   
@@ -303,7 +299,7 @@
 ## Remarks  
  Some SMTP servers require that the client be authenticated before the server will send e-mail on its behalf. To use your default network credentials, you can set the <xref:System.Net.Mail.SmtpClient.UseDefaultCredentials%2A> to `true` instead of setting this property. If the <xref:System.Net.Mail.SmtpClient.UseDefaultCredentials%2A> property is set to `false,` then the value set in the <xref:System.Net.Mail.SmtpClient.Credentials%2A> property will be used for the credentials when connecting to the server. If the <xref:System.Net.Mail.SmtpClient.UseDefaultCredentials%2A> property is set to `false` and the <xref:System.Net.Mail.SmtpClient.Credentials%2A> property has not been set, then mail is sent to the server anonymously.  
   
- Credentials information can also be specified using the application and machine configuration files. For more information, see [\&lt;mailSettings\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md). If information is specified using the <xref:System.Net.Mail.SmtpClient.Credentials%2A> property, this information overrides the configuration file settings.  
+ Credentials information can also be specified using the application and machine configuration files. For more information, see [&lt;mailSettings&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md). If information is specified using the <xref:System.Net.Mail.SmtpClient.Credentials%2A> property, this information overrides the configuration file settings.  
   
 > [!CAUTION]
 >  If you provide credentials for basic authentication, they are sent to the server in clear text. This can present a security issue because your credentials can be seen, and then used by others.  
@@ -390,6 +386,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Configuration.SmtpSection" />
+        <altmember cref="P:System.Net.Configuration.SmtpSection.DeliveryMethod" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Dispose">
@@ -578,6 +576,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Configuration.SmtpSection" />
+        <altmember cref="T:System.Net.Configuration.SmtpNetworkElement" />
+        <altmember cref="P:System.Net.Configuration.SmtpNetworkElement.EnableSsl" />
       </Docs>
     </Member>
     <Member MemberName="Host">
@@ -608,7 +609,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Net.Mail.SmtpClient.Host%2A> property can also be set using constructors or the application or machine configuration file. For more information, see [\&lt;mailSettings\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md).  
+ The value of the <xref:System.Net.Mail.SmtpClient.Host%2A> property can also be set using constructors or the application or machine configuration file. For more information, see [&lt;mailSettings&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md).  
   
  If information is specified using this property, this information overrides the configuration file settings.  
   
@@ -625,6 +626,10 @@
         <exception cref="T:System.ArgumentNullException">The value specified for a set operation is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The value specified for a set operation is equal to <see cref="F:System.String.Empty" /> ("").</exception>
         <exception cref="T:System.InvalidOperationException">You cannot change the value of this property when an email is being sent.</exception>
+        <altmember cref="T:System.Net.Configuration.SmtpSection" />
+        <altmember cref="T:System.Net.Configuration.SmtpNetworkElement" />
+        <altmember cref="P:System.Net.Configuration.SmtpNetworkElement.Host" />
+        <altmember cref="P:System.Net.Mail.SmtpClient.Port" />
       </Docs>
     </Member>
     <Member MemberName="OnSendCompleted">
@@ -703,6 +708,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Configuration.SmtpSection" />
+        <altmember cref="P:System.Net.Configuration.SmtpSection.DeliveryMethod" />
       </Docs>
     </Member>
     <Member MemberName="Port">
@@ -733,7 +740,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Net.Mail.SmtpClient.Port%2A> property can also be set using constructors or the application or machine configuration file. For more information about using configuration files, see [\&lt;mailSettings\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md). If information is specified using this property, this information overrides the configuration file settings.  
+ The value of the <xref:System.Net.Mail.SmtpClient.Port%2A> property can also be set using constructors or the application or machine configuration file. For more information about using configuration files, see [&lt;mailSettings&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md). If information is specified using this property, this information overrides the configuration file settings.  
   
    
   
@@ -748,6 +755,10 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified for a set operation is less than or equal to zero.</exception>
         <exception cref="T:System.InvalidOperationException">You cannot change the value of this property when an email is being sent.</exception>
         <permission cref="T:System.Net.Mail.SmtpPermission">to set the <see cref="P:System.Net.Mail.SmtpClient.Port" /> property. Associated enumeration: <see cref="F:System.Net.Mail.SmtpAccess.ConnectToUnrestrictedPort" />.</permission>
+        <altmember cref="T:System.Net.Configuration.SmtpSection" />
+        <altmember cref="T:System.Net.Configuration.SmtpNetworkElement" />
+        <altmember cref="P:System.Net.Configuration.SmtpNetworkElement.Port" />
+        <altmember cref="P:System.Net.Mail.SmtpClient.Host" />
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -1452,6 +1463,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Configuration.SmtpSection" />
+        <altmember cref="T:System.Net.Configuration.SmtpNetworkElement" />
+        <altmember cref="P:System.Net.Configuration.SmtpNetworkElement.TargetName" />
       </Docs>
     </Member>
     <Member MemberName="Timeout">
@@ -1536,7 +1550,7 @@
 ## Remarks  
  Some SMTP servers require that the client be authenticated before the server sends e-mail on its behalf. Set this property to `true` when this <xref:System.Net.Mail.SmtpClient> object should, if requested by the server, authenticate using the default credentials of the currently logged on user. For client applications, this is the desired behavior in most scenarios.  
   
- Credentials information can also be specified using the application and machine configuration files. For more information, see [\&lt;mailSettings\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md).  
+ Credentials information can also be specified using the application and machine configuration files. For more information, see [&lt;mailSettings&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md).  
   
  If the <xref:System.Net.Mail.SmtpClient.UseDefaultCredentials%2A> property is set to `false,` then the value set in the <xref:System.Net.Mail.SmtpClient.Credentials%2A> property will be used for the credentials when connecting to the server. If the <xref:System.Net.Mail.SmtpClient.UseDefaultCredentials%2A> property is set to `false` and the <xref:System.Net.Mail.SmtpClient.Credentials%2A> property has not been set, then mail is sent to the server anonymously.  
   
@@ -1556,5 +1570,45 @@
         <exception cref="T:System.InvalidOperationException">You cannot change the value of this property when an e-mail is being sent.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SendAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends an e-mail message. These methods do not block the calling thread.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SendMailAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends the specified message to an SMTP server for delivery as an asynchronous operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Send">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends an e-mail message to an SMTP server for delivery. These methods block while the message is being transmitted.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpClient" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

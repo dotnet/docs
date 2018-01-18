@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICeeGen::GetStringSection"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICeeGen::GetStringSection method [.NET Framework metadata]"
   - "GetStringSection method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICeeGen::GetStringSection Method
 Gets a string representation of the code section referenced by the specified handle.  

@@ -96,7 +96,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Channels.IReplyChannel.BeginReceiveRequest%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29> method implements the standard pattern for invoking <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%28System.TimeSpan%29>asynchronously. The timeout set on this method overrides a receive timeout set on the binding that is used to configure the connection.  
+ The <xref:System.ServiceModel.Channels.IReplyChannel.BeginReceiveRequest%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29> method implements the standard pattern for invoking <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%28System.TimeSpan%29> asynchronously. The timeout set on this method overrides a receive timeout set on the binding that is used to configure the connection.  
   
  If the request message received is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> is thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
   
@@ -242,7 +242,7 @@
     </Member>
     <Member MemberName="EndTryReceiveRequest">
       <MemberSignature Language="C#" Value="public bool EndTryReceiveRequest (IAsyncResult result, out System.ServiceModel.Channels.RequestContext context);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool EndTryReceiveRequest(class System.IAsyncResult result, class System.ServiceModel.Channels.RequestContext context) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool EndTryReceiveRequest(class System.IAsyncResult result, [out] class System.ServiceModel.Channels.RequestContext&amp; context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IReplyChannel.EndTryReceiveRequest(System.IAsyncResult,System.ServiceModel.Channels.RequestContext@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -412,7 +412,7 @@
     </Member>
     <Member MemberName="TryReceiveRequest">
       <MemberSignature Language="C#" Value="public bool TryReceiveRequest (TimeSpan timeout, out System.ServiceModel.Channels.RequestContext context);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryReceiveRequest(valuetype System.TimeSpan timeout, class System.ServiceModel.Channels.RequestContext context) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryReceiveRequest(valuetype System.TimeSpan timeout, [out] class System.ServiceModel.Channels.RequestContext&amp; context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IReplyChannel.TryReceiveRequest(System.TimeSpan,System.ServiceModel.Channels.RequestContext@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -498,5 +498,23 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReceiveRequest">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the context of the request received, if one is available</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginReceiveRequest">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to receive an available request.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

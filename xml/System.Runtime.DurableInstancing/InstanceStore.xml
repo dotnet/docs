@@ -580,5 +580,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateInstanceHandle">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance handle. If the DefaultInstanceOwner is set, the value is automatically bound as the new handle’s instance owner.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

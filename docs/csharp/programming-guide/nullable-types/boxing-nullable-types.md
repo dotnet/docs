@@ -1,16 +1,10 @@
 ---
 title: "Boxing Nullable Types (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "boxing [C#], nullable types"
   - "unboxing [C#], nullable types"
@@ -19,21 +13,6 @@ ms.assetid: bdb5b626-abc0-405d-8f64-0f0a0bf883a4
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Boxing Nullable Types (C# Programming Guide)
 Objects based on nullable types are only boxed if the object is non-null. If <xref:System.Nullable%601.HasValue%2A> is `false`, the object reference is assigned to `null` instead of boxing. For example:  
@@ -44,7 +23,7 @@ object o = b;
 // Now o is null.  
 ```  
   
- If the object is non-null -- if <xref:System.Nullable%601.HasValue%2A> is `true` -- then boxing occurs, but only the underlying type that the nullable object is based on is boxed. Boxing a non-null nullable value type boxes the value type itself, not the <xref:System.Nullable%601?displayProperty=fullName> that wraps the value type. For example:  
+ If the object is non-null -- if <xref:System.Nullable%601.HasValue%2A> is `true` -- then boxing occurs, but only the underlying type that the nullable object is based on is boxed. Boxing a non-null nullable value type boxes the value type itself, not the <xref:System.Nullable%601?displayProperty=nameWithType> that wraps the value type. For example:  
   
 ```csharp  
 bool? b = false;  
@@ -90,6 +69,6 @@ int? i2 = (int?)iBoxed;
     ```  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Nullable Types](../../../csharp/programming-guide/nullable-types/index.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Nullable Types](../../../csharp/programming-guide/nullable-types/index.md)  
  [How to: Identify a Nullable Type](../../../csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type.md)

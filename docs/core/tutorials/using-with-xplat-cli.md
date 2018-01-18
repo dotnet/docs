@@ -5,11 +5,13 @@ keywords: .NET Core, CLI
 author: cartermp
 ms.author: mairaw
 ms.date: 03/08/2017
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 41632e63-d5c6-4427-a09e-51dc1116d45f
+ms.workload: 
+  - dotnetcore
 ---
 
 # Getting started with .NET Core on Windows/Linux/macOS using the command line
@@ -57,6 +59,8 @@ Let's do a quick walkthrough:
    The program starts by `using System`, which means "bring everything in the `System` namespace into scope for this file". The `System` namespace includes basic constructs such as `string`, or numeric types.
 
    We then define a namespace called `Hello`. You can change this to anything you want. A class named `Program` is defined within that namespace, with a `Main` method that takes an array of strings as its argument. This array contains the list of arguments passed in when the compiled program is called. As it is, this array is not used: all the program is doing is to write "Hello World!" to the console. Later, we'll make changes to the code that will make use of this argument.
+
+   [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
 2. `$ dotnet restore`
 

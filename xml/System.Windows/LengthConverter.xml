@@ -18,10 +18,6 @@
 ## Remarks  
  <xref:System.Windows.LengthConverter> supports conversion to and from the following types: <xref:System.String>, <xref:System.Decimal>, <xref:System.Single>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, and <xref:System.UInt64>.  
   
-<a name="XAMLTextUsage_LengthConverter"></a>   
-## XAML Text Usage  
-   
-  
 ## Examples  
  The following example shows how to create and use an instance of the <xref:System.Windows.LengthConverter> object. A custom method called `ChangeLeft` is defined, which converts the content of a <xref:System.Windows.Controls.ListBoxItem> (defined in a separate [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] file) to an instance of <xref:System.Double>, and later into a <xref:System.String>. This method passes the <xref:System.Windows.Controls.ListBoxItem> to a <xref:System.Windows.LengthConverter> object, which converts the <xref:System.Windows.Controls.ListBoxItem> <xref:System.Windows.Controls.ContentControl.Content%2A> to an instance of <xref:System.Double>. Notice that this value has already been converted to a <xref:System.String> by using the <xref:System.Windows.Controls.Control.ToString%2A> method. This value is then passed back to the <xref:System.Windows.Controls.Canvas.SetLeft%2A> method and the <xref:System.Windows.Controls.Canvas.GetLeft%2A> method of the <xref:System.Windows.Controls.Canvas> in order to change the position of the `text1` object.  
   

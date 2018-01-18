@@ -33,15 +33,19 @@
 ## Examples  
  The following code example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.DetailsViewInsertedEventHandler> delegate to the <xref:System.Web.UI.WebControls.DetailsView.ItemInserted> event of a <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewInsertedEventHandlerInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventHandlerInline/CS/detailsviewinsertedeventhandlerinlinecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewInsertedEventHandlerInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventHandlerInline/VB/detailsviewinsertedeventhandlerinlinevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewInsertedEventHandlerInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventHandlerInline/CS/detailsviewinsertedeventhandlerinlinecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewInsertedEventHandlerInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventHandlerInline/VB/detailsviewinsertedeventhandlerinlinevb.aspx#1)]  
   
  The following code example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.DetailsViewInsertedEventHandler> delegate to the <xref:System.Web.UI.WebControls.DetailsView.ItemInserted> event of a <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewInsertedEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventHandler/CS/detailsviewinsertedeventhandlercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewInsertedEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventHandler/VB/detailsviewinsertedeventhandlervb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewInsertedEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewInsertedEventHandler/CS/detailsviewinsertedeventhandlercs.aspx#1)]
+ [!code-aspx-vb[DetailsViewInsertedEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewInsertedEventHandler/VB/detailsviewinsertedeventhandlervb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsViewInsertedEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemInserted" />
+    <altmember cref="M:System.Web.UI.WebControls.DetailsView.OnItemInserted(System.Web.UI.WebControls.DetailsViewInsertedEventArgs)" />
   </Docs>
 </Type>

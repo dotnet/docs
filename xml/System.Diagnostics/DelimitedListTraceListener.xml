@@ -34,7 +34,7 @@
  You can enable or disable a <xref:System.Diagnostics.DelimitedListTraceListener> through the application configuration file and then use the configured <xref:System.Diagnostics.DelimitedListTraceListener> in your application. Alternately, you can create a <xref:System.Diagnostics.DelimitedListTraceListener> in your code.  
   
 > [!NOTE]
->  The <xref:System.Diagnostics.DelimitedListTraceListener> delimits only text that is emitted by using the methods that have names starting with the word `Trace`, such as <xref:System.Diagnostics.DelimitedListTraceListener.TraceEvent%2A?displayProperty=fullName> or <xref:System.Diagnostics.Trace.TraceWarning%2A?displayProperty=fullName>. Trace data that is emitted by using the <xref:System.Diagnostics.Debug.Write%2A?displayProperty=fullName> and <xref:System.Diagnostics.TextWriterTraceListener.WriteLine%2A?displayProperty=fullName> methods is not delimited.  
+>  The <xref:System.Diagnostics.DelimitedListTraceListener> delimits only text that is emitted by using the methods that have names starting with the word `Trace`, such as <xref:System.Diagnostics.DelimitedListTraceListener.TraceEvent%2A?displayProperty=nameWithType> or <xref:System.Diagnostics.Trace.TraceWarning%2A?displayProperty=nameWithType>. Trace data that is emitted by using the <xref:System.Diagnostics.Debug.Write%2A?displayProperty=nameWithType> and <xref:System.Diagnostics.TextWriterTraceListener.WriteLine%2A?displayProperty=nameWithType> methods is not delimited.  
   
  To configure a <xref:System.Diagnostics.DelimitedListTraceListener>, edit the configuration file that corresponds to the name of your application. In this file, you can add a listener, set the properties for a listener, or remove a listener. The configuration file should be formatted as shown in the following example:  
   
@@ -466,7 +466,7 @@
       </Docs>
     </Member>
     <Member MemberName="TraceData">
-      <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, object[] data);" />
+      <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, params object[] data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceData(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, object[] data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DelimitedListTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -570,7 +570,7 @@
       </Docs>
     </Member>
     <Member MemberName="TraceEvent">
-      <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DelimitedListTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -617,7 +617,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The values of the `source`, `eventType`, and `id` parameters are written as a header. The `args` object array is converted to a string using the <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method, passing the `format` string and `args` array to format the string as the message portion of the trace. The `eventCache` data is written as a footer whose content depends on the value of the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.  
+ The values of the `source`, `eventType`, and `id` parameters are written as a header. The `args` object array is converted to a string using the <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method, passing the `format` string and `args` array to format the string as the message portion of the trace. The `eventCache` data is written as a footer whose content depends on the value of the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.  
   
 > [!IMPORTANT]
 >  The <xref:System.Diagnostics.DelimitedListTraceListener.TraceEvent%2A> method is not intended to be called by application code. It is called by methods of the <xref:System.Diagnostics.Debug>, <xref:System.Diagnostics.Trace>, and <xref:System.Diagnostics.TraceSource> classes to write trace data.  
@@ -626,5 +626,35 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.DelimitedListTraceListener" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TraceData">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes trace data to the output file or stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TraceEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes event trace information to an output file or stream.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

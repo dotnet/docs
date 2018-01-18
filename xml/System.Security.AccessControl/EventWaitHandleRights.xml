@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Security.AccessControl.EventWaitHandleRights> enumeration to specify access control rights when you create <xref:System.Security.AccessControl.EventWaitHandleAccessRule> objects. To apply access rights to a named system event, first add <xref:System.Security.AccessControl.EventWaitHandleAccessRule> objects to an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object, then attach the <xref:System.Security.AccessControl.EventWaitHandleSecurity> object to the named system event using the <xref:System.Threading.EventWaitHandle.%23ctor%28System.Boolean%2CSystem.Threading.EventResetMode%2CSystem.String%2CSystem.Boolean%40%2CSystem.Security.AccessControl.EventWaitHandleSecurity%29?displayProperty=fullName> constructor or the <xref:System.Threading.EventWaitHandle.SetAccessControl%2A?displayProperty=fullName> method.  
+ Use the <xref:System.Security.AccessControl.EventWaitHandleRights> enumeration to specify access control rights when you create <xref:System.Security.AccessControl.EventWaitHandleAccessRule> objects. To apply access rights to a named system event, first add <xref:System.Security.AccessControl.EventWaitHandleAccessRule> objects to an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object, then attach the <xref:System.Security.AccessControl.EventWaitHandleSecurity> object to the named system event using the <xref:System.Threading.EventWaitHandle.%23ctor%28System.Boolean%2CSystem.Threading.EventResetMode%2CSystem.String%2CSystem.Boolean%40%2CSystem.Security.AccessControl.EventWaitHandleSecurity%29?displayProperty=nameWithType> constructor or the <xref:System.Threading.EventWaitHandle.SetAccessControl%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
 >  Security on synchronization objects is not supported for Windows 98 or Windows Millennium Edition.  
@@ -34,16 +34,18 @@
    
   
 ## Examples  
- The following code example demonstrates the use of <xref:System.Security.AccessControl.EventWaitHandleRights> values when creating and using <xref:System.Security.AccessControl.EventWaitHandleAccessRule> objects. The example creates an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType?displayProperty=fullName>rule.  
+ The following code example demonstrates the use of <xref:System.Security.AccessControl.EventWaitHandleRights> values when creating and using <xref:System.Security.AccessControl.EventWaitHandleAccessRule> objects. The example creates an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType.Allow?displayProperty=nameWithType> rule.  
   
 > [!NOTE]
->  This example does not attach the security object to an <xref:System.Threading.EventWaitHandle> object; see <xref:System.Security.AccessControl.EventWaitHandleSecurity>, <xref:System.Threading.EventWaitHandle.GetAccessControl%2A?displayProperty=fullName> method, and <xref:System.Threading.EventWaitHandle.SetAccessControl%2A?displayProperty=fullName>.  
+>  This example does not attach the security object to an <xref:System.Threading.EventWaitHandle> object; see <xref:System.Security.AccessControl.EventWaitHandleSecurity>, <xref:System.Threading.EventWaitHandle.GetAccessControl%2A?displayProperty=nameWithType> method, and <xref:System.Threading.EventWaitHandle.SetAccessControl%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Security.AccessControl.EventWaitHandleSecurity.AddAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.EventWaitHandleSecurity.AddAccessRule/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.EventWaitHandleSecurity.AddAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.EventWaitHandleSecurity.AddAccessRule/VB/source.vb#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.AccessControl.EventWaitHandleAccessRule" />
+    <altmember cref="T:System.Security.AccessControl.EventWaitHandleSecurity" />
   </Docs>
   <Members>
     <Member MemberName="ChangePermissions">

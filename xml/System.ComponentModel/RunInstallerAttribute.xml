@@ -33,7 +33,7 @@
  If a class that inherits from <xref:System.Configuration.Install.Installer> is marked with the <xref:System.ComponentModel.RunInstallerAttribute> set to `true`, Visual Studio's Custom Action Installer or the InstallUtil.exe will be invoked when the assembly is installed. Members marked with the <xref:System.ComponentModel.RunInstallerAttribute> set to `false` will not invoke an installer. The default is `true`.  
   
 > [!NOTE]
->  When you mark a property with the <xref:System.ComponentModel.RunInstallerAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.RunInstallerAttribute.Yes>. For a property marked with the <xref:System.ComponentModel.RunInstallerAttribute> set to `false`, the value is <xref:System.ComponentModel.RunInstallerAttribute.No>. Therefore, when you want to check the value of this attribute in your code, you must specify the attribute as <xref:System.ComponentModel.RunInstallerAttribute.Yes?displayProperty=fullName> or <xref:System.ComponentModel.RunInstallerAttribute.No?displayProperty=fullName>.  
+>  When you mark a property with the <xref:System.ComponentModel.RunInstallerAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.RunInstallerAttribute.Yes>. For a property marked with the <xref:System.ComponentModel.RunInstallerAttribute> set to `false`, the value is <xref:System.ComponentModel.RunInstallerAttribute.No>. Therefore, when you want to check the value of this attribute in your code, you must specify the attribute as <xref:System.ComponentModel.RunInstallerAttribute.Yes?displayProperty=nameWithType> or <xref:System.ComponentModel.RunInstallerAttribute.No?displayProperty=nameWithType>.  
   
  For more information, see [Attributes](~/docs/standard/attributes/index.md).  
   
@@ -54,6 +54,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Attribute" />
+    <altmember cref="T:System.Configuration.Install.Installer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -111,7 +113,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you mark a property with this value, this attribute is set to the constant member <xref:System.ComponentModel.RunInstallerAttribute.No>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.RunInstallerAttribute?displayProperty=fullName>.  
+ When you mark a property with this value, this attribute is set to the constant member <xref:System.ComponentModel.RunInstallerAttribute.No>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.RunInstallerAttribute.No?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -235,7 +237,7 @@
 ## Remarks  
  This field is the default setting for this attribute.  
   
- When you mark a property with the <xref:System.ComponentModel.RunInstallerAttribute> set to `false`, the value of this attribute is set to the constant member <xref:System.ComponentModel.RunInstallerAttribute.No>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.RunInstallerAttribute.No?displayProperty=fullName>.  
+ When you mark a property with the <xref:System.ComponentModel.RunInstallerAttribute> set to `false`, the value of this attribute is set to the constant member <xref:System.ComponentModel.RunInstallerAttribute.No>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.RunInstallerAttribute.No?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -296,7 +298,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you mark a property with the <xref:System.ComponentModel.RunInstallerAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.RunInstallerAttribute.Yes>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.RunInstallerAttribute.Yes?displayProperty=fullName>.  
+ When you mark a property with the <xref:System.ComponentModel.RunInstallerAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.RunInstallerAttribute.Yes>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.RunInstallerAttribute.Yes?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

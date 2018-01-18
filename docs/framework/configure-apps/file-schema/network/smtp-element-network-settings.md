@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/mailSettings/smtp"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#smtp"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "<smtp> element"
   - "smtp element"
@@ -25,6 +20,8 @@ caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;smtp&gt; Element (Network Settings)
 Configures the delivery format, delivery method, and from address for sending e-mails.  
@@ -38,12 +35,12 @@ Configures the delivery format, delivery method, and from address for sending e-
   
 ```xml  
       <smtp  
-  deliveryFormat="format"   
-  deliveryMethod="method"   
-  from="from address"   
-  <specifiedPickupDirectory> … </ specifiedPickupDirectory >  
-  <network> … </network>  
-/smtp>  
+        deliveryFormat="format"   
+        deliveryMethod="method"   
+        from="from address">
+          <specifiedPickupDirectory> … </ specifiedPickupDirectory >  
+          <network> … </network>  
+      </smtp>  
 ```  
   
 ## Attributes and Elements  
@@ -90,8 +87,8 @@ Configures the delivery format, delivery method, and from address for sending e-
 ```  
   
 ## See Also  
- <xref:System.Net.Configuration.SmtpSection?displayProperty=fullName>   
- <xref:System.Net.Mail.SmtpClient?displayProperty=fullName>   
- <xref:System.Net.Mail.SmtpDeliveryFormat>   
- <xref:System.Net.Mail.SmtpDeliveryMethod>   
+ <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>  
+ <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>  
+ <xref:System.Net.Mail.SmtpDeliveryFormat>  
+ <xref:System.Net.Mail.SmtpDeliveryMethod>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

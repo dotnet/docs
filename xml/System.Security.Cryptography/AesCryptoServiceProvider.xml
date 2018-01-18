@@ -140,7 +140,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to use the <xref:System.Security.Cryptography.AesCryptoServiceProvider.CreateDecryptor%2A?displayProperty=fullName> method to decrypt an encrypted message. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AesCryptoServiceProvider> class.  
+ The following example shows how to use the <xref:System.Security.Cryptography.AesCryptoServiceProvider.CreateDecryptor%2A?displayProperty=nameWithType> method to decrypt an encrypted message. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AesCryptoServiceProvider> class.  
   
  [!code-csharp[AesCryptoServProvider#3](~/samples/snippets/csharp/VS_Snippets_CLR/aescryptoservprovider/cs/program.cs#3)]
  [!code-vb[AesCryptoServProvider#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/aescryptoservprovider/vb/program.vb#3)]  
@@ -220,7 +220,7 @@
    
   
 ## Examples  
- The following example shows how to use the <xref:System.Security.Cryptography.AesCryptoServiceProvider.CreateEncryptor%2A?displayProperty=fullName> method to encrypt a message. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AesCryptoServiceProvider> class.  
+ The following example shows how to use the <xref:System.Security.Cryptography.AesCryptoServiceProvider.CreateEncryptor%2A?displayProperty=nameWithType> method to encrypt a message. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AesCryptoServiceProvider> class.  
   
  [!code-csharp[AesCryptoServProvider#2](~/samples/snippets/csharp/VS_Snippets_CLR/aescryptoservprovider/cs/program.cs#2)]
  [!code-vb[AesCryptoServProvider#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/aescryptoservprovider/vb/program.vb#2)]  
@@ -509,5 +509,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateEncryptor">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a symmetric AES encryptor object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateDecryptor">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a symmetric AES decryptor object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

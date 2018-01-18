@@ -264,6 +264,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.Common.DbException">The connection-level error that occurred while opening the connection.</exception>
+        <altmember cref="M:System.Data.Common.DbConnection.Open" />
       </Docs>
     </Member>
     <Member MemberName="ConnectionString">
@@ -790,7 +791,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method must be overridden with user-defined behavior. <xref:System.Data.SqlClient.SqlConnection.Open%2A?displayProperty=fullName> will throw an exception if called again without first being closed.  
+ This method must be overridden with user-defined behavior. <xref:System.Data.SqlClient.SqlConnection.Open%2A?displayProperty=nameWithType> will throw an exception if called again without first being closed.  
   
  ]]></format>
         </remarks>
@@ -1116,5 +1117,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="System.Data.IDbConnection.BeginTransaction">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins a database transaction.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

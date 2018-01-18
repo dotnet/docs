@@ -23,9 +23,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The client application services feature uses this class to represent an authenticated user. When you configure your application to use client application services and forms authentication, you can authenticate a user by calling the `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> method. After authentication, you can retrieve a reference to the current <xref:System.Web.ClientServices.ClientFormsIdentity> instance through the <xref:System.Security.Principal.IPrincipal.Identity%2A> property of the <xref:System.Security.Principal.IPrincipal> retrieved through the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property. For more information, see [Client Application Services](~/docs/framework/common-client-technologies/client-application-services.md).  
+ The client application services feature uses this class to represent an authenticated user. When you configure your application to use client application services and forms authentication, you can authenticate a user by calling the `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=nameWithType> method. After authentication, you can retrieve a reference to the current <xref:System.Web.ClientServices.ClientFormsIdentity> instance through the <xref:System.Security.Principal.IPrincipal.Identity%2A> property of the <xref:System.Security.Principal.IPrincipal> retrieved through the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property. For more information, see [Client Application Services](~/docs/framework/common-client-technologies/client-application-services.md).  
   
- You will typically access a <xref:System.Web.ClientServices.ClientFormsIdentity> object as an <xref:System.Security.Principal.IIdentity> reference to avoid a direct dependency on this class. You can determine whether a user is authenticated by checking the <xref:System.Security.Principal.IIdentity.IsAuthenticated%2A?displayProperty=fullName> property of the identity. However, the user may be authenticated for Windows, but not for client application services. To determine whether the user is authenticated for client application services, you should also confirm that the <xref:System.Security.Principal.IIdentity.AuthenticationType%2A?displayProperty=fullName> property value is "ClientForms".  
+ You will typically access a <xref:System.Web.ClientServices.ClientFormsIdentity> object as an <xref:System.Security.Principal.IIdentity> reference to avoid a direct dependency on this class. You can determine whether a user is authenticated by checking the <xref:System.Security.Principal.IIdentity.IsAuthenticated%2A?displayProperty=nameWithType> property of the identity. However, the user may be authenticated for Windows, but not for client application services. To determine whether the user is authenticated for client application services, you should also confirm that the <xref:System.Security.Principal.IIdentity.AuthenticationType%2A?displayProperty=nameWithType> property value is "ClientForms".  
   
  You must use an explicit <xref:System.Web.ClientServices.ClientFormsIdentity> reference to call the <xref:System.Web.ClientServices.ClientFormsIdentity.RevalidateUser%2A> method, which is not defined by the <xref:System.Security.Principal.IIdentity> interface.  
   
@@ -42,6 +42,16 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Web.Security.Membership.ValidateUser(System.String,System.String)" />
+    <altmember cref="M:System.Web.ClientServices.ClientFormsIdentity.RevalidateUser" />
+    <altmember cref="P:System.Threading.Thread.CurrentPrincipal" />
+    <altmember cref="T:System.Security.Principal.IPrincipal" />
+    <altmember cref="P:System.Security.Principal.IPrincipal.Identity" />
+    <altmember cref="T:System.Security.Principal.IIdentity" />
+    <altmember cref="P:System.Security.Principal.IIdentity.IsAuthenticated" />
+    <altmember cref="P:System.Web.ClientServices.ClientFormsIdentity.IsAuthenticated" />
+    <altmember cref="P:System.Web.ClientServices.ClientFormsIdentity.AuthenticationType" />
+    <altmember cref="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.Logout" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -117,7 +127,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You will typically access a <xref:System.Web.ClientServices.ClientFormsIdentity> object as an <xref:System.Security.Principal.IIdentity> reference to avoid a direct dependency on this class. You can determine whether a user is authenticated by checking the <xref:System.Security.Principal.IIdentity.IsAuthenticated%2A?displayProperty=fullName> property of the identity. However, the user may be authenticated for Windows, but not for client application services. To determine whether the user is authenticated for client application services, you should also confirm that the <xref:System.Security.Principal.IIdentity.AuthenticationType%2A?displayProperty=fullName> property value is "ClientForms". For more information, see the <xref:System.Web.ClientServices.ClientFormsIdentity> class overview.  
+ You will typically access a <xref:System.Web.ClientServices.ClientFormsIdentity> object as an <xref:System.Security.Principal.IIdentity> reference to avoid a direct dependency on this class. You can determine whether a user is authenticated by checking the <xref:System.Security.Principal.IIdentity.IsAuthenticated%2A?displayProperty=nameWithType> property of the identity. However, the user may be authenticated for Windows, but not for client application services. To determine whether the user is authenticated for client application services, you should also confirm that the <xref:System.Security.Principal.IIdentity.AuthenticationType%2A?displayProperty=nameWithType> property value is "ClientForms". For more information, see the <xref:System.Web.ClientServices.ClientFormsIdentity> class overview.  
   
    
   
@@ -129,6 +139,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Security.Principal.IIdentity" />
+        <altmember cref="P:System.Security.Principal.IIdentity.IsAuthenticated" />
+        <altmember cref="P:System.Security.Principal.IIdentity.AuthenticationType" />
+        <altmember cref="P:System.Web.ClientServices.ClientFormsIdentity.IsAuthenticated" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -216,7 +230,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You will typically access a <xref:System.Web.ClientServices.ClientFormsIdentity> object as an <xref:System.Security.Principal.IIdentity> reference to avoid a direct dependency on this class. You can determine whether a user is authenticated by checking the <xref:System.Security.Principal.IIdentity.IsAuthenticated%2A?displayProperty=fullName> property of the identity. However, the user may be authenticated for Windows, but not for client application services. To determine whether the user is authenticated for client application services, you should also confirm that the <xref:System.Security.Principal.IIdentity.AuthenticationType%2A?displayProperty=fullName> property value is "ClientForms". For more information, see the <xref:System.Web.ClientServices.ClientFormsIdentity> class overview.  
+ You will typically access a <xref:System.Web.ClientServices.ClientFormsIdentity> object as an <xref:System.Security.Principal.IIdentity> reference to avoid a direct dependency on this class. You can determine whether a user is authenticated by checking the <xref:System.Security.Principal.IIdentity.IsAuthenticated%2A?displayProperty=nameWithType> property of the identity. However, the user may be authenticated for Windows, but not for client application services. To determine whether the user is authenticated for client application services, you should also confirm that the <xref:System.Security.Principal.IIdentity.AuthenticationType%2A?displayProperty=nameWithType> property value is "ClientForms". For more information, see the <xref:System.Web.ClientServices.ClientFormsIdentity> class overview.  
   
    
   
@@ -228,6 +242,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Threading.Thread.CurrentPrincipal" />
+        <altmember cref="T:System.Security.Principal.IPrincipal" />
+        <altmember cref="P:System.Security.Principal.IPrincipal.Identity" />
+        <altmember cref="T:System.Security.Principal.IIdentity" />
+        <altmember cref="P:System.Security.Principal.IIdentity.IsAuthenticated" />
+        <altmember cref="P:System.Security.Principal.IIdentity.AuthenticationType" />
+        <altmember cref="P:System.Web.ClientServices.ClientFormsIdentity.AuthenticationType" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -300,7 +321,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.ClientServices.ConnectivityStatus" />
+        <altmember cref="P:System.Web.ClientServices.ConnectivityStatus.IsOffline" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Web.ClientServices.ClientFormsIdentity" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

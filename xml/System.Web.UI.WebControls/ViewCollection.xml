@@ -25,10 +25,13 @@
 ## Examples  
  The following code example demonstrates how to programmatically add <xref:System.Web.UI.WebControls.View> controls to a <xref:System.Web.UI.WebControls.MultiView> control. After each <xref:System.Web.UI.WebControls.View> control is created, the <xref:System.Web.UI.WebControls.ViewCollection.AddAt%2A> method is used to add the <xref:System.Web.UI.WebControls.View> control to the <xref:System.Web.UI.WebControls.ViewCollection> collection of the <xref:System.Web.UI.WebControls.MultiView> control at the specified index. The <xref:System.Web.UI.WebControls.ViewCollection.Item%2A> indexer is used to access the <xref:System.Web.UI.Control.ID%2A> properties of the <xref:System.Web.UI.WebControls.View> controls stored in the <xref:System.Web.UI.WebControls.ViewCollection> collection and display them to the user.  
   
- <!-- TODO: review snippet reference [!code-vb[ViewCollection.AddAt Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ViewCollection.AddAt Example/VB/viewcollectionaddatvb.aspx#1)]  -->  
+ [!code-aspx-vb[ViewCollection.AddAt Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ViewCollection.AddAt Example/VB/viewcollectionaddatvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.MultiView" />
+    <altmember cref="P:System.Web.UI.WebControls.MultiView.Views" />
+    <altmember cref="T:System.Web.UI.WebControls.View" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,10 +55,11 @@
 ## Examples  
  The following code example demonstrates how to programmatically add <xref:System.Web.UI.WebControls.View> controls to a <xref:System.Web.UI.WebControls.MultiView> control. After each <xref:System.Web.UI.WebControls.View> control is created, the <xref:System.Web.UI.WebControls.ViewCollection.AddAt%2A> method is used to add the <xref:System.Web.UI.WebControls.View> control to the <xref:System.Web.UI.WebControls.ViewCollection> collection of the <xref:System.Web.UI.WebControls.MultiView> control at the specified index. The <xref:System.Web.UI.WebControls.ViewCollection.Item%2A> indexer is used to access the <xref:System.Web.UI.Control.ID%2A> properties of the <xref:System.Web.UI.WebControls.View> controls stored in the <xref:System.Web.UI.WebControls.ViewCollection> collection and display them to the user.  
   
- <!-- TODO: review snippet reference [!code-vb[ViewCollection.AddAt Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ViewCollection.AddAt Example/VB/viewcollectionaddatvb.aspx#1)]  -->  
+ [!code-aspx-vb[ViewCollection.AddAt Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ViewCollection.AddAt Example/VB/viewcollectionaddatvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.MultiView" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -89,11 +93,14 @@
 ## Examples  
  The following code example demonstrates how to programmatically add <xref:System.Web.UI.WebControls.View> controls to a <xref:System.Web.UI.WebControls.MultiView> control. After each <xref:System.Web.UI.WebControls.View> control is created, the `MultiView.Views.Add()` syntax is used to add the <xref:System.Web.UI.WebControls.View> control to the <xref:System.Web.UI.WebControls.ViewCollection> collection of the <xref:System.Web.UI.WebControls.MultiView> control.  
   
- <!-- TODO: review snippet reference [!code-vb[MultiView.Views Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.Views Example/VB/multiviewviewsvb.aspx#1)]  -->  
+ [!code-aspx-vb[MultiView.Views Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.Views Example/VB/multiviewviewsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="v" /> parameter does not specify a <see cref="T:System.Web.UI.WebControls.View" /> control.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="M:System.Web.UI.WebControls.ViewCollection.AddAt(System.Int32,System.Web.UI.Control)" />
+        <altmember cref="T:System.Web.UI.WebControls.MultiView" />
       </Docs>
     </Member>
     <Member MemberName="AddAt">
@@ -129,11 +136,14 @@
 ## Examples  
  The following code example demonstrates how to programmatically add <xref:System.Web.UI.WebControls.View> controls to a <xref:System.Web.UI.WebControls.MultiView> control. After each <xref:System.Web.UI.WebControls.View> control is created, the <xref:System.Web.UI.WebControls.ViewCollection.AddAt%2A> method is used to add the <xref:System.Web.UI.WebControls.View> control to the <xref:System.Web.UI.WebControls.ViewCollection> collection of the <xref:System.Web.UI.WebControls.MultiView> control at the specified index. The <xref:System.Web.UI.WebControls.ViewCollection.Item%2A> indexer is used to access the <xref:System.Web.UI.Control.ID%2A> properties of the <xref:System.Web.UI.WebControls.View> controls stored in the <xref:System.Web.UI.WebControls.ViewCollection> collection and display them to the user.  
   
- <!-- TODO: review snippet reference [!code-vb[ViewCollection.AddAt Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ViewCollection.AddAt Example/VB/viewcollectionaddatvb.aspx#1)]  -->  
+ [!code-aspx-vb[ViewCollection.AddAt Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ViewCollection.AddAt Example/VB/viewcollectionaddatvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="v" /> parameter does not specify a <see cref="T:System.Web.UI.WebControls.View" /> control.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.ViewCollection.Add(System.Web.UI.Control)" />
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="T:System.Web.UI.WebControls.MultiView" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -166,10 +176,12 @@
 ## Examples  
  The following code example demonstrates how to programmatically add <xref:System.Web.UI.WebControls.View> controls to a <xref:System.Web.UI.WebControls.MultiView> control. After each <xref:System.Web.UI.WebControls.View> control is created, the <xref:System.Web.UI.WebControls.ViewCollection.AddAt%2A> method is used to add the <xref:System.Web.UI.WebControls.View> control to the <xref:System.Web.UI.WebControls.ViewCollection> collection of the <xref:System.Web.UI.WebControls.MultiView> control at the specified index. The <xref:System.Web.UI.WebControls.ViewCollection.Item%2A> indexer is used to access the <xref:System.Web.UI.Control.ID%2A> properties of the <xref:System.Web.UI.WebControls.View> controls stored in the <xref:System.Web.UI.WebControls.ViewCollection> collection and display them to the user.  
   
- <!-- TODO: review snippet reference [!code-vb[ViewCollection.AddAt Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ViewCollection.AddAt Example/VB/viewcollectionaddatvb.aspx#1)]  -->  
+ [!code-aspx-vb[ViewCollection.AddAt Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ViewCollection.AddAt Example/VB/viewcollectionaddatvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="T:System.Web.UI.WebControls.MultiView" />
       </Docs>
     </Member>
   </Members>

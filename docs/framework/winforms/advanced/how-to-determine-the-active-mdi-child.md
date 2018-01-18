@@ -10,18 +10,21 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "Clipboard, copying data to"
-  - "MDI, child windows"
+  - "Clipboard [Windows Forms], copying data to"
+  - "MDI [Windows Forms], child windows"
   - "child forms"
-  - "MDI, activating forms"
-  - "MDI, locating focus"
+  - "MDI [Windows Forms], activating forms"
+  - "MDI [Windows Forms], locating focus"
 ms.assetid: 33880ec3-0207-4c2b-a616-ff140443cc0f
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Determine the Active MDI Child
 On occasion, you will want to provide a command that operates on the control that has focus on the currently active child form. For example, suppose you want to copy selected text from the child form's text box to the Clipboard. You would create a procedure that copies selected text to the Clipboard using the <xref:System.Windows.Forms.Control.Click> event of the Copy menu item on the standard Edit menu.  
@@ -89,8 +92,8 @@ On occasion, you will want to provide a command that operates on the control tha
     ```  
   
 ## See Also  
- [Multiple-Document Interface (MDI) Applications](../../../../docs/framework/winforms/advanced/multiple-document-interface-mdi-applications.md)   
- [How to: Create MDI Parent Forms](../../../../docs/framework/winforms/advanced/how-to-create-mdi-parent-forms.md)   
- [How to: Create MDI Child Forms](../../../../docs/framework/winforms/advanced/how-to-create-mdi-child-forms.md)   
- [How to: Send Data to the Active MDI Child](../../../../docs/framework/winforms/advanced/how-to-send-data-to-the-active-mdi-child.md)   
+ [Multiple-Document Interface (MDI) Applications](../../../../docs/framework/winforms/advanced/multiple-document-interface-mdi-applications.md)  
+ [How to: Create MDI Parent Forms](../../../../docs/framework/winforms/advanced/how-to-create-mdi-parent-forms.md)  
+ [How to: Create MDI Child Forms](../../../../docs/framework/winforms/advanced/how-to-create-mdi-child-forms.md)  
+ [How to: Send Data to the Active MDI Child](../../../../docs/framework/winforms/advanced/how-to-send-data-to-the-active-mdi-child.md)  
  [How to: Arrange MDI Child Forms](../../../../docs/framework/winforms/advanced/how-to-arrange-mdi-child-forms.md)

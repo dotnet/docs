@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.ClientScriptManager" />
   </Docs>
   <Members>
     <Member MemberName="GetResourceUrl">
@@ -58,6 +59,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.GetWebResourceUrl(System.Type,System.String)" />
+        <altmember cref="T:System.Web.Handlers.AssemblyResourceLoader" />
       </Docs>
     </Member>
   </Members>

@@ -29,7 +29,7 @@
   
  The default sort mode for this column type is <xref:System.Windows.Forms.DataGridViewColumnSortMode.NotSortable>.  
   
- To respond to user link clicks, handle the <xref:System.Windows.Forms.DataGridView.CellContentClick?displayProperty=fullName> event. You can also use the <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=fullName> event to respond to clicks anywhere in the cell.  
+ To respond to user link clicks, handle the <xref:System.Windows.Forms.DataGridView.CellContentClick?displayProperty=nameWithType> event. You can also use the <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=nameWithType> event to respond to clicks anywhere in the cell.  
   
    
   
@@ -45,6 +45,16 @@
     <block subset="none" type="overrides">
       <para>When you derive from <see cref="T:System.Windows.Forms.DataGridViewLinkColumn" /> and add new properties to the derived class, be sure to override the <see cref="M:System.Windows.Forms.DataGridViewLinkColumn.Clone" /> method to copy the new properties during cloning operations. You should also call the base class's <see cref="M:System.Windows.Forms.DataGridViewLinkColumn.Clone" /> method so that the properties of the base class are copied to the new cell.</para>
     </block>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewButtonColumn" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewLinkCell" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewColumn.SortMode" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellContentClick" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellClick" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.UseColumnTextForLinkValue" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.Text" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,6 +77,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewLinkCell" />
       </Docs>
     </Member>
     <Member MemberName="ActiveLinkColor">
@@ -102,6 +115,14 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.Windows.Forms.DataGridViewLinkColumn.CellTemplate" /> property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Drawing.Color" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewLinkCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkCell.ActiveLinkColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.LinkBehavior" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.LinkColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.VisitedLinkColor" />
       </Docs>
     </Member>
     <Member MemberName="CellTemplate">
@@ -134,7 +155,7 @@
  The constructor for the <xref:System.Windows.Forms.DataGridViewLinkColumn> class initializes this property to a newly created <xref:System.Windows.Forms.DataGridViewLinkCell>.  
   
 > [!CAUTION]
->  Changing the properties of the cell template will not immediately affect the user interface (UI) of the column's existing cells. These changes are only apparent after the column is regenerated (for example, by sorting the column or through a call to the <xref:System.Windows.Forms.DataGridView.InvalidateColumn%2A?displayProperty=fullName> method).  
+>  Changing the properties of the cell template will not immediately affect the user interface (UI) of the column's existing cells. These changes are only apparent after the column is regenerated (for example, by sorting the column or through a call to the <xref:System.Windows.Forms.DataGridView.InvalidateColumn%2A?displayProperty=nameWithType> method).  
   
    
   
@@ -148,6 +169,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">When setting this property to a value that is not of type <see cref="T:System.Windows.Forms.DataGridViewLinkCell" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewLinkColumn.#ctor" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewLinkCell" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.InvalidateColumn(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -178,6 +204,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridViewLinkColumn.Clone" /> in a derived class, call the base class's <see cref="M:System.Windows.Forms.DataGridViewLinkColumn.Clone" /> method so that the properties of the base class are copied to the new cell, and be sure to also copy the values of any properties that were added to the derived class.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="LinkBehavior">
@@ -218,6 +245,14 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.Windows.Forms.DataGridViewLinkColumn.CellTemplate" /> property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.LinkBehavior" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewLinkCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkCell.LinkBehavior" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.ActiveLinkColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.LinkColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.VisitedLinkColor" />
       </Docs>
     </Member>
     <Member MemberName="LinkColor">
@@ -253,6 +288,14 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.Windows.Forms.DataGridViewLinkColumn.CellTemplate" /> property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Drawing.Color" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewLinkCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkCell.LinkColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.ActiveLinkColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.LinkBehavior" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.VisitedLinkColor" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -286,6 +329,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">When setting this property, the value of the <see cref="P:System.Windows.Forms.DataGridViewLinkColumn.CellTemplate" /> property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.CellTemplate" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.UseColumnTextForLinkValue" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewLinkCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkCell.UseColumnTextForLinkValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.FormattedValue" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -305,6 +354,7 @@
         <summary>Gets a string that describes the column.</summary>
         <returns>A <see cref="T:System.String" /> that describes the column.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewColumn.ToString" />
       </Docs>
     </Member>
     <Member MemberName="TrackVisitedState">
@@ -348,6 +398,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.Windows.Forms.DataGridViewLinkColumn.CellTemplate" /> property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.VisitedLinkColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewLinkCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkCell.TrackVisitedState" />
       </Docs>
     </Member>
     <Member MemberName="UseColumnTextForLinkValue">
@@ -389,6 +444,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.Windows.Forms.DataGridViewLinkColumn.CellTemplate" /> property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.Text" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.FormattedValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewLinkCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkCell.UseColumnTextForLinkValue" />
       </Docs>
     </Member>
     <Member MemberName="VisitedLinkColor">
@@ -426,6 +487,14 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.Windows.Forms.DataGridViewLinkColumn.CellTemplate" /> property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.TrackVisitedState" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewLinkCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkCell.VisitedLinkColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.ActiveLinkColor" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.LinkBehavior" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewLinkColumn.LinkColor" />
       </Docs>
     </Member>
   </Members>

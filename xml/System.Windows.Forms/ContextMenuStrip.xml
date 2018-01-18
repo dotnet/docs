@@ -41,9 +41,9 @@
   
  Shortcut menus are typically used to combine different menu items from a <xref:System.Windows.Forms.MenuStrip> of a form that are useful for the user given the context of the application. For example, you can use a shortcut menu assigned to a <xref:System.Windows.Forms.TextBox> control to provide menu items for changing the font of the text, finding text within the control, or Clipboard features for copying and pasting text. You can also expose new <xref:System.Windows.Forms.ToolStripMenuItem> objects in a shortcut menu that are not located within a <xref:System.Windows.Forms.MenuStrip> to provide situation-specific commands that are inappropriate for the <xref:System.Windows.Forms.MenuStrip> to display.  
   
- Typically, a shortcut menu is displayed when a user clicks the right mouse button over a control or the form itself. Many visible controls, as well as the <xref:System.Windows.Forms.Form> itself, have a <xref:System.Windows.Forms.Control.ContextMenuStrip%2A?displayProperty=fullName> property that binds the <xref:System.Windows.Forms.ContextMenuStrip> class to the control that displays the shortcut menu. More than one control can use a <xref:System.Windows.Forms.ContextMenuStrip>.  
+ Typically, a shortcut menu is displayed when a user clicks the right mouse button over a control or the form itself. Many visible controls, as well as the <xref:System.Windows.Forms.Form> itself, have a <xref:System.Windows.Forms.Control.ContextMenuStrip%2A?displayProperty=nameWithType> property that binds the <xref:System.Windows.Forms.ContextMenuStrip> class to the control that displays the shortcut menu. More than one control can use a <xref:System.Windows.Forms.ContextMenuStrip>.  
   
- Set the <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowCheckMargin%2A?displayProperty=fullName> property to `true` to add space to the left of a <xref:System.Windows.Forms.ToolStripMenuItem> for a check mark that shows that the menu item is enabled or selected. The <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A?displayProperty=fullName> property is set to `true` by default. Use this space to the left of the <xref:System.Windows.Forms.ToolStripMenuItem> to display an image for that menu item.  
+ Set the <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowCheckMargin%2A?displayProperty=nameWithType> property to `true` to add space to the left of a <xref:System.Windows.Forms.ToolStripMenuItem> for a check mark that shows that the menu item is enabled or selected. The <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A?displayProperty=nameWithType> property is set to `true` by default. Use this space to the left of the <xref:System.Windows.Forms.ToolStripMenuItem> to display an image for that menu item.  
   
  Although <xref:System.Windows.Forms.ContextMenuStrip> replaces and adds functionality to the <xref:System.Windows.Forms.ContextMenu> control of previous versions, <xref:System.Windows.Forms.ContextMenu> is retained for both backward compatibility and future use if so desired.  
   
@@ -57,6 +57,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ToolStripDropDownMenu" />
+    <altmember cref="P:System.Windows.Forms.ToolStripDropDownMenu.ShowCheckMargin" />
+    <altmember cref="P:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin" />
+    <altmember cref="P:System.Windows.Forms.Control.ContextMenuStrip" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -156,6 +160,7 @@
           <see langword="true" /> to make the control visible; otherwise, <see langword="false" />.</param>
         <summary>Sets the control to the specified visible state.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.SetVisibleCore(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="SourceControl">
@@ -204,5 +209,14 @@
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows to set this property value. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ContextMenuStrip" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

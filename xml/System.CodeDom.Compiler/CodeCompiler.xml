@@ -33,6 +33,9 @@
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
+    <altmember cref="T:System.CodeDom.Compiler.ICodeCompiler" />
+    <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
+    <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,6 +82,7 @@
         <summary>Gets the command arguments to be passed to the compiler from the specified <see cref="T:System.CodeDom.Compiler.CompilerParameters" />.</summary>
         <returns>The command arguments.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
       </Docs>
     </Member>
     <Member MemberName="CompilerName">
@@ -168,6 +172,9 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="options" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for compilation. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
+        <altmember cref="T:System.CodeDom.CodeCompileUnit" />
+        <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
       </Docs>
     </Member>
     <Member MemberName="FromDomBatch">
@@ -203,6 +210,9 @@
   
  <paramref name="ea" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for compilation. The associated enumeration is <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
+        <altmember cref="T:System.CodeDom.CodeCompileUnit" />
+        <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
       </Docs>
     </Member>
     <Member MemberName="FromFile">
@@ -238,6 +248,8 @@
   
  <paramref name="fileName" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for compilation. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
+        <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
       </Docs>
     </Member>
     <Member MemberName="FromFileBatch">
@@ -273,6 +285,8 @@
   
  <paramref name="fileNames" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for compilation. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
+        <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
       </Docs>
     </Member>
     <Member MemberName="FromSource">
@@ -304,6 +318,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="options" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for compilation. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
+        <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
       </Docs>
     </Member>
     <Member MemberName="FromSourceBatch">
@@ -339,6 +355,8 @@
   
  <paramref name="sources" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for compilation. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
+        <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
       </Docs>
     </Member>
     <Member MemberName="GetResponseFileCmdArgs">
@@ -428,6 +446,7 @@
         <param name="line">The line to process.</param>
         <summary>Processes the specified line from the specified <see cref="T:System.CodeDom.Compiler.CompilerResults" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
       </Docs>
     </Member>
     <Member MemberName="System.CodeDom.Compiler.ICodeCompiler.CompileAssemblyFromDom">

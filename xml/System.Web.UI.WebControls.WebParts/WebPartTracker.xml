@@ -24,7 +24,7 @@
   
  When a Web Parts control is both a provider and a consumer, and the provided data depends on the consumed data, there is the possibility of creating a connection that results in an infinite loop between Web Parts controls. These loops are called circular connections. A developer can prevent a circular connection by using the <xref:System.Web.UI.WebControls.WebParts.WebPartTracker> class to track the number of connections for a provider connection point and a Web Parts control. The provider connection point and the control are specified in the <xref:System.Web.UI.WebControls.WebParts.WebPartTracker.%23ctor%2A> constructor.  
   
- If a circular connection is detected, the <xref:System.Web.UI.WebControls.WebParts.WebPartTracker> object sets the <xref:System.Web.UI.WebControls.WebParts.WebPart.ConnectErrorMessage%2A?displayProperty=fullName> property on the provider Web Parts control. The <xref:System.Web.UI.WebControls.WebParts.WebPartTracker.IsCircularConnection%2A> property will return `true`.  
+ If a circular connection is detected, the <xref:System.Web.UI.WebControls.WebParts.WebPartTracker> object sets the <xref:System.Web.UI.WebControls.WebParts.WebPart.ConnectErrorMessage%2A?displayProperty=nameWithType> property on the provider Web Parts control. The <xref:System.Web.UI.WebControls.WebParts.WebPartTracker.IsCircularConnection%2A> property will return `true`.  
   
  ]]></format>
     </remarks>
@@ -92,7 +92,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

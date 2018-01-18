@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.RegularExpressions.TagRegex> class provides a regular expression that ASP.NET uses internally to parse the opening tag of an HTML element, an XML element, or an ASP.NET Web server control tag, for applications that target the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] or later versions. ASP.NET uses the <xref:System.Web.RegularExpressions.TagRegex35?displayProperty=fullName> class for applications that target the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions.  
+ The <xref:System.Web.RegularExpressions.TagRegex> class provides a regular expression that ASP.NET uses internally to parse the opening tag of an HTML element, an XML element, or an ASP.NET Web server control tag, for applications that target the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] or later versions. ASP.NET uses the <xref:System.Web.RegularExpressions.TagRegex35?displayProperty=nameWithType> class for applications that target the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions.  
   
 > [!NOTE]
 >  The <xref:System.Web.RegularExpressions> classes are used internally by the .NET Framework to parse ASP.NET pages.  
@@ -24,6 +24,8 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Text.RegularExpressions.Regex" />
+    <altmember cref="T:System.Web.RegularExpressions.TagRegex35" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,5 +70,14 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.RegularExpressions.TagRegex" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

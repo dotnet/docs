@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDebugManager::SetDacl"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetDacl method [.NET Framework hosting]"
   - "ICLRDebugManager::SetDacl method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRDebugManager::SetDacl Method
 This method is not implemented.  
@@ -61,7 +61,7 @@ HRESULT SetDacl (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)   
- [ICLRDebugManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md)   
- [GetDacl Method](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-getdacl-method.md)   
+ [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)  
+ [ICLRDebugManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md)  
+ [GetDacl Method](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-getdacl-method.md)  
  [IHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)

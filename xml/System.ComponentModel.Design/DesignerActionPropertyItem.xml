@@ -29,7 +29,7 @@
 |Boolean value|The item is displayed using a binary UI, such as a check mark.|  
 |None of the above.|The item is displayed as a non-editable text string using the data type's <xref:System.Object.ToString%2A> method.|  
   
- All fundamental types, such as <xref:System.Boolean?displayProperty=fullName>, and common [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] data types, such as <xref:System.String?displayProperty=fullName>, supply standard type converters and editors. For more information about type converters, see [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56) or [Generalized Type Conversion](http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada). For more information about type editors, see [How to: Implement a UI Type Editor](http://msdn.microsoft.com/library/ed961fb9-ee02-4666-b511-05f3204bb75c).  
+ All fundamental types, such as <xref:System.Boolean?displayProperty=nameWithType>, and common [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] data types, such as <xref:System.String?displayProperty=nameWithType>, supply standard type converters and editors. For more information about type converters, see [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56) or [Generalized Type Conversion](http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada). For more information about type editors, see [How to: Implement a UI Type Editor](http://msdn.microsoft.com/library/ed961fb9-ee02-4666-b511-05f3204bb75c).  
   
    
   
@@ -41,6 +41,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.ComponentModel.Design.DesignerActionPropertyItem.MemberName" />
+    <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
+    <altmember cref="M:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,6 +73,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -103,6 +107,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -144,6 +150,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems" />
       </Docs>
     </Member>
     <Member MemberName="MemberName">
@@ -171,6 +179,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionPropertyItem.#ctor(System.String,System.String,System.String,System.String)" />
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
       </Docs>
     </Member>
     <Member MemberName="RelatedComponent">
@@ -194,11 +204,22 @@
 ## Remarks  
  With the <xref:System.ComponentModel.Design.DesignerActionPropertyItem.RelatedComponent%2A> property, another component can lend its pull-model panel items to the current list. For example, a user control might aggregate the <xref:System.ComponentModel.Design.DesignerActionItem> objects from one or more of its constituent controls.  
   
- This property works in conjunction with the <xref:System.ComponentModel.Design.DesignerActionItem.AllowAssociate%2A?displayProperty=fullName> property.  
+ This property works in conjunction with the <xref:System.ComponentModel.Design.DesignerActionItem.AllowAssociate%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionItem" />
+        <altmember cref="P:System.ComponentModel.Design.DesignerActionItem.AllowAssociate" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionPropertyItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -9,26 +9,32 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "metadata, images"
-  - "displaying images"
-  - "Imaging API"
-  - "image metadata"
-  - "converting images"
-  - "encoding image formats"
-  - "format decoding for images"
-  - "painting with images"
-  - "stretching images"
-  - "images, about imaging"
-  - "format encoding for images"
-  - "cropping images"
-  - "decoding image formats"
-  - "rotating images"
+  - "metadata [WPF], images"
+  - "displaying images [WPF]"
+  - "Imaging API [WPF]"
+  - "image metadata [WPF]"
+  - "converting images [WPF]"
+  - "encoding image formats [WPF]"
+  - "format decoding for images [WPF]"
+  - "painting with images [WPF]"
+  - "stretching images [WPF]"
+  - "images [WPF], about imaging"
+  - "format encoding for images [WPF]"
+  - "cropping images [WPF]"
+  - "decoding image formats [WPF]"
+  - "rotating images [WPF]"
 ms.assetid: 72aad87a-e6f3-4937-94cd-a18b7766e990
 caps.latest.revision: 32
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Imaging Overview
 This topic provides an introduction to the [!INCLUDE[TLA#tla_wic](../../../../includes/tlasharptla-wic-md.md)]. [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] enables developers to display, transform, and format images.  
@@ -54,7 +60,7 @@ This topic provides an introduction to the [!INCLUDE[TLA#tla_wic](../../../../in
   
 -   The managed component utilizes the unmanaged infrastructure to provide seamless integration of images with other [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] features such as [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)], animation, and graphics. The managed component also benefits from the [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] imaging codec extensibility model which enables automatic recognition of new image formats in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications.  
   
- The majority of the managed [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] reside in the <xref:System.Windows.Media.Imaging?displayProperty=fullName> namespace, though several important types, such as <xref:System.Windows.Media.ImageBrush> and <xref:System.Windows.Media.ImageDrawing> reside in the <xref:System.Windows.Media?displayProperty=fullName> namespace and <xref:System.Windows.Controls.Image> resides in the <xref:System.Windows.Controls?displayProperty=fullName> namespace.  
+ The majority of the managed [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] reside in the <xref:System.Windows.Media.Imaging?displayProperty=nameWithType> namespace, though several important types, such as <xref:System.Windows.Media.ImageBrush> and <xref:System.Windows.Media.ImageDrawing> reside in the <xref:System.Windows.Media?displayProperty=nameWithType> namespace and <xref:System.Windows.Controls.Image> resides in the <xref:System.Windows.Controls?displayProperty=nameWithType> namespace.  
   
  This topic provides additional information about the managed component. For more information on the unmanaged [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] see the [Unmanaged WPF Imaging Component](https://msdn.microsoft.com/library/ee719902.aspx) documentation.  
   
@@ -192,9 +198,9 @@ Image brushes can fill shapes, controls, text, and more
 >  The codec must be digitally signed for the system to recognize it.  
   
 ## See Also  
- <xref:System.Windows.Media.Imaging.BitmapSource>   
- <xref:System.Windows.Media.Imaging.BitmapImage>   
- <xref:System.Windows.Controls.Image>   
- <xref:System.Windows.Media.Imaging.BitmapMetadata>   
- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)   
+ <xref:System.Windows.Media.Imaging.BitmapSource>  
+ <xref:System.Windows.Media.Imaging.BitmapImage>  
+ <xref:System.Windows.Controls.Image>  
+ <xref:System.Windows.Media.Imaging.BitmapMetadata>  
+ [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
  [Win32 Sample Codec](http://go.microsoft.com/fwlink/?LinkID=160052)

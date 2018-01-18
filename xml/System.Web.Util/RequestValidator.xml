@@ -45,6 +45,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Util.RequestValidationSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -104,7 +105,7 @@
     </Member>
     <Member MemberName="InvokeIsValidRequestString">
       <MemberSignature Language="C#" Value="public bool InvokeIsValidRequestString (System.Web.HttpContext context, string value, System.Web.Util.RequestValidationSource requestValidationSource, string collectionKey, out int validationFailureIndex);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool InvokeIsValidRequestString(class System.Web.HttpContext context, string value, valuetype System.Web.Util.RequestValidationSource requestValidationSource, string collectionKey, int32 validationFailureIndex) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool InvokeIsValidRequestString(class System.Web.HttpContext context, string value, valuetype System.Web.Util.RequestValidationSource requestValidationSource, string collectionKey, [out] int32&amp; validationFailureIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Util.RequestValidator.InvokeIsValidRequestString(System.Web.HttpContext,System.String,System.Web.Util.RequestValidationSource,System.String,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -158,7 +159,7 @@
     </Member>
     <Member MemberName="IsValidRequestString">
       <MemberSignature Language="C#" Value="protected virtual bool IsValidRequestString (System.Web.HttpContext context, string value, System.Web.Util.RequestValidationSource requestValidationSource, string collectionKey, out int validationFailureIndex);" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool IsValidRequestString(class System.Web.HttpContext context, string value, valuetype System.Web.Util.RequestValidationSource requestValidationSource, string collectionKey, int32 validationFailureIndex) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool IsValidRequestString(class System.Web.HttpContext context, string value, valuetype System.Web.Util.RequestValidationSource requestValidationSource, string collectionKey, [out] int32&amp; validationFailureIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Util.RequestValidator.IsValidRequestString(System.Web.HttpContext,System.String,System.Web.Util.RequestValidationSource,System.String,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

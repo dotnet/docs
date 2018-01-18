@@ -49,7 +49,7 @@
 ## Examples  
  The following example enumerates the checked items in the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> to see what check state an item is in. The example demonstrates using the <xref:System.Windows.Forms.CheckedListBox.GetItemCheckState%2A> method to set the check state of an item. The example also demonstrates using the <xref:System.Windows.Forms.CheckedListBox.CheckedIndices%2A> property to get the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection>, and the <xref:System.Windows.Forms.CheckedListBox.CheckedItems%2A> property to get the <xref:System.Windows.Forms.CheckedListBox.CheckedItemCollection>.  
   
- The first loop uses the <xref:System.Windows.Forms.CheckedListBox.GetItemCheckState%2A> method to get the <xref:System.Windows.Forms.CheckState> of each checked item, given the index of the item. The second loop also uses <xref:System.Windows.Forms.CheckedListBox.GetItemCheckState%2A>, but uses the <xref:System.Windows.Forms.ListBox.ObjectCollection.IndexOf%2A?displayProperty=fullName> method to retrieve the index for the item.  
+ The first loop uses the <xref:System.Windows.Forms.CheckedListBox.GetItemCheckState%2A> method to get the <xref:System.Windows.Forms.CheckState> of each checked item, given the index of the item. The second loop also uses <xref:System.Windows.Forms.CheckedListBox.GetItemCheckState%2A>, but uses the <xref:System.Windows.Forms.ListBox.ObjectCollection.IndexOf%2A?displayProperty=nameWithType> method to retrieve the index for the item.  
   
  [!code-cpp[CheckedListBox#2](~/samples/snippets/cpp/VS_Snippets_Winforms/CheckedListBox/CPP/source.cpp#2)]
  [!code-csharp[CheckedListBox#2](~/samples/snippets/csharp/VS_Snippets_Winforms/CheckedListBox/CS/source.cs#2)]
@@ -191,6 +191,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.CheckedListBox.CheckedItemCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -247,6 +248,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The object cannot be set.</exception>
+        <altmember cref="M:System.Windows.Forms.CheckedListBox.CheckedItemCollection.IndexOf(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">

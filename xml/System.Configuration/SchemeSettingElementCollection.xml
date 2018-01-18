@@ -27,9 +27,9 @@
 ## Remarks  
  The <xref:System.Configuration.SchemeSettingElementCollection> class represents the \<schemeSettings> element under the Uri section within a configuration file.  
   
- The <xref:System.Configuration.SchemeSettingElementCollection> class and the \<schemeSettings> section in a configuration file looks generic, implying that an application can specify any <xref:System.GenericUriParserOptions?displayProperty=fullName> enumeration value for any scheme. In fact, only the <xref:System.GenericUriParserOptions?displayProperty=fullName> flag for HTTP and HTTPS schemes are supported. All other settings are ignored.  
+ The <xref:System.Configuration.SchemeSettingElementCollection> class and the \<schemeSettings> section in a configuration file looks generic, implying that an application can specify any <xref:System.GenericUriParserOptions?displayProperty=nameWithType> enumeration value for any scheme. In fact, only the <xref:System.GenericUriParserOptions.DontUnescapePathDotsAndSlashes?displayProperty=nameWithType> flag for HTTP and HTTPS schemes are supported. All other settings are ignored.  
   
- By default, the <xref:System.Uri?displayProperty=fullName> class un-escapes percent encoded path delimiters before executing path compression. This was implemented as a security mechanism against attacks like the following:  
+ By default, the <xref:System.Uri?displayProperty=nameWithType> class un-escapes percent encoded path delimiters before executing path compression. This was implemented as a security mechanism against attacks like the following:  
   
  `http://www.contoso.com/..%2F..%2F/Windows/System32/cmd.exe?/c+dir+c:\`  
   
@@ -37,7 +37,7 @@
   
  `c:\Windows\System32\cmd.exe /c dir c:\`  
   
- For this reason, <xref:System.Uri?displayProperty=fullName> class first un-escapes path delimiters and then applies path compression. The result of passing the malicious URL above to <xref:System.Uri?displayProperty=fullName> class constructor results in the following URI:  
+ For this reason, <xref:System.Uri?displayProperty=nameWithType> class first un-escapes path delimiters and then applies path compression. The result of passing the malicious URL above to <xref:System.Uri?displayProperty=nameWithType> class constructor results in the following URI:  
   
  `http://www.microsoft.com/Windows/System32/cmd.exe?/c+dir+c:\`  
   
@@ -45,6 +45,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.SchemeSettingElement" />
+    <altmember cref="T:System.Configuration.UriSection" />
+    <altmember cref="P:System.Configuration.UriSection.SchemeSettings" />
+    <altmember cref="T:System.GenericUriParserOptions" />
+    <altmember cref="T:System.Uri" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,6 +69,9 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.SchemeSettingElementCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Configuration.UriSection" />
+        <altmember cref="P:System.Configuration.UriSection.SchemeSettings" />
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="CollectionType">
@@ -93,6 +101,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.UriSection" />
+        <altmember cref="P:System.Configuration.UriSection.SchemeSettings" />
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="CreateNewElement">
@@ -168,6 +179,9 @@
         <summary>The index of the specified <see cref="T:System.Configuration.SchemeSettingElement" />.</summary>
         <returns>The index of the specified <see cref="T:System.Configuration.SchemeSettingElement" />; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Configuration.UriSection" />
+        <altmember cref="P:System.Configuration.UriSection.SchemeSettings" />
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -206,6 +220,9 @@
  -or-  
   
  The item specified by the parameter is <see langword="null" /> or has been removed.</exception>
+        <altmember cref="T:System.Configuration.UriSection" />
+        <altmember cref="P:System.Configuration.UriSection.SchemeSettings" />
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -239,7 +256,22 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.UriSection" />
+        <altmember cref="P:System.Configuration.UriSection.SchemeSettings" />
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Accesses an instance of the <see cref="T:System.Configuration.SchemeSettingElementCollection" /> class.</summary>
+        <altmember cref="T:System.Configuration.UriSection" />
+        <altmember cref="P:System.Configuration.UriSection.SchemeSettings" />
+        <altmember cref="T:System.Uri" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

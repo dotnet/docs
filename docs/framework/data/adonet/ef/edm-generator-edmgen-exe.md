@@ -9,15 +9,13 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
 ms.assetid: fe8297a1-1fc3-48ce-8eeb-f70f63f857aa
 caps.latest.revision: 6
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # EDM Generator (EdmGen.exe)
 EdmGen.exe is a command-line tool used for working with [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] model and mapping files. You can use the EdmGen.exe tool to do the following:  
@@ -54,7 +52,7 @@ EdmGen /mode:choice [options]
 |Option|Description|  
 |------------|-----------------|  
 |`/p[roject]:`\<string>|Specifies the project name to use. The project name is used as a default for the namespace setting, the name of the model and mapping files, the name of object source file, and the name of view generation source file. The entity container name is set to \<project>Context.|  
-|`/prov[ider]:`\<string>|The name of the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] data provider to be used to generate the storage model (.ssdl) file. The default provider is the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server (<xref:System.Data.SqlClient?displayProperty=fullName>).|  
+|`/prov[ider]:`\<string>|The name of the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] data provider to be used to generate the storage model (.ssdl) file. The default provider is the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server (<xref:System.Data.SqlClient?displayProperty=nameWithType>).|  
 |`/c[onnectionstring]:`\<connection string>|Specifies the string that is used to connect to the data source.|  
 |`/incsdl:`\<file>|Specifies the .csdl file or a directory where the .csdl files are located. This argument can be specified multiple times so that you can specify several directories or .csdl files. Specifying multiple directories can be useful for generating classes (`/mode:EntityClassGeneration`) or views (`/mode:ViewGeneration`) when the conceptual model is split across several files. This can also be useful when you want to validate multiple models (`/mode:ValidateArtifacts`).|  
 |`/refcsdl:`\<file>|Specifies the additional .csdl file or files used to resolve any references in the source .csdl file. (The source .csdl file is, the file specified by the `/incsdl` option). The `/refcsdl` file contains types that the source .csdl file is dependent upon. This argument can be specified multiple times.|  
@@ -82,6 +80,6 @@ EdmGen /mode:choice [options]
  [How to: Use EdmGen.exe to Validate Model and Mapping Files](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-validate-model-and-mapping-files.md)  
   
 ## See Also  
- [ADO.NET Entity Data Model  Tools](http://msdn.microsoft.com/en-us/91076853-0881-421b-837a-f582f36be527)   
- [Entity Data Model](../../../../../docs/framework/data/adonet/entity-data-model.md)   
+ [ADO.NET Entity Data Model  Tools](http://msdn.microsoft.com/en-us/91076853-0881-421b-837a-f582f36be527)  
+ [Entity Data Model](../../../../../docs/framework/data/adonet/entity-data-model.md)  
  [CSDL, SSDL, and MSL Specifications](../../../../../docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md)

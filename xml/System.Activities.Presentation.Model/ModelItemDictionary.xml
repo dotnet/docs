@@ -906,7 +906,7 @@
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public abstract bool TryGetValue (System.Activities.Presentation.Model.ModelItem key, out System.Activities.Presentation.Model.ModelItem value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(class System.Activities.Presentation.Model.ModelItem key, class System.Activities.Presentation.Model.ModelItem value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(class System.Activities.Presentation.Model.ModelItem key, [out] class System.Activities.Presentation.Model.ModelItem&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.TryGetValue(System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -932,7 +932,7 @@
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public abstract bool TryGetValue (object key, out System.Activities.Presentation.Model.ModelItem value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(object key, class System.Activities.Presentation.Model.ModelItem value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(object key, [out] class System.Activities.Presentation.Model.ModelItem&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.TryGetValue(System.Object,System.Activities.Presentation.Model.ModelItem@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -981,5 +981,50 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryGetValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the value for the given key, if possible.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ContainsKey">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the dictionary contains the given key.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the value to the dictionary under the given key.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the item from the dictionary.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the item at the specified key.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

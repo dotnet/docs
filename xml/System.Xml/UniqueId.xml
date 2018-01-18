@@ -417,7 +417,7 @@
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Xml.UniqueId" />s are equal, or are both <see langword="null" />; <see langword="false" /> if they are not equal, or if only one of them is <see langword="null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.UniqueId.Equals%2A?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.UniqueId.Equals%2A?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -546,7 +546,7 @@
     </Member>
     <Member MemberName="TryGetGuid">
       <MemberSignature Language="C#" Value="public bool TryGetGuid (out Guid guid);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetGuid(valuetype System.Guid guid) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetGuid([out] valuetype System.Guid&amp; guid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.UniqueId.TryGetGuid(System.Guid@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -635,5 +635,25 @@
           <paramref name="buffer" /> and <paramref name="offset" /> provide less than 16 valid bytes.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of this class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryGetGuid">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tries to get the value of the <see cref="T:System.Xml.UniqueId" /> as a T:System.Guid.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

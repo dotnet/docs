@@ -9,22 +9,22 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "pop-up Help"
-  - "Help, pop-up Help"
+  - "Help [Windows Forms], pop-up Help"
   - "Windows Forms, displaying Help"
-  - "forms, displaying Help"
-  - "modal dialog boxes, pop-up Help"
-  - "F1 Help, in dialog boxes"
+  - "forms [Windows Forms], displaying Help"
+  - "modal dialog boxes [Windows Forms], pop-up Help"
+  - "F1 Help [Windows Forms], in dialog boxes"
   - "HelpProvider component [Windows Forms]"
-  - "Help, adding to dialog boxes"
+  - "Help [Windows Forms], adding to dialog boxes"
 ms.assetid: 218aa81e-e87e-4d67-af05-11627bbdce3b
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Display Pop-up Help
 One way to display Help on Windows Forms is through the **Help** button, located on the right side of the title bar, accessible through the <xref:System.Windows.Forms.Form.HelpButton%2A> property. This type of Help display is well-suited for use with dialog boxes. Dialog boxes shown modally (with the <xref:System.Windows.Forms.Form.ShowDialog%2A> method) have trouble bringing up external Help systems, because modal dialog boxes need to be closed before focus can shift to another window. Additionally, using the **Help** button requires that there is no **Minimize** button or **Maximize** button shown in the title bar. This is a standard dialog-box convention, whereas forms usually have **Minimize** and **Maximize** buttons.  
@@ -51,6 +51,6 @@ One way to display Help on Windows Forms is through the **Help** button, located
 6.  Press the **Help** button on the title bar and click the control on which you set the Help string.  
   
 ## See Also  
- [Control Help Using ToolTips](../../../../docs/framework/winforms/advanced/control-help-using-tooltips.md)   
- [Integrating User Help in Windows Forms](../../../../docs/framework/winforms/advanced/integrating-user-help-in-windows-forms.md)   
+ [Control Help Using ToolTips](../../../../docs/framework/winforms/advanced/control-help-using-tooltips.md)  
+ [Integrating User Help in Windows Forms](../../../../docs/framework/winforms/advanced/integrating-user-help-in-windows-forms.md)  
  [Windows Forms](../../../../docs/framework/winforms/index.md)

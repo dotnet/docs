@@ -22,10 +22,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class does not have a public constructor; therefore, it cannot be publicly instantiated. It is a read-only class accessible from the <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.RecipientInfos%2A?displayProperty=fullName> property.  
+ This class does not have a public constructor; therefore, it cannot be publicly instantiated. It is a read-only class accessible from the <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.RecipientInfos%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo" />
   </Docs>
   <Members>
     <Member MemberName="EncryptedKey">
@@ -50,6 +51,9 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.KeyTransRecipientInfo.EncryptedKey" /> property retrieves the encrypted key for this key transport recipient.</summary>
         <value>An array of byte values that represents the encrypted key.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyTransRecipientInfo.KeyEncryptionAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyTransRecipientInfo.RecipientIdentifier" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyTransRecipientInfo.Version" />
       </Docs>
     </Member>
     <Member MemberName="KeyEncryptionAlgorithm">
@@ -74,6 +78,9 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.KeyTransRecipientInfo.KeyEncryptionAlgorithm" /> property retrieves the key encryption algorithm used to encrypt the content encryption key.</summary>
         <value>An  <see cref="T:System.Security.Cryptography.Pkcs.AlgorithmIdentifier" /> object that stores the key encryption algorithm identifier.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyTransRecipientInfo.EncryptedKey" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyTransRecipientInfo.RecipientIdentifier" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyTransRecipientInfo.Version" />
       </Docs>
     </Member>
     <Member MemberName="RecipientIdentifier">
@@ -98,6 +105,9 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.KeyTransRecipientInfo.RecipientIdentifier" /> property retrieves the subject identifier associated with the encrypted content.</summary>
         <value>A   <see cref="T:System.Security.Cryptography.Pkcs.SubjectIdentifier" /> object that  stores the identifier of the recipient taking part in the key transport.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyTransRecipientInfo.EncryptedKey" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyTransRecipientInfo.KeyEncryptionAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyTransRecipientInfo.Version" />
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -129,6 +139,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyTransRecipientInfo.EncryptedKey" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyTransRecipientInfo.KeyEncryptionAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.KeyTransRecipientInfo.RecipientIdentifier" />
       </Docs>
     </Member>
   </Members>

@@ -265,7 +265,7 @@
       </Docs>
     </Member>
     <Member MemberName="Dynamic">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.DynamicExpression Dynamic (System.Runtime.CompilerServices.CallSiteBinder binder, Type returnType, System.Linq.Expressions.Expression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.DynamicExpression Dynamic (System.Runtime.CompilerServices.CallSiteBinder binder, Type returnType, params System.Linq.Expressions.Expression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.DynamicExpression Dynamic(class System.Runtime.CompilerServices.CallSiteBinder binder, class System.Type returnType, class System.Linq.Expressions.Expression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.DynamicExpression.Dynamic(System.Runtime.CompilerServices.CallSiteBinder,System.Type,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -545,7 +545,7 @@
       </Docs>
     </Member>
     <Member MemberName="MakeDynamic">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.DynamicExpression MakeDynamic (Type delegateType, System.Runtime.CompilerServices.CallSiteBinder binder, System.Linq.Expressions.Expression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.DynamicExpression MakeDynamic (Type delegateType, System.Runtime.CompilerServices.CallSiteBinder binder, params System.Linq.Expressions.Expression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.DynamicExpression MakeDynamic(class System.Type delegateType, class System.Runtime.CompilerServices.CallSiteBinder binder, class System.Linq.Expressions.Expression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.DynamicExpression.MakeDynamic(System.Type,System.Runtime.CompilerServices.CallSiteBinder,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -948,5 +948,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="MakeDynamic">
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.DynamicExpression" /> that represents a dynamic operation bound by the provided <see cref="T:System.Runtime.CompilerServices.CallSiteBinder" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dynamic">
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.DynamicExpression" /> that represents a dynamic operation bound by the provided <see cref="T:System.Runtime.CompilerServices.CallSiteBinder" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

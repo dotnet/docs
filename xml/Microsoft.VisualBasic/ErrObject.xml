@@ -39,6 +39,7 @@ End If
   
  ]]></format>
     </remarks>
+    <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
   </Docs>
   <Members>
     <Member MemberName="Clear">
@@ -90,6 +91,8 @@ End If
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.ErrorToString" />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -122,6 +125,8 @@ End If
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.ErrorToString" />
       </Docs>
     </Member>
     <Member MemberName="Erl">
@@ -159,6 +164,8 @@ End If
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.ErrorToString" />
       </Docs>
     </Member>
     <Member MemberName="GetException">
@@ -192,6 +199,8 @@ End If
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.ErrorToString" />
       </Docs>
     </Member>
     <Member MemberName="HelpContext">
@@ -227,6 +236,8 @@ End If
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.ErrorToString" />
       </Docs>
     </Member>
     <Member MemberName="HelpFile">
@@ -262,6 +273,8 @@ End If
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.ErrorToString" />
       </Docs>
     </Member>
     <Member MemberName="LastDllError">
@@ -310,6 +323,8 @@ End If
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.ErrorToString" />
       </Docs>
     </Member>
     <Member MemberName="Number">
@@ -354,6 +369,8 @@ End If
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Number" /> is greater than 65535.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.ErrorToString" />
       </Docs>
     </Member>
     <Member MemberName="Raise">
@@ -399,6 +416,9 @@ End If
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.ErrorToString" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -433,6 +453,8 @@ End If
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.Err" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.ErrorToString" />
       </Docs>
     </Member>
   </Members>

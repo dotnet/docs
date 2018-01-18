@@ -10,13 +10,15 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "printing"
-  - "print system management"
+  - "printing [WPF]"
+  - "print system management [WPF]"
 ms.assetid: 5f3d391a-4afd-49ee-ad99-ceb737c0c8a8
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Printing How-to Topics
 The topics in this section demonstrate how to use the printing and print system management features included with [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] as well as the new [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] print path.  
@@ -32,7 +34,7 @@ The topics in this section demonstrate how to use the printing and print system 
  Instructions for using the properties of print queues and print jobs to diagnose a print job that is not printing.  
   
  [Discover Whether a Print Job Can Be Printed At This Time of Day](../../../../docs/framework/wpf/advanced/how-to-discover-whether-a-print-job-can-be-printed-at-this-time-of-day.md)  
- Instructions for using the properties of print queues and print jobs to programmatically what times of day the job can be printed.  
+ Instructions for using the properties of print queues and print jobs to programmatically decide what times of day the job can be printed.  
   
  [Enumerate a Subset of Print Queues](../../../../docs/framework/wpf/advanced/how-to-enumerate-a-subset-of-print-queues.md)  
  Instructions for generating a list of printers having certain characteristics.  
@@ -47,15 +49,15 @@ The topics in this section demonstrate how to use the printing and print system 
  Instructions for rapid printing of [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] files without the need for a [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)].  
   
  [Remotely Survey the Status of Printers](../../../../docs/framework/wpf/advanced/how-to-remotely-survey-the-status-of-printers.md)  
- Instructions for creating a utility that will survey printers to discover those experience a paper jam or other problem.  
+ Instructions for creating a utility that will survey printers to discover those experiencing a paper jam or other problem.  
   
  [Validate and Merge PrintTickets](../../../../docs/framework/wpf/advanced/how-to-validate-and-merge-printtickets.md)  
  Instructions for checking that a print ticket is valid and that it does not request anything that is not supported by the printer.  
   
 ## See Also  
- <xref:System.Printing>   
- <xref:System.Printing.IndexedProperties>   
- <xref:System.Printing.Interop>   
- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)   
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)   
+ <xref:System.Printing>  
+ <xref:System.Printing.IndexedProperties>  
+ <xref:System.Printing.Interop>  
+ [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)  
+ [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
  [XPS](http://www.microsoft.com/xps)

@@ -206,7 +206,7 @@
 ## Remarks  
  Enumerators only enable reading the data in the collection. You cannot use enumerators to modify the underlying collection.  
   
- To begin, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position. At this position, calling <xref:System.Collections.IEnumerator.Current%2A>raises an exception. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+ To begin, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position. At this position, calling <xref:System.Collections.IEnumerator.Current%2A> raises an exception. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
   
  <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
   
@@ -823,7 +823,7 @@
 ## Remarks  
  <xref:System.Collections.ICollection.SyncRoot%2A> returns an object, which can be used to synchronize access to the <xref:System.Collections.Generic.ICollection%601>.  
   
- Most collection classes in the <xref:System.Collections?displayProperty=fullName> namespace also implement a `Synchronized` method, which provides a synchronized wrapper around the underlying collection.  
+ Most collection classes in the <xref:System.Collections?displayProperty=nameWithType> namespace also implement a `Synchronized` method, which provides a synchronized wrapper around the underlying collection.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
   
@@ -852,7 +852,7 @@
 ## Remarks  
  For collections whose underlying store is not publicly available, the expected implementation is to return the current instance. Note that the pointer to the current instance might not be sufficient for collections that wrap other collections; those should return the underlying collection <xref:System.Collections.ICollection.SyncRoot%2A> property.  
   
- Most collection classes in the <xref:System.Collections?displayProperty=fullName> namespace also implement a `Synchronized` method, which provides a synchronized wrapper around the underlying collection. However, derived classes can provide their own synchronized version of the collection using the <xref:System.Workflow.ComponentModel.ActivityCollection.System%23Collections%23ICollection%23SyncRoot> property. The synchronizing code must perform operations on the <xref:System.Workflow.ComponentModel.ActivityCollection.System%23Collections%23ICollection%23SyncRoot> property of the collection, not directly on the collection. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the collection instance.  
+ Most collection classes in the <xref:System.Collections?displayProperty=nameWithType> namespace also implement a `Synchronized` method, which provides a synchronized wrapper around the underlying collection. However, derived classes can provide their own synchronized version of the collection using the <xref:System.Workflow.ComponentModel.ActivityCollection.System%23Collections%23ICollection%23SyncRoot> property. The synchronizing code must perform operations on the <xref:System.Workflow.ComponentModel.ActivityCollection.System%23Collections%23ICollection%23SyncRoot> property of the collection, not directly on the collection. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the collection instance.  
   
  ]]></format>
         </remarks>
@@ -1091,5 +1091,14 @@
  <see cref="T:System.Collections.IList" /> has a fixed size.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an item <see cref="T:System.Workflow.ComponentModel.Activity" /> in the <see cref="T:System.Collections.ICollection" /> by name or index.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -32,7 +32,7 @@
   <Members>
     <Member MemberName="IsSameRow">
       <MemberSignature Language="C#" Value="public int IsSameRow (int hThisRow, int hThatRow);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 IsSameRow(int32 hThisRow, int32 hThatRow) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 IsSameRow([in]int32 hThisRow, [in]int32 hThatRow) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetIdentity.IsSameRow(System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

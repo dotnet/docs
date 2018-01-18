@@ -48,6 +48,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+    <altmember cref="T:System.ComponentModel.TypeConverter" />
   </Docs>
   <Members>
     <Member MemberName="Container">
@@ -83,6 +85,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IContainer" />
       </Docs>
     </Member>
     <Member MemberName="Instance">
@@ -118,6 +121,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Component" />
       </Docs>
     </Member>
     <Member MemberName="OnComponentChanged">
@@ -160,6 +164,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.ComponentModel.ITypeDescriptorContext.OnComponentChanged" /> in a derived class, be sure to call the base class’s <see cref="M:System.ComponentModel.ITypeDescriptorContext.OnComponentChanged" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanged" />
+        <altmember cref="M:System.ComponentModel.ITypeDescriptorContext.OnComponentChanging" />
       </Docs>
     </Member>
     <Member MemberName="OnComponentChanging">
@@ -204,6 +210,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.ComponentModel.ITypeDescriptorContext.OnComponentChanging" /> in a derived class, be sure to call the base class’s <see cref="M:System.ComponentModel.ITypeDescriptorContext.OnComponentChanging" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanging" />
+        <altmember cref="M:System.ComponentModel.ITypeDescriptorContext.OnComponentChanged" />
       </Docs>
     </Member>
     <Member MemberName="PropertyDescriptor">
@@ -232,6 +240,7 @@
         <summary>Gets the <see cref="T:System.ComponentModel.PropertyDescriptor" /> that is associated with the given context item.</summary>
         <value>The <see cref="T:System.ComponentModel.PropertyDescriptor" /> that describes the given context item; otherwise, <see langword="null" /> if there is no <see cref="T:System.ComponentModel.PropertyDescriptor" /> responsible for the call.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
       </Docs>
     </Member>
   </Members>

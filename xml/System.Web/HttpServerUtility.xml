@@ -25,11 +25,12 @@
   
  The following example demonstrates how to use the <xref:System.Web.HttpServerUtility.HtmlEncode%2A> method and the <xref:System.Web.HttpServerUtility.UrlEncode%2A> method of the <xref:System.Web.HttpServerUtility> class. The <xref:System.Web.HttpServerUtility.HtmlEncode%2A> method helps ensure that any user-supplied string input will be rendered as static text in browsers instead of executable script or HTML elements. The <xref:System.Web.HttpServerUtility.UrlEncode%2A> method encodes URLs so that they are correctly transmitted in the HTTP stream.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpServerUtility1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpServerUtility1/cs/HttpServerUtilityCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpServerUtility1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpServerUtility1/vb/HttpServerUtilityVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.HttpServerUtility1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpServerUtility1/cs/HttpServerUtilityCS.aspx#1)]
+ [!code-aspx-vb[System.Web.HttpServerUtility1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpServerUtility1/vb/HttpServerUtilityVB.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.HttpContext" />
   </Docs>
   <Members>
     <Member MemberName="ClearError">
@@ -58,6 +59,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpServerUtility.GetLastError" />
       </Docs>
     </Member>
     <Member MemberName="CreateObject">
@@ -91,6 +93,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">An instance of the object could not be created.</exception>
+        <altmember cref="M:System.Web.HttpServerUtility.CreateObjectFromClsid(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateObject">
@@ -146,6 +149,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">An instance of the object could not be created.</exception>
+        <altmember cref="M:System.Web.HttpServerUtility.CreateObject(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -244,6 +248,7 @@
  \- or -  
   
  <paramref name="path" /> is not a virtual path.</exception>
+        <altmember cref="Overload:System.Web.HttpServerUtility.Transfer" />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -299,6 +304,7 @@
  \- or -  
   
  <paramref name="path" /> is not a virtual path.</exception>
+        <altmember cref="Overload:System.Web.HttpServerUtility.Transfer" />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -359,6 +365,7 @@
           <paramref name="path" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is not a virtual path.</exception>
+        <altmember cref="Overload:System.Web.HttpServerUtility.Transfer" />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -400,6 +407,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">An error occurred while executing the handler specified by <paramref name="handler" />.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="handler" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.Web.HttpServerUtility.Transfer" />
       </Docs>
     </Member>
     <Member MemberName="GetLastError">
@@ -429,6 +437,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpServerUtility.ClearError" />
       </Docs>
     </Member>
     <Member MemberName="HtmlDecode">
@@ -456,7 +465,7 @@
 ## Remarks  
  HTML encoding makes sure that text is displayed correctly in the browser and not interpreted by the browser as HTML. For example, if a text string contains a less than sign (\<) or greater than sign (>), the browser would interpret these characters as the opening or closing bracket of an HTML tag. When the characters are HTML encoded, they are converted to the strings `&lt;` and `&gt;`, which causes the browser to display the less than sign and greater than sign correctly. <xref:System.Web.HttpServerUtility.HtmlDecode%2A> decodes text that has been transmitted to the server.  
   
- This method is a convenient way to access the <xref:System.Web.HttpUtility.HtmlDecode%2A?displayProperty=fullName> method at run time from an ASP.NET application. Internally, this method uses <xref:System.Web.HttpUtility.HtmlDecode%2A?displayProperty=fullName> to decode strings.  
+ This method is a convenient way to access the <xref:System.Web.HttpUtility.HtmlDecode%2A?displayProperty=nameWithType> method at run time from an ASP.NET application. Internally, this method uses <xref:System.Web.HttpUtility.HtmlDecode%2A?displayProperty=nameWithType> to decode strings.  
   
  In the code-behind file for an ASP.NET web page, access an instance of the <xref:System.Web.HttpServerUtility> class through the `Server` property. In a class that is not in a code-behind file, use `HttpContext.Current.Server` to access an instance of the <xref:System.Web.HttpServerUtility> class.  
   
@@ -467,8 +476,8 @@
 ## Examples  
  The following example contains the function `LoadDecodedFile`, which decodes the data from a file and copies it into one string.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HttpServerUtility.HtmlDecode Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpServerUtility.HtmlDecode Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HttpServerUtility.HtmlDecode Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpServerUtility.HtmlDecode Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HttpServerUtility.HtmlDecode Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpServerUtility.HtmlDecode Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HttpServerUtility.HtmlDecode Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpServerUtility.HtmlDecode Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -502,7 +511,7 @@
   
  <xref:System.Web.HttpServerUtility.HtmlDecode%2A> decodes text that has been transmitted to the server.  
   
- <xref:System.Web.HttpServerUtility.HtmlDecode%2A> is a convenient way to access the <xref:System.Web.HttpUtility.HtmlDecode%2A?displayProperty=fullName> method at run time from an ASP.NET application. Internally, <xref:System.Web.HttpServerUtility.HtmlDecode%2A> uses <xref:System.Web.HttpUtility.HtmlDecode%2A?displayProperty=fullName> to decode strings.  
+ <xref:System.Web.HttpServerUtility.HtmlDecode%2A> is a convenient way to access the <xref:System.Web.HttpUtility.HtmlDecode%2A?displayProperty=nameWithType> method at run time from an ASP.NET application. Internally, <xref:System.Web.HttpServerUtility.HtmlDecode%2A> uses <xref:System.Web.HttpUtility.HtmlDecode%2A?displayProperty=nameWithType> to decode strings.  
   
  To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
   
@@ -543,7 +552,7 @@
 ## Remarks  
  HTML encoding makes sure that text is displayed correctly in the browser and not interpreted by the browser as HTML. For example, if a text string contains a less than sign (\<) or greater than sign (>), the browser would interpret these characters as the opening or closing bracket of an HTML tag. When the characters are HTML encoded, they are converted to the strings `&lt;` and `&gt;`, which causes the browser to display the less than sign and greater than sign correctly.  
   
- This method is a convenient way to access the <xref:System.Web.HttpUtility.HtmlEncode%2A?displayProperty=fullName> method at run time from an ASP.NET application. Internally, this method uses <xref:System.Web.HttpUtility.HtmlEncode%2A?displayProperty=fullName> to encode strings.  
+ This method is a convenient way to access the <xref:System.Web.HttpUtility.HtmlEncode%2A?displayProperty=nameWithType> method at run time from an ASP.NET application. Internally, this method uses <xref:System.Web.HttpUtility.HtmlEncode%2A?displayProperty=nameWithType> to encode strings.  
   
  In the code-behind file for an ASP.NET web page, access an instance of the <xref:System.Web.HttpServerUtility> class through the `Server` property. In a class that is not in a code-behind file, use `HttpContext.Current.Server` to access an instance of the <xref:System.Web.HttpServerUtility> class.  
   
@@ -592,7 +601,7 @@
 ## Remarks  
  HTML encoding ensures that text will be correctly displayed in the browser, not interpreted by the browser as HTML. For example, if a text string contains a less than sign (\<) or greater than sign (>), the browser would interpret these characters as an opening or closing bracket of an HTML tag. The HTML encoding of these two characters is `&lt;` and `&gt;`, respectively, which causes the browser to display the less than sign and greater than sign correctly.  
   
- <xref:System.Web.HttpServerUtility.HtmlEncode%2A> is a convenient way to access the <xref:System.Web.HttpUtility.HtmlEncode%2A?displayProperty=fullName> method at run time from an ASP.NET application. Internally, <xref:System.Web.HttpServerUtility.HtmlEncode%2A> uses <xref:System.Web.HttpUtility.HtmlEncode%2A?displayProperty=fullName> to encode strings.  
+ <xref:System.Web.HttpServerUtility.HtmlEncode%2A> is a convenient way to access the <xref:System.Web.HttpUtility.HtmlEncode%2A?displayProperty=nameWithType> method at run time from an ASP.NET application. Internally, <xref:System.Web.HttpServerUtility.HtmlEncode%2A> uses <xref:System.Web.HttpUtility.HtmlEncode%2A?displayProperty=nameWithType> to encode strings.  
   
  To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
   
@@ -691,7 +700,11 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Web.HttpException">The current <see cref="T:System.Web.HttpContext" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Web.HttpException">The current <see cref="T:System.Web.HttpContext" /> is <see langword="null" />.
+        
+-or- 
+        
+<paramref name="path" /> is a physical path, but a virtual path was expected.</exception>        
       </Docs>
     </Member>
     <Member MemberName="ScriptTimeout">
@@ -1064,7 +1077,7 @@
 ## Remarks  
  URL encoding ensures that all browsers will correctly transmit text in URL strings. Characters such as a question mark (?), ampersand (&), slash mark (/), and spaces might be truncated or corrupted by some browsers. As a result, these characters must be encoded in `<a>` tags or in query strings where the strings can be re-sent by a browser in a request string.  
   
- This method is a convenient way to access the <xref:System.Web.HttpUtility.UrlDecode%2A?displayProperty=fullName> method at run time from an ASP.NET application. Internally, this method uses <xref:System.Web.HttpUtility.UrlDecode%2A?displayProperty=fullName> to decode strings.  
+ This method is a convenient way to access the <xref:System.Web.HttpUtility.UrlDecode%2A?displayProperty=nameWithType> method at run time from an ASP.NET application. Internally, this method uses <xref:System.Web.HttpUtility.UrlDecode%2A?displayProperty=nameWithType> to decode strings.  
   
  In the code-behind file for an ASP.NET web page, access an instance of the <xref:System.Web.HttpServerUtility> class through the `Server` property. In a class that is not in a code-behind file, use `HttpContext.Current.Server` to access an instance of the <xref:System.Web.HttpServerUtility> class.  
   
@@ -1113,7 +1126,7 @@
 ## Remarks  
  URL encoding ensures that all browsers will correctly transmit text in URL strings. Characters such as a question mark (?), ampersand (&), slash mark (/), and spaces might be truncated or corrupted by some browsers. As a result, these characters must be encoded in `<a>` tags or in query strings where the strings can be re-sent by a browser in a request string.  
   
- <xref:System.Web.HttpServerUtility.UrlDecode%2A> is a convenient way to access the <xref:System.Web.HttpUtility.UrlDecode%2A?displayProperty=fullName> method at run time from an ASP.NET application. Internally, <xref:System.Web.HttpServerUtility.UrlDecode%2A> uses <xref:System.Web.HttpUtility.UrlDecode%2A?displayProperty=fullName> to decode strings.  
+ <xref:System.Web.HttpServerUtility.UrlDecode%2A> is a convenient way to access the <xref:System.Web.HttpUtility.UrlDecode%2A?displayProperty=nameWithType> method at run time from an ASP.NET application. Internally, <xref:System.Web.HttpServerUtility.UrlDecode%2A> uses <xref:System.Web.HttpUtility.UrlDecode%2A?displayProperty=nameWithType> to decode strings.  
   
  To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
   
@@ -1140,7 +1153,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.HttpServerUtility.UrlEncode%2A> is a convenient way to access the <xref:System.Web.HttpUtility.UrlEncode%2A?displayProperty=fullName> method at run time from an ASP.NET application. Internally, <xref:System.Web.HttpServerUtility.UrlEncode%2A> uses <xref:System.Web.HttpUtility.UrlEncode%2A?displayProperty=fullName> to encode strings.  
+ <xref:System.Web.HttpServerUtility.UrlEncode%2A> is a convenient way to access the <xref:System.Web.HttpUtility.UrlEncode%2A?displayProperty=nameWithType> method at run time from an ASP.NET application. Internally, <xref:System.Web.HttpServerUtility.UrlEncode%2A> uses <xref:System.Web.HttpUtility.UrlEncode%2A?displayProperty=nameWithType> to encode strings.  
   
  To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
   
@@ -1173,7 +1186,7 @@
 ## Remarks  
  URL encoding ensures that all browsers will correctly transmit text in URL strings. Characters such as a question mark (?), ampersand (&), slash mark (/), and spaces might be truncated or corrupted by some browsers. As a result, these characters must be encoded in `<a>` tags or in query strings where the strings can be re-sent by a browser in a request string.  
   
- This method is a convenient way to access the <xref:System.Web.HttpUtility.UrlEncode%2A?displayProperty=fullName> method at run time from an ASP.NET application. Internally, this method uses <xref:System.Web.HttpUtility.UrlEncode%2A?displayProperty=fullName> to encode strings.  
+ This method is a convenient way to access the <xref:System.Web.HttpUtility.UrlEncode%2A?displayProperty=nameWithType> method at run time from an ASP.NET application. Internally, this method uses <xref:System.Web.HttpUtility.UrlEncode%2A?displayProperty=nameWithType> to encode strings.  
   
  In the code-behind file for an ASP.NET web page, access an instance of the <xref:System.Web.HttpServerUtility> class through the `Server` property. In a class that is not in a code-behind file, use `HttpContext.Current.Server` to access an instance of the <xref:System.Web.HttpServerUtility> class.  
   
@@ -1222,7 +1235,7 @@
 ## Remarks  
  URL encoding ensures that all browsers will correctly transmit text in URL strings. Characters such as a question mark (?), ampersand (&), slash mark (/), and spaces might be truncated or corrupted by some browsers. As a result, these characters must be encoded in `<a>` tags or in query strings where the strings can be re-sent by a browser in a request string.  
   
- <xref:System.Web.HttpServerUtility.UrlEncode%2A> is a convenient way to access the <xref:System.Web.HttpUtility.UrlEncode%2A?displayProperty=fullName> method at run time from an ASP.NET application. Internally, <xref:System.Web.HttpServerUtility.UrlEncode%2A> uses <xref:System.Web.HttpUtility.UrlEncode%2A?displayProperty=fullName> to encode strings.  
+ <xref:System.Web.HttpServerUtility.UrlEncode%2A> is a convenient way to access the <xref:System.Web.HttpUtility.UrlEncode%2A?displayProperty=nameWithType> method at run time from an ASP.NET application. Internally, <xref:System.Web.HttpServerUtility.UrlEncode%2A> uses <xref:System.Web.HttpUtility.UrlEncode%2A?displayProperty=nameWithType> to encode strings.  
   
  To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
   
@@ -1290,6 +1303,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value of the <paramref name="input" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.Convert.FromBase64CharArray(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Web.HttpServerUtility.UrlTokenEncode(System.Byte[])" />
       </Docs>
     </Member>
     <Member MemberName="UrlTokenEncode">
@@ -1322,7 +1337,69 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value of the <paramref name="input" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.Convert.ToBase64String(System.Byte[])" />
+        <altmember cref="M:System.Web.HttpServerUtility.UrlTokenDecode(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="HtmlEncode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Encodes a string to be displayed in a browser.  
+  
+ To encode or decode values outside of a web application, use the <see cref="T:System.Net.WebUtility" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Transfer">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Terminates execution of the current page and starts execution of a new page for the current request.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Execute">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes the handler for a specified resource in the context of the current request and returns execution to the page that invoked it.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="HtmlDecode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Decodes a string that has been encoded to eliminate invalid HTML characters.  
+  
+ To encode or decode values outside of a web application, use the <see cref="T:System.Net.WebUtility" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a server instance of a COM object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UrlDecode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Decodes a string that was encoded for HTTP transmission and then sent to the server in a URL.  
+  
+ To encode or decode values outside of a web application, use the <see cref="T:System.Net.WebUtility" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

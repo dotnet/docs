@@ -245,25 +245,31 @@
   
  The following example shows how to use the <xref:System.Web.UI.ScriptManager> control to enable partial-page updates. In this example, a <xref:System.Web.UI.WebControls.Calendar> and a <xref:System.Web.UI.WebControls.DropDownList> control are inside an <xref:System.Web.UI.UpdatePanel> control. By default, the value of the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> property is <xref:System.Web.UI.UpdatePanelUpdateMode.Always>, and the value of the <xref:System.Web.UI.UpdatePanel.ChildrenAsTriggers%2A> property is `true`. Therefore, child controls of the panel cause an asynchronous postback.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.UpdatePanel#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdatePanel/CS/UpdatePanelExample1CS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.UpdatePanel#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdatePanel/VB/UpdatePanelExample1VB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.UpdatePanel#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdatePanel/CS/UpdatePanelExample1CS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.UpdatePanel#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdatePanel/VB/UpdatePanelExample1VB.aspx#1)]  
   
  **Handling Partial-Page Update Errors and Registering Script**  
   
  The following example shows how to provide custom error handling during partial-page updates. By default, when an error occurs during partial-page updates, a JavaScript message box is displayed. This example demonstrates how to use custom error handling by providing a handler for the <xref:System.Web.UI.ScriptManager.AsyncPostBackError> event, and by setting the <xref:System.Web.UI.ScriptManager.AsyncPostBackErrorMessage%2A> property in the event handler. You can also set the <xref:System.Web.UI.ScriptManager.AllowCustomErrorsRedirect%2A> property to specify how the custom errors section of the Web.config file is used when an error occurs during partial-page updates. In this example, the default value of the <xref:System.Web.UI.ScriptManager.AllowCustomErrorsRedirect%2A> property is used. This means that if the Web.config file contains a  element, that element determines how errors are displayed. For more information, see [customErrors Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/288c32e2-df1f-4548-abda-de6b4cb989a6).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptManager.OnAsyncPostBackError#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.OnAsyncPostBackError/CS/default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptManager.OnAsyncPostBackError#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.OnAsyncPostBackError/VB/default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ScriptManager.OnAsyncPostBackError#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.OnAsyncPostBackError/CS/default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.ScriptManager.OnAsyncPostBackError#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.OnAsyncPostBackError/VB/default.aspx#1)]  
   
  **Globalizing the Date and Time That Are Displayed in the Browser**  
   
  The following example shows how to set the <xref:System.Web.UI.ScriptManager.EnableScriptGlobalization%2A> property so that client script can display a culture-specific date and time in the browser. In the example, the `Culture` attribute of the  directive is set to `auto`. As a result, the first language that is specified in the current browser settings determines the culture and UI culture for the page. For more information, see [How to: Set the Culture and UI Culture for ASP.NET Web Page Globalization](http://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptManager.EnableScriptGlobalization#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.EnableScriptGlobalization/CS/default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptManager.EnableScriptGlobalization#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.EnableScriptGlobalization/VB/default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ScriptManager.EnableScriptGlobalization#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.EnableScriptGlobalization/CS/default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.ScriptManager.EnableScriptGlobalization#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.EnableScriptGlobalization/VB/default.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.ScriptManagerProxy" />
+    <altmember cref="T:System.Web.UI.UpdatePanel" />
+    <altmember cref="T:System.Web.UI.ClientScriptManager" />
+    <altmember cref="T:System.Web.UI.ScriptMode" />
+    <altmember cref="T:System.Web.UI.ScriptReference" />
+    <altmember cref="T:System.Web.UI.ServiceReference" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -473,6 +479,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.AjaxFrameworkMode" />
       </Docs>
     </Member>
     <Member MemberName="AllowCustomErrorsRedirect">
@@ -507,6 +514,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.ScriptManager.AsyncPostBackErrorMessage" />
       </Docs>
     </Member>
     <Member MemberName="AsyncPostBackError">
@@ -539,11 +547,13 @@
 ## Examples  
  The following example shows how to handle the <xref:System.Web.UI.ScriptManager.AsyncPostBackError> event to set the <xref:System.Web.UI.ScriptManager.AsyncPostBackErrorMessage%2A> property (which is sent to the client) to the server exception error message.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptManager.AsyncPostBackErrorMessage#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.AsyncPostBackErrorMessage/CS/ScriptManager_AsyncPostBackErrorMessageCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptManager.AsyncPostBackErrorMessage#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.AsyncPostBackErrorMessage/VB/ScriptManager_AsyncPostBackErrorMessageVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ScriptManager.AsyncPostBackErrorMessage#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.AsyncPostBackErrorMessage/CS/ScriptManager_AsyncPostBackErrorMessageCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.ScriptManager.AsyncPostBackErrorMessage#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.AsyncPostBackErrorMessage/VB/ScriptManager_AsyncPostBackErrorMessageVB.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ScriptManager.OnAsyncPostBackError(System.Web.UI.AsyncPostBackErrorEventArgs)" />
+        <altmember cref="P:System.Web.UI.ScriptManager.AsyncPostBackErrorMessage" />
       </Docs>
     </Member>
     <Member MemberName="AsyncPostBackErrorMessage">
@@ -580,11 +590,12 @@
 ## Examples  
  The following example shows how to handle the <xref:System.Web.UI.ScriptManager.AsyncPostBackError> event to set the <xref:System.Web.UI.ScriptManager.AsyncPostBackErrorMessage%2A> property (which is sent to the client) to the server exception error message.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptManager.AsyncPostBackErrorMessage#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.AsyncPostBackErrorMessage/CS/ScriptManager_AsyncPostBackErrorMessageCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptManager.AsyncPostBackErrorMessage#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.AsyncPostBackErrorMessage/VB/ScriptManager_AsyncPostBackErrorMessageVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ScriptManager.AsyncPostBackErrorMessage#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.AsyncPostBackErrorMessage/CS/ScriptManager_AsyncPostBackErrorMessageCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.ScriptManager.AsyncPostBackErrorMessage#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.AsyncPostBackErrorMessage/VB/ScriptManager_AsyncPostBackErrorMessageVB.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.ScriptManager.AsyncPostBackError" />
       </Docs>
     </Member>
     <Member MemberName="AsyncPostBackSourceElementID">
@@ -621,6 +632,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterAsyncPostBackControl(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="AsyncPostBackTimeout">
@@ -974,6 +986,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.ScriptManager.EnablePartialRendering" /> property is set after the page's <see cref="E:System.Web.UI.Control.Init" /> event occurs.</exception>
+        <altmember cref="T:System.Web.UI.UpdatePanel" />
+        <altmember cref="P:System.Web.UI.ScriptManager.SupportsPartialRendering" />
       </Docs>
     </Member>
     <Member MemberName="EnableScriptGlobalization">
@@ -1131,6 +1145,8 @@
         <summary>Retrieves a read-only collection of ECMAScript (JavaScript) array declarations that were previously registered with the <see cref="T:System.Web.UI.Page" /> object.</summary>
         <returns>A generic collection that contains the array declarations.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="Overload:System.Web.UI.ScriptManager.RegisterArrayDeclaration" />
+        <altmember cref="M:System.Web.UI.ClientScriptManager.RegisterArrayDeclaration(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetRegisteredClientScriptBlocks">
@@ -1157,6 +1173,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.ScriptManager.RegisterClientScriptBlock" />
       </Docs>
     </Member>
     <Member MemberName="GetRegisteredDisposeScripts">
@@ -1183,6 +1200,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterDispose(System.Web.UI.Control,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetRegisteredExpandoAttributes">
@@ -1237,6 +1255,9 @@
         <summary>Retrieves a read-only collection of hidden fields that were previously registered with the <see cref="T:System.Web.UI.Page" /> object.</summary>
         <returns>A generic collection that contains hidden fields.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.RegisteredHiddenField" />
+        <altmember cref="Overload:System.Web.UI.ScriptManager.RegisterHiddenField" />
+        <altmember cref="M:System.Web.UI.ClientScriptManager.RegisterHiddenField(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetRegisteredOnSubmitStatements">
@@ -1366,6 +1387,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.HttpContext.IsDebuggingEnabled" />
       </Docs>
     </Member>
     <Member MemberName="IsInAsyncPostBack">
@@ -1397,6 +1419,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.ScriptManager.EnablePartialRendering" />
       </Docs>
     </Member>
     <Member MemberName="IsNavigating">
@@ -1460,6 +1483,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
       </Docs>
     </Member>
     <Member MemberName="LoadScriptsBeforeUI">
@@ -1500,6 +1524,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.ScriptManager.Scripts" />
+        <altmember cref="T:System.Web.UI.ScriptReference" />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -1560,11 +1586,13 @@
 ## Examples  
  The following example shows how to handle the <xref:System.Web.UI.ScriptManager.AsyncPostBackError> event to set the <xref:System.Web.UI.ScriptManager.AsyncPostBackErrorMessage%2A> property (which is sent to the client) to the server exception error message.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptManager.AsyncPostBackErrorMessage#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.AsyncPostBackErrorMessage/CS/ScriptManager_AsyncPostBackErrorMessageCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptManager.AsyncPostBackErrorMessage#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.AsyncPostBackErrorMessage/VB/ScriptManager_AsyncPostBackErrorMessageVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ScriptManager.AsyncPostBackErrorMessage#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.AsyncPostBackErrorMessage/CS/ScriptManager_AsyncPostBackErrorMessageCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.ScriptManager.AsyncPostBackErrorMessage#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.AsyncPostBackErrorMessage/VB/ScriptManager_AsyncPostBackErrorMessageVB.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.ScriptManager.AsyncPostBackError" />
+        <altmember cref="P:System.Web.UI.ScriptManager.AsyncPostBackErrorMessage" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -1774,6 +1802,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
       </Docs>
     </Member>
     <Member MemberName="RegisterArrayDeclaration">
@@ -1816,6 +1845,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="arrayName" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterArrayDeclaration(System.Web.UI.Page,System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterArrayDeclaration">
@@ -1852,6 +1882,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="arrayName" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterArrayDeclaration(System.Web.UI.Control,System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterAsyncPostBackControl">
@@ -1887,13 +1918,13 @@
 ## Examples  
  The following example shows how to call the <xref:System.Web.UI.ScriptManager.RegisterAsyncPostBackControl%2A> method to register a <xref:System.Web.UI.WebControls.Button> control so that it causes an update of an <xref:System.Web.UI.UpdatePanel> control's content. The <xref:System.Web.UI.WebControls.Button> control is not inside the <xref:System.Web.UI.UpdatePanel> control. Two buttons are shown: `Button1` and `Button2`. `Button1` refreshes the content of the panel, and `Button2` refreshes the whole page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptManager.RegisterAsyncPostBackControl#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterAsyncPostBackControl/CS/ScriptManager1CS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptManager.RegisterAsyncPostBackControl#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterAsyncPostBackControl/VB/ScriptManager1VB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ScriptManager.RegisterAsyncPostBackControl#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterAsyncPostBackControl/CS/ScriptManager1CS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.ScriptManager.RegisterAsyncPostBackControl#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterAsyncPostBackControl/VB/ScriptManager1VB.aspx#1)]  
   
  The following example shows how to call the <xref:System.Web.UI.ScriptManager.RegisterAsyncPostBackControl%2A> method to register a user control so that it causes an update of an <xref:System.Web.UI.UpdatePanel> control's content. The first example shows a page using the user control. The second example shows the user control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptManager.RegisterAsyncPostBackControl#2](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterAsyncPostBackControl/CS/ScriptManager2CS.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptManager.RegisterAsyncPostBackControl#2](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterAsyncPostBackControl/VB/ScriptManager2VB.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ScriptManager.RegisterAsyncPostBackControl#2](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterAsyncPostBackControl/CS/ScriptManager2CS.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.ScriptManager.RegisterAsyncPostBackControl#2](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterAsyncPostBackControl/VB/ScriptManager2VB.aspx#2)]  
   
   
   
@@ -1902,6 +1933,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="control" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The registered control does not implement the <see cref="T:System.Web.UI.INamingContainer" />, <see cref="T:System.Web.UI.IPostBackDataHandler" />, or <see cref="T:System.Web.UI.IPostBackEventHandler" /> interfaces.</exception>
+        <altmember cref="P:System.Web.UI.UpdatePanel.Triggers" />
+        <altmember cref="M:System.Web.UI.UpdatePanel.Update" />
       </Docs>
     </Member>
     <Member MemberName="RegisterClientScriptBlock">
@@ -1946,8 +1979,8 @@
    
   
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptManager.RegisterClientScriptBlock#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterClientScriptBlock/CS/ScriptManager_RegisterClientScriptBlockCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptManager.RegisterClientScriptBlock#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterClientScriptBlock/vb/ScriptManager_RegisterClientScriptBlockVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ScriptManager.RegisterClientScriptBlock#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterClientScriptBlock/CS/ScriptManager_RegisterClientScriptBlockCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.ScriptManager.RegisterClientScriptBlock#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterClientScriptBlock/vb/ScriptManager_RegisterClientScriptBlockVB.aspx#1)]  
   
  [!code-xml[System.Web.UI.ScriptManager.RegisterClientScriptBlock#2](~/samples/snippets/common/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterClientScriptBlock/Common/App_Data/Contacts.xml#2)]  
   
@@ -1959,6 +1992,7 @@
   
  The control that is registering the script block is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The control that is registering the script block is not in the page's control tree.</exception>
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterClientScriptBlock(System.Web.UI.Page,System.Type,System.String,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterClientScriptBlock">
@@ -2003,6 +2037,7 @@
  \- or -  
   
  The page that is registering the script block is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterClientScriptBlock(System.Web.UI.Control,System.Type,System.String,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterClientScriptInclude">
@@ -2044,7 +2079,7 @@
    
   
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptManager.RegisterClientScriptInclude#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterClientScriptInclude/CS/ScriptManager_RegisterClientScriptIncludeCS.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ScriptManager.RegisterClientScriptInclude#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterClientScriptInclude/CS/ScriptManager_RegisterClientScriptIncludeCS.aspx#1)]  
   
  [!code-javascript[System.Web.UI.ScriptManager.RegisterClientScriptInclude#2](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterClientScriptInclude/CS/scripts/script_alertdiv.js#2)]  
   
@@ -2064,6 +2099,7 @@
  \- or -  
   
  <paramref name="url" /> is empty.</exception>
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterClientScriptInclude(System.Web.UI.Page,System.Type,System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterClientScriptInclude">
@@ -2111,6 +2147,7 @@
  \- or -  
   
  <paramref name="url" /> is empty.</exception>
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterClientScriptBlock(System.Web.UI.Control,System.Type,System.String,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterClientScriptResource">
@@ -2155,6 +2192,8 @@
   
  The control that is registering the script is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The control that is registering the script is not in the page's control tree.</exception>
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterClientScriptResource(System.Web.UI.Page,System.Type,System.String)" />
+        <altmember cref="T:System.Web.UI.WebResourceAttribute" />
       </Docs>
     </Member>
     <Member MemberName="RegisterClientScriptResource">
@@ -2194,6 +2233,8 @@
  \- or -  
   
  The page that is registering the script is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterClientScriptResource(System.Web.UI.Control,System.Type,System.String)" />
+        <altmember cref="T:System.Web.UI.WebResourceAttribute" />
       </Docs>
     </Member>
     <Member MemberName="RegisterDataItem">
@@ -2234,8 +2275,8 @@
 > [!NOTE]
 >  The data that is sent in this example is for illustration only. In a real-world application, you would use the <xref:System.Web.UI.ScriptManager.RegisterDataItem%2A> method to send custom data from the server.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptManager.RegisterDataItem#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterDataItem/CS/ScriptManagerRegisterDataItemCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptManager.RegisterDataItem#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterDataItem/VB/ScriptManagerRegisterDataItemVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ScriptManager.RegisterDataItem#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterDataItem/CS/ScriptManagerRegisterDataItemCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.ScriptManager.RegisterDataItem#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterDataItem/VB/ScriptManagerRegisterDataItemVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2244,6 +2285,7 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.UI.ScriptManager.RegisterDataItem(System.Web.UI.Control,System.String,System.Boolean)" /> method is called during a postback.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="dataItem" /> is already registered for <paramref name="control" />.</exception>
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterDataItem(System.Web.UI.Control,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterDataItem">
@@ -2289,8 +2331,8 @@
 > [!NOTE]
 >  The data that is sent in this example is for illustration only. In a real-world application, you would use the <xref:System.Web.UI.ScriptManager.RegisterDataItem%2A> method to send custom data from the server. For example, you could use the data item to send information about whether to hide or show client elements that are not inside an <xref:System.Web.UI.UpdatePanel> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptManager.RegisterDataItem#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterDataItem/CS/ScriptManagerRegisterDataItemCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptManager.RegisterDataItem#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterDataItem/VB/ScriptManagerRegisterDataItemVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ScriptManager.RegisterDataItem#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterDataItem/CS/ScriptManagerRegisterDataItemCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.ScriptManager.RegisterDataItem#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.RegisterDataItem/VB/ScriptManagerRegisterDataItemVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2299,6 +2341,7 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.UI.ScriptManager.RegisterDataItem(System.Web.UI.Control,System.String,System.Boolean)" /> method is called during a postback.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="dataItem" /> is already registered for <paramref name="control" />.</exception>
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterDataItem(System.Web.UI.Control,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterDispose">
@@ -2347,6 +2390,7 @@
  \- or -  
   
  <paramref name="control" /> is not inside an <see cref="T:System.Web.UI.UpdatePanel" /> control.</exception>
+        <altmember cref="T:System.Web.UI.IScriptControl" />
       </Docs>
     </Member>
     <Member MemberName="RegisterExpandoAttribute">
@@ -2412,6 +2456,7 @@
  \- or -  
   
  <paramref name="attributeName" /> is already registered.</exception>
+        <altmember cref="T:System.Web.UI.ClientScriptManager" />
       </Docs>
     </Member>
     <Member MemberName="RegisterExtenderControl&lt;TExtenderControl&gt;">
@@ -2503,6 +2548,7 @@
  <paramref name="hiddenFieldName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="control" /> is not in the page's control tree.</exception>
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterHiddenField(System.Web.UI.Page,System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterHiddenField">
@@ -2543,6 +2589,7 @@
  \- or -  
   
  <paramref name="hiddenFieldName" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterHiddenField(System.Web.UI.Control,System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterNamedClientScriptResource">
@@ -2639,6 +2686,7 @@
  <paramref name="type" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="control" /> is not in the page's control tree.</exception>
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterOnSubmitStatement(System.Web.UI.Page,System.Type,System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterOnSubmitStatement">
@@ -2686,6 +2734,7 @@
  \- or -  
   
  <paramref name="type" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterOnSubmitStatement(System.Web.UI.Control,System.Type,System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterPostBackControl">
@@ -2716,6 +2765,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.UpdatePanel.Triggers" />
       </Docs>
     </Member>
     <Member MemberName="RegisterScriptControl&lt;TScriptControl&gt;">
@@ -2788,6 +2838,8 @@
         <block subset="none" type="overrides">
           <para>If you derive from the <see cref="T:System.Web.UI.ExtenderControl" /> class and override the <see cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" /> method, but you do not call the base class method, you must call the <see cref="M:System.Web.UI.ScriptManager.RegisterScriptDescriptors(System.Web.UI.IExtenderControl)" /> method. This enables the <see cref="T:System.Web.UI.ScriptManager" /> control to render the instance scripts that support the client object that the control represents.</para>
         </block>
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterExtenderControl``1(``0,System.Web.UI.Control)" />
+        <altmember cref="T:System.Web.UI.ScriptDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="RegisterScriptDescriptors">
@@ -2819,6 +2871,8 @@
         <block subset="none" type="overrides">
           <para>If you derive from the <see cref="T:System.Web.UI.ScriptControl" /> class and override the <see cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" /> method, but you do not call the base class method, you must call the <see cref="M:System.Web.UI.ScriptManager.RegisterScriptDescriptors(System.Web.UI.IScriptControl)" /> method. This enables the <see cref="T:System.Web.UI.ScriptManager" /> control to render the instance scripts that support the client object that the control represents.</para>
         </block>
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterScriptControl``1(``0)" />
+        <altmember cref="T:System.Web.UI.ScriptDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="RegisterStartupScript">
@@ -2870,6 +2924,7 @@
  <paramref name="type" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="control" /> is not in the page's control tree.</exception>
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterStartupScript(System.Web.UI.Page,System.Type,System.String,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterStartupScript">
@@ -2909,6 +2964,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ScriptManager.RegisterStartupScript(System.Web.UI.Control,System.Type,System.String,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -2940,6 +2996,7 @@
         <block subset="none" type="overrides">
           <para>When overriding this method, call the base <see cref="M:System.Web.UI.ScriptManager.Render(System.Web.UI.HtmlTextWriter)" /> method so that the client script that defines the  class is rendered on the page.</para>
         </block>
+        <altmember cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="ResolveCompositeScriptReference">
@@ -3089,6 +3146,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.ScriptManager.ScriptMode" /> property is not one of the <see cref="T:System.Web.UI.ScriptMode" /> values.</exception>
+        <altmember cref="T:System.Web.UI.ScriptMode" />
       </Docs>
     </Member>
     <Member MemberName="ScriptPath">
@@ -3331,6 +3389,8 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Page.SetFocus(System.String)" />
+        <altmember cref="M:System.Web.UI.ScriptManager.SetFocus(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="SetFocus">
@@ -3361,6 +3421,8 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Page.SetFocus(System.Web.UI.Control)" />
+        <altmember cref="M:System.Web.UI.ScriptManager.SetFocus(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SupportsPartialRendering">
@@ -3412,6 +3474,8 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
  \- or -  
   
  The <see cref="P:System.Web.UI.ScriptManager.SupportsPartialRendering" /> property was set after the <see cref="E:System.Web.UI.Control.Init" /> event.</exception>
+        <altmember cref="P:System.Web.UI.ScriptManager.EnablePartialRendering" />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -3444,6 +3508,8 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
+        <altmember cref="M:System.Web.UI.ScriptManager.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -3469,6 +3535,8 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
+        <altmember cref="M:System.Web.UI.ScriptManager.RaisePostDataChangedEvent" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -3530,5 +3598,104 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
         <exception cref="T:System.NotImplementedException">A value is assigned to the <see cref="P:System.Web.UI.ScriptManager.Visible" /> property.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RegisterNamedClientScriptResource">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers client script by resource name that is embedded in an assembly with the <see cref="T:System.Web.UI.ScriptManager" /> control for use with a control that is participating in partial-page rendering.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RegisterClientScriptInclude">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers a client script file with the <see cref="T:System.Web.UI.ScriptManager" /> control for use with a control that is inside an <see cref="T:System.Web.UI.UpdatePanel" /> control, and then adds a script file reference to the page.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RegisterScriptDescriptors">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Instructs the <see cref="T:System.Web.UI.ScriptManager" /> control to  call back to the <see cref="T:System.Web.UI.ScriptControl" /> or <see cref="T:System.Web.UI.ExtenderControl" /> classes in order to return scripts that support the client object that represents a client control, component, or behavior.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RegisterDataItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends custom data to controls during partial-page rendering.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RegisterStartupScript">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers a startup script block with the <see cref="T:System.Web.UI.ScriptManager" /> control and adds the script block to the page.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RegisterClientScriptResource">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers client script that is embedded in an assembly with the <see cref="T:System.Web.UI.ScriptManager" /> control for use with a control that is participating in partial-page rendering.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RegisterClientScriptBlock">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers a client script block with the <see cref="T:System.Web.UI.ScriptManager" /> control for use with a control that is inside an <see cref="T:System.Web.UI.UpdatePanel" /> control, and then adds the script block to the page.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetFocus">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the browser focus to the specified control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RegisterHiddenField">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers a hidden field.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RegisterArrayDeclaration">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers an ECMAScript (JavaScript) array declaration with the <see cref="T:System.Web.UI.ScriptManager" /> control for use with a control that is inside an <see cref="T:System.Web.UI.UpdatePanel" /> control, and adds the array to the page.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RegisterOnSubmitStatement">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers ECMAScript (JavaScript) code that is executed when the form is submitted.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

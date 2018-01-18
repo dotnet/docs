@@ -32,6 +32,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.WebControl.Attributes" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlControl.Attributes" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,6 +62,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -93,11 +96,13 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.AttributeCollection.Add%2A> method to programmatically add an attribute to an ASP.NET server control <xref:System.Web.UI.AttributeCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic AttributeCollection.Add Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AttributeCollection.Add Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic AttributeCollection.Add Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AttributeCollection.Add Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic AttributeCollection.Add Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AttributeCollection.Add Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic AttributeCollection.Add Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AttributeCollection.Add Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlControl.Attributes" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Attributes" />
       </Docs>
     </Member>
     <Member MemberName="AddAttributes">
@@ -136,6 +141,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.RenderBeginTag(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -159,11 +165,13 @@
 ## Examples  
  The following example shows how to programmatically remove all attributes from an HTML server control's <xref:System.Web.UI.AttributeCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic AttributeCollection.Clear Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AttributeCollection.Clear Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic AttributeCollection.Clear Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AttributeCollection.Clear Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic AttributeCollection.Clear Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AttributeCollection.Clear Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic AttributeCollection.Clear Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AttributeCollection.Clear Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlControl.Attributes" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Attributes" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -192,6 +200,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlControl.Attributes" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Attributes" />
       </Docs>
     </Member>
     <Member MemberName="CssStyle">
@@ -225,6 +235,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.CssStyleCollection" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -264,6 +275,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.Equals(System.Object)" />
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -290,6 +303,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -322,11 +336,13 @@
 ## Examples  
  The following example shows how to set a dynamic HTML `onblur` attribute to run an ECMAScript (JavaScript) command when a <xref:System.Web.UI.WebControls.TextBox> Web server control loses focus.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic AttributeCollection Example 2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AttributeCollection Example 2/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic AttributeCollection Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AttributeCollection Example 2/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic AttributeCollection Example 2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AttributeCollection Example 2/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic AttributeCollection Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AttributeCollection Example 2/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlControl.Attributes" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Attributes" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -355,11 +371,13 @@
 ## Examples  
  The following example shows how to iterate through the <xref:System.Web.UI.AttributeCollection.Keys%2A> property of the <xref:System.Web.UI.AttributeCollection> object for an <xref:System.Web.UI.HtmlControls.HtmlSelect> server control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic AttributeCollection.Keys Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AttributeCollection.Keys Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic AttributeCollection.Keys Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AttributeCollection.Keys Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic AttributeCollection.Keys Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AttributeCollection.Keys Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic AttributeCollection.Keys Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AttributeCollection.Keys Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlControl.Attributes" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Attributes" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -391,11 +409,13 @@
 ## Examples  
  The following example shows how to programmatically remove an attribute from an HTML server control's <xref:System.Web.UI.AttributeCollection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic AttributeCollection.Remove Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AttributeCollection.Remove Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic AttributeCollection.Remove Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AttributeCollection.Remove Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic AttributeCollection.Remove Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AttributeCollection.Remove Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic AttributeCollection.Remove Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AttributeCollection.Remove Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlControl.Attributes" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Attributes" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -429,11 +449,14 @@
   
  The following example shows how to use the `AttribRender` custom control in a Web page. It assumes that the code file for the custom control is in the App_Code folder for the application.  
   
- <!-- TODO: review snippet reference [!code-csharp[AttributeCollection.Render_Sample1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/AttributeCollection.Render_Sample1/CS/attributecollection_rendercs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[AttributeCollection.Render_Sample1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AttributeCollection.Render_Sample1/VB/attributecollection_rendervb.aspx#2)]  -->  
+ [!code-aspx-csharp[AttributeCollection.Render_Sample1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/AttributeCollection.Render_Sample1/CS/attributecollection_rendercs.aspx#2)]
+ [!code-aspx-vb[AttributeCollection.Render_Sample1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AttributeCollection.Render_Sample1/VB/attributecollection_rendervb.aspx#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlControl.Attributes" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Attributes" />
       </Docs>
     </Member>
   </Members>

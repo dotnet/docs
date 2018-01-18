@@ -1,13 +1,9 @@
 ---
 title: "Picture is not valid"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbrID481"
@@ -15,22 +11,6 @@ ms.assetid: 6ac18c39-042b-423a-9d95-25a7745c84dd
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Picture is not valid
 You tried to assign a graphics format other than a bitmap, icon, or Windows metafile to the `Picture` property of a form or control.  

@@ -235,5 +235,23 @@
           <paramref name="outputPath" /> is an empty string.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CompileClassLibrary">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compiles an SRGS document into a DLL.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Compile">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compiles <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> objects and XML-format grammar files into binary grammar files with the .cfg extension and sends the output to a stream.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

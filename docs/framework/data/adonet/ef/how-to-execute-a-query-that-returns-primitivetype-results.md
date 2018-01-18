@@ -10,16 +10,15 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "ESQL"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 ms.assetid: 7139d585-4034-4dfa-916f-2120a8b72792
 caps.latest.revision: 4
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Execute a Query that Returns PrimitiveType Results
 This topic shows how to execute a command against a conceptual model by using an <xref:System.Data.EntityClient.EntityCommand>, and how to retrieve the <xref:System.Data.Metadata.Edm.PrimitiveType> results by using an <xref:System.Data.EntityClient.EntityDataReader>.  
@@ -46,5 +45,5 @@ This topic shows how to execute a command against a conceptual model by using an
  [!code-vb[DP EntityServices Concepts#eSQLPrimitiveTypes](../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp entityservices concepts/vb/source.vb#esqlprimitivetypes)]  
   
 ## See Also  
- [Entity SQL Reference](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)   
+ [Entity SQL Reference](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
  [EntityClient Provider for the Entity Framework](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)

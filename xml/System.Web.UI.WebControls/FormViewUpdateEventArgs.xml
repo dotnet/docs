@@ -29,11 +29,21 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs> object passed to the event-handling method for the <xref:System.Web.UI.WebControls.FormView.ItemUpdating> event to validate the values entered by the user.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewUpdateEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdateEventArgs/CS/formviewupdateeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewUpdateEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdateEventArgs/VB/formviewupdateeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewUpdateEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdateEventArgs/CS/formviewupdateeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewUpdateEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdateEventArgs/VB/formviewupdateeventargsvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.FormView" />
+    <altmember cref="T:System.Web.UI.WebControls.FormViewUpdateEventHandler" />
+    <altmember cref="T:System.ComponentModel.CancelEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdating" />
+    <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.CommandArgument" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.Keys" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.NewValues" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.OldValues" />
+    <altmember cref="M:System.Web.UI.WebControls.FormView.OnItemUpdating(System.Web.UI.WebControls.FormViewUpdateEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,6 +78,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewUpdateEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdating" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.CommandArgument" />
       </Docs>
     </Member>
     <Member MemberName="CommandArgument">
@@ -89,10 +103,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you create an Update button for one of the templates in a <xref:System.Web.UI.WebControls.FormView> control, you can optionally specify a command argument for the button by using the <xref:System.Web.UI.WebControls.IButtonControl.CommandArgument%2A?displayProperty=fullName> property. The command argument usually contains any optional information you want to accompany the update command, such as the value for the key field. The <xref:System.Web.UI.WebControls.FormViewInsertEventArgs.CommandArgument%2A> property is provided as a convenient way to determine the value of the Update button's command argument.  
+ When you create an Update button for one of the templates in a <xref:System.Web.UI.WebControls.FormView> control, you can optionally specify a command argument for the button by using the <xref:System.Web.UI.WebControls.IButtonControl.CommandArgument%2A?displayProperty=nameWithType> property. The command argument usually contains any optional information you want to accompany the update command, such as the value for the key field. The <xref:System.Web.UI.WebControls.FormViewInsertEventArgs.CommandArgument%2A> property is provided as a convenient way to determine the value of the Update button's command argument.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserting" />
+        <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CommandArgument" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertEventArgs.Values" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -119,7 +138,7 @@
 > [!NOTE]
 >  If you allow the user to update the values of the key fields, the <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.Keys%2A> property contains the original key field values. The updated values are stored in the <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.NewValues%2A> property.  
   
- The <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.Keys%2A> property returns an <xref:System.Collections.Specialized.OrderedDictionary> object that implements the <xref:System.Collections.Specialized.IOrderedDictionary?displayProperty=fullName> interface. The <xref:System.Collections.Specialized.OrderedDictionary> object contains <xref:System.Collections.DictionaryEntry?displayProperty=fullName> objects that represent the fields of the updated record. To access the field names, use the <xref:System.Collections.Specialized.OrderedDictionary.Keys%2A> property of the <xref:System.Collections.Specialized.OrderedDictionary> object. Similarly, you can access the field values by using the <xref:System.Collections.Specialized.OrderedDictionary.Values%2A> property.  
+ The <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.Keys%2A> property returns an <xref:System.Collections.Specialized.OrderedDictionary> object that implements the <xref:System.Collections.Specialized.IOrderedDictionary?displayProperty=nameWithType> interface. The <xref:System.Collections.Specialized.OrderedDictionary> object contains <xref:System.Collections.DictionaryEntry?displayProperty=nameWithType> objects that represent the fields of the updated record. To access the field names, use the <xref:System.Collections.Specialized.OrderedDictionary.Keys%2A> property of the <xref:System.Collections.Specialized.OrderedDictionary> object. Similarly, you can access the field values by using the <xref:System.Collections.Specialized.OrderedDictionary.Values%2A> property.  
   
 > [!NOTE]
 >  As a shortcut, you can also use the indexer of the <xref:System.Collections.Specialized.OrderedDictionary> object to access the field values directly. Data source controls that rely on the field order (such as <xref:System.Web.UI.WebControls.AccessDataSource>) can access field values only by index.  
@@ -129,11 +148,21 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.Keys%2A> property to access the value of the key field for the record being updated.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewUpdateEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdateEventArgs/CS/formviewupdateeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewUpdateEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdateEventArgs/VB/formviewupdateeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewUpdateEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdateEventArgs/CS/formviewupdateeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewUpdateEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdateEventArgs/VB/formviewupdateeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewUpdateEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.Specialized.OrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="P:System.Collections.Specialized.OrderedDictionary.Keys" />
+        <altmember cref="P:System.Collections.Specialized.OrderedDictionary.Values" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.NewValues" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.OldValues" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdating" />
       </Docs>
     </Member>
     <Member MemberName="NewValues">
@@ -160,7 +189,7 @@
 > [!NOTE]
 >  If you allow the user to update the values of the key fields, the <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.Keys%2A> property contains the original key field values. The updated values are stored in the <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.NewValues%2A> property.  
   
- The <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.NewValues%2A> property returns an <xref:System.Collections.Specialized.OrderedDictionary> object that implements the <xref:System.Collections.Specialized.IOrderedDictionary?displayProperty=fullName> interface. The <xref:System.Collections.Specialized.OrderedDictionary> object contains <xref:System.Collections.DictionaryEntry?displayProperty=fullName> objects that represent the fields of the updated record. To access the field names, use the <xref:System.Collections.Specialized.OrderedDictionary.Keys%2A> property of the <xref:System.Collections.Specialized.OrderedDictionary> object. Similarly, you can access the field values by using the <xref:System.Collections.Specialized.OrderedDictionary.Values%2A> property.  
+ The <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.NewValues%2A> property returns an <xref:System.Collections.Specialized.OrderedDictionary> object that implements the <xref:System.Collections.Specialized.IOrderedDictionary?displayProperty=nameWithType> interface. The <xref:System.Collections.Specialized.OrderedDictionary> object contains <xref:System.Collections.DictionaryEntry?displayProperty=nameWithType> objects that represent the fields of the updated record. To access the field names, use the <xref:System.Collections.Specialized.OrderedDictionary.Keys%2A> property of the <xref:System.Collections.Specialized.OrderedDictionary> object. Similarly, you can access the field values by using the <xref:System.Collections.Specialized.OrderedDictionary.Values%2A> property.  
   
 > [!NOTE]
 >  As a shortcut, you can also use the indexer of the <xref:System.Collections.Specialized.OrderedDictionary> object to access the field values directly. Data source controls that rely on the field order (such as <xref:System.Web.UI.WebControls.AccessDataSource>) can access field values only by index.  
@@ -170,11 +199,21 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.NewValues%2A> property to access the new values entered by the user for the non-key fields of the record being updated.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventArgs/CS/formviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventArgs/VB/formviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventArgs/CS/formviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventArgs/VB/formviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.Specialized.OrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="P:System.Collections.Specialized.OrderedDictionary.Keys" />
+        <altmember cref="P:System.Collections.Specialized.OrderedDictionary.Values" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.Keys" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.NewValues" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdating" />
       </Docs>
     </Member>
     <Member MemberName="OldValues">
@@ -201,7 +240,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.OldValues%2A> property does not contain key fields. If you allow the user to update the values of the key fields, the original key field values are stored in the <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.Keys%2A> property. The updated values are stored in the <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.NewValues%2A> property.  
   
- The <xref:System.Web.UI.WebControls.FormViewUpdatedEventArgs.NewValues%2A> property returns an <xref:System.Collections.Specialized.OrderedDictionary> object that implements the <xref:System.Collections.Specialized.IOrderedDictionary?displayProperty=fullName> interface. The <xref:System.Collections.Specialized.OrderedDictionary> object contains <xref:System.Collections.DictionaryEntry?displayProperty=fullName> objects that represent the fields of the updated record. To access the field names, use the <xref:System.Collections.Specialized.OrderedDictionary.Keys%2A> property of the <xref:System.Collections.Specialized.OrderedDictionary> object. Similarly, you can access the field values by using the <xref:System.Collections.Specialized.OrderedDictionary.Values%2A> property.  
+ The <xref:System.Web.UI.WebControls.FormViewUpdatedEventArgs.NewValues%2A> property returns an <xref:System.Collections.Specialized.OrderedDictionary> object that implements the <xref:System.Collections.Specialized.IOrderedDictionary?displayProperty=nameWithType> interface. The <xref:System.Collections.Specialized.OrderedDictionary> object contains <xref:System.Collections.DictionaryEntry?displayProperty=nameWithType> objects that represent the fields of the updated record. To access the field names, use the <xref:System.Collections.Specialized.OrderedDictionary.Keys%2A> property of the <xref:System.Collections.Specialized.OrderedDictionary> object. Similarly, you can access the field values by using the <xref:System.Collections.Specialized.OrderedDictionary.Values%2A> property.  
   
 > [!NOTE]
 >  As a shortcut, you can also use the indexer of the <xref:System.Collections.Specialized.OrderedDictionary> object to access the field values directly. Data source controls that rely on the field order (such as <xref:System.Web.UI.WebControls.AccessDataSource>) can access field values only by index.  
@@ -211,11 +250,21 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.OldValues%2A> property to access the original values of the non-key fields for the record being updated.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewUpdateEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdateEventArgs/CS/formviewupdateeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewUpdateEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdateEventArgs/VB/formviewupdateeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewUpdateEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdateEventArgs/CS/formviewupdateeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewUpdateEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdateEventArgs/VB/formviewupdateeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewUpdateEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.Specialized.OrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="P:System.Collections.Specialized.OrderedDictionary.Keys" />
+        <altmember cref="P:System.Collections.Specialized.OrderedDictionary.Values" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.Keys" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.OldValues" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdating" />
       </Docs>
     </Member>
   </Members>

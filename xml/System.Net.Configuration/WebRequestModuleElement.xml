@@ -18,7 +18,7 @@
 ## Remarks  
  Using the <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> classes, applications can request resources for any valid <xref:System.Uri>. Use this configuration element to specify a module that is registered to work with the <xref:System.Net.WebRequest.Create%2A> overloads to create new requests.  
   
- This class corresponds to the [\&lt;add\&gt; Element for webRequestModules (Network Settings)](~/docs/framework/configure-apps/file-schema/network/add-element-for-webrequestmodules-network-settings.md) configuration element.  
+ This class corresponds to the [&lt;add&gt; Element for webRequestModules (Network Settings)](~/docs/framework/configure-apps/file-schema/network/add-element-for-webrequestmodules-network-settings.md) configuration element.  
   
  This class is used to specify modules registered to authenticate requests made with the <xref:System.Net.WebRequest> and <xref:System.Net.WebClient> classes.  
   
@@ -208,5 +208,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.WebRequestModuleElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

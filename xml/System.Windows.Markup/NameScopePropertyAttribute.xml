@@ -33,7 +33,7 @@
  In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.NameScopePropertyAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
   
 ## WPF Usage Notes  
- In WPF, this attribute is applied to only a single type, <xref:System.Windows.DependencyObject>. In this case the attributed property is the service class <xref:System.Windows.NameScope> and its <xref:System.Windows.NameScope.NameScope%2A?displayProperty=fullName>attached property.  
+ In WPF, this attribute is applied to only a single type, <xref:System.Windows.DependencyObject>. In this case the attributed property is the service class <xref:System.Windows.NameScope> and its <xref:System.Windows.NameScope.NameScope%2A?displayProperty=nameWithType> attached property.  
   
  ]]></format>
     </remarks>
@@ -127,5 +127,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.NameScopePropertyAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

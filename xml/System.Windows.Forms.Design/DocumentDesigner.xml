@@ -37,6 +37,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+    <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+    <altmember cref="T:System.Windows.Forms.Design.ParentControlDesigner" />
+    <altmember cref="T:System.Windows.Forms.Design.ScrollableControlDesigner" />
+    <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+    <altmember cref="T:System.ComponentModel.Design.IRootDesigner" />
+    <altmember cref="T:System.ComponentModel.DesignerAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -162,6 +169,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Design.ToolboxItem" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -186,6 +194,7 @@
         <block subset="none" type="overrides">
           <para>The designer can access the component's site and request services from it in this method.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
       </Docs>
     </Member>
     <Member MemberName="menuEditorService">
@@ -203,6 +212,7 @@
       <Docs>
         <summary>Initializes the menuEditorService variable to <see langword="null" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Design.IMenuEditorService" />
       </Docs>
     </Member>
     <Member MemberName="OnContextMenu">
@@ -279,6 +289,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
       </Docs>
     </Member>
     <Member MemberName="SelectionRules">
@@ -304,6 +315,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.SelectionRules" />
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.IRootDesigner.GetView">
@@ -444,11 +456,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Design.ToolboxItem" />
       </Docs>
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.DocumentDesigner.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

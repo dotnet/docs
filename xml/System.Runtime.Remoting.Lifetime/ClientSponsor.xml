@@ -62,7 +62,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default time by which the lifetime of a sponsored object is increased when renewal is requested to 2 minutes. For more information on the renewal time, see the <xref:System.Runtime.Remoting.Lifetime.LifetimeServices.RenewOnCallTime%2A?displayProperty=fullName> property.  
+ The default time by which the lifetime of a sponsored object is increased when renewal is requested to 2 minutes. For more information on the renewal time, see the <xref:System.Runtime.Remoting.Lifetime.LifetimeServices.RenewOnCallTime%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -155,7 +155,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see <xref:System.MarshalByRefObject.InitializeLifetimeService%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.MarshalByRefObject.InitializeLifetimeService%2A?displayProperty=nameWithType>.  
   
    
   
@@ -166,6 +166,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.MarshalByRefObject.InitializeLifetimeService" />
       </Docs>
     </Member>
     <Member MemberName="Register">
@@ -297,5 +298,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Lifetime.ClientSponsor" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

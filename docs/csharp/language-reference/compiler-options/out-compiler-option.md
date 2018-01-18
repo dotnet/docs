@@ -1,14 +1,12 @@
 ---
 title: "-out (C# Compiler Options)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
 f1_keywords: 
   - "/out"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/out compiler option [C#]"
   - "out compiler option [C#]"
@@ -17,20 +15,6 @@ ms.assetid: 70d91d01-7bd2-4aea-ba8b-4e9807e9caa5
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /out (C# Compiler Options)
 The **/out** option specifies the name of the output file.  
@@ -60,9 +44,9 @@ The **/out** option specifies the name of the output file.
   
  When producing multiple output files in a command-line compilation, keep in mind that only one of the output files can be an assembly and that only the first output file specified (implicitly or explicitly with **/out**) can be the assembly.  
   
- Any modules produced as part of a compilation become files associated with any assembly also produced in the compilation. Use [ildasm.exe](https://msdn.microsoft.com/library/f7dy01k1) to view the assembly manifest to see the associated files.  
+ Any modules produced as part of a compilation become files associated with any assembly also produced in the compilation. Use [ildasm.exe](../../../framework/tools/ildasm-exe-il-disassembler.md) to view the assembly manifest to see the associated files.  
   
- The /out compiler option is required in order for an exe to be the target of a friend assembly. For more information see [Friend Assemblies](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055).  
+ The /out compiler option is required in order for an exe to be the target of a friend assembly. For more information see [Friend Assemblies](../../programming-guide/concepts/assemblies-gac/friend-assemblies.md).  
   
 ### To set this compiler option in the Visual Studio development environment  
   
@@ -82,6 +66,6 @@ csc t.cs /out:mymodule.netmodule /target:module t2.cs
 ```  
   
 ## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [Friend Assemblies](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055)   
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+ [Friend Assemblies](../../programming-guide/concepts/assemblies-gac/friend-assemblies.md)  
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

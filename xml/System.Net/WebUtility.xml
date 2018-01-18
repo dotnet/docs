@@ -28,10 +28,14 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.HttpUtility> class contains encoding and decoding utility methods for use with HTML-encode strings. The <xref:System.Uri?displayProperty=fullName> class also contains methods and properties that can be used for similar purposes.  
+ The <xref:System.Web.HttpUtility> class contains encoding and decoding utility methods for use with HTML-encode strings. The <xref:System.Uri?displayProperty=nameWithType> class also contains methods and properties that can be used for similar purposes.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Uri" />
+    <altmember cref="T:System.Web.HttpUtility" />
+    <altmember cref="T:System.Web.HttpServerUtility" />
+    <altmember cref="P:System.Web.HttpContext.Server" />
   </Docs>
   <Members>
     <Member MemberName="HtmlDecode">
@@ -75,6 +79,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.WebUtility.HtmlEncode(System.String)" />
+        <altmember cref="M:System.Web.HttpUtility.HtmlEncode(System.String)" />
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="HtmlDecode">
@@ -115,6 +122,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="output" /> parameter cannot be <see langword="null" /> if the <paramref name="value" /> parameter is not <see langword="null" />.</exception>
+        <altmember cref="M:System.Net.WebUtility.HtmlEncode(System.String,System.IO.TextWriter)" />
+        <altmember cref="M:System.Web.HttpUtility.HtmlEncode(System.String,System.IO.TextWriter)" />
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="HtmlEncode">
@@ -158,6 +168,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.WebUtility.HtmlDecode(System.String)" />
+        <altmember cref="M:System.Web.HttpUtility.HtmlDecode(System.String)" />
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="HtmlEncode">
@@ -198,6 +211,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="output" /> parameter cannot be <see langword="null" /> if the <paramref name="value" /> parameter is not <see langword="null" />.</exception>
+        <altmember cref="M:System.Net.WebUtility.HtmlDecode(System.String,System.IO.TextWriter)" />
+        <altmember cref="M:System.Web.HttpUtility.HtmlDecode(System.String,System.IO.TextWriter)" />
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="UrlDecode">
@@ -335,13 +351,13 @@
   
  URL encoding replaces all character codes except for letters, numbers, and the following punctuation characters:  
   
--   `-` (minus sign`)`  
+-   `-` (minus sign)  
   
--   `_` (underscore`)`  
+-   `_` (underscore)  
   
--   `.` (period`)`  
+-   `.` (period)  
   
--   `!` (exclamation point`)`  
+-   `!` (exclamation point)  
   
 -   \* (asterisk)  
   
@@ -422,5 +438,29 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="HtmlDecode">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a string that has been HTML-encoded for HTTP transmission into a decoded string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="HtmlEncode">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a string to an HTML-encoded string.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

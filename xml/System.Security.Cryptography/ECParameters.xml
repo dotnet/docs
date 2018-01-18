@@ -23,6 +23,10 @@
   <Docs>
     <summary>Represents the standard parameters for the elliptic curve cryptography (ECC) algorithm.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Security.Cryptography.ECDiffieHellman" />
+    <altmember cref="T:System.Security.Cryptography.ECDiffieHellmanCng" />
+    <altmember cref="T:System.Security.Cryptography.ECDsa" />
+    <altmember cref="T:System.Security.Cryptography.ECDsaCng" />
   </Docs>
   <Members>
     <Member MemberName="Curve">

@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class corresponds to the `address` attribute of the [\&lt;add\&gt; Element for bypasslist (Network Settings)](~/docs/framework/configure-apps/file-schema/network/add-element-for-bypasslist-network-settings.md) configuration element.  
+ This class corresponds to the `address` attribute of the [&lt;add&gt; Element for bypasslist (Network Settings)](~/docs/framework/configure-apps/file-schema/network/add-element-for-bypasslist-network-settings.md) configuration element.  
   
  This class is used to specify when a proxy server should not be used to handle requests made with the <xref:System.Net.WebRequest> and <xref:System.Net.WebClient> classes. A resource in the bypass list is retrieved directly from the server where it resides.  
   
@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Net.WebProxy.BypassList" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,6 +40,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.BypassElement" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Net.WebProxy.BypassList" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -64,6 +66,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.WebProxy.BypassList" />
       </Docs>
     </Member>
     <Member MemberName="Address">
@@ -94,6 +97,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.WebProxy.BypassList" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -114,5 +118,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.BypassElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

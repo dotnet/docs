@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Services.ChunkedCookieHandler" />
+    <altmember cref="P:System.IdentityModel.Services.CookieHandlerElement.ChunkedCookieHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,10 +68,11 @@
 ## Remarks  
  You must be careful when adjusting the chunk size. Web browsers have different limits on the size of cookies and the number of cookies allowable in total and per domain. For example, the original Netscape specification specified these limits: 300 cookies total, 4096 bytes per cookie header (including metadata, not just the cookie value), and 20 cookies per domain. For more information, see <xref:System.IdentityModel.Services.ChunkedCookieHandler>.  
   
- Represents the `chunkSize` attribute of the [\&lt;chunkedCookieHandler\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/chunkedcookiehandler.md) element.  
+ Represents the `chunkSize` attribute of the [&lt;chunkedCookieHandler&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/chunkedcookiehandler.md) element.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IdentityModel.Services.ChunkedCookieHandler" />
       </Docs>
     </Member>
   </Members>

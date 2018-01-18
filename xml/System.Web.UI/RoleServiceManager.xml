@@ -48,6 +48,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.ScriptingRoleServiceSection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -96,7 +97,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Web.UI.RoleServiceManager.LoadRoles%2A> property is set to `true`, the list of roles is retrieved by the <xref:System.Web.UI.RoleServiceManager> class by using the <xref:System.Web.Security.Roles.GetRolesForUser%2A?displayProperty=fullName> method. The list is then serialized into the page markup.  
+ If the <xref:System.Web.UI.RoleServiceManager.LoadRoles%2A> property is set to `true`, the list of roles is retrieved by the <xref:System.Web.UI.RoleServiceManager> class by using the <xref:System.Web.Security.Roles.GetRolesForUser%2A?displayProperty=nameWithType> method. The list is then serialized into the page markup.  
   
 > [!NOTE]
 >  When <xref:System.Web.UI.RoleServiceManager.LoadRoles%2A> is `true`, all the roles that the current authenticated user belongs to are sent to the browser. Because users can potentially see the role information, this can be a security issue.  
@@ -105,6 +106,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ScriptManager" />
+        <altmember cref="T:System.Web.UI.ScriptManagerProxy" />
+        <altmember cref="M:System.Web.Security.Roles.GetRolesForUser" />
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -140,7 +144,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Web.UI.RoleServiceManager.Path%2A> property is not set, the return value is <xref:System.String?displayProperty=fullName>. In that case, ASP.NET uses the built-in authentication Web service that corresponds to the following internal default path: ~/RolesService.svc. The same behavior occurs if you set <xref:System.Web.UI.RoleServiceManager.Path%2A> to an empty string or to `null`.  
+ If the <xref:System.Web.UI.RoleServiceManager.Path%2A> property is not set, the return value is <xref:System.String.Empty?displayProperty=nameWithType>. In that case, ASP.NET uses the built-in authentication Web service that corresponds to the following internal default path: ~/RolesService.svc. The same behavior occurs if you set <xref:System.Web.UI.RoleServiceManager.Path%2A> to an empty string or to `null`.  
   
  <xref:System.Web.UI.RoleServiceManager.Path%2A> can be specified in the <xref:System.Web.UI.ScriptManager> control or in an associated <xref:System.Web.UI.ScriptManagerProxy> control. When <xref:System.Web.UI.RoleServiceManager.Path%2A> is set at the <xref:System.Web.UI.ScriptManagerProxy> level, the following conditions are true:  
   

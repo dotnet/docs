@@ -20,9 +20,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Printing.PrinterSettings.PaperSizeCollection> contains <xref:System.Drawing.Printing.PaperSize> instances that represents the paper sizes through the <xref:System.Drawing.Printing.PaperSize.Kind%2A?displayProperty=fullName> property, which contains one of the <xref:System.Drawing.Printing.PaperKind> values.  
+ The <xref:System.Drawing.Printing.PrinterSettings.PaperSizeCollection> contains <xref:System.Drawing.Printing.PaperSize> instances that represents the paper sizes through the <xref:System.Drawing.Printing.PaperSize.Kind%2A?displayProperty=nameWithType> property, which contains one of the <xref:System.Drawing.Printing.PaperKind> values.  
   
- Typically, you set a page's paper size through the <xref:System.Drawing.Printing.PageSettings.PaperSize%2A?displayProperty=fullName> property to a valid <xref:System.Drawing.Printing.PaperSize> instance available through the <xref:System.Drawing.Printing.PrinterSettings.PaperSizes%2A> collection.  
+ Typically, you set a page's paper size through the <xref:System.Drawing.Printing.PageSettings.PaperSize%2A?displayProperty=nameWithType> property to a valid <xref:System.Drawing.Printing.PaperSize> instance available through the <xref:System.Drawing.Printing.PrinterSettings.PaperSizes%2A> collection.  
   
  See the <xref:System.Drawing.Printing.PaperSize.%23ctor%2A> constructor to find out how you can specify a custom paper size.  
   
@@ -37,6 +37,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Printing.PaperSize" />
+    <altmember cref="P:System.Drawing.Printing.PrinterSettings.PaperSizes" />
+    <altmember cref="P:System.Drawing.Printing.PrinterSettings.InstalledPrinters" />
+    <altmember cref="P:System.Drawing.Printing.PrinterSettings.PaperSources" />
+    <altmember cref="P:System.Drawing.Printing.PrinterSettings.PrinterResolutions" />
+    <altmember cref="P:System.Windows.Forms.ListControl.DisplayMember" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,6 +61,7 @@
         <param name="array">An array of type <see cref="T:System.Drawing.Printing.PaperSize" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PrinterSettings.PaperSizeCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Printing.PaperSize" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -164,6 +171,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -197,6 +205,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PaperSize" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">

@@ -1200,11 +1200,31 @@
 ## Remarks  
  Because it is asynchronous, this method returns immediately, but the connection process is completed when the client calls <xref:System.IO.Pipes.NamedPipeClientStream.Connect%2A> or <xref:System.IO.Pipes.NamedPipeClientStream.ConnectAsync%2A>.  
   
- Cancellation requests using the cancellation token will only work if   the <xref:System.IO.Pipes.NamedPipeServerStream> object was created with a pipe option value of <xref:System.IO.Pipes.PipeOptions?displayProperty=fullName> or if the cancellation occurs before the <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnectionAsync%2A> method is called.  
+ Cancellation requests using the cancellation token will only work if   the <xref:System.IO.Pipes.NamedPipeServerStream> object was created with a pipe option value of <xref:System.IO.Pipes.PipeOptions.Asynchronous?displayProperty=nameWithType> or if the cancellation occurs before the <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnectionAsync%2A> method is called.  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WaitForConnectionAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously waits for a client to connect to this <see cref="T:System.IO.Pipes.NamedPipeServerStream" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.NamedPipeServerStream" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

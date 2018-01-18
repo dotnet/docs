@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataError"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataError interface [.NET Framework metadata]"
 ms.assetid: 0020b62c-ea88-40c7-a9ee-16b064f81624
@@ -28,6 +26,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataError Interface
 Provides a callback mechanism for reporting errors during the metadata merge.  

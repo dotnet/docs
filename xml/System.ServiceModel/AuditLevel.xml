@@ -22,7 +22,7 @@
   
  For more information about auditing, see [Auditing](~/docs/framework/wcf/feature-details/auditing-security-events.md).  
   
- You can also specify audit behavior using the [\&lt;serviceSecurityAudit\&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md) binding.  
+ You can also specify audit behavior using the [&lt;serviceSecurityAudit&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md) binding.  
   
    
   
@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ServiceModel.Description.ServiceSecurityAuditBehavior" />
   </Docs>
   <Members>
     <Member MemberName="Failure">

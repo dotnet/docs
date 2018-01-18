@@ -9,16 +9,13 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "ESQL"
 ms.assetid: 818a505b-a196-41dd-aaac-2ccd5f7a2f1a
 caps.latest.revision: 3
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Type System (Entity SQL)
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] supports a number of types:  
@@ -60,7 +57,7 @@ from (select ref(o) as r from LOB.Orders as o) as o2
  If the reference value is null, or if the target of the reference does not exist, the result is null.  
   
 ## See Also  
- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)   
- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)   
- [CAST](../../../../../../docs/framework/data/adonet/ef/language-reference/cast-entity-sql.md)   
+ [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)  
+ [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
+ [CAST](../../../../../../docs/framework/data/adonet/ef/language-reference/cast-entity-sql.md)  
  [CSDL, SSDL, and MSL Specifications](../../../../../../docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md)

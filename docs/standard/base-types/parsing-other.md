@@ -8,6 +8,10 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "Char data type, parsing strings"
   - "enumerations [.NET Framework], parsing strings"
@@ -19,6 +23,9 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Parsing Other Strings in .NET
 In addition to numeric and <xref:System.DateTime> strings, you can also parse strings that represent the types <xref:System.Char>, <xref:System.Boolean>, and <xref:System.Enum> into data types.  
@@ -49,6 +56,6 @@ In addition to numeric and <xref:System.DateTime> strings, you can also parse st
  [!code-vb[Conceptual.String.Parse#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.parse/vb/parse.vb#4)]  
   
 ## See Also  
- [Parsing Strings](../../../docs/standard/base-types/parsing-strings.md)   
- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)   
+ [Parsing Strings](../../../docs/standard/base-types/parsing-strings.md)  
+ [Formatting Types](../../../docs/standard/base-types/formatting-types.md)  
  [Type Conversion in the .NET](../../../docs/standard/base-types/type-conversion.md)

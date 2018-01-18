@@ -101,7 +101,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Threading.WaitHandle.Handle%2A?displayProperty=fullName> property to get the handle of any managed synchronization event that derives from the <xref:System.Threading.WaitHandle> class.  
+ Use the <xref:System.Threading.WaitHandle.Handle%2A?displayProperty=nameWithType> property to get the handle of any managed synchronization event that derives from the <xref:System.Threading.WaitHandle> class.  
   
  Your implementation of <xref:System.IAsyncResult> provides status information on the I/O operation. Pass it to the constructor in the `ar` parameter, and retrieve it later with the <xref:System.Threading.Overlapped.AsyncResult%2A> property. If a callback method is specified for the <xref:System.Threading.Overlapped.Pack%2A> or <xref:System.Threading.Overlapped.UnsafePack%2A> method, the callback can retrieve your <xref:System.IAsyncResult> by unpacking the <xref:System.Threading.NativeOverlapped> structure it receives.  
   
@@ -143,7 +143,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To get the handle of a managed synchronization object that derives from the <xref:System.Threading.WaitHandle> class, use the <xref:System.Threading.WaitHandle.SafeWaitHandle%2A?displayProperty=fullName> property to get a <xref:Microsoft.Win32.SafeHandles.SafeWaitHandle> object, and then call the <xref:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle%2A> method.  
+ To get the handle of a managed synchronization object that derives from the <xref:System.Threading.WaitHandle> class, use the <xref:System.Threading.WaitHandle.SafeWaitHandle%2A?displayProperty=nameWithType> property to get a <xref:Microsoft.Win32.SafeHandles.SafeWaitHandle> object, and then call the <xref:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle%2A> method.  
   
  Your implementation of <xref:System.IAsyncResult> provides status information on the I/O operation. Pass it to the constructor in the `ar` parameter, and retrieve it later with the <xref:System.Threading.Overlapped.AsyncResult%2A> property. If a callback method is specified for the <xref:System.Threading.Overlapped.Pack%2A> or <xref:System.Threading.Overlapped.UnsafePack%2A> method, the callback can retrieve your <xref:System.IAsyncResult> by unpacking the <xref:System.Threading.NativeOverlapped> structure it receives.  
   
@@ -213,7 +213,7 @@
 ## Remarks  
  This property cannot be used on 64-bit platforms. Use the <xref:System.Threading.Overlapped.EventHandleIntPtr%2A> property instead.  
   
- Use the <xref:System.Threading.WaitHandle.Handle%2A?displayProperty=fullName> property to get the handle of any managed synchronization event that derives from the <xref:System.Threading.WaitHandle> class.  
+ Use the <xref:System.Threading.WaitHandle.Handle%2A?displayProperty=nameWithType> property to get the handle of any managed synchronization event that derives from the <xref:System.Threading.WaitHandle> class.  
   
  ]]></format>
         </remarks>
@@ -252,7 +252,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To get the handle of a managed synchronization object that derives from the <xref:System.Threading.WaitHandle> class, use the <xref:System.Threading.WaitHandle.SafeWaitHandle%2A?displayProperty=fullName> property to get a <xref:Microsoft.Win32.SafeHandles.SafeWaitHandle> object, and then call the <xref:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle%2A> method.  
+ To get the handle of a managed synchronization object that derives from the <xref:System.Threading.WaitHandle> class, use the <xref:System.Threading.WaitHandle.SafeWaitHandle%2A?displayProperty=nameWithType> property to get a <xref:Microsoft.Win32.SafeHandles.SafeWaitHandle> object, and then call the <xref:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle%2A> method.  
   
  ]]></format>
         </remarks>
@@ -620,5 +620,35 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="UnsafePack">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Packs the current instance into a <see cref="T:System.Threading.NativeOverlapped" /> structure. Does not propagate the calling stack.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.Overlapped" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Pack">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Packs the current instance into a <see cref="T:System.Threading.NativeOverlapped" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

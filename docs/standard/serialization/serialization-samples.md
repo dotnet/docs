@@ -9,9 +9,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 6a56f66d-c80a-43e9-8e50-fb9b61120222
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Serialization Samples for the .NET Framework
 This section demonstrates serializing objects in the .NET Framework.  

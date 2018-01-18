@@ -20,7 +20,7 @@ public class Form1 : Form
     BindingSource customersBindingSource = new BindingSource();
 
     // This is the TextBox control that displays the CompanyName
-    // field from the the DataSet.
+    // field from the DataSet.
     TextBox companyNameTextBox = new TextBox();
 
     public Form1()

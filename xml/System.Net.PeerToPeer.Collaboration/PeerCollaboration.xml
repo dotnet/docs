@@ -68,6 +68,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Net.PeerToPeer.Collaboration.PeerCollaboration.GetLocalRegisteredApplications" />
+        <altmember cref="E:System.Net.PeerToPeer.Collaboration.PeerCollaboration.LocalApplicationChanged" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerScope" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.RegisterApplication(System.Net.PeerToPeer.Collaboration.PeerApplication,System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType)" />
       </Docs>
     </Member>
     <Member MemberName="ContactManager">
@@ -92,6 +96,8 @@
         <value>
           <see cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" /> object that contains all peer contact objects for remote peers. The default value for this property is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />
       </Docs>
     </Member>
     <Member MemberName="DeleteObject">
@@ -129,6 +135,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="peerObject" /> parameter cannot be <see langword="null" />.</exception>
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">Unable to complete <see cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.DeleteObject(System.Net.PeerToPeer.Collaboration.PeerObject)" /> operation.</exception>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.RegisterApplication(System.Net.PeerToPeer.Collaboration.PeerApplication,System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.UnregisterApplication(System.Net.PeerToPeer.Collaboration.PeerApplication,System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="GetLocalRegisteredApplications">
@@ -155,6 +163,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Net.PeerToPeer.Collaboration.PeerContact.GetApplications" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.GetPeersNearMe" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType" />
       </Docs>
     </MemberGroup>
     <Member MemberName="GetLocalRegisteredApplications">
@@ -184,6 +195,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">An invalid value was returned when this method attempted to enumerate the application registered to this peer. Please make sure that all applications have valid registry values.</exception>
+        <altmember cref="Overload:System.Net.PeerToPeer.Collaboration.PeerContact.GetApplications" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.GetPeersNearMe" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType" />
       </Docs>
     </Member>
     <Member MemberName="GetLocalRegisteredApplications">
@@ -223,6 +237,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="type" /> parameter is not set to a known value in the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType" /> enumeration.</exception>
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">An invalid value was returned when this method attempted to enumerate the application registered to this peer. Please make sure that all applications have valid registry values.</exception>
+        <altmember cref="Overload:System.Net.PeerToPeer.Collaboration.PeerContact.GetApplications" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.GetPeersNearMe" />
       </Docs>
     </Member>
     <Member MemberName="GetLocalSetObjects">
@@ -257,6 +273,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">An invalid value was returned when this method attempted to enumerate all available <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instances.</exception>
+        <altmember cref="Overload:System.Net.PeerToPeer.Collaboration.PeerCollaboration.GetLocalRegisteredApplications" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SetObject(System.Net.PeerToPeer.Collaboration.PeerObject)" />
       </Docs>
     </Member>
     <Member MemberName="GetPeersNearMe">
@@ -326,6 +344,7 @@
       <Docs>
         <summary>Raised when a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> in the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplicationCollection" /> for the local peer on the local host has changed.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerApplication.OnApplicationChanged(System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="LocalEndPointName">
@@ -361,6 +380,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">Unable to set <see cref="P:System.Net.PeerToPeer.Collaboration.PeerCollaboration.LocalEndPointName" />.</exception>
+        <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.IsUnrestricted" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerScope" />
+        <altmember cref="T:System.Net.PeerToPeer.PnrpPermission" />
       </Docs>
     </Member>
     <Member MemberName="LocalNameChanged">
@@ -386,6 +409,8 @@
       <Docs>
         <summary>Raised when the name of the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> on the local host for the local peer has changed.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Net.PeerToPeer.Collaboration.PeerEndPoint.NameChanged" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerEndPoint.OnNameChanged(System.Net.PeerToPeer.Collaboration.NameChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="LocalObjectChanged">
@@ -411,6 +436,8 @@
       <Docs>
         <summary>A <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> in the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObjectCollection" /> for the local peer on the local host has changed.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Net.PeerToPeer.Collaboration.PeerObject.ObjectChanged" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerObject.OnObjectChanged(System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="LocalPresenceChanged">
@@ -436,6 +463,8 @@
       <Docs>
         <summary>The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerPresenceInfo" /> of the local peer on the local host has changed.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.OnPresenceChanged(System.Net.PeerToPeer.Collaboration.PresenceChangedEventArgs)" />
+        <altmember cref="E:System.Net.PeerToPeer.Collaboration.PeerContact.PresenceChanged" />
       </Docs>
     </Member>
     <Member MemberName="LocalPresenceInfo">
@@ -474,6 +503,9 @@
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">-   <see cref="T:System.Net.PeerToPeer.Collaboration.PeerPresenceStatus" /> is offline  
   
 -   Unable to set  <see cref="T:System.Net.PeerToPeer.Collaboration.PeerPresenceInfo" /></exception>
+        <altmember cref="E:System.Net.PeerToPeer.Collaboration.PeerCollaboration.LocalPresenceChanged" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.OnPresenceChanged(System.Net.PeerToPeer.Collaboration.PresenceChangedEventArgs)" />
+        <altmember cref="E:System.Net.PeerToPeer.Collaboration.ContactManager.PresenceChanged" />
       </Docs>
     </Member>
     <Member MemberName="RegisterApplication">
@@ -566,6 +598,9 @@
   
 -   <see cref="P:System.Net.PeerToPeer.Collaboration.PeerObject.Id" /> cannot be <see langword="null." /></exception>
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">The <see cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SetObject(System.Net.PeerToPeer.Collaboration.PeerObject)" /> operation could not be completed.</exception>
+        <altmember cref="Overload:System.Net.PeerToPeer.Collaboration.PeerCollaboration.GetLocalRegisteredApplications" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.GetLocalSetObjects" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.GetPeersNearMe" />
       </Docs>
     </Member>
     <Member MemberName="SignIn">
@@ -614,6 +649,9 @@
           <paramref name="peerScope" /> is set to <see cref="F:System.Net.PeerToPeer.Collaboration.PeerScope.None" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="peerScope" /> parameter contains an invalid enumeration value.</exception>
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">The <see cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignIn(System.Net.PeerToPeer.Collaboration.PeerScope)" /> operation could not be completed.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerScope" />
+        <altmember cref="P:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignInScope" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignOut(System.Net.PeerToPeer.Collaboration.PeerScope)" />
       </Docs>
     </Member>
     <Member MemberName="SignInScope">
@@ -647,6 +685,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerPresenceStatus" />
+        <altmember cref="T:System.Net.PeerToPeer.PnrpScope" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignIn(System.Net.PeerToPeer.Collaboration.PeerScope)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignOut(System.Net.PeerToPeer.Collaboration.PeerScope)" />
       </Docs>
     </Member>
     <Member MemberName="SignOut">
@@ -686,6 +728,9 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="peerScope" /> parameter contains an invalid enumeration value.</exception>
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">The <see cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignOut(System.Net.PeerToPeer.Collaboration.PeerScope)" /> operation could not be completed.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerScope" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignIn(System.Net.PeerToPeer.Collaboration.PeerScope)" />
+        <altmember cref="P:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignInScope" />
       </Docs>
     </Member>
     <Member MemberName="SynchronizingObject">
@@ -717,6 +762,9 @@
   
  The default value for this property is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Net.PeerToPeer.Collaboration.PeerCollaboration.LocalObjectChanged" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />
       </Docs>
     </Member>
     <Member MemberName="UnregisterApplication">
@@ -758,6 +806,8 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="application" /> or <paramref name="type" /> parameter is set to <see langword="null." /></exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="type" /> parameter is not set to a known value in <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType" />.</exception>
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">The  <see cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.UnregisterApplication(System.Net.PeerToPeer.Collaboration.PeerApplication,System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType)" /> operation could not be completed.</exception>
+        <altmember cref="Overload:System.Net.PeerToPeer.Collaboration.PeerCollaboration.GetLocalRegisteredApplications" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.RegisterApplication(System.Net.PeerToPeer.Collaboration.PeerApplication,System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType)" />
       </Docs>
     </Member>
   </Members>

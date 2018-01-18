@@ -22,6 +22,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.PathGeometry" />
+    <altmember cref="T:System.Windows.Media.Animation.DoubleAnimationUsingPath" />
+    <altmember cref="T:System.Windows.Media.Animation.MatrixAnimationUsingPath" />
+    <altmember cref="T:System.Windows.Media.Animation.PointAnimation" />
+    <altmember cref="T:System.Windows.Media.Animation.PointAnimationUsingKeyFrames" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,7 +73,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -91,6 +96,7 @@
         <summary>Creates a new instance of the <see cref="T:System.Windows.Media.Animation.PointAnimationUsingPath" />.</summary>
         <returns>The new instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.CreateInstanceCore" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentValueCore">
@@ -126,6 +132,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Animation.PointAnimationBase.GetCurrentValueCore(System.Windows.Point,System.Windows.Point,System.Windows.Media.Animation.AnimationClock)" />
       </Docs>
     </Member>
     <Member MemberName="IsAdditive">
@@ -197,6 +204,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.RepeatBehavior" />
       </Docs>
     </Member>
     <Member MemberName="OnChanged">
@@ -218,6 +226,7 @@
         <block subset="none" type="overrides">
           <para>See <see cref="M:System.Windows.Freezable.OnChanged" /> for information about overriding this method.</para>
         </block>
+        <altmember cref="M:System.Windows.Freezable.OnChanged" />
       </Docs>
     </Member>
     <Member MemberName="PathGeometry">
@@ -251,6 +260,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.PathGeometry" />
       </Docs>
     </Member>
     <Member MemberName="PathGeometryProperty">

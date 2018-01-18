@@ -17,12 +17,14 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use the <xref:System.Web.Services.Discovery.DiscoveryDocument.References%2A?displayProperty=fullName> property to add a discoverable file type to a Web services document. While a discovery document is usually serialized as a file using a .disco extension, you can add multiple files to the <xref:System.Web.Services.Discovery.DiscoveryDocument.References%2A> property, and those files can have other extensions, represented by implementations of <xref:System.Web.Services.Discovery.DiscoverySearchPattern> .  
+ You can use the <xref:System.Web.Services.Discovery.DiscoveryDocument.References%2A?displayProperty=nameWithType> property to add a discoverable file type to a Web services document. While a discovery document is usually serialized as a file using a .disco extension, you can add multiple files to the <xref:System.Web.Services.Discovery.DiscoveryDocument.References%2A> property, and those files can have other extensions, represented by implementations of <xref:System.Web.Services.Discovery.DiscoverySearchPattern> .  
   
  The <xref:System.Web.Services.Discovery.DiscoverySearchPattern> class and its concrete derived classes are employed by the <xref:System.Web.Services.Discovery.DiscoveryRequestHandler> class's <xref:System.Web.Services.Discovery.DiscoveryRequestHandler.ProcessRequest%2A> method, which handles an HTTP request for a discovery document. Normally, none of these classes need to be used directly by a developer.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Services.Discovery.DiscoveryRequestHandler" />
+    <altmember cref="M:System.Web.Services.Discovery.DiscoveryRequestHandler.ProcessRequest(System.Web.HttpContext)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

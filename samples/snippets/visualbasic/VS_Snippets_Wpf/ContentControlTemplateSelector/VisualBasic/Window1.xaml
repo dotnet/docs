@@ -24,7 +24,9 @@
       </Grid>
     </DataTemplate>
 
-    <local:NumderDataTemplateSelector x:Key="numberTemplateSelector"/>
+    <local:NumberDataTemplateSelector x:Key="numberTemplateSelector"
+                                      NumberTemplate="{StaticResource numberTemplate}"
+                                      LargeNumberTemplate="{StaticResource largeNumberTemplate}"/>
 
   </Window.Resources>
   <StackPanel>

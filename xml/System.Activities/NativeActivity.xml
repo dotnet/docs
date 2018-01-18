@@ -402,5 +402,14 @@ public sealed class MySequence : NativeActivity
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OnCreateDynamicUpdateMap">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Raises an event when creating a map for the dynamic update.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

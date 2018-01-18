@@ -44,6 +44,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Imaging.BitmapImage" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -124,7 +125,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -154,10 +155,11 @@
 ## Remarks  
  This method is called by the <xref:System.Windows.Freezable.Clone%2A> method and should not be called directly from your code, except when you call the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.Clone%2A> instead of calling this method directly.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCore%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -182,10 +184,11 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValue" />
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValueCore">
@@ -212,10 +215,11 @@
 ## Remarks  
  This method is called by the <xref:System.Windows.Freezable.CloneCurrentValue%2A> method and should not be called directly from your code, except when you call the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.CloneCurrentValue%2A> instead of calling this method directly.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValueCore%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValueCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValueCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="CopyPixels">
@@ -370,6 +374,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.PixelFormats" />
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapPalette" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -583,6 +589,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.PixelFormat" />
       </Docs>
     </Member>
     <Member MemberName="FreezeCore">
@@ -608,6 +615,7 @@
   
  If <paramref name="isChecking" /> is <see langword="false" />, this method returns <see langword="true" /> if the if this <see cref="T:System.Windows.Media.Animation.Animatable" /> is now unmodifiable, or <see langword="false" /> if it cannot be made unmodifiable, with the side effect of having begun to change the frozen status of this object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.FreezeCore(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetAsFrozenCore">
@@ -636,7 +644,7 @@
   
  This method is called by the <xref:System.Windows.Freezable.GetAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetAsFrozen%2A> instead of calling this method directly.  
   
- For more information, see <xref:System.Windows.Freezable.GetAsFrozenCore%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.GetAsFrozenCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -666,7 +674,7 @@
 ## Remarks  
  This method is called by the <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> instead of calling this method directly.  
   
- For more information see <xref:System.Windows.Freezable.GetCurrentValueAsFrozenCore%2A?displayProperty=fullName>.  
+ For more information see <xref:System.Windows.Freezable.GetCurrentValueAsFrozenCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -725,6 +733,7 @@
         <summary>Gets the metadata that is associated with this bitmap image.</summary>
         <value>The metadata that is associated with the bitmap image.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.ImageMetadata" />
       </Docs>
     </Member>
     <Member MemberName="Palette">
@@ -743,6 +752,7 @@
         <summary>Gets the color palette of the bitmap, if one is specified.</summary>
         <value>The color palette of the bitmap.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapPalette" />
       </Docs>
     </Member>
     <Member MemberName="PixelHeight">
@@ -799,5 +809,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyPixels">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the bitmap pixel data.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> that has the specified properties and options.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

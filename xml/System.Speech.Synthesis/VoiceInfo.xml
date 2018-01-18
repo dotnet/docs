@@ -94,6 +94,8 @@ namespace SampleSynthesis
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Speech.Synthesis.InstalledVoice" />
+    <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices" />
   </Docs>
   <Members>
     <Member MemberName="AdditionalInfo">
@@ -142,6 +144,8 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Synthesis.InstalledVoice" />
+        <altmember cref="M:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices" />
       </Docs>
     </Member>
     <Member MemberName="Culture">
@@ -239,6 +243,7 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -317,6 +322,7 @@ namespace SampleSynthesis
         <summary>Gets the collection of audio formats that the voice supports.</summary>
         <value>Returns a collection of the audio formats that the voice supports.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Speech.AudioFormat.SpeechAudioFormatInfo" />
       </Docs>
     </Member>
   </Members>

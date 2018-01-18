@@ -9,17 +9,17 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], adding rows for new records"
-  - "rows, new records"
+  - "rows [Windows Forms], new records"
   - "DataGridView control [Windows Forms], data entry"
 ms.assetid: 6110f1ea-9794-442c-a98a-f104a1feeaf4
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Using the Row for New Records in the Windows Forms DataGridView Control
 When you use a <xref:System.Windows.Forms.DataGridView> for editing data in your application, you will often want to give your users the ability to add new rows of data to the data store. The <xref:System.Windows.Forms.DataGridView> control supports this functionality by providing a row for new records, which is always shown as the last row. It is marked with an asterisk (*) symbol in its row header. The following sections discuss some of the things you should consider when you program with the row for new records enabled.  
@@ -27,7 +27,7 @@ When you use a <xref:System.Windows.Forms.DataGridView> for editing data in your
 ## Displaying the Row for New Records  
  Use the <xref:System.Windows.Forms.DataGridView.AllowUserToAddRows%2A> property to indicate whether the row for new records is displayed. The default value of this property is `true`.  
   
- For the data bound case, the row for new records will be shown if the <xref:System.Windows.Forms.DataGridView.AllowUserToAddRows%2A> property of the control and the <xref:System.ComponentModel.IBindingList.AllowNew%2A?displayProperty=fullName> property of the data source are both `true`. If either is `false` then the row will not be shown.  
+ For the data bound case, the row for new records will be shown if the <xref:System.Windows.Forms.DataGridView.AllowUserToAddRows%2A> property of the control and the <xref:System.ComponentModel.IBindingList.AllowNew%2A?displayProperty=nameWithType> property of the data source are both `true`. If either is `false` then the row will not be shown.  
   
 ## Populating the Row for New Records with Default Data  
  When the user selects the row for new records as the current row, the <xref:System.Windows.Forms.DataGridView> control raises the <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded> event.  
@@ -37,7 +37,7 @@ When you use a <xref:System.Windows.Forms.DataGridView> for editing data in your
 ## The Rows Collection  
  The row for new records is contained in the <xref:System.Windows.Forms.DataGridView> control's <xref:System.Windows.Forms.DataGridView.Rows%2A> collection but behaves differently in two respects:  
   
--   The row for new records cannot be removed from the <xref:System.Windows.Forms.DataGridView.Rows%2A> collection programmatically. An <xref:System.InvalidOperationException> is thrown if this is attempted. The user also cannot delete the row for new records. The <xref:System.Windows.Forms.DataGridViewRowCollection.Clear%2A?displayProperty=fullName> method does not remove this row from the <xref:System.Windows.Forms.DataGridView.Rows%2A> collection.  
+-   The row for new records cannot be removed from the <xref:System.Windows.Forms.DataGridView.Rows%2A> collection programmatically. An <xref:System.InvalidOperationException> is thrown if this is attempted. The user also cannot delete the row for new records. The <xref:System.Windows.Forms.DataGridViewRowCollection.Clear%2A?displayProperty=nameWithType> method does not remove this row from the <xref:System.Windows.Forms.DataGridView.Rows%2A> collection.  
   
 -   No row can be added after the row for new records. An <xref:System.InvalidOperationException> is raised if this is attempted. As a result, the row for new records is always the last row in the <xref:System.Windows.Forms.DataGridView> control. The methods on <xref:System.Windows.Forms.DataGridViewRowCollection> that add rows—<xref:System.Windows.Forms.DataGridViewRowCollection.Add%2A>, <xref:System.Windows.Forms.DataGridViewRowCollection.AddCopy%2A>, and <xref:System.Windows.Forms.DataGridViewRowCollection.AddCopies%2A>—all call insertion methods internally when the row for new records is present.  
   
@@ -66,7 +66,7 @@ When you use a <xref:System.Windows.Forms.DataGridView> for editing data in your
  If you are implementing virtual mode, you will need to track when a row for new records is needed in the data model and when to roll back the addition of the row. The exact implementation of this functionality depends on the implementation of the data model and its transaction semantics, for example, whether commit scope is at the cell or row level. For more information, see [Virtual Mode in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/virtual-mode-in-the-windows-forms-datagridview-control.md).  
   
 ## See Also  
- <xref:System.Windows.Forms.DataGridView>   
- <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded?displayProperty=fullName>   
- [Data Entry in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/data-entry-in-the-windows-forms-datagridview-control.md)   
+ <xref:System.Windows.Forms.DataGridView>  
+ <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded?displayProperty=nameWithType>  
+ [Data Entry in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/data-entry-in-the-windows-forms-datagridview-control.md)  
  [How to: Specify Default Values for New Rows in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/specify-default-values-for-new-rows-in-the-datagrid.md)

@@ -600,7 +600,7 @@ public void CreateSecondLegend()
 |Any shape chart (for example, Pie and Doughnut charts)|No|First available colors used from <xref:System.Web.UI.DataVisualization.Charting.Chart> control palette. One color per data point.|  
 |All charts except shape charts|No|First available colors from <xref:System.Web.UI.DataVisualization.Charting.Chart> control palette. One color per data series.|  
 |Any shape chart (for example, Pie and Doughnut charts)|Yes|First available colors used from <xref:System.Web.UI.DataVisualization.Charting.Series> palette. One color per data point.|  
-|All charts except shape charts|Yes|First available colors used from <xref:System.Web.UI.DataVisualization.Charting.Series>palette. One color per data series.|  
+|All charts except shape charts|Yes|First available colors used from <xref:System.Web.UI.DataVisualization.Charting.Series> palette. One color per data series.|  
   
  This <xref:System.Web.UI.DataVisualization.Charting.Series.Palette%2A> property has precedence over the <xref:System.Web.UI.DataVisualization.Charting.Chart.Palette%2A> property of the root <xref:System.Web.UI.DataVisualization.Charting.Chart> object, with respect to the display of data.  
   
@@ -1132,5 +1132,23 @@ public void SetSeriesShadowOffset ()
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Sort">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a sort on a <see cref="T:System.Web.UI.DataVisualization.Charting.Series" />. Note that the <see cref="T:System.Web.UI.DataVisualization.Charting.DataManipulator" /> class provides sort methods that have greater flexibility than these sort methods.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

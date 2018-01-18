@@ -36,6 +36,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Animation.ResumeStoryboard" />
+    <altmember cref="T:System.Windows.Media.Animation.BeginStoryboard" />
+    <altmember cref="T:System.Windows.Media.Animation.StopStoryboard" />
+    <altmember cref="T:System.Windows.Media.Animation.PauseStoryboard" />
+    <altmember cref="T:System.Windows.Media.Animation.SkipStoryboardToFill" />
+    <altmember cref="T:System.Windows.Media.Animation.SetStoryboardSpeedRatio" />
+    <altmember cref="T:System.Windows.EventTrigger" />
+    <altmember cref="T:System.Windows.Trigger" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,7 +87,7 @@
 ## Remarks  
   
 ## Using the Compose HandoffBehavior  
- When you apply a <xref:System.Windows.Media.Animation.Storyboard>, <xref:System.Windows.Media.Animation.AnimationTimeline>, or <xref:System.Windows.Media.Animation.AnimationClock> to a property by using <xref:System.Windows.Media.Animation.HandoffBehavior?displayProperty=fullName>, any <xref:System.Windows.Media.Animation.Clock> objects previously associated with that property continue to consume system resources; the timing system does not remove these clocks automatically.  
+ When you apply a <xref:System.Windows.Media.Animation.Storyboard>, <xref:System.Windows.Media.Animation.AnimationTimeline>, or <xref:System.Windows.Media.Animation.AnimationClock> to a property by using <xref:System.Windows.Media.Animation.HandoffBehavior.Compose?displayProperty=nameWithType>, any <xref:System.Windows.Media.Animation.Clock> objects previously associated with that property continue to consume system resources; the timing system does not remove these clocks automatically.  
   
  To avoid performance issues when you apply a large number of clocks using <xref:System.Windows.Media.Animation.HandoffBehavior.Compose>, you should remove composing clocks from the animated property after they complete. There are several ways to remove a clock:  
   

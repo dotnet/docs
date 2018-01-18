@@ -63,7 +63,7 @@
       </Docs>
     </Member>
     <Member MemberName="Compile">
-      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Compiler.WorkflowCompilerResults Compile (System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters parameters, string[] files);" />
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Compiler.WorkflowCompilerResults Compile (System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters parameters, params string[] files);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.ComponentModel.Compiler.WorkflowCompilerResults Compile(class System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters parameters, string[] files) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowCompiler.Compile(System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters,System.String[])" />
       <MemberType>Method</MemberType>

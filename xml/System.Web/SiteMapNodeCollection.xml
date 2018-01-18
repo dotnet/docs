@@ -33,7 +33,7 @@
   
 -   To remove <xref:System.Web.SiteMapNode> objects, use the <xref:System.Web.SiteMapNodeCollection.Remove%2A> method.  
   
- You can create a read-only <xref:System.Web.SiteMapNodeCollection>, which does not permit adding, copying, nor removing <xref:System.Web.SiteMapNode> objects, by using the static <xref:System.Web.SiteMapNodeCollection.ReadOnly%2A> method. The <xref:System.Web.SiteMapNodeCollection> collections that are returned by the <xref:System.Web.SiteMapNode.GetAllNodes%2A?displayProperty=fullName> and <xref:System.Web.UI.IHierarchyData.GetChildren%2A> methods are read-only, as is the <xref:System.Web.SiteMapNodeCollection> that is returned when the <xref:System.Web.SiteMapNode.ChildNodes%2A> property is accessed on a <xref:System.Web.SiteMapNode> object that is returned from a provider. A <xref:System.NotSupportedException> exception is thrown, if you attempt to modify a read-only <xref:System.Web.SiteMapNodeCollection> by setting the default indexer property or by using any of the following methods:  
+ You can create a read-only <xref:System.Web.SiteMapNodeCollection>, which does not permit adding, copying, nor removing <xref:System.Web.SiteMapNode> objects, by using the static <xref:System.Web.SiteMapNodeCollection.ReadOnly%2A> method. The <xref:System.Web.SiteMapNodeCollection> collections that are returned by the <xref:System.Web.SiteMapNode.GetAllNodes%2A?displayProperty=nameWithType> and <xref:System.Web.UI.IHierarchyData.GetChildren%2A> methods are read-only, as is the <xref:System.Web.SiteMapNodeCollection> that is returned when the <xref:System.Web.SiteMapNode.ChildNodes%2A> property is accessed on a <xref:System.Web.SiteMapNode> object that is returned from a provider. A <xref:System.NotSupportedException> exception is thrown, if you attempt to modify a read-only <xref:System.Web.SiteMapNodeCollection> by setting the default indexer property or by using any of the following methods:  
   
 -   <xref:System.Web.SiteMapNodeCollection.Add%2A>  
   
@@ -59,6 +59,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.SiteMap" />
+    <altmember cref="T:System.Web.SiteMapNode" />
+    <altmember cref="T:System.Web.SiteMapProvider" />
+    <altmember cref="T:System.Web.UI.IHierarchyData" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -89,6 +93,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.SiteMapNodeCollection.#ctor(System.Web.SiteMapNode)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -114,6 +119,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.CollectionBase.Capacity" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -149,6 +155,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.SiteMapNode" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -176,6 +183,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.SiteMapNode" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -202,7 +210,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to create a <xref:System.Web.SiteMapNodeCollection> collection using another <xref:System.Web.SiteMapNodeCollection> of <xref:System.Web.SiteMapNode> objects as a base. The <xref:System.Web.SiteMapNode.GetAllNodes%2A?displayProperty=fullName> method returns a read-only <xref:System.Web.SiteMapNodeCollection>, which is detected when the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property returns `true`. A new <xref:System.Web.SiteMapNodeCollection> is created using the read-only <xref:System.Web.SiteMapNodeCollection> and the <xref:System.Web.SiteMapNodeCollection.Add%2A> and <xref:System.Web.SiteMapNodeCollection.Remove%2A> methods can be called successfully.  
+ The following code example demonstrates how to create a <xref:System.Web.SiteMapNodeCollection> collection using another <xref:System.Web.SiteMapNodeCollection> of <xref:System.Web.SiteMapNode> objects as a base. The <xref:System.Web.SiteMapNode.GetAllNodes%2A?displayProperty=nameWithType> method returns a read-only <xref:System.Web.SiteMapNodeCollection>, which is detected when the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property returns `true`. A new <xref:System.Web.SiteMapNodeCollection> is created using the read-only <xref:System.Web.SiteMapNodeCollection> and the <xref:System.Web.SiteMapNodeCollection.Add%2A> and <xref:System.Web.SiteMapNodeCollection.Remove%2A> methods can be called successfully.  
   
  [!code-csharp[System.Web.SiteMapNodeCollection_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/CS/webform1smccs.aspx#1)]
  [!code-vb[System.Web.SiteMapNodeCollection_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/VB/webform1smcvb.aspx#1)]  
@@ -260,6 +268,10 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.SiteMapNodeCollection" /> is read-only.</exception>
+        <altmember cref="M:System.Web.SiteMapNodeCollection.AddRange(System.Web.SiteMapNode[])" />
+        <altmember cref="M:System.Web.SiteMapNodeCollection.Insert(System.Int32,System.Web.SiteMapNode)" />
+        <altmember cref="M:System.Web.SiteMapNodeCollection.Remove(System.Web.SiteMapNode)" />
+        <altmember cref="T:System.Web.SiteMapProvider" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -293,6 +305,9 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.SiteMapNodeCollection" /> is read-only.</exception>
+        <altmember cref="M:System.Web.SiteMapNodeCollection.Add(System.Web.SiteMapNode)" />
+        <altmember cref="M:System.Web.SiteMapNodeCollection.Insert(System.Int32,System.Web.SiteMapNode)" />
+        <altmember cref="M:System.Web.SiteMapNodeCollection.Remove(System.Web.SiteMapNode)" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -334,6 +349,9 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.SiteMapNodeCollection" /> is read-only.</exception>
+        <altmember cref="M:System.Web.SiteMapNodeCollection.Add(System.Web.SiteMapNode)" />
+        <altmember cref="M:System.Web.SiteMapNodeCollection.Insert(System.Int32,System.Web.SiteMapNode)" />
+        <altmember cref="M:System.Web.SiteMapNodeCollection.Remove(System.Web.SiteMapNode)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -362,6 +380,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.SiteMapNodeCollection" /> is read-only.</exception>
+        <altmember cref="M:System.Web.SiteMapNodeCollection.Remove(System.Web.SiteMapNode)" />
+        <altmember cref="M:System.Web.SiteMapNodeCollection.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Collections.ArrayList.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -388,7 +409,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.SiteMapNodeCollection.Contains%2A> method determines equality by calling the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+ The <xref:System.Web.SiteMapNodeCollection.Contains%2A> method determines equality by calling the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -400,6 +421,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.CollectionBase.Count" />
+        <altmember cref="M:System.Web.SiteMapNodeCollection.IndexOf(System.Web.SiteMapNode)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -426,7 +449,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.SiteMapNodeCollection.CopyTo%2A> method delegates to the <xref:System.Collections.CollectionBase.List%2A?displayProperty=fullName> property, which accounts for the possible exceptions that are listed in "Exceptions."  
+ The <xref:System.Web.SiteMapNodeCollection.CopyTo%2A> method delegates to the <xref:System.Collections.CollectionBase.List%2A?displayProperty=nameWithType> property, which accounts for the possible exceptions that are listed in "Exceptions."  
   
  ]]></format>
         </remarks>
@@ -440,6 +463,8 @@
  -or-  
   
  The number of <see cref="T:System.Web.SiteMapNode" /> objects in the source <see cref="T:System.Web.SiteMapNodeCollection" /> is greater than the available space from <paramref name="index" /> to the end of <paramref name="array" />.</exception>
+        <altmember cref="M:System.Web.SiteMapNodeCollection.Insert(System.Int32,System.Web.SiteMapNode)" />
+        <altmember cref="M:System.Web.SiteMapNodeCollection.AddRange(System.Web.SiteMapNode[])" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -458,6 +483,9 @@
         <summary>Gets the number of elements contained in the collection.</summary>
         <value>The number of elements in the <see cref="T:System.Web.SiteMapNodeCollection" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.SiteMapNodeCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Web.SiteMapNodeCollection.GetEnumerator" />
+        <altmember cref="P:System.Collections.ArrayList.Count" />
       </Docs>
     </Member>
     <Member MemberName="GetDataSourceView">
@@ -482,6 +510,7 @@
         <summary>Retrieves the <see cref="T:System.Web.UI.WebControls.SiteMapDataSourceView" /> object that is associated with the nodes in the current collection.</summary>
         <returns>A named <see cref="T:System.Web.UI.WebControls.SiteMapDataSourceView" /> for the <see cref="T:System.Web.SiteMapNode" /> objects in the current <see cref="T:System.Web.SiteMapNodeCollection" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.SiteMapNodeCollection.GetHierarchicalDataSourceView" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -501,6 +530,8 @@
         <summary>Retrieves a reference to an enumerator object, which is used to iterate over the collection.</summary>
         <returns>An object that implements the <see cref="T:System.Collections.IEnumerator" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.SiteMapNodeCollection.Item(System.Int32)" />
+        <altmember cref="M:System.Collections.ArrayList.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="GetHierarchicalDataSourceView">
@@ -520,6 +551,7 @@
         <summary>Retrieves the <see cref="T:System.Web.UI.WebControls.SiteMapHierarchicalDataSourceView" /> object that is associated with the nodes in the current collection.</summary>
         <returns>A <see cref="T:System.Web.UI.WebControls.SiteMapHierarchicalDataSourceView" /> for the <see cref="T:System.Web.SiteMapNode" /> objects in the current <see cref="T:System.Web.SiteMapNodeCollection" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.SiteMapNodeCollection.GetDataSourceView(System.Web.UI.WebControls.SiteMapDataSource,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetHierarchyData">
@@ -542,6 +574,8 @@
         <summary>Returns a hierarchical data item for the specified enumerated item.</summary>
         <returns>An <see cref="T:System.Web.UI.IHierarchyData" /> that represents the object passed to the <see cref="M:System.Web.SiteMapNodeCollection.GetHierarchyData(System.Object)" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.IHierarchyData" />
+        <altmember cref="T:System.Web.UI.IHierarchicalEnumerable" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -567,7 +601,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.SiteMapNodeCollection.IndexOf%2A> method determines equality by calling the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+ The <xref:System.Web.SiteMapNodeCollection.IndexOf%2A> method determines equality by calling the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -622,6 +656,8 @@
  The <see cref="T:System.Web.SiteMapNodeCollection" /> has a fixed size.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.SiteMapNodeCollection.IndexOf(System.Web.SiteMapNode)" />
+        <altmember cref="P:System.Web.SiteMapNodeCollection.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="IsFixedSize">
@@ -641,6 +677,7 @@
         <value>
           <see langword="true" /> if you can add <see cref="T:System.Web.SiteMapNode" /> objects to or remove <see cref="T:System.Web.SiteMapNode" /> objects from the <see cref="T:System.Web.SiteMapNodeCollection" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.SiteMapNodeCollection.ReadOnly(System.Web.SiteMapNodeCollection)" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -660,6 +697,7 @@
         <value>
           <see langword="true" /> if you can modify the <see cref="T:System.Web.SiteMapNodeCollection" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.SiteMapNodeCollection.ReadOnly(System.Web.SiteMapNodeCollection)" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -724,6 +762,8 @@
   
  <paramref name="index" /> is great than the <see cref="P:System.Collections.CollectionBase.Count" />.</exception>
         <exception cref="T:System.ArgumentNullException">The value supplied to the setter is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.SiteMapNodeCollection.IndexOf(System.Web.SiteMapNode)" />
+        <altmember cref="M:System.Web.SiteMapNodeCollection.Contains(System.Web.SiteMapNode)" />
       </Docs>
     </Member>
     <Member MemberName="OnValidate">
@@ -820,7 +860,7 @@
 ## Remarks  
  You can test whether a <xref:System.Web.SiteMapNodeCollection> collection is read-only by checking the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property.  
   
- The <xref:System.Web.SiteMapNodeCollection.Remove%2A> method determines equality by calling the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+ The <xref:System.Web.SiteMapNodeCollection.Remove%2A> method determines equality by calling the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -841,6 +881,8 @@
  -or-  
   
  The <see cref="T:System.Web.SiteMapNodeCollection" /> has a fixed size.</exception>
+        <altmember cref="M:System.Web.SiteMapNodeCollection.Add(System.Web.SiteMapNode)" />
+        <altmember cref="M:System.Web.SiteMapNodeCollection.AddRange(System.Web.SiteMapNode[])" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -882,6 +924,9 @@
  \- or -  
   
  The <see cref="T:System.Web.SiteMapNodeCollection" /> has a fixed sized.</exception>
+        <altmember cref="M:System.Web.SiteMapNodeCollection.Remove(System.Web.SiteMapNode)" />
+        <altmember cref="P:System.Web.SiteMapNodeCollection.IsReadOnly" />
+        <altmember cref="M:System.Collections.ArrayList.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -907,6 +952,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ArrayList.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -940,6 +986,8 @@
  -or-  
   
  The number of <see cref="T:System.Web.SiteMapNode" /> objects in the source <see cref="T:System.Web.SiteMapNodeCollection" /> is greater than the available space from <paramref name="index" /> to the end of <paramref name="array" />.</exception>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="M:System.Web.SiteMapNodeCollection.CopyTo(System.Web.SiteMapNode[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.Count">
@@ -958,6 +1006,8 @@
         <summary>Gets the number of elements that are contained in the <see cref="T:System.Collections.ICollection" /> interface. This class cannot be inherited.</summary>
         <value>The number of elements contained in the <see cref="T:System.Collections.ICollection" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.SiteMapNodeCollection.Count" />
+        <altmember cref="P:System.Collections.ICollection.Count" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -977,6 +1027,8 @@
         <value>
           <see langword="true" /> if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.SiteMapNodeCollection.SyncRoot" />
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -995,6 +1047,8 @@
         <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" /> interface. This class cannot be inherited.</summary>
         <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.SiteMapNodeCollection.SyncRoot" />
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -1014,6 +1068,8 @@
         <summary>Returns an enumerator that iterates through a collection. For a description of this member, see <see cref="M:System.Collections.IEnumerable.GetEnumerator" />.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the <see cref="T:System.Web.SiteMapNodeCollection" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.IEnumerable.GetEnumerator" />
+        <altmember cref="M:System.Web.SiteMapNodeCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -1036,6 +1092,8 @@
         <summary>Adds an item to the collection in the <see cref="T:System.Collections.IList" /> interface. For a description of this member, see <see cref="M:System.Collections.IList.Add(System.Object)" />.</summary>
         <returns>The position into which the new element was inserted.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.IList.Add(System.Object)" />
+        <altmember cref="M:System.Web.SiteMapNodeCollection.Add(System.Web.SiteMapNode)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Clear">
@@ -1054,6 +1112,8 @@
       <Docs>
         <summary>Removes all items from the collection in the <see cref="T:System.Collections.IList" /> interface. For a description of this member, see <see cref="M:System.Collections.IList.Clear" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.SiteMapNodeCollection.Clear" />
+        <altmember cref="M:System.Collections.IList.Clear" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -1077,6 +1137,8 @@
         <returns>
           <see langword="true" /> if the object is found in the <see cref="T:System.Collections.IList" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.SiteMapNodeCollection.Contains(System.Web.SiteMapNode)" />
+        <altmember cref="M:System.Collections.IList.Contains(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -1099,6 +1161,8 @@
         <summary>Determines the index of the specific item in the collection that is returned by the <see cref="T:System.Collections.IList" /> interface. For a description of this member, see <see cref="M:System.Collections.IList.IndexOf(System.Object)" />.</summary>
         <returns>The index of the value, in the list, if found; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.SiteMapNodeCollection.IndexOf(System.Web.SiteMapNode)" />
+        <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -1122,6 +1186,8 @@
         <param name="value">The object to insert into the <see cref="T:System.Collections.IList" />.</param>
         <summary>Inserts an item into the collection in the <see cref="T:System.Collections.IList" /> interface at the specified index. For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.SiteMapNodeCollection.Insert(System.Int32,System.Web.SiteMapNode)" />
+        <altmember cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -1182,6 +1248,8 @@
         <summary>Gets the <see cref="T:System.Collections.IList" /> element at the specified index.</summary>
         <value>The element at the specified index.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.SiteMapNodeCollection.Item(System.Int32)" />
+        <altmember cref="P:System.Collections.IList.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -1203,6 +1271,8 @@
         <param name="value">The object to remove from the <see cref="T:System.Collections.IList" />.</param>
         <summary>Removes the first occurrence of a specified object from the collection in the <see cref="T:System.Collections.IList" /> interface. For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.SiteMapNodeCollection.Remove(System.Web.SiteMapNode)" />
+        <altmember cref="M:System.Collections.IList.Remove(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.RemoveAt">
@@ -1224,6 +1294,8 @@
         <param name="index">The zero-based index of the item to remove.</param>
         <summary>Removes the <see cref="T:System.Collections.IList" /> item at the specified index. For a description of this member, see <see cref="M:System.Collections.IList.RemoveAt(System.Int32)" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.SiteMapNodeCollection.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Collections.IList.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IHierarchicalEnumerable.GetHierarchyData">
@@ -1248,5 +1320,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.SiteMapNodeCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a set of <see cref="T:System.Web.SiteMapNode" /> objects to the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

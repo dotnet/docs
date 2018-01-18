@@ -20,9 +20,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Printing.PrinterSettings.PaperSourceCollection> contains <xref:System.Drawing.Printing.PaperSource> instances that represents the paper source trays through the <xref:System.Drawing.Printing.PaperSource.Kind%2A?displayProperty=fullName> property, which contains one of the <xref:System.Drawing.Printing.PaperSourceKind> values.  
+ The <xref:System.Drawing.Printing.PrinterSettings.PaperSourceCollection> contains <xref:System.Drawing.Printing.PaperSource> instances that represents the paper source trays through the <xref:System.Drawing.Printing.PaperSource.Kind%2A?displayProperty=nameWithType> property, which contains one of the <xref:System.Drawing.Printing.PaperSourceKind> values.  
   
- Typically, you set a page's paper source through the <xref:System.Drawing.Printing.PageSettings.PaperSource%2A?displayProperty=fullName> property to a valid <xref:System.Drawing.Printing.PaperSource> instance available through the <xref:System.Drawing.Printing.PrinterSettings.PaperSources%2A> collection.  
+ Typically, you set a page's paper source through the <xref:System.Drawing.Printing.PageSettings.PaperSource%2A?displayProperty=nameWithType> property to a valid <xref:System.Drawing.Printing.PaperSource> instance available through the <xref:System.Drawing.Printing.PrinterSettings.PaperSources%2A> collection.  
   
    
   
@@ -35,6 +35,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Printing.PaperSource" />
+    <altmember cref="P:System.Drawing.Printing.PrinterSettings.PaperSources" />
+    <altmember cref="P:System.Drawing.Printing.PrinterSettings.InstalledPrinters" />
+    <altmember cref="P:System.Drawing.Printing.PrinterSettings.PaperSizes" />
+    <altmember cref="P:System.Drawing.Printing.PrinterSettings.PrinterResolutions" />
+    <altmember cref="P:System.Windows.Forms.ListControl.DisplayMember" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,6 +59,7 @@
         <param name="array">An array of type <see cref="T:System.Drawing.Printing.PaperSource" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PrinterSettings.PaperSourceCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Printing.PaperSource" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -162,6 +169,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -195,6 +203,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PaperSource" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">

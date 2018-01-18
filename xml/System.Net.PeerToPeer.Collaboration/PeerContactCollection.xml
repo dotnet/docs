@@ -25,6 +25,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" />
   </Docs>
   <Members>
     <Member MemberName="InsertItem">
@@ -56,6 +58,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> provided is <see langword="null" /></exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContactCollection" />
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -87,6 +91,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> provided is <see langword="null" /></exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContactCollection" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -106,6 +112,8 @@
         <summary>Returns a Unicode <see cref="T:System.String" /> representing the current value of each <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />, separated by commas.</summary>
         <returns>Unicode <see cref="T:System.String" /> representing the current value of each <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />, separated by commas.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContactCollection" />
       </Docs>
     </Member>
   </Members>

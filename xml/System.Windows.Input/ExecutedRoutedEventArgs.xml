@@ -18,7 +18,7 @@
 ## Remarks  
  <xref:System.Windows.Input.ExecutedRoutedEventHandler> represents the method that implements the command logic of a <xref:System.Windows.Input.RoutedCommand>.  Separating the implementation logic from the command allows the command to be invoked from different sources and types and enables the centralization of command logic.  
   
- This event data class is also used for <xref:System.Windows.Input.CommandManager.Executed?displayProperty=fullName> and <xref:System.Windows.Input.CommandManager.PreviewExecuted?displayProperty=fullName>. But most practical handlers will handle the <xref:System.Windows.Input.CommandBinding.Executed> events from a particular <xref:System.Windows.Input.CommandBinding>, rather than work at the <xref:System.Windows.Input.CommandManager> level.  
+ This event data class is also used for <xref:System.Windows.Input.CommandManager.Executed?displayProperty=nameWithType> and <xref:System.Windows.Input.CommandManager.PreviewExecuted?displayProperty=nameWithType>. But most practical handlers will handle the <xref:System.Windows.Input.CommandBinding.Executed> events from a particular <xref:System.Windows.Input.CommandBinding>, rather than work at the <xref:System.Windows.Input.CommandManager> level.  
   
  For more information on commanding, see [Commanding Overview](~/docs/framework/wpf/advanced/commanding-overview.md).  
   
@@ -32,6 +32,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.ExecutedRoutedEventHandler" />
+    <altmember cref="T:System.Windows.Input.CommandBinding" />
+    <altmember cref="T:System.Windows.Input.CanExecuteRoutedEventArgs" />
   </Docs>
   <Members>
     <Member MemberName="Command">
@@ -65,6 +68,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.ExecutedRoutedEventHandler" />
+        <altmember cref="T:System.Windows.Input.CommandBinding" />
       </Docs>
     </Member>
     <Member MemberName="InvokeEventHandler">
@@ -118,13 +123,15 @@
    
   
 ## Examples  
- The following example creates an <xref:System.Windows.Input.ExecutedRoutedEventHandler> for a custom <xref:System.Windows.Input.RoutedCommand>.  The handler updates a <xref:System.Windows.Controls.TextBox> with the current time and the <xref:System.Windows.Controls.Primitives.RangeBase.Value%2A> property of a <xref:System.Windows.Controls.Slider> control that is passed to the handler through the <xref:System.Windows.Input.ExecutedRoutedEventArgs.Parameter%2A?displayProperty=fullName>.  
+ The following example creates an <xref:System.Windows.Input.ExecutedRoutedEventHandler> for a custom <xref:System.Windows.Input.RoutedCommand>.  The handler updates a <xref:System.Windows.Controls.TextBox> with the current time and the <xref:System.Windows.Controls.Primitives.RangeBase.Value%2A> property of a <xref:System.Windows.Controls.Slider> control that is passed to the handler through the <xref:System.Windows.Input.ExecutedRoutedEventArgs.Parameter%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[invalidaterequerywithdispatchertimer#InvalidateSampleExecuted](~/samples/snippets/csharp/VS_Snippets_Wpf/InvalidateRequeryWithDispatcherTimer/CSharp/Window1.xaml.cs#invalidatesampleexecuted)]
  [!code-vb[invalidaterequerywithdispatchertimer#InvalidateSampleExecuted](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InvalidateRequeryWithDispatcherTimer/visualbasic/window1.xaml.vb#invalidatesampleexecuted)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.ExecutedRoutedEventHandler" />
+        <altmember cref="T:System.Windows.Input.CommandBinding" />
       </Docs>
     </Member>
   </Members>

@@ -38,8 +38,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/UpdateEmailcs.aspx#11)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/UpdateEmailvb.aspx#11)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/UpdateEmailcs.aspx#11)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/UpdateEmailvb.aspx#11)]  
   
  ]]></format>
     </remarks>
@@ -176,8 +176,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUser#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/ChangePasswordcs.aspx#8)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUser#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/ChangePasswordvb.aspx#8)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUser#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/ChangePasswordcs.aspx#8)]
+ [!code-aspx-vb[System.Web.Security.MembershipUser#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/ChangePasswordvb.aspx#8)]  
   
  ]]></format>
         </remarks>
@@ -194,6 +194,7 @@
   
  <paramref name="newPassword" /> is <see langword="null" />.</exception>
         <exception cref="T:System.PlatformNotSupportedException">This method is not available. This can occur if the application targets the [!INCLUDE[net_client_v40_long](~/includes/net-client-v40-long-md.md)]. To prevent this exception, override the method, or change the application to target the full version of the .NET Framework.</exception>
+        <altmember cref="T:System.Web.Security.SqlMembershipProvider" />
       </Docs>
     </Member>
     <Member MemberName="ChangePasswordQuestionAndAnswer">
@@ -236,8 +237,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUser#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/ChangePasswordQuestioncs.aspx#9)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUser#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/ChangePasswordQuestionvb.aspx#9)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUser#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/ChangePasswordQuestioncs.aspx#9)]
+ [!code-aspx-vb[System.Web.Security.MembershipUser#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/ChangePasswordQuestionvb.aspx#9)]  
   
  ]]></format>
         </remarks>
@@ -254,6 +255,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="password" /> is <see langword="null" />.</exception>
         <exception cref="T:System.PlatformNotSupportedException">This method is not available. This can occur if the application targets the [!INCLUDE[net_client_v40_long](~/includes/net-client-v40-long-md.md)]. To prevent this exception, override the method, or change the application to target the full version of the .NET Framework.</exception>
+        <altmember cref="T:System.Web.Security.SqlMembershipProvider" />
       </Docs>
     </Member>
     <Member MemberName="Comment">
@@ -279,6 +281,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Security.SqlMembershipProvider" />
       </Docs>
     </Member>
     <Member MemberName="CreationDate">
@@ -307,8 +310,8 @@
 ## Examples  
  The following code example displays all membership user names in a <xref:System.Web.UI.WebControls.ListBox> and uses labels to show specific membership information for the selected user name, including the <xref:System.Web.Security.MembershipUser.CreationDate%2A> property for the membership user.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]
+ [!code-aspx-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -335,8 +338,8 @@
 ## Examples  
  The following code example displays all membership user names in a <xref:System.Web.UI.WebControls.ListBox> and uses labels to show specific membership information for the selected user name, including the <xref:System.Web.Security.MembershipUser.Email%2A> property for the membership user.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]
+ [!code-aspx-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -362,7 +365,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.Security.MembershipUser.GetPassword%2A> calls the <xref:System.Web.Security.MembershipProvider.GetPassword%2A?displayProperty=fullName> method of the membership provider referenced by the <xref:System.Web.Security.MembershipUser.ProviderName%2A> property to retrieve the password for the membership from the membership data store.  
+ <xref:System.Web.Security.MembershipUser.GetPassword%2A> calls the <xref:System.Web.Security.MembershipProvider.GetPassword%2A?displayProperty=nameWithType> method of the membership provider referenced by the <xref:System.Web.Security.MembershipUser.ProviderName%2A> property to retrieve the password for the membership from the membership data store.  
   
  If <xref:System.Web.Security.Membership.EnablePasswordRetrieval%2A> is `false`, the membership provider will return an exception. If the provider supports passwords with a <xref:System.Web.Security.SqlMembershipProvider.PasswordFormat%2A> of <xref:System.Web.Security.MembershipPasswordFormat.Hashed>, you will be unable to retrieve the password for the membership user and should consider making use of the <xref:System.Web.Security.MembershipUser.ResetPassword%2A> method when a user has forgotten his or her password.  
   
@@ -382,8 +385,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUser#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/retrievepassword2cs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUser#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/retrievepassword2vb.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUser#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/retrievepassword2cs.aspx#3)]
+ [!code-aspx-vb[System.Web.Security.MembershipUser#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/retrievepassword2vb.aspx#3)]  
   
  ]]></format>
         </remarks>
@@ -413,7 +416,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.Security.MembershipUser.GetPassword%2A> calls the <xref:System.Web.Security.MembershipProvider.GetPassword%2A?displayProperty=fullName> method of the membership provider referenced by the <xref:System.Web.Security.MembershipUser.ProviderName%2A> property to retrieve the password for the membership user from the membership data store. If a password answer is required and an incorrect password answer is supplied, a <xref:System.Web.Security.MembershipPasswordException> is thrown by the membership provider.  
+ <xref:System.Web.Security.MembershipUser.GetPassword%2A> calls the <xref:System.Web.Security.MembershipProvider.GetPassword%2A?displayProperty=nameWithType> method of the membership provider referenced by the <xref:System.Web.Security.MembershipUser.ProviderName%2A> property to retrieve the password for the membership user from the membership data store. If a password answer is required and an incorrect password answer is supplied, a <xref:System.Web.Security.MembershipPasswordException> is thrown by the membership provider.  
   
  If <xref:System.Web.Security.Membership.EnablePasswordRetrieval%2A> is `false`, the membership provider will return an exception. If the provider supports passwords with a <xref:System.Web.Security.SqlMembershipProvider.PasswordFormat%2A> of <xref:System.Web.Security.MembershipPasswordFormat.Hashed>, you will be unable to retrieve the password for the membership user and should consider making use of the <xref:System.Web.Security.MembershipUser.ResetPassword%2A> method when a user has forgotten his or her password.  
   
@@ -433,8 +436,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUser#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/retrievepasswordcs.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUser#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/retrievepasswordvb.aspx#4)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUser#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/retrievepasswordcs.aspx#4)]
+ [!code-aspx-vb[System.Web.Security.MembershipUser#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/retrievepasswordvb.aspx#4)]  
   
  ]]></format>
         </remarks>
@@ -465,6 +468,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Security.MembershipUser.IsLockedOut" />
       </Docs>
     </Member>
     <Member MemberName="IsLockedOut">
@@ -489,12 +493,13 @@
 ## Remarks  
  Users are most commonly locked out and cannot be validated by the <xref:System.Web.Security.Membership.ValidateUser%2A> method when the <xref:System.Web.Security.Membership.MaxInvalidPasswordAttempts%2A> is reached within the <xref:System.Web.Security.Membership.PasswordAttemptWindow%2A>.  
   
- Users can also be locked out if you use the <xref:System.Web.Security.MembershipUser.GetPassword%2A> or <xref:System.Web.Security.MembershipUser.ResetPassword%2A> overload that accepts a password answer and the number of bad answers entered by the user reaches the <xref:System.Web.Security.Membership.MaxInvalidPasswordAttempts%2A?displayProperty=fullName>within the <xref:System.Web.Security.Membership.PasswordAttemptWindow%2A?displayProperty=fullName>.  
+ Users can also be locked out if you use the <xref:System.Web.Security.MembershipUser.GetPassword%2A> or <xref:System.Web.Security.MembershipUser.ResetPassword%2A> overload that accepts a password answer and the number of bad answers entered by the user reaches the <xref:System.Web.Security.Membership.MaxInvalidPasswordAttempts%2A?displayProperty=nameWithType> within the <xref:System.Web.Security.Membership.PasswordAttemptWindow%2A?displayProperty=nameWithType>.  
   
  To set this property to `false` and let the user try to log in again, you can use the <xref:System.Web.Security.MembershipUser.UnlockUser%2A> method.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Security.MembershipUser.IsApproved" />
       </Docs>
     </Member>
     <Member MemberName="IsOnline">
@@ -529,8 +534,8 @@
 ## Examples  
  The following code example displays all membership user names in a <xref:System.Web.UI.WebControls.ListBox> control and uses labels to show specific membership information for the selected user name, including the <xref:System.Web.Security.MembershipUser.IsOnline%2A> property value for the membership user.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]
+ [!code-aspx-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -570,8 +575,8 @@
 ## Examples  
  The following code example displays all membership user names in a <xref:System.Web.UI.WebControls.ListBox> control and uses labels to show specific membership information for the selected user name, including the <xref:System.Web.Security.MembershipUser.LastActivityDate%2A> property value for the membership user.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]
+ [!code-aspx-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -598,7 +603,7 @@
 ## Remarks  
  Users are most commonly locked out when the <xref:System.Web.Security.Membership.MaxInvalidPasswordAttempts%2A> is reached within the <xref:System.Web.Security.Membership.PasswordAttemptWindow%2A>.  
   
- Users can also be locked out if you use the <xref:System.Web.Security.MembershipUser.GetPassword%2A> or <xref:System.Web.Security.MembershipUser.ResetPassword%2A> overload that accepts a password answer and the number of bad answers entered by the user reaches the <xref:System.Web.Security.Membership.MaxInvalidPasswordAttempts%2A?displayProperty=fullName> within the <xref:System.Web.Security.Membership.PasswordAttemptWindow%2A?displayProperty=fullName>.  
+ Users can also be locked out if you use the <xref:System.Web.Security.MembershipUser.GetPassword%2A> or <xref:System.Web.Security.MembershipUser.ResetPassword%2A> overload that accepts a password answer and the number of bad answers entered by the user reaches the <xref:System.Web.Security.Membership.MaxInvalidPasswordAttempts%2A?displayProperty=nameWithType> within the <xref:System.Web.Security.Membership.PasswordAttemptWindow%2A?displayProperty=nameWithType>.  
   
  The default value for the <xref:System.Web.Security.MembershipUser.LastLockoutDate%2A> property is determined by the membership provider. For example, when a membership user is created using the <xref:System.Web.Security.SqlMembershipProvider> provider, the <xref:System.Web.Security.MembershipUser.LastLockoutDate%2A> property for the user is initially set to 01/01/1754.  
   
@@ -636,8 +641,8 @@
 ## Examples  
  The following code example displays all membership user names in a <xref:System.Web.UI.WebControls.ListBox> control and uses labels to show specific membership information for the selected user name, including the <xref:System.Web.Security.MembershipUser.LastLoginDate%2A> property value for the membership user.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]
+ [!code-aspx-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -672,8 +677,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUser#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/login2cs.aspx#7)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUser#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/login2vb.aspx#7)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUser#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/login2cs.aspx#7)]
+ [!code-aspx-vb[System.Web.Security.MembershipUser#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/login2vb.aspx#7)]  
   
  ]]></format>
         </remarks>
@@ -708,8 +713,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUser#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/ResetPasswordcs.aspx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUser#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/ResetPasswordvb.aspx#5)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUser#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/ResetPasswordcs.aspx#5)]
+ [!code-aspx-vb[System.Web.Security.MembershipUser#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/ResetPasswordvb.aspx#5)]  
   
  ]]></format>
         </remarks>
@@ -785,7 +790,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.Security.MembershipUser.ResetPassword%2A> calls the <xref:System.Web.Security.MembershipProvider.ResetPassword%2A?displayProperty=fullName> method of the membership provider referenced by the <xref:System.Web.Security.MembershipUser.ProviderName%2A> property to reset the password for the membership user to a new, automatically generated password. The new password is then returned to the caller.  
+ <xref:System.Web.Security.MembershipUser.ResetPassword%2A> calls the <xref:System.Web.Security.MembershipProvider.ResetPassword%2A?displayProperty=nameWithType> method of the membership provider referenced by the <xref:System.Web.Security.MembershipUser.ProviderName%2A> property to reset the password for the membership user to a new, automatically generated password. The new password is then returned to the caller.  
   
  If <xref:System.Web.Security.Membership.EnablePasswordReset%2A> is `false`, the membership provider will return an exception.  
   
@@ -799,8 +804,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUser#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/ResetPassword2cs.aspx#6)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUser#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/ResetPassword2vb.aspx#6)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUser#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/ResetPassword2cs.aspx#6)]
+ [!code-aspx-vb[System.Web.Security.MembershipUser#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/ResetPassword2vb.aspx#6)]  
   
  ]]></format>
         </remarks>
@@ -830,7 +835,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.Security.MembershipUser.ResetPassword%2A> calls the <xref:System.Web.Security.MembershipProvider.ResetPassword%2A?displayProperty=fullName> method of the membership provider referenced by the <xref:System.Web.Security.MembershipUser.ProviderName%2A> property to reset the password for the membership user to a new, automatically generated password. The new password is then returned to the caller.  
+ <xref:System.Web.Security.MembershipUser.ResetPassword%2A> calls the <xref:System.Web.Security.MembershipProvider.ResetPassword%2A?displayProperty=nameWithType> method of the membership provider referenced by the <xref:System.Web.Security.MembershipUser.ProviderName%2A> property to reset the password for the membership user to a new, automatically generated password. The new password is then returned to the caller.  
   
  If <xref:System.Web.Security.Membership.EnablePasswordReset%2A> is `false`, the membership provider will return an exception.  
   
@@ -846,8 +851,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUser#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/ResetPasswordcs.aspx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUser#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/ResetPasswordvb.aspx#5)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUser#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/ResetPasswordcs.aspx#5)]
+ [!code-aspx-vb[System.Web.Security.MembershipUser#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/ResetPasswordvb.aspx#5)]  
   
  ]]></format>
         </remarks>
@@ -896,7 +901,7 @@
 ## Remarks  
  Users are most commonly locked out and cannot be validated by the <xref:System.Web.Security.Membership.ValidateUser%2A> method when the <xref:System.Web.Security.Membership.MaxInvalidPasswordAttempts%2A> is reached within the <xref:System.Web.Security.Membership.PasswordAttemptWindow%2A>.  
   
- Users can also be locked out if you use the <xref:System.Web.Security.MembershipUser.GetPassword%2A> or <xref:System.Web.Security.MembershipUser.ResetPassword%2A> overload that accepts a password answer and the number of bad answers entered by the user reaches the value of <xref:System.Web.Security.Membership.MaxInvalidPasswordAttempts%2A?displayProperty=fullName> within the <xref:System.Web.Security.Membership.PasswordAttemptWindow%2A?displayProperty=fullName>.  
+ Users can also be locked out if you use the <xref:System.Web.Security.MembershipUser.GetPassword%2A> or <xref:System.Web.Security.MembershipUser.ResetPassword%2A> overload that accepts a password answer and the number of bad answers entered by the user reaches the value of <xref:System.Web.Security.Membership.MaxInvalidPasswordAttempts%2A?displayProperty=nameWithType> within the <xref:System.Web.Security.Membership.PasswordAttemptWindow%2A?displayProperty=nameWithType>.  
   
  Your implementation of this method should set the <xref:System.Web.Security.MembershipUser.IsLockedOut%2A> property to `false`, set the <xref:System.Web.Security.MembershipUser.LastLockoutDate%2A> property to the current date, and reset any counters that you use to track the number of failed log in attempts and so forth.  
   
@@ -937,12 +942,39 @@
 ## Examples  
  The following code example binds the <xref:System.Web.Security.MembershipUser.UserName%2A> property of all the membership users in an application to a <xref:System.Web.UI.WebControls.ListBox> control and uses labels to show specific membership information for a selected user name.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]
+ [!code-aspx-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetPassword">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the password for the membership user from the membership data store.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new membership user object with the specified property values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ResetPassword">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Resets a user's password to a new, automatically generated password.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

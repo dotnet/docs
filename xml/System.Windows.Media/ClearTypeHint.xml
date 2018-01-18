@@ -15,10 +15,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Media.RenderOptions.ClearTypeHint%2A?displayProperty=fullName> attached property to control how text is rendered on a translucent background. For more information, see <xref:System.Windows.Media.RenderOptions.ClearTypeHint%2A?displayProperty=fullName>.  
+ Use the <xref:System.Windows.Media.RenderOptions.ClearTypeHint%2A?displayProperty=nameWithType> attached property to control how text is rendered on a translucent background. For more information, see <xref:System.Windows.Media.RenderOptions.ClearTypeHint%2A?displayProperty=nameWithType>.  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Media.RenderOptions.ClearTypeHint" />
   </Docs>
   <Members>
     <Member MemberName="Auto">

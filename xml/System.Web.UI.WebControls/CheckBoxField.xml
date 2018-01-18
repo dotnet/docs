@@ -47,11 +47,25 @@
 ## Examples  
  The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.CheckBoxField> object in a <xref:System.Web.UI.WebControls.GridView> control to display a field from a Microsoft SQL Server data source with a Boolean data type.  
   
- <!-- TODO: review snippet reference [!code-csharp[CheckBoxField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxField/CS/checkboxfieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CheckBoxField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxField/VB/checkboxfieldvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CheckBoxField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxField/CS/checkboxfieldcs.aspx#1)]
+ [!code-aspx-vb[CheckBoxField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxField/VB/checkboxfieldvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.Fields" />
+    <altmember cref="T:System.Web.UI.WebControls.BoundField" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonField" />
+    <altmember cref="T:System.Web.UI.WebControls.CommandField" />
+    <altmember cref="T:System.Web.UI.WebControls.DataControlField" />
+    <altmember cref="T:System.Web.UI.WebControls.HyperLinkField" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+    <altmember cref="P:System.Web.UI.WebControls.BoundField.DataField" />
+    <altmember cref="P:System.Web.UI.WebControls.BoundField.ReadOnly" />
+    <altmember cref="P:System.Web.UI.WebControls.CheckBoxField.Text" />
+    <altmember cref="P:System.Web.UI.WebControls.DataControlField.Visible" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -82,11 +96,13 @@
 ## Examples  
  The following code example demonstrates how to use the constructor to dynamically add a <xref:System.Web.UI.WebControls.CheckBoxField> object to a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CheckBoxFieldCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxFieldCtor/CS/checkboxfieldctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CheckBoxFieldCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxFieldCtor/VB/checkboxfieldctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CheckBoxFieldCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxFieldCtor/CS/checkboxfieldctorcs.aspx#1)]
+ [!code-aspx-vb[CheckBoxFieldCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxFieldCtor/VB/checkboxfieldctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
       </Docs>
     </Member>
     <Member MemberName="ApplyFormatInEditMode">
@@ -120,11 +136,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.CheckBoxField.ApplyFormatInEditMode%2A> property is inherited from the <xref:System.Web.UI.WebControls.BoundField> class, but is not applicable to the <xref:System.Web.UI.WebControls.CheckBoxField> class. Any attempt to access the value of this property will throw a <xref:System.NotSupportedException?displayProperty=fullName> exception.  
+ The <xref:System.Web.UI.WebControls.CheckBoxField.ApplyFormatInEditMode%2A> property is inherited from the <xref:System.Web.UI.WebControls.BoundField> class, but is not applicable to the <xref:System.Web.UI.WebControls.CheckBoxField> class. Any attempt to access the value of this property will throw a <xref:System.NotSupportedException?displayProperty=nameWithType> exception.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt is made to read or set the value of this property.</exception>
+        <altmember cref="T:System.NotSupportedException" />
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.ApplyFormatInEditMode" />
+        <altmember cref="P:System.Web.UI.WebControls.CheckBoxField.NullDisplayText" />
       </Docs>
     </Member>
     <Member MemberName="ConvertEmptyStringToNull">
@@ -158,11 +177,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.CheckBoxField.ConvertEmptyStringToNull%2A> property is inherited from the <xref:System.Web.UI.WebControls.BoundField> class, but is not applicable to the <xref:System.Web.UI.WebControls.CheckBoxField> class. Any attempt to access the value of this property will throw a <xref:System.NotSupportedException?displayProperty=fullName> exception.  
+ The <xref:System.Web.UI.WebControls.CheckBoxField.ConvertEmptyStringToNull%2A> property is inherited from the <xref:System.Web.UI.WebControls.BoundField> class, but is not applicable to the <xref:System.Web.UI.WebControls.CheckBoxField> class. Any attempt to access the value of this property will throw a <xref:System.NotSupportedException?displayProperty=nameWithType> exception.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt is made to read or set the value of this property.</exception>
+        <altmember cref="T:System.NotSupportedException" />
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.ConvertEmptyStringToNull" />
       </Docs>
     </Member>
     <Member MemberName="CopyProperties">
@@ -187,13 +208,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.CheckBoxField.CopyProperties%2A> method is a helper method used by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=fullName> method to copy the properties of the current <xref:System.Web.UI.WebControls.CheckBoxField> object to the <xref:System.Web.UI.WebControls.DataControlField> object created by the <xref:System.Web.UI.WebControls.CheckBoxField.CopyProperties%2A> method.  
+ The <xref:System.Web.UI.WebControls.CheckBoxField.CopyProperties%2A> method is a helper method used by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=nameWithType> method to copy the properties of the current <xref:System.Web.UI.WebControls.CheckBoxField> object to the <xref:System.Web.UI.WebControls.DataControlField> object created by the <xref:System.Web.UI.WebControls.CheckBoxField.CopyProperties%2A> method.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.CheckBoxField.CopyProperties(System.Web.UI.WebControls.DataControlField)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.BoundField.CopyProperties(System.Web.UI.WebControls.DataControlField)" /> method.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.CloneField" />
+        <altmember cref="M:System.Web.UI.WebControls.CheckBoxField.CreateField" />
       </Docs>
     </Member>
     <Member MemberName="CreateField">
@@ -216,13 +239,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.CheckBoxField.CreateField%2A> method is a helper method used by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=fullName> method to create an empty <xref:System.Web.UI.WebControls.CheckBoxField> object to which the properties of the current <xref:System.Web.UI.WebControls.CheckBoxField> object can be copied.  
+ The <xref:System.Web.UI.WebControls.CheckBoxField.CreateField%2A> method is a helper method used by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=nameWithType> method to create an empty <xref:System.Web.UI.WebControls.CheckBoxField> object to which the properties of the current <xref:System.Web.UI.WebControls.CheckBoxField> object can be copied.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.CheckBoxField.CreateField" /> in a derived class, be sure to create a new instance of your type and not call the base method.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.CloneField" />
+        <altmember cref="M:System.Web.UI.WebControls.CheckBoxField.CopyProperties(System.Web.UI.WebControls.DataControlField)" />
       </Docs>
     </Member>
     <Member MemberName="DataField">
@@ -253,6 +278,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.DataField" />
       </Docs>
     </Member>
     <Member MemberName="DataFormatString">
@@ -285,11 +311,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.CheckBoxField.DataFormatString%2A> property is inherited from the <xref:System.Web.UI.WebControls.BoundField> class, but is not applicable to the <xref:System.Web.UI.WebControls.CheckBoxField> class. Any attempt to access the value of this property will throw a <xref:System.NotSupportedException?displayProperty=fullName> exception.  
+ The <xref:System.Web.UI.WebControls.CheckBoxField.DataFormatString%2A> property is inherited from the <xref:System.Web.UI.WebControls.BoundField> class, but is not applicable to the <xref:System.Web.UI.WebControls.CheckBoxField> class. Any attempt to access the value of this property will throw a <xref:System.NotSupportedException?displayProperty=nameWithType> exception.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt is made to read or set the value of this property.</exception>
+        <altmember cref="T:System.NotSupportedException" />
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.DataFormatString" />
       </Docs>
     </Member>
     <Member MemberName="ExtractValuesFromCell">
@@ -326,13 +354,15 @@
 > [!NOTE]
 >  This method is used primarily by control developers.  
   
- This method does not have a return value. Instead, the field values are returned by reference through the <xref:System.Collections.IDictionary?displayProperty=fullName> object passed in for the `dictionary` parameter. After the method has been called, iterate through the <xref:System.Collections.IDictionary?displayProperty=fullName> object to access the field values.  
+ This method does not have a return value. Instead, the field values are returned by reference through the <xref:System.Collections.IDictionary?displayProperty=nameWithType> object passed in for the `dictionary` parameter. After the method has been called, iterate through the <xref:System.Collections.IDictionary?displayProperty=nameWithType> object to access the field values.  
   
 > [!NOTE]
 >  If the <xref:System.Web.UI.WebControls.DataControlFieldCell> object contains read-only field values, you must pass in `true` for the `includeReadOnly` parameter to include those values.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlFieldCell" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeValue">
@@ -395,11 +425,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.CheckBoxField.HtmlEncode%2A> property is inherited from the <xref:System.Web.UI.WebControls.BoundField> class, but is not applicable to the <xref:System.Web.UI.WebControls.CheckBoxField> class. Any attempt to access the value of this property will throw a <xref:System.NotSupportedException?displayProperty=fullName> exception.  
+ The <xref:System.Web.UI.WebControls.CheckBoxField.HtmlEncode%2A> property is inherited from the <xref:System.Web.UI.WebControls.BoundField> class, but is not applicable to the <xref:System.Web.UI.WebControls.CheckBoxField> class. Any attempt to access the value of this property will throw a <xref:System.NotSupportedException?displayProperty=nameWithType> exception.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt is made to read or set the value of this property.</exception>
+        <altmember cref="T:System.NotSupportedException" />
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.HtmlEncode" />
       </Docs>
     </Member>
     <Member MemberName="HtmlEncodeFormatString">
@@ -467,6 +499,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.BoundField.Initialize(System.Boolean,System.Web.UI.Control)" />
+        <altmember cref="M:System.Web.UI.WebControls.BoundField.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="NullDisplayText">
@@ -499,11 +533,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.CheckBoxField.NullDisplayText%2A> property is inherited from the <xref:System.Web.UI.WebControls.BoundField> class, but is not applicable to the <xref:System.Web.UI.WebControls.CheckBoxField> class. Any attempt to access the value of this property will throw a <xref:System.NotSupportedException?displayProperty=fullName> exception.  
+ The <xref:System.Web.UI.WebControls.CheckBoxField.NullDisplayText%2A> property is inherited from the <xref:System.Web.UI.WebControls.BoundField> class, but is not applicable to the <xref:System.Web.UI.WebControls.CheckBoxField> class. Any attempt to access the value of this property will throw a <xref:System.NotSupportedException?displayProperty=nameWithType> exception.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt is made to read or set the value of this property.</exception>
+        <altmember cref="T:System.NotSupportedException" />
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.NullDisplayText" />
       </Docs>
     </Member>
     <Member MemberName="OnDataBindField">
@@ -542,6 +578,8 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.CheckBoxField" /> class, you can override this method to perform a custom binding routine.</para>
         </block>
+        <altmember cref="T:System.EventArgs" />
+        <altmember cref="T:System.Web.HttpException" />
       </Docs>
     </Member>
     <Member MemberName="SupportsHtmlEncode">
@@ -568,6 +606,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BoundField.SupportsHtmlEncode" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -609,11 +648,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CheckBoxField.Text%2A> property to specify a custom caption for the check boxes in a <xref:System.Web.UI.WebControls.CheckBoxField> object in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CheckBoxField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxField/CS/checkboxfieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CheckBoxField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxField/VB/checkboxfieldvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CheckBoxField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxField/CS/checkboxfieldcs.aspx#1)]
+ [!code-aspx-vb[CheckBoxField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxField/VB/checkboxfieldvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.FooterText" />
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.HeaderText" />
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.ItemStyle" />
       </Docs>
     </Member>
     <Member MemberName="ValidateSupportsCallback">
@@ -642,6 +684,7 @@
         <block subset="none" type="overrides">
           <para>Classes that derive from the <see cref="T:System.Web.UI.WebControls.CheckBoxField" /> class can override this method to indicate whether the controls contained by the field support callbacks. To indicate that callbacks are supported, implement this method as an empty method that does not throw an exception; otherwise, throw an exception with a useful message describing why callbacks are not supported.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.ValidateSupportsCallback" />
       </Docs>
     </Member>
   </Members>

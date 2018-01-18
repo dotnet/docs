@@ -9,13 +9,16 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "user interfaces [XAML]"
   - "classes [XAML]"
   - "root element [XAML]"
   - "XAML [WPF], about XAML"
   - "base classes [XAML]"
-  - "routed events"
+  - "routed events [WPF]"
   - "code-behind files [WPF], XAML"
   - "collection properties [XAML]"
   - "events [XAML]"
@@ -28,6 +31,8 @@ caps.latest.revision: 57
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # XAML Overview (WPF)
 This topic describes the features of the XAML language and demonstrates how you can use XAML to write [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications. This topic specifically describes XAML as implemented by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. XAML itself is a larger language concept than [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
@@ -138,9 +143,9 @@ This topic describes the features of the XAML language and demonstrates how you 
   
  Here, each <xref:System.Windows.Controls.Button> is a child element of <xref:System.Windows.Controls.StackPanel>. This is a streamlined and intuitive markup that omits two tags for two different reasons.  
   
--   **Omitted StackPanel.Children property element:** <xref:System.Windows.Controls.StackPanel> derives from <xref:System.Windows.Controls.Panel>. <xref:System.Windows.Controls.Panel> defines <xref:System.Windows.Controls.Panel.Children%2A?displayProperty=fullName> as its XAML content property.  
+-   **Omitted StackPanel.Children property element:** <xref:System.Windows.Controls.StackPanel> derives from <xref:System.Windows.Controls.Panel>. <xref:System.Windows.Controls.Panel> defines <xref:System.Windows.Controls.Panel.Children%2A?displayProperty=nameWithType> as its XAML content property.  
   
--   **Omitted UIElementCollection object element:** The <xref:System.Windows.Controls.Panel.Children%2A?displayProperty=fullName> property takes the type <xref:System.Windows.Controls.UIElementCollection>, which implements <xref:System.Collections.IList>. The collection's element tag can be omitted, based on the XAML rules for processing collections such as <xref:System.Collections.IList>. (In this case, <xref:System.Windows.Controls.UIElementCollection> actually cannot be instantiated because it does not expose a default constructor, and that is why the <xref:System.Windows.Controls.UIElementCollection> object element is shown commented out).  
+-   **Omitted UIElementCollection object element:** The <xref:System.Windows.Controls.Panel.Children%2A?displayProperty=nameWithType> property takes the type <xref:System.Windows.Controls.UIElementCollection>, which implements <xref:System.Collections.IList>. The collection's element tag can be omitted, based on the XAML rules for processing collections such as <xref:System.Collections.IList>. (In this case, <xref:System.Windows.Controls.UIElementCollection> actually cannot be instantiated because it does not expose a default constructor, and that is why the <xref:System.Windows.Controls.UIElementCollection> object element is shown commented out).  
   
 ```xaml  
 <StackPanel>  
@@ -219,11 +224,11 @@ This topic describes the features of the XAML language and demonstrates how you 
   
 -   [x:Class](../../../../docs/framework/xaml-services/x-class-directive.md): Specifies the [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] namespace and class name for the class that provides code-behind for a XAML page. You must have such a class to support code-behind per the WPF programming model, and therefore you almost always see `x:` mapped, even if there are no resources.  
   
--   [x:Name](../../../../docs/framework/xaml-services/x-name-directive.md): Specifies a run-time object name for the instance that exists in run-time code after an object element is processed. In general, you will frequently use a WPF-defined equivalent property for [x:Name](../../../../docs/framework/xaml-services/x-name-directive.md). Such properties map specifically to a CLR backing property and are thus more convenient for application programming, where you frequently use run time code to find the named elements from initialized XAML. The most common such property is <xref:System.Windows.FrameworkElement.Name%2A?displayProperty=fullName>. You might still use [x:Name](../../../../docs/framework/xaml-services/x-name-directive.md) when the equivalent WPF framework-level <xref:System.Windows.FrameworkElement.Name%2A> property is not supported in a particular type. This occurs in certain animation scenarios.  
+-   [x:Name](../../../../docs/framework/xaml-services/x-name-directive.md): Specifies a run-time object name for the instance that exists in run-time code after an object element is processed. In general, you will frequently use a WPF-defined equivalent property for [x:Name](../../../../docs/framework/xaml-services/x-name-directive.md). Such properties map specifically to a CLR backing property and are thus more convenient for application programming, where you frequently use run time code to find the named elements from initialized XAML. The most common such property is <xref:System.Windows.FrameworkElement.Name%2A?displayProperty=nameWithType>. You might still use [x:Name](../../../../docs/framework/xaml-services/x-name-directive.md) when the equivalent WPF framework-level <xref:System.Windows.FrameworkElement.Name%2A> property is not supported in a particular type. This occurs in certain animation scenarios.  
   
 -   [x:Static](../../../../docs/framework/xaml-services/x-static-markup-extension.md): Enables a reference that returns a static value that is not otherwise a XAML-compatible property.  
   
--   [x:Type](../../../../docs/framework/xaml-services/x-type-markup-extension.md): Constructs a <xref:System.Type> reference based on a type name. This is used to specify attributes that take <xref:System.Type>, such as <xref:System.Windows.Style.TargetType%2A?displayProperty=fullName>, although frequently the property has native string-to-<xref:System.Type> conversion in such a way that the [x:Type](../../../../docs/framework/xaml-services/x-type-markup-extension.md) markup extension usage is optional.  
+-   [x:Type](../../../../docs/framework/xaml-services/x-type-markup-extension.md): Constructs a <xref:System.Type> reference based on a type name. This is used to specify attributes that take <xref:System.Type>, such as <xref:System.Windows.Style.TargetType%2A?displayProperty=nameWithType>, although frequently the property has native string-to-<xref:System.Type> conversion in such a way that the [x:Type](../../../../docs/framework/xaml-services/x-type-markup-extension.md) markup extension usage is optional.  
   
  There are additional programming constructs in the `x:` prefix/XAML namespace, which are not as common. For details, see [XAML Namespace (x:) Language Features](../../../../docs/framework/xaml-services/xaml-namespace-x-language-features.md).  
   
@@ -296,7 +301,7 @@ This topic describes the features of the XAML language and demonstrates how you 
   
  The most common scenario for attached properties is to enable child elements to report a property value to their parent element.  
   
- The following example illustrates the <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=fullName> attached property. The <xref:System.Windows.Controls.DockPanel> class defines the accessors for <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=fullName> and therefore owns the attached property. The <xref:System.Windows.Controls.DockPanel> class also includes logic that iterates its child elements and specifically checks each element for a set value of <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=fullName>. If a value is found, that value is used during layout to position the child elements. Use of the <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=fullName> attached property and this positioning capability is in fact the motivating scenario for the <xref:System.Windows.Controls.DockPanel> class.  
+ The following example illustrates the <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> attached property. The <xref:System.Windows.Controls.DockPanel> class defines the accessors for <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> and therefore owns the attached property. The <xref:System.Windows.Controls.DockPanel> class also includes logic that iterates its child elements and specifically checks each element for a set value of <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType>. If a value is found, that value is used during layout to position the child elements. Use of the <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> attached property and this positioning capability is in fact the motivating scenario for the <xref:System.Windows.Controls.DockPanel> class.  
   
  [!code-xaml[XAMLOvwSupport#DockAP](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page8.xaml#dockap)]  
   
@@ -331,9 +336,9 @@ This topic describes the features of the XAML language and demonstrates how you 
  [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md) gives more information about the versatility of properties in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], and introduces the concept of dependency properties.  
   
 ## See Also  
- [XAML Syntax In Detail](../../../../docs/framework/wpf/advanced/xaml-syntax-in-detail.md)   
- [XAML and Custom Classes for WPF](../../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)   
- [XAML Namespace (x:) Language Features](../../../../docs/framework/xaml-services/xaml-namespace-x-language-features.md)   
- [WPF XAML Extensions](../../../../docs/framework/wpf/advanced/wpf-xaml-extensions.md)   
- [Base Elements Overview](../../../../docs/framework/wpf/advanced/base-elements-overview.md)   
+ [XAML Syntax In Detail](../../../../docs/framework/wpf/advanced/xaml-syntax-in-detail.md)  
+ [XAML and Custom Classes for WPF](../../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)  
+ [XAML Namespace (x:) Language Features](../../../../docs/framework/xaml-services/xaml-namespace-x-language-features.md)  
+ [WPF XAML Extensions](../../../../docs/framework/wpf/advanced/wpf-xaml-extensions.md)  
+ [Base Elements Overview](../../../../docs/framework/wpf/advanced/base-elements-overview.md)  
  [Trees in WPF](../../../../docs/framework/wpf/advanced/trees-in-wpf.md)

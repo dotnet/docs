@@ -9,16 +9,16 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "shortcut menus, attaching to TreeNodes"
-  - "TreeNode, attaching a shortcut menu using Designer"
+  - "shortcut menus [Windows Forms], attaching to TreeNodes"
+  - "TreeNode [Windows Forms], attaching a shortcut menu using Designer"
 ms.assetid: 8e45e184-1313-4f8f-90ff-2cd5789b2268
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Attach a Shortcut Menu to a TreeNode Using the Designer
 The Windows Forms <xref:System.Windows.Forms.TreeView> control displays a hierarchy of nodes, similar to the files and folders displayed in the left pane of the Windows Explorer feature in Windows operating systems. By setting the <xref:System.Windows.Forms.Control.ContextMenuStrip%2A> property, you can provide context-sensitive operations to the user when they right-click the <xref:System.Windows.Forms.TreeView> control. By associating a <xref:System.Windows.Forms.ContextMenuStrip> component with individual <xref:System.Windows.Forms.TreeNode> items, you can add a customized level of shortcut menu functionality to your <xref:System.Windows.Forms.TreeView> controls.  
@@ -39,6 +39,6 @@ The Windows Forms <xref:System.Windows.Forms.TreeView> control displays a hierar
      Additionally, you will want to write code to handle the <xref:System.Windows.Forms.ToolStripItem.Click> events for these menu items.  
   
 ## See Also  
- [TreeView Control](../../../../docs/framework/winforms/controls/treeview-control-windows-forms.md)   
- [TreeView Control Overview](../../../../docs/framework/winforms/controls/treeview-control-overview-windows-forms.md)   
+ [TreeView Control](../../../../docs/framework/winforms/controls/treeview-control-windows-forms.md)  
+ [TreeView Control Overview](../../../../docs/framework/winforms/controls/treeview-control-overview-windows-forms.md)  
  [ContextMenuStrip Control](../../../../docs/framework/winforms/controls/contextmenustrip-control.md)

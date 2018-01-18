@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: fb5be924-317d-4d69-b33a-3d18ecfb9d6e
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Security Trust Levels in Accessing Resources
 This topic discusses how access is restricted on the types of resources that <xref:System.Transactions> exposes.  
@@ -50,7 +52,7 @@ This topic discusses how access is restricted on the types of resources that <xr
   
  `PermissionSetAttribute(SecurityAction.LinkDemand, Name := "FullTrust")`  
   
--   <xref:System.Transactions.Transaction.EnlistDurable%2A?displayProperty=fullName>  
+-   <xref:System.Transactions.Transaction.EnlistDurable%2A?displayProperty=nameWithType>  
   
 -   <xref:System.Transactions.Transaction.EnlistPromotableSinglePhase%2A>  
   

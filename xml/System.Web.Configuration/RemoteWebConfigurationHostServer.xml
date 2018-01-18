@@ -32,6 +32,7 @@
     <summary>Used internally at run time to support accessing configuration data remotely.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Configuration.Configuration" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,6 +49,7 @@
         <summary>Used internally at run time to create a new instance of <see cref="T:System.Web.Configuration.RemoteWebConfigurationHostServer" />.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="DoEncryptOrDecrypt">
@@ -84,11 +86,12 @@
         <exception cref="T:System.Exception">
           <paramref name="protectionProviderType" /> does not derive from <see cref="T:System.Configuration.ProtectedConfigurationProvider" />.</exception>
         <forInternalUseOnly />
+        <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="GetData">
       <MemberSignature Language="C#" Value="public byte[] GetData (string fileName, bool getReadTimeOnly, out long readTime);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] GetData(string fileName, bool getReadTimeOnly, int64 readTime) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] GetData(string fileName, bool getReadTimeOnly, [out] int64&amp; readTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RemoteWebConfigurationHostServer.GetData(System.String,System.Boolean,System.Int64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -113,11 +116,12 @@
         <exception cref="T:System.Exception">
           <paramref name="fileName" /> does not point to a file with the .config extension.</exception>
         <forInternalUseOnly />
+        <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="GetFileDetails">
       <MemberSignature Language="C#" Value="public void GetFileDetails (string name, out bool exists, out long size, out long createDate, out long lastWriteDate);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetFileDetails(string name, bool exists, int64 size, int64 createDate, int64 lastWriteDate) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetFileDetails(string name, [out] bool&amp; exists, [out] int64&amp; size, [out] int64&amp; createDate, [out] int64&amp; lastWriteDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RemoteWebConfigurationHostServer.GetFileDetails(System.String,System.Boolean@,System.Int64@,System.Int64@,System.Int64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -146,6 +150,7 @@
         <exception cref="T:System.Exception">
           <paramref name="name" /> does not point to a file with the .config extension.</exception>
         <forInternalUseOnly />
+        <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="GetFilePaths">
@@ -175,11 +180,12 @@
         <returns>A concatenated string that represents the file path of the configuration file.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="WriteData">
       <MemberSignature Language="C#" Value="public void WriteData (string fileName, string templateFileName, byte[] data, ref long readTime);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteData(string fileName, string templateFileName, unsigned int8[] data, int64 readTime) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteData(string fileName, string templateFileName, unsigned int8[] data, int64&amp; readTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RemoteWebConfigurationHostServer.WriteData(System.String,System.String,System.Byte[],System.Int64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

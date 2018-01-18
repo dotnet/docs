@@ -5,9 +5,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter?displayProperty=fullName> class inherits from the <xref:System.Web.UI.Adapters.ControlAdapter> class. The <xref:System.Web.UI.WebControls.Adapters.DataBoundControlAdapter?displayProperty=fullName> and <xref:System.Web.UI.WebControls.Adapters.MenuAdapter?displayProperty=fullName> classes inherit from the <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter?displayProperty=fullName> class.  
+ The <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter?displayProperty=nameWithType> class inherits from the <xref:System.Web.UI.Adapters.ControlAdapter> class. The <xref:System.Web.UI.WebControls.Adapters.DataBoundControlAdapter?displayProperty=nameWithType> and <xref:System.Web.UI.WebControls.Adapters.MenuAdapter?displayProperty=nameWithType> classes inherit from the <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter?displayProperty=nameWithType> class.  
   
  ]]></format>
     </remarks>
+    <altmember cref="N:System.Web.UI.WebControls.Adapters" />
+    <altmember cref="N:System.Web.UI.MobileControls.Adapters" />
   </Docs>
 </Namespace>

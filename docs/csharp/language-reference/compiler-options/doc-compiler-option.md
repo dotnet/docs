@@ -1,6 +1,6 @@
 ---
 title: "-doc (C# Compiler Options)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "FileProperties.BuildAction"
   - "/doc"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "comments, C# code"
   - "XML documentation [C#], comments in source files"
@@ -21,20 +19,6 @@ ms.assetid: 849eea59-c936-4311-bad8-d07404480f2a
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /doc (C# Compiler Options)
 The **/doc** option allows you to place documentation comments in an XML file.  
@@ -78,5 +62,5 @@ The **/doc** option allows you to place documentation comments in an XML file.
  For information on how to set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.DocumentationFile%2A>.  
   
 ## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

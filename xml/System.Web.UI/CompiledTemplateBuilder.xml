@@ -25,6 +25,9 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Web.UI.ITemplate" />
+    <altmember cref="T:System.Web.UI.TemplateBuilder" />
+    <altmember cref="T:System.Web.UI.CompiledBindableTemplateBuilder" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,6 +54,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="M:System.Web.UI.CompiledTemplateBuilder.InstantiateIn(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="InstantiateIn">
@@ -75,11 +79,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.CompiledBindableTemplateBuilder.InstantiateIn%2A> method is the <xref:System.Web.UI.TemplateBuilder> class's implementation of the <xref:System.Web.UI.ITemplate.InstantiateIn%2A?displayProperty=fullName> method. It is used by ASP.NET to create the control hierarchy of the template and is not meant to be used directly in your code.  
+ The <xref:System.Web.UI.CompiledBindableTemplateBuilder.InstantiateIn%2A> method is the <xref:System.Web.UI.TemplateBuilder> class's implementation of the <xref:System.Web.UI.ITemplate.InstantiateIn%2A?displayProperty=nameWithType> method. It is used by ASP.NET to create the control hierarchy of the template and is not meant to be used directly in your code.  
   
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="M:System.Web.UI.ITemplate.InstantiateIn(System.Web.UI.Control)" />
+        <altmember cref="T:System.Web.UI.Control" />
+        <altmember cref="T:System.Web.UI.ControlCollection" />
       </Docs>
     </Member>
   </Members>

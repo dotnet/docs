@@ -58,7 +58,7 @@
     </Member>
     <Member MemberName="StartImpersonation">
       <MemberSignature Language="C#" Value="public void StartImpersonation (out IDisposable impersonationContext, out System.Security.Principal.IPrincipal originalPrincipal, out bool isThreadPrincipalSet);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void StartImpersonation(class System.IDisposable impersonationContext, class System.Security.Principal.IPrincipal originalPrincipal, bool isThreadPrincipalSet) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void StartImpersonation([out] class System.IDisposable&amp; impersonationContext, [out] class System.Security.Principal.IPrincipal&amp; originalPrincipal, [out] bool&amp; isThreadPrincipalSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty.StartImpersonation(System.IDisposable@,System.Security.Principal.IPrincipal@,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -118,7 +118,7 @@
     </Member>
     <Member MemberName="TryGet">
       <MemberSignature Language="C#" Value="public static bool TryGet (System.ServiceModel.Channels.Message message, out System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty property);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.Message message, class System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty property) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.Message message, [out] class System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty&amp; property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty.TryGet(System.ServiceModel.Channels.Message,System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -143,7 +143,7 @@
     </Member>
     <Member MemberName="TryGet">
       <MemberSignature Language="C#" Value="public static bool TryGet (System.ServiceModel.Channels.MessageProperties properties, out System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty property);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.MessageProperties properties, class System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty property) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.MessageProperties properties, [out] class System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty&amp; property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty.TryGet(System.ServiceModel.Channels.MessageProperties,System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -166,5 +166,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryGet">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty" /> property from the specified message or message properties.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

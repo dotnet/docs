@@ -28,6 +28,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Services.Protocols.MimeFormatter" />
+    <altmember cref="T:System.Web.Services.Protocols.MimeParameterWriter" />
+    <altmember cref="T:System.Web.Services.Protocols.HtmlFormParameterWriter" />
+    <altmember cref="T:System.Web.Services.Protocols.UrlParameterWriter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -197,5 +201,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Encode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Encodes all the parameter values for a Web method and writes them to the specified writer.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

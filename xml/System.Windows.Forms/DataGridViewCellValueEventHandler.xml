@@ -31,7 +31,7 @@
    
   
 ## Examples  
- The following code example handles the <xref:System.Windows.Forms.DataGridView.CellValuePushed> event to store updates and new entries in a data store object. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A?displayProperty=fullName> reference topic.  
+ The following code example handles the <xref:System.Windows.Forms.DataGridView.CellValuePushed> event to store updates and new entries in a data store object. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A?displayProperty=nameWithType> reference topic.  
   
  [!code-cpp[System.Windows.Forms.DataGridView._Virtual#10](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView._Virtual/CPP/virtual.cpp#10)]
  [!code-csharp[System.Windows.Forms.DataGridView._Virtual#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView._Virtual/CS/virtual.cs#10)]
@@ -39,5 +39,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.VirtualMode" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellValueNeeded" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellValuePushed" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCellValueEventArgs" />
   </Docs>
 </Type>

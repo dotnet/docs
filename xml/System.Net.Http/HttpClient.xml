@@ -25,7 +25,7 @@
 ## Remarks  
  The <xref:System.Net.Http.HttpClient> class instance acts as a session to send HTTP requests. An <xref:System.Net.Http.HttpClient> instance is a collection of settings applied to all requests executed by that instance. In addition, every <xref:System.Net.Http.HttpClient> instance uses its own connection pool, isolating its requests from requests executed by other <xref:System.Net.Http.HttpClient> instances.  
   
- The <xref:System.Net.Http.HttpClient> also acts as a base class for more specific HTTP clients. An example would be a FacebookHttpClient providing additional methods specific to a Facebook web service (a GetFriends method, for instance).  
+ The <xref:System.Net.Http.HttpClient> also acts as a base class for more specific HTTP clients. An example would be a FacebookHttpClient providing additional methods specific to a Facebook web service (a GetFriends method, for instance). Derived classes should not override the virtual methods on the class. Instead, use a constructor overload that accepts <xref:System.Net.Http.HttpMessageHandler> to configure any pre- or post-request processing instead.
   
  By default, <xref:System.Net.HttpWebRequest> will be used to send requests to the server. This behavior can be modified by specifying a different channel in one of the constructor overloads taking a <xref:System.Net.Http.HttpMessageHandler> instance as parameter. If features like authentication or caching are required, <xref:System.Net.Http.WebRequestHandler> can be used to configure settings and the instance can be passed to the constructor. The returned handler can be passed to one of the constructor overloads taking a <xref:System.Net.Http.HttpMessageHandler> parameter.  
   
@@ -67,7 +67,25 @@ public class GoodController : ApiController
   
 ```  
   
-   
+The <xref:System.Net.Http.HttpClient> is a high-level API that wraps the lower-level functionality available on each platform where it runs.
+
+On each platform, <xref:System.Net.Http.HttpClient> tries to use the best available transport:
+
+| **Host/Runtime**            | **Backend**                                                                               |
+| --------------------------- | ----------------------------------------------------------------------------------------- |
+| Windows/.NET Framework      | <xref:System.Net.HttpWebRequest>                                                          |
+| Windows/Mono                | <xref:System.Net.HttpWebRequest>                                                          |
+| Windows/UWP                 | Windows native <xref:System.Net.Http.WinHttpHandler> (HTTP 2.0 capable)                   |
+| Windows/.NET Core           | Windows native <xref:System.Net.Http.WinHttpHandler> (HTTP 2.0 capable)                   |
+| Android/Xamarin             | Selected at build-time. Can either use <xref:System.Net.HttpWebRequest> or be configured to use Android's native [`HttpURLConnection`](https://developer.xamarin.com/api/type/Java.Net.HttpURLConnection/) |
+| iOS, tvOS, watchOS/Xamarin  | Selected at build-time. Can either use <xref:System.Net.HttpWebRequest> or be configured to use Apple's [`NSUrlSession`](https://developer.xamarin.com/api/type/MonoTouch.Foundation.NSUrlSession/) (HTTP 2.0 capable) |
+| macOS/Xamarin               | Selected at build-time. Can either use <xref:System.Net.HttpWebRequest> or be configured to use Apple's [`NSUrlSession`](https://developer.xamarin.com/api/type/MonoTouch.Foundation.NSUrlSession/) (HTTP 2.0 capable) |
+| macOS/Mono                  | <xref:System.Net.HttpWebRequest>                                                                          |
+| macOS/.NET Core             | `libcurl`-based HTTP transport (HTTP 2.0 capable)                                         |
+| Linux/Mono                  | <xref:System.Net.HttpWebRequest>                                                          |
+| Linux/.NET Core             | `libcurl`-based HTTP transport (HTTP 2.0 capable)                                         |
+
+Users can also configure a specific transport for <xref:System.Net.Http.HttpClient> by invoking the <xref:System.Net.Http.HttpClient.%23ctor*> constructor that takes an <xref:System.Net.Http.HttpMessageHandler>.
   
 ## Examples  
  [!code-csharp[System.Net.Http.HttpClient#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.net.http.httpclient/cs/source.cs#1)]  
@@ -157,10 +175,11 @@ public class GoodController : ApiController
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `null` is specified for `handler` parameter, the <xref:System.Net.Http.WebRequestHandler> is used as transport handler.  
+ `handler` will be disposed of by calling [HttpClient.Dispose](xref:System.Net.Http.HttpMessageInvoker.Dispose).  
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="handler" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -186,9 +205,10 @@ public class GoodController : ApiController
       <Docs>
         <param name="handler">The <see cref="T:System.Net.Http.HttpMessageHandler" /> responsible for processing the HTTP response messages.</param>
         <param name="disposeHandler">
-          <see langword="true" /> if the inner handler should be disposed of by Dispose(), <see langword="false" /> if you intend to reuse the inner handler.</param>
+          <see langword="true" /> if the inner handler should be disposed of by [HttpClient.Dispose](xref:System.Net.Http.HttpMessageInvoker.Dispose), <see langword="false" /> if you intend to reuse the inner handler.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Http.HttpClient" /> class with a specific handler.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="handler" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="BaseAddress">
@@ -321,7 +341,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The request message was already sent by the <see cref="T:System.Net.Http.HttpClient" /> instance.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
@@ -360,7 +380,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The request message was already sent by the <see cref="T:System.Net.Http.HttpClient" /> instance.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
@@ -401,7 +421,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The request message was already sent by the <see cref="T:System.Net.Http.HttpClient" /> instance.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
@@ -442,7 +462,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The request message was already sent by the <see cref="T:System.Net.Http.HttpClient" /> instance.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
@@ -540,7 +560,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
     </Member>
@@ -578,7 +598,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
     </Member>
@@ -618,7 +638,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
     </Member>
@@ -658,7 +678,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
     </Member>
@@ -698,7 +718,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
     </Member>
@@ -738,7 +758,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
     </Member>
@@ -780,7 +800,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
     </Member>
@@ -822,7 +842,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
     </Member>
@@ -887,7 +907,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
     </Member>
@@ -933,7 +953,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
     </Member>
@@ -998,7 +1018,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
     </Member>
@@ -1044,7 +1064,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
     </Member>
@@ -1109,7 +1129,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
     </Member>
@@ -1155,7 +1175,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
     </Member>
@@ -1249,7 +1269,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
     </Member>
@@ -1289,7 +1309,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
     </Member>
@@ -1331,7 +1351,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
     </Member>
@@ -1373,7 +1393,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
     </Member>
@@ -1432,7 +1452,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
     </Member>
@@ -1472,7 +1492,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
     </Member>
@@ -1514,7 +1534,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
     </Member>
@@ -1556,7 +1576,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
     </Member>
@@ -1613,7 +1633,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="request" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="request" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The request message was already sent by the <see cref="T:System.Net.Http.HttpClient" /> instance.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
@@ -1654,7 +1674,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="request" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="request" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The request message was already sent by the <see cref="T:System.Net.Http.HttpClient" /> instance.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
@@ -1695,7 +1715,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="request" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="request" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The request message was already sent by the <see cref="T:System.Net.Http.HttpClient" /> instance.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
@@ -1738,7 +1758,7 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="request" /> was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="request" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The request message was already sent by the <see cref="T:System.Net.Http.HttpClient" /> instance.</exception>
         <exception cref="T:System.Net.Http.HttpRequestException">The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</exception>
       </Docs>
@@ -1784,5 +1804,17 @@ public class GoodController : ApiController
         <exception cref="T:System.ObjectDisposedException">The current instance has been disposed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DeleteAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Send a DELETE request to the specified Uri as an asynchronous operation.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

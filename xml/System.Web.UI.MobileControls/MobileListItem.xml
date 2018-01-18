@@ -36,14 +36,15 @@
    
   
 ## Examples  
- The following code example shows how you manipulate items in the <xref:System.Web.UI.MobileControls.MobileListItem> object through the <xref:System.Web.UI.MobileControls.MobileListItemCollection> class by using the selected item's index of the <xref:System.Web.UI.MobileControls.SelectionList.Items%2A?displayProperty=fullName> property.  
+ The following code example shows how you manipulate items in the <xref:System.Web.UI.MobileControls.MobileListItem> object through the <xref:System.Web.UI.MobileControls.MobileListItemCollection> class by using the selected item's index of the <xref:System.Web.UI.MobileControls.SelectionList.Items%2A?displayProperty=nameWithType> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileListItemSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileListItemSample/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileListItemSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileListItemSample/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileListItemSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileListItemSample/cs/Default.aspx#1)]
+ [!code-aspx-vb[MobileListItemSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileListItemSample/vb/Default.aspx#1)]  
   
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.List" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,6 +67,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -91,6 +93,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -116,6 +119,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -143,6 +147,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -172,6 +177,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
       </Docs>
     </Member>
     <Member MemberName="DataItem">
@@ -195,6 +201,7 @@
         <summary>Gets or sets the data item to which the list item is bound. This property is available only on a request where the list item is data-bound; on subsequent postbacks, it is always <see langword="null" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The object to which the <see cref="T:System.Web.UI.MobileControls.MobileListItem" /> is bound.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -240,6 +247,7 @@
         <summary>Returns a new instance of the <see cref="T:System.Web.UI.MobileControls.MobileListItem" /> class with the specified <see cref="P:System.Web.UI.MobileControls.MobileListItem.Text" /> property. This method is used internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <returns>A <see cref="T:System.Web.UI.MobileControls.MobileListItem" /> with an initialized <see cref="P:System.Web.UI.MobileControls.MobileListItem.Text" /> property.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -282,6 +290,8 @@
         <summary>Gets the index for an item within a list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The position of the item within the containing list.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <altmember cref="T:System.Web.UI.MobileControls.MobileListItemCollection" />
       </Docs>
     </Member>
     <Member MemberName="IsTrackingViewState">
@@ -301,6 +311,7 @@
         <value>
           <see langword="true" /> if the list item is tracking changes to its view state; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -322,6 +333,7 @@
         <param name="state">An <see cref="T:System.Object" /> that contains the item's <see cref="P:System.Web.UI.MobileControls.MobileListItem.Text" /> and optional <see cref="P:System.Web.UI.MobileControls.MobileListItem.Value" /> property values.</param>
         <summary>Loads the current view state into the list item control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -365,10 +377,26 @@
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="s">The string to convert.</param>
+        <summary>Provides implicit conversion from a <see cref="T:System.String" /> to a <see cref="T:System.Web.UI.MobileControls.MobileListItem" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>A <see cref="T:System.Web.UI.MobileControls.MobileListItem" /> with <see cref="P:System.Web.UI.MobileControls.MobileListItem.Text" /> set to the specified <see cref="T:System.String" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.MobileListItem> object created by implicit conversion uses the string input as the value of its <xref:System.Web.UI.MobileControls.MobileListItem.Text%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example creates multiple <xref:System.Web.UI.MobileControls.MobileListItem> objects using implicit conversion from strings, and adds them to a <xref:System.Web.UI.MobileControls.List> control.  
+  
+ [!code-aspx-csharp[MobileControls.MobileListItem.ImplicitSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileControls.MobileListItem.ImplicitSample/CS/Default.aspx#1)]
+ [!code-aspx-vb[MobileControls.MobileListItem.ImplicitSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileControls.MobileListItem.ImplicitSample/VB/Default.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -388,6 +416,7 @@
         <summary>Saves the changes to the view state. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <returns>An <see cref="T:System.Object" /> that contains the newly saved view state.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -412,6 +441,7 @@
         <value>
           <see langword="true" /> if the item is selected in its parent <see cref="T:System.Web.UI.MobileControls.SelectionList" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -438,6 +468,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -466,6 +497,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -492,6 +524,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -517,6 +550,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -549,6 +583,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -586,6 +621,7 @@
       <Docs>
         <summary>Sets the <see cref="P:System.Web.UI.MobileControls.MobileListItem.IsTrackingViewState" /> property to <see langword="true" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -616,7 +652,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.MobileListItem" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <altmember cref="T:System.Web.UI.MobileControls.List" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:Microsoft.Win32.SystemEvents" />
+    <altmember cref="E:Microsoft.Win32.SystemEvents.SessionEnded" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,6 +40,7 @@
         <param name="reason">One of the <see cref="T:Microsoft.Win32.SessionEndReasons" /> values indicating how the session ended.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Win32.SessionEndedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:Microsoft.Win32.SessionEndReasons" />
       </Docs>
     </Member>
     <Member MemberName="Reason">
@@ -56,6 +59,7 @@
         <summary>Gets an identifier that indicates how the session ended.</summary>
         <value>One of the <see cref="T:Microsoft.Win32.SessionEndReasons" /> values that indicates how the session ended.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:Microsoft.Win32.SessionEndReasons" />
       </Docs>
     </Member>
   </Members>

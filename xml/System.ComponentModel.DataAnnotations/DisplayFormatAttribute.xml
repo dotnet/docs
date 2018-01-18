@@ -28,9 +28,7 @@
   
 ## Remarks  
  When you apply this attribute to a data field, you must follow the guidelines for the use of the attributes. For more information, see [ASP.NET Dynamic Data Guidelines](http://msdn.microsoft.com/en-us/c563bbf3-feb9-484e-81d1-a585f1b0e192).  
-  
-   
-  
+
 ## Examples  
  See an online example of this feature: [Run](http://go.microsoft.com/fwlink/?LinkId=120736&sref=System.ComponentModel.DataAnnotations.DisplayFormatAttribute).  
   
@@ -51,12 +49,12 @@
   
  To compile the example, you need the following:  
   
--   [!INCLUDE[vs_orcas_ext](~/includes/vs-orcas-ext-md.md)] Service Pack 1 or [!INCLUDE[vwd_exp_orcas_long](~/includes/vwd-exp-orcas-long-md.md)] Service Pack 1.  
+-   Any edition of Visual Studio 2010 or later.
   
--   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](http://go.microsoft.com/fwlink/?LinkId=117483) on the CodePlex site. Make sure that you install the correct version of the sample database for the version of SQL Server that you are running ([!INCLUDE[sqprsqext](~/includes/sqprsqext-md.md)] or [!INCLUDE[ssKatmai_long](~/includes/sskatmai-long-md.md)]).  
+-   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](https://github.com/Microsoft/sql-server-samples/releases) on GitHub. Make sure that you install the correct version of the sample database for the version of SQL Server that you are running.
   
 -   A data-driven Web site. This enables you to create a data context for the database and the class that contains the data field to customize. For more information, see `Walkthrough: Creating a New Dynamic Data Web Site using Scaffolding`.  
-  
+
  ]]></format>
     </remarks>
   </Docs>
@@ -193,7 +191,7 @@
  Use the <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.DataFormatString%2A> property to specify a custom display format for the values that are displayed in the <xref:System.Web.DynamicData.DynamicField> object. If the <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.DataFormatString%2A> property is not set, the field's value is displayed without any special formatting. For more information, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
 > [!NOTE]
->  When the <xref:System.Web.DynamicData.DynamicField.HtmlEncode%2A?displayProperty=fullName> property is `true`, the value of the field is HTML encoded to its string representation before the formatting string is applied. For some objects, such as dates, you might want to control how the object is displayed with a formatting string. In those cases, you must set the <xref:System.Web.DynamicData.DynamicField.HtmlEncode%2A?displayProperty=fullName> property to `false`.  
+>  When the <xref:System.Web.DynamicData.DynamicField.HtmlEncode%2A?displayProperty=nameWithType> property is `true`, the value of the field is HTML encoded to its string representation before the formatting string is applied. For some objects, such as dates, you might want to control how the object is displayed with a formatting string. In those cases, you must set the <xref:System.Web.DynamicData.DynamicField.HtmlEncode%2A?displayProperty=nameWithType> property to `false`.  
   
  By default, the formatting string is applied to the field value only when the data-bound control that contains the <xref:System.Web.DynamicData.DynamicField> object is in read-only mode. To apply the formatting string to field values when they are in edit mode, set the <xref:System.Web.DynamicData.DynamicField.ApplyFormatInEditMode%2A> property to `true`.  
   
@@ -282,6 +280,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.DataFormatString" />
+        <altmember cref="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.ConvertEmptyStringToNull" />
       </Docs>
     </Member>
   </Members>

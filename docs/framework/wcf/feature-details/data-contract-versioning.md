@@ -10,17 +10,19 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "versioning [WCF], data contracts"
   - "versioning [WCF]"
   - "data contracts [WCF], versioning"
 ms.assetid: 4a0700cb-5f5f-4137-8705-3a3ecf06461f
 caps.latest.revision: 35
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Data Contract Versioning
 As applications evolve, you may also have to change the data contracts the services use. This topic explains how to version data contracts. This topic describes the data contract versioning mechanisms. For a complete overview and prescriptive versioning guidance, see [Best Practices: Data Contract Versioning](../../../../docs/framework/wcf/best-practices-data-contract-versioning.md).  
@@ -112,26 +114,26 @@ As applications evolve, you may also have to change the data contracts the servi
  Round-tripping also entails some additional considerations. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the "Schema Considerations" section in [Forward-Compatible Data Contracts](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
   
 ### Other Permitted Changes  
- Implementing the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface is a nonbreaking change. However, round-tripping support does not exist for versions of the type prior to the version in which <xref:System.Runtime.Serialization.IExtensibleDataObject> was implemented. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Forward-Compatible Data Contracts](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
+ Implementing the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface is a nonbreaking change. However, round-tripping support does not exist for versions of the type prior to the version in which <xref:System.Runtime.Serialization.IExtensibleDataObject> was implemented. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Forward-Compatible Data Contracts](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
   
 ## Enumerations  
- Adding or removing an enumeration member is a breaking change. Changing the name of an enumeration member is breaking, unless its contract name is kept the same as in the old version by using the `EnumMemberAtttribute` attribute. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Enumeration Types in Data Contracts](../../../../docs/framework/wcf/feature-details/enumeration-types-in-data-contracts.md).  
+ Adding or removing an enumeration member is a breaking change. Changing the name of an enumeration member is breaking, unless its contract name is kept the same as in the old version by using the `EnumMemberAtttribute` attribute. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Enumeration Types in Data Contracts](../../../../docs/framework/wcf/feature-details/enumeration-types-in-data-contracts.md).  
   
 ## Collections  
  Most collection changes are nonbreaking because most collection types are interchangeable with each other in the data contract model. However, making a noncustomized collection customized or vice versa is a breaking change. Also, changing the collection's customization settings is a breaking change; that is, changing its data contract name and namespace, repeating element name, key element name, and value element name. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] collection customization, see [Collection Types in Data Contracts](../../../../docs/framework/wcf/feature-details/collection-types-in-data-contracts.md).  
 Naturally, changing the data contract of contents of a collection (for example, changing from a list of integers to a list of strings) is a breaking change.  
   
 ## See Also  
- <xref:System.Runtime.Serialization.DataMemberAttribute.Name%2A>   
- <xref:System.Runtime.Serialization.DataMemberAttribute>   
- <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A>   
- <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A>   
- <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A>   
- <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A>   
- <xref:System.Runtime.Serialization.SerializationException>   
- <xref:System.Runtime.Serialization.IExtensibleDataObject>   
- [Version-Tolerant Serialization Callbacks](../../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md)   
- [Best Practices: Data Contract Versioning](../../../../docs/framework/wcf/best-practices-data-contract-versioning.md)   
- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)   
- [Data Contract Equivalence](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)   
+ <xref:System.Runtime.Serialization.DataMemberAttribute.Name%2A>  
+ <xref:System.Runtime.Serialization.DataMemberAttribute>  
+ <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A>  
+ <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A>  
+ <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A>  
+ <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A>  
+ <xref:System.Runtime.Serialization.SerializationException>  
+ <xref:System.Runtime.Serialization.IExtensibleDataObject>  
+ [Version-Tolerant Serialization Callbacks](../../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md)  
+ [Best Practices: Data Contract Versioning](../../../../docs/framework/wcf/best-practices-data-contract-versioning.md)  
+ [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
+ [Data Contract Equivalence](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)  
  [Forward-Compatible Data Contracts](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md)

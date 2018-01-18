@@ -23,7 +23,7 @@
 > [!NOTE]
 >  <xref:System.Windows.Documents.Hyperlink> navigation can only occur if either the direct or indirect parent of a <xref:System.Windows.Documents.Hyperlink> is a navigation host. Examples of navigation hosts include <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>, or any browser that can host [!INCLUDE[TLA2#tla_xbap#plural](~/includes/tla2sharptla-xbapsharpplural-md.md)], such as [!INCLUDE[TLA2#tla_ie6](~/includes/tla2sharptla-ie6-md.md)] or later and Firefox 2.0 or later. For more information, see the "Navigation Hosts" topic in [Navigation Overview](~/docs/framework/wpf/app-development/navigation-overview.md).  
   
- To populate the column, bind the column to the <xref:System.Uri> data by using the <xref:System.Windows.Controls.DataGridBoundColumn.Binding%2A> property. To display hyperlink text that is different than the URI string, bind the text value to the <xref:System.Windows.Controls.DataGridHyperlinkColumn.ContentBinding%2A> property. The <xref:System.Windows.Controls.DataGridBoundColumn.Binding%2A> property is applied to the <xref:System.Windows.Documents.Hyperlink> or <xref:System.Windows.Controls.TextBox> element created in the column. The <xref:System.Windows.FrameworkElement.DataContext%2A> for the element in each cell is the data item for the row the cell is in. Therefore, to set up the binding you only have to set the <xref:System.Windows.Data.Binding.Path%2A?displayProperty=fullName>. Optionally, you can specify a <xref:System.Windows.Data.Binding.Converter%2A?displayProperty=fullName> if you want to convert the data. For more information about data binding, see [Data Binding (WPF)](~/docs/framework/wpf/data/data-binding-wpf.md).  
+ To populate the column, bind the column to the <xref:System.Uri> data by using the <xref:System.Windows.Controls.DataGridBoundColumn.Binding%2A> property. To display hyperlink text that is different than the URI string, bind the text value to the <xref:System.Windows.Controls.DataGridHyperlinkColumn.ContentBinding%2A> property. The <xref:System.Windows.Controls.DataGridBoundColumn.Binding%2A> property is applied to the <xref:System.Windows.Documents.Hyperlink> or <xref:System.Windows.Controls.TextBox> element created in the column. The <xref:System.Windows.FrameworkElement.DataContext%2A> for the element in each cell is the data item for the row the cell is in. Therefore, to set up the binding you only have to set the <xref:System.Windows.Data.Binding.Path%2A?displayProperty=nameWithType>. Optionally, you can specify a <xref:System.Windows.Data.Binding.Converter%2A?displayProperty=nameWithType> if you want to convert the data. For more information about data binding, see [Data Binding (WPF)](~/docs/framework/wpf/data/data-binding-wpf.md).  
   
 > [!NOTE]
 >  <xref:System.Windows.Controls.DataGridHyperlinkColumn> creates a <xref:System.Windows.Documents.Hyperlink> element in the non-editing mode and a <xref:System.Windows.Controls.TextBox> element in the editing mode.  
@@ -41,7 +41,7 @@
    
   
 ## Examples  
- The following example shows a <xref:System.Windows.Controls.DataGridHyperlinkColumn> that sets the <xref:System.Uri> with the <xref:System.Windows.Controls.DataGridBoundColumn.Binding%2A> property and the hyperlink text with the <xref:System.Windows.Controls.DataGridHyperlinkColumn.ContentBinding%2A> property. The <xref:System.Windows.Documents.Hyperlink.Click?displayProperty=fullName> event is handled automatically because <xref:System.Windows.Navigation.NavigationWindow> is the parent of the <xref:System.Windows.Controls.DataGrid>.  
+ The following example shows a <xref:System.Windows.Controls.DataGridHyperlinkColumn> that sets the <xref:System.Uri> with the <xref:System.Windows.Controls.DataGridBoundColumn.Binding%2A> property and the hyperlink text with the <xref:System.Windows.Controls.DataGridHyperlinkColumn.ContentBinding%2A> property. The <xref:System.Windows.Documents.Hyperlink.Click?displayProperty=nameWithType> event is handled automatically because <xref:System.Windows.Navigation.NavigationWindow> is the parent of the <xref:System.Windows.Controls.DataGrid>.  
   
  [!code-xaml[DataGrid_CustomColumns#HyperlinkA](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_customcolumns/csharp/window1.xaml#hyperlinka)]  
 [!code-xaml[DataGrid_CustomColumns#HyperlinkB](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_customcolumns/csharp/window1.xaml#hyperlinkb)]  
@@ -61,6 +61,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Documents.Hyperlink" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

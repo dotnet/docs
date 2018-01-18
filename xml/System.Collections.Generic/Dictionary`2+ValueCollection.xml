@@ -52,7 +52,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Collections.Generic.Dictionary%602.Values%2A?displayProperty=fullName> property returns an instance of this type, containing all the values in that <xref:System.Collections.Generic.Dictionary%602>.  The order of the values in the <xref:System.Collections.Generic.Dictionary%602.ValueCollection> is unspecified, but it is the same order as the associated keys in the <xref:System.Collections.Generic.Dictionary%602.KeyCollection> returned by the <xref:System.Collections.Generic.Dictionary%602.Keys%2A?displayProperty=fullName> property.  
+ The <xref:System.Collections.Generic.Dictionary%602.Values%2A?displayProperty=nameWithType> property returns an instance of this type, containing all the values in that <xref:System.Collections.Generic.Dictionary%602>.  The order of the values in the <xref:System.Collections.Generic.Dictionary%602.ValueCollection> is unspecified, but it is the same order as the associated keys in the <xref:System.Collections.Generic.Dictionary%602.KeyCollection> returned by the <xref:System.Collections.Generic.Dictionary%602.Keys%2A?displayProperty=nameWithType> property.  
   
  The <xref:System.Collections.Generic.Dictionary%602.ValueCollection> is not a static copy; instead, the <xref:System.Collections.Generic.Dictionary%602.ValueCollection> refers back to the values in the original <xref:System.Collections.Generic.Dictionary%602>. Therefore, changes to the <xref:System.Collections.Generic.Dictionary%602> continue to be reflected in the <xref:System.Collections.Generic.Dictionary%602.ValueCollection>.  
   
@@ -149,6 +149,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero.</exception>
         <exception cref="T:System.ArgumentException">The number of elements in the source <see cref="T:System.Collections.Generic.Dictionary`2.ValueCollection" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -232,12 +233,14 @@
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  This method is an O(1) operation.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.Dictionary`2.ValueCollection.Enumerator" />
+        <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;TValue&gt;.Add">
@@ -271,6 +274,7 @@
         <summary>Adds an item to the <see cref="T:System.Collections.Generic.ICollection`1" />.  This implementation always throws <see cref="T:System.NotSupportedException" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <altmember cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;TValue&gt;.Clear">
@@ -308,6 +312,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <altmember cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;TValue&gt;.Contains">
@@ -432,6 +437,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <altmember cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;TValue&gt;.GetEnumerator">
@@ -485,6 +491,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -524,7 +531,7 @@
 ## Remarks  
   
 > [!NOTE]
->  If the type of the source <xref:System.Collections.ICollection> cannot be cast automatically to the type of the destination `array`, the non-generic implementations of <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName> throw <xref:System.InvalidCastException>, whereas the generic implementations throw <xref:System.ArgumentException>.  
+>  If the type of the source <xref:System.Collections.ICollection> cannot be cast automatically to the type of the destination `array`, the non-generic implementations of <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=nameWithType> throw <xref:System.InvalidCastException>, whereas the generic implementations throw <xref:System.ArgumentException>.  
   
  This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Dictionary%602.ValueCollection.Count%2A>.  
   
@@ -548,6 +555,8 @@
  -or-  
   
  The type of the source <see cref="T:System.Collections.ICollection" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -581,7 +590,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
@@ -591,6 +600,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -623,7 +633,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
@@ -658,6 +668,7 @@ finally {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -705,12 +716,13 @@ finally {
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  This method is an O(1) operation.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
   </Members>

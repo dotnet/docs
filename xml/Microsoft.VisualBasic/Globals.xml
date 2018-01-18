@@ -41,6 +41,10 @@ End Function
   
  ]]></format>
     </remarks>
+    <altmember cref="P:Microsoft.VisualBasic.Globals.ScriptEngine" />
+    <altmember cref="P:Microsoft.VisualBasic.Globals.ScriptEngineBuildVersion" />
+    <altmember cref="P:Microsoft.VisualBasic.Globals.ScriptEngineMajorVersion" />
+    <altmember cref="P:Microsoft.VisualBasic.Globals.ScriptEngineMinorVersion" />
   </Docs>
   <Members>
     <Member MemberName="ScriptEngine">
@@ -75,6 +79,9 @@ End Function
   
  ]]></format>
         </remarks>
+        <altmember cref="P:Microsoft.VisualBasic.Globals.ScriptEngineBuildVersion" />
+        <altmember cref="P:Microsoft.VisualBasic.Globals.ScriptEngineMajorVersion" />
+        <altmember cref="P:Microsoft.VisualBasic.Globals.ScriptEngineMinorVersion" />
       </Docs>
     </Member>
     <Member MemberName="ScriptEngineBuildVersion">
@@ -109,6 +116,9 @@ End Function
   
  ]]></format>
         </remarks>
+        <altmember cref="P:Microsoft.VisualBasic.Globals.ScriptEngine" />
+        <altmember cref="P:Microsoft.VisualBasic.Globals.ScriptEngineMajorVersion" />
+        <altmember cref="P:Microsoft.VisualBasic.Globals.ScriptEngineMinorVersion" />
       </Docs>
     </Member>
     <Member MemberName="ScriptEngineMajorVersion">
@@ -143,6 +153,9 @@ End Function
   
  ]]></format>
         </remarks>
+        <altmember cref="P:Microsoft.VisualBasic.Globals.ScriptEngine" />
+        <altmember cref="P:Microsoft.VisualBasic.Globals.ScriptEngineBuildVersion" />
+        <altmember cref="P:Microsoft.VisualBasic.Globals.ScriptEngineMinorVersion" />
       </Docs>
     </Member>
     <Member MemberName="ScriptEngineMinorVersion">
@@ -177,6 +190,9 @@ End Function
   
  ]]></format>
         </remarks>
+        <altmember cref="P:Microsoft.VisualBasic.Globals.ScriptEngine" />
+        <altmember cref="P:Microsoft.VisualBasic.Globals.ScriptEngineBuildVersion" />
+        <altmember cref="P:Microsoft.VisualBasic.Globals.ScriptEngineMajorVersion" />
       </Docs>
     </Member>
   </Members>

@@ -29,7 +29,7 @@
    
   
 ## Examples  
- The following example demonstrates handling the <xref:System.Windows.Forms.Control.HelpRequested> event to display custom Help content on a form containing four address fields. The <xref:System.Windows.Forms.Control.HelpRequested> event is raised either by pressing the F1 key with the focus in an address field, or by the using the context-sensitive Help button and clicking the Help cursor on an address field. The <xref:System.Windows.Forms.HelpEventArgs.Handled%2A> property is set to true to indicate that the `HelpRequested` event is handled. The example also demonstrates storing the Help text in the <xref:System.Windows.Forms.Control.Tag%2A?displayProperty=fullName> property.  
+ The following example demonstrates handling the <xref:System.Windows.Forms.Control.HelpRequested> event to display custom Help content on a form containing four address fields. The <xref:System.Windows.Forms.Control.HelpRequested> event is raised either by pressing the F1 key with the focus in an address field, or by the using the context-sensitive Help button and clicking the Help cursor on an address field. The <xref:System.Windows.Forms.HelpEventArgs.Handled%2A> property is set to true to indicate that the `HelpRequested` event is handled. The example also demonstrates storing the Help text in the <xref:System.Windows.Forms.Control.Tag%2A?displayProperty=nameWithType> property.  
   
  [!code-cpp[System.Windows.Forms.HelpEventHandler#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.HelpEventHandler/CPP/helpevent.cpp#1)]
  [!code-csharp[System.Windows.Forms.HelpEventHandler#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HelpEventHandler/CS/helpevent.cs#1)]
@@ -37,5 +37,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.Windows.Forms.Control.HelpRequested" />
+    <altmember cref="T:System.Windows.Forms.HelpEventArgs" />
   </Docs>
 </Type>

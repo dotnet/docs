@@ -41,7 +41,7 @@
    
   
 ## Examples  
- The following code example demonstrates setting an event handler for the <xref:System.Net.WebClient.DownloadProgressChanged?displayProperty=fullName> event.  
+ The following code example demonstrates setting an event handler for the <xref:System.Net.WebClient.DownloadProgressChanged?displayProperty=nameWithType> event.  
   
  [!code-cpp[NCLWebClientAsync#19](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLWebClientAsync/CPP/asyncmethods.cpp#19)]
  [!code-csharp[NCLWebClientAsync#19](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebClientAsync/CS/asyncmethods.cs#19)]

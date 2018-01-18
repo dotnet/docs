@@ -9,23 +9,23 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "data [Windows Forms], display modes"
-  - "data grids, display modes"
+  - "data grids [Windows Forms], display modes"
   - "DataGridView control [Windows Forms], display modes"
 ms.assetid: 9755a030-3f3f-4705-a661-ba5a48a81875
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Data Display Modes in the Windows Forms DataGridView Control
 The <xref:System.Windows.Forms.DataGridView> control can display data in three distinct modes: bound, unbound, and virtual. Choose the most suitable mode based on your requirements.  
   
 ## Unbound  
- Unbound mode is suitable for displaying relatively small amounts of data that you manage programmatically. You do not attach the <xref:System.Windows.Forms.DataGridView> control directly to a data source as in bound mode. Instead, you must populate the control yourself, typically by using the <xref:System.Windows.Forms.DataGridViewRowCollection.Add%2A?displayProperty=fullName> method.  
+ Unbound mode is suitable for displaying relatively small amounts of data that you manage programmatically. You do not attach the <xref:System.Windows.Forms.DataGridView> control directly to a data source as in bound mode. Instead, you must populate the control yourself, typically by using the <xref:System.Windows.Forms.DataGridViewRowCollection.Add%2A?displayProperty=nameWithType> method.  
   
  Unbound mode can be particularly useful for static, read-only data, or when you want to provide your own code that interacts with an external data store. When you want your users to interact with an external data source, however, you will typically use bound mode.  
   
@@ -36,7 +36,7 @@ The <xref:System.Windows.Forms.DataGridView> control can display data in three d
   
  For an example that uses a bound <xref:System.Windows.Forms.DataGridView> control, see [Walkthrough: Validating Data in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/walkthrough-validating-data-in-the-windows-forms-datagridview-control.md).  
   
- You can also add unbound columns to a <xref:System.Windows.Forms.DataGridView> control in bound mode. This is useful when you want to display a column of buttons or links that enable users to perform actions on specific rows. It is also useful to display columns with values calculated from bound columns. You can populate the cell values for calculated columns in a handler for the <xref:System.Windows.Forms.DataGridView.CellFormatting> event. If you are using a <xref:System.Data.DataSet> or <xref:System.Data.DataTable> as the data source, however, you might want to use the <xref:System.Data.DataColumn.Expression%2A?displayProperty=fullName> property to create a calculated column instead. In this case, the <xref:System.Windows.Forms.DataGridView> control will treat calculated column just like any other column in the data source.  
+ You can also add unbound columns to a <xref:System.Windows.Forms.DataGridView> control in bound mode. This is useful when you want to display a column of buttons or links that enable users to perform actions on specific rows. It is also useful to display columns with values calculated from bound columns. You can populate the cell values for calculated columns in a handler for the <xref:System.Windows.Forms.DataGridView.CellFormatting> event. If you are using a <xref:System.Data.DataSet> or <xref:System.Data.DataTable> as the data source, however, you might want to use the <xref:System.Data.DataColumn.Expression%2A?displayProperty=nameWithType> property to create a calculated column instead. In this case, the <xref:System.Windows.Forms.DataGridView> control will treat calculated column just like any other column in the data source.  
   
  Sorting by unbound columns in bound mode is not supported. If you create an unbound column in bound mode that contains user-editable values, you must implement virtual mode to maintain these values when the control is sorted by a bound column.  
   
@@ -50,14 +50,14 @@ The <xref:System.Windows.Forms.DataGridView> control can display data in three d
  For more information about virtual mode, see [Virtual Mode in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/virtual-mode-in-the-windows-forms-datagridview-control.md). For an example that shows how to use virtual mode events, see [Walkthrough: Implementing Virtual Mode in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/implementing-virtual-mode-wf-datagridview-control.md).  
   
 ## See Also  
- <xref:System.Windows.Forms.DataGridView>   
- <xref:System.Windows.Forms.DataGridView.DataSource%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.VirtualMode%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.BindingSource>   
- <xref:System.Windows.Forms.DataGridViewColumn.DataPropertyName%2A?displayProperty=fullName>   
- [Displaying Data in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/displaying-data-in-the-windows-forms-datagridview-control.md)   
- [Column Types in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/column-types-in-the-windows-forms-datagridview-control.md)   
- [Walkthrough: Creating an Unbound Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/walkthrough-creating-an-unbound-windows-forms-datagridview-control.md)   
- [How to: Bind Data to the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-bind-data-to-the-windows-forms-datagridview-control.md)   
- [Virtual Mode in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/virtual-mode-in-the-windows-forms-datagridview-control.md)   
+ <xref:System.Windows.Forms.DataGridView>  
+ <xref:System.Windows.Forms.DataGridView.DataSource%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.DataGridView.VirtualMode%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.Forms.BindingSource>  
+ <xref:System.Windows.Forms.DataGridViewColumn.DataPropertyName%2A?displayProperty=nameWithType>  
+ [Displaying Data in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/displaying-data-in-the-windows-forms-datagridview-control.md)  
+ [Column Types in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/column-types-in-the-windows-forms-datagridview-control.md)  
+ [Walkthrough: Creating an Unbound Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/walkthrough-creating-an-unbound-windows-forms-datagridview-control.md)  
+ [How to: Bind Data to the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-bind-data-to-the-windows-forms-datagridview-control.md)  
+ [Virtual Mode in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/virtual-mode-in-the-windows-forms-datagridview-control.md)  
  [Walkthrough: Implementing Virtual Mode in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/implementing-virtual-mode-wf-datagridview-control.md)

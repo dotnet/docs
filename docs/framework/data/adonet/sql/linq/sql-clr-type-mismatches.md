@@ -9,11 +9,16 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 0a90c33f-7ed7-4501-ad5f-6224c5da8e9b
 caps.latest.revision: 2
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # SQL-CLR Type Mismatches
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] automates much of the translation between the object model and SQL Server. Nevertheless, some situations prevent exact translation. These key mismatches between the common language runtime (CLR) types and the SQL Server database types are summarized in the following sections. You can find more details about specific type mappings and function translation at [SQL-CLR Type Mapping](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md) and [Data Types and Functions](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md).  
@@ -25,7 +30,7 @@ manager: "jhubbard"
 Select DateOfBirth From Customer Where CustomerId = @id     
 ```  
   
- Before the query can be executed on SQL Server, the value for the Transact-SQL parameter must be specified. In this example, the `id` parameter value must first be translated from a CLR <xref:System.Int32?displayProperty=fullName> type to a SQL Server `INT` type so that the database can understand what the value is. Then to retrieve the results, the SQL Server `DateOfBirth` column must be translated from a SQL Server `DATETIME` type to a CLR <xref:System.DateTime?displayProperty=fullName> type for use in the object model. In this example, the types in the CLR object model and SQL Server database have natural mappings. But, this is not always the case.  
+ Before the query can be executed on SQL Server, the value for the Transact-SQL parameter must be specified. In this example, the `id` parameter value must first be translated from a CLR <xref:System.Int32?displayProperty=nameWithType> type to a SQL Server `INT` type so that the database can understand what the value is. Then to retrieve the results, the SQL Server `DateOfBirth` column must be translated from a SQL Server `DATETIME` type to a CLR <xref:System.DateTime?displayProperty=nameWithType> type for use in the object model. In this example, the types in the CLR object model and SQL Server database have natural mappings. But, this is not always the case.  
   
 ### Missing Counterparts  
  The following types do not have reasonable counterparts.  
@@ -36,18 +41,18 @@ Select DateOfBirth From Customer Where CustomerId = @id
   
     -   **Boolean**. These types can be mapped to a bit or larger numeric or string. A literal can be mapped to an expression that evaluates to the same value (for example, `1=1` in SQL for `True` in CLS).  
   
-    -   **TimeSpan**. This type represents the difference between two `DateTime` values and does not correspond to the `timestamp` of SQL Server. The CLR <xref:System.TimeSpan?displayProperty=fullName> may also map to the SQL Server `TIME` type in some cases. The SQL Server `TIME` type was only intended to represent positive values less than 24 hours. The CLR <xref:System.TimeSpan> has a much larger range.  
+    -   **TimeSpan**. This type represents the difference between two `DateTime` values and does not correspond to the `timestamp` of SQL Server. The CLR <xref:System.TimeSpan?displayProperty=nameWithType> may also map to the SQL Server `TIME` type in some cases. The SQL Server `TIME` type was only intended to represent positive values less than 24 hours. The CLR <xref:System.TimeSpan> has a much larger range.  
   
     > [!NOTE]
     >  SQL Server-specific [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)] types in <xref:System.Data.SqlTypes> are not included in this comparison.  
   
 -   Mismatches in SQL Server:  
   
-    -   **Fixed length character types**. Transact-SQL distinguishes between Unicode and non-Unicode categories and has three distinct types in each category: fixed length `nchar`/`char`, variable length `nvarchar`/`varchar`, and larger-sized `ntext`/`text`. The fixed length character types could be mapped to the CLR <xref:System.Char?displayProperty=fullName> type for retrieving characters, but they do not really correspond to the same type in conversions and behavior.  
+    -   **Fixed length character types**. Transact-SQL distinguishes between Unicode and non-Unicode categories and has three distinct types in each category: fixed length `nchar`/`char`, variable length `nvarchar`/`varchar`, and larger-sized `ntext`/`text`. The fixed length character types could be mapped to the CLR <xref:System.Char?displayProperty=nameWithType> type for retrieving characters, but they do not really correspond to the same type in conversions and behavior.  
   
     -   **Bit**. Although the `bit` domain has the same number of values as `Nullable<Boolean>`, the two are different types. `Bit` takes values `1` and `0` instead of `true`/`false`, and cannot be used as an equivalent to Boolean expressions.  
   
-    -   **Timestamp**. Unlike the CLR <xref:System.TimeSpan?displayProperty=fullName> type, the SQL Server `TIMESTAMP` type represents an 8-byte number generated by the database that is unique for each update and is not based on the difference between <xref:System.DateTime> values.  
+    -   **Timestamp**. Unlike the CLR <xref:System.TimeSpan?displayProperty=nameWithType> type, the SQL Server `TIMESTAMP` type represents an 8-byte number generated by the database that is unique for each update and is not based on the difference between <xref:System.DateTime> values.  
   
     -   **Money** and **SmallMoney**. These types can be mapped to <xref:System.Decimal> but are basically different types and are treated as such by server-based functions and conversions.  
   
@@ -205,7 +210,7 @@ Where Col1 = Col2
  [!code-csharp[DLinqMismatch#6](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqMismatch/cs/Program.cs#6)]
  [!code-vb[DLinqMismatch#6](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqMismatch/vb/Module1.vb#6)]  
   
--   Operators/ functions applied to fixed length character type arguments in SQL have significantly different semantics than the same operators/functions applied to the CLR <xref:System.String?displayProperty=fullName>. This could also be viewed as an extension of the missing counterpart problem discussed in the section about types.  
+-   Operators/ functions applied to fixed length character type arguments in SQL have significantly different semantics than the same operators/functions applied to the CLR <xref:System.String?displayProperty=nameWithType>. This could also be viewed as an extension of the missing counterpart problem discussed in the section about types.  
   
     ```  
     create table T4 (  

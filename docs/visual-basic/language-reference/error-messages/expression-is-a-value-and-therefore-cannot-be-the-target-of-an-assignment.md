@@ -1,40 +1,21 @@
 ---
 title: "Expression is a value and therefore cannot be the target of an assignment"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "bc30068"
   - "vbc30068"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC30068"
 ms.assetid: d65141e1-f31e-4ac5-a3b8-0b2e02a71ebf
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Expression is a value and therefore cannot be the target of an assignment
 A statement attempts to assign a value to an expression. You can assign a value only to a writable variable, property, or array element at run time. The following example illustrates how this error can occur.  
@@ -80,6 +61,6 @@ exitButton.Location = exitLocation
 -   Use the variable to access the property to assign it a value.  
   
 ## See Also  
- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)   
- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)   
+ [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)  
+ [Statements](../../../visual-basic/programming-guide/language-features/statements.md)  
  [Troubleshooting Procedures](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)

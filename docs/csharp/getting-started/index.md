@@ -3,9 +3,12 @@
 title: Get Started - C# Guide
 description: Find short, simple tutorials that let you quickly learn introductory C# concepts and write .NET Core applications.
 keywords: C#, Get Started, Acquisition, Install
+helpviewer_keywords: 
+  - "Visual C#, getting started"
+  - "getting started, Visual C#"
 author: rpetrusha
 ms.author: ronpet
-ms.date: 05/02/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
@@ -16,6 +19,10 @@ ms.devlang: csharp
 This section provides short, simple tutorials that let you quickly build an application using C# and .NET Core. There are getting started topics for Visual Studio 2017 and Visual Studio Code. You can build either a simple Hello World application or, if you have Visual Studio 2017, a simple class library that can be used by other applications.
 
 The following topics are available:
+
+* [Introduction to the C# Language and the .NET Framework](introduction-to-the-csharp-language-and-the-net-framework.md)
+
+     Provides an overview of the C# language and .NET.
 
 * [Building a C# Hello World application with .NET Core in Visual Studio 2017](../../core/tutorials/with-visual-studio.md)
 
@@ -32,3 +39,32 @@ The following topics are available:
    Visual Studio Code is a free code editor optimized for building and debugging modern web and cloud applications. It supports IntelliSense and is available for Linux, macOS, and Windows.
 
    This topic shows you how to create and run a simple Hello World application with Visual Studio Code and .NET Core.
+
+* [Additional Resources for Visual C# Programmers](additional-resources.md)
+
+   Provides links to Web sites and newsgroups that can help you find answers to common problems.
+
+## Related Sections
+
+* [Using the Visual Studio Development Environment for C#](/visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp)  
+
+    Provides a guide to using the [!INCLUDE[csprcs](~/includes/csprcs-md.md)] integrated development environment.
+
+* [C# Programming Guide](../../csharp/programming-guide/index.md)
+
+    Provides information about C# programming concepts, and describes how to perform various tasks in C#.
+
+* [C# Reference](../../csharp/language-reference/index.md)
+
+    Provides detailed reference information about C# keywords, operators, preprocessor directives, compiler options, and compiler errors and warnings.
+
+* [Visual Studio Samples](/visualstudio/ide/visual-studio-samples)
+
+    Provides information about how you can access online samples.
+
+* [Walkthroughs](../../csharp/walkthroughs.md)
+
+    Provides links to programming walkthroughs that use C# and a brief description of each walkthrough.
+
+## See also
+ [Getting Started with Visual C# and Visual Basic using Visual Studio](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)

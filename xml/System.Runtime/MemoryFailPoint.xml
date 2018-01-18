@@ -88,7 +88,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The amount of memory used by your application to process a work item can be determined empirically.  To estimate the amount of memory your application needs to process a request, consider using the <xref:System.GC.GetTotalMemory%2A?displayProperty=fullName> method to determine the amount of memory available before and after calling the method that processes the work item. See the <xref:System.Runtime.MemoryFailPoint> class for a code example that dynamically determines the value for the `sizeInMegabytes` parameter.  
+ The amount of memory used by your application to process a work item can be determined empirically.  To estimate the amount of memory your application needs to process a request, consider using the <xref:System.GC.GetTotalMemory%2A?displayProperty=nameWithType> method to determine the amount of memory available before and after calling the method that processes the work item. See the <xref:System.Runtime.MemoryFailPoint> class for a code example that dynamically determines the value for the `sizeInMegabytes` parameter.  
   
    
   
@@ -169,6 +169,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.Finalize" />
       </Docs>
     </Member>
   </Members>

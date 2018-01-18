@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataValidate"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataValidate interface [.NET Framework metadata]"
 ms.assetid: db98608a-e85c-4f50-9d7b-5f57a426ddb6
@@ -28,6 +26,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataValidate Interface
 Provides methods to validate metadata signatures.  

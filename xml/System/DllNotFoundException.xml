@@ -39,12 +39,13 @@
   
  For a list of initial property values for an instance of <xref:System.DllNotFoundException>, see the <xref:System.DllNotFoundException.%23ctor%2A> constructors.  
   
- The <xref:System.DllNotFoundException> is thrown when a dynamic link library defined by the <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> attribute or a comparable language construct, such as the Visual Basic `Declare` statement, cannot be found. It is not thrown when the common language runtime is unable to load a .NET Framework assembly.  
+ The <xref:System.DllNotFoundException> is thrown when a dynamic link library defined by the <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=nameWithType> attribute or a comparable language construct, such as the Visual Basic `Declare` statement, cannot be found. It is not thrown when the common language runtime is unable to load a .NET Framework assembly.  
   
  Note that the <xref:System.Runtime.InteropServices.DllImportAttribute> can specify the path to the directory in which the DLL resides. If a path is not specified, Windows uses the search order described in [Dynamic-Link Library Search Order](http://go.microsoft.com/fwlink/?LinkId=122531).  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -207,7 +208,22 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DllNotFoundException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

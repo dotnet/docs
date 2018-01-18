@@ -17,6 +17,8 @@ caps.latest.revision: 11
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # XAMLServices Class and Basic XAML Reading or Writing
 <xref:System.Xaml.XamlServices> is a class provided by .NET Framework XAML Services that can be used to address XAML scenarios that do not require specific access to the XAML node stream, or XAML type system information obtained from those nodes. <xref:System.Xaml.XamlServices> API can be summarized as the following: `Load` or `Parse` to support a XAML load path, `Save` to support a XAML save path, and `Transform` to provide a technique that joins a load path and save path. `Transform` can be used to change from one XAML schema to another. This topic summarizes each of these API classifications and describes the differences between particular method overloads.  
@@ -59,7 +61,7 @@ manager: "wpickett"
   
  In many scenarios the object tree that you save is related to an original operation that loaded XAML either with <xref:System.Xaml.XamlServices.Load%2A> or with other API implemented by a framework/application model. There might be differences captured in the object tree that are due to state changes, changes where your application captured runtime settings from a user, changed XAML because your application is a XAML design surface, etc. With or without changes, the concept of first loading XAML from markup and then saving it again and comparing the two XAML markup forms is sometimes referred as a round-trip representation of the XAML.  
   
- The challenge with saving and serializing a complex object that is set in a markup form is in achieving a balance between full representation without information loss, versus verbosity that makes the XAML less human-readable. Moreover, different customers for XAML might have different definitions or expectations for how that balance should be set. The <xref:System.Xaml.XamlServices.Save%2A> APIs represent one definition of that balance. The <xref:System.Xaml.XamlServices.Save%2A> APIs use available XAML schema context and the default CLR-based characteristics of <xref:System.Xaml.XamlType>, <xref:System.Xaml.XamlMember>, and other XAML intrinsic and XAML type system concepts to determine where certain XAML node stream constructs can be optimized when they are saved back into markup. For example, <xref:System.Xaml.XamlServices> save paths can use CLR-based default XAML schema context to resolve <xref:System.Xaml.XamlType> for objects, can determine a <xref:System.Xaml.XamlType.ContentProperty%2A?displayProperty=fullName>, and then can omit property element tags when they write the property to the XAML content of the object.  
+ The challenge with saving and serializing a complex object that is set in a markup form is in achieving a balance between full representation without information loss, versus verbosity that makes the XAML less human-readable. Moreover, different customers for XAML might have different definitions or expectations for how that balance should be set. The <xref:System.Xaml.XamlServices.Save%2A> APIs represent one definition of that balance. The <xref:System.Xaml.XamlServices.Save%2A> APIs use available XAML schema context and the default CLR-based characteristics of <xref:System.Xaml.XamlType>, <xref:System.Xaml.XamlMember>, and other XAML intrinsic and XAML type system concepts to determine where certain XAML node stream constructs can be optimized when they are saved back into markup. For example, <xref:System.Xaml.XamlServices> save paths can use CLR-based default XAML schema context to resolve <xref:System.Xaml.XamlType> for objects, can determine a <xref:System.Xaml.XamlType.ContentProperty%2A?displayProperty=nameWithType>, and then can omit property element tags when they write the property to the XAML content of the object.  
   
 <a name="transform"></a>   
 ## Transform  
@@ -68,6 +70,6 @@ manager: "wpickett"
  For operations that rely on examining each node in a XAML node stream, you typically do not use <xref:System.Xaml.XamlServices.Transform%2A>. Instead you need to define your own load path-save path operation series and interject your own logic. In one of the paths, use a XAML reader/XAML writer pair around your own node loop. For example, load the initial XAML using <xref:System.Xaml.XamlXmlReader> and step into the nodes with successive <xref:System.Xaml.XamlXmlReader.Read%2A> calls. Operating at the XAML node stream level you can now adjust individual nodes (types, members, other nodes) to apply a transformation, or leave the node as-is. Then you send the node onwards to the relevant `Write` API of a <xref:System.Xaml.XamlObjectWriter> and write out the object. For more information, see [Understanding XAML Node Stream Structures and Concepts](../../../docs/framework/xaml-services/understanding-xaml-node-stream-structures-and-concepts.md).  
   
 ## See Also  
- <xref:System.Xaml.XamlObjectWriter>   
- <xref:System.Xaml.XamlServices>   
+ <xref:System.Xaml.XamlObjectWriter>  
+ <xref:System.Xaml.XamlServices>  
  [XAML Services](../../../docs/framework/xaml-services/index.md)

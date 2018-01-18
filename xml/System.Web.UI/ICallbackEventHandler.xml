@@ -23,6 +23,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="Overload:System.Web.UI.ClientScriptManager.GetCallbackEventReference" />
+    <altmember cref="M:System.Web.UI.WebControls.DetailsView.System#Web#UI#ICallbackEventHandler#RaiseCallbackEvent(System.String)" />
+    <altmember cref="M:System.Web.UI.WebControls.GridView.System#Web#UI#ICallbackEventHandler#RaiseCallbackEvent(System.String)" />
+    <altmember cref="M:System.Web.UI.WebControls.TreeView.System#Web#UI#ICallbackEventHandler#RaiseCallbackEvent(System.String)" />
   </Docs>
   <Members>
     <Member MemberName="GetCallbackResult">
@@ -49,6 +53,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.GetCallbackResult" />
+        <altmember cref="M:System.Web.UI.WebControls.DetailsView.GetCallbackResult" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.GetCallbackResult" />
       </Docs>
     </Member>
     <Member MemberName="RaiseCallbackEvent">
@@ -79,6 +87,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.ClientScriptManager.GetCallbackEventReference" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.System#Web#UI#ICallbackEventHandler#RaiseCallbackEvent(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.System#Web#UI#ICallbackEventHandler#RaiseCallbackEvent(System.String)" />
+        <altmember cref="M:System.Web.UI.ICallbackEventHandler.GetCallbackResult" />
       </Docs>
     </Member>
   </Members>

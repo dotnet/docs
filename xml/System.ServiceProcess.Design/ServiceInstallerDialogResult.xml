@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceProcess.Design.ServiceInstallerDialog.Result%2A?displayProperty=fullName> property uses this enumeration to indicate the user response to the dialog box.  
+ The <xref:System.ServiceProcess.Design.ServiceInstallerDialog.Result%2A?displayProperty=nameWithType> property uses this enumeration to indicate the user response to the dialog box.  
   
    
   
@@ -27,6 +27,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ServiceProcess.Design.ServiceInstallerDialog" />
+    <altmember cref="T:System.ServiceProcess.ServiceAccount" />
   </Docs>
   <Members>
     <Member MemberName="Canceled">

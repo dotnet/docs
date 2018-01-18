@@ -250,5 +250,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AttributeValue">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the value of an XML attribute. This property is not intended to be used from your code.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RemoveNamespaceAttributes">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes XML namespace attributes from an XML element. This method is not intended to be used from your code.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

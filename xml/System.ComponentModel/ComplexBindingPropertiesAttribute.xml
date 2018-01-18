@@ -30,7 +30,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> is used to specify the properties used with complex data binding, such as binding based on <xref:System.Collections.IList?displayProperty=fullName>.  
+ The <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> is used to specify the properties used with complex data binding, such as binding based on <xref:System.Collections.IList?displayProperty=nameWithType>.  
   
  The <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> attribute is specified at the class level. It is inheritable and does not allow multiple attributes on the same class.  
   
@@ -48,6 +48,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.IList" />
+    <altmember cref="T:System.ComponentModel.BindableAttribute" />
+    <altmember cref="T:System.ComponentModel.DefaultBindingPropertyAttribute" />
+    <altmember cref="T:System.ComponentModel.LookupBindingPropertiesAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,6 +83,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.ComplexBindingPropertiesAttribute.DataSource" />
+        <altmember cref="P:System.ComponentModel.ComplexBindingPropertiesAttribute.DataMember" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -113,6 +119,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.ComplexBindingPropertiesAttribute.DataSource" />
+        <altmember cref="P:System.ComponentModel.ComplexBindingPropertiesAttribute.DataMember" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -149,6 +157,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.ComplexBindingPropertiesAttribute.DataSource" />
+        <altmember cref="P:System.ComponentModel.ComplexBindingPropertiesAttribute.DataMember" />
       </Docs>
     </Member>
     <Member MemberName="DataMember">
@@ -183,6 +193,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.ComplexBindingPropertiesAttribute.DataSource" />
+        <altmember cref="Overload:System.ComponentModel.ComplexBindingPropertiesAttribute.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -217,6 +229,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.ComplexBindingPropertiesAttribute.DataMember" />
+        <altmember cref="Overload:System.ComponentModel.ComplexBindingPropertiesAttribute.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -289,6 +303,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.ComplexBindingPropertiesAttribute.GetHashCode" />
+        <altmember cref="P:System.ComponentModel.ComplexBindingPropertiesAttribute.DataSource" />
+        <altmember cref="P:System.ComponentModel.ComplexBindingPropertiesAttribute.DataMember" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -317,7 +334,18 @@
         <summary>Returns the hash code for this instance.</summary>
         <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Attribute.GetHashCode" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ComplexBindingPropertiesAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

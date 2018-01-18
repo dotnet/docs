@@ -22,6 +22,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.IHttpHandler" />
+    <altmember cref="T:System.Web.IHttpHandlerFactory" />
+    <altmember cref="T:System.Web.Services.Protocols.WebServiceHandlerFactory" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,6 +82,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.IHttpHandlerFactory.GetHandler(System.Web.HttpContext,System.String,System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ReleaseHandler">
@@ -100,6 +104,7 @@
         <param name="handler">The <see cref="T:System.Web.IHttpHandler" /> to reuse.</param>
         <summary>Enables a factory to reuse an existing instance of a handler.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.IHttpHandlerFactory.ReleaseHandler(System.Web.IHttpHandler)" />
       </Docs>
     </Member>
   </Members>

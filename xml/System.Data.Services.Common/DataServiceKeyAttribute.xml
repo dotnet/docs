@@ -48,7 +48,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DataServiceKeyAttribute (string[] keyNames);" />
+      <MemberSignature Language="C#" Value="public DataServiceKeyAttribute (params string[] keyNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] keyNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Common.DataServiceKeyAttribute.#ctor(System.String[])" />
       <MemberType>Constructor</MemberType>
@@ -91,5 +91,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Services.Common.DataServiceKeyAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

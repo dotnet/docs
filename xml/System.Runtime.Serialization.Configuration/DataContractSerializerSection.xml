@@ -16,13 +16,15 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class is used to handle the [\&lt;dataContractSerializer\&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md), specifically, to allow the addition of types to the collection of known types.  
+ This class is used to handle the [&lt;dataContractSerializer&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md), specifically, to allow the addition of types to the collection of known types.  
   
  For more information about data contract known types, see [Data Contract Known Types](~/docs/framework/wcf/feature-details/data-contract-known-types.md).  
   
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Runtime.Serialization.DataContractSerializer" />
+    <altmember cref="P:System.Runtime.Serialization.DataContractSerializer.KnownTypes" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,6 +65,7 @@
         <value>A <see cref="T:System.Runtime.Serialization.Configuration.DeclaredTypeElementCollection" /> that contains the known types.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Runtime.Serialization.DataContractSerializer" />
       </Docs>
     </Member>
     <Member MemberName="Properties">

@@ -27,10 +27,7 @@
   
 ## Remarks  
   
-> [!NOTE]
->  The TPL Dataflow Library (<xref:System.Threading.Tasks.Dataflow> namespace) is not distributed with the net_v45. To install the <xref:System.Threading.Tasks.Dataflow> namespace, open your project in [!INCLUDE[vs_dev11_long](~/includes/vs-dev11-long-md.md)], choose **Manage NuGet Packages** from the Project menu, and search online for the `Microsoft.Tpl.Dataflow` package.  
-  
-   
+[!INCLUDE [tpl-install-instructions](~/includes/tpl-install-instructions.md)]
   
 ## Examples  
  The following example shows the use of the <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> class to perform several computations using dataflow blocks, and returns the elapsed time required to perform the computations. This code example is part of a larger example provided for the [How to: Specify the Degree of Parallelism in a Dataflow Block](~/docs/standard/parallel-programming/how-to-specify-the-degree-of-parallelism-in-a-dataflow-block.md) topic.  

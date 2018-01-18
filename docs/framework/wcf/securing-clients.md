@@ -16,6 +16,8 @@ caps.latest.revision: 22
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Securing Clients
 In [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service dictates the security requirements for clients. That is, the service specifies what security mode to use, and whether or not the client must provide a credential. The process of securing a client, therefore, is simple: use the metadata obtained from the service (if it is published) and build a client. The metadata specifies how to configure the client. If the service requires that the client supply a credential, then you must obtain a credential that fits the requirement. This topic discusses the process in further detail. [!INCLUDE[crabout](../../../includes/crabout-md.md)] creating a secure service, see [Securing Services](../../../docs/framework/wcf/securing-services.md).  
@@ -159,15 +161,15 @@ In [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service dictates th
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A>   
- <xref:System.ServiceModel.ClientBase%601>   
- <xref:System.ServiceModel.Description.ClientCredentials>   
- <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A>   
- <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A>   
- [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)   
- [Configuration Editor Tool (SvcConfigEditor.exe)](../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md)   
- [Securing Services](../../../docs/framework/wcf/securing-services.md)   
- [Accessing Services Using a WCF Client](../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md)   
- [How to: Specify Client Credential Values](../../../docs/framework/wcf/how-to-specify-client-credential-values.md)   
- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)   
+ <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A>  
+ <xref:System.ServiceModel.ClientBase%601>  
+ <xref:System.ServiceModel.Description.ClientCredentials>  
+ <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A>  
+ <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A>  
+ [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)  
+ [Configuration Editor Tool (SvcConfigEditor.exe)](../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md)  
+ [Securing Services](../../../docs/framework/wcf/securing-services.md)  
+ [Accessing Services Using a WCF Client](../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md)  
+ [How to: Specify Client Credential Values](../../../docs/framework/wcf/how-to-specify-client-credential-values.md)  
+ [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)  
  [How to: Specify the Client Credential Type](../../../docs/framework/wcf/how-to-specify-the-client-credential-type.md)

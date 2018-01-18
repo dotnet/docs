@@ -22,6 +22,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Compilation.ClientBuildManager" />
+    <altmember cref="T:System.Web.Compilation.BuildProvider" />
+    <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
   </Docs>
   <Members>
     <Member MemberName="AddCompilationDependency">
@@ -221,6 +224,8 @@
         <summary>Returns a build dependency set for a virtual path if the path is located in the ASP.NET cache.</summary>
         <returns>A <see cref="T:System.Web.Compilation.BuildDependencySet" /> object that is stored in the cache, or <see langword="null" /> if the <see cref="T:System.Web.Compilation.BuildDependencySet" /> object cannot be retrieved from the cache.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Compilation.BuildDependencySet" />
+        <altmember cref="P:System.Web.Compilation.BuildProvider.VirtualPathDependencies" />
       </Docs>
     </Member>
     <Member MemberName="GetCachedBuildDependencySet">
@@ -251,9 +256,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the `ensureIsUpToDate` parameter value is set to `true`, the <xref:System.Web.Compilation.BuildManager.GetCachedBuildDependencySet%2A?displayProperty=fullName> method overload behaves like the <xref:System.Web.Compilation.BuildManager.GetCachedBuildDependencySet%2A?displayProperty=fullName> method overload. Both overloads return a current build dependency set if one exists, otherwise they return `null`.  
+ If the `ensureIsUpToDate` parameter value is set to `true`, the <xref:System.Web.Compilation.BuildManager.GetCachedBuildDependencySet%2A?displayProperty=nameWithType> method overload behaves like the <xref:System.Web.Compilation.BuildManager.GetCachedBuildDependencySet%2A?displayProperty=nameWithType> method overload. Both overloads return a current build dependency set if one exists, otherwise they return `null`.  
   
- However, the <xref:System.Web.Compilation.BuildManager.GetCachedBuildDependencySet%2A?displayProperty=fullName> method overload includes the option to return any build dependency set that is available, even an outdated one. If the `ensureIsUpToDate` parameter value is set to `false`, the method will return any available build dependency set.  
+ However, the <xref:System.Web.Compilation.BuildManager.GetCachedBuildDependencySet%2A?displayProperty=nameWithType> method overload includes the option to return any build dependency set that is available, even an outdated one. If the `ensureIsUpToDate` parameter value is set to `false`, the method will return any available build dependency set.  
   
  ]]></format>
         </remarks>
@@ -279,6 +284,8 @@
         <summary>Compiles a file into an assembly using the specified virtual path.</summary>
         <returns>An <see cref="T:System.Reflection.Assembly" /> object that is compiled from the specified virtual path, which is cached to either memory or to disk.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName="GetCompiledCustomString">
@@ -301,6 +308,7 @@
         <summary>Compiles a file, given its virtual path, and returns a custom string that the build provider persists in cache.</summary>
         <returns>A string, as returned by the <see cref="M:System.Web.Compilation.BuildProvider.GetCustomString(System.CodeDom.Compiler.CompilerResults)" /> method, that is cached to disk or memory.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.Compilation.BuildProvider.GetCustomString(System.CodeDom.Compiler.CompilerResults)" />
       </Docs>
     </Member>
     <Member MemberName="GetCompiledType">
@@ -326,6 +334,7 @@
         <exception cref="T:System.Web.HttpException">An error occurred when compiling the virtual path.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="virtualPath" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.Compilation.BuildProvider.GetGeneratedType(System.CodeDom.Compiler.CompilerResults)" />
       </Docs>
     </Member>
     <Member MemberName="GetGlobalAsaxType">
@@ -663,5 +672,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCachedBuildDependencySet">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a build dependency set from the ASP.NET cache.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

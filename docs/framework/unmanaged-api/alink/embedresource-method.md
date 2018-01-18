@@ -18,8 +18,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "EmbedResource"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EmbedResource method"
 ms.assetid: 667bd954-6dc6-4020-a3cb-0e8224179993
@@ -29,6 +27,8 @@ caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # EmbedResource Method
 Declares an embedded resource. This method does not actually embed the resource.  
@@ -68,6 +68,6 @@ HRESULT EmbedResource(
  Requires alink.h.  
   
 ## See Also  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)   
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)   
+ [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
+ [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
  [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

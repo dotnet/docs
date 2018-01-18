@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostSyncManager::CreateMonitorEvent"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateMonitorEvent method [.NET Framework hosting]"
   - "IHostSyncManager::CreateMonitorEvent method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostSyncManager::CreateMonitorEvent Method
 Creates a monitored auto-reset event object.  
@@ -62,7 +62,7 @@ HRESULT CreateMonitorEvent (
 |E_OUTOFMEMORY|Not enough memory was available to create the requested event object.|  
   
 ## Remarks  
- `CreateMonitorEvent` returns an `IHostAutoEvent` that the CLR uses in its implementation of the managed <xref:System.Threading.Monitor?displayProperty=fullName> type. This method mirrors the Win32 `CreateEvent` function, with a value of `false` specified for the `bManualReset` parameter.  
+ `CreateMonitorEvent` returns an `IHostAutoEvent` that the CLR uses in its implementation of the managed <xref:System.Threading.Monitor?displayProperty=nameWithType> type. This method mirrors the Win32 `CreateEvent` function, with a value of `false` specified for the `bManualReset` parameter.  
   
  The host can use the cookie to determine which task is waiting on the monitor by calling the [ICLRSyncManager::GetMonitorOwner](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-getmonitorowner-method.md) method.  
   
@@ -76,7 +76,7 @@ HRESULT CreateMonitorEvent (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)   
- [IHostAutoEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-interface.md)   
- [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)   
+ [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)  
+ [IHostAutoEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-interface.md)  
+ [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)  
  [Monitors](http://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db)

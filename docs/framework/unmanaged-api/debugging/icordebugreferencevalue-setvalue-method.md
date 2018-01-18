@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugReferenceValue::SetValue"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetValue method, ICorDebugReferenceValue interface [.NET Framework debugging]"
   - "ICorDebugReferenceValue::SetValue method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugReferenceValue::SetValue Method
 Sets the specified memory address. That is, this method sets this ICorDebugReferenceValue to point to an object.  

@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xaml.XamlXmlWriter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -283,17 +284,17 @@
 ## Remarks  
  A <xref:System.Windows.Markup.ValueSerializer> for a property, or for a type that is used as the value for a property, is indicated by applying the <xref:System.Windows.Markup.ValueSerializerAttribute> attribute on the property or type declaration. The <xref:System.Windows.Markup.ValueSerializer.GetSerializerFor%2A> method is a utility method that reads the CLR type system information and returns a new <xref:System.Windows.Markup.ValueSerializer> class based on the attribute if found on the property, or then if found on the property's type. `null` might be returned if no such serializer exists. `null` might also be returned if a type or property is deliberately attributed with a null-value <xref:System.Windows.Markup.ValueSerializerAttribute>.  
   
- Another mode that <xref:System.Windows.Markup.ValueSerializer.GetSerializerFor%2A> supports is returning the internal `TypeConverterValueSerializer` class, which is a <xref:System.Windows.Markup.ValueSerializer> implementation that wraps a <xref:System.ComponentModel.TypeConverter> and translates the `Convert` methods to `Convert*String` methods (for instance <xref:System.ComponentModel.TypeConverter.ConvertTo%2A?displayProperty=fullName> is called with input of the <xref:System.String> type, and translates to <xref:System.Windows.Markup.ValueSerializer.ConvertToString%2A>. This is done only in cases where all of the following are true:  
+ Another mode that <xref:System.Windows.Markup.ValueSerializer.GetSerializerFor%2A> supports is returning the internal `TypeConverterValueSerializer` class, which is a <xref:System.Windows.Markup.ValueSerializer> implementation that wraps a <xref:System.ComponentModel.TypeConverter> and translates the `Convert` methods to `Convert*String` methods (for instance <xref:System.ComponentModel.TypeConverter.ConvertTo%2A?displayProperty=nameWithType> is called with input of the <xref:System.String> type, and translates to <xref:System.Windows.Markup.ValueSerializer.ConvertToString%2A>. This is done only in cases where all of the following are true:  
   
 -   A <xref:System.ComponentModel.TypeConverterAttribute> is found on the relevant property, or the relevant property's type.  
   
 -   The indicated <xref:System.ComponentModel.TypeConverter> can be successfully constructed.  
   
--   The <xref:System.ComponentModel.TypeConverter> returns `true` for <xref:System.ComponentModel.TypeConverter.ConvertTo%2A?displayProperty=fullName>, called referencing the <xref:System.String> type.  
+-   The <xref:System.ComponentModel.TypeConverter> returns `true` for <xref:System.ComponentModel.TypeConverter.ConvertTo%2A?displayProperty=nameWithType>, called referencing the <xref:System.String> type.  
   
--   The <xref:System.ComponentModel.TypeConverter> returns `true` for <xref:System.ComponentModel.TypeConverter.CanConvertTo%2A?displayProperty=fullName>, called referencing the <xref:System.String> type.  
+-   The <xref:System.ComponentModel.TypeConverter> returns `true` for <xref:System.ComponentModel.TypeConverter.CanConvertTo%2A?displayProperty=nameWithType>, called referencing the <xref:System.String> type.  
   
--   The <xref:System.ComponentModel.TypeConverter> returns `true` for <xref:System.ComponentModel.TypeConverter.CanConvertFrom%2A?displayProperty=fullName>, called referencing the <xref:System.String> type.  
+-   The <xref:System.ComponentModel.TypeConverter> returns `true` for <xref:System.ComponentModel.TypeConverter.CanConvertFrom%2A?displayProperty=nameWithType>, called referencing the <xref:System.String> type.  
   
 > [!NOTE]
 >  The following are special cases: <xref:System.DateTime> types return a <xref:System.Windows.Markup.DateTimeValueSerializer>; <xref:System.String> types return an internal but functional serializer (`StringValueSerializer`).  
@@ -329,17 +330,17 @@
 ## Remarks  
  A <xref:System.Windows.Markup.ValueSerializer> for a type is indicated by applying the <xref:System.Windows.Markup.ValueSerializerAttribute> attribute on the type declaration. The <xref:System.Windows.Markup.ValueSerializer.GetSerializerFor%2A> method is a utility method that reads the CLR type system information and returns a new <xref:System.Windows.Markup.ValueSerializer> class based on the attribute if found on the specified `type`. `null` might be returned if no such serializer exists. `null` might also be returned if a type is deliberately attributed with a null-value <xref:System.Windows.Markup.ValueSerializerAttribute>.  
   
- Another mode that <xref:System.Windows.Markup.ValueSerializer.GetSerializerFor%2A> supports is returning the internal `TypeConverterValueSerializer` class, which is a <xref:System.Windows.Markup.ValueSerializer> implementation that wraps a <xref:System.ComponentModel.TypeConverter> and translates the `Convert` methods to `Convert*String` methods (for instance <xref:System.ComponentModel.TypeConverter.ConvertTo%2A?displayProperty=fullName> is called with input of the <xref:System.String> type, and translates to <xref:System.Windows.Markup.ValueSerializer.ConvertToString%2A>. This is done only in cases where all of the following are true:  
+ Another mode that <xref:System.Windows.Markup.ValueSerializer.GetSerializerFor%2A> supports is returning the internal `TypeConverterValueSerializer` class, which is a <xref:System.Windows.Markup.ValueSerializer> implementation that wraps a <xref:System.ComponentModel.TypeConverter> and translates the `Convert` methods to `Convert*String` methods (for instance <xref:System.ComponentModel.TypeConverter.ConvertTo%2A?displayProperty=nameWithType> is called with input of the <xref:System.String> type, and translates to <xref:System.Windows.Markup.ValueSerializer.ConvertToString%2A>. This is done only in cases where all of the following are true:  
   
 -   A <xref:System.ComponentModel.TypeConverterAttribute> is found on `type`.  
   
 -   The indicated <xref:System.ComponentModel.TypeConverter> can be successfully constructed.  
   
--   The <xref:System.ComponentModel.TypeConverter> returns `true` for <xref:System.ComponentModel.TypeConverter.ConvertTo%2A?displayProperty=fullName>, called referencing the <xref:System.String> type.  
+-   The <xref:System.ComponentModel.TypeConverter> returns `true` for <xref:System.ComponentModel.TypeConverter.ConvertTo%2A?displayProperty=nameWithType>, called referencing the <xref:System.String> type.  
   
--   The <xref:System.ComponentModel.TypeConverter> returns `true` for <xref:System.ComponentModel.TypeConverter.CanConvertTo%2A?displayProperty=fullName>, called referencing the <xref:System.String> type.  
+-   The <xref:System.ComponentModel.TypeConverter> returns `true` for <xref:System.ComponentModel.TypeConverter.CanConvertTo%2A?displayProperty=nameWithType>, called referencing the <xref:System.String> type.  
   
--   The <xref:System.ComponentModel.TypeConverter> returns `true` for <xref:System.ComponentModel.TypeConverter.CanConvertFrom%2A?displayProperty=fullName>, called referencing the <xref:System.String> type.  
+-   The <xref:System.ComponentModel.TypeConverter> returns `true` for <xref:System.ComponentModel.TypeConverter.CanConvertFrom%2A?displayProperty=nameWithType>, called referencing the <xref:System.String> type.  
   
 > [!NOTE]
 >  The following are special cases: <xref:System.DateTime> types return a <xref:System.Windows.Markup.DateTimeValueSerializer>; <xref:System.String> types return an internal but functional serializer (`StringValueSerializer`).  
@@ -375,11 +376,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Rather than relying purely on attributes reported in the CLR type system, this overload uses the `context` as a service, and calls the service's implementation of <xref:System.Windows.Markup.IValueSerializerContext.GetValueSerializerFor%2A?displayProperty=fullName>. The <xref:System.Windows.Markup.IValueSerializerContext.GetValueSerializerFor%2A?displayProperty=fullName> implementation would typically also rely on the `descriptor`, but might implement special behavior for certain contexts.  
+ Rather than relying purely on attributes reported in the CLR type system, this overload uses the `context` as a service, and calls the service's implementation of <xref:System.Windows.Markup.IValueSerializerContext.GetValueSerializerFor%2A?displayProperty=nameWithType>. The <xref:System.Windows.Markup.IValueSerializerContext.GetValueSerializerFor%2A?displayProperty=nameWithType> implementation would typically also rely on the `descriptor`, but might implement special behavior for certain contexts.  
   
  This method should be called when the caller has an available <xref:System.Windows.Markup.IValueSerializerContext> from a service.  This will ensure that the correct <xref:System.Windows.Markup.ValueSerializer> is returned for the specific context.  
   
- If the context returns `null` from its <xref:System.Windows.Markup.IValueSerializerContext.GetValueSerializerFor%2A?displayProperty=fullName> for your specified `descriptor`, or if the context you specify is `null`, then behavior is identical to calling the <xref:System.Windows.Markup.ValueSerializer.GetSerializerFor%28System.ComponentModel.PropertyDescriptor%29> overload.  
+ If the context returns `null` from its <xref:System.Windows.Markup.IValueSerializerContext.GetValueSerializerFor%2A?displayProperty=nameWithType> for your specified `descriptor`, or if the context you specify is `null`, then behavior is identical to calling the <xref:System.Windows.Markup.ValueSerializer.GetSerializerFor%28System.ComponentModel.PropertyDescriptor%29> overload.  
   
  ]]></format>
         </remarks>
@@ -412,11 +413,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Rather than relying purely on attributes reported in the CLR type system, this overload uses the `context` as a service, and calls the service's implementation of <xref:System.Windows.Markup.IValueSerializerContext.GetValueSerializerFor%2A?displayProperty=fullName>. The <xref:System.Windows.Markup.IValueSerializerContext.GetValueSerializerFor%2A?displayProperty=fullName> implementation would typically also rely on the `type`, but might implement special behavior for certain contexts.  
+ Rather than relying purely on attributes reported in the CLR type system, this overload uses the `context` as a service, and calls the service's implementation of <xref:System.Windows.Markup.IValueSerializerContext.GetValueSerializerFor%2A?displayProperty=nameWithType>. The <xref:System.Windows.Markup.IValueSerializerContext.GetValueSerializerFor%2A?displayProperty=nameWithType> implementation would typically also rely on the `type`, but might implement special behavior for certain contexts.  
   
  This method should be called when the caller has an available <xref:System.Windows.Markup.IValueSerializerContext> from a service. This will ensure that the correct <xref:System.Windows.Markup.ValueSerializer> is returned for the specific context.  
   
- If the context returns `null` from its <xref:System.Windows.Markup.IValueSerializerContext.GetValueSerializerFor%2A?displayProperty=fullName> for your specified `type`, or if the context you specify is `null`, then behavior is identical to calling the <xref:System.Windows.Markup.ValueSerializer.GetSerializerFor%28System.Type%29> overload.  
+ If the context returns `null` from its <xref:System.Windows.Markup.IValueSerializerContext.GetValueSerializerFor%2A?displayProperty=nameWithType> for your specified `type`, or if the context you specify is `null`, then behavior is identical to calling the <xref:System.Windows.Markup.ValueSerializer.GetSerializerFor%28System.Type%29> overload.  
   
  ]]></format>
         </remarks>
@@ -460,5 +461,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetSerializerFor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Markup.ValueSerializer" /> for an object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

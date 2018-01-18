@@ -48,6 +48,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Bitmap" />
+    <altmember cref="T:System.Drawing.Icon" />
+    <altmember cref="T:System.Drawing.Imaging.Metafile" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -136,6 +139,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The color depth is not a valid <see cref="T:System.Windows.Forms.ColorDepth" /> enumeration value.</exception>
+        <altmember cref="T:System.Windows.Forms.ColorDepth" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -510,7 +514,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ImageList.RecreateHandle> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ImageList.RecreateHandle> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ImageList> named `ImageList1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ImageList.RecreateHandle> event.  
   
@@ -602,7 +606,26 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Color" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ImageList" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Draw">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws the indicated image.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -146,11 +146,13 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[CheckBoxList#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxList/CS/checkboxlistcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CheckBoxList#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxList/VB/checkboxlistvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CheckBoxList#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxList/CS/checkboxlistcs.aspx#1)]
+ [!code-aspx-vb[CheckBoxList#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxList/VB/checkboxlistvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+    <altmember cref="T:System.Web.UI.WebControls.CheckBox" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -179,8 +181,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[CheckBoxListCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxListCtor/CS/checkboxlistctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CheckBoxListCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxListCtor/VB/checkboxlistctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CheckBoxListCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxListCtor/CS/checkboxlistctorcs.aspx#1)]
+ [!code-aspx-vb[CheckBoxListCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxListCtor/VB/checkboxlistctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -222,14 +224,15 @@
 > [!NOTE]
 >  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/VB/sourcevb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[CheckBoxListCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxListCellPadding/CS/checkboxlistcellpaddingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CheckBoxListCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxListCellPadding/VB/checkboxlistcellpaddingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CheckBoxListCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxListCellPadding/CS/checkboxlistcellpaddingcs.aspx#1)]
+ [!code-aspx-vb[CheckBoxListCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxListCellPadding/VB/checkboxlistcellpaddingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.CellSpacing" />
       </Docs>
     </Member>
     <Member MemberName="CellSpacing">
@@ -266,14 +269,15 @@
 > [!NOTE]
 >  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/VB/sourcevb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[CheckBoxListCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxListCellPadding/CS/checkboxlistcellpaddingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CheckBoxListCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxListCellPadding/VB/checkboxlistcellpaddingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CheckBoxListCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxListCellPadding/CS/checkboxlistcellpaddingcs.aspx#1)]
+ [!code-aspx-vb[CheckBoxListCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxListCellPadding/VB/checkboxlistcellpaddingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.CellPadding" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -303,8 +307,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.CheckBoxList.CreateControlStyle%2A> method in a custom server control so that it always returns a new instance of the <xref:System.Web.UI.WebControls.TableStyle> class for the <xref:System.Web.UI.WebControls.CheckBoxList> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomCheckBoxListCreateControlStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCheckBoxListCreateControlStyle/CS/custom_checkboxlist_createcontrolstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomCheckBoxListCreateControlStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCheckBoxListCreateControlStyle/VB/custom_checkboxlist_createcontrolstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomCheckBoxListCreateControlStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCheckBoxListCreateControlStyle/CS/custom_checkboxlist_createcontrolstylecs.aspx#1)]
+ [!code-aspx-vb[CustomCheckBoxListCreateControlStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCheckBoxListCreateControlStyle/VB/custom_checkboxlist_createcontrolstylevb.aspx#1)]  
 [!code-csharp[CustomCheckBoxListCreateControlStyle#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCheckBoxListCreateControlStyle/CS/custom_checkboxlist_createcontrolstyle.cs#2)]
 [!code-vb[CustomCheckBoxListCreateControlStyle#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCheckBoxListCreateControlStyle/VB/custom_checkboxlist_createcontrolstyle.vb#2)]  
   
@@ -491,6 +495,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -545,8 +551,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.CheckBoxList.CreateControlStyle%2A> method in a custom server control so that it always returns a new instance of the <xref:System.Web.UI.WebControls.TableStyle> class for the <xref:System.Web.UI.WebControls.CheckBoxList>.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomCheckBoxListOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCheckBoxListOnPreRender/CS/custom_checkboxlist_onprerendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomCheckBoxListOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCheckBoxListOnPreRender/VB/custom_checkboxlist_onprerendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomCheckBoxListOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCheckBoxListOnPreRender/CS/custom_checkboxlist_onprerendercs.aspx#1)]
+ [!code-aspx-vb[CustomCheckBoxListOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCheckBoxListOnPreRender/VB/custom_checkboxlist_onprerendervb.aspx#1)]  
 [!code-csharp[CustomCheckBoxListOnPreRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCheckBoxListOnPreRender/CS/custom_checkboxlist_onprerender.cs#2)]
 [!code-vb[CustomCheckBoxListOnPreRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCheckBoxListOnPreRender/VB/custom_checkboxlist_onprerender.vb#2)]  
   
@@ -584,6 +590,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />
+        <altmember cref="M:System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -617,8 +625,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.CheckBoxList.Render%2A> method in a custom server control so that the <xref:System.Web.UI.WebControls.CheckBoxList> always displays an image.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomCheckBoxListRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCheckBoxListRender/CS/custom_checkboxlist_rendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomCheckBoxListRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCheckBoxListRender/VB/custom_checkboxlist_rendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomCheckBoxListRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCheckBoxListRender/CS/custom_checkboxlist_rendercs.aspx#1)]
+ [!code-aspx-vb[CustomCheckBoxListRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCheckBoxListRender/VB/custom_checkboxlist_rendervb.aspx#1)]  
 [!code-csharp[CustomCheckBoxListRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCheckBoxListRender/CS/custom_checkboxlist_render.cs#2)]
 [!code-vb[CustomCheckBoxListRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCheckBoxListRender/VB/custom_checkboxlist_render.vb#2)]  
   
@@ -725,15 +733,17 @@
 > [!NOTE]
 >  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/VB/sourcevb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[CheckBoxListRepeatColumns#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxListRepeatColumns/CS/checkboxlistrepeatcolumnscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CheckBoxListRepeatColumns#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxListRepeatColumns/VB/checkboxlistrepeatcolumnsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CheckBoxListRepeatColumns#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxListRepeatColumns/CS/checkboxlistrepeatcolumnscs.aspx#1)]
+ [!code-aspx-vb[CheckBoxListRepeatColumns#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxListRepeatColumns/VB/checkboxlistrepeatcolumnsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The number of columns is set to a negative value.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatDirection" />
+        <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatLayout" />
       </Docs>
     </Member>
     <Member MemberName="RepeatDirection">
@@ -789,15 +799,17 @@
 > [!NOTE]
 >  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/VB/sourcevb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[CheckBoxListRepeatDirection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxListRepeatDirection/CS/checkboxlistrepeatdirectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CheckBoxListRepeatDirection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxListRepeatDirection/VB/checkboxlistrepeatdirectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CheckBoxListRepeatDirection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxListRepeatDirection/CS/checkboxlistrepeatdirectioncs.aspx#1)]
+ [!code-aspx-vb[CheckBoxListRepeatDirection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxListRepeatDirection/VB/checkboxlistrepeatdirectionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified display direction of the list is not one of the <see cref="T:System.Web.UI.WebControls.RepeatDirection" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatColumns" />
+        <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatLayout" />
       </Docs>
     </Member>
     <Member MemberName="RepeatedItemCount">
@@ -866,12 +878,14 @@
 > [!NOTE]
 >  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[CheckBoxListRepeatLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxListRepeatLayout/CS/checkboxlistrepeatlayoutcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CheckBoxListRepeatLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxListRepeatLayout/VB/checkboxlistrepeatlayoutvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CheckBoxListRepeatLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxListRepeatLayout/CS/checkboxlistrepeatlayoutcs.aspx#1)]
+ [!code-aspx-vb[CheckBoxListRepeatLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxListRepeatLayout/VB/checkboxlistrepeatlayoutvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified layout is not one of the <see cref="T:System.Web.UI.WebControls.RepeatLayout" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatColumns" />
+        <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatDirection" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -909,6 +923,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for processing posted data for a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="M:System.Web.UI.WebControls.CheckBoxList.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.CheckBoxList.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" /> method to process the posted data for the control.</para>
         </block>
+        <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -930,7 +945,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.RaisePostDataChangedEvent%2A?displayProperty=fullName> method to raise an event when the posted data for a <xref:System.Web.UI.WebControls.CheckBoxList> object changes.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.RaisePostDataChangedEvent%2A?displayProperty=nameWithType> method to raise an event when the posted data for a <xref:System.Web.UI.WebControls.CheckBoxList> object changes.  
   
  The <xref:System.Web.UI.WebControls.CheckBoxList.System%23Web%23UI%23IPostBackDataHandler%23RaisePostDataChangedEvent%2A> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.CheckBoxList> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
   
@@ -939,6 +954,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for raising the event for a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="M:System.Web.UI.WebControls.CheckBoxList.RaisePostDataChangedEvent" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.CheckBoxList.RaisePostDataChangedEvent" /> method to raise the event when posted data has changed for the control.</para>
         </block>
+        <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.GetItemStyle">
@@ -966,7 +982,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.GetItemStyle%2A?displayProperty=fullName> method to retrieve the style of an item in a <xref:System.Web.UI.WebControls.CheckBoxList> object.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.GetItemStyle%2A?displayProperty=nameWithType> method to retrieve the style of an item in a <xref:System.Web.UI.WebControls.CheckBoxList> object.  
   
  The <xref:System.Web.UI.WebControls.CheckBoxList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23GetItemStyle%2A> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.CheckBoxList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
   
@@ -975,8 +991,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface members on a custom <xref:System.Web.UI.WebControls.CheckBoxList> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomCheckBoxListIRepeatInfoUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCheckBoxListIRepeatInfoUser/CS/custom_checkboxlist_irepeatinfousercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomCheckBoxListIRepeatInfoUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCheckBoxListIRepeatInfoUser/VB/custom_checkboxlist_irepeatinfouservb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomCheckBoxListIRepeatInfoUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCheckBoxListIRepeatInfoUser/CS/custom_checkboxlist_irepeatinfousercs.aspx#1)]
+ [!code-aspx-vb[CustomCheckBoxListIRepeatInfoUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCheckBoxListIRepeatInfoUser/VB/custom_checkboxlist_irepeatinfouservb.aspx#1)]  
 [!code-csharp[CustomCheckBoxListIRepeatInfoUser#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCheckBoxListIRepeatInfoUser/CS/custom_checkboxlist_irepeatinfouser.cs#2)]
 [!code-vb[CustomCheckBoxListIRepeatInfoUser#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCheckBoxListIRepeatInfoUser/VB/custom_checkboxlist_irepeatinfouser.vb#2)]  
   
@@ -985,6 +1001,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for retrieving the style of an item in a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="M:System.Web.UI.WebControls.CheckBoxList.GetItemStyle(System.Web.UI.WebControls.ListItemType,System.Int32)" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.CheckBoxList.GetItemStyle(System.Web.UI.WebControls.ListItemType,System.Int32)" /> method to retrieve the style of an item.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.HasFooter">
@@ -1007,15 +1024,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.HasFooter%2A?displayProperty=fullName> property to determine if a <xref:System.Web.UI.WebControls.CheckBoxList> object contains a footer section.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.HasFooter%2A?displayProperty=nameWithType> property to determine if a <xref:System.Web.UI.WebControls.CheckBoxList> object contains a footer section.  
   
- The <xref:System.Web.UI.WebControls.CheckBoxList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23HasFooter%2A?displayProperty=fullName> member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.CheckBoxList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
+ The <xref:System.Web.UI.WebControls.CheckBoxList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23HasFooter%2A?displayProperty=nameWithType> member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.CheckBoxList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>To define a custom implementation for the <see cref="P:System.Web.UI.WebControls.CheckBoxList.System#Web#UI#WebControls#IRepeatInfoUser#HasFooter" /> member in a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="P:System.Web.UI.WebControls.CheckBoxList.HasFooter" /> member. The explicit interface implementation uses the <see cref="P:System.Web.UI.WebControls.CheckBoxList.HasFooter" /> property.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.HasHeader">
@@ -1038,15 +1056,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.HasHeader%2A?displayProperty=fullName> property to determine a <xref:System.Web.UI.WebControls.CheckBoxList> object contains a heading section.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.HasHeader%2A?displayProperty=nameWithType> property to determine a <xref:System.Web.UI.WebControls.CheckBoxList> object contains a heading section.  
   
- The <xref:System.Web.UI.WebControls.CheckBoxList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23HasHeader%2A?displayProperty=fullName> member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.CheckBoxList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
+ The <xref:System.Web.UI.WebControls.CheckBoxList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23HasHeader%2A?displayProperty=nameWithType> member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.CheckBoxList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>To define a custom implementation for the <see cref="P:System.Web.UI.WebControls.CheckBoxList.System#Web#UI#WebControls#IRepeatInfoUser#HasHeader" /> member in a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="P:System.Web.UI.WebControls.CheckBoxList.HasHeader" /> member. The explicit interface implementation uses the <see cref="P:System.Web.UI.WebControls.CheckBoxList.HasHeader" /> property.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.HasSeparators">
@@ -1069,15 +1088,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.HasSeparators%2A?displayProperty=fullName> property to determine whether a <xref:System.Web.UI.WebControls.CheckBoxList> object contains a separator.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.HasSeparators%2A?displayProperty=nameWithType> property to determine whether a <xref:System.Web.UI.WebControls.CheckBoxList> object contains a separator.  
   
- The <xref:System.Web.UI.WebControls.CheckBoxList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23HasSeparators%2A?displayProperty=fullName> member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.CheckBoxList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
+ The <xref:System.Web.UI.WebControls.CheckBoxList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23HasSeparators%2A?displayProperty=nameWithType> member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.CheckBoxList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>To define a custom implementation for the <see cref="P:System.Web.UI.WebControls.CheckBoxList.System#Web#UI#WebControls#IRepeatInfoUser#HasSeparators" /> member in a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="P:System.Web.UI.WebControls.CheckBoxList.HasSeparators" /> member. The explicit interface implementation uses the <see cref="P:System.Web.UI.WebControls.CheckBoxList.HasSeparators" /> property.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.RenderItem">
@@ -1108,7 +1128,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.RenderItem%2A?displayProperty=fullName> method to render items in a <xref:System.Web.UI.WebControls.CheckBoxList> object.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.RenderItem%2A?displayProperty=nameWithType> method to render items in a <xref:System.Web.UI.WebControls.CheckBoxList> object.  
   
  The <xref:System.Web.UI.WebControls.CheckBoxList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23RenderItem%2A> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.CheckBoxList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
   
@@ -1117,8 +1137,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface members on a custom <xref:System.Web.UI.WebControls.CheckBoxList> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomCheckBoxListIRepeatInfoUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCheckBoxListIRepeatInfoUser/CS/custom_checkboxlist_irepeatinfousercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomCheckBoxListIRepeatInfoUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCheckBoxListIRepeatInfoUser/VB/custom_checkboxlist_irepeatinfouservb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomCheckBoxListIRepeatInfoUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCheckBoxListIRepeatInfoUser/CS/custom_checkboxlist_irepeatinfousercs.aspx#1)]
+ [!code-aspx-vb[CustomCheckBoxListIRepeatInfoUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCheckBoxListIRepeatInfoUser/VB/custom_checkboxlist_irepeatinfouservb.aspx#1)]  
 [!code-csharp[CustomCheckBoxListIRepeatInfoUser#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCheckBoxListIRepeatInfoUser/CS/custom_checkboxlist_irepeatinfouser.cs#2)]
 [!code-vb[CustomCheckBoxListIRepeatInfoUser#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCheckBoxListIRepeatInfoUser/VB/custom_checkboxlist_irepeatinfouser.vb#2)]  
   
@@ -1127,6 +1147,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for rendering items in a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="M:System.Web.UI.WebControls.CheckBoxList.RenderItem(System.Web.UI.WebControls.ListItemType,System.Int32,System.Web.UI.WebControls.RepeatInfo,System.Web.UI.HtmlTextWriter)" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.CheckBoxList.RenderItem(System.Web.UI.WebControls.ListItemType,System.Int32,System.Web.UI.WebControls.RepeatInfo,System.Web.UI.HtmlTextWriter)" /> method to render an item in the control.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.RepeatedItemCount">
@@ -1148,15 +1169,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.RepeatedItemCount%2A?displayProperty=fullName> property to determine the number of items in a <xref:System.Web.UI.WebControls.CheckBoxList> object.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.RepeatedItemCount%2A?displayProperty=nameWithType> property to determine the number of items in a <xref:System.Web.UI.WebControls.CheckBoxList> object.  
   
- The <xref:System.Web.UI.WebControls.CheckBoxList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23RepeatedItemCount%2A?displayProperty=fullName> member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.CheckBoxList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
+ The <xref:System.Web.UI.WebControls.CheckBoxList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23RepeatedItemCount%2A?displayProperty=nameWithType> member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.CheckBoxList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>To define a custom implementation for the <see cref="P:System.Web.UI.WebControls.CheckBoxList.System#Web#UI#WebControls#IRepeatInfoUser#RepeatedItemCount" /> member in a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatedItemCount" /> member. The explicit interface implementation uses the <see cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatedItemCount" /> property.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
       </Docs>
     </Member>
     <Member MemberName="TextAlign">
@@ -1193,15 +1215,16 @@
 > [!NOTE]
 >  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/VB/sourcevb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[CheckBoxListTextAlign#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxListTextAlign/CS/checkboxlisttextaligncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CheckBoxListTextAlign#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxListTextAlign/VB/checkboxlisttextalignvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CheckBoxListTextAlign#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxListTextAlign/CS/checkboxlisttextaligncs.aspx#1)]
+ [!code-aspx-vb[CheckBoxListTextAlign#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxListTextAlign/VB/checkboxlisttextalignvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified label text alignment is not one of the <see cref="T:System.Web.UI.WebControls.TextAlign" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.TextAlign" />
       </Docs>
     </Member>
   </Members>

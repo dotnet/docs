@@ -21,12 +21,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.CheckBoxDesigner> class overrides the <xref:System.Web.UI.Design.WebControls.CheckBoxDesigner.GetDesignTimeHtml%2A> method of the <xref:System.Web.UI.Design.ControlDesigner> class to ensure that the control is displayed with a meaningful representation at design time. If the <xref:System.Web.UI.WebControls.CheckBox.Text%2A> property is empty, the <xref:System.Web.UI.Design.WebControls.CheckBoxDesigner.GetDesignTimeHtml%2A> method of this class sets the <xref:System.Web.UI.WebControls.CheckBox.Text%2A> property of the control to the <xref:System.Web.UI.Control.ID%2A?displayProperty=fullName> property of the control.  
+ The <xref:System.Web.UI.Design.WebControls.CheckBoxDesigner> class overrides the <xref:System.Web.UI.Design.WebControls.CheckBoxDesigner.GetDesignTimeHtml%2A> method of the <xref:System.Web.UI.Design.ControlDesigner> class to ensure that the control is displayed with a meaningful representation at design time. If the <xref:System.Web.UI.WebControls.CheckBox.Text%2A> property is empty, the <xref:System.Web.UI.Design.WebControls.CheckBoxDesigner.GetDesignTimeHtml%2A> method of this class sets the <xref:System.Web.UI.WebControls.CheckBox.Text%2A> property of the control to the <xref:System.Web.UI.Control.ID%2A?displayProperty=nameWithType> property of the control.  
   
    
   
 ## Examples  
- The following code example creates a custom designer class, named `SampleCheckBoxDesigner`, that inherits from the <xref:System.Web.UI.Design.WebControls.CheckBoxDesigner> class. It overrides the <xref:System.Web.UI.Design.WebControls.CheckBoxDesigner.GetDesignTimeHtml%2A> method. If the <xref:System.Web.UI.WebControls.CheckBox.Text%2A?displayProperty=fullName> property has not been set previously, a call to this method sets it to a string and displays that string on the design surface. If the <xref:System.Web.UI.WebControls.CheckBox.Text%2A> property has been set, the existing property value is displayed.  
+ The following code example creates a custom designer class, named `SampleCheckBoxDesigner`, that inherits from the <xref:System.Web.UI.Design.WebControls.CheckBoxDesigner> class. It overrides the <xref:System.Web.UI.Design.WebControls.CheckBoxDesigner.GetDesignTimeHtml%2A> method. If the <xref:System.Web.UI.WebControls.CheckBox.Text%2A?displayProperty=nameWithType> property has not been set previously, a call to this method sets it to a string and displays that string on the design surface. If the <xref:System.Web.UI.WebControls.CheckBox.Text%2A> property has been set, the existing property value is displayed.  
   
  [!code-vb[System.Web.UI.Design.WebControls_CheckBoxDesignerSamples#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.WebControls_CheckBoxDesignerSamples/VB/customcheckbox.vb#1)]  
   
@@ -80,7 +80,7 @@
    
   
 ## Examples  
- The following code example overrides the <xref:System.Web.UI.Design.WebControls.CheckBoxDesigner.GetDesignTimeHtml%2A> method. If the <xref:System.Web.UI.WebControls.CheckBox.Text%2A?displayProperty=fullName> property has not been set previously, a call to this method sets it to a string and displays that string on the design surface. If the <xref:System.Web.UI.WebControls.CheckBox.Text%2A> property has already been set, the existing property value is displayed.  
+ The following code example overrides the <xref:System.Web.UI.Design.WebControls.CheckBoxDesigner.GetDesignTimeHtml%2A> method. If the <xref:System.Web.UI.WebControls.CheckBox.Text%2A?displayProperty=nameWithType> property has not been set previously, a call to this method sets it to a string and displays that string on the design surface. If the <xref:System.Web.UI.WebControls.CheckBox.Text%2A> property has already been set, the existing property value is displayed.  
   
  [!code-vb[System.Web.UI.Design.WebControls_CheckBoxDesignerSamples#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.WebControls_CheckBoxDesignerSamples/VB/customcheckbox.vb#2)]  
   

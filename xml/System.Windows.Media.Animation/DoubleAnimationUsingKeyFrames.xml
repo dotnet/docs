@@ -143,7 +143,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -173,7 +173,7 @@
 ## Remarks  
  This method is called by the <xref:System.Windows.Freezable.Clone%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.Clone%2A> instead of calling this method directly.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCore%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -201,7 +201,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -231,10 +231,11 @@
 ## Remarks  
  This method is called by the <xref:System.Windows.Freezable.CloneCurrentValue%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.CloneCurrentValue%2A> instead of calling this method directly.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValueCore%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValueCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValueCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceCore">
@@ -254,6 +255,7 @@
         <summary>Creates a new instance of <see cref="T:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames" />.</summary>
         <returns>A new instance of <see cref="T:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.CreateInstanceCore" />
       </Docs>
     </Member>
     <Member MemberName="FreezeCore">
@@ -277,6 +279,7 @@
         <summary>Makes this instance of <see cref="T:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames" /> object unmodifiable or determines whether it can be made unmodifiable..</summary>
         <returns>If <paramref name="isChecking" /> is true, this method returns <see langword="true" /> if this instance can be made read-only, or <see langword="false" /> if it cannot be made read-only. If <paramref name="isChecking" /> is false, this method returns <see langword="true" /> if this instance is now read-only, or <see langword="false" /> if it cannot be made read-only, with the side effect of having begun to change the frozen status of this object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.FreezeCore(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetAsFrozenCore">
@@ -333,7 +336,7 @@
 ## Remarks  
  This method is called by the <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> instead of calling this method directly.  
   
- For more information see <xref:System.Windows.Freezable.GetCurrentValueAsFrozenCore%2A?displayProperty=fullName>.  
+ For more information see <xref:System.Windows.Freezable.GetCurrentValueAsFrozenCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -372,6 +375,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Animation.AnimationClock" />
       </Docs>
     </Member>
     <Member MemberName="GetNaturalDurationCore">
@@ -394,6 +398,8 @@
         <summary>Provide a custom natural <see cref="T:System.Windows.Duration" /> when the <see cref="T:System.Windows.Duration" /> property is set to <see cref="P:System.Windows.Duration.Automatic" />.</summary>
         <returns>If the last key frame of this animation is a <see cref="T:System.Windows.Media.Animation.KeyTime" />, then this value is used as the <see cref="P:System.Windows.Media.Animation.Clock.NaturalDuration" />; otherwise it will be one second.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Animation.Clock" />
+        <altmember cref="T:System.Windows.Media.Animation.IKeyFrame" />
       </Docs>
     </Member>
     <Member MemberName="IsAdditive">
@@ -439,6 +445,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Animation.RepeatBehavior" />
       </Docs>
     </Member>
     <Member MemberName="KeyFrames">
@@ -457,6 +464,7 @@
         <summary>Gets or sets the collection of <see cref="T:System.Windows.Media.Animation.DoubleKeyFrame" /> objects that define the animation.</summary>
         <value>The collection of <see cref="T:System.Windows.Media.Animation.DoubleKeyFrame" /> objects that define the animation. The default value is <see cref="P:System.Windows.Media.Animation.DoubleKeyFrameCollection.Empty" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Animation.DoubleKeyFrame" />
       </Docs>
     </Member>
     <Member MemberName="OnChanged">
@@ -475,6 +483,7 @@
       <Docs>
         <summary>Called when the current <see cref="T:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames" /> object is modified.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.OnChanged" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeKeyFrames">

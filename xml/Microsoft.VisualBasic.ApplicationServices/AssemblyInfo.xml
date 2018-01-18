@@ -31,6 +31,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
+    <altmember cref="T:System.Diagnostics.FileVersionInfo" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,6 +52,7 @@
           <see cref="T:System.Reflection.Assembly" />. The assembly for which to obtain the information.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo" /> class with the specified assembly information.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
       </Docs>
     </Member>
     <Member MemberName="AssemblyName">
@@ -95,6 +98,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.AssemblyName" />
       </Docs>
     </Member>
     <Member MemberName="CompanyName">
@@ -142,6 +147,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The assembly does not have an <see cref="T:System.Reflection.AssemblyCompanyAttribute" /> attribute.</exception>
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
       </Docs>
     </Member>
     <Member MemberName="Copyright">
@@ -189,6 +195,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The assembly does not have an <see cref="T:System.Reflection.AssemblyCopyrightAttribute" /> attribute.</exception>
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -236,6 +243,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The assembly does not have an <see cref="T:System.Reflection.AssemblyDescriptionAttribute" /> attribute.</exception>
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
       </Docs>
     </Member>
     <Member MemberName="DirectoryPath">
@@ -281,6 +289,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
       </Docs>
     </Member>
     <Member MemberName="LoadedAssemblies">
@@ -329,6 +338,9 @@
         </remarks>
         <altCompliant cref="None." />
         <exception cref="T:System.AppDomainUnloadedException">The application domain is not loaded.</exception>
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
+        <altmember cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" />
+        <altmember cref="T:System.Reflection.Assembly" />
       </Docs>
     </Member>
     <Member MemberName="ProductName">
@@ -376,6 +388,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The assembly does not have an <see cref="T:System.Reflection.AssemblyProductAttribute" /> attribute.</exception>
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
       </Docs>
     </Member>
     <Member MemberName="StackTrace">
@@ -440,6 +453,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The requested stack-trace information is out of range.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access information in the file paths. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" />.</permission>
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
+        <altmember cref="P:System.Environment.StackTrace" />
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -487,6 +502,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The assembly does not have an <see cref="T:System.Reflection.AssemblyTitleAttribute" /> attribute.</exception>
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
       </Docs>
     </Member>
     <Member MemberName="Trademark">
@@ -534,6 +550,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The assembly does not have an <see cref="T:System.Reflection.AssemblyTrademarkAttribute" /> attribute.</exception>
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -582,6 +599,10 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">The application does not have sufficient permissions to access the assembly version.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.Deployment" />
+        <altmember cref="P:System.Deployment.Application.ApplicationDeployment.CurrentVersion" />
+        <altmember cref="T:System.Version" />
       </Docs>
     </Member>
     <Member MemberName="WorkingSet">
@@ -631,6 +652,8 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">A situation in which partial trust exists and the user lacks necessary permissions.</exception>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls the ability to access all environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
+        <altmember cref="P:System.Environment.WorkingSet" />
       </Docs>
     </Member>
   </Members>

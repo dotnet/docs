@@ -25,6 +25,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+    <altmember cref="T:System.ComponentModel.DesignerAttribute" />
   </Docs>
   <Members>
     <Member MemberName="CanConfigure">
@@ -44,6 +46,7 @@
         <value>
           <see langword="true" /> if the underlying data source has a configuration wizard that can be launched with the <see cref="M:System.Web.UI.Design.IDataSourceDesigner.Configure" /> method; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Design.IDataSourceDesigner.Configure" />
       </Docs>
     </Member>
     <Member MemberName="CanRefreshSchema">
@@ -63,6 +66,7 @@
         <value>
           <see langword="true" /> if the underlying data source can refresh its schema; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Design.IDataSourceDesigner.RefreshSchema(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Configure">
@@ -88,6 +92,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.IDataSourceDesigner.CanConfigure" />
       </Docs>
     </Member>
     <Member MemberName="DataSourceChanged">
@@ -112,6 +117,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+        <altmember cref="E:System.Web.UI.IDataSource.DataSourceChanged" />
       </Docs>
     </Member>
     <Member MemberName="GetView">
@@ -143,6 +150,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.IDataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.Design.DesignerDataSourceView" />
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
       </Docs>
     </Member>
     <Member MemberName="GetViewNames">
@@ -162,6 +172,8 @@
         <summary>Gets the names of the views in the underlying data source.</summary>
         <returns>An array of type <see cref="T:System.String" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.IDataSourceDesigner" />
+        <altmember cref="M:System.Web.UI.Design.IDataSourceDesigner.GetView(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RefreshSchema">
@@ -183,6 +195,8 @@
         <param name="preferSilent">Indicates whether to suppress any events raised while refreshing the schema.</param>
         <summary>Refreshes the schema of the underlying data source.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Web.UI.Design.IDataSourceDesigner.SchemaRefreshed" />
+        <altmember cref="P:System.Web.UI.Design.IDataSourceDesigner.CanRefreshSchema" />
       </Docs>
     </Member>
     <Member MemberName="ResumeDataSourceEvents">
@@ -201,6 +215,7 @@
       <Docs>
         <summary>Resumes raising data source events after calling the <see cref="M:System.Web.UI.Design.IDataSourceDesigner.SuppressDataSourceEvents" /> method.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Design.IDataSourceDesigner.SuppressDataSourceEvents" />
       </Docs>
     </Member>
     <Member MemberName="SchemaRefreshed">
@@ -218,6 +233,7 @@
       <Docs>
         <summary>Occurs when the fields or data of the underlying data source have changed.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Web.UI.Design.IDataSourceDesigner.DataSourceChanged" />
       </Docs>
     </Member>
     <Member MemberName="SuppressDataSourceEvents">
@@ -236,6 +252,7 @@
       <Docs>
         <summary>Suppresses all events raised by a data source until the <see cref="M:System.Web.UI.Design.IDataSourceDesigner.ResumeDataSourceEvents" /> method is called.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Design.IDataSourceDesigner.ResumeDataSourceEvents" />
       </Docs>
     </Member>
   </Members>

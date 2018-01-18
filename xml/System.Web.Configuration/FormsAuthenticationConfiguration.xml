@@ -115,6 +115,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Configuration.FormsAuthenticationConfiguration.Protection" />
       </Docs>
     </Member>
     <Member MemberName="Credentials">
@@ -225,7 +226,7 @@
 ## Remarks  
  The <xref:System.Web.Configuration.FormsAuthenticationConfiguration.Domain%2A> is used for the authentication cookies.  
   
- This property corresponds to the value of <xref:System.Web.HttpCookie.Domain%2A?displayProperty=fullName>.  
+ This property corresponds to the value of <xref:System.Web.HttpCookie.Domain%2A?displayProperty=nameWithType>.  
   
  This setting will take precedence over the `domain` attribute of the  section for forms authentication cookies.  
   
@@ -418,6 +419,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Configuration.FormsAuthenticationConfiguration.Protection" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -512,6 +514,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Configuration.FormsAuthenticationConfiguration.Protection" />
       </Docs>
     </Member>
     <Member MemberName="SlidingExpiration">
@@ -627,6 +630,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Configuration.FormsAuthenticationConfiguration.SlidingExpiration" />
       </Docs>
     </Member>
   </Members>

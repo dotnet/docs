@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#defaultFtpCachePolicy"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/requestCaching/defaultFtpCachePolicy"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "<defaultFtpCachePolicy> element"
   - "defaultFtpCachePolicy element"
@@ -25,6 +20,8 @@ caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;defaultFtpCachePolicy&gt; Element (Network Settings)
 Describes whether FTP caching is active and describes the default caching policy.  
@@ -37,7 +34,7 @@ Describes whether FTP caching is active and describes the default caching policy
 ## Syntax  
   
 ```xml  
-< defaultFtpCachePolicy  
+<defaultFtpCachePolicy  
   policyLevel="BypassCache|Default|CacheOnly|CacheIfAvailable|Revalidate|Reload|NoCacheNoStore|Revalidate"  
 />  
 ```  
@@ -83,7 +80,7 @@ Describes whether FTP caching is active and describes the default caching policy
   <system.net>  
     <requestCaching>  
       <defaultFtpCachePolicy  
-        Level="NoCacheNoStore">  
+        policyLevel="NoCacheNoStore">  
       </defaultFtpCachePolicy>  
     </requestCaching>  
   </system.net>  
@@ -91,7 +88,7 @@ Describes whether FTP caching is active and describes the default caching policy
 ```  
   
 ## See Also  
- <xref:System.Net.Cache>   
- <xref:System.Net.WebRequest>   
- <xref:System.Net.Cache.RequestCacheLevel>   
+ <xref:System.Net.Cache>  
+ <xref:System.Net.WebRequest>  
+ <xref:System.Net.Cache.RequestCacheLevel>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

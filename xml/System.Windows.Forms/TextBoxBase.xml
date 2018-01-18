@@ -49,6 +49,8 @@
     <block subset="none" type="overrides">
       <para>You do not typically inherit from <see cref="T:System.Windows.Forms.TextBoxBase" />. To create your own text control class, inherit from <see cref="T:System.Windows.Forms.TextBox" /> or <see cref="T:System.Windows.Forms.RichTextBox" />.</para>
     </block>
+    <altmember cref="T:System.Windows.Forms.TextBox" />
+    <altmember cref="T:System.Windows.Forms.RichTextBox" />
   </Docs>
   <Members>
     <Member MemberName="AcceptsTab">
@@ -91,6 +93,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBox.AcceptsReturn" />
       </Docs>
     </Member>
     <Member MemberName="AcceptsTabChanged">
@@ -116,7 +119,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.AcceptsTabChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.AcceptsTabChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.TextBoxBase>, such as a <xref:System.Windows.Forms.TextBox> or <xref:System.Windows.Forms.TextBoxBase>. Then name the instance `TextBoxBase1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.TextBoxBase.AcceptsTabChanged> event.  
   
@@ -125,6 +128,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.AcceptsTab" />
       </Docs>
     </Member>
     <Member MemberName="AppendText">
@@ -162,6 +166,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Copy" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Paste" />
       </Docs>
     </Member>
     <Member MemberName="AutoSize">
@@ -281,6 +287,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.ForeColor" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundImage">
@@ -482,7 +489,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.BorderStyleChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.BorderStyleChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.TextBoxBase>, such as a <xref:System.Windows.Forms.TextBox> or <xref:System.Windows.Forms.TextBoxBase>. Then name the instance `TextBoxBase1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.TextBoxBase.BorderStyleChanged> event.  
   
@@ -491,6 +498,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.BorderStyle" />
       </Docs>
     </Member>
     <Member MemberName="CanEnableIme">
@@ -553,6 +561,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Cut" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Copy" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Paste" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Undo" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -587,6 +600,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Cut" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Copy" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Paste" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.CanUndo" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.ClearUndo" />
       </Docs>
     </Member>
     <Member MemberName="ClearUndo">
@@ -621,6 +639,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Cut" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Copy" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Paste" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.CanUndo" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -696,6 +719,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Cut" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Undo" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Paste" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.CanUndo" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Clear" />
       </Docs>
     </Member>
     <Member MemberName="CreateHandle">
@@ -733,6 +761,8 @@
         <summary>Gets the required creation parameters when the control handle is created.</summary>
         <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.CreateParams" />
+        <altmember cref="P:System.Windows.Forms.Control.CreateParams" />
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -767,6 +797,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Undo" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Copy" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Paste" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.CanUndo" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Clear" />
       </Docs>
     </Member>
     <Member MemberName="DefaultCursor">
@@ -810,6 +845,7 @@
         <summary>Gets the default size of the control.</summary>
         <value>The default <see cref="T:System.Drawing.Size" /> of the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.DefaultSize" />
       </Docs>
     </Member>
     <Member MemberName="DeselectAll">
@@ -893,6 +929,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.BackColor" />
       </Docs>
     </Member>
     <Member MemberName="GetCharFromPosition">
@@ -925,6 +962,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetCharIndexFromPosition(System.Drawing.Point)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetLineFromCharIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetPositionFromCharIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetFirstCharIndexFromLine(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetCharIndexFromPosition">
@@ -957,6 +998,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetCharFromPosition(System.Drawing.Point)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetLineFromCharIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetPositionFromCharIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetFirstCharIndexFromLine(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetFirstCharIndexFromLine">
@@ -989,6 +1034,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value of the <paramref name="lineNumber" /> parameter is less than zero.</exception>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetCharIndexFromPosition(System.Drawing.Point)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetLineFromCharIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetPositionFromCharIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetCharFromPosition(System.Drawing.Point)" />
       </Docs>
     </Member>
     <Member MemberName="GetFirstCharIndexOfCurrentLine">
@@ -1040,6 +1089,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetCharIndexFromPosition(System.Drawing.Point)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetCharFromPosition(System.Drawing.Point)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetPositionFromCharIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetFirstCharIndexFromLine(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetPositionFromCharIndex">
@@ -1069,6 +1122,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetCharIndexFromPosition(System.Drawing.Point)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetLineFromCharIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetCharFromPosition(System.Drawing.Point)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetFirstCharIndexFromLine(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="HideSelection">
@@ -1134,7 +1191,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.HideSelectionChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.HideSelectionChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.TextBoxBase>, such as a <xref:System.Windows.Forms.TextBox> or <xref:System.Windows.Forms.TextBoxBase>. Then name the instance `TextBoxBase1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.TextBoxBase.HideSelectionChanged> event.  
   
@@ -1143,6 +1200,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.HideSelection" />
       </Docs>
     </Member>
     <Member MemberName="ImeModeBase">
@@ -1161,6 +1219,7 @@
         <summary>Gets or sets the Input Method Editor (IME) mode of a control.</summary>
         <value>The IME mode of the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.ImeMode" />
       </Docs>
     </Member>
     <Member MemberName="IsInputKey">
@@ -1234,7 +1293,7 @@
    
   
 ## Examples  
- The following code example uses <xref:System.Windows.Forms.TextBox>, a derived class, to extract all strings of text from a multiline text box control and displays them using the <xref:System.Diagnostics.Debug.WriteLine%2A?displayProperty=fullName> method. This example requires that a <xref:System.Windows.Forms.TextBox> control has been created, named `textBox1`, and that it has been filled with lines of text.  
+ The following code example uses <xref:System.Windows.Forms.TextBox>, a derived class, to extract all strings of text from a multiline text box control and displays them using the <xref:System.Diagnostics.Debug.WriteLine%2A?displayProperty=nameWithType> method. This example requires that a <xref:System.Windows.Forms.TextBox> control has been created, named `textBox1`, and that it has been filled with lines of text.  
   
  [!code-cpp[Classic TextBoxBase.Lines Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic TextBoxBase.Lines Example/CPP/source.cpp#1)]
  [!code-csharp[Classic TextBoxBase.Lines Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic TextBoxBase.Lines Example/CS/source.cs#1)]
@@ -1242,6 +1301,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.Text" />
       </Docs>
     </Member>
     <Member MemberName="MaxLength">
@@ -1360,7 +1420,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.ModifiedChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.ModifiedChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.TextBoxBase>, such as a <xref:System.Windows.Forms.TextBox> or <xref:System.Windows.Forms.TextBoxBase>. Then name the instance `TextBoxBase1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.TextBoxBase.ModifiedChanged> event.  
   
@@ -1369,6 +1429,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.Modified" />
       </Docs>
     </Member>
     <Member MemberName="MouseClick">
@@ -1404,7 +1465,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.MouseClick> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.MouseClick> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.TextBoxBase>, such as a <xref:System.Windows.Forms.TextBox> or <xref:System.Windows.Forms.TextBoxBase>. Then name the instance `TextBoxBase1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.TextBoxBase.MouseClick> event.  
   
@@ -1450,7 +1511,7 @@
   
  The following can be used as newline characters:  
   
--   <xref:System.Environment.NewLine%2A?displayProperty=fullName>  
+-   <xref:System.Environment.NewLine%2A?displayProperty=nameWithType>  
   
 -   ControlChars.CrLf  
   
@@ -1467,11 +1528,11 @@
 > [!NOTE]
 >  This property is set to `false` by default for all derived classes, with the exception of the <xref:System.Windows.Forms.RichTextBox> control.  
   
- For a <xref:System.Windows.Forms.RichTextBox> control, the <xref:System.Windows.Forms.RichTextBox.Multiline%2A?displayProperty=fullName> property affects whether or not the control will automatically resize, as follows:  
+ For a <xref:System.Windows.Forms.RichTextBox> control, the <xref:System.Windows.Forms.RichTextBox.Multiline%2A?displayProperty=nameWithType> property affects whether or not the control will automatically resize, as follows:  
   
--   If <xref:System.Windows.Forms.RichTextBox.AutoSize%2A?displayProperty=fullName> is set to `true` and <xref:System.Windows.Forms.RichTextBox.Multiline%2A?displayProperty=fullName> is set to `true`, <xref:System.Windows.Forms.RichTextBox> will not automatically resize.  
+-   If <xref:System.Windows.Forms.RichTextBox.AutoSize%2A?displayProperty=nameWithType> is set to `true` and <xref:System.Windows.Forms.RichTextBox.Multiline%2A?displayProperty=nameWithType> is set to `true`, <xref:System.Windows.Forms.RichTextBox> will not automatically resize.  
   
--   If <xref:System.Windows.Forms.RichTextBox.AutoSize%2A?displayProperty=fullName> is set to `true` and <xref:System.Windows.Forms.RichTextBox.Multiline%2A?displayProperty=fullName> is set to `false`, <xref:System.Windows.Forms.RichTextBox> will automatically resize.  
+-   If <xref:System.Windows.Forms.RichTextBox.AutoSize%2A?displayProperty=nameWithType> is set to `true` and <xref:System.Windows.Forms.RichTextBox.Multiline%2A?displayProperty=nameWithType> is set to `false`, <xref:System.Windows.Forms.RichTextBox> will automatically resize.  
   
    
   
@@ -1484,6 +1545,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.Lines" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.WordWrap" />
+        <altmember cref="P:System.Windows.Forms.TextBox.ScrollBars" />
       </Docs>
     </Member>
     <Member MemberName="MultilineChanged">
@@ -1509,7 +1573,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.MultilineChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.MultilineChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.TextBoxBase>, such as a <xref:System.Windows.Forms.TextBox> or <xref:System.Windows.Forms.TextBoxBase>. Then name the instance `TextBoxBase1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.TextBoxBase.MultilineChanged> event.  
   
@@ -1518,6 +1582,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.Multiline" />
       </Docs>
     </Member>
     <Member MemberName="OnAcceptsTabChanged">
@@ -1551,6 +1616,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TextBoxBase.OnAcceptsTabChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TextBoxBase.OnAcceptsTabChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.AcceptsTab" />
+        <altmember cref="E:System.Windows.Forms.TextBoxBase.AcceptsTabChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnBorderStyleChanged">
@@ -1584,6 +1651,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TextBoxBase.OnBorderStyleChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TextBoxBase.OnBorderStyleChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.BorderStyle" />
+        <altmember cref="E:System.Windows.Forms.TextBoxBase.BorderStyleChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnFontChanged">
@@ -1605,6 +1674,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.FontChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnFontChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnHandleCreated">
@@ -1626,6 +1696,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnHandleDestroyed">
@@ -1647,6 +1718,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleDestroyed" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnHandleDestroyed(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnHideSelectionChanged">
@@ -1680,6 +1752,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TextBoxBase.OnHideSelectionChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TextBoxBase.OnHideSelectionChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.HideSelection" />
+        <altmember cref="E:System.Windows.Forms.TextBoxBase.HideSelectionChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnModifiedChanged">
@@ -1713,6 +1787,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TextBoxBase.OnModifiedChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TextBoxBase.OnModifiedChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.Modified" />
+        <altmember cref="E:System.Windows.Forms.TextBoxBase.ModifiedChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseUp">
@@ -1767,6 +1843,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TextBoxBase.OnMultilineChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TextBoxBase.OnMultilineChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.Multiline" />
+        <altmember cref="E:System.Windows.Forms.TextBoxBase.MultilineChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnPaddingChanged">
@@ -1828,6 +1906,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TextBoxBase.OnReadOnlyChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TextBoxBase.OnReadOnlyChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.ReadOnly" />
+        <altmember cref="E:System.Windows.Forms.TextBoxBase.ReadOnlyChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnTextChanged">
@@ -1849,6 +1929,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.TextChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnTextChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -2025,11 +2106,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.AutoSize" />
       </Docs>
     </Member>
     <Member MemberName="ProcessCmdKey">
       <MemberSignature Language="C#" Value="protected override bool ProcessCmdKey (ref System.Windows.Forms.Message msg, System.Windows.Forms.Keys keyData);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message msg, valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message&amp; msg, valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextBoxBase.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2074,6 +2156,7 @@
         <returns>
           <see langword="true" /> if the key was processed by the control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.ProcessDialogKey(System.Windows.Forms.Keys)" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -2133,7 +2216,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.ReadOnlyChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.ReadOnlyChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.TextBoxBase>, such as a <xref:System.Windows.Forms.TextBox> or <xref:System.Windows.Forms.TextBoxBase>. Then name the instance `TextBoxBase1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.TextBoxBase.ReadOnlyChanged> event.  
   
@@ -2142,6 +2225,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.ReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="ScrollToCaret">
@@ -2211,7 +2295,7 @@
 >  You can programmatically move the caret within the text box by setting the `start` parameter to the position within the text box where you want the caret to move to and set the `length` parameter to a value of zero (0). The text box must have focus in order for the caret to be moved.  
   
 > [!NOTE]
->  If this method is called without any parameters, an alternative method is used. This alternative method inherits from the <xref:System.Windows.Forms.Control> class. When called, it sets the input focus to the control and selects the contents of the control. For more information, see the <xref:System.Windows.Forms.Control.Select%2A?displayProperty=fullName> method.  
+>  If this method is called without any parameters, an alternative method is used. This alternative method inherits from the <xref:System.Windows.Forms.Control> class. When called, it sets the input focus to the control and selects the contents of the control. For more information, see the <xref:System.Windows.Forms.Control.Select%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -2225,6 +2309,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value of the <paramref name="start" /> parameter is less than zero.</exception>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.SelectAll" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.SelectionLength" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.SelectionStart" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.SelectedText" />
       </Docs>
     </Member>
     <Member MemberName="SelectAll">
@@ -2301,6 +2389,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.SelectionStart" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.SelectionLength" />
       </Docs>
     </Member>
     <Member MemberName="SelectionLength">
@@ -2347,6 +2437,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The assigned value is less than zero.</exception>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.SelectionStart" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.SelectedText" />
       </Docs>
     </Member>
     <Member MemberName="SelectionStart">
@@ -2549,6 +2641,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.Lines" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.Multiline" />
       </Docs>
     </Member>
     <Member MemberName="TextLength">
@@ -2588,6 +2682,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.Text" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2644,11 +2739,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Cut" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Copy" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Paste" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.CanUndo" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Clear" />
       </Docs>
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextBoxBase.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2665,6 +2765,7 @@
         <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
         <summary>Processes Windows messages.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.WndProc(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
     <Member MemberName="WordWrap">

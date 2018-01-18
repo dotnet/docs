@@ -9,15 +9,13 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
 ms.assetid: 9e7d8837-28c5-429d-a824-7bafb59724cf
 caps.latest.revision: 4
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Entity SQL Language
 Entity SQL is a storage-independent query language that is similar to SQL. Entity SQL allows you to query entity data, either as objects or in a tabular form. You should consider using Entity SQL in the following cases:  
@@ -90,5 +88,5 @@ Entity SQL is a storage-independent query language that is similar to SQL. Entit
  [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
   
 ## See Also  
- [ADO.NET Entity Framework](../../../../../../docs/framework/data/adonet/ef/index.md)   
+ [ADO.NET Entity Framework](../../../../../../docs/framework/data/adonet/ef/index.md)  
  [Language Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/index.md)

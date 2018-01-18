@@ -27,13 +27,21 @@
    
   
 ## Examples  
- The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.Calendar.DayRender> event to make the background color yellow for the days in the displayed month. It also demonstrates how to customize the contents of a cell by adding a <xref:System.Web.UI.LiteralControl?displayProperty=fullName> control to the cell.  
+ The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.Calendar.DayRender> event to make the background color yellow for the days in the displayed month. It also demonstrates how to customize the contents of a cell by adding a <xref:System.Web.UI.LiteralControl?displayProperty=nameWithType> control to the cell.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic Calendar.DayRender Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.DayRender Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic Calendar.DayRender Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.DayRender Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic Calendar.DayRender Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.DayRender Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic Calendar.DayRender Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.DayRender Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+    <altmember cref="T:System.Web.UI.WebControls.DayRenderEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.Calendar.DayRender" />
+    <altmember cref="T:System.Web.UI.WebControls.TableCell" />
+    <altmember cref="T:System.Web.UI.WebControls.CalendarDay" />
+    <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Cell" />
+    <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Day" />
+    <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.SelectUrl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,6 +79,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CalendarDay" />
+        <altmember cref="T:System.Web.UI.WebControls.TableCell" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Cell" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Day" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -111,6 +123,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CalendarDay" />
+        <altmember cref="T:System.Web.UI.WebControls.TableCell" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Cell" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Day" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.SelectUrl" />
       </Docs>
     </Member>
     <Member MemberName="Cell">
@@ -134,7 +151,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Cell%2A> property to programmatically control the cell being rendered in the <xref:System.Web.UI.WebControls.Calendar> control.  
   
- You can customize the contents of a cell by dynamically adding controls to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Cell%2A> property.  
+ You can customize the contents of a cell by dynamically adding controls to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> collection of the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Cell%2A> property.  
   
 > [!NOTE]
 >  Because the <xref:System.Web.UI.WebControls.Calendar.DayRender> event is raised while the <xref:System.Web.UI.WebControls.Calendar> control is being rendered, you cannot add a control that can also raise an event, such as <xref:System.Web.UI.WebControls.LinkButton>. You can add only static controls, such as <xref:System.Web.UI.LiteralControl>, <xref:System.Web.UI.WebControls.Label>, <xref:System.Web.UI.WebControls.Image>, and <xref:System.Web.UI.WebControls.HyperLink>.  
@@ -142,13 +159,19 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Cell%2A> property to programmatically change the background color of the days in the displayed month to yellow. It also demonstrates how to customize the contents of a cell by adding a <xref:System.Web.UI.LiteralControl?displayProperty=fullName> control to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Cell%2A> property.  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Cell%2A> property to programmatically change the background color of the days in the displayed month to yellow. It also demonstrates how to customize the contents of a cell by adding a <xref:System.Web.UI.LiteralControl?displayProperty=nameWithType> control to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> collection of the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Cell%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic DayRenderEventArgs.Cell Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DayRenderEventArgs.Cell Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic DayRenderEventArgs.Cell Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DayRenderEventArgs.Cell Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic DayRenderEventArgs.Cell Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DayRenderEventArgs.Cell Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic DayRenderEventArgs.Cell Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DayRenderEventArgs.Cell Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableCell" />
+        <altmember cref="T:System.Web.UI.WebControls.CalendarDay" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Day" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.SelectUrl" />
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.DayRender" />
       </Docs>
     </Member>
     <Member MemberName="Day">
@@ -177,11 +200,17 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Day%2A> property to determine whether the day being rendered in the <xref:System.Web.UI.WebControls.Calendar> control is in the current month and also a weekday.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic DayRenderEventArgs.Day Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DayRenderEventArgs.Day Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic DayRenderEventArgs.Day Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DayRenderEventArgs.Day Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic DayRenderEventArgs.Day Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DayRenderEventArgs.Day Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic DayRenderEventArgs.Day Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DayRenderEventArgs.Day Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableCell" />
+        <altmember cref="T:System.Web.UI.WebControls.CalendarDay" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Cell" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.SelectUrl" />
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.DayRender" />
       </Docs>
     </Member>
     <Member MemberName="SelectUrl">
@@ -210,12 +239,23 @@
 ## Examples  
  The following code example demonstrates how to customize the content rendered for today's date. The value of the <xref:System.Web.UI.WebControls.DayRenderEventArgs.SelectUrl%2A> property is inserted into the rendered content so that the <xref:System.Web.UI.WebControls.Calendar> control will post back to the server when the user selects today's date.  
   
- <!-- TODO: review snippet reference [!code-csharp[DayRenderEventArgsSelectUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/dayrendereventargsselecturl/CS/DayRenderEventArgsSelectUrlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DayRenderEventArgsSelectUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/dayrendereventargsselecturl/VB/DayRenderEventArgsSelectUrlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DayRenderEventArgsSelectUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/dayrendereventargsselecturl/CS/DayRenderEventArgsSelectUrlcs.aspx#1)]
+ [!code-aspx-vb[DayRenderEventArgsSelectUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/dayrendereventargsselecturl/VB/DayRenderEventArgsSelectUrlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Cell" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Day" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DayRenderEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -862,5 +862,14 @@ code1.SetValue(WorkflowMarkupSerializer.XCodeProperty,
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Deserialize">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deserializes the serialized extensible Application Markup Language (XAML) contained in a specified <see cref="T:System.IO.TextReader" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

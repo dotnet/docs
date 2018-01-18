@@ -14,6 +14,8 @@
     <summary>Represents a prototype-based object that is defined by a constructor function. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.RegExpObject" />
+    <altmember cref="T:Microsoft.JScript.RegExpPrototype" />
   </Docs>
   <Members>
     <Member MemberName="Construct">
@@ -46,10 +48,11 @@
         <returns>A new <see cref="T:Microsoft.JScript.RegExpObject" /> object.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.RegExpPrototype" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
-      <MemberSignature Language="C#" Value="public Microsoft.JScript.RegExpObject CreateInstance (object[] args);" />
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.RegExpObject CreateInstance (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.RegExpObject CreateInstance(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.RegExpConstructor.CreateInstance(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -80,6 +83,7 @@
         <returns>An instance of the object.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.RegExpPrototype" />
       </Docs>
     </Member>
     <Member MemberName="index">
@@ -99,6 +103,8 @@
         <value>The index of the last successful match, if there was one.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.RegExpObject" />
+        <altmember cref="T:Microsoft.JScript.RegExpPrototype" />
       </Docs>
     </Member>
     <Member MemberName="input">
@@ -118,10 +124,12 @@
         <value>The input string for a regular expression search.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.RegExpObject" />
+        <altmember cref="T:Microsoft.JScript.RegExpPrototype" />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
-      <MemberSignature Language="C#" Value="public Microsoft.JScript.RegExpObject Invoke (object[] args);" />
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.RegExpObject Invoke (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.RegExpObject Invoke(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.RegExpConstructor.Invoke(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -152,6 +160,8 @@
         <returns>An instance of the object.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.RegExpObject" />
+        <altmember cref="T:Microsoft.JScript.RegExpPrototype" />
       </Docs>
     </Member>
     <Member MemberName="lastIndex">
@@ -171,6 +181,8 @@
         <value>The index of the last successful match, if there was one.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.RegExpObject" />
+        <altmember cref="T:Microsoft.JScript.RegExpPrototype" />
       </Docs>
     </Member>
     <Member MemberName="lastMatch">
@@ -190,6 +202,8 @@
         <value>A string representation of the last successful match, if there was one.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.RegExpObject" />
+        <altmember cref="T:Microsoft.JScript.RegExpPrototype" />
       </Docs>
     </Member>
     <Member MemberName="lastParen">
@@ -209,6 +223,8 @@
         <value>A string representation of the last group, if there was one.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.RegExpObject" />
+        <altmember cref="T:Microsoft.JScript.RegExpPrototype" />
       </Docs>
     </Member>
     <Member MemberName="leftContext">
@@ -228,6 +244,8 @@
         <value>A substring of the input string, if there was one.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.RegExpObject" />
+        <altmember cref="T:Microsoft.JScript.RegExpPrototype" />
       </Docs>
     </Member>
     <Member MemberName="rightContext">
@@ -247,6 +265,8 @@
         <value>A substring of the input string, if there was one.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.RegExpObject" />
+        <altmember cref="T:Microsoft.JScript.RegExpPrototype" />
       </Docs>
     </Member>
   </Members>

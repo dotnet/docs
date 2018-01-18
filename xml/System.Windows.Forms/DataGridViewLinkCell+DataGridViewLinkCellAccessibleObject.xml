@@ -31,6 +31,16 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewLinkCell" />
+    <altmember cref="T:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject" />
+    <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+    <altmember cref="T:System.Windows.Forms.AccessibleRole" />
+    <altmember cref="M:System.Windows.Forms.Control.CreateAccessibilityInstance" />
+    <altmember cref="P:System.Windows.Forms.Control.AccessibleName" />
+    <altmember cref="P:System.Windows.Forms.Control.AccessibleDescription" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,6 +59,9 @@
         <param name="owner">The <see cref="T:System.Windows.Forms.DataGridViewCell" /> that owns the <see cref="T:System.Windows.Forms.DataGridViewLinkCell.DataGridViewLinkCellAccessibleObject" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewLinkCell.DataGridViewLinkCellAccessibleObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewLinkCell" />
       </Docs>
     </Member>
     <Member MemberName="DefaultAction">
@@ -67,6 +80,8 @@
         <summary>Gets a string that represents the default action of the <see cref="T:System.Windows.Forms.DataGridViewLinkCell.DataGridViewLinkCellAccessibleObject" />.</summary>
         <value>The string "Click".</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewLinkCell" />
       </Docs>
     </Member>
     <Member MemberName="DoDefaultAction">
@@ -94,6 +109,8 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The cell returned by the <see cref="P:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Owner" /> property has a <see cref="P:System.Windows.Forms.DataGridViewElement.DataGridView" /> property value that is not <see langword="null" /> and a <see cref="P:System.Windows.Forms.DataGridViewCell.RowIndex" /> property value of -1, indicating that the cell is in a shared row.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewLinkCell" />
       </Docs>
     </Member>
     <Member MemberName="GetChildCount">
@@ -113,6 +130,8 @@
         <summary>Gets the number of child accessible objects that belong to the <see cref="T:System.Windows.Forms.DataGridViewLinkCell.DataGridViewLinkCellAccessibleObject" />.</summary>
         <returns>The value –1.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewLinkCell" />
       </Docs>
     </Member>
   </Members>

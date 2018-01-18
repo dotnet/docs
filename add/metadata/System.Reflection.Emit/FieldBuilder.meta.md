@@ -110,7 +110,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.FieldBuilder.SetValue
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

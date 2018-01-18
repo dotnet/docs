@@ -120,7 +120,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.ServiceModel.Activities.SendMessageContent.DeclaredMessageType%2A>is the data type that will appear on the service description and WSDL. You may want the service description to contain the base class type so that various derived classes can be sent and received by the service at runtime. <xref:System.ServiceModel.Activities.SendMessageContent.DeclaredMessageType%2A> must be either the same as the argument type of the Message property or its base type.  
+ <xref:System.ServiceModel.Activities.SendMessageContent.DeclaredMessageType%2A> is the data type that will appear on the service description and WSDL. You may want the service description to contain the base class type so that various derived classes can be sent and received by the service at runtime. <xref:System.ServiceModel.Activities.SendMessageContent.DeclaredMessageType%2A> must be either the same as the argument type of the Message property or its base type.  
   
  ]]></format>
         </remarks>
@@ -174,5 +174,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.SendMessageContent" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

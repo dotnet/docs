@@ -52,50 +52,36 @@
   
 -   If the host name is an IPv6 address, the canonical IPv6 address is used. ScopeId and other optional IPv6 data are removed.  
   
--   Removes default and empty port numbers.  
-  
--   Canonicalizes the path for hierarchical URIs by compacting sequences such as /./, /../, //, including escaped representations. Note that there are some schemes for which escaped representations are not compacted.  
+-   Removes default and empty port numbers.
+
+-   Escaped characters (also known as percent-encoded octets) that don't have a reserved purpose are decoded (also known as being unescaped). These unreserved characters include uppercase and lowercase letters (%41-%5A and %61-%7A), decimal digits (%30-%39), hyphen (%2D), period (%2E), underscore (%5F), and tilde (%7E).
+
+-   Canonicalizes the path for hierarchical URIs by compacting sequences such as /./, /../, and // (whether or not the sequence is escaped). Note that there are some schemes for which these sequences are not compacted.
   
 -   For hierarchical URIs, if the host is not terminated with a forward slash (/), one is added.  
   
--   By default, any reserved characters in the URI are escaped in accordance with RFC 2396. This behavior changes if International Resource Identifiers or International Domain Name parsing is enabled in which case reserved characters in the URI are escaped in accordance with RFC 3986 and RFC 3987.  
-  
- As part of canonicalization in the constructor for some schemes, escaped representations are compacted. The schemes for which URI will compact escaped sequences include the following: file, http, https, net.pipe, and net.tcp. For all other schemes, escaped sequences are not compacted. For example: if you percent encode the two dots ".." as "%2E%2E" then the URI constructor will compact this sequence for some schemes. For example, the following code sample shows a URI constructor for the http scheme.  
+-   By default, any reserved characters in the URI are escaped in accordance with RFC 2396. This behavior changes if International Resource Identifiers or International Domain Name parsing is enabled in which case reserved characters in the URI are escaped in accordance with RFC 3986 and RFC 3987.
+
+ As part of canonicalization in the constructor for some schemes, dot-segments and empty segments (/./, /../, and //) are compacted (in other words, they are removed). The schemes for which URI will compact these sequences include http, https, tcp, net.pipe, and net.tcp. For some other schemes, these sequences are not compacted. Here's how this compacting looks in practice.
   
 ```  
-  
-Uri uri = new Uri("http://myUrl/%2E%2E/%2E%2E");  
+var uri = new Uri("http://myUrl/../.."); // http scheme, unescaped
+OR
+var uri = new Uri("http://myUrl/%2E%2E/%2E%2E"); // http scheme, escaped
+OR
+var uri = new Uri("ftp://myUrl/../.."); // ftp scheme, unescaped
+OR
+var uri = new Uri("ftp://myUrl/%2E%2E/%2E%2E"); // ftp scheme, escaped
+
 Console.WriteLine(uri.AbsoluteUri);  
 Console.WriteLine(uri.PathAndQuery);  
-  
 ```  
   
- When this code is executed, it returns the following output with the escaped sequence compacted.  
-  
+ When this code is executed, it returns the following output, with the escaped sequences unescaped if necessary and then compacted.
+
 ```  
-  
 http://myUrl/  
 /  
-  
-```  
-  
- The following code example shows a URI constructor for the ftp scheme:  
-  
-```  
-  
-Uri uri = new Uri("ftp://myUrl/%2E%2E/%2E%2E");  
-Console.WriteLine(uri.AbsoluteUri);  
-Console.WriteLine(uri.PathAndQuery);  
-  
-```  
-  
- When this code is executed, it returns the following output with the escaped sequence not compacted.  
-  
-```  
-  
-ftp://myUrl/%2E%2E/%2E%2E  
-/%2E%2E/%2E%2E  
-  
 ```  
   
  You can transform the contents of the <xref:System.Uri> class from an escape encoded URI reference to a readable URI reference by using the <xref:System.Uri.ToString%2A> method. Note that some reserved characters might still be escaped in the output of the <xref:System.Uri.ToString%2A> method. This is to support unambiguous reconstruction of a URI from the value returned by <xref:System.Uri.ToString%2A>.  
@@ -124,7 +110,7 @@ ftp://myUrl/%2E%2E/%2E%2E
   
  To enable support for IRI, the following change is required:  
   
--   Specify whether you want Internationalized Domain Name (IDN) parsing applied to the domain name and whether IRI parsing rules should be applied. This can be done in the machine.config or in the app.config file. For example, add the following:  
+-   Specify whether you want Internationalized Domain Name (IDN) parsing applied to the domain name and whether IRI parsing rules should be applied. This can be done in the *machine.config* or in the *app.config* file. For example, add the following:  
   
     ```  
     <configuration>  
@@ -135,11 +121,11 @@ ftp://myUrl/%2E%2E/%2E%2E
     </configuration>  
     ```  
   
- Users of .NET Framework 4.5 and newer always have IRI enabled. IRI parsing cannot be changed using a .config file.  
+ Users of .NET Framework 4.5 and newer always have IRI enabled. IRI parsing cannot be changed using a *.config* file.  
   
  Enabling IDN will convert all Unicode labels in a domain name to their Punycode equivalents. Punycode names contain only ASCII characters and always start with the xn-- prefix. The reason for this is to support existing DNS servers on the Internet, since most DNS servers only support ASCII characters (see RFC 3940).  
   
- Enabling IRI and IDN affects the value of the <xref:System.Uri.DnsSafeHost%2A?displayProperty=fullName> property. Enabling IRI and IDN can also change the behavior of the <xref:System.Uri.Equals%2A>, <xref:System.Uri.OriginalString%2A>, <xref:System.Uri.GetComponents%2A>, and <xref:System.Uri.IsWellFormedOriginalString%2A> methods.  
+ Enabling IRI and IDN affects the value of the <xref:System.Uri.DnsSafeHost%2A?displayProperty=nameWithType> property. Enabling IRI and IDN can also change the behavior of the <xref:System.Uri.Equals%2A>, <xref:System.Uri.OriginalString%2A>, <xref:System.Uri.GetComponents%2A>, and <xref:System.Uri.IsWellFormedOriginalString%2A> methods.  
   
  There are three possible values for IDN depending on the DNS servers that are used:  
   
@@ -155,18 +141,18 @@ ftp://myUrl/%2E%2E/%2E%2E
   
      This value will not convert any Unicode domain names to use Punycode. This is the default value which is consistent with the .NET Framework 2.0 behaviour.  
   
- When IRI parsing is enabled (iriParsing enabled = `true`) normalization and character checking are done according to the latest IRI rules in RFC 3986 and RFC 3987. When IRI parsing is disabled, normalization and character checking are performed according to RFC 2396 and RFC 2732 (for IPv6 literals).  In versions of the .NET Framework before version 4.5, the default value is `false`. In .NET Framework version 4.5 and newer, the default value is `true`, and the enabled state of IRI parsing cannot be modified by settings in a .config file.  
+ When IRI parsing is enabled (iriParsing enabled = `true`) normalization and character checking are done according to the latest IRI rules in RFC 3986 and RFC 3987. When IRI parsing is disabled, normalization and character checking are performed according to RFC 2396 and RFC 2732 (for IPv6 literals).  In versions of the .NET Framework before version 4.5, the default value is `false`. In .NET Framework version 4.5 and newer, the default value is `true`, and the enabled state of IRI parsing cannot be modified by settings in a *.config* file.  
   
- IRI and IDN processing in the <xref:System.Uri> class can also be controlled using the <xref:System.Configuration.IriParsingElement?displayProperty=fullName>, <xref:System.Configuration.IdnElement?displayProperty=fullName>, and <xref:System.Configuration.UriSection?displayProperty=fullName> configuration setting classes. The <xref:System.Configuration.IriParsingElement?displayProperty=fullName> setting enables or disables IRI processing in the <xref:System.Uri> class. The <xref:System.Configuration.IdnElement?displayProperty=fullName> setting enables or disables IDN processing in the <xref:System.Uri> class. The <xref:System.Configuration.IriParsingElement?displayProperty=fullName> setting also indirectly controls IDN. IRI processing must be enabled for IDN processing to be possible. If IRI processing is disabled, then IDN processing will be set to the default setting where the .NET Framework 2.0 behavior is used for compatibility and IDN names are not used.  
+ IRI and IDN processing in the <xref:System.Uri> class can also be controlled using the <xref:System.Configuration.IriParsingElement?displayProperty=nameWithType>, <xref:System.Configuration.IdnElement?displayProperty=nameWithType>, and <xref:System.Configuration.UriSection?displayProperty=nameWithType> configuration setting classes. The <xref:System.Configuration.IriParsingElement?displayProperty=nameWithType> setting enables or disables IRI processing in the <xref:System.Uri> class. The <xref:System.Configuration.IdnElement?displayProperty=nameWithType> setting enables or disables IDN processing in the <xref:System.Uri> class. The <xref:System.Configuration.IriParsingElement?displayProperty=nameWithType> setting also indirectly controls IDN. IRI processing must be enabled for IDN processing to be possible. If IRI processing is disabled, then IDN processing will be set to the default setting where the .NET Framework 2.0 behavior is used for compatibility and IDN names are not used.  
   
- The configuration setting for the <xref:System.Configuration.IriParsingElement?displayProperty=fullName> and <xref:System.Configuration.IdnElement?displayProperty=fullName> will be read once when the first <xref:System.Uri?displayProperty=fullName> class is constructed. Changes to configuration settings after that time are ignored.  
+ The configuration setting for the <xref:System.Configuration.IriParsingElement?displayProperty=nameWithType> and <xref:System.Configuration.IdnElement?displayProperty=nameWithType> will be read once when the first <xref:System.Uri?displayProperty=nameWithType> class is constructed. Changes to configuration settings after that time are ignored.  
   
- The <xref:System.GenericUriParser?displayProperty=fullName> class has also been extended to allow creating a customizable parser that supports IRI and IDN. The behavior of a <xref:System.GenericUriParser?displayProperty=fullName> object is specified by passing a bitwise combination of the values available in the <xref:System.GenericUriParserOptions?displayProperty=fullName> enumeration to the <xref:System.GenericUriParser?displayProperty=fullName> constructor. The <xref:System.GenericUriParserOptions?displayProperty=fullName> type indicates the parser supports the parsing rules specified in RFC 3987 for International Resource Identifiers (IRI). Whether IRI is used is dictated by the configuration values previously discussed.  
+ The <xref:System.GenericUriParser?displayProperty=nameWithType> class has also been extended to allow creating a customizable parser that supports IRI and IDN. The behavior of a <xref:System.GenericUriParser?displayProperty=nameWithType> object is specified by passing a bitwise combination of the values available in the <xref:System.GenericUriParserOptions?displayProperty=nameWithType> enumeration to the <xref:System.GenericUriParser?displayProperty=nameWithType> constructor. The <xref:System.GenericUriParserOptions.IriParsing?displayProperty=nameWithType> type indicates the parser supports the parsing rules specified in RFC 3987 for International Resource Identifiers (IRI). Whether IRI is used is dictated by the configuration values previously discussed.  
   
- The <xref:System.GenericUriParserOptions?displayProperty=fullName> type indicates the parser supports Internationalized Domain Name (IDN) parsing (IDN) of host names. Whether IDN is used is dictated by the configuration values previously discussed.  
+ The <xref:System.GenericUriParserOptions.Idn?displayProperty=nameWithType> type indicates the parser supports Internationalized Domain Name (IDN) parsing (IDN) of host names. Whether IDN is used is dictated by the configuration values previously discussed.  
   
 ## Performance Considerations  
- If you use a Web.config file that contains URIs to initialize your application, additional time is required to process the URIs if their scheme identifiers are nonstandard. In such a case, initialize the affected parts of your application when the URIs are needed, not at start time.  
+ If you use a *Web.config *file that contains URIs to initialize your application, additional time is required to process the URIs if their scheme identifiers are nonstandard. In such a case, initialize the affected parts of your application when the URIs are needed, not at start time.  
   
    
   
@@ -182,6 +168,13 @@ ftp://myUrl/%2E%2E/%2E%2E
     <block subset="none" type="usage">
       <para>Because of security concerns, your application should use caution when accepting <see cref="T:System.Uri" /> instances from untrusted sources and with <paramref name="dontEscape" /> set to <see langword="true" />.You can check a URI string for validity by calling the <see cref="M:System.Uri.IsWellFormedOriginalString" /> method.</para>
     </block>
+    <altmember cref="T:System.Configuration.IdnElement" />
+    <altmember cref="T:System.Configuration.IriParsingElement" />
+    <altmember cref="T:System.Configuration.UriSection" />
+    <altmember cref="P:System.Uri.DnsSafeHost" />
+    <altmember cref="M:System.Uri.MakeRelative(System.Uri)" />
+    <altmember cref="M:System.Uri.IsWellFormedOriginalString" />
+    <altmember cref="T:System.UriBuilder" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -210,7 +203,7 @@ ftp://myUrl/%2E%2E/%2E%2E
         <Parameter Name="uriString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="uriString">A URI.</param>
+        <param name="uriString">A string that identifies the resource to be represented by the <see cref="T:System.Uri" /> instance. Note that an IPv6 address in string form must be enclosed within brackets. For example, "http://[2607:f8b0:400d:c06::69]".</param>
         <summary>Initializes a new instance of the <see cref="T:System.Uri" /> class with the specified URI.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -407,7 +400,7 @@ ftp://myUrl/%2E%2E/%2E%2E
         <Parameter Name="dontEscape" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="uriString">The URI.</param>
+        <param name="uriString">A string that identifies the resource to be represented by the <see cref="T:System.Uri" /> instance. Note that an IPv6 address in string form must be enclosed within brackets. For example, "http://[2607:f8b0:400d:c06::69]".</param>
         <param name="dontEscape">
           <see langword="true" /> if <c>uriString</c> is completely escaped; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Uri" /> class with the specified URI, with explicit control of character escaping.</summary>
@@ -515,7 +508,7 @@ ftp://myUrl/%2E%2E/%2E%2E
         <Parameter Name="uriKind" Type="System.UriKind" />
       </Parameters>
       <Docs>
-        <param name="uriString">A string that identifies the resource to be represented by the <see cref="T:System.Uri" /> instance.</param>
+        <param name="uriString">A string that identifies the resource to be represented by the <see cref="T:System.Uri" /> instance. Note that an IPv6 address in string form must be enclosed within brackets. For example, "http://[2607:f8b0:400d:c06::69]".</param>
         <param name="uriKind">Specifies whether the URI string is a relative URI, absolute URI, or is indeterminate.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Uri" /> class with the specified URI. This constructor allows you to specify if the URI string is a relative URI, absolute URI, or is indeterminate.</summary>
         <remarks>
@@ -1320,7 +1313,7 @@ ftp://myUrl/%2E%2E/%2E%2E
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If both `uri1` and `uri2` are `null`, this method returns 0. When comparing URI values, a relative URI is always less than an absolute URI, and a non-null URI is always greater than a null URI. For cases where both `uri1` and `uri2` are not `null` and are both relative URIs or both absolute URIs, the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=fullName> method performs the comparison.  
+ If both `uri1` and `uri2` are `null`, this method returns 0. When comparing URI values, a relative URI is always less than an absolute URI, and a non-null URI is always greater than a null URI. For cases where both `uri1` and `uri2` are not `null` and are both relative URIs or both absolute URIs, the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=nameWithType> method performs the comparison.  
   
  ]]></format>
         </remarks>
@@ -1354,25 +1347,27 @@ ftp://myUrl/%2E%2E/%2E%2E
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an unescaped host name that is safe to use for DNS resolution.</summary>
-        <value>A <see cref="T:System.String" /> that contains the unescaped host part of the URI that is suitable for DNS resolution; or the original unescaped host string, if it is already suitable for resolution.</value>
+        <summary>Gets a host name that, after being unescaped if necessary, is safe to use for DNS resolution.</summary>
+        <value>A <see cref="T:System.String" /> that contains the host part of the URI in a format suitable for DNS resolution; or the original host string, if it is already suitable for resolution.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For IPv6 addresses, the brackets ([]) are removed and the <xref:System.Net.IPAddress.ScopeId%2A> property is set, if one was specified when this instance was constructed.  
+ For IPv6 addresses, the brackets ([]) are removed and the <xref:System.Net.IPAddress.ScopeId%2A> property is set, if one was specified when this instance was constructed.
+
+If you used an escaped string to construct this instance (for example, "http://[fe80::200:39ff:fe36:1a2d%254]/temp/example.htm"), then DnsSafeHost returns an escaped string. Unescape any escaped string returned from `DnsSafeHost` before using that string for DNS resolution (see the Example). If you used an invalid unescaped string to construct this instance (for example, "http://[fe80::200:39ff:fe36:1a2d%4]/temp/example.htm"), then DnsSafeHost returns an unescaped string.
   
- The <xref:System.Uri.DnsSafeHost%2A> property is dependent on configuration settings, as discussed later in this topic. Configuration settings cannot be changed by Windows Store applications, which can lead to inconsistent results when using <xref:System.Uri.DnsSafeHost%2A>. The <xref:System.Uri.IdnHost%2A>property is provided as the preferred alternative to using <xref:System.Uri.DnsSafeHost%2A>, because <xref:System.Uri.IdnHost%2A> is guaranteed to always be DNS safe, no matter what the current app.config settings might be.  
+ The <xref:System.Uri.DnsSafeHost%2A> property is dependent on configuration settings, as discussed later in this topic. Configuration settings cannot be changed by Windows Store applications, which can lead to inconsistent results when using <xref:System.Uri.DnsSafeHost%2A>. The <xref:System.Uri.IdnHost%2A> property is provided as the preferred alternative to using <xref:System.Uri.DnsSafeHost%2A>, because <xref:System.Uri.IdnHost%2A> is guaranteed to always be DNS safe, no matter what the current *app.config* settings might be.  
   
  The <xref:System.Uri.DnsSafeHost%2A> property has been extended in .NET Framework v3.5, 3.0 SP1, and 2.0 SP1 to provide International Resource Identifier (IRI) support based on RFC 3987. Current users will not see any change from the .NET Framework 2.0 behavior unless they specifically enable IRI. This ensures application compatibility with prior versions of the .NET Framework.  
   
  To enable support for IRI, the following two changes are required:  
   
-1.  Add the following line to the machine.config file under the .NET Framework 2.0 directory  
+1.  Add the following line to the *machine.config* file under the .NET Framework 2.0 directory  
   
      \<section name="uri" type="System.Configuration.UriSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />  
   
-2.  Specify whether you want Internationalized Domain Name (IDN) parsing applied to the domain name and whether IRI parsing rules should be applied. This can be done in the machine.config or in the app.config file. For example, add the following:  
+2.  Specify whether you want Internationalized Domain Name (IDN) parsing applied to the domain name and whether IRI parsing rules should be applied. This can be done in the *machine.config* or in the *app.config* file. For example, add the following:  
   
     ```  
     <configuration>  
@@ -1413,7 +1408,9 @@ ftp://myUrl/%2E%2E/%2E%2E
  [!code-cpp[NCLUriEnhancements#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLUriEnhancements/CPP/nclurienhancements.cpp#4)]
  [!code-csharp[NCLUriEnhancements#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLUriEnhancements/CS/nclurienhancements.cs#4)]
  [!code-vb[NCLUriEnhancements#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLUriEnhancements/VB/nclurienhancements.vb#4)]  
-  
+
+ As explained in Remarks, unescape the host name before resolving it. You can use the <xref:System.Uri.UnescapeDataString%2A> method to unescape the host name, and you can resolve it by calling the <xref:System.Net.Dns.GetHostEntry%2A> method.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This instance represents a relative URI, and this property is valid only for absolute URIs.</exception>
@@ -2028,7 +2025,7 @@ ftp://myUrl/%2E%2E/%2E%2E
     </Member>
     <Member MemberName="HexUnescape">
       <MemberSignature Language="C#" Value="public static char HexUnescape (string pattern, ref int index);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig char HexUnescape(string pattern, int32 index) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig char HexUnescape(string pattern, int32&amp; index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Uri.HexUnescape(System.String,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2187,7 +2184,7 @@ ftp://myUrl/%2E%2E/%2E%2E
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The RFC 3490 compliant International Domain Name of the host, using Punycode as appropriate.</summary>
+        <summary>The RFC 3490 compliant International Domain Name of the host, using Punycode as appropriate. This string, after being unescaped if necessary, is safe to use for DNS resolution.</summary>
         <value>Returns the hostname, formatted with Punycode according to the IDN standard.<see cref="T:System.String" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2195,8 +2192,11 @@ ftp://myUrl/%2E%2E/%2E%2E
 ## Remarks  
  This property is provided for the use of lower-level networking protocols that require the domain name in Punycode form. If your code does not require that specific format, use <xref:System.Uri.Host%2A> for the hostname.  
   
- The deprecated <xref:System.Uri.DnsSafeHost%2A> property is dependent on app.config settings, which cannot be changed by Windows Store applications. This property is provided as the preferred alternative to using <xref:System.Uri.DnsSafeHost%2A>, because <xref:System.Uri.IdnHost%2A> is guaranteed to always be DNS safe, no matter what the current app.config settings might be.  
-  
+ The deprecated <xref:System.Uri.DnsSafeHost%2A> property is dependent on *app.config* settings, which cannot be changed by Windows Store applications. IdnHost is provided as the preferred alternative to using <xref:System.Uri.DnsSafeHost%2A>, because <xref:System.Uri.IdnHost%2A> is guaranteed to always be DNS safe, no matter what the current *app.config* settings might be.  
+
+ If you used an escaped string to construct this instance (for example, "http://[fe80::200:39ff:fe36:1a2d%254]/temp/example.htm"), then IdnHost returns an escaped string. You should unescape any escaped string returned from IdnHost before using that string for DNS resolution. Be aware that if you used an invalid unescaped string to construct this instance (for example, "http://[fe80::200:39ff:fe36:1a2d%4]/temp/example.htm"), then IdnHost returns an unescaped string.
+
+
  ]]></format>
         </remarks>
       </Docs>
@@ -2750,7 +2750,7 @@ ftp://myUrl/%2E%2E/%2E%2E
 |The string is an absolute URI that is missing a slash before the path.|file://c:/directory/filename|  
 |The string contains unescaped backslashes even if they are treated as forward slashes.|http:\\\host/path/file|  
 |The string represents a hierarchical absolute <xref:System.Uri> and does not contain "://".|www.contoso.com/path/file|  
-|The parser for the <xref:System.Uri.Scheme%2A?displayProperty=fullName> indicates that the original string was not well-formed.|The example depends on the scheme of the URI.|  
+|The parser for the <xref:System.Uri.Scheme%2A?displayProperty=nameWithType> indicates that the original string was not well-formed.|The example depends on the scheme of the URI.|  
   
  By default, the string used to construct this <xref:System.Uri> are considered well-formed in accordance with RFC 2396 and RFC 2732.  
   
@@ -3592,7 +3592,7 @@ ftp://myUrl/%2E%2E/%2E%2E
  The string returned by this method does not contain port information when the port is the default port for the scheme.  
   
 > [!NOTE]
->  The string returned by the <xref:System.Uri.ToString%2A> method may contain control characters, which can corrupt the state of a console application. You can use the <xref:System.Uri.GetComponents%2A> method with the <xref:System.UriFormat?displayProperty=fullName> format to remove control characters from the returned string.  
+>  The string returned by the <xref:System.Uri.ToString%2A> method may contain control characters, which can corrupt the state of a console application. You can use the <xref:System.Uri.GetComponents%2A> method with the <xref:System.UriFormat.SafeUnescaped?displayProperty=nameWithType> format to remove control characters from the returned string.  
   
    
   
@@ -3610,7 +3610,7 @@ ftp://myUrl/%2E%2E/%2E%2E
     </Member>
     <Member MemberName="TryCreate">
       <MemberSignature Language="C#" Value="public static bool TryCreate (string uriString, UriKind uriKind, out Uri result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryCreate(string uriString, valuetype System.UriKind uriKind, class System.Uri result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryCreate(string uriString, valuetype System.UriKind uriKind, [out] class System.Uri&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Uri.TryCreate(System.String,System.UriKind,System.Uri@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3656,7 +3656,7 @@ ftp://myUrl/%2E%2E/%2E%2E
     </Member>
     <Member MemberName="TryCreate">
       <MemberSignature Language="C#" Value="public static bool TryCreate (Uri baseUri, string relativeUri, out Uri result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryCreate(class System.Uri baseUri, string relativeUri, class System.Uri result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryCreate(class System.Uri baseUri, string relativeUri, [out] class System.Uri&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Uri.TryCreate(System.Uri,System.String,System.Uri@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3702,7 +3702,7 @@ ftp://myUrl/%2E%2E/%2E%2E
     </Member>
     <Member MemberName="TryCreate">
       <MemberSignature Language="C#" Value="public static bool TryCreate (Uri baseUri, Uri relativeUri, out Uri result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryCreate(class System.Uri baseUri, class System.Uri relativeUri, class System.Uri result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryCreate(class System.Uri baseUri, class System.Uri relativeUri, [out] class System.Uri&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Uri.TryCreate(System.Uri,System.Uri,System.Uri@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3837,6 +3837,8 @@ ftp://myUrl/%2E%2E/%2E%2E
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="stringToUnescape" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Uri.EscapeDataString(System.String)" />
+        <altmember cref="M:System.Uri.EscapeUriString(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="UriSchemeFile">
@@ -4292,5 +4294,31 @@ ftp://myUrl/%2E%2E/%2E%2E
         <exception cref="T:System.InvalidOperationException">This instance represents a relative URI, and this property is valid only for absolute URIs.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Uri" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryCreate">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Uri" />. Does not throw an exception if the <see cref="T:System.Uri" /> cannot be created.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

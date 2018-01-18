@@ -8,15 +8,15 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 ms.assetid: f8848c7e-f5c5-4d42-b86d-9951ff8f4146
 caps.latest.revision: 8
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Access HTTP-Specific Properties
 This sample shows how to turn off the HTTP **Keep-alive** behavior and get the protocol version number from the Web server.  
@@ -56,6 +56,6 @@ HttpWResp.Close();
 -   References to the **System.Net** namespace.  
   
 ## See Also  
- [Accessing the Internet Through a Proxy](../../../docs/framework/network-programming/accessing-the-internet-through-a-proxy.md)   
- [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)   
+ [Accessing the Internet Through a Proxy](../../../docs/framework/network-programming/accessing-the-internet-through-a-proxy.md)  
+ [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)  
  [HTTP](../../../docs/framework/network-programming/http.md)

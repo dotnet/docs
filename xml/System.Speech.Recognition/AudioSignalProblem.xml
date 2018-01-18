@@ -56,6 +56,9 @@ void sre_AudioSignalProblemOccurred(object sender, AudioSignalProblemOccurredEve
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.AudioSignalProblemOccurred" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.AudioSignalProblemOccurred" />
+    <altmember cref="T:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs" />
   </Docs>
   <Members>
     <Member MemberName="None">

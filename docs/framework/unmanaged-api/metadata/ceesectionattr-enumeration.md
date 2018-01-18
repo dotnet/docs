@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CeeSectionAttr"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CeeSectionAttr enumeration [.NET Framework metadata]"
 ms.assetid: 0db51881-b869-4677-a715-1726a9216489
@@ -28,6 +26,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CeeSectionAttr Enumeration
 Provides values that specify attributes of a section for use by the [ICeeGen](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md) interface.  

@@ -8,11 +8,6 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "Dispose method"
   - "class library design guidelines [.NET Framework], Dispose method"
@@ -24,6 +19,9 @@ caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Dispose Pattern
 All programs acquire one or more system resources, such as memory, system handles, or database connections, during the course of their execution. Developers have to be careful when using such system resources, because they must be released after they have been acquired and used.  
@@ -32,7 +30,7 @@ All programs acquire one or more system resources, such as memory, system handle
   
  Unfortunately, managed memory is just one of many types of system resources. Resources other than managed memory still need to be released explicitly and are referred to as unmanaged resources. The GC was specifically not designed to manage such unmanaged resources, which means that the responsibility for managing unmanaged resources lies in the hands of the developers.  
   
- The CLR provides some help in releasing unmanaged resources. <xref:System.Object?displayProperty=fullName> declares a virtual method <xref:System.Object.Finalize%2A> (also called the finalizer) that is called by the GC before the object’s memory is reclaimed by the GC and can be overridden to release unmanaged resources. Types that override the finalizer are referred to as finalizable types.  
+ The CLR provides some help in releasing unmanaged resources. <xref:System.Object?displayProperty=nameWithType> declares a virtual method <xref:System.Object.Finalize%2A> (also called the finalizer) that is called by the GC before the object’s memory is reclaimed by the GC and can be overridden to release unmanaged resources. Types that override the finalizer are referred to as finalizable types.  
   
  Although finalizers are effective in some cleanup scenarios, they have two significant drawbacks:  
   
@@ -42,7 +40,7 @@ All programs acquire one or more system resources, such as memory, system handle
   
  Therefore, relying exclusively on finalizers might not be appropriate in many scenarios when it is important to reclaim unmanaged resources as quickly as possible, when dealing with scarce resources, or in highly performant scenarios in which the added GC overhead of finalization is unacceptable.  
   
- The Framework provides the <xref:System.IDisposable?displayProperty=fullName> interface that should be implemented to provide the developer a manual way to release unmanaged resources as soon as they are not needed. It also provides the <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> method that can tell the GC that an object was manually disposed of and does not need to be finalized anymore, in which case the object’s memory can be reclaimed earlier. Types that implement the `IDisposable` interface are referred to as disposable types.  
+ The Framework provides the <xref:System.IDisposable?displayProperty=nameWithType> interface that should be implemented to provide the developer a manual way to release unmanaged resources as soon as they are not needed. It also provides the <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> method that can tell the GC that an object was manually disposed of and does not need to be finalized anymore, in which case the object’s memory can be reclaimed earlier. Types that implement the `IDisposable` interface are referred to as disposable types.  
   
  The Dispose Pattern is intended to standardize the usage and implementation of finalizers and the `IDisposable` interface.  
   
@@ -58,7 +56,7 @@ All programs acquire one or more system resources, such as memory, system handle
   
  **✓ CONSIDER** implementing the Basic Dispose Pattern on classes that themselves don’t hold unmanaged resources or disposable objects but are likely to have subtypes that do.  
   
- A great example of this is the <xref:System.IO.Stream?displayProperty=fullName> class. Although it is an abstract base class that doesn’t hold any resources, most of its subclasses do and because of this, it implements this pattern.  
+ A great example of this is the <xref:System.IO.Stream?displayProperty=nameWithType> class. Although it is an abstract base class that doesn’t hold any resources, most of its subclasses do and because of this, it implements this pattern.  
   
 <a name="basic_pattern"></a>   
 ## Basic Dispose Pattern  
@@ -270,7 +268,7 @@ public class ComplexResourceHolder : IDisposable {
   
  For example, a finalizable object A that has a reference to another finalizable object B cannot reliably use B in A’s finalizer, or vice versa. Finalizers are called in a random order (short of a weak ordering guarantee for critical finalization).  
   
- Also, be aware that objects stored in static variables will get collected at certain points during an application domain unload or while exiting the process. Accessing a static variable that refers to a finalizable object (or calling a static method that might use values stored in static variables) might not be safe if <xref:System.Environment.HasShutdownStarted%2A?displayProperty=fullName> returns true.  
+ Also, be aware that objects stored in static variables will get collected at certain points during an application domain unload or while exiting the process. Accessing a static variable that refers to a finalizable object (or calling a static method that might use values stored in static variables) might not be safe if <xref:System.Environment.HasShutdownStarted%2A?displayProperty=nameWithType> returns true.  
   
  **✓ DO** make your `Finalize` method protected.  
   
@@ -287,8 +285,8 @@ public class ComplexResourceHolder : IDisposable {
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](http://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
 ## See Also  
- <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>   
- <xref:System.Object.Finalize%2A?displayProperty=fullName>   
- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)   
- [Common Design Patterns](../../../docs/standard/design-guidelines/common-design-patterns.md)   
+ <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType>  
+ <xref:System.Object.Finalize%2A?displayProperty=nameWithType>  
+ [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
+ [Common Design Patterns](../../../docs/standard/design-guidelines/common-design-patterns.md)  
  [Garbage Collection](../../../docs/standard/garbage-collection/index.md)

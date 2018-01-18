@@ -37,7 +37,7 @@
   
  The <xref:System.Threading.ExecutionContext> class provides the functionality for user code to capture and transfer this context across user-defined asynchronous points. The common language runtime ensures that the <xref:System.Threading.ExecutionContext> is consistently transferred across runtime-defined asynchronous points within the managed process.  
   
- An execution context is the managed equivalent of a COM apartment. Within an application domain, the entire execution context must be transferred whenever a thread is transferred. This situation occurs during transfers made by the <xref:System.Threading.Thread.Start%2A?displayProperty=fullName> method, most thread pool operations, and Windows Forms thread marshaling through the Windows message pump. It does not occur in unsafe thread pool operations (such as the <xref:System.Threading.ThreadPool.UnsafeQueueUserWorkItem%2A> method), which do not transfer the compressed stack. Wherever the compressed stack flows, the managed principal, synchronization, locale, and user context also flow. The <xref:System.Threading.ExecutionContext> class provides the <xref:System.Threading.ExecutionContext.Capture%2A> and <xref:System.Threading.ExecutionContext.CreateCopy%2A> methods to get the execution context and the <xref:System.Threading.ExecutionContext.Run%2A> method to set the execution context for the current thread.  
+ An execution context is the managed equivalent of a COM apartment. Within an application domain, the entire execution context must be transferred whenever a thread is transferred. This situation occurs during transfers made by the <xref:System.Threading.Thread.Start%2A?displayProperty=nameWithType> method, most thread pool operations, and Windows Forms thread marshaling through the Windows message pump. It does not occur in unsafe thread pool operations (such as the <xref:System.Threading.ThreadPool.UnsafeQueueUserWorkItem%2A> method), which do not transfer the compressed stack. Wherever the compressed stack flows, the managed principal, synchronization, locale, and user context also flow. The <xref:System.Threading.ExecutionContext> class provides the <xref:System.Threading.ExecutionContext.Capture%2A> and <xref:System.Threading.ExecutionContext.CreateCopy%2A> methods to get the execution context and the <xref:System.Threading.ExecutionContext.Run%2A> method to set the execution context for the current thread.  
   
  An <xref:System.Threading.ExecutionContext> that is associated with a thread cannot be set on another thread. Attempting to do so will result in an exception being thrown. To propagate the <xref:System.Threading.ExecutionContext> from one thread to another, make a copy of the <xref:System.Threading.ExecutionContext>.  
   
@@ -215,6 +215,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="info" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
       </Docs>
     </Member>
     <Member MemberName="IsFlowSuppressed">
@@ -391,12 +392,13 @@
   
  You must use the <xref:System.Threading.AsyncFlowControl.Undo%2A> method on the returned <xref:System.Threading.AsyncFlowControl> structure to restore the flow of the <xref:System.Threading.ExecutionContext>.  
   
- This method is protected with a <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> for <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> permission. A fully trusted component can call this method to suppress the flow of the <xref:System.Threading.ExecutionContext> during asynchronous calls. While the flow is suppressed, the <xref:System.Security.SecurityContext.Capture%2A> method returns `null`.  
+ This method is protected with a <xref:System.Security.Permissions.SecurityAction.LinkDemand?displayProperty=nameWithType> for <xref:System.Security.Permissions.SecurityPermissionFlag.Infrastructure?displayProperty=nameWithType> permission. A fully trusted component can call this method to suppress the flow of the <xref:System.Threading.ExecutionContext> during asynchronous calls. While the flow is suppressed, the <xref:System.Security.SecurityContext.Capture%2A> method returns `null`.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The context flow is already suppressed.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Threading.AsyncFlowControl" />
       </Docs>
     </Member>
   </Members>

@@ -59,6 +59,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConfigurationAllowDefinition" />
       </Docs>
     </Member>
     <Member MemberName="AllowDynamicModuleRegistration">
@@ -184,7 +185,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property must to be set before <xref:System.Web.RequestNotification.ExecuteRequestHandler>is set in the ASP.NET pipeline.  
+ This property must to be set before <xref:System.Web.RequestNotification.ExecuteRequestHandler> is set in the ASP.NET pipeline.  
   
  ]]></format>
         </remarks>
@@ -1062,7 +1063,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.HttpResponse> class checks both the <xref:System.Web.Configuration.HttpRuntimeSection.SendCacheControlHeader%2A?displayProperty=fullName> property and the <xref:System.Web.Configuration.OutputCacheSection.SendCacheControlHeader%2A?displayProperty=fullName> property to determine whether to send the `cache-control:private` header in the HTTP response. If either property is set to `false`, the header will not be sent. When the cache-control header is set to `private`, then the client will not cache the response in a shared cache.  
+ The <xref:System.Web.HttpResponse> class checks both the <xref:System.Web.Configuration.HttpRuntimeSection.SendCacheControlHeader%2A?displayProperty=nameWithType> property and the <xref:System.Web.Configuration.OutputCacheSection.SendCacheControlHeader%2A?displayProperty=nameWithType> property to determine whether to send the `cache-control:private` header in the HTTP response. If either property is set to `false`, the header will not be sent. When the cache-control header is set to `private`, then the client will not cache the response in a shared cache.  
   
  Support for the <xref:System.Web.Configuration.HttpRuntimeSection.SendCacheControlHeader%2A> property in the <xref:System.Web.Configuration.HttpRuntimeSection> class is provided for compatibility with legacy applications; this property is obsolete in the .NET Framework version 2.0. For more information, see the <xref:System.Web.Configuration.OutputCacheSection> class.  
   

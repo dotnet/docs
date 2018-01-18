@@ -36,9 +36,9 @@
   
 |<xref:System.Windows.Controls.Primitives.Track> property|<xref:System.Windows.Controls.Primitives.ScrollBar> property|  
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
-|<xref:System.Windows.Controls.Primitives.Track.Maximum%2A?displayProperty=fullName>|<xref:System.Windows.Controls.Primitives.RangeBase.Maximum%2A?displayProperty=fullName>|  
-|<xref:System.Windows.Controls.Primitives.Track.Minimum%2A?displayProperty=fullName>|<xref:System.Windows.Controls.Primitives.RangeBase.Minimum%2A?displayProperty=fullName>|  
-|<xref:System.Windows.Controls.Primitives.Track.Value%2A?displayProperty=fullName>|<xref:System.Windows.Controls.Primitives.RangeBase.Value%2A?displayProperty=fullName>|  
+|<xref:System.Windows.Controls.Primitives.Track.Maximum%2A?displayProperty=nameWithType>|<xref:System.Windows.Controls.Primitives.RangeBase.Maximum%2A?displayProperty=nameWithType>|  
+|<xref:System.Windows.Controls.Primitives.Track.Minimum%2A?displayProperty=nameWithType>|<xref:System.Windows.Controls.Primitives.RangeBase.Minimum%2A?displayProperty=nameWithType>|  
+|<xref:System.Windows.Controls.Primitives.Track.Value%2A?displayProperty=nameWithType>|<xref:System.Windows.Controls.Primitives.RangeBase.Value%2A?displayProperty=nameWithType>|  
   
  You can access the <xref:System.Windows.Controls.Primitives.Track> control of a <xref:System.Windows.Controls.Primitives.ScrollBar> control by using the <xref:System.Windows.Controls.Primitives.ScrollBar.Track%2A> property.  
   
@@ -61,6 +61,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.Primitives.RangeBase" />
+    <altmember cref="T:System.Windows.Controls.Primitives.Track" />
+    <altmember cref="T:System.Windows.Controls.Primitives.Thumb" />
+    <altmember cref="T:System.Windows.Controls.ScrollViewer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -98,7 +102,7 @@
 ## Remarks  
  When the user drags the thumb of a <xref:System.Windows.Controls.Primitives.ScrollBar>, the <xref:System.Windows.Controls.Primitives.ScrollBar> calls <xref:System.Windows.Input.RoutedCommand.CanExecute%2A> for the <xref:System.Windows.Controls.Primitives.ScrollBar.DeferScrollToHorizontalOffsetCommand>. If <xref:System.Windows.Input.RoutedCommand.CanExecute%2A> returns `true`, the <xref:System.Windows.Controls.Primitives.ScrollBar> executes that command.  If <xref:System.Windows.Input.RoutedCommand.CanExecute%2A> returns `false`, the <xref:System.Windows.Controls.Primitives.ScrollBar> executes the <xref:System.Windows.Controls.Primitives.ScrollBar.ScrollToHorizontalOffsetCommand>.  
   
- The <xref:System.Windows.Controls.ScrollViewer> uses this command to enable deferred scrolling. When <xref:System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabled%2A?displayProperty=fullName> is `true` and a user drags the <xref:System.Windows.Controls.Primitives.Thumb> of the <xref:System.Windows.Controls.Primitives.ScrollBar>, the content of the <xref:System.Windows.Controls.ScrollViewer> does not change until the user releases the <xref:System.Windows.Controls.Primitives.Thumb>. If deferred scrolling is enabled, the <xref:System.Windows.Controls.Primitives.ScrollBar> executes the <xref:System.Windows.Controls.Primitives.ScrollBar.DeferScrollToHorizontalOffsetCommand> for a horizontal <xref:System.Windows.Controls.Primitives.ScrollBar> when the user drags the <xref:System.Windows.Controls.Primitives.Thumb>.  
+ The <xref:System.Windows.Controls.ScrollViewer> uses this command to enable deferred scrolling. When <xref:System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabled%2A?displayProperty=nameWithType> is `true` and a user drags the <xref:System.Windows.Controls.Primitives.Thumb> of the <xref:System.Windows.Controls.Primitives.ScrollBar>, the content of the <xref:System.Windows.Controls.ScrollViewer> does not change until the user releases the <xref:System.Windows.Controls.Primitives.Thumb>. If deferred scrolling is enabled, the <xref:System.Windows.Controls.Primitives.ScrollBar> executes the <xref:System.Windows.Controls.Primitives.ScrollBar.DeferScrollToHorizontalOffsetCommand> for a horizontal <xref:System.Windows.Controls.Primitives.ScrollBar> when the user drags the <xref:System.Windows.Controls.Primitives.Thumb>.  
   
  ]]></format>
         </remarks>
@@ -124,7 +128,7 @@
 ## Remarks  
  When the user drags the thumb of a <xref:System.Windows.Controls.Primitives.ScrollBar>, the <xref:System.Windows.Controls.Primitives.ScrollBar> calls <xref:System.Windows.Input.RoutedCommand.CanExecute%2A> for the <xref:System.Windows.Controls.Primitives.ScrollBar.DeferScrollToVerticalOffsetCommand>. If <xref:System.Windows.Input.RoutedCommand.CanExecute%2A> returns `true`, the <xref:System.Windows.Controls.Primitives.ScrollBar> executes that command.  If <xref:System.Windows.Input.RoutedCommand.CanExecute%2A> returns `false`, the <xref:System.Windows.Controls.Primitives.ScrollBar> executes the <xref:System.Windows.Controls.Primitives.ScrollBar.ScrollToVerticalOffsetCommand>.  
   
- The <xref:System.Windows.Controls.ScrollViewer> uses this command to enable deferred scrolling. When <xref:System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabled%2A?displayProperty=fullName> is `true` and a user drags the <xref:System.Windows.Controls.Primitives.Thumb> of the <xref:System.Windows.Controls.Primitives.ScrollBar>, the content of the <xref:System.Windows.Controls.ScrollViewer> does not change until the user releases the <xref:System.Windows.Controls.Primitives.Thumb>. If deferred scrolling is enabled, the <xref:System.Windows.Controls.Primitives.ScrollBar> executes the <xref:System.Windows.Controls.Primitives.ScrollBar.DeferScrollToVerticalOffsetCommand> for a vertical <xref:System.Windows.Controls.Primitives.ScrollBar> when the user drags the <xref:System.Windows.Controls.Primitives.Thumb>.  
+ The <xref:System.Windows.Controls.ScrollViewer> uses this command to enable deferred scrolling. When <xref:System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabled%2A?displayProperty=nameWithType> is `true` and a user drags the <xref:System.Windows.Controls.Primitives.Thumb> of the <xref:System.Windows.Controls.Primitives.ScrollBar>, the content of the <xref:System.Windows.Controls.ScrollViewer> does not change until the user releases the <xref:System.Windows.Controls.Primitives.Thumb>. If deferred scrolling is enabled, the <xref:System.Windows.Controls.Primitives.ScrollBar> executes the <xref:System.Windows.Controls.Primitives.ScrollBar.DeferScrollToVerticalOffsetCommand> for a vertical <xref:System.Windows.Controls.Primitives.ScrollBar> when the user drags the <xref:System.Windows.Controls.Primitives.Thumb>.  
   
  ]]></format>
         </remarks>
@@ -193,6 +197,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.LineLeftCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.LineRightCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.LineUpCommand" />
       </Docs>
     </Member>
     <Member MemberName="LineLeftCommand">
@@ -232,6 +239,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.LineDownCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.LineRightCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.LineUpCommand" />
       </Docs>
     </Member>
     <Member MemberName="LineRightCommand">
@@ -271,6 +281,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.LineDownCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.LineLeftCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.LineUpCommand" />
       </Docs>
     </Member>
     <Member MemberName="LineUpCommand">
@@ -310,6 +323,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.LineDownCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.LineLeftCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.LineRightCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnApplyTemplate">
@@ -512,6 +528,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Orientation" />
       </Docs>
     </Member>
     <Member MemberName="OrientationProperty">
@@ -568,6 +585,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.PageUpCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.PageLeftCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.PageRightCommand" />
       </Docs>
     </Member>
     <Member MemberName="PageLeftCommand">
@@ -609,6 +629,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.PageUpCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.PageDownCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.PageRightCommand" />
       </Docs>
     </Member>
     <Member MemberName="PageRightCommand">
@@ -650,6 +673,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.PageUpCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.PageDownCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.PageLeftCommand" />
       </Docs>
     </Member>
     <Member MemberName="PageUpCommand">
@@ -689,6 +715,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.PageDownCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.PageLeftCommand" />
+        <altmember cref="F:System.Windows.Controls.Primitives.ScrollBar.PageRightCommand" />
       </Docs>
     </Member>
     <Member MemberName="Scroll">
@@ -739,6 +768,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Primitives.ScrollEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="ScrollEvent">

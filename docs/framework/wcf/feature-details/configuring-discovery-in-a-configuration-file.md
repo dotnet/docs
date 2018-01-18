@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b9884c11-8011-4763-bc2c-c526b80175d0
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Configuring Discovery in a Configuration File
 There are four major groups of configuration settings used in discovery. This topic will briefly describe each and show examples of how to configure them. Following each section will be a link to more in-depth documentation about each area.  

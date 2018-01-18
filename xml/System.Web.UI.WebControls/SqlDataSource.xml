@@ -79,7 +79,7 @@
   
 <a name="data_provider"></a>   
 ## Data Provider  
- By default, the <xref:System.Web.UI.WebControls.SqlDataSource> control works with the .NET Framework Data Provider for SQL Server, but <xref:System.Web.UI.WebControls.SqlDataSource> is not Microsoft SQL Server–specific. You can connect the <xref:System.Web.UI.WebControls.SqlDataSource> control with any database product for which there is a managed ADO.NET provider. When used with the <xref:System.Data.OleDb?displayProperty=fullName> provider, the <xref:System.Web.UI.WebControls.SqlDataSource> can work with any OLE DB-compliant database. When used with the <xref:System.Data.Odbc?displayProperty=fullName> provider, the <xref:System.Web.UI.WebControls.SqlDataSource> can be used with any ODBC driver and database, including IBM DB2, MySQL, and PostgreSQL. When used with the <xref:System.Data.OracleClient?displayProperty=fullName> provider, the <xref:System.Web.UI.WebControls.SqlDataSource> can work with Oracle 8.1.7 databases and later. The list of allowable providers is registered in the `DbProviderFactories` section of the configuration file, either in the Machine.config or Web.config file. For more information, see [Selecting Data Using the SqlDataSource Control](http://msdn.microsoft.com/library/44623286-ff5a-4148-8a3c-85c56ed545eb).  
+ By default, the <xref:System.Web.UI.WebControls.SqlDataSource> control works with the .NET Framework Data Provider for SQL Server, but <xref:System.Web.UI.WebControls.SqlDataSource> is not Microsoft SQL Server–specific. You can connect the <xref:System.Web.UI.WebControls.SqlDataSource> control with any database product for which there is a managed ADO.NET provider. When used with the <xref:System.Data.OleDb?displayProperty=nameWithType> provider, the <xref:System.Web.UI.WebControls.SqlDataSource> can work with any OLE DB-compliant database. When used with the <xref:System.Data.Odbc?displayProperty=nameWithType> provider, the <xref:System.Web.UI.WebControls.SqlDataSource> can be used with any ODBC driver and database, including IBM DB2, MySQL, and PostgreSQL. When used with the <xref:System.Data.OracleClient?displayProperty=nameWithType> provider, the <xref:System.Web.UI.WebControls.SqlDataSource> can work with Oracle 8.1.7 databases and later. The list of allowable providers is registered in the `DbProviderFactories` section of the configuration file, either in the Machine.config or Web.config file. For more information, see [Selecting Data Using the SqlDataSource Control](http://msdn.microsoft.com/library/44623286-ff5a-4148-8a3c-85c56ed545eb).  
   
 <a name="caching"></a>   
 ## Caching  
@@ -574,29 +574,32 @@
   
  The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.SqlDataSource> control declaratively to retrieve data from SQL Server and display it in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_3sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_3sql/CS/sql3cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_3sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_3sql/VB/sql3vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_3sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_3sql/CS/sql3cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_3sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_3sql/VB/sql3vb.aspx#1)]  
   
- The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.SqlDataSource> control declaratively to retrieve data from an ODBC-compliant database and display it in a <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property is the name of the .NET Framework Data Provider for ODBC, which is <xref:System.Data.Odbc?displayProperty=fullName>.  
+ The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.SqlDataSource> control declaratively to retrieve data from an ODBC-compliant database and display it in a <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property is the name of the .NET Framework Data Provider for ODBC, which is <xref:System.Data.Odbc?displayProperty=nameWithType>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_3odbc#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_3odbc/CS/odbc3cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_3odbc#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_3odbc/VB/odbc3vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_3odbc#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_3odbc/CS/odbc3cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_3odbc#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_3odbc/VB/odbc3vb.aspx#1)]  
   
  The following code example demonstrates a common display and update scenario with the <xref:System.Web.UI.WebControls.GridView> control. As with the previous examples, data from the Northwind database is displayed in the <xref:System.Web.UI.WebControls.GridView> control. Additionally, because an <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand%2A> property is specified and the <xref:System.Web.UI.WebControls.GridView.AutoGenerateEditButton%2A> property is set to `true`, you can edit and update the records with no additional code. The <xref:System.Web.UI.WebControls.GridView> control automatically handles adding parameters to the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateParameters%2A> collection and calls the <xref:System.Web.UI.WebControls.SqlDataSource.Update%2A> method when the **Update** button in the <xref:System.Web.UI.WebControls.GridView> control is clicked.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_5sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_5sql/CS/sql5cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_5sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_5sql/VB/sql5vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_5sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_5sql/CS/sql5cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_5sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_5sql/VB/sql5vb.aspx#1)]  
   
  The following code example demonstrates a common display and update scenario with the <xref:System.Web.UI.WebControls.DropDownList> and <xref:System.Web.UI.WebControls.TextBox> controls. The <xref:System.Web.UI.WebControls.DropDownList> control does not automatically add update parameters to the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateParameters%2A> collection nor call the <xref:System.Web.UI.WebControls.SqlDataSource.Update%2A> method, so you must do so. The update parameters are specified declaratively and you can add an event handler to perform the <xref:System.Web.UI.WebControls.SqlDataSource.Update%2A> operation when an event is raised.  
   
 > [!IMPORTANT]
 >  This example includes a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_8sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_8sql/CS/sql8cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_8sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_8sql/VB/sql8vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_8sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_8sql/CS/sql8cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_8sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_8sql/VB/sql8vb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceView" />
+    <altmember cref="T:System.Web.UI.WebControls.AccessDataSource" />
+    <altmember cref="T:System.Web.UI.DataSourceControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -612,6 +615,9 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceView" />
+        <altmember cref="T:System.Web.UI.WebControls.AccessDataSource" />
+        <altmember cref="T:System.Web.UI.DataSourceControl" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -635,7 +641,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because different database products use different varieties of SQL, the syntax for `selectCommand` depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or the <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ Because different database products use different varieties of SQL, the syntax for `selectCommand` depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=nameWithType>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=nameWithType> or the <xref:System.Data.OleDb?displayProperty=nameWithType>, the placeholder of the parameter is `'?'`. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> value can be an SQL string or the name of a stored procedure, if the data source supports stored procedures.  
   
@@ -651,6 +657,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.ConnectionString" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectCommand" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectParameters" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -676,12 +685,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because different database products use different varieties of SQL, the syntax of `selectCommand` depends on the current ADO.NET provider being used, which is identified by the `providerName` parameter. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or the <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ Because different database products use different varieties of SQL, the syntax of `selectCommand` depends on the current ADO.NET provider being used, which is identified by the `providerName` parameter. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is <xref:System.Data.SqlClient?displayProperty=nameWithType>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=nameWithType> or the <xref:System.Data.OleDb?displayProperty=nameWithType>, the placeholder of the parameter is `'?'`. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property can be an SQL string or the name of a stored procedure, if the data source supports stored procedures.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.ProviderName" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.ConnectionString" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectCommand" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectParameters" />
       </Docs>
     </Member>
     <Member MemberName="CacheDuration">
@@ -727,11 +740,13 @@
 ## Examples  
  The following code example demonstrates how to retrieve data from the Northwind database in Microsoft SQL Server and display it in a <xref:System.Web.UI.WebControls.GridView> control, with data caching enabled. The <xref:System.Web.UI.WebControls.SqlDataSource.CacheDuration%2A> is set to 20 seconds and, because the <xref:System.Web.UI.WebControls.SqlDataSource.CacheExpirationPolicy%2A> property is set to the <xref:System.Web.UI.DataSourceCacheExpiry.Absolute> value by default, users of this page will see fresh data every 20 seconds.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_18sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_18sql/CS/sql18cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_18sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_18sql/VB/sql18vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_18sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_18sql/CS/sql18cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_18sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_18sql/VB/sql18vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.CacheExpirationPolicy" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.EnableCaching" />
       </Docs>
     </Member>
     <Member MemberName="CacheExpirationPolicy">
@@ -772,11 +787,13 @@
 ## Examples  
  The following code example demonstrates how to retrieve data from the Northwind database in Microsoft SQL Server and display it in a <xref:System.Web.UI.WebControls.GridView> control, with data caching enabled. Because the <xref:System.Web.UI.WebControls.SqlDataSource.CacheExpirationPolicy%2A> property is set to the <xref:System.Web.UI.DataSourceCacheExpiry.Sliding> value, users will not see fresh data even though the <xref:System.Web.UI.WebControls.SqlDataSource.CacheDuration%2A> value is 20 seconds. The cached data is refreshed only if there is no activity on the page for more than 20 seconds since the last page load.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_19sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_19sql/CS/sql19cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_19sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_19sql/VB/sql19vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_19sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_19sql/CS/sql19cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_19sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_19sql/VB/sql19vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.CacheDuration" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.EnableCaching" />
       </Docs>
     </Member>
     <Member MemberName="CacheKeyDependency">
@@ -816,6 +833,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.CacheDuration" />
       </Docs>
     </Member>
     <Member MemberName="CancelSelectOnNullParameter">
@@ -881,6 +899,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ConflictOptions" />
       </Docs>
     </Member>
     <Member MemberName="ConnectionString">
@@ -915,7 +934,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.SqlDataSource> control can be used with a variety of ADO.NET providers and the syntax of the connection string that is used to connect to an underlying data source is specific to the provider.  
   
- When you configure a <xref:System.Web.UI.WebControls.SqlDataSource> control, you set the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property to the type of database (the default is <xref:System.Data.SqlClient?displayProperty=fullName>), and you set the <xref:System.Web.UI.WebControls.SqlDataSource.ConnectionString%2A> property to a connection string that includes information that is required in order to connect to the database. The contents of a connection string differ depending on what type of database the data source control is accessing. For example, the <xref:System.Web.UI.WebControls.SqlDataSource> control requires a server name, database (catalog) name, and information about how to authenticate the user when connecting to a SQL Server. For information about the contents of connection strings, see the <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A> property for the <xref:System.Data.SqlClient.SqlConnection> class, <xref:System.Data.OracleClient.OracleConnection.ConnectionString%2A> property for the <xref:System.Data.OracleClient.OracleConnection> class, <xref:System.Data.OleDb.OleDbConnection.ConnectionString%2A> property for the <xref:System.Data.OleDb.OleDbConnection> class, or the <xref:System.Data.Odbc.OdbcConnection.ConnectionString%2A> property for the <xref:System.Data.Odbc.OdbcConnection> class.  
+ When you configure a <xref:System.Web.UI.WebControls.SqlDataSource> control, you set the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property to the type of database (the default is <xref:System.Data.SqlClient?displayProperty=nameWithType>), and you set the <xref:System.Web.UI.WebControls.SqlDataSource.ConnectionString%2A> property to a connection string that includes information that is required in order to connect to the database. The contents of a connection string differ depending on what type of database the data source control is accessing. For example, the <xref:System.Web.UI.WebControls.SqlDataSource> control requires a server name, database (catalog) name, and information about how to authenticate the user when connecting to a SQL Server. For information about the contents of connection strings, see the <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A> property for the <xref:System.Data.SqlClient.SqlConnection> class, <xref:System.Data.OracleClient.OracleConnection.ConnectionString%2A> property for the <xref:System.Data.OracleClient.OracleConnection> class, <xref:System.Data.OleDb.OleDbConnection.ConnectionString%2A> property for the <xref:System.Data.OleDb.OleDbConnection> class, or the <xref:System.Data.Odbc.OdbcConnection.ConnectionString%2A> property for the <xref:System.Data.Odbc.OdbcConnection> class.  
   
  If you change the <xref:System.Web.UI.WebControls.SqlDataSource.ConnectionString%2A> property, the <xref:System.Web.UI.IDataSource.DataSourceChanged> event is raised, causing any controls that are bound to the <xref:System.Web.UI.WebControls.SqlDataSource> control to rebind.  
   
@@ -931,22 +950,23 @@
   
   
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_3sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_3sql/CS/sql3cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_3sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_3sql/VB/sql3vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_3sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_3sql/CS/sql3cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_3sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_3sql/VB/sql3vb.aspx#1)]  
   
  The following code example demonstrates a more complex scenario than the preceding code example, where a <xref:System.Web.UI.WebControls.SqlDataSource> control is used to display and update data in a password-protected Access database. Because the <xref:System.Web.UI.WebControls.SqlDataSource> is used with Access, the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property is set to the <xref:System.Data.OleDb> provider, and the <xref:System.Web.UI.WebControls.SqlDataSource.ConnectionString%2A> property is set to an appropriate connection string for a UNC-shared Access database. A <xref:System.Web.UI.WebControls.GridView> control displays orders with shipment dates. You can update an order by checking the appropriate check box, and then clicking the **Update** button.  
   
 > [!IMPORTANT]
 >  This example includes a password in plain text only for illustration purposes. In a production application, connection strings that include passwords should be encrypted. For more information, see [Protecting Connection Information](~/docs/framework/data/adonet/protecting-connection-information.md).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_22sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_22sql/CS/sql22cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_22sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_22sql/VB/sql22vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_22sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_22sql/CS/sql22cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_22sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_22sql/VB/sql22vb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_22sql#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_22sql/CS/sql22cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_22sql#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_22sql/VB/sql22vb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_22sql#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_22sql/CS/sql22cs.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_22sql#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_22sql/VB/sql22vb.aspx#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.ProviderName" />
       </Docs>
     </Member>
     <Member MemberName="CreateDataSourceView">
@@ -976,6 +996,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.GetView(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.GetViewNames" />
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceView" />
+        <altmember cref="T:System.Web.UI.DataSourceView" />
       </Docs>
     </Member>
     <Member MemberName="DataSourceMode">
@@ -1006,7 +1030,7 @@
   
  When the <xref:System.Web.UI.WebControls.SqlDataSource.DataSourceMode%2A> property is set to the <xref:System.Web.UI.WebControls.SqlDataSourceMode.DataSet> value, data is loaded into a <xref:System.Data.DataSet> object and stored in memory on the server. This enables scenarios where user interface controls, such as <xref:System.Web.UI.WebControls.GridView>, offer sorting, filtering, and paging capabilities.  
   
- When the <xref:System.Web.UI.WebControls.SqlDataSource.DataSourceMode%2A> property is set to the <xref:System.Web.UI.WebControls.SqlDataSourceMode.DataReader> value, data is retrieved by a <xref:System.Data.IDataReader> object, which is a forward-only, read-only cursor. The specific type of the <xref:System.Data.IDataReader> object depends on the NET data provider that the <xref:System.Web.UI.WebControls.SqlDataSource> uses, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. By default, the <xref:System.Web.UI.WebControls.SqlDataSource> control uses the provider for Microsoft SQL Server, the <xref:System.Data.SqlClient?displayProperty=fullName>, and the data reader is a <xref:System.Data.SqlClient.SqlDataReader> object.  
+ When the <xref:System.Web.UI.WebControls.SqlDataSource.DataSourceMode%2A> property is set to the <xref:System.Web.UI.WebControls.SqlDataSourceMode.DataReader> value, data is retrieved by a <xref:System.Data.IDataReader> object, which is a forward-only, read-only cursor. The specific type of the <xref:System.Data.IDataReader> object depends on the NET data provider that the <xref:System.Web.UI.WebControls.SqlDataSource> uses, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. By default, the <xref:System.Web.UI.WebControls.SqlDataSource> control uses the provider for Microsoft SQL Server, the <xref:System.Data.SqlClient?displayProperty=nameWithType>, and the data reader is a <xref:System.Data.SqlClient.SqlDataReader> object.  
   
  If you change the <xref:System.Web.UI.WebControls.SqlDataSource.DataSourceMode%2A> property, the <xref:System.Web.UI.IDataSource.DataSourceChanged> event is raised, causing any controls that are bound to the <xref:System.Web.UI.WebControls.SqlDataSource> to rebind.  
   
@@ -1017,12 +1041,13 @@
 ## Examples  
  The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.SqlDataSource.DataSourceMode%2A> property of the <xref:System.Web.UI.WebControls.SqlDataSource> control to the <xref:System.Web.UI.WebControls.SqlDataSourceMode.DataReader> value for a scenario with a <xref:System.Web.UI.WebControls.ListBox> control that requires no sorting, paging, nor filtering.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_1sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1sql/CS/sql1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_1sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1sql/VB/sql1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_1sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1sql/CS/sql1cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_1sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1sql/VB/sql1vb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.SqlDataSource.DataSourceMode" /> property is not one of the values defined in the <see cref="T:System.Web.UI.WebControls.SqlDataSourceMode" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceMode" />
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -1058,12 +1083,14 @@
 ## Examples  
  The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.SqlDataSource.DeleteCommand%2A> text to delete an order from the Northwind database. Initially, data is retrieved from the Orders table and displayed in a <xref:System.Web.UI.WebControls.DropDownList> control. You must explicitly declare the <xref:System.Web.UI.WebControls.SqlDataSource.DeleteParameters%2A> property and call the <xref:System.Web.UI.WebControls.SqlDataSource.Delete%2A> method when using data-bound controls, such as the <xref:System.Web.UI.WebControls.DropDownList> (unlike other controls, such as <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView>, which automatically populate the parameters and call the <xref:System.Web.UI.WebControls.SqlDataSource.Delete%2A> method on a data source control). In this example, the <xref:System.Web.UI.WebControls.Button.OnClick%2A> event is delegated to the private `OnDelete` event handler, which explicitly calls the <xref:System.Web.UI.WebControls.SqlDataSource.Delete%2A> method of the <xref:System.Web.UI.WebControls.SqlDataSource> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_11sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_11sql/CS/sql11cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_11sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_11sql/VB/sql11vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_11sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_11sql/CS/sql11cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_11sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_11sql/VB/sql11vb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> cannot establish a connection with the underlying data source.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteCommand" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteParameters" />
       </Docs>
     </Member>
     <Member MemberName="DeleteCommand">
@@ -1092,7 +1119,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.SqlDataSource.DeleteCommand%2A> represents an SQL query or the name of a stored procedure, and is used by the <xref:System.Web.UI.WebControls.SqlDataSource.Delete%2A> method.  
   
- Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the syntax of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the syntax of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the syntax of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=nameWithType>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the syntax of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=nameWithType> or <xref:System.Data.OleDb?displayProperty=nameWithType>, the placeholder of the parameter is `'?'`. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSource.DeleteCommand%2A> property can be an SQL string or the name of a stored procedure, if the database supports stored procedures.  
   
@@ -1106,11 +1133,13 @@
 ## Examples  
  The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.SqlDataSource.DeleteCommand%2A> text to delete an order from the Northwind database Orders table. Data is retrieved from the Orders table and displayed in a <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.GridView> renders a **Delete** button automatically when the <xref:System.Web.UI.WebControls.GridView.AutoGenerateDeleteButton%2A> property is set to `true`. Additionally, when the **Delete** button is clicked, the <xref:System.Web.UI.WebControls.GridView> control automatically populates the <xref:System.Web.UI.WebControls.SqlDataSource.DeleteParameters%2A> collection and calls the <xref:System.Web.UI.WebControls.SqlDataSource.Delete%2A> method. Finally, because this code example deletes data, an event handler is added to attempt to back up the database to disk before the <xref:System.Web.UI.WebControls.SqlDataSource.Delete%2A> operation is performed.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_10sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_10sql/CS/sql10cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_10sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_10sql/VB/sql10vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_10sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_10sql/CS/sql10cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_10sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_10sql/VB/sql10vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteParameters" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Delete" />
       </Docs>
     </Member>
     <Member MemberName="DeleteCommandType">
@@ -1141,6 +1170,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceCommandType" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteCommand" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteParameters" />
       </Docs>
     </Member>
     <Member MemberName="Deleted">
@@ -1167,6 +1199,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Deleting" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnDeleted(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Delete" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteParameters" />
       </Docs>
     </Member>
     <Member MemberName="DeleteParameters">
@@ -1209,7 +1245,7 @@
   
  If the <xref:System.Web.UI.WebControls.SqlDataSource.ConflictDetection%2A> property is set to the <xref:System.Web.UI.ConflictOptions.CompareAllValues> value, the parameters are created for both the old and new values of the data. The parameters for the old values are named according to the <xref:System.Web.UI.WebControls.SqlDataSource.OldValuesParameterFormatString%2A> property.  
   
- Depending on the ADO.NET provider, the order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSource.DeleteParameters%2A> collection might be important. The <xref:System.Data.OleDb?displayProperty=fullName> and <xref:System.Data.Odbc?displayProperty=fullName> providers associate the parameters in the collection according to the order in which the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=fullName> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with the placeholder in the SQL query. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ Depending on the ADO.NET provider, the order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSource.DeleteParameters%2A> collection might be important. The <xref:System.Data.OleDb?displayProperty=nameWithType> and <xref:System.Data.Odbc?displayProperty=nameWithType> providers associate the parameters in the collection according to the order in which the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=nameWithType> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with the placeholder in the SQL query. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSource.DeleteParameters%2A> property retrieves the <xref:System.Web.UI.WebControls.SqlDataSourceView.DeleteParameters%2A> property that is contained by the <xref:System.Web.UI.WebControls.SqlDataSourceView> object that is associated with the <xref:System.Web.UI.WebControls.SqlDataSource> control.  
   
@@ -1221,11 +1257,13 @@
 ## Examples  
  The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.SqlDataSource.DeleteCommand%2A> text to delete an order from the Northwind database. Initially, data is retrieved from the Orders table and displayed in a <xref:System.Web.UI.WebControls.DropDownList> control. You must explicitly declare <xref:System.Web.UI.WebControls.SqlDataSource.DeleteParameters%2A> property and call the <xref:System.Web.UI.WebControls.SqlDataSource.Delete%2A> method when using data-bound controls, such as <xref:System.Web.UI.WebControls.DropDownList> (unlike other controls, such as <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView>, which automatically populate the parameters and call <xref:System.Web.UI.WebControls.SqlDataSource.Delete%2A> on a data source control). In this example, the <xref:System.Web.UI.WebControls.Button.OnClick%2A> event is delegated to the private `OnDelete` event handler, which explicitly calls the <xref:System.Web.UI.WebControls.SqlDataSource.Delete%2A> method of the <xref:System.Web.UI.WebControls.SqlDataSource> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_11sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_11sql/CS/sql11cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_11sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_11sql/VB/sql11vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_11sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_11sql/CS/sql11cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_11sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_11sql/VB/sql11vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteCommand" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Delete" />
       </Docs>
     </Member>
     <Member MemberName="Deleting">
@@ -1257,11 +1295,15 @@
 ## Examples  
  The following code example demonstrates how to handle the <xref:System.Web.UI.WebControls.SqlDataSource.Deleting> event that is raised before a <xref:System.Web.UI.WebControls.SqlDataSource.Delete%2A> operation occurs. Because this example deletes data from the Northwind database, an <xref:System.Web.UI.WebControls.SqlDataSourceView.OnDeleting%2A> handler is added to attempt to back up the database to disk before the <xref:System.Web.UI.WebControls.SqlDataSource.Delete%2A> operation is performed.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_10sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_10sql/CS/sql10cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_10sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_10sql/VB/sql10vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_10sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_10sql/CS/sql10cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_10sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_10sql/VB/sql10vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Deleted" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnDeleting(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Delete" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteParameters" />
       </Docs>
     </Member>
     <Member MemberName="EnableCaching">
@@ -1301,12 +1343,14 @@
 ## Examples  
  The following code example demonstrates how to retrieve data from the Northwind database in Microsoft SQL Server and display it in a <xref:System.Web.UI.WebControls.GridView> control, with data caching enabled. The <xref:System.Web.UI.WebControls.SqlDataSource.EnableCaching%2A> property is set to `true` and the <xref:System.Web.UI.WebControls.SqlDataSource.CacheDuration%2A> is set to 20 seconds. Because the <xref:System.Web.UI.WebControls.SqlDataSource.CacheExpirationPolicy%2A> property is set to the <xref:System.Web.UI.DataSourceCacheExpiry.Absolute> field by default, users of this page will see fresh data every 20 seconds.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_18sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_18sql/CS/sql18cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_18sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_18sql/VB/sql18vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_18sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_18sql/CS/sql18cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_18sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_18sql/VB/sql18vb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.SqlDataSource.EnableCaching" /> property is set to <see langword="true" /> when caching is not supported by the <see cref="T:System.Web.UI.WebControls.SqlDataSource" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.CacheDuration" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.CacheExpirationPolicy" />
       </Docs>
     </Member>
     <Member MemberName="FilterExpression">
@@ -1333,7 +1377,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> property value is a format string expression (a string that is processed by the <xref:System.String.Format%2A?displayProperty=fullName> method) that uses the values in the <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> collection for any substitution parameters included in the string. The filter expression syntax is the same syntax that is accepted by the <xref:System.Data.DataView.RowFilter%2A> property, because the filter expression is applied to the <xref:System.Data.DataView.RowFilter%2A> property of the <xref:System.Data.DataView> object that is returned from executing the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> method. For more information, see <xref:System.Data.DataColumn.Expression%2A>.  
+ The <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> property value is a format string expression (a string that is processed by the <xref:System.String.Format%2A?displayProperty=nameWithType> method) that uses the values in the <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> collection for any substitution parameters included in the string. The filter expression syntax is the same syntax that is accepted by the <xref:System.Data.DataView.RowFilter%2A> property, because the filter expression is applied to the <xref:System.Data.DataView.RowFilter%2A> property of the <xref:System.Data.DataView> object that is returned from executing the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> method. For more information, see <xref:System.Data.DataColumn.Expression%2A>.  
   
  If you add parameters to the <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> collection, you can also include format string placeholders (for example, `"{0}")` in the expression to substitute for parameter values. The placeholders are replaced according to the index of the parameter in the <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> collection. If an object in the <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> collection is `null`, the object will be replaced by an empty string.  
   
@@ -1348,12 +1392,14 @@
 ## Examples  
  The following code example demonstrates how to retrieve data from the Northwind database and filter it using a <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> string and the <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> collection. The <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> property is applied any time the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> method is executed to retrieve data. In this example, the <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> contains a placeholder for a filter parameter, which is contained in the <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> collection. In addition, the filter parameter is a <xref:System.Web.UI.WebControls.ControlParameter> object that is bound to the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property of the <xref:System.Web.UI.WebControls.DropDownList> control. Because the <xref:System.Web.UI.WebControls.DropDownList> control has its <xref:System.Web.UI.WebControls.ListControl.AutoPostBack%2A> property set to `true`, any change in the selection for the <xref:System.Web.UI.WebControls.DropDownList> control causes the page to post information back to the server and the <xref:System.Web.UI.WebControls.GridView> control to rebind to the data source control with the new filter.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_17sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_17sql/CS/sql17cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_17sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_17sql/VB/sql17vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_17sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_17sql/CS/sql17cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_17sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_17sql/VB/sql17vb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.SqlDataSource.FilterExpression" /> property was set and the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> is in <see cref="F:System.Web.UI.WebControls.SqlDataSourceMode.DataReader" /> mode.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.FilterParameters" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DataSourceMode" />
       </Docs>
     </Member>
     <Member MemberName="Filtering">
@@ -1376,7 +1422,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.SqlDataSource.Filtering> event to perform validation operations on filter parameter values before the <xref:System.Web.UI.WebControls.SqlDataSource> control performs a filter operation. You can cancel the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> method by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.SqlDataSourceFilteringEventArgs> object to `true`. The event is raised only if the <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> property is set.  
   
- The <xref:System.Web.UI.WebControls.SqlDataSource.Filtering?displayProperty=fullName> event delegates to the <xref:System.Web.UI.WebControls.SqlDataSourceView.Filtering?displayProperty=fullName> event of the <xref:System.Web.UI.WebControls.SqlDataSourceView> object that is associated with the <xref:System.Web.UI.WebControls.SqlDataSource> control.  
+ The <xref:System.Web.UI.WebControls.SqlDataSource.Filtering?displayProperty=nameWithType> event delegates to the <xref:System.Web.UI.WebControls.SqlDataSourceView.Filtering?displayProperty=nameWithType> event of the <xref:System.Web.UI.WebControls.SqlDataSourceView> object that is associated with the <xref:System.Web.UI.WebControls.SqlDataSource> control.  
   
  For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
@@ -1429,11 +1475,13 @@
 ## Examples  
  The following code example demonstrates how to retrieve data from the Northwind database and filter it using the <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> and <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> properties. The <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> property of the <xref:System.Web.UI.WebControls.SqlDataSource> control is applied anytime the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> method is executed to retrieve data. In this example, the <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> property contains a placeholder for a filter parameter, which is contained in the <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> collection. In addition, the filter parameter is a <xref:System.Web.UI.WebControls.ControlParameter> object that is bound to the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property of the <xref:System.Web.UI.WebControls.DropDownList> control. Because the <xref:System.Web.UI.WebControls.DropDownList> control has its <xref:System.Web.UI.WebControls.ListControl.AutoPostBack%2A> property set to `true`, any change in the <xref:System.Web.UI.WebControls.DropDownList> selection causes the page to post information back to the server and the <xref:System.Web.UI.WebControls.GridView> control to rebind to the data source control with the new filter.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_17sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_17sql/CS/sql17cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_17sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_17sql/VB/sql17vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_17sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_17sql/CS/sql17cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_17sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_17sql/VB/sql17vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.FilterExpression" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DataSourceMode" />
       </Docs>
     </Member>
     <Member MemberName="GetDbProviderFactory">
@@ -1460,6 +1508,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.Common.DbProviderFactory" />
       </Docs>
     </Member>
     <Member MemberName="GetView">
@@ -1491,6 +1540,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="viewName" /> is <see langword="null" /> or something other than <c>Table</c>.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceView" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.GetViewNames" />
       </Docs>
     </Member>
     <Member MemberName="GetViewNames">
@@ -1517,6 +1568,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.GetView(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -1561,12 +1613,14 @@
 > [!NOTE]
 >  This example shows how to use declarative syntax for data access. For information about how to access data by using code instead of markup, see [Accessing data in Visual Studio](http://msdn.microsoft.com/library/9812a6d5-23d2-4427-8b98-70a2abfec3bc).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/CS/sql24cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/VB/sql24vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/CS/sql24cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/VB/sql24vb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> cannot establish a connection with the underlying data source.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.InsertCommand" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.InsertParameters" />
       </Docs>
     </Member>
     <Member MemberName="InsertCommand">
@@ -1595,7 +1649,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.SqlDataSource.InsertCommand%2A> represents either an SQL query or the name of a stored procedure, and is used by the <xref:System.Web.UI.WebControls.SqlDataSource.Insert%2A> method.  
   
- Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=nameWithType>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=nameWithType> or <xref:System.Data.OleDb?displayProperty=nameWithType>, the placeholder of the parameter is `'?'`. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSource.InsertCommand%2A> can be an SQL string or the name of a stored procedure, if the data source supports stored procedures.  
   
@@ -1620,8 +1674,8 @@
 > [!IMPORTANT]
 >  This example includes a text box that accepts user input, which is a potential security threat, and values are inserted into parameters without validation, which is also a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Inserting> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/CS/sql24cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/VB/sql24vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/CS/sql24cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/VB/sql24vb.aspx#1)]  
   
  The following code example demonstrates how to retrieve data from SQL Server and display it in a <xref:System.Web.UI.WebControls.GridView> control and how to use a <xref:System.Web.UI.WebControls.DetailsView> control to see details of a selected row in the <xref:System.Web.UI.WebControls.GridView> control and as a form to insert new records.  
   
@@ -1631,11 +1685,13 @@
   
  Finally, after data is inserted into the database by the <xref:System.Web.UI.WebControls.DetailsView> control, the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnInserted%2A> event handler is called to handle the <xref:System.Web.UI.WebControls.SqlDataSource.Inserted> event, the value of the primary key of the inserted row is displayed and the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method of the <xref:System.Web.UI.WebControls.GridView> control is called explicitly to refresh the data.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/CS/sql15cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/VB/sql15vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/CS/sql15cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/VB/sql15vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.InsertParameters" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Insert" />
       </Docs>
     </Member>
     <Member MemberName="InsertCommandType">
@@ -1673,11 +1729,14 @@
   
  After data is inserted into the database by the <xref:System.Web.UI.WebControls.DetailsView> control, the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnInserted%2A> event handler is called to handle the <xref:System.Web.UI.WebControls.SqlDataSource.Inserted> event, the value of the primary key of the inserted row is displayed, and the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method of the <xref:System.Web.UI.WebControls.GridView> control is called explicitly to refresh the data.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/CS/sql15cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/VB/sql15vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/CS/sql15cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/VB/sql15vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceCommandType" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.InsertCommand" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.InsertParameters" />
       </Docs>
     </Member>
     <Member MemberName="Inserted">
@@ -1716,11 +1775,15 @@
   
  Finally, after data is inserted into the database by the <xref:System.Web.UI.WebControls.DetailsView> control, the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnInserted%2A> event handler is called to handle the <xref:System.Web.UI.WebControls.SqlDataSource.Inserted> event, the value of the primary key of the inserted row is displayed, and the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method of the <xref:System.Web.UI.WebControls.GridView> control is called explicitly to refresh the data.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/CS/sql15cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/VB/sql15vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/CS/sql15cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/VB/sql15vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Inserting" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnInserted(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Insert" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.InsertParameters" />
       </Docs>
     </Member>
     <Member MemberName="Inserting">
@@ -1759,11 +1822,15 @@
   
  Finally, after data is inserted into the database by the <xref:System.Web.UI.WebControls.DetailsView> control, the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnInserted%2A> event handler is called to handle the <xref:System.Web.UI.WebControls.SqlDataSource.Inserted> event, the value of the primary key of the inserted row is displayed, and the `DataBind` method of the <xref:System.Web.UI.WebControls.GridView> control is called explicitly to refresh the data.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/CS/sql15cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/VB/sql15vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/CS/sql15cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/VB/sql15vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Inserted" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnInserting(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Insert" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.InsertParameters" />
       </Docs>
     </Member>
     <Member MemberName="InsertParameters">
@@ -1803,7 +1870,7 @@
   
  If the <xref:System.Web.UI.WebControls.SqlDataSource.InsertCommand%2A> property contains a parameterized SQL query, the <xref:System.Web.UI.WebControls.SqlDataSource.InsertParameters%2A> collection contains any <xref:System.Web.UI.WebControls.Parameter> objects that correspond to the parameter placeholders in the SQL string.  
   
- Depending on the ADO.NET provider, the order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSource.InsertParameters%2A> collection might be important. The <xref:System.Data.OleDb?displayProperty=fullName> and <xref:System.Data.Odbc?displayProperty=fullName> providers associate the parameters in the collection according to the order that the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=fullName> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with a placeholder alias in the SQL query. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ Depending on the ADO.NET provider, the order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSource.InsertParameters%2A> collection might be important. The <xref:System.Data.OleDb?displayProperty=nameWithType> and <xref:System.Data.Odbc?displayProperty=nameWithType> providers associate the parameters in the collection according to the order that the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=nameWithType> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with a placeholder alias in the SQL query. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
   
 > [!IMPORTANT]
 >  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Filtering> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
@@ -1819,11 +1886,13 @@
 > [!NOTE]
 >  This example shows how to use declarative syntax for data access. For information about how to access data by using code instead of markup, see [Accessing data in Visual Studio](http://msdn.microsoft.com/library/9812a6d5-23d2-4427-8b98-70a2abfec3bc).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/CS/sql24cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/VB/sql24vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/CS/sql24cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/VB/sql24vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.InsertCommand" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Insert" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -1947,13 +2016,13 @@
 ## Remarks  
  The .NET Framework includes the following data providers:  
   
--   The <xref:System.Data.SqlClient?displayProperty=fullName> provider is the default .NET Framework Data Provider for SQL Server.  
+-   The <xref:System.Data.SqlClient?displayProperty=nameWithType> provider is the default .NET Framework Data Provider for SQL Server.  
   
--   The <xref:System.Data.OleDb?displayProperty=fullName> provider is the .NET Framework Data Provider for OLE DB.  
+-   The <xref:System.Data.OleDb?displayProperty=nameWithType> provider is the .NET Framework Data Provider for OLE DB.  
   
--   The <xref:System.Data.Odbc?displayProperty=fullName> provider is the .NET Framework Data Provider for ODBC.  
+-   The <xref:System.Data.Odbc?displayProperty=nameWithType> provider is the .NET Framework Data Provider for ODBC.  
   
--   The <xref:System.Data.OracleClient?displayProperty=fullName> provider is the .NET Framework Data Provider for Oracle.  
+-   The <xref:System.Data.OracleClient?displayProperty=nameWithType> provider is the .NET Framework Data Provider for Oracle.  
   
  The <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property is never set to the name of an unmanaged ADO.NET provider, such as `MSDAORA`. For more information, see [Selecting Data Using the SqlDataSource Control](http://msdn.microsoft.com/library/44623286-ff5a-4148-8a3c-85c56ed545eb).  
   
@@ -1964,20 +2033,21 @@
    
   
 ## Examples  
- This section contains two code examples. The first code demonstrates how to connect to a SQL Server database using the default .NET Framework Data Provider for SQL Server for the <xref:System.Web.UI.WebControls.SqlDataSource> control, the <xref:System.Data.SqlClient?displayProperty=fullName>. The second code example demonstrates how to connect to an ODBC database using the .NET Framework Data Provider for ODBC, the <xref:System.Data.Odbc?displayProperty=fullName>.  
+ This section contains two code examples. The first code demonstrates how to connect to a SQL Server database using the default .NET Framework Data Provider for SQL Server for the <xref:System.Web.UI.WebControls.SqlDataSource> control, the <xref:System.Data.SqlClient?displayProperty=nameWithType>. The second code example demonstrates how to connect to an ODBC database using the .NET Framework Data Provider for ODBC, the <xref:System.Data.Odbc?displayProperty=nameWithType>.  
   
- The following code example demonstrates how to connect to a SQL Server database using the default data provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, the <xref:System.Data.SqlClient?displayProperty=fullName>. Whenever the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property is not explicitly set, the default provider is used. The <xref:System.Web.UI.WebControls.SqlDataSource.ConnectionString%2A> property is provider-specific.  
+ The following code example demonstrates how to connect to a SQL Server database using the default data provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, the <xref:System.Data.SqlClient?displayProperty=nameWithType>. Whenever the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property is not explicitly set, the default provider is used. The <xref:System.Web.UI.WebControls.SqlDataSource.ConnectionString%2A> property is provider-specific.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_1sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1sql/CS/sql1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_1sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1sql/VB/sql1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_1sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1sql/CS/sql1cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_1sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1sql/VB/sql1vb.aspx#1)]  
   
- The following code example, which is functionally the same as the preceding code example, demonstrates how to connect to an ODBC database using the .NET Framework Data Provider for ODBC, the <xref:System.Data.Odbc?displayProperty=fullName>. The <xref:System.Web.UI.WebControls.SqlDataSource.ConnectionString%2A> property is set to the name of an ODBC data source name (DSN) that is used to connect to the ODBC database.  
+ The following code example, which is functionally the same as the preceding code example, demonstrates how to connect to an ODBC database using the .NET Framework Data Provider for ODBC, the <xref:System.Data.Odbc?displayProperty=nameWithType>. The <xref:System.Web.UI.WebControls.SqlDataSource.ConnectionString%2A> property is set to the name of an ODBC data source name (DSN) that is used to connect to the ODBC database.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_1odbc#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1odbc/CS/odbc1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_1odbc#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1odbc/VB/odbc1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_1odbc#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1odbc/CS/odbc1cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_1odbc#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1odbc/VB/odbc1vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.ConnectionString" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -1997,6 +2067,7 @@
         <summary>Saves the current view state of the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control.</summary>
         <returns>An object that contains the saved state of the <see cref="T:System.Web.UI.WebControls.SqlDataSource" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.IStateManager.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -2030,12 +2101,12 @@
   
  After the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> operation completes, the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnSelected%2A> method is called to raise the <xref:System.Web.UI.WebControls.SqlDataSource.Selected> event. You can handle this event to examine any return values and error codes and to perform any post-processing.  
   
- If the <xref:System.Web.UI.WebControls.SqlDataSource.DataSourceMode%2A> property is set to <xref:System.Web.UI.WebControls.SqlDataSourceMode?displayProperty=fullName> and caching is enabled, the <xref:System.Web.UI.WebControls.SqlDataSource> object retrieves data from and saves data to the cache during the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> operation. The cache is created, discarded, or refreshed based on the caching behavior that is specified by the combination of the <xref:System.Web.UI.WebControls.SqlDataSource.CacheDuration%2A> and <xref:System.Web.UI.WebControls.SqlDataSource.CacheExpirationPolicy%2A> properties.  
+ If the <xref:System.Web.UI.WebControls.SqlDataSource.DataSourceMode%2A> property is set to <xref:System.Web.UI.WebControls.SqlDataSourceMode.DataSet?displayProperty=nameWithType> and caching is enabled, the <xref:System.Web.UI.WebControls.SqlDataSource> object retrieves data from and saves data to the cache during the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> operation. The cache is created, discarded, or refreshed based on the caching behavior that is specified by the combination of the <xref:System.Web.UI.WebControls.SqlDataSource.CacheDuration%2A> and <xref:System.Web.UI.WebControls.SqlDataSource.CacheExpirationPolicy%2A> properties.  
   
 > [!IMPORTANT]
 >  When you are using client impersonation under Microsoft Windows authentication, the data is cached when the first user accesses the data. If another user requests the same data, the data is retrieved from the cache. The data is not retrieved by making another call to the database to verify the user's access to the data. If you expect more than one user to access the data, and you want each retrieval of data to be verified by the security configurations for the database, do not use caching.  
   
- If the <xref:System.Web.UI.WebControls.SqlDataSource.DataSourceMode%2A> property is set to <xref:System.Web.UI.WebControls.SqlDataSourceMode?displayProperty=fullName> and a <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> property has been specified, the filter expression is evaluated with any supplied <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> properties and the resulting filter is applied to the list of data during the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> operation.  
+ If the <xref:System.Web.UI.WebControls.SqlDataSource.DataSourceMode%2A> property is set to <xref:System.Web.UI.WebControls.SqlDataSourceMode.DataSet?displayProperty=nameWithType> and a <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> property has been specified, the filter expression is evaluated with any supplied <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> properties and the resulting filter is applied to the list of data during the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> operation.  
   
  The <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> method delegates to the <xref:System.Web.UI.WebControls.SqlDataSourceView.Select%2A> method of the <xref:System.Web.UI.WebControls.SqlDataSourceView> object that is associated with the <xref:System.Web.UI.WebControls.SqlDataSource> control. To perform a data retrieval operation, the <xref:System.Web.UI.WebControls.SqlDataSourceView> builds a <xref:System.Data.Common.DbCommand> object by using the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> text and any associated <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> values, and then executes the <xref:System.Data.Common.DbCommand> against the underlying database.  
   
@@ -2047,8 +2118,8 @@
 ## Examples  
  The following examples show how to programmatically call the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> method and set values based on the result of the query. The following example shows the declarative code for the Web controls.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource.Select#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource.Select/CS/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource.Select#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource.Select/VB/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource.Select#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource.Select/CS/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource.Select#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource.Select/VB/Default.aspx#1)]  
   
  The following example shows how to programmatically call the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> method. The <xref:System.Web.UI.WebControls.SqlDataSource> control returns an integer. The value of the integer is used to set the text of a <xref:System.Web.UI.WebControls.Label> control and to determine whether to display a <xref:System.Web.UI.WebControls.HyperLink> control.  
   
@@ -2058,6 +2129,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> object cannot establish a connection with the underlying data source.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectCommand" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectParameters" />
       </Docs>
     </Member>
     <Member MemberName="SelectCommand">
@@ -2086,7 +2159,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property represents an SQL query or the name of a stored procedure, and is used by the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> method to retrieve data from a SQL Server database. If you use an asterisk (*) in the Select command to select all columns, and if you use automatic code generation to perform update or delete operations, make sure that no columns have spaces in their names.  
   
- Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=nameWithType>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=nameWithType> or <xref:System.Data.OleDb?displayProperty=nameWithType>, the placeholder of the parameter is `'?'`. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property can be an SQL string or the name of a stored procedure, if the data source supports stored procedures.  
   
@@ -2107,16 +2180,18 @@
   
  The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> text to a basic SQL query to retrieve data from an ODBC-compliant database and display it in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_4odbc#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_4odbc/CS/odbc4cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_4odbc#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_4odbc/VB/odbc4vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_4odbc#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_4odbc/CS/odbc4cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_4odbc#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_4odbc/VB/odbc4vb.aspx#1)]  
   
  The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> text to the name of a stored procedure and the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommandType%2A> property to the <xref:System.Web.UI.WebControls.SqlDataSourceCommandType.StoredProcedure> value to retrieve data from a SQL Server database and display it in a <xref:System.Web.UI.WebControls.DropDownList> control. The <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property can be an SQL query or the name of a stored procedure, if the data source supports stored procedures.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_14sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_14sql/CS/sql14cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_14sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_14sql/VB/sql14vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_14sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_14sql/CS/sql14cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_14sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_14sql/VB/sql14vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectParameters" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Select(System.Web.UI.DataSourceSelectArguments)" />
       </Docs>
     </Member>
     <Member MemberName="SelectCommandType">
@@ -2150,11 +2225,14 @@
 ## Examples  
  The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> text to the name of a stored procedure and the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommandType%2A> property to the <xref:System.Web.UI.WebControls.SqlDataSourceCommandType.StoredProcedure> value, in order to retrieve data from a Microsoft SQL Server database and display it in a <xref:System.Web.UI.WebControls.DropDownList> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_14sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_14sql/CS/sql14cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_14sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_14sql/VB/sql14vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_14sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_14sql/CS/sql14cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_14sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_14sql/VB/sql14vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceCommandType" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectCommand" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectParameters" />
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -2181,6 +2259,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Selecting" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnSelected(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Select(System.Web.UI.DataSourceSelectArguments)" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectParameters" />
       </Docs>
     </Member>
     <Member MemberName="Selecting">
@@ -2207,6 +2289,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Selected" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnSelecting(System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Select(System.Web.UI.DataSourceSelectArguments)" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectParameters" />
       </Docs>
     </Member>
     <Member MemberName="SelectParameters">
@@ -2244,7 +2330,7 @@
 ## Remarks  
  If the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property contains a parameterized SQL query, the <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection contains any <xref:System.Web.UI.WebControls.Parameter> objects that correspond to the parameter placeholders in the SQL string.  
   
- Depending on the ADO.NET provider, the order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection might be important. The <xref:System.Data.OleDb?displayProperty=fullName> and <xref:System.Data.Odbc?displayProperty=fullName> providers associate the parameters in the collection according to the order that the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=fullName> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with a placeholder alias in the SQL query. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ Depending on the ADO.NET provider, the order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection might be important. The <xref:System.Data.OleDb?displayProperty=nameWithType> and <xref:System.Data.Odbc?displayProperty=nameWithType> providers associate the parameters in the collection according to the order that the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=nameWithType> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with a placeholder alias in the SQL query. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> property retrieves the <xref:System.Web.UI.WebControls.SqlDataSourceView.SelectParameters%2A> property that is contained by the <xref:System.Web.UI.WebControls.SqlDataSourceView> object that is associated with the <xref:System.Web.UI.WebControls.SqlDataSource> control.  
   
@@ -2261,11 +2347,13 @@
 > [!NOTE]
 >  Because the parameter is used in a WHERE clause, the use of the <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> property in the code example is functionally equivalent to using the <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> and <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> properties.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_2sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_2sql/CS/sql2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_2sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_2sql/VB/sql2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_2sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_2sql/CS/sql2cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_2sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_2sql/VB/sql2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectCommand" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Select(System.Web.UI.DataSourceSelectArguments)" />
       </Docs>
     </Member>
     <Member MemberName="SortParameterName">
@@ -2298,6 +2386,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Select(System.Web.UI.DataSourceSelectArguments)" />
       </Docs>
     </Member>
     <Member MemberName="SqlCacheDependency">
@@ -2336,11 +2425,12 @@
 ## Examples  
  The following code example demonstrates how to create a SQL Server cache dependency and set the <xref:System.Web.UI.WebControls.SqlDataSource.SqlCacheDependency%2A> property of a <xref:System.Web.UI.WebControls.SqlDataSource> control. In this example, the database is polled every 120 seconds. If the data in the Northwind Traders Employees table changes during that time, any data that is cached by the <xref:System.Web.UI.WebControls.SqlDataSource> control and displayed by the <xref:System.Web.UI.WebControls.GridView> control is refreshed by the <xref:System.Web.UI.WebControls.SqlDataSource> control the next time the database is polled.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_23sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_23sql/CS/sql23cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_23sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_23sql/VB/sql23vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_23sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_23sql/CS/sql23cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_23sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_23sql/VB/sql23vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.SqlCacheDependency" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -2366,6 +2456,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IStateManager.TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -2406,17 +2497,19 @@
   
  The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.SqlDataSource> control to display data in a <xref:System.Web.UI.WebControls.DropDownList> control and update data when the **Submit** button is clicked. The <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand%2A> property is set with a parameterized SQL statement, and two <xref:System.Web.UI.WebControls.ControlParameter> parameters are added to the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateParameters%2A> collection. When the **Submit** button is clicked, the <xref:System.Web.UI.WebControls.Button.OnClick%2A> event is handled to call the <xref:System.Web.UI.WebControls.SqlDataSource.Update%2A> method explicitly.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_8sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_8sql/CS/sql8cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_8sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_8sql/VB/sql8vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_8sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_8sql/CS/sql8cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_8sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_8sql/VB/sql8vb.aspx#1)]  
   
  The following code example demonstrates how to display data that is retrieved from a SQL Server database in a <xref:System.Web.UI.WebControls.DropDownList> control and update the record using a <xref:System.Web.UI.WebControls.TextBox> control. The example shows how you can use a <xref:System.Data.Common.DbTransaction> object to add transaction context when using the <xref:System.Web.UI.WebControls.SqlDataSource> control to update data.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_9sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_9sql/CS/sql9cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_9sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_9sql/VB/sql9vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_9sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_9sql/CS/sql9cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_9sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_9sql/VB/sql9vb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> cannot establish a connection with the underlying data source.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateCommand" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateParameters" />
       </Docs>
     </Member>
     <Member MemberName="UpdateCommand">
@@ -2445,7 +2538,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand%2A> represents an SQL query or the name of a stored procedure, and is used by the <xref:System.Web.UI.WebControls.SqlDataSource.Update%2A> method.  
   
- Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=nameWithType>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=nameWithType> or <xref:System.Data.OleDb?displayProperty=nameWithType>, the placeholder of the parameter is `'?'`. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand%2A> property can be an SQL string or the name of a stored procedure, if the data source supports stored procedures.  
   
@@ -2464,16 +2557,18 @@
   
  The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand%2A> property of the <xref:System.Web.UI.WebControls.SqlDataSource> control and update data in a SQL Server database using the <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.GridView> automatically populates the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateParameters%2A> collection, inferring the parameters from the <xref:System.Web.UI.WebControls.BoundField> objects, and calls the <xref:System.Web.UI.WebControls.SqlDataSource.Update%2A> method when the **Update** link on the editable <xref:System.Web.UI.WebControls.GridView> is selected. This example also includes some post-processing: after a record is updated, a notification e-mail message is sent.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_7sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_7sql/CS/sql7cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_7sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_7sql/VB/sql7vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_7sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_7sql/CS/sql7cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_7sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_7sql/VB/sql7vb.aspx#1)]  
   
- The following code example, which is functionally identical to the preceding code example, demonstrates how to update data in an ODBC database using the <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> is set to the ADO.NET provider for ODBC, the <xref:System.Data.Odbc?displayProperty=fullName>, and the <xref:System.Web.UI.WebControls.SqlDataSource.ConnectionString%2A> property is set to the name of an ODBC data source name (DSN).  
+ The following code example, which is functionally identical to the preceding code example, demonstrates how to update data in an ODBC database using the <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> is set to the ADO.NET provider for ODBC, the <xref:System.Data.Odbc?displayProperty=nameWithType>, and the <xref:System.Web.UI.WebControls.SqlDataSource.ConnectionString%2A> property is set to the name of an ODBC data source name (DSN).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_7odbc#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_7odbc/CS/odbc7cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_7odbc#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_7odbc/VB/odbc7vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_7odbc#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_7odbc/CS/odbc7cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_7odbc#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_7odbc/VB/odbc7vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateParameters" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Update" />
       </Docs>
     </Member>
     <Member MemberName="UpdateCommandType">
@@ -2504,6 +2599,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceCommandType" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateCommand" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateParameters" />
       </Docs>
     </Member>
     <Member MemberName="Updated">
@@ -2533,11 +2631,15 @@
 ## Examples  
  The following code example demonstrates how to display and update data that is retrieved from an ODBC database in a <xref:System.Web.UI.WebControls.GridView> control. After a record is successfully updated, the <xref:System.Web.UI.WebControls.SqlDataSource.Updated> event is handled by an event handler to perform a post-processing step where an e-mail notification is sent.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_7odbc#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_7odbc/CS/odbc7cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_7odbc#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_7odbc/VB/odbc7vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_7odbc#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_7odbc/CS/odbc7cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_7odbc#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_7odbc/VB/odbc7vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Updating" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnUpdated(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Update" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateParameters" />
       </Docs>
     </Member>
     <Member MemberName="UpdateParameters">
@@ -2577,7 +2679,7 @@
   
  Parameter names might be affected by the <xref:System.Web.UI.WebControls.SqlDataSource.OldValuesParameterFormatString%2A> property, specifically if the name identifies a primary key, such as a key specified using the `DataKeyNames` property of the data-bound control, or in delete and update scenarios where the <xref:System.Web.UI.WebControls.SqlDataSource.ConflictDetection%2A> property is set to the <xref:System.Web.UI.ConflictOptions.CompareAllValues> value and a set of `oldValues` are passed to the corresponding data method. In this case, the format string is applied to each parameter name in the `oldValues` collection.  
   
- The order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateParameters%2A> collection might be important, depending on the ADO.NET provider. The <xref:System.Data.OleDb?displayProperty=fullName> and <xref:System.Data.Odbc?displayProperty=fullName> providers associate the parameters in the collection according to the order that the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=fullName> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with a placeholder alias in the SQL query. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ The order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateParameters%2A> collection might be important, depending on the ADO.NET provider. The <xref:System.Data.OleDb?displayProperty=nameWithType> and <xref:System.Data.Odbc?displayProperty=nameWithType> providers associate the parameters in the collection according to the order that the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=nameWithType> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with a placeholder alias in the SQL query. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSource.UpdateParameters%2A> property retrieves the <xref:System.Web.UI.WebControls.SqlDataSourceView.UpdateParameters%2A> property that is contained by the <xref:System.Web.UI.WebControls.SqlDataSourceView> object that is associated with the <xref:System.Web.UI.WebControls.SqlDataSource> control.  
   
@@ -2592,11 +2694,13 @@
 > [!IMPORTANT]
 >  This example includes a text box that accepts user input, which is a potential security threat, and values are inserted into parameters without validation, which is also a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Inserting> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_8sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_8sql/CS/sql8cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_8sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_8sql/VB/sql8vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_8sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_8sql/CS/sql8cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_8sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_8sql/VB/sql8vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateCommand" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Update" />
       </Docs>
     </Member>
     <Member MemberName="Updating">
@@ -2629,12 +2733,28 @@
 ## Examples  
  The following code example demonstrates how to display data that is retrieved from a Microsoft SQL Server database in a <xref:System.Web.UI.WebControls.DropDownList> control and update the record using a <xref:System.Web.UI.WebControls.TextBox> control. The example shows how you can use a <xref:System.Data.Common.DbTransaction> object to add transaction context when using the <xref:System.Web.UI.WebControls.SqlDataSource> control to update data.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_9sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_9sql/CS/sql9cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_9sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_9sql/VB/sql9vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_9sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_9sql/CS/sql9cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_9sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_9sql/VB/sql9vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Updated" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnUpdating(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.SqlDataSource.Update" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateParameters" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> class.</summary>
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceView" />
+        <altmember cref="T:System.Web.UI.WebControls.AccessDataSource" />
+        <altmember cref="T:System.Web.UI.DataSourceControl" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

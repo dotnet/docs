@@ -550,7 +550,7 @@
    
   
 ## Examples  
- The following code shows how to create activities and add them as children to a composite activity and includes setting the <xref:System.Workflow.ComponentModel.CompositeActivity.CanModifyActivities%2A>permission for this type.  
+ The following code shows how to create activities and add them as children to a composite activity and includes setting the <xref:System.Workflow.ComponentModel.CompositeActivity.CanModifyActivities%2A> permission for this type.  
   
  In addition, the use of the <xref:System.Workflow.ComponentModel.DependencyObject.SetBinding%2A> method is illustrated.  
   
@@ -765,5 +765,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Workflow.ComponentModel.DependencyObject" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

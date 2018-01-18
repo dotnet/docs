@@ -43,6 +43,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xaml.XamlObjectReader" />
+    <altmember cref="T:System.Xaml.XamlXmlReader" />
+    <altmember cref="T:System.Xaml.XamlReaderSettings" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -157,6 +160,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlObjectReader.IsEof" />
+        <altmember cref="P:System.Xaml.XamlXmlReader.IsEof" />
       </Docs>
     </Member>
     <Member MemberName="Member">
@@ -182,6 +187,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlObjectReader.Member" />
+        <altmember cref="P:System.Xaml.XamlXmlReader.Member" />
+        <altmember cref="T:System.Xaml.XamlMember" />
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -203,10 +211,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The intended design of this API is to return a non-null result only if the <xref:System.Xaml.XamlReader.NodeType%2A> of the current node is <xref:System.Xaml.XamlNodeType.NamespaceDeclaration>. The property does not report the XAML namespace that applies to objects or members in a general scoping sense, as interpreted under a XAML schema context. Your application must provide a means to cache information for the acting XAML namespace as it traverses XAML nodes, if you need that information in a manner other than how the XAML schema context reports it to a writer. See<xref:System.Xaml.XamlXmlReader.Namespace%2A> for notes on the reference implementation.  
+ The intended design of this API is to return a non-null result only if the <xref:System.Xaml.XamlReader.NodeType%2A> of the current node is <xref:System.Xaml.XamlNodeType.NamespaceDeclaration>. The property does not report the XAML namespace that applies to objects or members in a general scoping sense, as interpreted under a XAML schema context. Your application must provide a means to cache information for the acting XAML namespace as it traverses XAML nodes, if you need that information in a manner other than how the XAML schema context reports it to a writer. See <xref:System.Xaml.XamlXmlReader.Namespace%2A> for notes on the reference implementation.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlObjectReader.Namespace" />
+        <altmember cref="P:System.Xaml.XamlXmlReader.Namespace" />
       </Docs>
     </Member>
     <Member MemberName="NodeType">
@@ -232,6 +242,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlObjectReader.NodeType" />
+        <altmember cref="P:System.Xaml.XamlXmlReader.NodeType" />
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -259,6 +271,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xaml.XamlXmlReader.Read" />
+        <altmember cref="M:System.Xaml.XamlObjectReader.Read" />
       </Docs>
     </Member>
     <Member MemberName="ReadSubtree">
@@ -311,6 +325,8 @@
         <summary>When implemented in a derived class, gets an object that provides XAML schema context information for the information set.</summary>
         <value>An object that provides XAML schema context information for the information set.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Xaml.XamlObjectReader.SchemaContext" />
+        <altmember cref="P:System.Xaml.XamlXmlReader.SchemaContext" />
       </Docs>
     </Member>
     <Member MemberName="Skip">
@@ -338,7 +354,7 @@
   
  Subtree readers can call <xref:System.Xaml.XamlReader.Skip%2A>, with behavior restrictions. For more information, see the "Subtree Readers" section in <xref:System.Xaml.XamlReader>, or see <xref:System.Xaml.XamlReader.ReadSubtree%2A>.  
   
- The node tree behavior of <xref:System.Xaml.XamlReader.Skip%2A?displayProperty=fullName> is based on the XML equivalent <xref:System.Xml.XmlReader.Skip%2A?displayProperty=fullName>. Based on the <xref:System.Xml.XmlReader.Skip%2A?displayProperty=fullName> behavior equivalence, <xref:System.Xaml.XamlReader.Skip%2A?displayProperty=fullName> skips the node and its subtree, not just the single entry node.  
+ The node tree behavior of <xref:System.Xaml.XamlReader.Skip%2A?displayProperty=nameWithType> is based on the XML equivalent <xref:System.Xml.XmlReader.Skip%2A?displayProperty=nameWithType>. Based on the <xref:System.Xml.XmlReader.Skip%2A?displayProperty=nameWithType> behavior equivalence, <xref:System.Xaml.XamlReader.Skip%2A?displayProperty=nameWithType> skips the node and its subtree, not just the single entry node.  
   
  ]]></format>
         </remarks>
@@ -385,6 +401,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlObjectReader.Type" />
+        <altmember cref="P:System.Xaml.XamlXmlReader.Type" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -403,6 +421,8 @@
         <summary>When implemented in a derived class, gets the value of the current node.</summary>
         <value>The value of the current node; or <see langword="null" />, if the current reader position is not on a <see cref="F:System.Xaml.XamlNodeType.Value" /> node type.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Xaml.XamlObjectReader.Value" />
+        <altmember cref="P:System.Xaml.XamlXmlReader.Value" />
       </Docs>
     </Member>
   </Members>

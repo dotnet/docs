@@ -46,11 +46,11 @@
   
 <a name="specifying_xml_data"></a>   
 ## Specifying XML Data  
- The XML document to display is specified by setting one of three properties. These three properties represent the different types of XML documents that can be displayed. You can display a <xref:System.Xml.XmlDocument?displayProperty=fullName>, an XML string, or an XML file by setting the appropriate property. The following table lists the properties for specifying the XML document.  
+ The XML document to display is specified by setting one of three properties. These three properties represent the different types of XML documents that can be displayed. You can display a <xref:System.Xml.XmlDocument?displayProperty=nameWithType>, an XML string, or an XML file by setting the appropriate property. The following table lists the properties for specifying the XML document.  
   
 |Property|Description|  
 |--------------|-----------------|  
-|<xref:System.Web.UI.WebControls.Xml.Document%2A>|Sets the XML document using a <xref:System.Xml.XmlDocument?displayProperty=fullName> object. **Warning:**  This property is obsolete. Use one of the other properties listed in this section to set the XML content for the <xref:System.Web.UI.WebControls.Xml> control.|  
+|<xref:System.Web.UI.WebControls.Xml.Document%2A>|Sets the XML document using a <xref:System.Xml.XmlDocument?displayProperty=nameWithType> object. **Warning:**  This property is obsolete. Use one of the other properties listed in this section to set the XML content for the <xref:System.Web.UI.WebControls.Xml> control.|  
 |<xref:System.Web.UI.WebControls.Xml.DocumentContent%2A>|Sets the XML document using a string. **Note:**  This property is commonly set declaratively by placing text between the opening and closing `<asp:Xml>` tags of the <xref:System.Web.UI.WebControls.Xml> control.|  
 |<xref:System.Web.UI.WebControls.Xml.DocumentSource%2A>|Sets the XML document using a file.|  
   
@@ -59,11 +59,11 @@
   
 <a name="specifying_an_xsl_transformation"></a>   
 ## Specifying an XSL Transformation  
- You can optionally specify an XSL Transformation (XSLT) style sheet that formats the XML document before it is written to the output stream by setting one of two properties. The two properties represent the different types of XSL Transformation style sheets that can be used to format the XML document. You can format the XML document with a <xref:System.Xml.Xsl.XslCompiledTransform?displayProperty=fullName> object or with an XSL Transformation style sheet file by setting the appropriate property. If no XSL Transformation style sheet is specified, the XML document is displayed using the default format. The following table lists the properties for specifying an XSL Transformation style sheet.  
+ You can optionally specify an XSL Transformation (XSLT) style sheet that formats the XML document before it is written to the output stream by setting one of two properties. The two properties represent the different types of XSL Transformation style sheets that can be used to format the XML document. You can format the XML document with a <xref:System.Xml.Xsl.XslCompiledTransform?displayProperty=nameWithType> object or with an XSL Transformation style sheet file by setting the appropriate property. If no XSL Transformation style sheet is specified, the XML document is displayed using the default format. The following table lists the properties for specifying an XSL Transformation style sheet.  
   
 |Property|Description|  
 |--------------|-----------------|  
-|<xref:System.Web.UI.WebControls.Xml.Transform%2A>|Formats the XML document using the specified <xref:System.Xml.Xsl.XslTransform?displayProperty=fullName> object. **Note:**  Using a <xref:System.Xml.Xsl.XslTransform?displayProperty=fullName> object requires `Full Trust` permissions.|  
+|<xref:System.Web.UI.WebControls.Xml.Transform%2A>|Formats the XML document using the specified <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType> object. **Note:**  Using a <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType> object requires `Full Trust` permissions.|  
 |<xref:System.Web.UI.WebControls.Xml.TransformSource%2A>|Formats the XML document using the specified XSL Transformation style sheet file.|  
   
 > [!NOTE]
@@ -98,11 +98,17 @@
 ## Examples  
  The following code example shows how to create <xref:System.Xml.XmlDocument> and <xref:System.Xml.Xsl.XslTransform> objects from a sample XML file and an XSL Transformation style sheet. The objects are then used by the XML control to display the XML document.  
   
- <!-- TODO: review snippet reference [!code-csharp[XmlClassExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/XmlClassExample/CS/xmlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[XmlClassExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/XmlClassExample/VB/xmlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[XmlClassExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/XmlClassExample/CS/xmlcs.aspx#1)]
+ [!code-aspx-vb[XmlClassExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/XmlClassExample/VB/xmlvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xml.XmlDocument" />
+    <altmember cref="T:System.Xml.Xsl.XslTransform" />
+    <altmember cref="P:System.Web.UI.WebControls.Xml.Document" />
+    <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentContent" />
+    <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentSource" />
+    <altmember cref="P:System.Web.UI.WebControls.Xml.TransformArgumentList" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -144,8 +150,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Xml.AddParsedSubObject%2A> method in a custom <xref:System.Web.UI.WebControls.Xml> server control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomXmlAddParsedSubObject#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomXmlAddParsedSubObject/CS/custom_xml_addparsedsubobjectcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomXmlAddParsedSubObject#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomXmlAddParsedSubObject/VB/custom_xml_addparsedsubobjectvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomXmlAddParsedSubObject#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomXmlAddParsedSubObject/CS/custom_xml_addparsedsubobjectcs.aspx#1)]
+ [!code-aspx-vb[CustomXmlAddParsedSubObject#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomXmlAddParsedSubObject/VB/custom_xml_addparsedsubobjectvb.aspx#1)]  
   
  [!code-csharp[CustomXmlAddParsedSubObject#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomXmlAddParsedSubObject/CS/custom_xml_addparsedsubobject.cs#2)]
  [!code-vb[CustomXmlAddParsedSubObject#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomXmlAddParsedSubObject/VB/custom_xml_addparsedsubobject.vb#2)]  
@@ -154,6 +160,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">
           <paramref name="obj" /> is not of type <see cref="T:System.Web.UI.LiteralControl" />.</exception>
+        <altmember cref="M:System.Web.UI.Control.AddParsedSubObject(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ClientID">
@@ -177,6 +184,7 @@
         <summary>Overrides the <see cref="P:System.Web.UI.Control.ClientID" /> property and returns the base server control identifier.</summary>
         <value>The base server control identifier.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.Control.ClientID" />
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -260,18 +268,23 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Xml.Document%2A> property is obsolete. To specify the XML that will be displayed in the <xref:System.Web.UI.WebControls.Xml> control, use the <xref:System.Web.UI.WebControls.Xml.DocumentContent%2A> property or the <xref:System.Web.UI.WebControls.Xml.DocumentSource%2A> property. For more information about these alternatives, see the class overview for the <xref:System.Web.UI.WebControls.Xml> control.  
   
- The XML document to display in the <xref:System.Web.UI.WebControls.Xml> control is specified in one of three ways. You can specify a <xref:System.Xml.XmlDocument?displayProperty=fullName> object, an XML string, or an XML file by setting the appropriate property. The <xref:System.Web.UI.WebControls.Xml.Document%2A> property is used to specify a <xref:System.Xml.XmlDocument?displayProperty=fullName> (representing an XML document) to display in the control.  
+ The XML document to display in the <xref:System.Web.UI.WebControls.Xml> control is specified in one of three ways. You can specify a <xref:System.Xml.XmlDocument?displayProperty=nameWithType> object, an XML string, or an XML file by setting the appropriate property. The <xref:System.Web.UI.WebControls.Xml.Document%2A> property is used to specify a <xref:System.Xml.XmlDocument?displayProperty=nameWithType> (representing an XML document) to display in the control.  
   
    
   
 ## Examples  
  The following code example shows how to create <xref:System.Xml.XmlDocument> and <xref:System.Xml.Xsl.XslTransform> objects from a sample XML file and an XSL Transformation style sheet. The objects are then used by the XML control to display the XML document.  
   
- <!-- TODO: review snippet reference [!code-csharp[XmlClassExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/XmlClassExample/CS/xmlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[XmlClassExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/XmlClassExample/VB/xmlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[XmlClassExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/XmlClassExample/CS/xmlcs.aspx#1)]
+ [!code-aspx-vb[XmlClassExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/XmlClassExample/VB/xmlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlDocument" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentContent" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.Transform" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.TransformSource" />
       </Docs>
     </Member>
     <Member MemberName="DocumentContent">
@@ -301,13 +314,17 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The XML document to display in the <xref:System.Web.UI.WebControls.Xml> control is specified in one of three ways. You can specify a <xref:System.Xml.XmlDocument?displayProperty=fullName> object, an XML string, or an XML file by setting the appropriate property. The <xref:System.Web.UI.WebControls.Xml.DocumentContent%2A> property is used to specify an XML string (representing an XML document) to display in the control. The <xref:System.Web.UI.WebControls.Xml.DocumentContent%2A> property is not typically programmatically set, or set as an attribute of the control. Instead, the XML string is usually set declaratively by placing text between the opening and closing `<asp:Xml>` tags of the control.  
+ The XML document to display in the <xref:System.Web.UI.WebControls.Xml> control is specified in one of three ways. You can specify a <xref:System.Xml.XmlDocument?displayProperty=nameWithType> object, an XML string, or an XML file by setting the appropriate property. The <xref:System.Web.UI.WebControls.Xml.DocumentContent%2A> property is used to specify an XML string (representing an XML document) to display in the control. The <xref:System.Web.UI.WebControls.Xml.DocumentContent%2A> property is not typically programmatically set, or set as an attribute of the control. Instead, the XML string is usually set declaratively by placing text between the opening and closing `<asp:Xml>` tags of the control.  
   
 > [!NOTE]
->  Although the <xref:System.Web.UI.WebControls.Xml.DocumentContent%2A> property contains both `get` and `set` accessors, only the `set` accessor is useful. If you use the `get` accessor, <xref:System.String.Empty?displayProperty=fullName> is returned.  
+>  Although the <xref:System.Web.UI.WebControls.Xml.DocumentContent%2A> property contains both `get` and `set` accessors, only the `set` accessor is useful. If you use the `get` accessor, <xref:System.String.Empty?displayProperty=nameWithType> is returned.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Xml.Document" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.Transform" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.TransformSource" />
       </Docs>
     </Member>
     <Member MemberName="DocumentSource">
@@ -340,18 +357,22 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The XML document to display in the <xref:System.Web.UI.WebControls.Xml> control is specified in one of three ways. You can specify a <xref:System.Xml.XmlDocument?displayProperty=fullName> object, an XML string, or an XML file by setting the appropriate property. The <xref:System.Web.UI.WebControls.Xml.DocumentSource%2A> property is used to specify the path to an XML file (representing an XML document) to display in the control. You can use a relative or an absolute path. A relative path relates the location of the file to the location of the Web Forms page or user control, without specifying a complete path on the server. The path is relative to the location of the Web page. This makes it easier to move the entire site to another directory on the server without updating the path to the file in code. An absolute path provides the complete path, so moving the site to another directory requires updating the code.  
+ The XML document to display in the <xref:System.Web.UI.WebControls.Xml> control is specified in one of three ways. You can specify a <xref:System.Xml.XmlDocument?displayProperty=nameWithType> object, an XML string, or an XML file by setting the appropriate property. The <xref:System.Web.UI.WebControls.Xml.DocumentSource%2A> property is used to specify the path to an XML file (representing an XML document) to display in the control. You can use a relative or an absolute path. A relative path relates the location of the file to the location of the Web Forms page or user control, without specifying a complete path on the server. The path is relative to the location of the Web page. This makes it easier to move the entire site to another directory on the server without updating the path to the file in code. An absolute path provides the complete path, so moving the site to another directory requires updating the code.  
   
    
   
 ## Examples  
  The following code example shows how to display an XML document using an XSL Transform in the <xref:System.Web.UI.WebControls.Xml> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[XmlControlClassExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/XmlControlClassExample/CS/xmlcontrolcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[XmlControlClassExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/XmlControlClassExample/VB/xmlcontrolvb.aspx#1)]  -->  
+ [!code-aspx-csharp[XmlControlClassExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/XmlControlClassExample/CS/xmlcontrolcs.aspx#1)]
+ [!code-aspx-vb[XmlControlClassExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/XmlControlClassExample/VB/xmlcontrolvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Xml.Document" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentContent" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.Transform" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.TransformSource" />
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -524,8 +545,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Xml.Render%2A> method in a custom server control so that the <xref:System.Web.UI.WebControls.Xml> control is always displayed with an image.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomXmlRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomXmlRender/CS/custom_xml_rendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomXmlRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomXmlRender/VB/custom_xml_rendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomXmlRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomXmlRender/CS/custom_xml_rendercs.aspx#1)]
+ [!code-aspx-vb[CustomXmlRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomXmlRender/VB/custom_xml_rendervb.aspx#1)]  
   
  [!code-csharp[CustomXmlRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomXmlRender/CS/custom_xml_render.cs#2)]
  [!code-vb[CustomXmlRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomXmlRender/VB/custom_xml_render.vb#2)]  
@@ -598,21 +619,26 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When using the <xref:System.Web.UI.WebControls.Xml> control to display an XML document, you can optionally specify an Extensible Stylesheet Language Transformation (XSLT) style sheet that formats the XML document, before it is written to the output stream in one of two ways. You can format the XML document with either a <xref:System.Xml.Xsl.XslTransform?displayProperty=fullName> object or an XSL Transformation style sheet file. If no XSL Transform document is specified, the XML document is displayed using the default format. The <xref:System.Web.UI.WebControls.Xml.Transform%2A> property is used to specify a <xref:System.Xml.Xsl.XslTransform?displayProperty=fullName> object (representing an XSL Transform document) used to format the XML document before it is written to the output stream.  
+ When using the <xref:System.Web.UI.WebControls.Xml> control to display an XML document, you can optionally specify an Extensible Stylesheet Language Transformation (XSLT) style sheet that formats the XML document, before it is written to the output stream in one of two ways. You can format the XML document with either a <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType> object or an XSL Transformation style sheet file. If no XSL Transform document is specified, the XML document is displayed using the default format. The <xref:System.Web.UI.WebControls.Xml.Transform%2A> property is used to specify a <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType> object (representing an XSL Transform document) used to format the XML document before it is written to the output stream.  
   
 > [!NOTE]
->  Using a <xref:System.Xml.Xsl.XslTransform?displayProperty=fullName> object requires `Full Trust` permissions.  
+>  Using a <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType> object requires `Full Trust` permissions.  
   
    
   
 ## Examples  
  The following code example shows how to create <xref:System.Xml.XmlDocument> and <xref:System.Xml.Xsl.XslTransform> objects from a sample XML file and an XSL Transformation style sheet. The objects are then used by the XML control to display the XML document.  
   
- <!-- TODO: review snippet reference [!code-csharp[XmlClassExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/XmlClassExample/CS/xmlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[XmlClassExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/XmlClassExample/VB/xmlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[XmlClassExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/XmlClassExample/CS/xmlcs.aspx#1)]
+ [!code-aspx-vb[XmlClassExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/XmlClassExample/VB/xmlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Xsl.XslTransform" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.TransformSource" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.Document" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentContent" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentSource" />
       </Docs>
     </Member>
     <Member MemberName="TransformArgumentList">
@@ -644,10 +670,11 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.Xml.TransformArgumentList%2A> property to provide the XSL Transformation style sheet with optional arguments. The arguments can be either XSLT parameters or extension objects.  
   
- For more information about using the <xref:System.Xml.Xsl.XsltArgumentList?displayProperty=fullName> class, see [XsltArgumentList for Style Sheet Parameters and Extension Objects](~/docs/standard/data/xml/xsltargumentlist-for-style-sheet-parameters-and-extension-objects.md).  
+ For more information about using the <xref:System.Xml.Xsl.XsltArgumentList?displayProperty=nameWithType> class, see [XsltArgumentList for Style Sheet Parameters and Extension Objects](~/docs/standard/data/xml/xsltargumentlist-for-style-sheet-parameters-and-extension-objects.md).  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Xsl.XsltArgumentList" />
       </Docs>
     </Member>
     <Member MemberName="TransformSource">
@@ -677,18 +704,22 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When using the <xref:System.Web.UI.WebControls.Xml> control to display an XML document, you can optionally specify an XSL Transformation style sheet that formats the XML document before it is written to the output stream in one of two ways. You can either format the XML document with a <xref:System.Xml.Xsl.XslTransform?displayProperty=fullName> object or with an XSL Transformation style sheet file. If no XSL Transformation style sheet is specified, the XML document is displayed using the default format. The <xref:System.Web.UI.WebControls.Xml.TransformSource%2A> property is used to specify the path to an XSL Transformation style sheet file (representing an XSL Transformation style sheet) used to format the XML document before it is written to the output stream. You can use a relative or an absolute path. A relative path relates the location of the file to the location of the Web Forms page or user control, without specifying a complete path on the server. The path is relative to the location of the Web page. This makes it easier to move the entire site to another directory on the server without updating the path to the file in code. An absolute path provides the complete path, so moving the site to another directory requires updating the code.  
+ When using the <xref:System.Web.UI.WebControls.Xml> control to display an XML document, you can optionally specify an XSL Transformation style sheet that formats the XML document before it is written to the output stream in one of two ways. You can either format the XML document with a <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType> object or with an XSL Transformation style sheet file. If no XSL Transformation style sheet is specified, the XML document is displayed using the default format. The <xref:System.Web.UI.WebControls.Xml.TransformSource%2A> property is used to specify the path to an XSL Transformation style sheet file (representing an XSL Transformation style sheet) used to format the XML document before it is written to the output stream. You can use a relative or an absolute path. A relative path relates the location of the file to the location of the Web Forms page or user control, without specifying a complete path on the server. The path is relative to the location of the Web page. This makes it easier to move the entire site to another directory on the server without updating the path to the file in code. An absolute path provides the complete path, so moving the site to another directory requires updating the code.  
   
    
   
 ## Examples  
  The following code example shows how to display an XML document using an XSL Transform in the <xref:System.Web.UI.WebControls.Xml> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[XmlControlClassExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/XmlControlClassExample/CS/xmlcontrolcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[XmlControlClassExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/XmlControlClassExample/VB/xmlcontrolvb.aspx#1)]  -->  
+ [!code-aspx-csharp[XmlControlClassExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/XmlControlClassExample/CS/xmlcontrolcs.aspx#1)]
+ [!code-aspx-vb[XmlControlClassExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/XmlControlClassExample/VB/xmlcontrolvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Xml.Transform" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.Document" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentContent" />
+        <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentSource" />
       </Docs>
     </Member>
     <Member MemberName="XPathNavigator">

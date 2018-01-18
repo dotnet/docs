@@ -22,10 +22,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Security.Cryptography.Pkcs.Pkcs9ContentType> object will be automatically generated and placed in the <xref:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes%2A?displayProperty=fullName> property  whenever the <xref:System.Security.Cryptography.Pkcs.CmsSigner.SignedAttributes%2A?displayProperty=fullName> property for the corresponding signer is not empty.  
+ A <xref:System.Security.Cryptography.Pkcs.Pkcs9ContentType> object will be automatically generated and placed in the <xref:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes%2A?displayProperty=nameWithType> property  whenever the <xref:System.Security.Cryptography.Pkcs.CmsSigner.SignedAttributes%2A?displayProperty=nameWithType> property for the corresponding signer is not empty.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.Cryptography.Pkcs.Pkcs9AttributeObject" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

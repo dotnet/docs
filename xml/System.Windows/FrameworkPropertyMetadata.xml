@@ -38,6 +38,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.PropertyMetadata" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,6 +61,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.PropertyMetadata" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -97,6 +99,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="defaultValue" /> is set to <see cref="F:System.Windows.DependencyProperty.UnsetValue" />.</exception>
+        <altmember cref="T:System.Windows.PropertyMetadata" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -166,6 +169,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="defaultValue" /> is set to <see cref="F:System.Windows.DependencyProperty.UnsetValue" />.</exception>
+        <altmember cref="T:System.Windows.PropertyMetadata" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -205,6 +209,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="defaultValue" /> is set to <see cref="F:System.Windows.DependencyProperty.UnsetValue" />.</exception>
+        <altmember cref="T:System.Windows.PropertyMetadata" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -240,6 +245,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.PropertyMetadata" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -283,6 +289,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="defaultValue" /> is set to <see cref="F:System.Windows.DependencyProperty.UnsetValue" />.</exception>
+        <altmember cref="T:System.Windows.PropertyMetadata" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -324,6 +331,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="defaultValue" /> is set to <see cref="F:System.Windows.DependencyProperty.UnsetValue" />.</exception>
+        <altmember cref="T:System.Windows.PropertyMetadata" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -369,6 +377,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="defaultValue" /> is set to <see cref="F:System.Windows.DependencyProperty.UnsetValue" />.</exception>
+        <altmember cref="T:System.Windows.PropertyMetadata" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -419,6 +428,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="defaultValue" /> is set to <see cref="F:System.Windows.DependencyProperty.UnsetValue" />.</exception>
+        <altmember cref="T:System.Windows.PropertyMetadata" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -471,6 +481,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="defaultValue" /> is set to <see cref="F:System.Windows.DependencyProperty.UnsetValue" />.</exception>
+        <altmember cref="T:System.Windows.PropertyMetadata" />
       </Docs>
     </Member>
     <Member MemberName="AffectsArrange">
@@ -516,6 +527,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The metadata has already been applied to a dependency property operation, so that metadata is sealed and properties of the metadata cannot be set.</exception>
+        <altmember cref="T:System.Windows.FrameworkPropertyMetadataOptions" />
       </Docs>
     </Member>
     <Member MemberName="AffectsMeasure">
@@ -561,6 +573,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The metadata has already been applied to a dependency property operation, so that metadata is sealed and properties of the metadata cannot be set.</exception>
+        <altmember cref="T:System.Windows.FrameworkPropertyMetadataOptions" />
+        <altmember cref="M:System.Windows.FrameworkElement.MeasureOverride(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="AffectsParentArrange">
@@ -585,7 +599,7 @@
 ## Remarks  
  <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement> include an implementation of <xref:System.Windows.FrameworkElement.OnPropertyChanged%2A> that monitors effective value changes to all dependency properties that exist on an element. As part of that logic, dependency properties that change effective value and have metadata with <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A> set to `true` will initiate a deferred request to invalidate the visuals for the parent element.  
   
- Generally, you do not need to report changes of a <xref:System.Windows.FrameworkElement> property to a parent element using <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A> because the element itself would already have its own <xref:System.Windows.FrameworkPropertyMetadata.AffectsArrange%2A> as `true`. That is usually sufficient, because changes in the child element generally initiate a parent arrange when appropriate. <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A> is sometimes used for a <xref:System.Windows.FrameworkContentElement> derived class. In this case, the child element sets a property, but a <xref:System.Windows.FrameworkContentElement> derived class does not control its own rendering. The rendering is handled by a <xref:System.Windows.FrameworkElement> parent element that serves as the content host. For instance, a change to the value of the <xref:System.Windows.Documents.FixedPage.Left%2A?displayProperty=fullName> attached property by a child element invalidates arrange of the parent, because the position of the child in the parent must be changed. Therefore, the <xref:System.Windows.Documents.FixedPage.Left%2A?displayProperty=fullName> attached property has metadata where <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A> is `true`. Another example is <xref:System.Windows.Controls.Control.Padding%2A>; when this property changes, the parent might change the positioning of the child, depending on available space.  
+ Generally, you do not need to report changes of a <xref:System.Windows.FrameworkElement> property to a parent element using <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A> because the element itself would already have its own <xref:System.Windows.FrameworkPropertyMetadata.AffectsArrange%2A> as `true`. That is usually sufficient, because changes in the child element generally initiate a parent arrange when appropriate. <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A> is sometimes used for a <xref:System.Windows.FrameworkContentElement> derived class. In this case, the child element sets a property, but a <xref:System.Windows.FrameworkContentElement> derived class does not control its own rendering. The rendering is handled by a <xref:System.Windows.FrameworkElement> parent element that serves as the content host. For instance, a change to the value of the <xref:System.Windows.Documents.FixedPage.Left%2A?displayProperty=nameWithType> attached property by a child element invalidates arrange of the parent, because the position of the child in the parent must be changed. Therefore, the <xref:System.Windows.Documents.FixedPage.Left%2A?displayProperty=nameWithType> attached property has metadata where <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A> is `true`. Another example is <xref:System.Windows.Controls.Control.Padding%2A>; when this property changes, the parent might change the positioning of the child, depending on available space.  
   
  Because this WPF framework-level implementation is already in place, you typically do not need to look for dependency properties with <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A> unless you are substantially replacing or modifying the WPF framework-level layout behavior.  
   
@@ -600,6 +614,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The metadata has already been applied to a dependency property operation, so that metadata is sealed and properties of the metadata cannot be set.</exception>
+        <altmember cref="T:System.Windows.FrameworkPropertyMetadataOptions" />
       </Docs>
     </Member>
     <Member MemberName="AffectsParentMeasure">
@@ -624,7 +639,7 @@
 ## Remarks  
  <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement> include an implementation of <xref:System.Windows.FrameworkElement.OnPropertyChanged%2A> that monitors effective value changes to all dependency properties that exist on an element. As part of that logic, dependency properties that change effective value and have metadata with <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A> set to `true` will initiate a deferred request to invalidate the visuals for the parent element. Because this WPF framework-level implementation is already in place, you typically do not need to look for dependency properties with <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A> unless you are substantially replacing or modifying the WPF framework-level layout behavior.  
   
- Generally, you do not need to report changes of a <xref:System.Windows.FrameworkElement> property to a parent element using <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A> because the element itself would already have its own <xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A> as `true`. That is usually sufficient, because changes in the child element generally initiate a parent measure pass when appropriate. <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A> is sometimes used for a <xref:System.Windows.FrameworkContentElement> derived class. In this case, the child element sets a property, but a <xref:System.Windows.FrameworkContentElement> derived class does not control its own rendering. The rendering is handled by a <xref:System.Windows.FrameworkElement> parent element that serves as the content host. For instance, a change to the value of the <xref:System.Windows.Documents.Paragraph.KeepWithNext%2A?displayProperty=fullName> property by a child element invalidates measure of the parent, because the relative spacing of paragraphs might change and might increase or decrease the content host size. Therefore, the <xref:System.Windows.Documents.Paragraph.KeepWithNext%2A?displayProperty=fullName> property has metadata where <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A> is `true`.  
+ Generally, you do not need to report changes of a <xref:System.Windows.FrameworkElement> property to a parent element using <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A> because the element itself would already have its own <xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A> as `true`. That is usually sufficient, because changes in the child element generally initiate a parent measure pass when appropriate. <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A> is sometimes used for a <xref:System.Windows.FrameworkContentElement> derived class. In this case, the child element sets a property, but a <xref:System.Windows.FrameworkContentElement> derived class does not control its own rendering. The rendering is handled by a <xref:System.Windows.FrameworkElement> parent element that serves as the content host. For instance, a change to the value of the <xref:System.Windows.Documents.Paragraph.KeepWithNext%2A?displayProperty=nameWithType> property by a child element invalidates measure of the parent, because the relative spacing of paragraphs might change and might increase or decrease the content host size. Therefore, the <xref:System.Windows.Documents.Paragraph.KeepWithNext%2A?displayProperty=nameWithType> property has metadata where <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A> is `true`.  
   
  Content host elements also frequently look for changes in dependency properties where <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A> is `true`, as part of content host rendering logic. For instance, the <xref:System.Windows.Controls.TextBox> element must respond to certain changes within text that might require that the bounding box of the <xref:System.Windows.Controls.TextBox> itself be changed.  
   
@@ -639,6 +654,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The metadata has already been applied to a dependency property operation, so that metadata is sealed and properties of the metadata cannot be set.</exception>
+        <altmember cref="T:System.Windows.FrameworkPropertyMetadataOptions" />
       </Docs>
     </Member>
     <Member MemberName="AffectsRender">
@@ -684,6 +700,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The metadata has already been applied to a dependency property operation, so that metadata is sealed and properties of the metadata cannot be set.</exception>
+        <altmember cref="T:System.Windows.FrameworkPropertyMetadataOptions" />
       </Docs>
     </Member>
     <Member MemberName="BindsTwoWayByDefault">
@@ -708,7 +725,7 @@
 ## Remarks  
  In absence of this property being `true`, binding updates are one-way by default, based on the default behavior of the <xref:System.Windows.Data.Binding> constructors or equivalent [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] syntax.  
   
- In existing elements, you will usually find this property set to `true` in metadata for dependency properties that both report state and are modifiable by user action, for example <xref:System.Windows.Controls.Primitives.Selector.IsSelected%2A?displayProperty=fullName>.  
+ In existing elements, you will usually find this property set to `true` in metadata for dependency properties that both report state and are modifiable by user action, for example <xref:System.Windows.Controls.Primitives.Selector.IsSelected%2A?displayProperty=nameWithType>.  
   
  This property only reports the default binding update characteristics of the dependency property in general. Any binding set to this property on an instance can locally set the <xref:System.Windows.Data.Binding.Mode%2A> property of the binding and change this default.  
   
@@ -731,6 +748,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The metadata has already been applied to a dependency property operation, so that metadata is sealed and properties of the metadata cannot be set.</exception>
+        <altmember cref="T:System.Windows.FrameworkPropertyMetadataOptions" />
       </Docs>
     </Member>
     <Member MemberName="DefaultUpdateSourceTrigger">
@@ -808,6 +826,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The metadata has already been applied to a dependency property operation, so that metadata is sealed and properties of the metadata cannot be set.</exception>
+        <altmember cref="T:System.Windows.FrameworkPropertyMetadataOptions" />
       </Docs>
     </Member>
     <Member MemberName="IsDataBindingAllowed">
@@ -850,6 +869,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.FrameworkPropertyMetadataOptions" />
       </Docs>
     </Member>
     <Member MemberName="IsNotDataBindable">
@@ -885,6 +905,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The metadata has already been applied to a dependency property operation, so that metadata is sealed and properties of the metadata cannot be set.</exception>
+        <altmember cref="P:System.Windows.FrameworkPropertyMetadata.IsDataBindingAllowed" />
+        <altmember cref="T:System.Windows.FrameworkPropertyMetadataOptions" />
       </Docs>
     </Member>
     <Member MemberName="Journal">
@@ -916,6 +938,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The metadata has already been applied to a dependency property operation, so that metadata is sealed and properties of the metadata cannot be set.</exception>
+        <altmember cref="T:System.Windows.FrameworkPropertyMetadataOptions" />
+        <altmember cref="T:System.Windows.Navigation.JournalEntry" />
       </Docs>
     </Member>
     <Member MemberName="Merge">
@@ -955,6 +979,9 @@
   
  The <see cref="M:System.Windows.FrameworkPropertyMetadata.Merge(System.Windows.PropertyMetadata,System.Windows.DependencyProperty)" /> behavior also implements the behavior when you override the property metadata on an existing dependency property by calling <see cref="M:System.Windows.DependencyProperty.OverrideMetadata(System.Type,System.Windows.PropertyMetadata)" />., using override metadata that is <see cref="T:System.Windows.FrameworkPropertyMetadata" />.</para>
         </block>
+        <altmember cref="M:System.Windows.PropertyMetadata.Merge(System.Windows.PropertyMetadata,System.Windows.DependencyProperty)" />
+        <altmember cref="P:System.Windows.PropertyMetadata.IsSealed" />
+        <altmember cref="M:System.Windows.FrameworkPropertyMetadata.OnApply(System.Windows.DependencyProperty,System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="OnApply">
@@ -988,6 +1015,9 @@
         <block subset="none" type="overrides">
           <para>The <see cref="T:System.Windows.FrameworkPropertyMetadata" /> implementation of this method does nothing beyond calling the base implementation.</para>
         </block>
+        <altmember cref="M:System.Windows.PropertyMetadata.OnApply(System.Windows.DependencyProperty,System.Type)" />
+        <altmember cref="P:System.Windows.PropertyMetadata.IsSealed" />
+        <altmember cref="M:System.Windows.FrameworkPropertyMetadata.Merge(System.Windows.PropertyMetadata,System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
     <Member MemberName="OverridesInheritanceBehavior">
@@ -1021,6 +1051,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The metadata has already been applied to a dependency property operation, so that metadata is sealed and properties of the metadata cannot be set.</exception>
+        <altmember cref="T:System.Windows.FrameworkPropertyMetadataOptions" />
       </Docs>
     </Member>
     <Member MemberName="SubPropertiesDoNotAffectRender">
@@ -1054,7 +1085,18 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The metadata has already been applied to a dependency property operation, so that metadata is sealed and properties of the metadata cannot be set.</exception>
+        <altmember cref="T:System.Windows.Freezable" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.FrameworkPropertyMetadata" /> class.</summary>
+        <altmember cref="T:System.Windows.PropertyMetadata" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

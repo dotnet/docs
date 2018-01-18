@@ -9,17 +9,17 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "TabPage control"
-  - "tab controls, tab order"
-  - "tab pages, adding controls"
+  - "tab controls [Windows Forms], tab order"
+  - "tab pages [Windows Forms], adding controls"
 ms.assetid: 7ee734e1-e31e-4ed0-bbc0-a7e8a1f20fef
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Add a Control to a Tab Page Using the Designer
 The use of the Windows Forms <xref:System.Windows.Forms.TabControl> is to display other controls in an organized fashion. You can use these instructions to display a picture on the main part of a tab page. For information about adding an icon to the label part of a tab page, see [How to: Change the Appearance of the Windows Forms TabControl](../../../../docs/framework/winforms/controls/how-to-change-the-appearance-of-the-windows-forms-tabcontrol.md).  
@@ -36,8 +36,8 @@ The use of the Windows Forms <xref:System.Windows.Forms.TabControl> is to displa
 2.  Draw the control on the tab page.  
   
 ## See Also  
- [TabControl Control](../../../../docs/framework/winforms/controls/tabcontrol-control-windows-forms.md)   
- [TabControl Control Overview](../../../../docs/framework/winforms/controls/tabcontrol-control-overview-windows-forms.md)   
- [How to: Change the Appearance of the Windows Forms TabControl](../../../../docs/framework/winforms/controls/how-to-change-the-appearance-of-the-windows-forms-tabcontrol.md)   
- [How to: Disable Tab Pages](../../../../docs/framework/winforms/controls/how-to-disable-tab-pages.md)   
+ [TabControl Control](../../../../docs/framework/winforms/controls/tabcontrol-control-windows-forms.md)  
+ [TabControl Control Overview](../../../../docs/framework/winforms/controls/tabcontrol-control-overview-windows-forms.md)  
+ [How to: Change the Appearance of the Windows Forms TabControl](../../../../docs/framework/winforms/controls/how-to-change-the-appearance-of-the-windows-forms-tabcontrol.md)  
+ [How to: Disable Tab Pages](../../../../docs/framework/winforms/controls/how-to-disable-tab-pages.md)  
  [How to: Add and Remove Tabs with the Windows Forms TabControl](../../../../docs/framework/winforms/controls/how-to-add-and-remove-tabs-with-the-windows-forms-tabcontrol.md)

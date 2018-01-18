@@ -69,7 +69,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This value is in effect the <xref:System.Windows.Markup.XmlLanguage> corresponding to <xref:System.String.Empty?displayProperty=fullName>, whose <xref:System.Windows.Markup.XmlLanguage.GetEquivalentCulture%2A> result is <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>.  
+ This value is in effect the <xref:System.Windows.Markup.XmlLanguage> corresponding to <xref:System.String.Empty?displayProperty=nameWithType>, whose <xref:System.Windows.Markup.XmlLanguage.GetEquivalentCulture%2A> result is <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -100,6 +100,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">No registered <see cref="T:System.Globalization.CultureInfo" /> for the provided <see cref="T:System.Windows.Markup.XmlLanguage" /> exists, as determined by a call to <see cref="M:System.Globalization.CultureInfo.GetCultureInfoByIetfLanguageTag(System.String)" />.</exception>
+        <altmember cref="M:System.Globalization.CultureInfo.GetCultureInfoByIetfLanguageTag(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetLanguage">
@@ -167,7 +168,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If this <xref:System.Windows.Markup.XmlLanguage> is equal to <xref:System.Windows.Markup.XmlLanguage.Empty%2A?displayProperty=fullName> then this method will return <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>.  
+ If this <xref:System.Windows.Markup.XmlLanguage> is equal to <xref:System.Windows.Markup.XmlLanguage.Empty%2A?displayProperty=nameWithType> then this method will return <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.  
   
  This method finds the registered <xref:System.Globalization.CultureInfo> matching the longest-possible prefix of this <xref:System.Windows.Markup.XmlLanguage>. If that registered <xref:System.Globalization.CultureInfo> is neutral (<xref:System.Globalization.CultureInfo.IsNeutralCulture%2A> is `true`), then this method relies on a call to <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A> to map from a neutral <xref:System.Globalization.CultureInfo> to a specific one.  
   

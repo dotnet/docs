@@ -170,7 +170,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -198,7 +198,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -296,7 +296,7 @@
  One or more move and draw commands. See [Path Markup Syntax](~/docs/framework/wpf/graphics-multimedia/path-markup-syntax.md).  
   
  *oneOrMoreFigures*  
- <xref:System.Windows.Media.PathFigure?displayProperty=fullName>  
+ <xref:System.Windows.Media.PathFigure?displayProperty=nameWithType>  
   
  One or more <xref:System.Windows.Media.PathFigure> objects.  
   
@@ -386,7 +386,7 @@ FillRule Example
     </Member>
     <Member MemberName="GetPointAtFractionLength">
       <MemberSignature Language="C#" Value="public void GetPointAtFractionLength (double progress, out System.Windows.Point point, out System.Windows.Point tangent);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetPointAtFractionLength(float64 progress, valuetype System.Windows.Point point, valuetype System.Windows.Point tangent) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetPointAtFractionLength(float64 progress, [out] valuetype System.Windows.Point&amp; point, [out] valuetype System.Windows.Point&amp; tangent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathGeometry.GetPointAtFractionLength(System.Double,System.Windows.Point@,System.Windows.Point@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -470,5 +470,14 @@ FillRule Example
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.PathGeometry" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

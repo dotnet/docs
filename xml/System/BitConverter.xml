@@ -64,7 +64,7 @@
      [!code-csharp[System.BitConverter.Class#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.BitConverter.Class/CS/networkorder1.cs#4)]
      [!code-vb[System.BitConverter.Class#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.BitConverter.Class/VB/networkorder1.vb#4)]  
   
--   If systems sending and receiving data can have different endianness and the data to be transmitted consists of signed integers, call the <xref:System.Net.IPAddress.HostToNetworkOrder%2A?displayProperty=fullName> method to convert the data to network byte order and the <xref:System.Net.IPAddress.NetworkToHostOrder%2A?displayProperty=fullName> method to convert it to the order required by the recipient.  
+-   If systems sending and receiving data can have different endianness and the data to be transmitted consists of signed integers, call the <xref:System.Net.IPAddress.HostToNetworkOrder%2A?displayProperty=nameWithType> method to convert the data to network byte order and the <xref:System.Net.IPAddress.NetworkToHostOrder%2A?displayProperty=nameWithType> method to convert it to the order required by the recipient.  
   
    
   
@@ -77,6 +77,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Byte" />
   </Docs>
   <Members>
     <Member MemberName="DoubleToInt64Bits">
@@ -132,6 +133,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.BitConverter.Int64BitsToDouble(System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -182,6 +184,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.BitConverter.ToBoolean(System.Byte[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -232,6 +235,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.BitConverter.ToChar(System.Byte[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -287,6 +291,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.BitConverter.ToDouble(System.Byte[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -342,6 +347,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.BitConverter.ToInt16(System.Byte[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -397,6 +403,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.BitConverter.ToInt32(System.Byte[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -444,7 +451,7 @@
    
   
 ## Examples  
- The following example calls the <xref:System.BitConverter.GetBytes%2A> method to convert each element in an <xref:System.Int64> array to a<xref:System.Byte> arrays.  
+ The following example calls the <xref:System.BitConverter.GetBytes%2A> method to convert each element in an <xref:System.Int64> array to a <xref:System.Byte> arrays.  
   
  [!code-cpp[System.BitConverter.GetBytes.SInts#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.BitConverter.GetBytes.SInts/CPP/bytesint64.cpp#1)]
  [!code-csharp[System.BitConverter.GetBytes.SInts#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.BitConverter.GetBytes.SInts/CS/bytesint64.cs#1)]
@@ -452,6 +459,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.BitConverter.ToInt64(System.Byte[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -507,6 +515,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.BitConverter.ToSingle(System.Byte[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -562,6 +571,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.BitConverter.ToUInt16(System.Byte[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -617,6 +627,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.BitConverter.ToUInt32(System.Byte[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -672,6 +683,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.BitConverter.ToUInt64(System.Byte[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Int32BitsToSingle">
@@ -749,6 +761,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.BitConverter.DoubleToInt64Bits(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="IsLittleEndian">
@@ -784,7 +797,7 @@
  Different computer architectures store data using different byte orders. "Big-endian" means the most significant byte is on the left end of a word. "Little-endian" means the most significant byte is on the right end of a word.  
   
 > [!NOTE]
->  You can convert from network byte order to the byte order of the host computer without retrieving  the value of the <xref:System.BitConverter.IsLittleEndian?displayProperty=fullName> field by passing a 16-bit, 32-bit, or 64 bit integer to the <xref:System.Net.IPAddress.HostToNetworkOrder%2A?displayProperty=fullName> method.  
+>  You can convert from network byte order to the byte order of the host computer without retrieving  the value of the <xref:System.BitConverter.IsLittleEndian?displayProperty=nameWithType> field by passing a 16-bit, 32-bit, or 64 bit integer to the <xref:System.Net.IPAddress.HostToNetworkOrder%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -876,6 +889,7 @@
           <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="startIndex" /> is less than zero or greater than the length of <paramref name="value" /> minus 1.</exception>
+        <altmember cref="M:System.BitConverter.GetBytes(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="ToChar">
@@ -934,6 +948,7 @@
           <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="startIndex" /> is less than zero or greater than the length of <paramref name="value" /> minus 1.</exception>
+        <altmember cref="M:System.BitConverter.GetBytes(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="ToDouble">
@@ -997,6 +1012,7 @@
           <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="startIndex" /> is less than zero or greater than the length of <paramref name="value" /> minus 1.</exception>
+        <altmember cref="M:System.BitConverter.GetBytes(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="ToInt16">
@@ -1060,6 +1076,7 @@
           <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="startIndex" /> is less than zero or greater than the length of <paramref name="value" /> minus 1.</exception>
+        <altmember cref="M:System.BitConverter.GetBytes(System.Int16)" />
       </Docs>
     </Member>
     <Member MemberName="ToInt32">
@@ -1122,6 +1139,7 @@
           <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="startIndex" /> is less than zero or greater than the length of <paramref name="value" /> minus 1.</exception>
+        <altmember cref="M:System.BitConverter.GetBytes(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ToInt64">
@@ -1185,6 +1203,7 @@
           <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="startIndex" /> is less than zero or greater than the length of <paramref name="value" /> minus 1.</exception>
+        <altmember cref="M:System.BitConverter.GetBytes(System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="ToSingle">
@@ -1248,6 +1267,7 @@
           <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="startIndex" /> is less than zero or greater than the length of <paramref name="value" /> minus 1.</exception>
+        <altmember cref="M:System.BitConverter.GetBytes(System.Single)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1397,7 +1417,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `length` elements from array position `startIndex` are converted. If `length` equals zero, the method returns <xref:System.String?displayProperty=fullName>.  
+ The `length` elements from array position `startIndex` are converted. If `length` equals zero, the method returns <xref:System.String.Empty?displayProperty=nameWithType>.  
   
  The order of hexadecimal strings returned by the <xref:System.BitConverter.ToString%2A> method depends on whether the computer architecture is little-endian or big-endian.  
   
@@ -1484,6 +1504,7 @@
           <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="startIndex" /> is less than zero or greater than the length of <paramref name="value" /> minus 1.</exception>
+        <altmember cref="M:System.BitConverter.GetBytes(System.UInt16)" />
       </Docs>
     </Member>
     <Member MemberName="ToUInt32">
@@ -1547,6 +1568,7 @@
           <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="startIndex" /> is less than zero or greater than the length of <paramref name="value" /> minus 1.</exception>
+        <altmember cref="M:System.BitConverter.GetBytes(System.UInt32)" />
       </Docs>
     </Member>
     <Member MemberName="ToUInt64">
@@ -1610,7 +1632,32 @@
           <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="startIndex" /> is less than zero or greater than the length of <paramref name="value" /> minus 1.</exception>
+        <altmember cref="M:System.BitConverter.GetBytes(System.UInt64)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetBytes">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified data to an array of bytes.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the numeric value of each element of a specified array of bytes to its equivalent hexadecimal string representation.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

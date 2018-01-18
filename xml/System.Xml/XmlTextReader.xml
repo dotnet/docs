@@ -41,7 +41,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  <xref:System.Xml.XmlTextReader> provides forward-only, read-only access to a stream of XML data. The current node refers to the node on which the reader is positioned. The reader is advanced using any of the read methods and properties reflect the value of the current node.  
   
@@ -110,7 +110,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  ]]></format>
         </remarks>
@@ -138,6 +138,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see langword="XmlTextReader" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -170,14 +171,15 @@
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
- The <xref:System.Xml.XmlTextReader> decodes the stream using <xref:System.Text.Encoding?displayProperty=fullName>.  
+ The <xref:System.Xml.XmlTextReader> decodes the stream using <xref:System.Text.Encoding?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="input" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -210,7 +212,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  It is assumed that the `TextReader` is already set to the correct encoding. This is used by clients that have already read some things from the stream in a multi-part MIME scenario.  
   
@@ -225,6 +227,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -257,12 +260,12 @@
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  If the file is located on a resource that requires access credentials, use the <xref:System.Xml.XmlTextReader.XmlResolver%2A> property to specify the necessary credentials.  
   
 > [!NOTE]
->  In version 1.1 of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], partially trusted code cannot set the `XmlResolver` property. The workaround is to create an <xref:System.Xml.XmlUrlResolver> with the necessary credentials, pass the URI to the <xref:System.Xml.XmlUrlResolver.GetEntity%2A?displayProperty=fullName> method, and then construct the `XmlTextReader` using the resulting <xref:System.IO.Stream> object. The workaround is described in the following C# code.  
+>  In version 1.1 of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], partially trusted code cannot set the `XmlResolver` property. The workaround is to create an <xref:System.Xml.XmlUrlResolver> with the necessary credentials, pass the URI to the <xref:System.Xml.XmlUrlResolver.GetEntity%2A?displayProperty=nameWithType> method, and then construct the `XmlTextReader` using the resulting <xref:System.IO.Stream> object. The workaround is described in the following C# code.  
   
 ```  
 // Create a resolver with the necessary credentials.  
@@ -302,6 +305,8 @@ XmlTextReader reader = new XmlTextReader(s);
  An error occurred while processing the request.</exception>
         <exception cref="T:System.UriFormatException">
           <paramref name="url" /> is not a valid URI.</exception>
+        <altmember cref="P:System.Xml.XmlTextReader.XmlResolver" />
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -334,10 +339,11 @@ XmlTextReader reader = new XmlTextReader(s);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -372,15 +378,16 @@ XmlTextReader reader = new XmlTextReader(s);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
- The <xref:System.Xml.XmlTextReader> decodes the stream using <xref:System.Text.Encoding?displayProperty=fullName>.  
+ The <xref:System.Xml.XmlTextReader> decodes the stream using <xref:System.Text.Encoding?displayProperty=nameWithType>.  
   
  If you specify a name table, this constructor uses the names defined already in that table.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The <paramref name="input" /> or <paramref name="nt" /> value is <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -415,13 +422,14 @@ XmlTextReader reader = new XmlTextReader(s);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  It is assumed that the `TextReader` is already set to the correct encoding. This is used by clients that have already read some things from the stream in a multi-part MIME scenario.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The <paramref name="nt" /> value is <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -456,12 +464,13 @@ XmlTextReader reader = new XmlTextReader(s);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="input" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -496,12 +505,13 @@ XmlTextReader reader = new XmlTextReader(s);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  It is assumed that the `TextReader` is already set to the correct encoding. This is used by clients that have already read some things from the stream in a multi-part MIME scenario.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -536,7 +546,7 @@ XmlTextReader reader = new XmlTextReader(s);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  ]]></format>
         </remarks>
@@ -552,6 +562,7 @@ XmlTextReader reader = new XmlTextReader(s);
  An error occurred while processing the request.</exception>
         <exception cref="T:System.UriFormatException">
           <paramref name="url" /> is not a valid URI.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -588,7 +599,7 @@ XmlTextReader reader = new XmlTextReader(s);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  This constructor parses the given string as a fragment of XML. If the XML fragment is an element or attribute, you can bypass the root level rules for well-formed XML documents.  
   
@@ -602,7 +613,7 @@ XmlTextReader reader = new XmlTextReader(s);
   
  The reader uses the following to determine the encoding of the stream.  
   
-1.  Checks the <xref:System.Xml.XmlParserContext.Encoding%2A?displayProperty=fullName> property to determine the encoding.  
+1.  Checks the <xref:System.Xml.XmlParserContext.Encoding%2A?displayProperty=nameWithType> property to determine the encoding.  
   
 2.  If the `Encoding` property is `null`, the reader checks for a byte-order mark at the beginning of the stream.  
   
@@ -614,6 +625,7 @@ XmlTextReader reader = new XmlTextReader(s);
           <paramref name="fragType" /> is not an Element, Attribute, or Document <see langword="XmlNodeType" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="xmlFragment" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -650,11 +662,12 @@ XmlTextReader reader = new XmlTextReader(s);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The <paramref name="input" /> or <paramref name="nt" /> value is <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -691,13 +704,14 @@ XmlTextReader reader = new XmlTextReader(s);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  It is assumed that the `TextReader` is already set to the correct encoding. This is used by clients that have already read some things from the stream in a multi-part MIME scenario.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="nt" /> value is <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -734,7 +748,7 @@ XmlTextReader reader = new XmlTextReader(s);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  This constructor parses the given string as a fragment of XML. If the XML fragment is an element or attribute, you can bypass the root level rules for well-formed XML documents. This constructor can handle strings returned from <xref:System.Xml.XmlReader.ReadInnerXml%2A>.  
   
@@ -761,6 +775,8 @@ XmlTextReader reader = new XmlTextReader(s);
           <paramref name="fragType" /> is not an <see langword="Element" />, <see langword="Attribute" />, or <see langword="Document" /><see langword="XmlNodeType" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="xmlFragment" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.XmlParserContext" />
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="AttributeCount">
@@ -793,7 +809,7 @@ XmlTextReader reader = new XmlTextReader(s);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  This property is relevant to `Element`, `DocumentType` and `XmlDeclaration` nodes only. (Other node types do not have attributes.)  
   
@@ -808,6 +824,7 @@ XmlTextReader reader = new XmlTextReader(s);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="BaseURI">
@@ -840,7 +857,7 @@ XmlTextReader reader = new XmlTextReader(s);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  A networked XML document is comprised of chunks of data aggregated using various W3C standard inclusion mechanisms and therefore contains nodes that come from different places. DTD entities are an example of this, but this is not limited to DTDs. The base URI tells you where these nodes came from. If there is no base URI for the nodes being returned (for example, they were parsed from an in-memory string), `String.Empty` is returned.  
   
@@ -859,6 +876,7 @@ XmlTextReader reader = new XmlTextReader(s);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="CanReadBinaryContent">
@@ -892,12 +910,13 @@ XmlTextReader reader = new XmlTextReader(s);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  The binary content read methods include the <xref:System.Xml.XmlTextReader.ReadContentAsBase64%2A>, <xref:System.Xml.XmlTextReader.ReadContentAsBinHex%2A>, <xref:System.Xml.XmlTextReader.ReadElementContentAsBase64%2A>, and <xref:System.Xml.XmlTextReader.ReadElementContentAsBinHex%2A> methods.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="CanReadValueChunk">
@@ -931,12 +950,13 @@ XmlTextReader reader = new XmlTextReader(s);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  The <xref:System.Xml.XmlTextReader> throws a <xref:System.NotSupportedException> if the <xref:System.Xml.XmlReader.ReadValueChunk%2A> method is called.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="CanResolveEntity">
@@ -970,12 +990,13 @@ XmlTextReader reader = new XmlTextReader(s);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  This is a change in the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)] release. In previous versions, the `XmlTextReader` class could not resolve entities and `CanResolveEntity` always returned `false`.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -1008,7 +1029,7 @@ XmlTextReader reader = new XmlTextReader(s);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  This method also releases any resources held while reading. If this reader was constructed using a stream, this method also calls `Close` on the underlying stream.  
   
@@ -1016,6 +1037,7 @@ XmlTextReader reader = new XmlTextReader(s);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="Depth">
@@ -1048,7 +1070,7 @@ XmlTextReader reader = new XmlTextReader(s);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
    
   
@@ -1061,6 +1083,7 @@ XmlTextReader reader = new XmlTextReader(s);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="DtdProcessing">
@@ -1094,7 +1117,7 @@ XmlTextReader reader = new XmlTextReader(s);
  The <xref:System.Xml.DtdProcessing> enumeration contains the <xref:System.Xml.DtdProcessing.Prohibit>, <xref:System.Xml.DtdProcessing.Ignore>, and <xref:System.Xml.DtdProcessing.Parse> enumerators. <xref:System.Xml.DtdProcessing.Parse> is the default behavior. The <xref:System.Xml.XmlTextReader.DtdProcessing%2A> property replaces the `ProhibitDTD` property and adds the ability to ignore the DOCTYPE element.  
   
 > [!IMPORTANT]
->  If the <xref:System.Xml.XmlTextReader.DtdProcessing%2A> property is set to <xref:System.Xml.DtdProcessing?displayProperty=fullName>, the <xref:System.Xml.XmlTextReader> will not report the DTDs. This means that the DTD/DOCTYPE will be lost on output.  
+>  If the <xref:System.Xml.XmlTextReader.DtdProcessing%2A> property is set to <xref:System.Xml.DtdProcessing.Ignore?displayProperty=nameWithType>, the <xref:System.Xml.XmlTextReader> will not report the DTDs. This means that the DTD/DOCTYPE will be lost on output.  
   
  ]]></format>
         </remarks>
@@ -1130,9 +1153,9 @@ XmlTextReader reader = new XmlTextReader(s);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
- Because <xref:System.Xml.XmlTextReader> uses the <xref:System.Text.Encoding?displayProperty=fullName> class, `XmlTextReader` also supports all encodings supported by that class. The exception to this is any encoding, such as UTF-7 or EBCDIC, that maps the `<?xml` sequence to different byte values than UTF-8.  
+ Because <xref:System.Xml.XmlTextReader> uses the <xref:System.Text.Encoding?displayProperty=nameWithType> class, `XmlTextReader` also supports all encodings supported by that class. The exception to this is any encoding, such as UTF-7 or EBCDIC, that maps the `<?xml` sequence to different byte values than UTF-8.  
   
  ]]></format>
         </remarks>
@@ -1168,7 +1191,7 @@ XmlTextReader reader = new XmlTextReader(s);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  This property can be changed on the fly and takes effect after the next <xref:System.Xml.XmlTextReader.Read%2A> call.  
   
@@ -1197,6 +1220,7 @@ XmlTextReader reader = new XmlTextReader(s);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="EOF">
@@ -1230,10 +1254,11 @@ XmlTextReader reader = new XmlTextReader(s);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <MemberGroup MemberName="GetAttribute">
@@ -1250,7 +1275,7 @@ XmlTextReader reader = new XmlTextReader(s);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  ]]></format>
         </remarks>
@@ -1290,13 +1315,14 @@ XmlTextReader reader = new XmlTextReader(s);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  This method does not move the reader.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="i" /> parameter is less than 0 or greater than or equal to <see cref="P:System.Xml.XmlTextReader.AttributeCount" />.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="GetAttribute">
@@ -1333,7 +1359,7 @@ XmlTextReader reader = new XmlTextReader(s);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  This method does not move the reader.  
   
@@ -1354,6 +1380,7 @@ XmlTextReader reader = new XmlTextReader(s);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="GetAttribute">
@@ -1392,7 +1419,7 @@ XmlTextReader reader = new XmlTextReader(s);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  The following XML contains an attribute in a specific namespace:  
   
@@ -1418,6 +1445,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="GetNamespacesInScope">
@@ -1454,7 +1482,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  The dictionary consists of a collection of namespace names keyed by prefix. It can be used to enumerate the in-scope namespaces. The dictionary is a disconnected copy of the namespace list of the reader. It remains unchanged as the reader position, current in-scope namespace list, changes.  
   
@@ -1468,6 +1496,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="GetRemainder">
@@ -1501,7 +1530,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  Because <xref:System.Xml.XmlTextReader> does a buffered `Read`, it must be able to return the remainder of the unused buffer so that no data is lost. This allows protocols (such as multi-part MIME) to package XML in the same stream as other things.  
   
@@ -1522,6 +1551,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="HasLineInfo">
@@ -1556,10 +1586,11 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="HasValue">
@@ -1593,7 +1624,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  The following table lists node types that have a value to return.  
   
@@ -1624,6 +1655,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="IsDefault">
@@ -1656,12 +1688,13 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  This property applies only to attribute nodes.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="IsEmptyElement">
@@ -1695,7 +1728,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  This property enables you to determine the difference between the following:  
   
@@ -1722,6 +1755,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="LineNumber">
@@ -1754,7 +1788,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  This property is most commonly used for error reporting, but can be called at any time. The starting value for this property is `1`.  
   
@@ -1771,6 +1805,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="LinePosition">
@@ -1803,7 +1838,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  This property is most commonly used for error reporting, but can be called at any time. The property's starting value is `1`.  
   
@@ -1830,6 +1865,7 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="LocalName">
@@ -1864,7 +1900,7 @@ abc<tag/>
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
    
   
@@ -1881,6 +1917,7 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="LookupNamespace">
@@ -1917,7 +1954,7 @@ abc<tag/>
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  In the following XML, if the reader is positioned on the `href` attribute, the prefix `a` is resolved by calling `reader.LookupNamespace("a")`. The returned string is `urn:456`.  
   
@@ -1932,6 +1969,7 @@ abc<tag/>
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Xml.XmlTextReader.Namespaces" /> property is set to <see langword="true" /> and the <paramref name="prefix" /> value is <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <MemberGroup MemberName="MoveToAttribute">
@@ -1948,7 +1986,7 @@ abc<tag/>
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  ]]></format>
         </remarks>
@@ -1987,7 +2025,7 @@ abc<tag/>
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
    
   
@@ -2001,6 +2039,7 @@ abc<tag/>
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="i" /> parameter is less than 0 or greater than or equal to <see cref="P:System.Xml.XmlReader.AttributeCount" />.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="MoveToAttribute">
@@ -2038,12 +2077,13 @@ abc<tag/>
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  After calling `MoveToAttribute`, the <xref:System.Xml.XmlTextReader.Name%2A>, <xref:System.Xml.XmlTextReader.NamespaceURI%2A>, and <xref:System.Xml.XmlTextReader.Prefix%2A> properties reflects the properties of that attribute.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="MoveToAttribute">
@@ -2083,12 +2123,13 @@ abc<tag/>
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  After calling `MoveToAttribute`, the <xref:System.Xml.XmlTextReader.Name%2A>, <xref:System.Xml.XmlTextReader.NamespaceURI%2A>, and <xref:System.Xml.XmlTextReader.Prefix%2A> properties reflects the properties of that attribute.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="MoveToElement">
@@ -2123,7 +2164,7 @@ abc<tag/>
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  Use this method to return to an element after navigating through its attributes. This method moves the reader to one of the following node types: `Element`, `DocumentType`, or `XmlDeclaration`.  
   
@@ -2138,6 +2179,7 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="MoveToFirstAttribute">
@@ -2172,7 +2214,7 @@ abc<tag/>
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
    
   
@@ -2189,6 +2231,7 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="MoveToNextAttribute">
@@ -2223,7 +2266,7 @@ abc<tag/>
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  If the current node is an element node, this method is equivalent to <xref:System.Xml.XmlTextReader.MoveToFirstAttribute%2A>. If `MoveToNextAttribute` returns `true`, the reader moves to the next attribute; otherwise, the position of the reader does not change.  
   
@@ -2238,6 +2281,7 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -2290,7 +2334,7 @@ abc<tag/>
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
    
   
@@ -2307,6 +2351,7 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="Namespaces">
@@ -2340,7 +2385,7 @@ abc<tag/>
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  This property determines whether the reader supports the W3C Namespaces in XML recommendation located at www.w3.org/TR/REC-xml-names.  
   
@@ -2349,6 +2394,7 @@ abc<tag/>
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Setting this property after a read operation has occurred (<see cref="P:System.Xml.XmlTextReader.ReadState" /> is not <see langword="ReadState.Initial" />).</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="NamespaceURI">
@@ -2381,7 +2427,7 @@ abc<tag/>
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  This property is relevant to `Element` and `Attribute` nodes only.  
   
@@ -2400,6 +2446,7 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="NameTable">
@@ -2432,12 +2479,14 @@ abc<tag/>
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  All node and attribute names returned from <xref:System.Xml.XmlTextReader> are atomized using the `NameTable`. When the same name is returned multiple times (for example, `Customer`), then the same `String` object is returned for that name. This makes it possible for you to write efficient code that does object comparisons on these strings instead of expensive string comparisons.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlNameTable" />
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="NodeType">
@@ -2470,7 +2519,7 @@ abc<tag/>
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  This property never returns the following `XmlNodeType` types: `Document`, `DocumentFragment`, `Entity`, `EndEntity`, or `Notation`.  
   
@@ -2489,6 +2538,7 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="Normalization">
@@ -2522,7 +2572,7 @@ abc<tag/>
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  This property can be changed at any time and takes effect on the next read operation.  
   
@@ -2559,6 +2609,7 @@ abc<tag/>
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Setting this property when the reader is closed (<see cref="P:System.Xml.XmlTextReader.ReadState" /> is <see langword="ReadState.Closed" />).</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="Prefix">
@@ -2591,7 +2642,7 @@ abc<tag/>
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
    
   
@@ -2608,6 +2659,7 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="ProhibitDtd">
@@ -2646,7 +2698,7 @@ abc<tag/>
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  DTD processing is enabled by default for backwards compatibility. However, unless your application requires DTD processing, you should disable this setting. Disabling DTD processing can be useful in preventing certain denial of service attacks. If set to `true`, the reader throws an <xref:System.Xml.XmlException> when any DTD content is encountered.  
   
@@ -2654,6 +2706,7 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="QuoteChar">
@@ -2686,12 +2739,13 @@ abc<tag/>
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  This property applies only to an attribute node.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -2726,7 +2780,7 @@ abc<tag/>
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  When a reader is first created and initialized, there is no information available. You must call `Read` to read the first node.  
   
@@ -2748,6 +2802,8 @@ abc<tag/>
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">An error occurred while parsing the XML.</exception>
+        <altmember cref="T:System.Xml.EntityHandling" />
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="ReadAttributeValue">
@@ -2786,7 +2842,7 @@ abc<tag/>
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  Use this method after calling `MoveToAttribute` to read through the text or entity reference nodes that make up the attribute value. The <xref:System.Xml.XmlReader.Depth%2A> of the attribute value nodes is one plus the depth of the attribute node; it increments and decrements by one when you step into and out of general entity references.  
   
@@ -2801,6 +2857,7 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="ReadBase64">
@@ -2841,7 +2898,7 @@ abc<tag/>
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  Like <xref:System.Xml.XmlTextReader.ReadChars%2A>, this method can be called successively to read large streams of embedded text. It decodes Base64 content and returns the decoded binary bytes (for example, an inline Base64 encoded GIF image) into the buffer. See RFC 1521. (You can obtain RFCs from the Request for Comments Web site at http://www.rfc-editor.org)  
   
@@ -2864,6 +2921,8 @@ abc<tag/>
         <exception cref="T:System.ArgumentNullException">The value of <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="offset" /> &lt; 0, or <paramref name="len" /> &lt; 0, or <paramref name="len" /> &gt; <paramref name="array" />.Length- <paramref name="offset" />.</exception>
+        <altmember cref="M:System.Xml.XmlTextWriter.WriteBase64(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="ReadBinHex">
@@ -2904,7 +2963,7 @@ abc<tag/>
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  Like <xref:System.Xml.XmlTextReader.ReadChars%2A>, this method can be called successively to read large streams of embedded text. It decodes `BinHex` content and returns the decoded binary bytes (for example, an inline `BinHex` encoded GIF image) into the buffer.  
   
@@ -2927,6 +2986,7 @@ abc<tag/>
         <exception cref="T:System.ArgumentNullException">The value of <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="offset" /> &lt; 0, or <paramref name="len" /> &lt; 0, or <paramref name="len" /> &gt; <paramref name="array" />.Length- <paramref name="offset" />.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="ReadChars">
@@ -2967,7 +3027,7 @@ abc<tag/>
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  This is the most efficient way to process very large streams of text embedded in an XML document. Rather than allocating large string objects, `ReadChars` returns text content a buffer at a time. This method is designed to work only on element nodes. Other node types cause `ReadChars` to return `0`.  
   
@@ -3035,6 +3095,9 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" />
           <see langword="&lt; 0" /> or <paramref name="count" /><see langword="&lt; 0" />.</exception>
+        <altmember cref="M:System.Xml.XmlTextReader.ReadBase64(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Xml.XmlTextReader.ReadBinHex(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="ReadContentAsBase64">
@@ -3075,7 +3138,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  This method streams the content, decodes the `Base64` content, and returns the decoded binary bytes (for example, an inline `Base64`-encoded GIF image) into the buffer. This method can be called successively to read large streams of embedded text. For more information, see RFC 1521, "MIME (Multipurpose Internet Mail Extensions) Part One: Mechanisms for Specifying and Describing the Format of Internet Message Bodies". You can obtain RFCs from the Request for Comments Web site at http://www.rfc-editor.org.  
   
@@ -3096,6 +3159,9 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Xml.XmlTextReader.ReadContentAsBase64(System.Byte[],System.Int32,System.Int32)" /> is not supported in the current node.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The index into the buffer or index + count is larger than the allocated buffer size.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlTextReader.ReadContentAsBase64(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="T:System.Xml.XmlNodeType" />
       </Docs>
     </Member>
     <Member MemberName="ReadContentAsBinHex">
@@ -3136,7 +3202,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  This method streams the content, decodes the `BinHex` content, and returns the decoded binary bytes (for example, an inline `BinHex` encoded GIF image) into the buffer. This method can be called successively to read large streams of embedded text.  
   
@@ -3158,6 +3224,9 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
           <see cref="M:System.Xml.XmlTextReader.ReadContentAsBinHex(System.Byte[],System.Int32,System.Int32)" /> is not supported on the current node.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The index into the buffer or index + count is larger than the allocated buffer size.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Xml.XmlTextReader" /> implementation does not support this method.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlTextReader.ReadElementContentAsBinHex(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="T:System.Xml.XmlNodeType" />
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsBase64">
@@ -3198,7 +3267,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  This method reads the element content, decodes it using Base64 encoding, and returns the decoded binary bytes (for example, an inline Base64 encoded GIF image) into the buffer. For more information, see RFC 1521, "MIME (Multipurpose Internet Mail Extensions) Part One: Mechanisms for Specifying and Describing the Format of Internet Message Bodies". You can obtain RFCs from the Request for Comments Web site at http://www.rfc-editor.org.  
   
@@ -3213,7 +3282,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
    
   
 ## Examples  
- See <xref:System.Xml.XmlReader.ReadElementContentAsBase64%2A?displayProperty=fullName> to see an example using this method.  
+ See <xref:System.Xml.XmlReader.ReadElementContentAsBase64%2A?displayProperty=nameWithType> to see an example using this method.  
   
  ]]></format>
         </remarks>
@@ -3223,6 +3292,8 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Xml.XmlTextReader" /> implementation does not support this method.</exception>
         <exception cref="T:System.Xml.XmlException">The element contains mixed-content.</exception>
         <exception cref="T:System.FormatException">The content cannot be converted to the requested type.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlTextReader.ReadElementContentAsBase64(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsBinHex">
@@ -3263,7 +3334,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  This method reads the element content, decodes it using `BinHex` encoding, and returns the decoded binary bytes (for example, an inline `BinHex` encoded GIF image) into the buffer.  
   
@@ -3278,7 +3349,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
    
   
 ## Examples  
- See <xref:System.Xml.XmlReader.ReadElementContentAsBinHex%2A?displayProperty=fullName> to see an example using this method.  
+ See <xref:System.Xml.XmlReader.ReadElementContentAsBinHex%2A?displayProperty=nameWithType> to see an example using this method.  
   
  ]]></format>
         </remarks>
@@ -3288,6 +3359,8 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Xml.XmlReader" /> implementation does not support this method.</exception>
         <exception cref="T:System.Xml.XmlException">The element contains mixed-content.</exception>
         <exception cref="T:System.FormatException">The content cannot be converted to the requested type.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlTextReader.ReadElementContentAsBinHex(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadState">
@@ -3320,7 +3393,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  ]]></format>
         </remarks>
@@ -3359,7 +3432,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  If positioned on an element, `ReadString` concatenates all text, significant white space, white space, and `CData` section node types together and returns the concatenated data as the element content. It stops when any markup is encountered, including comments and processing instructions. This could occur in a mixed content model, or when an element end tag is read.  
   
@@ -3382,6 +3455,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
         </remarks>
         <exception cref="T:System.Xml.XmlException">An error occurred while parsing the XML.</exception>
         <exception cref="T:System.InvalidOperationException">An invalid operation was attempted.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="ResetState">
@@ -3414,7 +3488,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  This method enables you to parse multiple XML documents in a single stream. When you reach the end of an XML document, you can call `ResetState` to reset the state of the reader in preparation for the next XML document.  
   
@@ -3444,6 +3518,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
         </remarks>
         <exception cref="T:System.InvalidOperationException">Calling <see langword="ResetState" /> if the reader was constructed using an <see cref="T:System.Xml.XmlParserContext" />.</exception>
         <exception cref="T:System.Xml.XmlException">Documents in a single stream do not share the same encoding.</exception>
+        <altmember cref="T:System.Xml.ReadState" />
       </Docs>
     </Member>
     <Member MemberName="ResolveEntity">
@@ -3476,7 +3551,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  If the reader is positioned on an `EntityReference` node (`XmlNodeType.EntityReference`), if <xref:System.Xml.XmlTextReader.Read%2A> is called after calling this method, the entity replacement text is parsed. When the entity replacement text is finished, an `EndEntity` node is returned to close the entity reference scope.  
   
@@ -3485,6 +3560,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="Skip">
@@ -3517,7 +3593,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  In the following XML input if the reader is positioned on the `<a>` node or any of its attributes, calling `Skip` positions the reader to the `<b>` node.  
   
@@ -3536,6 +3612,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="System.Xml.IXmlNamespaceResolver.GetNamespacesInScope">
@@ -3574,6 +3651,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="System.Xml.IXmlNamespaceResolver.LookupNamespace">
@@ -3612,6 +3690,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="System.Xml.IXmlNamespaceResolver.LookupPrefix">
@@ -3643,6 +3722,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
         <summary>For a description of this member, see <see cref="M:System.Xml.IXmlNamespaceResolver.LookupPrefix(System.String)" />.</summary>
         <returns>The prefix that is mapped to the namespace URI; <see langword="null" /> if the namespace URI is not mapped to a prefix.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -3699,7 +3779,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
    
   
@@ -3716,6 +3796,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="WhitespaceHandling">
@@ -3748,7 +3829,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  This property can be changed at any time and takes effect on the next read operation.  
   
@@ -3767,6 +3848,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Invalid value specified.</exception>
         <exception cref="T:System.InvalidOperationException">Setting this property when the reader is closed (<see cref="P:System.Xml.XmlTextReader.ReadState" /> is <see langword="ReadState.Closed" />).</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="XmlLang">
@@ -3799,7 +3881,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  This property represents the `xml:lang` scope within which the current node resides. For example, here is an XML fragment with `xml:lang` set to US English in the root element:  
   
@@ -3822,6 +3904,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="XmlResolver">
@@ -3856,7 +3939,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
  The reader uses `XmlResolver` to resolve the location of the file loaded into the reader and also to resolve DTD references. For example, if your XML included the DOCTYPE declaration, `<!DOCTYPE book SYSTEM book.dtd>` the reader resolves this external file and ensures that the DTD is well-formed. The reader does not use the DTD for validation.  
   
@@ -3879,6 +3962,11 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.XmlUrlResolver.Credentials" />
+        <altmember cref="T:System.Net.CredentialCache" />
+        <altmember cref="T:System.Net.NetworkCredential" />
+        <altmember cref="T:System.Xml.XmlSecureResolver" />
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="XmlSpace">
@@ -3911,7 +3999,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method to take advantage of new functionality.  
+>  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
    
   
@@ -3926,6 +4014,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
   </Members>

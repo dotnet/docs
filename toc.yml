@@ -13,16 +13,25 @@
       tocHref: /dotnet/standard/
       topicHref: /dotnet/standard/index
       items:
-      - name: .NET Microservices -- Architecture for Containerized .NET Applications
+      - name: Modern ASP.NET Web applications e-book
+        tocHref: /dotnet/standard/modern-web-apps-azure-architecture/
+        topicHref: /dotnet/standard/modern-web-apps-azure-architecture/index
+      - name: .NET microservices - Architecture e-book
         tocHref: /dotnet/standard/microservices-architecture/
         topicHref: /dotnet/standard/microservices-architecture/index
+      - name: Modernizing .NET apps e-book
+        tocHref: /dotnet/standard/modernize-with-azure-and-containers/
+        topicHref: /dotnet/standard/modernize-with-azure-and-containers/index
+      - name: .NET Microservices - DevOps e-book
+        tocHref: /dotnet/standard/containerized-lifecycle-architecture/
+        topicHref: /dotnet/standard/containerized-lifecycle-architecture/index        
       - name: Asynchronous Programming Patterns
         tocHref: /dotnet/standard/asynchronous-programming-patterns/
         topicHref: /dotnet/standard/asynchronous-programming-patterns/index
       - name: Extending Metadata Using Attributes
         tocHref: /dotnet/standard/attributes/
         topicHref: /dotnet/standard/attributes/index
-      - name: Working with Base Types in the .NET Framework
+      - name: Working with Base Types in .NET
         tocHref: /dotnet/standard/base-types/
         topicHref: /dotnet/standard/base-types/index
       - name: Collections and Data Structures
@@ -32,7 +41,7 @@
         - name: Thread-Safe Collections
           tocHref: /dotnet/standard/collections/thread-safe/
           topicHref: /dotnet/standard/collections/thread-safe/index
-      - name: Developing for Multiple Platforms with the .NET Framework
+      - name: Developing for Multiple Platforms with .NET
         tocHref: /dotnet/standard/cross-platform/
         topicHref: /dotnet/standard/cross-platform/index
       - name: XML Documents and Data
@@ -53,16 +62,16 @@
       - name: Garbage Collection
         tocHref: /dotnet/standard/garbage-collection/
         topicHref: /dotnet/standard/garbage-collection/index
-      - name: Generics in the .NET Framework
+      - name: Generics in .NET
         tocHref: /dotnet/standard/generics/
         topicHref: /dotnet/standard/generics/index
-      - name: Globalization and LocalizationGlobalizing and Localizing .NET Framework Applications
+      - name: Globalization and Localization
         tocHref: /dotnet/standard/globalization-localization/
         topicHref: /dotnet/standard/globalization-localization/index
       - name: File and Stream I/O
         tocHref: /dotnet/standard/io/
         topicHref: /dotnet/standard/io/index
-      - name: Parallel Programming in the .NET Framework
+      - name: Parallel Programming in .NET
         tocHref: /dotnet/standard/parallel-programming/
         topicHref: /dotnet/standard/parallel-programming/index
       - name: Security in .NET
@@ -91,10 +100,10 @@
       - name: Additional Class Libraries and APIs
         tocHref: /dotnet/framework/additional-steps/
         topicHref: /dotnet/framework/additional-steps/index
-      - name: Programming with Application Domains and Assemblies
+      - name: Application Domains and Assemblies
         tocHref: /dotnet/framework/app-domains/
         topicHref: /dotnet/framework/app-domains/index
-      - name: Common Client Technologies in the .NET Framework
+      - name: Common Client Technologies
         tocHref: /dotnet/framework/common-client-technologies/
         topicHref: /dotnet/framework/common-client-technologies/index
       - name: Configuring Apps by using Configuration Files
@@ -169,7 +178,7 @@
         - name: Transaction Processing
           tocHref: /dotnet/framework/data/transactions/
           topicHref: /dotnet/framework/data/transactions/index
-        - name: WCF Data Services 4.5
+        - name: WCF Data Services
           tocHref: /dotnet/framework/data/wcf/
           topicHref: /dotnet/framework/data/wcf/index
       - name: Debugging, Tracing, and Profiling
@@ -193,7 +202,7 @@
       - name: Managed Extensibility Framework (MEF)
         tocHref: /dotnet/framework/mef/
         topicHref: /dotnet/framework/mef/index
-      - name: Migration Guide to the .NET Framework 4.6 and 4.5
+      - name: Migration Guide
         tocHref: /dotnet/framework/migration-guide/
         topicHref: /dotnet/framework/migration-guide/index
       - name: Compiling Apps with .NET Native
@@ -232,7 +241,7 @@
           topicHref: /dotnet/framework/unmanaged-api/authenticode/index
         - name: Debugging (Unmanaged API Reference)
           tocHref: /dotnet/framework/unmanaged-api/debugging/
-          topicHref: /dotnet/framework/unmanaged-api/debuggin/index
+          topicHref: /dotnet/framework/unmanaged-api/debugging/index
         - name: Diagnostics Symbol Store (Unmanaged API Reference)
           tocHref: /dotnet/framework/unmanaged-api/diagnostics/
           topicHref: /dotnet/framework/unmanaged-api/diagnostics/index
@@ -341,6 +350,9 @@
       tocHref: /dotnet/csharp/
       topicHref: /dotnet/csharp/index
       items:
+      - name: Quick Starts
+        tocHref: /dotnet/csharp/quick-starts/
+        topicHref: /dotnet/csharp/quick-starts/index
       - name: Getting started
         tocHref: /dotnet/csharp/getting-started/
         topicHref: /dotnet/csharp/getting-started/index
@@ -348,8 +360,8 @@
         tocHref: /dotnet/csharp/tutorials/
         topicHref: /dotnet/csharp/tutorials/index
       - name: Tour
-        tocHref: /dotnet/csharp/tour/
-        topicHref: /dotnet/csharp/tour/index
+        tocHref: /dotnet/csharp/tour-of-csharp/
+        topicHref: /dotnet/csharp/tour-of-csharp/index
       - name: What's new
         tocHref: /dotnet/csharp/whats-new/
         topicHref: /dotnet/csharp/whats-new/index
@@ -359,6 +371,9 @@
       - name: Concepts
         tocHref: /dotnet/csharp/concepts/
         topicHref: /dotnet/csharp/concepts/index
+      - name: .NET Compiler Platform SDK
+        tocHref: /dotnet/csharp/roslyn-sdk/
+        topicHref: /dotnet/csharp/roslyn-sdk/index
       - name: Programming guide
         tocHref: /dotnet/csharp/programming-guide/
         topicHref: /dotnet/csharp/programming-guide/index
@@ -380,7 +395,7 @@
           topicHref: /dotnet/csharp/programming-guide/events/index
         - name: Exceptions and exception handling
           tocHref: /dotnet/csharp/programming-guide/exceptions/
-          topicHref: /dotnet/csharp/programming-guide/èxceptions/index
+          topicHref: /dotnet/csharp/programming-guide/exceptions/index
         - name: File system and the registry
           tocHref: /dotnet/csharp/programming-guide/file-system/
           topicHref: /dotnet/csharp/programming-guide/file-system/index
@@ -395,7 +410,7 @@
           topicHref: /dotnet/csharp/programming-guide/interfaces/index
         - name: Interoperability
           tocHref: /dotnet/csharp/programming-guide/interop/
-          topicHref: /dotnet/csharp/programming-guide/ìnterop/index
+          topicHref: /dotnet/csharp/programming-guide/interop/index
         - name: LINQ
           tocHref: /dotnet/csharp/programming-guide/linq/
           topicHref: /dotnet/csharp/programming-guide/linq/index
@@ -426,7 +441,7 @@
             topicHref: /dotnet/csharp/programming-guide/concepts/covariance-contravariance/index
           - name: Expression trees
             tocHref: /dotnet/csharp/programming-guide/concepts/expression-trees/
-            topicHref: /dotnet/csharp/programming-guide/concepts/èxpression-trees/index
+            topicHref: /dotnet/csharp/programming-guide/concepts/expression-trees/index
           - name: LINQ
             tocHref: /dotnet/csharp/programming-guide/concepts/linq/
             topicHref: /dotnet/csharp/programming-guide/concepts/linq/index
@@ -501,7 +516,7 @@
           topicHref: /dotnet/visual-basic/programming-guide/concepts/attributes/index
         - name: Expression trees
           tocHref: /dotnet/visual-basic/programming-guide/concepts/expression-trees/
-          topicHref: /dotnet/visual-basic/programming-guide/concepts/èxpression-trees/index
+          topicHref: /dotnet/visual-basic/programming-guide/concepts/expression-trees/index
         - name: LINQ
           tocHref: /dotnet/visual-basic/programming-guide/concepts/linq/
           topicHref: /dotnet/visual-basic/programming-guide/concepts/linq/index
@@ -558,7 +573,7 @@
           tocHref: /dotnet/visual-basic/programming-guide/language-features/procedures/
           topicHref: /dotnet/visual-basic/programming-guide/language-features/procedures/index
         - name: Strings
-          tocHref: /dotnet/visual-basic/programming-guide/language-features/`strings/
+          tocHref: /dotnet/visual-basic/programming-guide/language-features/strings/
           topicHref: /dotnet/visual-basic/programming-guide/language-features/strings/index
         - name: Variables
           tocHref: /dotnet/visual-basic/programming-guide/language-features/variables/

@@ -54,6 +54,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Control" />
+    <altmember cref="T:System.Windows.Forms.TextBox" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -77,7 +79,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to create a <xref:System.Windows.Forms.Label> control that has a three-dimensional border and an image displayed using the <xref:System.Windows.Forms.Label.ImageList%2A> and <xref:System.Windows.Forms.Label.ImageIndex%2A> properties. The control also has a caption with a mnemonic character specified. The example code uses the <xref:System.Windows.Forms.Label.PreferredHeight%2A> and <xref:System.Windows.Forms.Label.PreferredWidth%2A> properties to properly size the <xref:System.Windows.Forms.Label> control on the form on which it is displayed. This example requires that an <xref:System.Windows.Forms.ImageList> has been created and named imageList1 and that it has loaded two images. The example also requires that the code is within a form that has the <xref:System.Drawing?displayProperty=fullName> namespace added to its code.  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.Label> control that has a three-dimensional border and an image displayed using the <xref:System.Windows.Forms.Label.ImageList%2A> and <xref:System.Windows.Forms.Label.ImageIndex%2A> properties. The control also has a caption with a mnemonic character specified. The example code uses the <xref:System.Windows.Forms.Label.PreferredHeight%2A> and <xref:System.Windows.Forms.Label.PreferredWidth%2A> properties to properly size the <xref:System.Windows.Forms.Label> control on the form on which it is displayed. This example requires that an <xref:System.Windows.Forms.ImageList> has been created and named imageList1 and that it has loaded two images. The example also requires that the code is within a form that has the <xref:System.Drawing?displayProperty=nameWithType> namespace added to its code.  
   
  [!code-cpp[Classic Label Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Label Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Label Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Label Example/CS/source.cs#1)]
@@ -125,6 +127,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Label.AutoSize" />
       </Docs>
     </Member>
     <Member MemberName="AutoSize">
@@ -188,6 +191,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Text" />
+        <altmember cref="P:System.Windows.Forms.Label.PreferredHeight" />
+        <altmember cref="P:System.Windows.Forms.Label.PreferredWidth" />
+        <altmember cref="P:System.Windows.Forms.Label.AutoEllipsis" />
       </Docs>
     </Member>
     <Member MemberName="AutoSizeChanged">
@@ -221,7 +228,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Label.AutoSizeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Label.AutoSizeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Label> named Label1. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Label.AutoSizeChanged> event.  
   
@@ -397,7 +404,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to create a <xref:System.Windows.Forms.Label> control that has a three-dimensional border and an image displayed using the <xref:System.Windows.Forms.Label.ImageList%2A> and <xref:System.Windows.Forms.Label.ImageIndex%2A> properties. The control also has a caption with a mnemonic character specified. The example code uses the <xref:System.Windows.Forms.Label.PreferredHeight%2A> and <xref:System.Windows.Forms.Label.PreferredWidth%2A> properties to properly size the <xref:System.Windows.Forms.Label> control on the form on which it is displayed. This example requires that an <xref:System.Windows.Forms.ImageList> has been created and named imageList1 and that it has loaded two images. The example also requires that the code is within a form that has the <xref:System.Drawing?displayProperty=fullName> namespace added to its code.  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.Label> control that has a three-dimensional border and an image displayed using the <xref:System.Windows.Forms.Label.ImageList%2A> and <xref:System.Windows.Forms.Label.ImageIndex%2A> properties. The control also has a caption with a mnemonic character specified. The example code uses the <xref:System.Windows.Forms.Label.PreferredHeight%2A> and <xref:System.Windows.Forms.Label.PreferredWidth%2A> properties to properly size the <xref:System.Windows.Forms.Label> control on the form on which it is displayed. This example requires that an <xref:System.Windows.Forms.ImageList> has been created and named imageList1 and that it has loaded two images. The example also requires that the code is within a form that has the <xref:System.Drawing?displayProperty=nameWithType> namespace added to its code.  
   
  [!code-cpp[Classic Label Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Label Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Label Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Label Example/CS/source.cs#1)]
@@ -406,6 +413,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Windows.Forms.BorderStyle" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.BorderStyle" />
       </Docs>
     </Member>
     <Member MemberName="CalcImageRenderBounds">
@@ -439,6 +447,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Rectangle" />
+        <altmember cref="T:System.Drawing.Image" />
+        <altmember cref="P:System.Windows.Forms.Label.ImageAlign" />
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
@@ -495,6 +506,7 @@
         <summary>Gets the default Input Method Editor (IME) mode supported by this control.</summary>
         <value>One of the <see cref="T:System.Windows.Forms.ImeMode" /> supported by this control. The default is <see cref="F:System.Windows.Forms.ImeMode.Disable" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.ImeMode" />
       </Docs>
     </Member>
     <Member MemberName="DefaultMargin">
@@ -598,6 +610,10 @@
         <block subset="none" type="overrides">
           <para>When you are creating your own control that derives from <see cref="T:System.Windows.Forms.Label" />, you can use this method to draw images onto the surface of the control.</para>
         </block>
+        <altmember cref="T:System.Drawing.ContentAlignment" />
+        <altmember cref="T:System.Drawing.Graphics" />
+        <altmember cref="T:System.Drawing.Image" />
+        <altmember cref="T:System.Drawing.Rectangle" />
       </Docs>
     </Member>
     <Member MemberName="FlatStyle">
@@ -693,6 +709,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Image" />
+        <altmember cref="P:System.Windows.Forms.Label.ImageAlign" />
+        <altmember cref="P:System.Windows.Forms.Label.ImageList" />
+        <altmember cref="P:System.Windows.Forms.Label.ImageIndex" />
       </Docs>
     </Member>
     <Member MemberName="ImageAlign">
@@ -727,7 +747,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to create a <xref:System.Windows.Forms.Label> control that has a three-dimensional border and an image displayed using the <xref:System.Windows.Forms.Label.ImageList%2A> and <xref:System.Windows.Forms.Label.ImageIndex%2A> properties. The control also has a caption with a mnemonic character specified. The example code uses the <xref:System.Windows.Forms.Label.PreferredHeight%2A> and <xref:System.Windows.Forms.Label.PreferredWidth%2A> properties to properly size the <xref:System.Windows.Forms.Label> control on the form on which it is displayed. This example requires that an <xref:System.Windows.Forms.ImageList> has been created and named imageList1 and that it has loaded two images. The example also requires that the code is within a form that has the <xref:System.Drawing?displayProperty=fullName> namespace added to its code.  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.Label> control that has a three-dimensional border and an image displayed using the <xref:System.Windows.Forms.Label.ImageList%2A> and <xref:System.Windows.Forms.Label.ImageIndex%2A> properties. The control also has a caption with a mnemonic character specified. The example code uses the <xref:System.Windows.Forms.Label.PreferredHeight%2A> and <xref:System.Windows.Forms.Label.PreferredWidth%2A> properties to properly size the <xref:System.Windows.Forms.Label> control on the form on which it is displayed. This example requires that an <xref:System.Windows.Forms.ImageList> has been created and named imageList1 and that it has loaded two images. The example also requires that the code is within a form that has the <xref:System.Drawing?displayProperty=nameWithType> namespace added to its code.  
   
  [!code-cpp[Classic Label Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Label Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Label Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Label Example/CS/source.cs#1)]
@@ -736,6 +756,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Drawing.ContentAlignment" /> values.</exception>
+        <altmember cref="T:System.Drawing.ContentAlignment" />
+        <altmember cref="P:System.Windows.Forms.Label.Image" />
+        <altmember cref="P:System.Windows.Forms.Label.ImageIndex" />
+        <altmember cref="P:System.Windows.Forms.Label.ImageList" />
       </Docs>
     </Member>
     <Member MemberName="ImageIndex">
@@ -779,7 +803,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to create a <xref:System.Windows.Forms.Label> control that has a three-dimensional border and an image displayed using the <xref:System.Windows.Forms.Label.ImageList%2A> and <xref:System.Windows.Forms.Label.ImageIndex%2A> properties. The control also has a caption with a mnemonic character specified. The example code uses the <xref:System.Windows.Forms.Label.PreferredHeight%2A> and <xref:System.Windows.Forms.Label.PreferredWidth%2A> properties to properly size the <xref:System.Windows.Forms.Label> control on the form on which it is displayed. This example requires that an <xref:System.Windows.Forms.ImageList> has been created and named imageList1 and that it has loaded two images. The example also requires that the code is within a form that has the <xref:System.Drawing?displayProperty=fullName> namespace added to its code.  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.Label> control that has a three-dimensional border and an image displayed using the <xref:System.Windows.Forms.Label.ImageList%2A> and <xref:System.Windows.Forms.Label.ImageIndex%2A> properties. The control also has a caption with a mnemonic character specified. The example code uses the <xref:System.Windows.Forms.Label.PreferredHeight%2A> and <xref:System.Windows.Forms.Label.PreferredWidth%2A> properties to properly size the <xref:System.Windows.Forms.Label> control on the form on which it is displayed. This example requires that an <xref:System.Windows.Forms.ImageList> has been created and named imageList1 and that it has loaded two images. The example also requires that the code is within a form that has the <xref:System.Drawing?displayProperty=nameWithType> namespace added to its code.  
   
  [!code-cpp[Classic Label Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Label Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Label Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Label Example/CS/source.cs#1)]
@@ -788,6 +812,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value assigned is less than the lower bounds of the <see cref="P:System.Windows.Forms.Label.ImageIndex" /> property.</exception>
+        <altmember cref="P:System.Windows.Forms.Label.Image" />
+        <altmember cref="P:System.Windows.Forms.Label.ImageAlign" />
+        <altmember cref="P:System.Windows.Forms.Label.ImageList" />
       </Docs>
     </Member>
     <Member MemberName="ImageKey">
@@ -867,7 +894,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to create a <xref:System.Windows.Forms.Label> control that has a three-dimensional border and an image displayed using the <xref:System.Windows.Forms.Label.ImageList%2A> and <xref:System.Windows.Forms.Label.ImageIndex%2A> properties. The control also has a caption with a mnemonic character specified. The example code uses the <xref:System.Windows.Forms.Label.PreferredHeight%2A> and <xref:System.Windows.Forms.Label.PreferredWidth%2A> properties to properly size the <xref:System.Windows.Forms.Label> control on the form on which it is displayed. This example requires that an <xref:System.Windows.Forms.ImageList> has been created and named imageList1 and that it has loaded two images. The example also requires that the code is within a form that has the <xref:System.Drawing?displayProperty=fullName> namespace added to its code.  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.Label> control that has a three-dimensional border and an image displayed using the <xref:System.Windows.Forms.Label.ImageList%2A> and <xref:System.Windows.Forms.Label.ImageIndex%2A> properties. The control also has a caption with a mnemonic character specified. The example code uses the <xref:System.Windows.Forms.Label.PreferredHeight%2A> and <xref:System.Windows.Forms.Label.PreferredWidth%2A> properties to properly size the <xref:System.Windows.Forms.Label> control on the form on which it is displayed. This example requires that an <xref:System.Windows.Forms.ImageList> has been created and named imageList1 and that it has loaded two images. The example also requires that the code is within a form that has the <xref:System.Drawing?displayProperty=nameWithType> namespace added to its code.  
   
  [!code-cpp[Classic Label Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Label Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Label Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Label Example/CS/source.cs#1)]
@@ -875,6 +902,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Label.Image" />
+        <altmember cref="P:System.Windows.Forms.Label.ImageAlign" />
+        <altmember cref="P:System.Windows.Forms.Label.ImageIndex" />
+        <altmember cref="T:System.Windows.Forms.ImageList" />
       </Docs>
     </Member>
     <Member MemberName="ImeMode">
@@ -909,6 +940,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned to this property is not within the range of valid values specified in the enumeration.</exception>
+        <altmember cref="T:System.Windows.Forms.ImeMode" />
+        <altmember cref="P:System.Windows.Forms.Label.DefaultImeMode" />
       </Docs>
     </Member>
     <Member MemberName="ImeModeChanged">
@@ -1281,6 +1314,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Label.OnTextAlignChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Label.OnTextAlignChanged(System.EventArgs)" /> method.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.Label.TextAlign" />
+        <altmember cref="E:System.Windows.Forms.Label.TextAlignChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnTextChanged">
@@ -1363,7 +1398,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to create a <xref:System.Windows.Forms.Label> control that has a three-dimensional border and an image displayed using the <xref:System.Windows.Forms.Label.ImageList%2A> and <xref:System.Windows.Forms.Label.ImageIndex%2A> properties. The control also has a caption with a mnemonic character specified. The example code uses the <xref:System.Windows.Forms.Label.PreferredHeight%2A> and <xref:System.Windows.Forms.Label.PreferredWidth%2A> properties to properly size the <xref:System.Windows.Forms.Label> control on the form on which it is displayed. This example requires that an <xref:System.Windows.Forms.ImageList> has been created and named imageList1 and that it has loaded two images. The example also requires that the code is within a form that has the <xref:System.Drawing?displayProperty=fullName> namespace added to its code.  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.Label> control that has a three-dimensional border and an image displayed using the <xref:System.Windows.Forms.Label.ImageList%2A> and <xref:System.Windows.Forms.Label.ImageIndex%2A> properties. The control also has a caption with a mnemonic character specified. The example code uses the <xref:System.Windows.Forms.Label.PreferredHeight%2A> and <xref:System.Windows.Forms.Label.PreferredWidth%2A> properties to properly size the <xref:System.Windows.Forms.Label> control on the form on which it is displayed. This example requires that an <xref:System.Windows.Forms.ImageList> has been created and named imageList1 and that it has loaded two images. The example also requires that the code is within a form that has the <xref:System.Drawing?displayProperty=nameWithType> namespace added to its code.  
   
  [!code-cpp[Classic Label Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Label Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Label Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Label Example/CS/source.cs#1)]
@@ -1371,6 +1406,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Label.PreferredWidth" />
+        <altmember cref="P:System.Windows.Forms.Label.AutoSize" />
       </Docs>
     </Member>
     <Member MemberName="PreferredWidth">
@@ -1411,7 +1448,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to create a <xref:System.Windows.Forms.Label> control that has a three-dimensional border and an image displayed using the <xref:System.Windows.Forms.Label.ImageList%2A> and <xref:System.Windows.Forms.Label.ImageIndex%2A> properties. The control also has a caption with a mnemonic character specified. The example code uses the <xref:System.Windows.Forms.Label.PreferredHeight%2A> and <xref:System.Windows.Forms.Label.PreferredWidth%2A> properties to properly size the <xref:System.Windows.Forms.Label> control on the form on which it is displayed. This example requires that an <xref:System.Windows.Forms.ImageList> has been created and named imageList1 and that it has loaded two images. The example also requires that the code is within a form that has the <xref:System.Drawing?displayProperty=fullName> namespace added to its code.  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.Label> control that has a three-dimensional border and an image displayed using the <xref:System.Windows.Forms.Label.ImageList%2A> and <xref:System.Windows.Forms.Label.ImageIndex%2A> properties. The control also has a caption with a mnemonic character specified. The example code uses the <xref:System.Windows.Forms.Label.PreferredHeight%2A> and <xref:System.Windows.Forms.Label.PreferredWidth%2A> properties to properly size the <xref:System.Windows.Forms.Label> control on the form on which it is displayed. This example requires that an <xref:System.Windows.Forms.ImageList> has been created and named imageList1 and that it has loaded two images. The example also requires that the code is within a form that has the <xref:System.Drawing?displayProperty=nameWithType> namespace added to its code.  
   
  [!code-cpp[Classic Label Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Label Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Label Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Label Example/CS/source.cs#1)]
@@ -1419,6 +1456,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Label.PreferredHeight" />
+        <altmember cref="P:System.Windows.Forms.Label.AutoSize" />
       </Docs>
     </Member>
     <Member MemberName="ProcessMnemonic">
@@ -1546,6 +1585,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.LinkLabel" />
       </Docs>
     </Member>
     <Member MemberName="TabStopChanged">
@@ -1638,6 +1678,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Drawing.ContentAlignment" /> values.</exception>
+        <altmember cref="T:System.Drawing.ContentAlignment" />
       </Docs>
     </Member>
     <Member MemberName="TextAlignChanged">
@@ -1663,7 +1704,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Label.TextAlignChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Label.TextAlignChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Label> named Label1. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Label.TextAlignChanged> event.  
   
@@ -1672,6 +1713,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Label.TextAlign" />
+        <altmember cref="M:System.Windows.Forms.Label.OnTextAlignChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1720,10 +1763,12 @@
 ## Remarks  
  The `UseCompatibleTextRendering` property is intended to provide visual compatibility between Windows Forms controls that render text using the <xref:System.Windows.Forms.TextRenderer> class and [!INCLUDE[net_v10_short](~/includes/net-v10-short-md.md)] and [!INCLUDE[net_v11_short](~/includes/net-v11-short-md.md)] applications that perform custom text rendering using the <xref:System.Drawing.Graphics> class. In most cases, if your application is not being upgraded from [!INCLUDE[net_v10_short](~/includes/net-v10-short-md.md)] or [!INCLUDE[net_v11_short](~/includes/net-v11-short-md.md)], it is recommended that you leave `UseCompatibleTextRendering` set to the default value of `false`.  
   
- The [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] based <xref:System.Windows.Forms.TextRenderer> class was introduced in the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] to improve performance, make text look better, and improve support for international fonts. In earlier versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], the [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] based <xref:System.Drawing.Graphics> class was used to perform all text rendering. [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] calculates character spacing and word wrapping differently from [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)]. In a Windows Forms application that uses the <xref:System.Drawing.Graphics> class to render text, this could cause the text for controls that use <xref:System.Windows.Forms.TextRenderer> to appear different from the other text in the application. To resolve this incompatibility, you can set the `UseCompatibleTextRendering` property to `true` for a specific control. To set `UseCompatibleTextRendering` to `true` for all supported controls in the application, call the <xref:System.Windows.Forms.Application.SetCompatibleTextRenderingDefault%2A?displayProperty=fullName> method with a parameter of `true`.  
+ The [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] based <xref:System.Windows.Forms.TextRenderer> class was introduced in the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] to improve performance, make text look better, and improve support for international fonts. In earlier versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], the [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] based <xref:System.Drawing.Graphics> class was used to perform all text rendering. [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] calculates character spacing and word wrapping differently from [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)]. In a Windows Forms application that uses the <xref:System.Drawing.Graphics> class to render text, this could cause the text for controls that use <xref:System.Windows.Forms.TextRenderer> to appear different from the other text in the application. To resolve this incompatibility, you can set the `UseCompatibleTextRendering` property to `true` for a specific control. To set `UseCompatibleTextRendering` to `true` for all supported controls in the application, call the <xref:System.Windows.Forms.Application.SetCompatibleTextRenderingDefault%2A?displayProperty=nameWithType> method with a parameter of `true`.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(System.Boolean)" />
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering" />
       </Docs>
     </Member>
     <Member MemberName="UseMnemonic">
@@ -1764,11 +1809,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Text" />
       </Docs>
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Label.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

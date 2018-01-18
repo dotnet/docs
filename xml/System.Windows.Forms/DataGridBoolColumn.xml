@@ -31,6 +31,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Data.DataColumn" />
+    <altmember cref="T:System.Windows.Forms.DataGrid" />
+    <altmember cref="T:System.Windows.Forms.DataGridColumnStyle" />
+    <altmember cref="T:System.Windows.Forms.GridColumnStylesCollection" />
+    <altmember cref="M:System.Type.GetType" />
+    <altmember cref="T:System.Type" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +68,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGrid" />
+        <altmember cref="T:System.Windows.Forms.DataGridColumnStyle" />
+        <altmember cref="T:System.Windows.Forms.GridColumnStylesCollection" />
+        <altmember cref="T:System.Data.DataColumn" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -90,7 +100,7 @@
    
   
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method to return a <xref:System.ComponentModel.PropertyDescriptorCollection?displayProperty=fullName> for a <xref:System.Data.DataTable>. The <xref:System.ComponentModel.PropertyDescriptor> for a <xref:System.Data.DataColumn> is then used to create the <xref:System.Windows.Forms.DataGridBoolColumn>.  
+ The following code example uses the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method to return a <xref:System.ComponentModel.PropertyDescriptorCollection?displayProperty=nameWithType> for a <xref:System.Data.DataTable>. The <xref:System.ComponentModel.PropertyDescriptor> for a <xref:System.Data.DataColumn> is then used to create the <xref:System.Windows.Forms.DataGridBoolColumn>.  
   
  [!code-cpp[Classic DataGridBoolColumn.DataGridBoolColumn1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridBoolColumn.DataGridBoolColumn1 Example/CPP/source.cpp#1)]
  [!code-csharp[Classic DataGridBoolColumn.DataGridBoolColumn1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridBoolColumn.DataGridBoolColumn1 Example/CS/source.cs#1)]
@@ -98,6 +108,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGrid" />
+        <altmember cref="T:System.Windows.Forms.DataGridColumnStyle" />
+        <altmember cref="T:System.Windows.Forms.GridColumnStylesCollection" />
+        <altmember cref="T:System.Data.DataColumn" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -187,6 +201,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataColumn.AllowDBNull" />
+        <altmember cref="P:System.Windows.Forms.DataGridBoolColumn.NullValue" />
+        <altmember cref="F:System.DBNull.Value" />
       </Docs>
     </Member>
     <Member MemberName="AllowNullChanged">
@@ -258,6 +275,7 @@
       <Docs>
         <summary>Notifies a column that it must relinquish the focus to the control it is hosting.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.ConcedeFocus" />
       </Docs>
     </Member>
     <Member MemberName="Edit">
@@ -333,6 +351,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The <see cref="P:System.Windows.Forms.DataGridBoolColumn.AllowNull" /> property is set to <see langword="false" />.</exception>
+        <altmember cref="P:System.Windows.Forms.DataGridBoolColumn.AllowNull" />
+        <altmember cref="P:System.Windows.Forms.DataGridBoolColumn.NullValue" />
       </Docs>
     </Member>
     <Member MemberName="FalseValue">
@@ -446,6 +466,8 @@
         <summary>Gets the height of a cell in a column.</summary>
         <returns>The height of the column. The default is 16.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridBoolColumn.GetPreferredHeight(System.Drawing.Graphics,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataGridBoolColumn.GetPreferredSize(System.Drawing.Graphics,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetPreferredHeight">
@@ -470,6 +492,8 @@
         <summary>Gets the height used when resizing columns.</summary>
         <returns>The height used to automatically resize cells in a column.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridBoolColumn.GetPreferredSize(System.Drawing.Graphics,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataGridBoolColumn.GetMinimumHeight" />
       </Docs>
     </Member>
     <Member MemberName="GetPreferredSize">
@@ -501,6 +525,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridColumnStyle" />
+        <altmember cref="T:System.Windows.Forms.DataGrid" />
+        <altmember cref="M:System.Windows.Forms.DataGridBoolColumn.GetMinimumHeight" />
+        <altmember cref="M:System.Windows.Forms.DataGridBoolColumn.GetPreferredHeight(System.Drawing.Graphics,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="NullValue">
@@ -544,6 +572,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridBoolColumn.AllowNull" />
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -647,6 +676,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridBoolColumn.Edit(System.Windows.Forms.CurrencyManager,System.Int32,System.Drawing.Rectangle,System.Boolean,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="SetColumnValueAtRow">
@@ -714,6 +744,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridBoolColumn.FalseValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridBoolColumn.NullValue" />
       </Docs>
     </Member>
     <Member MemberName="TrueValueChanged">
@@ -749,5 +781,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Paint">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Paints a column.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridBoolColumn" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

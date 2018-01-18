@@ -9,20 +9,25 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "implementing, wrappers"
-  - "registering properties"
-  - "properties, metadata"
-  - "metadata, for properties"
-  - "custom dependency properties"
-  - "properties, registering"
-  - "wrappers, implementing"
-  - "dependency properties, custom"
+  - "implementing [WPF], wrappers"
+  - "registering properties [WPF]"
+  - "properties [WPF], metadata"
+  - "metadata [WPF], for properties"
+  - "custom dependency properties [WPF]"
+  - "properties [WPF], registering"
+  - "wrappers [WPF], implementing"
+  - "dependency properties [WPF], custom"
 ms.assetid: e6bfcfac-b10d-4f58-9f77-a864c2a2938f
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Custom Dependency Properties
 This topic describes the reasons that [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] application developers and component authors might want to create custom dependency property, and describes the implementation steps as well as some implementation options that can improve performance, usability, or versatility of the property.  
@@ -138,7 +143,7 @@ This topic describes the reasons that [!INCLUDE[TLA#tla_winclient](../../../../i
   
 -   By default, dependency properties support data binding. You can deliberately disable data binding, for cases where there is no realistic scenario for data binding, or where performance in data binding for a large object is recognized as a problem.  
   
--   By default, data binding <xref:System.Windows.Data.Binding.Mode%2A> for dependency properties defaults to <xref:System.Windows.Data.BindingMode.OneWay>. You can always change the binding to be <xref:System.Windows.Data.BindingMode.TwoWay> per binding instance; for details, see [Specify the Direction of the Binding](../../../../docs/framework/wpf/data/how-to-specify-the-direction-of-the-binding.md). But as the dependency property author, you can choose to make the property use <xref:System.Windows.Data.BindingMode.TwoWay> binding mode by default. An example of an existing dependency property is <xref:System.Windows.Controls.MenuItem.IsSubmenuOpen%2A?displayProperty=fullName>; the scenario for this property is that the <xref:System.Windows.Controls.MenuItem.IsSubmenuOpen%2A> setting logic and the compositing of <xref:System.Windows.Controls.MenuItem> interact with the default theme style. The <xref:System.Windows.Controls.MenuItem.IsSubmenuOpen%2A> property logic uses data binding natively to maintain the state of the property in accordance to other state properties and method calls. Another example property that binds <xref:System.Windows.Data.BindingMode.TwoWay> by default is <xref:System.Windows.Controls.TextBox.Text%2A?displayProperty=fullName>.  
+-   By default, data binding <xref:System.Windows.Data.Binding.Mode%2A> for dependency properties defaults to <xref:System.Windows.Data.BindingMode.OneWay>. You can always change the binding to be <xref:System.Windows.Data.BindingMode.TwoWay> per binding instance; for details, see [Specify the Direction of the Binding](../../../../docs/framework/wpf/data/how-to-specify-the-direction-of-the-binding.md). But as the dependency property author, you can choose to make the property use <xref:System.Windows.Data.BindingMode.TwoWay> binding mode by default. An example of an existing dependency property is <xref:System.Windows.Controls.MenuItem.IsSubmenuOpen%2A?displayProperty=nameWithType>; the scenario for this property is that the <xref:System.Windows.Controls.MenuItem.IsSubmenuOpen%2A> setting logic and the compositing of <xref:System.Windows.Controls.MenuItem> interact with the default theme style. The <xref:System.Windows.Controls.MenuItem.IsSubmenuOpen%2A> property logic uses data binding natively to maintain the state of the property in accordance to other state properties and method calls. Another example property that binds <xref:System.Windows.Data.BindingMode.TwoWay> by default is <xref:System.Windows.Controls.TextBox.Text%2A?displayProperty=nameWithType>.  
   
 -   You can also enable property inheritance in a custom dependency property by setting the <xref:System.Windows.FrameworkPropertyMetadataOptions.Inherits> flag. Property inheritance is useful for a scenario where parent elements and child elements have a property in common, and it makes sense for the child elements to have that particular property value set to the same value as the parent set it. An example inheritable property is <xref:System.Windows.FrameworkElement.DataContext%2A>, which is used for binding operations to enable the important master-detail scenario for data presentation. By making <xref:System.Windows.FrameworkElement.DataContext%2A> inheritable, any child elements inherit that data context also. Because of property value inheritance, you can specify a data context at the page or application root, and do not need to respecify it for bindings in all possible child elements. <xref:System.Windows.FrameworkElement.DataContext%2A> is also a good example to illustrate that inheritance overrides the default value, but it can always be set locally on any particular child element; for details, see [Use the Master-Detail Pattern with Hierarchical Data](../../../../docs/framework/wpf/data/how-to-use-the-master-detail-pattern-with-hierarchical-data.md). Property value inheritance does have a possible performance cost, and thus should be used sparingly; for details, see [Property Value Inheritance](../../../../docs/framework/wpf/advanced/property-value-inheritance.md).  
   
@@ -161,10 +166,10 @@ This topic describes the reasons that [!INCLUDE[TLA#tla_winclient](../../../../i
  There is a general principle in managed code programming (often enforced by code analysis tools such as FxCop) that class constructors should not call virtual methods. This is because constructors can be called as base initialization of a derived class constructor, and entering the virtual method through the constructor might occur at an incomplete initialization state of the object instance being constructed. When you derive from any class that already derives from <xref:System.Windows.DependencyObject>, you should be aware that the property system itself calls and exposes virtual methods internally. These virtual methods are part of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property system services. Overriding the methods enables derived classes to participate in value determination. To avoid potential issues with runtime initialization, you should not set dependency property values within constructors of classes, unless you follow a very specific constructor pattern. For details, see [Safe Constructor Patterns for DependencyObjects](../../../../docs/framework/wpf/advanced/safe-constructor-patterns-for-dependencyobjects.md).  
   
 ## See Also  
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)   
- [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md)   
- [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md)   
- [Collection-Type Dependency Properties](../../../../docs/framework/wpf/advanced/collection-type-dependency-properties.md)   
- [Dependency Property Security](../../../../docs/framework/wpf/advanced/dependency-property-security.md)   
- [XAML Loading and Dependency Properties](../../../../docs/framework/wpf/advanced/xaml-loading-and-dependency-properties.md)   
+ [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
+ [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md)  
+ [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md)  
+ [Collection-Type Dependency Properties](../../../../docs/framework/wpf/advanced/collection-type-dependency-properties.md)  
+ [Dependency Property Security](../../../../docs/framework/wpf/advanced/dependency-property-security.md)  
+ [XAML Loading and Dependency Properties](../../../../docs/framework/wpf/advanced/xaml-loading-and-dependency-properties.md)  
  [Safe Constructor Patterns for DependencyObjects](../../../../docs/framework/wpf/advanced/safe-constructor-patterns-for-dependencyobjects.md)

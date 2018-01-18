@@ -10,10 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "tracing [.NET Framework], trace switches"
   - "trace switches, about trace switches"
@@ -26,6 +24,8 @@ caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Trace Switches
 Trace switches enable you to enable, disable, and filter tracing output. They are objects that exist in your code and can be configured externally through the .config file. There are three types of trace switches provided in the .NET Framework: the <xref:System.Diagnostics.BooleanSwitch> class, the <xref:System.Diagnostics.TraceSwitch> class, and the <xref:System.Diagnostics.SourceSwitch> class. The <xref:System.Diagnostics.BooleanSwitch> class acts as a toggle switch, either enabling or disabling a variety of trace statements. The <xref:System.Diagnostics.TraceSwitch> and <xref:System.Diagnostics.SourceSwitch> classes allow you to enable a trace switch for a particular tracing level so that the <xref:System.Diagnostics.Trace> or <xref:System.Diagnostics.TraceSource> messages specified for that level and all levels below it appear. If you disable the switch, the trace messages will not appear. All these classes derive from the abstract (**MustInherit**) class **Switch**, as should any user-developed switches.  
@@ -39,13 +39,13 @@ Trace switches enable you to enable, disable, and filter tracing output. They ar
 ## Trace Levels  
  When you use **TraceSwitch**, there are additional considerations. A **TraceSwitch** object has four properties that return **Boolean** values indicating whether the switch is set to at least a particular level:  
   
--   <xref:System.Diagnostics.TraceSwitch.TraceError%2A?displayProperty=fullName>  
+-   <xref:System.Diagnostics.TraceSwitch.TraceError%2A?displayProperty=nameWithType>  
   
--   <xref:System.Diagnostics.TraceSwitch.TraceWarning%2A?displayProperty=fullName>  
+-   <xref:System.Diagnostics.TraceSwitch.TraceWarning%2A?displayProperty=nameWithType>  
   
--   <xref:System.Diagnostics.TraceSwitch.TraceInfo%2A?displayProperty=fullName>  
+-   <xref:System.Diagnostics.TraceSwitch.TraceInfo%2A?displayProperty=nameWithType>  
   
--   <xref:System.Diagnostics.TraceSwitch.TraceVerbose%2A?displayProperty=fullName>  
+-   <xref:System.Diagnostics.TraceSwitch.TraceVerbose%2A?displayProperty=nameWithType>  
   
  Levels allow you to limit the amount of tracing information you receive to only that information needed to solve a problem. You specify the level of detail you want in your tracing output by setting and configuring trace switches to the appropriate trace level. You can receive error messages, warning messages, informational messages, verbose tracing messages, or no message at all.  
   
@@ -90,6 +90,6 @@ MessageBox.Show(myTraceSwitch.TraceVerbose.ToString());
  In addition to providing **BooleanSwitch** and **TraceSwitch**, you can define your own switches by inheriting from the **Switch** class and overriding the base class methods with customized methods. For more information about creating developer-defined switches, see the <xref:System.Diagnostics.Switch> class in the .NET Framework reference.  
   
 ## See Also  
- [Trace Listeners](../../../docs/framework/debug-trace-profile/trace-listeners.md)   
- [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)   
+ [Trace Listeners](../../../docs/framework/debug-trace-profile/trace-listeners.md)  
+ [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)  
  [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)

@@ -12,6 +12,21 @@
   <Docs>
     <summary>Specifies the type of navigation that is taking place <see cref="T:System.Windows.Navigation.NavigationMode" /> is used by the <see cref="P:System.Windows.Navigation.NavigatingCancelEventArgs.NavigationMode" /> property.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="M:System.Windows.Navigation.NavigationService.Navigate(System.Uri)" />
+    <altmember cref="M:System.Windows.Navigation.NavigationWindow.Navigate(System.Uri)" />
+    <altmember cref="M:System.Windows.Controls.Frame.Navigate(System.Uri)" />
+    <altmember cref="P:System.Windows.Navigation.NavigationService.Source" />
+    <altmember cref="P:System.Windows.Navigation.NavigationWindow.Source" />
+    <altmember cref="P:System.Windows.Controls.Frame.Source" />
+    <altmember cref="M:System.Windows.Navigation.NavigationService.GoBack" />
+    <altmember cref="M:System.Windows.Navigation.NavigationWindow.GoBack" />
+    <altmember cref="M:System.Windows.Controls.Frame.GoBack" />
+    <altmember cref="M:System.Windows.Navigation.NavigationService.GoForward" />
+    <altmember cref="M:System.Windows.Navigation.NavigationWindow.GoForward" />
+    <altmember cref="M:System.Windows.Controls.Frame.GoForward" />
+    <altmember cref="M:System.Windows.Navigation.NavigationService.Refresh" />
+    <altmember cref="M:System.Windows.Navigation.NavigationWindow.Refresh" />
+    <altmember cref="M:System.Windows.Controls.Frame.Refresh" />
   </Docs>
   <Members>
     <Member MemberName="Back">

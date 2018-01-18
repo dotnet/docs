@@ -188,7 +188,7 @@ The following code example demonstrates sending an e-mail message by using the <
   
  If `displayName` contains non-ASCII characters, the iso-8859-1 character set is used for the `displayName` encoding. Encoding non-ASCII characters is discussed in RFC 1522, which is available at [http://www.ietf.org](http://www.ietf.org).  
   
- If `address` contains a display name, and `displayName` is not `null` and is not equal to <xref:System.String?displayProperty=fullName>, `displayName` overrides the value specified in `address`.  
+ If `address` contains a display name, and `displayName` is not `null` and is not equal to <xref:System.String.Empty?displayProperty=nameWithType>, `displayName` overrides the value specified in `address`.  
   
    
   
@@ -251,7 +251,7 @@ The following code example demonstrates sending an e-mail message by using the <
 ## Remarks  
  Leading and trailing white space in the display name is preserved.  
   
- If `address` contains a display name, and `displayName` is not `null` and is not equal to <xref:System.String?displayProperty=fullName>, `displayName` overrides the value specified in `address`.  
+ If `address` contains a display name, and `displayName` is not `null` and is not equal to <xref:System.String.Empty?displayProperty=nameWithType>, `displayName` overrides the value specified in `address`.  
   
  The <xref:System.Net.Mail.MailAddress.%23ctor%2A> method does not check if the `displayName` parameter is valid. This method removes surrounding quotes not displayed by the <xref:System.Net.Mail.MailAddress.DisplayName%2A> property. Quotes will be added before transmission, except where <xref:System.Text.Encoding.ASCII%2A> or <xref:System.Text.Encoding.Unicode%2A> is specified in the `displayNameEncoding` parameter. The encoding specified in the `displayNameEncoding` parameter will be applied to the <xref:System.Net.Mail.MailAddress.DisplayName%2A> property before transmission <xref:System.Text.Encoding.ASCII%2A> or <xref:System.Text.Encoding.Unicode%2A> is specified in the `displayNameEncoding` parameter. <xref:System.Text.Encoding.UTF8%2A> is the default encoding if none is specified.  
   
@@ -512,11 +512,11 @@ The following code example demonstrates sending an e-mail message by using the <
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this method is not necessarily identical to the string specified when the instance was created. If the <xref:System.Net.Mail.MailAddress.DisplayName%2A> property is not `null` and not equal to <xref:System.String.Empty?displayProperty=fullName> (""), <xref:System.Net.Mail.MailAddress.ToString%2A> returns a string composed using the following syntax:  
+ The string returned by this method is not necessarily identical to the string specified when the instance was created. If the <xref:System.Net.Mail.MailAddress.DisplayName%2A> property is not `null` and not equal to <xref:System.String.Empty?displayProperty=nameWithType> (""), <xref:System.Net.Mail.MailAddress.ToString%2A> returns a string composed using the following syntax:  
   
  <xref:System.Net.Mail.MailAddress.DisplayName%2A> \<<xref:System.Net.Mail.MailAddress.User%2A>@<xref:System.Net.Mail.MailAddress.Host%2A>>  
   
- If <xref:System.Net.Mail.MailAddress.DisplayName%2A> is `null` or is equal to <xref:System.String.Empty?displayProperty=fullName>, <xref:System.Net.Mail.MailAddress.ToString%2A> returns the value of the <xref:System.Net.Mail.MailAddress.Address%2A> property.  
+ If <xref:System.Net.Mail.MailAddress.DisplayName%2A> is `null` or is equal to <xref:System.String.Empty?displayProperty=nameWithType>, <xref:System.Net.Mail.MailAddress.ToString%2A> returns the value of the <xref:System.Net.Mail.MailAddress.Address%2A> property.  
   
    
   
@@ -572,5 +572,15 @@ The following code example demonstrates sending an e-mail message by using the <
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.MailAddress" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

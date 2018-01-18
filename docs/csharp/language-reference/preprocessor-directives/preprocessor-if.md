@@ -7,28 +7,12 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "#if"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "#if directive [C#]"
 ms.assetid: 48cabbff-ca82-491f-a56a-eeccd528c7c2
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # #if (C# Reference)
 
@@ -85,6 +69,6 @@ public class MyClass
 **DEBUG and MYTEST are defined**
 
 ## See also
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)  

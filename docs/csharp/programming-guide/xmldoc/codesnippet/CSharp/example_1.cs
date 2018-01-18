@@ -9,13 +9,13 @@ namespace TestNamespace
     public class TestClass
     {
         /// <summary>
-        /// This sample shows how to specify the <see cref="TestClass"/> constructor as a cref attribute.�
+        /// This sample shows how to specify the <see cref="TestClass"/> constructor as a cref attribute.
         /// </summary>
         public TestClass()
         { }
 
         /// <summary>
-        /// This sample shows how to specify the <see cref="TestClass(int)"/> constructor as a cref attribute.�
+        /// This sample shows how to specify the <see cref="TestClass(int)"/> constructor as a cref attribute.
         /// </summary>
         public TestClass(int value)
         { }

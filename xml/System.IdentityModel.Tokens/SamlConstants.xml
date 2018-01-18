@@ -20,6 +20,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Tokens.SamlSecurityToken" />
+    <altmember cref="T:System.IdentityModel.Tokens.SamlAssertion" />
+    <altmember cref="T:System.IdentityModel.Tokens.SamlSubject" />
   </Docs>
   <Members>
     <Member MemberName="EmailName">
@@ -120,6 +123,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IdentityModel.Tokens.SamlConstants.MinorVersionValue" />
       </Docs>
     </Member>
     <Member MemberName="MinorVersionValue">
@@ -140,6 +144,7 @@
   
  The combination of the <see cref="P:System.IdentityModel.Tokens.SamlConstants.MajorVersionValue" /> and <see cref="P:System.IdentityModel.Tokens.SamlConstants.MinorVersionValue" /> properties comprises the version of the SAML specification that <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security tokens conform to.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.IdentityModel.Tokens.SamlConstants.MajorVersionValue" />
       </Docs>
     </Member>
     <Member MemberName="Namespace">

@@ -34,9 +34,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A member of the <xref:System.Globalization.CalendarWeekRule> enumeration is returned by the <xref:System.Globalization.DateTimeFormatInfo.CalendarWeekRule%2A?displayProperty=fullName> property and is used by the culture's current calendar to determine the calendar week rule. The enumeration value is also used as a parameter to the <xref:System.Globalization.Calendar.GetWeekOfYear%2A?displayProperty=fullName> method.  
+ A member of the <xref:System.Globalization.CalendarWeekRule> enumeration is returned by the <xref:System.Globalization.DateTimeFormatInfo.CalendarWeekRule%2A?displayProperty=nameWithType> property and is used by the culture's current calendar to determine the calendar week rule. The enumeration value is also used as a parameter to the <xref:System.Globalization.Calendar.GetWeekOfYear%2A?displayProperty=nameWithType> method.  
   
- Calendar week rules depend on the <xref:System.DayOfWeek?displayProperty=fullName> value that indicates the first day of the week in addition to depending on a <xref:System.Globalization.CalendarWeekRule> value. The <xref:System.Globalization.DateTimeFormatInfo.FirstDayOfWeek%2A?displayProperty=fullName> property provides the default value for a culture, but any <xref:System.DayOfWeek> value can be specified as the first day of the week in the <xref:System.Globalization.Calendar.GetWeekOfYear%2A?displayProperty=fullName> method.  
+ Calendar week rules depend on the <xref:System.DayOfWeek?displayProperty=nameWithType> value that indicates the first day of the week in addition to depending on a <xref:System.Globalization.CalendarWeekRule> value. The <xref:System.Globalization.DateTimeFormatInfo.FirstDayOfWeek%2A?displayProperty=nameWithType> property provides the default value for a culture, but any <xref:System.DayOfWeek> value can be specified as the first day of the week in the <xref:System.Globalization.Calendar.GetWeekOfYear%2A?displayProperty=nameWithType> method.  
   
  The first week based on the FirstDay value can have one to seven days. The first week based on the FirstFullWeek value always has seven days. The first week based on the FirstFourDayWeek value can have four to seven days.  
   
@@ -73,7 +73,7 @@
 |Jan 8 Fri|Week 2|Week 1|Week 1|  
 |Jan 9 Sat|Week 2|Week 1|Week 1|  
   
- The following example illustrates how the <xref:System.Globalization.CalendarWeekRule.FirstDay> and <xref:System.DayOfWeek?displayProperty=fullName> values are used together to determine how weeks are assigned. In the Gregorian calendar, the first day of the year (January 1) in 2013 falls on a Tuesday. If the designated first day of the week is Sunday, the first Sunday (January 6) is the first day of the first week of the year, and Saturday (January 5) belongs to the fifty-third week of the previous year. Changing the calendar week rule to FirstFourDayWeek defines Tuesday (January 1) as the beginning of the first week of the year, because there are more than four days between Tuesday, January 1, and Sunday, January 6. Using this rule, January 5 belongs to the first week of the year. For 2010, a year in which January 1 falls on a Friday, applying the FirstFourDayWeek rule with <xref:System.DayOfWeek?displayProperty=fullName> as the first day of the week makes Sunday, January 3 the beginning of the first week of the year, because the first week in 2010 that has more than four days is January 3 through 9.  
+ The following example illustrates how the <xref:System.Globalization.CalendarWeekRule.FirstDay> and <xref:System.DayOfWeek?displayProperty=nameWithType> values are used together to determine how weeks are assigned. In the Gregorian calendar, the first day of the year (January 1) in 2013 falls on a Tuesday. If the designated first day of the week is Sunday, the first Sunday (January 6) is the first day of the first week of the year, and Saturday (January 5) belongs to the fifty-third week of the previous year. Changing the calendar week rule to FirstFourDayWeek defines Tuesday (January 1) as the beginning of the first week of the year, because there are more than four days between Tuesday, January 1, and Sunday, January 6. Using this rule, January 5 belongs to the first week of the year. For 2010, a year in which January 1 falls on a Friday, applying the FirstFourDayWeek rule with <xref:System.DayOfWeek?displayProperty=nameWithType> as the first day of the week makes Sunday, January 3 the beginning of the first week of the year, because the first week in 2010 that has more than four days is January 3 through 9.  
   
  [!code-csharp[System.Globalization.CalendarWeekRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendarweekrule/cs/calendarweekruleex.cs#1)]
  [!code-vb[System.Globalization.CalendarWeekRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendarweekrule/vb/calendarweekruleex.vb#1)]  
@@ -81,10 +81,12 @@
 > [!NOTE]
 >  This does not map exactly to ISO 8601. The differences are discussed in the blog entry [ISO 8601 Week of Year format in Microsoft .Net](http://go.microsoft.com/fwlink/?LinkId=160851).  
   
- Each <xref:System.Globalization.CultureInfo> object supports a set of calendars. The <xref:System.Globalization.CultureInfo.Calendar%2A> property returns the default calendar for the culture, and the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A> property returns an array containing all the calendars supported by the culture. To change the calendar used by a <xref:System.Globalization.CultureInfo>, the application should set the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> to a new <xref:System.Globalization.CalendarWeekRule.FirstFourDayWeek?displayProperty=fullName>.  
+ Each <xref:System.Globalization.CultureInfo> object supports a set of calendars. The <xref:System.Globalization.CultureInfo.Calendar%2A> property returns the default calendar for the culture, and the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A> property returns an array containing all the calendars supported by the culture. To change the calendar used by a <xref:System.Globalization.CultureInfo>, the application should set the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> to a new <xref:System.Globalization.CalendarWeekRule.FirstFourDayWeek?displayProperty=nameWithType>.  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Globalization.CultureInfo.Calendar" />
+    <altmember cref="P:System.Globalization.CultureInfo.OptionalCalendars" />
   </Docs>
   <Members>
     <Member MemberName="FirstDay">

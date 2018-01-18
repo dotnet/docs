@@ -30,7 +30,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default culture is the culture whose resources are loaded if the appropriate culture-specific resources cannot be found. By default, resources for the default culture are located in the main assembly, and a <xref:System.Resources.MissingManifestResourceException> is thrown if the resource manager tries to retrieve but cannot find a resource for the default culture. However, the .NET Framework will load the resources for an app's default culture from a satellite assembly if the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute specifies a value of <xref:System.Resources.UltimateResourceFallbackLocation?displayProperty=fullName> for the location parameter. When this is the case, the <xref:System.Resources.MissingSatelliteAssemblyException> exception is thrown when the resource manager tries to retrieve a resource of the default culture and the satellite assembly for the culture specified in the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute is missing. Note that the exception is thrown by a resource retrieval method such as <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName> or <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>, and not when the <xref:System.Resources.ResourceManager> object is instantiated.  
+ The default culture is the culture whose resources are loaded if the appropriate culture-specific resources cannot be found. By default, resources for the default culture are located in the main assembly, and a <xref:System.Resources.MissingManifestResourceException> is thrown if the resource manager tries to retrieve but cannot find a resource for the default culture. However, the .NET Framework will load the resources for an app's default culture from a satellite assembly if the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute specifies a value of <xref:System.Resources.UltimateResourceFallbackLocation.Satellite?displayProperty=nameWithType> for the location parameter. When this is the case, the <xref:System.Resources.MissingSatelliteAssemblyException> exception is thrown when the resource manager tries to retrieve a resource of the default culture and the satellite assembly for the culture specified in the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute is missing. Note that the exception is thrown by a resource retrieval method such as <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=nameWithType> or <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>, and not when the <xref:System.Resources.ResourceManager> object is instantiated.  
   
  <xref:System.Resources.MissingSatelliteAssemblyException> uses the HRESULT COR_E_MISSINGSATELLITEASSEMBLY, which has the value 0x80131536.  
   
@@ -90,6 +90,8 @@ HelloWorld2
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Resources.ResourceManager" />
+    <altmember cref="T:System.Resources.MissingManifestResourceException" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -321,5 +323,15 @@ HelloWorld2
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.MissingSatelliteAssemblyException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

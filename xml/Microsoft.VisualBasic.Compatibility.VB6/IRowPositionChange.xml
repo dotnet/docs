@@ -34,7 +34,7 @@
   <Members>
     <Member MemberName="OnRowPositionChange">
       <MemberSignature Language="C#" Value="public int OnRowPositionChange (int dbReason, int eventPhase, int fCantDeny);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 OnRowPositionChange(int32 dbReason, int32 eventPhase, int32 fCantDeny) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 OnRowPositionChange([in]int32 dbReason, [in]int32 eventPhase, [in]int32 fCantDeny) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowPositionChange.OnRowPositionChange(System.Int32,System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

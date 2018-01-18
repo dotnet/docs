@@ -16,6 +16,9 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Threading Objects and Features
 The .NET Framework provides a number of objects that help you create and manage multithreaded applications. Managed threads are represented by the <xref:System.Threading.Thread> class. The <xref:System.Threading.ThreadPool> class provides easy creation and management of multithreaded background tasks. The <xref:System.ComponentModel.BackgroundWorker> class does the same for tasks that interact with the user interface. The <xref:System.Threading.Timer> class executes background tasks at timed intervals.  
@@ -39,7 +42,7 @@ The .NET Framework provides a number of objects that help you create and manage 
  Describes managed event wait handles, which are used to synchronize thread activities by signaling and waiting for signals.  
   
  [Mutexes](../../../docs/standard/threading/mutexes.md)  
- Explains how to use a <xref:System.Threading.Mutex>to synchronize access to an object or to build your own synchronization mechanisms.  
+ Explains how to use a <xref:System.Threading.Mutex> to synchronize access to an object or to build your own synchronization mechanisms.  
   
  [Interlocked Operations](../../../docs/standard/threading/interlocked-operations.md)  
  Explains how to use the <xref:System.Threading.Interlocked> class to increment or decrement a value and store the value in a single atomic operation.  

@@ -51,6 +51,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.IComponent" />
+    <altmember cref="T:System.ComponentModel.IContainer" />
+    <altmember cref="T:System.ComponentModel.Container" />
+    <altmember cref="T:System.ComponentModel.ISite" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -113,6 +117,10 @@
         <block subset="none" type="overrides">
           <para>If you override this method in a deriving class and change it to return <see langword="false" />, the <see cref="T:System.ComponentModel.EventHandlerList" /> collection returned by the <see cref="P:System.ComponentModel.Component.Events" /> property returns <see langword="null" /> for an event. Events can still be added and removed from the collection, but the collection's <see cref="P:System.ComponentModel.EventHandlerList.Item(System.Object)" /> property will always return <see langword="null" />.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.IComponent" />
+        <altmember cref="T:System.ComponentModel.IContainer" />
+        <altmember cref="T:System.ComponentModel.Container" />
+        <altmember cref="T:System.ComponentModel.ISite" />
       </Docs>
     </Member>
     <Member MemberName="Container">
@@ -155,6 +163,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IContainer" />
+        <altmember cref="T:System.ComponentModel.Container" />
       </Docs>
     </Member>
     <Member MemberName="DesignMode">
@@ -198,6 +208,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IContainer" />
+        <altmember cref="T:System.ComponentModel.Container" />
+        <altmember cref="T:System.ComponentModel.ISite" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -235,6 +248,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IContainer" />
+        <altmember cref="T:System.ComponentModel.Container" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -322,6 +337,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.Component.Dispose" />
+        <altmember cref="T:System.EventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Events">
@@ -356,6 +373,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.EventHandlerList" />
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -430,6 +448,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IContainer" />
+        <altmember cref="T:System.ComponentModel.Container" />
+        <altmember cref="T:System.ComponentModel.ISite" />
+        <altmember cref="T:System.IServiceProvider" />
       </Docs>
     </Member>
     <Member MemberName="Site">
@@ -476,6 +498,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IContainer" />
+        <altmember cref="T:System.ComponentModel.Container" />
+        <altmember cref="T:System.ComponentModel.ISite" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -513,7 +538,20 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IContainer" />
+        <altmember cref="T:System.ComponentModel.Container" />
+        <altmember cref="T:System.ComponentModel.ISite" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.ComponentModel.Component" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

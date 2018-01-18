@@ -288,7 +288,7 @@ protected void LinqDataSource_Updating(object sender,
   
 -   When it is displayed in a data-bound control.  
   
--   When the <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A?displayProperty=fullName> property of the <xref:System.Data.Linq.Mapping.ColumnAttribute?displayProperty=fullName> attribute is set to `Always` or `WhenChanged`.  
+-   When the <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A?displayProperty=nameWithType> property of the <xref:System.Data.Linq.Mapping.ColumnAttribute?displayProperty=nameWithType> attribute is set to `Always` or `WhenChanged`.  
   
  If the <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A> property is set to `Never` and the value is not displayed in a data-bound control, the value is not stored in the Web page. In that case, it cannot be assigned to the <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.OriginalObject%2A> property.  
   
@@ -304,5 +304,14 @@ protected void LinqDataSource_Updating(object sender,
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

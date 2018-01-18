@@ -9,6 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
 applies_to: 
   - "Windows 10"
   - "Windows 8"
@@ -22,14 +24,16 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CLR Profilers and Windows Store Apps
 This topic discusses what you need to think about when writing diagnostic tools that analyze managed code running inside a Windows Store app.  It also provides guidelines to modify your existing development tools so they continue to work when you run them against Windows Store apps.  To understand this information, it’s best if you're  familiar with the Common Language Runtime Profiling API, you’ve already used this API in a diagnostic tool that runs correctly against Windows desktop applications, and you’re now interested in modifying the tool to run correctly against Windows Store apps.  
   
  This topic consists of the following sections:  
   
- [Introduction](#Intro)   
- [Architecture and terminology](#Arch)   
+ [Introduction](#Intro)  
+ [Architecture and terminology](#Arch)  
  [Windows RT devices](#RT)  
 [Consuming Windows Runtime APIs](#Consuming)  
 [Loading the Profiler DLL](#Loading)  
@@ -266,7 +270,7 @@ pkgDebugSettings.EnableDebugging(packgeFullName, null /* debuggerCommandLine */,
   
 <a name="APIs"></a>   
 ### Stick to the Windows Store app APIs  
- As you browse the Windows API in the MSDN library, you’ll notice that every API is documented as being applicable to desktop apps, Windows Store apps, or both.  For example, the **Requirements** section of the documentation for the [InitializeCriticalSectionAndSpinCount](https://msdn.microsoft.com/library/windows/desktop/ms683476\(v=vs.85\).aspx) function indicates that the function applies to desktop apps only. In contrast, the [InitializeCriticalSectionEx](https://msdn.microsoft.com/library/windows/desktop/ms683477\(v=vs.85\).aspx) function is available for both desktop apps and Windows Store apps.  
+ As you browse the Windows API, you’ll notice that every API is documented as being applicable to desktop apps, Windows Store apps, or both.  For example, the **Requirements** section of the documentation for the [InitializeCriticalSectionAndSpinCount](https://msdn.microsoft.com/library/windows/desktop/ms683476\(v=vs.85\).aspx) function indicates that the function applies to desktop apps only. In contrast, the [InitializeCriticalSectionEx](https://msdn.microsoft.com/library/windows/desktop/ms683477\(v=vs.85\).aspx) function is available for both desktop apps and Windows Store apps.  
   
  When developing your Profiler DLL, treat it as if it’s a Windows Store app and only use APIs that are documented as available to Windows Store apps.  Analyze your dependencies (for example, you can run `link /dump /imports` against your Profiler DLL to audit), and then search the docs to see which of your dependencies are ok and which aren’t.  In most cases, your violations can be fixed by simply replacing them with a newer form of the API that is documented as safe (for example, replacing [InitializeCriticalSectionAndSpinCount](https://msdn.microsoft.com/library/windows/desktop/ms683476\(v=vs.85\).aspx) with [InitializeCriticalSectionEx](https://msdn.microsoft.com/library/windows/desktop/ms683477\(v=vs.85\).aspx)).  
   
@@ -403,7 +407,7 @@ GetAppContainerFolderPath(acSid, out acDir);
   
 <a name="WeakTable"></a>   
 ### ConditionalWeakTableReferences  
- Starting with the .NET Framework 4.5, there is a new GC callback, [ConditionalWeakTableElementReferences](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback5-conditionalweaktableelementreferences-method.md), which gives the profiler more complete information about *dependent handles*. These handles effectively add a reference from a source object to a target object for the purpose of GC lifetime management.  Dependent handles are nothing new, and developers who program in managed code have been able to create their own dependent handles by using the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602?displayProperty=fullName> class even before Windows 8 and the .NET Framework 4.5.  
+ Starting with the .NET Framework 4.5, there is a new GC callback, [ConditionalWeakTableElementReferences](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback5-conditionalweaktableelementreferences-method.md), which gives the profiler more complete information about *dependent handles*. These handles effectively add a reference from a source object to a target object for the purpose of GC lifetime management.  Dependent handles are nothing new, and developers who program in managed code have been able to create their own dependent handles by using the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602?displayProperty=nameWithType> class even before Windows 8 and the .NET Framework 4.5.  
   
  However, managed XAML Windows Store apps now make heavy use of dependent handles.  In particular, the CLR uses them to aid with managing reference cycles between managed objects and unmanaged Windows Runtime objects.  This means that it’s more important now than ever for memory profilers to be informed of these dependent handles so that they can be visualized along with the rest of the edges in the heap graph.  Your Profiler DLL should use [RootReferences2](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-rootreferences2-method.md), [ObjectReferences](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-objectreferences-method.md), and [ConditionalWeakTableElementReferences](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback5-conditionalweaktableelementreferences-method.md) together to form a complete view of the heap graph.  
   

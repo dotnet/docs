@@ -31,7 +31,7 @@
   
  The <xref:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel> instance accepts messages serialized in either binary or SOAP format.  
   
- A <xref:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel> object has associated configuration properties that can be set at run time either in a configuration file (by invoking the static <xref:System.Runtime.Remoting.RemotingConfiguration.Configure%2A?displayProperty=fullName> method) or programmatically (by passing an <xref:System.Collections.IDictionary> collection to the <xref:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.%23ctor%2A> constructor). For a list of these configuration properties, see the documentation for the <xref:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.%23ctor%2A> constructor.  
+ A <xref:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel> object has associated configuration properties that can be set at run time either in a configuration file (by invoking the static <xref:System.Runtime.Remoting.RemotingConfiguration.Configure%2A?displayProperty=nameWithType> method) or programmatically (by passing an <xref:System.Collections.IDictionary> collection to the <xref:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.%23ctor%2A> constructor). For a list of these configuration properties, see the documentation for the <xref:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.%23ctor%2A> constructor.  
   
 > [!CAUTION]
 >  When setting the `exclusiveAddressUse` property to `false` in the `properties` argument, several <xref:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel> objects can be registered for the same named pipe. In such a case requests can go to any of the channels registered. This setting is considered secure only if ALCs are also used.  
@@ -250,7 +250,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although returned as an instance of the <xref:System.Object?displayProperty=fullName> class, the value of this property can be cast to an instance of <xref:System.Runtime.Remoting.Channels.ChannelDataStore> that describes the channel to which the <xref:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel> object listens.  
+ Although returned as an instance of the <xref:System.Object?displayProperty=nameWithType> class, the value of this property can be cast to an instance of <xref:System.Runtime.Remoting.Channels.ChannelDataStore> that describes the channel to which the <xref:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel> object listens.  
   
    
   
@@ -387,7 +387,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used by the <xref:System.Runtime.Remoting.Channels.ChannelServices.GetUrlsForObject%2A?displayProperty=fullName> method.  
+ This method is used by the <xref:System.Runtime.Remoting.Channels.ChannelServices.GetUrlsForObject%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -421,7 +421,7 @@
     </Member>
     <Member MemberName="Parse">
       <MemberSignature Language="C#" Value="public string Parse (string url, out string objectURI);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Parse(string url, string objectURI) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Parse(string url, [out] string&amp; objectURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.Parse(System.String,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -521,5 +521,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel" /> class</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

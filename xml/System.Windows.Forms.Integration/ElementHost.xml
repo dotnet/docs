@@ -54,6 +54,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
+    <altmember cref="T:System.Windows.UIElement" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,6 +72,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Integration.ElementHost" /> class.</summary>
         <remarks>To be added.</remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.Demand">for full trust for all callers higher in the call stack. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="AutoSize">
@@ -97,6 +100,7 @@
         <value>
           <see langword="true" /> if the control adjusts its size to closely fit its contents; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="BackColorTransparent">
@@ -130,6 +134,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="BindingContextChanged">
@@ -158,10 +163,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.BindingContextChanged> event, see <xref:System.Windows.Forms.Control.BindingContextChanged?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.BindingContextChanged> event, see <xref:System.Windows.Forms.Control.BindingContextChanged?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="CanEnableIme">
@@ -222,6 +228,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="ChildChanged">
@@ -239,6 +246,7 @@
       <Docs>
         <summary>Occurs when the <see cref="P:System.Windows.Forms.Integration.WindowsFormsHost.Child" /> property is set.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -267,10 +275,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.Click> event, see <xref:System.Windows.Forms.Control.Click?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.Click> event, see <xref:System.Windows.Forms.Control.Click?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="ClientSizeChanged">
@@ -299,10 +308,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.ClientSizeChanged> event, see <xref:System.Windows.Forms.Control.ClientSizeChanged?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.ClientSizeChanged> event, see <xref:System.Windows.Forms.Control.ClientSizeChanged?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="ControlAdded">
@@ -331,10 +341,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.ControlAdded> event, see <xref:System.Windows.Forms.Control.ControlAdded?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.ControlAdded> event, see <xref:System.Windows.Forms.Control.ControlAdded?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="ControlRemoved">
@@ -363,10 +374,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.ControlRemoved> event, see <xref:System.Windows.Forms.Control.ControlRemoved?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.ControlRemoved> event, see <xref:System.Windows.Forms.Control.ControlRemoved?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="CursorChanged">
@@ -395,10 +407,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a more information about the <xref:System.Windows.Forms.Integration.ElementHost.CursorChanged> event, see <xref:System.Windows.Forms.Control.CursorChanged?displayProperty=fullName>.  
+ For a more information about the <xref:System.Windows.Forms.Integration.ElementHost.CursorChanged> event, see <xref:System.Windows.Forms.Control.CursorChanged?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
@@ -420,10 +433,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.DefaultSize%2A> property, see <xref:System.Windows.Forms.Control.DefaultSize%2A?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.DefaultSize%2A> property, see <xref:System.Windows.Forms.Control.DefaultSize%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -461,6 +475,7 @@
   
  For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="DoubleClick">
@@ -489,10 +504,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.DoubleClick> event, see <xref:System.Windows.Forms.Control.DoubleClick?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.DoubleClick> event, see <xref:System.Windows.Forms.Control.DoubleClick?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="DragDrop">
@@ -521,10 +537,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.DragDrop> event, see <xref:System.Windows.Forms.Control.DragDrop?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.DragDrop> event, see <xref:System.Windows.Forms.Control.DragDrop?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="DragEnter">
@@ -553,10 +570,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.DragEnter> event, see <xref:System.Windows.Forms.Control.DragEnter?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.DragEnter> event, see <xref:System.Windows.Forms.Control.DragEnter?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="DragLeave">
@@ -589,6 +607,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="DragOver">
@@ -617,10 +636,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.DragOver> event, see <xref:System.Windows.Forms.Control.DragOver?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.DragOver> event, see <xref:System.Windows.Forms.Control.DragOver?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="EnableModelessKeyboardInterop">
@@ -650,6 +670,8 @@
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.Demand">for full trust for all callers higher in the call stack. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.Windows.Forms.Integration.WindowsFormsHost.EnableWindowsFormsInterop" />
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="Enter">
@@ -678,10 +700,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.Enter> event, see <xref:System.Windows.Forms.Control.Enter?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.Enter> event, see <xref:System.Windows.Forms.Control.Enter?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="Focused">
@@ -729,10 +752,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.FontChanged> event, see <xref:System.Windows.Forms.Control.FontChanged?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.FontChanged> event, see <xref:System.Windows.Forms.Control.FontChanged?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="ForeColorChanged">
@@ -761,10 +785,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.ForeColorChanged> event, see <xref:System.Windows.Forms.Control.ForeColorChanged?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.ForeColorChanged> event, see <xref:System.Windows.Forms.Control.ForeColorChanged?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="GetPreferredSize">
@@ -787,6 +812,7 @@
         <summary>Overrides the base class implementation <see cref="M:System.Windows.Forms.Control.GetPreferredSize(System.Drawing.Size)" /> to provide correct layout behavior for the hosted [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] elements.</summary>
         <returns>The <see cref="T:System.Drawing.Size" /> computed by the <see cref="T:System.Windows.Forms.Integration.ElementHost" /> control, given the constraints specified by <paramref name="proposedSize" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="GiveFeedback">
@@ -815,10 +841,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.GiveFeedback> event, see <xref:System.Windows.Forms.Control.GiveFeedback?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.GiveFeedback> event, see <xref:System.Windows.Forms.Control.GiveFeedback?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="GotFocus">
@@ -847,10 +874,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.GotFocus> event, see <xref:System.Windows.Forms.Control.GotFocus?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.GotFocus> event, see <xref:System.Windows.Forms.Control.GotFocus?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="HostContainer">
@@ -884,6 +912,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="ImeModeBase">
@@ -930,10 +959,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.Invalidated> event, see <xref:System.Windows.Forms.Control.Invalidated?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.Invalidated> event, see <xref:System.Windows.Forms.Control.Invalidated?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="IsInputChar">
@@ -964,6 +994,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="KeyDown">
@@ -992,10 +1023,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.KeyDown> event, see <xref:System.Windows.Forms.Control.KeyDown?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.KeyDown> event, see <xref:System.Windows.Forms.Control.KeyDown?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="KeyPress">
@@ -1024,10 +1056,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.KeyPress> event, see <xref:System.Windows.Forms.Control.KeyPress?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.KeyPress> event, see <xref:System.Windows.Forms.Control.KeyPress?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="KeyUp">
@@ -1056,10 +1089,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.KeyUp> event, see <xref:System.Windows.Forms.Control.KeyUp?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.KeyUp> event, see <xref:System.Windows.Forms.Control.KeyUp?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="Layout">
@@ -1088,10 +1122,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.Layout> event, see <xref:System.Windows.Forms.Control.Layout?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.Layout> event, see <xref:System.Windows.Forms.Control.Layout?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="Leave">
@@ -1120,10 +1155,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.Leave> event, see <xref:System.Windows.Forms.Control.Leave?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.Leave> event, see <xref:System.Windows.Forms.Control.Leave?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="LostFocus">
@@ -1152,10 +1188,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.LostFocus> event, see <xref:System.Windows.Forms.Control.LostFocus?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.LostFocus> event, see <xref:System.Windows.Forms.Control.LostFocus?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="MouseCaptureChanged">
@@ -1184,10 +1221,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseCaptureChanged> event, see <xref:System.Windows.Forms.Control.MouseCaptureChanged?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseCaptureChanged> event, see <xref:System.Windows.Forms.Control.MouseCaptureChanged?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="MouseClick">
@@ -1216,10 +1254,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseClick> event, see <xref:System.Windows.Forms.Control.MouseClick?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseClick> event, see <xref:System.Windows.Forms.Control.MouseClick?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="MouseDoubleClick">
@@ -1248,10 +1287,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseDoubleClick> event, see <xref:System.Windows.Forms.Control.MouseDoubleClick?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseDoubleClick> event, see <xref:System.Windows.Forms.Control.MouseDoubleClick?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="MouseDown">
@@ -1280,10 +1320,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseDown> event, see <xref:System.Windows.Forms.Control.MouseDown?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseDown> event, see <xref:System.Windows.Forms.Control.MouseDown?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="MouseEnter">
@@ -1312,10 +1353,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseEnter> event, see <xref:System.Windows.Forms.Control.MouseEnter?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseEnter> event, see <xref:System.Windows.Forms.Control.MouseEnter?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="MouseHover">
@@ -1344,10 +1386,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseHover> event, see <xref:System.Windows.Forms.Control.MouseHover?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseHover> event, see <xref:System.Windows.Forms.Control.MouseHover?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="MouseLeave">
@@ -1376,10 +1419,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseLeave> event, see <xref:System.Windows.Forms.Control.MouseLeave?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseLeave> event, see <xref:System.Windows.Forms.Control.MouseLeave?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="MouseMove">
@@ -1408,10 +1452,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseMove> event, see <xref:System.Windows.Forms.Control.MouseMove?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseMove> event, see <xref:System.Windows.Forms.Control.MouseMove?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="MouseUp">
@@ -1440,10 +1485,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseUp> event, see <xref:System.Windows.Forms.Control.MouseUp?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseUp> event, see <xref:System.Windows.Forms.Control.MouseUp?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="MouseWheel">
@@ -1472,10 +1518,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseWheel> event, see <xref:System.Windows.Forms.Control.MouseWheel?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.MouseWheel> event, see <xref:System.Windows.Forms.Control.MouseWheel?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="OnEnabledChanged">
@@ -1533,10 +1580,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.OnGotFocus%2A> method, see <xref:System.Windows.Forms.Control.OnGotFocus%2A?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.OnGotFocus%2A> method, see <xref:System.Windows.Forms.Control.OnGotFocus%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="OnHandleCreated">
@@ -1561,10 +1609,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.OnHandleCreated%2A> method, see <xref:System.Windows.Forms.Control.OnHandleCreated%2A?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.OnHandleCreated%2A> method, see <xref:System.Windows.Forms.Control.OnHandleCreated%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="OnLeave">
@@ -1589,10 +1638,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.OnLeave%2A> method, see <xref:System.Windows.Forms.Control.OnLeave%2A?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.OnLeave%2A> method, see <xref:System.Windows.Forms.Control.OnLeave%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="OnPaint">
@@ -1632,6 +1682,7 @@
         <block subset="none" type="overrides">
           <para>Do not override this implementation of the <see cref="M:System.Windows.Forms.Integration.ElementHost.OnPaint(System.Windows.Forms.PaintEventArgs)" /> method. The <see cref="T:System.Windows.Forms.Integration.ElementHost" /> control manages the painting of its hosted element, and overriding <see cref="M:System.Windows.Forms.Integration.ElementHost.OnPaint(System.Windows.Forms.PaintEventArgs)" /> will cause unpredictable results.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="OnPaintBackground">
@@ -1670,6 +1721,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="OnPrint">
@@ -1691,6 +1743,7 @@
         <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
         <summary>Renders the control using the provided <see cref="T:System.Drawing.Graphics" /> object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="OnPropertyChanged">
@@ -1715,6 +1768,7 @@
         <summary>Notifies the <see cref="P:System.Windows.Forms.Integration.ElementHost.PropertyMap" /> that a property has changed.</summary>
         <remarks>To be added.</remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="OnVisibleChanged">
@@ -1739,10 +1793,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.OnVisibleChanged%2A> method, see <xref:System.Windows.Forms.Control.OnVisibleChanged%2A?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.OnVisibleChanged%2A> method, see <xref:System.Windows.Forms.Control.OnVisibleChanged%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="PaddingChanged">
@@ -1771,10 +1826,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.PaddingChanged> event, see <xref:System.Windows.Forms.Control.PaddingChanged?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.PaddingChanged> event, see <xref:System.Windows.Forms.Control.PaddingChanged?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -1807,6 +1863,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Paint" />
+        <altmember cref="M:System.Windows.Forms.Integration.ElementHost.OnPaint(System.Windows.Forms.PaintEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PreviewKeyDown">
@@ -1835,15 +1893,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.PreviewKeyDown> event, see <xref:System.Windows.Forms.Control.PreviewKeyDown?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.PreviewKeyDown> event, see <xref:System.Windows.Forms.Control.PreviewKeyDown?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="ProcessCmdKey">
       <MemberSignature Language="C#" Value="protected override bool ProcessCmdKey (ref System.Windows.Forms.Message msg, System.Windows.Forms.Keys keyData);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message msg, valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message&amp; msg, valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.ElementHost.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1872,6 +1931,7 @@
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="ProcessMnemonic">
@@ -1903,6 +1963,7 @@
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="PropertyMap">
@@ -1941,6 +2002,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="QueryContinueDrag">
@@ -1969,10 +2031,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.QueryContinueDrag> event, see <xref:System.Windows.Forms.Control.QueryContinueDrag?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.QueryContinueDrag> event, see <xref:System.Windows.Forms.Control.QueryContinueDrag?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="Resize">
@@ -2001,10 +2064,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.Resize> event, see <xref:System.Windows.Forms.Control.Resize?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.Resize> event, see <xref:System.Windows.Forms.Control.Resize?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="RightToLeftChanged">
@@ -2033,10 +2097,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.RightToLeftChanged> event, see <xref:System.Windows.Forms.Control.RightToLeftChanged?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.RightToLeftChanged> event, see <xref:System.Windows.Forms.Control.RightToLeftChanged?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="ScaleCore">
@@ -2060,6 +2125,7 @@
         <param name="dy">The scaling factor for the y-axis.</param>
         <summary>Scales the parent container and the hosted [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -2096,6 +2162,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.MoveFocus(System.Windows.Input.TraversalRequest)" />
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="SizeChanged">
@@ -2124,10 +2192,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.SizeChanged> event, see <xref:System.Windows.Forms.Control.SizeChanged?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.SizeChanged> event, see <xref:System.Windows.Forms.Control.SizeChanged?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -2156,15 +2225,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.TextChanged> event, see <xref:System.Windows.Forms.Control.TextChanged?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.TextChanged> event, see <xref:System.Windows.Forms.Control.TextChanged?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Integration.WindowsFormsHost" />
       </Docs>
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.ElementHost.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2184,7 +2254,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the <xref:System.Windows.Forms.Integration.ElementHost.WndProc%2A> method, see <xref:System.Windows.Forms.Control.WndProc%2A?displayProperty=fullName>.  
+ For more information about the <xref:System.Windows.Forms.Integration.ElementHost.WndProc%2A> method, see <xref:System.Windows.Forms.Control.WndProc%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

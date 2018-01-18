@@ -25,12 +25,12 @@
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
   
- An activity designer or a workflow designer may use any of the overloaded <xref:System.Workflow.ComponentModel.Activity.TrackData%2A?displayProperty=fullName> and <xref:System.Workflow.ComponentModel.ActivityExecutionContext.TrackData%2A?displayProperty=fullName> methods to instrument the workflow to emit data to the runtime tracking infrastructure as a user event. The data emitted is referred to as user data. Unlike activity status events, and workflow status events, which occur only on activity or workflow status changes, user events can occur at any location that is instrumented in a workflow. A <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation> defines the matching parameters for such a location by specifying the type of the user data, the type of the activity from which it must be emitted, a collection of conditions that can more precisely qualify an instance or instances of this activity, an optional key name with which the user data must be associated, whether derived types of the user data should be matched, and whether user data emitted from activities derived from the type of the specified activity should be matched.  
+ An activity designer or a workflow designer may use any of the overloaded <xref:System.Workflow.ComponentModel.Activity.TrackData%2A?displayProperty=nameWithType> and <xref:System.Workflow.ComponentModel.ActivityExecutionContext.TrackData%2A?displayProperty=nameWithType> methods to instrument the workflow to emit data to the runtime tracking infrastructure as a user event. The data emitted is referred to as user data. Unlike activity status events, and workflow status events, which occur only on activity or workflow status changes, user events can occur at any location that is instrumented in a workflow. A <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation> defines the matching parameters for such a location by specifying the type of the user data, the type of the activity from which it must be emitted, a collection of conditions that can more precisely qualify an instance or instances of this activity, an optional key name with which the user data must be associated, whether derived types of the user data should be matched, and whether user data emitted from activities derived from the type of the specified activity should be matched.  
   
 > [!NOTE]
 >  A single <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation> may refer to more than one actual location in the potential execution path of a workflow instance.  
   
- You may add a <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation> to either <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.MatchingLocations%2A?displayProperty=fullName> or <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.ExcludedLocations%2A?displayProperty=fullName> in order to define the match parameters for a <xref:System.Workflow.Runtime.Tracking.UserTrackPoint> in a <xref:System.Workflow.Runtime.Tracking.TrackingProfile>.  
+ You may add a <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation> to either <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.MatchingLocations%2A?displayProperty=nameWithType> or <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.ExcludedLocations%2A?displayProperty=nameWithType> in order to define the match parameters for a <xref:System.Workflow.Runtime.Tracking.UserTrackPoint> in a <xref:System.Workflow.Runtime.Tracking.TrackingProfile>.  
   
  There are three general conditions which must be met in the following order for the <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation> to be matched by the runtime tracking infrastructure: the activity that has emitted a user event must match the set of activities specified by <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation.ActivityType%2A>, <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation.ActivityTypeName%2A>, <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation.Conditions%2A>, and <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation.MatchDerivedActivityTypes%2A>; the key, if one exists, associated with the user data must match <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation.KeyName%2A>; and, the type of the user data emitted by the user event must match the set of user data types specified by <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation.ArgumentType%2A>, <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation.ArgumentTypeName%2A>, and <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation.MatchDerivedArgumentTypes%2A>. Only if all three of these conditions are met, does the runtime tracking infrastructure consider the <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation> matched.  
   
@@ -378,7 +378,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An activity designer or a workflow designer can use either <xref:System.Workflow.ComponentModel.Activity.TrackData%28System.String%2CSystem.Object%29?displayProperty=fullName> or <xref:System.Workflow.ComponentModel.ActivityExecutionContext.TrackData%28System.String%2CSystem.Object%29?displayProperty=fullName> to associate a string key with the user data that is emitted in a user event. If <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation.KeyName%2A> is not a null reference (`Nothing`), the key associated with the user data must match the value of <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation.KeyName%2A> for the <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation> to be matched. If <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation.KeyName%2A> is a null reference (`Nothing`), the runtime tracking infrastructure does not check for a matching key to determine whether the <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation> is matched.  
+ An activity designer or a workflow designer can use either <xref:System.Workflow.ComponentModel.Activity.TrackData%28System.String%2CSystem.Object%29?displayProperty=nameWithType> or <xref:System.Workflow.ComponentModel.ActivityExecutionContext.TrackData%28System.String%2CSystem.Object%29?displayProperty=nameWithType> to associate a string key with the user data that is emitted in a user event. If <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation.KeyName%2A> is not a null reference (`Nothing`), the key associated with the user data must match the value of <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation.KeyName%2A> for the <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation> to be matched. If <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation.KeyName%2A> is a null reference (`Nothing`), the runtime tracking infrastructure does not check for a matching key to determine whether the <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation> is matched.  
   
  ]]></format>
         </remarks>
@@ -422,5 +422,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.UserTrackingLocation" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

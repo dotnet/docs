@@ -9,15 +9,13 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
 ms.assetid: 78d516bc-c99f-4865-8ff1-d856bc1a01c0
 caps.latest.revision: 3
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Connection Strings
 A connection string contains initialization information that is passed as a parameter from a data provider to a data source. The syntax depends on the data provider, and the connection string is parsed during the attempt to open a connection. Connection strings used by the Entity Framework contain information used to connect to the underlying ADO.NET data provider that supports the Entity Framework. They also contain information about the required model and mapping files.  
@@ -102,7 +100,7 @@ Metadata=.\
 ```  
   
 ## Support for the &#124;DataDirectory&#124; Substitution String and the Web Application Root Operator (~)  
- `DataDirectory` and the ~ operator are used in the <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A>as part of the `Metadata` and `Provider Connection String` keywords. The <xref:System.Data.EntityClient.EntityConnection> forwards the `DataDirectory` and the ~ operator to <xref:System.Data.Metadata.Edm.MetadataWorkspace> and the store provider, respectively.  
+ `DataDirectory` and the ~ operator are used in the <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A> as part of the `Metadata` and `Provider Connection String` keywords. The <xref:System.Data.EntityClient.EntityConnection> forwards the `DataDirectory` and the ~ operator to <xref:System.Data.Metadata.Edm.MetadataWorkspace> and the store provider, respectively.  
   
 |Term|Description|  
 |----------|-----------------|  
@@ -118,7 +116,7 @@ Metadata=.\
  The resolution of the `DataDirectory` substitution string and the ~ operator is non-recursive. For example, when `DataDirectory` includes the `~` character, an exception will occur. This prevents an infinite recursion.  
   
 ## See Also  
- [Working with Data Providers](../../../../../docs/framework/data/adonet/ef/working-with-data-providers.md)   
- [Deployment Considerations](../../../../../docs/framework/data/adonet/ef/deployment-considerations.md)   
- [Managing Connections and Transactions](http://msdn.microsoft.com/en-us/b6659d2a-9a45-4e98-acaa-d7a8029e5b99)   
+ [Working with Data Providers](../../../../../docs/framework/data/adonet/ef/working-with-data-providers.md)  
+ [Deployment Considerations](../../../../../docs/framework/data/adonet/ef/deployment-considerations.md)  
+ [Managing Connections and Transactions](http://msdn.microsoft.com/en-us/b6659d2a-9a45-4e98-acaa-d7a8029e5b99)  
  [Connection Strings](../../../../../docs/framework/data/adonet/connection-strings.md)

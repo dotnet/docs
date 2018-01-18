@@ -34,11 +34,19 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewInsertedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertedEventArgs/CS/formviewinsertedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewInsertedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertedEventArgs/VB/formviewinsertedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewInsertedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertedEventArgs/CS/formviewinsertedeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewInsertedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertedEventArgs/VB/formviewinsertedeventargsvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.FormView" />
+    <altmember cref="T:System.Web.UI.WebControls.FormViewInsertedEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserted" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.AffectedRows" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.Exception" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.ExceptionHandled" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.KeepInInsertMode" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.Values" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,7 +77,7 @@
 |Property|Initial value|  
 |--------------|-------------------|  
 |<xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.AffectedRows%2A>|The value of the `affectedRows` parameter.|  
-|<xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.Exception%2A>|The <xref:System.Exception?displayProperty=fullName> object contained in the `e` parameter.|  
+|<xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.Exception%2A>|The <xref:System.Exception?displayProperty=nameWithType> object contained in the `e` parameter.|  
 |<xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.ExceptionHandled%2A>|Initialized to `false`.|  
 |<xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.KeepInInsertMode%2A>|Initialized to `false`.|  
   
@@ -78,6 +86,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserted" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.KeepInInsertMode" />
       </Docs>
     </Member>
     <Member MemberName="AffectedRows">
@@ -112,11 +127,17 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.AffectedRows%2A> property to verify that a record was inserted during the insert operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewInsertedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertedEventArgs/CS/formviewinsertedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewInsertedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertedEventArgs/VB/formviewinsertedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewInsertedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertedEventArgs/CS/formviewinsertedeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewInsertedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertedEventArgs/VB/formviewinsertedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserted" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.Values" />
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -148,11 +169,17 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.Exception%2A> property to determine whether an exception was raised during an insert operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewInsertedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertedEventArgs/CS/formviewinsertedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewInsertedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertedEventArgs/VB/formviewinsertedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewInsertedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertedEventArgs/CS/formviewinsertedeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewInsertedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertedEventArgs/VB/formviewinsertedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserted" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.Values" />
       </Docs>
     </Member>
     <Member MemberName="ExceptionHandled">
@@ -182,11 +209,17 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.ExceptionHandled%2A> property to indicate that the exception was handled in the event handler.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewInsertedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertedEventArgs/CS/formviewinsertedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewInsertedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertedEventArgs/VB/formviewinsertedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewInsertedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertedEventArgs/CS/formviewinsertedeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewInsertedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertedEventArgs/VB/formviewinsertedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserted" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.Values" />
       </Docs>
     </Member>
     <Member MemberName="KeepInInsertMode">
@@ -219,11 +252,15 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.KeepInInsertMode%2A> property to keep the <xref:System.Web.UI.WebControls.FormView> control in insert mode when an exception occurs during an insert operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewInsertedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertedEventArgs/CS/formviewinsertedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewInsertedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertedEventArgs/VB/formviewinsertedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewInsertedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertedEventArgs/CS/formviewinsertedeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewInsertedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertedEventArgs/VB/formviewinsertedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserted" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.DefaultMode" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -247,7 +284,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.Values%2A> property to access the values of the fields for the inserted record. For example, you can use these values to keep a log of inserted records.  
   
- The <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.Values%2A> property returns an <xref:System.Collections.Specialized.OrderedDictionary> object that implements the <xref:System.Collections.Specialized.IOrderedDictionary?displayProperty=fullName> interface. The <xref:System.Collections.Specialized.OrderedDictionary> object contains <xref:System.Collections.DictionaryEntry?displayProperty=fullName> objects that represent the fields of the inserted record. To access the field names, use the <xref:System.Collections.Specialized.OrderedDictionary.Keys%2A> property of the <xref:System.Collections.Specialized.OrderedDictionary> object. Similarly, you can access the field values by using the <xref:System.Collections.Specialized.OrderedDictionary.Values%2A> property.  
+ The <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.Values%2A> property returns an <xref:System.Collections.Specialized.OrderedDictionary> object that implements the <xref:System.Collections.Specialized.IOrderedDictionary?displayProperty=nameWithType> interface. The <xref:System.Collections.Specialized.OrderedDictionary> object contains <xref:System.Collections.DictionaryEntry?displayProperty=nameWithType> objects that represent the fields of the inserted record. To access the field names, use the <xref:System.Collections.Specialized.OrderedDictionary.Keys%2A> property of the <xref:System.Collections.Specialized.OrderedDictionary> object. Similarly, you can access the field values by using the <xref:System.Collections.Specialized.OrderedDictionary.Values%2A> property.  
   
 > [!NOTE]
 >  As a shortcut, you can also use the indexer of the <xref:System.Collections.Specialized.OrderedDictionary> object to access the field values directly. The advantage in using the indexer is that it returns field values directly. Data source controls that rely on the field order (such as <xref:System.Web.UI.WebControls.AccessDataSource>) can access field values only by index.  
@@ -257,11 +294,19 @@
 ## Examples  
  The following example demonstrates how to iterate through the items in the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.Values%2A> collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewInsertedEventArgsValues#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertedEventArgsValues/CS/formviewinsertedeventargsvaluescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewInsertedEventArgsValues#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertedEventArgsValues/VB/formviewinsertedeventargsvaluesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewInsertedEventArgsValues#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertedEventArgsValues/CS/formviewinsertedeventargsvaluescs.aspx#1)]
+ [!code-aspx-vb[FormViewInsertedEventArgsValues#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertedEventArgsValues/VB/formviewinsertedeventargsvaluesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertedEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.Specialized.OrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="P:System.Collections.Specialized.OrderedDictionary.Keys" />
+        <altmember cref="P:System.Collections.Specialized.OrderedDictionary.Values" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserted" />
       </Docs>
     </Member>
   </Members>

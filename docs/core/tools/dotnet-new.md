@@ -10,6 +10,8 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: fcc3ed2e-9265-4d50-b59e-dc2e5c190b34
+ms.workload: 
+  - dotnetcore
 ---
 # dotnet new
 
@@ -131,6 +133,10 @@ Filters templates based on available types. Predefined values are "project", "it
 `-u|--uninstall <PATH|NUGET_ID>`
 
 Uninstalls a source or template pack at the `PATH` or `NUGET_ID` provided.
+
+> [!NOTE]
+> To uninstall a template using a `PATH`, you need to fully qualify the path. For example, *C:/Users/\<USER>/Documents/Templates/GarciaSoftware.ConsoleTemplate.CSharp* will work, but *./GarciaSoftware.ConsoleTemplate.CSharp* from the containing folder will not.
+> Additionally, do not include a final terminating directory slash on your template path.
 
 # [.NET Core 1.x](#tab/netcore1x)
 

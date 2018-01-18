@@ -46,7 +46,7 @@
   
 2.  Call the corresponding <xref:System.Runtime.Serialization.XsdDataContractExporter.Export%2A> method.  
   
-3.  Retrieve the schemas from the <xref:System.Runtime.Serialization.XsdDataContractExporter.Schemas%2A>property.  
+3.  Retrieve the schemas from the <xref:System.Runtime.Serialization.XsdDataContractExporter.Schemas%2A> property.  
   
    
   
@@ -58,6 +58,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.Serialization.DataContractSerializer" />
+    <altmember cref="T:System.Runtime.Serialization.XsdDataContractImporter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -521,5 +523,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.XsdDataContractExporter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -37,7 +37,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Threading.ContextCallback> is used by the <xref:System.Threading.ExecutionContext.Run%2A?displayProperty=fullName> and the <xref:System.Security.SecurityContext.Run%2A?displayProperty=fullName> methods. <xref:System.Threading.ContextCallback> represents the method to be run in the provided context. Upon completion of the method execution, the context is restored to its previous state.  
+ <xref:System.Threading.ContextCallback> is used by the <xref:System.Threading.ExecutionContext.Run%2A?displayProperty=nameWithType> and the <xref:System.Security.SecurityContext.Run%2A?displayProperty=nameWithType> methods. <xref:System.Threading.ContextCallback> represents the method to be run in the provided context. Upon completion of the method execution, the context is restored to its previous state.  
   
  Create the delegate by passing your callback method to the <xref:System.Threading.ContextCallback> constructor. Your method must have the signature shown here.  
   

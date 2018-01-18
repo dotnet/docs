@@ -32,7 +32,7 @@
   
  Note that you must specify both the <xref:System.Windows.DataTrigger.Binding%2A> and <xref:System.Windows.DataTrigger.Value%2A> properties on a <xref:System.Windows.DataTrigger> for the data trigger to be meaningful. If one or both of the properties are not specified, an exception is thrown.  
   
- The <xref:System.Windows.DataTrigger.Setters%2A> property of a <xref:System.Windows.DataTrigger> object can only consist of <xref:System.Windows.Setter> objects. Adding a <xref:System.Windows.Setter> child to a <xref:System.Windows.DataTrigger> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.DataTrigger> object. <xref:System.Windows.EventSetter> objects are not supported; only <xref:System.Windows.Style.Setters%2A?displayProperty=fullName> supports <xref:System.Windows.EventSetter> objects.  
+ The <xref:System.Windows.DataTrigger.Setters%2A> property of a <xref:System.Windows.DataTrigger> object can only consist of <xref:System.Windows.Setter> objects. Adding a <xref:System.Windows.Setter> child to a <xref:System.Windows.DataTrigger> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.DataTrigger> object. <xref:System.Windows.EventSetter> objects are not supported; only <xref:System.Windows.Style.Setters%2A?displayProperty=nameWithType> supports <xref:System.Windows.EventSetter> objects.  
   
    
   
@@ -51,6 +51,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Trigger" />
+    <altmember cref="T:System.Windows.MultiDataTrigger" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -134,6 +136,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.DataTrigger.Value" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveMarkupExtension">
@@ -160,10 +163,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is the method referenced by an applied <xref:System.Windows.Markup.XamlSetMarkupExtensionAttribute> attribute at the class level, which means that this method processes all attempts to set values of<xref:System.Windows.DataTrigger> with a markup extension. You do not typically call this method directly.  
+ This is the method referenced by an applied <xref:System.Windows.Markup.XamlSetMarkupExtensionAttribute> attribute at the class level, which means that this method processes all attempts to set values of <xref:System.Windows.DataTrigger> with a markup extension. You do not typically call this method directly.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Markup.XamlSetMarkupExtensionAttribute" />
+        <altmember cref="T:System.Windows.Markup.XamlSetMarkupExtensionEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="Setters">
@@ -211,7 +216,7 @@
   
  If there is more than one setter setting the same property in the same setter collection, the setter that is declared last is used.  
   
- The <xref:System.Windows.DataTrigger.Setters%2A> property of a <xref:System.Windows.DataTrigger> object can only consist of <xref:System.Windows.Setter> objects. Adding a <xref:System.Windows.Setter> child to a <xref:System.Windows.DataTrigger> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.DataTrigger> object. <xref:System.Windows.EventSetter> objects are not supported; only <xref:System.Windows.Style.Setters%2A?displayProperty=fullName> supports <xref:System.Windows.EventSetter> objects.  
+ The <xref:System.Windows.DataTrigger.Setters%2A> property of a <xref:System.Windows.DataTrigger> object can only consist of <xref:System.Windows.Setter> objects. Adding a <xref:System.Windows.Setter> child to a <xref:System.Windows.DataTrigger> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.DataTrigger> object. <xref:System.Windows.EventSetter> objects are not supported; only <xref:System.Windows.Style.Setters%2A?displayProperty=nameWithType> supports <xref:System.Windows.EventSetter> objects.  
   
    
   
@@ -347,6 +352,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Expressions are not supported. Bindings are not supported.</exception>
+        <altmember cref="P:System.Windows.DataTrigger.Binding" />
+        <altmember cref="P:System.Windows.DataTrigger.Setters" />
       </Docs>
     </Member>
   </Members>

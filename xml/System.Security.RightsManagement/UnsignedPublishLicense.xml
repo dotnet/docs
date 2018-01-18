@@ -189,6 +189,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.RightsManagement.UnsignedPublishLicense.ReferralInfoName" />
+        <altmember cref="P:System.Security.RightsManagement.UnsignedPublishLicense.ReferralInfoUri" />
       </Docs>
     </Member>
     <Member MemberName="ReferralInfoName">
@@ -217,6 +219,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.RightsManagement.UnsignedPublishLicense.ReferralInfoUri" />
+        <altmember cref="P:System.Security.RightsManagement.UnsignedPublishLicense.Owner" />
       </Docs>
     </Member>
     <Member MemberName="ReferralInfoUri">
@@ -245,11 +249,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.RightsManagement.UnsignedPublishLicense.ReferralInfoName" />
+        <altmember cref="P:System.Security.RightsManagement.UnsignedPublishLicense.Owner" />
       </Docs>
     </Member>
     <Member MemberName="Sign">
       <MemberSignature Language="C#" Value="public System.Security.RightsManagement.PublishLicense Sign (System.Security.RightsManagement.SecureEnvironment secureEnvironment, out System.Security.RightsManagement.UseLicense authorUseLicense);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.RightsManagement.PublishLicense Sign(class System.Security.RightsManagement.SecureEnvironment secureEnvironment, class System.Security.RightsManagement.UseLicense authorUseLicense) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.RightsManagement.PublishLicense Sign(class System.Security.RightsManagement.SecureEnvironment secureEnvironment, [out] class System.Security.RightsManagement.UseLicense&amp; authorUseLicense) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.UnsignedPublishLicense.Sign(System.Security.RightsManagement.SecureEnvironment,System.Security.RightsManagement.UseLicense@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -298,7 +304,17 @@
         <summary>Returns a serialized template created from the [!INCLUDE[TLA2#tla_xrml](~/includes/tla2sharptla-xrml-md.md)] of the <see cref="T:System.Security.RightsManagement.UnsignedPublishLicense" />.</summary>
         <returns>A serialized template created from the [!INCLUDE[TLA2#tla_xrml](~/includes/tla2sharptla-xrml-md.md)] of the <see cref="T:System.Security.RightsManagement.UnsignedPublishLicense" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Security.RightsManagement.UnsignedPublishLicense.#ctor(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.UnsignedPublishLicense" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

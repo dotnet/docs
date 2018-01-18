@@ -18,13 +18,13 @@
 ## Remarks  
  These event arguments contain information about a navigation that failed, and are passed to handlers of the **NavigationFailed** event, which is implemented by the following:  
   
--   <xref:System.Windows.Navigation.NavigationService.NavigationFailed?displayProperty=fullName>  
+-   <xref:System.Windows.Navigation.NavigationService.NavigationFailed?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Navigation.NavigationWindow.NavigationFailed?displayProperty=fullName>  
+-   <xref:System.Windows.Navigation.NavigationWindow.NavigationFailed?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Controls.Frame.NavigationFailed?displayProperty=fullName>  
+-   <xref:System.Windows.Controls.Frame.NavigationFailed?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Application.NavigationFailed?displayProperty=fullName>  
+-   <xref:System.Windows.Application.NavigationFailed?displayProperty=nameWithType>  
   
  <xref:System.Windows.Navigation.NavigationFailedEventArgs> encapsulates the following details of the failed navigation request:  
   
@@ -40,6 +40,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.Windows.Navigation.NavigationService.NavigationFailed" />
   </Docs>
   <Members>
     <Member MemberName="Exception">
@@ -173,7 +174,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Net.WebRequest?displayProperty=fullName> is an abstract base class that encapsulates a web request, and is protocol agnostic. For each common protocol, the [!INCLUDE[TLA#tla_titlewinfx](~/includes/tlasharptla-titlewinfx-md.md)] includes a class that derives from <xref:System.Net.WebRequest?displayProperty=fullName> and extends it with protocol-specific state and behavior, including:  
+ <xref:System.Net.WebRequest?displayProperty=nameWithType> is an abstract base class that encapsulates a web request, and is protocol agnostic. For each common protocol, the [!INCLUDE[TLA#tla_titlewinfx](~/includes/tlasharptla-titlewinfx-md.md)] includes a class that derives from <xref:System.Net.WebRequest?displayProperty=nameWithType> and extends it with protocol-specific state and behavior, including:  
   
 -   <xref:System.IO.Packaging.PackWebRequest>: [!INCLUDE[TLA2#tla_uri#plural](~/includes/tla2sharptla-urisharpplural-md.md)] that use the `pack://` scheme to request application data files (see [WPF Application Resource, Content, and Data Files](~/docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)).  
   
@@ -206,7 +207,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Net.WebResponse?displayProperty=fullName> is an abstract base class that encapsulates a web response, and is protocol agnostic. For each common protocol, the [!INCLUDE[TLA#tla_titlewinfx](~/includes/tlasharptla-titlewinfx-md.md)] includes a class that derives from <xref:System.Net.WebResponse?displayProperty=fullName> and extends it with protocol-specific state, including:  
+ <xref:System.Net.WebResponse?displayProperty=nameWithType> is an abstract base class that encapsulates a web response, and is protocol agnostic. For each common protocol, the [!INCLUDE[TLA#tla_titlewinfx](~/includes/tlasharptla-titlewinfx-md.md)] includes a class that derives from <xref:System.Net.WebResponse?displayProperty=nameWithType> and extends it with protocol-specific state, including:  
   
 -   <xref:System.IO.Packaging.PackWebResponse>: [!INCLUDE[TLA2#tla_uri#plural](~/includes/tla2sharptla-urisharpplural-md.md)] that use the `pack://` scheme to request application data files (see [WPF Application Resource, Content, and Data Files](~/docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)).  
   

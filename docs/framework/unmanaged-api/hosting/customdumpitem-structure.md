@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CustomDumpItem"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CustomDumpItem structure [.NET Framework hosting]"
 ms.assetid: fd9085ff-7beb-4c38-97f0-037cd8ba4f65
@@ -28,6 +26,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CustomDumpItem Structure
 Describes an item to be added to a custom dump in error reporting.  

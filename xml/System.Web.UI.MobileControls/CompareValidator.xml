@@ -43,8 +43,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileCompareValidatorSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileCompareValidatorSample/CS/default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileCompareValidatorSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileCompareValidatorSample/VB/default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileCompareValidatorSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileCompareValidatorSample/CS/default.aspx#1)]
+ [!code-aspx-vb[MobileCompareValidatorSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileCompareValidatorSample/VB/default.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -97,6 +97,7 @@
  -or-  
   
  the values of the two controls are not comparable.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
       </Docs>
     </Member>
     <Member MemberName="ControlToCompare">
@@ -133,6 +134,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CompareValidator.ControlToCompare" />
       </Docs>
     </Member>
     <Member MemberName="CreateWebValidator">

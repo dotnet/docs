@@ -34,6 +34,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DateRangeEventHandler" />
+    <altmember cref="T:System.Windows.Forms.MonthCalendar" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,6 +63,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DateRangeEventArgs.Start" />
+        <altmember cref="P:System.Windows.Forms.DateRangeEventArgs.End" />
       </Docs>
     </Member>
     <Member MemberName="End">
@@ -90,6 +94,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DateRangeEventArgs.Start" />
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -119,6 +124,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DateRangeEventArgs.End" />
       </Docs>
     </Member>
   </Members>

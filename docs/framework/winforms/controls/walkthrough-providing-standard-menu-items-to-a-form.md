@@ -10,9 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "menu items, standard"
+  - "menu items [Windows Forms], standard"
   - "toolbars [Windows Forms], walkthroughs"
   - "StatusStrip control [Windows Forms]"
   - "ToolStrip control [Windows Forms]"
@@ -21,6 +22,8 @@ caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Providing Standard Menu Items to a Form
 You can provide a standard menu for your forms with the <xref:System.Windows.Forms.MenuStrip> control.  
@@ -127,7 +130,7 @@ You can provide a standard menu for your forms with the <xref:System.Windows.For
 -   Give your <xref:System.Windows.Forms.ToolStrip> controls a professional appearance. For more information, see [How to: Set the ToolStrip Renderer for an Application](../../../../docs/framework/winforms/controls/how-to-set-the-toolstrip-renderer-for-an-application.md).  
   
 ## See Also  
- <xref:System.Windows.Forms.MenuStrip>   
- <xref:System.Windows.Forms.ToolStrip>   
- <xref:System.Windows.Forms.StatusStrip>   
+ <xref:System.Windows.Forms.MenuStrip>  
+ <xref:System.Windows.Forms.ToolStrip>  
+ <xref:System.Windows.Forms.StatusStrip>  
  [MenuStrip Control](../../../../docs/framework/winforms/controls/menustrip-control-windows-forms.md)

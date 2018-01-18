@@ -56,6 +56,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+    <altmember cref="T:System.Windows.Forms.Clipboard" />
   </Docs>
   <Members>
     <Member MemberName="Clear">
@@ -106,6 +108,8 @@ My.Computer.Clipboard.Clear()
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
           <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <altmember cref="M:System.Windows.Forms.Clipboard.Clear" />
       </Docs>
     </Member>
     <Member MemberName="ContainsAudio">
@@ -153,6 +157,10 @@ My.Computer.Clipboard.Clear()
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
           <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <altmember cref="M:System.Windows.Forms.Clipboard.ContainsAudio" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetAudioStream" />
+        <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetAudio" />
       </Docs>
     </Member>
     <Member MemberName="ContainsData">
@@ -207,6 +215,12 @@ My.Computer.Clipboard.Clear()
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
           <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <altmember cref="M:System.Windows.Forms.Clipboard.ContainsData(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetData(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetDataObject" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetData(System.String,System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject(System.Windows.Forms.DataObject)" />
       </Docs>
     </Member>
     <Member MemberName="ContainsFileDropList">
@@ -257,6 +271,10 @@ My.Computer.Clipboard.Clear()
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
           <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <altmember cref="M:System.Windows.Forms.Clipboard.ContainsFileDropList" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetFileDropList" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetFileDropList(System.Collections.Specialized.StringCollection)" />
       </Docs>
     </Member>
     <Member MemberName="ContainsImage">
@@ -306,6 +324,10 @@ My.Computer.Clipboard.Clear()
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
           <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <altmember cref="M:System.Windows.Forms.Clipboard.ContainsImage" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetImage" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetImage(System.Drawing.Image)" />
       </Docs>
     </Member>
     <Member MemberName="ContainsText">
@@ -354,6 +376,11 @@ My.Computer.Clipboard.Clear()
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
           <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <altmember cref="T:System.Windows.Forms.TextDataFormat" />
+        <altmember cref="Overload:System.Windows.Forms.Clipboard.ContainsText" />
+        <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetText" />
+        <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetText" />
       </Docs>
     </Member>
     <Member MemberName="ContainsText">
@@ -406,6 +433,11 @@ My.Computer.Clipboard.Clear()
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
           <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <altmember cref="T:System.Windows.Forms.TextDataFormat" />
+        <altmember cref="Overload:System.Windows.Forms.Clipboard.ContainsText" />
+        <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetText" />
+        <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetText" />
       </Docs>
     </Member>
     <Member MemberName="GetAudioStream">
@@ -452,6 +484,11 @@ My.Computer.Clipboard.Clear()
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
           <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="M:System.Windows.Forms.Clipboard.GetAudioStream" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsAudio" />
+        <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetAudio" />
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -504,6 +541,12 @@ My.Computer.Clipboard.Clear()
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
           <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <altmember cref="M:System.Windows.Forms.Clipboard.GetData(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsData(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetDataObject" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetData(System.String,System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject(System.Windows.Forms.DataObject)" />
       </Docs>
     </Member>
     <Member MemberName="GetDataObject">
@@ -558,6 +601,13 @@ My.Computer.Clipboard.Clear()
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
           <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
+        <altmember cref="M:System.Windows.Forms.Clipboard.GetDataObject" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsData(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetData(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetData(System.String,System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject(System.Windows.Forms.DataObject)" />
       </Docs>
     </Member>
     <Member MemberName="GetFileDropList">
@@ -609,6 +659,11 @@ My.Computer.Clipboard.Clear()
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
           <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <altmember cref="T:System.Collections.Specialized.StringCollection" />
+        <altmember cref="M:System.Windows.Forms.Clipboard.GetFileDropList" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsFileDropList" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetFileDropList(System.Collections.Specialized.StringCollection)" />
       </Docs>
     </Member>
     <Member MemberName="GetImage">
@@ -657,6 +712,11 @@ My.Computer.Clipboard.Clear()
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
           <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <altmember cref="T:System.Drawing.Image" />
+        <altmember cref="M:System.Windows.Forms.Clipboard.GetImage" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsImage" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetImage(System.Drawing.Image)" />
       </Docs>
     </Member>
     <Member MemberName="GetText">
@@ -706,6 +766,11 @@ My.Computer.Clipboard.Clear()
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
           <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <altmember cref="T:System.Windows.Forms.TextDataFormat" />
+        <altmember cref="Overload:System.Windows.Forms.Clipboard.GetText" />
+        <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsText" />
+        <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetText" />
       </Docs>
     </Member>
     <Member MemberName="GetText">
@@ -759,6 +824,11 @@ My.Computer.Clipboard.Clear()
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
           <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <altmember cref="T:System.Windows.Forms.TextDataFormat" />
+        <altmember cref="Overload:System.Windows.Forms.Clipboard.GetText" />
+        <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsText" />
+        <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetText" />
       </Docs>
     </Member>
     <Member MemberName="SetAudio">
@@ -813,6 +883,10 @@ My.Computer.Clipboard.Clear()
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
           <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <altmember cref="Overload:System.Windows.Forms.Clipboard.SetAudio" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsAudio" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetAudioStream" />
       </Docs>
     </Member>
     <Member MemberName="SetAudio">
@@ -865,6 +939,11 @@ My.Computer.Clipboard.Clear()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="Overload:System.Windows.Forms.Clipboard.SetAudio" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsAudio" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetAudioStream" />
       </Docs>
     </Member>
     <Member MemberName="SetData">
@@ -922,6 +1001,12 @@ My.Computer.Clipboard.Clear()
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
           <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <altmember cref="M:System.Windows.Forms.Clipboard.SetData(System.String,System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsData(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetData(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetDataObject" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject(System.Windows.Forms.DataObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetDataObject">
@@ -982,6 +1067,12 @@ My.Computer.Clipboard.Clear()
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
           <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <altmember cref="M:System.Windows.Forms.Clipboard.SetDataObject(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsData(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetData(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetDataObject" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetData(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="SetFileDropList">
@@ -1033,6 +1124,11 @@ My.Computer.Clipboard.Clear()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <altmember cref="T:System.Collections.Specialized.StringCollection" />
+        <altmember cref="M:System.Windows.Forms.Clipboard.SetFileDropList(System.Collections.Specialized.StringCollection)" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsFileDropList" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetFileDropList" />
       </Docs>
     </Member>
     <Member MemberName="SetImage">
@@ -1087,6 +1183,11 @@ My.Computer.Clipboard.Clear()
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
           <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <altmember cref="T:System.Drawing.Image" />
+        <altmember cref="M:System.Windows.Forms.Clipboard.SetImage(System.Drawing.Image)" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsImage" />
+        <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetImage" />
       </Docs>
     </Member>
     <Member MemberName="SetText">
@@ -1146,6 +1247,11 @@ My.Computer.Clipboard.Clear()
           <paramref name="text" /> is <see langword="Nothing" />.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">
           <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <altmember cref="T:System.Windows.Forms.TextDataFormat" />
+        <altmember cref="Overload:System.Windows.Forms.Clipboard.SetText" />
+        <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsText" />
+        <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetText" />
       </Docs>
     </Member>
     <Member MemberName="SetText">
@@ -1208,7 +1314,48 @@ My.Computer.Clipboard.Clear()
           <paramref name="text" /> is <see langword="Nothing" />.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">
           <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
+        <altmember cref="T:System.Windows.Forms.TextDataFormat" />
+        <altmember cref="Overload:System.Windows.Forms.Clipboard.SetText" />
+        <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsText" />
+        <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetText" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetAudio">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes audio data to the Clipboard.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetText">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves text from the Clipboard.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ContainsText">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines if there is text on the Clipboard.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetText">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes text to the Clipboard.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

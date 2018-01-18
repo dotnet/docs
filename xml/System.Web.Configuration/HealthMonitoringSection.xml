@@ -183,6 +183,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ConfigurationSection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -251,6 +252,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.BufferModesCollection" />
+        <altmember cref="T:System.Web.Configuration.BufferModeSettings" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -318,6 +321,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.EventMappingSettingsCollection" />
+        <altmember cref="T:System.Web.Configuration.EventMappingSettings" />
       </Docs>
     </Member>
     <Member MemberName="HeartbeatInterval">
@@ -395,6 +400,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfileSettingsCollection" />
+        <altmember cref="T:System.Web.Configuration.ProfileSettings" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -451,6 +458,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ProviderSettingsCollection" />
+        <altmember cref="T:System.Configuration.ProviderSettings" />
       </Docs>
     </Member>
     <Member MemberName="Rules">
@@ -489,6 +498,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.RuleSettingsCollection" />
+        <altmember cref="T:System.Web.Configuration.RuleSettings" />
       </Docs>
     </Member>
   </Members>

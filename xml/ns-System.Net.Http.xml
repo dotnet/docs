@@ -29,7 +29,7 @@
   
 3.  <xref:System.Net.Http.HttpClientHandler> - A class that operates at the bottom of the handler chain that actually handles the HTTP transport operations.  
   
-4.  <xref:System.Net.Http.WebRequestHandler> - A specialty class that operates at the bottom of the handler chain class that handles HTTP transport operations with options that are specific to the <xref:System.Net.HttpWebRequest?displayProperty=fullName> object.  
+4.  <xref:System.Net.Http.WebRequestHandler> - A specialty class that operates at the bottom of the handler chain class that handles HTTP transport operations with options that are specific to the <xref:System.Net.HttpWebRequest?displayProperty=nameWithType> object.  
   
  The contents of an HTTP message corresponds to the entity body defined in RFC 2616.  
   
@@ -53,5 +53,6 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="N:System.Net.Http.Headers" />
   </Docs>
 </Namespace>

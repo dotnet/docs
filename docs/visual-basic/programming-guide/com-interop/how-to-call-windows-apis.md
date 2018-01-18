@@ -1,40 +1,22 @@
 ---
 title: "How to: Call Windows APIs (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "API calls"
+  - "API calls [Visual Basic]"
   - "Windows API, calling"
-  - "API calls, platform invoke"
-  - "calls, stored procedures"
+  - "API calls [Visual Basic], platform invoke"
+  - "calls [Visual Basic], stored procedures"
 ms.assetid: 27d75f0a-54ab-4ee1-b91d-43513a19b12d
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Call Windows APIs (Visual Basic)
 This example defines and calls the `MessageBox` function in user32.dll and then passes a string to it.  
@@ -57,9 +39,9 @@ This example defines and calls the `MessageBox` function in user32.dll and then 
 -   The containing type has been previously created using `CreateType`. (<xref:System.InvalidOperationException>)  
   
 ## See Also  
- [A Closer Look at Platform Invoke](http://msdn.microsoft.com/en-us/ba9dd55b-2eaa-45cd-8afd-75cb8d64d243)   
- [Platform Invoke Examples](../../../framework/interop/platform-invoke-examples.md)   
- [Consuming Unmanaged DLL Functions](../../../framework/interop/consuming-unmanaged-dll-functions.md)   
- [Defining a Method with Reflection Emit](http://msdn.microsoft.com/en-us/84fd3bf6-628f-41aa-83d9-b990cf926e81)   
- [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)   
+ [A Closer Look at Platform Invoke](http://msdn.microsoft.com/en-us/ba9dd55b-2eaa-45cd-8afd-75cb8d64d243)  
+ [Platform Invoke Examples](../../../framework/interop/platform-invoke-examples.md)  
+ [Consuming Unmanaged DLL Functions](../../../framework/interop/consuming-unmanaged-dll-functions.md)  
+ [Defining a Method with Reflection Emit](http://msdn.microsoft.com/en-us/84fd3bf6-628f-41aa-83d9-b990cf926e81)  
+ [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)  
  [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)

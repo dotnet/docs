@@ -73,7 +73,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling <xref:System.Reflection.ICustomAttributeProvider.GetCustomAttributes%2A?displayProperty=fullName> on <xref:System.Reflection.PropertyInfo> or <xref:System.Reflection.EventInfo> when the `inherit` parameter of `GetCustomAttributes` is `true` does not walk the type hierarchy. Use <xref:System.Attribute?displayProperty=fullName> to inherit custom attributes.  
+ Calling <xref:System.Reflection.ICustomAttributeProvider.GetCustomAttributes%2A?displayProperty=nameWithType> on <xref:System.Reflection.PropertyInfo> or <xref:System.Reflection.EventInfo> when the `inherit` parameter of `GetCustomAttributes` is `true` does not walk the type hierarchy. Use <xref:System.Attribute?displayProperty=nameWithType> to inherit custom attributes.  
   
  This method returns custom attributes defined directly on a non-inherited member only.  
   
@@ -125,7 +125,7 @@
   
  This method returns custom attributes defined directly on a non-inherited member only.  
   
- Calling <xref:System.Reflection.ICustomAttributeProvider.GetCustomAttributes%2A?displayProperty=fullName> on <xref:System.Reflection.PropertyInfo> or <xref:System.Reflection.EventInfo> when the `inherit` parameter of `GetCustomAttributes` is `true` does not walk the type hierarchy. Use <xref:System.Attribute?displayProperty=fullName> to inherit custom attributes.  
+ Calling <xref:System.Reflection.ICustomAttributeProvider.GetCustomAttributes%2A?displayProperty=nameWithType> on <xref:System.Reflection.PropertyInfo> or <xref:System.Reflection.EventInfo> when the `inherit` parameter of `GetCustomAttributes` is `true` does not walk the type hierarchy. Use <xref:System.Attribute?displayProperty=nameWithType> to inherit custom attributes.  
   
  ]]></format>
         </remarks>
@@ -172,5 +172,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns custom attributes defined on this member.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

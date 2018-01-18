@@ -303,7 +303,7 @@
 ## Remarks  
  The <xref:System.Web.HttpRequestBase.CurrentExecutionFilePath%2A> property returns the file path of the currently executing page handler.  
   
- When you redirect a request using either the <xref:System.Web.HttpServerUtility.Execute%2A?displayProperty=fullName> method or the <xref:System.Web.HttpServerUtility.Transfer%2A?displayProperty=fullName> method, the <xref:System.Web.HttpRequestBase.CurrentExecutionFilePath%2A> property returns the path of the page that you are redirecting to (the child page). However, when the client is redirected to another page, the <xref:System.Web.HttpRequestBase.FilePath%2A> property returns the path to the original page.  
+ When you redirect a request using either the <xref:System.Web.HttpServerUtility.Execute%2A?displayProperty=nameWithType> method or the <xref:System.Web.HttpServerUtility.Transfer%2A?displayProperty=nameWithType> method, the <xref:System.Web.HttpRequestBase.CurrentExecutionFilePath%2A> property returns the path of the page that you are redirecting to (the child page). However, when the client is redirected to another page, the <xref:System.Web.HttpRequestBase.FilePath%2A> property returns the path to the original page.  
   
  ]]></format>
         </remarks>
@@ -440,6 +440,7 @@
         <summary>When implemented in a derived class, gets a <see cref="T:System.IO.Stream" /> object that can be used to read the incoming HTTP entity body, optionally disabling the request length limit that is set in the <see cref="P:System.Web.Configuration.HttpRuntimeSection.MaxRequestLength" /> property.</summary>
         <returns>A <see cref="T:System.IO.Stream" /> object that can be used to read the incoming HTTP entity body.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.HttpRequest.GetBufferedInputStream" />
       </Docs>
     </Member>
     <Member MemberName="GetBufferlessInputStream">
@@ -463,6 +464,7 @@
         <summary>When implemented in a derived class, gets a <see cref="T:System.IO.Stream" /> object that can be used to read the incoming HTTP entity body, optionally disabling the request length limit that is set in the <see cref="P:System.Web.Configuration.HttpRuntimeSection.MaxRequestLength" /> property.</summary>
         <returns>A <see cref="T:System.IO.Stream" /> object that can be used to read the incoming HTTP entity body.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.HttpRequest.GetBufferedInputStream" />
       </Docs>
     </Member>
     <Member MemberName="Headers">
@@ -1047,7 +1049,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see <xref:System.Web.HttpRequest.TimedOutToken%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Web.HttpRequest.TimedOutToken%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1116,6 +1118,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UnvalidatedRequestValues" />
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -1258,5 +1261,32 @@
         <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InsertEntityBody">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When implemented in a derived class, provides a managed wrapper for the IIS method that inserts an HTTP request entity body into memory.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetBufferlessInputStream">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When implemented in a derived class, gets a <see cref="T:System.IO.Stream" /> object that can be used to read the incoming HTTP entity body.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MapPath">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, maps the virtual path in the requested URL to a physical path on the server.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -16,12 +16,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Automation.GridPattern> does not support active manipulation of a grid; the <xref:System.Windows.Automation.TransformPattern>control pattern is required for this functionality.  
+ <xref:System.Windows.Automation.GridPattern> does not support active manipulation of a grid; the <xref:System.Windows.Automation.TransformPattern> control pattern is required for this functionality.  
   
  See [Control Pattern Mapping for UI Automation Clients](~/docs/framework/ui-automation/control-pattern-mapping-for-ui-automation-clients.md) for examples of controls that may support this control pattern.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Automation.Provider.IGridProvider" />
   </Docs>
   <Members>
     <Member MemberName="Cached">
@@ -183,7 +184,7 @@ Example of a Grid Control with Empty Coordinates
    
   
 ## Examples  
- In the following example, a <xref:System.Windows.Automation.GridPattern>control pattern is obtained from a UI Automation element.  
+ In the following example, a <xref:System.Windows.Automation.GridPattern> control pattern is obtained from a UI Automation element.  
   
  [!code-csharp[UIAGridPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridPattern_snip/CSharp/UIAGridPattern_snippets.cs#101)]
  [!code-vb[UIAGridPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridPattern_snip/VisualBasic/UIAGridPattern_snippets.vb#101)]  

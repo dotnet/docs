@@ -8,6 +8,10 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "strings [.NET Framework], padding"
   - "white space"
@@ -19,17 +23,20 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Padding Strings in .NET
 Use one of the following <xref:System.String> methods to create a new string that consists of an original string that is padded with leading or trailing characters to a specified total length. The padding character can be spaces or a specified character, and consequently appears to be either right-aligned or left-aligned.  
   
 |Method name|Use|  
 |-----------------|---------|  
-|<xref:System.String.PadLeft%2A?displayProperty=fullName>|Pads a string with leading characters to a specified total length.|  
-|<xref:System.String.PadRight%2A?displayProperty=fullName>|Pads a string with trailing characters to a specified total length.|  
+|<xref:System.String.PadLeft%2A?displayProperty=nameWithType>|Pads a string with leading characters to a specified total length.|  
+|<xref:System.String.PadRight%2A?displayProperty=nameWithType>|Pads a string with trailing characters to a specified total length.|  
   
 ## PadLeft  
- The <xref:System.String.PadLeft%2A?displayProperty=fullName> method creates a new string by concatenating enough leading pad characters to an original string to achieve a specified total length. The <xref:System.String.PadLeft%28System.Int32%29?displayProperty=fullName> method uses white space as the padding character and the <xref:System.String.PadLeft%28System.Int32%2CSystem.Char%29?displayProperty=fullName> method enables you to specify your own padding character.  
+ The <xref:System.String.PadLeft%2A?displayProperty=nameWithType> method creates a new string by concatenating enough leading pad characters to an original string to achieve a specified total length. The <xref:System.String.PadLeft%28System.Int32%29?displayProperty=nameWithType> method uses white space as the padding character and the <xref:System.String.PadLeft%28System.Int32%2CSystem.Char%29?displayProperty=nameWithType> method enables you to specify your own padding character.  
   
  The following code example uses the <xref:System.String.PadLeft%2A> method to create a new string that is twenty characters long. The example displays "`--------Hello World!`" to the console.  
   
@@ -38,7 +45,7 @@ Use one of the following <xref:System.String> methods to create a new string tha
  [!code-vb[Conceptual.String.BasicOps#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/padding.vb#3)]  
   
 ## PadRight  
- The <xref:System.String.PadRight%2A?displayProperty=fullName> method creates a new string by concatenating enough trailing pad characters to an original string to achieve a specified total length. The <xref:System.String.PadRight%28System.Int32%29?displayProperty=fullName> method uses white space as the padding character and the <xref:System.String.PadRight%28System.Int32%2CSystem.Char%29?displayProperty=fullName> method enables you to specify your own padding character.  
+ The <xref:System.String.PadRight%2A?displayProperty=nameWithType> method creates a new string by concatenating enough trailing pad characters to an original string to achieve a specified total length. The <xref:System.String.PadRight%28System.Int32%29?displayProperty=nameWithType> method uses white space as the padding character and the <xref:System.String.PadRight%28System.Int32%2CSystem.Char%29?displayProperty=nameWithType> method enables you to specify your own padding character.  
   
  The following code example uses the <xref:System.String.PadRight%2A> method to create a new string that is twenty characters long. The example displays "`Hello World!--------`" to the console.  
   

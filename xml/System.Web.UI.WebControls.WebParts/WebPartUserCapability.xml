@@ -31,6 +31,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -93,6 +94,7 @@
         <summary>Returns the hash code for the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartUserCapability.Name" /> property.</summary>
         <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.String.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="Name">

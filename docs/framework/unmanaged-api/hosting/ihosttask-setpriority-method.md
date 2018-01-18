@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostTask::SetPriority"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostTask::SetPriority method [.NET Framework hosting]"
   - "SetPriority method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostTask::SetPriority Method
 Requests that the host adjust the thread priority level for the task represented by the current [IHostTask](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md) instance.  
@@ -73,7 +73,7 @@ HRESULT SetPriority (
   
 -   THREAD_PRIORITY_TIME_CRITICAL  
   
- The CLR calls `SetPriority` when the value of the <xref:System.Threading.Thread.Priority%2A?displayProperty=fullName> is modified by user code. A host can define its own algorithms for thread priority assignment, and is free to ignore this request.  
+ The CLR calls `SetPriority` when the value of the <xref:System.Threading.Thread.Priority%2A?displayProperty=nameWithType> is modified by user code. A host can define its own algorithms for thread priority assignment, and is free to ignore this request.  
   
 > [!NOTE]
 >  `SetPriority` does not report whether the thread priority level was changed. Call [IHostTask::GetPriority](../../../../docs/framework/unmanaged-api/hosting/ihosttask-getpriority-method.md) to determine the value of the task's thread priority level.  
@@ -90,9 +90,9 @@ HRESULT SetPriority (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- <xref:System.Threading.Thread>   
- [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)   
- [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)   
- [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)   
- [GetPriority Method](../../../../docs/framework/unmanaged-api/hosting/ihosttask-getpriority-method.md)   
+ <xref:System.Threading.Thread>  
+ [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)  
+ [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)  
+ [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)  
+ [GetPriority Method](../../../../docs/framework/unmanaged-api/hosting/ihosttask-getpriority-method.md)  
  [IHostTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-interface.md)

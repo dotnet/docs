@@ -102,6 +102,8 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="dpiX" /> or <paramref name="dpiY" /> is less than zero.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged resources. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="P:System.Windows.Interop.D3DImage.Height" />
+        <altmember cref="P:System.Windows.Interop.D3DImage.Width" />
       </Docs>
     </Member>
     <Member MemberName="AddDirtyRect">
@@ -162,6 +164,8 @@
   
  <paramref name="dirtyRect.Width" /> &lt; 0 or <paramref name="dirtyRect.Width" /> &gt; <see cref="P:System.Windows.Interop.D3DImage.PixelWidth" /><paramref name="dirtyRect.Height" /> &lt; 0 or <paramref name="dirtyRect.Height" /> &gt; <see cref="P:System.Windows.Interop.D3DImage.PixelHeight" /></exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged resources. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:System.Windows.Interop.D3DImage.Unlock" />
+        <altmember cref="M:System.Windows.Interop.D3DImage.SetBackBuffer(System.Windows.Interop.D3DResourceType,System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -186,7 +190,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -211,6 +215,7 @@
         <param name="sourceFreezable">The object to clone.</param>
         <summary>Makes the instance a clone (deep copy) of the specified <see cref="T:System.Windows.Freezable" /> using base (non-animated) property values.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -235,7 +240,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -260,6 +265,7 @@
         <param name="sourceFreezable">The <see cref="T:System.Windows.Freezable" /> to be cloned.</param>
         <summary>Makes the instance a modifiable clone (deep copy) of the specified <see cref="T:System.Windows.Freezable" /> using current property values.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValueCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="CopyBackBuffer">
@@ -297,6 +303,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged resources. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceCore">
@@ -389,6 +396,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Interop.D3DImage.IsFrontBufferAvailable" />
       </Docs>
     </Member>
     <Member MemberName="GetAsFrozenCore">
@@ -410,6 +418,7 @@
         <param name="sourceFreezable">The instance to copy.</param>
         <summary>Makes the instance a frozen clone of the specified <see cref="T:System.Windows.Freezable" /> using base (non-animated) property values.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.GetAsFrozenCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentValueAsFrozenCore">
@@ -431,6 +440,7 @@
         <param name="sourceFreezable">The <see cref="T:System.Windows.Freezable" /> to copy and freeze.</param>
         <summary>Makes the current instance a frozen clone of the specified <see cref="T:System.Windows.Freezable" />. If the object has animated dependency properties, their current animated values are copied.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -456,6 +466,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Interop.D3DImage.Width" />
+        <altmember cref="M:System.Windows.Interop.D3DImage.SetBackBuffer(System.Windows.Interop.D3DResourceType,System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="IsFrontBufferAvailable">
@@ -497,6 +509,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Interop.D3DImage.SetBackBuffer(System.Windows.Interop.D3DResourceType,System.IntPtr)" />
+        <altmember cref="E:System.Windows.Interop.D3DImage.IsFrontBufferAvailableChanged" />
       </Docs>
     </Member>
     <Member MemberName="IsFrontBufferAvailableChanged">
@@ -521,6 +535,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Interop.D3DImage.IsFrontBufferAvailable" />
+        <altmember cref="M:System.Windows.Interop.D3DImage.SetBackBuffer(System.Windows.Interop.D3DResourceType,System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="IsFrontBufferAvailableProperty">
@@ -574,6 +590,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The lock count equals <see cref="F:System.UInt32.MaxValue" />.</exception>
+        <altmember cref="M:System.Windows.Interop.D3DImage.TryLock(System.Windows.Duration)" />
+        <altmember cref="M:System.Windows.Interop.D3DImage.Unlock" />
       </Docs>
     </Member>
     <Member MemberName="Metadata">
@@ -625,6 +643,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Interop.D3DImage.PixelWidth" />
+        <altmember cref="M:System.Windows.Interop.D3DImage.SetBackBuffer(System.Windows.Interop.D3DResourceType,System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="PixelWidth">
@@ -657,6 +677,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Interop.D3DImage.PixelHeight" />
+        <altmember cref="M:System.Windows.Interop.D3DImage.SetBackBuffer(System.Windows.Interop.D3DResourceType,System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="SetBackBuffer">
@@ -714,6 +736,8 @@
           <paramref name="backBufferType" /> is not a valid <see cref="T:System.Windows.Interop.D3DResourceType" />.</exception>
         <exception cref="T:System.ArgumentException">The creation parameters for <paramref name="backBuffer" /> do not meet the requirements for the <paramref name="backBufferType" />-or-The <paramref name="backBuffer" /> device is not valid.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged resources. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:System.Windows.Interop.D3DImage.Lock" />
+        <altmember cref="M:System.Windows.Interop.D3DImage.Unlock" />
       </Docs>
     </Member>
     <Member MemberName="SetBackBuffer">
@@ -790,6 +814,8 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="timeout" /> is set to <see cref="P:System.Windows.Duration.Automatic" />.</exception>
         <exception cref="T:System.InvalidOperationException">The lock count equals <see cref="F:System.UInt32.MaxValue" />.</exception>
+        <altmember cref="M:System.Windows.Interop.D3DImage.Lock" />
+        <altmember cref="M:System.Windows.Interop.D3DImage.Unlock" />
       </Docs>
     </Member>
     <Member MemberName="Unlock">
@@ -827,6 +853,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Interop.D3DImage.Lock" />
+        <altmember cref="M:System.Windows.Interop.D3DImage.TryLock(System.Windows.Duration)" />
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -852,7 +880,27 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Interop.D3DImage.Height" />
+        <altmember cref="M:System.Windows.Interop.D3DImage.SetBackBuffer(System.Windows.Interop.D3DResourceType,System.IntPtr)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Interop.D3DImage" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetBackBuffer">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Assigns a Direct3D surface as the source of the back buffer.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

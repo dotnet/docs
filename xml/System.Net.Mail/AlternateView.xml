@@ -507,5 +507,15 @@
         <altCompliant cref="None." />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateAlternateViewFromString">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Net.Mail.AlternateView" /> of an email message using the content specified in a <see cref="T:System.String" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

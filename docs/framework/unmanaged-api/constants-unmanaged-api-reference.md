@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "constants for unmanaged API [.NET Framework]"
   - "native API reference [.NET Framework], constants"
@@ -20,6 +18,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Constants (Unmanaged API Reference)
 This topic describes the language type, language vendor, and document type constants that are defined in CorSym.idl.  

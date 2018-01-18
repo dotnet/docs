@@ -290,7 +290,7 @@ manager: "wpickett"
 uid: System.Security.Principal.WindowsIdentity.RunImpersonated
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

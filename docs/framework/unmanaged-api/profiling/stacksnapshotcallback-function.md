@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "StackSnapshotCallback"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StackSnapshotCallback function [.NET Framework profiling]"
 ms.assetid: d0f235b2-91fe-4f82-b7d5-e5c64186eea8
@@ -28,6 +26,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # StackSnapshotCallback Function
 Provides the profiler with information about each managed frame and each run of unmanaged frames on the stack during a stack walk, which is initiated by the [ICorProfilerInfo2::DoStackSnapshot](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-dostacksnapshot-method.md) method.  
@@ -81,5 +81,5 @@ HRESULT __stdcall StackSnapshotCallback (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See Also  
- [DoStackSnapshot Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-dostacksnapshot-method.md)   
+ [DoStackSnapshot Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-dostacksnapshot-method.md)  
  [Profiling Global Static Functions](../../../../docs/framework/unmanaged-api/profiling/profiling-global-static-functions.md)

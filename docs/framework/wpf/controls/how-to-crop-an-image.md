@@ -9,16 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "classes, CroppedBitmap"
-  - "CroppedBitmap class"
-  - "images, cropping"
-  - "cropping images"
+  - "images [WPF], cropping"
+  - "cropping images [WPF]"
 ms.assetid: c6bba109-c6e7-4cf8-bfe6-9cf8d01bb4fc
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Crop an Image
 This example shows how to crop an image using <xref:System.Windows.Media.Imaging.CroppedBitmap>.  

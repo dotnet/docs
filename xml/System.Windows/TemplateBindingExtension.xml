@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You use `TemplateBinding` in template to bind to a value on the control the template is applied to. A `TemplateBinding` is more efficient than a <xref:System.Windows.Data.Binding> but it has less functionality. Using a `TemplateBinding` is equivalent to using a <xref:System.Windows.Data.Binding> with the <xref:System.Windows.Data.Binding.RelativeSource%2A> property set to <xref:System.Windows.Data.RelativeSource.TemplatedParent%2A?displayProperty=fullName>.  
+ You use `TemplateBinding` in template to bind to a value on the control the template is applied to. A `TemplateBinding` is more efficient than a <xref:System.Windows.Data.Binding> but it has less functionality. Using a `TemplateBinding` is equivalent to using a <xref:System.Windows.Data.Binding> with the <xref:System.Windows.Data.Binding.RelativeSource%2A> property set to <xref:System.Windows.Data.RelativeSource.TemplatedParent%2A?displayProperty=nameWithType>.  
   
 <a name="xamlTextUsage_TemplateBindingExtension"></a>   
 ## XAML Text Usage  
@@ -143,6 +143,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Data.Binding.ConverterParameter" />
       </Docs>
     </Member>
     <Member MemberName="Property">
@@ -200,5 +201,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.TemplateBindingExtension" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

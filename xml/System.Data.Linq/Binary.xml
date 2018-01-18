@@ -43,7 +43,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When`null` is passed to this constructor instead of the required array of bytes, a <xref:System.ArgumentNullException?displayProperty=fullName> exception is thrown. Do not rely on this behavior because it may change in the future.  
+ When`null` is passed to this constructor instead of the required array of bytes, a <xref:System.ArgumentNullException?displayProperty=nameWithType> exception is thrown. Do not rely on this behavior because it may change in the future.  
   
  ]]></format>
         </remarks>
@@ -180,10 +180,17 @@
         <Parameter Name="value" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The array of bytes to convert into an instance of the <see cref="T:System.Data.Linq.Binary" /> type.</param>
+        <summary>Enables arrays of bytes to be implicitly coerced to the <see cref="T:System.Data.Linq.Binary" /> type in a programming language.</summary>
+        <returns>A <see cref="T:System.Data.Linq.Binary" /> class containing the coerced value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When `null` is passed to this operator instead of the required array of bytes, a [Implicit Conversion (Byte\<xref:System.ArgumentNullException?displayProperty=fullName> exception is thrown. Do not rely on this behavior because it may change in the future.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -256,5 +263,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two binary objects are equal.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

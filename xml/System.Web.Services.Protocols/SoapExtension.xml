@@ -32,6 +32,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Services.Protocols.SoapMessageStage" />
+    <altmember cref="T:System.Web.Services.Protocols.SoapExtensionAttribute" />
+    <altmember cref="T:System.Web.Services.Protocols.LogicalMethodInfo" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -185,6 +188,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.Services.Protocols.SoapExtension.Initialize(System.Object)" />
+        <altmember cref="T:System.Web.Services.Protocols.LogicalMethodInfo" />
+        <altmember cref="T:System.Web.Services.Protocols.SoapExtensionAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -274,5 +280,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetInitializer">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, allows a SOAP extension to initialize data specific to an XML Web service method at a one time performance cost.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

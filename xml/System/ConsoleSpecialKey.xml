@@ -25,9 +25,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ConsoleCancelEventArgs.SpecialKey%2A?displayProperty=fullName> property returns the <xref:System.ConsoleSpecialKey> enumeration type.  
+ The <xref:System.ConsoleCancelEventArgs.SpecialKey%2A?displayProperty=nameWithType> property returns the <xref:System.ConsoleSpecialKey> enumeration type.  
   
- Simultaneously pressing certain key combinations signals the operating system to interrupt the currently running process. The two valid key combinations are <xref:System.ConsoleModifiers?displayProperty=fullName> plus BREAK (CTRL+BREAK) and <xref:System.ConsoleModifiers?displayProperty=fullName> plus <xref:System.ConsoleKey?displayProperty=fullName> (CTRL+C).  
+ Simultaneously pressing certain key combinations signals the operating system to interrupt the currently running process. The two valid key combinations are <xref:System.ConsoleModifiers.Control?displayProperty=nameWithType> plus BREAK (CTRL+BREAK) and <xref:System.ConsoleModifiers.Control?displayProperty=nameWithType> plus <xref:System.ConsoleKey.C?displayProperty=nameWithType> (CTRL+C).  
   
    
   
@@ -40,6 +40,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ConsoleCancelEventArgs" />
   </Docs>
   <Members>
     <Member MemberName="ControlBreak">

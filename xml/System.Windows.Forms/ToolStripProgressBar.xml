@@ -380,6 +380,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ProgressBarStyle" />
       </Docs>
     </Member>
     <Member MemberName="Maximum">
@@ -518,6 +519,7 @@
         <param name="control">The control from which to subscribe events.</param>
         <summary>Subscribes events from the hosted control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripControlHost.OnSubscribeControlEvents(System.Windows.Forms.Control)" />
       </Docs>
     </Member>
     <Member MemberName="OnUnsubscribeControlEvents">
@@ -539,6 +541,7 @@
         <param name="control">The control from which to unsubscribe events.</param>
         <summary>Unsubscribes events from the hosted control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripControlHost.OnUnsubscribeControlEvents(System.Windows.Forms.Control)" />
       </Docs>
     </Member>
     <Member MemberName="OwnerChanged">
@@ -665,6 +668,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.RightToLeft" />
       </Docs>
     </Member>
     <Member MemberName="RightToLeftLayoutChanged">
@@ -690,7 +694,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripProgressBar.RightToLeftLayoutChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripProgressBar.RightToLeftLayoutChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripProgressBar> named `ToolStripProgressBar1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripProgressBar.RightToLeftLayoutChanged> event.  
   
@@ -920,5 +924,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripProgressBar" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -298,6 +298,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.Queue`1.TrimExcess" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -335,7 +336,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the queue.  
+ This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the queue.  
   
  This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Queue%601.Count%2A>.  
   
@@ -519,6 +520,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.Generic.Queue`1" /> is empty.</exception>
+        <altmember cref="M:System.Collections.Generic.Queue`1.Enqueue(`0)" />
+        <altmember cref="M:System.Collections.Generic.Queue`1.Peek" />
       </Docs>
     </Member>
     <Member MemberName="Enqueue">
@@ -576,6 +579,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.Queue`1.Dequeue" />
+        <altmember cref="M:System.Collections.Generic.Queue`1.Peek" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -623,7 +628,7 @@
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  This method is an O(1) operation.  
   
@@ -645,6 +650,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.Queue`1.Enumerator" />
+        <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
       </Docs>
     </Member>
     <Member MemberName="Peek">
@@ -703,6 +710,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.Generic.Queue`1" /> is empty.</exception>
+        <altmember cref="M:System.Collections.Generic.Queue`1.Enqueue(`0)" />
+        <altmember cref="M:System.Collections.Generic.Queue`1.Dequeue" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator">
@@ -750,12 +759,15 @@
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  This method is an O(1) operation.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.Queue`1.GetEnumerator" />
+        <altmember cref="M:System.Collections.IEnumerable.GetEnumerator" />
+        <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -795,7 +807,7 @@
 ## Remarks  
   
 > [!NOTE]
->  If the type of the source <xref:System.Collections.ICollection> cannot be cast automatically to the type of the destination `array`, the non-generic implementations of <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName> throw <xref:System.InvalidCastException>, whereas the generic implementations throw <xref:System.ArgumentException>.  
+>  If the type of the source <xref:System.Collections.ICollection> cannot be cast automatically to the type of the destination `array`, the non-generic implementations of <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=nameWithType> throw <xref:System.InvalidCastException>, whereas the generic implementations throw <xref:System.ArgumentException>.  
   
  This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Queue%601.Count%2A>.  
   
@@ -852,7 +864,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
@@ -862,6 +874,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -894,7 +907,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
@@ -929,6 +942,7 @@ finally {
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -976,12 +990,15 @@ finally {
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  This method is an O(1) operation.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.Queue`1.GetEnumerator" />
+        <altmember cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="ToArray">
@@ -1077,11 +1094,13 @@ finally {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.Queue`1.Clear" />
+        <altmember cref="P:System.Collections.Generic.Queue`1.Count" />
       </Docs>
     </Member>
     <Member MemberName="TryDequeue">
       <MemberSignature Language="C#" Value="public bool TryDequeue (out T result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryDequeue(!T result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryDequeue([out] !T&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.TryDequeue(`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1103,7 +1122,7 @@ finally {
     </Member>
     <Member MemberName="TryPeek">
       <MemberSignature Language="C#" Value="public bool TryPeek (out T result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryPeek(!T result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryPeek([out] !T&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.TryPeek(`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1123,5 +1142,16 @@ finally {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.Queue`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

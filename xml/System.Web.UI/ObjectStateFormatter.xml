@@ -30,7 +30,7 @@
 |-|-|-|-|  
 |<xref:System.Array>|<xref:System.DateTime>|<xref:System.Int16>|<xref:System.String>|  
 |<xref:System.Collections.ArrayList>|<xref:System.Double>|<xref:System.Int32>|String []|  
-|<xref:System.Boolean>|<xref:System.Enum>|null (`Nothing`)|<xref:System.String.Empty?displayProperty=fullName>|  
+|<xref:System.Boolean>|<xref:System.Enum>|null (`Nothing`)|<xref:System.String.Empty?displayProperty=nameWithType>|  
 |<xref:System.Byte>|<xref:System.Collections.Hashtable>|<xref:System.Web.UI.Pair>|<xref:System.Web.UI.Triplet>|  
 |<xref:System.Char>|<xref:System.Collections.Specialized.HybridDictionary>|<xref:System.Single>|<xref:System.Type>|  
 |<xref:System.Drawing.Color>|<xref:System.Collections.IDictionary>|||  
@@ -85,6 +85,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.ObjectStateFormatter.Serialize" />
+        <altmember cref="Overload:System.Web.UI.LosFormatter.Deserialize" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Deserialize">
@@ -440,5 +442,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Serialize">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Serializes an object state graph.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

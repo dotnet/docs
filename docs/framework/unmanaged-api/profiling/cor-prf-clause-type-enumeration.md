@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_PRF_CLAUSE_TYPE"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_PRF_CLAUSE_TYPE enumeration [.NET Framework profiling]"
 ms.assetid: f64c325a-ed3a-4aaf-b847-a88edbc4fefc
@@ -28,6 +26,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PRF_CLAUSE_TYPE Enumeration
 Indicates the type of exception clause that the code has just entered or left.  

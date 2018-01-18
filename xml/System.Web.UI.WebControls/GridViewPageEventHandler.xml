@@ -36,15 +36,19 @@
 ## Examples  
  The following example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.GridViewPageEventHandler> delegate to the <xref:System.Web.UI.WebControls.GridView.PageIndexChanging> event of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewPageEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewPageEventHandler/CS/gridviewpageeventhandlercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewPageEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewPageEventHandler/VB/gridviewpageeventhandlervb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewPageEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewPageEventHandler/CS/gridviewpageeventhandlercs.aspx#1)]
+ [!code-aspx-vb[GridViewPageEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewPageEventHandler/VB/gridviewpageeventhandlervb.aspx#1)]  
   
  The following example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.GridViewPageEventHandler> delegate to the <xref:System.Web.UI.WebControls.GridView.PageIndexChanging> event of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewPageIndexChanging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewPageIndexChanging/CS/gridviewpageindexchangingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewPageIndexChanging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewPageIndexChanging/VB/gridviewpageindexchangingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewPageIndexChanging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewPageIndexChanging/CS/gridviewpageindexchangingcs.aspx#1)]
+ [!code-aspx-vb[GridViewPageIndexChanging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewPageIndexChanging/VB/gridviewpageindexchangingvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewPageEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.PageIndexChanging" />
+    <altmember cref="M:System.Web.UI.WebControls.GridView.OnPageIndexChanging(System.Web.UI.WebControls.GridViewPageEventArgs)" />
   </Docs>
 </Type>

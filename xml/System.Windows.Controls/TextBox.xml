@@ -82,6 +82,8 @@ tbSettingText.Text = "Initial text contents of the TextBox."
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.PasswordBox" />
+    <altmember cref="T:System.Windows.Controls.RichTextBox" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -129,6 +131,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Documents.TextPointer" />
       </Docs>
     </Member>
     <Member MemberName="CharacterCasing">
@@ -207,6 +210,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       <Docs>
         <summary>Clears all the content from the text box.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.TextBox.Text" />
       </Docs>
     </Member>
     <Member MemberName="GetCharacterIndexFromLineIndex">
@@ -229,6 +233,12 @@ tbSettingText.Text = "Initial text contents of the TextBox."
         <summary>Returns the zero-based character index for the first character in the specified line.</summary>
         <returns>The zero-based index for the first character in the specified line.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.TextBox.LineCount" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetCharacterIndexFromPoint(System.Windows.Point,System.Boolean)" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetLineIndexFromCharacterIndex(System.Int32)" />
+        <altmember cref="Overload:System.Windows.Controls.TextBox.GetRectFromCharacterIndex" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetFirstVisibleLineIndex" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetLastVisibleLineIndex" />
       </Docs>
     </Member>
     <Member MemberName="GetCharacterIndexFromPoint">
@@ -254,6 +264,11 @@ tbSettingText.Text = "Initial text contents of the TextBox."
         <summary>Returns the zero-based index of the character that is closest to the specified point.</summary>
         <returns>The index of the character that is closest to the specified point, or –1 if no valid index can be found.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.TextBox.GetCharacterIndexFromLineIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetLineIndexFromCharacterIndex(System.Int32)" />
+        <altmember cref="Overload:System.Windows.Controls.TextBox.GetRectFromCharacterIndex" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetFirstVisibleLineIndex" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetLastVisibleLineIndex" />
       </Docs>
     </Member>
     <Member MemberName="GetFirstVisibleLineIndex">
@@ -273,6 +288,11 @@ tbSettingText.Text = "Initial text contents of the TextBox."
         <summary>Returns the line index for the first line that is currently visible in the text box.</summary>
         <returns>The zero-based index for the first visible line in the text box.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.TextBox.GetCharacterIndexFromPoint(System.Windows.Point,System.Boolean)" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetCharacterIndexFromLineIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetLineIndexFromCharacterIndex(System.Int32)" />
+        <altmember cref="Overload:System.Windows.Controls.TextBox.GetRectFromCharacterIndex" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetLastVisibleLineIndex" />
       </Docs>
     </Member>
     <Member MemberName="GetLastVisibleLineIndex">
@@ -292,6 +312,11 @@ tbSettingText.Text = "Initial text contents of the TextBox."
         <summary>Returns the line index for the last line that is currently visible in the text box.</summary>
         <returns>The zero-based index for the last visible line in the text box.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.TextBox.GetCharacterIndexFromPoint(System.Windows.Point,System.Boolean)" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetLineIndexFromCharacterIndex(System.Int32)" />
+        <altmember cref="Overload:System.Windows.Controls.TextBox.GetRectFromCharacterIndex" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetCharacterIndexFromLineIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetFirstVisibleLineIndex" />
       </Docs>
     </Member>
     <Member MemberName="GetLineIndexFromCharacterIndex">
@@ -314,6 +339,11 @@ tbSettingText.Text = "Initial text contents of the TextBox."
         <summary>Returns the zero-based line index for the line that contains the specified character index.</summary>
         <returns>The zero-based index for the line that contains the specified character index.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.TextBox.GetCharacterIndexFromPoint(System.Windows.Point,System.Boolean)" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetCharacterIndexFromLineIndex(System.Int32)" />
+        <altmember cref="Overload:System.Windows.Controls.TextBox.GetRectFromCharacterIndex" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetFirstVisibleLineIndex" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetLastVisibleLineIndex" />
       </Docs>
     </Member>
     <Member MemberName="GetLineLength">
@@ -336,6 +366,9 @@ tbSettingText.Text = "Initial text contents of the TextBox."
         <summary>Returns the number of characters in the specified line.</summary>
         <returns>The number of characters in the specified line.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.TextBox.LineCount" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetFirstVisibleLineIndex" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetLastVisibleLineIndex" />
       </Docs>
     </Member>
     <Member MemberName="GetLineText">
@@ -358,6 +391,9 @@ tbSettingText.Text = "Initial text contents of the TextBox."
         <summary>Returns the text that is currently displayed on the specified line.</summary>
         <returns>A string containing a copy of the text currently visible on the specified line.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.TextBox.LineCount" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetFirstVisibleLineIndex" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetLastVisibleLineIndex" />
       </Docs>
     </Member>
     <Member MemberName="GetNextSpellingErrorCharacterIndex">
@@ -382,6 +418,9 @@ tbSettingText.Text = "Initial text contents of the TextBox."
         <summary>Returns the beginning character index for the next spelling error in the contents of the text box.</summary>
         <returns>The character index for the beginning of the next spelling error in the contents of the text box, or –1 if no next spelling error exists.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.TextBox.GetSpellingError(System.Int32)" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetSpellingErrorLength(System.Int32)" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetSpellingErrorStart(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetRectFromCharacterIndex">
@@ -467,6 +506,9 @@ tbSettingText.Text = "Initial text contents of the TextBox."
         <summary>Returns a <see cref="T:System.Windows.Controls.SpellingError" /> object associated with any spelling error at the specified character index.</summary>
         <returns>A <see cref="T:System.Windows.Controls.SpellingError" /> object containing the details of the spelling error found at the character indicated by <paramref name="charIndex" />, or <see langword="null" /> if no spelling error exists at the specified character.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.TextBox.GetNextSpellingErrorCharacterIndex(System.Int32,System.Windows.Documents.LogicalDirection)" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetSpellingErrorLength(System.Int32)" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetSpellingErrorStart(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetSpellingErrorLength">
@@ -543,6 +585,15 @@ tbSettingText.Text = "Initial text contents of the TextBox."
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.TextBox.TextWrapping" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetCharacterIndexFromLineIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetFirstVisibleLineIndex" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetLastVisibleLineIndex" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetLineLength(System.Int32)" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetLineText(System.Int32)" />
+        <altmember cref="P:System.Windows.Controls.TextBox.MaxLines" />
+        <altmember cref="P:System.Windows.Controls.TextBox.MinLines" />
+        <altmember cref="M:System.Windows.Controls.TextBox.ScrollToLine(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="LogicalChildren">
@@ -623,6 +674,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.TextBox.MaxLines" />
       </Docs>
     </Member>
     <Member MemberName="MaxLengthProperty">
@@ -694,6 +746,8 @@ tbSettingText.Text = "Initial text contents of the TextBox."
         </remarks>
         <exception cref="T:System.Exception">
           <see cref="P:System.Windows.Controls.TextBox.MaxLines" /> is less than <see cref="P:System.Windows.Controls.TextBox.MinLines" />.</exception>
+        <altmember cref="P:System.Windows.Controls.TextBox.MinLines" />
+        <altmember cref="P:System.Windows.Controls.TextBox.MaxLength" />
       </Docs>
     </Member>
     <Member MemberName="MaxLinesProperty">
@@ -792,6 +846,8 @@ tbSettingText.Text = "Initial text contents of the TextBox."
         </remarks>
         <exception cref="T:System.Exception">
           <see cref="P:System.Windows.Controls.TextBox.MinLines" /> is greater than <see cref="P:System.Windows.Controls.TextBox.MaxLines" />.</exception>
+        <altmember cref="P:System.Windows.Controls.TextBox.MaxLines" />
+        <altmember cref="P:System.Windows.Controls.TextBox.MaxLength" />
       </Docs>
     </Member>
     <Member MemberName="MinLinesProperty">
@@ -831,7 +887,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Windows.ContentElement.OnCreateAutomationPeer%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Windows.ContentElement.OnCreateAutomationPeer%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -859,10 +915,11 @@ tbSettingText.Text = "Initial text contents of the TextBox."
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Windows.FrameworkElement.OnPropertyChanged%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Windows.FrameworkElement.OnPropertyChanged%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.DependencyPropertyChangedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="ScrollToLine">
@@ -891,6 +948,9 @@ tbSettingText.Text = "Initial text contents of the TextBox."
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.TextBox.GetFirstVisibleLineIndex" />
+        <altmember cref="M:System.Windows.Controls.TextBox.GetLastVisibleLineIndex" />
+        <altmember cref="P:System.Windows.Controls.TextBox.LineCount" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -916,6 +976,9 @@ tbSettingText.Text = "Initial text contents of the TextBox."
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="start" /> or <paramref name="length" /> is negative.</exception>
+        <altmember cref="P:System.Windows.Controls.TextBox.SelectedText" />
+        <altmember cref="P:System.Windows.Controls.TextBox.SelectionLength" />
+        <altmember cref="P:System.Windows.Controls.TextBox.SelectionStart" />
       </Docs>
     </Member>
     <Member MemberName="SelectedText">
@@ -946,6 +1009,9 @@ tbSettingText.Text = "Initial text contents of the TextBox."
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.TextBox.Select(System.Int32,System.Int32)" />
+        <altmember cref="P:System.Windows.Controls.TextBox.SelectionLength" />
+        <altmember cref="P:System.Windows.Controls.TextBox.SelectionStart" />
       </Docs>
     </Member>
     <Member MemberName="SelectionLength">
@@ -983,6 +1049,9 @@ tbSettingText.Text = "Initial text contents of the TextBox."
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <see cref="P:System.Windows.Controls.TextBox.SelectionLength" /> is set to a negative value.</exception>
+        <altmember cref="M:System.Windows.Controls.TextBox.Select(System.Int32,System.Int32)" />
+        <altmember cref="P:System.Windows.Controls.TextBox.SelectedText" />
+        <altmember cref="P:System.Windows.Controls.TextBox.SelectionStart" />
       </Docs>
     </Member>
     <Member MemberName="SelectionStart">
@@ -1018,6 +1087,9 @@ tbSettingText.Text = "Initial text contents of the TextBox."
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <see cref="P:System.Windows.Controls.TextBox.SelectionStart" /> is set to a negative value.</exception>
+        <altmember cref="M:System.Windows.Controls.TextBox.Select(System.Int32,System.Int32)" />
+        <altmember cref="P:System.Windows.Controls.TextBox.SelectedText" />
+        <altmember cref="P:System.Windows.Controls.TextBox.SelectionLength" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeText">
@@ -1140,7 +1212,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
   
  This property does not support animation.  
   
- When used in data-binding scenarios, this property uses the default update behavior of <xref:System.Windows.Data.UpdateSourceTrigger?displayProperty=fullName>.  
+ When used in data-binding scenarios, this property uses the default update behavior of <xref:System.Windows.Data.UpdateSourceTrigger.LostFocus?displayProperty=nameWithType>.  
   
 <a name="xamlPropertyElementUsage_Text"></a>   
 ## XAML Property Element Usage  
@@ -1161,6 +1233,8 @@ tbSettingText.Text = "Initial text contents of the TextBox."
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.TextBox.CharacterCasing" />
+        <altmember cref="P:System.Windows.Controls.TextBox.TextAlignment" />
       </Docs>
     </Member>
     <Member MemberName="TextAlignment">
@@ -1197,7 +1271,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
    
   
 ## Examples  
- The following example shows how to create a <xref:System.Windows.Controls.TextBox> with a <xref:System.Windows.Controls.TextBox.TextAlignment%2A> of <xref:System.Windows.TextAlignment?displayProperty=fullName>.  
+ The following example shows how to create a <xref:System.Windows.Controls.TextBox> with a <xref:System.Windows.Controls.TextBox.TextAlignment%2A> of <xref:System.Windows.TextAlignment.Center?displayProperty=nameWithType>.  
   
  [!code-xaml[TextBoxMiscSnippets_snip#TextBoxExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/textboxexample.xaml#textboxexamplewholepage)]  
   
@@ -1206,6 +1280,8 @@ tbSettingText.Text = "Initial text contents of the TextBox."
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.TextBox.Text" />
+        <altmember cref="P:System.Windows.Controls.TextBox.CharacterCasing" />
       </Docs>
     </Member>
     <Member MemberName="TextAlignmentProperty">
@@ -1433,5 +1509,14 @@ tbSettingText.Text = "Initial text contents of the TextBox."
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetRectFromCharacterIndex">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the rectangle for an edge of the character at the specified index.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

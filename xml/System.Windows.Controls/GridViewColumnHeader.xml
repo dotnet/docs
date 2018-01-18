@@ -41,6 +41,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.GridView" />
+    <altmember cref="T:System.Windows.Controls.GridViewColumn" />
+    <altmember cref="T:System.Windows.Controls.GridViewRowPresenter" />
+    <altmember cref="T:System.Windows.Controls.GridViewHeaderRowPresenter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -312,7 +316,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation handles the <xref:System.Windows.UIElement.MouseLeftButtonUp> event so that the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.OnMouseLeftButtonUp%2A?displayProperty=fullName> can support the drag-and-drop operation that moves a column. This method captures the mouse and sets the <xref:System.Windows.RoutedEventArgs.Handled%2A> event argument to `true`.  
+ This implementation handles the <xref:System.Windows.UIElement.MouseLeftButtonUp> event so that the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.OnMouseLeftButtonUp%2A?displayProperty=nameWithType> can support the drag-and-drop operation that moves a column. This method captures the mouse and sets the <xref:System.Windows.RoutedEventArgs.Handled%2A> event argument to `true`.  
   
  ]]></format>
         </remarks>
@@ -340,7 +344,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation handles the <xref:System.Windows.UIElement.MouseLeftButtonUp> event (which occurs when the <xref:System.Windows.RoutedEventArgs.Handled%2A> property in the <xref:System.Windows.Input.MouseEventArgs> is set to `true`). It also ends the mouse capture that was set by the <xref:System.Windows.Controls.GridViewColumnHeader.OnMouseLeftButtonDown%2A> method. This provides a way for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.OnMouseLeftButtonUp%2A?displayProperty=fullName> to support the drag-and-drop operation that moves a column.  
+ This implementation handles the <xref:System.Windows.UIElement.MouseLeftButtonUp> event (which occurs when the <xref:System.Windows.RoutedEventArgs.Handled%2A> property in the <xref:System.Windows.Input.MouseEventArgs> is set to `true`). It also ends the mouse capture that was set by the <xref:System.Windows.Controls.GridViewColumnHeader.OnMouseLeftButtonDown%2A> method. This provides a way for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.OnMouseLeftButtonUp%2A?displayProperty=nameWithType> to support the drag-and-drop operation that moves a column.  
   
  This method sets the <xref:System.Windows.RoutedEventArgs.Handled%2A> event argument to `true`.  
   
@@ -372,7 +376,7 @@
 ## Remarks  
  This implementation keeps the left mouse button in a pressed state while a <xref:System.Windows.Controls.GridViewColumn> is moved by a drag-and-drop operation. This also causes the <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> property of the <xref:System.Windows.Controls.GridViewColumnHeader> to remain set to `true` when the mouse with its left mouse button pressed moves off the header.  
   
- This implementation keeps the <xref:System.Windows.RoutedEventArgs.Handled%2A> event argument set to `false` for the <xref:System.Windows.UIElement.MouseMove> event so that the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.OnMouseMove%2A?displayProperty=fullName> method can support the drag-and-drop operation that moves a column.  
+ This implementation keeps the <xref:System.Windows.RoutedEventArgs.Handled%2A> event argument set to `false` for the <xref:System.Windows.UIElement.MouseMove> event so that the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.OnMouseMove%2A?displayProperty=nameWithType> method can support the drag-and-drop operation that moves a column.  
   
  ]]></format>
         </remarks>
@@ -435,6 +439,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.GridViewColumnHeaderRole" />
       </Docs>
     </Member>
     <Member MemberName="RoleProperty">

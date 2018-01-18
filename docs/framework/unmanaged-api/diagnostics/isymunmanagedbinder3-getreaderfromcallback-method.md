@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedBinder3::GetReaderFromCallback"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetReaderFromCallback method [.NET Framework debugging]"
   - "ISymUnmanagedBinder3::GetReaderFromCallback method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedBinder3::GetReaderFromCallback Method
 Allows the user to implement or supply via callback either an `IID_IDiaReadExeAtRVACallback` or `IID_IDiaReadExeAtOffsetCallback` to obtain the debug directory information from memory.  

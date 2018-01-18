@@ -46,7 +46,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The batch work that is run in this method runs in the context and thread apartment of the activity created by the call to <xref:System.EnterpriseServices.Activity>. The batch work in this method is run by a call to either <xref:System.EnterpriseServices.Activity.SynchronousCall%2A?displayProperty=fullName> or <xref:System.EnterpriseServices.Activity.AsynchronousCall%2A?displayProperty=fullName>.  
+ The batch work that is run in this method runs in the context and thread apartment of the activity created by the call to <xref:System.EnterpriseServices.Activity>. The batch work in this method is run by a call to either <xref:System.EnterpriseServices.Activity.SynchronousCall%2A?displayProperty=nameWithType> or <xref:System.EnterpriseServices.Activity.AsynchronousCall%2A?displayProperty=nameWithType>.  
   
 > [!CAUTION]
 >  You must ensure that this method is thread safe in situations where the activity object created by <xref:System.EnterpriseServices.Activity> is not created with a synchronized context, because in such situations many calls to <xref:System.EnterpriseServices.IServiceCall.OnCall%2A> can run at the same time.  

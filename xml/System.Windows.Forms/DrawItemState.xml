@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is used by members such as <xref:System.Windows.Forms.DrawItemEventArgs.State%2A?displayProperty=fullName>.  
+ This enumeration is used by members such as <xref:System.Windows.Forms.DrawItemEventArgs.State%2A?displayProperty=nameWithType>.  
   
    
   
@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DrawItemEventArgs" />
   </Docs>
   <Members>
     <Member MemberName="Checked">

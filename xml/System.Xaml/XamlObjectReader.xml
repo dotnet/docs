@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Xaml.XamlObjectReader> in scenarios where you want to process an object graph, which is typically the object graph of an application that is originally generated from a XAML source. You might use the <xref:System.Xaml.XamlObjectReader>where a round trip is made from a XAML start point to a XAML end point. Or you might run a <xref:System.Xaml.XamlObjectReader> over the object graph; process the intermediate XAML node stream, if it is required, by using APIs on <xref:System.Xaml.XamlType> and <xref:System.Xaml.XamlMember>; and then use <xref:System.Xaml.XamlXmlWriter> to serialize XAML nodes to XML.  
+ Use the <xref:System.Xaml.XamlObjectReader> in scenarios where you want to process an object graph, which is typically the object graph of an application that is originally generated from a XAML source. You might use the <xref:System.Xaml.XamlObjectReader> where a round trip is made from a XAML start point to a XAML end point. Or you might run a <xref:System.Xaml.XamlObjectReader> over the object graph; process the intermediate XAML node stream, if it is required, by using APIs on <xref:System.Xaml.XamlType> and <xref:System.Xaml.XamlMember>; and then use <xref:System.Xaml.XamlXmlWriter> to serialize XAML nodes to XML.  
   
  More advanced scenarios might supply a <xref:System.Xaml.XamlXmlWriter> override and a specific XAML schema context that the <xref:System.Xaml.XamlObjectReader> uses and then passes to the writer override.  
   
@@ -45,7 +45,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If initialized with this constructor, the <xref:System.Xaml.XamlObjectReader> object has the initial settings of a default <xref:System.Xaml.XamlObjectReaderSettings>object and the initial context of a default <xref:System.Xaml.XamlSchemaContext>.  
+ If initialized with this constructor, the <xref:System.Xaml.XamlObjectReader> object has the initial settings of a default <xref:System.Xaml.XamlObjectReaderSettings> object and the initial context of a default <xref:System.Xaml.XamlSchemaContext>.  
   
  ]]></format>
         </remarks>
@@ -340,5 +340,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectReader" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

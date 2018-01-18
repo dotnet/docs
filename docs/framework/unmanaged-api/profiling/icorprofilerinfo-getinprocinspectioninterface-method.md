@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetInprocInspectionInterface"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetInprocInspectionInterface method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetInprocInspectionInterface method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 19
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::GetInprocInspectionInterface Method
 Gets an object that can be queried for an "ICorDebugProcess" interface. This method is obsolete in the .NET Framework version 2.0.  

@@ -9,10 +9,8 @@ ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "multiple platforms, resources for"
   - "resources [.NET Framework]"
@@ -24,6 +22,9 @@ caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # App Resources for Libraries That Target Multiple Platforms
 You can use the .NET Framework [Portable Class Library](../../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md) project type to ensure that resources in your class libraries can be accessed from multiple platforms. This project type is available in [!INCLUDE[vs_dev11_long](../../../includes/vs-dev11-long-md.md)] and targets the portable subset of the .NET Framework class library. Using  a [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] ensures that your library can be accessed from desktop apps, Silverlight apps, Windows Phone apps, and [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps.  
@@ -44,7 +45,7 @@ You can use the .NET Framework [Portable Class Library](../../../docs/standard/c
 |<xref:System.Resources.ResourceManager.GetString%28System.String%29>|Retrieves a named resource for the current culture.|  
 |<xref:System.Resources.ResourceManager.GetString%28System.String%2CSystem.Globalization.CultureInfo%29>|Retrieves a named resource belonging to the specified culture.|  
   
- The exclusion of other <xref:System.Resources.ResourceManager> members from the [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] means that serialized objects, non-string data, and images cannot be retrieved from a resource file. To use resources from a [!INCLUDE[net_portable](../../../includes/net-portable-md.md)], you should store all  object data in string form. For example, you can store numeric values in a resource file by converting them to strings, and you can retrieve them and then convert them back to numbers by using the numeric data type's `Parse` or `TryParse` method. You can convert images or other binary data to a string representation by calling the <xref:System.Convert.ToBase64String%2A?displayProperty=fullName> method, and restore them to a byte array by calling the <xref:System.Convert.FromBase64String%2A?displayProperty=fullName> method.  
+ The exclusion of other <xref:System.Resources.ResourceManager> members from the [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] means that serialized objects, non-string data, and images cannot be retrieved from a resource file. To use resources from a [!INCLUDE[net_portable](../../../includes/net-portable-md.md)], you should store all  object data in string form. For example, you can store numeric values in a resource file by converting them to strings, and you can retrieve them and then convert them back to numbers by using the numeric data type's `Parse` or `TryParse` method. You can convert images or other binary data to a string representation by calling the <xref:System.Convert.ToBase64String%2A?displayProperty=nameWithType> method, and restore them to a byte array by calling the <xref:System.Convert.FromBase64String%2A?displayProperty=nameWithType> method.  
   
 ## The [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] and Windows Store Apps  
  [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] projects store resources in .resx files, which are then compiled into .resources files and embedded in the main assembly or in satellite assemblies at compile time. [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps, on the other hand, require resources to be stored in .resw files, which are then compiled into a single package resource index (PRI) file. However, despite the incompatible file formats, your [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] will work in a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app.  
@@ -107,6 +108,6 @@ You can use the .NET Framework [Portable Class Library](../../../docs/standard/c
  [!code-vb[Conceptual.Resources.PortableMetroLoc#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.portablemetroloc/vb/blankpage.xaml.vb#1)]  
   
 ## See Also  
- <xref:System.Resources.ResourceManager>   
- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)   
+ <xref:System.Resources.ResourceManager>  
+ [Resources in Desktop Apps](../../../docs/framework/resources/index.md)  
  [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)

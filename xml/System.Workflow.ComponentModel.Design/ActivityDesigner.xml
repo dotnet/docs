@@ -2676,7 +2676,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unless overridden in a derived class, <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.ShowInfoTip%2A> uses the <xref:System.Workflow.ComponentModel.Design.WorkflowView.ShowInfoTip%2A?displayProperty=fullName> logic to display info tips.  
+ Unless overridden in a derived class, <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.ShowInfoTip%2A> uses the <xref:System.Workflow.ComponentModel.Design.WorkflowView.ShowInfoTip%2A?displayProperty=nameWithType> logic to display info tips.  
   
  ]]></format>
         </remarks>
@@ -3115,7 +3115,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unless overridden in a deriving class, <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.System%23ComponentModel%23Design%23IRootDesigner%23SupportedTechnologies> returns a single-member array that contains <xref:System.ComponentModel.Design.ViewTechnology?displayProperty=fullName>.  
+ Unless overridden in a deriving class, <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.System%23ComponentModel%23Design%23IRootDesigner%23SupportedTechnologies> returns a single-member array that contains <xref:System.ComponentModel.Design.ViewTechnology.Default?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -3397,5 +3397,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> and optionally releases the managed resources.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

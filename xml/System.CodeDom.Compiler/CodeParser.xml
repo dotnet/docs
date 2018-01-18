@@ -79,6 +79,8 @@
         <summary>Compiles the specified text stream into a <see cref="T:System.CodeDom.CodeCompileUnit" />.</summary>
         <returns>A <see cref="T:System.CodeDom.CodeCompileUnit" /> containing the code model produced from parsing the code.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeCompileUnit" />
+        <altmember cref="T:System.IO.TextReader" />
       </Docs>
     </Member>
   </Members>

@@ -35,7 +35,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Security.SecurityException> exception is thrown when a caller does not have the permissions required to access a resource. The following example instantiates a <xref:System.Security.PermissionSet> object that includes a <xref:System.Security.Permissions.UIPermission> object to allow access to UI objects and the Clipboard and a <xref:System.Security.Permissions.RegistryPermission> object to prevent registry access. The call to the <xref:System.Security.PermissionSet.PermitOnly%2A?displayProperty=fullName> method means that these permissions will apply regardless of the permissions assigned to the caller. As a result, the attempt to create a registry key throws a <xref:System.Security.SecurityException>.  
+ A <xref:System.Security.SecurityException> exception is thrown when a caller does not have the permissions required to access a resource. The following example instantiates a <xref:System.Security.PermissionSet> object that includes a <xref:System.Security.Permissions.UIPermission> object to allow access to UI objects and the Clipboard and a <xref:System.Security.Permissions.RegistryPermission> object to prevent registry access. The call to the <xref:System.Security.PermissionSet.PermitOnly%2A?displayProperty=nameWithType> method means that these permissions will apply regardless of the permissions assigned to the caller. As a result, the attempt to create a registry key throws a <xref:System.Security.SecurityException>.  
   
  [!code-csharp[System.SecurityException.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.securityexception.class/cs/se_ex1.cs#1)]
  [!code-vb[System.SecurityException.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.securityexception.class/vb/se_ex1.vb#1)]  
@@ -46,6 +46,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -276,6 +277,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -487,6 +489,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.SecurityException.GrantedSet" />
       </Docs>
     </Member>
     <Member MemberName="Action">
@@ -746,6 +749,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName="GrantedSet">
@@ -919,7 +924,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.SecurityException.PermitOnlySetInstance%2A> property represents the permitted permission, permission set, or permission set collection contained in the stack frame that caused the security exception. For instance, when a security exception occurs because of a <xref:System.Security.PermissionSet.Demand%2A?displayProperty=fullName> failure, the permitted permission appears in this property and the demanded <xref:System.Security.PermissionSet> is contained in the <xref:System.Security.SecurityException.Demanded%2A> property.  
+ The <xref:System.Security.SecurityException.PermitOnlySetInstance%2A> property represents the permitted permission, permission set, or permission set collection contained in the stack frame that caused the security exception. For instance, when a security exception occurs because of a <xref:System.Security.PermissionSet.Demand%2A?displayProperty=nameWithType> failure, the permitted permission appears in this property and the demanded <xref:System.Security.PermissionSet> is contained in the <xref:System.Security.SecurityException.Demanded%2A> property.  
   
  This property is of type <xref:System.Object> because permissions, permission sets, or permission set collections can all be demanded and <xref:System.Object> is their common base class.  To test the run-time type of this property, you can use the <xref:System.Object.GetType%2A> method or a specific language operator, such as the  operator in C# or the  operator in Visual Basic.  
   

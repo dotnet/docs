@@ -29,6 +29,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.ListView" />
+    <altmember cref="T:System.Windows.Controls.GridView" />
+    <altmember cref="T:System.Windows.Controls.GridViewColumnHeader" />
+    <altmember cref="T:System.Windows.Controls.GridViewRowPresenter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -291,15 +295,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Windows.Controls.GridView.ColumnHeaderTemplate%2A?displayProperty=fullName>, <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A?displayProperty=fullName>, or <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate%2A?displayProperty=fullName> property is set, this property is ignored.  
+ If the <xref:System.Windows.Controls.GridView.ColumnHeaderTemplate%2A?displayProperty=nameWithType>, <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A?displayProperty=nameWithType>, or <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate%2A?displayProperty=nameWithType> property is set, this property is ignored.  
   
  You can use several properties to specify the format of the column headers.  If more than one property is set, the column header is formatted with the value of the property that has the highest priority. The format for a column can be set on several types. The following list shows the properties that can be used to format the column headers, ordered from lowest to highest priority:  
   
--   <xref:System.Windows.Controls.GridView.ColumnHeaderStringFormat%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Controls.GridView.ColumnHeaderStringFormat%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderStringFormat%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderStringFormat%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Controls.GridViewColumn.HeaderStringFormat%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Controls.GridViewColumn.HeaderStringFormat%2A?displayProperty=nameWithType>  
   
 <a name="dependencyPropertyInfo_ColumnHeaderStringFormat"></a>   
 ## Dependency Property Information  
@@ -378,6 +382,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplateSelector" />
       </Docs>
     </Member>
     <Member MemberName="ColumnHeaderTemplateProperty">
@@ -465,6 +470,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate" />
       </Docs>
     </Member>
     <Member MemberName="ColumnHeaderTemplateSelectorProperty">
@@ -544,7 +550,7 @@
  A string that becomes the display text for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderToolTip%2A>.  
   
  `toolTipObjectContent`  
- An object to use as the content for the tooltip. Typically, this object is a <xref:System.Windows.FrameworkElement> or some other element that defines a layout for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderToolTip%2A>, such as a text element. In this usage, a <xref:System.Windows.Controls.ToolTip> element is implicitly created from the parsed [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], and the `toolTipObjectContent` content is set as its <xref:System.Windows.Controls.ContentControl.Content%2A?displayProperty=fullName> property.  
+ An object to use as the content for the tooltip. Typically, this object is a <xref:System.Windows.FrameworkElement> or some other element that defines a layout for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderToolTip%2A>, such as a text element. In this usage, a <xref:System.Windows.Controls.ToolTip> element is implicitly created from the parsed [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], and the `toolTipObjectContent` content is set as its <xref:System.Windows.Controls.ContentControl.Content%2A?displayProperty=nameWithType> property.  
   
  <`ToolTip` .../>  
  See <xref:System.Windows.Controls.ToolTip>.  

@@ -25,12 +25,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.SelectMode> enumeration defines the polling modes that can be passed to the <xref:System.Net.Sockets.Socket.Poll%2A?displayProperty=fullName> method. Use the SelectRead value to determine if a listening <xref:System.Net.Sockets.Socket> has incoming connection requests. Use the SelectWrite value to determine if a <xref:System.Net.Sockets.Socket> is writeable. Use the SelectError value to determine if there is an error condition present on the <xref:System.Net.Sockets.Socket>. For explanations of writeability, readability, and the presence of error conditions, see the <xref:System.Net.Sockets.Socket.Poll%2A?displayProperty=fullName> method.  
+ The <xref:System.Net.Sockets.SelectMode> enumeration defines the polling modes that can be passed to the <xref:System.Net.Sockets.Socket.Poll%2A?displayProperty=nameWithType> method. Use the SelectRead value to determine if a listening <xref:System.Net.Sockets.Socket> has incoming connection requests. Use the SelectWrite value to determine if a <xref:System.Net.Sockets.Socket> is writeable. Use the SelectError value to determine if there is an error condition present on the <xref:System.Net.Sockets.Socket>. For explanations of writeability, readability, and the presence of error conditions, see the <xref:System.Net.Sockets.Socket.Poll%2A?displayProperty=nameWithType> method.  
   
    
   
 ## Examples  
- The following example checks the status of a <xref:System.Net.Sockets.Socket> using all three <xref:System.Net.Sockets.SelectMode> enumeration values. A call to <xref:System.Net.Sockets.Socket.Poll%2A?displayProperty=fullName> using the SelectWrite enumerated value should return `true`.  
+ The following example checks the status of a <xref:System.Net.Sockets.Socket> using all three <xref:System.Net.Sockets.SelectMode> enumeration values. A call to <xref:System.Net.Sockets.Socket.Poll%2A?displayProperty=nameWithType> using the SelectWrite enumerated value should return `true`.  
   
  [!code-cpp[SelectModeExample#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SelectModeExample/CPP/source.cpp#1)]
  [!code-csharp[SelectModeExample#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SelectModeExample/CS/source.cs#1)]
@@ -38,6 +38,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Net.Sockets.Socket.Poll(System.Int32,System.Net.Sockets.SelectMode)" />
+    <altmember cref="M:System.Net.Sockets.Socket.Select(System.Collections.IList,System.Collections.IList,System.Collections.IList,System.Int32)" />
   </Docs>
   <Members>
     <Member MemberName="SelectError">

@@ -35,7 +35,7 @@
 > [!NOTE]
 >  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/io/file.cs#1c7421e464f67b7e). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
   
- Use the <xref:System.IO.File> class for typical operations such as copying, moving, renaming, creating, opening, deleting, and appending to a single file at a time. You can also use the <xref:System.IO.File> class to get and set file attributes or <xref:System.DateTime> information related to the creation, access, and writing of a file. If you want to perform operations on multiple files, see <xref:System.IO.Directory.GetFiles%2A?displayProperty=fullName> or <xref:System.IO.DirectoryInfo.GetFiles%2A?displayProperty=fullName>.  
+ Use the <xref:System.IO.File> class for typical operations such as copying, moving, renaming, creating, opening, deleting, and appending to a single file at a time. You can also use the <xref:System.IO.File> class to get and set file attributes or <xref:System.DateTime> information related to the creation, access, and writing of a file. If you want to perform operations on multiple files, see <xref:System.IO.Directory.GetFiles%2A?displayProperty=nameWithType> or <xref:System.IO.DirectoryInfo.GetFiles%2A?displayProperty=nameWithType>.  
   
  Many of the <xref:System.IO.File> methods return other I/O types when you create or open files. You can use these other types to further manipulate a file. For more information, see specific <xref:System.IO.File> members such as <xref:System.IO.File.OpenText%2A>, <xref:System.IO.File.CreateText%2A>, or <xref:System.IO.File.Create%2A>.  
   
@@ -79,6 +79,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.DriveInfo" />
+    <altmember cref="T:System.IO.FileSystemWatcher" />
   </Docs>
   <Members>
     <Member MemberName="AppendAllLines">
@@ -547,6 +549,7 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for appending to the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Append" /></permission>
+        <altmember cref="T:System.IO.StreamWriter" />
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -585,7 +588,7 @@
 ## Remarks  
  This method is equivalent to the <xref:System.IO.File.Copy%28System.String%2CSystem.String%2CSystem.Boolean%29> method overload with the `overwrite` parameter set to `false`.  
   
- The `sourceFileName` and `destFileName` parameters can specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see the <xref:System.IO.Directory.GetCurrentDirectory%2A?displayProperty=fullName> method. This method does not support wildcard characters in the parameters.  
+ The `sourceFileName` and `destFileName` parameters can specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see the <xref:System.IO.Directory.GetCurrentDirectory%2A?displayProperty=nameWithType> method. This method does not support wildcard characters in the parameters.  
   
  The attributes of the original file are retained in the copied file.  
   
@@ -594,9 +597,9 @@
 ## Examples  
  The following example copies files to the C:\archives\2008 backup folder. It uses the two overloads of the <xref:System.IO.File.Copy%2A> method as follows:  
   
--   It first uses the <xref:System.IO.File.Copy%28System.String%2CSystem.String%29?displayProperty=fullName>method overload to copy text (.txt) files. The code demonstrates that this overload does not allow overwriting files that were already copied.  
+-   It first uses the <xref:System.IO.File.Copy%28System.String%2CSystem.String%29?displayProperty=nameWithType> method overload to copy text (.txt) files. The code demonstrates that this overload does not allow overwriting files that were already copied.  
   
--   It then uses the <xref:System.IO.File.Copy%28System.String%2CSystem.String%2CSystem.Boolean%29?displayProperty=fullName> method overload to copy pictures (.jpg files). The code demonstrates that this overload does allow overwriting files that were already copied.  
+-   It then uses the <xref:System.IO.File.Copy%28System.String%2CSystem.String%2CSystem.Boolean%29?displayProperty=nameWithType> method overload to copy pictures (.jpg files). The code demonstrates that this overload does allow overwriting files that were already copied.  
   
  [!code-csharp[FileCopyDelete#1](~/samples/snippets/csharp/VS_Snippets_CLR/filecopydelete/cs/program.cs#1)]
  [!code-vb[FileCopyDelete#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/filecopydelete/vb/program.vb#1)]  
@@ -625,6 +628,8 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="sourceFileName" /> or <paramref name="destFileName" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from <paramref name="sourceFileName" /> and writing to <paramref name="destFileName" />. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <altmember cref="M:System.IO.Directory.Move(System.String,System.String)" />
+        <altmember cref="M:System.IO.File.Move(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -675,9 +680,9 @@
 ## Examples  
  The following example copies files to the C:\archives\2008 backup folder. It uses the two overloads of the <xref:System.IO.File.Copy%2A> method as follows:  
   
--   It first uses the <xref:System.IO.File.Copy%28System.String%2CSystem.String%29?displayProperty=fullName> method overload to copy text (.txt) files. The code demonstrates that this overload does not allow overwriting files that were already copied.  
+-   It first uses the <xref:System.IO.File.Copy%28System.String%2CSystem.String%29?displayProperty=nameWithType> method overload to copy text (.txt) files. The code demonstrates that this overload does not allow overwriting files that were already copied.  
   
- It then uses the <xref:System.IO.File.Copy%28System.String%2CSystem.String%2CSystem.Boolean%29?displayProperty=fullName> method overload to copy pictures (.jpg files). The code demonstrates that this overload does allow overwriting files that were already copied.  
+ It then uses the <xref:System.IO.File.Copy%28System.String%2CSystem.String%2CSystem.Boolean%29?displayProperty=nameWithType> method overload to copy pictures (.jpg files). The code demonstrates that this overload does allow overwriting files that were already copied.  
   
  [!code-csharp[FileCopyDelete#1](~/samples/snippets/csharp/VS_Snippets_CLR/filecopydelete/cs/program.cs#1)]
  [!code-vb[FileCopyDelete#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/filecopydelete/vb/program.vb#1)]  
@@ -710,6 +715,8 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="sourceFileName" /> or <paramref name="destFileName" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from <paramref name="sourceFileName" /> and writing to <paramref name="destFileName" />. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <altmember cref="M:System.IO.Directory.Move(System.String,System.String)" />
+        <altmember cref="M:System.IO.File.Move(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -1312,7 +1319,7 @@
 ## Remarks  
  The <xref:System.IO.File.Exists%2A> method should not be used for path validation, this method merely checks if the file specified in `path` exists. Passing an invalid path to <xref:System.IO.File.Exists%2A> returns `false`. To check whether the path contains any invalid characters, you can call the <xref:System.IO.Path.GetInvalidPathChars%2A> method to retrieve the characters that are invalid for the file system. You can also create a regular expression to test the whether the path is valid for your environment. For examples of acceptable paths, see <xref:System.IO.File>.  
   
- To check if a directory exists, see <xref:System.IO.Directory.Exists%2A?displayProperty=fullName>.  
+ To check if a directory exists, see <xref:System.IO.Directory.Exists%2A?displayProperty=nameWithType>.  
   
  Be aware that another process can potentially do something with the file in between the time you call the <xref:System.IO.File.Exists%2A> method and perform another operation on the file, such as <xref:System.IO.File.Delete%2A>.  
   
@@ -1333,6 +1340,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <altmember cref="M:System.IO.Directory.Exists(System.String)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="GetAccessControl">
@@ -1591,6 +1599,7 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="GetCreationTimeUtc">
@@ -1654,6 +1663,7 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="GetLastAccessTime">
@@ -1719,6 +1729,7 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="GetLastAccessTimeUtc">
@@ -1775,6 +1786,7 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="GetLastWriteTime">
@@ -1840,6 +1852,7 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="GetLastWriteTimeUtc">
@@ -1896,6 +1909,7 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="Move">
@@ -2392,6 +2406,8 @@
   
  The `path` parameter may specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, use the <xref:System.IO.Directory.GetCurrentDirectory%2A> method.  
   
+ The returned <xref:System.IO.FileStream> does not support reading. To open a file for both reading and writing, use <xref:System.IO.File.Open%2A>.
+
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
@@ -2827,7 +2843,7 @@
   
  The file handle is guaranteed to be closed by this method, even if exceptions are raised.  
   
- To use the encoding settings as configured for your operating system, specify the <xref:System.Text.Encoding.Default%2A?displayProperty=fullName> property for the `encoding` parameter.  
+ To use the encoding settings as configured for your operating system, specify the <xref:System.Text.Encoding.Default%2A?displayProperty=nameWithType> property for the `encoding` parameter.  
   
    
   
@@ -2956,7 +2972,7 @@
   
 -   Perform [LINQ to Objects](http://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9) queries on a file to obtain a filtered set of its lines.  
   
--   Write the returned collection of lines to a file with the <xref:System.IO.File.WriteAllLines%28System.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%29?displayProperty=fullName> method, or append them to an existing file with the <xref:System.IO.File.AppendAllLines%28System.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%29?displayProperty=fullName> method.  
+-   Write the returned collection of lines to a file with the <xref:System.IO.File.WriteAllLines%28System.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%29?displayProperty=nameWithType> method, or append them to an existing file with the <xref:System.IO.File.AppendAllLines%28System.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%29?displayProperty=nameWithType> method.  
   
 -   Create an immediately populated instance of a collection that takes an <xref:System.Collections.Generic.IEnumerable%601> collection of strings for its constructor, such as a <xref:System.Collections.Generic.IList%601> or a <xref:System.Collections.Generic.Queue%601>.  
   
@@ -3047,7 +3063,7 @@
   
 -   Perform [LINQ to Objects](http://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9) queries on a file to obtain a filtered set of its lines.  
   
--   Write the returned collection of lines to a file with the <xref:System.IO.File.WriteAllLines%28System.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.Text.Encoding%29?displayProperty=fullName> method, or append them to an existing file with the <xref:System.IO.File.AppendAllLines%28System.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.Text.Encoding%29?displayProperty=fullName> method.  
+-   Write the returned collection of lines to a file with the <xref:System.IO.File.WriteAllLines%28System.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.Text.Encoding%29?displayProperty=nameWithType> method, or append them to an existing file with the <xref:System.IO.File.AppendAllLines%28System.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.Text.Encoding%29?displayProperty=nameWithType> method.  
   
 -   Create an immediately populated instance of a collection that takes an <xref:System.Collections.Generic.IEnumerable%601> collection of strings for its constructor, such as a <xref:System.Collections.Generic.IList%601> or a <xref:System.Collections.Generic.Queue%601>.  
   
@@ -3356,6 +3372,7 @@
  The caller does not have the required permission.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="fileSecurity" /> parameter is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for permission to access the file. Security action: Demand. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.NoAccess" />, <see cref="F:System.Security.AccessControl.AccessControlActions.Change" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="SetAttributes">
@@ -3433,6 +3450,7 @@
   
  The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="SetCreationTime">
@@ -3490,6 +3508,7 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="SetCreationTimeUtc">
@@ -3547,6 +3566,7 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="SetLastAccessTime">
@@ -3610,6 +3630,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="lastAccessTime" /> specifies a value outside the range of dates or times permitted for this operation.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="SetLastAccessTimeUtc">
@@ -3664,6 +3685,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="lastAccessTimeUtc" /> specifies a value outside the range of dates or times permitted for this operation.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="SetLastWriteTime">
@@ -3727,6 +3749,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="lastWriteTime" /> specifies a value outside the range of dates or times permitted for this operation.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="SetLastWriteTimeUtc">
@@ -3781,6 +3804,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="lastWriteTimeUtc" /> specifies a value outside the range of dates or times permitted for this operation.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
     <Member MemberName="WriteAllBytes">
@@ -4432,5 +4456,105 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a file in the specified path.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Open">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a <see cref="T:System.IO.FileStream" /> on the specified path.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadAllText">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a text file, reads all lines of the file into a string, and then closes the file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadLines">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the lines of a file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AppendAllText">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends the specified stringto the file, creating the file if it does not already exist.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AppendAllLines">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends lines to a file, and then closes the file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteAllText">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new file, write the contents to the file, and then closes the file. If the target file already exists, it is overwritten.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadAllLines">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a text file, reads all lines of the file into a string array, and then closes the file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Copy">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies an existing file to a new file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteAllLines">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new file, writes one or more strings to the file, and then closes the file.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

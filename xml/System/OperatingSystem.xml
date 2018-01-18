@@ -39,7 +39,7 @@
 ## Remarks  
  The <xref:System.OperatingSystem> class contains information about an operating system.  
   
- For information about the current runtime operating system, retrieve the <xref:System.OperatingSystem> object returned by the <xref:System.Environment.OSVersion%2A?displayProperty=fullName> property. For a list of Windows operating system versions and their corresponding version numbers returned by the <xref:System.OperatingSystem.Version%2A> and <xref:System.OperatingSystem.VersionString%2A> properties and the <xref:System.OperatingSystem.ToString%2A> method, see [Operating System Version](https://msdn.microsoft.com/library/windows/desktop/ms724832.aspx) on the Windows Dev Center.  
+ For information about the current runtime operating system, retrieve the <xref:System.OperatingSystem> object returned by the <xref:System.Environment.OSVersion%2A?displayProperty=nameWithType> property. For a list of Windows operating system versions and their corresponding version numbers returned by the <xref:System.OperatingSystem.Version%2A> and <xref:System.OperatingSystem.VersionString%2A> properties and the <xref:System.OperatingSystem.ToString%2A> method, see [Operating System Version](https://msdn.microsoft.com/library/windows/desktop/ms724832.aspx) on the Windows Dev Center.  
   
  By design, the <xref:System.OperatingSystem> class is not a general purpose means of describing an operating system, and you cannot derive a more inclusive type from the <xref:System.OperatingSystem> class. If you need a type to contain other information about an operating system, create your own type, then include a field of type <xref:System.OperatingSystem> and any additional fields, properties, or methods that you require.  
   
@@ -165,7 +165,7 @@
 ## Remarks  
  The `context` parameter is reserved for future use; it is currently not implemented in the <xref:System.OperatingSystem.GetObjectData%2A> method.  
   
- For more information, see the <xref:System.Runtime.Serialization.SerializationInfo.AddValue%2A?displayProperty=fullName> method.  
+ For more information, see the <xref:System.Runtime.Serialization.SerializationInfo.AddValue%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -256,6 +256,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -300,6 +301,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.OperatingSystem.VersionString" />
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -388,6 +390,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.OperatingSystem.ToString" />
       </Docs>
     </Member>
   </Members>

@@ -59,9 +59,9 @@
   
  Each element is a key/value pair stored in a <xref:System.Collections.DictionaryEntry> object. A key cannot be `null`, but a value can be.  
   
- The objects used as keys by a <xref:System.Collections.Hashtable> are required to override the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> method (or the <xref:System.Collections.IHashCodeProvider> interface) and the <xref:System.Object.Equals%2A?displayProperty=fullName> method (or the <xref:System.Collections.IComparer> interface). The implementation of both methods and interfaces must handle case sensitivity the same way; otherwise, the <xref:System.Collections.Hashtable> might behave incorrectly. For example, when creating a <xref:System.Collections.Hashtable>, you must use the <xref:System.Collections.CaseInsensitiveHashCodeProvider> class (or any case-insensitive <xref:System.Collections.IHashCodeProvider> implementation) with the <xref:System.Collections.CaseInsensitiveComparer> class (or any case-insensitive <xref:System.Collections.IComparer> implementation).  
+ The objects used as keys by a <xref:System.Collections.Hashtable> are required to override the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> method (or the <xref:System.Collections.IHashCodeProvider> interface) and the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method (or the <xref:System.Collections.IComparer> interface). The implementation of both methods and interfaces must handle case sensitivity the same way; otherwise, the <xref:System.Collections.Hashtable> might behave incorrectly. For example, when creating a <xref:System.Collections.Hashtable>, you must use the <xref:System.Collections.CaseInsensitiveHashCodeProvider> class (or any case-insensitive <xref:System.Collections.IHashCodeProvider> implementation) with the <xref:System.Collections.CaseInsensitiveComparer> class (or any case-insensitive <xref:System.Collections.IComparer> implementation).  
   
- Furthermore, these methods must produce the same results when called with the same parameters while the key exists in the <xref:System.Collections.Hashtable>. An alternative is to use a <xref:System.Collections.Hashtable> constructor with an <xref:System.Collections.IEqualityComparer> parameter. If key equality were simply reference equality, the inherited implementation of <xref:System.Object.GetHashCode%2A?displayProperty=fullName> and <xref:System.Object.Equals%2A?displayProperty=fullName> would suffice.  
+ Furthermore, these methods must produce the same results when called with the same parameters while the key exists in the <xref:System.Collections.Hashtable>. An alternative is to use a <xref:System.Collections.Hashtable> constructor with an <xref:System.Collections.IEqualityComparer> parameter. If key equality were simply reference equality, the inherited implementation of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> and <xref:System.Object.Equals%2A?displayProperty=nameWithType> would suffice.  
   
  Key objects must be immutable as long as they are used as keys in the <xref:System.Collections.Hashtable>.  
   
@@ -105,6 +105,13 @@
       <see cref="T:System.Collections.Hashtable" /> is thread safe for use by multiple reader threads and a single writing thread. It is thread safe for multi-thread use when only one of the threads perform write (update) operations, which allows for lock-free reads provided that the writers are serialized to the <see cref="T:System.Collections.Hashtable" />. To support multiple writers all operations on the <see cref="T:System.Collections.Hashtable" /> must be done through the wrapper returned by the <see cref="M:System.Collections.Hashtable.Synchronized(System.Collections.Hashtable)" /> method, provided that there are no threads reading the <see cref="T:System.Collections.Hashtable" /> object.  
   
  Enumerating through a collection is intrinsically not a thread safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.</threadsafe>
+    <altmember cref="T:System.Collections.IDictionary" />
+    <altmember cref="T:System.Collections.IHashCodeProvider" />
+    <altmember cref="M:System.Object.GetHashCode" />
+    <altmember cref="M:System.Object.Equals(System.Object)" />
+    <altmember cref="T:System.Collections.DictionaryEntry" />
+    <altmember cref="T:System.Collections.Generic.Dictionary`2" />
+    <altmember cref="T:System.Collections.IEqualityComparer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -142,9 +149,9 @@
   
  When the actual load factor reaches the specified load factor, the number of buckets is automatically increased to the smallest prime number that is larger than twice the current number of buckets.  
   
- The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable> object. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+ The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable> object. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  This constructor is an O(1) operation.  
   
@@ -159,6 +166,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -199,9 +208,9 @@
   
  When the actual load factor reaches the specified load factor, the number of buckets is automatically increased to the smallest prime number that is larger than twice the current number of buckets.  
   
- The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable> object. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+ The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable> object. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  The elements of the new <xref:System.Collections.Hashtable> are sorted in the same order in which the enumerator iterates through the <xref:System.Collections.IDictionary> object.  
   
@@ -220,6 +229,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="d" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -264,11 +276,11 @@
   
  When the actual load factor reaches the specified load factor, the number of buckets is automatically increased to the smallest prime number that is larger than twice the current number of buckets.  
   
- The <xref:System.Collections.IEqualityComparer> object includes both the hash code provider and the comparer. If an <xref:System.Collections.IEqualityComparer> is used in the <xref:System.Collections.Hashtable> constructor, the objects used as keys in the <xref:System.Collections.Hashtable> object are not required to override the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> and <xref:System.Object.Equals%2A?displayProperty=fullName> methods.  
+ The <xref:System.Collections.IEqualityComparer> object includes both the hash code provider and the comparer. If an <xref:System.Collections.IEqualityComparer> is used in the <xref:System.Collections.Hashtable> constructor, the objects used as keys in the <xref:System.Collections.Hashtable> object are not required to override the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> and <xref:System.Object.Equals%2A?displayProperty=nameWithType> methods.  
   
- The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable>. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+ The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable>. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  The <xref:System.Collections.IEqualityComparer> enables scenarios such as doing lookups with case-insensitive strings.  
   
@@ -285,6 +297,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEqualityComparer" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -325,9 +338,9 @@
   
  When the actual load factor reaches the specified load factor, the number of buckets is automatically increased to the smallest prime number that is larger than twice the current number of buckets.  
   
- The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable>. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+ The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable>. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  This constructor is an O(`n`) operation, where `n` is `capacity`.  
   
@@ -344,6 +357,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than zero.</exception>
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -390,11 +405,11 @@
   
  When the actual load factor reaches the specified load factor, the number of buckets is automatically increased to the smallest prime number that is larger than twice the current number of buckets.  
   
- The <xref:System.Collections.IEqualityComparer> object includes both the hash code provider and the comparer. If an <xref:System.Collections.IEqualityComparer> is used in the <xref:System.Collections.Hashtable> constructor, the objects used as keys in the <xref:System.Collections.Hashtable> object are not required to override the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> and <xref:System.Object.Equals%2A?displayProperty=fullName> methods.  
+ The <xref:System.Collections.IEqualityComparer> object includes both the hash code provider and the comparer. If an <xref:System.Collections.IEqualityComparer> is used in the <xref:System.Collections.Hashtable> constructor, the objects used as keys in the <xref:System.Collections.Hashtable> object are not required to override the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> and <xref:System.Object.Equals%2A?displayProperty=nameWithType> methods.  
   
- The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable>. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+ The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable>. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  The <xref:System.Collections.IEqualityComparer> enables scenarios such as doing lookups with case-insensitive strings.  
   
@@ -415,6 +430,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="d" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="T:System.Collections.IEqualityComparer" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -457,9 +474,9 @@
   
  When the actual load factor reaches the specified load factor, the number of buckets is automatically increased to the smallest prime number that is larger than twice the current number of buckets.  
   
- The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable> object. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+ The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable> object. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  The elements of the new <xref:System.Collections.Hashtable> are sorted in the same order in which the enumerator iterates through the <xref:System.Collections.IDictionary> object.  
   
@@ -484,6 +501,9 @@
  -or-  
   
  <paramref name="loadFactor" /> is greater than 1.0.</exception>
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -535,9 +555,9 @@
   
  When the actual load factor reaches the specified load factor, the number of buckets is automatically increased to the smallest prime number that is larger than twice the current number of buckets.  
   
- The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable> object. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+ The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable> object. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  The custom hash code provider and the custom comparer enable scenarios such as doing lookups with case-insensitive strings.  
   
@@ -554,6 +574,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IHashCodeProvider" />
+        <altmember cref="T:System.Collections.IComparer" />
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -600,11 +624,11 @@
   
  When the actual load factor reaches the specified load factor, the number of buckets is automatically increased to the smallest prime number that is larger than twice the current number of buckets.  
   
- The <xref:System.Collections.IEqualityComparer> object includes both the hash code provider and the comparer. If an <xref:System.Collections.IEqualityComparer> is used in the <xref:System.Collections.Hashtable> constructor, the objects used as keys in the <xref:System.Collections.Hashtable> are not required to override the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> and <xref:System.Object.Equals%2A?displayProperty=fullName> methods.  
+ The <xref:System.Collections.IEqualityComparer> object includes both the hash code provider and the comparer. If an <xref:System.Collections.IEqualityComparer> is used in the <xref:System.Collections.Hashtable> constructor, the objects used as keys in the <xref:System.Collections.Hashtable> are not required to override the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> and <xref:System.Object.Equals%2A?displayProperty=nameWithType> methods.  
   
- The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable>. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+ The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable>. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  The <xref:System.Collections.IEqualityComparer> enables scenarios such as doing lookups with case-insensitive strings.  
   
@@ -623,6 +647,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than zero.</exception>
+        <altmember cref="T:System.Collections.IEqualityComparer" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -665,9 +690,9 @@
   
  When the actual load factor reaches the specified load factor, the number of buckets is automatically increased to the smallest prime number that is larger than twice the current number of buckets.  
   
- The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable>. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+ The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable>. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  This constructor is an O(`n`) operation, where `n` is the `capacity` parameter.  
   
@@ -694,6 +719,8 @@
  <paramref name="loadFactor" /> is greater than 1.0.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="capacity" /> is causing an overflow.</exception>
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -732,9 +759,9 @@
   
  When the actual load factor reaches the specified load factor, the number of buckets is automatically increased to the smallest prime number that is larger than twice the current number of buckets.  
   
- The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable> object. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+ The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable> object. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  This constructor is an O(`n`) operation, where `n` is <xref:System.Collections.Hashtable.Count%2A>.  
   
@@ -744,6 +771,12 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="info" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Runtime.Serialization.ISerializable" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
+        <altmember cref="M:System.Collections.Hashtable.OnDeserialization(System.Object)" />
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -797,9 +830,9 @@
   
  When the actual load factor reaches the specified load factor, the number of buckets is automatically increased to the smallest prime number that is larger than twice the current number of buckets.  
   
- The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable> object. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+ The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable> object. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  The custom hash code provider and the custom comparer enable scenarios such as doing lookups with case-insensitive strings.  
   
@@ -820,6 +853,11 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="d" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="T:System.Collections.IHashCodeProvider" />
+        <altmember cref="T:System.Collections.IComparer" />
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -868,11 +906,11 @@
   
  When the actual load factor reaches the specified load factor, the number of buckets is automatically increased to the smallest prime number that is larger than twice the current number of buckets.  
   
- The <xref:System.Collections.IEqualityComparer> object includes both the hash code provider and the comparer. If an <xref:System.Collections.IEqualityComparer> is used in the <xref:System.Collections.Hashtable> constructor, the objects used as keys in the <xref:System.Collections.Hashtable> object are not required to override the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> and <xref:System.Object.Equals%2A?displayProperty=fullName> methods.  
+ The <xref:System.Collections.IEqualityComparer> object includes both the hash code provider and the comparer. If an <xref:System.Collections.IEqualityComparer> is used in the <xref:System.Collections.Hashtable> constructor, the objects used as keys in the <xref:System.Collections.Hashtable> object are not required to override the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> and <xref:System.Object.Equals%2A?displayProperty=nameWithType> methods.  
   
- The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable>. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+ The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable>. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  The <xref:System.Collections.IEqualityComparer> enables scenarios such as doing lookups with case-insensitive strings.  
   
@@ -899,6 +937,7 @@
  -or-  
   
  <paramref name="loadFactor" /> is greater than 1.0.</exception>
+        <altmember cref="T:System.Collections.IEqualityComparer" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -952,9 +991,9 @@
   
  When the actual load factor reaches the specified load factor, the number of buckets is automatically increased to the smallest prime number that is larger than twice the current number of buckets.  
   
- The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable>. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+ The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable>. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  The custom hash code provider and the custom comparer enable scenarios such as doing lookups with case-insensitive strings.  
   
@@ -973,6 +1012,10 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than zero.</exception>
+        <altmember cref="T:System.Collections.IHashCodeProvider" />
+        <altmember cref="T:System.Collections.IComparer" />
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -1021,11 +1064,11 @@
   
  When the actual load factor reaches the specified load factor, the number of buckets is automatically increased to the smallest prime number that is larger than twice the current number of buckets.  
   
- The <xref:System.Collections.IEqualityComparer> object includes both the hash code provider and the comparer. If an <xref:System.Collections.IEqualityComparer> is used in the <xref:System.Collections.Hashtable> constructor, the objects used as keys in the <xref:System.Collections.Hashtable> are not required to override the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> and <xref:System.Object.Equals%2A?displayProperty=fullName> methods.  
+ The <xref:System.Collections.IEqualityComparer> object includes both the hash code provider and the comparer. If an <xref:System.Collections.IEqualityComparer> is used in the <xref:System.Collections.Hashtable> constructor, the objects used as keys in the <xref:System.Collections.Hashtable> are not required to override the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> and <xref:System.Object.Equals%2A?displayProperty=nameWithType> methods.  
   
- The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable>. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+ The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable>. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  The <xref:System.Collections.IEqualityComparer> enables scenarios such as doing lookups with case-insensitive strings.  
   
@@ -1052,6 +1095,7 @@
  -or-  
   
  <paramref name="loadFactor" /> is greater than 1.0.</exception>
+        <altmember cref="T:System.Collections.IEqualityComparer" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -1107,9 +1151,9 @@
   
  When the actual load factor reaches the specified load factor, the number of buckets is automatically increased to the smallest prime number that is larger than twice the current number of buckets.  
   
- The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable> object. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+ The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable> object. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  The custom hash code provider and the custom comparer enable scenarios such as doing lookups with case-insensitive strings.  
   
@@ -1191,9 +1235,9 @@
   
  When the actual load factor reaches the specified load factor, the number of buckets is automatically increased to the smallest prime number that is larger than twice the current number of buckets.  
   
- The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable>. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+ The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Hashtable>. The default hash code provider is the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Hashtable> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  The custom hash code provider and the custom comparer enable scenarios such as doing lookups with case-insensitive strings.  
   
@@ -1220,6 +1264,10 @@
  -or-  
   
  <paramref name="loadFactor" /> is greater than 1.0.</exception>
+        <altmember cref="T:System.Collections.IHashCodeProvider" />
+        <altmember cref="T:System.Collections.IComparer" />
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -1286,6 +1334,9 @@
  -or-  
   
  The <see cref="T:System.Collections.Hashtable" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.Hashtable.Remove(System.Object)" />
+        <altmember cref="P:System.Collections.Hashtable.Item(System.Object)" />
+        <altmember cref="M:System.Collections.IDictionary.Add(System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -1341,6 +1392,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Hashtable" /> is read-only.</exception>
+        <altmember cref="M:System.Collections.IDictionary.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -1386,6 +1438,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Hashtable.CopyTo(System.Array,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="comparer">
@@ -1426,6 +1479,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The property is set to a value, but the hash table was created using an <see cref="T:System.Collections.IEqualityComparer" />.</exception>
+        <altmember cref="T:System.Collections.IComparer" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -1465,7 +1519,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Collections.Hashtable.Contains%2A> implements <xref:System.Collections.IDictionary.Contains%2A?displayProperty=fullName>. It behaves exactly as <xref:System.Collections.Hashtable.ContainsKey%2A>.  
+ <xref:System.Collections.Hashtable.Contains%2A> implements <xref:System.Collections.IDictionary.Contains%2A?displayProperty=nameWithType>. It behaves exactly as <xref:System.Collections.Hashtable.ContainsKey%2A>.  
   
  This method is an O(1) operation.  
   
@@ -1484,6 +1538,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.Hashtable.ContainsKey(System.Object)" />
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -1542,6 +1598,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.Hashtable.Contains(System.Object)" />
+        <altmember cref="M:System.Collections.Hashtable.ContainsValue(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ContainsValue">
@@ -1581,7 +1639,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The values of the elements of the <xref:System.Collections.Hashtable> are compared to the specified value using the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+ The values of the elements of the <xref:System.Collections.Hashtable> are compared to the specified value using the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method.  
   
  This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Hashtable.Count%2A>.  
   
@@ -1598,6 +1656,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Hashtable.ContainsKey(System.Object)" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -1667,6 +1727,9 @@
   
  The number of elements in the source <see cref="T:System.Collections.Hashtable" /> is greater than the available space from <paramref name="arrayIndex" /> to the end of the destination <paramref name="array" />.</exception>
         <exception cref="T:System.InvalidCastException">The type of the source <see cref="T:System.Collections.Hashtable" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
+        <altmember cref="T:System.Array" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="M:System.Collections.Hashtable.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -1739,13 +1802,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Collections.IEqualityComparer> includes both the comparer and the hash code provider. If an <xref:System.Collections.IEqualityComparer> is used in the <xref:System.Collections.Hashtable> constructor, the objects used as keys in the <xref:System.Collections.Hashtable> are not required to override the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> and <xref:System.Object.Equals%2A?displayProperty=fullName> methods.  
+ The <xref:System.Collections.IEqualityComparer> includes both the comparer and the hash code provider. If an <xref:System.Collections.IEqualityComparer> is used in the <xref:System.Collections.Hashtable> constructor, the objects used as keys in the <xref:System.Collections.Hashtable> are not required to override the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> and <xref:System.Object.Equals%2A?displayProperty=nameWithType> methods.  
   
  Retrieving the value of this property is an O(1) operation.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The property is set to a value, but the hash table was created using an <see cref="T:System.Collections.IHashCodeProvider" /> and an <see cref="T:System.Collections.IComparer" />.</exception>
+        <altmember cref="T:System.Collections.Comparer" />
+        <altmember cref="T:System.Collections.IEqualityComparer" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -1812,6 +1877,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionaryEnumerator" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="GetHash">
@@ -1850,7 +1917,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the hash table was created with a specific <xref:System.Collections.IHashCodeProvider> implementation, this method uses that hash code provider; otherwise, it uses the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> implementation of `key`.  
+ If the hash table was created with a specific <xref:System.Collections.IHashCodeProvider> implementation, this method uses that hash code provider; otherwise, it uses the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> implementation of `key`.  
   
  This method is an O(1) operation.  
   
@@ -1858,6 +1925,9 @@
         </remarks>
         <exception cref="T:System.NullReferenceException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="T:System.Object" />
+        <altmember cref="T:System.Collections.IHashCodeProvider" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -1906,6 +1976,10 @@
           <paramref name="info" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The collection was modified.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.Serialization.ISerializable" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
+        <altmember cref="M:System.Collections.Hashtable.OnDeserialization(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="hcp">
@@ -1946,6 +2020,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The property is set to a value, but the hash table was created using an <see cref="T:System.Collections.IEqualityComparer" />.</exception>
+        <altmember cref="T:System.Collections.IHashCodeProvider" />
       </Docs>
     </Member>
     <Member MemberName="IsFixedSize">
@@ -2088,6 +2163,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Hashtable.Synchronized(System.Collections.Hashtable)" />
+        <altmember cref="P:System.Collections.Hashtable.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -2145,6 +2222,7 @@
  -or-  
   
  The property is set, <paramref name="key" /> does not exist in the collection, and the <see cref="T:System.Collections.Hashtable" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.Hashtable.Add(System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="KeyEquals">
@@ -2198,6 +2276,9 @@
  -or-  
   
  <paramref name="key" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.Collections.IComparer.Compare(System.Object,System.Object)" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -2240,6 +2321,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.Hashtable.Values" />
       </Docs>
     </Member>
     <Member MemberName="OnDeserialization">
@@ -2280,6 +2363,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Serialization.SerializationException">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object associated with the current <see cref="T:System.Collections.Hashtable" /> is invalid.</exception>
+        <altmember cref="T:System.Runtime.Serialization.ISerializable" />
+        <altmember cref="M:System.Collections.Hashtable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -2344,6 +2429,8 @@
  -or-  
   
  The <see cref="T:System.Collections.Hashtable" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.Hashtable.Add(System.Object,System.Object)" />
+        <altmember cref="M:System.Collections.IDictionary.Remove(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Synchronized">
@@ -2407,6 +2494,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="table" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Collections.Hashtable.IsSynchronized" />
+        <altmember cref="P:System.Collections.Hashtable.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -2453,6 +2542,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.Hashtable.IsSynchronized" />
+        <altmember cref="M:System.Collections.Hashtable.Synchronized(System.Collections.Hashtable)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -2508,6 +2599,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -2550,7 +2642,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.Hashtable.Keys" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Hashtable" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

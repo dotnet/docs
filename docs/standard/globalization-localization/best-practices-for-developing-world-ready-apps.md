@@ -18,6 +18,9 @@ caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Best Practices for Developing World-Ready Applications
 This section describes the best practices to follow when developing world-ready applications.  
@@ -38,7 +41,7 @@ This section describes the best practices to follow when developing world-ready 
   
     -   For Gregorian and non-Gregorian calendars, use the <xref:System.Globalization.Calendar> class or one of the specific calendar implementations.  
   
-3.  Use the culture property settings provided by the <xref:System.Globalization.CultureInfo?displayProperty=fullName> class in the appropriate situations. Use the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> property for formatting tasks, such as date and time or numeric formatting. Use the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> property to retrieve resources. Note that the `CurrentCulture` and `CurrentUICulture` properties can be set per thread.  
+3.  Use the culture property settings provided by the <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> class in the appropriate situations. Use the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property for formatting tasks, such as date and time or numeric formatting. Use the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> property to retrieve resources. Note that the `CurrentCulture` and `CurrentUICulture` properties can be set per thread.  
   
 4.  Enable your application to read and write data to and from a variety of encodings by using the encoding classes in the <xref:System.Text> namespace. Do not assume ASCII data. Assume that international characters will be supplied anywhere a user can enter text. For example, the application should accept international characters in server names, directories, file names, user names, and URLs.  
   
@@ -70,7 +73,7 @@ This section describes the best practices to follow when developing world-ready 
   
 7.  Allow plenty of room for the length of strings to expand in the user interface. In some languages, phrases can require 50-75 percent more space than they need in other languages.  
   
-8.  Use the <xref:System.Resources.ResourceManager?displayProperty=fullName> class to retrieve resources based on culture.  
+8.  Use the <xref:System.Resources.ResourceManager?displayProperty=nameWithType> class to retrieve resources based on culture.  
   
 9. Use Visual Studio to create Windows Forms dialog boxes, so that they can be localized using the [Windows Forms Resource Editor (Winres.exe)](../../../docs/framework/tools/winres-exe-windows-forms-resource-editor.md). Do not code Windows Forms dialog boxes by hand.  
   
@@ -103,5 +106,5 @@ This section describes the best practices to follow when developing world-ready 
 5.  Note that the uiCulture value can be set to the browser accept language.  
   
 ## See Also  
- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)   
+ [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)  
  [Resources in Desktop Apps](../../../docs/framework/resources/index.md)

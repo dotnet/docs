@@ -26,7 +26,7 @@
 ## Remarks  
  The event model in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] is based on having an event delegate that connects an event with its handler. To raise a <xref:System.ComponentModel.Design.DesignerActionUIService.DesignerActionUIStateChange> event, two elements are needed:  
   
--   The <xref:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs> class, derived from <xref:System.EventArgs?displayProperty=fullName>, which holds the event data.  
+-   The <xref:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs> class, derived from <xref:System.EventArgs?displayProperty=nameWithType>, which holds the event data.  
   
 -   The <xref:System.ComponentModel.Design.DesignerActionUIStateChangeEventHandler> delegate, which points to a method that provides the response to the event.  
   
@@ -34,5 +34,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs" />
+    <altmember cref="E:System.ComponentModel.Design.DesignerActionUIService.DesignerActionUIStateChange" />
+    <altmember cref="T:System.ComponentModel.Design.DesignerActionUIService" />
   </Docs>
 </Type>

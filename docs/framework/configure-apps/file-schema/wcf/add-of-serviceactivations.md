@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e5b01fc8-ee84-48b7-95fd-95ab54fa871f
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;add&gt; of &lt;serviceActivations&gt;
 A configuration element that allows you to define virtual service activation settings that map to your [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] service types. This makes it possible to activate services hosted in WAS/IIS without an .svc file.  
@@ -74,6 +76,6 @@ A configuration element that allows you to define virtual service activation set
  Configuration-based activation supports activation over both http and non-http protocol. It requires extensions in the relatativeAddress, i.e. .svc, .xoml or .xamlx. You can map your own extensions to the know buildProviders, which will then enable you to activate service over any extension. Upon conflict, the `<serviceActivations>` section overrides .svc registrations.  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.ServiceActivationElement>   
- <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>   
+ <xref:System.ServiceModel.Configuration.ServiceActivationElement>  
+ <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>  
  <xref:System.ServiceModel.ServiceHostingEnvironment>

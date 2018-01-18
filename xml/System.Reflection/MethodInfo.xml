@@ -50,7 +50,7 @@
   
 -   You can determine the method's visibility by retrieving the values of the <xref:System.Reflection.MethodBase.IsFamilyAndAssembly%2A>, <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A>, <xref:System.Reflection.MethodBase.IsPrivate%2A>, and <xref:System.Reflection.MethodBase.IsPublic%2A> properties.  
   
--   You can discover what attributes are applied to the method by retrieving the value of the <xref:System.Reflection.MethodBase.Attributes%2A> property or calling the <xref:System.Reflection.Assembly.GetCustomAttributes%2A>method.  
+-   You can discover what attributes are applied to the method by retrieving the value of the <xref:System.Reflection.MethodBase.Attributes%2A> property or calling the <xref:System.Reflection.Assembly.GetCustomAttributes%2A> method.  
   
 -   You can determine whether the method is a generic method, an open constructed generic method, or a closed constructed generic method, by retrieving the values of the <xref:System.Reflection.MethodInfo.IsGenericMethod%2A> and <xref:System.Reflection.MethodInfo.ContainsGenericParameters%2A> properties.  
   
@@ -60,7 +60,7 @@
   
 -   You can instantiate a <xref:System.Reflection.MethodInfo> object that represents a constructed generic method from one that represents a generic method definition by calling the <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A> method.  
   
- You can instantiate a <xref:System.Reflection.MethodInfo> instances by calling the <xref:System.Type.GetMethods%2A?displayProperty=fullName> or <xref:System.Type.GetMethod%2A?displayProperty=fullName> method, or by calling the <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A?displayProperty=fullName> method of a <xref:System.Reflection.MethodInfo> object that represents a generic method definition.  
+ You can instantiate a <xref:System.Reflection.MethodInfo> instances by calling the <xref:System.Type.GetMethods%2A?displayProperty=nameWithType> or <xref:System.Type.GetMethod%2A?displayProperty=nameWithType> method, or by calling the <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A?displayProperty=nameWithType> method of a <xref:System.Reflection.MethodInfo> object that represents a generic method definition.  
   
  For a list of the invariant conditions for terms specific to generic methods, see the <xref:System.Reflection.MethodInfo.IsGenericMethod%2A> property. For a list of the invariant conditions for other terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A> property.  
   
@@ -71,6 +71,9 @@
     <block subset="none" type="overrides">
       <para>When you inherit from <see cref="T:System.Reflection.MethodInfo" />, you must override <see cref="M:System.Reflection.MethodInfo.GetBaseDefinition" />, <see cref="P:System.Reflection.MethodInfo.ReturnType" />, <see cref="P:System.Reflection.MethodInfo.ReturnTypeCustomAttributes" />, <see cref="M:System.Reflection.MethodBase.GetParameters" />, <see cref="M:System.Reflection.MethodBase.GetMethodImplementationFlags" />, <see cref="P:System.Reflection.MethodBase.MethodHandle" />, <see cref="P:System.Reflection.MethodBase.Attributes" />, <see cref="M:System.Reflection.MethodBase.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />, <see cref="P:System.Reflection.MemberInfo.Name" />, <see cref="P:System.Reflection.MemberInfo.MemberType" />, <see cref="P:System.Reflection.MemberInfo.DeclaringType" />, <see cref="P:System.Reflection.MemberInfo.ReflectedType" />, <see cref="M:System.Reflection.MemberInfo.GetCustomAttributes(System.Boolean)" />, <see cref="M:System.Reflection.MemberInfo.GetCustomAttributes(System.Type,System.Boolean)" />, and <see cref="M:System.Reflection.MemberInfo.IsDefined(System.Type,System.Boolean)" />.</para>
     </block>
+    <altmember cref="Overload:System.Type.GetMethods" />
+    <altmember cref="Overload:System.Type.GetMethod" />
+    <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethod" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -267,7 +270,7 @@
   
 1.  Get a <xref:System.Type> object that represents the type (the class or structure) that contains the property. If you are working with an object (an instance of a type), you can call its <xref:System.Object.GetType%2A> method. Otherwise, you can use the C#  operator or the Visual Basic  operator, as the example illustrates.  
   
-2.  Get a <xref:System.Reflection.MethodInfo> object that represents the method in which you're interested. You can do this by getting an array of all methods from the <xref:System.Type.GetMethods%2A?displayProperty=fullName> method and then iterating the elements in the array, or you can retrieve the <xref:System.Reflection.MethodInfo> object that represents the method directly by calling the <xref:System.Type.GetMethod%28System.String%29?displayProperty=fullName> method and specifying the method name.  
+2.  Get a <xref:System.Reflection.MethodInfo> object that represents the method in which you're interested. You can do this by getting an array of all methods from the <xref:System.Type.GetMethods%2A?displayProperty=nameWithType> method and then iterating the elements in the array, or you can retrieve the <xref:System.Reflection.MethodInfo> object that represents the method directly by calling the <xref:System.Type.GetMethod%28System.String%29?displayProperty=nameWithType> method and specifying the method name.  
   
 3.  Call the <xref:System.Reflection.MethodInfo.GetBaseDefinition%2A> method to get the value of the <xref:System.Reflection.MethodInfo> object that represents the base method definition.  
   
@@ -331,7 +334,7 @@
   
 -   If the current method is an open constructed method (that is, the <xref:System.Reflection.MethodInfo.ContainsGenericParameters%2A> property returns `true`) in which specific types have been assigned to some type parameters and type parameters of enclosing generic types have been assigned to other type parameters, the array contains both types and type parameters. Use the <xref:System.Type.IsGenericParameter%2A> property to tell them apart. For a demonstration of this scenario, see the code example for the <xref:System.Reflection.MethodInfo.ContainsGenericParameters%2A> property.  
   
- For a list of the invariant conditions for terms specific to generic methods, see the <xref:System.Reflection.MethodInfo.IsGenericMethod%2A> property. For a list of the invariant conditions for other terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A?displayProperty=fullName> property.  
+ For a list of the invariant conditions for terms specific to generic methods, see the <xref:System.Reflection.MethodInfo.IsGenericMethod%2A> property. For a list of the invariant conditions for other terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -347,6 +350,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
+        <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethod" />
+        <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethodDefinition" />
+        <altmember cref="M:System.Reflection.MethodInfo.GetGenericMethodDefinition" />
+        <altmember cref="P:System.Type.IsGenericType" />
       </Docs>
     </Member>
     <Member MemberName="GetGenericMethodDefinition">
@@ -442,6 +449,9 @@ public:
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current method is not a generic method. That is, <see cref="P:System.Reflection.MethodInfo.IsGenericMethod" /> returns <see langword="false" />.</exception>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
+        <altmember cref="M:System.Reflection.MethodInfo.MakeGenericMethod(System.Type[])" />
+        <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethod" />
+        <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethodDefinition" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -479,7 +489,7 @@ public:
       </Docs>
     </Member>
     <Member MemberName="MakeGenericMethod">
-      <MemberSignature Language="C#" Value="public virtual System.Reflection.MethodInfo MakeGenericMethod (Type[] typeArguments);" />
+      <MemberSignature Language="C#" Value="public virtual System.Reflection.MethodInfo MakeGenericMethod (params Type[] typeArguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo MakeGenericMethod(class System.Type[] typeArguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodInfo.MakeGenericMethod(System.Type[])" />
       <MemberType>Method</MemberType>
@@ -597,6 +607,8 @@ public:
   
  An element of <paramref name="typeArguments" /> does not satisfy the constraints specified for the corresponding type parameter of the current generic method definition.</exception>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
+        <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethodDefinition" />
+        <altmember cref="M:System.Reflection.MethodInfo.GetGenericMethodDefinition" />
       </Docs>
     </Member>
     <Member MemberName="MemberType">
@@ -631,7 +643,7 @@ public:
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property overrides <xref:System.Reflection.MemberInfo.MemberType%2A?displayProperty=fullName>. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects — for example, the array returned by <xref:System.Type.GetMembers%2A> — the <xref:System.Reflection.MemberInfo.MemberType%2A> property returns <xref:System.Reflection.MemberTypes?displayProperty=fullName> only when a given member is a method.  
+ This property overrides <xref:System.Reflection.MemberInfo.MemberType%2A?displayProperty=nameWithType>. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects — for example, the array returned by <xref:System.Type.GetMembers%2A> — the <xref:System.Reflection.MemberInfo.MemberType%2A> property returns <xref:System.Reflection.MemberTypes.Method?displayProperty=nameWithType> only when a given member is a method.  
   
  To get the `MemberType` property, first get the class `Type`. From the `Type`, get the `MethodInfo`. From the `MethodInfo`, get the `MemberType`.  
   
@@ -755,6 +767,8 @@ public:
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">This method is not implemented.</exception>
+        <altmember cref="M:System.Reflection.ParameterInfo.GetOptionalCustomModifiers" />
+        <altmember cref="M:System.Reflection.ParameterInfo.GetRequiredCustomModifiers" />
       </Docs>
     </Member>
     <Member MemberName="ReturnType">
@@ -839,7 +853,7 @@ public:
     </Member>
     <Member MemberName="System.Runtime.InteropServices._MethodInfo.GetIDsOfNames">
       <MemberSignature Language="C#" Value="void _MethodInfo.GetIDsOfNames (ref Guid riid, IntPtr rgszNames, uint cNames, uint lcid, IntPtr rgDispId);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._MethodInfo.GetIDsOfNames(valuetype System.Guid riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._MethodInfo.GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodInfo.System#Runtime#InteropServices#_MethodInfo#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -928,7 +942,7 @@ public:
     </Member>
     <Member MemberName="System.Runtime.InteropServices._MethodInfo.GetTypeInfoCount">
       <MemberSignature Language="C#" Value="void _MethodInfo.GetTypeInfoCount (out uint pcTInfo);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._MethodInfo.GetTypeInfoCount(unsigned int32 pcTInfo) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._MethodInfo.GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodInfo.System#Runtime#InteropServices#_MethodInfo#GetTypeInfoCount(System.UInt32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -957,7 +971,7 @@ public:
     </Member>
     <Member MemberName="System.Runtime.InteropServices._MethodInfo.Invoke">
       <MemberSignature Language="C#" Value="void _MethodInfo.Invoke (uint dispIdMember, ref Guid riid, uint lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._MethodInfo.Invoke(unsigned int32 dispIdMember, valuetype System.Guid riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._MethodInfo.Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodInfo.System#Runtime#InteropServices#_MethodInfo#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -998,5 +1012,16 @@ public:
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateDelegate">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a delegate from this method.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

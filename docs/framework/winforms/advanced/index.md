@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Windows Forms, enhancing"
   - "Windows Forms, adding features"
@@ -19,6 +17,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Enhancing Windows Forms Applications
 Windows Forms contains many features that you can use to enhance your Windows-based applications to meet the specific needs of your users. The following topics describe these features and how to use them.  

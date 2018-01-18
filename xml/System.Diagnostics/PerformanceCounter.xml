@@ -42,7 +42,7 @@
   
  To read from a performance counter, create an instance of the <xref:System.Diagnostics.PerformanceCounter> class, set the <xref:System.Diagnostics.PerformanceCounter.CategoryName%2A>, <xref:System.Diagnostics.PerformanceCounter.CounterName%2A>, and, optionally, the <xref:System.Diagnostics.PerformanceCounter.InstanceName%2A> or <xref:System.Diagnostics.PerformanceCounter.MachineName%2A> properties, and then call the <xref:System.Diagnostics.PerformanceCounter.NextValue%2A> method to take a performance counter reading.  
   
- To publish performance counter data, create one or more custom counters using the <xref:System.Diagnostics.PerformanceCounterCategory.Create%2A?displayProperty=fullName> method, create an instance of the <xref:System.Diagnostics.PerformanceCounter> class, set the <xref:System.Diagnostics.PerformanceCounter.CategoryName%2A>, <xref:System.Diagnostics.PerformanceCounter.CounterName%2A> and, optionally, <xref:System.Diagnostics.PerformanceCounter.InstanceName%2A> or <xref:System.Diagnostics.PerformanceCounter.MachineName%2A> properties, and then call the <xref:System.Diagnostics.PerformanceCounter.IncrementBy%2A>, <xref:System.Diagnostics.PerformanceCounter.Increment%2A>, or <xref:System.Diagnostics.PerformanceCounter.Decrement%2A> methods, or set the <xref:System.Diagnostics.PerformanceCounter.RawValue%2A> property to change the value of your custom counter.  
+ To publish performance counter data, create one or more custom counters using the <xref:System.Diagnostics.PerformanceCounterCategory.Create%2A?displayProperty=nameWithType> method, create an instance of the <xref:System.Diagnostics.PerformanceCounter> class, set the <xref:System.Diagnostics.PerformanceCounter.CategoryName%2A>, <xref:System.Diagnostics.PerformanceCounter.CounterName%2A> and, optionally, <xref:System.Diagnostics.PerformanceCounter.InstanceName%2A> or <xref:System.Diagnostics.PerformanceCounter.MachineName%2A> properties, and then call the <xref:System.Diagnostics.PerformanceCounter.IncrementBy%2A>, <xref:System.Diagnostics.PerformanceCounter.Increment%2A>, or <xref:System.Diagnostics.PerformanceCounter.Decrement%2A> methods, or set the <xref:System.Diagnostics.PerformanceCounter.RawValue%2A> property to change the value of your custom counter.  
   
 > [!NOTE]
 >  The <xref:System.Diagnostics.PerformanceCounter.Increment%2A>, <xref:System.Diagnostics.PerformanceCounter.IncrementBy%2A>, and <xref:System.Diagnostics.PerformanceCounter.Decrement%2A> methods use interlocks to update the counter value. This helps keep the counter value accurate in multithreaded or multiprocess scenarios, but also results in a performance penalty. If you do not need the accuracy that interlocked operations provide, you can update the <xref:System.Diagnostics.PerformanceCounter.RawValue%2A> property directly for up to a 5 times performance improvement.  However, in multithreaded scenarios, some updates to the counter value might be ignored, resulting in inaccurate data.  
@@ -58,7 +58,7 @@
  To obtain performance data for counters that required an initial or previous value for performing the necessary calculation, call the <xref:System.Diagnostics.PerformanceCounter.NextValue%2A> method twice and use the information returned as your application requires.  
   
 > [!NOTE]
->  Performance counter categories installed with the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] use separate shared memory, with each performance counter category having its own memory. You can specify the size of separate shared memory by creating a DWORD named FileMappingSize in the registry key HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\\*\<category name>*\Performance. The FileMappingSize value is set to the shared memory size of the category. The default size is 131072 decimal. If the FileMappingSize value is not present, the `fileMappingSize` attribute value for the `performanceCounters` element specified in the Machine.config file is used, causing additional overhead for configuration file processing. You can realize a performance improvement for application startup by setting the file mapping size in the registry. For more information about the file mapping size, see [\&lt;performanceCounters\&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/performancecounters-element.md).  
+>  Performance counter categories installed with the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] use separate shared memory, with each performance counter category having its own memory. You can specify the size of separate shared memory by creating a DWORD named FileMappingSize in the registry key HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\\*\<category name>*\Performance. The FileMappingSize value is set to the shared memory size of the category. The default size is 131072 decimal. If the FileMappingSize value is not present, the `fileMappingSize` attribute value for the `performanceCounters` element specified in the Machine.config file is used, causing additional overhead for configuration file processing. You can realize a performance improvement for application startup by setting the file mapping size in the registry. For more information about the file mapping size, see [&lt;performanceCounters&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/performancecounters-element.md).  
   
    
   
@@ -71,6 +71,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Diagnostics.PerformanceCounterType" />
+    <altmember cref="T:System.Diagnostics.CounterCreationData" />
+    <altmember cref="T:System.Diagnostics.CounterCreationDataCollection" />
+    <altmember cref="T:System.Diagnostics.CounterSample" />
+    <altmember cref="T:System.Diagnostics.CounterSampleCalculator" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -609,6 +614,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Diagnostics.PerformanceCounter.CategoryName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Me), which does not support performance counters.</exception>
+        <altmember cref="P:System.Diagnostics.Process.ProcessName" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -821,7 +827,7 @@
 |Track a higher-capacity number of items or operations per second.|`RateOfCountsPerSecond64`|Tracking orders received per second on a site with very high volume.|  
 |Calculate the average time to perform a process or to process an item|`AverageTimer32`|Calculate the average time an order takes to be processed.|  
   
- When you create a counter whose type requires the use of a corresponding base counter, you must declare the counter and the base in the <xref:System.Diagnostics.CounterCreationDataCollection> you pass into the <xref:System.Diagnostics.PerformanceCounterCategory.Create%2A?displayProperty=fullName> method.  
+ When you create a counter whose type requires the use of a corresponding base counter, you must declare the counter and the base in the <xref:System.Diagnostics.CounterCreationDataCollection> you pass into the <xref:System.Diagnostics.PerformanceCounterCategory.Create%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
 >  If the value for the <xref:System.Diagnostics.PerformanceCounter.InstanceLifetime%2A> property is <xref:System.Diagnostics.PerformanceCounterInstanceLifetime.Process> and the performance counter category was created with .NET Framework version 1.0 or 1.1, an <xref:System.InvalidOperationException> is thrown. Performance counter categories created with earlier versions use global shared memory, and the value for <xref:System.Diagnostics.PerformanceCounter.InstanceLifetime%2A> must be <xref:System.Diagnostics.PerformanceCounterInstanceLifetime.Global>. If the category is not used by applications running on versions 1.0 or 1.1 of the .NET Framework, delete and recreate the category.  
@@ -843,6 +849,7 @@
         <exception cref="T:System.PlatformNotSupportedException">The platform is Windows 98 or Windows Millennium Edition (Me), which does not support performance counters.</exception>
         <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading the performance counter category. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+        <altmember cref="T:System.Diagnostics.PerformanceCounterType" />
       </Docs>
     </Member>
     <Member MemberName="Decrement">
@@ -1191,7 +1198,7 @@
 |\|_|  
 |/|_|  
   
- The <xref:System.AppDomain.FriendlyName%2A> property of the <xref:System.AppDomain> object obtained from the <xref:System.AppDomain.CurrentDomain%2A?displayProperty=fullName> property is a common source of instance names that can contain invalid characters.  
+ The <xref:System.AppDomain.FriendlyName%2A> property of the <xref:System.AppDomain> object obtained from the <xref:System.AppDomain.CurrentDomain%2A?displayProperty=nameWithType> property is a common source of instance names that can contain invalid characters.  
   
    
   
@@ -1537,5 +1544,15 @@
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for writing the performance counter category. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Write" />.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.PerformanceCounter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

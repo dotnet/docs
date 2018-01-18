@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugNativeFrame::GetIP"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetIP method, ICorDebugNativeFrame interface [.NET Framework debugging]"
   - "ICorDebugNativeFrame::GetIP method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugNativeFrame::GetIP Method
 Gets the native code offset location to which the instruction pointer is currently set.  

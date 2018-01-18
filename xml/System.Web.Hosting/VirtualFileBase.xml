@@ -23,6 +23,8 @@
     <block subset="none" type="overrides">
       <para>When you inherit from the <see cref="T:System.Web.Hosting.VirtualFileBase" /> class, you must override the <see cref="P:System.Web.Hosting.VirtualFileBase.IsDirectory" /> property to indicate whether the derived object is a virtual directory or a virtual file. If you derive from either the <see cref="T:System.Web.Hosting.VirtualFile" /> or the <see cref="T:System.Web.Hosting.VirtualDirectory" /> class, the <see cref="P:System.Web.Hosting.VirtualFileBase.IsDirectory" /> property is already set.</para>
     </block>
+    <altmember cref="T:System.Web.Hosting.VirtualFile" />
+    <altmember cref="T:System.Web.Hosting.VirtualDirectory" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,6 +47,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Hosting.VirtualFile" />
+        <altmember cref="T:System.Web.Hosting.VirtualDirectory" />
       </Docs>
     </Member>
     <Member MemberName="InitializeLifetimeService">
@@ -71,6 +75,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Hosting.VirtualFile" />
+        <altmember cref="T:System.Web.Hosting.VirtualDirectory" />
       </Docs>
     </Member>
     <Member MemberName="IsDirectory">
@@ -90,6 +96,8 @@
         <value>
           <see langword="true" /> if the <see cref="T:System.Web.Hosting.VirtualFileBase" /> instance is a virtual directory; otherwise, <see langword="false" /> if the <see cref="T:System.Web.Hosting.VirtualFileBase" /> instance is a virtual file.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Hosting.VirtualFile" />
+        <altmember cref="T:System.Web.Hosting.VirtualDirectory" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -118,6 +126,8 @@
         <block subset="none" type="overrides">
           <para>The <see cref="P:System.Web.Hosting.VirtualFileBase.Name" /> property should return the correct casing of the virtual resource for the virtual path provider. The correct casing may be different from the casing in the original path.</para>
         </block>
+        <altmember cref="T:System.Web.Hosting.VirtualFile" />
+        <altmember cref="T:System.Web.Hosting.VirtualDirectory" />
       </Docs>
     </Member>
     <Member MemberName="VirtualPath">
@@ -143,6 +153,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Hosting.VirtualFile" />
+        <altmember cref="T:System.Web.Hosting.VirtualDirectory" />
       </Docs>
     </Member>
   </Members>

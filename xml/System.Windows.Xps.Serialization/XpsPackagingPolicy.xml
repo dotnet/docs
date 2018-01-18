@@ -73,6 +73,10 @@
         <summary>Acquires the resource stream for a specified <see cref="T:System.Windows.Xps.Packaging.XpsColorContext" />.</summary>
         <returns>The resource stream for the <see cref="T:System.Windows.Xps.Packaging.XpsColorContext" /> that has the specified <paramref name="resourceId" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="Overload:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsFont" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsImage(System.String)" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsResourceDictionary(System.String)" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsColorContext" />
       </Docs>
     </Member>
     <Member MemberName="AcquireResourceStreamForXpsFont">
@@ -92,6 +96,10 @@
         <summary>Acquires the <see cref="T:System.Windows.Xps.Serialization.XpsResourceStream" /> for the current <see cref="T:System.Windows.Xps.Packaging.XpsFont" />.</summary>
         <returns>The resource stream for the current <see cref="T:System.Windows.Xps.Packaging.XpsFont" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsColorContext(System.String)" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsImage(System.String)" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsResourceDictionary(System.String)" />
+        <altmember cref="Overload:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsFont" />
       </Docs>
     </Member>
     <Member MemberName="AcquireResourceStreamForXpsFont">
@@ -114,6 +122,10 @@
         <summary>Acquires the <see cref="T:System.Windows.Xps.Serialization.XpsResourceStream" /> for a specified <see cref="T:System.Windows.Xps.Packaging.XpsFont" />.</summary>
         <returns>The resource stream for the [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] font that has the specified <paramref name="resourceId" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsColorContext(System.String)" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsImage(System.String)" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsResourceDictionary(System.String)" />
+        <altmember cref="Overload:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsFont" />
       </Docs>
     </Member>
     <Member MemberName="AcquireResourceStreamForXpsImage">
@@ -136,6 +148,10 @@
         <summary>Acquires the resource stream for a specified <see cref="T:System.Windows.Xps.Packaging.XpsImage" />.</summary>
         <returns>The resource stream for the <see cref="T:System.Windows.Xps.Packaging.XpsImage" /> that has the specified <paramref name="resourceId" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsColorContext(System.String)" />
+        <altmember cref="Overload:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsFont" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsResourceDictionary(System.String)" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsImage" />
       </Docs>
     </Member>
     <Member MemberName="AcquireResourceStreamForXpsResourceDictionary">
@@ -158,6 +174,10 @@
         <summary>Acquires the resource stream for a specified <see cref="T:System.Windows.Xps.Packaging.XpsResourceDictionary" />.</summary>
         <returns>The [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] resource stream for the <see cref="T:System.Windows.Xps.Packaging.XpsResourceDictionary" /> that has the specified <paramref name="resourceId" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsColorContext(System.String)" />
+        <altmember cref="Overload:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsFont" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsImage(System.String)" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsResourceDictionary" />
       </Docs>
     </Member>
     <Member MemberName="AcquireStreamForLinkTargets">
@@ -196,6 +216,11 @@
         <summary>Acquires the <see cref="T:System.Xml.XmlWriter" /> for the current <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
         <returns>The [!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)] writer for the current <see cref="T:System.Windows.Documents.FixedDocument" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForFixedDocumentSequence" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForFixedPage" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForPage" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForResourceDictionary" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseXmlWriterForFixedDocument" />
       </Docs>
     </Member>
     <Member MemberName="AcquireXmlWriterForFixedDocumentSequence">
@@ -215,6 +240,11 @@
         <summary>Acquires the <see cref="T:System.Xml.XmlWriter" /> for the current <see cref="T:System.Windows.Documents.FixedDocumentSequence" />.</summary>
         <returns>The [!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)] writer for the current <see cref="T:System.Windows.Documents.FixedDocumentSequence" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForFixedDocument" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForFixedPage" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForPage" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForResourceDictionary" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseXmlWriterForFixedDocumentSequence" />
       </Docs>
     </Member>
     <Member MemberName="AcquireXmlWriterForFixedPage">
@@ -234,6 +264,11 @@
         <summary>Acquires the <see cref="T:System.Xml.XmlWriter" /> for the current <see cref="T:System.Windows.Documents.FixedPage" />.</summary>
         <returns>The [!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)] writer for the current <see cref="T:System.Windows.Documents.FixedPage" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForFixedDocument" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForFixedDocumentSequence" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForPage" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForResourceDictionary" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseXmlWriterForFixedPage" />
       </Docs>
     </Member>
     <Member MemberName="AcquireXmlWriterForPage">
@@ -253,6 +288,11 @@
         <summary>Acquires the <see cref="T:System.Xml.XmlWriter" /> for the current page.</summary>
         <returns>The [!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)] writer for the current <see cref="T:System.Windows.Documents.FixedPage" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForFixedDocument" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForFixedDocumentSequence" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForFixedPage" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForPage" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForResourceDictionary" />
       </Docs>
     </Member>
     <Member MemberName="AcquireXmlWriterForResourceDictionary">
@@ -272,6 +312,10 @@
         <summary>Acquires the <see cref="T:System.Xml.XmlWriter" /> for the current <see cref="T:System.Windows.Xps.Packaging.XpsResourceDictionary" />.</summary>
         <returns>The [!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)] writer for the current <see cref="T:System.Windows.Xps.Packaging.XpsResourceDictionary" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForFixedDocument" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForFixedDocumentSequence" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForFixedPage" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForPage" />
       </Docs>
     </Member>
     <Member MemberName="CurrentFixedDocumentUri">
@@ -290,6 +334,7 @@
         <summary>Gets the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] of the current fixed document.</summary>
         <value>The [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the current fixed document.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Xps.Serialization.XpsPackagingPolicy.CurrentFixedPageUri" />
       </Docs>
     </Member>
     <Member MemberName="CurrentFixedPageUri">
@@ -308,6 +353,7 @@
         <summary>Gets the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] of the current fixed page.</summary>
         <value>The [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the current fixed page.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Xps.Serialization.XpsPackagingPolicy.CurrentFixedDocumentUri" />
       </Docs>
     </Member>
     <Member MemberName="PackagingProgressEvent">
@@ -394,6 +440,7 @@
         <param name="relationshipName">The identifying name of the <see cref="T:System.IO.Packaging.PackageRelationship" /> that associates the current page with the specified resource.</param>
         <summary>Adds a <see cref="T:System.IO.Packaging.PackageRelationship" /> with a specified name that associates a specified resource with the current page.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.RelateRestrictedFontToCurrentDocument(System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="RelateRestrictedFontToCurrentDocument">
@@ -415,6 +462,7 @@
         <param name="targetUri">The [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] of the restricted font to associate with the current document.</param>
         <summary>Adds a <see cref="T:System.IO.Packaging.PackageRelationship" /> that associates a restricted font with the current document.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.RelateResourceToCurrentPage(System.Uri,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ReleaseResourceStreamForXpsColorContext">
@@ -433,6 +481,10 @@
       <Docs>
         <summary>Releases the <see cref="T:System.Windows.Xps.Serialization.XpsResourceStream" /> for the current <see cref="T:System.Windows.Xps.Packaging.XpsColorContext" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsColorContext(System.String)" />
+        <altmember cref="Overload:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsFont" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsImage" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsResourceDictionary" />
       </Docs>
     </Member>
     <Member MemberName="ReleaseResourceStreamForXpsFont">
@@ -451,6 +503,11 @@
       <Docs>
         <summary>Releases the <see cref="T:System.Windows.Xps.Serialization.XpsResourceStream" /> for the current <see cref="T:System.Windows.Xps.Packaging.XpsFont" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="Overload:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsFont" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsColorContext" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsFont(System.String)" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsImage" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsResourceDictionary" />
       </Docs>
     </Member>
     <Member MemberName="ReleaseResourceStreamForXpsFont">
@@ -472,6 +529,11 @@
         <param name="resourceId">The identifier of the [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] font that you want to release.</param>
         <summary>Releases the <see cref="T:System.Windows.Xps.Serialization.XpsResourceStream" /> for a specified <see cref="T:System.Windows.Xps.Packaging.XpsFont" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="Overload:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsFont" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsColorContext" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsFont" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsImage" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsResourceDictionary" />
       </Docs>
     </Member>
     <Member MemberName="ReleaseResourceStreamForXpsImage">
@@ -490,6 +552,10 @@
       <Docs>
         <summary>Releases the <see cref="T:System.Windows.Xps.Serialization.XpsResourceStream" /> for the current <see cref="T:System.Windows.Xps.Packaging.XpsImage" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsImage(System.String)" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsColorContext" />
+        <altmember cref="Overload:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsFont" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsResourceDictionary" />
       </Docs>
     </Member>
     <Member MemberName="ReleaseResourceStreamForXpsResourceDictionary">
@@ -508,6 +574,10 @@
       <Docs>
         <summary>Releases the <see cref="T:System.Windows.Xps.Serialization.XpsResourceStream" /> for the current <see cref="T:System.Windows.Xps.Packaging.XpsResourceDictionary" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsResourceDictionary(System.String)" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsColorContext" />
+        <altmember cref="Overload:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsFont" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsImage" />
       </Docs>
     </Member>
     <Member MemberName="ReleaseXmlWriterForFixedDocument">
@@ -526,6 +596,9 @@
       <Docs>
         <summary>Releases the <see cref="T:System.Xml.XmlWriter" /> for the current <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForFixedDocument" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseXmlWriterForFixedDocumentSequence" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseXmlWriterForFixedPage" />
       </Docs>
     </Member>
     <Member MemberName="ReleaseXmlWriterForFixedDocumentSequence">
@@ -544,6 +617,9 @@
       <Docs>
         <summary>Releases the <see cref="T:System.Xml.XmlWriter" /> for the current <see cref="T:System.Windows.Documents.FixedDocumentSequence" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForFixedDocumentSequence" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseXmlWriterForFixedDocument" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseXmlWriterForFixedPage" />
       </Docs>
     </Member>
     <Member MemberName="ReleaseXmlWriterForFixedPage">
@@ -562,7 +638,45 @@
       <Docs>
         <summary>Releases the <see cref="T:System.Xml.XmlWriter" /> for the current <see cref="T:System.Windows.Documents.FixedPage" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForFixedPage" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseXmlWriterForFixedDocument" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseXmlWriterForFixedDocumentSequence" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Serialization.XpsPackagingPolicy" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReleaseResourceStreamForXpsFont">
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the <see cref="T:System.Windows.Xps.Serialization.XpsResourceStream" /> for the current <see cref="T:System.Windows.Xps.Packaging.XpsFont" />.</summary>
+        <altmember cref="Overload:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsFont" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsColorContext" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsImage" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsResourceDictionary" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AcquireResourceStreamForXpsFont">
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Acquires the resource stream for an <see cref="T:System.Windows.Xps.Packaging.XpsFont" />.</summary>
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsColorContext(System.String)" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsImage(System.String)" />
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsResourceDictionary(System.String)" />
+        <altmember cref="Overload:System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsFont" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

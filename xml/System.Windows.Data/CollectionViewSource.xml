@@ -315,7 +315,7 @@
 <a name="xamlValues_Culture"></a>   
 ## XAML Values  
  *ietfLanguageTag*  
- A string used to set the <xref:System.Globalization.CultureInfo>. This string is used to internally call. <xref:System.Globalization.CultureInfo.GetCultureInfoByIetfLanguageTag%2A>. For details on the string format, see <xref:System.Globalization.CultureInfo.GetCultureInfoByIetfLanguageTag%2A?displayProperty=fullName>.  
+ A string used to set the <xref:System.Globalization.CultureInfo>. This string is used to internally call. <xref:System.Globalization.CultureInfo.GetCultureInfoByIetfLanguageTag%2A>. For details on the string format, see <xref:System.Globalization.CultureInfo.GetCultureInfoByIetfLanguageTag%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -930,6 +930,7 @@
         <returns>
           <see langword="true" /> if the listener handled the event; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.IWeakEventListener.ReceiveWeakEvent(System.Type,System.Object,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="SortDescriptions">

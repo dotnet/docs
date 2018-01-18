@@ -46,6 +46,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.Versioning.FrameworkName" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -80,7 +81,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string that is assigned to the `frameworkName` parameter generally takes the same form as the string that is returned by the <xref:System.Runtime.Versioning.FrameworkName.ToString%2A?displayProperty=fullName> method.  
+ The string that is assigned to the `frameworkName` parameter generally takes the same form as the string that is returned by the <xref:System.Runtime.Versioning.FrameworkName.ToString%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -124,6 +125,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Runtime.Versioning.TargetFrameworkAttribute.FrameworkName" />
       </Docs>
     </Member>
     <Member MemberName="FrameworkName">
@@ -158,10 +160,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Runtime.Versioning.TargetFrameworkAttribute.FrameworkName%2A> property maps to the `frameworkName` parameter of the <xref:System.Runtime.Versioning.TargetFrameworkAttribute.%23ctor%2A> constructor. It represents the .NET Framework version in a compact form and typically corresponds to the string that is returned by the <xref:System.Runtime.Versioning.FrameworkName.ToString%2A?displayProperty=fullName> method.  
+ The <xref:System.Runtime.Versioning.TargetFrameworkAttribute.FrameworkName%2A> property maps to the `frameworkName` parameter of the <xref:System.Runtime.Versioning.TargetFrameworkAttribute.%23ctor%2A> constructor. It represents the .NET Framework version in a compact form and typically corresponds to the string that is returned by the <xref:System.Runtime.Versioning.FrameworkName.ToString%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Runtime.Versioning.TargetFrameworkAttribute.FrameworkDisplayName" />
       </Docs>
     </Member>
   </Members>

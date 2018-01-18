@@ -9,11 +9,16 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 7e51d44e-7c4e-4040-9332-f0190fe36f07
 caps.latest.revision: 11
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # SQL Server Connection Pooling (ADO.NET)
 Connecting to a database server typically consists of several time-consuming steps. A physical channel such as a socket or a named pipe must be established, the initial handshake with the server must occur, the connection string information must be parsed, the connection must be authenticated by the server, checks must be run for enlisting in the current transaction, and so on.  
@@ -134,7 +139,7 @@ using (SqlConnection connection = new SqlConnection(
  We recommend that you take advantage of security mechanisms that you can use instead of application roles. For more information, see [Creating Application Roles in SQL Server](../../../../docs/framework/data/adonet/sql/creating-application-roles-in-sql-server.md).  
   
 ## See Also  
- [Connection Pooling](../../../../docs/framework/data/adonet/connection-pooling.md)   
- [SQL Server and ADO.NET](../../../../docs/framework/data/adonet/sql/index.md)   
- [Performance Counters](../../../../docs/framework/data/adonet/performance-counters.md)   
+ [Connection Pooling](../../../../docs/framework/data/adonet/connection-pooling.md)  
+ [SQL Server and ADO.NET](../../../../docs/framework/data/adonet/sql/index.md)  
+ [Performance Counters](../../../../docs/framework/data/adonet/performance-counters.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

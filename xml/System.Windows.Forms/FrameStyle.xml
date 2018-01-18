@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is used by <xref:System.Windows.Forms.ControlPaint.DrawReversibleFrame%2A?displayProperty=fullName>.  
+ This enumeration is used by <xref:System.Windows.Forms.ControlPaint.DrawReversibleFrame%2A?displayProperty=nameWithType>.  
   
  <xref:System.Windows.Forms.ControlPaint.DrawReversibleFrame%2A> is used when selecting objects or during drag-and-drop operations.  
   
@@ -30,6 +30,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Windows.Forms.ControlPaint.DrawReversibleFrame(System.Drawing.Rectangle,System.Drawing.Color,System.Windows.Forms.FrameStyle)" />
   </Docs>
   <Members>
     <Member MemberName="Dashed">

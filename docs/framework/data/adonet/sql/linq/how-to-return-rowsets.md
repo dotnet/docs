@@ -9,11 +9,16 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 725718f5-da29-4841-9f53-aafef64ba977
 caps.latest.revision: 2
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Return Rowsets
 This example returns a rowset from the database, and includes an input parameter to filter the result.  
@@ -40,5 +45,5 @@ END
  [!code-vb[DLinqSprox#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSprox/vb/northwind-sprox.vb#1)]  
   
 ## See Also  
- [Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md)   
+ [Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md)  
  [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)

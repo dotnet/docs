@@ -31,6 +31,8 @@ An ImageBrush can paint shapes, controls, text, and more
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.MediaPermission">to display images that you don't have <see cref="T:System.Net.WebPermission" /> or <see cref="T:System.Security.Permissions.FileIOPermission" /> access for. Associated enumeration: <see cref="F:System.Security.Permissions.MediaPermissionImage.SafeImage" />.</permission>
+    <altmember cref="P:System.Windows.Media.ImageBrush.ImageSource" />
+    <altmember cref="T:System.Windows.Media.TileBrush" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -90,7 +92,7 @@ An ImageBrush can paint shapes, controls, text, and more
   
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -120,7 +122,7 @@ An ImageBrush can paint shapes, controls, text, and more
   
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -147,7 +149,7 @@ An ImageBrush can paint shapes, controls, text, and more
     </Member>
     <Member MemberName="GetContentBounds">
       <MemberSignature Language="C#" Value="protected override void GetContentBounds (out System.Windows.Rect contentBounds);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetContentBounds(valuetype System.Windows.Rect contentBounds) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetContentBounds([out] valuetype System.Windows.Rect&amp; contentBounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ImageBrush.GetContentBounds(System.Windows.Rect@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -201,7 +203,7 @@ An ImageBrush can paint shapes, controls, text, and more
 <a name="xamlValues_ImageSource"></a>   
 ## XAML Values  
  *imageUri*  
- <xref:System.String?displayProperty=fullName>  
+ <xref:System.String?displayProperty=nameWithType>  
   
  A [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of an image.  
   
@@ -234,5 +236,14 @@ An ImageBrush can paint shapes, controls, text, and more
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.ImageBrush" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -147,6 +147,9 @@ namespace SharedRecognizer
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
+    <altmember cref="T:System.Speech.Recognition.Grammar" />
+    <altmember cref="T:System.Speech.Recognition.RecognitionResult" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -271,6 +274,8 @@ namespace SharedRecognizer
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
       </Docs>
     </Member>
     <Member MemberName="AudioFormat">
@@ -307,6 +312,7 @@ namespace SharedRecognizer
         <summary>Gets the level of the audio being received by the speech recognizer.</summary>
         <value>The audio level of the input to the speech recognizer, from 0 through 100.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.AudioLevelUpdated" />
       </Docs>
     </Member>
     <Member MemberName="AudioLevelUpdated">
@@ -363,6 +369,8 @@ void recognizer_AudioLevelUpdated(object sender, AudioLevelUpdatedEventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.AudioLevelUpdatedEventArgs" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.AudioLevel" />
       </Docs>
     </Member>
     <Member MemberName="AudioPosition">
@@ -468,6 +476,7 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.RecognizerAudioPosition" />
       </Docs>
     </Member>
     <Member MemberName="AudioSignalProblemOccurred">
@@ -531,6 +540,8 @@ void recognizer_AudioSignalProblemOccurred(object sender, AudioSignalProblemOccu
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.AudioSignalProblem" />
+        <altmember cref="T:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="AudioState">
@@ -549,6 +560,7 @@ void recognizer_AudioSignalProblemOccurred(object sender, AudioSignalProblemOccu
         <summary>Gets the state of the audio being received by the speech recognizer.</summary>
         <value>The state of the audio input to the speech recognizer.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.AudioStateChanged" />
       </Docs>
     </Member>
     <Member MemberName="AudioStateChanged">
@@ -653,6 +665,9 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.AudioState" />
+        <altmember cref="T:System.Speech.Recognition.AudioStateChangedEventArgs" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.AudioState" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -812,6 +827,12 @@ namespace SharedRecognizer
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.RecognitionResult" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.EmulateRecognizeAsync(System.String)" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechDetected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognitionRejected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized" />
       </Docs>
     </Member>
     <Member MemberName="EmulateRecognize">
@@ -845,6 +866,12 @@ namespace SharedRecognizer
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.RecognitionResult" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.EmulateRecognizeAsync(System.String)" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechDetected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognitionRejected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized" />
       </Docs>
     </Member>
     <Member MemberName="EmulateRecognize">
@@ -876,6 +903,12 @@ namespace SharedRecognizer
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.RecognitionResult" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.EmulateRecognizeAsync(System.String)" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechDetected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognitionRejected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized" />
       </Docs>
     </Member>
     <MemberGroup MemberName="EmulateRecognizeAsync">
@@ -1027,6 +1060,12 @@ namespace SharedRecognizer
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.EmulateRecognize(System.String)" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.EmulateRecognizeCompleted" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechDetected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognitionRejected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized" />
       </Docs>
     </Member>
     <Member MemberName="EmulateRecognizeAsync">
@@ -1059,6 +1098,12 @@ namespace SharedRecognizer
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.EmulateRecognize(System.String)" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.EmulateRecognizeCompleted" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechDetected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognitionRejected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized" />
       </Docs>
     </Member>
     <Member MemberName="EmulateRecognizeAsync">
@@ -1089,6 +1134,12 @@ namespace SharedRecognizer
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.EmulateRecognize(System.String)" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.EmulateRecognizeCompleted" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechDetected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognitionRejected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized" />
       </Docs>
     </Member>
     <Member MemberName="EmulateRecognizeCompleted">
@@ -1215,6 +1266,12 @@ namespace SharedRecognizer
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.EmulateRecognizeCompletedEventArgs" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.EmulateRecognizeAsync(System.String)" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechDetected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognitionRejected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -1243,6 +1300,7 @@ namespace SharedRecognizer
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.PauseRecognizerOnRecognition" />
       </Docs>
     </Member>
     <Member MemberName="Grammars">
@@ -1321,6 +1379,11 @@ namespace SharedRecognizer
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.LoadGrammar(System.Speech.Recognition.Grammar)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.LoadGrammarAsync(System.Speech.Recognition.Grammar)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.UnloadAllGrammars" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.UnloadGrammar(System.Speech.Recognition.Grammar)" />
       </Docs>
     </Member>
     <Member MemberName="LoadGrammar">
@@ -1449,6 +1512,10 @@ namespace SharedRecognizer
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.LoadGrammarAsync(System.Speech.Recognition.Grammar)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.UnloadAllGrammars" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.UnloadGrammar(System.Speech.Recognition.Grammar)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.RequestRecognizerUpdate" />
       </Docs>
     </Member>
     <Member MemberName="LoadGrammarAsync">
@@ -1479,6 +1546,11 @@ namespace SharedRecognizer
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.LoadGrammar(System.Speech.Recognition.Grammar)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.RequestRecognizerUpdate" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.UnloadAllGrammars" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.UnloadGrammar(System.Speech.Recognition.Grammar)" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.LoadGrammarCompleted" />
       </Docs>
     </Member>
     <Member MemberName="LoadGrammarCompleted">
@@ -1606,6 +1678,10 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
+        <altmember cref="T:System.Speech.Recognition.LoadGrammarCompletedEventArgs" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.Grammars" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.LoadGrammarAsync(System.Speech.Recognition.Grammar)" />
       </Docs>
     </Member>
     <Member MemberName="MaxAlternates">
@@ -1633,6 +1709,8 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Speech.Recognition.RecognitionResult.Alternates" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized" />
       </Docs>
     </Member>
     <Member MemberName="PauseRecognizerOnRecognition">
@@ -1668,6 +1746,9 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.RequestRecognizerUpdate" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.Enabled" />
       </Docs>
     </Member>
     <Member MemberName="RecognizerAudioPosition">
@@ -1693,6 +1774,7 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.AudioPosition" />
       </Docs>
     </Member>
     <Member MemberName="RecognizerInfo">
@@ -1751,6 +1833,8 @@ namespace SharedRecognizer
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.RecognizerInfo" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.State" />
       </Docs>
     </Member>
     <Member MemberName="RecognizerUpdateReached">
@@ -1882,6 +1966,8 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.RequestRecognizerUpdate" />
+        <altmember cref="T:System.Speech.Recognition.RecognizerUpdateReachedEventArgs" />
       </Docs>
     </Member>
     <MemberGroup MemberName="RequestRecognizerUpdate">
@@ -2019,6 +2105,8 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.PauseRecognizerOnRecognition" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.RecognizerUpdateReached" />
       </Docs>
     </MemberGroup>
     <Member MemberName="RequestRecognizerUpdate">
@@ -2046,6 +2134,9 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.RecognizerUpdateReached" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.AudioPosition" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.RecognizerAudioPosition" />
       </Docs>
     </Member>
     <Member MemberName="RequestRecognizerUpdate">
@@ -2076,6 +2167,9 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.RecognizerUpdateReached" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.AudioPosition" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.RecognizerAudioPosition" />
       </Docs>
     </Member>
     <Member MemberName="RequestRecognizerUpdate">
@@ -2108,6 +2202,9 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.RecognizerUpdateReached" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.AudioPosition" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.RecognizerAudioPosition" />
       </Docs>
     </Member>
     <Member MemberName="SpeechDetected">
@@ -2205,6 +2302,9 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.SpeechDetectedEventArgs" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.AudioPosition" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.RecognizerAudioPosition" />
       </Docs>
     </Member>
     <Member MemberName="SpeechHypothesized">
@@ -2307,6 +2407,10 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.SpeechHypothesizedEventArgs" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechDetected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognitionRejected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized" />
       </Docs>
     </Member>
     <Member MemberName="SpeechRecognitionRejected">
@@ -2412,6 +2516,10 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognitionRejectedEventArgs" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechDetected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized" />
       </Docs>
     </Member>
     <Member MemberName="SpeechRecognized">
@@ -2525,6 +2633,12 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
+        <altmember cref="T:System.Speech.Recognition.RecognitionResult" />
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognizedEventArgs" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechDetected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognitionRejected" />
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -2550,6 +2664,8 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.RecognizerState" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.StateChanged" />
       </Docs>
     </Member>
     <Member MemberName="StateChanged">
@@ -2673,6 +2789,9 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.RecognizerState" />
+        <altmember cref="T:System.Speech.Recognition.StateChangedEventArgs" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.State" />
       </Docs>
     </Member>
     <Member MemberName="UnloadAllGrammars">
@@ -2700,6 +2819,10 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.Grammars" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.LoadGrammar(System.Speech.Recognition.Grammar)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.LoadGrammarAsync(System.Speech.Recognition.Grammar)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.UnloadGrammar(System.Speech.Recognition.Grammar)" />
       </Docs>
     </Member>
     <Member MemberName="UnloadGrammar">
@@ -2728,7 +2851,20 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.Grammars" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.LoadGrammar(System.Speech.Recognition.Grammar)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.LoadGrammarAsync(System.Speech.Recognition.Grammar)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.UnloadAllGrammars" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Disposes the <see cref="T:System.Speech.Recognition.SpeechRecognizer" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

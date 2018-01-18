@@ -102,11 +102,11 @@
   
 <a name="binding_to_data"></a>   
 ## Binding to Data  
- The <xref:System.Web.UI.WebControls.FormView> control can be bound to a data source control (such as <xref:System.Web.UI.WebControls.SqlDataSource>, <xref:System.Web.UI.WebControls.ObjectDataSource>, or <xref:System.Web.UI.WebControls.AccessDataSource>) or to any data source collection that implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> interface, such as <xref:System.Data.DataView?displayProperty=fullName>, <xref:System.Collections.ArrayList?displayProperty=fullName>, <xref:System.Collections.Generic.List%601?displayProperty=fullName>, or other collection types. Use one of the following methods to bind the <xref:System.Web.UI.WebControls.FormView> control to the appropriate data source type:  
+ The <xref:System.Web.UI.WebControls.FormView> control can be bound to a data source control (such as <xref:System.Web.UI.WebControls.SqlDataSource>, <xref:System.Web.UI.WebControls.ObjectDataSource>, or <xref:System.Web.UI.WebControls.AccessDataSource>) or to any data source collection that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> interface, such as <xref:System.Data.DataView?displayProperty=nameWithType>, <xref:System.Collections.ArrayList?displayProperty=nameWithType>, <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>, or other collection types. Use one of the following methods to bind the <xref:System.Web.UI.WebControls.FormView> control to the appropriate data source type:  
   
 -   To bind to a data source control, set the <xref:System.Web.UI.WebControls.DataBoundControl.DataSourceID%2A> property of the <xref:System.Web.UI.WebControls.FormView> control to the <xref:System.Web.UI.Control.ID%2A> value of the data source control. The <xref:System.Web.UI.WebControls.FormView> control automatically binds to the specified data source control and can take advantage of the data source control's capabilities to perform inserting, updating, deleting, and paging functionality. This is the preferred method to bind to data.  
   
--   To bind to a data source that implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> interface, programmatically set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of the <xref:System.Web.UI.WebControls.FormView> control to the data source and then call the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method. When using this method, the <xref:System.Web.UI.WebControls.FormView> control does not provide built-in inserting, updating, deleting, and paging functionality. You need to provide this functionality by using the appropriate event.  
+-   To bind to a data source that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> interface, programmatically set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of the <xref:System.Web.UI.WebControls.FormView> control to the data source and then call the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method. When using this method, the <xref:System.Web.UI.WebControls.FormView> control does not provide built-in inserting, updating, deleting, and paging functionality. You need to provide this functionality by using the appropriate event.  
   
  For more information on data binding, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/en-us/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
   
@@ -315,27 +315,65 @@
 ## Examples  
  The following example demonstrates how to use a <xref:System.Web.UI.WebControls.FormView> control to display the values from a <xref:System.Web.UI.WebControls.SqlDataSource> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewSimple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewSimple/CS/formviewsimplecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewSimple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewSimple/VB/formviewsimplevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewSimple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewSimple/CS/formviewsimplecs.aspx#1)]
+ [!code-aspx-vb[FormViewSimple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewSimple/VB/formviewsimplevb.aspx#1)]  
   
  The following example demonstrates how to use a <xref:System.Web.UI.WebControls.FormView> control to edit existing records.  
   
 > [!IMPORTANT]
 >  The control in this example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[FormView#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormView/CS/formvieweditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormView#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormView/VB/formvieweditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormView#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormView/CS/formvieweditcs.aspx#1)]
+ [!code-aspx-vb[FormView#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormView/VB/formvieweditvb.aspx#1)]  
   
  The following example demonstrates how to use a <xref:System.Web.UI.WebControls.FormView> control to insert new records.  
   
 > [!IMPORTANT]
 >  The control in this example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewInsertItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertItemTemplate/CS/formviewinsertitemtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewInsertItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertItemTemplate/VB/formviewinsertitemtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewInsertItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertItemTemplate/CS/formviewinsertitemtemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewInsertItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertItemTemplate/VB/formviewinsertitemtemplatevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.FormViewRow" />
+    <altmember cref="T:System.Web.UI.WebControls.FormViewMode" />
+    <altmember cref="T:System.Web.UI.WebControls.AccessDataSource" />
+    <altmember cref="T:System.Web.UI.WebControls.SqlDataSource" />
+    <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.AllowPaging" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.CurrentMode" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.DataKeyNames" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.DefaultMode" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.PagerStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.PagerSettings" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.EditRowStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataRowStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.FooterStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.InsertRowStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.RowStyle" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.EditItemTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.FooterTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.InsertItemTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.ItemTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemCreated" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemCommand" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemDeleted" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemDeleting" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserted" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserting" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdated" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdating" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanged" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanging" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanged" />
+    <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -354,18 +392,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.FormView> class. To dynamically add a <xref:System.Web.UI.WebControls.FormView> control to a page, create a new <xref:System.Web.UI.WebControls.FormView> object, set its properties, and then add it to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of a container control, such as <xref:System.Web.UI.WebControls.PlaceHolder>.  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.FormView> class. To dynamically add a <xref:System.Web.UI.WebControls.FormView> control to a page, create a new <xref:System.Web.UI.WebControls.FormView> object, set its properties, and then add it to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> collection of a container control, such as <xref:System.Web.UI.WebControls.PlaceHolder>.  
   
    
   
 ## Examples  
  The following example demonstrates how to dynamically add a <xref:System.Web.UI.WebControls.FormView> control to a page.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCtor/CS/formviewctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCtor/VB/formviewctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCtor/CS/formviewctorcs.aspx#1)]
+ [!code-aspx-vb[FormViewCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCtor/VB/formviewctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
+        <altmember cref="T:System.Web.UI.WebControls.PlaceHolder" />
       </Docs>
     </Member>
     <Member MemberName="AllowPaging">
@@ -393,7 +433,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.FormView> control has built-in paging capabilities, which allow a user to navigate to a different record in the data source. The paging feature can be used with any data source object that supports the <xref:System.Collections.ICollection?displayProperty=fullName> interface or a data source that supports paging capability.  
+ The <xref:System.Web.UI.WebControls.FormView> control has built-in paging capabilities, which allow a user to navigate to a different record in the data source. The paging feature can be used with any data source object that supports the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface or a data source that supports paging capability.  
   
  To enable the paging feature, set the <xref:System.Web.UI.WebControls.FormView.AllowPaging%2A> property to `true`. You can determine the total number of items in the underlying data source by using the <xref:System.Web.UI.WebControls.FormView.PageCount%2A> property. To determine the index of the currently displayed item, use the <xref:System.Web.UI.WebControls.FormView.PageIndex%2A> property.  
   
@@ -426,11 +466,20 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.AllowPaging%2A> property to enable the paging feature in a <xref:System.Web.UI.WebControls.FormView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewAllowPaging/CS/formviewallowpagingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewAllowPaging/VB/formviewallowpagingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewAllowPaging/CS/formviewallowpagingcs.aspx#1)]
+ [!code-aspx-vb[FormViewAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewAllowPaging/VB/formviewallowpagingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.TopPagerRow" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
       </Docs>
     </Member>
     <Member MemberName="BackImageUrl">
@@ -473,11 +522,15 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.BackImageUrl%2A> property to display a custom image in the background of a <xref:System.Web.UI.WebControls.FormView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewBackImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewBackImageUrl/CS/formviewbackimageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewBackImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewBackImageUrl/VB/formviewbackimageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewBackImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewBackImageUrl/CS/formviewbackimageurlcs.aspx#1)]
+ [!code-aspx-vb[FormViewBackImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewBackImageUrl/VB/formviewbackimageurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.CellPadding" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.CellSpacing" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.GridLines" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HorizontalAlign" />
       </Docs>
     </Member>
     <Member MemberName="BottomPagerRow">
@@ -519,11 +572,22 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.BottomPagerRow%2A> property to access the pager row displayed at the bottom of a <xref:System.Web.UI.WebControls.FormView> control. The pager row is then updated with additional content.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPagerTemplate/CS/formviewpagertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPagerTemplate/VB/formviewpagertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPagerTemplate/CS/formviewpagertemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPagerTemplate/VB/formviewpagertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.TopPagerRow" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemCreated" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
       </Docs>
     </Member>
     <Member MemberName="Caption">
@@ -564,11 +628,12 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.Caption%2A> property to specify the text for the HTML caption element rendered in a <xref:System.Web.UI.WebControls.FormView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewCaption#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCaption/CS/formviewcaptioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewCaption#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCaption/VB/formviewcaptionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewCaption#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCaption/CS/formviewcaptioncs.aspx#1)]
+ [!code-aspx-vb[FormViewCaption#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCaption/VB/formviewcaptionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.CaptionAlign" />
       </Docs>
     </Member>
     <Member MemberName="CaptionAlign">
@@ -617,12 +682,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.CaptionAlign%2A> property to specify that the HTML caption element in a <xref:System.Web.UI.WebControls.FormView> control should be rendered on the left side of the control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewCaption#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCaption/CS/formviewcaptioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewCaption#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCaption/VB/formviewcaptionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewCaption#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCaption/CS/formviewcaptioncs.aspx#1)]
+ [!code-aspx-vb[FormViewCaption#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCaption/VB/formviewcaptionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is not one of the <see cref="T:System.Web.UI.WebControls.TableCaptionAlign" /> enumeration values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.TableCaptionAlign" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.Caption" />
       </Docs>
     </Member>
     <Member MemberName="CellPadding">
@@ -663,11 +730,15 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.CellPadding%2A> property to specify the amount of spacing between the contents of a cell and the cell's border.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCellPadding/CS/formviewcellpaddingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCellPadding/VB/formviewcellpaddingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCellPadding/CS/formviewcellpaddingcs.aspx#1)]
+ [!code-aspx-vb[FormViewCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCellPadding/VB/formviewcellpaddingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BackImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.CellSpacing" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.GridLines" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HorizontalAlign" />
       </Docs>
     </Member>
     <Member MemberName="CellSpacing">
@@ -706,11 +777,15 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.CellSpacing%2A> property to specify the amount of spacing between adjacent cells.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCellPadding/CS/formviewcellpaddingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCellPadding/VB/formviewcellpaddingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCellPadding/CS/formviewcellpaddingcs.aspx#1)]
+ [!code-aspx-vb[FormViewCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCellPadding/VB/formviewcellpaddingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BackImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.CellPadding" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.GridLines" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HorizontalAlign" />
       </Docs>
     </Member>
     <Member MemberName="ChangeMode">
@@ -751,11 +826,15 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.ChangeMode%2A> method to return the <xref:System.Web.UI.WebControls.FormView> control to read-only mode whenever the user navigates to another record.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewChangeMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewChangeMode/CS/formviewchangemodecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewChangeMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewChangeMode/VB/formviewchangemodevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewChangeMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewChangeMode/CS/formviewchangemodecs.aspx#1)]
+ [!code-aspx-vb[FormViewChangeMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewChangeMode/VB/formviewchangemodevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewMode" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.CurrentMode" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanging" />
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -792,6 +871,8 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.FormView" /> class, you can override this method to create your own control hierarchy.</para>
         </block>
+        <altmember cref="T:System.Collections.IEnumerable" />
+        <altmember cref="M:System.Web.UI.Control.CreateChildControls" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -821,6 +902,8 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.FormView" /> class, you can override this method to create your own default style.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="T:System.Web.UI.WebControls.TableStyle" />
       </Docs>
     </Member>
     <Member MemberName="CreateDataSourceSelectArguments">
@@ -850,6 +933,8 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.FormView" /> class, you can override this method to specify your own values that are passed to the data source.</para>
         </block>
+        <altmember cref="T:System.Web.UI.DataSourceSelectArguments" />
+        <altmember cref="M:System.Web.UI.WebControls.DataBoundControl.CreateDataSourceSelectArguments" />
       </Docs>
     </Member>
     <Member MemberName="CreateRow">
@@ -886,6 +971,9 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.FormView" /> class, you can override this method to return a <see cref="T:System.Web.UI.WebControls.FormViewRow" /> object with custom settings.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewRow" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowType" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowState" />
       </Docs>
     </Member>
     <Member MemberName="CreateTable">
@@ -912,6 +1000,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Table" />
       </Docs>
     </Member>
     <Member MemberName="CurrentMode">
@@ -963,11 +1052,16 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.CurrentMode%2A> property to determine whether the <xref:System.Web.UI.WebControls.FormView> control is in edit, insert, or read-only mode. If the user attempts to navigate to another record while the <xref:System.Web.UI.WebControls.FormView> control is in edit more, the paging operation is canceled.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewCurrentMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCurrentMode/CS/formviewcurrentmodecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewCurrentMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCurrentMode/VB/formviewcurrentmodevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewCurrentMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCurrentMode/CS/formviewcurrentmodecs.aspx#1)]
+ [!code-aspx-vb[FormViewCurrentMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCurrentMode/VB/formviewcurrentmodevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewMode" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.DefaultMode" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.ChangeMode(System.Web.UI.WebControls.FormViewMode)" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanging" />
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -993,6 +1087,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataBoundControl.DataBind" />
       </Docs>
     </Member>
     <Member MemberName="DataItem">
@@ -1032,11 +1127,15 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.DataItem%2A> property to determine the value of a field in the data item.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCtor/CS/formviewctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCtor/VB/formviewctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCtor/CS/formviewctorcs.aspx#1)]
+ [!code-aspx-vb[FormViewCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCtor/VB/formviewctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="Overload:System.Web.UI.DataBinder.Eval" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.DataItemCount" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.DataItemIndex" />
       </Docs>
     </Member>
     <Member MemberName="DataItemCount">
@@ -1070,6 +1169,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.DataItem" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.DataItemIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageCount" />
       </Docs>
     </Member>
     <Member MemberName="DataItemIndex">
@@ -1106,6 +1208,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.DataItem" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.DataItemCount" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageIndex" />
       </Docs>
     </Member>
     <Member MemberName="DataKey">
@@ -1145,11 +1250,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.DataKey%2A> property to determine the value of the key field.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewDataKey#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewDataKey/CS/formviewdatakeycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewDataKey#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewDataKey/VB/formviewdatakeyvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewDataKey#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewDataKey/CS/formviewdatakeycs.aspx#1)]
+ [!code-aspx-vb[FormViewDataKey#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewDataKey/VB/formviewdatakeyvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.DataKeyNames" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.SelectedValue" />
       </Docs>
     </Member>
     <Member MemberName="DataKeyNames">
@@ -1192,11 +1300,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.DataKeyNames%2A> property to specify the key field for the data source bound to the <xref:System.Web.UI.WebControls.FormView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewEditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEditItemTemplate/CS/formviewedititemtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewEditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEditItemTemplate/VB/formviewedititemtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewEditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEditItemTemplate/CS/formviewedititemtemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewEditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEditItemTemplate/VB/formviewedititemtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.SelectedValue" />
       </Docs>
     </Member>
     <Member MemberName="DefaultMode">
@@ -1238,12 +1349,17 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.DefaultMode%2A> property to keep a <xref:System.Web.UI.WebControls.FormView> control in edit mode after an update operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewDefaultMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewDefaultMode/CS/formviewdefaultmodecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewDefaultMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewDefaultMode/VB/formviewdefaultmodevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewDefaultMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewDefaultMode/CS/formviewdefaultmodecs.aspx#1)]
+ [!code-aspx-vb[FormViewDefaultMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewDefaultMode/VB/formviewdefaultmodevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is not one of the <see cref="T:System.Web.UI.WebControls.FormViewMode" /> enumeration values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewMode" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.CurrentMode" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.ChangeMode(System.Web.UI.WebControls.FormViewMode)" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanging" />
       </Docs>
     </Member>
     <Member MemberName="DeleteItem">
@@ -1272,11 +1388,16 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.DeleteItem%2A> method to programmatically delete the current record in a <xref:System.Web.UI.WebControls.FormView> control from the data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewDeleteItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewDeleteItem/CS/formviewdeleteitemcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewDeleteItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewDeleteItem/VB/formviewdeleteitemvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewDeleteItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewDeleteItem/CS/formviewdeleteitemcs.aspx#1)]
+ [!code-aspx-vb[FormViewDeleteItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewDeleteItem/VB/formviewdeleteitemvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.ItemTemplate" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemDeleted" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemDeleting" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.InsertItem(System.Boolean)" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.UpdateItem(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="DeleteMethod">
@@ -1369,11 +1490,21 @@
 ## Examples  
  The following example demonstrates how to define a custom template for a data row in edit mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewEditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEditItemTemplate/CS/formviewedititemtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewEditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEditItemTemplate/VB/formviewedititemtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewEditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEditItemTemplate/CS/formviewedititemtemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewEditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEditItemTemplate/VB/formviewedititemtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdated" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdating" />
       </Docs>
     </Member>
     <Member MemberName="EditRowStyle">
@@ -1422,11 +1553,18 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.EditRowStyle%2A> property to specify a custom style for a data row when a <xref:System.Web.UI.WebControls.FormView> control is in edit mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewEditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEditItemTemplate/CS/formviewedititemtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewEditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEditItemTemplate/VB/formviewedititemtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewEditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEditItemTemplate/CS/formviewedititemtemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewEditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEditItemTemplate/VB/formviewedititemtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.RowStyle" />
       </Docs>
     </Member>
     <Member MemberName="EmptyDataRowStyle">
@@ -1475,11 +1613,18 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.EmptyDataRowStyle%2A> property to specify a custom style for the empty data row displayed when a <xref:System.Web.UI.WebControls.FormView> control is bound to a data source that does not contain any records.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewEmptyDataText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEmptyDataText/CS/formviewemptydatatextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewEmptyDataText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEmptyDataText/VB/formviewemptydatatextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewEmptyDataText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEmptyDataText/CS/formviewemptydatatextcs.aspx#1)]
+ [!code-aspx-vb[FormViewEmptyDataText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEmptyDataText/VB/formviewemptydatatextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.RowStyle" />
       </Docs>
     </Member>
     <Member MemberName="EmptyDataTemplate">
@@ -1525,11 +1670,20 @@
 ## Examples  
  The following example demonstrates how to define a custom template for the empty data row displayed when a <xref:System.Web.UI.WebControls.FormView> control is bound to a data source that does not contain any records.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewEmptyDataTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEmptyDataTemplate/CS/formviewemptydatatemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewEmptyDataTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEmptyDataTemplate/VB/formviewemptydatatemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewEmptyDataTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEmptyDataTemplate/CS/formviewemptydatatemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewEmptyDataTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEmptyDataTemplate/VB/formviewemptydatatemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataText" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
       </Docs>
     </Member>
     <Member MemberName="EmptyDataText">
@@ -1571,11 +1725,15 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.EmptyDataText%2A> property to specify the text to display in the empty data row.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewEmptyDataText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEmptyDataText/CS/formviewemptydatatextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewEmptyDataText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEmptyDataText/VB/formviewemptydatatextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewEmptyDataText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEmptyDataText/CS/formviewemptydatatextcs.aspx#1)]
+ [!code-aspx-vb[FormViewEmptyDataText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEmptyDataText/VB/formviewemptydatatextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterText" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderText" />
       </Docs>
     </Member>
     <Member MemberName="EnableModelValidation">
@@ -1625,6 +1783,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound" />
       </Docs>
     </Member>
     <Member MemberName="ExtractRowValues">
@@ -1667,6 +1826,11 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.FormView" /> class, you can override this method to create your own routine to retrieve the field values.</para>
         </block>
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.ItemTemplate" />
+        <altmember cref="M:System.Web.UI.IBindableTemplate.ExtractValues(System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="FooterRow">
@@ -1710,11 +1874,17 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.FooterRow%2A> property to programmatically modify the properties of the footer row during the <xref:System.Web.UI.WebControls.FormView.ItemCreated> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewFooterTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewFooterTemplate/CS/formviewfootertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewFooterTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewFooterTemplate/VB/formviewfootertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewFooterTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewFooterTemplate/CS/formviewfootertemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewFooterTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewFooterTemplate/VB/formviewfootertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterText" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.TopPagerRow" />
       </Docs>
     </Member>
     <Member MemberName="FooterStyle">
@@ -1763,11 +1933,19 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.FooterStyle%2A> property to specify a custom style for the footer row.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewFooterText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewFooterText/CS/formviewfootertextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewFooterText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewFooterText/VB/formviewfootertextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewFooterText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewFooterText/CS/formviewfootertextcs.aspx#1)]
+ [!code-aspx-vb[FormViewFooterText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewFooterText/VB/formviewfootertextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterText" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.RowStyle" />
       </Docs>
     </Member>
     <Member MemberName="FooterTemplate">
@@ -1813,11 +1991,20 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.FooterTemplate%2A> property to define a custom template to render for the footer row.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewFooterTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewFooterTemplate/CS/formviewfootertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewFooterTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewFooterTemplate/VB/formviewfootertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewFooterTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewFooterTemplate/CS/formviewfootertemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewFooterTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewFooterTemplate/VB/formviewfootertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterText" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
       </Docs>
     </Member>
     <Member MemberName="FooterText">
@@ -1859,11 +2046,15 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.FooterText%2A> property to specify the text to display in the footer row.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewFooterText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewFooterText/CS/formviewfootertextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewFooterText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewFooterText/VB/formviewfootertextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewFooterText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewFooterText/CS/formviewfootertextcs.aspx#1)]
+ [!code-aspx-vb[FormViewFooterText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewFooterText/VB/formviewfootertextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataText" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderText" />
       </Docs>
     </Member>
     <Member MemberName="GridLines">
@@ -1904,11 +2095,16 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.GridLines%2A> property to display both the vertical and horizontal gridlines.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCellPadding/CS/formviewcellpaddingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCellPadding/VB/formviewcellpaddingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCellPadding/CS/formviewcellpaddingcs.aspx#1)]
+ [!code-aspx-vb[FormViewCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCellPadding/VB/formviewcellpaddingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridLines" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BackImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.CellPadding" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.CellSpacing" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HorizontalAlign" />
       </Docs>
     </Member>
     <Member MemberName="HeaderRow">
@@ -1950,11 +2146,17 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.HeaderRow%2A> property to programmatically modify the properties of the header row during the <xref:System.Web.UI.WebControls.FormView.ItemCreated> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewHeaderTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewHeaderTemplate/CS/formviewheadertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewHeaderTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewHeaderTemplate/VB/formviewheadertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewHeaderTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewHeaderTemplate/CS/formviewheadertemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewHeaderTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewHeaderTemplate/VB/formviewheadertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderText" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.TopPagerRow" />
       </Docs>
     </Member>
     <Member MemberName="HeaderStyle">
@@ -2003,11 +2205,18 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.HeaderStyle%2A> property to specify a custom style for the header row.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewHeaderText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewHeaderText/CS/formviewheadertextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewHeaderText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewHeaderText/VB/formviewheadertextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewHeaderText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewHeaderText/CS/formviewheadertextcs.aspx#1)]
+ [!code-aspx-vb[FormViewHeaderText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewHeaderText/VB/formviewheadertextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.RowStyle" />
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplate">
@@ -2053,11 +2262,19 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.HeaderTemplate%2A> property to define a custom template to render for the header row.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewHeaderTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewHeaderTemplate/CS/formviewheadertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewHeaderTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewHeaderTemplate/VB/formviewheadertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewHeaderTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewHeaderTemplate/CS/formviewheadertemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewHeaderTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewHeaderTemplate/VB/formviewheadertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
       </Docs>
     </Member>
     <Member MemberName="HeaderText">
@@ -2099,11 +2316,15 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.HeaderText%2A> property to specify the text to display in the header row.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewHeaderText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewHeaderText/CS/formviewheadertextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewHeaderText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewHeaderText/VB/formviewheadertextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewHeaderText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewHeaderText/CS/formviewheadertextcs.aspx#1)]
+ [!code-aspx-vb[FormViewHeaderText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewHeaderText/VB/formviewheadertextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataText" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterText" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlign">
@@ -2148,11 +2369,16 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.HorizontalAlign%2A> property to specify that a <xref:System.Web.UI.WebControls.FormView> control should be centered on the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewHorizontalAlign#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewHorizontalAlign/CS/formviewhorizontalaligncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewHorizontalAlign#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewHorizontalAlign/VB/formviewhorizontalalignvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewHorizontalAlign#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewHorizontalAlign/CS/formviewhorizontalaligncs.aspx#1)]
+ [!code-aspx-vb[FormViewHorizontalAlign#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewHorizontalAlign/VB/formviewhorizontalalignvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HorizontalAlign" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BackImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.CellPadding" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.CellSpacing" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.GridLines" />
       </Docs>
     </Member>
     <Member MemberName="InitializePager">
@@ -2186,6 +2412,11 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.FormView" /> class, you can override this method to create your own pager row.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewRow" />
+        <altmember cref="T:System.Web.UI.WebControls.PagedDataSource" />
+        <altmember cref="T:System.Web.UI.WebControls.TableCell" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.AllowPaging" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.InitializeRow(System.Web.UI.WebControls.FormViewRow)" />
       </Docs>
     </Member>
     <Member MemberName="InitializeRow">
@@ -2227,6 +2458,10 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.FormView" /> class, you can override this method to create your own custom row.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewRow" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowState" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowType" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.InitializePager(System.Web.UI.WebControls.FormViewRow,System.Web.UI.WebControls.PagedDataSource)" />
       </Docs>
     </Member>
     <Member MemberName="InsertItem">
@@ -2264,8 +2499,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.InsertItem%2A> method to programmatically insert the current record in a <xref:System.Web.UI.WebControls.FormView> control in the data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewInsertItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertItem/CS/formviewinsertitemcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewInsertItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertItem/VB/formviewinsertitemvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewInsertItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertItem/CS/formviewinsertitemcs.aspx#1)]
+ [!code-aspx-vb[FormViewInsertItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertItem/VB/formviewinsertitemvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2274,6 +2509,11 @@
  -or-  
   
  The <see cref="T:System.Web.UI.DataSourceView" /> object associated with the <see cref="T:System.Web.UI.WebControls.FormView" /> control is null.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertItemTemplate" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserted" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserting" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.DeleteItem" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.UpdateItem(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="InsertItemTemplate">
@@ -2333,11 +2573,21 @@
 ## Examples  
  The following example demonstrates how to define a custom template for a data row in insert mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewInsertItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertItemTemplate/CS/formviewinsertitemtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewInsertItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertItemTemplate/VB/formviewinsertitemtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewInsertItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertItemTemplate/CS/formviewinsertitemtemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewInsertItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertItemTemplate/VB/formviewinsertitemtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserted" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserting" />
       </Docs>
     </Member>
     <Member MemberName="InsertMethod">
@@ -2421,11 +2671,18 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.InsertRowStyle%2A> property to specify a custom style for a data row when a <xref:System.Web.UI.WebControls.FormView> control is in insert mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewInsertItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertItemTemplate/CS/formviewinsertitemtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewInsertItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertItemTemplate/VB/formviewinsertitemtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewInsertItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertItemTemplate/CS/formviewinsertitemtemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewInsertItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertItemTemplate/VB/formviewinsertitemtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.RowStyle" />
       </Docs>
     </Member>
     <Member MemberName="IsBindableType">
@@ -2469,6 +2726,11 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.FormView" /> class, you can override this method to add or restrict the data types that can be used in a <see cref="T:System.Web.UI.WebControls.FormView" /> control.</para>
         </block>
+        <altmember cref="P:System.Type.IsPrimitive" />
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.Decimal" />
+        <altmember cref="T:System.Guid" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ItemCommand">
@@ -2514,11 +2776,17 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.ItemCommand> event to handle a button click in a <xref:System.Web.UI.WebControls.FormView> control. When the user clicks the Add button, the currently displayed item is added to a <xref:System.Web.UI.WebControls.ListBox> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewItemCommandEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewItemCommandEventArgs/CS/formviewcommandeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewItemCommandEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewItemCommandEventArgs/VB/formviewcommandeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewItemCommandEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewItemCommandEventArgs/CS/formviewcommandeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewItemCommandEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewItemCommandEventArgs/VB/formviewcommandeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewCommandEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewCommandEventHandler" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandName" />
+        <altmember cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandArgument" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnItemCommand(System.Web.UI.WebControls.FormViewCommandEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemCreated">
@@ -2553,11 +2821,19 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.ItemCreated> event to update the text of a <xref:System.Web.UI.WebControls.Label> control contained in the pager row.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewItemCreated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewItemCreated/CS/formviewitemcreatedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewItemCreated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewItemCreated/VB/formviewitemcreatedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewItemCreated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewItemCreated/CS/formviewitemcreatedcs.aspx#1)]
+ [!code-aspx-vb[FormViewItemCreated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewItemCreated/VB/formviewitemcreatedvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.EventArgs" />
+        <altmember cref="T:System.EventHandler" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.Row" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.TopPagerRow" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnItemCreated(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemDeleted">
@@ -2589,11 +2865,19 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.ItemDeleted> event to determine whether an exception occurred during a delete operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewDeletedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewDeletedEventArgs/CS/formviewdeletedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewDeletedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewDeletedEventArgs/VB/formviewdeletedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewDeletedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewDeletedEventArgs/CS/formviewdeletedeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewDeletedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewDeletedEventArgs/VB/formviewdeletedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewDeletedEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewDeletedEventHandler" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewDeletedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewDeletedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewDeletedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewDeletedEventArgs.Keys" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewDeletedEventArgs.Values" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnItemDeleted(System.Web.UI.WebControls.FormViewDeletedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemDeleting">
@@ -2625,11 +2909,18 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.ItemDeleting> event to cancel a delete operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewDeleteEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewDeleteEventArgs/CS/formviewdeleteeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewDeleteEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewDeleteEventArgs/VB/formviewdeleteeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewDeleteEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewDeleteEventArgs/CS/formviewdeleteeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewDeleteEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewDeleteEventArgs/VB/formviewdeleteeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewDeleteEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewDeleteEventHandler" />
+        <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewDeleteEventArgs.RowIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewDeleteEventArgs.Keys" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewDeleteEventArgs.Values" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnItemDeleting(System.Web.UI.WebControls.FormViewDeleteEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemInserted">
@@ -2663,11 +2954,19 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.ItemInserted> event to determine whether an exception occurred during an insert operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewInsertedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertedEventArgs/CS/formviewinsertedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewInsertedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertedEventArgs/VB/formviewinsertedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewInsertedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertedEventArgs/CS/formviewinsertedeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewInsertedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertedEventArgs/VB/formviewinsertedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertedEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertedEventHandler" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.KeepInInsertMode" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.Values" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnItemInserted(System.Web.UI.WebControls.FormViewInsertedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemInserting">
@@ -2699,11 +2998,17 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.ItemInserting> event to cancel an insert operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewInsertEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertEventArgs/CS/formviewinserteventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewInsertEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertEventArgs/VB/formviewinserteventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewInsertEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertEventArgs/CS/formviewinserteventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewInsertEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertEventArgs/VB/formviewinserteventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertEventHandler" />
+        <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertEventArgs.CommandArgument" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewInsertEventArgs.Values" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnItemInserting(System.Web.UI.WebControls.FormViewInsertEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemTemplate">
@@ -2764,11 +3069,19 @@
 ## Examples  
  The following example demonstrates how to define a custom template for a data row in read-only mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewEditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEditItemTemplate/CS/formviewedititemtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewEditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEditItemTemplate/VB/formviewedititemtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewEditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEditItemTemplate/CS/formviewedititemtemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewEditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEditItemTemplate/VB/formviewedititemtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.RowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
       </Docs>
     </Member>
     <Member MemberName="ItemUpdated">
@@ -2802,11 +3115,21 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.ItemUpdated> event to determine whether an exception occurred during an update operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventArgs/CS/formviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventArgs/VB/formviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdatedEventArgs/CS/formviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdatedEventArgs/VB/formviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewUpdatedEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewUpdatedEventHandler" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdatedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdatedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdatedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdatedEventArgs.KeepInEditMode" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdatedEventArgs.Keys" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdatedEventArgs.OldValues" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdatedEventArgs.NewValues" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnItemUpdated(System.Web.UI.WebControls.FormViewUpdatedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemUpdating">
@@ -2838,11 +3161,19 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.ItemUpdating> event to cancel an update operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewUpdateEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdateEventArgs/CS/formviewupdateeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewUpdateEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdateEventArgs/VB/formviewupdateeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewUpdateEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdateEventArgs/CS/formviewupdateeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewUpdateEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdateEventArgs/VB/formviewupdateeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewUpdateEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewUpdateEventHandler" />
+        <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.CommandArgument" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdatedEventArgs.Keys" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdateEventArgs.NewValues" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewUpdatedEventArgs.OldValues" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnItemUpdating(System.Web.UI.WebControls.FormViewUpdateEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="LoadControlState">
@@ -2874,6 +3205,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="P:System.Web.UI.Control.EnableViewState" />
+        <altmember cref="M:System.Web.UI.Control.LoadControlState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -2905,6 +3239,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ModeChanged">
@@ -2934,11 +3270,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.ModeChanged> event to display the current mode in the header row of a <xref:System.Web.UI.WebControls.FormView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewModeChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewModeChanged/CS/formviewmodechangedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewModeChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewModeChanged/VB/formviewmodechangedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewModeChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewModeChanged/CS/formviewmodechangedcs.aspx#1)]
+ [!code-aspx-vb[FormViewModeChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewModeChanged/VB/formviewmodechangedvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.EventArgs" />
+        <altmember cref="T:System.EventHandler" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnModeChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ModeChanging">
@@ -2970,11 +3309,17 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.ModeChanging> event to hide the pager row when the <xref:System.Web.UI.WebControls.FormView> control transitions to edit mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewModeEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewModeEventArgs/CS/formviewmodeeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewModeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewModeEventArgs/VB/formviewmodeeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewModeEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewModeEventArgs/CS/formviewmodeeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewModeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewModeEventArgs/VB/formviewmodeeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewModeEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewModeEventHandler" />
+        <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewModeEventArgs.CancelingEdit" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewModeEventArgs.NewMode" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnModeChanging(System.Web.UI.WebControls.FormViewModeEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ModifiedOuterTableStylePropertyName">
@@ -3029,7 +3374,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Control.OnBubbleEvent%2A?displayProperty=fullName> method is used by the control to optionally handle events passed up through the control hierarchy by the <xref:System.Web.UI.Control.RaiseBubbleEvent%2A> method. It determines whether to handle an event by examining the properties of the <xref:System.EventArgs> object contained in the `e` parameter. When an event needs to be handled, the method performs the appropriate action. Other events are ignored and passed up the control hierarchy. This method indicates whether to pass the event further up the control hierarchy through its return value.  
+ The <xref:System.Web.UI.Control.OnBubbleEvent%2A?displayProperty=nameWithType> method is used by the control to optionally handle events passed up through the control hierarchy by the <xref:System.Web.UI.Control.RaiseBubbleEvent%2A> method. It determines whether to handle an event by examining the properties of the <xref:System.EventArgs> object contained in the `e` parameter. When an event needs to be handled, the method performs the appropriate action. Other events are ignored and passed up the control hierarchy. This method indicates whether to pass the event further up the control hierarchy through its return value.  
   
  The <xref:System.Web.UI.WebControls.FormView> control overrides the base implementation of this method to perform the appropriate action when one of the buttons recognized by the control is clicked. The following table lists the command buttons that the <xref:System.Web.UI.WebControls.FormView> control recognizes.  
   
@@ -3050,6 +3395,8 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.FormView" /> class, you can override this method to handle your own events. Make sure to use the return value to indicate whether the event should be passed further up the control hierarchy.</para>
         </block>
+        <altmember cref="M:System.Web.UI.Control.OnBubbleEvent(System.Object,System.EventArgs)" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -3085,6 +3432,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnInit(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnInit(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.Control.Init" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemCommand">
@@ -3120,6 +3469,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnItemCommand(System.Web.UI.WebControls.FormViewCommandEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnItemCommand(System.Web.UI.WebControls.FormViewCommandEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemCommand" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewCommandEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemCreated">
@@ -3155,6 +3506,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnItemCreated(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnItemCreated(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemCreated" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemDeleted">
@@ -3190,6 +3543,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnItemDeleted(System.Web.UI.WebControls.FormViewDeletedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnItemDeleted(System.Web.UI.WebControls.FormViewDeletedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemDeleted" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewDeletedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemDeleting">
@@ -3226,6 +3581,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnItemDeleting(System.Web.UI.WebControls.FormViewDeleteEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnItemDeleting(System.Web.UI.WebControls.FormViewDeleteEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemDeleting" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewDeleteEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemInserted">
@@ -3261,6 +3618,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnItemInserted(System.Web.UI.WebControls.FormViewInsertedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnItemInserted(System.Web.UI.WebControls.FormViewInsertedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserted" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemInserting">
@@ -3297,6 +3656,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnItemInserting(System.Web.UI.WebControls.FormViewInsertEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnItemInserting(System.Web.UI.WebControls.FormViewInsertEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemInserting" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewInsertEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemUpdated">
@@ -3332,6 +3693,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnItemUpdated(System.Web.UI.WebControls.FormViewUpdatedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnItemUpdated(System.Web.UI.WebControls.FormViewUpdatedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdated" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewUpdatedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemUpdating">
@@ -3368,6 +3731,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnItemUpdating(System.Web.UI.WebControls.FormViewUpdateEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnItemUpdating(System.Web.UI.WebControls.FormViewUpdateEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdating" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewUpdateEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnModeChanged">
@@ -3403,6 +3768,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnModeChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnModeChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanged" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnModeChanging">
@@ -3439,6 +3806,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnModeChanging(System.Web.UI.WebControls.FormViewModeEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnModeChanging(System.Web.UI.WebControls.FormViewModeEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ModeChanging" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewModeEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnPageIndexChanged">
@@ -3474,6 +3843,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnPageIndexChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnPageIndexChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanged" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnPageIndexChanging">
@@ -3510,6 +3881,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.FormView.OnPageIndexChanging(System.Web.UI.WebControls.FormViewPageEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.FormView.OnPageIndexChanging(System.Web.UI.WebControls.FormViewPageEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewPageEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="PageCount">
@@ -3551,11 +3924,19 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.PageCount%2A> property to determine the total number of records displayed in the control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPagerTemplate/CS/formviewpagertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPagerTemplate/VB/formviewpagertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPagerTemplate/CS/formviewpagertemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPagerTemplate/VB/formviewpagertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.TopPagerRow" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
       </Docs>
     </Member>
     <Member MemberName="PageIndex">
@@ -3597,12 +3978,20 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.PageIndex%2A> property to determine the page index of the displayed record.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPagerTemplate/CS/formviewpagertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPagerTemplate/VB/formviewpagertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPagerTemplate/CS/formviewpagertemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPagerTemplate/VB/formviewpagertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is less than -1.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.TopPagerRow" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
       </Docs>
     </Member>
     <Member MemberName="PageIndexChanged">
@@ -3637,11 +4026,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.PageIndexChanged> event to return the <xref:System.Web.UI.WebControls.FormView> to read-only mode when the user navigates to another record.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewPageIndexChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPageIndexChanged/CS/formviewpageindexchangedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewPageIndexChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPageIndexChanged/VB/formviewpageindexchangedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewPageIndexChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPageIndexChanged/CS/formviewpageindexchangedcs.aspx#1)]
+ [!code-aspx-vb[FormViewPageIndexChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPageIndexChanged/VB/formviewpageindexchangedvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.EventArgs" />
+        <altmember cref="T:System.EventHandler" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnPageIndexChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PageIndexChanging">
@@ -3681,11 +4073,16 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewPageEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPageEventArgs/CS/formviewmodeeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewPageEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPageEventArgs/VB/formviewmodeeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewPageEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPageEventArgs/CS/formviewmodeeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewPageEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPageEventArgs/VB/formviewmodeeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewPageEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.FormViewPageEventHandler" />
+        <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewPageEventArgs.NewPageIndex" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.OnPageIndexChanging(System.Web.UI.WebControls.FormViewPageEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PagerSettings">
@@ -3725,11 +4122,20 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.PagerSettings%2A> property to specify the properties of the pager row.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewAllowPaging/CS/formviewallowpagingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewAllowPaging/VB/formviewallowpagingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewAllowPaging/CS/formviewallowpagingcs.aspx#1)]
+ [!code-aspx-vb[FormViewAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewAllowPaging/VB/formviewallowpagingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.TopPagerRow" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
       </Docs>
     </Member>
     <Member MemberName="PagerStyle">
@@ -3775,11 +4181,26 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.PagerStyle%2A> property to specify the style settings for the pager row.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewAllowPaging/CS/formviewallowpagingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewAllowPaging/VB/formviewallowpagingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewAllowPaging/CS/formviewallowpagingcs.aspx#1)]
+ [!code-aspx-vb[FormViewAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewAllowPaging/VB/formviewallowpagingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.TopPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.RowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertRowStyle" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
       </Docs>
     </Member>
     <Member MemberName="PagerTemplate">
@@ -3837,11 +4258,26 @@
 ## Examples  
  The following example demonstrates how to define a custom pager template.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPagerTemplate/CS/formviewpagertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPagerTemplate/VB/formviewpagertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPagerTemplate/CS/formviewpagertemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPagerTemplate/VB/formviewpagertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.TopPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.ItemTemplate" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
       </Docs>
     </Member>
     <Member MemberName="PerformDataBinding">
@@ -3873,6 +4309,7 @@
         <block subset="none" type="overrides">
           <para>Because the <see cref="M:System.Web.UI.WebControls.BaseDataBoundControl.DataBind" /> method is sealed, you should override this method if you need to perform any additional tasks when binding data.</para>
         </block>
+        <altmember cref="T:System.Collections.IEnumerable" />
       </Docs>
     </Member>
     <Member MemberName="PrepareControlHierarchy">
@@ -3929,6 +4366,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
+        <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
+        <altmember cref="M:System.Web.UI.Page.RaisePostBackEvent(System.Web.UI.IPostBackEventHandler,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -3957,6 +4397,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderOuterTable">
@@ -4035,11 +4476,12 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.Row%2A> property to access the properties of the data row during the <xref:System.Web.UI.WebControls.FormView.ItemCreated> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewRow/CS/formviewrowcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewRow/VB/formviewrowvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewRow/CS/formviewrowcs.aspx#1)]
+ [!code-aspx-vb[FormViewRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewRow/VB/formviewrowvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewRow" />
       </Docs>
     </Member>
     <Member MemberName="RowStyle">
@@ -4088,11 +4530,18 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.RowStyle%2A> property to specify a custom style for a data row when a <xref:System.Web.UI.WebControls.FormView> control is in read-only mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewEditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEditItemTemplate/CS/formviewedititemtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewEditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEditItemTemplate/VB/formviewedititemtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewEditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewEditItemTemplate/CS/formviewedititemtemplatecs.aspx#1)]
+ [!code-aspx-vb[FormViewEditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewEditItemTemplate/VB/formviewedititemtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.ItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.InsertRowStyle" />
       </Docs>
     </Member>
     <Member MemberName="SaveControlState">
@@ -4115,13 +4564,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used to save the state of the <xref:System.Web.UI.WebControls.FormView> control properties that need to be persisted, even when the <xref:System.Web.UI.Control.EnableViewState%2A?displayProperty=fullName> property is set to `false`.  
+ This method is used to save the state of the <xref:System.Web.UI.WebControls.FormView> control properties that need to be persisted, even when the <xref:System.Web.UI.Control.EnableViewState%2A?displayProperty=nameWithType> property is set to `false`.  
   
 > [!NOTE]
 >  This method is used primarily by control developers to extend the <xref:System.Web.UI.WebControls.FormView> control.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.EnableViewState" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -4187,11 +4637,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.SelectedValue%2A> property to determine the value of the key field.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewSelectedValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewSelectedValue/CS/formviewselectedvaluecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewSelectedValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewSelectedValue/VB/formviewselectedvaluevb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewSelectedValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewSelectedValue/CS/formviewselectedvaluecs.aspx#1)]
+ [!code-aspx-vb[FormViewSelectedValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewSelectedValue/VB/formviewselectedvaluevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.DataKeyNames" />
       </Docs>
     </Member>
     <Member MemberName="SetPageIndex">
@@ -4238,6 +4691,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IDataItemContainer" />
+        <altmember cref="P:System.Web.UI.IDataItemContainer.DataItemIndex" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataItemContainer.DisplayIndex">
@@ -4263,6 +4718,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IDataItemContainer" />
+        <altmember cref="P:System.Web.UI.IDataItemContainer.DisplayIndex" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -4497,6 +4954,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The object contained in the <paramref name="buttonControl" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.WebControls.IButtonControl.CausesValidation" /> property of <paramref name="buttonControl" /> is <see langword="true" />.</exception>
+        <altmember cref="T:System.Web.UI.PostBackOptions" />
       </Docs>
     </Member>
     <Member MemberName="TagKey">
@@ -4525,6 +4983,8 @@
         <block subset="none" type="overrides">
           <para>You can override this property to specify which <see cref="T:System.Web.UI.HtmlTextWriterTag" /> value to use for your derived control.</para>
         </block>
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.TagKey" />
       </Docs>
     </Member>
     <Member MemberName="TopPagerRow">
@@ -4566,11 +5026,22 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.TopPagerRow%2A> property to access the pager row displayed at the top of a <xref:System.Web.UI.WebControls.FormView> control. The pager row is then updated with additional content.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewTopPagerRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewTopPagerRow/CS/formviewtoppagerrowcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewTopPagerRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewTopPagerRow/VB/formviewtoppagerrowvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewTopPagerRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewTopPagerRow/CS/formviewtoppagerrowcs.aspx#1)]
+ [!code-aspx-vb[FormViewTopPagerRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewTopPagerRow/VB/formviewtoppagerrowvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.PagerTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BottomPagerRow" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemCreated" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -4596,6 +5067,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="UpdateItem">
@@ -4633,8 +5106,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.UpdateItem%2A> method to programmatically update the current record in a <xref:System.Web.UI.WebControls.FormView> control in the data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewUpdateItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdateItem/CS/formviewupdateitemcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewUpdateItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdateItem/VB/formviewupdateitemvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewUpdateItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewUpdateItem/CS/formviewupdateitemcs.aspx#1)]
+ [!code-aspx-vb[FormViewUpdateItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewUpdateItem/VB/formviewupdateitemvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -4643,6 +5116,11 @@
  -or-  
   
  The <see cref="T:System.Web.UI.DataSourceView" /> object associated with the <see cref="T:System.Web.UI.WebControls.FormView" /> control is null.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.FormView.EditItemTemplate" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdated" />
+        <altmember cref="E:System.Web.UI.WebControls.FormView.ItemUpdating" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.DeleteItem" />
+        <altmember cref="M:System.Web.UI.WebControls.FormView.InsertItem(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="UpdateMethod">

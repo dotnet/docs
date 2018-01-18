@@ -40,12 +40,13 @@
   
 -   You can set the <xref:System.Windows.Data.XmlDataProvider.Document%2A> property to an <xref:System.Xml.XmlDocument>.  
   
- <xref:System.Windows.Data.XmlDataProvider> performs a full refresh of all bindings when a <xref:System.Xml.XmlDocument.NodeChanged?displayProperty=fullName> event occurs. There are no optimizations for specific nodes.  
+ <xref:System.Windows.Data.XmlDataProvider> performs a full refresh of all bindings when a <xref:System.Xml.XmlDocument.NodeChanged?displayProperty=nameWithType> event occurs. There are no optimizations for specific nodes.  
   
- The <xref:System.Windows.Data.XmlDataProvider.IsAsynchronous%2A?displayProperty=fullName> property is set to `true` by default, which means that the <xref:System.Windows.Data.XmlDataProvider> retrieves data and produces the collection of [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] nodes asynchronously by default.  
+ The <xref:System.Windows.Data.XmlDataProvider.IsAsynchronous%2A?displayProperty=nameWithType> property is set to `true` by default, which means that the <xref:System.Windows.Data.XmlDataProvider> retrieves data and produces the collection of [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] nodes asynchronously by default.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Data.ObjectDataProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -140,7 +141,7 @@
   
 -   You can set this property to an <xref:System.Xml.XmlDocument>.  
   
- <xref:System.Windows.Data.XmlDataProvider> performs a full refresh of all bindings on when a <xref:System.Xml.XmlDocument.NodeChanged?displayProperty=fullName> event occurs. There are no optimizations for specific nodes.  
+ <xref:System.Windows.Data.XmlDataProvider> performs a full refresh of all bindings on when a <xref:System.Xml.XmlDocument.NodeChanged?displayProperty=nameWithType> event occurs. There are no optimizations for specific nodes.  
   
  If the <xref:System.Windows.Data.XmlDataProvider.Source%2A> property is set, then any inline [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] data is discarded. If the <xref:System.Windows.Data.XmlDataProvider.Document%2A> property is set, then the <xref:System.Windows.Data.XmlDataProvider.Source%2A> property is cleared and any inline [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] data is discarded.  
   
@@ -190,6 +191,8 @@
         <value>
           <see langword="true" /> to perform node collection creation in a worker thread; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Data.Binding.IsAsync" />
+        <altmember cref="P:System.Windows.Data.XmlDataProvider.IsAsynchronous" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeSource">
@@ -401,6 +404,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Data.XmlNamespaceMappingCollection" />
+        <altmember cref="P:System.Windows.Data.Binding.XmlNamespaceManager" />
       </Docs>
     </Member>
     <Member MemberName="XmlSerializer">
@@ -491,7 +496,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=fullName> method handles the `XPath` expressions from the <xref:System.Windows.Data.Binding.XPath%2A> property. `XPath` functions are not supported. For `XPath` expression information, see the <xref:System.Xml.XmlNode.SelectNodes%2A> documentation and some examples provided in the Example section.  
+ The <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=nameWithType> method handles the `XPath` expressions from the <xref:System.Windows.Data.Binding.XPath%2A> property. `XPath` functions are not supported. For `XPath` expression information, see the <xref:System.Xml.XmlNode.SelectNodes%2A> documentation and some examples provided in the Example section.  
   
  Setting the following properties will implicitly cause this <xref:System.Windows.Data.XmlDataProvider> object to refresh: <xref:System.Windows.Data.XmlDataProvider.Source%2A>, <xref:System.Windows.Data.XmlDataProvider.Document%2A>, <xref:System.Windows.Data.XmlDataProvider.XmlNamespaceManager%2A>, and <xref:System.Windows.Data.XmlDataProvider.XPath%2A>. When changing multiple refresh-causing properties, the use of <xref:System.Windows.Data.DataSourceProvider.DeferRefresh%2A> is recommended.  
   

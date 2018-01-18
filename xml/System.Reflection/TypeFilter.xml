@@ -44,7 +44,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `TypeFilter` delegate is used to filter a list of classes. Specifically, you use it to filter the classes represented in an array of <xref:System.Type> objects. The <xref:System.Type.FindInterfaces%2A?displayProperty=fullName> method uses this delegate to filter the list of interfaces that it returns. Every derived class of <xref:System.Delegate> and <xref:System.MulticastDelegate> has a constructor and a `DynamicInvoke` method. See the Visual C++ code example given in the description for `Delegate`.  
+ The `TypeFilter` delegate is used to filter a list of classes. Specifically, you use it to filter the classes represented in an array of <xref:System.Type> objects. The <xref:System.Type.FindInterfaces%2A?displayProperty=nameWithType> method uses this delegate to filter the list of interfaces that it returns. Every derived class of <xref:System.Delegate> and <xref:System.MulticastDelegate> has a constructor and a `DynamicInvoke` method. See the Visual C++ code example given in the description for `Delegate`.  
   
    
   
@@ -55,5 +55,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Type.FindInterfaces(System.Reflection.TypeFilter,System.Object)" />
+    <altmember cref="T:System.Object" />
+    <altmember cref="T:System.Delegate" />
+    <altmember cref="T:System.MulticastDelegate" />
   </Docs>
 </Type>

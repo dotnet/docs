@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "managed debugging assistants (MDAs), hashcode modulus"
   - "Modulo object hash code"
@@ -27,6 +22,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # moduloObjectHashcode MDA
 The `moduloObjectHashcode` managed debugging assistant (MDA) changes the behavior of the <xref:System.Object> class to perform a modulo operation on the hash code returned by the <xref:System.Object.GetHashCode%2A> method. The default modulus for this MDA is 1, which causes <xref:System.Object.GetHashCode%2A> to return 0 for all objects.  
@@ -48,7 +45,7 @@ The `moduloObjectHashcode` managed debugging assistant (MDA) changes the behavio
  The order of enumeration from a <xref:System.Collections.Hashtable> may change from one version of the runtime to another if the algorithm used to compute the hash codes for the key change. To test whether your program has taken a dependency on the order of enumeration of keys or values out of a hash table, you can enable this MDA.  
   
 ## Resolution  
- Never use hash codes as a substitute for object identity. Implement the override of the <xref:System.Object.Equals%2A?displayProperty=fullName> method to not compare hash codes.  
+ Never use hash codes as a substitute for object identity. Implement the override of the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method to not compare hash codes.  
   
  Do not create dependencies on the order of enumerations of keys or values in hash tables.  
   
@@ -70,6 +67,6 @@ The `moduloObjectHashcode` managed debugging assistant (MDA) changes the behavio
 ```  
   
 ## See Also  
- <xref:System.Object.GetHashCode%2A?displayProperty=fullName>   
- <xref:System.Object.Equals%2A?displayProperty=fullName>   
+ <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>  
+ <xref:System.Object.Equals%2A?displayProperty=nameWithType>  
  [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

@@ -16,10 +16,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In addition to the visual and point information provided by the base class <xref:System.Windows.Media.PointHitTestResult>, this class uses the value of the <xref:System.Windows.Media.AdornerHitTestResult.Adorner%2A?displayProperty=fullName> property to return the <xref:System.Windows.Documents.Adorner> that was hit (since there may be multiple Visuals in a single <xref:System.Windows.Documents.Adorner>).  
+ In addition to the visual and point information provided by the base class <xref:System.Windows.Media.PointHitTestResult>, this class uses the value of the <xref:System.Windows.Media.AdornerHitTestResult.Adorner%2A?displayProperty=nameWithType> property to return the <xref:System.Windows.Documents.Adorner> that was hit (since there may be multiple Visuals in a single <xref:System.Windows.Documents.Adorner>).  
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Windows.Documents.AdornerLayer.AdornerHitTest(System.Windows.Point)" />
+    <altmember cref="T:System.Windows.Documents.Adorner" />
   </Docs>
   <Members>
     <Member MemberName="Adorner">

@@ -722,7 +722,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method enables client code to remove items from the collection by using a foreach loop (For Each in Visual Basic), or <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> or a PLINQ query. The enumerator will continue to provide items (if any exist) until <xref:System.Collections.Concurrent.BlockingCollection%601.IsCompleted%2A> returns true, and if <xref:System.Collections.Concurrent.BlockingCollection%601.IsCompleted%2A> is false the loop blocks until an item becomes available or until the <xref:System.Threading.CancellationToken> is cancelled.  
+ This method enables client code to remove items from the collection by using a foreach loop (For Each in Visual Basic), or <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> or a PLINQ query. The enumerator will continue to provide items (if any exist) until <xref:System.Collections.Concurrent.BlockingCollection%601.IsCompleted%2A> returns true, and if <xref:System.Collections.Concurrent.BlockingCollection%601.IsCompleted%2A> is false the loop blocks until an item becomes available or until the <xref:System.Threading.CancellationToken> is cancelled.  
   
  ]]></format>
         </remarks>
@@ -821,7 +821,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unlike <xref:System.Collections.Concurrent.BlockingCollection%601.GetConsumingEnumerable%2A>, <xref:System.Collections.Concurrent.BlockingCollection%601.System%23Collections%23Generic%23IEnumerable%7BT%7D%23GetEnumerator%2A?displayProperty=fullName> returns a standard enumerator that does not modify the underlying collection. If other threads are adding or removing elements concurrently when GetEnumerator is called, then the elements returned by the enumerator might not represent the current state of the collection.  
+ Unlike <xref:System.Collections.Concurrent.BlockingCollection%601.GetConsumingEnumerable%2A>, <xref:System.Collections.Concurrent.BlockingCollection%601.System%23Collections%23Generic%23IEnumerable%7BT%7D%23GetEnumerator%2A?displayProperty=nameWithType> returns a standard enumerator that does not modify the underlying collection. If other threads are adding or removing elements concurrently when GetEnumerator is called, then the elements returned by the enumerator might not represent the current state of the collection.  
   
  ]]></format>
         </remarks>
@@ -1045,7 +1045,7 @@
     </Member>
     <Member MemberName="TakeFromAny">
       <MemberSignature Language="C#" Value="public static int TakeFromAny (System.Collections.Concurrent.BlockingCollection&lt;T&gt;[] collections, out T item);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TakeFromAny(class System.Collections.Concurrent.BlockingCollection`1&lt;!T&gt;[] collections, !T item) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TakeFromAny(class System.Collections.Concurrent.BlockingCollection`1&lt;!T&gt;[] collections, [out] !T&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TakeFromAny(System.Collections.Concurrent.BlockingCollection{`0}[],`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1092,7 +1092,7 @@
     </Member>
     <Member MemberName="TakeFromAny">
       <MemberSignature Language="C#" Value="public static int TakeFromAny (System.Collections.Concurrent.BlockingCollection&lt;T&gt;[] collections, out T item, System.Threading.CancellationToken cancellationToken);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TakeFromAny(class System.Collections.Concurrent.BlockingCollection`1&lt;!T&gt;[] collections, !T item, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TakeFromAny(class System.Collections.Concurrent.BlockingCollection`1&lt;!T&gt;[] collections, [out] !T&amp; item, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TakeFromAny(System.Collections.Concurrent.BlockingCollection{`0}[],`0@,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1572,7 +1572,7 @@
     </MemberGroup>
     <Member MemberName="TryTake">
       <MemberSignature Language="C#" Value="public bool TryTake (out T item);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryTake(!T item) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryTake([out] !T&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TryTake(`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1617,7 +1617,7 @@
     </Member>
     <Member MemberName="TryTake">
       <MemberSignature Language="C#" Value="public bool TryTake (out T item, int millisecondsTimeout);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryTake(!T item, int32 millisecondsTimeout) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryTake([out] !T&amp; item, int32 millisecondsTimeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TryTake(`0@,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1664,7 +1664,7 @@
     </Member>
     <Member MemberName="TryTake">
       <MemberSignature Language="C#" Value="public bool TryTake (out T item, TimeSpan timeout);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryTake(!T item, valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryTake([out] !T&amp; item, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TryTake(`0@,System.TimeSpan)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1715,7 +1715,7 @@
     </Member>
     <Member MemberName="TryTake">
       <MemberSignature Language="C#" Value="public bool TryTake (out T item, int millisecondsTimeout, System.Threading.CancellationToken cancellationToken);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryTake(!T item, int32 millisecondsTimeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryTake([out] !T&amp; item, int32 millisecondsTimeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TryTake(`0@,System.Int32,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1765,7 +1765,7 @@
     </Member>
     <Member MemberName="TryTakeFromAny">
       <MemberSignature Language="C#" Value="public static int TryTakeFromAny (System.Collections.Concurrent.BlockingCollection&lt;T&gt;[] collections, out T item);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TryTakeFromAny(class System.Collections.Concurrent.BlockingCollection`1&lt;!T&gt;[] collections, !T item) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TryTakeFromAny(class System.Collections.Concurrent.BlockingCollection`1&lt;!T&gt;[] collections, [out] !T&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TryTakeFromAny(System.Collections.Concurrent.BlockingCollection{`0}[],`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1804,7 +1804,7 @@
    
   
 ## Examples  
- The following example shows how to use the <xref:System.Collections.Concurrent.BlockingCollection%601.TryTakeFromAny%2A?displayProperty=fullName> method:  
+ The following example shows how to use the <xref:System.Collections.Concurrent.BlockingCollection%601.TryTakeFromAny%2A?displayProperty=nameWithType> method:  
   
  [!code-csharp[System.Collections.Concurrent.BlockingCollection#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.blockingcollection/cs/blockingcoll.cs#3)]
  [!code-vb[System.Collections.Concurrent.BlockingCollection#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.blockingcollection/vb/blockingcoll.vb#3)]  
@@ -1820,7 +1820,7 @@
     </Member>
     <Member MemberName="TryTakeFromAny">
       <MemberSignature Language="C#" Value="public static int TryTakeFromAny (System.Collections.Concurrent.BlockingCollection&lt;T&gt;[] collections, out T item, int millisecondsTimeout);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TryTakeFromAny(class System.Collections.Concurrent.BlockingCollection`1&lt;!T&gt;[] collections, !T item, int32 millisecondsTimeout) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TryTakeFromAny(class System.Collections.Concurrent.BlockingCollection`1&lt;!T&gt;[] collections, [out] !T&amp; item, int32 millisecondsTimeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TryTakeFromAny(System.Collections.Concurrent.BlockingCollection{`0}[],`0@,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1874,7 +1874,7 @@
     </Member>
     <Member MemberName="TryTakeFromAny">
       <MemberSignature Language="C#" Value="public static int TryTakeFromAny (System.Collections.Concurrent.BlockingCollection&lt;T&gt;[] collections, out T item, TimeSpan timeout);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TryTakeFromAny(class System.Collections.Concurrent.BlockingCollection`1&lt;!T&gt;[] collections, !T item, valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TryTakeFromAny(class System.Collections.Concurrent.BlockingCollection`1&lt;!T&gt;[] collections, [out] !T&amp; item, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TryTakeFromAny(System.Collections.Concurrent.BlockingCollection{`0}[],`0@,System.TimeSpan)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1928,7 +1928,7 @@
     </Member>
     <Member MemberName="TryTakeFromAny">
       <MemberSignature Language="C#" Value="public static int TryTakeFromAny (System.Collections.Concurrent.BlockingCollection&lt;T&gt;[] collections, out T item, int millisecondsTimeout, System.Threading.CancellationToken cancellationToken);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TryTakeFromAny(class System.Collections.Concurrent.BlockingCollection`1&lt;!T&gt;[] collections, !T item, int32 millisecondsTimeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TryTakeFromAny(class System.Collections.Concurrent.BlockingCollection`1&lt;!T&gt;[] collections, [out] !T&amp; item, int32 millisecondsTimeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TryTakeFromAny(System.Collections.Concurrent.BlockingCollection{`0}[],`0@,System.Int32,System.Threading.CancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1983,5 +1983,115 @@
         <exception cref="T:System.ObjectDisposedException">At least one of the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances has been disposed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TakeFromAny">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Takes an item from any one of the specified <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the item to the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddToAny">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified item to any one of the specified <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryAddToAny">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tries to add the specified item to any one of the specified <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetConsumingEnumerable">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides a consuming <see cref="T:System.Collections.Generic.IEnumerator`1" /> for items in the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> class without an upper-bound.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryAdd">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tries to add the specified item to the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryTakeFromAny">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tries to remove an item from any one of the specified <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Take">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes an item from the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "sorting data, collections"
   - "IComparable.CompareTo method"
@@ -19,6 +22,9 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Comparisons and Sorts Within Collections
 The <xref:System.Collections> classes perform comparisons in almost all the processes involved in managing collections, whether searching for the element to remove or returning the value of a key-and-value pair.  
@@ -31,9 +37,9 @@ The <xref:System.Collections> classes perform comparisons in almost all the proc
   
 -   If type T implements the <xref:System.IEquatable%601> generic interface, then the equality comparer is the <xref:System.IEquatable%601.Equals%2A> method of that interface.  
   
--   If type T does not implement <xref:System.IEquatable%601>, <xref:System.Object.Equals%2A?displayProperty=fullName> is used.  
+-   If type T does not implement <xref:System.IEquatable%601>, <xref:System.Object.Equals%2A?displayProperty=nameWithType> is used.  
   
- In addition, Some constructor overloads for dictionary collections accept an <xref:System.Collections.Generic.IEqualityComparer%601> implementation, which is used to compare keys for equality. For an example, see the <xref:System.Collections.Generic.Dictionary%602.%23ctor%2A?displayProperty=fullName> constructor.  
+ In addition, Some constructor overloads for dictionary collections accept an <xref:System.Collections.Generic.IEqualityComparer%601> implementation, which is used to compare keys for equality. For an example, see the <xref:System.Collections.Generic.Dictionary%602.%23ctor%2A?displayProperty=nameWithType> constructor.  
   
 <a name="BKMK_Determiningsortorder"></a>   
 ## Determining sort order  
@@ -41,13 +47,13 @@ The <xref:System.Collections> classes perform comparisons in almost all the proc
   
  The default comparer relies on at least one of the objects being compared to implement the **IComparable** interface. It is a good practice to implement **IComparable** on all classes are used as values in a list collection or as keys in a dictionary collection. For a generic collection, equality comparison is determined according to the following:  
   
--   If type T implements the <xref:System.IComparable%601?displayProperty=fullName> generic interface, then the default comparer is the <xref:System.IComparable%601.CompareTo%28%600%29?displayProperty=fullName> method of that interface  
+-   If type T implements the <xref:System.IComparable%601?displayProperty=nameWithType> generic interface, then the default comparer is the <xref:System.IComparable%601.CompareTo%28%600%29?displayProperty=nameWithType> method of that interface  
   
--   If type T implements the non-generic <xref:System.IComparable?displayProperty=fullName> interface, then the default comparer is the <xref:System.IComparable.CompareTo%28System.Object%29?displayProperty=fullName> method of that interface.  
+-   If type T implements the non-generic <xref:System.IComparable?displayProperty=nameWithType> interface, then the default comparer is the <xref:System.IComparable.CompareTo%28System.Object%29?displayProperty=nameWithType> method of that interface.  
   
 -   If type T doesn’t implement either interface, then there is no default comparer, and a comparer or comparison delegate must be provided explicitly.  
   
- To provide explicit comparisons, some methods accept an **IComparer** implementation as a parameter. For example, the <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=fullName> method accepts an <xref:System.Collections.Generic.IComparer%601?displayProperty=fullName> implementation.  
+ To provide explicit comparisons, some methods accept an **IComparer** implementation as a parameter. For example, the <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=nameWithType> method accepts an <xref:System.Collections.Generic.IComparer%601?displayProperty=nameWithType> implementation.  
   
  The current culture setting of the system can affect the comparisons and sorts within a collection. By default, the comparisons and sorts in the **Collections** classes are culture-sensitive. To ignore the culture setting and therefore obtain consistent comparison and sorting results, use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> with member overloads that accept a <xref:System.Globalization.CultureInfo>. For more information, see [Performing Culture-Insensitive String Operations in Collections](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md) and [Performing Culture-Insensitive String Operations in Arrays](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-arrays.md).  
   
@@ -59,8 +65,8 @@ The <xref:System.Collections> classes perform comparisons in almost all the proc
  [!code-vb[System.Collections.Generic.List.Sort#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.list.sort/vb/module1.vb#1)]  
   
 ## See Also  
- <xref:System.Collections.IComparer>   
- <xref:System.IEquatable%601>   
- <xref:System.Collections.Generic.IComparer%601>   
- <xref:System.IComparable>   
+ <xref:System.Collections.IComparer>  
+ <xref:System.IEquatable%601>  
+ <xref:System.Collections.Generic.IComparer%601>  
+ <xref:System.IComparable>  
  <xref:System.IComparable%601>

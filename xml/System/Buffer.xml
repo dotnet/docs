@@ -36,7 +36,7 @@
 ## Remarks  
  <xref:System.Buffer> only affects arrays of primitive types; this class does not apply to objects. Each primitive type is treated as a series of bytes without regard to any behavior or limitation associated with the primitive type.  
   
- <xref:System.Buffer> provides methods to copy bytes from one array of primitive types to another array of primitive types, get a byte from an array, set a byte in an array, and obtain the length of an array. This class provides better performance for manipulating primitive types than similar methods in the <xref:System.Array?displayProperty=fullName> class.  
+ <xref:System.Buffer> provides methods to copy bytes from one array of primitive types to another array of primitive types, get a byte from an array, set a byte in an array, and obtain the length of an array. This class provides better performance for manipulating primitive types than similar methods in the <xref:System.Array?displayProperty=nameWithType> class.  
   
  <xref:System.Buffer> is applicable to the following primitive types: <xref:System.Boolean>, <xref:System.Char>, <xref:System.SByte>, <xref:System.Byte>, <xref:System.Int16>, <xref:System.UInt16>, <xref:System.Int32>, <xref:System.UInt32>, <xref:System.Int64>, <xref:System.UInt64>, <xref:System.IntPtr>, <xref:System.UIntPtr>, <xref:System.Single>, and <xref:System.Double>.  
   
@@ -422,5 +422,16 @@
           <paramref name="array" /> is larger than 2 gigabytes (GB).</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="MemoryCopy">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies a block of memory.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

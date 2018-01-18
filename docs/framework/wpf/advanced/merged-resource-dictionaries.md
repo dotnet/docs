@@ -10,13 +10,15 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "merged resource dictionaries"
-  - "dictionaries, merged resources"
+  - "merged resource dictionaries [WPF]"
+  - "dictionaries [WPF], merged resources"
 ms.assetid: d159531f-05d4-49fd-b951-c332de51e5bc
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Merged Resource Dictionaries
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] resources support a merged resource dictionary feature. This feature provides a way to define the resources portion of a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application outside of the compiled [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] application. Resources can then be shared across applications and are also more conveniently isolated for localization.  
@@ -35,7 +37,7 @@ manager: "wpickett"
  Resources in a merged dictionary occupy a location in the resource lookup scope that is just after the scope of the main resource dictionary they are merged into. Although a resource key must be unique within any individual dictionary, a key can exist multiple times in a set of merged dictionaries. In this case, the resource that is returned will come from the last dictionary found sequentially in the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> collection. If the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> collection was defined in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], then the order of the merged dictionaries in the collection is the order of the elements as provided in the markup. If a key is defined in the primary dictionary and also in a dictionary that was merged, then the resource that is returned will come from the primary dictionary. These scoping rules apply equally for both static resource references and dynamic resource references.  
   
 ### Merged Dictionaries and Code  
- Merged dictionaries can be added to a `Resources` dictionary through code. The default, initially empty <xref:System.Windows.ResourceDictionary> that exists for any `Resources` property also has a default, initially empty <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> collection property. To add a merged dictionary through code, you obtain a reference to the desired primary <xref:System.Windows.ResourceDictionary>, get its <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> property value, and call `Add` on the generic `Collection` that is contained in <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A>. The object you add must be a new <xref:System.Windows.ResourceDictionary>. In code, you do not set the <xref:System.Windows.ResourceDictionary.Source%2A> property. Instead, you must obtain a <xref:System.Windows.ResourceDictionary> object by either creating one or loading one. One way to load an existing <xref:System.Windows.ResourceDictionary> to call <xref:System.Windows.Markup.XamlReader.Load%2A?displayProperty=fullName> on an existing [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file stream that has a <xref:System.Windows.ResourceDictionary> root, then casting the <xref:System.Windows.Markup.XamlReader.Load%2A?displayProperty=fullName> return value to <xref:System.Windows.ResourceDictionary>.  
+ Merged dictionaries can be added to a `Resources` dictionary through code. The default, initially empty <xref:System.Windows.ResourceDictionary> that exists for any `Resources` property also has a default, initially empty <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> collection property. To add a merged dictionary through code, you obtain a reference to the desired primary <xref:System.Windows.ResourceDictionary>, get its <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> property value, and call `Add` on the generic `Collection` that is contained in <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A>. The object you add must be a new <xref:System.Windows.ResourceDictionary>. In code, you do not set the <xref:System.Windows.ResourceDictionary.Source%2A> property. Instead, you must obtain a <xref:System.Windows.ResourceDictionary> object by either creating one or loading one. One way to load an existing <xref:System.Windows.ResourceDictionary> to call <xref:System.Windows.Markup.XamlReader.Load%2A?displayProperty=nameWithType> on an existing [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file stream that has a <xref:System.Windows.ResourceDictionary> root, then casting the <xref:System.Windows.Markup.XamlReader.Load%2A?displayProperty=nameWithType> return value to <xref:System.Windows.ResourceDictionary>.  
   
 ### Merged Resource Dictionary URIs  
  There are several techniques for how to include a merged resource dictionary, which are indicated by the [!INCLUDE[TLA#tla_uri](../../../../includes/tlasharptla-uri-md.md)] format that you will use. Broadly speaking, these techniques can be divided into two categories: resources that are compiled as part of the project, and resources that are not compiled as part of the project.  
@@ -58,7 +60,7 @@ manager: "wpickett"
  If resources that need to be localized are isolated to dictionaries that are merged into primary dictionaries, and kept as loose [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], these files can be localized separately. This technique is a lightweight alternative to localizing  the satellite resource assemblies. For details, see [WPF Globalization and Localization Overview](../../../../docs/framework/wpf/advanced/wpf-globalization-and-localization-overview.md).  
   
 ## See Also  
- <xref:System.Windows.ResourceDictionary>   
- [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)   
- [Resources and Code](../../../../docs/framework/wpf/advanced/resources-and-code.md)   
+ <xref:System.Windows.ResourceDictionary>  
+ [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)  
+ [Resources and Code](../../../../docs/framework/wpf/advanced/resources-and-code.md)  
  [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)

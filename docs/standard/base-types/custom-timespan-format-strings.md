@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "format spexifiers, custom time interval"
   - "format strings"
@@ -20,6 +23,9 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Custom TimeSpan Format Strings
 A <xref:System.TimeSpan> format string defines the string representation of a <xref:System.TimeSpan> value that results from a formatting operation. A custom format string consists of one or more custom <xref:System.TimeSpan> format specifiers along with any number of literal characters. Any string that is not a [standard TimeSpan format string](../../../docs/standard/base-types/standard-timespan-format-strings.md) is interpreted as a custom <xref:System.TimeSpan> format string.  
@@ -27,14 +33,14 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
 > [!IMPORTANT]
 >  The custom <xref:System.TimeSpan> format specifiers do not include placeholder separator symbols, such as the symbols that separate days from hours, hours from minutes, or seconds from fractional seconds. Instead, these symbols must be included in the custom format string as string literals. For example, `"dd\.hh\:mm"` defines a period (.) as the separator between days and hours, and a colon (:) as the separator between hours and minutes.  
 >   
->  Custom<xref:System.TimeSpan> format specifiers also do not include a sign symbol that enables you to differentiate between negative and positive time intervals. To include a sign symbol, you have to construct a format string by using conditional logic. The [Other Characters](#Other) section includes an example.  
+>  Custom <xref:System.TimeSpan> format specifiers also do not include a sign symbol that enables you to differentiate between negative and positive time intervals. To include a sign symbol, you have to construct a format string by using conditional logic. The [Other Characters](#Other) section includes an example.  
   
- The string representations of <xref:System.TimeSpan> values are produced by calls to the overloads of the <xref:System.TimeSpan.ToString%2A?displayProperty=fullName> method, and by methods that support composite formatting, such as <xref:System.String.Format%2A?displayProperty=fullName>. For more information, see [Formatting Types](../../../docs/standard/base-types/formatting-types.md) and [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md). The following example illustrates the use of custom format strings in formatting operations.  
+ The string representations of <xref:System.TimeSpan> values are produced by calls to the overloads of the <xref:System.TimeSpan.ToString%2A?displayProperty=nameWithType> method, and by methods that support composite formatting, such as <xref:System.String.Format%2A?displayProperty=nameWithType>. For more information, see [Formatting Types](../../../docs/standard/base-types/formatting-types.md) and [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md). The following example illustrates the use of custom format strings in formatting operations.  
   
  [!code-csharp[Conceptual.TimeSpan.Custom#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.timespan.custom/cs/customformatexample1.cs#1)]
  [!code-vb[Conceptual.TimeSpan.Custom#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.timespan.custom/vb/customformatexample1.vb#1)]  
   
- Custom <xref:System.TimeSpan> format strings are also used by the <xref:System.TimeSpan.ParseExact%2A?displayProperty=fullName> and <xref:System.TimeSpan.TryParseExact%2A?displayProperty=fullName> methods to define the required format of input strings for parsing operations. (Parsing converts the string representation of a value to that value.) The following example illustrates the use of standard format strings in parsing operations.  
+ Custom <xref:System.TimeSpan> format strings are also used by the <xref:System.TimeSpan.ParseExact%2A?displayProperty=nameWithType> and <xref:System.TimeSpan.TryParseExact%2A?displayProperty=nameWithType> methods to define the required format of input strings for parsing operations. (Parsing converts the string representation of a value to that value.) The following example illustrates the use of standard format strings in parsing operations.  
   
  [!code-csharp[Conceptual.TimeSpan.Custom#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.timespan.custom/cs/customparseexample1.cs#2)]
  [!code-vb[Conceptual.TimeSpan.Custom#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.timespan.custom/vb/customparseexample1.vb#2)]  
@@ -71,7 +77,7 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
   
 <a name="dSpecifier"></a>   
 ## The "d" Custom Format Specifier  
- The "d" custom format specifier outputs the value of the <xref:System.TimeSpan.Days%2A?displayProperty=fullName> property, which represents the number of whole days in the time interval. It outputs the full number of days in a <xref:System.TimeSpan> value, even if the value has more than one digit. If the value of the <xref:System.TimeSpan.Days%2A?displayProperty=fullName> property is zero, the specifier outputs "0".  
+ The "d" custom format specifier outputs the value of the <xref:System.TimeSpan.Days%2A?displayProperty=nameWithType> property, which represents the number of whole days in the time interval. It outputs the full number of days in a <xref:System.TimeSpan> value, even if the value has more than one digit. If the value of the <xref:System.TimeSpan.Days%2A?displayProperty=nameWithType> property is zero, the specifier outputs "0".  
   
  If the "d" custom format specifier is used alone, specify "%d" so that it is not misinterpreted as a standard format string. The following example provides an illustration.  
   
@@ -87,7 +93,7 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
   
 <a name="ddSpecifier"></a>   
 ## The "dd"-"dddddddd" Custom Format Specifiers  
- The "dd", "ddd", "dddd", "ddddd", "dddddd", "ddddddd", and "dddddddd" custom format specifiers output the value of the <xref:System.TimeSpan.Days%2A?displayProperty=fullName> property, which represents the number of whole days in the time interval.  
+ The "dd", "ddd", "dddd", "ddddd", "dddddd", "ddddddd", and "dddddddd" custom format specifiers output the value of the <xref:System.TimeSpan.Days%2A?displayProperty=nameWithType> property, which represents the number of whole days in the time interval.  
   
  The output string includes a minimum number of digits specified by the number of "d" characters in the format specifier, and it is padded with leading zeros as needed. If the digits in the number of days exceed the number of "d" characters in the format specifier, the full number of days is output in the result string.  
   
@@ -100,7 +106,7 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
   
 <a name="hSpecifier"></a>   
 ## The "h" Custom Format Specifier  
- The "h" custom format specifier outputs the value of the <xref:System.TimeSpan.Hours%2A?displayProperty=fullName> property, which represents the number of whole hours in the time interval that is not counted as part of its day component. It returns a one-digit string value if the value of the <xref:System.TimeSpan.Hours%2A?displayProperty=fullName> property is 0 through 9, and it returns a two-digit string value if the value of the <xref:System.TimeSpan.Hours%2A?displayProperty=fullName> property ranges from 10 to 23.  
+ The "h" custom format specifier outputs the value of the <xref:System.TimeSpan.Hours%2A?displayProperty=nameWithType> property, which represents the number of whole hours in the time interval that is not counted as part of its day component. It returns a one-digit string value if the value of the <xref:System.TimeSpan.Hours%2A?displayProperty=nameWithType> property is 0 through 9, and it returns a two-digit string value if the value of the <xref:System.TimeSpan.Hours%2A?displayProperty=nameWithType> property ranges from 10 to 23.  
   
  If the "h" custom format specifier is used alone, specify "%h" so that it is not misinterpreted as a standard format string. The following example provides an illustration.  
   
@@ -121,7 +127,7 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
   
 <a name="hhSpecifier"></a>   
 ## The "hh" Custom Format Specifier  
- The "hh" custom format specifier outputs the value of the <xref:System.TimeSpan.Hours%2A?displayProperty=fullName> property, which represents the number of whole hours in the time interval that is not counted as part of its day component. For values from 0 through 9, the output string includes a leading zero.  
+ The "hh" custom format specifier outputs the value of the <xref:System.TimeSpan.Hours%2A?displayProperty=nameWithType> property, which represents the number of whole hours in the time interval that is not counted as part of its day component. For values from 0 through 9, the output string includes a leading zero.  
   
  Ordinarily, in a parsing operation, an input string that includes only a single number is interpreted as the number of days. You can use the "hh" custom format specifier instead to interpret the numeric string as the number of hours. The following example provides an illustration.  
   
@@ -137,7 +143,7 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
   
 <a name="mSpecifier"></a>   
 ## The "m" Custom Format Specifier  
- The "m" custom format specifier outputs the value of the <xref:System.TimeSpan.Minutes%2A?displayProperty=fullName> property, which represents the number of whole minutes in the time interval that is not counted as part of its day component. It returns a one-digit string value if the value of the <xref:System.TimeSpan.Minutes%2A?displayProperty=fullName> property is 0 through 9, and it returns a two-digit string value if the value of the <xref:System.TimeSpan.Minutes%2A?displayProperty=fullName> property ranges from 10 to 59.  
+ The "m" custom format specifier outputs the value of the <xref:System.TimeSpan.Minutes%2A?displayProperty=nameWithType> property, which represents the number of whole minutes in the time interval that is not counted as part of its day component. It returns a one-digit string value if the value of the <xref:System.TimeSpan.Minutes%2A?displayProperty=nameWithType> property is 0 through 9, and it returns a two-digit string value if the value of the <xref:System.TimeSpan.Minutes%2A?displayProperty=nameWithType> property ranges from 10 to 59.  
   
  If the "m" custom format specifier is used alone, specify "%m" so that it is not misinterpreted as a standard format string. The following example provides an illustration.  
   
@@ -158,7 +164,7 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
   
 <a name="mmSpecifier"></a>   
 ## The "mm" Custom Format Specifier  
- The "mm" custom format specifier outputs the value of the <xref:System.TimeSpan.Minutes%2A?displayProperty=fullName> property, which represents the number of whole minutes in the time interval that is not included as part of its hours or days component. For values from 0 through 9, the output string includes a leading zero.  
+ The "mm" custom format specifier outputs the value of the <xref:System.TimeSpan.Minutes%2A?displayProperty=nameWithType> property, which represents the number of whole minutes in the time interval that is not included as part of its hours or days component. For values from 0 through 9, the output string includes a leading zero.  
   
  Ordinarily, in a parsing operation, an input string that includes only a single number is interpreted as the number of days. You can use the "mm" custom format specifier instead to interpret the numeric string as the number of minutes. The following example provides an illustration.  
   
@@ -174,7 +180,7 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
   
 <a name="sSpecifier"></a>   
 ## The "s" Custom Format Specifier  
- The "s" custom format specifier outputs the value of the <xref:System.TimeSpan.Seconds%2A?displayProperty=fullName> property, which represents the number of whole seconds in the time interval that is not included as part of its hours, days, or minutes component. It returns a one-digit string value if the value of the <xref:System.TimeSpan.Seconds%2A?displayProperty=fullName> property is 0 through 9, and it returns a two-digit string value if the value of the <xref:System.TimeSpan.Seconds%2A?displayProperty=fullName> property ranges from 10 to 59.  
+ The "s" custom format specifier outputs the value of the <xref:System.TimeSpan.Seconds%2A?displayProperty=nameWithType> property, which represents the number of whole seconds in the time interval that is not included as part of its hours, days, or minutes component. It returns a one-digit string value if the value of the <xref:System.TimeSpan.Seconds%2A?displayProperty=nameWithType> property is 0 through 9, and it returns a two-digit string value if the value of the <xref:System.TimeSpan.Seconds%2A?displayProperty=nameWithType> property ranges from 10 to 59.  
   
  If the "s" custom format specifier is used alone, specify "%s" so that it is not misinterpreted as a standard format string. The following example provides an illustration.  
   
@@ -195,7 +201,7 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
   
 <a name="ssSpecifier"></a>   
 ## The "ss" Custom Format Specifier  
- The "ss" custom format specifier outputs the value of the <xref:System.TimeSpan.Seconds%2A?displayProperty=fullName> property, which represents the number of whole seconds in the time interval that is not included as part of its hours, days, or minutes component. For values from 0 through 9, the output string includes a leading zero.  
+ The "ss" custom format specifier outputs the value of the <xref:System.TimeSpan.Seconds%2A?displayProperty=nameWithType> property, which represents the number of whole seconds in the time interval that is not included as part of its hours, days, or minutes component. For values from 0 through 9, the output string includes a leading zero.  
   
  Ordinarily, in a parsing operation, an input string that includes only a single number is interpreted as the number of days. You can use the "ss" custom format specifier instead to interpret the numeric string as the number of seconds. The following example provides an illustration.  
   
@@ -211,7 +217,7 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
   
 <a name="fSpecifier"></a>   
 ## The"f" Custom Format Specifier  
- The "f" custom format specifier outputs the tenths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=fullName> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=fullName> method, the input string must contain exactly one fractional digit.  
+ The "f" custom format specifier outputs the tenths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=nameWithType> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=nameWithType> method, the input string must contain exactly one fractional digit.  
   
  If the "f" custom format specifier is used alone, specify "%f" so that it is not misinterpreted as a standard format string.  
   
@@ -224,7 +230,7 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
   
 <a name="ffSpecifier"></a>   
 ## The "ff" Custom Format Specifier  
- The "ff" custom format specifier outputs the hundredths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=fullName> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=fullName> method, the input string must contain exactly two fractional digits.  
+ The "ff" custom format specifier outputs the hundredths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=nameWithType> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=nameWithType> method, the input string must contain exactly two fractional digits.  
   
  The following example uses the "ff" custom format specifier to display the hundredths of a second in a <xref:System.TimeSpan> value. "ff" is used first as the only format specifier, and then combined with the "s" specifier in a custom format string.  
   
@@ -235,7 +241,7 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
   
 <a name="f3Specifier"></a>   
 ## The "fff" Custom Format Specifier  
- The "fff" custom format specifier (with three "f" characters) outputs the milliseconds in a time interval. In a formatting operation, any remaining fractional digits are truncated. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=fullName> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=fullName> method, the input string must contain exactly three fractional digits.  
+ The "fff" custom format specifier (with three "f" characters) outputs the milliseconds in a time interval. In a formatting operation, any remaining fractional digits are truncated. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=nameWithType> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=nameWithType> method, the input string must contain exactly three fractional digits.  
   
  The following example uses the "fff" custom format specifier to display the milliseconds in a <xref:System.TimeSpan> value. "fff" is used first as the only format specifier, and then combined with the "s" specifier in a custom format string.  
   
@@ -246,7 +252,7 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
   
 <a name="f4Specifier"></a>   
 ## The "ffff" Custom Format Specifier  
- The "ffff" custom format specifier (with four "f" characters) outputs the ten-thousandths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=fullName> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=fullName> method, the input string must contain exactly four fractional digits.  
+ The "ffff" custom format specifier (with four "f" characters) outputs the ten-thousandths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=nameWithType> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=nameWithType> method, the input string must contain exactly four fractional digits.  
   
  The following example uses the "ffff" custom format specifier to display the ten-thousandths of a second in a <xref:System.TimeSpan> value. "ffff" is used first as the only format specifier, and then combined with the "s" specifier in a custom format string.  
   
@@ -257,7 +263,7 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
   
 <a name="f5Specifier"></a>   
 ## The "fffff" Custom Format Specifier  
- The "fffff" custom format specifier (with five "f" characters) outputs the hundred-thousandths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=fullName> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=fullName> method, the input string must contain exactly five fractional digits.  
+ The "fffff" custom format specifier (with five "f" characters) outputs the hundred-thousandths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=nameWithType> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=nameWithType> method, the input string must contain exactly five fractional digits.  
   
  The following example uses the "fffff" custom format specifier to display the hundred-thousandths of a second in a <xref:System.TimeSpan> value. "fffff" is used first as the only format specifier, and then combined with the "s" specifier in a custom format string.  
   
@@ -268,7 +274,7 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
   
 <a name="f6Specifier"></a>   
 ## The "ffffff" Custom Format Specifier  
- The "ffffff" custom format specifier (with six "f" characters) outputs the millionths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=fullName> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=fullName> method, the input string must contain exactly six fractional digits.  
+ The "ffffff" custom format specifier (with six "f" characters) outputs the millionths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=nameWithType> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=nameWithType> method, the input string must contain exactly six fractional digits.  
   
  The following example uses the "ffffff" custom format specifier to display the millionths of a second in a <xref:System.TimeSpan> value. It is used first as the only format specifier, and then combined with the "s" specifier in a custom format string.  
   
@@ -279,7 +285,7 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
   
 <a name="f7Specifier"></a>   
 ## The "fffffff" Custom Format Specifier  
- The "fffffff" custom format specifier (with seven "f" characters) outputs the ten-millionths of a second (or the fractional number of ticks) in a time interval. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=fullName> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=fullName> method, the input string must contain exactly seven fractional digits.  
+ The "fffffff" custom format specifier (with seven "f" characters) outputs the ten-millionths of a second (or the fractional number of ticks) in a time interval. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=nameWithType> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=nameWithType> method, the input string must contain exactly seven fractional digits.  
   
  The following example uses the "fffffff" custom format specifier to display the fractional number of ticks in a <xref:System.TimeSpan> value. It is used first as the only format specifier, and then combined with the "s" specifier in a custom format string.  
   
@@ -290,7 +296,7 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
   
 <a name="F_Specifier"></a>   
 ## The "F" Custom Format Specifier  
- The "F" custom format specifier outputs the tenths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. If the value of the time interval's tenths of a second is zero, it is not included in the result string. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=fullName> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=fullName> method, the presence of the tenths of a second digit is optional.  
+ The "F" custom format specifier outputs the tenths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. If the value of the time interval's tenths of a second is zero, it is not included in the result string. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=nameWithType> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=nameWithType> method, the presence of the tenths of a second digit is optional.  
   
  If the "F" custom format specifier is used alone, specify "%F" so that it is not misinterpreted as a standard format string.  
   
@@ -303,7 +309,7 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
   
 <a name="FF_Specifier"></a>   
 ## The "FF" Custom Format Specifier  
- The "FF" custom format specifier outputs the hundredths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. If there are any trailing fractional zeros, they are not included in the result string. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=fullName> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=fullName> method, the presence of the tenths and hundredths of a second digit is optional.  
+ The "FF" custom format specifier outputs the hundredths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. If there are any trailing fractional zeros, they are not included in the result string. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=nameWithType> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=nameWithType> method, the presence of the tenths and hundredths of a second digit is optional.  
   
  The following example uses the "FF" custom format specifier to display the hundredths of a second in a <xref:System.TimeSpan> value. It also uses this custom format specifier in a parsing operation.  
   
@@ -314,7 +320,7 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
   
 <a name="F3_Specifier"></a>   
 ## The "FFF" Custom Format Specifier  
- The "FFF" custom format specifier (with three "F" characters) outputs the milliseconds in a time interval. In a formatting operation, any remaining fractional digits are truncated. If there are any trailing fractional zeros, they are not included in the result string. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=fullName> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=fullName> method, the presence of the tenths, hundredths, and thousandths of a second digit is optional.  
+ The "FFF" custom format specifier (with three "F" characters) outputs the milliseconds in a time interval. In a formatting operation, any remaining fractional digits are truncated. If there are any trailing fractional zeros, they are not included in the result string. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=nameWithType> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=nameWithType> method, the presence of the tenths, hundredths, and thousandths of a second digit is optional.  
   
  The following example uses the "FFF" custom format specifier to display the thousandths of a second in a <xref:System.TimeSpan> value. It also uses this custom format specifier in a parsing operation.  
   
@@ -325,7 +331,7 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
   
 <a name="F4_Specifier"></a>   
 ## The "FFFF" Custom Format Specifier  
- The "FFFF" custom format specifier (with four "F" characters) outputs the ten-thousandths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. If there are any trailing fractional zeros, they are not included in the result string. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=fullName> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=fullName> method, the presence of the tenths, hundredths, thousandths, and ten-thousandths of a second digit is optional.  
+ The "FFFF" custom format specifier (with four "F" characters) outputs the ten-thousandths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. If there are any trailing fractional zeros, they are not included in the result string. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=nameWithType> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=nameWithType> method, the presence of the tenths, hundredths, thousandths, and ten-thousandths of a second digit is optional.  
   
  The following example uses the "FFFF" custom format specifier to display the ten-thousandths of a second in a <xref:System.TimeSpan> value. It also uses the "FFFF" custom format specifier in a parsing operation.  
   
@@ -336,7 +342,7 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
   
 <a name="F5_Specifier"></a>   
 ## The "FFFFF" Custom Format Specifier  
- The "FFFFF" custom format specifier (with five "F" characters) outputs the hundred-thousandths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. If there are any trailing fractional zeros, they are not included in the result string. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=fullName> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=fullName> method, the presence of the tenths, hundredths, thousandths, ten-thousandths, and hundred-thousandths of a second digit is optional.  
+ The "FFFFF" custom format specifier (with five "F" characters) outputs the hundred-thousandths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. If there are any trailing fractional zeros, they are not included in the result string. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=nameWithType> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=nameWithType> method, the presence of the tenths, hundredths, thousandths, ten-thousandths, and hundred-thousandths of a second digit is optional.  
   
  The following example uses the "FFFFF" custom format specifier to display the hundred-thousandths of a second in a <xref:System.TimeSpan> value. It also uses the "FFFFF" custom format specifier in a parsing operation.  
   
@@ -347,7 +353,7 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
   
 <a name="F6_Specifier"></a>   
 ## The "FFFFFF" Custom Format Specifier  
- The "FFFFFF" custom format specifier (with six "F" characters) outputs the millionths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. If there are any trailing fractional zeros, they are not included in the result string. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=fullName> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=fullName> method, the presence of the tenths, hundredths, thousandths, ten-thousandths, hundred-thousandths, and millionths of a second digit is optional.  
+ The "FFFFFF" custom format specifier (with six "F" characters) outputs the millionths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. If there are any trailing fractional zeros, they are not included in the result string. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=nameWithType> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=nameWithType> method, the presence of the tenths, hundredths, thousandths, ten-thousandths, hundred-thousandths, and millionths of a second digit is optional.  
   
  The following example uses the "FFFFFF" custom format specifier to display the millionths of a second in a <xref:System.TimeSpan> value. It also uses this custom format specifier in a parsing operation.  
   
@@ -358,7 +364,7 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
   
 <a name="F7_Specifier"></a>   
 ## The "FFFFFFF" Custom Format Specifier  
- The "FFFFFFF" custom format specifier (with seven "F" characters) outputs the ten-millionths of a second (or the fractional number of ticks) in a time interval. If there are any trailing fractional zeros, they are not included in the result string. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=fullName> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=fullName> method, the presence of the seven fractional digits in the input string is optional.  
+ The "FFFFFFF" custom format specifier (with seven "F" characters) outputs the ten-millionths of a second (or the fractional number of ticks) in a time interval. If there are any trailing fractional zeros, they are not included in the result string. In a parsing operation that calls the <xref:System.TimeSpan.ParseExact%2A?displayProperty=nameWithType> or <xref:System.TimeSpan.TryParseExact%2A?displayProperty=nameWithType> method, the presence of the seven fractional digits in the input string is optional.  
   
  The following example uses the "FFFFFFF" custom format specifier to display the fractional parts of a second in a <xref:System.TimeSpan> value. It also uses this custom format specifier in a parsing operation.  
   
@@ -392,5 +398,5 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
  [Back to table](#table)  
   
 ## See Also  
- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)   
+ [Formatting Types](../../../docs/standard/base-types/formatting-types.md)  
  [Standard TimeSpan Format Strings](../../../docs/standard/base-types/standard-timespan-format-strings.md)

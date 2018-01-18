@@ -9,18 +9,18 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Windows Forms, content copying and pasting"
   - "interoperability [WPF]"
-  - "ElementHost control,copying and pasting at design time"
-  - "WPF user control, hosting in Windows Forms"
+  - "ElementHost control [Windows Forms], copying and pasting at design time"
+  - "WPF user control [Windows Forms], hosting in Windows Forms"
 ms.assetid: e570375d-2a68-44ba-b4f7-c781af2d20e8
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Copy and Paste an ElementHost Control at Design Time
 This procedure shows you how to copy a Windows Presentation Foundation (WPF) control on a Windows Form.  
@@ -51,9 +51,9 @@ This procedure shows you how to copy a Windows Presentation Foundation (WPF) con
      A new <xref:System.Windows.Forms.Integration.ElementHost> control named `elementHost2` is created on the form.  
   
 ## See Also  
- <xref:System.Windows.Forms.Integration.ElementHost>   
- <xref:System.Windows.Forms.Integration.WindowsFormsHost>   
- [Walkthrough: Copying and Pasting an ElementHost Control into Separate Windows Forms](../../../../docs/framework/winforms/advanced/copy--paste-an-elementhost-control-into-forms.md)   
- [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)   
- [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)   
+ <xref:System.Windows.Forms.Integration.ElementHost>  
+ <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
+ [Walkthrough: Copying and Pasting an ElementHost Control into Separate Windows Forms](../../../../docs/framework/winforms/advanced/copy--paste-an-elementhost-control-into-forms.md)  
+ [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)  
+ [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)  
  [WPF Designer](http://msdn.microsoft.com/en-us/c6c65214-8411-4e16-b254-163ed4099c26)

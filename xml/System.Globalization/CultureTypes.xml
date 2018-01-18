@@ -32,7 +32,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- These culture type values are returned by the <xref:System.Globalization.CultureInfo.CultureTypes%2A?displayProperty=fullName> property, and also serve as a filter that limits the cultures returned by the <xref:System.Globalization.CultureInfo.GetCultures%2A?displayProperty=fullName> method. For more information on cultures, see <xref:System.Globalization.CultureInfo>.  
+ These culture type values are returned by the <xref:System.Globalization.CultureInfo.CultureTypes%2A?displayProperty=nameWithType> property, and also serve as a filter that limits the cultures returned by the <xref:System.Globalization.CultureInfo.GetCultures%2A?displayProperty=nameWithType> method. For more information on cultures, see <xref:System.Globalization.CultureInfo>.  
   
  Generally, your application should enumerate all cultures, using the AllCultures value. This allows enumeration of custom cultures, as well as the other culture types.  
   
@@ -55,6 +55,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Globalization.CultureInfo.GetCultures(System.Globalization.CultureTypes)" />
+    <altmember cref="P:System.Globalization.CultureInfo.CultureTypes" />
   </Docs>
   <Members>
     <Member MemberName="AllCultures">
@@ -168,7 +170,7 @@
 ## Remarks  
  Custom cultures can have any user-specified name, not just a two-letter code.  
   
- The invariant culture is included in the array of cultures returned by the <xref:System.Globalization.CultureInfo.GetCultures%2A?displayProperty=fullName> method that specifies this value.  
+ The invariant culture is included in the array of cultures returned by the <xref:System.Globalization.CultureInfo.GetCultures%2A?displayProperty=nameWithType> method that specifies this value.  
   
  ]]></format>
         </remarks>
@@ -259,7 +261,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In Windows versions prior to Windows 10, the UserCustomCulture value is assigned to custom cultures created by the developer. In Windows 10, the UserCustomCulture value is also assigned to system cultures that are not backed by a complete set of cultural data and that do not have unique local identifiers. (All cultures of type UserCustomCulture share a <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=fullName> value of `LOCALE_CUSTOM_UNSPECIFIED` (0x1000, or 4096). As a result, code such as  
+ In Windows versions prior to Windows 10, the UserCustomCulture value is assigned to custom cultures created by the developer. In Windows 10, the UserCustomCulture value is also assigned to system cultures that are not backed by a complete set of cultural data and that do not have unique local identifiers. (All cultures of type UserCustomCulture share a <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=nameWithType> value of `LOCALE_CUSTOM_UNSPECIFIED` (0x1000, or 4096). As a result, code such as  
   
  [!code-csharp[System.Globalization.CultureTypes#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.cultureTypes/cs/getcultures3.cs#2)]
  [!code-vb[System.Globalization.CultureTypes#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureTypes/vb/getcultures3.vb#2)]  

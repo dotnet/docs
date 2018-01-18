@@ -20,11 +20,11 @@
   
  The <xref:System.Windows.Forms.DataGridView.CellFormatting> event occurs every time each cell is painted, so you should avoid lengthy processing when handling this event. This event also occurs when the cell <xref:System.Windows.Forms.DataGridViewCell.FormattedValue%2A> is retrieved or its <xref:System.Windows.Forms.DataGridViewCell.GetFormattedValue%2A> method is called.  
   
- When you handle the <xref:System.Windows.Forms.DataGridView.CellFormatting> event, the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A?displayProperty=fullName> property is initialized with the cell value. If you provide custom conversion from the cell value to the display value, set the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A?displayProperty=fullName> property to the converted value, ensuring that the new value is of the type specified by the cell <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property. To indicate that no further value formatting is necessary, set the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=fullName> property to `true`.  
+ When you handle the <xref:System.Windows.Forms.DataGridView.CellFormatting> event, the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A?displayProperty=nameWithType> property is initialized with the cell value. If you provide custom conversion from the cell value to the display value, set the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A?displayProperty=nameWithType> property to the converted value, ensuring that the new value is of the type specified by the cell <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property. To indicate that no further value formatting is necessary, set the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=nameWithType> property to `true`.  
   
- When the event handler completes, if the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A?displayProperty=fullName> is `null` or is not of the correct type, or the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=fullName> property is `false`, the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A> is formatted using the <xref:System.Windows.Forms.DataGridViewCellStyle.Format%2A>, <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>, <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A>, and <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A> properties of the cell style returned by the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.CellStyle%2A?displayProperty=fullName> property, which is initialized using the cell <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A> property.  
+ When the event handler completes, if the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A?displayProperty=nameWithType> is `null` or is not of the correct type, or the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=nameWithType> property is `false`, the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A> is formatted using the <xref:System.Windows.Forms.DataGridViewCellStyle.Format%2A>, <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>, <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A>, and <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A> properties of the cell style returned by the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.CellStyle%2A?displayProperty=nameWithType> property, which is initialized using the cell <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A> property.  
   
- Regardless of the value of the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=fullName> property, the display properties of the object returned by the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.CellStyle%2A?displayProperty=fullName> property are used to render the cell.  
+ Regardless of the value of the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=nameWithType> property, the display properties of the object returned by the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.CellStyle%2A?displayProperty=nameWithType> property are used to render the cell.  
   
  For more information about custom formatting using the <xref:System.Windows.Forms.DataGridView.CellFormatting> event, see [How to: Customize Data Formatting in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-customize-data-formatting-in-the-windows-forms-datagridview-control.md).  
   
@@ -45,6 +45,25 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellFormatting" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellParsing" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.DefaultCellStyle" />
+    <altmember cref="M:System.Windows.Forms.DataGridView.OnCellFormatting(System.Windows.Forms.DataGridViewCellFormattingEventArgs)" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.Format" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.FormatProvider" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.NullValue" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCell.InheritedStyle" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCell.FormattedValue" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCell.FormattedValueType" />
+    <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetFormattedValue(System.Object,System.Int32,System.Windows.Forms.DataGridViewCellStyle@,System.ComponentModel.TypeConverter,System.ComponentModel.TypeConverter,System.Windows.Forms.DataGridViewDataErrorContexts)" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCellFormattingEventHandler" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellFormattingEventArgs.CellStyle" />
+    <altmember cref="P:System.Windows.Forms.ConvertEventArgs.Value" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -95,6 +114,16 @@
  -or-  
   
  <paramref name="rowIndex" /> is less than -1.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellFormatting" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellFormatting(System.Windows.Forms.DataGridViewCellFormattingEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.InheritedStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.FormattedValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.FormattedValueType" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellFormattingEventArgs.CellStyle" />
+        <altmember cref="P:System.Windows.Forms.ConvertEventArgs.Value" />
       </Docs>
     </Member>
     <Member MemberName="CellStyle">
@@ -131,6 +160,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellFormatting" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.InheritedStyle" />
       </Docs>
     </Member>
     <Member MemberName="ColumnIndex">
@@ -165,6 +198,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.Columns" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellFormatting" />
       </Docs>
     </Member>
     <Member MemberName="FormattingApplied">
@@ -200,6 +236,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellFormatting" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.Format" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.FormatProvider" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.NullValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellFormattingEventArgs.CellStyle" />
       </Docs>
     </Member>
     <Member MemberName="RowIndex">
@@ -234,6 +278,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.Rows" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellFormatting" />
       </Docs>
     </Member>
   </Members>

@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "data formatting [.NET Framework]"
   - "dates [.NET Framework], formatting"
@@ -32,6 +35,9 @@ caps.latest.revision: 43
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Formatting Types in .NET
 <a name="Introduction"></a> Formatting is the process of converting an instance of a class, structure, or enumeration value to its string representation, often so that the resulting string can be displayed to users or deserialized to restore the original data type. This conversion can pose a number of challenges:  
@@ -83,9 +89,9 @@ manager: "wpickett"
   
 <a name="NetFormatting"></a>   
 ## Formatting in .NET  
- The basic mechanism for formatting is the default implementation of the <xref:System.Object.ToString%2A?displayProperty=fullName> method, which is discussed in the [Default Formatting Using the ToString Method](#DefaultToString) section later in this topic. However, .NET provides several ways to modify and extend its default formatting support. These include the following:  
+ The basic mechanism for formatting is the default implementation of the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method, which is discussed in the [Default Formatting Using the ToString Method](#DefaultToString) section later in this topic. However, .NET provides several ways to modify and extend its default formatting support. These include the following:  
   
--   Overriding the <xref:System.Object.ToString%2A?displayProperty=fullName> method to define a custom string representation of an object’s value. For more information, see the [Overriding the ToString Method](#OverrideToString) section later in this topic.  
+-   Overriding the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method to define a custom string representation of an object’s value. For more information, see the [Overriding the ToString Method](#OverrideToString) section later in this topic.  
   
 -   Defining format specifiers that enable the string representation of an object’s value to take multiple forms. For example, the "X" format specifier in the following statement converts an integer to the string representation of a hexadecimal value.  
   
@@ -113,18 +119,18 @@ manager: "wpickett"
   
 <a name="DefaultToString"></a>   
 ## Default Formatting Using the ToString Method  
- Every type that is derived from <xref:System.Object?displayProperty=fullName> automatically inherits a parameterless `ToString` method, which returns the name of the type by default. The following example illustrates the default `ToString` method. It defines a class named `Automobile` that has no implementation. When the class is instantiated and its `ToString` method is called, it displays its type name. Note that the `ToString` method is not explicitly called in the example. The <xref:System.Console.WriteLine%28System.Object%29?displayProperty=fullName> method implicitly calls the `ToString` method of the object passed to it as an argument.  
+ Every type that is derived from <xref:System.Object?displayProperty=nameWithType> automatically inherits a parameterless `ToString` method, which returns the name of the type by default. The following example illustrates the default `ToString` method. It defines a class named `Automobile` that has no implementation. When the class is instantiated and its `ToString` method is called, it displays its type name. Note that the `ToString` method is not explicitly called in the example. The <xref:System.Console.WriteLine%28System.Object%29?displayProperty=nameWithType> method implicitly calls the `ToString` method of the object passed to it as an argument.  
   
  [!code-csharp[Conceptual.Formatting.Overview#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/default1.cs#1)]
  [!code-vb[Conceptual.Formatting.Overview#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/default1.vb#1)]  
   
 > [!WARNING]
->  Starting with [!INCLUDE[win81](../../../includes/win81-md.md)], the [!INCLUDE[wrt](../../../includes/wrt-md.md)] includes an [IStringable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.aspx) interface with a single method, [IStringable.ToString](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.tostring.aspx), which provides default formatting support. However, we recommend that managed types do not implement the `IStringable` interface. For more information, see "The [!INCLUDE[wrt](../../../includes/wrt-md.md)] and the `IStringable` Interface" section on the <xref:System.Object.ToString%2A?displayProperty=fullName> reference page.  
+>  Starting with [!INCLUDE[win81](../../../includes/win81-md.md)], the [!INCLUDE[wrt](../../../includes/wrt-md.md)] includes an [IStringable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.aspx) interface with a single method, [IStringable.ToString](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.tostring.aspx), which provides default formatting support. However, we recommend that managed types do not implement the `IStringable` interface. For more information, see "The [!INCLUDE[wrt](../../../includes/wrt-md.md)] and the `IStringable` Interface" section on the <xref:System.Object.ToString%2A?displayProperty=nameWithType> reference page.  
   
  Because all types other than interfaces are derived from <xref:System.Object>, this functionality is automatically provided to your custom classes or structures. However, the functionality offered by the default `ToString` method, is limited: Although it identifies the type, it fails to provide any information about an instance of the type. To provide a string representation of an object that provides information about that object, you must override the `ToString` method.  
   
 > [!NOTE]
->  Structures inherit from <xref:System.ValueType>, which in turn is derived from <xref:System.Object>. Although <xref:System.ValueType> overrides <xref:System.Object.ToString%2A?displayProperty=fullName>, its implementation is identical.  
+>  Structures inherit from <xref:System.ValueType>, which in turn is derived from <xref:System.Object>. Although <xref:System.ValueType> overrides <xref:System.Object.ToString%2A?displayProperty=nameWithType>, its implementation is identical.  
   
  [Back to top](#Introduction)  
   
@@ -139,7 +145,7 @@ manager: "wpickett"
   
 |Type|ToString override|  
 |----------|-----------------------|  
-|<xref:System.Boolean>|Returns either <xref:System.Boolean.TrueString?displayProperty=fullName> or <xref:System.Boolean.FalseString?displayProperty=fullName>.|  
+|<xref:System.Boolean>|Returns either <xref:System.Boolean.TrueString?displayProperty=nameWithType> or <xref:System.Boolean.FalseString?displayProperty=nameWithType>.|  
 |<xref:System.Byte>|Calls `Byte.ToString("G", NumberFormatInfo.CurrentInfo)` to format the <xref:System.Byte> value for the current culture.|  
 |<xref:System.Char>|Returns the character as a string.|  
 |<xref:System.DateTime>|Calls `DateTime.ToString("G", DatetimeFormatInfo.CurrentInfo)` to format the date and time value for the current culture.|  
@@ -206,7 +212,7 @@ manager: "wpickett"
   
  For more information about standard numeric formatting strings, see [Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md).  
   
- Standard format strings for date and time values are aliases for custom format strings stored by a particular <xref:System.Globalization.DateTimeFormatInfo> property. For example, calling the `ToString` method of a date and time value with the "D" format specifier displays the date and time by using the custom format string stored in the current culture’s <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A?displayProperty=fullName> property. (For more information about custom format strings, see the [next section](#customStrings).) The following example illustrates this relationship.  
+ Standard format strings for date and time values are aliases for custom format strings stored by a particular <xref:System.Globalization.DateTimeFormatInfo> property. For example, calling the `ToString` method of a date and time value with the "D" format specifier displays the date and time by using the custom format string stored in the current culture’s <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A?displayProperty=nameWithType> property. (For more information about custom format strings, see the [next section](#customStrings).) The following example illustrates this relationship.  
   
  [!code-csharp[Conceptual.Formatting.Overview#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/alias1.cs#5)]
  [!code-vb[Conceptual.Formatting.Overview#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/alias1.vb#5)]  
@@ -250,21 +256,19 @@ manager: "wpickett"
  [Back to top](#Introduction)  
   
 <a name="stringRef"></a>   
-### Format Strings and .NET Class Library Types  
- All numeric types (that is, the <xref:System.Byte>, <xref:System.Decimal>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.SByte>, <xref:System.Single>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>, and <xref:System.Numerics.BigInteger> types)  
-  
- , as well as the <xref:System.DateTime>, <xref:System.DateTimeOffset>, <xref:System.TimeSpan>, <xref:System.Guid>, and all enumeration types, support formatting with format strings. For information on the specific format strings supported by each type, see the following topics  
+### Format Strings and .NET Types  
+ All numeric types (that is, the <xref:System.Byte>, <xref:System.Decimal>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.SByte>, <xref:System.Single>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>, and <xref:System.Numerics.BigInteger> types), as well as the <xref:System.DateTime>, <xref:System.DateTimeOffset>, <xref:System.TimeSpan>, <xref:System.Guid>, and all enumeration types, support formatting with format strings. For information on the specific format strings supported by each type, see the following topics:  
   
 |Title|Definition|  
 |-----------|----------------|  
 |[Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md)|Describes standard format strings that create commonly used string representations of numeric values.|  
 |[Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md)|Describes custom format strings that create application-specific formats for numeric values.|  
-|[Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)|Describes standard format strings that create commonly used string representations of <xref:System.DateTime> values.|  
-|[Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)|Describes custom format strings that create application-specific formats for <xref:System.DateTime> values.|  
+|[Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)|Describes standard format strings that create commonly used string representations of <xref:System.DateTime> and <xref:System.DateTimeOffset> values.|  
+|[Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)|Describes custom format strings that create application-specific formats for <xref:System.DateTime> and <xref:System.DateTimeOffset> values.|  
 |[Standard TimeSpan Format Strings](../../../docs/standard/base-types/standard-timespan-format-strings.md)|Describes standard format strings that create commonly used string representations of time intervals.|  
 |[Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md)|Describes custom format strings that create application-specific formats for time intervals.|  
 |[Enumeration Format Strings](../../../docs/standard/base-types/enumeration-format-strings.md)|Describes standard format strings that are used to create string representations of enumeration values.|  
-|<xref:System.Guid.ToString%28System.String%29?displayProperty=fullName>|Describes standard format strings for <xref:System.Guid> values.|  
+|<xref:System.Guid.ToString%28System.String%29?displayProperty=nameWithType>|Describes standard format strings for <xref:System.Guid> values.|  
   
 <a name="FormatProviders"></a>   
 ## Culture-Sensitive Formatting with Format Providers and the IFormatProvider Interface  
@@ -275,27 +279,27 @@ manager: "wpickett"
   
  The <xref:System.IFormatProvider> interface includes one method, <xref:System.IFormatProvider.GetFormat%28System.Type%29>, which has a single parameter that specifies the type of object that provides formatting information. If the method can provide an object of that type, it returns it. Otherwise, it returns a null reference (`Nothing` in Visual Basic).  
   
- <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> is a callback method. When you call a `ToString` method overload that includes an <xref:System.IFormatProvider> parameter, it calls the <xref:System.IFormatProvider.GetFormat%2A> method of that <xref:System.IFormatProvider> object. The <xref:System.IFormatProvider.GetFormat%2A> method is responsible for returning an object that provides the necessary formatting information, as specified by its `formatType` parameter, to the `ToString` method.  
+ <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> is a callback method. When you call a `ToString` method overload that includes an <xref:System.IFormatProvider> parameter, it calls the <xref:System.IFormatProvider.GetFormat%2A> method of that <xref:System.IFormatProvider> object. The <xref:System.IFormatProvider.GetFormat%2A> method is responsible for returning an object that provides the necessary formatting information, as specified by its `formatType` parameter, to the `ToString` method.  
   
- A number of formatting or string conversion methods include a parameter of type <xref:System.IFormatProvider>, but in many cases the value of the parameter is ignored when the method is called. The following table lists some of the formatting methods that use the parameter and the type of the <xref:System.Type> object that they pass to the <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> method.  
+ A number of formatting or string conversion methods include a parameter of type <xref:System.IFormatProvider>, but in many cases the value of the parameter is ignored when the method is called. The following table lists some of the formatting methods that use the parameter and the type of the <xref:System.Type> object that they pass to the <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method.  
   
 |Method|Type of `formatType` parameter|  
 |------------|------------------------------------|  
-|`ToString` method of numeric types|<xref:System.Globalization.NumberFormatInfo?displayProperty=fullName>|  
-|`ToString` method of date and time types|<xref:System.Globalization.DateTimeFormatInfo?displayProperty=fullName>|  
-|<xref:System.String.Format%2A?displayProperty=fullName>|<xref:System.ICustomFormatter?displayProperty=fullName>|  
-|<xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=fullName>|<xref:System.ICustomFormatter?displayProperty=fullName>|  
+|`ToString` method of numeric types|<xref:System.Globalization.NumberFormatInfo?displayProperty=nameWithType>|  
+|`ToString` method of date and time types|<xref:System.Globalization.DateTimeFormatInfo?displayProperty=nameWithType>|  
+|<xref:System.String.Format%2A?displayProperty=nameWithType>|<xref:System.ICustomFormatter?displayProperty=nameWithType>|  
+|<xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>|<xref:System.ICustomFormatter?displayProperty=nameWithType>|  
   
 > [!NOTE]
->  The `ToString` methods of the numeric types and date and time types are overloaded, and only some of the overloads include an <xref:System.IFormatProvider> parameter. If a method does not have a parameter of type <xref:System.IFormatProvider>, the object that is returned by the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> property is passed instead. For example, a call to the default <xref:System.Int32.ToString?displayProperty=fullName> method ultimately results in a method call such as the following: `Int32.ToString("G", System.Globalization.CultureInfo.CurrentCulture)`.  
+>  The `ToString` methods of the numeric types and date and time types are overloaded, and only some of the overloads include an <xref:System.IFormatProvider> parameter. If a method does not have a parameter of type <xref:System.IFormatProvider>, the object that is returned by the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property is passed instead. For example, a call to the default <xref:System.Int32.ToString?displayProperty=nameWithType> method ultimately results in a method call such as the following: `Int32.ToString("G", System.Globalization.CultureInfo.CurrentCulture)`.  
   
  .NET provides three classes that implement <xref:System.IFormatProvider>:  
   
--   <xref:System.Globalization.DateTimeFormatInfo>, a class that provides formatting information for date and time values for a specific culture. Its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> implementation returns an instance of itself.  
+-   <xref:System.Globalization.DateTimeFormatInfo>, a class that provides formatting information for date and time values for a specific culture. Its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> implementation returns an instance of itself.  
   
--   <xref:System.Globalization.NumberFormatInfo>, a class that provides numeric formatting information for a specific culture. Its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> implementation returns an instance of itself.  
+-   <xref:System.Globalization.NumberFormatInfo>, a class that provides numeric formatting information for a specific culture. Its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> implementation returns an instance of itself.  
   
--   <xref:System.Globalization.CultureInfo>. Its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> implementation can return either a <xref:System.Globalization.NumberFormatInfo> object to provide numeric formatting information or a <xref:System.Globalization.DateTimeFormatInfo> object to provide formatting information for date and time values.  
+-   <xref:System.Globalization.CultureInfo>. Its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> implementation can return either a <xref:System.Globalization.NumberFormatInfo> object to provide numeric formatting information or a <xref:System.Globalization.DateTimeFormatInfo> object to provide formatting information for date and time values.  
   
  You can also implement your own format provider to replace any one of these classes. However, your implementation’s <xref:System.IFormatProvider.GetFormat%2A> method must return an object of the type listed in the previous table if it has to provide formatting information to the `ToString` method.  
   
@@ -303,14 +307,14 @@ manager: "wpickett"
   
 <a name="numericCulture"></a>   
 ### Culture-Sensitive Formatting of Numeric Values  
- By default, the formatting of numeric values is culture-sensitive. If you do not specify a culture when you call a formatting method, the formatting conventions of the current thread culture are used. This is illustrated in the following example, which changes the current thread culture four times and then calls the <xref:System.Decimal.ToString%28System.String%29?displayProperty=fullName> method. In each case, the result string reflects the formatting conventions of the current culture. This is because the `ToString` and `ToString(String)` methods wrap calls to each numeric type's `ToString(String, IFormatProvider)` method.  
+ By default, the formatting of numeric values is culture-sensitive. If you do not specify a culture when you call a formatting method, the formatting conventions of the current thread culture are used. This is illustrated in the following example, which changes the current thread culture four times and then calls the <xref:System.Decimal.ToString%28System.String%29?displayProperty=nameWithType> method. In each case, the result string reflects the formatting conventions of the current culture. This is because the `ToString` and `ToString(String)` methods wrap calls to each numeric type's `ToString(String, IFormatProvider)` method.  
   
  [!code-csharp[Conceptual.Formatting.Overview#19](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/culturespecific3.cs#19)]
  [!code-vb[Conceptual.Formatting.Overview#19](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/culturespecific3.vb#19)]  
   
  You can also format a numeric value for a specific culture by calling a `ToString` overload that has a `provider` parameter and passing it either of the following:  
   
--   A <xref:System.Globalization.CultureInfo> object that represents the culture whose formatting conventions are to be used. Its <xref:System.Globalization.CultureInfo.GetFormat%2A?displayProperty=fullName> method returns the value of the <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=fullName> property, which is the <xref:System.Globalization.NumberFormatInfo> object that provides culture-specific formatting information for numeric values.  
+-   A <xref:System.Globalization.CultureInfo> object that represents the culture whose formatting conventions are to be used. Its <xref:System.Globalization.CultureInfo.GetFormat%2A?displayProperty=nameWithType> method returns the value of the <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=nameWithType> property, which is the <xref:System.Globalization.NumberFormatInfo> object that provides culture-specific formatting information for numeric values.  
   
 -   A <xref:System.Globalization.NumberFormatInfo> object that defines the culture-specific formatting conventions to be used. Its <xref:System.Globalization.NumberFormatInfo.GetFormat%2A> method returns an instance of itself.  
   
@@ -321,14 +325,14 @@ manager: "wpickett"
   
 <a name="dateCulture"></a>   
 ### Culture-Sensitive Formatting of Date and Time Values  
- By default, the formatting of date and time values is culture-sensitive. If you do not specify a culture when you call a formatting method, the formatting conventions of the current thread culture are used. This is illustrated in the following example, which changes the current thread culture four times and then calls the <xref:System.DateTime.ToString%28System.String%29?displayProperty=fullName> method. In each case, the result string reflects the formatting conventions of the current culture. This is because the <xref:System.DateTime.ToString?displayProperty=fullName>, <xref:System.DateTime.ToString%28System.String%29?displayProperty=fullName>, <xref:System.DateTimeOffset.ToString?displayProperty=fullName>, and <xref:System.DateTimeOffset.ToString%28System.String%29?displayProperty=fullName> methods wrap calls to the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName> and <xref:System.DateTimeOffset.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName> methods.  
+ By default, the formatting of date and time values is culture-sensitive. If you do not specify a culture when you call a formatting method, the formatting conventions of the current thread culture are used. This is illustrated in the following example, which changes the current thread culture four times and then calls the <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method. In each case, the result string reflects the formatting conventions of the current culture. This is because the <xref:System.DateTime.ToString?displayProperty=nameWithType>, <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType>, <xref:System.DateTimeOffset.ToString?displayProperty=nameWithType>, and <xref:System.DateTimeOffset.ToString%28System.String%29?displayProperty=nameWithType> methods wrap calls to the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> and <xref:System.DateTimeOffset.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> methods.  
   
  [!code-csharp[Conceptual.Formatting.Overview#17](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/culturespecific1.cs#17)]
  [!code-vb[Conceptual.Formatting.Overview#17](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/culturespecific1.vb#17)]  
   
- You can also format a date and time value for a specific culture by calling a <xref:System.DateTime.ToString%2A?displayProperty=fullName> or <xref:System.DateTimeOffset.ToString%2A?displayProperty=fullName> overload that has a `provider` parameter and passing it either of the following:  
+ You can also format a date and time value for a specific culture by calling a <xref:System.DateTime.ToString%2A?displayProperty=nameWithType> or <xref:System.DateTimeOffset.ToString%2A?displayProperty=nameWithType> overload that has a `provider` parameter and passing it either of the following:  
   
--   A <xref:System.Globalization.CultureInfo> object that represents the culture whose formatting conventions are to be used. Its <xref:System.Globalization.CultureInfo.GetFormat%2A?displayProperty=fullName> method returns the value of the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property, which is the <xref:System.Globalization.DateTimeFormatInfo> object that provides culture-specific formatting information for date and time values.  
+-   A <xref:System.Globalization.CultureInfo> object that represents the culture whose formatting conventions are to be used. Its <xref:System.Globalization.CultureInfo.GetFormat%2A?displayProperty=nameWithType> method returns the value of the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property, which is the <xref:System.Globalization.DateTimeFormatInfo> object that provides culture-specific formatting information for date and time values.  
   
 -   A <xref:System.Globalization.DateTimeFormatInfo> object that defines the culture-specific formatting conventions to be used. Its <xref:System.Globalization.DateTimeFormatInfo.GetFormat%2A> method returns an instance of itself.  
   
@@ -339,13 +343,13 @@ manager: "wpickett"
   
 <a name="IFormattable"></a>   
 ## The IFormattable Interface  
- Typically, types that overload the `ToString` method with a format string and an <xref:System.IFormatProvider> parameter also implement the <xref:System.IFormattable> interface. This interface has a single member, <xref:System.IFormattable.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName>, that includes both a format string and a format provider as parameters.  
+ Typically, types that overload the `ToString` method with a format string and an <xref:System.IFormatProvider> parameter also implement the <xref:System.IFormattable> interface. This interface has a single member, <xref:System.IFormattable.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType>, that includes both a format string and a format provider as parameters.  
   
  Implementing the <xref:System.IFormattable> interface for your application-defined class offers two advantages:  
   
--   Support for string conversion by the <xref:System.Convert> class. Calls to the <xref:System.Convert.ToString%28System.Object%29?displayProperty=fullName> and <xref:System.Convert.ToString%28System.Object%2CSystem.IFormatProvider%29?displayProperty=fullName> methods call your <xref:System.IFormattable> implementation automatically.  
+-   Support for string conversion by the <xref:System.Convert> class. Calls to the <xref:System.Convert.ToString%28System.Object%29?displayProperty=nameWithType> and <xref:System.Convert.ToString%28System.Object%2CSystem.IFormatProvider%29?displayProperty=nameWithType> methods call your <xref:System.IFormattable> implementation automatically.  
   
--   Support for composite formatting. If a format item that includes a format string is used to format your custom type, the common language runtime automatically calls your <xref:System.IFormattable> implementation and passes it the format string. For more information about composite formatting with methods such as <xref:System.String.Format%2A?displayProperty=fullName> or <xref:System.Console.WriteLine%2A?displayProperty=fullName>, see the [Composite Formatting](#CompositeFormatting) section.  
+-   Support for composite formatting. If a format item that includes a format string is used to format your custom type, the common language runtime automatically calls your <xref:System.IFormattable> implementation and passes it the format string. For more information about composite formatting with methods such as <xref:System.String.Format%2A?displayProperty=nameWithType> or <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>, see the [Composite Formatting](#CompositeFormatting) section.  
   
  The following example defines a `Temperature` class that implements the <xref:System.IFormattable> interface. It supports the "C" or "G" format specifiers to display the temperature in Celsius, the "F" format specifier to display the temperature in Fahrenheit, and the "K" format specifier to display the temperature in Kelvin.  
   
@@ -361,7 +365,7 @@ manager: "wpickett"
   
 <a name="CompositeFormatting"></a>   
 ## Composite Formatting  
- Some methods, such as <xref:System.String.Format%2A?displayProperty=fullName> and <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=fullName>, support composite formatting. A composite format string is a kind of template that returns a single string that incorporates the string representation of zero, one, or more objects. Each object is represented in the composite format string by an indexed format item. The index of the format item corresponds to the position of the object that it represents in the method's parameter list. Indexes are zero-based. For example, in the following call to the <xref:System.String.Format%2A?displayProperty=fullName> method, the first format item, `{0:D}`, is replaced by the string representation of `thatDate`; the second format item, `{1}`, is replaced by the string representation of `item1`; and the third format item, `{2:C2}`, is replaced by the string representation of `item1.Value`.  
+ Some methods, such as <xref:System.String.Format%2A?displayProperty=nameWithType> and <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>, support composite formatting. A composite format string is a kind of template that returns a single string that incorporates the string representation of zero, one, or more objects. Each object is represented in the composite format string by an indexed format item. The index of the format item corresponds to the position of the object that it represents in the method's parameter list. Indexes are zero-based. For example, in the following call to the <xref:System.String.Format%2A?displayProperty=nameWithType> method, the first format item, `{0:D}`, is replaced by the string representation of `thatDate`; the second format item, `{1}`, is replaced by the string representation of `item1`; and the third format item, `{2:C2}`, is replaced by the string representation of `item1.Value`.  
   
  [!code-csharp[Conceptual.Formatting.Overview#14](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/composite1.cs#14)]
  [!code-vb[Conceptual.Formatting.Overview#14](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/composite1.vb#14)]  
@@ -383,7 +387,7 @@ manager: "wpickett"
   
 <a name="Custom"></a>   
 ## Custom Formatting with ICustomFormatter  
- Two composite formatting methods, <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> and <xref:System.Text.StringBuilder.AppendFormat%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>, include a format provider parameter that supports custom formatting. When either of these formatting methods is called, it passes a <xref:System.Type> object that represents an <xref:System.ICustomFormatter> interface to the format provider’s <xref:System.IFormatProvider.GetFormat%2A> method. The <xref:System.IFormatProvider.GetFormat%2A> method is then responsible for returning the <xref:System.ICustomFormatter> implementation that provides custom formatting.  
+ Two composite formatting methods, <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> and <xref:System.Text.StringBuilder.AppendFormat%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType>, include a format provider parameter that supports custom formatting. When either of these formatting methods is called, it passes a <xref:System.Type> object that represents an <xref:System.ICustomFormatter> interface to the format provider’s <xref:System.IFormatProvider.GetFormat%2A> method. The <xref:System.IFormatProvider.GetFormat%2A> method is then responsible for returning the <xref:System.ICustomFormatter> implementation that provides custom formatting.  
   
  The <xref:System.ICustomFormatter> interface has a single method, <xref:System.ICustomFormatter.Format%28System.String%2CSystem.Object%2CSystem.IFormatProvider%29>, that is called automatically by a composite formatting method, once for each format item in a composite format string. The <xref:System.ICustomFormatter.Format%28System.String%2CSystem.Object%2CSystem.IFormatProvider%29> method has three parameters: a format string, which represents the `formatString` argument in a format item, an object to format, and an <xref:System.IFormatProvider> object that provides formatting services. Typically, the class that implements <xref:System.ICustomFormatter> also implements <xref:System.IFormatProvider>, so this last parameter is a reference to the custom formatting class itself. The method returns a custom formatted string representation of the object to be formatted. If the method cannot format the object, it should return a null reference (`Nothing` in Visual Basic).  
   
@@ -392,7 +396,7 @@ manager: "wpickett"
  [!code-csharp[Conceptual.Formatting.Overview#15](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/icustomformatter1.cs#15)]
  [!code-vb[Conceptual.Formatting.Overview#15](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/icustomformatter1.vb#15)]  
   
- The following example uses the `ByteByByteFormatter` class to format integer values. Note that the <xref:System.ICustomFormatter.Format%2A?displayProperty=fullName> method is called more than once in the second <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method call, and that the default <xref:System.Globalization.NumberFormatInfo> provider is used in the third method call because the .`ByteByByteFormatter.Format` method does not recognize the "N0" format string and returns a null reference (`Nothing` in Visual Basic).  
+ The following example uses the `ByteByByteFormatter` class to format integer values. Note that the <xref:System.ICustomFormatter.Format%2A?displayProperty=nameWithType> method is called more than once in the second <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method call, and that the default <xref:System.Globalization.NumberFormatInfo> provider is used in the third method call because the .`ByteByByteFormatter.Format` method does not recognize the "N0" format string and returns a null reference (`Nothing` in Visual Basic).  
   
  [!code-csharp[Conceptual.Formatting.Overview#16](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/icustomformatter1.cs#16)]
  [!code-vb[Conceptual.Formatting.Overview#16](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/icustomformatter1.vb#16)]  
@@ -419,8 +423,8 @@ manager: "wpickett"
   
 <a name="Reference"></a>   
 ## Reference  
- <xref:System.IFormattable?displayProperty=fullName>  
+ <xref:System.IFormattable?displayProperty=nameWithType>  
   
- <xref:System.IFormatProvider?displayProperty=fullName>  
+ <xref:System.IFormatProvider?displayProperty=nameWithType>  
   
- <xref:System.ICustomFormatter?displayProperty=fullName>
+ <xref:System.ICustomFormatter?displayProperty=nameWithType>

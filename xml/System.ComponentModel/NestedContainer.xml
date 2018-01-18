@@ -48,6 +48,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.INestedContainer" />
+    <altmember cref="T:System.ComponentModel.IContainer" />
+    <altmember cref="T:System.ComponentModel.ISite" />
+    <altmember cref="T:System.ComponentModel.Design.IReferenceService" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -84,6 +88,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="owner" /> is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.ComponentModel.NestedContainer.Dispose" />
       </Docs>
     </Member>
     <Member MemberName="CreateSite">
@@ -126,6 +131,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="component" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.ComponentModel.Container.CreateSite(System.ComponentModel.IComponent,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -172,6 +178,7 @@
   
  For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
+        <altmember cref="M:System.ComponentModel.NestedContainer.#ctor(System.ComponentModel.IComponent)" />
       </Docs>
     </Member>
     <Member MemberName="GetService">
@@ -206,10 +213,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the <xref:System.ComponentModel.Container.GetService%2A?displayProperty=fullName> method. This implementation only resolves requests for the <xref:System.ComponentModel.INestedContainer> and <xref:System.ComponentModel.IContainer> services.  
+ This method overrides the <xref:System.ComponentModel.Container.GetService%2A?displayProperty=nameWithType> method. This implementation only resolves requests for the <xref:System.ComponentModel.INestedContainer> and <xref:System.ComponentModel.IContainer> services.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.Container.GetService(System.Type)" />
+        <altmember cref="T:System.IServiceProvider" />
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -244,6 +253,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IComponent" />
+        <altmember cref="T:System.ComponentModel.IContainer" />
+        <altmember cref="P:System.ComponentModel.INestedContainer.Owner" />
       </Docs>
     </Member>
     <Member MemberName="OwnerName">

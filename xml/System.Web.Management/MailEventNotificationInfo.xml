@@ -22,6 +22,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Management.WebEventProvider" />
+    <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+    <altmember cref="T:System.Web.Management.TemplatedMailWebEventProvider" />
+    <altmember cref="T:System.Web.Management.SimpleMailWebEventProvider" />
   </Docs>
   <Members>
     <Member MemberName="Events">
@@ -40,6 +44,7 @@
         <summary>Gets a collection of events for the current message.</summary>
         <value>A <see cref="T:System.Web.Management.WebBaseEventCollection" /> of events for the current message.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Management.WebBaseEventCollection" />
       </Docs>
     </Member>
     <Member MemberName="EventsDiscardedByBuffer">
@@ -92,6 +97,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.MailWebEventProvider" />
+        <altmember cref="T:System.Web.Management.SimpleMailWebEventProvider" />
+        <altmember cref="T:System.Web.Management.TemplatedMailWebEventProvider" />
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
       </Docs>
     </Member>
     <Member MemberName="EventsInBuffer">
@@ -293,6 +302,7 @@
         <summary>Gets the type of the current notification.</summary>
         <value>The <see cref="T:System.Web.Management.EventNotificationType" /> for the current notification.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Management.EventNotificationType" />
       </Docs>
     </Member>
   </Members>

@@ -22,6 +22,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.PathGeometry" />
+    <altmember cref="T:System.Windows.Media.Animation.PointAnimationUsingPath" />
+    <altmember cref="T:System.Windows.Media.Animation.DoubleAnimationUsingPath" />
+    <altmember cref="T:System.Windows.Media.Animation.MatrixAnimationUsingKeyFrames" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,7 +72,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -91,6 +95,7 @@
         <summary>Creates a new instance of the <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingPath" />.</summary>
         <returns>The new instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.CreateInstanceCore" />
       </Docs>
     </Member>
     <Member MemberName="DoesRotateWithTangent">
@@ -177,6 +182,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Animation.MatrixAnimationBase.GetCurrentValueCore(System.Windows.Media.Matrix,System.Windows.Media.Matrix,System.Windows.Media.Animation.AnimationClock)" />
       </Docs>
     </Member>
     <Member MemberName="IsAdditive">
@@ -265,6 +271,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.MatrixAnimationUsingPath.DoesRotateWithTangent" />
+        <altmember cref="P:System.Windows.Media.Animation.MatrixAnimationUsingPath.IsOffsetCumulative" />
       </Docs>
     </Member>
     <Member MemberName="IsAngleCumulativeProperty">
@@ -318,6 +326,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.MatrixAnimationUsingPath.IsAngleCumulative" />
+        <altmember cref="P:System.Windows.Media.Animation.MatrixAnimationUsingPath.IsAdditive" />
       </Docs>
     </Member>
     <Member MemberName="IsOffsetCumulativeProperty">
@@ -389,6 +399,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.PathGeometry" />
       </Docs>
     </Member>
     <Member MemberName="PathGeometryProperty">

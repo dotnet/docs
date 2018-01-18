@@ -25,7 +25,7 @@ In this topic, you'll learn the language rules governing Tuples in C# 7,
 different ways to use them, and initial guidance on working with Tuples.
 
 > [!NOTE]
-> The new tuples features require the @System.ValueTuple types.
+> The new tuples features require the <xref:System.ValueTuple> types.
 > You must add the NuGet package [`System.ValueTuple`](https://www.nuget.org/packages/System.ValueTuple/) in order to use it
 > on platforms that do not include the types.
 >
@@ -109,8 +109,8 @@ variables used to initialize the tuple. This is referred to as **[tuple projecti
 
 The compiler must communicate those names you created for tuples that
 are returned from public methods or properties. In those cases, the compiler
-adds a @System.Runtime.CompilerServices.TupleElementNames attribute on the method. This attribute contains
-a @System.Runtime.CompilerServices.TupleElementNames.TransformNames list property that contains the names given to each of
+adds a <xref:System.Runtime.CompilerServices.TupleElementNamesAttribute> attribute on the method. This attribute contains
+a <xref:System.Runtime.CompilerServices.TupleElementNamesAttribute.TransformNames> list property that contains the names given to each of
 the elements in the Tuple.
 
 > [!NOTE]
@@ -134,7 +134,7 @@ and `explicitFieldTwo`, not `localVariableOne` and `localVariableTwo`:
 
 For any field where an explicit name is not provided, an applicable implicit
 name will be projected. Note that there is no requirement to provide semantic names,
-either explicitly or implicitly. The folowing initializer will have field
+either explicitly or implicitly. The following initializer will have field
 names `Item1`, whose value is `42` and `StringContent`, whose value is "The answer to everything":
 
 [!code-csharp[MixedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#MixedTuple "mixed tuple")]
@@ -236,7 +236,7 @@ are stored in a tuple. That creates this version:
 
 [!code-csharp[TupleVersion](../../samples/snippets/csharp/tuples/tuples/statistics.cs#07_TupleVersion "Refactor to use tuples")]
 
-Visual Studio's Refactoring suport makes it easy to extract the functionality
+Visual Studio's Refactoring support makes it easy to extract the functionality
 for the core statistics into a private method. That gives you a `private static`
 method that returns the tuple type with the three values of `Sum`, `SumOfSquares`, and `Count`:
 
@@ -318,7 +318,7 @@ work with the results.
 ## Deconstruction
 
 You can unpackage all the items in a tuple by *deconstructing* the tuple
-returned by a method. There are two different approaches to deconstructing
+returned by a method. There are three different approaches to deconstructing
 tuples.  First, you can explicitly declare the type of each field inside
 parentheses to create discrete variables for each of the elements in the tuple:
 
@@ -339,6 +339,21 @@ declarations inside the parentheses.
 Note that you cannot use a specific
 type outside the parentheses, even if every field in the tuple has the
 same type.
+
+You can deconstruct tuples with existing declarations as well:
+
+```csharp
+public class Point
+{
+    public int X { get; set; }
+    public int Y { get; set; }
+
+    public Point(int x, int y) => (X, Y) = (x, y);
+}
+```
+
+> [!WARNING]
+>  You cannot mix existing declarations with declarations inside the parentheses. For instance, the following is not allowed: `(var x, y) = MyMethod();`. This produces error CS8184 because *x* is declared inside the parentheses and *y* is previously declared elsewhere.
 
 ### Deconstructing user defined types
 

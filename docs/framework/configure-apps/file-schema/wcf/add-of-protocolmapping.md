@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 08e62249-1641-41d1-91b1-66d7b46244e4
 caps.latest.revision: 2
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;add&gt; of &lt;protocolMapping&gt;
 Represents a default protocol mapping between a transport protocol scheme (e.g., http, net.tcp, net.pipe, etc.) and a [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] binding. When creating default endpoints at runtime, [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] looks at the configured mappings and decides on which binding to use for a particular based address.  
@@ -24,13 +26,10 @@ Represents a default protocol mapping between a transport protocol scheme (e.g.,
   
 ## Syntax  
   
-```vb  
-   <protocolMapping>    <add binding="String"         bindingConfiguration="String"         scheme="http/net.msmq/net.pipe/net.tcp"/></protocolMapping>  
-```  
-  
-```csharp  
-```  
-  
+```xml
+   <protocolMapping>    <add binding="String"         bindingConfiguration="String"         scheme="http/net.msmq/net.pipe/net.tcp"/></protocolMapping>
+```
+
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
   
@@ -64,5 +63,5 @@ Represents a default protocol mapping between a transport protocol scheme (e.g.,
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.ProtocolMappingSection?displayProperty=fullName>      
- <xref:System.ServiceModel.Configuration.ProtocolMappingElement?displayProperty=fullName>    
+ <xref:System.ServiceModel.Configuration.ProtocolMappingSection?displayProperty=nameWithType>      
+ <xref:System.ServiceModel.Configuration.ProtocolMappingElement?displayProperty=nameWithType>    

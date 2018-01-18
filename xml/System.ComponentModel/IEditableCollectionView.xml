@@ -15,7 +15,7 @@
 ## Remarks  
  When a collection view implements the <xref:System.ComponentModel.IEditableCollectionView> interface, you can directly change the underlying collection, if it allows changes to be made, by using the methods and properties that <xref:System.ComponentModel.IEditableCollectionView> exposes, regardless of the collection's type.  
   
- The types <xref:System.Windows.Controls.ItemCollection>, <xref:System.Windows.Data.BindingListCollectionView>, and <xref:System.Windows.Data.ListCollectionView> are the types that ship with [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] that inherit from <xref:System.Windows.Data.CollectionView>.  These types also implement the <xref:System.ComponentModel.IEditableCollectionView>, so you can edit a collection that uses one of those types.  <xref:System.Windows.Controls.ItemCollection>, in particular, is often used because the <xref:System.Windows.Controls.ItemsControl.Items%2A?displayProperty=fullName> property is an <xref:System.Windows.Controls.ItemCollection>.  
+ The types <xref:System.Windows.Controls.ItemCollection>, <xref:System.Windows.Data.BindingListCollectionView>, and <xref:System.Windows.Data.ListCollectionView> are the types that ship with [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] that inherit from <xref:System.Windows.Data.CollectionView>.  These types also implement the <xref:System.ComponentModel.IEditableCollectionView>, so you can edit a collection that uses one of those types.  <xref:System.Windows.Controls.ItemCollection>, in particular, is often used because the <xref:System.Windows.Controls.ItemsControl.Items%2A?displayProperty=nameWithType> property is an <xref:System.Windows.Controls.ItemCollection>.  
   
    
   

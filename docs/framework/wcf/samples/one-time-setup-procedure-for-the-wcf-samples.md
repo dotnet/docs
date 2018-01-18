@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a5848ffd-3eb5-432d-812e-bd948ccb6bca
 caps.latest.revision: 83
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # One-Time Setup Procedure for the Windows Communication Foundation Samples
 Most of the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] samples are hosted in Internet Information Services (IIS) and run from a common virtual directory. This one-time setup procedure creates a folder on the disk; it also adds a virtual directory to IIS named **ServiceModelSamples**.  

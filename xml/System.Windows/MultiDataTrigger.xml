@@ -27,7 +27,7 @@
 ## Remarks  
  A <xref:System.Windows.MultiDataTrigger> object is similar to a <xref:System.Windows.MultiTrigger>, except that the conditions of a <xref:System.Windows.MultiDataTrigger> are based on property values of bound data instead of those of a <xref:System.Windows.UIElement>. In a <xref:System.Windows.MultiDataTrigger>, a condition is met when the property value of the data item matches the specified <xref:System.Windows.Condition.Value%2A>. You can then use setters or the <xref:System.Windows.TriggerBase.EnterActions%2A> and <xref:System.Windows.TriggerBase.ExitActions%2A> properties to apply changes or start actions when all of the conditions are met.  
   
- The <xref:System.Windows.MultiDataTrigger.Setters%2A> property of a <xref:System.Windows.MultiDataTrigger> object can only consist of <xref:System.Windows.Setter> objects. Adding a <xref:System.Windows.Setter> child to a <xref:System.Windows.MultiDataTrigger> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.MultiDataTrigger> object. <xref:System.Windows.EventSetter> objects are not supported; only <xref:System.Windows.Style.Setters%2A?displayProperty=fullName> supports <xref:System.Windows.EventSetter> objects.  
+ The <xref:System.Windows.MultiDataTrigger.Setters%2A> property of a <xref:System.Windows.MultiDataTrigger> object can only consist of <xref:System.Windows.Setter> objects. Adding a <xref:System.Windows.Setter> child to a <xref:System.Windows.MultiDataTrigger> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.MultiDataTrigger> object. <xref:System.Windows.EventSetter> objects are not supported; only <xref:System.Windows.Style.Setters%2A?displayProperty=nameWithType> supports <xref:System.Windows.EventSetter> objects.  
   
  For information about when to use triggers and when to use other techniques, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md).  
   
@@ -42,6 +42,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.TriggerBase" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -114,6 +115,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.MultiDataTrigger.Setters" />
       </Docs>
     </Member>
     <Member MemberName="Setters">
@@ -144,7 +146,7 @@
   
  If there are two <xref:System.Windows.Setter> objects in the same or different setter collections setting the same property, the <xref:System.Windows.Setter> that is declared last is used.  
   
- Adding a <xref:System.Windows.Setter> child to a <xref:System.Windows.MultiDataTrigger> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.MultiDataTrigger> object. <xref:System.Windows.EventSetter> objects are not supported; only <xref:System.Windows.Style.Setters%2A?displayProperty=fullName> supports <xref:System.Windows.EventSetter> objects.  
+ Adding a <xref:System.Windows.Setter> child to a <xref:System.Windows.MultiDataTrigger> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.MultiDataTrigger> object. <xref:System.Windows.EventSetter> objects are not supported; only <xref:System.Windows.Style.Setters%2A?displayProperty=nameWithType> supports <xref:System.Windows.EventSetter> objects.  
   
 <a name="xamlPropertyElementUsage_Setters"></a>   
 ## XAML Property Element Usage  
@@ -173,6 +175,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.MultiDataTrigger.Setters" />
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IAddChild.AddChild">

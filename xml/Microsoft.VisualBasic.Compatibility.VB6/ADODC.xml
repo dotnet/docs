@@ -766,7 +766,7 @@
     </Member>
     <Member MemberName="getDataMember">
       <MemberSignature Language="C#" Value="public object getDataMember (string dataMember, ref Guid riid);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance object getDataMember(string dataMember, valuetype System.Guid riid) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance object getDataMember(string dataMember, valuetype System.Guid&amp; riid) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ADODC.getDataMember(System.String,System.Guid@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugIlToNativeMappingTypes"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugIIToNativeMappingTypes enumeration [.NET Framework debugging]"
 ms.assetid: c35e2919-42c3-4ba0-ae28-443c35f66f93
@@ -28,6 +26,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugIlToNativeMappingTypes Enumeration
 Indicates whether a particular range of native instructions, represented by an instance of the COR_DEBUG_IL_TO_NATIVE_MAP structure, corresponds to a special code region.  
@@ -60,5 +60,5 @@ typedef enum CorDebugIlToNativeMappingTypes {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See Also  
- [GetILToNativeMapping Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-getiltonativemapping-method.md)   
+ [GetILToNativeMapping Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-getiltonativemapping-method.md)  
  [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)

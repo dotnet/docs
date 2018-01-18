@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents a control that has an intrinsic value that does not span a range and can be represented as a string. This string may or may not be editable depending on the control and its settings.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Automation.Provider.IValueProvider" />
   </Docs>
   <Members>
     <Member MemberName="Cached">
@@ -160,12 +161,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Single-line edit controls support programmatic access to their contents through <xref:System.Windows.Automation.ValuePattern>. However, multi-line edit controls do not support the <xref:System.Windows.Automation.ValuePattern>; instead they provide access to their content through the <xref:System.Windows.Automation.TextPattern>control pattern.  
+ Single-line edit controls support programmatic access to their contents through <xref:System.Windows.Automation.ValuePattern>. However, multi-line edit controls do not support the <xref:System.Windows.Automation.ValuePattern>; instead they provide access to their content through the <xref:System.Windows.Automation.TextPattern> control pattern.  
   
    
   
 ## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement> that supports the <xref:System.Windows.Automation.ValuePattern>control pattern has its <xref:System.Windows.Automation.ValuePattern.ValueProperty> set to a user-specified value.  
+ In the following example, an <xref:System.Windows.Automation.AutomationElement> that supports the <xref:System.Windows.Automation.ValuePattern> control pattern has its <xref:System.Windows.Automation.ValuePattern.ValueProperty> set to a user-specified value.  
   
  [!code-csharp[UIAValuePattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAValuePattern_snip/CSharp/UIAValuePattern_snippets.cs#103)]
  [!code-vb[UIAValuePattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAValuePattern_snip/VisualBasic/UIAValuePattern_snippets.vb#103)]  

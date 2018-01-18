@@ -33,7 +33,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control to create a button that displays an image. You can programmatically control the action associated with the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control by providing an event handler for the <xref:System.Web.UI.HtmlControls.HtmlInputImage.ServerClick> event.  
   
- The coordinates where the user clicks an <xref:System.Web.UI.HtmlControls.HtmlInputImage> control can be determined by using the <xref:System.Web.UI.ImageClickEventArgs.X?displayProperty=fullName> and <xref:System.Web.UI.ImageClickEventArgs.Y?displayProperty=fullName> properties of the <xref:System.Web.UI.ImageClickEventArgs?displayProperty=fullName> object that is passed as a parameter to the user-defined event handler.  
+ The coordinates where the user clicks an <xref:System.Web.UI.HtmlControls.HtmlInputImage> control can be determined by using the <xref:System.Web.UI.ImageClickEventArgs.X?displayProperty=nameWithType> and <xref:System.Web.UI.ImageClickEventArgs.Y?displayProperty=nameWithType> properties of the <xref:System.Web.UI.ImageClickEventArgs?displayProperty=nameWithType> object that is passed as a parameter to the user-defined event handler.  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlInputImage>, see the <xref:System.Web.UI.HtmlControls.HtmlInputImage.%23ctor%2A> constructor.  
   
@@ -45,11 +45,14 @@
 > [!NOTE]
 >  You must provide your own image files for this example to work correctly.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputImage.Src Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputImage.Src Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputImage.Src Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputImage.Src Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlInputImage.Src Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputImage.Src Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlInputImage.Src Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputImage.Src Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputControl" />
+    <altmember cref="E:System.Web.UI.HtmlControls.HtmlInputImage.ServerClick" />
+    <altmember cref="T:System.Web.UI.ImageClickEventArgs" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -81,8 +84,8 @@
 ## Examples  
  The following code example demonstrates how to create a new instance of the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control and place it on the Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputImageCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputImageCtor/CS/htmlinputimagectorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputImageCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputImageCtor/VB/htmlinputimagectorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputImageCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputImageCtor/CS/htmlinputimagectorcs.aspx#1)]
+ [!code-aspx-vb[HtmlInputImageCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputImageCtor/VB/htmlinputimagectorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -122,8 +125,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputImage.Align%2A> property to specify the alignment of the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control in relation to other elements on the Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputImage.Align Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputImage.Align Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputImage.Align Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputImage.Align Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlInputImage.Align Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputImage.Align Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlInputImage.Align Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputImage.Align Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -168,11 +171,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputImage.Alt%2A> property to specify the alternate text to display when the image is not available.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputImage.Src Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputImage.Src Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputImage.Src Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputImage.Src Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlInputImage.Src Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputImage.Src Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlInputImage.Src Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputImage.Src Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputImage.Src" />
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -212,8 +216,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputImage.Border%2A> property to specify the border width for the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputImage.Align Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputImage.Align Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputImage.Align Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputImage.Align Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlInputImage.Align Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputImage.Align Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlInputImage.Align Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputImage.Align Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -255,11 +259,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputImage.CausesValidation%2A> property to prevent page validation from occurring. Notice how the <xref:System.Web.UI.WebControls.BaseValidator.Validate%2A> method activates each validation control independently.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputImageCausesValidation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputImageCausesValidation/CS/htmlinputimagecausesvalidationcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputImageCausesValidation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputImageCausesValidation/VB/htmlinputimagecausesvalidationvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputImageCausesValidation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputImageCausesValidation/CS/htmlinputimagecausesvalidationcs.aspx#1)]
+ [!code-aspx-vb[HtmlInputImageCausesValidation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputImageCausesValidation/VB/htmlinputimagecausesvalidationvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Page.Validate" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputImage.ValidationGroup" />
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -297,6 +303,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -328,8 +335,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlInputImage.OnPreRender%2A> method so that it always displays a custom <xref:System.Web.UI.HtmlControls.HtmlInputImage> server control with no border.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHtmlInputImageOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputImageOnPreRender/CS/custom_htmlinputimage_onprerendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHtmlInputImageOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputImageOnPreRender/VB/custom_htmlinputimage_onprerendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHtmlInputImageOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputImageOnPreRender/CS/custom_htmlinputimage_onprerendercs.aspx#1)]
+ [!code-aspx-vb[CustomHtmlInputImageOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputImageOnPreRender/VB/custom_htmlinputimage_onprerendervb.aspx#1)]  
   
  [!code-csharp[CustomHtmlInputImageOnPreRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputImageOnPreRender/CS/custom_htmlinputimage_onprerender.cs#2)]
  [!code-vb[CustomHtmlInputImageOnPreRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputImageOnPreRender/VB/custom_htmlinputimage_onprerender.vb#2)]  
@@ -339,6 +346,7 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.HtmlControls.HtmlInputImage.OnPreRender(System.EventArgs)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlInputImage.OnPreRender(System.EventArgs)" /> method so that registered delegates receive the <see cref="E:System.Web.UI.Control.PreRender" /> event.</para>
         </block>
+        <altmember cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnServerClick">
@@ -365,7 +373,7 @@
 ## Remarks  
  The <xref:System.Web.UI.HtmlControls.HtmlInputImage.ServerClick> event is raised when the user clicks an <xref:System.Web.UI.HtmlControls.HtmlInputImage> control.  
   
- The coordinates where the user clicks an <xref:System.Web.UI.HtmlControls.HtmlInputImage> control can be determined by using the <xref:System.Web.UI.ImageClickEventArgs.X?displayProperty=fullName> and <xref:System.Web.UI.ImageClickEventArgs.Y?displayProperty=fullName> properties of the <xref:System.Web.UI.ImageClickEventArgs?displayProperty=fullName> object. The <xref:System.Web.UI.ImageClickEventArgs?displayProperty=fullName> object is passed as a parameter to the user-defined event handler.  
+ The coordinates where the user clicks an <xref:System.Web.UI.HtmlControls.HtmlInputImage> control can be determined by using the <xref:System.Web.UI.ImageClickEventArgs.X?displayProperty=nameWithType> and <xref:System.Web.UI.ImageClickEventArgs.Y?displayProperty=nameWithType> properties of the <xref:System.Web.UI.ImageClickEventArgs?displayProperty=nameWithType> object. The <xref:System.Web.UI.ImageClickEventArgs?displayProperty=nameWithType> object is passed as a parameter to the user-defined event handler.  
   
 > [!NOTE]
 >  The origin (0, 0) is located at the upper-left corner of the image.  
@@ -379,17 +387,19 @@
 ## Examples  
  The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.HtmlControls.HtmlInputImage.ServerClick> event to determine the coordinates where the user clicks the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputImage.ServerClick Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputImage.ServerClick Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputImage.ServerClick Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputImage.ServerClick Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlInputImage.ServerClick Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputImage.ServerClick Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlInputImage.ServerClick Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputImage.ServerClick Example/VB/sourcevb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputImageServerClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputImageServerClick/CS/htmlinputimageserverclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputImageServerClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputImageServerClick/VB/htmlinputimageserverclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputImageServerClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputImageServerClick/CS/htmlinputimageserverclickcs.aspx#1)]
+ [!code-aspx-vb[HtmlInputImageServerClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputImageServerClick/VB/htmlinputimageserverclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.HtmlControls.HtmlInputImage.OnServerClick(System.Web.UI.ImageClickEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlInputImage.OnServerClick(System.Web.UI.ImageClickEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.HtmlControls.HtmlInputImage.ServerClick" />
+        <altmember cref="T:System.Web.UI.ImageClickEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -422,6 +432,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputImage.CausesValidation" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputImage.ValidationGroup" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -449,6 +462,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputImage.ValidationGroup" />
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />
       </Docs>
     </Member>
     <Member MemberName="RenderAttributes">
@@ -482,8 +497,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlInputImage.RenderAttributes%2A> method in a custom server control so that specific alternate text, accessible as a ToolTip, is always displayed with the <xref:System.Web.UI.HtmlControls.HtmlInputImage>.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHtmlInputImageRenderAttributes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputImageRenderAttributes/CS/custom_htmlinputimage_renderattributescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHtmlInputImageRenderAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputImageRenderAttributes/VB/custom_htmlinputimage_renderattributesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHtmlInputImageRenderAttributes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputImageRenderAttributes/CS/custom_htmlinputimage_renderattributescs.aspx#1)]
+ [!code-aspx-vb[CustomHtmlInputImageRenderAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputImageRenderAttributes/VB/custom_htmlinputimage_renderattributesvb.aspx#1)]  
   
  [!code-csharp[CustomHtmlInputImageRenderAttributes#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputImageRenderAttributes/CS/custom_htmlinputimage_renderattributes.cs#2)]
  [!code-vb[CustomHtmlInputImageRenderAttributes#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputImageRenderAttributes/VB/custom_htmlinputimage_renderattributes.vb#2)]  
@@ -491,6 +506,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The <see cref="P:System.Web.UI.HtmlControls.HtmlInputImage.Src" /> property contains a malformed URL.</exception>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputImage.CausesValidation" />
+        <altmember cref="M:System.Web.UI.Control.ResolveClientUrl(System.String)" />
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlInputControl.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="ServerClick">
@@ -520,14 +538,16 @@
 ## Examples  
  The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.HtmlControls.HtmlInputImage.ServerClick> event to determine the coordinates where the user clicks the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputImage.ServerClick Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputImage.ServerClick Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputImage.ServerClick Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputImage.ServerClick Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlInputImage.ServerClick Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputImage.ServerClick Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlInputImage.ServerClick Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputImage.ServerClick Example/VB/sourcevb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputImageServerClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputImageServerClick/CS/htmlinputimageserverclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputImageServerClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputImageServerClick/VB/htmlinputimageserverclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputImageServerClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputImageServerClick/CS/htmlinputimageserverclickcs.aspx#1)]
+ [!code-aspx-vb[HtmlInputImageServerClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputImageServerClick/VB/htmlinputimageserverclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlInputImage.OnServerClick(System.Web.UI.ImageClickEventArgs)" />
+        <altmember cref="T:System.Web.UI.ImageClickEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Src">
@@ -569,11 +589,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputImage.Src%2A> property to specify the path to an image displayed in the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputImage.Src Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputImage.Src Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputImage.Src Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputImage.Src Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlInputImage.Src Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputImage.Src Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlInputImage.Src Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputImage.Src Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputImage.Alt" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -673,11 +694,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputImage.ValidationGroup%2A> property to specify the controls to validate when an <xref:System.Web.UI.HtmlControls.HtmlInputImage> control posts back to the server. The page contains two text boxes to capture data from the user and two <xref:System.Web.UI.WebControls.RequiredFieldValidator> controls to ensure that the user does not leave a text box blank. The <xref:System.Web.UI.WebControls.RequiredFieldValidator> control for the first text box is in the `CityInfoGroup` validation group and the <xref:System.Web.UI.WebControls.RequiredFieldValidator> control for the second box is in the `StateInfoGroup` validation group. When the `CityQueryButton` is clicked, only the control in the `CityInfoGroup` validation group is validated. When the `StateQueryButton` is clicked, only the control in the `StateInfoGroup` validation group is validated.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputImageValidationGroup#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputImageValidationGroup/cs/htmlinputimagevalidationgroupcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputImageValidationGroup#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputImageValidationGroup/vb/htmlinputimagevalidationgroupvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputImageValidationGroup#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputImageValidationGroup/cs/htmlinputimagevalidationgroupcs.aspx#1)]
+ [!code-aspx-vb[HtmlInputImageValidationGroup#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputImageValidationGroup/vb/htmlinputimagevalidationgroupvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputImage.CausesValidation" />
       </Docs>
     </Member>
   </Members>

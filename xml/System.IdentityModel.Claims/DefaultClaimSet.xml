@@ -57,7 +57,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DefaultClaimSet (System.IdentityModel.Claims.Claim[] claims);" />
+      <MemberSignature Language="C#" Value="public DefaultClaimSet (params System.IdentityModel.Claims.Claim[] claims);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Claims.Claim[] claims) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.DefaultClaimSet.#ctor(System.IdentityModel.Claims.Claim[])" />
       <MemberType>Constructor</MemberType>
@@ -125,7 +125,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DefaultClaimSet (System.IdentityModel.Claims.ClaimSet issuer, System.IdentityModel.Claims.Claim[] claims);" />
+      <MemberSignature Language="C#" Value="public DefaultClaimSet (System.IdentityModel.Claims.ClaimSet issuer, params System.IdentityModel.Claims.Claim[] claims);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Claims.ClaimSet issuer, class System.IdentityModel.Claims.Claim[] claims) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.DefaultClaimSet.#ctor(System.IdentityModel.Claims.ClaimSet,System.IdentityModel.Claims.Claim[])" />
       <MemberType>Constructor</MemberType>
@@ -376,5 +376,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Claims.DefaultClaimSet" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

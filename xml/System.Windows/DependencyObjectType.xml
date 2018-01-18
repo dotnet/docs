@@ -18,10 +18,11 @@
 ## Remarks  
  <xref:System.Windows.DependencyObjectType> represents a specific underlying system ([!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)]) <xref:System.Type> of a <xref:System.Windows.DependencyObject>. <xref:System.Windows.DependencyObjectType> is essentially a wrapper for the ([!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)]) <xref:System.Type> so that it can extend some of its capabilities.  
   
- This class has no public constructor. Instances of this class can only be obtained through properties on other objects (such as <xref:System.Windows.DependencyObject.DependencyObjectType%2A?displayProperty=fullName>), or through the static method <xref:System.Windows.DependencyObjectType.FromSystemType%2A>.  
+ This class has no public constructor. Instances of this class can only be obtained through properties on other objects (such as <xref:System.Windows.DependencyObject.DependencyObjectType%2A?displayProperty=nameWithType>), or through the static method <xref:System.Windows.DependencyObjectType.FromSystemType%2A>.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.DependencyProperty" />
   </Docs>
   <Members>
     <Member MemberName="BaseType">
@@ -206,6 +207,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.DependencyProperty" />
       </Docs>
     </Member>
     <Member MemberName="SystemType">

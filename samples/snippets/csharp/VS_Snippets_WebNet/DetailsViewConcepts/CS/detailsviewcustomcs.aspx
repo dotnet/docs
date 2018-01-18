@@ -76,7 +76,7 @@
                 
                 <EditRowStyle backcolor="LightCyan"/>
 
-<%-- <Snippet6> --%>                  
+<!-- <Snippet6> -->                  
   <Fields>                  
     <asp:BoundField DataField="EmployeeID" HeaderText="Employee ID" InsertVisible="False" ReadOnly="true"/>                    
     <asp:BoundField DataField="FirstName"  HeaderText="First Name"/>
@@ -97,7 +97,7 @@
       </EditItemTemplate>
     </asp:TemplateField>                    
   </Fields> 
-<%-- </Snippet6> --%>                  
+<!-- </Snippet6> -->                  
               </asp:DetailsView>
             </td>                
           </tr>            

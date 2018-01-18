@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedMethod::GetOffset"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetOffset method, ISymUnmanagedMethod interface [.NET Framework debugging]"
   - "ISymUnmanagedMethod::GetOffset method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedMethod::GetOffset Method
 Returns the offset within this method that corresponds to a given position within a document.  

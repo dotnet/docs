@@ -15,14 +15,17 @@ caps.latest.revision: 24
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Thread-Safe Collections
-The [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] introduces the <xref:System.Collections.Concurrent?displayProperty=fullName> namespace, which includes several collection classes that are both thread-safe and scalable. Multiple threads can safely and efficiently add or remove items from these collections, without requiring additional synchronization in user code. When you write new code, use the concurrent collection classes whenever the collection will be writing to multiple threads concurrently. If you are only reading from a shared collection, then you can use the classes in the <xref:System.Collections.Generic?displayProperty=fullName> namespace. We recommend that you do not use 1.0 collection classes unless you are required to target the .NET Framework 1.1 or earlier runtime.  
+The [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] introduces the <xref:System.Collections.Concurrent?displayProperty=nameWithType> namespace, which includes several collection classes that are both thread-safe and scalable. Multiple threads can safely and efficiently add or remove items from these collections, without requiring additional synchronization in user code. When you write new code, use the concurrent collection classes whenever the collection will be writing to multiple threads concurrently. If you are only reading from a shared collection, then you can use the classes in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace. We recommend that you do not use 1.0 collection classes unless you are required to target the .NET Framework 1.1 or earlier runtime.  
   
 ## Thread Synchronization in the .NET Framework 1.0 and 2.0 Collections  
- The collections introduced in the .NET Framework 1.0 are found in the <xref:System.Collections?displayProperty=fullName> namespace. These collections, which include the commonly used <xref:System.Collections.ArrayList> and <xref:System.Collections.Hashtable>, provide some thread-safety through the `Synchronized` property, which returns a thread-safe wrapper around the collection. The wrapper works by locking the entire collection on every add or remove operation. Therefore, each thread that is attempting to access the collection must wait for its turn to take the one lock. This is not scalable and can cause significant performance degradation for large collections. Also, the design is not completely protected from race conditions. For more information, see [Synchronization in Generic Collections](http://go.microsoft.com/fwlink/?LinkID=161130) on the MSDN Web site.  
+ The collections introduced in the .NET Framework 1.0 are found in the <xref:System.Collections?displayProperty=nameWithType> namespace. These collections, which include the commonly used <xref:System.Collections.ArrayList> and <xref:System.Collections.Hashtable>, provide some thread-safety through the `Synchronized` property, which returns a thread-safe wrapper around the collection. The wrapper works by locking the entire collection on every add or remove operation. Therefore, each thread that is attempting to access the collection must wait for its turn to take the one lock. This is not scalable and can cause significant performance degradation for large collections. Also, the design is not completely protected from race conditions. For more information, see [Synchronization in Generic Collections](http://go.microsoft.com/fwlink/?LinkID=161130) on the MSDN Web site.  
   
- The collection classes introduced in the .NET Framework 2.0 are found in the <xref:System.Collections.Generic?displayProperty=fullName> namespace. These include <xref:System.Collections.Generic.List%601>, <xref:System.Collections.Generic.Dictionary%602>, and so on. These classes provide improved type safety and performance compared to the .NET Framework 1.0 classes. However, the .NET Framework 2.0 collection classes do not provide any thread synchronization; user code must provide all synchronization when items are added or removed on multiple threads concurrently.  
+ The collection classes introduced in the .NET Framework 2.0 are found in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace. These include <xref:System.Collections.Generic.List%601>, <xref:System.Collections.Generic.Dictionary%602>, and so on. These classes provide improved type safety and performance compared to the .NET Framework 1.0 classes. However, the .NET Framework 2.0 collection classes do not provide any thread synchronization; user code must provide all synchronization when items are added or removed on multiple threads concurrently.  
   
  We recommend the concurrent collections classes in the [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] because they provide not only the type safety of the .NET Framework 2.0 collection classes, but also more efficient and more complete thread safety than the [!INCLUDE[net_v10_short](../../../../includes/net-v10-short-md.md)] collections provide.  
   
@@ -34,7 +37,7 @@ The [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] introduc
 > [!NOTE]
 >  Because the concurrent collections classes support <xref:System.Collections.ICollection>, they provide implementations for the <xref:System.Collections.ICollection.IsSynchronized%2A> and <xref:System.Collections.ICollection.SyncRoot%2A> properties, even though these properties are irrelevant. `IsSynchronized` always returns `false` and `SyncRoot` is always `null` (`Nothing` in Visual Basic).  
   
- The following table lists the collection types in the <xref:System.Collections.Concurrent?displayProperty=fullName> namespace.  
+ The following table lists the collection types in the <xref:System.Collections.Concurrent?displayProperty=nameWithType> namespace.  
   
 |Type|Description|  
 |----------|-----------------|  
@@ -49,7 +52,7 @@ The [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] introduc
   
 |Title|Description|  
 |-----------|-----------------|  
-|[BlockingCollection Overview](../../../../docs/standard/collections/thread-safe/blockingcollection-overview.md)|Describes the functionality provided by the <xref:System.Collections.Concurrent.BlockingCollection%601>type.|  
+|[BlockingCollection Overview](../../../../docs/standard/collections/thread-safe/blockingcollection-overview.md)|Describes the functionality provided by the <xref:System.Collections.Concurrent.BlockingCollection%601> type.|  
 |[How to: Add and Remove Items from a ConcurrentDictionary](../../../../docs/standard/collections/thread-safe/how-to-add-and-remove-items.md)|Describes how to add and remove elements from a <xref:System.Collections.Concurrent.ConcurrentDictionary%602>|  
 |[How to: Add and Take Items Individually from a BlockingCollection](../../../../docs/standard/collections/thread-safe/how-to-add-and-take-items.md)|Describes how to add and retrieve items from a blocking collection without using the read-only enumerator.|  
 |[How to: Add Bounding and Blocking Functionality to a Collection](../../../../docs/standard/collections/thread-safe/how-to-add-bounding-and-blocking.md)|Describes how to use any collection class as the underlying storage mechanism for an <xref:System.Collections.Concurrent.IProducerConsumerCollection%601> collection.|  
@@ -58,4 +61,4 @@ The [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] introduc
 |[How to: Create an Object Pool by Using a ConcurrentBag](../../../../docs/standard/collections/thread-safe/how-to-create-an-object-pool.md)|Shows how to use a concurrent bag to improve performance in scenarios where you can reuse objects instead of continually creating new ones.|  
   
 ## Reference  
- <xref:System.Collections.Concurrent?displayProperty=fullName>
+ <xref:System.Collections.Concurrent?displayProperty=nameWithType>

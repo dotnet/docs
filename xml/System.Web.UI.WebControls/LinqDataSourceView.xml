@@ -46,7 +46,7 @@
   
 -   The <xref:System.Web.UI.WebControls.LinqDataSource.Deleted> event.  
   
- You can sort the data that you retrieve with the <xref:System.Web.UI.WebControls.LinqDataSource> control by adding an `OrderBy` clause. You can provide a sort expression for the <xref:System.Web.UI.WebControls.LinqDataSourceView> instance by setting the <xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A> property of the <xref:System.Web.UI.DataSourceSelectArguments> object that is passed to the <xref:System.Web.UI.WebControls.LinqDataSourceView.Select%2A> method. The syntax for the <xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A> property is the same as the syntax for a <xref:System.Data.DataView.Sort%2A?displayProperty=fullName> property.  
+ You can sort the data that you retrieve with the <xref:System.Web.UI.WebControls.LinqDataSource> control by adding an `OrderBy` clause. You can provide a sort expression for the <xref:System.Web.UI.WebControls.LinqDataSourceView> instance by setting the <xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A> property of the <xref:System.Web.UI.DataSourceSelectArguments> object that is passed to the <xref:System.Web.UI.WebControls.LinqDataSourceView.Select%2A> method. The syntax for the <xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A> property is the same as the syntax for a <xref:System.Data.DataView.Sort%2A?displayProperty=nameWithType> property.  
   
  The <xref:System.Web.UI.WebControls.LinqDataSourceView> control implements the <xref:System.Web.UI.IStateManager> interface and uses view state to track its state across page requests. Implementations of the <xref:System.Web.UI.WebControls.QueryableDataSourceView.IsTrackingViewState%2A> property and the <xref:System.Web.UI.WebControls.QueryableDataSourceView.LoadViewState%2A>, <xref:System.Web.UI.WebControls.QueryableDataSourceView.SaveViewState%2A>, and <xref:System.Web.UI.WebControls.QueryableDataSourceView.TrackViewState%2A> methods are provided to enable view-state tracking for the control. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
   
@@ -109,6 +109,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.EnableDelete" />
       </Docs>
     </Member>
     <Member MemberName="CanInsert">
@@ -135,6 +136,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.EnableInsert" />
       </Docs>
     </Member>
     <Member MemberName="CanPage">
@@ -161,6 +163,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.AutoPage" />
       </Docs>
     </Member>
     <Member MemberName="CanRetrieveTotalRowCount">
@@ -213,6 +216,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.DataSourceSelectArguments.SortExpression" />
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.AutoSort" />
       </Docs>
     </Member>
     <Member MemberName="CanUpdate">
@@ -239,6 +244,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.EnableUpdate" />
       </Docs>
     </Member>
     <Member MemberName="ContextCreated">
@@ -259,7 +265,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Handle this event if you want to validate the data context object, or if you want to handle exceptions that were thrown during the context creation. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreated?displayProperty=fullName> event.  
+ Handle this event if you want to validate the data context object, or if you want to handle exceptions that were thrown during the context creation. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreated?displayProperty=nameWithType> event.  
   
  ]]></format>
         </remarks>
@@ -283,7 +289,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Handle this event if you want to manually construct the data context object. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreating?displayProperty=fullName> event.  
+ Handle this event if you want to manually construct the data context object. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreating?displayProperty=nameWithType> event.  
   
  ]]></format>
         </remarks>
@@ -355,12 +361,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you set the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property of the <xref:System.Web.UI.WebControls.LinqDataSource> control, that value is also set for the <xref:System.Web.UI.WebControls.LinqDataSourceView.ContextTypeName%2A> property of the <xref:System.Web.UI.WebControls.LinqDataSourceView> control. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A?displayProperty=fullName> object.  
+ When you set the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property of the <xref:System.Web.UI.WebControls.LinqDataSource> control, that value is also set for the <xref:System.Web.UI.WebControls.LinqDataSourceView.ContextTypeName%2A> property of the <xref:System.Web.UI.WebControls.LinqDataSourceView> control. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A?displayProperty=nameWithType> object.  
   
  This property must be specified unless the query data is provided during the <xref:System.Web.UI.WebControls.LinqDataSourceView.Selecting> event, or unless the context is created manually during the <xref:System.Web.UI.WebControls.LinqDataSourceView.ContextCreating> event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.ContextTypeName" />
       </Docs>
     </Member>
     <Member MemberName="CreateContext">
@@ -429,6 +436,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSource.Deleted" />
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSourceView.Deleting" />
       </Docs>
     </Member>
     <Member MemberName="DeleteDataObject">
@@ -498,10 +507,11 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.LinqDataSourceView.Deleting> event to validate the object to be deleted, to change a value before the delete operation, or to cancel the delete operation.  
   
- For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.Deleting?displayProperty=fullName> event.  
+ For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.Deleting?displayProperty=nameWithType> event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSourceView.Deleted" />
       </Docs>
     </Member>
     <Member MemberName="DisposeContext">
@@ -597,7 +607,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.EnableObjectTracking%2A?displayProperty=fullName> property.  
+ For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.EnableObjectTracking%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -709,6 +719,7 @@
         <summary>Performs a data retrieval operation.</summary>
         <returns>A list of data objects or rows.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.LinqDataSourceView.Select(System.Web.UI.DataSourceSelectArguments)" />
       </Docs>
     </Member>
     <Member MemberName="ExecuteUpdate">
@@ -742,6 +753,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.LinqDataSourceView.Update(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="GetSource">
@@ -854,10 +866,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Handle this event to catch exceptions that were thrown during the insert operation or to examine the values after an insert operation has completed. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.Inserted?displayProperty=fullName> event.  
+ Handle this event to catch exceptions that were thrown during the insert operation or to examine the values after an insert operation has completed. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.Inserted?displayProperty=nameWithType> event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.LinqDataSourceView.Insert(System.Collections.IDictionary)" />
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSourceView.Inserting" />
       </Docs>
     </Member>
     <Member MemberName="Inserting">
@@ -878,10 +892,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Handle the <xref:System.Web.UI.WebControls.LinqDataSourceView.Inserting> event to validate the object to be inserted, to change a value before the insert operation, or to cancel the insert operation. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.Inserting?displayProperty=fullName> event.  
+ Handle the <xref:System.Web.UI.WebControls.LinqDataSourceView.Inserting> event to validate the object to be inserted, to change a value before the insert operation, or to cancel the insert operation. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.Inserting?displayProperty=nameWithType> event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.LinqDataSourceView.Insert(System.Collections.IDictionary)" />
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSourceView.Inserted" />
       </Docs>
     </Member>
     <Member MemberName="InsertObject">
@@ -925,6 +941,7 @@
         <param name="e">The event data.</param>
         <summary>Raises the <see cref="E:System.Web.UI.WebControls.LinqDataSourceView.ContextCreated" /> event</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSource.ContextCreated" />
       </Docs>
     </Member>
     <Member MemberName="OnContextCreating">
@@ -946,6 +963,7 @@
         <param name="e">The event data.</param>
         <summary>Raises the <see cref="E:System.Web.UI.WebControls.LinqDataSourceView.ContextCreating" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSource.ContextCreating" />
       </Docs>
     </Member>
     <Member MemberName="OnContextDisposing">
@@ -967,6 +985,7 @@
         <param name="e">The event data.</param>
         <summary>Raises the <see cref="E:System.Web.UI.WebControls.LinqDataSourceView.ContextDisposing" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSource.ContextDisposing" />
       </Docs>
     </Member>
     <Member MemberName="OnDeleted">
@@ -1000,6 +1019,7 @@
         <block subset="none" type="overrides">
           <para>When you override the <see cref="M:System.Web.UI.WebControls.LinqDataSourceView.OnDeleted(System.Web.UI.WebControls.LinqDataSourceStatusEventArgs)" /> method in a derived class, make sure that you call the <see cref="M:System.Web.UI.WebControls.LinqDataSourceView.OnDeleted(System.Web.UI.WebControls.LinqDataSourceStatusEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSource.Deleted" />
       </Docs>
     </Member>
     <Member MemberName="OnDeleting">
@@ -1033,6 +1053,7 @@
         <block subset="none" type="overrides">
           <para>When you override the <see cref="M:System.Web.UI.WebControls.LinqDataSourceView.OnDeleting(System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs)" /> method in a derived class, make sure that you call the <see cref="M:System.Web.UI.WebControls.LinqDataSourceView.OnDeleting(System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSource.Deleting" />
       </Docs>
     </Member>
     <Member MemberName="OnException">
@@ -1335,6 +1356,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSource.Selected" />
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSourceView.Selecting" />
       </Docs>
     </Member>
     <Member MemberName="Selecting">
@@ -1355,10 +1378,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Handle the <xref:System.Web.UI.WebControls.LinqDataSourceView.Selecting> event to change values that are used during the data retrieval operation. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.Selecting?displayProperty=fullName> event.  
+ Handle the <xref:System.Web.UI.WebControls.LinqDataSourceView.Selecting> event to change values that are used during the data retrieval operation. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.Selecting?displayProperty=nameWithType> event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSourceView.Selected" />
       </Docs>
     </Member>
     <Member MemberName="StoreOriginalValues">
@@ -1455,6 +1479,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSource.Updated" />
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSourceView.Updating" />
       </Docs>
     </Member>
     <Member MemberName="UpdateDataObject">
@@ -1526,10 +1552,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Handle the <xref:System.Web.UI.WebControls.LinqDataSourceView.Updating> event to validate the object to be updated, to change a value before the update operation, or to cancel the update operation. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.Updating?displayProperty=fullName> event.  
+ Handle the <xref:System.Web.UI.WebControls.LinqDataSourceView.Updating> event to validate the object to be updated, to change a value before the update operation, or to cancel the update operation. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.Updating?displayProperty=nameWithType> event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.LinqDataSourceView.Updated" />
       </Docs>
     </Member>
     <Member MemberName="ValidateContextType">
@@ -1587,7 +1614,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You cannot delete data when the <xref:System.Web.UI.WebControls.QueryableDataSourceView.GroupBy%2A> property or the <xref:System.Web.UI.WebControls.QueryableDataSourceView.SelectNew%2A> property contains a value other than `null`. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.EnableDelete%2A?displayProperty=fullName> property.  
+ You cannot delete data when the <xref:System.Web.UI.WebControls.QueryableDataSourceView.GroupBy%2A> property or the <xref:System.Web.UI.WebControls.QueryableDataSourceView.SelectNew%2A> property contains a value other than `null`. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.EnableDelete%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -1637,7 +1664,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You cannot insert data when the <xref:System.Web.UI.WebControls.QueryableDataSourceView.GroupBy%2A> property or the <xref:System.Web.UI.WebControls.QueryableDataSourceView.SelectNew%2A> property contains a value other than `null`. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.EnableInsert%2A?displayProperty=fullName> property.  
+ You cannot insert data when the <xref:System.Web.UI.WebControls.QueryableDataSourceView.GroupBy%2A> property or the <xref:System.Web.UI.WebControls.QueryableDataSourceView.SelectNew%2A> property contains a value other than `null`. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.EnableInsert%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -1696,12 +1723,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You cannot update data when the <xref:System.Web.UI.WebControls.QueryableDataSourceView.GroupBy%2A> property or the <xref:System.Web.UI.WebControls.QueryableDataSourceView.SelectNew%2A> property contains a value other than `null`. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.EnableUpdate%2A?displayProperty=fullName> property.  
+ You cannot update data when the <xref:System.Web.UI.WebControls.QueryableDataSourceView.GroupBy%2A> property or the <xref:System.Web.UI.WebControls.QueryableDataSourceView.SelectNew%2A> property contains a value other than `null`. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.EnableUpdate%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The update operation is not supported.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateContext">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of the data context type.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -28,7 +28,7 @@
   
  <xref:System.Data.EntityClient.EntityDataReader> does not implicitly consume result sets to make output parameters available. Therefore, note the following:  
   
--   <xref:System.Data.EntityClient.EntityDataReader> calls the <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> only when <xref:System.Data.EntityClient.EntityDataReader.NextResult%2A?displayProperty=fullName> is explicitly called. If <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> throws an exeption, the <xref:System.Data.EntityClient.EntityDataReader> will wrap it in an <xref:System.Data.EntityException> (or a derived exception).  
+-   <xref:System.Data.EntityClient.EntityDataReader> calls the <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=nameWithType> only when <xref:System.Data.EntityClient.EntityDataReader.NextResult%2A?displayProperty=nameWithType> is explicitly called. If <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=nameWithType> throws an exception, the <xref:System.Data.EntityClient.EntityDataReader> will wrap it in an <xref:System.Data.EntityException> (or a derived exception).  
   
 -   <xref:System.Data.EntityClient.EntityDataReader.Close%2A> only closes the <xref:System.Data.Common.DbDataReader>, without consuming any pending records or result sets.  
   
@@ -63,7 +63,7 @@
   
  <xref:System.Data.EntityClient.EntityDataReader> does not implicitly consume result sets to make output parameters available. Therefore, note the following:  
   
--   <xref:System.Data.EntityClient.EntityDataReader> calls the <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> only when <xref:System.Data.EntityClient.EntityDataReader.NextResult%2A?displayProperty=fullName> is explicitly called. If <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> throws an exception, <xref:System.Data.EntityClient.EntityDataReader> will wrap it in <xref:System.Data.EntityException> (or a derived exception).  
+-   <xref:System.Data.EntityClient.EntityDataReader> calls the <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=nameWithType> only when <xref:System.Data.EntityClient.EntityDataReader.NextResult%2A?displayProperty=nameWithType> is explicitly called. If <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=nameWithType> throws an exception, <xref:System.Data.EntityClient.EntityDataReader> will wrap it in <xref:System.Data.EntityException> (or a derived exception).  
   
 -   <xref:System.Data.EntityClient.EntityDataReader.Close%2A> only closes the <xref:System.Data.Common.DbDataReader>, without consuming any pending records or result sets.  
   
@@ -143,7 +143,7 @@
   
  <xref:System.Data.EntityClient.EntityDataReader> does not implicitly consume result sets to make output parameters available. Therefore, note the following:  
   
--   <xref:System.Data.EntityClient.EntityDataReader> calls the <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> only when <xref:System.Data.EntityClient.EntityDataReader.NextResult%2A?displayProperty=fullName> is explicitly called. If <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> throws an exception, the <xref:System.Data.EntityClient.EntityDataReader> will wrap it in an <xref:System.Data.EntityException> (or a derived exception).  
+-   <xref:System.Data.EntityClient.EntityDataReader> calls the <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=nameWithType> only when <xref:System.Data.EntityClient.EntityDataReader.NextResult%2A?displayProperty=nameWithType> is explicitly called. If <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=nameWithType> throws an exception, the <xref:System.Data.EntityClient.EntityDataReader> will wrap it in an <xref:System.Data.EntityException> (or a derived exception).  
   
 -   <xref:System.Data.EntityClient.EntityDataReader.Close%2A> only closes the <xref:System.Data.Common.DbDataReader>, without consuming any pending records or result sets.  
   
@@ -1029,5 +1029,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the value of a specified column as an instance of <see cref="T:System.Object" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

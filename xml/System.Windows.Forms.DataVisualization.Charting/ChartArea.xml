@@ -1075,7 +1075,7 @@
  The depth of a series can be used to determine a Z value for a point that is used in a custom drawing routine.  
   
 > [!NOTE]
->  Any points used in custom 3D drawing must be transformed from relative 3D coordinates to relative 2D coordinates using the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.TransformPoints%2A>method.  
+>  Any points used in custom 3D drawing must be transformed from relative 3D coordinates to relative 2D coordinates using the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.TransformPoints%2A> method.  
   
  To get relative X and Y-values from an axis, use the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.ValueToPosition%2A> method for both the X and Y axes.  
   
@@ -1111,7 +1111,7 @@
  The Z position of a series is normally used for a custom drawing routine.  
   
 > [!NOTE]
->  Any points used in custom 3D drawing must be transformed from relative 3D coordinates to relative 2D coordinates using the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.TransformPoints%2A>method.  
+>  Any points used in custom 3D drawing must be transformed from relative 3D coordinates to relative 2D coordinates using the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.TransformPoints%2A> method.  
   
  To get relative X and Y-values from an axis, use the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.ValueToPosition%2A> method for both the X and Y axes.  
   
@@ -1448,5 +1448,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

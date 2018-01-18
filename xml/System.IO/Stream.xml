@@ -88,6 +88,9 @@
   
  Do not override the <see cref="M:System.IO.Stream.Close" /> method, instead, put all the <see cref="T:System.IO.Stream" /> cleanup logic in the <see cref="M:System.IO.Stream.Dispose(System.Boolean)" /> method. For more information, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).</para>
     </block>
+    <altmember cref="T:System.IO.FileStream" />
+    <altmember cref="T:System.IO.MemoryStream" />
+    <altmember cref="T:System.IO.BufferedStream" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -251,6 +254,8 @@
         <exception cref="T:System.ArgumentException">One or more of the arguments is invalid.</exception>
         <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
         <exception cref="T:System.NotSupportedException">The current <see langword="Stream" /> implementation does not support the write operation.</exception>
+        <altmember cref="M:System.IO.Stream.EndWrite(System.IAsyncResult)" />
+        <altmember cref="P:System.IO.Stream.CanWrite" />
       </Docs>
     </Member>
     <Member MemberName="CanRead">
@@ -391,6 +396,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IO.Stream.ReadTimeout" />
+        <altmember cref="P:System.IO.Stream.WriteTimeout" />
       </Docs>
     </Member>
     <Member MemberName="CanWrite">
@@ -1337,7 +1344,7 @@
     </Member>
     <Member MemberName="Read">
       <MemberSignature Language="C#" Value="public abstract int Read (byte[] buffer, int offset, int count);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Read(unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Read([out] unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1379,7 +1386,7 @@
 ## Remarks  
  Use the <xref:System.IO.Stream.CanRead%2A> property to determine whether the current instance supports reading. Use the <xref:System.IO.Stream.ReadAsync%2A> method to read asynchronously from the current stream.  
   
- Implementations of this method read a maximum of `count` bytes from the current stream and store them in `buffer` beginning at `offset`. The current position within the stream is advanced by the number of bytes read; however, if an exception occurs, the current position within the stream remains unchanged. Implementations return the number of bytes read. The implementation will block until at least one byte of data can be read, in the event that no data is available. <xref:System.IO.Stream.Read%2A>returns 0 only when there is no more data in the stream and no more is expected (such as a closed socket or end of file). An implementation is free to return fewer bytes than requested even if the end of the stream has not been reached.  
+ Implementations of this method read a maximum of `count` bytes from the current stream and store them in `buffer` beginning at `offset`. The current position within the stream is advanced by the number of bytes read; however, if an exception occurs, the current position within the stream remains unchanged. Implementations return the number of bytes read. The implementation will block until at least one byte of data can be read, in the event that no data is available. <xref:System.IO.Stream.Read%2A> returns 0 only when there is no more data in the stream and no more is expected (such as a closed socket or end of file). An implementation is free to return fewer bytes than requested even if the end of the stream has not been reached.  
   
  Use <xref:System.IO.BinaryReader> for reading primitive data types.  
   
@@ -2068,5 +2075,71 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the bytes from the current stream and writes them to another stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.IO.Stream" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously writes a sequence of bytes to the current stream and advances the current position within this stream by the number of bytes written.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously reads a sequence of bytes from the current stream and advances the position within the stream by the number of bytes read.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CopyToAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously reads the bytes from the current stream and writes them to another stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FlushAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously clears all buffers for this stream and causes any buffered data to be written to the underlying device.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

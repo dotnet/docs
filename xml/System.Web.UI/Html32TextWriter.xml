@@ -30,6 +30,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlTextWriter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -97,6 +98,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="P:System.Web.UI.HtmlTextWriter.Indent" />
       </Docs>
     </Member>
     <Member MemberName="FontStack">
@@ -140,7 +143,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Web.UI.HtmlTextWriterTag?displayProperty=fullName> field is passed in `tagKey` and the <xref:System.Web.UI.Html32TextWriter.ShouldPerformDivTableSubstitution%2A> property is `true`, the <xref:System.Web.UI.Html32TextWriter.GetTagName%2A> method returns the `table` element.  
+ If the <xref:System.Web.UI.HtmlTextWriterTag.Div?displayProperty=nameWithType> field is passed in `tagKey` and the <xref:System.Web.UI.Html32TextWriter.ShouldPerformDivTableSubstitution%2A> property is `true`, the <xref:System.Web.UI.Html32TextWriter.GetTagName%2A> method returns the `table` element.  
   
  ]]></format>
         </remarks>
@@ -243,6 +246,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Html32TextWriter.RenderBeforeContent" />
       </Docs>
     </Member>
     <Member MemberName="RenderAfterTag">
@@ -274,6 +278,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Html32TextWriter.RenderBeforeTag" />
       </Docs>
     </Member>
     <Member MemberName="RenderBeforeContent">
@@ -307,6 +312,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Html32TextWriter.RenderAfterContent" />
       </Docs>
     </Member>
     <Member MemberName="RenderBeforeTag">
@@ -338,6 +344,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Html32TextWriter.RenderAfterTag" />
       </Docs>
     </Member>
     <Member MemberName="RenderBeginTag">
@@ -434,6 +441,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Html32TextWriter.RenderBeforeContent" />
+        <altmember cref="M:System.Web.UI.Html32TextWriter.RenderAfterContent" />
+        <altmember cref="P:System.Web.UI.Html32TextWriter.SupportsItalic" />
       </Docs>
     </Member>
     <Member MemberName="SupportsItalic">
@@ -465,7 +475,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Html32TextWriter.RenderBeforeContent" />
+        <altmember cref="M:System.Web.UI.Html32TextWriter.RenderAfterContent" />
+        <altmember cref="P:System.Web.UI.Html32TextWriter.SupportsBold" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Html32TextWriter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

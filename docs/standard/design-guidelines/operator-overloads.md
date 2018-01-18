@@ -8,11 +8,6 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "operators [.NET Framework], overloads"
   - "names [.NET Framework], overloaded operators"
@@ -23,6 +18,9 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Operator Overloads
 Operator overloads allow framework types to appear as if they were built-in language primitives.  
@@ -33,9 +31,9 @@ Operator overloads allow framework types to appear as if they were built-in lang
   
  **✓ CONSIDER** defining operator overloads in a type that should feel like a primitive type.  
   
- For example, <xref:System.String?displayProperty=fullName> has `operator==` and `operator!=` defined.  
+ For example, <xref:System.String?displayProperty=nameWithType> has `operator==` and `operator!=` defined.  
   
- **✓ DO** define operator overloads in structs that represent numbers (such as <xref:System.Decimal?displayProperty=fullName>).  
+ **✓ DO** define operator overloads in structs that represent numbers (such as <xref:System.Decimal?displayProperty=nameWithType>).  
   
  **X DO NOT** be cute when defining operator overloads.  
   
@@ -64,9 +62,9 @@ Operator overloads allow framework types to appear as if they were built-in lang
 |`%`|`op_Modulus`|`Mod or Remainder`|  
 |`^`|`op_ExclusiveOr`|`Xor`|  
 |`& (binary)`|`op_BitwiseAnd`|`BitwiseAnd`|  
-|`&#124;`|`op_BitwiseOr`|`BitwiseOr`|  
+|<code>&#124;</code>|`op_BitwiseOr`|`BitwiseOr`|  
 |`&&`|`op_LogicalAnd`|`And`|  
-|`&#124;&#124;`|`op_LogicalOr`|`Or`|  
+|<code>&#124;&#124;</code>|`op_LogicalOr`|`Or`|  
 |`=`|`op_Assign`|`Assign`|  
 |`<<`|`op_LeftShift`|`LeftShift`|  
 |`>>`|`op_RightShift`|`RightShift`|  
@@ -85,7 +83,7 @@ Operator overloads allow framework types to appear as if they were built-in lang
 |`%=`|`op_ModulusAssignment`|`Mod`|  
 |`+=`|`op_AdditionAssignment`|`Add`|  
 |`&=`|`op_BitwiseAndAssignment`|`BitwiseAnd`|  
-|`&#124;=`|`op_BitwiseOrAssignment`|`BitwiseOr`|  
+|<code>&#124;=</code>|`op_BitwiseOrAssignment`|`BitwiseOr`|  
 |`,`|`op_Comma`|`Comma`|  
 |`/=`|`op_DivisionAssignment`|`Divide`|  
 |`--`|`op_Decrement`|`Decrement`|  
@@ -95,7 +93,7 @@ Operator overloads allow framework types to appear as if they were built-in lang
 |`~`|`op_OnesComplement`|`OnesComplement`|  
   
 ### Overloading Operator ==  
- Overloading `operator ==` is quite complicated. The semantics of the operator need to be compatible with several other members, such as <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ Overloading `operator ==` is quite complicated. The semantics of the operator need to be compatible with several other members, such as <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
 ### Conversion Operators  
  Conversion operators are unary operators that allow conversion from one type to another. The operators must be defined as static members on either the operand or the return type. There are two types of conversion operators: implicit and explicit.  
@@ -114,12 +112,12 @@ Operator overloads allow framework types to appear as if they were built-in lang
   
  It is very difficult for end users to understand what is happening, because they might not be aware that a conversion is taking place.  
   
- **✓ DO** throw <xref:System.InvalidCastException?displayProperty=fullName> if a call to a cast operator results in a lossy conversion and the contract of the operator does not allow lossy conversions.  
+ **✓ DO** throw <xref:System.InvalidCastException?displayProperty=nameWithType> if a call to a cast operator results in a lossy conversion and the contract of the operator does not allow lossy conversions.  
   
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*  
   
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](http://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
 ## See Also  
- [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)   
+ [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)  
  [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)

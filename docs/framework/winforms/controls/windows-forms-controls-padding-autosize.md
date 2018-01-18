@@ -15,12 +15,10 @@ f1_keywords:
   - "Margin.Top"
   - "Margin.All"
   - "Margin.Right"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Margin property [Windows Forms], walkthroughs"
   - "walkthroughs [Windows Forms], layout"
-  - "AutoSize property, walkthroughs"
+  - "AutoSize property [Windows Forms], walkthroughs"
   - "Padding property [Windows Forms], walkthroughs"
   - "layout [Windows Forms], margins and padding"
   - "Windows Forms, layout"
@@ -29,6 +27,8 @@ caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Laying Out Windows Forms Controls with Padding, Margins, and the AutoSize Property
 Precise placement of controls on your form is a high priority for many applications. The **Windows Forms Designer** gives you many layout tools to accomplish this. Three of the most important are the <xref:System.Windows.Forms.Control.Margin%2A>, <xref:System.Windows.Forms.Control.Padding%2A>, and <xref:System.Windows.Forms.Control.AutoSize%2A> properties, which are present on all Windows Forms controls.  
@@ -193,11 +193,11 @@ Precise placement of controls on your form is a high priority for many applicati
 -   Experiment with docking child controls in a <xref:System.Windows.Forms.Panel> control. The <xref:System.Windows.Forms.Control.Padding%2A> property is a more general realization of the <xref:System.Windows.Forms.ScrollableControl.DockPadding%2A> property, and you can satisfy yourself that this is the case by putting a child control in a <xref:System.Windows.Forms.Panel> control and setting the child control's <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>. Set the <xref:System.Windows.Forms.Panel> control's <xref:System.Windows.Forms.Control.Padding%2A> property to various values and note the effect.  
   
 ## See Also  
- <xref:System.Windows.Forms.Control.AutoSize%2A>   
- <xref:System.Windows.Forms.ScrollableControl.DockPadding%2A>   
- <xref:System.Windows.Forms.Control.Margin%2A>   
- <xref:System.Windows.Forms.Control.Padding%2A>   
- [AutoSize Property Overview](../../../../docs/framework/winforms/controls/autosize-property-overview.md)   
- [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)   
- [Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md)   
+ <xref:System.Windows.Forms.Control.AutoSize%2A>  
+ <xref:System.Windows.Forms.ScrollableControl.DockPadding%2A>  
+ <xref:System.Windows.Forms.Control.Margin%2A>  
+ <xref:System.Windows.Forms.Control.Padding%2A>  
+ [AutoSize Property Overview](../../../../docs/framework/winforms/controls/autosize-property-overview.md)  
+ [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)  
+ [Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md)  
  [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)

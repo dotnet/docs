@@ -189,6 +189,7 @@
         <param name="cbSize">The number of bytes in the array to use as data.</param>
         <summary>Routes data written to the object into the <see cref="T:System.Security.Cryptography.TripleDES" /> encryptor for computing the Message Authentication Code (MAC).</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.Cryptography.HashAlgorithm" />
       </Docs>
     </Member>
     <Member MemberName="HashFinal">
@@ -278,5 +279,15 @@
         <exception cref="T:System.Security.Cryptography.CryptographicException">The property cannot be set because the padding mode is invalid.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.MACTripleDES" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

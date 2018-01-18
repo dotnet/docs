@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugBreakpointEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugBreakpointEnum interface [.NET Framework debugging]"
 ms.assetid: 4c6f4f6e-52cc-402e-881b-7b8526544c90
@@ -28,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugBreakpointEnum Interface1
 Implements ICorDebugEnum methods, and enumerates ICorDebugBreakpoint arrays.  

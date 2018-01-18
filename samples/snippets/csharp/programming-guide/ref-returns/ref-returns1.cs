@@ -7,21 +7,12 @@ class NumberStore
 
    public ref int FindNumber(int target)
    {
-      for (int ctr = 0; ctr < numbers.Length; ctr++) {
-         if (target == numbers[ctr]) {
-            return ref numbers[ctr];
-         }   
-         else if (ctr == numbers.Length - 1) {
-            return ref numbers[ctr];
-         }      
-         else if (target < numbers[ctr]) {
-            if (ctr > 0 && target > numbers[ctr - 1])
+       for (int ctr = 0; ctr < numbers.Length; ctr++)
+       {
+           if (numbers[ctr] >= target)
                return ref numbers[ctr];
-            else if (ctr == 0)
-               return ref numbers[0];      
-         }
-      }
-      return ref numbers[0];
+       }
+       return ref numbers[0];
    }
 
    public override string ToString()

@@ -112,7 +112,7 @@
  This method will be ignored if called on an object that is not being edited.  
   
 > [!NOTE]
->  If the owning list implements <xref:System.ComponentModel.IBindingList>, calling <xref:System.ComponentModel.IEditableObject.CancelEdit%2A> on an object created using <xref:System.ComponentModel.IBindingList.AddNew%2A?displayProperty=fullName> discards the object.  
+>  If the owning list implements <xref:System.ComponentModel.IBindingList>, calling <xref:System.ComponentModel.IEditableObject.CancelEdit%2A> on an object created using <xref:System.ComponentModel.IBindingList.AddNew%2A?displayProperty=nameWithType> discards the object.  
   
  ]]></format>
         </remarks>

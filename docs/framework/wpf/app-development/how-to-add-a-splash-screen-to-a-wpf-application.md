@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "WPF, splash screen"
+  - "WPF [WPF], splash screen"
   - "startup window [WPF]"
   - "SplashScreen class [WPF]"
   - "splash screen [WPF]"
@@ -19,6 +19,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Add a Splash Screen to a WPF Application
 This topic shows how to add a startup window, or *splash screen*, to a Windows Presentation Foundation (WPF) application.  
@@ -55,5 +57,5 @@ This topic shows how to add a startup window, or *splash screen*, to a Windows P
 -   Exclude the splash screen image from the project.  
   
 ## See Also  
- <xref:System.Windows.SplashScreen>   
+ <xref:System.Windows.SplashScreen>  
  [NIB:How to: Add Existing Items to a Project](http://msdn.microsoft.com/en-us/15f4cfb7-78ab-457f-9f14-099a25a6a2d3)

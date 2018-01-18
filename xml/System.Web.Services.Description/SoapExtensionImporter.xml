@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Web.Services.Description.SoapExtensionImporter>`abstract` class exposes an `abstract` method, <xref:System.Web.Services.Description.SoapExtensionImporter.ImportMethod%2A>, which allows a derived class to add metadata to any method that represents an operation in a binding. The method itself is not an input method. The code attributes, which are added to all Web methods in a binding class, represent extensions to the SOAP Web services protocol, for example, for adding extra headers to an outgoing SOAP message or doing extra processing on an incoming SOAP message.  
   
- You can use a class derived from <xref:System.Web.Services.Description.SoapExtensionImporter>to extend the generation of client proxy code or `abstract` server code. You can use such a derived class in conjunction with a class derived from the `abstract`<xref:System.Web.Services.Protocols.SoapExtension> class, which extends run-time processing of SOAP messages on the client or service.  
+ You can use a class derived from <xref:System.Web.Services.Description.SoapExtensionImporter> to extend the generation of client proxy code or `abstract` server code. You can use such a derived class in conjunction with a class derived from the `abstract`<xref:System.Web.Services.Protocols.SoapExtension> class, which extends run-time processing of SOAP messages on the client or service.  
   
  You can specify <xref:System.Web.Services.Description.SoapExtensionImporter> in a configuration file through the `soapExtensionImporterTypes` configuration element and its child `add` element. You can apply the configuration to:  
   
@@ -28,6 +28,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Services.Protocols.SoapExtension" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,7 +65,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Web.Services.Description.SoapProtocolImporter> object maintains references to instances of <xref:System.Web.Services.Description.SoapExtensionImporter> derived types, and then calls the <xref:System.Web.Services.Description.SoapExtensionImporter.ImportMethod%2A>on each of those instances.  
+ A <xref:System.Web.Services.Description.SoapProtocolImporter> object maintains references to instances of <xref:System.Web.Services.Description.SoapExtensionImporter> derived types, and then calls the <xref:System.Web.Services.Description.SoapExtensionImporter.ImportMethod%2A> on each of those instances.  
   
  ]]></format>
         </remarks>

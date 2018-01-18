@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "elements, finding by property conditions"
   - "UI Automation, finding elements by property conditions"
@@ -17,6 +20,8 @@ caps.latest.revision: 19
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Find a UI Automation Element Based on a Property Condition
 > [!NOTE]
@@ -34,6 +39,6 @@ manager: "markl"
  [!code-vb[InvokePatternApp#1100](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/InvokePatternApp/VisualBasic/Client.vb#1100)]  
   
 ## See Also  
- [InvokePattern and ExpandCollapsePattern Menu Item Sample](http://msdn.microsoft.com/en-us/b7fa141c-e2d1-4da2-a27f-81a7d1172210)   
- [Obtaining UI Automation Elements](../../../docs/framework/ui-automation/obtaining-ui-automation-elements.md)   
+ [InvokePattern and ExpandCollapsePattern Menu Item Sample](http://msdn.microsoft.com/en-us/b7fa141c-e2d1-4da2-a27f-81a7d1172210)  
+ [Obtaining UI Automation Elements](../../../docs/framework/ui-automation/obtaining-ui-automation-elements.md)  
  [Use the AutomationID Property](../../../docs/framework/ui-automation/use-the-automationid-property.md)

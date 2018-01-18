@@ -82,6 +82,10 @@ private Grammar CreateColorGrammar()
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Speech.Recognition.Choices" />
+    <altmember cref="T:System.Speech.Recognition.Grammar" />
+    <altmember cref="T:System.Speech.Recognition.SemanticResultKey" />
+    <altmember cref="T:System.Speech.Recognition.SemanticResultValue" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -106,6 +110,10 @@ private Grammar CreateColorGrammar()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.Choices" />
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
+        <altmember cref="T:System.Speech.Recognition.SemanticResultKey" />
+        <altmember cref="T:System.Speech.Recognition.SemanticResultValue" />
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -167,6 +175,10 @@ private Grammar CreateColorGrammar()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.Choices" />
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
+        <altmember cref="T:System.Speech.Recognition.SemanticResultKey" />
+        <altmember cref="T:System.Speech.Recognition.SemanticResultValue" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -226,6 +238,10 @@ private Grammar CreateColorGrammar()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.Choices" />
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
+        <altmember cref="T:System.Speech.Recognition.SemanticResultKey" />
+        <altmember cref="T:System.Speech.Recognition.SemanticResultValue" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -309,6 +325,10 @@ private Grammar CreateColorGrammar()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.Choices" />
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
+        <altmember cref="T:System.Speech.Recognition.SemanticResultKey" />
+        <altmember cref="T:System.Speech.Recognition.SemanticResultValue" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -392,6 +412,10 @@ private Grammar CreateColorGrammar()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.Choices" />
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
+        <altmember cref="T:System.Speech.Recognition.SemanticResultKey" />
+        <altmember cref="T:System.Speech.Recognition.SemanticResultValue" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -451,6 +475,10 @@ private Grammar CreateColorGrammar()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.Choices" />
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
+        <altmember cref="T:System.Speech.Recognition.SemanticResultKey" />
+        <altmember cref="T:System.Speech.Recognition.SemanticResultValue" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -538,6 +566,7 @@ private static string BreakAtCaps(string item)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.SubsetMatchingMode" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -605,6 +634,8 @@ private static Grammar CreatePizzaGrammar()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.Choices" />
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -669,6 +700,8 @@ private static Grammar CreatePizzaGrammar()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.Choices" />
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Add">
@@ -739,6 +772,9 @@ private static Grammar CreatePizzaGrammar()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.Append(System.Speech.Recognition.Choices)" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.op_Implicit(System.Speech.Recognition.Choices)~System.Speech.Recognition.GrammarBuilder" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.op_Addition(System.Speech.Recognition.Choices,System.Speech.Recognition.GrammarBuilder)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -815,6 +851,9 @@ private Grammar CreateColorGrammar()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.Append(System.Speech.Recognition.Choices)" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.op_Implicit(System.Speech.Recognition.Choices)~System.Speech.Recognition.GrammarBuilder" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.op_Addition(System.Speech.Recognition.Choices,System.Speech.Recognition.GrammarBuilder)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -891,6 +930,9 @@ private Grammar CreateColorGrammar()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.Append(System.Speech.Recognition.Choices)" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.op_Implicit(System.Speech.Recognition.Choices)~System.Speech.Recognition.GrammarBuilder" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.op_Addition(System.Speech.Recognition.Choices,System.Speech.Recognition.GrammarBuilder)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -964,6 +1006,9 @@ private Grammar CreateColorGrammar()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.Append(System.Speech.Recognition.Choices)" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.op_Implicit(System.Speech.Recognition.Choices)~System.Speech.Recognition.GrammarBuilder" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.op_Addition(System.Speech.Recognition.Choices,System.Speech.Recognition.GrammarBuilder)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -1037,6 +1082,9 @@ private Grammar CreateColorGrammar()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.Append(System.Speech.Recognition.Choices)" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.op_Implicit(System.Speech.Recognition.Choices)~System.Speech.Recognition.GrammarBuilder" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.op_Addition(System.Speech.Recognition.Choices,System.Speech.Recognition.GrammarBuilder)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Append">
@@ -1207,6 +1255,9 @@ public static Grammar CreatePhonePhrase()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendDictation" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendRuleReference(System.String)" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendWildcard" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1234,7 +1285,7 @@ public static Grammar CreatePhonePhrase()
  `key` is added to the end of the current sequence of elements.  
   
 > [!IMPORTANT]
->  When you append  <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey>instances to a <xref:System.Speech.Recognition.GrammarBuilder> object, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue>object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+>  When you append  <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances to a <xref:System.Speech.Recognition.GrammarBuilder> object, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
    
   
@@ -1319,6 +1370,9 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendDictation" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendRuleReference(System.String)" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendWildcard" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1346,7 +1400,7 @@ namespace SampleRecognition
  `value` is added to the end of the current sequence of elements.  
   
 > [!IMPORTANT]
->  When you append  <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey>instances to a <xref:System.Speech.Recognition.GrammarBuilder> object, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue>object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+>  When you append  <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances to a <xref:System.Speech.Recognition.GrammarBuilder> object, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
    
   
@@ -1443,6 +1497,9 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendDictation" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendRuleReference(System.String)" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendWildcard" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1471,6 +1528,9 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendDictation" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendRuleReference(System.String)" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendWildcard" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1499,7 +1559,7 @@ namespace SampleRecognition
 ## Remarks  
  The subset element is added to the end of the current sequence of elements. For more information about building a speech recognition grammar using strings, see [Using Strings to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/en-us/0d87b445-a342-4369-9b3f-91d07fd7e114).  
   
- For detailed information on the use of subset matching modes, see <xref:System.Speech.Recognition.SubsetMatchingMode?displayProperty=fullName>.  
+ For detailed information on the use of subset matching modes, see <xref:System.Speech.Recognition.SubsetMatchingMode?displayProperty=nameWithType>.  
   
    
   
@@ -1530,6 +1590,9 @@ private Grammar[] CreateSubsetMatchTest()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendDictation" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendRuleReference(System.String)" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendWildcard" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1561,7 +1624,7 @@ private Grammar[] CreateSubsetMatchTest()
  The value of `minRepeat` must be greater than or equal to 0 and less than or equal to the value of `maxRepeat`.  
   
 > [!IMPORTANT]
->  When you append <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey>instances to a <xref:System.Speech.Recognition.GrammarBuilder> object, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue>object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+>  When you append <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances to a <xref:System.Speech.Recognition.GrammarBuilder> object, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
    
   
@@ -1607,6 +1670,9 @@ public static Grammar CreatePhonePhrase()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendDictation" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendRuleReference(System.String)" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendWildcard" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1681,6 +1747,9 @@ public static Grammar CreatePhonePhrase()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendDictation" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendRuleReference(System.String)" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendWildcard" />
       </Docs>
     </Member>
     <MemberGroup MemberName="AppendDictation">
@@ -1740,6 +1809,7 @@ grammarWithDictation.Name = "Grammar with Dictation";
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.DictationGrammar" />
       </Docs>
     </Member>
     <Member MemberName="AppendDictation">
@@ -1785,6 +1855,7 @@ grammarWithDictation.Name = "Grammar with Dictation";
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.DictationGrammar" />
       </Docs>
     </Member>
     <MemberGroup MemberName="AppendRuleReference">
@@ -1888,6 +1959,10 @@ private static Grammar CreateCitiesGrammar1()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.Append(System.Speech.Recognition.Choices)" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendDictation" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendWildcard" />
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
       </Docs>
     </Member>
     <Member MemberName="AppendRuleReference">
@@ -1970,6 +2045,10 @@ private static Grammar CreateCitiesGrammar2()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.Append(System.Speech.Recognition.Choices)" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendDictation" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendWildcard" />
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
       </Docs>
     </Member>
     <Member MemberName="AppendWildcard">
@@ -1998,7 +2077,7 @@ private static Grammar CreateCitiesGrammar2()
    
   
 ## Examples  
- The following example creates a grammar that accepts password input as a wildcard. The example attaches a <xref:System.Speech.Recognition.Grammar.SpeechRecognized?displayProperty=fullName> event handler to the grammar that validates the password input.  
+ The following example creates a grammar that accepts password input as a wildcard. The example attaches a <xref:System.Speech.Recognition.Grammar.SpeechRecognized?displayProperty=nameWithType> event handler to the grammar that validates the password input.  
   
 ```csharp  
 private Grammar CreatePasswordGrammar()  
@@ -2064,6 +2143,9 @@ private bool IsValidPassword(RecognizedAudio passwordAudio)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.Append(System.Speech.Recognition.Choices)" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendDictation" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.AppendRuleReference(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Culture">
@@ -2142,6 +2224,10 @@ private static Grammar CreatePizzaGrammar()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
+        <altmember cref="T:System.Speech.Recognition.RecognizerInfo" />
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognizer" />
       </Docs>
     </Member>
     <Member MemberName="DebugShowPhrases">
@@ -2264,8 +2350,10 @@ private static Grammar CreatePizzaGrammar()
 > [!IMPORTANT]
 >  When you combine <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
- The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.Speech.Recognition.Choices%2CSystem.Speech.Recognition.GrammarBuilder%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.Speech.Recognition.Choices%2CSystem.Speech.Recognition.GrammarBuilder%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.Add(System.Speech.Recognition.Choices,System.Speech.Recognition.GrammarBuilder)" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.op_Implicit(System.Speech.Recognition.Choices)~System.Speech.Recognition.GrammarBuilder" />
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -2308,7 +2396,7 @@ private static Grammar CreatePizzaGrammar()
 > [!IMPORTANT]
 >  When you combine <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
- The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.Speech.Recognition.GrammarBuilder%2CSystem.Speech.Recognition.Choices%29?displayProperty=fullName>  
+ The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.Speech.Recognition.GrammarBuilder%2CSystem.Speech.Recognition.Choices%29?displayProperty=nameWithType>  
   
 ## Examples  
  The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](http://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects.  
@@ -2340,6 +2428,8 @@ private Grammar CreateColorGrammar()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.Add(System.Speech.Recognition.Choices,System.Speech.Recognition.GrammarBuilder)" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.op_Implicit(System.Speech.Recognition.Choices)~System.Speech.Recognition.GrammarBuilder" />
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -2382,8 +2472,10 @@ private Grammar CreateColorGrammar()
 > [!IMPORTANT]
 >  When you combine <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
- The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.Speech.Recognition.GrammarBuilder%2CSystem.Speech.Recognition.GrammarBuilder%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.Speech.Recognition.GrammarBuilder%2CSystem.Speech.Recognition.GrammarBuilder%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.Add(System.Speech.Recognition.Choices,System.Speech.Recognition.GrammarBuilder)" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.op_Implicit(System.Speech.Recognition.Choices)~System.Speech.Recognition.GrammarBuilder" />
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -2423,8 +2515,10 @@ private Grammar CreateColorGrammar()
   
  This method accepts the objects listed above for the `builder` parameter. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> operators.  
   
- The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.Speech.Recognition.GrammarBuilder%2CSystem.String%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.Speech.Recognition.GrammarBuilder%2CSystem.String%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.Add(System.Speech.Recognition.Choices,System.Speech.Recognition.GrammarBuilder)" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.op_Implicit(System.Speech.Recognition.Choices)~System.Speech.Recognition.GrammarBuilder" />
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -2464,7 +2558,7 @@ private Grammar CreateColorGrammar()
   
  This method accepts the objects listed above for the `builder` parameter. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> operators.  
   
- The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.String%2CSystem.Speech.Recognition.GrammarBuilder%29?displayProperty=fullName>  
+ The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.String%2CSystem.Speech.Recognition.GrammarBuilder%29?displayProperty=nameWithType>  
   
 ## Examples  
  The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](http://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects.  
@@ -2496,6 +2590,8 @@ private Grammar CreateColorGrammar()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.Add(System.Speech.Recognition.Choices,System.Speech.Recognition.GrammarBuilder)" />
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.op_Implicit(System.Speech.Recognition.Choices)~System.Speech.Recognition.GrammarBuilder" />
       </Docs>
     </Member>
     <MemberGroup MemberName="op_Implicit">
@@ -2523,6 +2619,7 @@ private Grammar CreateColorGrammar()
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Speech.Recognition.GrammarBuilder.#ctor" />
       </Docs>
     </MemberGroup>
     <Member MemberName="op_Implicit">
@@ -2541,10 +2638,39 @@ private Grammar CreateColorGrammar()
         <Parameter Name="choices" Type="System.Speech.Recognition.Choices" />
       </Parameters>
       <Docs>
-        <param name="choices">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="choices">The set of alternatives to convert.</param>
+        <summary>Converts a <see cref="T:System.Speech.Recognition.Choices" /> object to a <see cref="T:System.Speech.Recognition.GrammarBuilder" /> object.</summary>
+        <returns>The converted <see cref="T:System.Speech.Recognition.Choices" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implicit conversion creates a new instance of <xref:System.Speech.Recognition.GrammarBuilder>.This conversion operator is equivalent to calling <xref:System.Speech.Recognition.GrammarBuilder.%23ctor%2A> and specifying `choices` for the `alternateChoices`.  
+  
+ The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.%23ctor%28System.Speech.Recognition.Choices%29?displayProperty=fullName>  
+  
+## Examples  
+ The following example creates a speech recognition grammar that can recognize a response to a "yes" or "no" question. The implicit conversion operator is used in the construction of a <xref:System.Speech.Recognition.SemanticResultValue> object from a <xref:System.Speech.Recognition.Choices> object, in the construction of a <xref:System.Speech.Recognition.Choices> object from two <xref:System.Speech.Recognition.SemanticResultValue> objects, and in the construction of a <xref:System.Speech.Recognition.Grammar> object from a <xref:System.Speech.Recognition.SemanticResultKey> object.  
+  
+```csharp  
+Choices yesChoices = new Choices(new string[] {"yes", "yup", "yah"});  
+SemanticResultValue yesValue =  
+  new SemanticResultValue(yesChoices, true);  
+  
+Choices noChoices = new Choices(new string[] { "no", "nope", "nah" });  
+SemanticResultValue noValue =  
+  new SemanticResultValue(noChoices, false);  
+  
+SemanticResultKey yesnoKey =  
+  new SemanticResultKey("yesno", new Choices(new GrammarBuilder[] { yesValue, noValue }));  
+  
+Grammar yesnoGrammar = new Grammar(yesnoKey);  
+yesnoGrammar.Name = "yesno";  
+```  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -2563,10 +2689,40 @@ private Grammar CreateColorGrammar()
         <Parameter Name="semanticKey" Type="System.Speech.Recognition.SemanticResultKey" />
       </Parameters>
       <Docs>
-        <param name="semanticKey">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="semanticKey">The semantic key to convert.</param>
+        <summary>Converts a <see cref="T:System.Speech.Recognition.SemanticResultKey" /> object to a <see cref="T:System.Speech.Recognition.GrammarBuilder" /> object.</summary>
+        <returns>The converted <see cref="T:System.Speech.Recognition.SemanticResultKey" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implicit conversion creates a new instance of <xref:System.Speech.Recognition.GrammarBuilder>. This conversion operator is equivalent to calling <xref:System.Speech.Recognition.GrammarBuilder.%23ctor%2A> and specifying `semanticKey` for the `key`.  
+  
+ The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.%23ctor%28System.Speech.Recognition.SemanticResultKey%29?displayProperty=fullName>  
+  
+## Examples  
+ The following example creates a speech recognition grammar that can recognize a response to a "yes" or "no" question. The implicit conversion operator is used in the construction of a <xref:System.Speech.Recognition.SemanticResultValue> object from a <xref:System.Speech.Recognition.Choices> object, in the construction of a <xref:System.Speech.Recognition.Choices> object from two <xref:System.Speech.Recognition.SemanticResultValue> objects, and in the construction of a <xref:System.Speech.Recognition.Grammar> object from a <xref:System.Speech.Recognition.SemanticResultKey> object.  
+  
+```csharp  
+Choices yesChoices = new Choices(new string[] {"yes", "yup", "yah"});  
+SemanticResultValue yesValue =  
+  new SemanticResultValue(yesChoices, true);  
+  
+Choices noChoices = new Choices(new string[] { "no", "nope", "nah" });  
+SemanticResultValue noValue =  
+  new SemanticResultValue(noChoices, false);  
+  
+SemanticResultKey yesnoKey =  
+  new SemanticResultKey("yesno", new Choices(new GrammarBuilder[] { yesValue, noValue }));  
+  
+Grammar yesnoGrammar = new Grammar(yesnoKey);  
+yesnoGrammar.Name = "yesno";  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -2585,10 +2741,40 @@ private Grammar CreateColorGrammar()
         <Parameter Name="semanticValue" Type="System.Speech.Recognition.SemanticResultValue" />
       </Parameters>
       <Docs>
-        <param name="semanticValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="semanticValue">The <see cref="T:System.Speech.Recognition.SemanticResultValue" /> object to convert.</param>
+        <summary>Converts a <see cref="T:System.Speech.Recognition.SemanticResultValue" /> object to a <see cref="T:System.Speech.Recognition.GrammarBuilder" /> object.</summary>
+        <returns>The converted <see cref="T:System.Speech.Recognition.SemanticResultValue" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implicit conversion creates a new instance of <xref:System.Speech.Recognition.GrammarBuilder>. This conversion operator is equivalent to calling <xref:System.Speech.Recognition.GrammarBuilder.%23ctor%2A> and specifying `semanticValue` for the `value`.  
+  
+ The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.%23ctor%28System.Speech.Recognition.SemanticResultValue%29?displayProperty=fullName>  
+  
+## Examples  
+ The following example creates a speech recognition grammar that can recognize a response to a "yes" or "no" question. The implicit conversion operator is used in the construction of a <xref:System.Speech.Recognition.SemanticResultValue> object from a <xref:System.Speech.Recognition.Choices>object, in the construction of a <xref:System.Speech.Recognition.Choices> object from two <xref:System.Speech.Recognition.SemanticResultValue> objects, and in the construction of a <xref:System.Speech.Recognition.Grammar> object from a <xref:System.Speech.Recognition.SemanticResultKey> object.  
+  
+```csharp  
+Choices yesChoices = new Choices(new string[] {"yes", "yup", "yah"});  
+SemanticResultValue yesValue =  
+  new SemanticResultValue(yesChoices, true);  
+  
+Choices noChoices = new Choices(new string[] { "no", "nope", "nah" });  
+SemanticResultValue noValue =  
+  new SemanticResultValue(noChoices, false);  
+  
+SemanticResultKey yesnoKey =  
+  new SemanticResultKey("yesno", new Choices(new GrammarBuilder[] { yesValue, noValue }));  
+  
+Grammar yesnoGrammar = new Grammar(yesnoKey);  
+yesnoGrammar.Name = "yesno";  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -2607,10 +2793,50 @@ private Grammar CreateColorGrammar()
         <Parameter Name="phrase" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="phrase">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="phrase">The string to convert.</param>
+        <summary>Converts a string to a <see cref="T:System.Speech.Recognition.GrammarBuilder" /> object.</summary>
+        <returns>The converted string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implicit conversion creates a new instance of <xref:System.Speech.Recognition.GrammarBuilder>. This conversion operator is equivalent to calling <xref:System.Speech.Recognition.GrammarBuilder.%23ctor%2A> and specifying the same `phrase`.  
+  
+ The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.%23ctor%28System.String%29?displayProperty=fullName>  
+  
+## Examples  
+ The following example uses  <xref:System.Speech.Recognition.GrammarBuilder> and <xref:System.Speech.Recognition.Choices> objects to construct a grammar that can recognize either of the two phrases, "Make background *colorChoice*" or "Set background to *colorChoice*".  
+  
+ After creating a list of acceptable values for *colorChoice* using a <xref:System.Speech.Recognition.Choices> object, the example initializes two <xref:System.Speech.Recognition.GrammarBuilder> objects, `makePhrase` and `setPhrase`, using implicit conversion from string objects.  
+  
+ The example finally creates a <xref:System.Speech.Recognition.Grammar> object from a <xref:System.Speech.Recognition.Choices> object cast to a <xref:System.Speech.Recognition.GrammarBuilder> object.  
+  
+```csharp  
+private Grammar CreateColorGrammar()  
+{  
+  
+  // Create a set of color choices.  
+  Choices colorChoice = new Choices(new string[] {"red", "green", "blue"});  
+  GrammarBuilder colorElement = new GrammarBuilder(colorChoice);  
+  
+  // Create grammar builders for the two versions of the phrase.  
+  GrammarBuilder makePhrase = new GrammarBuilder("Make background");  
+  makePhrase.Append(colorElement);  
+  GrammarBuilder setPhrase = new GrammarBuilder("Set background to");  
+  setPhrase.Append(colorElement);  
+  
+  // Create a Choices for the two alternative phrases, convert the Choices  
+  // to a GrammarBuilder, and construct the Grammar object from the result.  
+  Choices bothChoices = new Choices(new GrammarBuilder[] {makePhrase, setPhrase});  
+  Grammar grammar = new Grammar((GrammarBuilder)bothChoices);  
+  grammar.Name = "backgroundColor";  
+  return grammar;  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Speech.Recognition.GrammarBuilder.#ctor" />
       </Docs>
     </Member>
   </Members>

@@ -7,6 +7,12 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Duplex</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TChannel">
       <Constraints>
@@ -28,7 +34,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.DuplexClientBase%601> class to create a channel to a service that specifies a callback object. The <xref:System.ServiceModel.DuplexClientBase%601> object wraps a <xref:System.ServiceModel.DuplexChannelFactory%601?displayProperty=fullName> object, which provides the connectivity for the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] object. You can use either type to connect to a duplex service. For more information about duplex services, see [Duplex Services](~/docs/framework/wcf/feature-details/duplex-services.md).  
+ Use the <xref:System.ServiceModel.DuplexClientBase%601> class to create a channel to a service that specifies a callback object. The <xref:System.ServiceModel.DuplexClientBase%601> object wraps a <xref:System.ServiceModel.DuplexChannelFactory%601?displayProperty=nameWithType> object, which provides the connectivity for the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] object. You can use either type to connect to a duplex service. For more information about duplex services, see [Duplex Services](~/docs/framework/wcf/feature-details/duplex-services.md).  
   
  Special note for Managed C++ users deriving from this class:  
   
@@ -43,7 +49,7 @@
    
   
 ## Examples  
- The following example shows the use in the client of a duplex [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client type, the `SampleDuplexHelloClient`, to pass a new <xref:System.ServiceModel.InstanceContext?displayProperty=fullName> object with the callback object to listen for callbacks.  
+ The following example shows the use in the client of a duplex [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client type, the `SampleDuplexHelloClient`, to pass a new <xref:System.ServiceModel.InstanceContext?displayProperty=nameWithType> object with the callback object to listen for callbacks.  
   
  [!code-csharp[CallbackBehaviorAttribute#3](~/samples/snippets/csharp/VS_Snippets_CFX/callbackbehaviorattribute/cs/client.cs#3)]
  [!code-vb[CallbackBehaviorAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/callbackbehaviorattribute/vb/client.vb#3)]  
@@ -88,6 +94,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Duplex</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
@@ -188,6 +200,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Duplex</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
@@ -311,6 +329,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Duplex</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
         <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
@@ -340,6 +364,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Duplex</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
@@ -371,6 +401,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Duplex</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
@@ -432,5 +468,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "FunctionTailcall3"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "FunctionTailcall3 function [.NET Framework profiling]"
 ms.assetid: 1e48243f-5de6-4bd6-a1d0-e1d248bca4b8
@@ -28,6 +26,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # FunctionTailcall3 Function
 Notifies the profiler that the currently executing function is about to perform a tail call to another function.  
@@ -67,13 +67,13 @@ void __stdcall FunctionTailcall3 (FunctionOrRemappedID functionOrRemappedID);
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See Also  
- [FunctionEnter3](../../../../docs/framework/unmanaged-api/profiling/functionenter3-function.md)   
- [FunctionLeave3](../../../../docs/framework/unmanaged-api/profiling/functionleave3-function.md)   
- [FunctionEnter3WithInfo](../../../../docs/framework/unmanaged-api/profiling/functionenter3withinfo-function.md)   
- [FunctionLeave3WithInfo](../../../../docs/framework/unmanaged-api/profiling/functionleave3withinfo-function.md)   
- [FunctionTailcall3WithInfo Function](../../../../docs/framework/unmanaged-api/profiling/functiontailcall3withinfo-function.md)   
- [SetEnterLeaveFunctionHooks3](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-setenterleavefunctionhooks3-method.md)   
- [SetEnterLeaveFunctionHooks3WithInfo](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-setenterleavefunctionhooks3withinfo-method.md)   
- [SetFunctionIDMapper](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-setfunctionidmapper-method.md)   
- [SetFunctionIDMapper2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-setfunctionidmapper2-method.md)   
+ [FunctionEnter3](../../../../docs/framework/unmanaged-api/profiling/functionenter3-function.md)  
+ [FunctionLeave3](../../../../docs/framework/unmanaged-api/profiling/functionleave3-function.md)  
+ [FunctionEnter3WithInfo](../../../../docs/framework/unmanaged-api/profiling/functionenter3withinfo-function.md)  
+ [FunctionLeave3WithInfo](../../../../docs/framework/unmanaged-api/profiling/functionleave3withinfo-function.md)  
+ [FunctionTailcall3WithInfo Function](../../../../docs/framework/unmanaged-api/profiling/functiontailcall3withinfo-function.md)  
+ [SetEnterLeaveFunctionHooks3](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-setenterleavefunctionhooks3-method.md)  
+ [SetEnterLeaveFunctionHooks3WithInfo](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-setenterleavefunctionhooks3withinfo-method.md)  
+ [SetFunctionIDMapper](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-setfunctionidmapper-method.md)  
+ [SetFunctionIDMapper2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-setfunctionidmapper2-method.md)  
  [Profiling Global Static Functions](../../../../docs/framework/unmanaged-api/profiling/profiling-global-static-functions.md)

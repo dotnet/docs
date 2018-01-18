@@ -27,10 +27,11 @@
 ## Remarks  
  It might not be possible to convert a character to an equivalent encoded byte sequence if no suitable encoding exists. A common reason for an encoding to fail is if the conversion operation uses a code page that cannot represent the character to encode.  
   
- If the input character cannot be converted to an output byte sequence, a <xref:System.Text.EncoderReplacementFallback?displayProperty=fullName> object provides a replacement string that is substituted for the original input character. The replacement string initializes the value of the <xref:System.Text.EncoderReplacementFallback> object, and the value of the <xref:System.Text.EncoderReplacementFallback> object initializes the value of an <xref:System.Text.EncoderReplacementFallbackBuffer> object. The value of an <xref:System.Text.EncoderReplacementFallbackBuffer> object is called the replacement fallback buffer. The conversion operation encodes the replacement fallback buffer instead of the original input character, then continues to process the remainder of the input.  
+ If the input character cannot be converted to an output byte sequence, a <xref:System.Text.EncoderReplacementFallback?displayProperty=nameWithType> object provides a replacement string that is substituted for the original input character. The replacement string initializes the value of the <xref:System.Text.EncoderReplacementFallback> object, and the value of the <xref:System.Text.EncoderReplacementFallback> object initializes the value of an <xref:System.Text.EncoderReplacementFallbackBuffer> object. The value of an <xref:System.Text.EncoderReplacementFallbackBuffer> object is called the replacement fallback buffer. The conversion operation encodes the replacement fallback buffer instead of the original input character, then continues to process the remainder of the input.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Text.EncoderReplacementFallback" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -288,5 +289,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Fallback">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Prepares the replacement fallback buffer to use the current replacement string.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

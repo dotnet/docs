@@ -454,5 +454,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RegisterAttached">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> class that has the properties parameterized according to the input parameters.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Register">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates new instances of the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> possessing specific initialization conditions.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

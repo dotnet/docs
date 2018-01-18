@@ -45,23 +45,23 @@
 -   Create a task and start it immediately by calling the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> method. You can call the overloads of this method to create and execute a task that requires non-default arguments.  
   
     > [!WARNING]
-    >  Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=fullName> method provides the easiest way to create a task with default configuration values and start it immediately.  
+    >  Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> method provides the easiest way to create a task with default configuration values and start it immediately.  
   
 -   Create a task that starts when any one of the tasks in an array has completed by calling the <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAny%2A> or   <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAny%2A> method.  
   
 -   Create a task that starts when all the tasks in an array have completed by calling the <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A> or <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A> method.  
   
- The static <xref:System.Threading.Tasks.Task%601.Factory%2A?displayProperty=fullName> property returns a default <xref:System.Threading.Tasks.TaskFactory%601> object. You can also call one of the <xref:System.Threading.Tasks.TaskFactory%601> class constructors to configure the <xref:System.Threading.Tasks.Task%601> objects that  the <xref:System.Threading.Tasks.TaskFactory%601> class creates. The following example configures a new <xref:System.Threading.Tasks.TaskFactory%601> object to create tasks that have a specified cancellation token, task creation options, continuation options, and a customized task scheduler.  
+ The static <xref:System.Threading.Tasks.Task%601.Factory%2A?displayProperty=nameWithType> property returns a default <xref:System.Threading.Tasks.TaskFactory%601> object. You can also call one of the <xref:System.Threading.Tasks.TaskFactory%601> class constructors to configure the <xref:System.Threading.Tasks.Task%601> objects that  the <xref:System.Threading.Tasks.TaskFactory%601> class creates. The following example configures a new <xref:System.Threading.Tasks.TaskFactory%601> object to create tasks that have a specified cancellation token, task creation options, continuation options, and a customized task scheduler.  
   
  [!code-csharp[TPL_Factories#2](~/samples/snippets/csharp/VS_Snippets_Misc/tpl_factories/cs/factoriestresult.cs#2)]
  [!code-vb[TPL_Factories#2](~/samples/snippets/visualbasic/VS_Snippets_Misc/tpl_factories/vb/factoriestresult.vb#2)]  
   
- In most cases, you do not have to instantiate a new <xref:System.Threading.Tasks.TaskFactory%601> instance. Instead, you can use the static <xref:System.Threading.Tasks.Task%601.Factory%2A?displayProperty=fullName> property, which returns a factory object that uses default values. You can then call its methods to start new tasks or define task continuations. For an illustration, see the example.  
+ In most cases, you do not have to instantiate a new <xref:System.Threading.Tasks.TaskFactory%601> instance. Instead, you can use the static <xref:System.Threading.Tasks.Task%601.Factory%2A?displayProperty=nameWithType> property, which returns a factory object that uses default values. You can then call its methods to start new tasks or define task continuations. For an illustration, see the example.  
   
    
   
 ## Examples  
- The following example uses the static <xref:System.Threading.Tasks.Task%601.Factory%2A> property to make two calls to the <xref:System.Threading.Tasks.TaskFactory%601.StartNew%2A?displayProperty=fullName> method. The first task returns a string array that is populated with the names of files in the user's MyDocuments directory, while the second returns a string array that is populated with the names of subdirectories of the user's MyDocuments directory. It then calls the <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%28System.Threading.Tasks.Task%5B%5D%2CSystem.Action%7BSystem.Threading.Tasks.Task%5B%5D%7D%29?displayProperty=fullName> method, which displays information about the number of files and directories in the arrays returned by the two tasks after they have completed execution.  
+ The following example uses the static <xref:System.Threading.Tasks.Task%601.Factory%2A> property to make two calls to the <xref:System.Threading.Tasks.TaskFactory%601.StartNew%2A?displayProperty=nameWithType> method. The first task returns a string array that is populated with the names of files in the user's MyDocuments directory, while the second returns a string array that is populated with the names of subdirectories of the user's MyDocuments directory. It then calls the <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%28System.Threading.Tasks.Task%5B%5D%2CSystem.Action%7BSystem.Threading.Tasks.Task%5B%5D%7D%29?displayProperty=nameWithType> method, which displays information about the number of files and directories in the arrays returned by the two tasks after they have completed execution.  
   
  [!code-csharp[System.Threading.Tasks.Task.Factory#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.factory/cs/factory2.cs#2)]
  [!code-vb[System.Threading.Tasks.Task.Factory#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.factory/vb/factory2.vb#2)]  
@@ -2464,5 +2464,55 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> parameter specifies an invalid value.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="StartNew">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates and starts a task.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FromAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a task instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ContinueWhenAll">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a continuation task that will be started upon the completion of a set of provided tasks.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ContinueWhenAny">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a continuation task that will be started upon the completion of any task in the provided set.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a <see cref="T:System.Threading.Tasks.TaskFactory`1" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

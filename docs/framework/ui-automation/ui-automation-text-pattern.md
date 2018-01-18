@@ -20,6 +20,8 @@ caps.latest.revision: 61
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # UI Automation Text Pattern
 > [!NOTE]
@@ -36,5 +38,5 @@ manager: "markl"
  <xref:System.Windows.Automation.Text>  
   
 ## See Also  
- [UI Automation Control Patterns](../../../docs/framework/ui-automation/ui-automation-control-patterns.md)   
+ [UI Automation Control Patterns](../../../docs/framework/ui-automation/ui-automation-control-patterns.md)  
  [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)

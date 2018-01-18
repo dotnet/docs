@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "exposing .NET Framework components to COM"
   - "interoperation with unmanaged code, exposing .NET Framework components"
@@ -23,6 +18,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Exposing .NET Framework Components to COM
 Writing a .NET type and consuming that type from unmanaged code are distinct activities for developers. This section describes several tips for writing managed code that interoperates with COM clients:  
@@ -60,5 +57,5 @@ Writing a .NET type and consuming that type from unmanaged code are distinct act
      A strong-named assembly can be installed in the global assembly cache and requires a signature from its publisher. Assemblies that are not strong named must be installed in the application directory of the client.  
   
 ## See Also  
- [Interoperating with Unmanaged Code](../../../docs/framework/interop/index.md)   
+ [Interoperating with Unmanaged Code](../../../docs/framework/interop/index.md)  
  [COM Interop Sample: COM Client and .NET Server](../../../docs/framework/interop/com-interop-sample-com-client-and-net-server.md)

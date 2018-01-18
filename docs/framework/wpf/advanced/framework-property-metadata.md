@@ -10,13 +10,15 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "metadata, framework properties"
-  - "framework property metadata"
+  - "metadata [WPF], framework properties"
+  - "framework property metadata [WPF]"
 ms.assetid: 9962f380-b885-4b61-a62e-457397083fea
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Framework Property Metadata
 Framework property metadata options are reported for the properties of object elements considered to be at the WPF framework level in the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] architecture. In general the WPF framework-level designation entails that features such as rendering, data binding, and property system refinements are handled by the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] presentation [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] and executables. Framework property metadata is queried by these systems to determine feature-specific characteristics of particular element properties.  
@@ -33,7 +35,7 @@ Framework property metadata options are reported for the properties of object el
   
 -   Reporting layout properties that affect an element (<xref:System.Windows.FrameworkPropertyMetadata.AffectsArrange%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>). You might set these flags in metadata if the property affects those respective aspects, and you are also implementing the <xref:System.Windows.FrameworkElement.MeasureOverride%2A> / <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> methods in your class to supply specific rendering behavior and information to the layout system. Typically, such an implementation would check for property invalidations in dependency properties where any of these layout properties were true in the property metadata, and only those invalidations would necessitate requesting a new layout pass.  
   
--   Reporting layout properties that affect the parent element of an element (<xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A>). Some examples where these flags are set by default are <xref:System.Windows.Documents.FixedPage.Left%2A?displayProperty=fullName> and <xref:System.Windows.Documents.Paragraph.KeepWithNext%2A?displayProperty=fullName>.  
+-   Reporting layout properties that affect the parent element of an element (<xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A>). Some examples where these flags are set by default are <xref:System.Windows.Documents.FixedPage.Left%2A?displayProperty=nameWithType> and <xref:System.Windows.Documents.Paragraph.KeepWithNext%2A?displayProperty=nameWithType>.  
   
 -   <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>. By default, dependency properties do not inherit values. <xref:System.Windows.FrameworkPropertyMetadata.OverridesInheritanceBehavior%2A> allows the pathway of inheritance to also travel into a visual tree, which is necessary for some control compositing scenarios.  
   
@@ -74,12 +76,12 @@ Framework property metadata options are reported for the properties of object el
   
 -   The property system behavior is that only the <xref:System.Windows.PropertyMetadata.CoerceValueCallback%2A> in the immediate metadata is invoked. No references to other <xref:System.Windows.PropertyMetadata.CoerceValueCallback%2A> implementations in the hierarchy are retained.  
   
--   The flags of <xref:System.Windows.FrameworkPropertyMetadataOptions> enumeration are combined as a bitwise OR operation.  If you specify <xref:System.Windows.FrameworkPropertyMetadataOptions>, the original options are not overwritten.  To change an option, set the corresponding property on <xref:System.Windows.FrameworkPropertyMetadata>. For example, if the original <xref:System.Windows.FrameworkPropertyMetadata> object sets the <xref:System.Windows.FrameworkPropertyMetadataOptions.NotDataBindable?displayProperty=fullName> flag, you can change that by setting <xref:System.Windows.FrameworkPropertyMetadata.IsNotDataBindable%2A?displayProperty=fullName> to `false`.  
+-   The flags of <xref:System.Windows.FrameworkPropertyMetadataOptions> enumeration are combined as a bitwise OR operation.  If you specify <xref:System.Windows.FrameworkPropertyMetadataOptions>, the original options are not overwritten.  To change an option, set the corresponding property on <xref:System.Windows.FrameworkPropertyMetadata>. For example, if the original <xref:System.Windows.FrameworkPropertyMetadata> object sets the <xref:System.Windows.FrameworkPropertyMetadataOptions.NotDataBindable?displayProperty=nameWithType> flag, you can change that by setting <xref:System.Windows.FrameworkPropertyMetadata.IsNotDataBindable%2A?displayProperty=nameWithType> to `false`.  
   
  This behavior is implemented by <xref:System.Windows.FrameworkPropertyMetadata.Merge%2A>, and can be overridden on derived metadata classes.  
   
 ## See Also  
- <xref:System.Windows.DependencyProperty.GetMetadata%2A>   
- [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md)   
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)   
+ <xref:System.Windows.DependencyProperty.GetMetadata%2A>  
+ [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md)  
+ [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
  [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)

@@ -7,6 +7,12 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Interfaces />
   <Docs>
     <summary>Implements methods that can be used to extend run-time behavior for a contract in either a service or client application.</summary>
@@ -29,11 +35,11 @@
  <xref:System.ServiceModel.Description.IContractBehavior> objects can make use of any of these methods, but often only one is important; in such cases, the unused methods can return without any value.  
   
 > [!NOTE]
->  All of the <xref:System.ServiceModel.Description.IContractBehavior> methods pass <xref:System.ServiceModel.Description.ContractDescription?displayProperty=fullName> and <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=fullName> as parameters. These parameters are for examination; if you modify the objects the execution behavior is undefined.  
+>  All of the <xref:System.ServiceModel.Description.IContractBehavior> methods pass <xref:System.ServiceModel.Description.ContractDescription?displayProperty=nameWithType> and <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=nameWithType> as parameters. These parameters are for examination; if you modify the objects the execution behavior is undefined.  
   
- <xref:System.ServiceModel.Description.IContractBehavior> types can be used on either the service or the client, or both. To perform a customization task on the service, the <xref:System.ServiceModel.Description.IContractBehavior> object must be added to the <xref:System.ServiceModel.Description.ContractDescription.Behaviors%2A> property prior to the construction of the service runtime, which occurs when the <xref:System.ServiceModel.ICommunicationObject.Open%2A?displayProperty=fullName> method is called on the <xref:System.ServiceModel.ServiceHost?displayProperty=fullName> object. There are two ways to do this.  
+ <xref:System.ServiceModel.Description.IContractBehavior> types can be used on either the service or the client, or both. To perform a customization task on the service, the <xref:System.ServiceModel.Description.IContractBehavior> object must be added to the <xref:System.ServiceModel.Description.ContractDescription.Behaviors%2A> property prior to the construction of the service runtime, which occurs when the <xref:System.ServiceModel.ICommunicationObject.Open%2A?displayProperty=nameWithType> method is called on the <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType> object. There are two ways to do this.  
   
- The first method is to programmatically add the custom contract behavior to the <xref:System.ServiceModel.Description.ContractDescription.Behaviors%2A> property prior to the point when the <xref:System.ServiceModel.ICommunicationObject.Open%2A?displayProperty=fullName> method is called on the <xref:System.ServiceModel.ServiceHost?displayProperty=fullName> object. When applied this way, the behavior is applied for all messages flowing through that contract on any endpoint.  
+ The first method is to programmatically add the custom contract behavior to the <xref:System.ServiceModel.Description.ContractDescription.Behaviors%2A> property prior to the point when the <xref:System.ServiceModel.ICommunicationObject.Open%2A?displayProperty=nameWithType> method is called on the <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType> object. When applied this way, the behavior is applied for all messages flowing through that contract on any endpoint.  
   
 > [!NOTE]
 >  The behavior is applied to all contracts of the same type. For example, if you programmatically add the same contract type to more than one endpoint, the behavior modifies all endpoints that refer to the same contract object.  
@@ -46,17 +52,17 @@
   
 -   A callback class.  In this case, the behavior is applied to the duplex client's endpoint.  
   
- The behavior of the second approach varies slightly if the custom attribute also implements <xref:System.ServiceModel.Description.IContractBehaviorAttribute?displayProperty=fullName>. In this case, the behavior is as follows:  
+ The behavior of the second approach varies slightly if the custom attribute also implements <xref:System.ServiceModel.Description.IContractBehaviorAttribute?displayProperty=nameWithType>. In this case, the behavior is as follows:  
   
--   A contract interface. In this case, the behavior is applied to all contracts of that type in any endpoint and [!INCLUDE[indigo1](~/includes/indigo1-md.md)] ignores the value of the <xref:System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract%2A?displayProperty=fullName> property.  
+-   A contract interface. In this case, the behavior is applied to all contracts of that type in any endpoint and [!INCLUDE[indigo1](~/includes/indigo1-md.md)] ignores the value of the <xref:System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract%2A?displayProperty=nameWithType> property.  
   
--   A service class.  In this case, the behavior is applied only to endpoints the contract of which is the value of the <xref:System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract%2A?displayProperty=fullName> property.  
+-   A service class.  In this case, the behavior is applied only to endpoints the contract of which is the value of the <xref:System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract%2A?displayProperty=nameWithType> property.  
   
--   A callback class.  In this case, the behavior is applied to the duplex client's endpoint and [!INCLUDE[indigo2](~/includes/indigo2-md.md)] ignores the value of the <xref:System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract%2A?displayProperty=fullName> property.  
+-   A callback class.  In this case, the behavior is applied to the duplex client's endpoint and [!INCLUDE[indigo2](~/includes/indigo2-md.md)] ignores the value of the <xref:System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract%2A?displayProperty=nameWithType> property.  
   
- To perform the customization task on the client for which it is intended, the <xref:System.ServiceModel.Description.IContractBehavior> object must be added to the <xref:System.ServiceModel.Description.ContractDescription.Behaviors%2A> property prior to the construction of the client runtime, which occurs when <xref:System.ServiceModel.ChannelFactory%601.CreateChannel%2A?displayProperty=fullName> is called. There are two ways to do this:  
+ To perform the customization task on the client for which it is intended, the <xref:System.ServiceModel.Description.IContractBehavior> object must be added to the <xref:System.ServiceModel.Description.ContractDescription.Behaviors%2A> property prior to the construction of the client runtime, which occurs when <xref:System.ServiceModel.ChannelFactory%601.CreateChannel%2A?displayProperty=nameWithType> is called. There are two ways to do this:  
   
--   Programmatically add the custom contract behavior to the <xref:System.ServiceModel.Description.ContractDescription.Behaviors%2A> property prior to the point when the <xref:System.ServiceModel.ChannelFactory%601.CreateChannel%2A?displayProperty=fullName> is called.  
+-   Programmatically add the custom contract behavior to the <xref:System.ServiceModel.Description.ContractDescription.Behaviors%2A> property prior to the point when the <xref:System.ServiceModel.ChannelFactory%601.CreateChannel%2A?displayProperty=nameWithType> is called.  
   
 -   Create a custom attribute that also implements <xref:System.ServiceModel.Description.IContractBehavior>.  
   
@@ -85,6 +91,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -120,6 +132,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -172,6 +190,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -222,6 +246,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

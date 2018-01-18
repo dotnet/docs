@@ -50,8 +50,8 @@
 ## Examples  
  The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library). The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
   
- [!code-csharp[wminet_EventWatcherOptions()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EventWatcherOptions()/cs/EventWatcherOptions().cs#1)]
- [!code-vb[wminet_EventWatcherOptions()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EventWatcherOptions()/vb/EventWatcherOptions().vb#1)]  
+ [!code-csharp[wminet_EventWatcherOptions#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EventWatcherOptions/cs/EventWatcherOptions.cs#1)]
+ [!code-vb[wminet_EventWatcherOptions#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EventWatcherOptions/vb/EventWatcherOptions.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -160,7 +160,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ICloneable.Clone" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.EventWatcherOptions" /> class for event watching.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

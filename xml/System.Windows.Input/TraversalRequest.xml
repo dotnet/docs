@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class is used as an input parameter for the <xref:System.Windows.UIElement.MoveFocus%2A?displayProperty=fullName> method. The <xref:System.Windows.UIElement.MoveFocus%2A> method has a WPF framework-level override that provides a more practical implementation (<xref:System.Windows.FrameworkElement.MoveFocus%2A?displayProperty=fullName>), as well as a parallel implementation on <xref:System.Windows.ContentElement> and <xref:System.Windows.FrameworkContentElement>. You typically will set properties on <xref:System.Windows.Input.TraversalRequest> in order to customize the focusing behavior when you request that the focus be moved to another element.  
+ This class is used as an input parameter for the <xref:System.Windows.UIElement.MoveFocus%2A?displayProperty=nameWithType> method. The <xref:System.Windows.UIElement.MoveFocus%2A> method has a WPF framework-level override that provides a more practical implementation (<xref:System.Windows.FrameworkElement.MoveFocus%2A?displayProperty=nameWithType>), as well as a parallel implementation on <xref:System.Windows.ContentElement> and <xref:System.Windows.FrameworkContentElement>. You typically will set properties on <xref:System.Windows.Input.TraversalRequest> in order to customize the focusing behavior when you request that the focus be moved to another element.  
   
  This class is also used as input parameters for the following methods:  
   
@@ -27,13 +27,14 @@
    
   
 ## Examples  
- The following example creates a <xref:System.Windows.Input.TraversalRequest> instance as input for a <xref:System.Windows.FrameworkElement.MoveFocus%2A?displayProperty=fullName> call.  
+ The following example creates a <xref:System.Windows.Input.TraversalRequest> instance as input for a <xref:System.Windows.FrameworkElement.MoveFocus%2A?displayProperty=nameWithType> call.  
   
  [!code-csharp[FocusSample#FocusSampleMoveFocus](~/samples/snippets/csharp/VS_Snippets_Wpf/FocusSample/CSharp/Window1.xaml.cs#focussamplemovefocus)]
  [!code-vb[FocusSample#FocusSampleMoveFocus](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FocusSample/visualbasic/window1.xaml.vb#focussamplemovefocus)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Windows.FrameworkElement.PredictFocus(System.Windows.Input.FocusNavigationDirection)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,13 +56,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example creates a <xref:System.Windows.Input.TraversalRequest> instance as input for a <xref:System.Windows.FrameworkElement.MoveFocus%2A?displayProperty=fullName> call.  
+ The following example creates a <xref:System.Windows.Input.TraversalRequest> instance as input for a <xref:System.Windows.FrameworkElement.MoveFocus%2A?displayProperty=nameWithType> call.  
   
  [!code-csharp[FocusSample#FocusSampleMoveFocus](~/samples/snippets/csharp/VS_Snippets_Wpf/FocusSample/CSharp/Window1.xaml.cs#focussamplemovefocus)]
  [!code-vb[FocusSample#FocusSampleMoveFocus](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FocusSample/visualbasic/window1.xaml.vb#focussamplemovefocus)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.MoveFocus(System.Windows.Input.TraversalRequest)" />
+        <altmember cref="P:System.Windows.Input.TraversalRequest.FocusNavigationDirection" />
       </Docs>
     </Member>
     <Member MemberName="FocusNavigationDirection">

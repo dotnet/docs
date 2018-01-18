@@ -103,6 +103,7 @@
         <summary>Gets the accelerator key for the element associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAcceleratorKey" />.</summary>
         <returns>An <see cref="F:System.String.Empty" /> string.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAcceleratorKeyCore" />
       </Docs>
     </Member>
     <Member MemberName="GetAccessKeyCore">
@@ -122,6 +123,7 @@
         <summary>Gets the access key for the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAccessKey" />.</summary>
         <returns>The access key for this <see cref="T:System.Windows.ContentElement" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAccessKeyCore" />
       </Docs>
     </Member>
     <Member MemberName="GetAutomationControlTypeCore">
@@ -141,6 +143,7 @@
         <summary>Gets the control type for the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
         <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Custom" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlTypeCore" />
       </Docs>
     </Member>
     <Member MemberName="GetAutomationIdCore">
@@ -167,6 +170,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationIdCore" />
       </Docs>
     </Member>
     <Member MemberName="GetBoundingRectangleCore">
@@ -186,6 +190,7 @@
         <summary>Gets the <see cref="T:System.Windows.Rect" /> representing the bounding rectangle of the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetBoundingRectangle" />.</summary>
         <returns>The bounding rectangle.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetBoundingRectangleCore" />
       </Docs>
     </Member>
     <Member MemberName="GetChildrenCore">
@@ -205,6 +210,7 @@
         <summary>Gets the collection of child elements of the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" />.</summary>
         <returns>The collection of child elements.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildrenCore" />
       </Docs>
     </Member>
     <Member MemberName="GetClassNameCore">
@@ -224,6 +230,7 @@
         <summary>Gets the name of the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
         <returns>An <see cref="F:System.String.Empty" /> string.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassNameCore" />
       </Docs>
     </Member>
     <Member MemberName="GetClickablePointCore">
@@ -250,6 +257,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClickablePointCore" />
       </Docs>
     </Member>
     <Member MemberName="GetHelpTextCore">
@@ -276,6 +284,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetHelpTextCore" />
       </Docs>
     </Member>
     <Member MemberName="GetItemStatusCore">
@@ -302,6 +311,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetItemStatusCore" />
       </Docs>
     </Member>
     <Member MemberName="GetItemTypeCore">
@@ -328,6 +338,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetItemTypeCore" />
       </Docs>
     </Member>
     <Member MemberName="GetLabeledByCore">
@@ -354,6 +365,27 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetLabeledByCore" />
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetLabeledBy" />
+      </Docs>
+    </Member>
+    <Member MemberName="GetLiveSettingCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.AutomationLiveSetting GetLiveSettingCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.AutomationLiveSetting GetLiveSettingCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.GetLiveSettingCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationLiveSetting</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the notification characteristics of the live region of the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetLiveSetting" />.</summary>
+        <returns>The notification characteristics of the live region.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNameCore">
@@ -380,6 +412,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetNameCore" />
       </Docs>
     </Member>
     <Member MemberName="GetOrientationCore">
@@ -399,6 +432,7 @@
         <summary>Gets a value that indicates whether the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" /> is laid out in a specific direction. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetOrientation" />.</summary>
         <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationOrientation.None" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetOrientationCore" />
       </Docs>
     </Member>
     <Member MemberName="GetPattern">
@@ -441,6 +475,7 @@
         <returns>
           <see langword="true" /> if the element has keyboard input focus; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.HasKeyboardFocusCore" />
       </Docs>
     </Member>
     <Member MemberName="IsContentElementCore">
@@ -461,6 +496,8 @@
         <returns>
           <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.IsContentElementCore" />
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.IsContentElement" />
       </Docs>
     </Member>
     <Member MemberName="IsControlElementCore">
@@ -481,6 +518,7 @@
         <returns>
           <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.IsControlElementCore" />
       </Docs>
     </Member>
     <Member MemberName="IsEnabledCore">
@@ -501,6 +539,7 @@
         <returns>
           <see langword="true" /> if the automation peer can receive and send events; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.IsEnabledCore" />
       </Docs>
     </Member>
     <Member MemberName="IsKeyboardFocusableCore">
@@ -521,6 +560,7 @@
         <returns>
           <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.IsKeyboardFocusableCore" />
       </Docs>
     </Member>
     <Member MemberName="IsOffscreenCore">
@@ -548,6 +588,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreenCore" />
       </Docs>
     </Member>
     <Member MemberName="IsPasswordCore">
@@ -568,6 +609,7 @@
         <returns>
           <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.IsPasswordCore" />
       </Docs>
     </Member>
     <Member MemberName="IsRequiredForFormCore">
@@ -588,6 +630,7 @@
         <returns>
           <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.IsRequiredForFormCore" />
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -624,6 +667,7 @@
       <Docs>
         <summary>Sets the keyboard input focus on the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.SetFocus" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.SetFocusCore" />
       </Docs>
     </Member>
   </Members>

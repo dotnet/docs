@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1bd2e4ed-a557-43f9-ba98-4c70cb75c154
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Create a Transactional Service
 This sample demonstrates various aspects of creating a transactional service and the use of a client-initiated transaction to coordinate service operations.  
@@ -71,7 +73,7 @@ This sample demonstrates various aspects of creating a transactional service and
     }  
     ```  
   
-3.  Configure the bindings in the configuration file, specifying that the transaction context should be flowed, and the protocols to be used to do so. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][ServiceModel Transaction Configuration](../../../../docs/framework/wcf/feature-details/servicemodel-transaction-configuration.md). Specifically, the binding type is specified in the endpoint element’s `binding` attribute. The [\<endpoint>](http://msdn.microsoft.com/en-us/13aa23b7-2f08-4add-8dbf-a99f8127c017) element contains a `bindingConfiguration` attribute that references a binding configuration named `transactionalOleTransactionsTcpBinding`, as shown in the following sample configuration.  
+3.  Configure the bindings in the configuration file, specifying that the transaction context should be flowed, and the protocols to be used to do so. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [ServiceModel Transaction Configuration](../../../../docs/framework/wcf/feature-details/servicemodel-transaction-configuration.md). Specifically, the binding type is specified in the endpoint element’s `binding` attribute. The [\<endpoint>](http://msdn.microsoft.com/en-us/13aa23b7-2f08-4add-8dbf-a99f8127c017) element contains a `bindingConfiguration` attribute that references a binding configuration named `transactionalOleTransactionsTcpBinding`, as shown in the following sample configuration.  
   
     ```xml  
     <service name="CalculatorService">  

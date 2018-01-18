@@ -29,6 +29,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.TypeConverter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,7 +48,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You should access a <xref:System.Drawing.FontConverter> object through the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A?displayProperty=fullName> method.  
+ You should access a <xref:System.Drawing.FontConverter> object through the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>

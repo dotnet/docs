@@ -10,12 +10,14 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "IEnumRAWINPUTDEVICE interface"
+  - "IEnumRAWINPUTDEVICE interface [WPF]"
 ms.assetid: 88c8b389-a48b-46b9-b895-8ed7b1e26fea
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # IEnumRAWINPUTDEVICE
 This interface enumerates the raw input devices, and is only used by PresentationHost.exe.  

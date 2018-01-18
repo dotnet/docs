@@ -27,13 +27,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.BaseDataList> class provides the common functionality for all data listing controls, such as <xref:System.Web.UI.WebControls.DataList> and <xref:System.Web.UI.WebControls.DataGrid>. A data listing control is used to display the records from a data source, such as a <xref:System.Data.DataView?displayProperty=fullName> control. Each data listing control can have a unique display style and capabilities. Because the <xref:System.Web.UI.WebControls.BaseDataList> class is abstract, an instance of this class is not created directly. Instead, data listing controls inherit the methods and properties common to all data listing controls from this class.  
+ The <xref:System.Web.UI.WebControls.BaseDataList> class provides the common functionality for all data listing controls, such as <xref:System.Web.UI.WebControls.DataList> and <xref:System.Web.UI.WebControls.DataGrid>. A data listing control is used to display the records from a data source, such as a <xref:System.Data.DataView?displayProperty=nameWithType> control. Each data listing control can have a unique display style and capabilities. Because the <xref:System.Web.UI.WebControls.BaseDataList> class is abstract, an instance of this class is not created directly. Instead, data listing controls inherit the methods and properties common to all data listing controls from this class.  
   
  You can control the appearance of a data listing control by setting certain properties of this class. To determine the amount of spacing between the cells of a data listing control, set the <xref:System.Web.UI.WebControls.BaseDataList.CellSpacing%2A> property. To determine the amount of spacing between the contents of a cell and the cell's border, set the <xref:System.Web.UI.WebControls.BaseDataList.CellPadding%2A> property. You can display the border between the individual cells of a data listing control by setting the <xref:System.Web.UI.WebControls.BaseDataList.GridLines%2A> property. The horizontal alignment of the content in the cells of a data listing control is controlled by the <xref:System.Web.UI.WebControls.BaseDataList.HorizontalAlign%2A> property.  
   
- The <xref:System.Web.UI.WebControls.BaseDataList> class provides two properties to support data binding. To bind data to any collection that implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> interface (such as <xref:System.Data.DataView?displayProperty=fullName> or <xref:System.Collections.ArrayList?displayProperty=fullName>), or the <xref:System.ComponentModel.IListSource> interface, use the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property to specify the data source. When you set the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property, you must manually write the code to perform the data binding. To automatically bind a data listing control to a data source represented by a data source control, use the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property and set its value to the <xref:System.Web.UI.Control.ID%2A> property of the data source control to use. When you set the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property, the data listing control automatically binds to the specified data source control. Therefore, you do not need to explicitly call the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method.  
+ The <xref:System.Web.UI.WebControls.BaseDataList> class provides two properties to support data binding. To bind data to any collection that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> interface (such as <xref:System.Data.DataView?displayProperty=nameWithType> or <xref:System.Collections.ArrayList?displayProperty=nameWithType>), or the <xref:System.ComponentModel.IListSource> interface, use the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property to specify the data source. When you set the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property, you must manually write the code to perform the data binding. To automatically bind a data listing control to a data source represented by a data source control, use the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property and set its value to the <xref:System.Web.UI.Control.ID%2A> property of the data source control to use. When you set the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property, the data listing control automatically binds to the specified data source control. Therefore, you do not need to explicitly call the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method.  
   
- If the data source specified by the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property contains multiple sources of data, use the <xref:System.Web.UI.WebControls.BaseDataList.DataMember%2A> property to specify the specific source to bind to the control. For example, if you have a <xref:System.Data.DataSet?displayProperty=fullName> object with multiple tables, you must specify which table to bind to the control. After you have specified the data source, use the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method to bind the data source to the control.  
+ If the data source specified by the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property contains multiple sources of data, use the <xref:System.Web.UI.WebControls.BaseDataList.DataMember%2A> property to specify the specific source to bind to the control. For example, if you have a <xref:System.Data.DataSet?displayProperty=nameWithType> object with multiple tables, you must specify which table to bind to the control. After you have specified the data source, use the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method to bind the data source to the control.  
   
  The <xref:System.Web.UI.WebControls.BaseDataList> class contains a <xref:System.Web.UI.WebControls.BaseDataList.DataKeys%2A> collection that stores the key field of each record (displayed as a row) in a data listing control. This allows you to store the key field with a data listing control without displaying it in the control. The key field is commonly used as part of an update query string to revise a specific record in the data source. The collection is filled with the values from the field specified by the <xref:System.Web.UI.WebControls.BaseDataList.DataKeyField%2A> property.  
   
@@ -44,6 +44,22 @@
     <block subset="none" type="overrides">
       <para>When you inherit from <see cref="T:System.Web.UI.WebControls.BaseDataList" />, you must override the following members: <see cref="M:System.Web.UI.WebControls.BaseDataList.CreateControlHierarchy(System.Boolean)" /> and <see cref="M:System.Web.UI.WebControls.BaseDataList.PrepareControlHierarchy" />.</para>
     </block>
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="T:System.Web.UI.WebControls.DataList" />
+    <altmember cref="P:System.Web.UI.WebControls.BaseDataList.CellSpacing" />
+    <altmember cref="P:System.Web.UI.WebControls.BaseDataList.CellPadding" />
+    <altmember cref="P:System.Web.UI.WebControls.BaseDataList.GridLines" />
+    <altmember cref="P:System.Web.UI.WebControls.BaseDataList.HorizontalAlign" />
+    <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" />
+    <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataMember" />
+    <altmember cref="M:System.Web.UI.WebControls.BaseDataList.DataBind" />
+    <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataKeys" />
+    <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataKeyField" />
+    <altmember cref="E:System.Web.UI.WebControls.BaseDataList.SelectedIndexChanged" />
+    <altmember cref="T:System.Collections.IEnumerable" />
+    <altmember cref="T:System.Data.DataView" />
+    <altmember cref="T:System.Collections.ArrayList" />
+    <altmember cref="T:System.Data.DataSet" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,6 +82,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataList.#ctor" />
+        <altmember cref="M:System.Web.UI.WebControls.DataGrid.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="AddParsedSubObject">
@@ -124,6 +142,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.CaptionAlign" />
       </Docs>
     </Member>
     <Member MemberName="CaptionAlign">
@@ -167,6 +186,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified type is not one of the <see cref="T:System.Web.UI.WebControls.TableCaptionAlign" /> enumeration values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.TableCaptionAlign" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.Caption" />
       </Docs>
     </Member>
     <Member MemberName="CellPadding">
@@ -204,11 +225,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseDataList.CellPadding%2A> property to specify the spacing between the contents of a cell and the cell's border.  
   
- <!-- TODO: review snippet reference [!code-csharp[BaseDataListCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListCellPadding/CS/basedatalistcellpaddingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BaseDataListCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListCellPadding/VB/basedatalistcellpaddingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[BaseDataListCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListCellPadding/CS/basedatalistcellpaddingcs.aspx#1)]
+ [!code-aspx-vb[BaseDataListCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListCellPadding/VB/basedatalistcellpaddingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.CellSpacing" />
       </Docs>
     </Member>
     <Member MemberName="CellSpacing">
@@ -245,11 +267,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseDataList.CellSpacing%2A> property to specify the spacing between adjacent cells.  
   
- <!-- TODO: review snippet reference [!code-csharp[BaseDataListCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListCellPadding/CS/basedatalistcellpaddingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BaseDataListCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListCellPadding/VB/basedatalistcellpaddingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[BaseDataListCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListCellPadding/CS/basedatalistcellpaddingcs.aspx#1)]
+ [!code-aspx-vb[BaseDataListCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListCellPadding/VB/basedatalistcellpaddingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.CellPadding" />
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -278,11 +301,12 @@
 ## Examples  
  The following code example demonstrates how to programmatically add a control to the <xref:System.Web.UI.WebControls.BaseDataList.Controls%2A> collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[BaseDataListControls#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListControls/CS/basedatalistcontrolscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BaseDataListControls#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListControls/VB/basedatalistcontrolsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[BaseDataListControls#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListControls/CS/basedatalistcontrolscs.aspx#1)]
+ [!code-aspx-vb[BaseDataListControls#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListControls/VB/basedatalistcontrolsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -359,6 +383,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.DataSourceSelectArguments" />
+        <altmember cref="P:System.Web.UI.DataSourceSelectArguments.Empty" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.SelectArguments" />
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -391,11 +418,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method to bind a data source to a <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic DataGrid Example 2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGrid Example 2/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic DataGrid Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGrid Example 2/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic DataGrid Example 2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGrid Example 2/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic DataGrid Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGrid Example 2/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSourceID" />
       </Docs>
     </Member>
     <Member MemberName="DataKeyField">
@@ -434,11 +463,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseDataList.DataKeyField%2A> property to specify the key field for the data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[BaseDataListDataKeys#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListDataKeys/CS/basedatalistdatakeyscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BaseDataListDataKeys#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListDataKeys/VB/basedatalistdatakeysvb.aspx#1)]  -->  
+ [!code-aspx-csharp[BaseDataListDataKeys#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListDataKeys/CS/basedatalistdatakeyscs.aspx#1)]
+ [!code-aspx-vb[BaseDataListDataKeys#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListDataKeys/VB/basedatalistdatakeysvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataKeys" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" />
       </Docs>
     </Member>
     <Member MemberName="DataKeys">
@@ -479,11 +510,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseDataList.DataKeys%2A> property to determine the value of the key field for the record being deleted.  
   
- <!-- TODO: review snippet reference [!code-csharp[BaseDataListDataKeys#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListDataKeys/CS/basedatalistdatakeyscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BaseDataListDataKeys#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListDataKeys/VB/basedatalistdatakeysvb.aspx#1)]  -->  
+ [!code-aspx-csharp[BaseDataListDataKeys#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListDataKeys/CS/basedatalistdatakeyscs.aspx#1)]
+ [!code-aspx-vb[BaseDataListDataKeys#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListDataKeys/VB/basedatalistdatakeysvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataKeyCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataKeyField" />
       </Docs>
     </Member>
     <Member MemberName="DataKeysArray">
@@ -509,6 +542,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ArrayList" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataKeys" />
       </Docs>
     </Member>
     <Member MemberName="DataMember">
@@ -547,11 +582,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseDataList.DataMember%2A> property to specify which table in a <xref:System.Data.DataSet> object to bind to a <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[BaseDataListDataMember#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListDataMember/CS/basedatalistdatamembercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BaseDataListDataMember#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListDataMember/VB/basedatalistdatamembervb.aspx#1)]  -->  
+ [!code-aspx-csharp[BaseDataListDataMember#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListDataMember/CS/basedatalistdatamembercs.aspx#1)]
+ [!code-aspx-vb[BaseDataListDataMember#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListDataMember/VB/basedatalistdatamembervb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" />
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -587,13 +623,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property to specify the source of values to bind to a data listing control. A data source must be a collection that implements either the <xref:System.Collections.IEnumerable?displayProperty=fullName> interface (such as <xref:System.Data.DataView?displayProperty=fullName>, <xref:System.Collections.ArrayList?displayProperty=fullName>, or <xref:System.Collections.Generic.List%601?displayProperty=fullName>) or the <xref:System.ComponentModel.IListSource> interface to bind to a control derived from the <xref:System.Web.UI.WebControls.BaseDataList> class. When you set the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property, you must manually write the code to perform data binding.  
+ Use the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property to specify the source of values to bind to a data listing control. A data source must be a collection that implements either the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> interface (such as <xref:System.Data.DataView?displayProperty=nameWithType>, <xref:System.Collections.ArrayList?displayProperty=nameWithType>, or <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>) or the <xref:System.ComponentModel.IListSource> interface to bind to a control derived from the <xref:System.Web.UI.WebControls.BaseDataList> class. When you set the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property, you must manually write the code to perform data binding.  
   
- If the data source specified by the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property contains multiple sources of data, use the <xref:System.Web.UI.WebControls.BaseDataList.DataMember%2A> property to specify the specific source to bind to the control. For example, if you have a <xref:System.Data.DataSet?displayProperty=fullName> object with multiple tables, you must specify which table to bind to the control. After you have specified the data source, use the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method to bind the data source to the control.  
+ If the data source specified by the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property contains multiple sources of data, use the <xref:System.Web.UI.WebControls.BaseDataList.DataMember%2A> property to specify the specific source to bind to the control. For example, if you have a <xref:System.Data.DataSet?displayProperty=nameWithType> object with multiple tables, you must specify which table to bind to the control. After you have specified the data source, use the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method to bind the data source to the control.  
   
  Alternately, you can use the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property to automatically bind to a data source represented by a data source control. When you set the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property, the data listing control automatically binds to the specified data source control. You do not need to write code that explicitly calls the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method.  
   
- If values are specified for both the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property and the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property, ASP.NET is not able to resolve the data source and an <xref:System.Web.HttpException?displayProperty=fullName> exception is thrown.  
+ If values are specified for both the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property and the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property, ASP.NET is not able to resolve the data source and an <xref:System.Web.HttpException?displayProperty=nameWithType> exception is thrown.  
   
  This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
@@ -602,13 +638,20 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property to specify the data source to bind to a <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic DataGrid Example 2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGrid Example 2/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic DataGrid Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGrid Example 2/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic DataGrid Example 2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGrid Example 2/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic DataGrid Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGrid Example 2/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The data source cannot be resolved because a value is specified for both the <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" /> property and the <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSourceID" /> property.</exception>
         <exception cref="T:System.ArgumentException">The data source is of an invalid type. The data source must be <see langword="null" /> or implement either the <see cref="T:System.Collections.IEnumerable" /> or the <see cref="T:System.ComponentModel.IListSource" /> interface.</exception>
+        <altmember cref="T:System.Collections.IEnumerable" />
+        <altmember cref="T:System.ComponentModel.IListSource" />
+        <altmember cref="T:System.Data.DataView" />
+        <altmember cref="T:System.Collections.ArrayList" />
+        <altmember cref="T:System.Collections.Generic.List`1" />
+        <altmember cref="T:System.Data.DataSet" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSourceID" />
       </Docs>
     </Member>
     <Member MemberName="DataSourceID">
@@ -643,15 +686,16 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property to access the <xref:System.Web.UI.Control.ID%2A> property of the data source control that the data listing control should use to retrieve its data source. The data source control referenced by the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property can be any control that implements the <xref:System.Web.UI.IDataSource> interface. The data source control must exist either in the same naming container as the data listing control that references it, or in a parent control of the data listing control. When you specify a value for this property, the data listing control automatically binds to the specified data source control. You do not need to write code that explicitly calls the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method.  
   
- Alternately, you can use the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property to specify the source of values to bind to a data listing control. The data source must be a collection that implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> interface (such as <xref:System.Data.DataView?displayProperty=fullName>, <xref:System.Collections.ArrayList?displayProperty=fullName>, or <xref:System.Collections.Generic.List%601?displayProperty=fullName>) or the <xref:System.ComponentModel.IListSource> interface to bind to a control derived from the <xref:System.Web.UI.WebControls.BaseDataList> class. When you set the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property, you must manually write the code to perform data binding.  
+ Alternately, you can use the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property to specify the source of values to bind to a data listing control. The data source must be a collection that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> interface (such as <xref:System.Data.DataView?displayProperty=nameWithType>, <xref:System.Collections.ArrayList?displayProperty=nameWithType>, or <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>) or the <xref:System.ComponentModel.IListSource> interface to bind to a control derived from the <xref:System.Web.UI.WebControls.BaseDataList> class. When you set the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property, you must manually write the code to perform data binding.  
   
- If values are specified for both the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property and the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property, ASP.NET is not able to resolve the data source and an <xref:System.Web.HttpException?displayProperty=fullName> exception is thrown.  
+ If values are specified for both the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property and the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property, ASP.NET is not able to resolve the data source and an <xref:System.Web.HttpException?displayProperty=nameWithType> exception is thrown.  
   
  This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The data source cannot be resolved because a value is specified for both the <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" /> property and the <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSourceID" /> property.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" />
       </Docs>
     </Member>
     <Member MemberName="EnsureDataBound">
@@ -677,6 +721,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSourceID" />
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataList.DataBind" />
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -703,6 +749,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerable" />
       </Docs>
     </Member>
     <Member MemberName="GridLines">
@@ -743,11 +790,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseDataList.GridLines%2A> property to display both the horizontal and vertical gridlines in a data-bound control.  
   
- <!-- TODO: review snippet reference [!code-csharp[BaseDataListGridLines#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListGridLines/CS/basedatalistgridlinescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BaseDataListGridLines#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListGridLines/VB/basedatalistgridlinesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[BaseDataListGridLines#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListGridLines/CS/basedatalistgridlinescs.aspx#1)]
+ [!code-aspx-vb[BaseDataListGridLines#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListGridLines/VB/basedatalistgridlinesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridLines" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlign">
@@ -791,11 +839,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseDataList.HorizontalAlign%2A> property to specify the horizontal alignment of the data-bound control.  
   
- <!-- TODO: review snippet reference [!code-csharp[BaseDataListHorizontalAlign#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListHorizontalAlign/CS/basedatalisthorizontalaligncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BaseDataListHorizontalAlign#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListHorizontalAlign/VB/basedatalisthorizontalalignvb.aspx#1)]  -->  
+ [!code-aspx-csharp[BaseDataListHorizontalAlign#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListHorizontalAlign/CS/basedatalisthorizontalaligncs.aspx#1)]
+ [!code-aspx-vb[BaseDataListHorizontalAlign#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListHorizontalAlign/VB/basedatalisthorizontalalignvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HorizontalAlign" />
       </Docs>
     </Member>
     <Member MemberName="Initialized">
@@ -822,6 +871,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataList" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.Initialized" />
       </Docs>
     </Member>
     <Member MemberName="IsBindableType">
@@ -848,18 +900,35 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.BaseDataList.IsBindableType%2A> static method to determine whether the specified data type can be bound to a list control that inherits from the <xref:System.Web.UI.WebControls.BaseDataList> class. The supported data types are <xref:System.Boolean?displayProperty=fullName>, <xref:System.Byte?displayProperty=fullName>, <xref:System.SByte?displayProperty=fullName>, <xref:System.Int16?displayProperty=fullName>, <xref:System.UInt16?displayProperty=fullName>, <xref:System.Int32?displayProperty=fullName>, <xref:System.UInt32?displayProperty=fullName>, <xref:System.Int64?displayProperty=fullName>, <xref:System.UInt64?displayProperty=fullName>, <xref:System.Char?displayProperty=fullName>, <xref:System.Double?displayProperty=fullName>, <xref:System.Single?displayProperty=fullName>, <xref:System.DateTime?displayProperty=fullName>, <xref:System.Decimal?displayProperty=fullName>, and <xref:System.String?displayProperty=fullName>.  
+ Use the <xref:System.Web.UI.WebControls.BaseDataList.IsBindableType%2A> static method to determine whether the specified data type can be bound to a list control that inherits from the <xref:System.Web.UI.WebControls.BaseDataList> class. The supported data types are <xref:System.Boolean?displayProperty=nameWithType>, <xref:System.Byte?displayProperty=nameWithType>, <xref:System.SByte?displayProperty=nameWithType>, <xref:System.Int16?displayProperty=nameWithType>, <xref:System.UInt16?displayProperty=nameWithType>, <xref:System.Int32?displayProperty=nameWithType>, <xref:System.UInt32?displayProperty=nameWithType>, <xref:System.Int64?displayProperty=nameWithType>, <xref:System.UInt64?displayProperty=nameWithType>, <xref:System.Char?displayProperty=nameWithType>, <xref:System.Double?displayProperty=nameWithType>, <xref:System.Single?displayProperty=nameWithType>, <xref:System.DateTime?displayProperty=nameWithType>, <xref:System.Decimal?displayProperty=nameWithType>, and <xref:System.String?displayProperty=nameWithType>.  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseDataList.IsBindableType%2A> property to determine whether values of a certain data type can be bound to a <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[BaseDataListIsBindableType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListIsBindableType/CS/basedatalistisbindabletypecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BaseDataListIsBindableType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListIsBindableType/VB/basedatalistisbindabletypevb.aspx#1)]  -->  
+ [!code-aspx-csharp[BaseDataListIsBindableType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListIsBindableType/CS/basedatalistisbindabletypecs.aspx#1)]
+ [!code-aspx-vb[BaseDataListIsBindableType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListIsBindableType/VB/basedatalistisbindabletypevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.Decimal" />
+        <altmember cref="P:System.Type.IsPrimitive" />
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.Byte" />
+        <altmember cref="T:System.SByte" />
+        <altmember cref="T:System.Int16" />
+        <altmember cref="T:System.UInt16" />
+        <altmember cref="T:System.Int32" />
+        <altmember cref="T:System.UInt32" />
+        <altmember cref="T:System.Int64" />
+        <altmember cref="T:System.UInt64" />
+        <altmember cref="T:System.Char" />
+        <altmember cref="T:System.Double" />
+        <altmember cref="T:System.Single" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="IsBoundUsingDataSourceID">
@@ -886,6 +955,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataList" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSourceID" />
       </Docs>
     </Member>
     <Member MemberName="OnDataBinding">
@@ -921,6 +993,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.BaseDataList.OnDataBinding(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.BaseDataList.OnDataBinding(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.Control.DataBinding" />
       </Docs>
     </Member>
     <Member MemberName="OnDataPropertyChanged">
@@ -947,6 +1020,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">An attempt was made to change the property value during the data-binding phase of the control.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSourceID" />
+        <altmember cref="E:System.Web.UI.Control.PreRender" />
       </Docs>
     </Member>
     <Member MemberName="OnDataSourceViewChanged">
@@ -986,6 +1063,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.BaseDataList.OnDataSourceViewChanged(System.Object,System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.BaseDataList.OnDataSourceViewChanged(System.Object,System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.DataSourceView.DataSourceViewChanged" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.RequiresDataBinding" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -1091,6 +1170,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.BaseDataList.OnSelectedIndexChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.BaseDataList.OnSelectedIndexChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.BaseDataList.SelectedIndexChanged" />
       </Docs>
     </Member>
     <Member MemberName="PrepareControlHierarchy">
@@ -1116,6 +1196,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataGrid.PrepareControlHierarchy" />
+        <altmember cref="M:System.Web.UI.WebControls.DataList.PrepareControlHierarchy" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -1167,6 +1249,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSourceID" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataMember" />
       </Docs>
     </Member>
     <Member MemberName="SelectArguments">
@@ -1192,6 +1277,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.DataSourceSelectArguments" />
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataList.CreateDataSourceSelectArguments" />
       </Docs>
     </Member>
     <Member MemberName="SelectedIndexChanged">
@@ -1221,16 +1308,18 @@
 ## Examples  
  The following code example demonstrates how to provide an event handler for the <xref:System.Web.UI.WebControls.BaseDataList.SelectedIndexChanged> event declaratively.  
   
- <!-- TODO: review snippet reference [!code-csharp[BaseDataListSelectedIndexChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListSelectedIndexChanged/CS/basedatalistselectedindexchangedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BaseDataListSelectedIndexChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListSelectedIndexChanged/VB/basedatalistselectedindexchangedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[BaseDataListSelectedIndexChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListSelectedIndexChanged/CS/basedatalistselectedindexchangedcs.aspx#1)]
+ [!code-aspx-vb[BaseDataListSelectedIndexChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListSelectedIndexChanged/VB/basedatalistselectedindexchangedvb.aspx#1)]  
   
  The following code example demonstrates how to provide an event handler for the <xref:System.Web.UI.WebControls.BaseDataList.SelectedIndexChanged> event programmatically.  
   
- <!-- TODO: review snippet reference [!code-csharp[BaseDataListSelectedIndexChanged2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListSelectedIndexChanged2/CS/basedatalistselectedindexchanged2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BaseDataListSelectedIndexChanged2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListSelectedIndexChanged2/VB/basedatalistselectedindexchanged2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[BaseDataListSelectedIndexChanged2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListSelectedIndexChanged2/CS/basedatalistselectedindexchanged2cs.aspx#1)]
+ [!code-aspx-vb[BaseDataListSelectedIndexChanged2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListSelectedIndexChanged2/VB/basedatalistselectedindexchanged2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataList.OnSelectedIndexChanged(System.EventArgs)" />
+        <altmember cref="T:System.EventHandler" />
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -1253,10 +1342,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=fullName>.  
+ This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
       </Docs>
     </Member>
     <Member MemberName="UseAccessibleHeader">
@@ -1290,6 +1382,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.Caption" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.CaptionAlign" />
       </Docs>
     </Member>
   </Members>

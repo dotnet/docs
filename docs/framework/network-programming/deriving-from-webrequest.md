@@ -7,11 +7,6 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "WebRequest class, pluggable protocols"
   - "protocol-specific request handler"
@@ -25,16 +20,18 @@ caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Deriving from WebRequest
 The <xref:System.Net.WebRequest> class is an abstract base class that provides the basic methods and properties for creating a protocol-specific request handler that fits the .NET Framework pluggable protocol model. Applications that use the **WebRequest** class can request data using any supported protocol without needing to specify the protocol used.  
   
- Two criteria must be met in order for a protocol-specific class to be used as a pluggable protocol: The class must implement the <xref:System.Net.IWebRequestCreate> interface, and it must register with the <xref:System.Net.WebRequest.RegisterPrefix%2A?displayProperty=fullName> method. The class must override all the abstract methods and properties of **WebRequest** to provide the pluggable interface.  
+ Two criteria must be met in order for a protocol-specific class to be used as a pluggable protocol: The class must implement the <xref:System.Net.IWebRequestCreate> interface, and it must register with the <xref:System.Net.WebRequest.RegisterPrefix%2A?displayProperty=nameWithType> method. The class must override all the abstract methods and properties of **WebRequest** to provide the pluggable interface.  
   
  **WebRequest** instances are intended for one-time use; if you want to make another request, create a new **WebRequest**. **WebRequest** supports the <xref:System.Runtime.Serialization.ISerializable> interface to enable developers to serialize a template **WebRequest** and then reconstruct the template for additional requests.  
   
 ## IWebRequest Create Method  
- The <xref:System.Net.IWebRequestCreate.Create%2A> method is responsible for initializing a new instance of the protocol-specific class. When a new **WebRequest** is created, the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method matches the requested URI with the URI prefixes registered with the **RegisterPrefix** method. The **Create** method of the proper protocol-specific descendant must return an initialized instance of the descendant capable of performing a standard request/response transaction for the protocol without needing any protocol-specific fields modified.  
+ The <xref:System.Net.IWebRequestCreate.Create%2A> method is responsible for initializing a new instance of the protocol-specific class. When a new **WebRequest** is created, the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method matches the requested URI with the URI prefixes registered with the **RegisterPrefix** method. The **Create** method of the proper protocol-specific descendant must return an initialized instance of the descendant capable of performing a standard request/response transaction for the protocol without needing any protocol-specific fields modified.  
   
 ## ConnectionGroupName Property  
  The <xref:System.Net.WebRequest.ConnectionGroupName%2A> property is used to name a group of connections to a resource so that multiple requests can be made over a single connection. To implement connection-sharing, you must use a protocol-specific method of pooling and assigning connections. For example, the provided <xref:System.Net.ServicePointManager> class implements connection sharing for the <xref:System.Net.HttpWebRequest> class. The **ServicePointManager** class creates a <xref:System.Net.ServicePoint> that provides a connection to a specific server for each connection group.  
@@ -53,7 +50,7 @@ The <xref:System.Net.WebRequest> class is an abstract base class that provides t
 ## Headers Property  
  The <xref:System.Net.WebRequest.Headers%2A> property contains an arbitrary collection of name/value pairs of metadata associated with the request. Any metadata needed by the protocol that can be expressed as a name/value pair can be included in the **Headers** property. Typically this information must be set before calling the <xref:System.Net.WebRequest.GetRequestStream%2A> or <xref:System.Net.WebRequest.GetResponse%2A> methods; once the request has been made, the metadata is considered read-only.  
   
- You are not required to use the **Headers** property to use header metadata. Protocol-specific metadata can be exposed as properties; for example, the <xref:System.Net.HttpWebRequest.UserAgent%2A?displayProperty=fullName> property exposes the **User-Agent** HTTP header. When you expose header metadata as a property, you should not allow the same property to be set using the **Headers** property.  
+ You are not required to use the **Headers** property to use header metadata. Protocol-specific metadata can be exposed as properties; for example, the <xref:System.Net.HttpWebRequest.UserAgent%2A?displayProperty=nameWithType> property exposes the **User-Agent** HTTP header. When you expose header metadata as a property, you should not allow the same property to be set using the **Headers** property.  
   
 ## Method Property  
  The <xref:System.Net.WebRequest.Method%2A> property contains the verb or action that the request is asking the server to perform. The default for the **Method** property must enable a standard request/response action without requiring any protocol-specific properties to be set. For example, the <xref:System.Net.HttpWebResponse.Method%2A> method defaults to GET, which requests a resource from a Web server and returns the response.  
@@ -98,8 +95,8 @@ The <xref:System.Net.WebRequest> class is an abstract base class that provides t
  The **GetResponse** method is responsible for creating an appropriate **WebResponse** descendant to contain the incoming response.  
   
 ## See Also  
- <xref:System.Net.WebRequest>   
- <xref:System.Net.HttpWebRequest>   
- <xref:System.Net.FileWebRequest>   
- [Programming Pluggable Protocols](../../../docs/framework/network-programming/programming-pluggable-protocols.md)   
+ <xref:System.Net.WebRequest>  
+ <xref:System.Net.HttpWebRequest>  
+ <xref:System.Net.FileWebRequest>  
+ [Programming Pluggable Protocols](../../../docs/framework/network-programming/programming-pluggable-protocols.md)  
  [Deriving from WebResponse](../../../docs/framework/network-programming/deriving-from-webresponse.md)

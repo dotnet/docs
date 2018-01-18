@@ -1,12 +1,10 @@
 ---
 title: "C# Compiler Options Listed Alphabetically"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "compiler options [C#], listed alpabetically"
   - "C# language, compiler options listed alphabitically"
@@ -16,20 +14,6 @@ ms.assetid: 43535ea0-ca47-4a15-b528-615087a86092
 caps.latest.revision: 25
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # C# Compiler Options Listed Alphabetically
 The following compiler options are sorted alphabetically. For a categorical list, see [C# Compiler Options Listed by Category](../../../csharp/language-reference/compiler-options/listed-by-category.md).  
@@ -94,7 +78,7 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[/win32res](../../../csharp/language-reference/compiler-options/win32res-compiler-option.md)|Specifies the win32 resource file (.res).|  
   
 ## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [C# Compiler Options Listed by Category](../../../csharp/language-reference/compiler-options/listed-by-category.md)   
- [How to: Set Environment Variables for the Visual Studio Command Line](../../../csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md)   
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+ [C# Compiler Options Listed by Category](../../../csharp/language-reference/compiler-options/listed-by-category.md)  
+ [How to: Set Environment Variables for the Visual Studio Command Line](../../../csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md)  
  [\<compiler> Element](../../../framework/configure-apps/file-schema/compiler/compiler-element.md)

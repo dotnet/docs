@@ -1,4 +1,4 @@
-﻿<%-- <Snippet2> --%>
+﻿<!-- <Snippet2> -->
 <%@ Page Title="" MasterPageFile="~/Seasons.master" AutoEventWireup="true" %>
 
 <%@ Register Src="Seasons.ascx" TagName="Seasons" TagPrefix="uc1" %>
@@ -7,4 +7,4 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
   <uc1:Seasons ID="Seasons1" runat="server" />
 </asp:Content>
-<%-- </Snippet2> --%>
+<!-- </Snippet2> -->

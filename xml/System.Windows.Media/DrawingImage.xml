@@ -14,6 +14,7 @@
     <summary>An <see cref="T:System.Windows.Media.ImageSource" /> that uses a <see cref="T:System.Windows.Media.Drawing" /> for content.</summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.Security.Permissions.MediaPermission">to display images that you don't have <see cref="T:System.Net.WebPermission" /> or <see cref="T:System.Security.Permissions.FileIOPermission" /> access for. Associated enumeration: <see cref="F:System.Security.Permissions.MediaPermissionImage.SafeImage" />.</permission>
+    <altmember cref="T:System.Windows.Media.ImageDrawing" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,7 +72,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -99,7 +100,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -227,5 +228,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.DrawingImage" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

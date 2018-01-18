@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_PRF_TRANSITION_REASON"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_PRF_TRANSITION_REASON enumeration [.NET Framework profiling]"
 ms.assetid: da941118-01b7-4197-ae5b-9f2f8adcd623
@@ -28,6 +26,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PRF_TRANSITION_REASON Enumeration
 Indicates the reason for a transition from managed to unmanaged code, or vice versa.  

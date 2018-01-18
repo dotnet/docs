@@ -39,7 +39,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public StoreItemCollection (string[] filePaths);" />
+      <MemberSignature Language="C#" Value="public StoreItemCollection (params string[] filePaths);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] filePaths) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.StoreItemCollection.#ctor(System.String[])" />
       <MemberType>Constructor</MemberType>
@@ -99,5 +99,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Metadata.Edm.StoreItemCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

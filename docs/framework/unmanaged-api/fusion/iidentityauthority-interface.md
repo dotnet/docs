@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IIdentityAuthority"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IIdentityAuthority interface [.NET Framework fusion]"
 ms.assetid: 6277f914-51a8-49be-bec6-52d6d648527d
@@ -28,6 +26,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IIdentityAuthority Interface
 Manages identity keys for code objects.  

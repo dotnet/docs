@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "channel model [WCF]"
 ms.assetid: 07a81e11-3911-4632-90d2-cca99825b5bd
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Channel Model Overview
 The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] channel stack is a layered communication stack with one or more channels that process messages. At the bottom of the stack is a transport channel that is responsible for adapting the channel stack to the underlying transport (for example, TCP, HTTP, SMTP and other types of transport.). Channels provide a low-level programming model for sending and receiving messages. This programming model relies on several interfaces and other types collectively known as the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] channel model. This topic discusses channel shapes, the construction of a basic channel listener (on the service) and channel factory (on the client).  
@@ -44,7 +46,7 @@ The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] channel stack is a l
   
 -   <xref:System.ServiceModel.Channels.IDuplexChannel>  
   
- Further, each of these shapes has an equivalent that extends <xref:System.ServiceModel.Channels.ISessionChannel%601?displayProperty=fullName> to support sessions. These are:  
+ Further, each of these shapes has an equivalent that extends <xref:System.ServiceModel.Channels.ISessionChannel%601?displayProperty=nameWithType> to support sessions. These are:  
   
 -   <xref:System.ServiceModel.Channels.IInputSessionChannel>  
   
@@ -80,7 +82,7 @@ The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] channel stack is a l
 |-----------|-----------------|  
 |[Service: Channel Listeners and Channels](../../../../docs/framework/wcf/extending/service-channel-listeners-and-channels.md)|Describes channel listeners, which listen for incoming channels in a service application.|  
 |[Client: Channel Factories and Channels](../../../../docs/framework/wcf/extending/client-channel-factories-and-channels.md)|Describes channel factories, which create channels to connect to a service application.|  
-|[Understanding State Changes](../../../../docs/framework/wcf/extending/understanding-state-changes.md)|Describes how the <xref:System.ServiceModel.ICommunicationObject?displayProperty=fullName> interface models state changes in channels.|  
+|[Understanding State Changes](../../../../docs/framework/wcf/extending/understanding-state-changes.md)|Describes how the <xref:System.ServiceModel.ICommunicationObject?displayProperty=nameWithType> interface models state changes in channels.|  
 |[Choosing a Message Exchange Pattern](../../../../docs/framework/wcf/extending/choosing-a-message-exchange-pattern.md)|Describes the six basic message exchange patterns that channels can support.|  
 |[Handling Exceptions and Faults](../../../../docs/framework/wcf/extending/handling-exceptions-and-faults.md)|Describes how to handle faults and exceptions in custom channels.|  
 |[Configuration and Metadata Support](../../../../docs/framework/wcf/extending/configuration-and-metadata-support.md)|Describes how to support the use of custom channels from the application model and how to export and import metadata using bindings and binding elements.|

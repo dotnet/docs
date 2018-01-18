@@ -36,9 +36,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Specify that the <xref:System.Net.BindIPEndPoint> delegate is used by a <xref:System.Net.ServicePoint> by setting the <xref:System.Net.ServicePoint.BindIPEndPointDelegate%2A?displayProperty=fullName> property with the delegate as an argument. This delegate should specify a local IP address and port number in the returned <xref:System.Net.IPEndPoint>.  
+ Specify that the <xref:System.Net.BindIPEndPoint> delegate is used by a <xref:System.Net.ServicePoint> by setting the <xref:System.Net.ServicePoint.BindIPEndPointDelegate%2A?displayProperty=nameWithType> property with the delegate as an argument. This delegate should specify a local IP address and port number in the returned <xref:System.Net.IPEndPoint>.  
   
- If the .NET Framework cannot bind the returned <xref:System.Net.IPEndPoint> to the <xref:System.Net.ServicePoint> after <xref:System.Int32.MaxValue?displayProperty=fullName> attempts, an <xref:System.OverflowException> is thrown.  
+ If the .NET Framework cannot bind the returned <xref:System.Net.IPEndPoint> to the <xref:System.Net.ServicePoint> after <xref:System.Int32.MaxValue?displayProperty=nameWithType> attempts, an <xref:System.OverflowException> is thrown.  
   
  If you want the delegate to give the service point control of the connection binding, the delegate should return `null`. If you want to abort the connection, the delegate must throw an exception.  
   

@@ -12,8 +12,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates whether a <see cref="T:System.Reflection.Metadata.StandaloneSignature"/> represents a standalone method or local variable signature.</summary>
-    <remarks></remarks>
+    <summary>Indicates whether a <see cref="T:System.Reflection.Metadata.StandaloneSignature" /> represents a standalone method or local variable signature.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="LocalVariables">
@@ -31,7 +32,7 @@
         <ReturnType>System.Reflection.Metadata.StandaloneSignatureKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Reflection.Metadata.MemberReference"/> references a local variable signature.</summary>
+        <summary>The <see cref="T:System.Reflection.Metadata.MemberReference" /> references a local variable signature.</summary>
       </Docs>
     </Member>
     <Member MemberName="Method">
@@ -49,7 +50,7 @@
         <ReturnType>System.Reflection.Metadata.StandaloneSignatureKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.Reflection.Metadata.StandaloneSignature"/> represents a standalone method signature.</summary>
+        <summary>The <see cref="T:System.Reflection.Metadata.StandaloneSignature" /> represents a standalone method signature.</summary>
       </Docs>
     </Member>
   </Members>

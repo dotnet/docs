@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "deploying applications [.NET Framework], resources"
   - "resource files, deploying"
@@ -35,6 +38,8 @@ caps.latest.revision: 26
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Packaging and Deploying Resources in Desktop Apps
 Applications rely on the .NET Framework Resource Manager, represented by the <xref:System.Resources.ResourceManager> class, to retrieve localized resources. The Resource Manager assumes that a hub and spoke model is used to package and deploy resources. The hub is the main assembly that contains the nonlocalizable executable code and the resources for a single culture, called the neutral or default culture. The default culture is the fallback culture for the application; it is the culture whose resources are used if localized resources cannot be found. Each spoke connects to a satellite assembly that contains the resources for a single culture, but does not contain any code.  
@@ -57,7 +62,7 @@ Applications rely on the .NET Framework Resource Manager, represented by the <xr
  When you package your application's resources, you must name them using the resource naming conventions that the common language runtime expects. The runtime identifies a resource by its culture name. Each culture is given a unique name, which is usually a combination of a two-letter, lowercase culture name associated with a language and, if required, a two-letter, uppercase subculture name associated with a country or region. The subculture name follows the culture name, separated by a dash (-). Examples include ja-JP for Japanese as spoken in Japan, en-US for English as spoken in the United States, de-DE for German as spoken in Germany, or de-AT for German as spoken in Austria. See the [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center for a complete list of culture names.  
   
 > [!NOTE]
->  For information about creating resource files, see [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md) and [Creating Satellite Assemblies](../../../docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md) in the MSDN Library.  
+>  For information about creating resource files, see [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md) and [Creating Satellite Assemblies](../../../docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md).  
   
 <a name="cpconpackagingdeployingresourcesanchor1"></a>   
 ## The Resource Fallback Process  
@@ -78,7 +83,7 @@ Applications rely on the .NET Framework Resource Manager, represented by the <xr
   
 3.  The runtime next queries the Windows Installer to determine whether the satellite assembly is to be installed on demand. If so, it handles the installation, loads the assembly, and searches it or the requested resource. If it finds the resource in the assembly, it uses it. If it doesn't find the resource, it continues the search.  
   
-4.  The runtime raises the <xref:System.AppDomain.AssemblyResolve?displayProperty=fullName> event to indicate that it is unable to find the satellite assembly. If you choose to handle the event, your event handler can return a reference to the satellite assembly whose resources will be used for the lookup. Otherwise, the event handler returns `null` and the search continues.  
+4.  The runtime raises the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event to indicate that it is unable to find the satellite assembly. If you choose to handle the event, your event handler can return a reference to the satellite assembly whose resources will be used for the lookup. Otherwise, the event handler returns `null` and the search continues.  
   
 5.  The runtime next searches the global assembly cache again, this time for the parent assembly of the requested culture. If the parent assembly exists in the global assembly cache, the runtime searches the assembly for the requested resource.  
   
@@ -88,9 +93,9 @@ Applications rely on the .NET Framework Resource Manager, represented by the <xr
   
 7.  The runtime next queries the Windows Installer to determine whether the parent satellite assembly is to be installed on demand. If so, it handles the installation, loads the assembly, and searches it or the requested resource. If it finds the resource in the assembly, it uses it. If it doesn't find the resource, it continues the search.  
   
-8.  The runtime raises the <xref:System.AppDomain.AssemblyResolve?displayProperty=fullName> event to indicate that it is unable to find an appropriate fallback resource. If you choose to handle the event, your event handler can return a reference to the satellite assembly whose resources will be used for the lookup. Otherwise, the event handler returns `null` and the search continues.  
+8.  The runtime raises the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event to indicate that it is unable to find an appropriate fallback resource. If you choose to handle the event, your event handler can return a reference to the satellite assembly whose resources will be used for the lookup. Otherwise, the event handler returns `null` and the search continues.  
   
-9. The runtime next searches parent assemblies, as in the previous three steps, through many potential levels. Each culture has only one parent, which is defined by the <xref:System.Globalization.CultureInfo.Parent%2A?displayProperty=fullName> property, but a parent might have its own parent. The search for parent cultures stops when a culture's <xref:System.Globalization.CultureInfo.Parent%2A> property returns <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>; for resource fallback, the invariant culture is not considered a parent culture or a culture that can have resources.  
+9. The runtime next searches parent assemblies, as in the previous three steps, through many potential levels. Each culture has only one parent, which is defined by the <xref:System.Globalization.CultureInfo.Parent%2A?displayProperty=nameWithType> property, but a parent might have its own parent. The search for parent cultures stops when a culture's <xref:System.Globalization.CultureInfo.Parent%2A> property returns <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>; for resource fallback, the invariant culture is not considered a parent culture or a culture that can have resources.  
   
 10. If the culture that was originally specified and all parents have been searched and the resource is still not found, the resource for the default (fallback) culture is used. Typically, the resources for the default culture are included in the main application assembly. However, you can specify a value of <xref:System.Resources.UltimateResourceFallbackLocation.Satellite> for the <xref:System.Resources.NeutralResourcesLanguageAttribute.Location%2A> property of the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute to indicate that the ultimate fallback location for resources is a satellite assembly, rather than the main assembly.  
   
@@ -109,7 +114,7 @@ Applications rely on the .NET Framework Resource Manager, represented by the <xr
   
 -   Satellite assemblies are not installed on demand.  
   
--   Application code does not handle the <xref:System.AppDomain.AssemblyResolve?displayProperty=fullName> event.  
+-   Application code does not handle the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event.  
   
  You optimize the probe for satellite assemblies by including the [\<relativeBindForResources>](../../../docs/framework/configure-apps/file-schema/runtime/relativebindforresources-element.md) element and setting its `enabled` attribute to `true` in the application configuration file, as shown in the following example.  
   
@@ -127,10 +132,10 @@ Applications rely on the .NET Framework Resource Manager, represented by the <xr
   
 -   The runtime doesn't query the Windows Installer for on-demand installation of satellite assemblies.  
   
--   If the probe for a particular resource assembly fails, the runtime does not raise the <xref:System.AppDomain.AssemblyResolve?displayProperty=fullName> event.  
+-   If the probe for a particular resource assembly fails, the runtime does not raise the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event.  
   
 ### Ultimate Fallback to Satellite Assembly  
- You can optionally remove resources from the main assembly and specify that the runtime should load the ultimate fallback resources from a satellite assembly that corresponds to a specific culture. To control the fallback process, you use the <xref:System.Resources.NeutralResourcesLanguageAttribute.%23ctor%28System.String%2CSystem.Resources.UltimateResourceFallbackLocation%29?displayProperty=fullName> constructor and supply a value for the <xref:System.Resources.UltimateResourceFallbackLocation> parameter that specifies whether Resource Manager should extract the fallback resources from the main assembly or from a satellite assembly.  
+ You can optionally remove resources from the main assembly and specify that the runtime should load the ultimate fallback resources from a satellite assembly that corresponds to a specific culture. To control the fallback process, you use the <xref:System.Resources.NeutralResourcesLanguageAttribute.%23ctor%28System.String%2CSystem.Resources.UltimateResourceFallbackLocation%29?displayProperty=nameWithType> constructor and supply a value for the <xref:System.Resources.UltimateResourceFallbackLocation> parameter that specifies whether Resource Manager should extract the fallback resources from the main assembly or from a satellite assembly.  
   
  The following example uses the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute to store an application's fallback resources in a satellite assembly for the French (fr) language.  The example has two text-based resource files that define a single string resource named `Greeting`. The first, resources.fr.txt, contains a French language resource.  
   
@@ -185,7 +190,7 @@ Bon jour!
  Time or budget constraints might prevent you from creating a set of resources for every subculture that your application supports. Instead, you can create a single satellite assembly for a parent culture that all related subcultures can use. For example, you can provide a single English satellite assembly (en) that is retrieved by users who request region-specific English resources, and a single German satellite assembly (de) for users who request region-specific German resources. For example, requests for German as spoken in Germany (de-DE), Austria (de-AT), and Switzerland (de-CH) would fall back to the German satellite assembly (de). The default resources are the final fallback and therefore should be the resources that will be requested by the majority of your application's users, so choose these resources carefully. This approach deploys resources that are less culturally specific, but can significantly reduce your application's localization costs.  
   
 ## See Also  
- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)   
- [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)   
- [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)   
+ [Resources in Desktop Apps](../../../docs/framework/resources/index.md)  
+ [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)  
+ [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)  
  [Creating Satellite Assemblies](../../../docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md)

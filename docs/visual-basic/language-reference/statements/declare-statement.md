@@ -1,60 +1,41 @@
 ---
 title: "Declare Statement"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Declare"
   - "vb.Lib"
   - "vb.Any"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "Lib keyword"
-  - "declaring procedures, Declare statement"
+  - "Lib keyword [Visual Basic]"
+  - "declaring procedures [Visual Basic], Declare statement"
   - "functions [Visual Basic], function procedures"
-  - "declarations, procedures"
-  - "procedures, declaration"
-  - "procedures, external"
-  - "Alias keyword"
-  - "external references, Visual Basic"
+  - "declarations [Visual Basic], procedures"
+  - "procedures [Visual Basic], declaration"
+  - "procedures [Visual Basic], external"
+  - "Alias keyword [Visual Basic]"
+  - "external references [Visual Basic], Visual Basic"
   - "DLLs, declaring procedures"
-  - "Declare statement"
-  - "declarations, external"
+  - "Declare statement [Visual Basic]"
+  - "declarations [Visual Basic], external"
   - "Visual Basic code, Function procedures"
-  - "As keyword, in Declare statement"
+  - "As keyword [Visual Basic], in Declare statement"
   - "resources [Visual Basic], declaring"
-  - "Public keyword, Declare statement"
+  - "Public keyword [Visual Basic], Declare statement"
   - "platform invoke, Visual Basic external references"
-  - "Sub procedures, declarations"
+  - "Sub procedures [Visual Basic], declarations"
   - "APIs, declaring API functions"
   - "Visual Basic code, Sub procedures"
-  - "Function procedures, declaring"
+  - "Function procedures [Visual Basic], declaring"
 ms.assetid: d3f21fb0-b804-4c99-97ed-583b23894cf1
 caps.latest.revision: 30
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Declare Statement
 Declares a reference to a procedure implemented in an external file.  
@@ -164,11 +145,11 @@ Declare [ charsetmodifier ] [ Function ] name Lib "libname" _
  [!code-vb[VbVbalrStatements#1](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/declare-statement_3.vb)]  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>   
- [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)   
- [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)   
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)   
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)   
- [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)   
- [Call Statement](../../../visual-basic/language-reference/statements/call-statement.md)   
+ <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>  
+ [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)  
+ [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)  
+ [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
+ [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
+ [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)  
+ [Call Statement](../../../visual-basic/language-reference/statements/call-statement.md)  
  [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)

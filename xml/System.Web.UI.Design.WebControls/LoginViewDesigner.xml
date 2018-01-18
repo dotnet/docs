@@ -54,6 +54,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.LoginView" />
+    <altmember cref="T:System.Web.UI.Control" />
+    <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+    <altmember cref="T:System.Web.UI.Design.HtmlControlDesigner" />
+    <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,6 +81,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.LoginView" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <altmember cref="T:System.Web.UI.Design.HtmlControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
       </Docs>
     </Member>
     <Member MemberName="ActionLists">
@@ -101,6 +110,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.LoginView" />
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionListCollection" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.ActionLists" />
+        <altmember cref="P:System.ComponentModel.Design.ComponentDesigner.ActionLists" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -138,6 +152,8 @@
         <block subset="none" type="overrides">
           <para>If you override the <see cref="M:System.Web.UI.Design.WebControls.LoginViewDesigner.GetDesignTimeHtml" /> method, be sure to call the <see cref="M:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml" /> base method because it eventually, through several override levels, calls on the <see cref="T:System.Web.UI.WebControls.LoginView" /> control or a copy of the control to generate the markup.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.LoginView" />
+        <altmember cref="M:System.Web.UI.WebControls.LoginView.SetDesignModeState(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -178,6 +194,9 @@
         <block subset="none" type="overrides">
           <para>This <see cref="M:System.Web.UI.Design.WebControls.LoginViewDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" /> overload does not call on its base method or the <see cref="T:System.Web.UI.WebControls.LoginView" /> control to generate the markup.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.LoginView" />
+        <altmember cref="T:System.Web.UI.Design.EditableDesignerRegion" />
+        <altmember cref="T:System.Web.UI.Design.DesignerRegionCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetEditableDesignerRegionContent">
@@ -209,6 +228,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.LoginView" />
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="M:System.Web.UI.Design.ControlPersister.PersistTemplate(System.Web.UI.ITemplate,System.ComponentModel.Design.IDesignerHost)" />
+        <altmember cref="M:System.Web.UI.ITemplate.InstantiateIn(System.Web.UI.Control)" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.LoginViewDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)" />
       </Docs>
     </Member>
     <Member MemberName="GetEmptyDesignTimeHtml">
@@ -243,6 +268,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.WebControls.LoginViewDesigner.GetDesignTimeHtml" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml(System.String)" />
+        <altmember cref="T:System.Web.UI.WebControls.LoginView" />
       </Docs>
     </Member>
     <Member MemberName="GetErrorDesignTimeHtml">
@@ -280,6 +308,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml(System.String)" />
+        <altmember cref="T:System.Web.UI.WebControls.LoginView" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -320,6 +350,11 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="component" /> is not a <see cref="T:System.Web.UI.WebControls.LoginView" /> or of a class derived from <see cref="T:System.Web.UI.WebControls.LoginView" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.LoginView" />
+        <altmember cref="T:System.ComponentModel.IComponent" />
+        <altmember cref="E:System.Web.UI.Design.IControlDesignerView.ViewEvent" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.Initialize(System.ComponentModel.IComponent)" />
+        <altmember cref="M:System.ComponentModel.Design.ComponentDesigner.Initialize(System.ComponentModel.IComponent)" />
       </Docs>
     </Member>
     <Member MemberName="OnComponentChanged">
@@ -352,6 +387,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanged" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentChangedEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.LoginView" />
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -376,7 +414,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=fullName> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the **Properties** grid.  
+ Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=nameWithType> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the **Properties** grid.  
   
  The <xref:System.Web.UI.Design.WebControls.LoginViewDesigner.PreFilterProperties%2A> method applies the <xref:System.ComponentModel.BrowsableAttribute> attribute of the <xref:System.Web.UI.WebControls.LoginView.RoleGroups%2A> property so that it does not appear in the **Properties** grid.  
   
@@ -393,6 +431,11 @@
         <block subset="none" type="overrides">
           <para>Override the <see cref="M:System.Web.UI.Design.WebControls.LoginViewDesigner.PreFilterProperties(System.Collections.IDictionary)" /> method to add properties to, remove properties from, or change attributes of properties in the design-time property collection. Be sure to call the <see cref="M:System.Web.UI.Design.ControlDesigner.PreFilterProperties(System.Collections.IDictionary)" /> base method before performing other processing.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.LoginView" />
+        <altmember cref="T:System.ComponentModel.BrowsableAttribute" />
+        <altmember cref="P:System.Web.UI.WebControls.LoginView.RoleGroups" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Web.UI.Design.HtmlControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="SetEditableDesignerRegionContent">
@@ -425,6 +468,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.LoginView" />
+        <altmember cref="M:System.Web.UI.Design.ControlParser.ParseTemplate(System.ComponentModel.Design.IDesignerHost,System.String,System.String)" />
+        <altmember cref="T:System.Web.UI.Design.EditableDesignerRegion" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.LoginViewDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="TemplateGroups">
@@ -450,6 +498,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.LoginView" />
+        <altmember cref="T:System.Web.UI.Design.TemplateGroupCollection" />
+        <altmember cref="T:System.Web.UI.Design.TemplateGroup" />
+        <altmember cref="T:System.Web.UI.Design.TemplateDefinition" />
+        <altmember cref="T:System.Web.UI.WebControls.RoleGroup" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.TemplateGroups" />
       </Docs>
     </Member>
     <Member MemberName="UsePreviewControl">
@@ -480,7 +534,22 @@
         <block subset="none" type="overrides">
           <para>You can override the <see cref="P:System.Web.UI.Design.WebControls.LoginViewDesigner.UsePreviewControl" /> property to return <see langword="false" /> or to determine its value based on whether the control is marked with a class level <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" /> attribute. If the <see cref="P:System.Web.UI.Design.WebControls.LoginViewDesigner.UsePreviewControl" /> is not overridden, the <see cref="T:System.Web.UI.WebControls.LoginView" /> ignores the <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" />.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.LoginView" />
+        <altmember cref="M:System.Web.UI.Design.ControlPersister.PersistControl(System.IO.TextWriter,System.Web.UI.Control)" />
+        <altmember cref="M:System.Web.UI.Design.ControlParser.ParseControl(System.ComponentModel.Design.IDesignerHost,System.String)" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.ViewControl" />
+        <altmember cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.UsePreviewControl" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDesignTimeHtml">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the markup that is used to render the associated <see cref="T:System.Web.UI.WebControls.LoginView" /> control at design time.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

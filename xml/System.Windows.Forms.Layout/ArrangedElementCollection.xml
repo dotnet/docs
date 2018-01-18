@@ -20,9 +20,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.Layout.ArrangedElementCollection> class represents a collection of objects arranged on a design surface or inside a parent <xref:System.Windows.Forms.ContainerControl?displayProperty=fullName>.  
+ The <xref:System.Windows.Forms.Layout.ArrangedElementCollection> class represents a collection of objects arranged on a design surface or inside a parent <xref:System.Windows.Forms.ContainerControl?displayProperty=nameWithType>.  
   
- There are no publicly defined constructors in <xref:System.Windows.Forms.Layout.ArrangedElementCollection> because it is designed to be used only internally within the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. However, classes derived from <xref:System.Windows.Forms.Layout.ArrangedElementCollection>, such as <xref:System.Windows.Forms.Control.ControlCollection?displayProperty=fullName>, are available to the developer.  
+ There are no publicly defined constructors in <xref:System.Windows.Forms.Layout.ArrangedElementCollection> because it is designed to be used only internally within the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. However, classes derived from <xref:System.Windows.Forms.Layout.ArrangedElementCollection>, such as <xref:System.Windows.Forms.Control.ControlCollection?displayProperty=nameWithType>, are available to the developer.  
   
  ]]></format>
     </remarks>
@@ -31,6 +31,9 @@
  An <see cref="T:System.Windows.Forms.Layout.ArrangedElementCollection" /> can support multiple readers concurrently, as long as the collection is not modified. The <see cref="M:System.Windows.Forms.Layout.ArrangedElementCollection.GetEnumerator" /> method returns an <see cref="T:System.Collections.IEnumerator" /> that can be used to access elements.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads could still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.</threadsafe>
+    <altmember cref="T:System.Collections.ArrayList" />
+    <altmember cref="T:System.Windows.Forms.Control.ControlCollection" />
+    <altmember cref="M:System.Windows.Forms.Layout.ArrangedElementCollection.GetEnumerator" />
   </Docs>
   <Members>
     <Member MemberName="CopyTo">
@@ -59,7 +62,7 @@
 ## Remarks  
  The type of the specified array must be compatible with the source collection.  
   
- This method uses the <xref:System.Array.Copy%2A?displayProperty=fullName> method to copy the elements.  
+ This method uses the <xref:System.Array.Copy%2A?displayProperty=nameWithType> method to copy the elements.  
   
  ]]></format>
         </remarks>
@@ -74,6 +77,10 @@
   
  The number of elements in the source collection is greater than the available space from <paramref name="index" /> to the end of <paramref name="array" />.</exception>
         <exception cref="T:System.InvalidCastException">The type of the source element cannot be cast automatically to the type of <paramref name="array" />.</exception>
+        <altmember cref="M:System.Windows.Forms.Layout.ArrangedElementCollection.GetEnumerator" />
+        <altmember cref="M:System.Windows.Forms.Layout.ArrangedElementCollection.System#Collections#IList#Contains(System.Object)" />
+        <altmember cref="P:System.Windows.Forms.Layout.ArrangedElementCollection.Count" />
+        <altmember cref="Overload:System.Collections.ArrayList.CopyTo" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -99,6 +106,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Layout.ArrangedElementCollection.System#Collections#IList#Contains(System.Object)" />
+        <altmember cref="P:System.Collections.ArrayList.Count" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -152,6 +161,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Layout.ArrangedElementCollection.CopyTo(System.Array,System.Int32)" />
+        <altmember cref="T:System.Collections.IEnumerator" />
+        <altmember cref="Overload:System.Collections.ArrayList.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -199,6 +211,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Layout.ArrangedElementCollection.System#Collections#IList#Add(System.Object)" />
+        <altmember cref="M:System.Windows.Forms.Layout.ArrangedElementCollection.System#Collections#IList#Remove(System.Object)" />
+        <altmember cref="P:System.Collections.ArrayList.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">

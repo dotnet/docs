@@ -4,16 +4,19 @@ ms.date: "03/30/2017"
 ms.prod: ".net"
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "serialization, guidelines"
   - "binary serialization, guidelines"
 ms.assetid: ebbeddff-179d-443f-bf08-9c373199a73a
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Serialization guidelines
 This document lists the guidelines to consider when designing an API to be serialized.  
@@ -104,7 +107,7 @@ This document lists the guidelines to consider when designing an API to be seria
      [!code-csharp[SerializationGuidelines#6](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#6)]
      [!code-vb[SerializationGuidelines#6](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#6)]  
   
-2.  CONSIDER implementing the <xref:System.Xml.Serialization.IXmlSerializable> interface if you want even more control over the shape of the serialized XML than what’s offered by applying the XML Serialization attributes. Two methods of the interface, <xref:System.Xml.Serialization.IXmlSerializable.ReadXml%2A>and <xref:System.Xml.Serialization.IXmlSerializable.WriteXml%2A>, allow you to fully control the serialized XML stream. You can also control the XML schema that gets generated for the type by applying the <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> attribute.  
+2.  CONSIDER implementing the <xref:System.Xml.Serialization.IXmlSerializable> interface if you want even more control over the shape of the serialized XML than what’s offered by applying the XML Serialization attributes. Two methods of the interface, <xref:System.Xml.Serialization.IXmlSerializable.ReadXml%2A> and <xref:System.Xml.Serialization.IXmlSerializable.WriteXml%2A>, allow you to fully control the serialized XML stream. You can also control the XML schema that gets generated for the type by applying the <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> attribute.  
   
 #### Supporting runtime serialization  
  *Runtime serialization* is a technology used by .NET Remoting. If you think your types will be transported using .NET Remoting, you need to make sure they support runtime serialization.  
@@ -139,10 +142,10 @@ This document lists the guidelines to consider when designing an API to be seria
      [!code-vb[SerializationGuidelines#11](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#11)]  
   
 ## See also  
- [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md)   
- [Data Contract Serializer](../../../docs/framework/wcf/feature-details/data-contract-serializer.md)   
- [Types Supported by the Data Contract Serializer](../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)   
- [Binary Serialization](binary-serialization.md)   
- [Remote Objects](http://msdn.microsoft.com/library/515686e6-0a8d-42f7-8188-73abede57c58)   
- [XML and SOAP Serialization](xml-and-soap-serialization.md)   
+ [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
+ [Data Contract Serializer](../../../docs/framework/wcf/feature-details/data-contract-serializer.md)  
+ [Types Supported by the Data Contract Serializer](../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)  
+ [Binary Serialization](binary-serialization.md)  
+ [Remote Objects](http://msdn.microsoft.com/library/515686e6-0a8d-42f7-8188-73abede57c58)  
+ [XML and SOAP Serialization](xml-and-soap-serialization.md)  
  [Security and Serialization](../../../docs/framework/misc/security-and-serialization.md)

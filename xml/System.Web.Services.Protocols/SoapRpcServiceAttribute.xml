@@ -41,6 +41,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Services.Protocols.SoapDocumentServiceAttribute" />
+    <altmember cref="T:System.Web.Services.Protocols.SoapRpcMethodAttribute" />
+    <altmember cref="T:System.Web.Services.Description.SoapBindingUse" />
+    <altmember cref="T:System.Web.Services.Protocols.SoapServiceRoutingStyle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -85,6 +89,7 @@
         <summary>Gets or sets how SOAP messages are routed to the XML Web service.</summary>
         <value>A <see cref="T:System.Web.Services.Protocols.SoapServiceRoutingStyle" /> that represents how SOAP messages are routed to the XML Web service. The default value is <see cref="F:System.Web.Services.Protocols.SoapServiceRoutingStyle.SoapAction" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Services.Protocols.SoapServiceRoutingStyle" />
       </Docs>
     </Member>
     <Member MemberName="Use">

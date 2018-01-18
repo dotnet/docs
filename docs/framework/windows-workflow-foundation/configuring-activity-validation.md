@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 25a4eccb-b8fc-4857-a01d-2683b6341219
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Configuring Activity Validation
 Activity validation enables activity authors and users to identify and report errors in an activity’s configuration prior to its execution. [!INCLUDE[wf](../../../includes/wf-md.md)] provides the following three types of activity validation:  

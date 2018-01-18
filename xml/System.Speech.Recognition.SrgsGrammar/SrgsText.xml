@@ -93,6 +93,7 @@ writer.Close();
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Speech.Recognition.SrgsGrammar.SrgsItem" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -156,5 +157,14 @@ writer.Close();
         <exception cref="T:System.ArgumentNullException">An attempt is made to set <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsText.Text" /> to <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsText" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

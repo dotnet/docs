@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetNativeCallConvFromSig"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetNativeCallConvFromSig method [.NET Framework metadata]"
   - "IMetaDataImport::GetNativeCallConvFromSig method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataImport::GetNativeCallConvFromSig Method
 Gets the native calling convention for the method that is represented by the specified signature pointer.  
@@ -63,6 +63,6 @@ HRESULT GetNativeCallConvFromSig (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See Also  
- <xref:System.Runtime.InteropServices.CallingConvention>   
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)   
+ <xref:System.Runtime.InteropServices.CallingConvention>  
+ [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
  [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

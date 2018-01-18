@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -87,6 +88,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapCodecInfo" />
       </Docs>
     </Member>
     <Member MemberName="ColorContexts">
@@ -180,6 +182,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Windows.Media.Imaging.BitmapFrame" /> value that is passed to the encoder is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapFrame" />
       </Docs>
     </Member>
     <Member MemberName="Metadata">
@@ -207,6 +210,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The encoder does not support global metadata.</exception>
         <exception cref="T:System.ArgumentNullException">An attempt is made to write metadata in an incompatible format.</exception>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapMetadata" />
       </Docs>
     </Member>
     <Member MemberName="Palette">
@@ -241,6 +245,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Windows.Media.Imaging.BitmapPalette" /> value that is passed to the encoder is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapPalette" />
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapPalettes" />
       </Docs>
     </Member>
     <Member MemberName="Preview">
@@ -261,6 +267,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The bitmap does not support preview.</exception>
         <exception cref="T:System.ArgumentNullException">The value is set to <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -304,6 +311,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The bitmap has already been encoded.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="P:System.Windows.Media.Imaging.BitmapEncoder.Frames" /> count is less than or equal to zero.</exception>
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName="Thumbnail">
@@ -324,6 +332,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The bitmap does not support thumbnails.</exception>
         <exception cref="T:System.ArgumentNullException">The value is set to <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
       </Docs>
     </Member>
   </Members>

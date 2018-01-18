@@ -161,7 +161,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property verifies that the <xref:System.Windows.Controls.DataGridCellInfo.Item%2A> property is not <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=fullName> and the <xref:System.Windows.Controls.DataGridCellInfo.Column%2A> property is not `null`.  
+ This property verifies that the <xref:System.Windows.Controls.DataGridCellInfo.Item%2A> property is not <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=nameWithType> and the <xref:System.Windows.Controls.DataGridCellInfo.Column%2A> property is not `null`.  
   
  ]]></format>
         </remarks>
@@ -249,5 +249,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridCellInfo" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

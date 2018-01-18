@@ -69,6 +69,17 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ToolStrip" />
+    <altmember cref="T:System.Windows.Forms.ToolStripButton" />
+    <altmember cref="T:System.Windows.Forms.ToolStripLabel" />
+    <altmember cref="T:System.Windows.Forms.ToolStripSeparator" />
+    <altmember cref="T:System.Windows.Forms.ToolStripControlHost" />
+    <altmember cref="T:System.Windows.Forms.ToolStripComboBox" />
+    <altmember cref="T:System.Windows.Forms.ToolStripTextBox" />
+    <altmember cref="T:System.Windows.Forms.ToolStripDropDownItem" />
+    <altmember cref="T:System.Windows.Forms.ToolStripMenuItem" />
+    <altmember cref="T:System.Windows.Forms.ToolStripSplitButton" />
+    <altmember cref="T:System.Windows.Forms.ToolStripDropDownButton" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -170,6 +181,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+        <altmember cref="M:System.Windows.Forms.ToolStripItem.CreateAccessibilityInstance" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleDefaultActionDescription" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleDescription" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleName" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleRole" />
       </Docs>
     </Member>
     <Member MemberName="AccessibleDefaultActionDescription">
@@ -205,7 +222,7 @@
  An object's <xref:System.Windows.Forms.ToolStripItem.AccessibleDefaultActionDescription%2A> property describes the object's primary method of manipulation from the user's viewpoint. This property should be a verb or a short verb phrase.  
   
 > [!NOTE]
->  Not all objects have default actions, and some objects might have a default action that is related to its <xref:System.Windows.Forms.AccessibleObject.Value%2A?displayProperty=fullName> property, such as in the following examples:  
+>  Not all objects have default actions, and some objects might have a default action that is related to its <xref:System.Windows.Forms.AccessibleObject.Value%2A?displayProperty=nameWithType> property, such as in the following examples:  
   
 -   A selected check box has a default action of "Uncheck" and a value of "Checked."  
   
@@ -221,6 +238,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+        <altmember cref="M:System.Windows.Forms.ToolStripItem.CreateAccessibilityInstance" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleDescription" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleName" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleRole" />
       </Docs>
     </Member>
     <Member MemberName="AccessibleDescription">
@@ -252,7 +274,7 @@
 ## Remarks  
  An object's <xref:System.Windows.Forms.ToolStripItem.AccessibleDescription%2A> property provides a textual description about an object's visual appearance. The description is primarily used to provide greater context for low-vision or blind users, but can also be used for context searching or other applications.  
   
- The <xref:System.Windows.Forms.ToolStripItem.AccessibleDescription%2A> property is needed if the description is not obvious, or if it is not redundant based on the object's <xref:System.Windows.Forms.ToolStripItem.AccessibleName%2A>, <xref:System.Windows.Forms.ToolStripItem.AccessibleRole%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, and <xref:System.Windows.Forms.AccessibleObject.Value%2A> properties. For example, a button labeled **OK** would not need additional information, but a button that shows a picture of a cactus would. The <xref:System.Windows.Forms.ToolStripItem.AccessibleName%2A> and <xref:System.Windows.Forms.ToolStripItem.AccessibleRole%2A> and, perhaps, <xref:System.Windows.Forms.AccessibleObject.Help%2A?displayProperty=fullName> properties for the cactus button would describe its purpose, but the <xref:System.Windows.Forms.ToolStripItem.AccessibleDescription%2A> property would convey information that is less tangible, such as "A button that shows a picture of a cactus."  
+ The <xref:System.Windows.Forms.ToolStripItem.AccessibleDescription%2A> property is needed if the description is not obvious, or if it is not redundant based on the object's <xref:System.Windows.Forms.ToolStripItem.AccessibleName%2A>, <xref:System.Windows.Forms.ToolStripItem.AccessibleRole%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, and <xref:System.Windows.Forms.AccessibleObject.Value%2A> properties. For example, a button labeled **OK** would not need additional information, but a button that shows a picture of a cactus would. The <xref:System.Windows.Forms.ToolStripItem.AccessibleName%2A> and <xref:System.Windows.Forms.ToolStripItem.AccessibleRole%2A> and, perhaps, <xref:System.Windows.Forms.AccessibleObject.Help%2A?displayProperty=nameWithType> properties for the cactus button would describe its purpose, but the <xref:System.Windows.Forms.ToolStripItem.AccessibleDescription%2A> property would convey information that is less tangible, such as "A button that shows a picture of a cactus."  
   
  For more information about properties of accessible objects, see "Content of Descriptive Properties" in the "Active Accessibility" section of the MSDN Library, at http://msdn.microsoft.com/library.  
   
@@ -260,6 +282,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+        <altmember cref="M:System.Windows.Forms.ToolStripItem.CreateAccessibilityInstance" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleDefaultActionDescription" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibilityObject" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleName" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleRole" />
       </Docs>
     </Member>
     <Member MemberName="AccessibleName">
@@ -297,6 +325,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+        <altmember cref="M:System.Windows.Forms.ToolStripItem.CreateAccessibilityInstance" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleDefaultActionDescription" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleDescription" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibilityObject" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleRole" />
       </Docs>
     </Member>
     <Member MemberName="AccessibleRole">
@@ -323,7 +357,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripItem.AccessibleRole%2A> property describes what kind of user interface element an object is. If the control's role cannot be determined, the <xref:System.Windows.Forms.ToolStripItem.AccessibleRole%2A> property is set to <xref:System.Windows.Forms.AccessibleRole?displayProperty=fullName>.  
+ The <xref:System.Windows.Forms.ToolStripItem.AccessibleRole%2A> property describes what kind of user interface element an object is. If the control's role cannot be determined, the <xref:System.Windows.Forms.ToolStripItem.AccessibleRole%2A> property is set to <xref:System.Windows.Forms.AccessibleRole.PushButton?displayProperty=nameWithType>.  
   
  For more information about properties of accessible objects, see "Content of Descriptive Properties" in the "Active Accessibility" section of the MSDN Library, at http://msdn.microsoft.com/library.  
   
@@ -332,6 +366,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Windows.Forms.AccessibleRole" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+        <altmember cref="M:System.Windows.Forms.ToolStripItem.CreateAccessibilityInstance" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleDefaultActionDescription" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleDescription" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleName" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibilityObject" />
       </Docs>
     </Member>
     <Member MemberName="Alignment">
@@ -358,11 +398,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In a stack overflow layout, use the <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> property along with the <xref:System.Windows.Forms.ToolStripItem.RightToLeft%2A?displayProperty=fullName> property to control the end to which items are aligned in a <xref:System.Windows.Forms.ToolStrip>, or to determine the end to which they are already aligned.  
+ In a stack overflow layout, use the <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> property along with the <xref:System.Windows.Forms.ToolStripItem.RightToLeft%2A?displayProperty=nameWithType> property to control the end to which items are aligned in a <xref:System.Windows.Forms.ToolStrip>, or to determine the end to which they are already aligned.  
   
- If the <xref:System.Windows.Forms.ToolStripItem.RightToLeft%2A?displayProperty=fullName> property is <xref:System.Windows.Forms.RightToLeft.No>, items marked as <xref:System.Windows.Forms.ToolStripItemAlignment.Left> are aligned to the left side of the <xref:System.Windows.Forms.ToolStrip> and items marked <xref:System.Windows.Forms.ToolStripItemAlignment.Right> are aligned to the right.  
+ If the <xref:System.Windows.Forms.ToolStripItem.RightToLeft%2A?displayProperty=nameWithType> property is <xref:System.Windows.Forms.RightToLeft.No>, items marked as <xref:System.Windows.Forms.ToolStripItemAlignment.Left> are aligned to the left side of the <xref:System.Windows.Forms.ToolStrip> and items marked <xref:System.Windows.Forms.ToolStripItemAlignment.Right> are aligned to the right.  
   
- If the <xref:System.Windows.Forms.ToolStripItem.RightToLeft%2A?displayProperty=fullName> property is <xref:System.Windows.Forms.RightToLeft.Yes>, items marked as <xref:System.Windows.Forms.ToolStripItemAlignment.Left> are aligned to the right side of the <xref:System.Windows.Forms.ToolStrip> and items marked <xref:System.Windows.Forms.ToolStripItemAlignment.Right> are aligned to the left.  
+ If the <xref:System.Windows.Forms.ToolStripItem.RightToLeft%2A?displayProperty=nameWithType> property is <xref:System.Windows.Forms.RightToLeft.Yes>, items marked as <xref:System.Windows.Forms.ToolStripItemAlignment.Left> are aligned to the right side of the <xref:System.Windows.Forms.ToolStrip> and items marked <xref:System.Windows.Forms.ToolStripItemAlignment.Right> are aligned to the left.  
   
 > [!NOTE]
 >  In flow and table layouts, the <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> property is ignored. In flow or table layout, use the <xref:System.Windows.Forms.ToolStripItem.Dock%2A> or <xref:System.Windows.Forms.ToolStripItem.Anchor%2A> property to align the items within the row or table cell.  
@@ -411,7 +451,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Set the <xref:System.Windows.Forms.ToolStripItem.AllowDrop%2A> property to `true` and set the <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> property to `false` to respond to drag-and-drop behavior you have defined in the <xref:System.Windows.Forms.ToolStripItem.DragEnter?displayProperty=fullName>, <xref:System.Windows.Forms.ToolStripItem.DragLeave?displayProperty=fullName>, and <xref:System.Windows.Forms.ToolStripItem.DragDrop?displayProperty=fullName> events.  
+ Set the <xref:System.Windows.Forms.ToolStripItem.AllowDrop%2A> property to `true` and set the <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> property to `false` to respond to drag-and-drop behavior you have defined in the <xref:System.Windows.Forms.ToolStripItem.DragEnter?displayProperty=nameWithType>, <xref:System.Windows.Forms.ToolStripItem.DragLeave?displayProperty=nameWithType>, and <xref:System.Windows.Forms.ToolStripItem.DragDrop?displayProperty=nameWithType> events.  
   
  Set the <xref:System.Windows.Forms.ToolStripItem.AllowDrop%2A> property to `false` and set the <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> property to `true` to cause the <xref:System.Windows.Forms.ToolStripItem> class to handle drag-and-drop and item reordering privately.  
   
@@ -626,7 +666,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.AvailableChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.AvailableChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripItem>, such as a <xref:System.Windows.Forms.ToolStripButton> or <xref:System.Windows.Forms.ToolStripMenuItem>. Then name the instance `ToolStripItem1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripItem.AvailableChanged> event.  
   
@@ -656,7 +696,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripItem.BackColor%2A> property does not support transparent colors unless the `SupportsTransparentBackColor` value of <xref:System.Windows.Forms.ControlStyles?displayProperty=fullName> is set to `true`.  
+ The <xref:System.Windows.Forms.ToolStripItem.BackColor%2A> property does not support transparent colors unless the `SupportsTransparentBackColor` value of <xref:System.Windows.Forms.ControlStyles?displayProperty=nameWithType> is set to `true`.  
   
  The <xref:System.Windows.Forms.ToolStripItem.BackColor%2A> property is an ambient property. An ambient property is a control property that, if not set, is retrieved from the parent control. For example, a <xref:System.Windows.Forms.Button> has the same <xref:System.Windows.Forms.ToolStripItem.BackColor%2A> as its parent <xref:System.Windows.Forms.Form> by default. For more information about ambient properties, see the <xref:System.Windows.Forms.AmbientProperties> class or the <xref:System.Windows.Forms.Control> class overview.  
   
@@ -703,7 +743,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.BackColorChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.BackColorChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripItem>, such as a <xref:System.Windows.Forms.ToolStripButton> or <xref:System.Windows.Forms.ToolStripMenuItem>. Then name the instance `ToolStripItem1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripItem.BackColorChanged> event.  
   
@@ -821,6 +861,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.Height" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.Width" />
+        <altmember cref="M:System.Windows.Forms.ToolStripItem.OnBoundsChanged" />
       </Docs>
     </Member>
     <Member MemberName="CanSelect">
@@ -1138,7 +1181,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.DisplayStyleChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.DisplayStyleChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripItem>, such as a <xref:System.Windows.Forms.ToolStripButton> or <xref:System.Windows.Forms.ToolStripMenuItem>. Then name the instance `ToolStripItem1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripItem.DisplayStyleChanged> event.  
   
@@ -1257,7 +1300,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the drag operation needs to interact with applications in another process, the `data` parameter must either be a base managed class (such as <xref:System.String?displayProperty=fullName>, <xref:System.Drawing.Bitmap?displayProperty=fullName>, or <xref:System.Drawing.Imaging.Metafile?displayProperty=fullName>), an object that implements <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>, or an object that implements <xref:System.Windows.Forms.IDataObject>.  
+ If the drag operation needs to interact with applications in another process, the `data` parameter must either be a base managed class (such as <xref:System.String?displayProperty=nameWithType>, <xref:System.Drawing.Bitmap?displayProperty=nameWithType>, or <xref:System.Drawing.Imaging.Metafile?displayProperty=nameWithType>), an object that implements <xref:System.Runtime.Serialization.ISerializable?displayProperty=nameWithType>, or an object that implements <xref:System.Windows.Forms.IDataObject>.  
   
  ]]></format>
         </remarks>
@@ -1286,7 +1329,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.DoubleClick> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.DoubleClick> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripItem>, such as a <xref:System.Windows.Forms.ToolStripButton> or <xref:System.Windows.Forms.ToolStripMenuItem>. Then name the instance `ToolStripItem1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripItem.DoubleClick> event.  
   
@@ -1485,7 +1528,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.DragLeave> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.DragLeave> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripItem>, such as a <xref:System.Windows.Forms.ToolStripButton> or <xref:System.Windows.Forms.ToolStripMenuItem>. Then name the instance `ToolStripItem1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripItem.DragLeave> event.  
   
@@ -1551,7 +1594,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.DragOver> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.DragOver> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripItem>, such as a <xref:System.Windows.Forms.ToolStripButton> or <xref:System.Windows.Forms.ToolStripMenuItem>. Then name the instance `ToolStripItem1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripItem.DragOver> event.  
   
@@ -1617,7 +1660,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.EnabledChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.EnabledChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripItem>, such as a <xref:System.Windows.Forms.ToolStripButton> or <xref:System.Windows.Forms.ToolStripMenuItem>. Then name the instance `ToolStripItem1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripItem.EnabledChanged> event.  
   
@@ -1714,7 +1757,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.ForeColorChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.ForeColorChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripItem>, such as a <xref:System.Windows.Forms.ToolStripButton> or <xref:System.Windows.Forms.ToolStripMenuItem>. Then name the instance `ToolStripItem1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripItem.ForeColorChanged> event.  
   
@@ -1828,7 +1871,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.GiveFeedback> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.GiveFeedback> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripItem>, such as a <xref:System.Windows.Forms.ToolStripButton> or <xref:System.Windows.Forms.ToolStripMenuItem>. Then name the instance `ToolStripItem1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripItem.GiveFeedback> event.  
   
@@ -1964,6 +2007,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Drawing.ContentAlignment" /> values.</exception>
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.TextAlign" />
+        <altmember cref="T:System.Windows.Forms.ToolStripLabel" />
       </Docs>
     </Member>
     <Member MemberName="ImageIndex">
@@ -2271,6 +2316,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">For all windows for inheriting classes to call this method. Associated enumeration: the <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <altmember cref="M:System.Windows.Forms.ToolStripItem.IsInputKey(System.Windows.Forms.Keys)" />
       </Docs>
     </Member>
     <Member MemberName="IsInputKey">
@@ -2302,6 +2348,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">For all windows for inheriting classes to call this method. Associated enumeration: the <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <altmember cref="T:System.Windows.Forms.Keys" />
+        <altmember cref="M:System.Windows.Forms.Control.IsInputChar(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="IsOnDropDown">
@@ -2390,7 +2438,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.LocationChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.LocationChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripItem>, such as a <xref:System.Windows.Forms.ToolStripButton> or <xref:System.Windows.Forms.ToolStripMenuItem>. Then name the instance `ToolStripItem1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripItem.LocationChanged> event.  
   
@@ -2516,7 +2564,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.MouseDown> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.MouseDown> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripItem>, such as a <xref:System.Windows.Forms.ToolStripButton> or <xref:System.Windows.Forms.ToolStripMenuItem>. Then name the instance `ToolStripItem1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripItem.MouseDown> event.  
   
@@ -2525,6 +2573,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseEnter" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseMove" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseHover" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseUp" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseLeave" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MouseEnter">
@@ -2562,7 +2616,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.MouseEnter> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.MouseEnter> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripItem>, such as a <xref:System.Windows.Forms.ToolStripButton> or <xref:System.Windows.Forms.ToolStripMenuItem>. Then name the instance `ToolStripItem1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripItem.MouseEnter> event.  
   
@@ -2571,6 +2625,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseMove" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseHover" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseDown" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseUp" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseLeave" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MouseHover">
@@ -2608,7 +2668,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.MouseHover> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.MouseHover> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripItem>, such as a <xref:System.Windows.Forms.ToolStripButton> or <xref:System.Windows.Forms.ToolStripMenuItem>. Then name the instance `ToolStripItem1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripItem.MouseHover> event.  
   
@@ -2617,6 +2677,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseEnter" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseMove" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseDown" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseUp" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseLeave" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MouseLeave">
@@ -2654,7 +2720,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.MouseLeave> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.MouseLeave> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripItem>, such as a <xref:System.Windows.Forms.ToolStripButton> or <xref:System.Windows.Forms.ToolStripMenuItem>. Then name the instance `ToolStripItem1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripItem.MouseLeave> event.  
   
@@ -2663,6 +2729,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseEnter" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseMove" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseHover" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseDown" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseUp" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MouseMove">
@@ -2700,7 +2772,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.MouseMove> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.MouseMove> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripItem>, such as a <xref:System.Windows.Forms.ToolStripButton> or <xref:System.Windows.Forms.ToolStripMenuItem>. Then name the instance `ToolStripItem1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripItem.MouseMove> event.  
   
@@ -2709,6 +2781,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseEnter" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseHover" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseDown" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseUp" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseLeave" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MouseUp">
@@ -2746,7 +2824,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.MouseUp> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.MouseUp> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripItem>, such as a <xref:System.Windows.Forms.ToolStripButton> or <xref:System.Windows.Forms.ToolStripMenuItem>. Then name the instance `ToolStripItem1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripItem.MouseUp> event.  
   
@@ -2755,6 +2833,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseEnter" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseMove" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseHover" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseDown" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseLeave" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -2889,6 +2973,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ToolStripItem.OnBoundsChanged" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ToolStripItem.OnBoundsChanged" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.Bounds" />
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -3341,6 +3426,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ToolStripItem.OnLayout(System.Windows.Forms.LayoutEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.ToolStripItem.OnLayout(System.Windows.Forms.LayoutEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.Layout" />
+        <altmember cref="M:System.Windows.Forms.Control.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnLocationChanged">
@@ -4137,7 +4224,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.OwnerChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.OwnerChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripItem>, such as a <xref:System.Windows.Forms.ToolStripButton> or <xref:System.Windows.Forms.ToolStripMenuItem>. Then name the instance `ToolStripItem1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripItem.OwnerChanged> event.  
   
@@ -4353,7 +4440,7 @@
     </Member>
     <Member MemberName="ProcessCmdKey">
       <MemberSignature Language="C#" Value="protected virtual bool ProcessCmdKey (ref System.Windows.Forms.Message m, System.Windows.Forms.Keys keyData);" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message m, valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message&amp; m, valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItem.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4481,7 +4568,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.QueryAccessibilityHelp> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.QueryAccessibilityHelp> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripItem>, such as a <xref:System.Windows.Forms.ToolStripButton> or <xref:System.Windows.Forms.ToolStripMenuItem>. Then name the instance `ToolStripItem1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripItem.QueryAccessibilityHelp> event.  
   
@@ -4547,7 +4634,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.QueryContinueDrag> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.QueryContinueDrag> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripItem>, such as a <xref:System.Windows.Forms.ToolStripButton> or <xref:System.Windows.Forms.ToolStripMenuItem>. Then name the instance `ToolStripItem1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripItem.QueryContinueDrag> event.  
   
@@ -4916,7 +5003,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.RightToLeftChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.RightToLeftChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripItem>, such as a <xref:System.Windows.Forms.ToolStripButton> or <xref:System.Windows.Forms.ToolStripMenuItem>. Then name the instance `ToolStripItem1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripItem.RightToLeftChanged> event.  
   
@@ -5011,6 +5098,7 @@
         <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> that represents the size and location of the <see cref="T:System.Windows.Forms.ToolStripItem" /></param>
         <summary>Sets the size and location of the item.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.Bounds" />
       </Docs>
     </Member>
     <Member MemberName="SetVisibleCore">
@@ -5352,6 +5440,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Drawing.ContentAlignment" /> values.</exception>
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.ImageAlign" />
+        <altmember cref="T:System.Windows.Forms.ToolStripLabel" />
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -5380,7 +5470,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.TextChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.TextChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripItem>, such as a <xref:System.Windows.Forms.ToolStripButton> or <xref:System.Windows.Forms.ToolStripMenuItem>. Then name the instance `ToolStripItem1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripItem.TextChanged> event.  
   
@@ -5512,6 +5602,7 @@
         <summary>Returns a <see cref="T:System.String" /> containing the name of the <see cref="T:System.ComponentModel.Component" />, if any. This method should not be overridden.</summary>
         <returns>A <see cref="T:System.String" /> containing the name of the <see cref="T:System.ComponentModel.Component" />, if any, or <see langword="null" /> if the <see cref="T:System.ComponentModel.Component" /> is unnamed.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.Component.ToString" />
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -5564,7 +5655,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.VisibleChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripItem.VisibleChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripItem>, such as a <xref:System.Windows.Forms.ToolStripButton> or <xref:System.Windows.Forms.ToolStripMenuItem>. Then name the instance `ToolStripItem1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripItem.VisibleChanged> event.  
   
@@ -5604,5 +5695,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Invalidate">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invalidates some or all of the surface of the <see cref="T:System.Windows.Forms.ToolStripItem" /> and causes it to be redrawn.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

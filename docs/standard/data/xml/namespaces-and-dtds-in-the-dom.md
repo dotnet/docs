@@ -8,16 +8,14 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: 1e9b55c4-76ad-4f54-8d96-7ce4b4cf1e05
 caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Namespaces and DTDs in the DOM
 Document type definitions (DTDs) complicate namespace support. For example, the following XML contains default attributes containing colons in their names.  

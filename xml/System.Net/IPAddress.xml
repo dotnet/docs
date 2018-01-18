@@ -290,7 +290,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.Socket.Bind%2A?displayProperty=fullName> method uses the <xref:System.Net.IPAddress.Any> field to indicate that a <xref:System.Net.Sockets.Socket> instance must listen for client activity on all network interfaces.  
+ The <xref:System.Net.Sockets.Socket.Bind%2A?displayProperty=nameWithType> method uses the <xref:System.Net.IPAddress.Any> field to indicate that a <xref:System.Net.Sockets.Socket> instance must listen for client activity on all network interfaces.  
   
  The <xref:System.Net.IPAddress.Any> field is equivalent to 0.0.0.0 in dotted-quad notation.  
   
@@ -496,6 +496,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.IPAddress.NetworkToHostOrder(System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="HostToNetworkOrder">
@@ -537,6 +538,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.IPAddress.NetworkToHostOrder(System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="HostToNetworkOrder">
@@ -578,6 +580,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.IPAddress.NetworkToHostOrder(System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="IPv6Any">
@@ -694,7 +697,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.Socket.Bind%2A?displayProperty=fullName> method uses the <xref:System.Net.IPAddress.IPv6None> field to indicate that a <xref:System.Net.Sockets.Socket> must not listen for client activity. The <xref:System.Net.IPAddress.IPv6None> field is equivalent to 0:0:0:0:0:0:0:0 in colon-hexadecimal notation, or to ::0 in compact notation.  
+ The <xref:System.Net.Sockets.Socket.Bind%2A?displayProperty=nameWithType> method uses the <xref:System.Net.IPAddress.IPv6None> field to indicate that a <xref:System.Net.Sockets.Socket> must not listen for client activity. The <xref:System.Net.IPAddress.IPv6None> field is equivalent to 0:0:0:0:0:0:0:0 in colon-hexadecimal notation, or to ::0 in compact notation.  
   
    
   
@@ -867,6 +870,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.NetworkInformation.IPGlobalProperties.BeginGetUnicastAddresses(System.AsyncCallback,System.Object)" />
+        <altmember cref="M:System.Net.NetworkInformation.IPGlobalProperties.EndGetUnicastAddresses(System.IAsyncResult)" />
+        <altmember cref="M:System.Net.NetworkInformation.IPGlobalProperties.GetUnicastAddresses" />
+        <altmember cref="T:System.Net.Sockets.IPProtectionLevel" />
+        <altmember cref="M:System.Net.Sockets.Socket.SetIPProtectionLevel(System.Net.Sockets.IPProtectionLevel)" />
+        <altmember cref="M:System.Net.Sockets.TcpListener.AllowNatTraversal(System.Boolean)" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.AllowNatTraversal(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="IsLoopback">
@@ -1089,6 +1099,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.IPAddress.HostToNetworkOrder(System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="NetworkToHostOrder">
@@ -1139,6 +1150,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.IPAddress.HostToNetworkOrder(System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="NetworkToHostOrder">
@@ -1189,6 +1201,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.IPAddress.HostToNetworkOrder(System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -1219,7 +1232,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.Socket.Bind%2A?displayProperty=fullName> method uses the <xref:System.Net.IPAddress.None> field to indicate that a <xref:System.Net.Sockets.Socket> must not listen for client activity. The <xref:System.Net.IPAddress.None> field is equivalent to 255.255.255.255 in dotted-quad notation.  
+ The <xref:System.Net.Sockets.Socket.Bind%2A?displayProperty=nameWithType> method uses the <xref:System.Net.IPAddress.None> field to indicate that a <xref:System.Net.Sockets.Socket> must not listen for client activity. The <xref:System.Net.IPAddress.None> field is equivalent to 255.255.255.255 in dotted-quad notation.  
   
    
   
@@ -1396,7 +1409,7 @@
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string ipString, out System.Net.IPAddress address);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string ipString, class System.Net.IPAddress address) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string ipString, [out] class System.Net.IPAddress&amp; address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.IPAddress.TryParse(System.String,System.Net.IPAddress@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1436,5 +1449,35 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="NetworkToHostOrder">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a number from network byte order to host byte order.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.IPAddress" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="HostToNetworkOrder">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a value from host byte order to network byte order.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

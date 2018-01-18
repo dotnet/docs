@@ -14,6 +14,8 @@ caps.latest.revision: 25
 author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
+ms.workload: 
+  - "wiwagn"
 ---
 # Writing Large, Responsive .NET Framework Apps
 This article provides tips for improving the performance of large .NET Framework apps, or apps that process a large amount of data such as files or databases. These tips come from rewriting the C# and Visual Basic compilers in managed code, and this article includes several real examples from the C# compiler.  
@@ -27,7 +29,8 @@ This article provides tips for improving the performance of large .NET Framework
   
  When your end users interact with your app, they expect it to be responsive.  Typing or command handling should never be blocked.  Help should pop up quickly or give up if the user continues typing.  Your app should avoid blocking the UI thread with long computations that make the app feel sluggish.  
   
- If you want to know more about the new compilers, visit the [.NET Compiler Platform ("Roslyn") open source project](http://roslyn.codeplex.com/).  
+ For more information about Roslyn compilers, visit the [dotnet/roslyn](https://github.com/dotnet/roslyn) repo on GitHub.
+ <!-- TODO: replace with link to Roslyn conceptual docs once that's published -->
   
 ## Just the Facts  
  Consider these facts when tuning performance and creating responsive .NET Framework apps.  
@@ -56,7 +59,7 @@ This article provides tips for improving the performance of large .NET Framework
 ### Boxing  
  [Boxing](~/docs/csharp/programming-guide/types/boxing-and-unboxing.md) occurs when value types that normally live on the stack or in data structures are wrapped in an object.  That is, you allocate an object to hold the data, and then return a pointer to the object.  The .NET Framework sometimes boxes values due to the signature of a method or the type of a storage location.  Wrapping a value type in an object causes memory allocation.  Many boxing operations can contribute megabytes or gigabytes of allocations to your app, which means that your app will cause more GCs. The .NET Framework and the language compilers avoid boxing when possible, but sometimes it happens when you least expect it.  
   
- To see boxing in PerfView, open a trace and look at GC Heap Alloc Stacks under your app’s process name (remember, PerfView reports on all processes).  If you see types like <xref:System.Int32?displayProperty=fullName> and <xref:System.Char?displayProperty=fullName> under allocations, you are boxing value types.  Choosing one of these types will show the stacks and functions in which they are boxed.  
+ To see boxing in PerfView, open a trace and look at GC Heap Alloc Stacks under your app’s process name (remember, PerfView reports on all processes).  If you see types like <xref:System.Int32?displayProperty=nameWithType> and <xref:System.Char?displayProperty=nameWithType> under allocations, you are boxing value types.  Choosing one of these types will show the stacks and functions in which they are boxed.  
   
  **Example 1: string methods and value type arguments**  
   
@@ -129,7 +132,7 @@ public class BoxingExample
 ((int)color).GetHashCode()  
 ```  
   
- Another common source of boxing on enumeration types is the <xref:System.Enum.HasFlag%28System.Enum%29?displayProperty=fullName> method.  The argument passed to <xref:System.Enum.HasFlag%28System.Enum%29> has to be boxed.  In most cases, replacing calls to <xref:System.Enum.HasFlag%28System.Enum%29?displayProperty=fullName> with a bitwise test is simpler and allocation-free.  
+ Another common source of boxing on enumeration types is the <xref:System.Enum.HasFlag%28System.Enum%29?displayProperty=nameWithType> method.  The argument passed to <xref:System.Enum.HasFlag%28System.Enum%29> has to be boxed.  In most cases, replacing calls to <xref:System.Enum.HasFlag%28System.Enum%29?displayProperty=nameWithType> with a bitwise test is simpler and allocation-free.  
   
  Keep the first performance fact in mind (that is, don’t prematurely optimize) and don’t start rewriting all your code in this way.    Be aware of these boxing costs, but change your code only after profiling your app and finding the hot spots.  
   
@@ -328,7 +331,7 @@ var predicate = new Func<Symbol, bool>(l.Evaluate);
   
  The two `new` allocations (one for the environment class and one for the delegate) are explicit now.  
   
- Now look at the call to `FirstOrDefault`. This extension method on the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> type incurs an allocation too.  Because `FirstOrDefault` takes an <xref:System.Collections.Generic.IEnumerable%601> object as its first argument, you can expand the call to the following code (simplified a bit for discussion):  
+ Now look at the call to `FirstOrDefault`. This extension method on the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> type incurs an allocation too.  Because `FirstOrDefault` takes an <xref:System.Collections.Generic.IEnumerable%601> object as its first argument, you can expand the call to the following code (simplified a bit for discussion):  
   
 ```csharp  
 // Expanded return symbols.FirstOrDefault(predicate) ...  
@@ -415,7 +418,7 @@ class Compilation { /*...*/
   
  **Fix for example 6**  
   
- To remove the completed <xref:System.Threading.Tasks.Task>allocation, you can cache the Task object with the completed result:  
+ To remove the completed <xref:System.Threading.Tasks.Task> allocation, you can cache the Task object with the completed result:  
   
 ```csharp  
 class Compilation { /*...*/  
@@ -465,12 +468,12 @@ class Compilation { /*...*/
 -   It's all about allocations – that is where the compiler platform team spent most of their time improving the performance of the new compilers.  
   
 ## See Also  
- [Video of presentation of this topic](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/DEV-B333)   
- [Beginners Guide to Performance Profiling](/visualstudio/profiling/beginners-guide-to-performance-profiling)   
- [Performance](../../../docs/framework/performance/index.md)   
- [.NET Performance Tips](http://msdn.microsoft.com/library/ms973839.aspx)   
- [Windows Phone Performance Analysis Tool](http://msdn.microsoft.com/magazine/hh781024.aspx)   
- [Find Application Bottlenecks with Visual Studio Profiler](http://msdn.microsoft.com/magazine/cc337887.aspx)   
- [Channel 9 PerfView tutorials](http://channel9.msdn.com/Series/PerfView-Tutorial)   
- [High-level Performance Tips](http://curah.microsoft.com/4604/improving-your-net-apps-startup-performance)   
- [.NET Compiler Platform ("Roslyn") open source project](http://roslyn.codeplex.com/)
+ [Video of presentation of this topic](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/DEV-B333)  
+ [Beginners Guide to Performance Profiling](/visualstudio/profiling/beginners-guide-to-performance-profiling)  
+ [Performance](../../../docs/framework/performance/index.md)  
+ [.NET Performance Tips](http://msdn.microsoft.com/library/ms973839.aspx)  
+ [Windows Phone Performance Analysis Tool](http://msdn.microsoft.com/magazine/hh781024.aspx)  
+ [Find Application Bottlenecks with Visual Studio Profiler](http://msdn.microsoft.com/magazine/cc337887.aspx)  
+ [Channel 9 PerfView tutorials](http://channel9.msdn.com/Series/PerfView-Tutorial)  
+ [High-level Performance Tips](http://curah.microsoft.com/4604/improving-your-net-apps-startup-performance)  
+ [dotnet/roslyn repo on GitHub](https://github.com/dotnet/roslyn)

@@ -9,19 +9,19 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "code access security, Windows Forms"
-  - "permissions, Windows Forms"
+  - "code access security [Windows Forms], Windows Forms"
+  - "permissions [Windows Forms], Windows Forms"
   - "Windows Forms, security"
   - "security [Windows Forms], about security"
-  - "access control, Windows Forms"
+  - "access control [Windows Forms], Windows Forms"
 ms.assetid: 4810dc9f-ea23-4ce1-8ea1-657f0ff1d820
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Security in Windows Forms Overview
 Before the release of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)], all code running on a user's computer had the same rights or permissions to access resources that a user of the computer had. For example, if the user was allowed to access the file system, the code was allowed to access the file system; if the user was allowed to access a database, the code was allowed to access that database. Although these rights or permissions may be acceptable for code in executables that the user has explicitly installed on the local computer, they may not be acceptable for potentially malicious code coming from the Internet or a local Intranet. This code should not be able to access the user's computer resources without permission.  
@@ -91,9 +91,9 @@ Before the release of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-m
  If you have deployed your Windows Forms application by using [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)], you can enable debugging in partial trust or a restricted permission set from the development environment.  Also see [How to: Debug a ClickOnce Application with Restricted Permissions](http://msdn.microsoft.com/library/593zkfdf\(v=vs.110\)) or [How to: Debug a ClickOnce Application with Restricted Permissions](http://msdn.microsoft.com/library/593zkfdf\(v=vs.120\)).  
   
 ## See Also  
- [Windows Forms Security](../../../docs/framework/winforms/windows-forms-security.md)   
- [Code Access Security Basics](../../../docs/framework/misc/code-access-security-basics.md)   
- [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)   
- [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview)   
- [Mage.exe (Manifest Generation and Editing Tool)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)   
+ [Windows Forms Security](../../../docs/framework/winforms/windows-forms-security.md)  
+ [Code Access Security Basics](../../../docs/framework/misc/code-access-security-basics.md)  
+ [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)  
+ [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview)  
+ [Mage.exe (Manifest Generation and Editing Tool)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)  
  [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../../../docs/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md)

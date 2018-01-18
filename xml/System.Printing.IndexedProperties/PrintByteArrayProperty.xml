@@ -109,31 +109,9 @@
         <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintByteArrayProperty" />
       </Parameters>
       <Docs>
-        <param name="attribRef">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static implicit operator byte[] (System.Printing.IndexedProperties.PrintByteArrayProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname unsigned int8[] op_Implicit(class System.Printing.IndexedProperties.PrintByteArrayProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintByteArrayProperty.op_Implicit(System.Printing.IndexedProperties.PrintByteArrayProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Byte[]" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Byte[]</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintByteArrayProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      </Parameters>
-      <Docs>
-        <param name="attribRef">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="attribRef">A pointer to a <see cref="T:System.Printing.IndexedProperties.PrintByteArrayProperty" /> that is converted.</param>
+        <summary>Provides implicit conversion to an array of <see cref="T:System.Byte" /> values from a pointer to a <see cref="T:System.Printing.IndexedProperties.PrintByteArrayProperty" />.</summary>
+        <returns>An array of <see cref="T:System.Byte" /> values.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,5 +133,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintByteArrayProperty" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Implicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides implicit conversion from a <see cref="T:System.Printing.IndexedProperties.PrintByteArrayProperty" /> (or from a pointer to such a property) to an array of <see cref="T:System.Byte" /> values.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

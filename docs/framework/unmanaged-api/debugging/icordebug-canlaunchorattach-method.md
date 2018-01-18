@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebug::CanLaunchOrAttach"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebug::CanLaunchOrAttach method [.NET Framework debugging]"
   - "CanLaunchOrAttach method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebug::CanLaunchOrAttach Method
 Returns an HRESULT that indicates whether launching a new process or attaching to the specified existing process is possible within the context of the current machine and runtime configuration.  

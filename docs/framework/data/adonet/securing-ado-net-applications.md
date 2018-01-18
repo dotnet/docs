@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 005a1d43-6ee5-471e-ad98-1d30a44d49d5
 caps.latest.revision: 4
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Securing ADO.NET Applications
 Writing a secure ADO.NET application involves more than avoiding common coding pitfalls such as not validating user input. An application that accesses data has many potential points of failure that an attacker can exploit to retrieve, manipulate, or destroy sensitive data. It is therefore important to understand all aspects of security, from the process of threat modeling during the design phase of your application, to its eventual deployment and ongoing maintenance.  
@@ -58,5 +60,5 @@ Writing a secure ADO.NET application involves more than avoiding common coding p
  Provides links to external resources available online and in print.  
   
 ## See Also  
- [ADO.NET](../../../../docs/framework/data/adonet/index.md)   
+ [ADO.NET](../../../../docs/framework/data/adonet/index.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

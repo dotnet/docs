@@ -43,8 +43,8 @@
   
  If a mail server is not configured correctly or some other error occurs and the e-mail message cannot be sent, the `SendMailError` function is called. A message is displayed to the user. In addition, an event is logged to the Windows Application event log with the assumption that an event source named MySamplesSite already exists. See the code example below to create the specified event source. For more information about creating an event source, see [Server Event Handling in ASP.NET Web Forms Pages](http://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9). The <xref:System.Web.UI.WebControls.SendMailErrorEventArgs.Handled%2A> property of the <xref:System.Web.UI.WebControls.SendMailErrorEventArgs> object is set to `true` to indicate that the error has been handled.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SendMailErrorEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SendMailErrorEventHandler/CS/changepassword_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SendMailErrorEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SendMailErrorEventHandler/VB/changepassword_vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SendMailErrorEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SendMailErrorEventHandler/CS/changepassword_cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SendMailErrorEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SendMailErrorEventHandler/VB/changepassword_vb.aspx#1)]  
   
  Use the following code example if you need to programmatically add the event source named MySamplesSite to your Application log. This event source must exist in order for the first code example to work correctly. The following code example requires Administrator privileges.  
   
@@ -53,5 +53,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.SendMailError" />
+    <altmember cref="E:System.Web.UI.WebControls.ChangePassword.SendMailError" />
+    <altmember cref="E:System.Web.UI.WebControls.PasswordRecovery.SendMailError" />
+    <altmember cref="T:System.Net.Mail.MailMessage" />
+    <altmember cref="T:System.Web.Mail.SmtpMail" />
   </Docs>
 </Type>

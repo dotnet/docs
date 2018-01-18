@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Default XAML Schema Context and WPF XAML Schema Context
 A XAML schema context is a conceptual entity that qualifies how a XAML production that uses a particular XAML vocabulary interacts with the object writing behavior, including how type mapping resolves, how assemblies are loaded, how certain reader and writer settings are interpreted. This topic describes the features of the .NET Framework XAML Services and the associated default XAML schema context, which is based on the CLR type system. This topic also describes the XAML schema context that is used for WPF.  
@@ -39,9 +41,9 @@ A XAML schema context is a conceptual entity that qualifies how a XAML productio
  **XamlType and XamlMember extension:** WPF extends property concepts with dependency properties, and event concepts with routed events. To give these concepts greater visibility for XAML processing operations, WPF extends <xref:System.Xaml.XamlType> and <xref:System.Xaml.XamlMember>, and adds internal properties that report dependency property and routed event characteristics.  
   
 ### Accessing the WPF XAML Schema Context  
- If you are using XAML techniques that are based on the WPF <xref:System.Windows.Markup.XamlReader?displayProperty=fullName> or <xref:System.Windows.Markup.XamlWriter?displayProperty=fullName>, the WPF XAML schema context is already in use on those XAML reader and XAML writer implementations.  
+ If you are using XAML techniques that are based on the WPF <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> or <xref:System.Windows.Markup.XamlWriter?displayProperty=nameWithType>, the WPF XAML schema context is already in use on those XAML reader and XAML writer implementations.  
   
- If you are using other XAML reader or XAML writer implementations that do not initialize with the WPF XAML schema context, you may be able to get a working WPF XAML schema context from <xref:System.Windows.Markup.XamlReader.GetWpfSchemaContext%2A?displayProperty=fullName>. You can then use this value as initialization for other API that use a <xref:System.Xaml.XamlSchemaContext>. For example, you could call <xref:System.Xaml.XamlXmlReader.%23ctor%2A> for initialization and pass the WPF XAML schema context. Or you could use the WPF XAML schema context for XAML type system operations. This might include construction initialization of a <xref:System.Xaml.XamlType> or <xref:System.Xaml.XamlMember>, or calling <xref:System.Xaml.XamlSchemaContext.GetXamlType%2A?displayProperty=fullName>.  
+ If you are using other XAML reader or XAML writer implementations that do not initialize with the WPF XAML schema context, you may be able to get a working WPF XAML schema context from <xref:System.Windows.Markup.XamlReader.GetWpfSchemaContext%2A?displayProperty=nameWithType>. You can then use this value as initialization for other API that use a <xref:System.Xaml.XamlSchemaContext>. For example, you could call <xref:System.Xaml.XamlXmlReader.%23ctor%2A> for initialization and pass the WPF XAML schema context. Or you could use the WPF XAML schema context for XAML type system operations. This might include construction initialization of a <xref:System.Xaml.XamlType> or <xref:System.Xaml.XamlMember>, or calling <xref:System.Xaml.XamlSchemaContext.GetXamlType%2A?displayProperty=nameWithType>.  
   
  Note that if you access certain aspects of WPF XAML from a pure XAML node stream perspectives, some of the WPF framework capabilities may not have acted yet. For example, WPF templates for controls are not yet applied. Thus if you access a property that at run time might be populated with a full visual tree, you might only see a property value that references a template. The service context provided for WPF markup extensions might also not be accurate if provided from a non-runtime situation, and can result in exceptions when attempting to write an object graph.  
   
@@ -56,20 +58,20 @@ A XAML schema context is a conceptual entity that qualifies how a XAML productio
   
 2.  Otherwise, one of the following techniques based on CLR <xref:System.Reflection.Assembly> API are used to load an assembly:  
   
-    -   If the name is qualified in the mapping, call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=fullName> on the qualified name.  
+    -   If the name is qualified in the mapping, call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType> on the qualified name.  
   
-    -   If the previous step fails, use the short name (and public key token if present) to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=fullName>.  
+    -   If the previous step fails, use the short name (and public key token if present) to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>.  
   
-    -   If the name is unqualified in the mapping, call <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName>.  
+    -   If the name is unqualified in the mapping, call <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=nameWithType>.  
   
 #### XamlBuildTask  
  `XamlBuildTask` is used for [!INCLUDE[vsindigo](../../../includes/vsindigo-md.md)] and [!INCLUDE[TLA#tla_workflow](../../../includes/tlasharptla-workflow-md.md)].  
   
  Note that assembly references through `XamlBuildTask` are always fully qualified.  
   
-1.  Call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=fullName> on the qualified name.  
+1.  Call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType> on the qualified name.  
   
-2.  If the previous step fails, use the short name (and public key token if present) to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=fullName>.  
+2.  If the previous step fails, use the short name (and public key token if present) to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>.  
   
 #### BAML (PresentationBuildTask)  
  There are two aspects to assembly-loading for BAML: loading the initial assembly that contains the BAML as a component, and loading the type-backing assemblies for any types referenced by the BAML production.  
@@ -79,7 +81,7 @@ A XAML schema context is a conceptual entity that qualifies how a XAML productio
   
 1.  The WPF XAML schema context iterates through the <xref:System.AppDomain> of the WPF application, looking for an already-loaded assembly that matches all aspects of the name, starting from the most recently loaded assembly. If a match is found, that assembly is used for resolution.  
   
-2.  If the previous step fails, use the short name (and public key token if present) to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=fullName>.  
+2.  If the previous step fails, use the short name (and public key token if present) to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>.  
   
 ##### Assembly references by BAML types:  
  Assembly references for types used in the BAML production are always fully qualified, as an output of the build task.  
@@ -88,11 +90,11 @@ A XAML schema context is a conceptual entity that qualifies how a XAML productio
   
 2.  Otherwise, one of the following techniques is used to load an assembly:  
   
-    -   Call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=fullName> on the qualified name.  
+    -   Call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType> on the qualified name.  
   
     -   If a short name + public key token combination match the assembly that the BAML was loaded from, use that assembly.  
   
-    -   Use short name + public key token to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=fullName>.  
+    -   Use short name + public key token to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>.  
   
 ## See Also  
  [Understanding XAML Node Stream Structures and Concepts](../../../docs/framework/xaml-services/understanding-xaml-node-stream-structures-and-concepts.md)

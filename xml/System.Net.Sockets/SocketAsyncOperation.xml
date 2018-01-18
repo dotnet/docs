@@ -25,12 +25,23 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This type describes the asynchronous socket operation that was most recently completed using a <xref:System.Net.Sockets.SocketAsyncEventArgs?displayProperty=fullName> object. The value of the <xref:System.Net.Sockets.SocketAsyncEventArgs.LastOperation%2A?displayProperty=fullName> property is set to None until the <xref:System.Net.Sockets.SocketAsyncEventArgs?displayProperty=fullName> instance is used to begin an asynchronous socket operation. The property will then be set to the type of asynchronous operation being performed. This type more easily facilitates using a single completion callback delegate for multiple kinds of asynchronous socket operations. This type is intended for use in the SocketAsyncCallback completion routine.  
+ This type describes the asynchronous socket operation that was most recently completed using a <xref:System.Net.Sockets.SocketAsyncEventArgs?displayProperty=nameWithType> object. The value of the <xref:System.Net.Sockets.SocketAsyncEventArgs.LastOperation%2A?displayProperty=nameWithType> property is set to None until the <xref:System.Net.Sockets.SocketAsyncEventArgs?displayProperty=nameWithType> instance is used to begin an asynchronous socket operation. The property will then be set to the type of asynchronous operation being performed. This type more easily facilitates using a single completion callback delegate for multiple kinds of asynchronous socket operations. This type is intended for use in the SocketAsyncCallback completion routine.  
   
- The <xref:System.Net.Sockets.SocketAsyncOperation> type is used by the <xref:System.Net.Sockets.SocketAsyncEventArgs.LastOperation%2A?displayProperty=fullName> property.  
+ The <xref:System.Net.Sockets.SocketAsyncOperation> type is used by the <xref:System.Net.Sockets.SocketAsyncEventArgs.LastOperation%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Net.Sockets.Socket.AcceptAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+    <altmember cref="M:System.Net.Sockets.Socket.ConnectAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+    <altmember cref="M:System.Net.Sockets.Socket.DisconnectAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+    <altmember cref="M:System.Net.Sockets.Socket.ReceiveAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+    <altmember cref="M:System.Net.Sockets.Socket.ReceiveFromAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+    <altmember cref="M:System.Net.Sockets.Socket.ReceiveMessageFromAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+    <altmember cref="M:System.Net.Sockets.Socket.SendAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+    <altmember cref="M:System.Net.Sockets.Socket.SendPacketsAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+    <altmember cref="M:System.Net.Sockets.Socket.SendToAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+    <altmember cref="T:System.Net.Sockets.SocketAsyncEventArgs" />
+    <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.LastOperation" />
   </Docs>
   <Members>
     <Member MemberName="Accept">

@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The .NET Framework provides two ways to access metadata on a type: the reflection API provided in the <xref:System.Reflection?displayProperty=fullName> namespace, and the <xref:System.ComponentModel.TypeDescriptor> class. Reflection is a general mechanism available to all types because its foundation is established in the <xref:System.Object.GetType%2A> method of the root <xref:System.Object> class. The information it returns for a type is not extensible, in that it cannot be modified after compilation of the target type. For more information, see the topics in [Reflection](~/docs/framework/reflection-and-codedom/reflection.md).  
+ The .NET Framework provides two ways to access metadata on a type: the reflection API provided in the <xref:System.Reflection?displayProperty=nameWithType> namespace, and the <xref:System.ComponentModel.TypeDescriptor> class. Reflection is a general mechanism available to all types because its foundation is established in the <xref:System.Object.GetType%2A> method of the root <xref:System.Object> class. The information it returns for a type is not extensible, in that it cannot be modified after compilation of the target type. For more information, see the topics in [Reflection](~/docs/framework/reflection-and-codedom/reflection.md).  
   
  In contrast, <xref:System.ComponentModel.TypeDescriptor> is an extensible inspection mechanism for components: those classes that implement the <xref:System.ComponentModel.IComponent> interface. Unlike reflection, it does not inspect for methods. <xref:System.ComponentModel.TypeDescriptor> can be dynamically extended by several services available through the target component's <xref:System.ComponentModel.Component.Site%2A>. The following table shows these services.  
   
@@ -48,10 +48,15 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.EventDescriptor" />
+    <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+    <altmember cref="N:System.Reflection" />
+    <altmember cref="T:System.ComponentModel.IComponent" />
+    <altmember cref="T:System.ComponentModel.ISite" />
   </Docs>
   <Members>
     <Member MemberName="AddAttributes">
-      <MemberSignature Language="C#" Value="public static System.ComponentModel.TypeDescriptionProvider AddAttributes (object instance, Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public static System.ComponentModel.TypeDescriptionProvider AddAttributes (object instance, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.TypeDescriptionProvider AddAttributes(object instance, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.AddAttributes(System.Object,System.Attribute[])" />
       <MemberType>Method</MemberType>
@@ -102,10 +107,11 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">One or both of the parameters is <see langword="null" />.</exception>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated state:</permission>
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetAttributes" />
       </Docs>
     </Member>
     <Member MemberName="AddAttributes">
-      <MemberSignature Language="C#" Value="public static System.ComponentModel.TypeDescriptionProvider AddAttributes (Type type, Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public static System.ComponentModel.TypeDescriptionProvider AddAttributes (Type type, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.TypeDescriptionProvider AddAttributes(class System.Type type, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.AddAttributes(System.Type,System.Attribute[])" />
       <MemberType>Method</MemberType>
@@ -156,6 +162,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">One or both of the parameters is <see langword="null" />.</exception>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated state:</permission>
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetAttributes" />
       </Docs>
     </Member>
     <Member MemberName="AddEditorTable">
@@ -203,6 +210,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.AddProvider" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEditor" />
       </Docs>
     </Member>
     <Member MemberName="AddProvider">
@@ -261,6 +270,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">One or both of the parameters are <see langword="null" />.</exception>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated state:</permission>
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.RemoveProvider" />
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.GetProvider(System.Object)" />
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.CreateInstance(System.IServiceProvider,System.Type,System.Type[],System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="AddProvider">
@@ -322,6 +334,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">One or both of the parameters are <see langword="null" />.</exception>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated state:</permission>
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.GetProvider(System.Type)" />
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.CreateInstance(System.IServiceProvider,System.Type,System.Type[],System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="AddProviderTransparent">
@@ -462,6 +476,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated state:</permission>
+        <altmember cref="P:System.ComponentModel.TypeDescriptor.ComObjectType" />
       </Docs>
     </Member>
     <Member MemberName="ComObjectType">
@@ -503,6 +518,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.TypeDescriptor.ComNativeDescriptorHandler" />
       </Docs>
     </Member>
     <Member MemberName="CreateAssociation">
@@ -554,6 +570,8 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="primary" /> is equal to <paramref name="secondary" />.</exception>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated state:</permission>
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.RemoveAssociation(System.Object,System.Object)" />
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.GetAssociation(System.Type,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CreateDesigner">
@@ -594,10 +612,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IComponent" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetReflectionType" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetConverter" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEditor" />
       </Docs>
     </Member>
     <Member MemberName="CreateEvent">
-      <MemberSignature Language="C#" Value="public static System.ComponentModel.EventDescriptor CreateEvent (Type componentType, System.ComponentModel.EventDescriptor oldEventDescriptor, Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public static System.ComponentModel.EventDescriptor CreateEvent (Type componentType, System.ComponentModel.EventDescriptor oldEventDescriptor, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.EventDescriptor CreateEvent(class System.Type componentType, class System.ComponentModel.EventDescriptor oldEventDescriptor, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.CreateEvent(System.Type,System.ComponentModel.EventDescriptor,System.Attribute[])" />
       <MemberType>Method</MemberType>
@@ -637,10 +660,13 @@
         <returns>A new <see cref="T:System.ComponentModel.EventDescriptor" /> that has merged the specified metadata attributes with the existing metadata attributes.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">Required to inspect non-public members of the component. Link demand access required for <see cref="T:System.Security.Permissions.ReflectionPermissionFlag" /> type <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEvents" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetDefaultEvent" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.CreateProperty" />
       </Docs>
     </Member>
     <Member MemberName="CreateEvent">
-      <MemberSignature Language="C#" Value="public static System.ComponentModel.EventDescriptor CreateEvent (Type componentType, string name, Type type, Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public static System.ComponentModel.EventDescriptor CreateEvent (Type componentType, string name, Type type, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.EventDescriptor CreateEvent(class System.Type componentType, string name, class System.Type type, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.CreateEvent(System.Type,System.String,System.Type,System.Attribute[])" />
       <MemberType>Method</MemberType>
@@ -682,6 +708,9 @@
         <returns>An <see cref="T:System.ComponentModel.EventDescriptor" /> that is bound to a type.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">Required to inspect non-public members of the component. Link demand access required for <see cref="T:System.Security.Permissions.ReflectionPermissionFlag" /> type <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEvents" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetDefaultEvent" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.CreateProperty" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -734,10 +763,15 @@
         <block subset="none" type="overrides">
           <para>If the derived class does not provide a substitute instance, this method should call the base implementation.</para>
         </block>
+        <altmember cref="M:System.ComponentModel.TypeDescriptionProvider.CreateInstance(System.IServiceProvider,System.Type,System.Type[],System.Object[])" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetClassName" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetComponentName" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetReflectionType" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.AddProvider" />
       </Docs>
     </Member>
     <Member MemberName="CreateProperty">
-      <MemberSignature Language="C#" Value="public static System.ComponentModel.PropertyDescriptor CreateProperty (Type componentType, System.ComponentModel.PropertyDescriptor oldPropertyDescriptor, Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public static System.ComponentModel.PropertyDescriptor CreateProperty (Type componentType, System.ComponentModel.PropertyDescriptor oldPropertyDescriptor, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.PropertyDescriptor CreateProperty(class System.Type componentType, class System.ComponentModel.PropertyDescriptor oldPropertyDescriptor, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.CreateProperty(System.Type,System.ComponentModel.PropertyDescriptor,System.Attribute[])" />
       <MemberType>Method</MemberType>
@@ -777,10 +811,14 @@
         <returns>A new <see cref="T:System.ComponentModel.PropertyDescriptor" /> that has the specified metadata attributes merged with the existing metadata attributes.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">Required to inspect non-public members of the component. Link demand access required for <see cref="T:System.Security.Permissions.ReflectionPermissionFlag" /> type <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetProperties" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.CreateEvent" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.CreateProperty" />
       </Docs>
     </Member>
     <Member MemberName="CreateProperty">
-      <MemberSignature Language="C#" Value="public static System.ComponentModel.PropertyDescriptor CreateProperty (Type componentType, string name, Type type, Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public static System.ComponentModel.PropertyDescriptor CreateProperty (Type componentType, string name, Type type, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.PropertyDescriptor CreateProperty(class System.Type componentType, string name, class System.Type type, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.CreateProperty(System.Type,System.String,System.Type,System.Attribute[])" />
       <MemberType>Method</MemberType>
@@ -822,6 +860,10 @@
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> that is bound to the specified type and that has the specified metadata attributes merged with the existing metadata attributes.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">Required to inspect non-public members of the component. Link demand access required for <see cref="T:System.Security.Permissions.ReflectionPermissionFlag" /> type <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetProperties" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.CreateEvent" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.CreateProperty" />
       </Docs>
     </Member>
     <Member MemberName="GetAssociation">
@@ -871,6 +913,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">One or both of the parameters are <see langword="null" />.</exception>
+        <altmember cref="M:System.ComponentModel.Design.IDesignerHost.GetDesigner(System.ComponentModel.IComponent)" />
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.CreateAssociation(System.Object,System.Object)" />
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.RemoveAssociation(System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetAttributes">
@@ -908,10 +953,10 @@
 ## Remarks  
  The attributes returned by the <xref:System.ComponentModel.TypeDescriptor.GetAttributes%2A> method may be dynamically modified from the original component's source listing by extender providers (<xref:System.ComponentModel.IExtenderProvider>), filter services (<xref:System.ComponentModel.Design.ITypeDescriptorFilterService>), and attribute filters.  
   
- When you define a custom attribute with <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=fullName> set to `true`, you must override the <xref:System.Attribute.TypeId%2A?displayProperty=fullName> property to make it unique. If all instances of your attribute are unique, override <xref:System.Attribute.TypeId%2A?displayProperty=fullName> to return the object identity of your attribute. If only some instances of your attribute are unique, return a value from <xref:System.Attribute.TypeId%2A?displayProperty=fullName> that would return equality in those cases. For example, some attributes have a constructor parameter that acts as a unique key. For these attributes, return the value of the constructor parameter from the <xref:System.Attribute.TypeId%2A?displayProperty=fullName> property.  
+ When you define a custom attribute with <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=nameWithType> set to `true`, you must override the <xref:System.Attribute.TypeId%2A?displayProperty=nameWithType> property to make it unique. If all instances of your attribute are unique, override <xref:System.Attribute.TypeId%2A?displayProperty=nameWithType> to return the object identity of your attribute. If only some instances of your attribute are unique, return a value from <xref:System.Attribute.TypeId%2A?displayProperty=nameWithType> that would return equality in those cases. For example, some attributes have a constructor parameter that acts as a unique key. For these attributes, return the value of the constructor parameter from the <xref:System.Attribute.TypeId%2A?displayProperty=nameWithType> property.  
   
 > [!NOTE]
->  The default implementation of <xref:System.Attribute.TypeId%2A?displayProperty=fullName> returns the type identity regardless of the value of the <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=fullName> property. In order to return multiple instances of an <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=fullName> attribute from the <xref:System.ComponentModel.AttributeCollection>, your attribute must override the <xref:System.Attribute.TypeId%2A?displayProperty=fullName> property.  
+>  The default implementation of <xref:System.Attribute.TypeId%2A?displayProperty=nameWithType> returns the type identity regardless of the value of the <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=nameWithType> property. In order to return multiple instances of an <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=nameWithType> attribute from the <xref:System.ComponentModel.AttributeCollection>, your attribute must override the <xref:System.Attribute.TypeId%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -920,6 +965,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Attribute" />
+        <altmember cref="T:System.ComponentModel.AttributeCollection" />
+        <altmember cref="M:System.ComponentModel.CustomTypeDescriptor.GetAttributes" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.AddAttributes" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEvents" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetProperties" />
       </Docs>
     </Member>
     <Member MemberName="GetAttributes">
@@ -957,15 +1008,21 @@
 ## Remarks  
  Call this version of this method only when you do not have an instance of the object.  
   
- For attributes with <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=fullName> set to `true`, the attribute collection removes duplicate instances. These are instances in which the <xref:System.Attribute.TypeId%2A?displayProperty=fullName> property returns equal values.  
+ For attributes with <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=nameWithType> set to `true`, the attribute collection removes duplicate instances. These are instances in which the <xref:System.Attribute.TypeId%2A?displayProperty=nameWithType> property returns equal values.  
   
- When you define a custom attribute with <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=fullName> set to `true`, you must override the <xref:System.Attribute.TypeId%2A?displayProperty=fullName> property to make it unique. If all instances of your attribute are unique, override <xref:System.Attribute.TypeId%2A?displayProperty=fullName> to return the object identity of your attribute. If only some instances of your attribute are unique, return a value from <xref:System.Attribute.TypeId%2A?displayProperty=fullName> that would return equality in those cases. For example, some attributes have a constructor parameter that acts as a unique key. For these attributes, return the value of the constructor parameter from the <xref:System.Attribute.TypeId%2A?displayProperty=fullName> property.  
+ When you define a custom attribute with <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=nameWithType> set to `true`, you must override the <xref:System.Attribute.TypeId%2A?displayProperty=nameWithType> property to make it unique. If all instances of your attribute are unique, override <xref:System.Attribute.TypeId%2A?displayProperty=nameWithType> to return the object identity of your attribute. If only some instances of your attribute are unique, return a value from <xref:System.Attribute.TypeId%2A?displayProperty=nameWithType> that would return equality in those cases. For example, some attributes have a constructor parameter that acts as a unique key. For these attributes, return the value of the constructor parameter from the <xref:System.Attribute.TypeId%2A?displayProperty=nameWithType> property.  
   
 > [!NOTE]
->  The default implementation of <xref:System.Attribute.TypeId%2A?displayProperty=fullName> returns the type identity regardless of the value of the <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=fullName> property. In order to return multiple instances of an <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=fullName> attribute from the <xref:System.ComponentModel.AttributeCollection>, your attribute must override the <xref:System.Attribute.TypeId%2A?displayProperty=fullName> property.  
+>  The default implementation of <xref:System.Attribute.TypeId%2A?displayProperty=nameWithType> returns the type identity regardless of the value of the <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=nameWithType> property. In order to return multiple instances of an <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=nameWithType> attribute from the <xref:System.ComponentModel.AttributeCollection>, your attribute must override the <xref:System.Attribute.TypeId%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Attribute" />
+        <altmember cref="T:System.ComponentModel.AttributeCollection" />
+        <altmember cref="M:System.ComponentModel.CustomTypeDescriptor.GetAttributes" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.AddAttributes" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEvents" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetProperties" />
       </Docs>
     </Member>
     <Member MemberName="GetAttributes">
@@ -1011,13 +1068,20 @@
 ## Remarks  
  The attributes returned by the <xref:System.ComponentModel.TypeDescriptor.GetAttributes%2A> method may be dynamically modified from the original components source listing by extender providers (<xref:System.ComponentModel.IExtenderProvider>), filter services (<xref:System.ComponentModel.Design.ITypeDescriptorFilterService>), and attribute filters.  
   
- When you define a custom attribute with <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=fullName> set to `true`, you must override the <xref:System.Attribute.TypeId%2A?displayProperty=fullName> property to make it unique. If all instances of your attribute are unique, override <xref:System.Attribute.TypeId%2A?displayProperty=fullName> to return the object identity of your attribute. If only some instances of your attribute are unique, return a value from <xref:System.Attribute.TypeId%2A?displayProperty=fullName> that would return equality in those cases. For example, some attributes have a constructor parameter that acts as a unique key. For these attributes, return the value of the constructor parameter from the <xref:System.Attribute.TypeId%2A?displayProperty=fullName> property.  
+ When you define a custom attribute with <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=nameWithType> set to `true`, you must override the <xref:System.Attribute.TypeId%2A?displayProperty=nameWithType> property to make it unique. If all instances of your attribute are unique, override <xref:System.Attribute.TypeId%2A?displayProperty=nameWithType> to return the object identity of your attribute. If only some instances of your attribute are unique, return a value from <xref:System.Attribute.TypeId%2A?displayProperty=nameWithType> that would return equality in those cases. For example, some attributes have a constructor parameter that acts as a unique key. For these attributes, return the value of the constructor parameter from the <xref:System.Attribute.TypeId%2A?displayProperty=nameWithType> property.  
   
 > [!NOTE]
->  The default implementation of <xref:System.Attribute.TypeId%2A?displayProperty=fullName> returns the type identity regardless of the value of the <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=fullName> property. In order to return multiple instances of an <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=fullName> attribute from the <xref:System.ComponentModel.AttributeCollection>, your attribute must override the <xref:System.Attribute.TypeId%2A?displayProperty=fullName> property.  
+>  The default implementation of <xref:System.Attribute.TypeId%2A?displayProperty=nameWithType> returns the type identity regardless of the value of the <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=nameWithType> property. In order to return multiple instances of an <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=nameWithType> attribute from the <xref:System.ComponentModel.AttributeCollection>, your attribute must override the <xref:System.Attribute.TypeId%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Attribute" />
+        <altmember cref="T:System.ComponentModel.AttributeCollection" />
+        <altmember cref="T:System.ComponentModel.ICustomTypeDescriptor" />
+        <altmember cref="M:System.ComponentModel.CustomTypeDescriptor.GetAttributes" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.AddAttributes" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEvents" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetProperties" />
       </Docs>
     </Member>
     <Member MemberName="GetClassName">
@@ -1061,6 +1125,11 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="component" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.ComponentModel.CustomTypeDescriptor.GetClassName" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetComponentName" />
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.GetFullComponentName(System.Object)" />
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.CreateInstance(System.IServiceProvider,System.Type,System.Type[],System.Object[])" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetReflectionType" />
       </Docs>
     </Member>
     <Member MemberName="GetClassName">
@@ -1102,6 +1171,11 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="componentType" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.ComponentModel.CustomTypeDescriptor.GetClassName" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetComponentName" />
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.GetFullComponentName(System.Object)" />
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.CreateInstance(System.IServiceProvider,System.Type,System.Type[],System.Object[])" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetReflectionType" />
       </Docs>
     </Member>
     <Member MemberName="GetClassName">
@@ -1153,6 +1227,12 @@
           <paramref name="component" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="component" /> is a cross-process remoted object.</exception>
+        <altmember cref="M:System.ComponentModel.CustomTypeDescriptor.GetClassName" />
+        <altmember cref="T:System.ComponentModel.ICustomTypeDescriptor" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetComponentName" />
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.GetFullComponentName(System.Object)" />
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.CreateInstance(System.IServiceProvider,System.Type,System.Type[],System.Object[])" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetReflectionType" />
       </Docs>
     </Member>
     <Member MemberName="GetComponentName">
@@ -1200,6 +1280,11 @@
           <paramref name="component" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="component" /> is a cross-process remoted object.</exception>
+        <altmember cref="M:System.ComponentModel.CustomTypeDescriptor.GetComponentName" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetClassName" />
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.GetFullComponentName(System.Object)" />
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.CreateInstance(System.IServiceProvider,System.Type,System.Type[],System.Object[])" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetReflectionType" />
       </Docs>
     </Member>
     <Member MemberName="GetComponentName">
@@ -1251,6 +1336,12 @@
           <paramref name="component" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="component" /> is a cross-process remoted object.</exception>
+        <altmember cref="M:System.ComponentModel.CustomTypeDescriptor.GetComponentName" />
+        <altmember cref="T:System.ComponentModel.ICustomTypeDescriptor" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetClassName" />
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.GetFullComponentName(System.Object)" />
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.CreateInstance(System.IServiceProvider,System.Type,System.Type[],System.Object[])" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetReflectionType" />
       </Docs>
     </Member>
     <Member MemberName="GetConverter">
@@ -1301,6 +1392,10 @@
           <paramref name="component" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="component" /> is a cross-process remoted object.</exception>
+        <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetReflectionType" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEditor" />
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.CreateDesigner(System.ComponentModel.IComponent,System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="GetConverter">
@@ -1343,7 +1438,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="component" /> is <see langword="null" />.</exception>
+          <paramref name="type" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetReflectionType" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEditor" />
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.CreateDesigner(System.ComponentModel.IComponent,System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="GetConverter">
@@ -1395,6 +1494,11 @@
           <paramref name="component" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="component" /> is a cross-process remoted object.</exception>
+        <altmember cref="T:System.ComponentModel.ICustomTypeDescriptor" />
+        <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetReflectionType" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEditor" />
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.CreateDesigner(System.ComponentModel.IComponent,System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="GetDefaultEvent">
@@ -1438,6 +1542,14 @@
           <paramref name="component" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="component" /> is a cross-process remoted object.</exception>
+        <altmember cref="T:System.ComponentModel.DefaultEventAttribute" />
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="M:System.ComponentModel.CustomTypeDescriptor.GetDefaultEvent" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEvents" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.CreateEvent" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetAttributes" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetProperties" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetDefaultProperty" />
       </Docs>
     </Member>
     <Member MemberName="GetDefaultEvent">
@@ -1478,7 +1590,15 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="component" /> is <see langword="null" />.</exception>
+          <paramref name="componentType" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.ComponentModel.DefaultEventAttribute" />
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="M:System.ComponentModel.CustomTypeDescriptor.GetDefaultEvent" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEvents" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.CreateEvent" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetAttributes" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetProperties" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetDefaultProperty" />
       </Docs>
     </Member>
     <Member MemberName="GetDefaultEvent">
@@ -1523,6 +1643,15 @@
           <paramref name="component" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="component" /> is a cross-process remoted object.</exception>
+        <altmember cref="T:System.ComponentModel.DefaultEventAttribute" />
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.ICustomTypeDescriptor" />
+        <altmember cref="M:System.ComponentModel.CustomTypeDescriptor.GetDefaultEvent" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEvents" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.CreateEvent" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetAttributes" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetProperties" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetDefaultProperty" />
       </Docs>
     </Member>
     <Member MemberName="GetDefaultProperty">
@@ -1564,6 +1693,11 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">
           <paramref name="component" /> is a cross-process remoted object.</exception>
+        <altmember cref="T:System.ComponentModel.DefaultPropertyAttribute" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.CreateProperty" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetProperties" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetDefaultEvent" />
       </Docs>
     </Member>
     <Member MemberName="GetDefaultProperty">
@@ -1605,6 +1739,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.DefaultPropertyAttribute" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.CreateProperty" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetProperties" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetDefaultEvent" />
       </Docs>
     </Member>
     <Member MemberName="GetDefaultProperty">
@@ -1654,6 +1793,12 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">
           <paramref name="component" /> is a cross-process remoted object.</exception>
+        <altmember cref="T:System.ComponentModel.DefaultPropertyAttribute" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.ICustomTypeDescriptor" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.CreateProperty" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetProperties" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetDefaultEvent" />
       </Docs>
     </Member>
     <Member MemberName="GetEditor">
@@ -1701,6 +1846,8 @@
           <paramref name="component" /> or <paramref name="editorBaseType" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="component" /> is a cross-process remoted object.</exception>
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.AddEditorTable(System.Type,System.Collections.Hashtable)" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetConverter" />
       </Docs>
     </Member>
     <Member MemberName="GetEditor">
@@ -1748,6 +1895,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type" /> or <paramref name="editorBaseType" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.AddEditorTable(System.Type,System.Collections.Hashtable)" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetConverter" />
       </Docs>
     </Member>
     <Member MemberName="GetEditor">
@@ -1802,6 +1951,9 @@
           <paramref name="component" /> or <paramref name="editorBaseType" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="component" /> is a cross-process remoted object.</exception>
+        <altmember cref="T:System.ComponentModel.ICustomTypeDescriptor" />
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.AddEditorTable(System.Type,System.Collections.Hashtable)" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetConverter" />
       </Docs>
     </Member>
     <Member MemberName="GetEvents">
@@ -1852,6 +2004,13 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">
           <paramref name="component" /> is a cross-process remoted object.</exception>
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.EventDescriptorCollection" />
+        <altmember cref="Overload:System.ComponentModel.CustomTypeDescriptor.GetEvents" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetDefaultEvent" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.CreateEvent" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetAttributes" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetProperties" />
       </Docs>
     </Member>
     <Member MemberName="GetEvents">
@@ -1895,6 +2054,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.EventDescriptorCollection" />
+        <altmember cref="Overload:System.ComponentModel.CustomTypeDescriptor.GetEvents" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetDefaultEvent" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.CreateEvent" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetAttributes" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetProperties" />
       </Docs>
     </Member>
     <Member MemberName="GetEvents">
@@ -1952,6 +2118,13 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">
           <paramref name="component" /> is a cross-process remoted object.</exception>
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.EventDescriptorCollection" />
+        <altmember cref="Overload:System.ComponentModel.CustomTypeDescriptor.GetEvents" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetDefaultEvent" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.CreateEvent" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetAttributes" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetProperties" />
       </Docs>
     </Member>
     <Member MemberName="GetEvents">
@@ -2005,6 +2178,14 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">
           <paramref name="component" /> is a cross-process remoted object.</exception>
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.EventDescriptorCollection" />
+        <altmember cref="T:System.ComponentModel.ICustomTypeDescriptor" />
+        <altmember cref="Overload:System.ComponentModel.CustomTypeDescriptor.GetEvents" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetDefaultEvent" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.CreateEvent" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetAttributes" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetProperties" />
       </Docs>
     </Member>
     <Member MemberName="GetEvents">
@@ -2060,6 +2241,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.EventDescriptorCollection" />
+        <altmember cref="Overload:System.ComponentModel.CustomTypeDescriptor.GetEvents" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetDefaultEvent" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.CreateEvent" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetAttributes" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetProperties" />
       </Docs>
     </Member>
     <Member MemberName="GetEvents">
@@ -2125,6 +2313,14 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">
           <paramref name="component" /> is a cross-process remoted object.</exception>
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.EventDescriptorCollection" />
+        <altmember cref="T:System.ComponentModel.ICustomTypeDescriptor" />
+        <altmember cref="Overload:System.ComponentModel.CustomTypeDescriptor.GetEvents" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetDefaultEvent" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.CreateEvent" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetAttributes" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetProperties" />
       </Docs>
     </Member>
     <Member MemberName="GetFullComponentName">
@@ -2166,6 +2362,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="component" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.ComponentModel.TypeDescriptionProvider.GetFullComponentName(System.Object)" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetComponentName" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetClassName" />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -2219,6 +2418,13 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">
           <paramref name="component" /> is a cross-process remoted object.</exception>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
+        <altmember cref="Overload:System.ComponentModel.CustomTypeDescriptor.GetProperties" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetDefaultProperty" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.CreateProperty" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetAttributes" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEvents" />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -2262,6 +2468,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
+        <altmember cref="Overload:System.ComponentModel.CustomTypeDescriptor.GetProperties" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetDefaultProperty" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.CreateProperty" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetAttributes" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEvents" />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -2328,6 +2541,13 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">
           <paramref name="component" /> is a cross-process remoted object.</exception>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
+        <altmember cref="Overload:System.ComponentModel.CustomTypeDescriptor.GetProperties" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetDefaultProperty" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.CreateProperty" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetAttributes" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEvents" />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -2381,6 +2601,14 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">
           <paramref name="component" /> is a cross-process remoted object.</exception>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
+        <altmember cref="T:System.ComponentModel.ICustomTypeDescriptor" />
+        <altmember cref="Overload:System.ComponentModel.CustomTypeDescriptor.GetProperties" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetDefaultProperty" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.CreateProperty" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetAttributes" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEvents" />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -2445,6 +2673,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
+        <altmember cref="Overload:System.ComponentModel.CustomTypeDescriptor.GetProperties" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetDefaultProperty" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.CreateProperty" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetAttributes" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEvents" />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -2505,6 +2740,14 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">
           <paramref name="component" /> is a cross-process remoted object.</exception>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
+        <altmember cref="T:System.ComponentModel.ICustomTypeDescriptor" />
+        <altmember cref="Overload:System.ComponentModel.CustomTypeDescriptor.GetProperties" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetDefaultProperty" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.CreateProperty" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetAttributes" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEvents" />
       </Docs>
     </Member>
     <Member MemberName="GetProvider">
@@ -2551,6 +2794,12 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="instance" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.ComponentModel.TypeDescriptionProvider" />
+        <altmember cref="T:System.ComponentModel.ICustomTypeDescriptor" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.RemoveProvider" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetReflectionType" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEditor" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetConverter" />
       </Docs>
     </Member>
     <Member MemberName="GetProvider">
@@ -2597,6 +2846,12 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.ComponentModel.TypeDescriptionProvider" />
+        <altmember cref="T:System.ComponentModel.ICustomTypeDescriptor" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.RemoveProvider" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetReflectionType" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEditor" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetConverter" />
       </Docs>
     </Member>
     <Member MemberName="GetReflectionType">
@@ -2643,6 +2898,10 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="instance" /> is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetClassName" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetComponentName" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetProvider" />
       </Docs>
     </Member>
     <Member MemberName="GetReflectionType">
@@ -2689,6 +2948,10 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type" /> is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetClassName" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetComponentName" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetProvider" />
       </Docs>
     </Member>
     <Member MemberName="InterfaceType">
@@ -2774,6 +3037,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="E:System.ComponentModel.TypeDescriptor.Refreshed" />
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -2816,6 +3082,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.Assembly" />
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.IExtenderProvider" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="E:System.ComponentModel.TypeDescriptor.Refreshed" />
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -2858,6 +3130,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.Module" />
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.IExtenderProvider" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="E:System.ComponentModel.TypeDescriptor.Refreshed" />
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -2900,6 +3178,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.IExtenderProvider" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="E:System.ComponentModel.TypeDescriptor.Refreshed" />
       </Docs>
     </Member>
     <Member MemberName="Refreshed">
@@ -2939,6 +3222,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.Refresh" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAssociation">
@@ -2988,6 +3272,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">One or both of the parameters are <see langword="null" />.</exception>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated state:</permission>
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.CreateAssociation(System.Object,System.Object)" />
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.GetAssociation(System.Type,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAssociations">
@@ -3036,6 +3322,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="primary" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated state:</permission>
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.CreateAssociation(System.Object,System.Object)" />
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.GetAssociation(System.Type,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveProvider">
@@ -3085,6 +3373,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">One or both of the parameters are <see langword="null" />.</exception>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated state:</permission>
+        <altmember cref="T:System.ComponentModel.TypeDescriptionProvider" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.AddProvider" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetProvider" />
       </Docs>
     </Member>
     <Member MemberName="RemoveProvider">
@@ -3134,6 +3425,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">One or both of the parameters are <see langword="null" />.</exception>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated state:</permission>
+        <altmember cref="T:System.ComponentModel.TypeDescriptionProvider" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.AddProvider" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetProvider" />
       </Docs>
     </Member>
     <Member MemberName="RemoveProviderTransparent">
@@ -3271,7 +3565,201 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="infos" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.Collections.IList" />
+        <altmember cref="Overload:System.ComponentModel.TypeDescriptor.Refresh" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetConverter">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a type converter for a component or a type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetProvider">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the type description provider for the component or type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetProperties">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the collection of properties on a component or type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateProperty">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new property descriptor for an existing property of a component.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddAttributes">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds class-level attributes to the target component.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetReflectionType">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Type" /> that can be used to perform reflection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddProvider">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a type description provider to the list of providers for this type descriptor.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddProviderTransparent">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a type description provider to the list of providers for this type descriptor.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetClassName">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the name of the class for the specified component.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetAttributes">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the collection of attributes for a component or a type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetDefaultProperty">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the default property for a component.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetDefaultEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the default event for a component or type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Refresh">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears the properties and events from the cache.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RemoveProvider">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a previously added type description provider.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEvents">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the collection of events for a component or type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RemoveProviderTransparent">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a previously added type description provider.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetComponentName">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the name of the specified component.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new event descriptor that is identical to an existing event descriptor.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEditor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an editor with the specified base type.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

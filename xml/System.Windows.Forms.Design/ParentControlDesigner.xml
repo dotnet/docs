@@ -31,6 +31,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+    <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+    <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+    <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+    <altmember cref="T:System.ComponentModel.DesignerAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,11 +51,16 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.ParentControlDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="AddPaddingSnapLines">
       <MemberSignature Language="C#" Value="protected void AddPaddingSnapLines (ref System.Collections.ArrayList snapLines);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddPaddingSnapLines(class System.Collections.ArrayList snapLines) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddPaddingSnapLines(class System.Collections.ArrayList&amp; snapLines) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.AddPaddingSnapLines(System.Collections.ArrayList@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -67,6 +77,11 @@
         <param name="snapLines">An <see cref="T:System.Collections.ArrayList" /> that contains <see cref="T:System.Windows.Forms.Design.Behavior.SnapLine" /> objects.</param>
         <summary>Adds padding snaplines.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="AllowControlLasso">
@@ -93,6 +108,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="AllowGenericDragBox">
@@ -112,6 +132,11 @@
         <value>
           <see langword="true" /> if a generic drag box should be drawn when dragging a toolbox item over the designer's surface; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="AllowSetChildIndexOnDrop">
@@ -138,6 +163,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="CanAddComponent">
@@ -198,6 +228,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="CanParent">
@@ -228,6 +263,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="CreateTool">
@@ -258,6 +298,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="CreateTool">
@@ -290,6 +335,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="CreateTool">
@@ -320,6 +370,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="CreateToolCore">
@@ -363,6 +418,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="DefaultControlLocation">
@@ -388,6 +448,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -425,6 +490,11 @@
   
  For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="DrawGrid">
@@ -444,6 +514,12 @@
         <value>
           <see langword="true" /> if a grid should be drawn on the control in the designer; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ControlPaint.DrawGrid(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Size,System.Drawing.Color)" />
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="EnableDragRect">
@@ -463,6 +539,11 @@
         <value>
           <see langword="true" /> if drag rectangles are drawn; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetControl">
@@ -485,6 +566,11 @@
         <summary>Gets the control from the designer of the specified component.</summary>
         <returns>The <see cref="T:System.Windows.Forms.Control" /> that the specified component belongs to.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetControlGlyph">
@@ -514,6 +600,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetGlyphs">
@@ -543,6 +634,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetParentForComponent">
@@ -565,6 +661,11 @@
         <summary>Used by deriving classes to determine if it returns the control being designed or some other <see cref="T:System.ComponentModel.Container" /> while adding a component to it.</summary>
         <returns>The parent <see cref="T:System.Windows.Forms.Control" /> for the component.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetUpdatedRect">
@@ -599,6 +700,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GridSize">
@@ -619,6 +725,11 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <see cref="T:System.Drawing.Size" /> is outside the allowed range for <see cref="P:System.Windows.Forms.Design.ParentControlDesigner.GridSize" />. The default minimum value is 2, and the default maximum value is 200.</exception>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -647,6 +758,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="InitializeNewComponent">
@@ -668,6 +784,12 @@
         <param name="defaultValues">A name/value dictionary of default values to apply to properties. May be <see langword="null" /> if no default values are specified.</param>
         <summary>Initializes a newly created component.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Design.ControlDesigner.InitializeNewComponent(System.Collections.IDictionary)" />
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="InvokeCreateTool">
@@ -691,6 +813,11 @@
         <param name="tool">The <see cref="T:System.Drawing.Design.ToolboxItem" /> to create a tool from.</param>
         <summary>Creates a tool from the specified <see cref="T:System.Drawing.Design.ToolboxItem" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="MouseDragTool">
@@ -712,6 +839,11 @@
         <block subset="none" type="overrides">
           <para>This property is used by deriving classes to determine if the designer has a valid tool during a drag operation.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="OnDragComplete">
@@ -740,6 +872,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="OnDragDrop">
@@ -768,6 +905,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="OnDragEnter">
@@ -789,6 +931,11 @@
         <param name="de">A <see cref="T:System.Windows.Forms.DragEventArgs" /> that provides data for the event.</param>
         <summary>Called when a drag-and-drop operation enters the control designer view.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="OnDragLeave">
@@ -810,6 +957,11 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that provides data for the event.</param>
         <summary>Called when a drag-and-drop operation leaves the control designer view.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="OnDragOver">
@@ -831,6 +983,11 @@
         <param name="de">A <see cref="T:System.Windows.Forms.DragEventArgs" /> that provides data for the event.</param>
         <summary>Called when a drag-and-drop object is dragged over the control designer view.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseDragBegin">
@@ -864,6 +1021,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseDragEnd">
@@ -893,6 +1055,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseDragMove">
@@ -926,6 +1093,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="OnPaintAdornments">
@@ -947,6 +1119,11 @@
         <param name="pe">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that provides data for the event.</param>
         <summary>Called when the control that the designer is managing has painted its surface so the designer can paint any additional adornments on top of the control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="OnSetCursor">
@@ -972,6 +1149,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -1000,6 +1182,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
     <Member MemberName="SnapLines">
@@ -1018,7 +1205,31 @@
         <summary>Gets a list of <see cref="T:System.Windows.Forms.Design.Behavior.SnapLine" /> objects representing significant alignment points for this control.</summary>
         <value>A list of <see cref="T:System.Windows.Forms.Design.Behavior.SnapLine" /> objects representing significant alignment points for this control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Design.ControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.SnapLine" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateTool">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a component or control from the specified tool and adds it to the current design document.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CanParent">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether the specified control can be a child of the control managed by a designer.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

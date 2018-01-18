@@ -23,7 +23,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- View state for a page or control is the cumulative property values, or view, of that page or control. You can access this class through the <xref:System.Web.UI.Control.ViewState%2A?displayProperty=fullName> property. Controls can also store essential state information in control state, but that information is not stored as a <xref:System.Web.UI.StateBag> object.  
+ View state for a page or control is the cumulative property values, or view, of that page or control. You can access this class through the <xref:System.Web.UI.Control.ViewState%2A?displayProperty=nameWithType> property. Controls can also store essential state information in control state, but that information is not stored as a <xref:System.Web.UI.StateBag> object.  
   
  This class is the primary storage mechanism for all HTML and Web server controls. It stores attribute/value pairs as strings associated with the control. It tracks changes to these attributes only after the <xref:System.Web.UI.Control.OnInit%2A> method is executed for a page request, and saves the changes to the page's or control's view state.  
   
@@ -32,13 +32,17 @@
    
   
 ## Examples  
- The following code example demonstrates a composite `Label` control that has `Text` and `FontSize` properties. These properties are saved to and retrieved from view state when the <xref:System.Web.UI.Control.Render%2A?displayProperty=fullName> method is called on the control.  
+ The following code example demonstrates a composite `Label` control that has `Text` and `FontSize` properties. These properties are saved to and retrieved from view state when the <xref:System.Web.UI.Control.Render%2A?displayProperty=nameWithType> method is called on the control.  
   
  [!code-csharp[SysWebUIControlViewState#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SysWebUIControlViewState/CS/controlviewstate.cs#1)]
  [!code-vb[SysWebUIControlViewState#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SysWebUIControlViewState/VB/controlviewstate.vb#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.IStateManager" />
+    <altmember cref="T:System.Collections.IDictionary" />
+    <altmember cref="P:System.Web.UI.Control.ViewState" />
+    <altmember cref="T:System.Web.UI.AttributeCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,6 +58,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.StateBag" /> class. This is the default constructor for this class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -73,6 +78,7 @@
           <see langword="true" /> to ignore case; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.StateBag" /> class that allows stored state values to be case-insensitive.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -113,6 +119,9 @@
  \- or -  
   
  The number of characters in <paramref name="key" /> is 0.</exception>
+        <altmember cref="P:System.Web.UI.StateBag.Item(System.String)" />
+        <altmember cref="M:System.Web.UI.StateBag.Clear" />
+        <altmember cref="M:System.Web.UI.StateBag.Remove(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -141,6 +150,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.StateBag.Remove(System.String)" />
+        <altmember cref="M:System.Web.UI.StateBag.Add(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -169,6 +180,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -198,6 +210,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionaryEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="IsItemDirty">
@@ -236,6 +249,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -268,13 +282,16 @@
    
   
 ## Examples  
- The following code example demonstrates a property that saves its name and value as a key/value pair to the <xref:System.Web.UI.Control.ViewState%2A?displayProperty=fullName> property. The <xref:System.Web.UI.Control.ViewState%2A> property is an instance of the <xref:System.Web.UI.StateBag> class.  
+ The following code example demonstrates a property that saves its name and value as a key/value pair to the <xref:System.Web.UI.Control.ViewState%2A?displayProperty=nameWithType> property. The <xref:System.Web.UI.Control.ViewState%2A> property is an instance of the <xref:System.Web.UI.StateBag> class.  
   
  [!code-csharp[SysWebUIControlViewState#2](~/samples/snippets/csharp/VS_Snippets_WebNet/SysWebUIControlViewState/CS/controlviewstate.cs#2)]
  [!code-vb[SysWebUIControlViewState#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SysWebUIControlViewState/VB/controlviewstate.vb#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.StateBag.Add(System.String,System.Object)" />
+        <altmember cref="M:System.Web.UI.StateBag.Remove(System.String)" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -300,7 +317,7 @@
   
  These keys correspond to the names of the <xref:System.Web.UI.StateItem> objects stored in the <xref:System.Web.UI.StateBag> collection for the current page or server control.  
   
- You can iterate over this collection using the <xref:System.Web.UI.StateBag.GetEnumerator%2A?displayProperty=fullName> method.  
+ You can iterate over this collection using the <xref:System.Web.UI.StateBag.GetEnumerator%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -312,6 +329,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -343,6 +362,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="M:System.Web.UI.StateBag.Clear" />
+        <altmember cref="P:System.Web.UI.StateBag.Item(System.String)" />
+        <altmember cref="M:System.Web.UI.StateBag.Add(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="SetDirty">
@@ -372,6 +395,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.StateBag.SetItemDirty(System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="SetItemDirty">
@@ -403,6 +427,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.StateBag.SetDirty(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -433,6 +458,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -459,6 +485,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -484,6 +511,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Add">
@@ -514,6 +542,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Contains">
@@ -544,6 +573,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.IsFixedSize">
@@ -570,6 +600,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.IsReadOnly">
@@ -596,6 +627,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Item">
@@ -625,6 +657,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Remove">
@@ -653,6 +686,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -679,6 +713,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerable" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -698,6 +733,9 @@
         <value>
           <see langword="true" /> if the <see cref="T:System.Web.UI.StateBag" /> is marked to save changes to its state; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.StateBag.System#Web#UI#IStateManager#LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.StateBag.System#Web#UI#IStateManager#SaveViewState" />
+        <altmember cref="M:System.Web.UI.StateBag.System#Web#UI#IStateManager#TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -728,6 +766,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.StateBag.System#Web#UI#IStateManager#LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -758,6 +797,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.StateBag.System#Web#UI#IStateManager#IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.StateBag.System#Web#UI#IStateManager#LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.StateBag.System#Web#UI#IStateManager#TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -776,6 +818,9 @@
       <Docs>
         <summary>Causes the <see cref="T:System.Web.UI.StateBag" /> object to track changes to its state so that it can be persisted across requests.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.StateBag.System#Web#UI#IStateManager#IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.StateBag.System#Web#UI#IStateManager#LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.StateBag.System#Web#UI#IStateManager#SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -797,7 +842,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is a collection that contains the values for all the <xref:System.Web.UI.StateItem> objects in the specified page or control. You can iterate through these values by using the <xref:System.Web.UI.StateBag.GetEnumerator%2A?displayProperty=fullName> method.  
+ This is a collection that contains the values for all the <xref:System.Web.UI.StateItem> objects in the specified page or control. You can iterate through these values by using the <xref:System.Web.UI.StateBag.GetEnumerator%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -809,7 +854,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.StateBag" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

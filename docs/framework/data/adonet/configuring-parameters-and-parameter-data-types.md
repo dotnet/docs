@@ -9,11 +9,16 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 537d8a2c-d40b-4000-83eb-bc1fcc93f707
 caps.latest.revision: 6
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Configuring Parameters and Parameter Data Types
 Command objects use parameters to pass values to SQL statements or stored procedures, providing type checking and validation. Unlike command text, parameter input is treated as a literal value, not as executable code. This helps guard against "SQL injection" attacks, in which an attacker inserts a command that compromises security on the server into an SQL statement.  
@@ -199,7 +204,7 @@ parameter.Direction = ParameterDirection.Output;
 ```  
   
 ## See Also  
- [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)   
- [DataAdapter Parameters](../../../../docs/framework/data/adonet/dataadapter-parameters.md)   
- [Data Type Mappings in ADO.NET](../../../../docs/framework/data/adonet/data-type-mappings-in-ado-net.md)   
+ [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)  
+ [DataAdapter Parameters](../../../../docs/framework/data/adonet/dataadapter-parameters.md)  
+ [Data Type Mappings in ADO.NET](../../../../docs/framework/data/adonet/data-type-mappings-in-ado-net.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

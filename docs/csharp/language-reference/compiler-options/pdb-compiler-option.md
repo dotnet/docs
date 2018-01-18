@@ -1,14 +1,12 @@
 ---
 title: "-pdb (C# Compiler Options)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
 f1_keywords: 
   - "/pdb"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "-pdb compiler option [C#]"
   - "pdb compiler option [C#]"
@@ -17,20 +15,6 @@ ms.assetid: e9d0f96a-5b75-45d6-9765-92538dd5f823
 caps.latest.revision: 8
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /pdb (C# Compiler Options)
 The **/pdb** compiler option specifies the name and location of the debug symbols file.  
@@ -60,5 +44,5 @@ csc /debug /pdb:tt t.cs
 ```  
   
 ## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

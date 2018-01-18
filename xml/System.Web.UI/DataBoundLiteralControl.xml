@@ -254,8 +254,8 @@ csc /t:library /out:myWebAppPath/bin/cs_myDataBoundLiteralControl.dll myDataBoun
   
  The following code example demonstrates how the custom control is registered and used within an .aspx file.  
   
- <!-- TODO: review snippet reference [!code-csharp[SystemWebUI_DataBoundLiteralControl#2](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_DataBoundLiteralControl/CS/databoundform.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[SystemWebUI_DataBoundLiteralControl#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_DataBoundLiteralControl/VB/databoundform.aspx#2)]  -->  
+ [!code-aspx-csharp[SystemWebUI_DataBoundLiteralControl#2](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_DataBoundLiteralControl/CS/databoundform.aspx#2)]
+ [!code-aspx-vb[SystemWebUI_DataBoundLiteralControl#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_DataBoundLiteralControl/VB/databoundform.aspx#2)]  
   
  ]]></format>
         </remarks>

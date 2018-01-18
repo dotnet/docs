@@ -217,5 +217,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddDefinition">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Web.UI.ScriptResourceDefinition" /> object to the <see cref="T:System.Web.UI.ScriptResourceMapping" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetDefinition">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the specified <see cref="T:System.Web.UI.ScriptResourceDefinition" /> object from the <see cref="T:System.Web.UI.ScriptResourceMapping" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RemoveDefinition">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a <see cref="T:System.Web.UI.ScriptResourceDefinition" /> object from the <see cref="T:System.Web.UI.ScriptResourceMapping" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -1,14 +1,12 @@
 ---
 title: "-addmodule (C# Compiler Options)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
 f1_keywords: 
   - "/addmodule"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/addmodule compiler option [C#]"
   - "-addmodule compiler option [C#]"
@@ -17,20 +15,6 @@ ms.assetid: ed604546-0dc2-4bd4-9a3e-610a8d973e58
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /addmodule (C# Compiler Options)
 This option adds a module that was created with the target:module switch to the current compilation.  
@@ -62,7 +46,7 @@ csc /addmodule:metad1.netmodule;metad2.netmodule /out:out.exe input.cs
 ```  
   
 ## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)   
- [Multifile Assemblies](../../../framework/app-domains/multifile-assemblies.md)   
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)  
+ [Multifile Assemblies](../../../framework/app-domains/multifile-assemblies.md)  
  [How to: Build a Multifile Assembly](../../../framework/app-domains/how-to-build-a-multifile-assembly.md)

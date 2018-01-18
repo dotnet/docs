@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedScope::GetLocalCount"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetLocalCount method [.NET Framework debugging]"
   - "ISymUnmanagedScope::GetLocalCount method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedScope::GetLocalCount Method
 Gets a count of the local variables defined within this scope.  

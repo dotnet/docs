@@ -20,7 +20,7 @@
   
  This implementation of CMS/PKCS #7 supports only one level of countersignature.  That is, a signature can be signed, which forms a countersignature, but that countersignature cannot be signed again.  
   
- This class does not have a public constructor; therefore, it cannot be publicly instantiated. It is a read-only class accessible from the <xref:System.Security.Cryptography.Pkcs.SignedCms.SignerInfos%2A?displayProperty=fullName> property.  
+ This class does not have a public constructor; therefore, it cannot be publicly instantiated. It is a read-only class accessible from the <xref:System.Security.Cryptography.Pkcs.SignedCms.SignerInfos%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
     </remarks>
@@ -45,10 +45,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the signing certificate is not included at signing time by using the <xref:System.Security.Cryptography.Pkcs.CmsSigner.IncludeOption%2A?displayProperty=fullName> property, then the certificate will not be returned.  
+ If the signing certificate is not included at signing time by using the <xref:System.Security.Cryptography.Pkcs.CmsSigner.IncludeOption%2A?displayProperty=nameWithType> property, then the certificate will not be returned.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.CounterSignerInfos" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.DigestAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignerIdentifier" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.UnsignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.Version" />
       </Docs>
     </Member>
     <Member MemberName="CheckHash">
@@ -75,6 +81,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">A cryptographic operation could not be completed.</exception>
+        <altmember cref="T:System.Security.Cryptography.Pkcs.CmsSigner" />
+        <altmember cref="M:System.Security.Cryptography.Pkcs.SignedCms.CheckHash" />
+        <altmember cref="T:System.Security.Cryptography.Pkcs.SubjectIdentifierType" />
       </Docs>
     </Member>
     <Member MemberName="CheckSignature">
@@ -166,7 +175,7 @@
 ## Remarks  
  This implementation of CMS/PKCS #7 supports only one level of countersignature.  That is, a signature can be signed, which forms a countersignature, but that countersignature cannot be signed again.  
   
- This method displays a user interface in which you choose signers for this message. This requires that the current process is running in *user interactive mode*, meaning that the <xref:System.Environment.UserInteractive%2A?displayProperty=fullName> property is set to `true`. A process is normally in user interactive mode unless it is a service process or running inside a Web application.  
+ This method displays a user interface in which you choose signers for this message. This requires that the current process is running in *user interactive mode*, meaning that the <xref:System.Environment.UserInteractive%2A?displayProperty=nameWithType> property is set to `true`. A process is normally in user interactive mode unless it is a service process or running inside a Web application.  
   
  Signers whose certificates meet the following conditions will be displayed in the list:  
   
@@ -181,13 +190,13 @@
 ## .NET Framework Security  
  The following permissions are required to display the user interface:  
   
--   <xref:System.Security.Permissions.UIPermissionWindow?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows?displayProperty=nameWithType>  
   
  The following permissions are required to access the signature key:  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Open?displayProperty=nameWithType>  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Sign?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -222,9 +231,9 @@
 ## .NET Framework Security  
  The following permissions are required to access the signature key:  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Open?displayProperty=nameWithType>  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Sign?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -255,6 +264,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.Certificate" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.DigestAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignerIdentifier" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.UnsignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.Version" />
       </Docs>
     </Member>
     <Member MemberName="DigestAlgorithm">
@@ -273,6 +288,12 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.SignerInfo.DigestAlgorithm" /> property retrieves the <see cref="T:System.Security.Cryptography.Oid" /> object that represents the hash algorithm used in the computation of the signatures.</summary>
         <value>An <see cref="T:System.Security.Cryptography.Oid" /> object that represents the hash algorithm used with the signature.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.Certificate" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.CounterSignerInfos" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignerIdentifier" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.UnsignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.Version" />
       </Docs>
     </Member>
     <Member MemberName="RemoveCounterSignature">
@@ -344,10 +365,17 @@
   
  Signed attributes are signed along with the rest of the <xref:System.Security.Cryptography.Pkcs.SignedCms> message content. This means that a party that successfully verifies the signature can have confidence that the contents of these attributes are authentic and have not been altered.  
   
- A <xref:System.Security.Cryptography.Pkcs.Pkcs9ContentType> object and a <xref:System.Security.Cryptography.Pkcs.Pkcs9MessageDigest> object will be automatically generated and placed in the <xref:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes%2A> property whenever the <xref:System.Security.Cryptography.Pkcs.CmsSigner.SignedAttributes%2A?displayProperty=fullName> property for the corresponding signer is not empty.  
+ A <xref:System.Security.Cryptography.Pkcs.Pkcs9ContentType> object and a <xref:System.Security.Cryptography.Pkcs.Pkcs9MessageDigest> object will be automatically generated and placed in the <xref:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes%2A> property whenever the <xref:System.Security.Cryptography.Pkcs.CmsSigner.SignedAttributes%2A?displayProperty=nameWithType> property for the corresponding signer is not empty.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.Certificate" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.CounterSignerInfos" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.DigestAlgorithm" />
+        <altmember cref="T:System.Security.Cryptography.Pkcs.Pkcs9SigningTime" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignerIdentifier" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.UnsignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.Version" />
       </Docs>
     </Member>
     <Member MemberName="SignerIdentifier">
@@ -366,6 +394,12 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignerIdentifier" /> property retrieves the certificate identifier of the signer associated with the signer information.</summary>
         <value>A <see cref="T:System.Security.Cryptography.Pkcs.SubjectIdentifier" /> object that uniquely identifies the certificate associated with the signer information.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.Certificate" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.CounterSignerInfos" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.DigestAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.UnsignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.Version" />
       </Docs>
     </Member>
     <Member MemberName="UnsignedAttributes">
@@ -393,6 +427,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.Certificate" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.CounterSignerInfos" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.DigestAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignerIdentifier" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.Version" />
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -418,7 +458,40 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.Certificate" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.CounterSignerInfos" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.DigestAlgorithm" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.SignerIdentifier" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.UnsignedAttributes" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CheckSignature">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Verifies the digital signature of the message.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ComputeCounterSignature">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a countersignature and adds the signature to the CMS/PKCS #7 message.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RemoveCounterSignature">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified countersignature from the <see cref="P:System.Security.Cryptography.Pkcs.SignerInfo.CounterSignerInfos" /> collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

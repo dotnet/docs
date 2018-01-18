@@ -368,7 +368,7 @@
     </Member>
     <Member MemberName="System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt;.TryTake">
       <MemberSignature Language="C#" Value="bool IProducerConsumerCollection&lt;T&gt;.TryTake (out T item);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt;.TryTake(!T item) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt;.TryTake([out] !T&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentQueue`1.System#Collections#Concurrent#IProducerConsumerCollection&lt;T&gt;#TryTake(`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -567,7 +567,7 @@
     </Member>
     <Member MemberName="TryDequeue">
       <MemberSignature Language="C#" Value="public bool TryDequeue (out T result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryDequeue(!T result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryDequeue([out] !T&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentQueue`1.TryDequeue(`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -610,7 +610,7 @@
     </Member>
     <Member MemberName="TryPeek">
       <MemberSignature Language="C#" Value="public bool TryPeek (out T result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryPeek(!T result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryPeek([out] !T&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentQueue`1.TryPeek(`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -642,5 +642,16 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Concurrent.ConcurrentQueue`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

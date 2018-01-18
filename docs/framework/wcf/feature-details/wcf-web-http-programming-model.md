@@ -15,9 +15,11 @@ helpviewer_keywords:
   - "REST"
 ms.assetid: 2312a8d3-b66e-4623-ba42-978434300c7f
 caps.latest.revision: 17
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WCF Web HTTP Programming Model
 The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] Web HTTP Programming Model allows developers to expose [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service operations to non-SOAP endpoints. The topics in this section examine the feature in detail.  

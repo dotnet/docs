@@ -22,6 +22,7 @@
   <Docs>
     <summary>Represents an entity reference node.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="M:System.Xml.XmlDocument.CreateEntityReference(System.String)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -92,7 +93,7 @@
   
  `BaseURI` walks the node tree looking for entity reference boundaries, so if entities are expanded, this information is not preserved and this property returns the location of the XmlDocument in all cases.  
   
- For additional information on `BaseURI` and how it behaves with other node types, see <xref:System.Xml.XmlNode.BaseURI%2A?displayProperty=fullName>.  
+ For additional information on `BaseURI` and how it behaves with other node types, see <xref:System.Xml.XmlNode.BaseURI%2A?displayProperty=nameWithType>.  
   
  This property is a Microsoft extension to the Document Object Model (DOM).  
   
@@ -292,6 +293,7 @@
         <summary>Gets the type of the node.</summary>
         <value>The node type. For <see langword="XmlEntityReference" /> nodes, the value is XmlNodeType.EntityReference.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xml.XmlNodeType" />
       </Docs>
     </Member>
     <Member MemberName="Value">

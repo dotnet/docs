@@ -33,7 +33,7 @@
       </Docs>
     </Member>
     <Member MemberName="GenerateMethodCall">
-      <MemberSignature Language="C#" Value="public static void GenerateMethodCall (System.Reflection.Emit.ILGenerator gen, Mono.CodeGeneration.CodeExpression target, Mono.CodeGeneration.CodeMethod method, Mono.CodeGeneration.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public static void GenerateMethodCall (System.Reflection.Emit.ILGenerator gen, Mono.CodeGeneration.CodeExpression target, Mono.CodeGeneration.CodeMethod method, params Mono.CodeGeneration.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GenerateMethodCall(class System.Reflection.Emit.ILGenerator gen, class Mono.CodeGeneration.CodeExpression target, class Mono.CodeGeneration.CodeMethod method, class Mono.CodeGeneration.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeGenerationHelper.GenerateMethodCall(System.Reflection.Emit.ILGenerator,Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeMethod,Mono.CodeGeneration.CodeExpression[])" />
       <MemberType>Method</MemberType>
@@ -67,7 +67,7 @@
       </Docs>
     </Member>
     <Member MemberName="GenerateMethodCall">
-      <MemberSignature Language="C#" Value="public static void GenerateMethodCall (System.Reflection.Emit.ILGenerator gen, Mono.CodeGeneration.CodeExpression target, System.Reflection.MethodBase method, Mono.CodeGeneration.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public static void GenerateMethodCall (System.Reflection.Emit.ILGenerator gen, Mono.CodeGeneration.CodeExpression target, System.Reflection.MethodBase method, params Mono.CodeGeneration.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GenerateMethodCall(class System.Reflection.Emit.ILGenerator gen, class Mono.CodeGeneration.CodeExpression target, class System.Reflection.MethodBase method, class Mono.CodeGeneration.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeGenerationHelper.GenerateMethodCall(System.Reflection.Emit.ILGenerator,Mono.CodeGeneration.CodeExpression,System.Reflection.MethodBase,Mono.CodeGeneration.CodeExpression[])" />
       <MemberType>Method</MemberType>

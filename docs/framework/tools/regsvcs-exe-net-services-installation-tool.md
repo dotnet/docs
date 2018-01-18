@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "Regsvcs.exe"
   - ".NET Services Installation tool"
@@ -26,6 +21,8 @@ caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Regsvcs.exe (.NET Services Installation Tool)
 The .NET Services Installation tool performs the following actions:  
@@ -96,6 +93,6 @@ regsvcs /appname:myTargetApp /tlb:newTest.tlb myTest.dll
 ```  
   
 ## See Also  
- [Tools](../../../docs/framework/tools/index.md)   
- [How to: Sign an Assembly with a Strong Name](../../../docs/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name.md)   
+ [Tools](../../../docs/framework/tools/index.md)  
+ [How to: Sign an Assembly with a Strong Name](../../../docs/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name.md)  
  [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

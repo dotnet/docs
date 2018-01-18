@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically access a <xref:System.Windows.Input.TouchDevice> by using the <xref:System.Windows.Input.TouchEventArgs.TouchDevice%2A?displayProperty=fullName> property. A <xref:System.Windows.Input.TouchDevice> represents a single touch on a screen. If multiple touches are present, use the <xref:System.Windows.Input.TouchDevice.Id%2A> property to distinguish between them.  
+ You typically access a <xref:System.Windows.Input.TouchDevice> by using the <xref:System.Windows.Input.TouchEventArgs.TouchDevice%2A?displayProperty=nameWithType> property. A <xref:System.Windows.Input.TouchDevice> represents a single touch on a screen. If multiple touches are present, use the <xref:System.Windows.Input.TouchDevice.Id%2A> property to distinguish between them.  
   
 > [!NOTE]
 >  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For more information about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
@@ -109,6 +109,7 @@
       <Docs>
         <summary>Occurs when the <see cref="T:System.Windows.Input.TouchDevice" /> is added to the input messaging system.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Input.TouchDevice.Activate" />
       </Docs>
     </Member>
     <Member MemberName="ActiveSource">
@@ -284,6 +285,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The device is not activated.</exception>
+        <altmember cref="E:System.Windows.ContentElement.TouchLeave" />
+        <altmember cref="E:System.Windows.UIElement3D.TouchLeave" />
+        <altmember cref="E:System.Windows.UIElement.TouchLeave" />
       </Docs>
     </Member>
     <Member MemberName="Deactivated">
@@ -301,6 +305,7 @@
       <Docs>
         <summary>Occurs when the <see cref="T:System.Windows.Input.TouchDevice" /> is removed from the input messaging system.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Input.TouchDevice.Deactivate" />
       </Docs>
     </Member>
     <Member MemberName="DirectlyOver">
@@ -474,6 +479,7 @@
           <see langword="true" /> to cancel the action; otherwise, <see langword="false" />.</param>
         <summary>Called when a manipulation has ended.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.UIElement.ManipulationCompleted" />
       </Docs>
     </Member>
     <Member MemberName="OnManipulationStarted">
@@ -499,6 +505,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.ManipulationStarted" />
       </Docs>
     </Member>
     <Member MemberName="ReportDown">
@@ -526,6 +533,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.ContentElement.TouchDown" />
+        <altmember cref="E:System.Windows.UIElement3D.TouchDown" />
+        <altmember cref="E:System.Windows.UIElement.TouchDown" />
       </Docs>
     </Member>
     <Member MemberName="ReportMove">
@@ -553,6 +563,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.ContentElement.TouchMove" />
+        <altmember cref="E:System.Windows.UIElement3D.TouchMove" />
+        <altmember cref="E:System.Windows.UIElement.TouchMove" />
       </Docs>
     </Member>
     <Member MemberName="ReportUp">
@@ -580,6 +593,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.ContentElement.TouchUp" />
+        <altmember cref="E:System.Windows.UIElement3D.TouchUp" />
+        <altmember cref="E:System.Windows.UIElement.TouchUp" />
       </Docs>
     </Member>
     <Member MemberName="SetActiveSource">
@@ -761,5 +777,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Capture">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Captures a touch to the specified element.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

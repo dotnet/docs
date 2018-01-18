@@ -14,7 +14,7 @@
   <Members>
     <Member MemberName="CanExecuteExpression">
       <MemberSignature Language="C#" Value="public bool CanExecuteExpression (string expressionText, bool isReference, System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt; locations, out int expressionId);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanExecuteExpression(string expressionText, bool isReference, class System.Collections.Generic.IList`1&lt;class System.Activities.LocationReference&gt; locations, int32 expressionId) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanExecuteExpression(string expressionText, bool isReference, class System.Collections.Generic.IList`1&lt;class System.Activities.LocationReference&gt; locations, [out] int32&amp; expressionId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.ICompiledExpressionRoot.CanExecuteExpression(System.String,System.Boolean,System.Collections.Generic.IList{System.Activities.LocationReference},System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -157,5 +157,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InvokeExpression">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the <see cref="T:System.Activities.XamlIntegration.ICompiledExpressionRoot" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

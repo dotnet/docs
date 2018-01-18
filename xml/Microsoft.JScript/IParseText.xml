@@ -19,6 +19,8 @@
     <summary>Defines methods for parsing text when JScript code is being authored in an editor.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.JSAuthor" />
+    <altmember cref="T:Microsoft.JScript.JSToken" />
   </Docs>
   <Members>
     <Member MemberName="Parse">
@@ -43,6 +45,8 @@
         <summary>When implemented in a class, parses the specified source code.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JSAuthor" />
+        <altmember cref="T:Microsoft.JScript.JSToken" />
       </Docs>
     </Member>
   </Members>

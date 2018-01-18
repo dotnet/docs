@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval2::CreateValueForType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateValueForType method [.NET Framework debugging]"
   - "ICorDebugEval2::CreateValueForType method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEval2::CreateValueForType Method
 Gets a pointer to a new ICorDebugValue of the specified type, with an initial value of zero or null.  

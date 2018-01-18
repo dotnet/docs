@@ -55,6 +55,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Net.SocketPermission">To establish an outgoing connection or accept an incoming request.</permission>
+    <altmember cref="T:System.Net.Sockets.TcpClient" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -86,7 +87,7 @@
  This constructor creates a new <xref:System.Net.Sockets.UdpClient> and allows the underlying service provider to assign the most appropriate local IPv4 address and port number. If this constructor is used, the <xref:System.Net.Sockets.UdpClient> instance is set with an address family of IPv4 that cannot be changed or overwritten by a connect method call with an IPv6 target.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
  This constructor is not suitable for joining a multicast group because it does not perform socket binding. Also, it works only with IPv4 address types.  
   
@@ -136,7 +137,7 @@
  This constructor creates an underlying <xref:System.Net.Sockets.Socket> and binds it to the port number from which you intend to communicate. Use this constructor if you are only interested in setting the local port number. The underlying service provider will assign the local IP address. If you pass 0 to the constructor, the underlying service provider will assign a port number. If this constructor is used, the <xref:System.Net.Sockets.UdpClient> instance is set with an address family of IPv4 that cannot be changed or overwritten by a connect method call with an IPv6 target.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
  This constructor works only with IPv4 address types.  
   
@@ -189,7 +190,7 @@
  If this constructor is used, the <xref:System.Net.Sockets.UdpClient> instance is set with the address family specified by the `localEP` parameter  that cannot be changed or overwritten by a connect method call with a different address family.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
    
   
@@ -205,6 +206,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="localEP" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
+        <altmember cref="T:System.Net.IPEndPoint" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -241,9 +243,9 @@
  If this constructor is used, the <xref:System.Net.Sockets.UdpClient> instance is set with the address family specified by the `family` parameter  that cannot be changed or overwritten by a connect method call with a different address family.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
- The <xref:System.Net.Sockets.UdpClient.%23ctor%28System.Net.Sockets.AddressFamily%29?displayProperty=fullName> is not suitable for joining a multicast group because it does not perform socket binding.  
+ The <xref:System.Net.Sockets.UdpClient.%23ctor%28System.Net.Sockets.AddressFamily%29?displayProperty=nameWithType> is not suitable for joining a multicast group because it does not perform socket binding.  
   
  ]]></format>
         </remarks>
@@ -290,7 +292,7 @@
  If this constructor is used, the <xref:System.Net.Sockets.UdpClient> instance is set with the address family specified by the `family` parameter  that cannot be changed or overwritten by a connect method call with a different address family.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. Once you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
    
   
@@ -343,7 +345,7 @@
  This constructor initializes a new <xref:System.Net.Sockets.UdpClient> and establishes a remote host using the `hostname` and `port` parameters. Establishing a default remote host is optional. If you use this constructor, you do not have to specify a remote host in each call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method. Specifying a default remote host limits you to that host only. You can change the default remote host at any time by calling the <xref:System.Net.Sockets.UdpClient.Connect%2A> method. If you want to specify a remote host in your call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method, do not use this constructor.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
    
   
@@ -361,6 +363,8 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="port" /> is not between <see cref="F:System.Net.IPEndPoint.MinPort" /> and <see cref="F:System.Net.IPEndPoint.MaxPort" />.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
+        <altmember cref="M:System.Net.Sockets.UdpClient.Send(System.Byte[],System.Int32,System.Net.IPEndPoint)" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.Connect(System.String,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Active">
@@ -397,6 +401,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Sockets.UdpClient" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.Connect(System.String,System.Int32)" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.Send(System.Byte[],System.Int32,System.Net.IPEndPoint)" />
       </Docs>
     </Member>
     <Member MemberName="AllowNatTraversal">
@@ -440,6 +447,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.IPAddress.IsIPv6Teredo" />
+        <altmember cref="T:System.Net.Sockets.IPProtectionLevel" />
+        <altmember cref="F:System.Net.Sockets.SocketOptionName.IPProtectionLevel" />
+        <altmember cref="M:System.Net.Sockets.Socket.SetIPProtectionLevel(System.Net.Sockets.IPProtectionLevel)" />
+        <altmember cref="M:System.Net.Sockets.TcpListener.AllowNatTraversal(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Available">
@@ -476,7 +488,7 @@
  If the remote host shuts down or closes the connection, the <xref:System.Net.Sockets.UdpClient.Available%2A> property throws a <xref:System.Net.Sockets.SocketException>.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code and refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library)/ for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code and refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library)/ for a detailed description of the error.  
   
    
   
@@ -769,6 +781,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Sockets.Socket" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -802,7 +815,7 @@
  The <xref:System.Net.Sockets.UdpClient.Close%2A> disables the underlying <xref:System.Net.Sockets.Socket> and releases all managed and unmanaged resources associated with the <xref:System.Net.Sockets.UdpClient>.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
    
   
@@ -816,6 +829,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Close" />
       </Docs>
     </Member>
     <Member MemberName="Connect">
@@ -851,11 +865,11 @@
 ## Remarks  
  The <xref:System.Net.Sockets.UdpClient.Connect%2A> method establishes a default remote host using the value specified in the `endPoint` parameter. Once established, you do not have to specify a remote host in each call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method.  
   
- Establishing a default remote host is optional. Specifying a default remote host limits you to that host only. If you want to send datagrams to a different remote host, you must make another call to the <xref:System.Net.Sockets.UdpClient.Connect%2A> method or create another <xref:System.Net.Sockets.UdpClient> without a default remote host. If you have established a default remote host and you also provide a remote host in your call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method, <xref:System.Net.Sockets.UdpClient.Send%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+ Establishing a default remote host is optional. Specifying a default remote host limits you to that host only. If you want to send datagrams to a different remote host, you must make another call to the <xref:System.Net.Sockets.UdpClient.Connect%2A> method or create another <xref:System.Net.Sockets.UdpClient> without a default remote host. If you have established a default remote host and you also provide a remote host in your call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method, <xref:System.Net.Sockets.UdpClient.Send%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
- If you call the <xref:System.Net.Sockets.Socket.Connect%2A> method, any datagrams that arrive from an address other than the specified default will be discarded. You cannot set the default remote host to a broadcast address using this method unless you inherit from <xref:System.Net.Sockets.UdpClient>, use the Client method to obtain the underlying <xref:System.Net.Sockets.Socket>, and set the socket option to <xref:System.Net.Sockets.SocketOptionName?displayProperty=fullName>.  
+ If you call the <xref:System.Net.Sockets.Socket.Connect%2A> method, any datagrams that arrive from an address other than the specified default will be discarded. You cannot set the default remote host to a broadcast address using this method unless you inherit from <xref:System.Net.Sockets.UdpClient>, use the Client method to obtain the underlying <xref:System.Net.Sockets.Socket>, and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>.  
   
- You can however, broadcast data to the default broadcast address, 255.255.255.255, if you specify <xref:System.Net.IPAddress.Broadcast?displayProperty=fullName> in your call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method. If your application requires greater control over broadcast addresses, you can also revert to using the <xref:System.Net.Sockets.Socket> class.  
+ You can however, broadcast data to the default broadcast address, 255.255.255.255, if you specify <xref:System.Net.IPAddress.Broadcast?displayProperty=nameWithType> in your call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method. If your application requires greater control over broadcast addresses, you can also revert to using the <xref:System.Net.Sockets.Socket> class.  
   
 > [!NOTE]
 >  Since the UDP protocol is connectionless, the <xref:System.Net.Sockets.UdpClient.Connect%2A> method does not block. Do not call the <xref:System.Net.Sockets.UdpClient.Connect%2A> method if you intend to receive multicasted datagrams.  
@@ -875,6 +889,9 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="endPoint" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.UdpClient" /> is closed.</exception>
+        <altmember cref="T:System.Net.Sockets.Socket" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.Send(System.Byte[],System.Int32,System.Net.IPEndPoint)" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.Receive(System.Net.IPEndPoint@)" />
       </Docs>
     </Member>
     <Member MemberName="Connect">
@@ -912,11 +929,11 @@
 ## Remarks  
  The <xref:System.Net.Sockets.UdpClient.Connect%2A> method establishes a default remote host using the values specified in the `addr` and `port` parameters. Once established, you do not have to specify a remote host in each call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method.  
   
- Establishing a default remote host is optional. Specifying a default remote host limits you to that host only. If you want to send datagrams to a different remote host, you must make another call to the <xref:System.Net.Sockets.UdpClient.Connect%2A> method or create another <xref:System.Net.Sockets.UdpClient> without a default remote host. If you have established a default remote host and you also provide a remote host in your call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method, <xref:System.Net.Sockets.UdpClient.Send%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+ Establishing a default remote host is optional. Specifying a default remote host limits you to that host only. If you want to send datagrams to a different remote host, you must make another call to the <xref:System.Net.Sockets.UdpClient.Connect%2A> method or create another <xref:System.Net.Sockets.UdpClient> without a default remote host. If you have established a default remote host and you also provide a remote host in your call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method, <xref:System.Net.Sockets.UdpClient.Send%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
- If you call the <xref:System.Net.Sockets.Socket.Connect%2A> method, any datagrams that arrive from an address other than the specified default will be discarded. You cannot set the default remote host to a broadcast address using this method unless you inherit from <xref:System.Net.Sockets.UdpClient>, use the client method to obtain the underlying <xref:System.Net.Sockets.Socket>, and set the socket option to <xref:System.Net.Sockets.SocketOptionName?displayProperty=fullName>.  
+ If you call the <xref:System.Net.Sockets.Socket.Connect%2A> method, any datagrams that arrive from an address other than the specified default will be discarded. You cannot set the default remote host to a broadcast address using this method unless you inherit from <xref:System.Net.Sockets.UdpClient>, use the client method to obtain the underlying <xref:System.Net.Sockets.Socket>, and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>.  
   
- You can however, broadcast data to the default broadcast address, 255.255.255.255, if you specify <xref:System.Net.IPAddress.Broadcast?displayProperty=fullName> in your call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method. If your application requires greater control over broadcast addresses, you can also revert to using the <xref:System.Net.Sockets.Socket> class.  
+ You can however, broadcast data to the default broadcast address, 255.255.255.255, if you specify <xref:System.Net.IPAddress.Broadcast?displayProperty=nameWithType> in your call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method. If your application requires greater control over broadcast addresses, you can also revert to using the <xref:System.Net.Sockets.Socket> class.  
   
 > [!NOTE]
 >  Since the UDP protocol is connectionless, the <xref:System.Net.Sockets.UdpClient.Connect%2A> method does not block. Do not call the <xref:System.Net.Sockets.UdpClient.Connect%2A> method if you intend to receive multicasted datagrams.  
@@ -939,6 +956,9 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="port" /> is not between <see cref="F:System.Net.IPEndPoint.MinPort" /> and <see cref="F:System.Net.IPEndPoint.MaxPort" />.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
+        <altmember cref="T:System.Net.Sockets.Socket" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.Send(System.Byte[],System.Int32,System.Net.IPEndPoint)" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.Receive(System.Net.IPEndPoint@)" />
       </Docs>
     </Member>
     <Member MemberName="Connect">
@@ -978,11 +998,11 @@
   
  Establishing a default remote host is optional. Specifying a default remote host limits you to that host only. If you want to send datagrams to a different remote host, you must make another call to the <xref:System.Net.Sockets.UdpClient.Connect%2A> method or create another <xref:System.Net.Sockets.UdpClient> without a default remote host.  
   
- If you have established a default remote host and you also provide a remote host in your call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method, <xref:System.Net.Sockets.UdpClient.Send%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+ If you have established a default remote host and you also provide a remote host in your call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method, <xref:System.Net.Sockets.UdpClient.Send%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
- If you call the <xref:System.Net.Sockets.Socket.Connect%2A> method, any datagrams that arrive from an address other than the specified default will be discarded. You cannot set the default remote host to a broadcast address using this method unless you inherit from <xref:System.Net.Sockets.UdpClient>, use the client method to obtain the underlying <xref:System.Net.Sockets.Socket>, and set the socket option to <xref:System.Net.Sockets.SocketOptionName?displayProperty=fullName>.  
+ If you call the <xref:System.Net.Sockets.Socket.Connect%2A> method, any datagrams that arrive from an address other than the specified default will be discarded. You cannot set the default remote host to a broadcast address using this method unless you inherit from <xref:System.Net.Sockets.UdpClient>, use the client method to obtain the underlying <xref:System.Net.Sockets.Socket>, and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>.  
   
- You can however, broadcast data to the default broadcast address, 255.255.255.255, if you specify <xref:System.Net.IPAddress.Broadcast?displayProperty=fullName> in your call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method. If your application requires greater control over broadcast addresses, you can also revert to using the <xref:System.Net.Sockets.Socket> class.  
+ You can however, broadcast data to the default broadcast address, 255.255.255.255, if you specify <xref:System.Net.IPAddress.Broadcast?displayProperty=nameWithType> in your call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method. If your application requires greater control over broadcast addresses, you can also revert to using the <xref:System.Net.Sockets.Socket> class.  
   
 > [!NOTE]
 >  Since the UDP protocol is connectionless, the <xref:System.Net.Sockets.UdpClient.Connect%2A> method does not block. Do not call the <xref:System.Net.Sockets.UdpClient.Connect%2A> method if you intend to receive multicasted datagrams.  
@@ -1002,6 +1022,9 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="port" /> is not between <see cref="F:System.Net.IPEndPoint.MinPort" /> and <see cref="F:System.Net.IPEndPoint.MaxPort" />.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
+        <altmember cref="T:System.Net.Sockets.Socket" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.Send(System.Byte[],System.Int32,System.Net.IPEndPoint)" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.Receive(System.Net.IPEndPoint@)" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -1159,7 +1182,7 @@
  The <xref:System.Net.Sockets.UdpClient.DropMulticastGroup%2A> method withdraws the <xref:System.Net.Sockets.UdpClient> from the multicast group identified by the specified <xref:System.Net.IPAddress>. After calling the <xref:System.Net.Sockets.UdpClient.DropMulticastGroup%2A> method, the underlying <xref:System.Net.Sockets.Socket> sends an Internet Group Management Protocol (IGMP) packet to the router, removing the router from the multicast group. After a <xref:System.Net.Sockets.UdpClient> withdraws from the group, it will no longer be able to receive datagrams sent to that group.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
    
   
@@ -1177,6 +1200,7 @@
         <exception cref="T:System.ArgumentException">The IP address is not compatible with the <see cref="T:System.Net.Sockets.AddressFamily" /> value that defines the addressing scheme of the socket.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="multicastAddr" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Net.Sockets.UdpClient.JoinMulticastGroup(System.Net.IPAddress)" />
       </Docs>
     </Member>
     <Member MemberName="DropMulticastGroup">
@@ -1216,7 +1240,7 @@
  The <xref:System.Net.Sockets.UdpClient.DropMulticastGroup%2A> method withdraws the <xref:System.Net.Sockets.UdpClient> from the multicast group identified by the specified <xref:System.Net.IPAddress>. After calling the <xref:System.Net.Sockets.UdpClient.DropMulticastGroup%2A> method, the underlying <xref:System.Net.Sockets.Socket> sends an Internet Group Management Protocol (IGMP) packet to the router, removing the router from the multicast group. After a <xref:System.Net.Sockets.UdpClient> withdraws from the group, it will no longer be able to receive datagrams sent to that group.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
    
   
@@ -1234,6 +1258,7 @@
         <exception cref="T:System.ArgumentException">The IP address is not compatible with the <see cref="T:System.Net.Sockets.AddressFamily" /> value that defines the addressing scheme of the socket.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="multicastAddr" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Net.Sockets.UdpClient.JoinMulticastGroup(System.Net.IPAddress)" />
       </Docs>
     </Member>
     <Member MemberName="EnableBroadcast">
@@ -1282,7 +1307,7 @@
     </Member>
     <Member MemberName="EndReceive">
       <MemberSignature Language="C#" Value="public byte[] EndReceive (IAsyncResult asyncResult, ref System.Net.IPEndPoint remoteEP);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] EndReceive(class System.IAsyncResult asyncResult, class System.Net.IPEndPoint remoteEP) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] EndReceive(class System.IAsyncResult asyncResult, class System.Net.IPEndPoint&amp; remoteEP) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.EndReceive(System.IAsyncResult,System.Net.IPEndPoint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1309,7 +1334,7 @@
         <param name="asyncResult">An <see cref="T:System.IAsyncResult" /> object returned by a call to <see cref="M:System.Net.Sockets.UdpClient.BeginReceive(System.AsyncCallback,System.Object)" />.</param>
         <param name="remoteEP">The specified remote endpoint.</param>
         <summary>Ends a pending asynchronous receive.</summary>
-        <returns>If successful, the number of bytes received. If unsuccessful, this method returns 0.</returns>
+        <returns>If successful, an array of bytes that contains datagram data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1426,7 +1451,7 @@
 ## Remarks  
  By default, multiple clients can use a specific port; however, only one of the clients can perform operations on the network traffic sent to the port. You can use the <xref:System.Net.Sockets.UdpClient.ExclusiveAddressUse%2A> property to prevent multiple clients from using a specific port.  
   
- This property must be set before the underlying socket is bound to a client port. If you call <xref:System.Net.Sockets.UdpClient.%23ctor%28System.Int32%29?displayProperty=fullName>, <xref:System.Net.Sockets.UdpClient.%23ctor%28System.Int32%2CSystem.Net.Sockets.AddressFamily%29?displayProperty=fullName>, <xref:System.Net.Sockets.UdpClient.%23ctor%28System.Net.IPEndPoint%29?displayProperty=fullName>, or <xref:System.Net.Sockets.UdpClient.%23ctor%28System.String%2CSystem.Int32%29?displayProperty=fullName>, the client port is bound as a side effect of the constructor, and you cannot subsequently set the <xref:System.Net.Sockets.UdpClient.ExclusiveAddressUse%2A> property  
+ This property must be set before the underlying socket is bound to a client port. If you call <xref:System.Net.Sockets.UdpClient.%23ctor%28System.Int32%29?displayProperty=nameWithType>, <xref:System.Net.Sockets.UdpClient.%23ctor%28System.Int32%2CSystem.Net.Sockets.AddressFamily%29?displayProperty=nameWithType>, <xref:System.Net.Sockets.UdpClient.%23ctor%28System.Net.IPEndPoint%29?displayProperty=nameWithType>, or <xref:System.Net.Sockets.UdpClient.%23ctor%28System.String%2CSystem.Int32%29?displayProperty=nameWithType>, the client port is bound as a side effect of the constructor, and you cannot subsequently set the <xref:System.Net.Sockets.UdpClient.ExclusiveAddressUse%2A> property  
   
    
   
@@ -1493,7 +1518,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.UdpClient.JoinMulticastGroup%2A> method subscribes the <xref:System.Net.Sockets.UdpClient> to a multicast group using the specified <xref:System.Net.IPAddress>. After calling the <xref:System.Net.Sockets.UdpClient.JoinMulticastGroup%2A> method, the underlying <xref:System.Net.Sockets.Socket> sends an Internet Group Management Protocol (IGMP) packet to the router requesting membership to the multicast group. The multicast address range is 224.0.0.0 to 239.255.255.255. If you specify an address outside this range or if the router to which the request is made is not multicast enabled, <xref:System.Net.Sockets.UdpClient> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error. Once the <xref:System.Net.Sockets.UdpClient> is listed with the router as a member of the multicast group, it will be able to receive multicasted datagrams sent to the specified <xref:System.Net.IPAddress>.  
+ The <xref:System.Net.Sockets.UdpClient.JoinMulticastGroup%2A> method subscribes the <xref:System.Net.Sockets.UdpClient> to a multicast group using the specified <xref:System.Net.IPAddress>. After calling the <xref:System.Net.Sockets.UdpClient.JoinMulticastGroup%2A> method, the underlying <xref:System.Net.Sockets.Socket> sends an Internet Group Management Protocol (IGMP) packet to the router requesting membership to the multicast group. The multicast address range is 224.0.0.0 to 239.255.255.255. If you specify an address outside this range or if the router to which the request is made is not multicast enabled, <xref:System.Net.Sockets.UdpClient> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error. Once the <xref:System.Net.Sockets.UdpClient> is listed with the router as a member of the multicast group, it will be able to receive multicasted datagrams sent to the specified <xref:System.Net.IPAddress>.  
   
 > [!NOTE]
 >  You must create the <xref:System.Net.Sockets.UdpClient> using the multicast port number; otherwise, you will not be able to receive multicasted datagrams. Do not call the <xref:System.Net.Sockets.UdpClient.Connect%2A> method prior to calling the <xref:System.Net.Sockets.UdpClient.JoinMulticastGroup%2A> method, or the <xref:System.Net.Sockets.UdpClient.Receive%2A> method will not work. You do not need to belong to a multicast group to send datagrams to a multicast IP address.  
@@ -1522,6 +1547,7 @@
         <exception cref="T:System.ObjectDisposedException">The underlying <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
         <exception cref="T:System.ArgumentException">The IP address is not compatible with the <see cref="T:System.Net.Sockets.AddressFamily" /> value that defines the addressing scheme of the socket.</exception>
+        <altmember cref="M:System.Net.Sockets.UdpClient.DropMulticastGroup(System.Net.IPAddress)" />
       </Docs>
     </Member>
     <Member MemberName="JoinMulticastGroup">
@@ -1566,7 +1592,7 @@
 >  There are several multicast address ranges to choose from. Refer to the IETF RFC 2375.  
   
 > [!NOTE]
->  You cannot call <xref:System.Net.Sockets.UdpClient.JoinMulticastGroup%2A> on a <xref:System.Net.Sockets.UdpClient> constructed without a specific local port (that is, using the <xref:System.Net.Sockets.UdpClient.%23ctor?displayProperty=fullName> or <xref:System.Net.Sockets.UdpClient.%23ctor%28System.Net.Sockets.AddressFamily%29?displayProperty=fullName> constructor).  
+>  You cannot call <xref:System.Net.Sockets.UdpClient.JoinMulticastGroup%2A> on a <xref:System.Net.Sockets.UdpClient> constructed without a specific local port (that is, using the <xref:System.Net.Sockets.UdpClient.%23ctor?displayProperty=nameWithType> or <xref:System.Net.Sockets.UdpClient.%23ctor%28System.Net.Sockets.AddressFamily%29?displayProperty=nameWithType> constructor).  
   
    
   
@@ -1615,7 +1641,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.UdpClient.JoinMulticastGroup%2A> method subscribes the <xref:System.Net.Sockets.UdpClient> to a multicast group using the specified <xref:System.Net.IPAddress>. After calling the <xref:System.Net.Sockets.UdpClient.JoinMulticastGroup%2A> method, the underlying <xref:System.Net.Sockets.Socket> sends an Internet Group Management Protocol (IGMP) packet to the router requesting membership to the multicast group. The multicast address range is 224.0.0.0 to 239.255.255.255. If you specify an address outside this range or if the router to which the request is made is not multicast enabled, <xref:System.Net.Sockets.UdpClient> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error. The `timeToLive` parameter specifies how many router hops will be allowed for a multicasted datagram before being discarded. Once the <xref:System.Net.Sockets.UdpClient> is listed with the router as a member of the multicast group, it will be able to receive multicasted datagrams sent to the specified <xref:System.Net.IPAddress>.  
+ The <xref:System.Net.Sockets.UdpClient.JoinMulticastGroup%2A> method subscribes the <xref:System.Net.Sockets.UdpClient> to a multicast group using the specified <xref:System.Net.IPAddress>. After calling the <xref:System.Net.Sockets.UdpClient.JoinMulticastGroup%2A> method, the underlying <xref:System.Net.Sockets.Socket> sends an Internet Group Management Protocol (IGMP) packet to the router requesting membership to the multicast group. The multicast address range is 224.0.0.0 to 239.255.255.255. If you specify an address outside this range or if the router to which the request is made is not multicast enabled, <xref:System.Net.Sockets.UdpClient> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error. The `timeToLive` parameter specifies how many router hops will be allowed for a multicasted datagram before being discarded. Once the <xref:System.Net.Sockets.UdpClient> is listed with the router as a member of the multicast group, it will be able to receive multicasted datagrams sent to the specified <xref:System.Net.IPAddress>.  
   
 > [!NOTE]
 >  You must create the <xref:System.Net.Sockets.UdpClient> using the multicast port number otherwise you will not be able to receive multicasted datagrams. Do not call the <xref:System.Net.Sockets.UdpClient.Connect%2A> method prior to calling the <xref:System.Net.Sockets.UdpClient.JoinMulticastGroup%2A> method or the receive method will not work. You do not need to belong to a multicast group to send datagrams to a multicast IP address.  
@@ -1644,6 +1670,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="multicastAddr" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The IP address is not compatible with the <see cref="T:System.Net.Sockets.AddressFamily" /> value that defines the addressing scheme of the socket.</exception>
+        <altmember cref="M:System.Net.Sockets.UdpClient.DropMulticastGroup(System.Net.IPAddress)" />
       </Docs>
     </Member>
     <Member MemberName="JoinMulticastGroup">
@@ -1748,7 +1775,7 @@
     </Member>
     <Member MemberName="Receive">
       <MemberSignature Language="C#" Value="public byte[] Receive (ref System.Net.IPEndPoint remoteEP);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] Receive(class System.Net.IPEndPoint remoteEP) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] Receive(class System.Net.IPEndPoint&amp; remoteEP) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.Receive(System.Net.IPEndPoint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1782,7 +1809,7 @@
   
  If you specify a default remote host in the <xref:System.Net.Sockets.UdpClient.Connect%2A> method, the <xref:System.Net.Sockets.UdpClient.Receive%2A> method will accept datagrams from that host only. All other datagrams will be discarded.  
   
- If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+ If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
 > [!NOTE]
 >  If you intend to receive multicasted datagrams, do not call the <xref:System.Net.Sockets.UdpClient.Connect%2A> method prior to calling the <xref:System.Net.Sockets.UdpClient.Receive%2A> method. The <xref:System.Net.Sockets.UdpClient> you use to receive datagrams must be created using the multicast port number.  
@@ -1800,6 +1827,10 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The underlying <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
+        <altmember cref="M:System.Net.Sockets.UdpClient.Send(System.Byte[],System.Int32,System.Net.IPEndPoint)" />
+        <altmember cref="T:System.Net.IPEndPoint" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.Connect(System.String,System.Int32)" />
+        <altmember cref="T:System.Net.IPAddress" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveAsync">
@@ -1838,7 +1869,7 @@
   
  If you specify a default remote host in the <xref:System.Net.Sockets.UdpClient.Connect%2A> method, this method will accept datagrams from that host only. All other datagrams will be discarded.  
   
- If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+ If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
 > [!WARNING]
 >  If you intend to receive multicasted datagrams, do not call the <xref:System.Net.Sockets.UdpClient.Connect%2A> method prior to calling this method. The <xref:System.Net.Sockets.UdpClient> you use to receive datagrams must be created using the multicast port number.  
@@ -1883,7 +1914,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload sends datagrams to the remote host established in the <xref:System.Net.Sockets.UdpClient.Connect%2A> method and returns the number of bytes sent. If you do not call <xref:System.Net.Sockets.UdpClient.Connect%2A> before calling this overload, the <xref:System.Net.Sockets.UdpClient.Send%2A> method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+ This overload sends datagrams to the remote host established in the <xref:System.Net.Sockets.UdpClient.Connect%2A> method and returns the number of bytes sent. If you do not call <xref:System.Net.Sockets.UdpClient.Connect%2A> before calling this overload, the <xref:System.Net.Sockets.UdpClient.Send%2A> method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
  If you want to send datagrams to a different remote host, you must call the <xref:System.Net.Sockets.UdpClient.Connect%2A> method and specify the desired remote host. Use either of the other <xref:System.Net.Sockets.UdpClient.Send%2A> method overloads to send datagrams to a broadcast address.  
   
@@ -1903,6 +1934,7 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.UdpClient" /> has already established a default remote host.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.UdpClient" /> is closed.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
+        <altmember cref="M:System.Net.Sockets.UdpClient.Connect(System.String,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -1941,12 +1973,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.UdpClient.Send%2A> method sends datagrams to the specified endpoint and returns the number of bytes successfully sent. Before calling this overload, you must first create an <xref:System.Net.IPEndPoint> using the IP address and port number of the remote host to which your datagrams will be delivered. You can send datagrams to the default broadcast address, 255.255.255.255, by specifying <xref:System.Net.Sockets.SocketOptionName?displayProperty=fullName> for the <xref:System.Net.IPAddress.Address%2A> property of the <xref:System.Net.IPEndPoint>. After you have created this <xref:System.Net.IPEndPoint>, pass it to the <xref:System.Net.Sockets.UdpClient.Send%2A> method as the `endPoint` parameter.  
+ The <xref:System.Net.Sockets.UdpClient.Send%2A> method sends datagrams to the specified endpoint and returns the number of bytes successfully sent. Before calling this overload, you must first create an <xref:System.Net.IPEndPoint> using the IP address and port number of the remote host to which your datagrams will be delivered. You can send datagrams to the default broadcast address, 255.255.255.255, by specifying <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType> for the <xref:System.Net.IPAddress.Address%2A> property of the <xref:System.Net.IPEndPoint>. After you have created this <xref:System.Net.IPEndPoint>, pass it to the <xref:System.Net.Sockets.UdpClient.Send%2A> method as the `endPoint` parameter.  
   
- If you want to send datagrams to any other broadcast address, use the <xref:System.Net.Sockets.UdpClient.Client%2A> method to obtain the underlying <xref:System.Net.Sockets.Socket>, and set the socket option to <xref:System.Net.Sockets.SocketOptionName?displayProperty=fullName>. You can also revert to using the <xref:System.Net.Sockets.Socket> class.  
+ If you want to send datagrams to any other broadcast address, use the <xref:System.Net.Sockets.UdpClient.Client%2A> method to obtain the underlying <xref:System.Net.Sockets.Socket>, and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>. You can also revert to using the <xref:System.Net.Sockets.Socket> class.  
   
 > [!NOTE]
->  Do not provide an `endPoint` parameter to this method if you have already established a remote host with the <xref:System.Net.Sockets.UdpClient.Connect%2A> method. If you do, the <xref:System.Net.Sockets.UdpClient.Send%2A> method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  Do not provide an `endPoint` parameter to this method if you have already established a remote host with the <xref:System.Net.Sockets.UdpClient.Connect%2A> method. If you do, the <xref:System.Net.Sockets.UdpClient.Send%2A> method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
    
   
@@ -1966,6 +1998,10 @@
         <exception cref="T:System.ObjectDisposedException">
           <see cref="T:System.Net.Sockets.UdpClient" /> is closed.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
+        <altmember cref="F:System.Net.Sockets.SocketOptionName.Broadcast" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.Connect(System.String,System.Int32)" />
+        <altmember cref="T:System.Net.Sockets.Socket" />
+        <altmember cref="T:System.Net.IPEndPoint" />
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -2008,10 +2044,10 @@
 ## Remarks  
  The <xref:System.Net.Sockets.UdpClient.Send%2A> method sends datagrams to the values specified by the `hostname` and `port` parameters and returns the number of bytes successfully sent. You can send datagrams to the default broadcast address by specifying "255.255.255.255" for the `hostname` parameter value.  
   
- If you want to send datagrams to any other broadcast address, use the <xref:System.Net.Sockets.UdpClient.Client%2A> method to obtain the underlying <xref:System.Net.Sockets.Socket>, and set the socket option to <xref:System.Net.Sockets.SocketOptionName?displayProperty=fullName>. You can also revert to using the <xref:System.Net.Sockets.Socket> class.  
+ If you want to send datagrams to any other broadcast address, use the <xref:System.Net.Sockets.UdpClient.Client%2A> method to obtain the underlying <xref:System.Net.Sockets.Socket>, and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>. You can also revert to using the <xref:System.Net.Sockets.Socket> class.  
   
 > [!NOTE]
->  Do not provide a host name or port number to this method if you have already established a remote host with the <xref:System.Net.Sockets.UdpClient.Connect%2A> method. If you do, the <xref:System.Net.Sockets.UdpClient.Send%2A> method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  Do not provide a host name or port number to this method if you have already established a remote host with the <xref:System.Net.Sockets.UdpClient.Connect%2A> method. If you do, the <xref:System.Net.Sockets.UdpClient.Send%2A> method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
    
   
@@ -2029,6 +2065,9 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.UdpClient" /> has already established a default remote host.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.UdpClient" /> is closed.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when accessing the socket.</exception>
+        <altmember cref="F:System.Net.Sockets.SocketOptionName.Broadcast" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.Connect(System.String,System.Int32)" />
+        <altmember cref="T:System.Net.Sockets.Socket" />
       </Docs>
     </Member>
     <Member MemberName="SendAsync">
@@ -2065,7 +2104,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload sends datagrams to the remote host established in the <xref:System.Net.Sockets.UdpClient.Connect%2A> method. If you do not call <xref:System.Net.Sockets.UdpClient.Connect%2A> before calling this overload, the method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+ This overload sends datagrams to the remote host established in the <xref:System.Net.Sockets.UdpClient.Connect%2A> method. If you do not call <xref:System.Net.Sockets.UdpClient.Connect%2A> before calling this overload, the method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
  If you want to send datagrams to a different remote host, you must call the <xref:System.Net.Sockets.UdpClient.Connect%2A> method and specify the desired remote host. Use either of the other <xref:System.Net.Sockets.UdpClient.SendAsync%2A> method overloads to send datagrams to a broadcast address.  
   
@@ -2115,12 +2154,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method sends datagrams to the specified endpoint. Before calling this overload, you must first create an <xref:System.Net.IPEndPoint> using the IP address and port number of the remote host to which your datagrams will be delivered. You can send datagrams to the default broadcast address, 255.255.255.255, by specifying <xref:System.Net.Sockets.SocketOptionName?displayProperty=fullName> for the <xref:System.Net.IPAddress.Address%2A> property of the <xref:System.Net.IPEndPoint>. After you have created this <xref:System.Net.IPEndPoint>, pass it to this method as the `endPoint` parameter.  
+ This method sends datagrams to the specified endpoint. Before calling this overload, you must first create an <xref:System.Net.IPEndPoint> using the IP address and port number of the remote host to which your datagrams will be delivered. You can send datagrams to the default broadcast address, 255.255.255.255, by specifying <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType> for the <xref:System.Net.IPAddress.Address%2A> property of the <xref:System.Net.IPEndPoint>. After you have created this <xref:System.Net.IPEndPoint>, pass it to this method as the `endPoint` parameter.  
   
- If you want to send datagrams to any other broadcast address, use the <xref:System.Net.Sockets.UdpClient.Client%2A> method to obtain the underlying <xref:System.Net.Sockets.Socket>, and set the socket option to <xref:System.Net.Sockets.SocketOptionName?displayProperty=fullName>. You can also revert to using the <xref:System.Net.Sockets.Socket> class.  
+ If you want to send datagrams to any other broadcast address, use the <xref:System.Net.Sockets.UdpClient.Client%2A> method to obtain the underlying <xref:System.Net.Sockets.Socket>, and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>. You can also revert to using the <xref:System.Net.Sockets.Socket> class.  
   
 > [!WARNING]
->  Do not provide an `endPoint` parameter to this method if you have already established a remote host with the <xref:System.Net.Sockets.UdpClient.Connect%2A> method. If you do, this method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  Do not provide an `endPoint` parameter to this method if you have already established a remote host with the <xref:System.Net.Sockets.UdpClient.Connect%2A> method. If you do, this method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
  ]]></format>
         </remarks>
@@ -2174,10 +2213,10 @@
 ## Remarks  
  This method sends datagrams to the values specified by the `hostname` and `port` parameters. You can send datagrams to the default broadcast address by specifying "255.255.255.255" for the `hostname` parameter value.  
   
- If you want to send datagrams to any other broadcast address, use the <xref:System.Net.Sockets.UdpClient.Client%2A> method to obtain the underlying <xref:System.Net.Sockets.Socket>, and set the socket option to <xref:System.Net.Sockets.SocketOptionName?displayProperty=fullName>. You can also revert to using the <xref:System.Net.Sockets.Socket> class.  
+ If you want to send datagrams to any other broadcast address, use the <xref:System.Net.Sockets.UdpClient.Client%2A> method to obtain the underlying <xref:System.Net.Sockets.Socket>, and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>. You can also revert to using the <xref:System.Net.Sockets.Socket> class.  
   
 > [!WARNING]
->  Do not provide a host name or port number to this method if you have already established a remote host with the <xref:System.Net.Sockets.UdpClient.Connect%2A> method. If you do, this method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  Do not provide a host name or port number to this method if you have already established a remote host with the <xref:System.Net.Sockets.UdpClient.Connect%2A> method. If you do, this method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
  ]]></format>
         </remarks>
@@ -2249,5 +2288,75 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SendAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a UDP datagram asynchronously to a remote host.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="JoinMulticastGroup">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Net.Sockets.UdpClient" /> to a multicast group.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Connect">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Establishes a default remote host.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Send">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a UDP datagram to a remote host.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.UdpClient" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DropMulticastGroup">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Leaves a multicast group.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginSend">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a datagram to a remote host asynchronously.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

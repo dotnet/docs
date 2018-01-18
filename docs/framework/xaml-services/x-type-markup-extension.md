@@ -26,6 +26,8 @@ caps.latest.revision: 27
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # x:Type Markup Extension
 Supplies the CLR <xref:System.Type> object that is the underlying type for a specified XAML type.  
@@ -70,7 +72,7 @@ Supplies the CLR <xref:System.Type> object that is the underlying type for a spe
  The default XAML namespace for WPF programming contains most of the XAML types you need for typical XAML scenarios; therefore, you can often avoid prefixes when referencing XAML type values. You might need to map a prefix if you are referencing a type from a custom assembly or for types that exist in a WPF assembly but are from a CLR namespace that was not mapped to the default XAML namespace. For more information about prefixes, XAML namespaces, and mapping CLR namespaces, see [XAML Namespaces and Namespace Mapping for WPF XAML](../../../docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
   
 ### Type Properties That Support Typename-as-String  
- WPF supports techniques that enable specifying the value of some properties of type <xref:System.Type> without requiring an `x:Type` markup extension usage. Instead, you can specify the value as a string that names the type. Examples of this are <xref:System.Windows.Controls.ControlTemplate.TargetType%2A?displayProperty=fullName> and <xref:System.Windows.Style.TargetType%2A?displayProperty=fullName>. Support for this behavior is not provided through either type converters or markup extensions. Instead, this is a deferral behavior implemented through <xref:System.Windows.FrameworkElementFactory>.  
+ WPF supports techniques that enable specifying the value of some properties of type <xref:System.Type> without requiring an `x:Type` markup extension usage. Instead, you can specify the value as a string that names the type. Examples of this are <xref:System.Windows.Controls.ControlTemplate.TargetType%2A?displayProperty=nameWithType> and <xref:System.Windows.Style.TargetType%2A?displayProperty=nameWithType>. Support for this behavior is not provided through either type converters or markup extensions. Instead, this is a deferral behavior implemented through <xref:System.Windows.FrameworkElementFactory>.  
   
  Silverlight supports a similar convention. In fact, Silverlight does not currently support `{x:Type}` in its XAML language support, and does not accept `{x:Type}` usages outside of a few circumstances that are intended to support WPF-Silverlight XAML migration. Therefore, the typename-as-string behavior is built-in to all Silverlight native property evaluation where a <xref:System.Type> is the value.  
   
@@ -86,7 +88,7 @@ Supplies the CLR <xref:System.Type> object that is the underlying type for a spe
  In WPF, you can use XAML 2009 features but only for loose XAML (XAML that is not markup-compiled). Markup-compiled XAML for WPF and the BAML form of XAML do not currently support the XAML 2009 keywords and features.  
   
 ## See Also  
- <xref:System.Windows.Style>   
- [Styling and Templating](../../../docs/framework/wpf/controls/styling-and-templating.md)   
- [XAML Overview (WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)   
+ <xref:System.Windows.Style>  
+ [Styling and Templating](../../../docs/framework/wpf/controls/styling-and-templating.md)  
+ [XAML Overview (WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
  [Markup Extensions and WPF XAML](../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)

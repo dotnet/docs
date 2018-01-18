@@ -26,7 +26,7 @@
   
  When you create an instance of <xref:System.DirectoryServices.DirectorySearcher>, you specify the root you want to retrieve, and an optional list of properties to retrieve. The <xref:System.DirectoryServices.DirectorySearcher.SearchRoot%2A> property enables you to set additional properties to do the following tasks:  
   
--   Cache the search results on the local computer. Set the <xref:System.DirectoryServices.DirectorySearcher.CacheResults%2A> property to `true` to store directory information on the local computer. Updates are made to this local cache and committed to Active Directory Domain Services only when the <xref:System.DirectoryServices.DirectoryEntry.CommitChanges%2A?displayProperty=fullName> method is called.  
+-   Cache the search results on the local computer. Set the <xref:System.DirectoryServices.DirectorySearcher.CacheResults%2A> property to `true` to store directory information on the local computer. Updates are made to this local cache and committed to Active Directory Domain Services only when the <xref:System.DirectoryServices.DirectoryEntry.CommitChanges%2A?displayProperty=nameWithType> method is called.  
   
 -   Specify the length of time to search, using the  <xref:System.DirectoryServices.DirectorySearcher.ServerTimeLimit%2A> property.  
   
@@ -42,13 +42,27 @@
  For a list of initial property values for an instance of the <xref:System.DirectoryServices.DirectorySearcher> class, see the <xref:System.DirectoryServices.DirectorySearcher.%23ctor> constructor.  
   
 > [!NOTE]
->  It is assumed that you have a general understanding of Active Directory Domain Services before using this class. For more information, see the <xref:System.DirectoryServices?displayProperty=fullName> overview.  
+>  It is assumed that you have a general understanding of Active Directory Domain Services before using this class. For more information, see the <xref:System.DirectoryServices?displayProperty=nameWithType> overview.  
   
  ]]></format>
     </remarks>
     <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
       <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />
     </permission>
+    <altmember cref="T:System.DirectoryServices.DirectoryEntries" />
+    <altmember cref="T:System.DirectoryServices.DirectoryEntry" />
+    <altmember cref="Overload:System.DirectoryServices.DirectorySearcher.#ctor" />
+    <altmember cref="T:System.DirectoryServices.DirectorySearcher" />
+    <altmember cref="T:System.DirectoryServices.PropertyCollection" />
+    <altmember cref="T:System.DirectoryServices.PropertyValueCollection" />
+    <altmember cref="T:System.DirectoryServices.ReferralChasingOption" />
+    <altmember cref="T:System.DirectoryServices.SearchResultCollection" />
+    <altmember cref="T:System.DirectoryServices.SearchResult" />
+    <altmember cref="T:System.DirectoryServices.ResultPropertyValueCollection" />
+    <altmember cref="T:System.DirectoryServices.SearchScope" />
+    <altmember cref="T:System.DirectoryServices.SortDirection" />
+    <altmember cref="T:System.DirectoryServices.SortOption" />
+    <altmember cref="N:System.DirectoryServices" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -82,6 +96,10 @@
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
           <see cref="F:System.Security.Permissions.SecurityAction.Demand" />
         </permission>
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.SearchRoot" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.Filter" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.PropertiesToLoad" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.SearchScope" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -117,6 +135,10 @@
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
           <see cref="F:System.Security.Permissions.SecurityAction.Demand" />
         </permission>
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.SearchRoot" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.Filter" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.PropertiesToLoad" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.SearchScope" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -152,6 +174,10 @@
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
           <see cref="F:System.Security.Permissions.SecurityAction.Demand" />
         </permission>
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.SearchRoot" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.Filter" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.PropertiesToLoad" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.SearchScope" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -188,6 +214,10 @@
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
           <see cref="F:System.Security.Permissions.SecurityAction.Demand" />
         </permission>
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.SearchRoot" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.Filter" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.PropertiesToLoad" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.SearchScope" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -224,6 +254,10 @@
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
           <see cref="F:System.Security.Permissions.SecurityAction.Demand" />
         </permission>
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.SearchRoot" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.Filter" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.PropertiesToLoad" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.SearchScope" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -261,6 +295,10 @@
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
           <see cref="F:System.Security.Permissions.SecurityAction.Demand" />
         </permission>
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.SearchRoot" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.Filter" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.PropertiesToLoad" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.SearchScope" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -298,6 +336,10 @@
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
           <see cref="F:System.Security.Permissions.SecurityAction.Demand" />
         </permission>
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.SearchRoot" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.Filter" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.PropertiesToLoad" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.SearchScope" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -326,6 +368,10 @@
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
           <see cref="F:System.Security.Permissions.SecurityAction.Demand" />
         </permission>
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.SearchRoot" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.Filter" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.PropertiesToLoad" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.SearchScope" />
       </Docs>
     </Member>
     <Member MemberName="Asynchronous">
@@ -521,6 +567,7 @@ foreach(SearchResult res in src.FindAll())
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.TimeSpan" />
       </Docs>
     </Member>
     <Member MemberName="DerefAlias">
@@ -572,6 +619,7 @@ SearchResultCollection res = src.FindAll();
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DirectoryServices.DereferenceAlias" />
       </Docs>
     </Member>
     <Member MemberName="DirectorySynchronization">
@@ -765,6 +813,7 @@ SearchResultCollection res = src.FindAll();
         </remarks>
         <exception cref="T:System.InvalidOperationException">The specified <see cref="T:System.DirectoryServices.DirectoryEntry" /> is not a container.</exception>
         <exception cref="T:System.NotSupportedException">Searching is not supported by the provider that is being used.</exception>
+        <altmember cref="M:System.DirectoryServices.DirectorySearcher.FindOne" />
       </Docs>
     </Member>
     <Member MemberName="FindOne">
@@ -792,6 +841,7 @@ SearchResultCollection res = src.FindAll();
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DirectoryServices.DirectorySearcher.FindAll" />
       </Docs>
     </Member>
     <Member MemberName="PageSize">
@@ -868,6 +918,7 @@ SearchResultCollection res = src.FindAll();
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Specialized.StringCollection" />
       </Docs>
     </Member>
     <Member MemberName="PropertyNamesOnly">
@@ -931,6 +982,7 @@ SearchResultCollection res = src.FindAll();
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value is not one of the <see cref="T:System.DirectoryServices.ReferralChasingOption" /> values.</exception>
+        <altmember cref="T:System.DirectoryServices.ReferralChasingOption" />
       </Docs>
     </Member>
     <Member MemberName="SearchRoot">
@@ -1016,6 +1068,7 @@ SearchResultCollection res = src.FindAll();
         <value>One of the <see cref="T:System.DirectoryServices.SearchScope" /> values. The default is <see cref="F:System.DirectoryServices.SearchScope.Subtree" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value is not one of the <see cref="T:System.DirectoryServices.ReferralChasingOption" /> values.</exception>
+        <altmember cref="T:System.DirectoryServices.SearchScope" />
       </Docs>
     </Member>
     <Member MemberName="SecurityMasks">
@@ -1062,6 +1115,7 @@ SearchResultCollection res = src.FindAll();
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DirectoryServices.SecurityMasks" />
       </Docs>
     </Member>
     <Member MemberName="ServerPageTimeLimit">
@@ -1100,6 +1154,8 @@ SearchResultCollection res = src.FindAll();
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.TimeSpan" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.PageSize" />
       </Docs>
     </Member>
     <Member MemberName="ServerTimeLimit">
@@ -1140,6 +1196,8 @@ SearchResultCollection res = src.FindAll();
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.TimeSpan" />
+        <altmember cref="P:System.DirectoryServices.DirectorySearcher.ServerPageTimeLimit" />
       </Docs>
     </Member>
     <Member MemberName="SizeLimit">
@@ -1209,6 +1267,7 @@ SearchResultCollection res = src.FindAll();
         <value>A <see cref="T:System.DirectoryServices.SortOption" /> object that specifies the property and direction that the search results should be sorted on.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The property value is <see langword="null" /> (Nothing in Visual Basic).</exception>
+        <altmember cref="T:System.DirectoryServices.SortOption" />
       </Docs>
     </Member>
     <Member MemberName="Tombstone">
@@ -1292,7 +1351,18 @@ SearchResultCollection res = src.FindAll();
         <summary>Gets or sets a value indicating the virtual list view options for the search.</summary>
         <value>A <see cref="T:System.DirectoryServices.DirectoryVirtualListView" /> object that contains the virtual list view search information. The default value for this property is <see langword="null" />, which means do not use the virtual list view search option.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.DirectoryVirtualListView" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DirectorySearcher" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

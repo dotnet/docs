@@ -1,4 +1,4 @@
-<%-- <Snippet1> --%>
+<!-- <Snippet1> -->
 <%@ Page language="VB" %>
     
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -44,7 +44,7 @@
         runat="server"/>
       <br/>
       
-      <%-- <Snippet2> --%>
+      <!-- <Snippet2> -->
       <asp:ListView ID="ContactsListView" 
         DataSourceID="ContactsDataSource" 
         DataKeyNames="ContactID"
@@ -98,7 +98,7 @@
           </tr>
         </InsertItemTemplate>
       </asp:ListView>
-      <%-- </Snippet2> --%>
+      <!-- </Snippet2> -->
 
       <!-- This example uses Microsoft SQL Server and connects      -->
       <!-- to the AdventureWorks sample database. Use an ASP.NET    -->
@@ -123,4 +123,4 @@
     </form>
   </body>
 </html>
-<%-- </Snippet1> --%>
+<!-- </Snippet1> -->

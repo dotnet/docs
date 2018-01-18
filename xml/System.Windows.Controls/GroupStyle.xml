@@ -36,6 +36,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Controls.ItemsControl.GroupStyle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -77,9 +78,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Controls.GroupStyle.AlternationCount%2A> property and the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> attached property enable you to specify the appearance for two or more alternating <xref:System.Windows.Controls.GroupItem> objects. For example, you can specify alternating background colors for every third <xref:System.Windows.Controls.GroupItem> in an <xref:System.Windows.Controls.ItemsControl>.  The <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> is assigned to each <xref:System.Windows.Controls.GroupItem> in the <xref:System.Windows.Controls.ItemsControl>.  <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> begins at 0, increments until it is <xref:System.Windows.Controls.GroupStyle.AlternationCount%2A> minus 1, and then restarts at 0. For example, if <xref:System.Windows.Controls.GroupStyle.AlternationCount%2A> is 3 and there are seven <xref:System.Windows.Controls.GroupItem> objects in the <xref:System.Windows.Controls.ItemsControl>, the following table lists the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> for each item.  
+ The <xref:System.Windows.Controls.GroupStyle.AlternationCount%2A> property and the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=nameWithType> attached property enable you to specify the appearance for two or more alternating <xref:System.Windows.Controls.GroupItem> objects. For example, you can specify alternating background colors for every third <xref:System.Windows.Controls.GroupItem> in an <xref:System.Windows.Controls.ItemsControl>.  The <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=nameWithType> is assigned to each <xref:System.Windows.Controls.GroupItem> in the <xref:System.Windows.Controls.ItemsControl>.  <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=nameWithType> begins at 0, increments until it is <xref:System.Windows.Controls.GroupStyle.AlternationCount%2A> minus 1, and then restarts at 0. For example, if <xref:System.Windows.Controls.GroupStyle.AlternationCount%2A> is 3 and there are seven <xref:System.Windows.Controls.GroupItem> objects in the <xref:System.Windows.Controls.ItemsControl>, the following table lists the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=nameWithType> for each item.  
   
-|Position of <xref:System.Windows.Controls.GroupItem> in the <xref:System.Windows.Controls.ItemsControl>|<xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName>|  
+|Position of <xref:System.Windows.Controls.GroupItem> in the <xref:System.Windows.Controls.ItemsControl>|<xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=nameWithType>|  
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
 |1|0|  
 |2|1|  
@@ -89,7 +90,7 @@
 |6|2|  
 |7|0|  
   
- There are several methods you can use to specify different appearances for the alternating <xref:System.Windows.Controls.GroupItem> objects. One method is to bind properties in the <xref:System.Windows.Controls.GroupStyle.HeaderTemplate%2A> or <xref:System.Windows.Controls.GroupStyle.ContainerStyle%2A> of the <xref:System.Windows.Controls.GroupStyle> to the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName>. You can then use an <xref:System.Windows.Controls.AlternationConverter> to specify which value should be applied to the <xref:System.Windows.Controls.GroupItem> that has a certain <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> value. You can also use triggers to change the value of a property depending on the value of its <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName>.  
+ There are several methods you can use to specify different appearances for the alternating <xref:System.Windows.Controls.GroupItem> objects. One method is to bind properties in the <xref:System.Windows.Controls.GroupStyle.HeaderTemplate%2A> or <xref:System.Windows.Controls.GroupStyle.ContainerStyle%2A> of the <xref:System.Windows.Controls.GroupStyle> to the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=nameWithType>. You can then use an <xref:System.Windows.Controls.AlternationConverter> to specify which value should be applied to the <xref:System.Windows.Controls.GroupItem> that has a certain <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=nameWithType> value. You can also use triggers to change the value of a property depending on the value of its <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=nameWithType>.  
   
    
   
@@ -98,11 +99,11 @@
   
 -   Sets <xref:System.Windows.Controls.GroupStyle.AlternationCount%2A> to 2.  
   
--   Creates an <xref:System.Windows.Controls.AlternationConverter> that returns a <xref:System.Windows.Media.SolidColorBrush>, depending on the value of <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName>.  
+-   Creates an <xref:System.Windows.Controls.AlternationConverter> that returns a <xref:System.Windows.Media.SolidColorBrush>, depending on the value of <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=nameWithType>.  
   
--   Binds the <xref:System.Windows.Controls.TextBlock.Background%2A> of the <xref:System.Windows.Controls.TextBlock> in the <xref:System.Windows.Controls.GroupStyle.HeaderTemplate%2A> to the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> property and provides the <xref:System.Windows.Controls.AlternationConverter>. Note that the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A> attached property is set on the <xref:System.Windows.Controls.GroupItem>, and the binding uses <xref:System.Windows.Data.RelativeSourceMode.FindAncestor> to get its value.  
+-   Binds the <xref:System.Windows.Controls.TextBlock.Background%2A> of the <xref:System.Windows.Controls.TextBlock> in the <xref:System.Windows.Controls.GroupStyle.HeaderTemplate%2A> to the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=nameWithType> property and provides the <xref:System.Windows.Controls.AlternationConverter>. Note that the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A> attached property is set on the <xref:System.Windows.Controls.GroupItem>, and the binding uses <xref:System.Windows.Data.RelativeSourceMode.FindAncestor> to get its value.  
   
- The example also alternates the background of the items in the <xref:System.Windows.Controls.ListBox> between three colors by setting the <xref:System.Windows.Controls.ItemsControl.AlternationCount%2A> on the <xref:System.Windows.Controls.ListBox> and binding the <xref:System.Windows.Controls.Control.Background%2A> of each <xref:System.Windows.Controls.ListBox> to the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName>. In this case, the background alternates between three colors.  
+ The example also alternates the background of the items in the <xref:System.Windows.Controls.ListBox> between three colors by setting the <xref:System.Windows.Controls.ItemsControl.AlternationCount%2A> on the <xref:System.Windows.Controls.ListBox> and binding the <xref:System.Windows.Controls.Control.Background%2A> of each <xref:System.Windows.Controls.ListBox> to the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=nameWithType>. In this case, the background alternates between three colors.  
   
  The <xref:System.Windows.Data.CollectionViewSource> that groups the items is not shown.  For information on how to group item, see [How to: Sort and Group Data Using a View in XAML](~/docs/framework/wpf/data/how-to-sort-and-group-data-using-a-view-in-xaml.md).  
   
@@ -155,6 +156,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.GroupStyle.ContainerStyleSelector" />
       </Docs>
     </Member>
     <Member MemberName="ContainerStyleSelector">
@@ -178,6 +180,8 @@
         <summary>Enables the application writer to provide custom selection logic for a style to apply to each generated <see cref="T:System.Windows.Controls.GroupItem" />.</summary>
         <value>An object that derives from <see cref="T:System.Windows.Controls.StyleSelector" />. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataTemplateSelector" />
+        <altmember cref="P:System.Windows.Controls.GroupStyle.ContainerStyle" />
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -326,6 +330,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.GroupStyle.HeaderTemplateSelector" />
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplateSelector">
@@ -349,6 +354,7 @@
         <summary>Enables the application writer to provide custom selection logic for a template that is used to display the group header.</summary>
         <value>An object that derives from <see cref="T:System.Windows.Controls.DataTemplateSelector" />. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.GroupStyle.HeaderTemplate" />
       </Docs>
     </Member>
     <Member MemberName="HidesIfEmpty">
@@ -429,6 +435,7 @@
       <Docs>
         <summary>Occurs when a property value changes.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" />
       </Docs>
     </Member>
   </Members>

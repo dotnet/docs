@@ -118,6 +118,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpContext" />
       </Docs>
     </Member>
     <Member MemberName="EndProcessRequest">
@@ -197,6 +198,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.DefaultHttpHandler.ProcessRequest(System.Web.HttpContext)" />
       </Docs>
     </Member>
     <Member MemberName="OnExecuteUrlPreconditionFailure">
@@ -224,15 +226,15 @@
   
  Any of the following will cause the preconditions to fail:  
   
--   Calling <xref:System.Web.HttpResponse.Write%2A?displayProperty=fullName>.  
+-   Calling <xref:System.Web.HttpResponse.Write%2A?displayProperty=nameWithType>.  
   
--   Calling <xref:System.Web.HttpResponse.AddHeader%2A?displayProperty=fullName>.  
+-   Calling <xref:System.Web.HttpResponse.AddHeader%2A?displayProperty=nameWithType>.  
   
--   Calling <xref:System.Web.HttpResponse.Flush%2A?displayProperty=fullName>.  
+-   Calling <xref:System.Web.HttpResponse.Flush%2A?displayProperty=nameWithType>.  
   
 -   Changing the cache policy for the response.  
   
--   Adding a <xref:System.IO.Stream> object as a filter to the <xref:System.Web.HttpResponse.Filter%2A?displayProperty=fullName> property.  
+-   Adding a <xref:System.IO.Stream> object as a filter to the <xref:System.Web.HttpResponse.Filter%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -262,15 +264,15 @@
   
  The <xref:System.Web.DefaultHttpHandler.OverrideExecuteUrlPath%2A> method is called only if ASP.NET is running in worker process isolation mode on IIS 6.0, and if the response was not modified before the <xref:System.Web.DefaultHttpHandler> object was called. The response is modified by any of the following:  
   
--   Calling <xref:System.Web.HttpResponse.Write%2A?displayProperty=fullName>.  
+-   Calling <xref:System.Web.HttpResponse.Write%2A?displayProperty=nameWithType>.  
   
--   Calling <xref:System.Web.HttpResponse.AddHeader%2A?displayProperty=fullName>.  
+-   Calling <xref:System.Web.HttpResponse.AddHeader%2A?displayProperty=nameWithType>.  
   
--   Calling <xref:System.Web.HttpResponse.Flush%2A?displayProperty=fullName>.  
+-   Calling <xref:System.Web.HttpResponse.Flush%2A?displayProperty=nameWithType>.  
   
 -   Changing the cache policy for the response.  
   
--   Adding a <xref:System.IO.Stream> object as a filter to the <xref:System.Web.HttpResponse.Filter%2A?displayProperty=fullName> property.  
+-   Adding a <xref:System.IO.Stream> object as a filter to the <xref:System.Web.HttpResponse.Filter%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -303,6 +305,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.DefaultHttpHandler.ProcessRequest(System.Web.HttpContext)" /> is called synchronously.</exception>
+        <altmember cref="M:System.Web.IHttpHandler.ProcessRequest(System.Web.HttpContext)" />
       </Docs>
     </Member>
   </Members>

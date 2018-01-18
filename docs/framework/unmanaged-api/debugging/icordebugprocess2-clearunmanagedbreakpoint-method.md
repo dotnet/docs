@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess2::ClearUnmanagedBreakpoint"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ClearUnmanagedBreakpoint method [.NET Framework debugging]"
   - "ICorDebugProcess2::ClearUnmanagedBreakpoint method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcess2::ClearUnmanagedBreakpoint Method
 Removes a previously set breakpoint at the given address.  

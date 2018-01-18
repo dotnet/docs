@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can obtain the audio input state of the speech recognition engine with the <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioState%2A?displayProperty=fullName> and <xref:System.Speech.Recognition.SpeechRecognizer.AudioState%2A?displayProperty=fullName> properties. The <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioStateChanged?displayProperty=fullName> and <xref:System.Speech.Recognition.SpeechRecognizer.AudioStateChanged?displayProperty=fullName> events are raised when the audio input state of a speech recognition engine changes.  
+ You can obtain the audio input state of the speech recognition engine with the <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioState%2A?displayProperty=nameWithType> and <xref:System.Speech.Recognition.SpeechRecognizer.AudioState%2A?displayProperty=nameWithType> properties. The <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioStateChanged?displayProperty=nameWithType> and <xref:System.Speech.Recognition.SpeechRecognizer.AudioStateChanged?displayProperty=nameWithType> events are raised when the audio input state of a speech recognition engine changes.  
   
    
   
@@ -49,6 +49,9 @@ private void Initialize()
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
+    <altmember cref="T:System.Speech.Recognition.SpeechRecognizer" />
+    <altmember cref="T:System.Speech.Recognition.AudioStateChangedEventArgs" />
   </Docs>
   <Members>
     <Member MemberName="Silence">

@@ -21,6 +21,8 @@ caps.latest.revision: 31
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Pipeline Development
 The add-in pipeline is the path of pipeline segments that the host application and its add-in must use to communicate with each other.  
@@ -93,5 +95,5 @@ Activation path from the add-in to the host
      Describes how to pass data collections over the pipeline using a book store scenario.  
   
 ## See Also  
- [Add-in Pipeline Scenarios](http://msdn.microsoft.com/en-us/feb70e0b-8734-494c-aeaf-b567f014043e)   
+ [Add-in Pipeline Scenarios](http://msdn.microsoft.com/en-us/feb70e0b-8734-494c-aeaf-b567f014043e)  
  [Add-ins and Extensibility](../../../docs/framework/add-ins/index.md)

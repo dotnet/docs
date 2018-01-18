@@ -32,11 +32,16 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewSortEventArgs> object passed to the event-handling method to cancel the sorting operation when the user attempts to sort the address column in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewSorting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSorting/CS/gridviewsortingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewSorting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSorting/VB/gridviewsortingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewSorting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSorting/CS/gridviewsortingcs.aspx#1)]
+ [!code-aspx-vb[GridViewSorting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSorting/VB/gridviewsortingvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewSortEventHandler" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.AllowSorting" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.Sorted" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.Sorting" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -74,6 +79,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridViewSortEventArgs.SortDirection" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewSortEventArgs.SortExpression" />
       </Docs>
     </Member>
     <Member MemberName="SortDirection">
@@ -102,11 +109,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewSortEventArgs.SortDirection%2A> property to determine the direction in which to sort a <xref:System.Web.UI.WebControls.GridView> control. If the user attempts to sort in descending order, the sort operation is canceled.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewSortEventArgsSortDirection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSortEventArgsSortDirection/CS/gridviewsorteventargssortdirectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewSortEventArgsSortDirection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSortEventArgsSortDirection/VB/gridviewsorteventargssortdirectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewSortEventArgsSortDirection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSortEventArgsSortDirection/CS/gridviewsorteventargssortdirectioncs.aspx#1)]
+ [!code-aspx-vb[GridViewSortEventArgsSortDirection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSortEventArgsSortDirection/VB/gridviewsorteventargssortdirectionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowSorting" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SortDirection" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewSortEventArgs.SortExpression" />
       </Docs>
     </Member>
     <Member MemberName="SortExpression">
@@ -135,11 +145,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewSortEventArgs.SortExpression%2A> property to determine which column in a <xref:System.Web.UI.WebControls.GridView> control is being sorted. If the user attempts to sort the address column, the sort operation is canceled.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewSorting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSorting/CS/gridviewsortingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewSorting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSorting/VB/gridviewsortingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewSorting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSorting/CS/gridviewsortingcs.aspx#1)]
+ [!code-aspx-vb[GridViewSorting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSorting/VB/gridviewsortingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowSorting" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SortExpression" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewSortEventArgs.SortDirection" />
       </Docs>
     </Member>
   </Members>

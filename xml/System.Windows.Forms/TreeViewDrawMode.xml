@@ -15,16 +15,16 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is used by the <xref:System.Windows.Forms.TreeView.DrawMode%2A?displayProperty=fullName> property to indicate whether the nodes or node-labels of a <xref:System.Windows.Forms.TreeView> are owner-drawn. For more information, see the <xref:System.Windows.Forms.TreeView.DrawNode?displayProperty=fullName> event.  
+ This enumeration is used by the <xref:System.Windows.Forms.TreeView.DrawMode%2A?displayProperty=nameWithType> property to indicate whether the nodes or node-labels of a <xref:System.Windows.Forms.TreeView> are owner-drawn. For more information, see the <xref:System.Windows.Forms.TreeView.DrawNode?displayProperty=nameWithType> event.  
   
    
   
 ## Examples  
- The following code example demonstrates how to customize a <xref:System.Windows.Forms.TreeView> control using its owner-draw capability. The <xref:System.Windows.Forms.TreeView> control in the example displays optional node tags alongside the standard node labels. Node tags are specified using the <xref:System.Windows.Forms.TreeNode.Tag%2A?displayProperty=fullName> property. The <xref:System.Windows.Forms.TreeView> control also uses custom colors, including a custom highlight color.  
+ The following code example demonstrates how to customize a <xref:System.Windows.Forms.TreeView> control using its owner-draw capability. The <xref:System.Windows.Forms.TreeView> control in the example displays optional node tags alongside the standard node labels. Node tags are specified using the <xref:System.Windows.Forms.TreeNode.Tag%2A?displayProperty=nameWithType> property. The <xref:System.Windows.Forms.TreeView> control also uses custom colors, including a custom highlight color.  
   
  You can customize most of the <xref:System.Windows.Forms.TreeView> colors by setting color properties, but the selection highlight color is not available as a property. Additionally, the default selection highlight rectangle extends only around a node label. Owner drawing must be used to draw the node tags and to draw a customized highlight rectangle large enough to include a node tag.  
   
- For the complete example, see the <xref:System.Windows.Forms.TreeView.DrawNode?displayProperty=fullName> reference topic.  
+ For the complete example, see the <xref:System.Windows.Forms.TreeView.DrawNode?displayProperty=nameWithType> reference topic.  
   
  [!code-cpp[TreeViewOwnerDraw#2](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeViewOwnerDraw/CPP/treeviewownerdraw.cpp#2)]
  [!code-csharp[TreeViewOwnerDraw#2](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeViewOwnerDraw/CS/treeviewownerdraw.cs#2)]
@@ -32,6 +32,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.TreeView" />
+    <altmember cref="P:System.Windows.Forms.TreeView.DrawMode" />
+    <altmember cref="E:System.Windows.Forms.TreeView.DrawNode" />
   </Docs>
   <Members>
     <Member MemberName="Normal">

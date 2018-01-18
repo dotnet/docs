@@ -23,7 +23,7 @@
 ## Remarks  
  The <xref:System.EnterpriseServices.IServicedComponentInfo> interface does not need to be implemented directly in your code. It is used internally by the .NET Framework infrastructure.  
   
- The <xref:System.EnterpriseServices.IServicedComponentInfo.GetComponentInfo%2A> method does not appear in the <xref:System.EnterpriseServices.ServicedComponent>class interface. Instead, <xref:System.EnterpriseServices.ServicedComponent> explicitly implements <xref:System.EnterpriseServices.IServicedComponentInfo>.  
+ The <xref:System.EnterpriseServices.IServicedComponentInfo.GetComponentInfo%2A> method does not appear in the <xref:System.EnterpriseServices.ServicedComponent> class interface. Instead, <xref:System.EnterpriseServices.ServicedComponent> explicitly implements <xref:System.EnterpriseServices.IServicedComponentInfo>.  
   
  ]]></format>
     </remarks>
@@ -33,7 +33,7 @@
   <Members>
     <Member MemberName="GetComponentInfo">
       <MemberSignature Language="C#" Value="public void GetComponentInfo (ref int infoMask, out string[] infoArray);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetComponentInfo(int32 infoMask, string[] infoArray) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetComponentInfo(int32&amp; infoMask, [out] string[]&amp; infoArray) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IServicedComponentInfo.GetComponentInfo(System.Int32@,System.String[]@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

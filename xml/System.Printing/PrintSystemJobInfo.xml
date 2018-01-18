@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class has no public constructor. To get a reference to a <xref:System.Printing.PrintSystemJobInfo> object, use the static <xref:System.Printing.PrintSystemJobInfo.Get%2A?displayProperty=fullName> method or one of the following <xref:System.Printing.PrintQueue> instance methods: <xref:System.Printing.PrintQueue.GetJob%2A>, <xref:System.Printing.PrintQueue.GetPrintJobInfoCollection%2A>, or <xref:System.Printing.PrintQueue.AddJob%2A>.  
+ This class has no public constructor. To get a reference to a <xref:System.Printing.PrintSystemJobInfo> object, use the static <xref:System.Printing.PrintSystemJobInfo.Get%2A?displayProperty=nameWithType> method or one of the following <xref:System.Printing.PrintQueue> instance methods: <xref:System.Printing.PrintQueue.GetJob%2A>, <xref:System.Printing.PrintQueue.GetPrintJobInfoCollection%2A>, or <xref:System.Printing.PrintQueue.AddJob%2A>.  
   
  Many print job properties, such as whether a job is completed, must be passed from the printer to the <xref:System.Printing.PrintSystemJobInfo> object before your application reads the corresponding property (<xref:System.Printing.PrintSystemJobInfo.IsCompleted%2A>). The <xref:System.Printing.PrintSystemJobInfo.Refresh%2A> method provides this functionality.  
   
@@ -85,6 +85,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Printing.PrintSystemJobInfo.Refresh" />
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -112,10 +113,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can also use the <xref:System.Printing.PrintQueue.GetJob%2A?displayProperty=fullName> method for the same purpose.  
+ You can also use the <xref:System.Printing.PrintQueue.GetJob%2A?displayProperty=nameWithType> method for the same purpose.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Printing.PrintQueue.GetJob(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="HostingPrintQueue">
@@ -432,7 +434,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The entire print queue can also be paused. For example, the value of <xref:System.Printing.PrintSystemJobInfo.IsPaused%2A?displayProperty=fullName> can be `false` even when the value of the <xref:System.Printing.PrintQueue.IsPaused%2A?displayProperty=fullName> property is `true`.  
+ The entire print queue can also be paused. For example, the value of <xref:System.Printing.PrintSystemJobInfo.IsPaused%2A?displayProperty=nameWithType> can be `false` even when the value of the <xref:System.Printing.PrintQueue.IsPaused%2A?displayProperty=nameWithType> property is `true`.  
   
    
   
@@ -445,6 +447,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Printing.PrintSystemJobInfo.Pause" />
+        <altmember cref="M:System.Printing.PrintSystemJobInfo.Resume" />
       </Docs>
     </Member>
     <Member MemberName="IsPrinted">
@@ -531,6 +535,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Printing.PrintSystemJobInfo.Pause" />
+        <altmember cref="M:System.Printing.PrintSystemJobInfo.Resume" />
+        <altmember cref="P:System.Printing.PrintSystemJobInfo.IsPaused" />
       </Docs>
     </Member>
     <Member MemberName="IsRetained">
@@ -802,6 +809,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Printing.PrintTicket.Duplexing" />
+        <altmember cref="P:System.Printing.PrintTicket.PagesPerSheet" />
       </Docs>
     </Member>
     <Member MemberName="NumberOfPagesPrinted">
@@ -847,6 +856,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Printing.PrintSystemJobInfo.IsPaused" />
+        <altmember cref="M:System.Printing.PrintSystemJobInfo.Resume" />
       </Docs>
     </Member>
     <Member MemberName="PositionInPrintQueue">
@@ -910,6 +921,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Printing.PrintSystemJobInfo.Commit" />
       </Docs>
     </Member>
     <Member MemberName="Restart">
@@ -969,6 +981,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Printing.PrintSystemJobInfo.IsPaused" />
+        <altmember cref="M:System.Printing.PrintSystemJobInfo.Pause" />
       </Docs>
     </Member>
     <Member MemberName="StartTimeOfDay">
@@ -990,9 +1004,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This value is propagated to each <xref:System.Printing.PrintSystemJobInfo> object from the <xref:System.Printing.PrintQueue.StartTimeOfDay%2A?displayProperty=fullName> property of the hosting <xref:System.Printing.PrintQueue> at the time the job enters the queue. If <xref:System.Printing.PrintQueue.StartTimeOfDay%2A?displayProperty=fullName> is changed, then any <xref:System.Printing.PrintSystemJobInfo.StartTimeOfDay%2A?displayProperty=fullName> value that is earlier than <xref:System.Printing.PrintQueue.StartTimeOfDay%2A?displayProperty=fullName> is changed to the value of <xref:System.Printing.PrintQueue.StartTimeOfDay%2A?displayProperty=fullName>.  
+ This value is propagated to each <xref:System.Printing.PrintSystemJobInfo> object from the <xref:System.Printing.PrintQueue.StartTimeOfDay%2A?displayProperty=nameWithType> property of the hosting <xref:System.Printing.PrintQueue> at the time the job enters the queue. If <xref:System.Printing.PrintQueue.StartTimeOfDay%2A?displayProperty=nameWithType> is changed, then any <xref:System.Printing.PrintSystemJobInfo.StartTimeOfDay%2A?displayProperty=nameWithType> value that is earlier than <xref:System.Printing.PrintQueue.StartTimeOfDay%2A?displayProperty=nameWithType> is changed to the value of <xref:System.Printing.PrintQueue.StartTimeOfDay%2A?displayProperty=nameWithType>.  
   
- After the job is added to the queue, it can be given a new <xref:System.Printing.PrintSystemJobInfo.StartTimeOfDay%2A> value through the [!INCLUDE[TLA#tla_win](~/includes/tlasharptla-win-md.md)] [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)], provided that it is not earlier than <xref:System.Printing.PrintQueue.StartTimeOfDay%2A?displayProperty=fullName>.  
+ After the job is added to the queue, it can be given a new <xref:System.Printing.PrintSystemJobInfo.StartTimeOfDay%2A> value through the [!INCLUDE[TLA#tla_win](~/includes/tlasharptla-win-md.md)] [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)], provided that it is not earlier than <xref:System.Printing.PrintQueue.StartTimeOfDay%2A?displayProperty=nameWithType>.  
   
  If you are not in the UTC time zone, you must add or subtract multiples of 60 to get the correct time for your time zone. For example, if you are in the Pacific Time Zone of North America and daylight savings time is not in effect, then your local time is 8 hours earlier than UTC. If <xref:System.Printing.PrintSystemJobInfo.StartTimeOfDay%2A> returns 960, that means 16:00 (4:00 PM) in UTC (because 960/60 = 16). To convert this to Pacific Time, you must subtract 480 (= 8 * 60) minutes.  
   
@@ -1013,6 +1027,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.TimeZone" />
+        <altmember cref="T:System.TimeSpan" />
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="P:System.Printing.PrintQueue.StartTimeOfDay" />
+        <altmember cref="P:System.Printing.PrintQueue.UntilTimeOfDay" />
+        <altmember cref="P:System.Printing.PrintSystemJobInfo.UntilTimeOfDay" />
       </Docs>
     </Member>
     <Member MemberName="Submitter">
@@ -1099,9 +1119,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This value is propagated to each <xref:System.Printing.PrintSystemJobInfo> object from the <xref:System.Printing.PrintQueue.UntilTimeOfDay%2A?displayProperty=fullName> property of the hosting <xref:System.Printing.PrintQueue> at the time the job enters the queue. If <xref:System.Printing.PrintQueue.UntilTimeOfDay%2A?displayProperty=fullName> is changed, then any <xref:System.Printing.PrintSystemJobInfo.UntilTimeOfDay%2A?displayProperty=fullName> value that is later than <xref:System.Printing.PrintQueue.UntilTimeOfDay%2A?displayProperty=fullName> is changed to the value of <xref:System.Printing.PrintQueue.UntilTimeOfDay%2A?displayProperty=fullName>.  
+ This value is propagated to each <xref:System.Printing.PrintSystemJobInfo> object from the <xref:System.Printing.PrintQueue.UntilTimeOfDay%2A?displayProperty=nameWithType> property of the hosting <xref:System.Printing.PrintQueue> at the time the job enters the queue. If <xref:System.Printing.PrintQueue.UntilTimeOfDay%2A?displayProperty=nameWithType> is changed, then any <xref:System.Printing.PrintSystemJobInfo.UntilTimeOfDay%2A?displayProperty=nameWithType> value that is later than <xref:System.Printing.PrintQueue.UntilTimeOfDay%2A?displayProperty=nameWithType> is changed to the value of <xref:System.Printing.PrintQueue.UntilTimeOfDay%2A?displayProperty=nameWithType>.  
   
- After the job is added to the queue, it can be given a new <xref:System.Printing.PrintSystemJobInfo.UntilTimeOfDay%2A> value through the [!INCLUDE[TLA#tla_win](~/includes/tlasharptla-win-md.md)] [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)], provided that it is not later than <xref:System.Printing.PrintQueue.UntilTimeOfDay%2A?displayProperty=fullName>.  
+ After the job is added to the queue, it can be given a new <xref:System.Printing.PrintSystemJobInfo.UntilTimeOfDay%2A> value through the [!INCLUDE[TLA#tla_win](~/includes/tlasharptla-win-md.md)] [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)], provided that it is not later than <xref:System.Printing.PrintQueue.UntilTimeOfDay%2A?displayProperty=nameWithType>.  
   
  If you are not in the UTC time zone, you must add or subtract multiples of 60 to get the correct time for your time zone. For example, if you are in the Pacific Time Zone of North America and daylight savings time is not in effect, then your local time is 8 hours earlier than UTC. If <xref:System.Printing.PrintSystemJobInfo.UntilTimeOfDay%2A> returns 960, that means 16:00 (4:00 PM) in UTC (because 960/60 = 16). To convert this to Pacific Time, you must subtract 480 (= 8 * 60) minutes.  
   
@@ -1122,6 +1142,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.TimeZone" />
+        <altmember cref="T:System.TimeSpan" />
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="P:System.Printing.PrintQueue.StartTimeOfDay" />
+        <altmember cref="P:System.Printing.PrintQueue.UntilTimeOfDay" />
+        <altmember cref="P:System.Printing.PrintSystemJobInfo.StartTimeOfDay" />
       </Docs>
     </Member>
   </Members>

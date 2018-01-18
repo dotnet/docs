@@ -1,55 +1,37 @@
 ---
 title: "Passing Arguments by Position and by Name (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "arguments [Visual Basic], passing by name"
-  - "procedures, arguments"
+  - "procedures [Visual Basic], arguments"
   - ":= passing arguments"
   - "procedure arguments"
   - "Visual Basic code, procedures"
-  - "named arguments, passing arguments"
+  - "named arguments [Visual Basic], passing arguments"
   - "arguments [Visual Basic], passing by position"
-  - "Function procedures, passing arguments"
-  - "named parameters, passing arguments"
+  - "Function procedures [Visual Basic], passing arguments"
+  - "named parameters [Visual Basic], passing arguments"
   - "named arguments"
-  - "passing parameters, named parameter arguments"
-  - "passing parameters, by position"
-  - "procedures, calling"
+  - "passing parameters [Visual Basic], named parameter arguments"
+  - "passing parameters [Visual Basic], by position"
+  - "procedures [Visual Basic], calling"
   - "named parameters"
-  - "Sub procedures, passing arguments"
+  - "Sub procedures [Visual Basic], passing arguments"
   - "argument passing"
-  - "passing parameters, by name"
-  - "argument passing, by position"
+  - "passing parameters [Visual Basic], by name"
+  - "argument passing [Visual Basic], by position"
   - "arguments [Visual Basic], listing by name"
 ms.assetid: 1ad7358f-1da9-48da-a95b-f3c7ed41eff3
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Passing Arguments by Position and by Name (Visual Basic)
 When you call a `Sub` or `Function` procedure, you can pass arguments *by position* — in the order in which they appear in the procedure's definition — or you can pass them *by name*, without regard to position.  
@@ -94,11 +76,11 @@ When you call a `Sub` or `Function` procedure, you can pass arguments *by positi
  You cannot pass a parameter array by name. This is because when you call the procedure, you supply an indefinite number of comma-separated arguments for the parameter array, and the compiler cannot associate more than one argument with a single name.  
   
 ## See Also  
- [Procedures](./index.md)   
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
- [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)   
- [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)   
- [Optional Parameters](./optional-parameters.md)   
- [Parameter Arrays](./parameter-arrays.md)   
- [Optional](../../../../visual-basic/language-reference/modifiers/optional.md)   
+ [Procedures](./index.md)  
+ [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
+ [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)  
+ [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)  
+ [Optional Parameters](./optional-parameters.md)  
+ [Parameter Arrays](./parameter-arrays.md)  
+ [Optional](../../../../visual-basic/language-reference/modifiers/optional.md)  
  [ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md)

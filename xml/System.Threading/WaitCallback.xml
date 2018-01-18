@@ -39,7 +39,7 @@
 ## Remarks  
  <xref:System.Threading.WaitCallback> represents a callback method that you want to execute on a <xref:System.Threading.ThreadPool> thread. Create the delegate by passing your callback method to the <xref:System.Threading.WaitCallback> constructor. Your method must have the signature shown here.  
   
- Queue your task for execution by passing the <xref:System.Threading.WaitCallback> delegate to <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A?displayProperty=fullName>. Your callback method executes when a thread pool thread becomes available.  
+ Queue your task for execution by passing the <xref:System.Threading.WaitCallback> delegate to <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A?displayProperty=nameWithType>. Your callback method executes when a thread pool thread becomes available.  
   
 > [!NOTE]
 >  Visual Basic users can omit the <xref:System.Threading.WaitCallback> constructor, and simply use the `AddressOf` operator when passing the callback method to <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A>. Visual Basic automatically calls the correct delegate constructor.  
@@ -57,7 +57,7 @@
   
  **Example 1**  
   
- This example shows how to use the <xref:System.Threading.WaitCallback> delegate to queue a task for execution by the thread pool. The code example uses the <xref:System.Threading.ThreadPool.QueueUserWorkItem%28System.Threading.WaitCallback%29?displayProperty=fullName> method overload to queue a task, which is represented by a <xref:System.Threading.WaitCallback> that wraps the `ThreadProc` method, to execute when a thread becomes available. No task information is supplied with this overload. Therefore, the information that is available to the `ThreadProc` method is limited to the object the method belongs to.  
+ This example shows how to use the <xref:System.Threading.WaitCallback> delegate to queue a task for execution by the thread pool. The code example uses the <xref:System.Threading.ThreadPool.QueueUserWorkItem%28System.Threading.WaitCallback%29?displayProperty=nameWithType> method overload to queue a task, which is represented by a <xref:System.Threading.WaitCallback> that wraps the `ThreadProc` method, to execute when a thread becomes available. No task information is supplied with this overload. Therefore, the information that is available to the `ThreadProc` method is limited to the object the method belongs to.  
   
  [!code-cpp[System.Threading.ThreadPool QueueUserWorkItem0#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.ThreadPool QueueUserWorkItem0/CPP/source.cpp#1)]
  [!code-csharp[System.Threading.ThreadPool QueueUserWorkItem0#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.ThreadPool QueueUserWorkItem0/CS/source.cs#1)]
@@ -73,5 +73,6 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Threading.ThreadPool" />
   </Docs>
 </Type>

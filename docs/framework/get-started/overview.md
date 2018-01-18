@@ -19,6 +19,8 @@ caps.latest.revision: 34
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 
 # Overview of the .NET Framework

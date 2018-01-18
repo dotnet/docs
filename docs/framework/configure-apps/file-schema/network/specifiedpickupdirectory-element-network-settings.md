@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#specifiedPickupDirectory"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/mailSettings/smtp/specifiedPickupDirectory"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "specifiedPickupDirectory element"
   - "<specifiedPickupDirectory> element"
@@ -25,6 +20,8 @@ caps.latest.revision: 8
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;specifiedPickupDirectory&gt; Element (Network Settings)
 Configures the local directory for a Simple Mail Transport Protocol (SMTP) server.  
@@ -38,7 +35,7 @@ Configures the local directory for a Simple Mail Transport Protocol (SMTP) serve
 ## Syntax  
   
 ```xml  
-      <specifiedPickupDirectory  
+<specifiedPickupDirectory  
   pickupDirectoryLocation="directory"   
 />  
 ```  
@@ -82,7 +79,7 @@ Configures the local directory for a Simple Mail Transport Protocol (SMTP) serve
 ```  
   
 ## See Also  
- <xref:System.Net.Mail.SmtpClient?displayProperty=fullName>   
- <xref:System.Net.Configuration.SmtpSection?displayProperty=fullName>   
- <xref:System.Net.Configuration.SmtpSpecifiedPickupDirectoryElement?displayProperty=fullName>   
+ <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>  
+ <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>  
+ <xref:System.Net.Configuration.SmtpSpecifiedPickupDirectoryElement?displayProperty=nameWithType>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

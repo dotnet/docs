@@ -146,6 +146,9 @@ Windows Media Player Jump List
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="P:System.Windows.Shell.JumpList.JumpItems" />
+        <altmember cref="P:System.Windows.Shell.JumpList.ShowFrequentCategory" />
+        <altmember cref="P:System.Windows.Shell.JumpList.ShowRecentCategory" />
       </Docs>
     </Member>
     <Member MemberName="AddToRecentCategory">
@@ -182,6 +185,7 @@ Windows Media Player Jump List
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="P:System.Windows.Shell.JumpList.ShowRecentCategory" />
       </Docs>
     </Member>
     <Member MemberName="AddToRecentCategory">
@@ -218,6 +222,7 @@ Windows Media Player Jump List
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="P:System.Windows.Shell.JumpList.ShowRecentCategory" />
       </Docs>
     </Member>
     <Member MemberName="AddToRecentCategory">
@@ -254,6 +259,7 @@ Windows Media Player Jump List
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="P:System.Windows.Shell.JumpList.ShowRecentCategory" />
       </Docs>
     </Member>
     <Member MemberName="Apply">
@@ -627,5 +633,23 @@ Windows Media Player Jump List
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddToRecentCategory">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified item to the **Recent** category of the Jump List.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Shell.JumpList" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

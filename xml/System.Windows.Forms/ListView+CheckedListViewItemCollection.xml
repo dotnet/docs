@@ -100,10 +100,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.Contains%2A> method enables you to determine whether an item from the <xref:System.Windows.Forms.ListView.ListViewItemCollection> is a one of the checked items stored in the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>. Once you know that an item is in the checked item collection, you can use the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.IndexOf%2A?displayProperty=fullName> method to determine the position of the item in the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>.  
+ The <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.Contains%2A> method enables you to determine whether an item from the <xref:System.Windows.Forms.ListView.ListViewItemCollection> is a one of the checked items stored in the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>. Once you know that an item is in the checked item collection, you can use the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection.IndexOf%2A?displayProperty=nameWithType> method to determine the position of the item in the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.CheckedListViewItemCollection.IndexOf(System.Windows.Forms.ListViewItem)" />
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -243,6 +244,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.CheckedListViewItemCollection.Contains(System.Windows.Forms.ListViewItem)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOfKey">
@@ -428,7 +430,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> class directly. To add an item to the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Checked%2A?displayProperty=fullName> property.  
+ You cannot change the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> class directly. To add an item to the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Checked%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -454,7 +456,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> class directly. To clear the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>, set the <xref:System.Windows.Forms.ListViewItem.Checked%2A?displayProperty=fullName> property to `false` for each <xref:System.Windows.Forms.ListViewItem> in the <xref:System.Windows.Forms.ListView.ListViewItemCollection>.  
+ You cannot change the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> class directly. To clear the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>, set the <xref:System.Windows.Forms.ListViewItem.Checked%2A?displayProperty=nameWithType> property to `false` for each <xref:System.Windows.Forms.ListViewItem> in the <xref:System.Windows.Forms.ListView.ListViewItemCollection>.  
   
  ]]></format>
         </remarks>
@@ -530,7 +532,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> class directly. To add an item to the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Checked%2A?displayProperty=fullName> property.  
+ You cannot change the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> class directly. To add an item to the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Checked%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -601,7 +603,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> class directly. To remove an item from the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Checked%2A?displayProperty=fullName> property.  
+ You cannot change the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> class directly. To remove an item from the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Checked%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -630,12 +632,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> class directly. To remove an item from the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Checked%2A?displayProperty=fullName> property.  
+ You cannot change the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection> class directly. To remove an item from the <xref:System.Windows.Forms.ListView.CheckedListViewItemCollection>, use the <xref:System.Windows.Forms.ListViewItem.Checked%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an item within the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

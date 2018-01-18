@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Interop.D3DResourceType> when you assign a Direct3D surface in the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A?displayProperty=fullName> method.  
+ Use the <xref:System.Windows.Interop.D3DResourceType> when you assign a Direct3D surface in the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -26,6 +26,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Interop.D3DImage" />
+    <altmember cref="M:System.Windows.Interop.D3DImage.SetBackBuffer(System.Windows.Interop.D3DResourceType,System.IntPtr)" />
   </Docs>
   <Members>
     <Member MemberName="IDirect3DSurface9">

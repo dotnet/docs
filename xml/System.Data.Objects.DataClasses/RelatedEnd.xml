@@ -55,17 +55,17 @@
 ## Remarks  
  The <xref:System.Data.Objects.DataClasses.RelatedEnd.AssociationChanged> event is raised by the following methods:  
   
--   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Add%2A?displayProperty=fullName>  
+-   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Add%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Remove%2A?displayProperty=fullName>  
+-   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Remove%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Load%2A?displayProperty=fullName>  
+-   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Load%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.Objects.DataClasses.EntityReference%601.Load%2A?displayProperty=fullName>  
+-   <xref:System.Data.Objects.DataClasses.EntityReference%601.Load%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Attach%2A?displayProperty=fullName>  
+-   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Attach%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Clear%2A?displayProperty=fullName>  
+-   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Clear%2A?displayProperty=nameWithType>  
   
  Events may be suppressed during bulk operations, such as `Load`, <xref:System.Data.Objects.DataClasses.EntityCollection%601.Attach%2A>, and <xref:System.Data.Objects.DataClasses.EntityCollection%601.Clear%2A>.  
   
@@ -342,6 +342,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.Objects.DataClasses.IRelatedEnd.SourceRoleName" />
       </Docs>
     </Member>
     <Member MemberName="System.Data.Objects.DataClasses.IRelatedEnd.Add">
@@ -590,7 +591,44 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.Objects.DataClasses.IRelatedEnd.SourceRoleName" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="System.Data.Objects.DataClasses.IRelatedEnd.Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes an object from the related end.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, loads the related object or objects into the local collection or reference.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="System.Data.Objects.DataClasses.IRelatedEnd.Attach">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attaches an object at the related end.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="System.Data.Objects.DataClasses.IRelatedEnd.Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an object to the related end.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

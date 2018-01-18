@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Automation.Provider.IScrollProvider" />
   </Docs>
   <Members>
     <Member MemberName="Cached">
@@ -107,6 +108,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Automation.ScrollPattern.VerticallyScrollableProperty" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalScrollPercentProperty">
@@ -139,6 +141,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Automation.ScrollPattern.VerticalScrollPercentProperty" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalViewSizeProperty">
@@ -171,6 +174,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Automation.ScrollPattern.VerticalViewSizeProperty" />
       </Docs>
     </Member>
     <Member MemberName="NoScroll">
@@ -199,7 +203,7 @@
    
   
 ## Examples  
- In the following example, a <xref:System.Windows.Automation.ScrollPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is then used to scroll the viewable region to the top of the content area.  
+ In the following example, a <xref:System.Windows.Automation.ScrollPattern> control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is then used to scroll the viewable region to the top of the content area.  
   
  [!code-csharp[UIAScrollPattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAScrollPattern_snip/CSharp/UIAScrollPattern_snippets.cs#103)]
  [!code-vb[UIAScrollPattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAScrollPattern_snip/VisualBasic/UIAScrollPattern_snippets.vb#103)]  
@@ -266,7 +270,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- In the following example, a <xref:System.Windows.Automation.ScrollPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is then used to scroll the element a requested amount either horizontally or vertically.  
+ In the following example, a <xref:System.Windows.Automation.ScrollPattern> control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is then used to scroll the element a requested amount either horizontally or vertically.  
   
  [!code-csharp[UIAScrollPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAScrollPattern_snip/CSharp/UIAScrollPattern_snippets.cs#101)]
  [!code-vb[UIAScrollPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAScrollPattern_snip/VisualBasic/UIAScrollPattern_snippets.vb#101)]  
@@ -277,6 +281,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">A control supports <see cref="F:System.Windows.Automation.ScrollAmount.SmallIncrement" /> values exclusively for horizontal or vertical scrolling but a <see cref="F:System.Windows.Automation.ScrollAmount.LargeIncrement" /> value is passed in.</exception>
         <exception cref="T:System.InvalidOperationException">An attempt is made to scroll in an unsupported direction.</exception>
+        <altmember cref="M:System.Windows.Automation.ScrollPattern.ScrollHorizontal(System.Windows.Automation.ScrollAmount)" />
+        <altmember cref="M:System.Windows.Automation.ScrollPattern.ScrollVertical(System.Windows.Automation.ScrollAmount)" />
       </Docs>
     </Member>
     <Member MemberName="ScrollHorizontal">
@@ -301,7 +307,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- In the following example, a <xref:System.Windows.Automation.ScrollPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is then used to horizontally scroll the element a requested amount.  
+ In the following example, a <xref:System.Windows.Automation.ScrollPattern> control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is then used to horizontally scroll the element a requested amount.  
   
  [!code-csharp[UIAScrollPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAScrollPattern_snip/CSharp/UIAScrollPattern_snippets.cs#101)]
  [!code-vb[UIAScrollPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAScrollPattern_snip/VisualBasic/UIAScrollPattern_snippets.vb#101)]  
@@ -312,6 +318,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">If a control supports <see cref="F:System.Windows.Automation.ScrollAmount.SmallIncrement" /> values exclusively for horizontal or vertical scrolling but a <see cref="F:System.Windows.Automation.ScrollAmount.LargeIncrement" /> value is passed in.</exception>
         <exception cref="T:System.InvalidOperationException">An attempt is made to scroll in an unsupported direction.</exception>
+        <altmember cref="M:System.Windows.Automation.ScrollPattern.Scroll(System.Windows.Automation.ScrollAmount,System.Windows.Automation.ScrollAmount)" />
+        <altmember cref="M:System.Windows.Automation.ScrollPattern.ScrollVertical(System.Windows.Automation.ScrollAmount)" />
       </Docs>
     </Member>
     <Member MemberName="ScrollVertical">
@@ -336,7 +344,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- In the following example, a <xref:System.Windows.Automation.ScrollPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is then used to vertically scroll the element a requested amount.  
+ In the following example, a <xref:System.Windows.Automation.ScrollPattern> control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is then used to vertically scroll the element a requested amount.  
   
  [!code-csharp[UIAScrollPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAScrollPattern_snip/CSharp/UIAScrollPattern_snippets.cs#101)]
  [!code-vb[UIAScrollPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAScrollPattern_snip/VisualBasic/UIAScrollPattern_snippets.vb#101)]  
@@ -347,6 +355,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">If a control supports <see cref="F:System.Windows.Automation.ScrollAmount.SmallIncrement" /> values exclusively for horizontal or vertical scrolling but a <see cref="F:System.Windows.Automation.ScrollAmount.LargeIncrement" /> value is passed in.</exception>
         <exception cref="T:System.InvalidOperationException">An attempt is made to scroll in an unsupported direction.</exception>
+        <altmember cref="M:System.Windows.Automation.ScrollPattern.Scroll(System.Windows.Automation.ScrollAmount,System.Windows.Automation.ScrollAmount)" />
+        <altmember cref="M:System.Windows.Automation.ScrollPattern.ScrollHorizontal(System.Windows.Automation.ScrollAmount)" />
       </Docs>
     </Member>
     <Member MemberName="SetScrollPercent">
@@ -380,7 +390,7 @@
    
   
 ## Examples  
- In the following example, a <xref:System.Windows.Automation.ScrollPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is then used to scroll the viewable region to the top left 'home' position of the content area.  
+ In the following example, a <xref:System.Windows.Automation.ScrollPattern> control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is then used to scroll the viewable region to the top left 'home' position of the content area.  
   
  [!code-csharp[UIAScrollPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAScrollPattern_snip/CSharp/UIAScrollPattern_snippets.cs#101)]
  [!code-vb[UIAScrollPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAScrollPattern_snip/VisualBasic/UIAScrollPattern_snippets.vb#101)]  
@@ -424,6 +434,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Automation.ScrollPattern.HorizontallyScrollableProperty" />
       </Docs>
     </Member>
     <Member MemberName="VerticalScrollPercentProperty">
@@ -456,6 +467,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Automation.ScrollPattern.HorizontalScrollPercentProperty" />
       </Docs>
     </Member>
     <Member MemberName="VerticalViewSizeProperty">
@@ -488,6 +500,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Automation.ScrollPattern.HorizontalViewSizeProperty" />
       </Docs>
     </Member>
   </Members>

@@ -38,6 +38,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.CompositeControl.Controls" />
+    <altmember cref="M:System.Web.UI.WebControls.CompositeControl.DataBind" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.CompositeControlDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -87,6 +90,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -112,6 +116,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.DataBind" />
       </Docs>
     </Member>
     <Member MemberName="RecreateChildControls">
@@ -161,10 +166,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.CompositeControl.Render%2A> method writes the rendered content of the control and its child controls to the client using the specified <xref:System.Web.UI.HtmlTextWriter>. This method overrides the base implementation to ensure that all child controls in the <xref:System.Web.UI.WebControls.CompositeControl.Controls%2A> collection are created and then renders the control and its child controls using the base <xref:System.Web.UI.Control.Render%2A?displayProperty=fullName> and <xref:System.Web.UI.Control.RenderChildren%2A?displayProperty=fullName> methods.  
+ The <xref:System.Web.UI.WebControls.CompositeControl.Render%2A> method writes the rendered content of the control and its child controls to the client using the specified <xref:System.Web.UI.HtmlTextWriter>. This method overrides the base implementation to ensure that all child controls in the <xref:System.Web.UI.WebControls.CompositeControl.Controls%2A> collection are created and then renders the control and its child controls using the base <xref:System.Web.UI.Control.Render%2A?displayProperty=nameWithType> and <xref:System.Web.UI.Control.RenderChildren%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.EnsureChildControls" />
+        <altmember cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="P:System.Web.UI.WebControls.CompositeControl.Controls" />
+        <altmember cref="M:System.Web.UI.Control.RenderChildren(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -187,10 +196,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=fullName>.  
+ This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.ICompositeControlDesignerAccessor.RecreateChildControls">
@@ -209,6 +221,7 @@
       <Docs>
         <summary>Enables a designer to recreate the composite control's collection of child controls in the design-time environment.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ICompositeControlDesignerAccessor" />
       </Docs>
     </Member>
   </Members>

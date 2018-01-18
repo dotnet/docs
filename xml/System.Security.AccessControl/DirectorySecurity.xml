@@ -34,10 +34,10 @@
   
 |Task|Methods|  
 |----------|-------------|  
-|Add rules|<xref:System.Security.AccessControl.FileSystemSecurity.AddAccessRule%2A?displayProperty=fullName><br /><br /> <xref:System.Security.AccessControl.FileSystemSecurity.AddAuditRule%2A?displayProperty=fullName>|  
-|Remove rules|<xref:System.Security.AccessControl.FileSystemSecurity.RemoveAccessRule%2A?displayProperty=fullName><br /><br /> <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAuditRule%2A?displayProperty=fullName>|  
-|Retrieve the access control to a directory|<xref:System.IO.Directory.GetAccessControl%2A?displayProperty=fullName><br /><br /> <xref:System.IO.DirectoryInfo.GetAccessControl%2A?displayProperty=fullName>|  
-|Persist the access control to a directory|<xref:System.IO.Directory.SetAccessControl%2A?displayProperty=fullName><br /><br /> <xref:System.IO.DirectoryInfo.SetAccessControl%2A?displayProperty=fullName>|  
+|Add rules|<xref:System.Security.AccessControl.FileSystemSecurity.AddAccessRule%2A?displayProperty=nameWithType><br /><br /> <xref:System.Security.AccessControl.FileSystemSecurity.AddAuditRule%2A?displayProperty=nameWithType>|  
+|Remove rules|<xref:System.Security.AccessControl.FileSystemSecurity.RemoveAccessRule%2A?displayProperty=nameWithType><br /><br /> <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAuditRule%2A?displayProperty=nameWithType>|  
+|Retrieve the access control to a directory|<xref:System.IO.Directory.GetAccessControl%2A?displayProperty=nameWithType><br /><br /> <xref:System.IO.DirectoryInfo.GetAccessControl%2A?displayProperty=nameWithType>|  
+|Persist the access control to a directory|<xref:System.IO.Directory.SetAccessControl%2A?displayProperty=nameWithType><br /><br /> <xref:System.IO.DirectoryInfo.SetAccessControl%2A?displayProperty=nameWithType>|  
   
    
   
@@ -136,5 +136,15 @@
  Security action: Demand</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.DirectorySecurity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

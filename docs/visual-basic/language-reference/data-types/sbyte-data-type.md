@@ -1,47 +1,27 @@
 ---
 title: "SByte Data Type (Visual Basic)"
-
-ms.date: "2017-04-20"
+ms.date: 04/20/2017
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.sbyte"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "numbers, whole"
+  - "numbers [Visual Basic], whole"
   - "whole numbers"
-  - "integral data types"
+  - "integral data types [Visual Basic]"
   - "integer numbers"
-  - "numbers, integer"
-  - "integers, data types"
-  - "integers, types"
+  - "numbers [Visual Basic], integer"
+  - "integers [Visual Basic], data types"
+  - "integers [Visual Basic], types"
   - "data types [Visual Basic], integral"
   - "SByte data type"
 ms.assetid: 5c38374a-18a1-4cc2-b493-299e3dcaa60f
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # SByte data type (Visual Basic)
 
@@ -68,7 +48,7 @@ Starting with Visual Basic 2017, you can also use the underscore character, `_`,
 
 [!code-vb[SByteSeparator](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#SByteS)]  
 
-If the integer literal is outside the range of `SByte` (that is, if it is less than <xref:System.SByte.MinValue?displayProperty=fullName> or greater than <xref:System.SByte.MaxValue?displayProperty=fullName>, a compilation error occurs. When an integer literal has no suffix, an [Integer](integer-data-type.md) is inferred. If the integer literal is outside the range of the `Integer` type, a [Long](long-data-type.md) is inferred. This means that, in the previous examples, the numeric literals `0x9A` and `0b10011010` are interpreted as 32-bit signed integers with a value of 156, which exceeds <xref:System.SByte.MaxValue?displayProperty=fullName>. To successfully compile code like this that assigns a non-decimal integer to an `SByte`, you can do either of the following:
+If the integer literal is outside the range of `SByte` (that is, if it is less than <xref:System.SByte.MinValue?displayProperty=nameWithType> or greater than <xref:System.SByte.MaxValue?displayProperty=nameWithType>, a compilation error occurs. When an integer literal has no suffix, an [Integer](integer-data-type.md) is inferred. If the integer literal is outside the range of the `Integer` type, a [Long](long-data-type.md) is inferred. This means that, in the previous examples, the numeric literals `0x9A` and `0b10011010` are interpreted as 32-bit signed integers with a value of 156, which exceeds <xref:System.SByte.MaxValue?displayProperty=nameWithType>. To successfully compile code like this that assigns a non-decimal integer to an `SByte`, you can do either of the following:
 
 - Disable integer bounds checks by compiling with the `/removeintchecks` compiler switch.
 
@@ -80,19 +60,19 @@ If the integer literal is outside the range of `SByte` (that is, if it is less t
   
 -   **CLS Compliance.** The `SByte` data type is not part of the [Common Language Specification](http://www.ecma-international.org/publications/standards/Ecma-335.htm) (CLS), so CLS-compliant code cannot consume a component that uses it.
 
--   **Widening.** The `SByte` data type widens to `Short`, `Integer`, `Long`, `Decimal`, `Single`, and `Double`. This means you can convert `SByte` to any of these types without encountering a <xref:System.OverflowException?displayProperty=fullName> error.
+-   **Widening.** The `SByte` data type widens to `Short`, `Integer`, `Long`, `Decimal`, `Single`, and `Double`. This means you can convert `SByte` to any of these types without encountering a <xref:System.OverflowException?displayProperty=nameWithType> error.
   
 -   **Type Characters.** `SByte` has no literal type character or identifier type character.  
   
--   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.SByte?displayProperty=fullName> structure.
+-   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.SByte?displayProperty=nameWithType> structure.
   
 ## See also
 
- <xref:System.SByte?displayProperty=fullName>   
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)   
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   
- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)   
- [Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)   
- [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)   
- [Long Data Type](../../../visual-basic/language-reference/data-types/long-data-type.md)   
+ <xref:System.SByte?displayProperty=nameWithType>  
+ [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
+ [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
+ [Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)  
+ [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)  
+ [Long Data Type](../../../visual-basic/language-reference/data-types/long-data-type.md)  
  [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

@@ -128,7 +128,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- From is set to the value in the network element for mailSettings[\&lt;smtp\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/smtp-element-network-settings.md), if it exists.  
+ From is set to the value in the network element for mailSettings[&lt;smtp&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/smtp-element-network-settings.md), if it exists.  
   
  ]]></format>
         </remarks>
@@ -283,9 +283,9 @@
 |Parameter|Property|  
 |---------------|--------------|  
 |`from`|<xref:System.Net.Mail.MailMessage.From%2A>|  
-|-   `to`|-   <xref:System.Net.Mail.MailMessage.To%2A>|  
-|-   `subject`|-   <xref:System.Net.Mail.MailMessage.Subject%2A>|  
-|-   `body`|-   <xref:System.Net.Mail.MailMessage.Body%2A>|  
+|`to`|<xref:System.Net.Mail.MailMessage.To%2A>|  
+|`subject`|<xref:System.Net.Mail.MailMessage.Subject%2A>|  
+|`body`|<xref:System.Net.Mail.MailMessage.Body%2A>|  
   
  By default, the subject and content are assumed to use the default encoding based on local computer settings. Use the <xref:System.Net.Mail.MailMessage.BodyEncoding%2A> and <xref:System.Net.Mail.MailMessage.SubjectEncoding%2A> properties to specify different encodings.  
   
@@ -537,6 +537,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.Mail.MailMessage.HeadersEncoding" />
+        <altmember cref="P:System.Net.Mail.MailMessage.SubjectEncoding" />
+        <altmember cref="T:System.Net.Mime.TransferEncoding" />
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName="BodyTransferEncoding">
@@ -890,12 +894,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Net.Mail.MailMessage.HeadersEncoding%2A> property defaults to <xref:System.Text.Encoding.UTF8%2A?displayProperty=fullName>.  
+ The value of the <xref:System.Net.Mail.MailMessage.HeadersEncoding%2A> property defaults to <xref:System.Text.Encoding.UTF8%2A?displayProperty=nameWithType>.  
   
  SMTP messages consist of headers and body parts. The IETF RFCs for SMTP restrict the header and body part names to be ASCII. However, the IETF RFCs allow header and body part values to contain Unicode characters. In any particular value, if non-ASCII characters exist, then the value is encoded using a combination of character encoding (UTF8 or Shift-JIS, for example) followed by byte encoding (<xref:System.Net.Mime.TransferEncoding.Base64> or <xref:System.Net.Mime.TransferEncoding.QuotedPrintable> for example). The result is usually that only ASCII characters are in the network transmission stream.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.Mail.MailMessage.BodyEncoding" />
+        <altmember cref="P:System.Net.Mail.MailMessage.SubjectEncoding" />
+        <altmember cref="T:System.Net.Mime.TransferEncoding" />
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName="IsBodyHtml">
@@ -920,9 +928,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the mail message body is in Html.</summary>
+        <summary>Gets or sets a value indicating whether the mail message body is in HTML.</summary>
         <value>
-          <see langword="true" /> if the message body is in Html; else <see langword="false" />. The default is <see langword="false" />.</value>
+          <see langword="true" /> if the message body is in HTML; else <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1014,7 +1022,7 @@
         <ReturnType>System.Net.Mail.MailAddressCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the list of addresses to reply to for the mail message.</summary>
+        <summary>Gets the list of addresses to reply to for the mail message.</summary>
         <value>The list of the addresses to reply to for the mail message.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1145,6 +1153,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.Mail.MailMessage.BodyEncoding" />
+        <altmember cref="P:System.Net.Mail.MailMessage.HeadersEncoding" />
+        <altmember cref="T:System.Net.Mime.TransferEncoding" />
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName="To">
@@ -1190,5 +1202,25 @@
         <altCompliant cref="None" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.MailMessage" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Net.Mail.MailMessage" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

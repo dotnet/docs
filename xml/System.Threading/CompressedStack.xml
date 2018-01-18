@@ -31,7 +31,7 @@
 ## Remarks  
  The compressed stack is a compact representation of all the code access security information on the call stack, such as <xref:System.Security.CodeAccessPermission.Deny%2A> and <xref:System.Security.CodeAccessPermission.Assert%2A> actions. For example, if a <xref:System.Security.CodeAccessPermission.Deny%2A> action is two stack frames up from the current frame and there are no other code access security annotations between there and the current frame, the compressed stack records only that information, without having to serialize the entire call stack.  
   
- The <xref:System.Threading.CompressedStack>class is used internally by the <xref:System.Security.SecurityContext> class. For example, the <xref:System.Security.SecurityContext.Capture%2A?displayProperty=fullName> method captures the compressed stack for the current call stack, along with impersonation and culture information. The <xref:System.Security.SecurityContext> class is used in turn by the <xref:System.Threading.ExecutionContext> class to flow context across threads, for example when scheduling thread pool tasks.  
+ The <xref:System.Threading.CompressedStack> class is used internally by the <xref:System.Security.SecurityContext> class. For example, the <xref:System.Security.SecurityContext.Capture%2A?displayProperty=nameWithType> method captures the compressed stack for the current call stack, along with impersonation and culture information. The <xref:System.Security.SecurityContext> class is used in turn by the <xref:System.Threading.ExecutionContext> class to flow context across threads, for example when scheduling thread pool tasks.  
   
  This class is not used in ordinary application programming.  
   
@@ -153,7 +153,7 @@
  If security is enabled, the current compressed stack is returned. If security is disabled, <xref:System.Threading.CompressedStack.GetCompressedStack%2A> returns an empty <xref:System.Threading.CompressedStack> object.  
   
 > [!NOTE]
->  This method uses <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> to prevent it from being called from untrusted code; only the immediate caller is required to have <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A?displayProperty=fullName> permission. For important limitations on using the `LinkDemand` member, see [Demand vs. LinkDemand](http://msdn.microsoft.com/en-us/1ab877f2-70f4-4e0d-8116-943999dfe8f5).  
+>  This method uses <xref:System.Security.Permissions.SecurityAction.LinkDemand?displayProperty=nameWithType> to prevent it from being called from untrusted code; only the immediate caller is required to have <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A?displayProperty=nameWithType> permission. For important limitations on using the `LinkDemand` member, see [Demand vs. LinkDemand](http://msdn.microsoft.com/en-us/1ab877f2-70f4-4e0d-8116-943999dfe8f5).  
   
 > [!NOTE]
 >  This member also makes a link demand for the ECMA public key, which is not a valid cryptographic key but a pseudo key. Within the .NET Framework the link demand for the ECMA pseudo key is automatically converted to a link demand for the Microsoft public key. The security exception is based on the Microsoft public key, not the ECMA pseudo key.  

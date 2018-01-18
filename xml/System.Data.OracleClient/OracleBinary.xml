@@ -396,6 +396,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.OracleClient.OracleBinary.IsNull" />
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -429,7 +430,7 @@
   
  In Visual Basic, you can use the operators defined by a class, but you cannot override them or create your own.  
   
- The equivalent method for this operator is <xref:System.Data.OracleClient.OracleBinary.Concat%28System.Data.OracleClient.OracleBinary%2CSystem.Data.OracleClient.OracleBinary%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Data.OracleClient.OracleBinary.Concat%28System.Data.OracleClient.OracleBinary%2CSystem.Data.OracleClient.OracleBinary%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -455,7 +456,7 @@
         <summary>Compares two <see cref="T:System.Data.OracleClient.OracleBinary" /> structures to determine if they are equal.</summary>
         <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the two instances are equal or <see cref="F:System.Data.OracleClient.OracleBoolean.False" /> if the two instances are not equal. If either instance of <see langword="OracleBinary" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see langword="OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleBinary.Equals%28System.Object%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleBinary.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -475,10 +476,19 @@
         <Parameter Name="x" Type="System.Data.OracleClient.OracleBinary" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleBinary" />.</param>
+        <summary>Gets the contents of the <see cref="P:System.Data.OracleClient.OracleBinary.Value" /> property of the <see cref="T:System.Data.OracleClient.OracleBinary" /> parameter as an array of bytes.</summary>
+        <returns>An array of bytes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [Visual Basic]  
+  
+ In Visual Basic, you can use the conversions defined by the class, but you cannot override them or create your own. If Option Strict is set, you must use the \<CType operator> to convert the <xref:System.Data.OracleClient.OracleBinary> to a binary object.  
+  
+ The equivalent method for this operator is <xref:System.Data.OracleClient.OracleBinary.Value?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -503,7 +513,7 @@
         <summary>Compares two <see cref="T:System.Data.OracleClient.OracleBinary" /> structures to determine if the first is greater than the second.</summary>
         <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is greater than the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see langword="OracleBinary" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see langword="OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleBinary.GreaterThan%28System.Data.OracleClient.OracleBinary%2CSystem.Data.OracleClient.OracleBinary%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleBinary.GreaterThan%28System.Data.OracleClient.OracleBinary%2CSystem.Data.OracleClient.OracleBinary%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -529,7 +539,7 @@
         <summary>Compares two <see cref="T:System.Data.OracleClient.OracleBinary" /> structures to determine if the first is greater than or equal to the second.</summary>
         <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is greater than or equal to the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see langword="OracleBinary" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see langword="OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleBinary.GreaterThanOrEqual%28System.Data.OracleClient.OracleBinary%2CSystem.Data.OracleClient.OracleBinary%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleBinary.GreaterThanOrEqual%28System.Data.OracleClient.OracleBinary%2CSystem.Data.OracleClient.OracleBinary%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -549,9 +559,9 @@
         <Parameter Name="b" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="b">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="b">The array of bytes to be converted.</param>
+        <summary>Converts an array of bytes to an <see cref="T:System.Data.OracleClient.OracleBinary" /> structure.</summary>
+        <returns>An <see langword="OracleBinary" /> structure that represents the converted array of bytes.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -577,7 +587,7 @@
         <summary>Compares two <see cref="T:System.Data.OracleClient.OracleBinary" /> structures to determine if they are equal.</summary>
         <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.OracleClient.OracleBoolean.False" /> if the two instances are equal. If either instance of <see langword="OracleBinary" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see langword="OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleBinary.NotEquals%28System.Data.OracleClient.OracleBinary%2CSystem.Data.OracleClient.OracleBinary%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleBinary.NotEquals%28System.Data.OracleClient.OracleBinary%2CSystem.Data.OracleClient.OracleBinary%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -603,7 +613,7 @@
         <summary>Compares two <see cref="T:System.Data.OracleClient.OracleBinary" /> structures to determine if the first is less than the second.</summary>
         <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is less than the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see langword="OracleBinary" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see langword="OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleBinary.LessThan%28System.Data.OracleClient.OracleBinary%2CSystem.Data.OracleClient.OracleBinary%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleBinary.LessThan%28System.Data.OracleClient.OracleBinary%2CSystem.Data.OracleClient.OracleBinary%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -629,7 +639,7 @@
         <summary>Compares two <see cref="T:System.Data.OracleClient.OracleBinary" /> structures to determine if the first is less than or equal to the second.</summary>
         <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is less than or equal to the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see langword="OracleBinary" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see langword="OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleBinary.LessThanOrEqual%28System.Data.OracleClient.OracleBinary%2CSystem.Data.OracleClient.OracleBinary%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleBinary.LessThanOrEqual%28System.Data.OracleClient.OracleBinary%2CSystem.Data.OracleClient.OracleBinary%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -658,5 +668,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares two <see cref="T:System.Data.OracleClient.OracleBinary" /> structures to determine if they are equal.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

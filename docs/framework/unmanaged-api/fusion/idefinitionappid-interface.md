@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IDefinitionAppId"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IDefinitionAppId interface [.NET Framework fusion]"
 ms.assetid: e72f2550-bdec-4a20-a2f4-2e14847266c1
@@ -28,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IDefinitionAppId Interface
 Represents a unique identifier for the code that defines the application in the current scope.  

@@ -32,6 +32,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ProtectedConfiguration" />
+    <altmember cref="T:System.Configuration.ProtectedConfigurationProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,6 +60,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ProtectedConfiguration" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -92,6 +95,7 @@
  \- or -  
   
  The collection is read-only.</exception>
+        <altmember cref="T:System.Configuration.ProtectedConfigurationProvider" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -118,6 +122,7 @@
         <summary>Gets a <see cref="T:System.Configuration.ProtectedConfigurationProvider" /> object in the collection with the specified name.</summary>
         <value>The <see cref="T:System.Configuration.ProtectedConfigurationProvider" /> object with the specified name, or <see langword="null" /> if there is no object with that name.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Configuration.ProtectedConfigurationProvider" />
       </Docs>
     </Member>
   </Members>

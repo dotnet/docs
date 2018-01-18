@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 61e0b396-09d7-4e13-9711-7dcbcbd103a0
 caps.latest.revision: 13
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # SqlClient Support for High Availability, Disaster Recovery
 This topic discusses SqlClient support (added in [!INCLUDE[net_v45](../../../../../includes/net-v45-md.md)]) for high-availability, disaster recovery -- AlwaysOn Availability Groups.  AlwaysOn Availability Groups feature was added to [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] 2012. For more information about AlwaysOn Availability Groups, see [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] Books Online.  
@@ -100,5 +102,5 @@ This topic discusses SqlClient support (added in [!INCLUDE[net_v45](../../../../
  Read-only routing may take longer than connecting to the primary because read only routing first connects to the primary and then looks for the best available readable secondary. Because of this, you should increase your login timeout.  
   
 ## See Also  
- [SQL Server Features and ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-features-and-adonet.md)   
+ [SQL Server Features and ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-features-and-adonet.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

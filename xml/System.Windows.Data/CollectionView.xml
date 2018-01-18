@@ -35,17 +35,13 @@
   
  Because a view does not change the underlying source collection, a source collection can have multiple views associated with it. By using views, you can display the same data in different ways. For example, you can use two views on a collection of `Task` objects to show tasks sorted by priority on one part of the page and grouped by area on another part of the page.  
   
- In [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] applications, all collections have an associated default collection view. Rather than working with the collection directly, the binding engine always accesses the collection through the associated view. To get the default view, use the <xref:System.Windows.Data.CollectionViewSource.GetDefaultView%2A?displayProperty=fullName> method. An internal class based on <xref:System.Windows.Data.CollectionView> is the default view for collections that implement only <xref:System.Collections.IEnumerable>. <xref:System.Windows.Data.ListCollectionView> is the default view for collections that implement <xref:System.Collections.IList>. <xref:System.Windows.Data.BindingListCollectionView> is the default view for collections that implement <xref:System.ComponentModel.IBindingListView> or <xref:System.ComponentModel.IBindingList>.  
+ In [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] applications, all collections have an associated default collection view. Rather than working with the collection directly, the binding engine always accesses the collection through the associated view. To get the default view, use the <xref:System.Windows.Data.CollectionViewSource.GetDefaultView%2A?displayProperty=nameWithType> method. An internal class based on <xref:System.Windows.Data.CollectionView> is the default view for collections that implement only <xref:System.Collections.IEnumerable>. <xref:System.Windows.Data.ListCollectionView> is the default view for collections that implement <xref:System.Collections.IList>. <xref:System.Windows.Data.BindingListCollectionView> is the default view for collections that implement <xref:System.ComponentModel.IBindingListView> or <xref:System.ComponentModel.IBindingList>.  
   
  Alternatively, you can create a view of your collection in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] by using the <xref:System.Windows.Data.CollectionViewSource> class and then bind your control to that view. The <xref:System.Windows.Data.CollectionViewSource> class is the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] representation of the <xref:System.Windows.Data.CollectionView> class. For an example, see [How to: Sort and Group Data Using a View in XAML](~/docs/framework/wpf/data/how-to-sort-and-group-data-using-a-view-in-xaml.md).  
   
  For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
  To set a view in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], use the <xref:System.Windows.Data.CollectionViewSource> class. <xref:System.Windows.Data.CollectionViewSource> is the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] representation of the <xref:System.Windows.Data.CollectionView> class, and it exposes the most commonly used members of the <xref:System.Windows.Data.CollectionView> class.  
-  
-<a name="xamlTextUsage_CollectionView"></a>   
-## XAML Text Usage  
- See Remarks  
   
  ]]></format>
     </remarks>
@@ -194,6 +190,7 @@
       <Docs>
         <summary>Clears any pending changes from the change log.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Data.CollectionView.OnBeginChangeLogging(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ClearPendingChanges">
@@ -229,6 +226,7 @@
       <Docs>
         <summary>Occurs when the view has changed.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" />
       </Docs>
     </Member>
     <Member MemberName="Comparer">
@@ -348,6 +346,7 @@
         <block subset="none" type="overrides">
           <para>Raise this event after changing the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" />.</para>
         </block>
+        <altmember cref="E:System.ComponentModel.ICollectionView.CurrentChanged" />
       </Docs>
     </Member>
     <Member MemberName="CurrentChanging">
@@ -368,6 +367,7 @@
         <block subset="none" type="overrides">
           <para>Raise this event before changing the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" />.</para>
         </block>
+        <altmember cref="E:System.ComponentModel.ICollectionView.CurrentChanging" />
       </Docs>
     </Member>
     <Member MemberName="CurrentItem">
@@ -498,6 +498,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The current implementation does not support filtering.</exception>
+        <altmember cref="E:System.Windows.Data.CollectionViewSource.Filter" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -579,6 +580,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Data.ListCollectionView.GroupDescriptions" />
       </Docs>
     </Member>
     <Member MemberName="Groups">
@@ -630,9 +632,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If this method returns an index other than -1, it must always be true that view[index-1] < item <= view[index], where the comparisons are done using the <xref:System.Collections.IComparer.Compare%2A?displayProperty=fullName> method of the view, if one exists.  
+ If this method returns an index other than -1, it must always be true that view[index-1] < item <= view[index], where the comparisons are done using the <xref:System.Collections.IComparer.Compare%2A?displayProperty=nameWithType> method of the view, if one exists.  
   
- This particular behavior of the method is used by some <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event handlers to speed up reaction to insertion and deletion. If the derived class does not override this method, a listener does a binary search using the <xref:System.Collections.IComparer.Compare%2A?displayProperty=fullName> method.  
+ This particular behavior of the method is used by some <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event handlers to speed up reaction to insertion and deletion. If the derived class does not override this method, a listener does a binary search using the <xref:System.Collections.IComparer.Compare%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -662,6 +664,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Data.CollectionView.IsCurrentAfterLast" />
       </Docs>
     </Member>
     <Member MemberName="IsCurrentBeforeFirst">
@@ -688,6 +691,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Data.CollectionView.IsCurrentAfterLast" />
       </Docs>
     </Member>
     <Member MemberName="IsCurrentInSync">
@@ -828,6 +832,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Data.CollectionView.CurrentItem" />
       </Docs>
     </Member>
     <Member MemberName="MoveCurrentToFirst">
@@ -855,6 +860,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Data.CollectionView.IsCurrentBeforeFirst" />
       </Docs>
     </Member>
     <Member MemberName="MoveCurrentToLast">
@@ -882,6 +888,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Data.CollectionView.IsCurrentAfterLast" />
       </Docs>
     </Member>
     <Member MemberName="MoveCurrentToNext">
@@ -909,6 +916,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Data.CollectionView.IsCurrentAfterLast" />
       </Docs>
     </Member>
     <Member MemberName="MoveCurrentToPosition">
@@ -966,6 +974,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Data.CollectionView.IsCurrentBeforeFirst" />
       </Docs>
     </Member>
     <Member MemberName="NeedsRefresh">
@@ -992,6 +1001,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Data.CollectionView.Refresh" />
+        <altmember cref="M:System.Windows.Data.CollectionView.DeferRefresh" />
       </Docs>
     </Member>
     <Member MemberName="NewItemPlaceholder">
@@ -1317,6 +1328,7 @@
       <Docs>
         <summary>Occurs when a property value has changed.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" />
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -1344,6 +1356,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Data.CollectionView.DeferRefresh" />
+        <altmember cref="P:System.Windows.Data.CollectionView.NeedsRefresh" />
       </Docs>
     </Member>
     <Member MemberName="RefreshOrDefer">
@@ -1465,6 +1479,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Data.CollectionViewSource.SortDescriptions" />
       </Docs>
     </Member>
     <Member MemberName="SourceCollection">
@@ -1521,7 +1536,35 @@
         <value>
           <see langword="true" /> if it has been necessary to update the change log because a <see cref="E:System.Windows.Data.CollectionView.CollectionChanged" /> notification has been received on a different thread without first entering the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] thread dispatcher; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Data.CollectionView.OnBeginChangeLogging(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetCurrent">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the current item of the <see cref="T:System.Windows.Data.CollectionView" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OnCurrentChanging">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Raises the <see cref="E:System.Windows.Data.CollectionView.CurrentChanging" /> event.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OnCollectionChanged">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Raises the <see cref="E:System.Windows.Data.CollectionView.CollectionChanged" /> event.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

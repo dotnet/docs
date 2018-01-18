@@ -423,5 +423,14 @@ MsgBox(CStr(SaveFileDialogArray(1).Text))
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.SaveFileDialogArray" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

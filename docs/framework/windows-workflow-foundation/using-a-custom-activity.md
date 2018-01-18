@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8f356419-681a-4175-ae93-878eee970249
 caps.latest.revision: 2
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using a custom activity
 Activities that derive from <xref:System.Activities.Activity> or its subclasses can be composed into larger workflows, or created directly in code. This topic describes how to use custom activities in workflows created either in code or in the designer.  

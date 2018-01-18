@@ -1,16 +1,10 @@
 ---
 title: "Arrays (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "arrays [C#]"
   - "C# language, arrays"
@@ -18,21 +12,6 @@ ms.assetid: bb79bdde-e570-4c30-adb0-1dd5759ae041
 caps.latest.revision: 33
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Arrays (C# Programming Guide)
 You can store multiple variables of the same type in an array data structure. You declare an array by specifying the type of its elements.  
@@ -41,7 +20,7 @@ You can store multiple variables of the same type in an array data structure. Yo
   
  The following examples create single-dimensional, multidimensional, and jagged arrays:  
   
- [!code-cs[csProgGuideArrays#1](../../../csharp/programming-guide/arrays/codesnippet/CSharp/index_1.cs)]  
+ [!code-csharp[csProgGuideArrays#1](../../../csharp/programming-guide/arrays/codesnippet/CSharp/index_1.cs)]  
   
 ## Array Overview  
  An array has the following properties:  
@@ -74,6 +53,6 @@ You can store multiple variables of the same type in an array data structure. Yo
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)  
  [Array Collection Type](http://msdn.microsoft.com/en-us/8a9964de-8941-47b1-a3cf-a01bc88db9e8)

@@ -50,6 +50,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Forms.ScrollBar.LargeChange" />
+    <altmember cref="P:System.Windows.Forms.ScrollBar.SmallChange" />
+    <altmember cref="P:System.Windows.Forms.ScrollBar.Maximum" />
+    <altmember cref="P:System.Windows.Forms.ScrollBar.Minimum" />
+    <altmember cref="P:System.Windows.Forms.ScrollBar.Value" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -167,6 +172,7 @@
         <summary>Gets or sets the background color for the control.</summary>
         <value>A <see cref="T:System.Drawing.Color" /> that represents the background color of the control. The default is the value of the <see cref="P:System.Windows.Forms.Control.DefaultBackColor" /> property.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.BackColor" />
       </Docs>
     </Member>
     <Member MemberName="BackColorChanged">
@@ -218,6 +224,7 @@
         <summary>Gets or sets the background image displayed in the control.</summary>
         <value>An <see cref="T:System.Drawing.Image" /> that represents the image to display in the background of the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.BackgroundImage" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundImageChanged">
@@ -269,6 +276,7 @@
         <summary>Gets or sets the background image layout as defined in the <see cref="T:System.Windows.Forms.ImageLayout" /> enumeration.</summary>
         <value>One of the values of <see cref="T:System.Windows.Forms.ImageLayout" /> (Center , None, Stretch, Tile, or Zoom). Tile is the default value.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.BackgroundImageLayout" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundImageLayoutChanged">
@@ -344,6 +352,7 @@
         <summary>Gets the required creation parameters when the control handle is created.</summary>
         <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.CreateParams" />
       </Docs>
     </Member>
     <Member MemberName="DefaultImeMode">
@@ -365,10 +374,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As implemented in the <xref:System.Windows.Forms.ScrollBar> class, this property always returns the <xref:System.Windows.Forms.ImeMode?displayProperty=fullName> value.  
+ As implemented in the <xref:System.Windows.Forms.ScrollBar> class, this property always returns the <xref:System.Windows.Forms.ImeMode.Disable?displayProperty=nameWithType> value.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ImeMode" />
       </Docs>
     </Member>
     <Member MemberName="DefaultMargin">
@@ -446,6 +456,7 @@
         <summary>Gets or sets the font of the text displayed by the control.</summary>
         <value>The <see cref="T:System.Drawing.Font" /> to apply to the text displayed by the control. The default is the value of the <see cref="P:System.Windows.Forms.Control.DefaultFont" /> property.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Font" />
       </Docs>
     </Member>
     <Member MemberName="FontChanged">
@@ -588,6 +599,8 @@
         <summary>Gets or sets the Input Method Editor (IME) mode supported by this control.</summary>
         <value>One of the <see cref="T:System.Windows.Forms.ImeMode" /> values.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.ImeMode" />
+        <altmember cref="P:System.Windows.Forms.ScrollBar.DefaultImeMode" />
       </Docs>
     </Member>
     <Member MemberName="ImeModeChanged">
@@ -656,7 +669,7 @@
   
  In this example, the <xref:System.Windows.Forms.ScrollBar.LargeChange%2A> property is set relative to the size of the <xref:System.Windows.Forms.PictureBox>.  
   
- You must add references to the <xref:System.Drawing?displayProperty=fullName> and <xref:System.Windows.Forms?displayProperty=fullName> namespaces to run this example.  
+ You must add references to the <xref:System.Drawing?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> namespaces to run this example.  
   
 > [!NOTE]
 >  For instructions about how to run this example in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/en-us/cc447f7e-4c3b-4397-9d05-aeba3ca49416).  
@@ -667,6 +680,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The assigned value is less than 0.</exception>
+        <altmember cref="P:System.Windows.Forms.ScrollBar.SmallChange" />
       </Docs>
     </Member>
     <Member MemberName="Maximum">
@@ -707,7 +721,7 @@
   
  In this example, the <xref:System.Windows.Forms.ScrollBar.Maximum%2A> property is set to the size of the <xref:System.Drawing.Image> plus the size of the scrollbar if it is visible plus an adjustment factor of the size of the <xref:System.Windows.Forms.ScrollBar.LargeChange%2A> property.  
   
- You must add references to the <xref:System.Drawing?displayProperty=fullName> and <xref:System.Windows.Forms?displayProperty=fullName> namespaces to run this example.  
+ You must add references to the <xref:System.Drawing?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> namespaces to run this example.  
   
 > [!NOTE]
 >  For instructions about how to run this example in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/en-us/cc447f7e-4c3b-4397-9d05-aeba3ca49416).  
@@ -717,6 +731,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ScrollBar.Minimum" />
       </Docs>
     </Member>
     <Member MemberName="Minimum">
@@ -750,7 +765,7 @@
   
  In this example, the <xref:System.Windows.Forms.ScrollBar.Minimum%2A> property is set to 0.  
   
- You must add references to the <xref:System.Drawing?displayProperty=fullName> and <xref:System.Windows.Forms?displayProperty=fullName> namespaces to run this example.  
+ You must add references to the <xref:System.Drawing?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> namespaces to run this example.  
   
 > [!NOTE]
 >  For instructions about how to run this example in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/en-us/cc447f7e-4c3b-4397-9d05-aeba3ca49416).  
@@ -760,6 +775,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ScrollBar.Maximum" />
       </Docs>
     </Member>
     <Member MemberName="MouseClick">
@@ -934,6 +950,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.EnabledChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnEnabledChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnHandleCreated">
@@ -955,6 +972,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseWheel">
@@ -1032,6 +1050,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ScrollBar.OnScroll(System.Windows.Forms.ScrollEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.ScrollBar.OnScroll(System.Windows.Forms.ScrollEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.ScrollBar.Scroll" />
+        <altmember cref="T:System.Windows.Forms.ScrollEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnValueChanged">
@@ -1077,6 +1097,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ScrollBar.OnValueChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.ScrollBar.OnValueChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.ScrollBar.ValueChanged" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -1143,6 +1165,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ScrollBar.OnScroll(System.Windows.Forms.ScrollEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.ScrollEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="SmallChange">
@@ -1180,7 +1204,7 @@
   
  In this example, the <xref:System.Windows.Forms.ScrollBar.SmallChange%2A> property is set relative to the size of the <xref:System.Windows.Forms.PictureBox>.  
   
- You must add references to the <xref:System.Drawing?displayProperty=fullName> and <xref:System.Windows.Forms?displayProperty=fullName> namespaces to run this example.  
+ You must add references to the <xref:System.Drawing?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> namespaces to run this example.  
   
 > [!NOTE]
 >  For instructions about how to run this example in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/en-us/cc447f7e-4c3b-4397-9d05-aeba3ca49416).  
@@ -1191,6 +1215,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The assigned value is less than 0.</exception>
+        <altmember cref="P:System.Windows.Forms.ScrollBar.LargeChange" />
       </Docs>
     </Member>
     <Member MemberName="TabStop">
@@ -1254,6 +1279,7 @@
         <summary>Gets or sets the text associated with this control.</summary>
         <value>The text associated with this control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Text" />
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -1410,11 +1436,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ScrollBar.OnValueChanged(System.EventArgs)" />
+        <altmember cref="T:System.EventHandler" />
       </Docs>
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBar.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

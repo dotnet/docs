@@ -62,12 +62,13 @@
 ## Examples  
  The following code example demonstrates how an array binds and fills a <xref:System.Web.UI.MobileControls.List>. Notice that you can programmatically set the <xref:System.Web.UI.MobileControls.List.DataTextField%2A> and <xref:System.Web.UI.MobileControls.List.DataValueField%2A> properties of the <xref:System.Web.UI.MobileControls.List> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileListSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileListSample/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileListSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileListSample/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileListSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileListSample/cs/Default.aspx#1)]
+ [!code-aspx-vb[MobileListSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileListSample/vb/Default.aspx#1)]  
   
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.List" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -104,6 +105,7 @@
         <param name="obj">An <see cref="T:System.Object" /> that represents the parsed element.</param>
         <summary>Notifies the server control that an element was parsed, and adds the element to the server control's <see cref="T:System.Web.UI.ControlCollection" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobileControl.AddParsedSubObject(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -143,6 +145,7 @@
         <param name="doDataBind">Set to <see langword="true" /> if the instantiated templates must bind to available data (which usually happens on the first request). Set to <see langword="false" /> if the templates must not bind to data, and instead rely on view state to fill them in (which usually happens on subsequent postbacks).</param>
         <summary>Called by device adapters to create the default templated user interface (UI) for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobileControl.CreateDefaultTemplatedUI(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="CreateItems">
@@ -408,6 +411,7 @@
         <value>
           <see langword="true" /> if the control has an event handler registered for the appropriate <see cref="E:System.Web.UI.MobileControls.List.ItemCommand" /> event; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Web.UI.MobileControls.List.ItemCommand" />
       </Docs>
     </Member>
     <Member MemberName="InternalItemCount">
@@ -426,6 +430,7 @@
         <summary>Gets the number of items in the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The number of items in the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.PagedControl.InternalItemCount" />
       </Docs>
     </Member>
     <Member MemberName="ItemCommand">
@@ -461,6 +466,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Command" />
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
+        <altmember cref="E:System.Web.UI.MobileControls.ObjectList.ItemCommand" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListCommandEventArgs" />
+        <altmember cref="M:System.Web.UI.MobileControls.Command.OnItemCommand(System.Web.UI.WebControls.CommandEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemDataBind">
@@ -493,6 +503,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.ListDataBindEventArgs" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListDataBindEventArgs" />
+        <altmember cref="T:System.Web.UI.MobileControls.SelectionList" />
+        <altmember cref="M:System.Web.UI.MobileControls.List.OnItemDataBind(System.Web.UI.MobileControls.ListDataBindEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -590,6 +605,7 @@
         <param name="savedState">An <see cref="T:System.Object" /> that represents the control state to be restored.</param>
         <summary>Restores view-state information from a previous page request that was saved by the <see cref="M:System.Web.UI.MobileControls.List.SaveViewState" /> method. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobileControl.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -615,6 +631,7 @@
         <returns>
           <see langword="true" /> if the event has been canceled; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.OnBubbleEvent(System.Object,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnDataBinding">
@@ -636,6 +653,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Web.UI.Control.DataBinding" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobileControl.OnDataBinding(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnItemCommand">
@@ -664,6 +682,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.MobileControls.List.ItemCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnItemDataBind">
@@ -692,6 +711,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.MobileControls.List.ItemDataBind" />
       </Docs>
     </Member>
     <Member MemberName="OnLoadItems">
@@ -713,6 +733,7 @@
         <param name="e">An object defined by an <see cref="T:System.EventArgs" /> object that contains event data.</param>
         <summary>Called when the control is custom paginated and needs more data. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.PagedControl.OnLoadItems(System.Web.UI.MobileControls.LoadItemsEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnPageChange">
@@ -736,6 +757,7 @@
         <param name="newPageIndex">Contains the index number of the current page after pagination.</param>
         <summary>Paginates a control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobileControl.OnPageChange(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -757,6 +779,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -797,6 +820,7 @@
         <summary>Saves any server control view-state changes that have occurred since the time the page was posted back to the server. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <returns>Returns the server control's current view state. If there is no view state associated with the control, this method returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobileControl.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">

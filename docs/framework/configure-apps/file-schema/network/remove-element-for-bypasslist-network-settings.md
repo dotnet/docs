@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/defaultProxy/bypasslist/remove"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#remove"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "<bypasslist>, remove element"
   - "remove elemment, bypasslist"
@@ -27,6 +22,8 @@ caps.latest.revision: 16
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;remove&gt; Element for bypasslist (Network Settings)
 Removes an IP address or DNS name from the proxy bypass list.  
@@ -40,9 +37,9 @@ Removes an IP address or DNS name from the proxy bypass list.
 ## Syntax  
   
 ```xml  
-      <remove   
-   name = "regular expression"   
-/>  
+<remove   
+  address="regular expression"   
+/>
 ```  
   
 ## Attributes and Elements  
@@ -52,7 +49,7 @@ Removes an IP address or DNS name from the proxy bypass list.
   
 |**Attribute**|**Description**|  
 |-------------------|---------------------|  
-|`name`|A regular expression describing an IP address or DNS name.|  
+|`address`|A regular expression describing an IP address or DNS name.|  
   
 ### Child Elements  
  None.  
@@ -66,7 +63,7 @@ Removes an IP address or DNS name from the proxy bypass list.
 ## Remarks  
  The `remove` element removes regular expressions describing IP addresses or DNS server names from the list of addresses that bypass a proxy server. The addresses were defined earlier in the configuration file or at a higher level in the configuration hierarchy.  
   
- The value for the `name` attribute should be a regular expression that describes a set of IP addresses or host names.  
+ The value for the `address` attribute should be a regular expression that describes a set of IP addresses or host names.  
   
  For more information about regular expressions, see .[.NET Framework Regular Expressions](../../../../../docs/standard/base-types/regular-expressions.md).  
   
@@ -81,7 +78,7 @@ Removes an IP address or DNS name from the proxy bypass list.
   <system.net>  
     <defaultProxy>  
       <bypasslist>  
-        <remove name = "[a-z]+\.adventure-works\.com$" />  
+        <remove address="[a-z]+\.adventure-works\.com$" />  
         <add address="[a-z]+\.contoso\.com$" />  
       </bypasslist>  
     </defaultProxy>  
@@ -90,5 +87,5 @@ Removes an IP address or DNS name from the proxy bypass list.
 ```  
   
 ## See Also  
- <xref:System.Net.WebProxy?displayProperty=fullName>   
+ <xref:System.Net.WebProxy?displayProperty=nameWithType>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

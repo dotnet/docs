@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorGetAvailableThreads"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorGetAvailableThreads method [.NET Framework hosting]"
   - "ICorThreadpool::CorGetAvailableThreads method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorThreadpool::CorGetAvailableThreads Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  

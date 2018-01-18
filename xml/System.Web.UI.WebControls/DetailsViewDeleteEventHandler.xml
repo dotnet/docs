@@ -33,15 +33,19 @@
 ## Examples  
  The following code example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.DetailsViewDeleteEventHandler> delegate to the <xref:System.Web.UI.WebControls.DetailsView.ItemDeleting> event of a <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewDeleteEventHandlerInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewDeleteEventHandlerInline/CS/detailsviewdeleteeventhandlerinlinecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewDeleteEventHandlerInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewDeleteEventHandlerInline/VB/detailsviewdeleteeventhandlerinlinevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewDeleteEventHandlerInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewDeleteEventHandlerInline/CS/detailsviewdeleteeventhandlerinlinecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewDeleteEventHandlerInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewDeleteEventHandlerInline/VB/detailsviewdeleteeventhandlerinlinevb.aspx#1)]  
   
  The following code example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.DetailsViewDeleteEventHandler> delegate to the <xref:System.Web.UI.WebControls.DetailsView.ItemDeleting> event of a <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewDeleteEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewDeleteEventHandler/CS/detailsviewdeleteeventhandlercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewDeleteEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewDeleteEventHandler/VB/detailsviewdeleteeventhandlervb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewDeleteEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewDeleteEventHandler/CS/detailsviewdeleteeventhandlercs.aspx#1)]
+ [!code-aspx-vb[DetailsViewDeleteEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewDeleteEventHandler/VB/detailsviewdeleteeventhandlervb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsViewDeleteEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemDeleting" />
+    <altmember cref="M:System.Web.UI.WebControls.DetailsView.OnItemDeleting(System.Web.UI.WebControls.DetailsViewDeleteEventArgs)" />
   </Docs>
 </Type>

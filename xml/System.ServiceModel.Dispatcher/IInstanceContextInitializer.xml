@@ -17,7 +17,7 @@
   
  There can be any number of context initializers for a service. Typically, the <xref:System.ServiceModel.Dispatcher.IInstanceContextInitializer> is added to attach an extension to the <xref:System.ServiceModel.InstanceContext> object as a mechanism for passing data throughout an application.  
   
- If you want to participate in providing or selecting the <xref:System.ServiceModel.InstanceContext> object that processes a message, see <xref:System.ServiceModel.Dispatcher.IInstanceContextProvider?displayProperty=fullName>.  
+ If you want to participate in providing or selecting the <xref:System.ServiceModel.InstanceContext> object that processes a message, see <xref:System.ServiceModel.Dispatcher.IInstanceContextProvider?displayProperty=nameWithType>.  
   
  ]]></format>
     </remarks>

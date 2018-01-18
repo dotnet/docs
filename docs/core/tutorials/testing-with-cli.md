@@ -10,6 +10,8 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 52ff1be3-d92e-4477-9c84-8c1771e87ab5
+ms.workload: 
+  - dotnetcore
 ---
 
 # Organizing and testing projects with the .NET Core command line
@@ -88,7 +90,6 @@ Create the following folder structure with file content indicated:
 Execute the following commands:
 
 ```console
-dotnet restore
 dotnet run
 ```
 
@@ -184,7 +185,11 @@ The following shows the complete project structure:
       |__NewTypesTests.csproj
 ```
 
-Start in the *test/NewTypesTests* directory. Restore the test project with the [`dotnet restore`](../tools/dotnet-restore.md) command. Run the tests with the [`dotnet test`](../tools/dotnet-test.md) command. This command starts the test runner specified in the project file.
+Start in the *test/NewTypesTests* directory. Restore the test project with the [`dotnet restore`](../tools/dotnet-restore.md) 
+ command. Run the tests with the [`dotnet test`](../tools/dotnet-test.md) command. This command starts the test runner specified in the project file.
+
+ [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+
  
 As expected, testing fails, and the console displays the following output:
  
@@ -254,3 +259,4 @@ Test execution time: 1.6634 Seconds
 Testing passes. The pet types' methods return the correct values when talking to the owner.
 
 You've learned techniques for organizing and testing projects using xUnit. Go forward with these techniques applying them in your own projects. *Happy coding!*
+

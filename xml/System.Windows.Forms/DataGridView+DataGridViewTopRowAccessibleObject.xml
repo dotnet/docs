@@ -36,6 +36,16 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+    <altmember cref="T:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject" />
+    <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+    <altmember cref="T:System.Windows.Forms.AccessibleRole" />
+    <altmember cref="M:System.Windows.Forms.Control.CreateAccessibilityInstance" />
+    <altmember cref="P:System.Windows.Forms.Control.AccessibleName" />
+    <altmember cref="P:System.Windows.Forms.Control.AccessibleDescription" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,6 +61,9 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject" /> class without setting the <see cref="P:System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.Owner" /> property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.Owner" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -69,6 +82,9 @@
         <param name="owner">The <see cref="T:System.Windows.Forms.DataGridView" /> that owns the <see cref="T:System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject" /></param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject" /> class, setting the <see cref="P:System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.Owner" /> property to the specified value.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.Owner" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
       </Docs>
     </Member>
     <Member MemberName="Bounds">
@@ -90,11 +106,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about this property, see the <xref:System.Windows.Forms.AccessibleObject.Bounds%2A?displayProperty=fullName> property.  
+ For more information about this property, see the <xref:System.Windows.Forms.AccessibleObject.Bounds%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.Owner" /> property is not set.</exception>
+        <altmember cref="T:System.Drawing.Rectangle" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
       </Docs>
     </Member>
     <Member MemberName="GetChild">
@@ -127,6 +146,10 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.Owner" /> property is not set.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than 0.</exception>
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.Owner" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
       </Docs>
     </Member>
     <Member MemberName="GetChildCount">
@@ -149,11 +172,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The number of child accessible objects that belong to the <xref:System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject> corresponds to the number of visible columns in the <xref:System.Windows.Forms.DataGridView>. If the <xref:System.Windows.Forms.DataGridView.RowHeadersVisible%2A?displayProperty=fullName> property is `true`, the <xref:System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.GetChildCount%2A> method includes the <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell> in the count of child accessible objects.  
+ The number of child accessible objects that belong to the <xref:System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject> corresponds to the number of visible columns in the <xref:System.Windows.Forms.DataGridView>. If the <xref:System.Windows.Forms.DataGridView.RowHeadersVisible%2A?displayProperty=nameWithType> property is `true`, the <xref:System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.GetChildCount%2A> method includes the <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell> in the count of child accessible objects.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.Owner" /> property is not set.</exception>
+        <altmember cref="P:System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.Owner" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.RowHeadersVisible" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewTopLeftHeaderCell" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -172,6 +199,8 @@
         <summary>Gets the name of the accessible object.</summary>
         <value>The string "Top Row".</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -210,6 +239,11 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.Owner" /> property is not set.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Windows.Forms.AccessibleNavigation" />
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewTopLeftHeaderCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -229,6 +263,8 @@
         <value>The <see cref="T:System.Windows.Forms.DataGridView" /> that contains the row of column headers.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.Owner" /> property has already been set.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -249,6 +285,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.Owner" /> property is not set.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
       </Docs>
     </Member>
     <Member MemberName="Role">
@@ -267,6 +305,9 @@
         <summary>Gets the role of the accessible object.</summary>
         <value>The <see cref="F:System.Windows.Forms.AccessibleRole.Row" /> value.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="F:System.Windows.Forms.AccessibleRole.RowHeader" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -293,7 +334,21 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="P:System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.Name" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject" /> class.</summary>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

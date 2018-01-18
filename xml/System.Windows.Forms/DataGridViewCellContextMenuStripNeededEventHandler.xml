@@ -28,7 +28,7 @@
   
  When you handle the <xref:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded> event, the shortcut menu that you specify in the handler is shown whenever the user right-clicks a cell. This is useful when you want to display shortcut menus determined by the current state or value of a cell.  
   
- The <xref:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded> event also occurs whenever the value of the <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A?displayProperty=fullName> property is retrieved, either programmatically or when the user right-clicks the cell.  
+ The <xref:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded> event also occurs whenever the value of the <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A?displayProperty=nameWithType> property is retrieved, either programmatically or when the user right-clicks the cell.  
   
  You can use the <xref:System.Windows.Forms.DataGridViewCellEventArgs.ColumnIndex%2A> and <xref:System.Windows.Forms.DataGridViewCellEventArgs.RowIndex%2A> properties to determine the state or value of a cell, and use this information to set the <xref:System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs.ContextMenuStrip%2A> property. This property is initialized with the value of the cell <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A> property, which the event value overrides.  
   
@@ -51,5 +51,15 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.DataSource" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.VirtualMode" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs.ContextMenuStrip" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCell.ContextMenuStrip" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewRow.ContextMenuStrip" />
+    <altmember cref="T:System.Windows.Forms.ContextMenuStrip" />
   </Docs>
 </Type>

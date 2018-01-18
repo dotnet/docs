@@ -34,7 +34,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Collections.Generic.ICollection%601> interface is the base interface for classes in the <xref:System.Collections.Generic?displayProperty=fullName> namespace.  
+ The <xref:System.Collections.Generic.ICollection%601> interface is the base interface for classes in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace.  
   
  The <xref:System.Collections.Generic.ICollection%601> interface extends <xref:System.Collections.Generic.IEnumerable%601>; <xref:System.Collections.Generic.IDictionary%602> and <xref:System.Collections.Generic.IList%601> are more specialized interfaces that extend <xref:System.Collections.Generic.ICollection%601>. A <xref:System.Collections.Generic.IDictionary%602> implementation is a collection of key/value pairs, like the <xref:System.Collections.Generic.Dictionary%602> class. A <xref:System.Collections.Generic.IList%601> implementation is a collection of values, and its members can be accessed by index, like the <xref:System.Collections.Generic.List%601> class.  
   
@@ -54,6 +54,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Generic.IDictionary`2" />
+    <altmember cref="T:System.Collections.Generic.IList`1" />
+    <altmember cref="N:System.Collections" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -89,6 +92,7 @@
         <summary>Adds an item to the <see cref="T:System.Collections.Generic.ICollection`1" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</exception>
+        <altmember cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -128,6 +132,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</exception>
+        <altmember cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -167,7 +172,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Implementations can vary in how they determine equality of objects; for example, <xref:System.Collections.Generic.List%601> uses <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName>, whereas <xref:System.Collections.Generic.Dictionary%602> allows the user to specify the <xref:System.Collections.Generic.IComparer%601> implementation to use for comparing keys.  
+ Implementations can vary in how they determine equality of objects; for example, <xref:System.Collections.Generic.List%601> uses <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType>, whereas <xref:System.Collections.Generic.Dictionary%602> allows the user to specify the <xref:System.Collections.Generic.IComparer%601> implementation to use for comparing keys.  
   
  ]]></format>
         </remarks>
@@ -321,13 +326,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Implementations can vary in how they determine equality of objects; for example, <xref:System.Collections.Generic.List%601> uses <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName>, whereas, <xref:System.Collections.Generic.Dictionary%602> allows the user to specify the <xref:System.Collections.Generic.IComparer%601> implementation to use for comparing keys.  
+ Implementations can vary in how they determine equality of objects; for example, <xref:System.Collections.Generic.List%601> uses <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType>, whereas, <xref:System.Collections.Generic.Dictionary%602> allows the user to specify the <xref:System.Collections.Generic.IComparer%601> implementation to use for comparing keys.  
   
  In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</exception>
+        <altmember cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />
       </Docs>
     </Member>
   </Members>

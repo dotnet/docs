@@ -49,7 +49,7 @@
   
  The <xref:System.Globalization.TextElementEnumerator> class allows you to work with the text elements in a string rather than with single <xref:System.Char> objects.  
   
- You instantiate a <xref:System.Globalization.TextElementEnumerator> object that represents a particular string by passing the string to the <xref:System.Globalization.StringInfo.GetTextElementEnumerator%2A?displayProperty=fullName> method. This returns an enumerator that is positioned before the first text element in the string. Calling the <xref:System.Globalization.TextElementEnumerator.Reset%2A> method also brings the enumerator back to this position. Because this represents an invalid state, you must call <xref:System.Globalization.TextElementEnumerator.MoveNext%2A> to advance the enumerator to the first text element of the string before reading the value of the <xref:System.Globalization.TextElementEnumerator.Current%2A> property to return the current text element.  
+ You instantiate a <xref:System.Globalization.TextElementEnumerator> object that represents a particular string by passing the string to the <xref:System.Globalization.StringInfo.GetTextElementEnumerator%2A?displayProperty=nameWithType> method. This returns an enumerator that is positioned before the first text element in the string. Calling the <xref:System.Globalization.TextElementEnumerator.Reset%2A> method also brings the enumerator back to this position. Because this represents an invalid state, you must call <xref:System.Globalization.TextElementEnumerator.MoveNext%2A> to advance the enumerator to the first text element of the string before reading the value of the <xref:System.Globalization.TextElementEnumerator.Current%2A> property to return the current text element.  
   
  When working with a <xref:System.Globalization.TextElementEnumerator> object, you are responsible for positioning the enumerator. The <xref:System.Globalization.TextElementEnumerator.Current%2A> property returns the same text element until you call either <xref:System.Globalization.TextElementEnumerator.MoveNext%2A> or <xref:System.Globalization.TextElementEnumerator.Reset%2A>. The enumerator is in an invalid state if it is positioned before the first text element or after the last text element in the string. When the enumerator is in an invalid state, attempting to retrieve the value of the <xref:System.Globalization.TextElementEnumerator.Current%2A> property throws an exception. You can determine whether the enumerator is in an invalid state by testing whether the return value of the <xref:System.Globalization.TextElementEnumerator.MoveNext%2A> property is `false`.  
   
@@ -61,7 +61,7 @@
   
 -   A <xref:System.Globalization.TextElementEnumerator> object enumerates the text elements present in the string at the time that the <xref:System.Globalization.TextElementEnumerator> object was instantiated. It does not reflect any subsequent changes to the string variable if that variable is modified afterward.  
   
--   Because the <xref:System.Globalization.TextElementEnumerator> class does not override <xref:System.Object.Equals%2A?displayProperty=fullName>, two <xref:System.Globalization.TextElementEnumerator> objects that represent the same string will be considered unequal.  
+-   Because the <xref:System.Globalization.TextElementEnumerator> class does not override <xref:System.Object.Equals%2A?displayProperty=nameWithType>, two <xref:System.Globalization.TextElementEnumerator> objects that represent the same string will be considered unequal.  
   
    
   
@@ -74,6 +74,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Globalization.StringInfo" />
   </Docs>
   <Members>
     <Member MemberName="Current">
@@ -118,6 +119,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first text element of the string or after the last text element.</exception>
+        <altmember cref="M:System.Globalization.TextElementEnumerator.GetTextElement" />
+        <altmember cref="P:System.Globalization.TextElementEnumerator.ElementIndex" />
+        <altmember cref="M:System.Globalization.TextElementEnumerator.MoveNext" />
+        <altmember cref="M:System.Globalization.TextElementEnumerator.Reset" />
       </Docs>
     </Member>
     <Member MemberName="ElementIndex">
@@ -151,6 +156,8 @@
         <value>The index of the text element that the enumerator is currently positioned over.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first text element of the string or after the last text element.</exception>
+        <altmember cref="P:System.Globalization.TextElementEnumerator.Current" />
+        <altmember cref="M:System.Globalization.TextElementEnumerator.GetTextElement" />
       </Docs>
     </Member>
     <Member MemberName="GetTextElement">
@@ -192,6 +199,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first text element of the string or after the last text element.</exception>
+        <altmember cref="P:System.Globalization.TextElementEnumerator.Current" />
+        <altmember cref="P:System.Globalization.TextElementEnumerator.ElementIndex" />
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -237,6 +246,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.TextElementEnumerator.Current" />
+        <altmember cref="M:System.Globalization.TextElementEnumerator.Reset" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -276,6 +287,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Globalization.TextElementEnumerator.MoveNext" />
+        <altmember cref="P:System.Globalization.TextElementEnumerator.Current" />
       </Docs>
     </Member>
   </Members>

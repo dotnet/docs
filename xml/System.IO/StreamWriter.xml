@@ -45,9 +45,9 @@
 > [!IMPORTANT]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
   
- <xref:System.IO.StreamWriter> defaults to using an instance of <xref:System.Text.UTF8Encoding> unless specified otherwise. This instance of `UTF8Encoding` is constructed without a byte order mark (BOM), so its <xref:System.Text.Encoding.GetPreamble%2A> method returns an empty byte array. The default UTF-8 encoding for this constructor throws an exception on invalid bytes. This behavior is different from the behavior provided by the encoding object in the <xref:System.Text.Encoding.UTF8%2A?displayProperty=fullName> property. To specify a BOM and determine whether an exception is thrown on invalid bytes, use a constructor that accepts an encoding object as a parameter, such as <xref:System.IO.StreamWriter.%23ctor%28System.String%2CSystem.Boolean%2CSystem.Text.Encoding%29> or <xref:System.IO.StreamWriter.%23ctor%2A>.  
+ <xref:System.IO.StreamWriter> defaults to using an instance of <xref:System.Text.UTF8Encoding> unless specified otherwise. This instance of `UTF8Encoding` is constructed without a byte order mark (BOM), so its <xref:System.Text.Encoding.GetPreamble%2A> method returns an empty byte array. The default UTF-8 encoding for this constructor throws an exception on invalid bytes. This behavior is different from the behavior provided by the encoding object in the <xref:System.Text.Encoding.UTF8%2A?displayProperty=nameWithType> property. To specify a BOM and determine whether an exception is thrown on invalid bytes, use a constructor that accepts an encoding object as a parameter, such as <xref:System.IO.StreamWriter.%23ctor%28System.String%2CSystem.Boolean%2CSystem.Text.Encoding%29> or <xref:System.IO.StreamWriter.%23ctor%2A>.  
   
- By default, a <xref:System.IO.StreamWriter> is not thread safe. See <xref:System.IO.TextWriter.Synchronized%2A?displayProperty=fullName> for a thread-safe wrapper.  
+ By default, a <xref:System.IO.StreamWriter> is not thread safe. See <xref:System.IO.TextWriter.Synchronized%2A?displayProperty=nameWithType> for a thread-safe wrapper.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -61,6 +61,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.Stream" />
+    <altmember cref="T:System.IO.StreamReader" />
+    <altmember cref="T:System.Text.Encoder" />
+    <altmember cref="T:System.Text.Encoding" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -97,9 +101,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor creates a <xref:System.IO.StreamWriter> with UTF-8 encoding without a Byte-Order Mark (BOM), so its <xref:System.Text.Encoding.GetPreamble%2A> method returns an empty byte array. The default UTF-8 encoding for this constructor throws an exception on invalid bytes. This behavior is different from the behavior provided by the encoding object in the <xref:System.Text.Encoding.UTF8%2A?displayProperty=fullName> property. To specify whether an exception is thrown on invalid bytes, use a constructor that accepts an encoding object as a parameter, such as <xref:System.IO.StreamWriter.%23ctor%2A>. The <xref:System.IO.StreamWriter.BaseStream%2A> property is initialized using the `stream` parameter. The position of the stream is not reset.  
+ This constructor creates a <xref:System.IO.StreamWriter> with UTF-8 encoding without a Byte-Order Mark (BOM), so its <xref:System.Text.Encoding.GetPreamble%2A> method returns an empty byte array. The default UTF-8 encoding for this constructor throws an exception on invalid bytes. This behavior is different from the behavior provided by the encoding object in the <xref:System.Text.Encoding.UTF8%2A?displayProperty=nameWithType> property. To specify whether an exception is thrown on invalid bytes, use a constructor that accepts an encoding object as a parameter, such as <xref:System.IO.StreamWriter.%23ctor%2A>. The <xref:System.IO.StreamWriter.BaseStream%2A> property is initialized using the `stream` parameter. The position of the stream is not reset.  
   
- The <xref:System.IO.StreamWriter> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamWriter.Dispose%2A?displayProperty=fullName> is called.  
+ The <xref:System.IO.StreamWriter> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamWriter.Dispose%2A?displayProperty=nameWithType> is called.  
   
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable and could cause an exception to be thrown.  
@@ -150,7 +154,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor creates a <xref:System.IO.StreamWriter> with UTF-8 encoding without a Byte-Order Mark (BOM), so its <xref:System.Text.Encoding.GetPreamble%2A> method returns an empty byte array. The default UTF-8 encoding for this constructor throws an exception on invalid bytes. This behavior is different from the behavior provided by the encoding object in the <xref:System.Text.Encoding.UTF8%2A?displayProperty=fullName> property. To specify a BOM and determine whether an exception is thrown on invalid bytes, use a constructor that accepts an encoding object as a parameter, such as <xref:System.IO.StreamWriter.%23ctor%28System.String%2CSystem.Boolean%2CSystem.Text.Encoding%29>.  
+ This constructor creates a <xref:System.IO.StreamWriter> with UTF-8 encoding without a Byte-Order Mark (BOM), so its <xref:System.Text.Encoding.GetPreamble%2A> method returns an empty byte array. The default UTF-8 encoding for this constructor throws an exception on invalid bytes. This behavior is different from the behavior provided by the encoding object in the <xref:System.Text.Encoding.UTF8%2A?displayProperty=nameWithType> property. To specify a BOM and determine whether an exception is thrown on invalid bytes, use a constructor that accepts an encoding object as a parameter, such as <xref:System.IO.StreamWriter.%23ctor%28System.String%2CSystem.Boolean%2CSystem.Text.Encoding%29>.  
   
  The `path` parameter can be a file name, including a file on a Universal Naming Convention (UNC) share. If the file exists, it is overwritten; otherwise, a new file is created.  
   
@@ -226,7 +230,7 @@
 ## Remarks  
  This constructor initializes the <xref:System.IO.StreamWriter.Encoding%2A> property using the encoding parameter, and the <xref:System.IO.StreamWriter.BaseStream%2A> property using the stream parameter. The position of the stream is not reset. For additional information, see <xref:System.IO.TextWriter.Encoding%2A>.  
   
- The <xref:System.IO.StreamWriter> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamWriter.Dispose%2A?displayProperty=fullName> is called.  
+ The <xref:System.IO.StreamWriter> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamWriter.Dispose%2A?displayProperty=nameWithType> is called.  
   
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
@@ -247,6 +251,7 @@
           <paramref name="stream" /> or <paramref name="encoding" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="stream" /> is not writable.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -280,7 +285,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor creates a <xref:System.IO.StreamWriter> with UTF-8 encoding without a Byte-Order Mark (BOM), so its <xref:System.Text.Encoding.GetPreamble%2A> method returns an empty byte array. The default UTF-8 encoding for this constructor throws an exception on invalid bytes. This behavior is different from the behavior provided by the encoding object in the <xref:System.Text.Encoding.UTF8%2A?displayProperty=fullName> property. To specify a BOM and determine whether an exception is thrown on invalid bytes, use a constructor that accepts an encoding object as a parameter, such as <xref:System.IO.StreamWriter.%23ctor%28System.String%2CSystem.Boolean%2CSystem.Text.Encoding%29>.  
+ This constructor creates a <xref:System.IO.StreamWriter> with UTF-8 encoding without a Byte-Order Mark (BOM), so its <xref:System.Text.Encoding.GetPreamble%2A> method returns an empty byte array. The default UTF-8 encoding for this constructor throws an exception on invalid bytes. This behavior is different from the behavior provided by the encoding object in the <xref:System.Text.Encoding.UTF8%2A?displayProperty=nameWithType> property. To specify a BOM and determine whether an exception is thrown on invalid bytes, use a constructor that accepts an encoding object as a parameter, such as <xref:System.IO.StreamWriter.%23ctor%28System.String%2CSystem.Boolean%2CSystem.Text.Encoding%29>.  
   
  The `path` parameter can be a file name, including a file on a Universal Naming Convention (UNC) share.  
   
@@ -358,7 +363,7 @@
 ## Remarks  
  This constructor initializes the <xref:System.IO.StreamWriter.Encoding%2A> property using the `encoding` parameter, and the <xref:System.IO.StreamWriter.BaseStream%2A> property using the `stream` parameter. The position of the stream is not reset. For additional information, see <xref:System.IO.TextWriter.Encoding%2A>.  
   
- The <xref:System.IO.StreamWriter> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamWriter.Dispose%2A?displayProperty=fullName> is called.  
+ The <xref:System.IO.StreamWriter> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamWriter.Dispose%2A?displayProperty=nameWithType> is called.  
   
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
@@ -381,6 +386,7 @@
           <paramref name="bufferSize" /> is negative.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="stream" /> is not writable.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -452,6 +458,7 @@
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must not exceed 248 characters, and file names must not exceed 260 characters.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -495,7 +502,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unless you set the `leaveOpen` parameter to `true`, the <xref:System.IO.StreamWriter> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamWriter.Dispose%2A?displayProperty=fullName> is called.  
+ Unless you set the `leaveOpen` parameter to `true`, the <xref:System.IO.StreamWriter> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamWriter.Dispose%2A?displayProperty=nameWithType> is called.  
   
  This constructor initializes the <xref:System.IO.StreamWriter.Encoding%2A> property by using the `encoding` parameter, and initializes the <xref:System.IO.StreamWriter.BaseStream%2A> property by using the `stream` parameter. The position of the stream is not reset. For additional information, see the <xref:System.IO.TextWriter.Encoding%2A> property.  
   
@@ -598,6 +605,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, it is on an unmapped drive).</exception>
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must not exceed 248 characters, and file names must not exceed 260 characters.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName="AutoFlush">
@@ -639,7 +647,7 @@
   
  When `AutoFlush` is set to `false`, `StreamWriter` will do a limited amount of buffering, both internally and potentially in the encoder from the encoding you passed in. You can get better performance by setting `AutoFlush` to `false`, assuming that you always call `Close` (or at least `Flush`) when you're done writing with a `StreamWriter`.  
   
- For example, set `AutoFlush` to `true` when you are writing to a device where the user expects immediate feedback. `Console.Out` is one of these cases: The `StreamWriter` used internally for writing to `Console` flushes all its internal state except the encoder state after every call to <xref:System.IO.StreamWriter.Write%2A?displayProperty=fullName>.  
+ For example, set `AutoFlush` to `true` when you are writing to a device where the user expects immediate feedback. `Console.Out` is one of these cases: The `StreamWriter` used internally for writing to `Console` flushes all its internal state except the encoder state after every call to <xref:System.IO.StreamWriter.Write%2A?displayProperty=nameWithType>.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -724,7 +732,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.IO.Stream.Close%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType>.  
   
  This implementation of <xref:System.IO.StreamWriter.Close%2A> calls the <xref:System.IO.StreamWriter.Dispose%2A> method passing a `true` value.  
   
@@ -882,7 +890,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.IO.TextWriter.Flush%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.IO.TextWriter.Flush%2A?displayProperty=nameWithType>.  
   
  Flushing the stream will not flush its underlying encoder unless you explicitly call `Flush` or <xref:System.IO.StreamWriter.Close%2A>. Setting <xref:System.IO.StreamWriter.AutoFlush%2A> to `true` means that data will be flushed from the buffer to the stream after each write operation, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can only be encoded after the encoder receives the adjacent character or characters.  
   
@@ -893,6 +901,7 @@
         <exception cref="T:System.ObjectDisposedException">The current writer is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error has occurred.</exception>
         <exception cref="T:System.Text.EncoderFallbackException">The current encoding does not support displaying half of a Unicode surrogate pair.</exception>
+        <altmember cref="M:System.IO.Stream.Close" />
       </Docs>
     </Member>
     <Member MemberName="FlushAsync">
@@ -1024,7 +1033,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.IO.TextWriter.Write%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.IO.TextWriter.Write%2A?displayProperty=nameWithType>.  
   
  The specified character is written to the underlying stream unless the end of the stream is reached prematurely. If <xref:System.IO.StreamWriter.AutoFlush%2A> is `true`, <xref:System.IO.StreamWriter.Flush%2A> is invoked automatically.  
   
@@ -1076,7 +1085,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.IO.TextWriter.Write%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.IO.TextWriter.Write%2A?displayProperty=nameWithType>.  
   
  The specified characters are written to the underlying stream unless the end of the stream is reached prematurely. If <xref:System.IO.StreamWriter.AutoFlush%2A> is `true`, <xref:System.IO.StreamWriter.Flush%2A> is invoked automatically.  
   
@@ -1130,7 +1139,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.IO.TextWriter.Write%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.IO.TextWriter.Write%2A?displayProperty=nameWithType>.  
   
  The specified <xref:System.String> is written to the underlying stream unless the end of the stream is reached prematurely.  
   
@@ -1188,7 +1197,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.IO.TextWriter.Write%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.IO.TextWriter.Write%2A?displayProperty=nameWithType>.  
   
  The characters are read from `buffer` beginning at `index` and continuing through `index` + (`count` - 1). All characters are written to the underlying stream unless the end of the underlying stream is reached prematurely. <xref:System.IO.StreamWriter.Flush%2A> is invoked automatically if <xref:System.IO.StreamWriter.AutoFlush%2A> is `true`.  
   
@@ -1428,7 +1437,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The line terminator is defined by the <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName> property.  
+ The line terminator is defined by the <xref:System.IO.TextWriter.NewLine%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -1479,7 +1488,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The line terminator is defined by the <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName> property.  
+ The line terminator is defined by the <xref:System.IO.TextWriter.NewLine%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -1538,7 +1547,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The line terminator is defined by the <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName> property.  
+ The line terminator is defined by the <xref:System.IO.TextWriter.NewLine%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -1601,7 +1610,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The line terminator is defined by the <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName> property.  
+ The line terminator is defined by the <xref:System.IO.TextWriter.NewLine%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -1622,5 +1631,49 @@
         <exception cref="T:System.InvalidOperationException">The stream writer is currently in use by a previous write operation.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes data to the stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes data to the stream asynchronously.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteLineAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes data followed by a line terminator asynchronously to the stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.StreamWriter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

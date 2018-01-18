@@ -34,6 +34,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.ComponentModel.TypeConverter.GetStandardValues" />
+    <altmember cref="T:System.ComponentModel.TypeConverter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +64,9 @@
         <param name="values">An <see cref="T:System.Collections.ICollection" /> that represents the objects to put into the collection.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" />
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -102,6 +107,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Array" />
+        <altmember cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" />
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -137,6 +145,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" />
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -166,6 +176,9 @@
         <summary>Returns an enumerator for this collection.</summary>
         <returns>An enumerator of type <see cref="T:System.Collections.IEnumerator" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
+        <altmember cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" />
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -205,6 +218,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" />
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -233,6 +248,7 @@
         <param name="index">The index in the array where copying should begin.</param>
         <summary>Copies the contents of this collection to an array.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.Count">
@@ -256,6 +272,7 @@
         <summary>For a description of this member, see <see cref="P:System.Collections.ICollection.Count" />.</summary>
         <value>The number of elements contained in the <see cref="T:System.Collections.ICollection" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -292,6 +309,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -328,6 +346,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -352,6 +371,7 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IEnumerable.GetEnumerator" />.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.IEnumerable" />
       </Docs>
     </Member>
   </Members>

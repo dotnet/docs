@@ -20,10 +20,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Compilation.BuildProviderResultFlags> values are used to indicate the results from the <xref:System.Web.Compilation.BuildProvider.GetResultFlags%2A?displayProperty=fullName> method. The enumeration values indicate actions that are required after a virtual path is built within the ASP.NET build environment. The <xref:System.Web.Compilation.BuildProviderResultFlags> values are used by the ASP.NET build environment when using instances of the <xref:System.Web.Compilation.BuildProvider> class to build files and load the compiled assemblies.  
+ The <xref:System.Web.Compilation.BuildProviderResultFlags> values are used to indicate the results from the <xref:System.Web.Compilation.BuildProvider.GetResultFlags%2A?displayProperty=nameWithType> method. The enumeration values indicate actions that are required after a virtual path is built within the ASP.NET build environment. The <xref:System.Web.Compilation.BuildProviderResultFlags> values are used by the ASP.NET build environment when using instances of the <xref:System.Web.Compilation.BuildProvider> class to build files and load the compiled assemblies.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Compilation.BuildProvider" />
+    <altmember cref="T:System.Web.Compilation.BuildManager" />
+    <altmember cref="M:System.Web.Compilation.BuildProvider.GetResultFlags(System.CodeDom.Compiler.CompilerResults)" />
   </Docs>
   <Members>
     <Member MemberName="Default">

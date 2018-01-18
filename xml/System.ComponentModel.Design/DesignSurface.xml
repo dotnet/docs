@@ -74,6 +74,10 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+    <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
+    <altmember cref="T:System.IServiceProvider" />
+    <altmember cref="T:System.ComponentModel.Design.Serialization.DesignerLoader" />
+    <altmember cref="T:System.ComponentModel.Design.Serialization.IDesignerLoaderService" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -116,6 +120,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> attached to the <see cref="T:System.ComponentModel.Design.DesignSurface" /> has been disposed.</exception>
+        <altmember cref="T:System.IServiceProvider" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -177,6 +182,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="rootComponent" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> attached to the <see cref="T:System.ComponentModel.Design.DesignSurface" /> has been disposed.</exception>
+        <altmember cref="T:System.IServiceProvider" />
       </Docs>
     </Member>
     <Member MemberName="BeginLoad">
@@ -210,6 +216,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="loader" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> attached to the <see cref="T:System.ComponentModel.Design.DesignSurface" /> has been disposed.</exception>
+        <altmember cref="T:System.ComponentModel.Design.Serialization.DesignerLoader" />
+        <altmember cref="T:System.ComponentModel.Design.Serialization.IDesignerLoaderService" />
       </Docs>
     </Member>
     <Member MemberName="BeginLoad">
@@ -966,7 +974,44 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.ComponentModel.Design.DesignSurface" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateNestedContainer">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a container suitable for nesting controls or components.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginLoad">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins the loading process.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignSurface" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

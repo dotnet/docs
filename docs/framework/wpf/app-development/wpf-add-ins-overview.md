@@ -24,6 +24,8 @@ caps.latest.revision: 36
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # WPF Add-Ins Overview
 <a name="Introduction"></a> The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] includes an add-in model that developers can use to create applications that support add-in extensibility. This add-in model allows the creation of add-ins that integrate with and extend application functionality. In some scenarios, applications also need to display [!INCLUDE[TLA2#tla_ui#plural](../../../../includes/tla2sharptla-uisharpplural-md.md)] that are provided by add-ins. This topic shows how [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] augments the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] add-in model to enable these scenarios, the architecture behind it, its benefits, and its limitations.  
@@ -202,16 +204,16 @@ manager: "wpickett"
 ### Using the Pipeline and Add-In from the Application Base  
  When the pipeline and add-in are configured for [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] deployment, they are downloaded to the same [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] cache folder as the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)]. To use the pipeline and add-in from the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)], the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] code must get them from the application base. The various types and members of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] add-in model for using pipelines and add-ins provide special support for this scenario. Firstly, the path is identified by the <xref:System.AddIn.Hosting.PipelineStoreLocation.ApplicationBase> enumeration value. You use this value with overloads of the pertinent add-in members for using pipelines that include the following:  
   
--   <xref:System.AddIn.Hosting.AddInStore.FindAddIns%28System.Type%2CSystem.AddIn.Hosting.PipelineStoreLocation%29?displayProperty=fullName>  
+-   <xref:System.AddIn.Hosting.AddInStore.FindAddIns%28System.Type%2CSystem.AddIn.Hosting.PipelineStoreLocation%29?displayProperty=nameWithType>  
   
--   <xref:System.AddIn.Hosting.AddInStore.FindAddIns%28System.Type%2CSystem.AddIn.Hosting.PipelineStoreLocation%2CSystem.String%5B%5D%29?displayProperty=fullName>  
+-   <xref:System.AddIn.Hosting.AddInStore.FindAddIns%28System.Type%2CSystem.AddIn.Hosting.PipelineStoreLocation%2CSystem.String%5B%5D%29?displayProperty=nameWithType>  
   
--   <xref:System.AddIn.Hosting.AddInStore.Rebuild%28System.AddIn.Hosting.PipelineStoreLocation%29?displayProperty=fullName>  
+-   <xref:System.AddIn.Hosting.AddInStore.Rebuild%28System.AddIn.Hosting.PipelineStoreLocation%29?displayProperty=nameWithType>  
   
--   <xref:System.AddIn.Hosting.AddInStore.Update%28System.AddIn.Hosting.PipelineStoreLocation%29?displayProperty=fullName>  
+-   <xref:System.AddIn.Hosting.AddInStore.Update%28System.AddIn.Hosting.PipelineStoreLocation%29?displayProperty=nameWithType>  
   
 ### Accessing the Host's Site of Origin  
- To ensure that an add-in can reference files from the site of origin, the add-in must be loaded with security isolation that is equivalent to the host application. This security level is identified by the <xref:System.AddIn.Hosting.AddInSecurityLevel.Host?displayProperty=fullName> enumeration value, and passed to the <xref:System.AddIn.Hosting.AddInToken.Activate%2A> method when an add-in is activated.  
+ To ensure that an add-in can reference files from the site of origin, the add-in must be loaded with security isolation that is equivalent to the host application. This security level is identified by the <xref:System.AddIn.Hosting.AddInSecurityLevel.Host?displayProperty=nameWithType> enumeration value, and passed to the <xref:System.AddIn.Hosting.AddInToken.Activate%2A> method when an add-in is activated.  
   
 <a name="WPFAddInModelArchitecture"></a>   
 ## WPF Add-In Architecture  
@@ -289,9 +291,9 @@ manager: "wpickett"
  By default, when multiple application domains are used, the various [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] assemblies required by each application are all loaded into that application's domain. As a result, the time required for creating new application domains and starting applications in them might affect performance. However, the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] provides a way for you to reduce start times by instructing applications to share assemblies across application domains if they are already loaded. You do this by using the <xref:System.LoaderOptimizationAttribute> attribute, which must be applied to the entry point method (`Main`). In this case, you must use only code to implement your application definition (see [Application Management Overview](../../../../docs/framework/wpf/app-development/application-management-overview.md)).  
   
 ## See Also  
- <xref:System.LoaderOptimizationAttribute>   
- [Add-ins and Extensibility](../../../../docs/framework/add-ins/index.md)   
- [Application Domains](../../../../docs/framework/app-domains/application-domains.md)   
- [.NET Framework Remoting Overview](http://msdn.microsoft.com/en-us/eccb1d31-0a22-417a-97fd-f4f1f3aa4462)   
- [Making Objects Remotable](http://msdn.microsoft.com/en-us/01197253-3f13-43b7-894d-9683e431192a)   
+ <xref:System.LoaderOptimizationAttribute>  
+ [Add-ins and Extensibility](../../../../docs/framework/add-ins/index.md)  
+ [Application Domains](../../../../docs/framework/app-domains/application-domains.md)  
+ [.NET Framework Remoting Overview](http://msdn.microsoft.com/en-us/eccb1d31-0a22-417a-97fd-f4f1f3aa4462)  
+ [Making Objects Remotable](http://msdn.microsoft.com/en-us/01197253-3f13-43b7-894d-9683e431192a)  
  [How-to Topics](../../../../docs/framework/wpf/app-development/how-to-topics.md)

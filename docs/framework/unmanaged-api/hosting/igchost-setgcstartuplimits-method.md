@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "SetGCStartupLimits"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetGCStartupLimits method, IGCHost interface [.NET Framework hosting]"
   - "IGCHost::SetGCStartupLimits method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IGCHost::SetGCStartupLimits Method
 Sets the segment size and the maximum size for generation 0.  

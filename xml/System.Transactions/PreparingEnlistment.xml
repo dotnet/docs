@@ -185,5 +185,15 @@
         <exception cref="T:System.InvalidOperationException">An attempt to get recovery information inside a volatile enlistment, which does not generate any recovery information.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ForceRollback">
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates that the transaction should be rolled back.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

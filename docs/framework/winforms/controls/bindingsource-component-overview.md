@@ -9,18 +9,18 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Windows Forms, data binding"
   - "controls [Windows Forms], binding to data"
   - "BindingSource component [Windows Forms], about BindingSource component"
-  - "data binding, BindingSource component"
+  - "data binding [Windows Forms], BindingSource component"
 ms.assetid: be838caf-fcb0-4b68-827f-58b2c04b747f
 caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # BindingSource Component Overview
 The <xref:System.Windows.Forms.BindingSource> component is designed to simplify the process of binding controls to an underlying data source. The <xref:System.Windows.Forms.BindingSource> component acts as both a conduit and a data source for other controls to bind to. It provides an abstraction of your form's data connection while passing through commands to the underlying list of data. Additionally, you can add data directly to it, so that the component itself functions as a data source.  
@@ -66,10 +66,10 @@ The <xref:System.Windows.Forms.BindingSource> component is designed to simplify 
 |<xref:System.Windows.Forms.BindingSource.Filter%2A> property|If the data source is an <xref:System.ComponentModel.IBindingListView>, gets or sets the expression used to filter which rows are viewed.|  
   
 ## See Also  
- <xref:System.Windows.Forms.BindingSource>   
- <xref:System.Windows.Forms.BindingNavigator>   
- [BindingSource Component Architecture](../../../../docs/framework/winforms/controls/bindingsource-component-architecture.md)   
- [BindingSource Component](../../../../docs/framework/winforms/controls/bindingsource-component.md)   
- [BindingNavigator Control](../../../../docs/framework/winforms/controls/bindingnavigator-control-windows-forms.md)   
- [Windows Forms Data Binding](../../../../docs/framework/winforms/windows-forms-data-binding.md)   
+ <xref:System.Windows.Forms.BindingSource>  
+ <xref:System.Windows.Forms.BindingNavigator>  
+ [BindingSource Component Architecture](../../../../docs/framework/winforms/controls/bindingsource-component-architecture.md)  
+ [BindingSource Component](../../../../docs/framework/winforms/controls/bindingsource-component.md)  
+ [BindingNavigator Control](../../../../docs/framework/winforms/controls/bindingnavigator-control-windows-forms.md)  
+ [Windows Forms Data Binding](../../../../docs/framework/winforms/windows-forms-data-binding.md)  
  [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)

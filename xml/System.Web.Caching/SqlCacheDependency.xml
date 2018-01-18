@@ -18,7 +18,7 @@
 ## Remarks  
  On all supported versions of SQL Server (Microsoft SQL Server 7.0, Microsoft SQL Server 2000, and SQL Server 2005) the <xref:System.Web.Caching.SqlCacheDependency> class monitors a specific SQL Server database table. When the table changes, items associated with the table are removed from the <xref:System.Web.Caching.Cache>, and a new version of the item is added to the <xref:System.Web.Caching.Cache>.  
   
- The <xref:System.Web.Caching.SqlCacheDependency> class also supports integration with the <xref:System.Data.SqlClient.SqlDependency?displayProperty=fullName> class when using a [!INCLUDE[sqprsqlong](~/includes/sqprsqlong-md.md)] database. The query notification mechanism of [!INCLUDE[sqprsqlong](~/includes/sqprsqlong-md.md)] detects changes to data that invalidate the results of an SQL query and removes any cached items associated with the SQL query from the <xref:System.Web.Caching.Cache?displayProperty=fullName>.  
+ The <xref:System.Web.Caching.SqlCacheDependency> class also supports integration with the <xref:System.Data.SqlClient.SqlDependency?displayProperty=nameWithType> class when using a [!INCLUDE[sqprsqlong](~/includes/sqprsqlong-md.md)] database. The query notification mechanism of [!INCLUDE[sqprsqlong](~/includes/sqprsqlong-md.md)] detects changes to data that invalidate the results of an SQL query and removes any cached items associated with the SQL query from the <xref:System.Web.Caching.Cache?displayProperty=nameWithType>.  
   
  You can use the <xref:System.Web.Caching.SqlCacheDependency> class to add items to your application's <xref:System.Web.Caching.Cache> that are dependent on either a SQL Server database table or on an SQL query when using [!INCLUDE[sqprsqlong](~/includes/sqprsqlong-md.md)]. You can also use this class with the  directive to make an output-cached page or a user control dependent on a SQL Server database table. Finally, you can use the <xref:System.Web.Caching.SqlCacheDependency> class with the  page directive to make an output-cached page dependent on the results of an SQL query when using [!INCLUDE[sqprsqlong](~/includes/sqprsqlong-md.md)]. Query notification using [!INCLUDE[sqprsqlong](~/includes/sqprsqlong-md.md)] is not supported on the  directive for user controls.  
   
@@ -54,11 +54,12 @@
 ## Examples  
  The following code example uses the <xref:System.Web.UI.WebControls.SqlDataSource> and <xref:System.Web.UI.WebControls.GridView> controls to display a database table. When the page is loaded, the page attempts to create a <xref:System.Web.Caching.SqlCacheDependency> object. After the <xref:System.Web.Caching.SqlCacheDependency> object is created, the page adds an item to the `Cache` with a dependency on the <xref:System.Web.Caching.SqlCacheDependency> object. You should use exception handling similar to that shown here.  
   
- <!-- TODO: review snippet reference [!code-csharp[CachingSamples_SqlCacheDependency#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CachingSamples_SqlCacheDependency/CS/sqlcachedepsamplecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CachingSamples_SqlCacheDependency#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CachingSamples_SqlCacheDependency/VB/sqlcachedepsamplevb.aspx#1)]  -->  
+ [!code-aspx-csharp[CachingSamples_SqlCacheDependency#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CachingSamples_SqlCacheDependency/CS/sqlcachedepsamplecs.aspx#1)]
+ [!code-aspx-vb[CachingSamples_SqlCacheDependency#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CachingSamples_SqlCacheDependency/VB/sqlcachedepsamplevb.aspx#1)]
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Caching.SqlCacheDependencyAdmin" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -94,6 +95,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="sqlCmd" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Data.SqlClient.SqlCommand" /> instance has its <see cref="P:System.Data.SqlClient.SqlCommand.NotificationAutoEnlist" /> property set to <see langword="true" /> and there is an  directive on the page with the <see langword="SqlDependency" /> attribute set to <c>CommandNotification</c>.</exception>
+        <altmember cref="M:System.Web.Caching.SqlCacheDependency.#ctor(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -141,7 +143,7 @@
 </configuration>  
 ```  
   
- Two exceptions are commonly thrown when this constructor is used: <xref:System.Web.Caching.DatabaseNotEnabledForNotificationException> and <xref:System.Web.Caching.TableNotEnabledForNotificationException>. If a <xref:System.Web.Caching.DatabaseNotEnabledForNotificationException> is thrown, you can call the <xref:System.Web.Caching.SqlCacheDependencyAdmin.EnableNotifications%2A?displayProperty=fullName> method in exception-handling code, or use the  command-line tool to set up the database for notifications. If a <xref:System.Web.Caching.TableNotEnabledForNotificationException> is thrown, you can call the <xref:System.Web.Caching.SqlCacheDependencyAdmin.EnableTableForNotifications%2A?displayProperty=fullName> method or use  to set up the table for notifications.  
+ Two exceptions are commonly thrown when this constructor is used: <xref:System.Web.Caching.DatabaseNotEnabledForNotificationException> and <xref:System.Web.Caching.TableNotEnabledForNotificationException>. If a <xref:System.Web.Caching.DatabaseNotEnabledForNotificationException> is thrown, you can call the <xref:System.Web.Caching.SqlCacheDependencyAdmin.EnableNotifications%2A?displayProperty=nameWithType> method in exception-handling code, or use the  command-line tool to set up the database for notifications. If a <xref:System.Web.Caching.TableNotEnabledForNotificationException> is thrown, you can call the <xref:System.Web.Caching.SqlCacheDependencyAdmin.EnableTableForNotifications%2A?displayProperty=nameWithType> method or use  to set up the table for notifications.  
   
    
   
@@ -192,6 +194,7 @@
  \- or -  
   
  <paramref name="tableName" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.Caching.SqlCacheDependency.#ctor(System.Data.SqlClient.SqlCommand)" />
       </Docs>
     </Member>
     <Member MemberName="CreateOutputCacheDependency">
@@ -273,5 +276,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Caching.SqlCacheDependency" /> class.</summary>
+        <altmember cref="T:System.Web.Caching.SqlCacheDependencyAdmin" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

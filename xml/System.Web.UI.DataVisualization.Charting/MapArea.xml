@@ -457,7 +457,7 @@
   
  When retrieving the shapes of <xref:System.Web.UI.DataVisualization.Charting.MapArea> objects that are stored in the <xref:System.Web.UI.DataVisualization.Charting.MapAreasCollection>, any shape that is not a rectangle or a circle will be considered a polygon. For example, a custom map area can be added to the map areas collection using a <xref:System.Drawing.Drawing2D.GraphicsPath> object as a parameter, which allows any type of shape to be used. If the <xref:System.Web.UI.DataVisualization.Charting.MapArea.Shape%2A> property of this particular <xref:System.Web.UI.DataVisualization.Charting.MapArea> object is retrieved, it will return a <xref:System.Web.UI.DataVisualization.Charting.MapAreaShape.Polygon>.  
   
- After the shape and coordinates of a map area are defined, the <xref:System.Web.UI.DataVisualization.Charting.MapArea.ToolTip%2A>, <xref:System.Web.UI.DataVisualization.Charting.MapArea.Url%2A>and/or <xref:System.Web.UI.DataVisualization.Charting.MapArea.MapAreaAttributes%2A> properties can be used to specify a particular user interaction.  
+ After the shape and coordinates of a map area are defined, the <xref:System.Web.UI.DataVisualization.Charting.MapArea.ToolTip%2A>, <xref:System.Web.UI.DataVisualization.Charting.MapArea.Url%2A> and/or <xref:System.Web.UI.DataVisualization.Charting.MapArea.MapAreaAttributes%2A> properties can be used to specify a particular user interaction.  
   
  Note the following:  
   
@@ -566,5 +566,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.MapArea" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

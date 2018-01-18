@@ -25,7 +25,7 @@
   
  The default sort mode for this column type is <xref:System.Windows.Forms.DataGridViewColumnSortMode.NotSortable>.  
   
- Typically, check box cell values are intended either for storage, like any other data, or for performing bulk operations. If you want to respond immediately when users click a check box cell, you can handle the <xref:System.Windows.Forms.DataGridView.CellContentClick?displayProperty=fullName> event, but this event occurs before the cell value is updated. If you need the new value at the time of the click, one option is to calculate what the expected value will be based on the current value. Another approach is to commit the change immediately, and handle the <xref:System.Windows.Forms.DataGridView.CellValueChanged?displayProperty=fullName> event to respond to it. To commit the change when the cell is clicked, you must handle the <xref:System.Windows.Forms.DataGridView.CurrentCellDirtyStateChanged?displayProperty=fullName> event. In the handler, if the current cell is a check box cell, call the <xref:System.Windows.Forms.DataGridView.CommitEdit%2A?displayProperty=fullName> method and pass in the <xref:System.Windows.Forms.DataGridViewDataErrorContexts.Commit> value.  
+ Typically, check box cell values are intended either for storage, like any other data, or for performing bulk operations. If you want to respond immediately when users click a check box cell, you can handle the <xref:System.Windows.Forms.DataGridView.CellContentClick?displayProperty=nameWithType> event, but this event occurs before the cell value is updated. If you need the new value at the time of the click, one option is to calculate what the expected value will be based on the current value. Another approach is to commit the change immediately, and handle the <xref:System.Windows.Forms.DataGridView.CellValueChanged?displayProperty=nameWithType> event to respond to it. To commit the change when the cell is clicked, you must handle the <xref:System.Windows.Forms.DataGridView.CurrentCellDirtyStateChanged?displayProperty=nameWithType> event. In the handler, if the current cell is a check box cell, call the <xref:System.Windows.Forms.DataGridView.CommitEdit%2A?displayProperty=nameWithType> method and pass in the <xref:System.Windows.Forms.DataGridViewDataErrorContexts.Commit> value.  
   
    
   
@@ -41,6 +41,16 @@
     <block subset="none" type="overrides">
       <para>When you derive from <see cref="T:System.Windows.Forms.DataGridViewCheckBoxColumn" /> and add new properties to the derived class, be sure to override the <see cref="M:System.Windows.Forms.DataGridViewColumn.Clone" /> method to copy the new properties during cloning operations. You should also call the base class's <see cref="M:System.Windows.Forms.DataGridViewColumn.Clone" /> method so that the properties of the base class are copied to the new cell.</para>
     </block>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />
+    <altmember cref="T:System.Windows.Forms.CheckBox" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewColumn.SortMode" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellClick" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellValueChanged" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CurrentCellDirtyStateChanged" />
+    <altmember cref="M:System.Windows.Forms.DataGridView.CommitEdit(System.Windows.Forms.DataGridViewDataErrorContexts)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,6 +73,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -91,12 +102,21 @@
 |--------------|-----------|  
 |<xref:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate%2A>|A new <xref:System.Windows.Forms.DataGridViewCheckBoxCell> with its <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property initialized to the `threeState` parameter value.|  
 |<xref:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState%2A>|The value of the `threeState` parameter.|  
-|<xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=fullName>|<xref:System.Windows.Forms.DataGridViewColumnSortMode?displayProperty=fullName>|  
-|The <xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A> property of the <xref:System.Windows.Forms.DataGridViewCellStyle> object returned by the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.DefaultCellStyle%2A> property.|<xref:System.Windows.Forms.DataGridViewContentAlignment?displayProperty=fullName>|  
-|The <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property of the <xref:System.Windows.Forms.DataGridViewCellStyle> object returned by the <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A> property.|<xref:System.Windows.Forms.CheckState?displayProperty=fullName> if `threeState` is `true`; otherwise, `false`.|  
+|<xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=nameWithType>|<xref:System.Windows.Forms.DataGridViewColumnSortMode.NotSortable?displayProperty=nameWithType>|  
+|The <xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A> property of the <xref:System.Windows.Forms.DataGridViewCellStyle> object returned by the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.DefaultCellStyle%2A> property.|<xref:System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter?displayProperty=nameWithType>|  
+|The <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property of the <xref:System.Windows.Forms.DataGridViewCellStyle> object returned by the <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A> property.|<xref:System.Windows.Forms.CheckState.Indeterminate?displayProperty=nameWithType> if `threeState` is `true`; otherwise, `false`.|  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.SortMode" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.DefaultCellStyle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.Alignment" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.NullValue" />
       </Docs>
     </Member>
     <Member MemberName="CellTemplate">
@@ -129,7 +149,7 @@
  The constructors for the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn> class initialize this property to a newly created <xref:System.Windows.Forms.DataGridViewCheckBoxCell>.  
   
 > [!CAUTION]
->  Changing the properties of the cell template will not immediately affect the user interface (UI) of the column's existing cells. These changes are only apparent after the column is regenerated (for example, by sorting the column or through a call to the <xref:System.Windows.Forms.DataGridView.InvalidateColumn%2A?displayProperty=fullName> method).  
+>  Changing the properties of the cell template will not immediately affect the user interface (UI) of the column's existing cells. These changes are only apparent after the column is regenerated (for example, by sorting the column or through a call to the <xref:System.Windows.Forms.DataGridView.InvalidateColumn%2A?displayProperty=nameWithType> method).  
   
    
   
@@ -143,6 +163,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The property is set to a value that is not of type <see cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="Overload:System.Windows.Forms.DataGridViewCheckBoxColumn.#ctor" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.InvalidateColumn(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="DefaultCellStyle">
@@ -173,8 +198,8 @@
   
 |`DataGridViewCellStyle` property|Default value|  
 |--------------------------------------|-------------------|  
-|<xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A>|<xref:System.Windows.Forms.DataGridViewContentAlignment?displayProperty=fullName>|  
-|<xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>|<xref:System.Windows.Forms.CheckState?displayProperty=fullName> if the initial <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState%2A> property value is `true`; otherwise, `false`.|  
+|<xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A>|<xref:System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter?displayProperty=nameWithType>|  
+|<xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>|<xref:System.Windows.Forms.CheckState.Indeterminate?displayProperty=nameWithType> if the initial <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState%2A> property value is `true`; otherwise, `false`.|  
   
  These values override the value specified in the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> property of the <xref:System.Windows.Forms.DataGridView> control, but may be overridden by other cell style properties. For more information, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
@@ -190,6 +215,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.DefaultCellStyle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="FalseValue">
@@ -235,6 +263,13 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate" /> property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.TrueValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.IndeterminateValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState" />
       </Docs>
     </Member>
     <Member MemberName="FlatStyle">
@@ -261,7 +296,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To display the check box cells using visual styles, set this property to <xref:System.Windows.Forms.FlatStyle.System> and call the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=fullName> method before <xref:System.Windows.Forms.Application.Run%2A?displayProperty=fullName>.  
+ To display the check box cells using visual styles, set this property to <xref:System.Windows.Forms.FlatStyle.System> and call the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method before <xref:System.Windows.Forms.Application.Run%2A?displayProperty=nameWithType>.  
   
  Getting or setting this property gets or sets the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FlatStyle%2A> property of the cell object returned by the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate%2A> property. Setting this property also sets the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FlatStyle%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
   
@@ -277,6 +312,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate" /> property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.FlatStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.FlatStyle" />
+        <altmember cref="M:System.Windows.Forms.Application.EnableVisualStyles" />
       </Docs>
     </Member>
     <Member MemberName="IndeterminateValue">
@@ -322,6 +363,13 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate" /> property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.TrueValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.FalseValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState" />
       </Docs>
     </Member>
     <Member MemberName="ThreeState">
@@ -367,6 +415,13 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate" /> property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.FalseValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.TrueValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.IndeterminateValue" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -386,6 +441,7 @@
         <summary>Gets a string that describes the column.</summary>
         <returns>A <see cref="T:System.String" /> that describes the column.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewColumn.ToString" />
       </Docs>
     </Member>
     <Member MemberName="TrueValue">
@@ -431,7 +487,23 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate" /> property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.FalseValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.IndeterminateValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCheckBoxColumn" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

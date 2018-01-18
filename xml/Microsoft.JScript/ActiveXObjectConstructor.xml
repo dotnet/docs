@@ -17,7 +17,7 @@
   </Docs>
   <Members>
     <Member MemberName="CreateInstance">
-      <MemberSignature Language="C#" Value="public object CreateInstance (object[] args);" />
+      <MemberSignature Language="C#" Value="public object CreateInstance (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object CreateInstance(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ActiveXObjectConstructor.CreateInstance(System.Object[])" />
       <MemberType>Method</MemberType>

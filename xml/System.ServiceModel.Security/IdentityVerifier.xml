@@ -85,7 +85,7 @@
     </Member>
     <Member MemberName="TryGetIdentity">
       <MemberSignature Language="C#" Value="public abstract bool TryGetIdentity (System.ServiceModel.EndpointAddress reference, out System.ServiceModel.EndpointIdentity identity);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetIdentity(class System.ServiceModel.EndpointAddress reference, class System.ServiceModel.EndpointIdentity identity) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetIdentity(class System.ServiceModel.EndpointAddress reference, [out] class System.ServiceModel.EndpointIdentity&amp; identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IdentityVerifier.TryGetIdentity(System.ServiceModel.EndpointAddress,System.ServiceModel.EndpointIdentity@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

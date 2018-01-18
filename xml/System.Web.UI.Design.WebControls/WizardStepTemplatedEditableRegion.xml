@@ -33,6 +33,8 @@
         <param name="wizardStep">A <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> object that represents a step displayed in a <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.WizardStepTemplatedEditableRegion" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Wizard" />
+        <altmember cref="T:System.Web.UI.Design.TemplatedEditableDesignerRegion" />
       </Docs>
     </Member>
     <Member MemberName="Step">
@@ -51,6 +53,9 @@
         <summary>Gets the associated design-time wizard step.</summary>
         <value>A <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Wizard" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
       </Docs>
     </Member>
   </Members>

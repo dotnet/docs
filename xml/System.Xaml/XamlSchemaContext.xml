@@ -154,9 +154,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns the <xref:System.Xaml.XamlSchemaContextSettings.FullyQualifyAssemblyNamesInClrNamespaces%2A?displayProperty=fullName> value that is established in the settings for the <xref:System.Xaml.XamlSchemaContext.%23ctor%28System.Xaml.XamlSchemaContextSettings%29> constructor signature. If other signatures were used for construction or if <xref:System.Xaml.XamlSchemaContextSettings.FullyQualifyAssemblyNamesInClrNamespaces%2A?displayProperty=fullName> is not specifically set to `true`, the value of this property is `false`.  
+ This property returns the <xref:System.Xaml.XamlSchemaContextSettings.FullyQualifyAssemblyNamesInClrNamespaces%2A?displayProperty=nameWithType> value that is established in the settings for the <xref:System.Xaml.XamlSchemaContext.%23ctor%28System.Xaml.XamlSchemaContextSettings%29> constructor signature. If other signatures were used for construction or if <xref:System.Xaml.XamlSchemaContextSettings.FullyQualifyAssemblyNamesInClrNamespaces%2A?displayProperty=nameWithType> is not specifically set to `true`, the value of this property is `false`.  
   
- The value of this property influences the strings that are returned by <xref:System.Xaml.XamlSchemaContext.GetAllXamlNamespaces%2A>. If <xref:System.Xaml.XamlSchemaContext.FullyQualifyAssemblyNamesInClrNamespaces%2A> is `true`, the assembly portion of the string reports the equivalent of <xref:System.Reflection.Assembly.FullName%2A?displayProperty=fullName>.  
+ The value of this property influences the strings that are returned by <xref:System.Xaml.XamlSchemaContext.GetAllXamlNamespaces%2A>. If <xref:System.Xaml.XamlSchemaContext.FullyQualifyAssemblyNamesInClrNamespaces%2A> is `true`, the assembly portion of the string reports the equivalent of <xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -362,10 +362,11 @@
         <exception cref="T:System.ArgumentException">A component of <paramref name="xamlTypeName" /> (<see cref="P:System.Xaml.Schema.XamlTypeName.Name" /> or <see cref="P:System.Xaml.Schema.XamlTypeName.Namespace" />) is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="xamlTypeName" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Xaml.Schema.XamlTypeName" />
       </Docs>
     </Member>
     <Member MemberName="GetXamlType">
-      <MemberSignature Language="C#" Value="protected virtual System.Xaml.XamlType GetXamlType (string xamlNamespace, string name, System.Xaml.XamlType[] typeArguments);" />
+      <MemberSignature Language="C#" Value="protected virtual System.Xaml.XamlType GetXamlType (string xamlNamespace, string name, params System.Xaml.XamlType[] typeArguments);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Xaml.XamlType GetXamlType(string xamlNamespace, string name, class System.Xaml.XamlType[] typeArguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlSchemaContext.GetXamlType(System.String,System.String,System.Xaml.XamlType[])" />
       <MemberType>Method</MemberType>
@@ -465,7 +466,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns the <xref:System.Xaml.XamlSchemaContextSettings.SupportMarkupExtensionsWithDuplicateArity%2A?displayProperty=fullName> value that is established in the settings for the <xref:System.Xaml.XamlSchemaContext.%23ctor%28System.Xaml.XamlSchemaContextSettings%29> constructor signature. If other signatures are used for construction or if <xref:System.Xaml.XamlSchemaContextSettings.SupportMarkupExtensionsWithDuplicateArity%2A?displayProperty=fullName> is not specifically set to `true`, the value of this property is `false`.  
+ This property returns the <xref:System.Xaml.XamlSchemaContextSettings.SupportMarkupExtensionsWithDuplicateArity%2A?displayProperty=nameWithType> value that is established in the settings for the <xref:System.Xaml.XamlSchemaContext.%23ctor%28System.Xaml.XamlSchemaContextSettings%29> constructor signature. If other signatures are used for construction or if <xref:System.Xaml.XamlSchemaContextSettings.SupportMarkupExtensionsWithDuplicateArity%2A?displayProperty=nameWithType> is not specifically set to `true`, the value of this property is `false`.  
   
  Duplicate arity of markup extensions is not specifically addressed by the XAML specification [MS-XAML], section 6.6.7.2. This is because formation of the XAML information item for a markup extension is identical regardless of duplicate arity that might exist in the markup extension implementation. Only the actual invocation of the markup extension and its `ProvideValue` exposes any issues associated with duplicate arity. Behavior for handling duplicate arity is thus undefined and is left up to each implementing XAML schema context and its XAML writer integration. The default XAML schema context as implemented for .NET Framework XAML Services operations does not support duplicate arity; various .NET Framework XAML Services APIs will throw exceptions when processing markup extension usage with underlying duplicate arity.  
   
@@ -477,7 +478,7 @@
     </Member>
     <Member MemberName="TryGetCompatibleXamlNamespace">
       <MemberSignature Language="C#" Value="public virtual bool TryGetCompatibleXamlNamespace (string xamlNamespace, out string compatibleNamespace);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetCompatibleXamlNamespace(string xamlNamespace, string compatibleNamespace) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetCompatibleXamlNamespace(string xamlNamespace, [out] string&amp; compatibleNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlSchemaContext.TryGetCompatibleXamlNamespace(System.String,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -515,5 +516,23 @@
           <paramref name="xamlNamespace" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlSchemaContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetXamlType">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Xaml.XamlType" /> that is based on either a CLR or XAML type identifier.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

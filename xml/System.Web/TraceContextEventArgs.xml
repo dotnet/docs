@@ -23,11 +23,14 @@
 ## Examples  
  The following code example demonstrates how you can register a <xref:System.Web.TraceContextEventHandler> delegate to handle the <xref:System.Web.TraceContext.TraceFinished> event. In this example, the `OnTraceFinished` method accesses the collection of <xref:System.Web.TraceContextRecord> objects through the <xref:System.Web.TraceContextEventArgs.TraceRecords%2A> property, iterates through them, and writes them to the response stream.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Trace_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_3/CS/form3cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Trace_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_3/VB/form3vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Trace_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_3/CS/form3cs.aspx#1)]
+ [!code-aspx-vb[System.Web.Trace_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_3/VB/form3vb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.TraceContextEventHandler" />
+    <altmember cref="E:System.Web.TraceContext.TraceFinished" />
+    <altmember cref="T:System.Web.TraceContext" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,7 +70,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Every call to the <xref:System.Web.TraceContext.Write%2A?displayProperty=fullName> and <xref:System.Web.TraceContext.Warn%2A?displayProperty=fullName> methods generates a <xref:System.Web.TraceContextRecord> object that is added to the <xref:System.Web.TraceContextEventArgs.TraceRecords%2A> messages collection. The <xref:System.Web.TraceContext.Warn%2A> method call sets the <xref:System.Web.TraceContextRecord.IsWarning%2A> property to `true`, while the other method calls set it to `false`.  
+ Every call to the <xref:System.Web.TraceContext.Write%2A?displayProperty=nameWithType> and <xref:System.Web.TraceContext.Warn%2A?displayProperty=nameWithType> methods generates a <xref:System.Web.TraceContextRecord> object that is added to the <xref:System.Web.TraceContextEventArgs.TraceRecords%2A> messages collection. The <xref:System.Web.TraceContext.Warn%2A> method call sets the <xref:System.Web.TraceContextRecord.IsWarning%2A> property to `true`, while the other method calls set it to `false`.  
   
  You can iterate through the <xref:System.Web.TraceContextEventArgs.TraceRecords%2A> messages and examine records with specific categories or messages, and whether they are warnings.  
   
@@ -76,11 +79,14 @@
 ## Examples  
  The following code example demonstrates how you can register a <xref:System.Web.TraceContextEventHandler> delegate to handle the <xref:System.Web.TraceContext.TraceFinished> event. In this example, the `OnTraceFinished` method accesses the collection of <xref:System.Web.TraceContextRecord> objects through the <xref:System.Web.TraceContextEventArgs.TraceRecords%2A> property, iterates through them, and writes them to the response stream.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Trace_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_3/CS/form3cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Trace_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_3/VB/form3vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Trace_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_3/CS/form3cs.aspx#1)]
+ [!code-aspx-vb[System.Web.Trace_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_3/VB/form3vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.TraceContextRecord" />
+        <altmember cref="T:System.Web.TraceContextEventHandler" />
+        <altmember cref="T:System.Web.TraceContext" />
       </Docs>
     </Member>
   </Members>

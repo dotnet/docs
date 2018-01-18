@@ -199,6 +199,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Remoting.RemotingConfiguration" />
       </Docs>
     </Member>
     <Member MemberName="DetachServer">
@@ -495,7 +496,7 @@
 ## Remarks  
  When the transparent proxy that is backed by the <xref:System.Runtime.Remoting.Proxies.RealProxy> is called, it delegates the calls to the <xref:System.Runtime.Remoting.Proxies.RealProxy.Invoke%2A> method. The <xref:System.Runtime.Remoting.Proxies.RealProxy.Invoke%2A> method transforms the message in the `msg` parameter into a <xref:System.Runtime.Remoting.Messaging.IMethodCallMessage>, and sends it to the remote object that is represented by the current instance of <xref:System.Runtime.Remoting.Proxies.RealProxy>.  
   
- The <xref:System.Runtime.Remoting.Messaging.IMessage> parameter provides a dictionary through the <xref:System.Runtime.Remoting.Messaging.IMessage.Properties%2A?displayProperty=fullName> property. The dictionary contains name/value pairs of information about the method call, such as the name of the method called and its parameters.  
+ The <xref:System.Runtime.Remoting.Messaging.IMessage> parameter provides a dictionary through the <xref:System.Runtime.Remoting.Messaging.IMessage.Properties%2A?displayProperty=nameWithType> property. The dictionary contains name/value pairs of information about the method call, such as the name of the method called and its parameters.  
   
    
   
@@ -588,7 +589,7 @@
     </Member>
     <Member MemberName="SupportsInterface">
       <MemberSignature Language="C#" Value="public virtual IntPtr SupportsInterface (ref Guid iid);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance native int SupportsInterface(valuetype System.Guid iid) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance native int SupportsInterface(valuetype System.Guid&amp; iid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Proxies.RealProxy.SupportsInterface(System.Guid@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -625,5 +626,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Proxies.RealProxy" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

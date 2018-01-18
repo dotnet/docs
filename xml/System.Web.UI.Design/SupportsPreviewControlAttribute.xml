@@ -48,6 +48,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.Design.ControlDesigner.UsePreviewControl" />
+    <altmember cref="P:System.Web.UI.Design.ControlDesigner.ViewControl" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.PreviewControlDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -99,6 +102,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.SupportsPreviewControlAttribute.IsDefaultAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -125,12 +129,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.Equals%2A> method overrides the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+ The <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.Equals%2A> method overrides the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method.  
   
  The <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.Equals%2A> method compares two instances based on the value of their <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.SupportsPreviewControl%2A> properties.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -153,12 +158,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.GetHashCode%2A> method overrides the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> method.  
+ The <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.GetHashCode%2A> method overrides the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> method.  
   
  The <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.GetHashCode%2A> method generates the same hash code for two objects that are equal according to the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.Equals%2A> method. The hash code is suitable for use in hashing algorithms and data structures, such as hash tables.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="T:System.Collections.Hashtable" />
+        <altmember cref="M:System.Web.UI.Design.SupportsPreviewControlAttribute.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="IsDefaultAttribute">
@@ -186,6 +194,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.Design.SupportsPreviewControlAttribute.Default" />
       </Docs>
     </Member>
     <Member MemberName="SupportsPreviewControl">
@@ -216,6 +225,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.UsePreviewControl" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.ViewControl" />
       </Docs>
     </Member>
   </Members>

@@ -564,7 +564,7 @@ AutoGenerateOrderByClause="True">
 ## Remarks  
  Handle this event to access the <xref:System.Data.Objects.ObjectContext> that is used by the <xref:System.Web.UI.WebControls.EntityDataSource> control to execute the query and track changes. This context object can be stored and used for successive operations outside the <xref:System.Web.UI.WebControls.EntityDataSource>. The <xref:System.Data.Objects.ObjectContext> is obtained from the <xref:System.Web.UI.WebControls.EntityDataSourceContextCreatedEventArgs> that is returned by the <xref:System.Web.UI.WebControls.EntityDataSource.ContextCreated> event. For more information, see [Object Context Life-Cycle Management (EntityDataSource)](http://msdn.microsoft.com/en-us/67bc2486-112c-47c3-b23f-0297f7ac2160). For more information about the object context, see [Identity Resolution, State Management, and Change Tracking](http://msdn.microsoft.com/en-us/3bd49311-0e72-4ea4-8355-38fe57036ba0).  
   
- The <xref:System.Web.UI.WebControls.EntityDataSource.ContextCreated> event allows you to assign the <xref:System.Data.Objects.ObjectContext> that has been created to a variable for successive operations outside the <xref:System.Web.UI.WebControls.EntityDataSource>. The <xref:System.Web.UI.WebControls.EntityDataSourceContextCreatedEventArgs.Context%2A?displayProperty=fullName> property contains the context that has been created in the <xref:System.Web.UI.WebControls.EntityDataSource.ContextCreating> event. If the user does not assign a context during the <xref:System.Web.UI.WebControls.EntityDataSource.ContextCreating> event, the context instance contained in <xref:System.Web.UI.WebControls.EntityDataSourceContextCreatedEventArgs.Context%2A?displayProperty=fullName> is the one created by the <xref:System.Web.UI.WebControls.EntityDataSource> based on the <xref:System.Web.UI.WebControls.EntityDataSource.ContextTypeName%2A?displayProperty=fullName>, <xref:System.Web.UI.WebControls.EntityDataSource.DefaultContainerName%2A?displayProperty=fullName>, or <xref:System.Web.UI.WebControls.EntityDataSource.ConnectionString%2A?displayProperty=fullName> properties.  
+ The <xref:System.Web.UI.WebControls.EntityDataSource.ContextCreated> event allows you to assign the <xref:System.Data.Objects.ObjectContext> that has been created to a variable for successive operations outside the <xref:System.Web.UI.WebControls.EntityDataSource>. The <xref:System.Web.UI.WebControls.EntityDataSourceContextCreatedEventArgs.Context%2A?displayProperty=nameWithType> property contains the context that has been created in the <xref:System.Web.UI.WebControls.EntityDataSource.ContextCreating> event. If the user does not assign a context during the <xref:System.Web.UI.WebControls.EntityDataSource.ContextCreating> event, the context instance contained in <xref:System.Web.UI.WebControls.EntityDataSourceContextCreatedEventArgs.Context%2A?displayProperty=nameWithType> is the one created by the <xref:System.Web.UI.WebControls.EntityDataSource> based on the <xref:System.Web.UI.WebControls.EntityDataSource.ContextTypeName%2A?displayProperty=nameWithType>, <xref:System.Web.UI.WebControls.EntityDataSource.DefaultContainerName%2A?displayProperty=nameWithType>, or <xref:System.Web.UI.WebControls.EntityDataSource.ConnectionString%2A?displayProperty=nameWithType> properties.  
   
  ]]></format>
         </remarks>
@@ -1074,7 +1074,7 @@ protected void EntityDataSource2_ContextDisposing(object sender,
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.EntityDataSource> control must return a specific derived type, the <xref:System.Web.UI.WebControls.EntityDataSource.EntityTypeFilter%2A> property must also be set to specify the name of this derived type. If the <xref:System.Web.UI.WebControls.EntityDataSource.EntitySetName%2A> property specifies an entity set that can generate polymorphic results, the <xref:System.Web.UI.WebControls.EntityDataSource.EntityTypeFilter%2A> property is required to be able to edit data. This has the same effect as applying the <xref:System.Data.Objects.ObjectQuery%601.OfType%60%601?displayProperty=fullName> method to the <xref:System.Data.Objects.ObjectQuery%601?displayProperty=fullName>. If the data binding is read-only, then the <xref:System.Web.UI.WebControls.EntityDataSource.EntityTypeFilter%2A> property is not required. In this case, the properties of the object returned by the query will be those of the default entity type for the entity set.  
+ When the <xref:System.Web.UI.WebControls.EntityDataSource> control must return a specific derived type, the <xref:System.Web.UI.WebControls.EntityDataSource.EntityTypeFilter%2A> property must also be set to specify the name of this derived type. If the <xref:System.Web.UI.WebControls.EntityDataSource.EntitySetName%2A> property specifies an entity set that can generate polymorphic results, the <xref:System.Web.UI.WebControls.EntityDataSource.EntityTypeFilter%2A> property is required to be able to edit data. This has the same effect as applying the <xref:System.Data.Objects.ObjectQuery%601.OfType%60%601?displayProperty=nameWithType> method to the <xref:System.Data.Objects.ObjectQuery%601?displayProperty=nameWithType>. If the data binding is read-only, then the <xref:System.Web.UI.WebControls.EntityDataSource.EntityTypeFilter%2A> property is not required. In this case, the properties of the object returned by the query will be those of the default entity type for the entity set.  
   
  ]]></format>
         </remarks>
@@ -1649,7 +1649,7 @@ ObjectQuery<Product> products = context.Product
   
  The <xref:System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs.Results%2A> property of the <xref:System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs> object contains an <xref:System.Collections.IEnumerable> of objects that are returned from the query. Handle the <xref:System.Web.UI.WebControls.EntityDataSource.Selected> event to retrieve and store returned entities in the <xref:System.Web.UI.Control.ViewState%2A>. Do this to persist object changes on the page.  
   
- The <xref:System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs.TotalRowCount%2A>property of the <xref:System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs> object shows the total number of objects in all pages, regardless of the values passed by the data-bound control for paging. <xref:System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs.TotalRowCount%2A>is only retrieved if the data-bound control needs it, such as if paging is enabled.  
+ The <xref:System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs.TotalRowCount%2A> property of the <xref:System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs> object shows the total number of objects in all pages, regardless of the values passed by the data-bound control for paging. <xref:System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs.TotalRowCount%2A> is only retrieved if the data-bound control needs it, such as if paging is enabled.  
   
  If an error occurs when the query is prepared or executed, the <xref:System.Web.UI.WebControls.EntityDataSource.Selected> event is raised, the <xref:System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs.Exception%2A> property of the <xref:System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs> object is set to the returned <xref:System.Exception>, and the <xref:System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs.Results%2A> property is set to `null`. If you handle the exception in the <xref:System.Web.UI.WebControls.EntityDataSource.Selected> event handler, set the <xref:System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs.ExceptionHandled%2A> property to `true`. This prevents the exception from being raised again. When you specify a value of `false` for the <xref:System.Web.UI.WebControls.EntityDataSourceChangingEventArgs.ExceptionHandled%2A> property, the <xref:System.Web.UI.WebControls.EntityDataSource> re-raises the exception.  
   
@@ -1727,7 +1727,7 @@ ObjectQuery<Product> products = context.Product
 ## Remarks  
  Like the <xref:System.Data.Objects.ObjectQuery%601.Select%2A> method of the <xref:System.Data.Objects.ObjectQuery%601> class, parameters can be passed to the projection that is defined by the <xref:System.Web.UI.WebControls.EntityDataSource.Select%2A> property. The <xref:System.Web.UI.WebControls.EntityDataSource.SelectParameters%2A> property of the <xref:System.Web.UI.WebControls.EntityDataSource> control specifies a <xref:System.Web.UI.WebControls.ParameterCollection> that contains the parameters to supply to the SELECT statement of the query. The <xref:System.Web.UI.WebControls.EntityDataSource.SelectParameters%2A> property uses named arguments to refer to the parameters that are specified in the string that is supplied to the <xref:System.Web.UI.WebControls.EntityDataSource.Select%2A> property.  
   
- If the <xref:System.Web.UI.WebControls.EntityDataSource.SelectParameters%2A>property is not set, no parameter substitution is made. All the parameter names in the SELECT statement, prefixed by the "`@"` symbol`,` must have a matching name in the <xref:System.Web.UI.WebControls.ParameterCollection>. Null values are not allowed for parameters in a <xref:System.Web.UI.WebControls.ParameterCollection>.  
+ If the <xref:System.Web.UI.WebControls.EntityDataSource.SelectParameters%2A> property is not set, no parameter substitution is made. All the parameter names in the SELECT statement, prefixed by the "`@"` symbol`,` must have a matching name in the <xref:System.Web.UI.WebControls.ParameterCollection>. Null values are not allowed for parameters in a <xref:System.Web.UI.WebControls.ParameterCollection>.  
   
  ]]></format>
         </remarks>
@@ -2011,7 +2011,7 @@ ObjectQuery<SalesOrderHeader> onlineOrders =
 ## Remarks  
  Like the <xref:System.Data.Objects.ObjectQuery%601.Where%2A> method of the <xref:System.Data.Objects.ObjectQuery%601> class, parameters can be passed to the predicate assigned to the <xref:System.Web.UI.WebControls.EntityDataSource.Where%2A> property. The <xref:System.Web.UI.WebControls.EntityDataSource.WhereParameters%2A> property of the <xref:System.Web.UI.WebControls.EntityDataSource> control specifies a <xref:System.Web.UI.WebControls.ParameterCollection> that contains the parameters to supply to the WHERE clause of the query. The <xref:System.Web.UI.WebControls.EntityDataSource.WhereParameters%2A> property uses named arguments to refer to the parameters that are specified in the string that is supplied to the <xref:System.Web.UI.WebControls.EntityDataSource.Where%2A> property.  
   
- If the <xref:System.Web.UI.WebControls.EntityDataSource.WhereParameters%2A>property is not set, no parameter substitution is made. All the parameter names in the WHERE clause preceded by the symbol "`@"` must have a matching name in the <xref:System.Web.UI.WebControls.ParameterCollection>. Null values are not allowed for parameters in a <xref:System.Web.UI.WebControls.ParameterCollection>.  
+ If the <xref:System.Web.UI.WebControls.EntityDataSource.WhereParameters%2A> property is not set, no parameter substitution is made. All the parameter names in the WHERE clause preceded by the symbol "`@"` must have a matching name in the <xref:System.Web.UI.WebControls.ParameterCollection>. Null values are not allowed for parameters in a <xref:System.Web.UI.WebControls.ParameterCollection>.  
   
    
   
@@ -2048,5 +2048,14 @@ ObjectQuery<SalesOrderHeader> onlineOrders =
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.EntityDataSource" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

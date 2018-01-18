@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#qualifyAssembly"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/assemblyBinding/qualifyAssembly"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "container tags, <qualifyAssembly> element"
   - "<qualifyAssembly> element"
@@ -26,6 +21,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;qualifyAssembly&gt; Element
 Specifies the full name of the assembly that should be dynamically loaded when a partial name is used.  
@@ -65,7 +62,7 @@ Specifies the full name of the assembly that should be dynamically loaded when a
 |`runtime`|Contains information about assembly binding and garbage collection.|  
   
 ## Remarks  
- Calling the <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> method using partial assembly names causes the common language runtime to look for the assembly only in the application base directory. Use the **\<qualifyAssembly>** element in your application configuration file to provide the full assembly information (name, version, public key token, and culture) and cause the common language runtime to search for the assembly in the global assembly cache.  
+ Calling the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method using partial assembly names causes the common language runtime to look for the assembly only in the application base directory. Use the **\<qualifyAssembly>** element in your application configuration file to provide the full assembly information (name, version, public key token, and culture) and cause the common language runtime to search for the assembly in the global assembly cache.  
   
  The **fullName** attribute must include the four fields of assembly identity: name, version, public key token, and culture. The **partialName** attribute must partially reference an assembly. You must specify at least the assembly's text name (the most common case), but you can also include version, public key token, or culture (or any combination of the four, but not all four). The **partialName** must match the name specified in your call. For example, you cannot specify `"math"` as the **partialName** attribute in your configuration file and call `Assembly.Load("math, Version=3.3.3.3")` in your code.  
   
@@ -85,6 +82,6 @@ Specifies the full name of the assembly that should be dynamically loaded when a
 ```  
   
 ## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)   
- [How the Runtime Locates Assemblies](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)   
+ [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+ [How the Runtime Locates Assemblies](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
  [NIB: Partial Assembly References](http://msdn.microsoft.com/en-us/ec90f07a-398c-4306-9401-0fc5ff9cb59f)

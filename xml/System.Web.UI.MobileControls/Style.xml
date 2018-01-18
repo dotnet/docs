@@ -49,12 +49,13 @@
 ## Examples  
  The following example demonstrates three user-defined styles in a <xref:System.Web.UI.MobileControls.StyleSheet> object. A <xref:System.Web.UI.MobileControls.SelectionList> object holds three values that correspond to the three defined styles. The `OnClick` command event calls the `SelectStyle` function, which changes the <xref:System.Web.UI.MobileControls.Style.StyleReference%2A> property of the <xref:System.Web.UI.MobileControls.TextView> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileStyleSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileStyleSample/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileStyleSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileStyleSample/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileStyleSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileStyleSample/cs/Default.aspx#1)]
+ [!code-aspx-vb[MobileStyleSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileStyleSample/vb/Default.aspx#1)]  
   
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="P:System.Web.UI.MobileControls.Style.Name" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -135,13 +136,14 @@
   
 |Value|Description|  
 |-----------|-----------------|  
-|<xref:System.Web.UI.MobileControls.Alignment?displayProperty=fullName>|No alignment is set for the specified object.|  
-|<xref:System.Web.UI.MobileControls.Alignment?displayProperty=fullName>|Aligns to the left.|  
-|<xref:System.Web.UI.MobileControls.Alignment?displayProperty=fullName>|Aligns to the center.|  
-|<xref:System.Web.UI.MobileControls.Alignment?displayProperty=fullName>|Aligns to the right.|  
+|<xref:System.Web.UI.MobileControls.Alignment.NotSet?displayProperty=nameWithType>|No alignment is set for the specified object.|  
+|<xref:System.Web.UI.MobileControls.Alignment.Left?displayProperty=nameWithType>|Aligns to the left.|  
+|<xref:System.Web.UI.MobileControls.Alignment.Center?displayProperty=nameWithType>|Aligns to the center.|  
+|<xref:System.Web.UI.MobileControls.Alignment.Right?displayProperty=nameWithType>|Aligns to the right.|  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Alignment" />
       </Docs>
     </Member>
     <Member MemberName="AlignmentKey">
@@ -187,11 +189,11 @@
   
 |Property|Description|  
 |--------------|-----------------|  
-|<xref:System.Web.UI.MobileControls.FontInfo.Size%2A?displayProperty=fullName>|The size of the font.|  
-|<xref:System.Web.UI.MobileControls.FontInfo.Bold%2A?displayProperty=fullName>|Whether the font is bold.|  
-|<xref:System.Web.UI.MobileControls.FontInfo.Italic%2A?displayProperty=fullName>|Whether the font is italic.|  
-|<xref:System.Web.UI.MobileControls.Style.ForeColor%2A?displayProperty=fullName>|The foreground color.|  
-|<xref:System.Web.UI.MobileControls.Style.BackColor%2A?displayProperty=fullName>|The background color.|  
+|<xref:System.Web.UI.MobileControls.FontInfo.Size%2A?displayProperty=nameWithType>|The size of the font.|  
+|<xref:System.Web.UI.MobileControls.FontInfo.Bold%2A?displayProperty=nameWithType>|Whether the font is bold.|  
+|<xref:System.Web.UI.MobileControls.FontInfo.Italic%2A?displayProperty=nameWithType>|Whether the font is italic.|  
+|<xref:System.Web.UI.MobileControls.Style.ForeColor%2A?displayProperty=nameWithType>|The foreground color.|  
+|<xref:System.Web.UI.MobileControls.Style.BackColor%2A?displayProperty=nameWithType>|The background color.|  
   
  ]]></format>
         </remarks>
@@ -346,6 +348,7 @@
         <summary>Gets or sets the DeviceSpecific/Choice construct associated with the control. The accessor returns <see langword="null" /> if no such construct exists. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The DeviceSpecific/Choice construct associated with the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecific" />
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -382,13 +385,14 @@
   
 |Property|Description|  
 |--------------|-----------------|  
-|<xref:System.Web.UI.MobileControls.FontInfo.Bold%2A?displayProperty=fullName>|Whether the font is bold.|  
-|<xref:System.Web.UI.MobileControls.FontInfo.Italic%2A?displayProperty=fullName>|Whether the font is italic.|  
-|<xref:System.Web.UI.MobileControls.FontInfo.Name%2A?displayProperty=fullName>|An identifier for this font instance.|  
-|<xref:System.Web.UI.MobileControls.FontInfo.Size%2A?displayProperty=fullName>|The font size.|  
+|<xref:System.Web.UI.MobileControls.FontInfo.Bold%2A?displayProperty=nameWithType>|Whether the font is bold.|  
+|<xref:System.Web.UI.MobileControls.FontInfo.Italic%2A?displayProperty=nameWithType>|Whether the font is italic.|  
+|<xref:System.Web.UI.MobileControls.FontInfo.Name%2A?displayProperty=nameWithType>|An identifier for this font instance.|  
+|<xref:System.Web.UI.MobileControls.FontInfo.Size%2A?displayProperty=nameWithType>|The font size.|  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.FontInfo" />
       </Docs>
     </Member>
     <Member MemberName="FontNameKey">
@@ -406,6 +410,7 @@
       <Docs>
         <summary>The key for retrieving the style from the embedded style sheet for the <see cref="P:System.Web.UI.MobileControls.FontInfo.Name" /> property of the <see cref="P:System.Web.UI.MobileControls.Style.Font" /> property. Used internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.FontInfo" />
       </Docs>
     </Member>
     <Member MemberName="FontSizeKey">
@@ -423,6 +428,7 @@
       <Docs>
         <summary>The key for retrieving the style from the embedded style sheet for the <see cref="P:System.Web.UI.MobileControls.FontInfo.Size" /> property of the <see cref="P:System.Web.UI.MobileControls.Style.Font" /> property. Used internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.FontInfo" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -544,6 +550,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecific" />
       </Docs>
     </Member>
     <Member MemberName="IsTrackingViewState">
@@ -580,6 +587,7 @@
       <Docs>
         <summary>The key for retrieving the style from the embedded style sheet for the <see cref="P:System.Web.UI.MobileControls.FontInfo.Italic" /> property of the <see cref="P:System.Web.UI.MobileControls.Style.Font" /> property. Used internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecific" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -996,9 +1004,9 @@
   
 |Enumeration|Value|Description|  
 |-----------------|-----------|-----------------|  
-|<xref:System.Web.UI.MobileControls.Wrapping?displayProperty=fullName>|0|No size is set for the specified object. This is the default value.|  
-|<xref:System.Web.UI.MobileControls.Wrapping?displayProperty=fullName>|1|Wrap to the next line.|  
-|<xref:System.Web.UI.MobileControls.Wrapping?displayProperty=fullName>|2|The text is not wrapped to the next line.|  
+|<xref:System.Web.UI.MobileControls.Wrapping.NotSet?displayProperty=nameWithType>|0|No size is set for the specified object. This is the default value.|  
+|<xref:System.Web.UI.MobileControls.Wrapping.Wrap?displayProperty=nameWithType>|1|Wrap to the next line.|  
+|<xref:System.Web.UI.MobileControls.Wrapping.NoWrap?displayProperty=nameWithType>|2|The text is not wrapped to the next line.|  
   
  ]]></format>
         </remarks>
@@ -1021,5 +1029,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the style through the key parameter, with or without using inheritance. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

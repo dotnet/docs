@@ -25,23 +25,23 @@
  You use the <xref:System.Resources.ResXResourceReader> class to enumerate resources in .resx files by traversing the dictionary enumerator (<xref:System.Collections.IDictionaryEnumerator>) that is returned by the <xref:System.Resources.ResXResourceReader.GetEnumerator%2A> method. You call the methods provided by <xref:System.Collections.IDictionaryEnumerator> to advance to the next resource and to read the name and value of each resource in the .resx file.  
   
 > [!NOTE]
->  The <xref:System.Resources.ResXResourceReader> class provides two enumerators. The <xref:System.Resources.ResXResourceReader.GetEnumerator%2A?displayProperty=fullName> method returns an <xref:System.Collections.IDictionaryEnumerator> object; we recommend that you use this method to enumerate resources. The <xref:System.Resources.ResXResourceReader.System%23Collections%23IEnumerable%23GetEnumerator%2A?displayProperty=fullName> method is an explicit interface implementation that returns an <xref:System.Collections.IEnumerator> object; we do not recommend its use.  
+>  The <xref:System.Resources.ResXResourceReader> class provides two enumerators. The <xref:System.Resources.ResXResourceReader.GetEnumerator%2A?displayProperty=nameWithType> method returns an <xref:System.Collections.IDictionaryEnumerator> object; we recommend that you use this method to enumerate resources. The <xref:System.Resources.ResXResourceReader.System%23Collections%23IEnumerable%23GetEnumerator%2A?displayProperty=nameWithType> method is an explicit interface implementation that returns an <xref:System.Collections.IEnumerator> object; we do not recommend its use.  
   
  The following example uses the <xref:System.Resources.ResXResourceReader.GetEnumerator%2A> method to obtain an <xref:System.Collections.IDictionaryEnumerator> object that is used to enumerate the resources in a .resx file. The example includes a `CreateResourceFile` routine that creates the necessary resource file.  
   
  [!code-csharp[System.Resources.ResXResourceReader.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.resources.resxresourcereader.class/cs/resxresourcereader1.cs#1)]
  [!code-vb[System.Resources.ResXResourceReader.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resxresourcereader.class/vb/resxresourcereader1.vb#1)]  
   
- If the <xref:System.Resources.ResXResourceReader.UseResXDataNodes%2A> property is `true`, the value of the <xref:System.Collections.IDictionaryEnumerator.Value%2A?displayProperty=fullName> property is a <xref:System.Resources.ResXDataNode> object rather than the resource value. This makes a resource item's comment available from the <xref:System.Resources.ResXDataNode.Comment%2A?displayProperty=fullName> property. The following example sets the <xref:System.Resources.ResXResourceReader.UseResXDataNodes%2A> property to `true` and enumerates the resources in a .resx file,  
+ If the <xref:System.Resources.ResXResourceReader.UseResXDataNodes%2A> property is `true`, the value of the <xref:System.Collections.IDictionaryEnumerator.Value%2A?displayProperty=nameWithType> property is a <xref:System.Resources.ResXDataNode> object rather than the resource value. This makes a resource item's comment available from the <xref:System.Resources.ResXDataNode.Comment%2A?displayProperty=nameWithType> property. The following example sets the <xref:System.Resources.ResXResourceReader.UseResXDataNodes%2A> property to `true` and enumerates the resources in a .resx file,  
   
  [!code-csharp[System.Resources.ResXResourceReader.Class#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.resources.resxresourcereader.class/cs/resxresourcereader2.cs#2)]
  [!code-vb[System.Resources.ResXResourceReader.Class#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resxresourcereader.class/vb/resxresourcereader2.vb#2)]  
   
  If <xref:System.Resources.ResXResourceReader.UseResXDataNodes%2A> is `true`, the <xref:System.Resources.ResXDataNode> items in the enumeration can be either:  
   
--   Named resources along with their data. In this case, the <xref:System.Resources.ResXDataNode.FileRef%2A?displayProperty=fullName> property is `null`.  
+-   Named resources along with their data. In this case, the <xref:System.Resources.ResXDataNode.FileRef%2A?displayProperty=nameWithType> property is `null`.  
   
--   Named resources along with the name of the file that contains the resource data. In this case, the <xref:System.Resources.ResXDataNode.FileRef%2A?displayProperty=fullName> property returns a <xref:System.Resources.ResXFileRef> object that provides information about the resource, including its filename. If relative file names are used, you should always set the <xref:System.Resources.ResXResourceReader.BasePath%2A> property to provide a reference point for the relative file path.  
+-   Named resources along with the name of the file that contains the resource data. In this case, the <xref:System.Resources.ResXDataNode.FileRef%2A?displayProperty=nameWithType> property returns a <xref:System.Resources.ResXFileRef> object that provides information about the resource, including its filename. If relative file names are used, you should always set the <xref:System.Resources.ResXResourceReader.BasePath%2A> property to provide a reference point for the relative file path.  
   
  If you want to retrieve named resources from a .resx file rather than enumerating its resources, you can instantiate a <xref:System.Resources.ResXResourceSet> object and call its `GetString` and `GetObject` methods.  
   
@@ -61,6 +61,7 @@
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
+    <altmember cref="T:System.Resources.ResXResourceWriter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -294,7 +295,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Resources.ResXResourceReader.BasePath%2A> property is used to resolve relative file path references that are assigned to the <xref:System.Resources.ResXFileRef.FileName%2A> property of <xref:System.Resources.ResXFileRef> objects.  By default, its value is <xref:System.String.Empty?displayProperty=fullName>, and relative file path references are resolved in relationship to the current directory returned by the <xref:System.Environment.CurrentDirectory%2A?displayProperty=fullName> property. You should set this property before you begin enumerating resources.  
+ The <xref:System.Resources.ResXResourceReader.BasePath%2A> property is used to resolve relative file path references that are assigned to the <xref:System.Resources.ResXFileRef.FileName%2A> property of <xref:System.Resources.ResXFileRef> objects.  By default, its value is <xref:System.String.Empty?displayProperty=nameWithType>, and relative file path references are resolved in relationship to the current directory returned by the <xref:System.Environment.CurrentDirectory%2A?displayProperty=nameWithType> property. You should set this property before you begin enumerating resources.  
   
    
   
@@ -309,6 +310,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">In a set operation, a value cannot be specified because the XML resource file has already been accessed and is in use.</exception>
+        <altmember cref="M:System.Resources.ResXResourceReader.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -368,7 +370,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method can be called by either the <xref:System.Resources.ResXResourceReader.System%23IDisposable%23Dispose%2A> method or the <xref:System.Object.Finalize%2A?displayProperty=fullName> method. <xref:System.Resources.ResXResourceReader.System%23IDisposable%23Dispose%2A> invokes this method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes this method with `disposing` set to `false`.  
+ This method can be called by either the <xref:System.Resources.ResXResourceReader.System%23IDisposable%23Dispose%2A> method or the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method. <xref:System.Resources.ResXResourceReader.System%23IDisposable%23Dispose%2A> invokes this method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes this method with `disposing` set to `false`.  
   
  When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Resources.ResXResourceReader> references. This method invokes the `Dispose` method of each referenced object.  
   
@@ -565,7 +567,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Resources.ResXResourceReader> instance is cast to an <xref:System.Collections.IEnumerable> interface. To enumerate the resources in a .resx file, we recommend that you call the <xref:System.Resources.ResXResourceReader.GetEnumerator%2A?displayProperty=fullName> method, and then call the `MoveNext` method on the returned <xref:System.Collections.IDictionaryEnumerator> object.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Resources.ResXResourceReader> instance is cast to an <xref:System.Collections.IEnumerable> interface. To enumerate the resources in a .resx file, we recommend that you call the <xref:System.Resources.ResXResourceReader.GetEnumerator%2A?displayProperty=nameWithType> method, and then call the `MoveNext` method on the returned <xref:System.Collections.IDictionaryEnumerator> object.  
   
  ]]></format>
         </remarks>
@@ -594,6 +596,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Resources.ResXResourceReader.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="UseResXDataNodes">
@@ -621,7 +624,7 @@
    
   
 ## Examples  
- The following example enumerates and displays resource items in an XML file. Initially, <xref:System.Resources.ResXResourceReader.UseResXDataNodes%2A> is set to `false` to show both data and metadata items as they occur in the resource file. The second enumeration has the <xref:System.Resources.ResXResourceReader.UseResXDataNodes%2A> set to `true` so that resource data elements are returned as <xref:System.Resources.ResXDataNode>objects.  
+ The following example enumerates and displays resource items in an XML file. Initially, <xref:System.Resources.ResXResourceReader.UseResXDataNodes%2A> is set to `false` to show both data and metadata items as they occur in the resource file. The second enumeration has the <xref:System.Resources.ResXResourceReader.UseResXDataNodes%2A> set to `true` so that resource data elements are returned as <xref:System.Resources.ResXDataNode> objects.  
   
  [!code-cpp[System.Resources.ResXResourceReader Example#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Resources.ResXResourceReader Example/CPP/useresxdatanodes.cpp#2)]
  [!code-csharp[System.Resources.ResXResourceReader Example#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Resources.ResXResourceReader Example/CS/useresxdatanodes.cs#2)]
@@ -662,5 +665,23 @@
         <exception cref="T:System.InvalidOperationException">In a set operation, the enumerator for the resource file or stream is already open.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResXResourceReader" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FromFileContents">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Resources.ResXResourceReader" /> object and initializes it to read a string whose contents are in the form of an XML resource file.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

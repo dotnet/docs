@@ -28,7 +28,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This interface preserves the vtable order of the <xref:System.AppDomain?displayProperty=fullName> class members that can be accessed by unmanaged COM objects.  
+ This interface preserves the vtable order of the <xref:System.AppDomain?displayProperty=nameWithType> class members that can be accessed by unmanaged COM objects.  
   
  ]]></format>
     </remarks>
@@ -62,7 +62,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.AppendPrivatePath%2A?displayProperty=fullName> method.  
+ See the <xref:System.AppDomain.AppendPrivatePath%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -96,7 +96,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.AssemblyLoad?displayProperty=fullName> event.  
+ See the <xref:System.AppDomain.AssemblyLoad?displayProperty=nameWithType> event.  
   
  ]]></format>
         </remarks>
@@ -130,7 +130,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.AssemblyResolve?displayProperty=fullName> event.  
+ See the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event.  
   
  ]]></format>
         </remarks>
@@ -157,7 +157,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.BaseDirectory%2A?displayProperty=fullName> property.  
+ See the <xref:System.AppDomain.BaseDirectory%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -188,7 +188,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.ClearPrivatePath%2A?displayProperty=fullName> method.  
+ See the <xref:System.AppDomain.ClearPrivatePath%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -220,7 +220,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.ClearShadowCopyPath%2A?displayProperty=fullName> method.  
+ See the <xref:System.AppDomain.ClearShadowCopyPath%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -253,7 +253,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.CreateInstance%2A?displayProperty=fullName> method.  
+ See the <xref:System.AppDomain.CreateInstance%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -287,7 +287,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.CreateInstance%28System.String%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method overload.  
+ See the <xref:System.AppDomain.CreateInstance%28System.String%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method overload.  
   
  The `activationAttributes` parameter is related to client-activated objects, a legacy technology.  
   
@@ -335,7 +335,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.CreateInstance%28System.String%2CSystem.String%2CSystem.Boolean%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%2CSystem.Object%5B%5D%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
+ See the <xref:System.AppDomain.CreateInstance%28System.String%2CSystem.String%2CSystem.Boolean%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%2CSystem.Object%5B%5D%2CSystem.Security.Policy.Evidence%29?displayProperty=nameWithType> method overload.  
   
  The `activationAttributes` parameter is related to client-activated objects, a legacy technology.  
   
@@ -369,7 +369,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.CreateInstanceFrom%28System.String%2CSystem.String%29?displayProperty=fullName> method overload.  
+ See the <xref:System.AppDomain.CreateInstanceFrom%28System.String%2CSystem.String%29?displayProperty=nameWithType> method overload.  
   
  ]]></format>
         </remarks>
@@ -403,7 +403,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.CreateInstanceFrom%28System.String%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method overload.  
+ See the <xref:System.AppDomain.CreateInstanceFrom%28System.String%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method overload.  
   
  The `activationAttributes` parameter is related to client-activated objects, a legacy technology.  
   
@@ -451,7 +451,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.CreateInstanceFrom%28System.String%2CSystem.String%2CSystem.Boolean%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%2CSystem.Object%5B%5D%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
+ See the <xref:System.AppDomain.CreateInstanceFrom%28System.String%2CSystem.String%2CSystem.Boolean%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%2CSystem.Object%5B%5D%2CSystem.Security.Policy.Evidence%29?displayProperty=nameWithType> method overload.  
   
  The `activationAttributes` parameter is related to client-activated objects, a legacy technology.  
   
@@ -485,7 +485,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%29?displayProperty=fullName> method overload.  
+ See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%29?displayProperty=nameWithType> method overload.  
   
  ]]></format>
         </remarks>
@@ -519,7 +519,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
+ See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.Security.Policy.Evidence%29?displayProperty=nameWithType> method overload.  
   
  ]]></format>
         </remarks>
@@ -553,7 +553,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%29?displayProperty=fullName> method overload.  
+ See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%29?displayProperty=nameWithType> method overload.  
   
  ]]></format>
         </remarks>
@@ -589,7 +589,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
+ See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%2CSystem.Security.Policy.Evidence%29?displayProperty=nameWithType> method overload.  
   
  ]]></format>
         </remarks>
@@ -627,7 +627,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%29?displayProperty=fullName> method overload.  
+ See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%29?displayProperty=nameWithType> method overload.  
   
  ]]></format>
         </remarks>
@@ -667,7 +667,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.Security.Policy.Evidence%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%29?displayProperty=fullName> method overload.  
+ See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.Security.Policy.Evidence%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%29?displayProperty=nameWithType> method overload.  
   
  ]]></format>
         </remarks>
@@ -707,7 +707,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%29?displayProperty=fullName> method overload.  
+ See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%29?displayProperty=nameWithType> method overload.  
   
  ]]></format>
         </remarks>
@@ -749,7 +749,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%2CSystem.Security.Policy.Evidence%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%29?displayProperty=fullName> method overload.  
+ See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%2CSystem.Security.Policy.Evidence%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%29?displayProperty=nameWithType> method overload.  
   
  ]]></format>
         </remarks>
@@ -794,7 +794,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%2CSystem.Security.Policy.Evidence%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Boolean%29?displayProperty=fullName> method overload.  
+ See the <xref:System.AppDomain.DefineDynamicAssembly%28System.Reflection.AssemblyName%2CSystem.Reflection.Emit.AssemblyBuilderAccess%2CSystem.String%2CSystem.Security.Policy.Evidence%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Security.PermissionSet%2CSystem.Boolean%29?displayProperty=nameWithType> method overload.  
   
  ]]></format>
         </remarks>
@@ -823,7 +823,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.DoCallBack%2A?displayProperty=fullName> method.  
+ See the <xref:System.AppDomain.DoCallBack%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -848,7 +848,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.DomainUnload?displayProperty=fullName> event.  
+ See the <xref:System.AppDomain.DomainUnload?displayProperty=nameWithType> event.  
   
  ]]></format>
         </remarks>
@@ -874,7 +874,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.DynamicDirectory%2A?displayProperty=fullName> property.  
+ See the <xref:System.AppDomain.DynamicDirectory%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -905,7 +905,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+ See the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -931,7 +931,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.Evidence%2A?displayProperty=fullName> property.  
+ See the <xref:System.AppDomain.Evidence%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -961,7 +961,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.ExecuteAssembly%28System.String%29?displayProperty=fullName> method overload.  
+ See the <xref:System.AppDomain.ExecuteAssembly%28System.String%29?displayProperty=nameWithType> method overload.  
   
  ]]></format>
         </remarks>
@@ -993,7 +993,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.ExecuteAssembly%28System.String%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
+ See the <xref:System.AppDomain.ExecuteAssembly%28System.String%2CSystem.Security.Policy.Evidence%29?displayProperty=nameWithType> method overload.  
   
  ]]></format>
         </remarks>
@@ -1027,7 +1027,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.ExecuteAssembly%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.String%5B%5D%29?displayProperty=fullName> method overload.  
+ See the <xref:System.AppDomain.ExecuteAssembly%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.String%5B%5D%29?displayProperty=nameWithType> method overload.  
   
  ]]></format>
         </remarks>
@@ -1053,7 +1053,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.FriendlyName%2A?displayProperty=fullName> property.  
+ See the <xref:System.AppDomain.FriendlyName%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -1080,7 +1080,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.GetAssemblies%2A?displayProperty=fullName> method.  
+ See the <xref:System.AppDomain.GetAssemblies%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1110,7 +1110,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.GetData%2A?displayProperty=fullName> method.  
+ See the <xref:System.AppDomain.GetData%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1137,7 +1137,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> method.  
+ See the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1145,7 +1145,7 @@
     </Member>
     <Member MemberName="GetIDsOfNames">
       <MemberSignature Language="C#" Value="public void GetIDsOfNames (ref Guid riid, IntPtr rgszNames, uint cNames, uint lcid, IntPtr rgDispId);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetIDsOfNames(valuetype System.Guid riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System._AppDomain.GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1207,7 +1207,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.MarshalByRefObject.GetLifetimeService%2A?displayProperty=fullName> method.  
+ See the <xref:System.MarshalByRefObject.GetLifetimeService%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1235,7 +1235,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.GetType%2A?displayProperty=fullName> method.  
+ See the <xref:System.AppDomain.GetType%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1277,7 +1277,7 @@
     </Member>
     <Member MemberName="GetTypeInfoCount">
       <MemberSignature Language="C#" Value="public void GetTypeInfoCount (out uint pcTInfo);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTypeInfoCount(unsigned int32 pcTInfo) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System._AppDomain.GetTypeInfoCount(System.UInt32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1331,7 +1331,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.InitializeLifetimeService%2A?displayProperty=fullName> method.  
+ See the <xref:System.AppDomain.InitializeLifetimeService%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1340,7 +1340,7 @@
     </Member>
     <Member MemberName="Invoke">
       <MemberSignature Language="C#" Value="public void Invoke (uint dispIdMember, ref Guid riid, uint lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Invoke(unsigned int32 dispIdMember, valuetype System.Guid riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System._AppDomain.Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1406,7 +1406,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.Load%28System.Byte%5B%5D%29?displayProperty=fullName> method overload.  
+ See the <xref:System.AppDomain.Load%28System.Byte%5B%5D%29?displayProperty=nameWithType> method overload.  
   
  ]]></format>
         </remarks>
@@ -1436,7 +1436,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29?displayProperty=fullName> method overload.  
+ See the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29?displayProperty=nameWithType> method overload.  
   
  ]]></format>
         </remarks>
@@ -1466,7 +1466,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.Load%28System.String%29?displayProperty=fullName> method overload.  
+ See the <xref:System.AppDomain.Load%28System.String%29?displayProperty=nameWithType> method overload.  
   
  ]]></format>
         </remarks>
@@ -1498,7 +1498,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the [\], Byte\<xref:System.AppDomain.Load%28System.Byte%5B%5D%2CSystem.Byte%5B%5D%29?displayProperty=fullName> method overload.  
+ See the [\], Byte\<xref:System.AppDomain.Load%28System.Byte%5B%5D%2CSystem.Byte%5B%5D%29?displayProperty=nameWithType> method overload.  
   
  ]]></format>
         </remarks>
@@ -1530,7 +1530,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
+ See the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%2CSystem.Security.Policy.Evidence%29?displayProperty=nameWithType> method overload.  
   
  ]]></format>
         </remarks>
@@ -1562,7 +1562,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.Load%28System.String%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
+ See the <xref:System.AppDomain.Load%28System.String%2CSystem.Security.Policy.Evidence%29?displayProperty=nameWithType> method overload.  
   
  ]]></format>
         </remarks>
@@ -1596,7 +1596,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the [\], Byte\<xref:System.AppDomain.Load%28System.Byte%5B%5D%2CSystem.Byte%5B%5D%2CSystem.Security.Policy.Evidence%29?displayProperty=fullName> method overload.  
+ See the [\], Byte\<xref:System.AppDomain.Load%28System.Byte%5B%5D%2CSystem.Byte%5B%5D%2CSystem.Security.Policy.Evidence%29?displayProperty=nameWithType> method overload.  
   
  ]]></format>
         </remarks>
@@ -1621,7 +1621,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.ProcessExit?displayProperty=fullName> event.  
+ See the <xref:System.AppDomain.ProcessExit?displayProperty=nameWithType> event.  
   
  ]]></format>
         </remarks>
@@ -1647,7 +1647,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.RelativeSearchPath%2A?displayProperty=fullName> property.  
+ See the <xref:System.AppDomain.RelativeSearchPath%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -1680,7 +1680,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.ResourceResolve?displayProperty=fullName> event.  
+ See the <xref:System.AppDomain.ResourceResolve?displayProperty=nameWithType> event.  
   
  ]]></format>
         </remarks>
@@ -1715,7 +1715,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.SetAppDomainPolicy%2A?displayProperty=fullName> method.  
+ See the <xref:System.AppDomain.SetAppDomainPolicy%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1750,7 +1750,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.SetCachePath%2A?displayProperty=fullName> method.  
+ See the <xref:System.AppDomain.SetCachePath%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1787,7 +1787,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.SetData%2A?displayProperty=fullName> method.  
+ See the <xref:System.AppDomain.SetData%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1817,7 +1817,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.SetPrincipalPolicy%2A?displayProperty=fullName> method.  
+ See the <xref:System.AppDomain.SetPrincipalPolicy%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1851,7 +1851,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.SetShadowCopyPath%2A?displayProperty=fullName> method.  
+ See the <xref:System.AppDomain.SetShadowCopyPath%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1881,7 +1881,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.SetThreadPrincipal%2A?displayProperty=fullName> method.  
+ See the <xref:System.AppDomain.SetThreadPrincipal%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1908,7 +1908,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.ShadowCopyFiles%2A?displayProperty=fullName> property.  
+ See the <xref:System.AppDomain.ShadowCopyFiles%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -1935,7 +1935,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.ToString%2A?displayProperty=fullName> method.  
+ See the <xref:System.AppDomain.ToString%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1968,7 +1968,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.ToString%2A?displayProperty=fullName> event.  
+ See the <xref:System.AppDomain.ToString%2A?displayProperty=nameWithType> event.  
   
  ]]></format>
         </remarks>
@@ -2002,12 +2002,62 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the <xref:System.AppDomain.UnhandledException?displayProperty=fullName> event.  
+ See the <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType> event.  
   
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.AppDomain.Load" /> method.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateInstanceFrom">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.AppDomain.CreateInstanceFrom" /> method.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ExecuteAssembly">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.AppDomain.ExecuteAssembly" /> method.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DefineDynamicAssembly">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.AppDomain.DefineDynamicAssembly" /> method.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateInstance">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.AppDomain.CreateInstance" /> method.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -31,13 +31,20 @@
 ## Examples  
  The following code example demonstrates how to specify and code event handlers for the <xref:System.Web.UI.WebControls.DataGrid.EditCommand>, <xref:System.Web.UI.WebControls.DataGrid.CancelCommand>, and <xref:System.Web.UI.WebControls.DataGrid.UpdateCommand> events to edit items in the <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataGridEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridEdit/CS/datagrideditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridEdit/VB/datagrideditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridEdit/CS/datagrideditcs.aspx#1)]
+ [!code-aspx-vb[DataGridEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridEdit/VB/datagrideditvb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[DataGridEdit2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridEdit2/CS/datagridedit2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridEdit2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridEdit2/VB/datagridedit2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridEdit2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridEdit2/CS/datagridedit2cs.aspx#1)]
+ [!code-aspx-vb[DataGridEdit2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridEdit2/VB/datagridedit2vb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataGridCommandEventArgs" />
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="E:System.Web.UI.WebControls.DataGrid.CancelCommand" />
+    <altmember cref="E:System.Web.UI.WebControls.DataGrid.DeleteCommand" />
+    <altmember cref="E:System.Web.UI.WebControls.DataGrid.EditCommand" />
+    <altmember cref="E:System.Web.UI.WebControls.DataGrid.ItemCommand" />
+    <altmember cref="E:System.Web.UI.WebControls.DataGrid.UpdateCommand" />
   </Docs>
 </Type>

@@ -1,14 +1,12 @@
 ---
 title: "-debug (C# Compiler Options)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
 f1_keywords: 
   - "/debug"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "debug compiler option [C#]"
   - "-debug compiler option [C#]"
@@ -17,20 +15,6 @@ ms.assetid: e2b48c07-01bc-45cc-a52c-92e9085eb969
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /debug (C# Compiler Options)
 The **/debug** option causes the compiler to generate debugging information and place it in the output file or files.  
@@ -81,5 +65,5 @@ csc /debug /pdb:app.pdb test.cs
 ```  
   
 ## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

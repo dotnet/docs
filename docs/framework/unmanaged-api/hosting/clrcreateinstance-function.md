@@ -18,8 +18,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CLRCreateInstance"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CLRCreateInstance function [.NET Framework hosting]"
 ms.assetid: 5de13327-96c6-4697-a89e-b8bf40717855
@@ -29,6 +27,8 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CLRCreateInstance Function
 Provides one of three interfaces: [ICLRMetaHost](../../../../docs/framework/unmanaged-api/hosting/iclrmetahost-interface.md), [ICLRMetaHostPolicy](../../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-interface.md), or [ICLRDebugging](../../../../docs/framework/unmanaged-api/debugging/iclrdebugging-interface.md).  

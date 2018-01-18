@@ -85,7 +85,7 @@
     </Member>
     <Member MemberName="System.Diagnostics.ICollectData.CollectData">
       <MemberSignature Language="C#" Value="void ICollectData.CollectData (int callIdx, IntPtr valueNamePtr, IntPtr dataPtr, int totalBytes, out IntPtr res);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Diagnostics.ICollectData.CollectData(int32 callIdx, native int valueNamePtr, native int dataPtr, int32 totalBytes, native int res) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Diagnostics.ICollectData.CollectData(int32 callIdx, native int valueNamePtr, native int dataPtr, int32 totalBytes, [out] native int&amp; res) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterManager.System#Diagnostics#ICollectData#CollectData(System.Int32,System.IntPtr,System.IntPtr,System.Int32,System.IntPtr@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

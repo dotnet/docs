@@ -59,32 +59,35 @@ namespace WriteableBitmapDemo
             int column = (int)e.GetPosition(i).X;
             int row = (int)e.GetPosition(i).Y;
 
-            // Reserve the back buffer for updates.
-            writeableBitmap.Lock();
+            try{
+                // Reserve the back buffer for updates.
+                writeableBitmap.Lock();
 
-            unsafe
-            {
-                // Get a pointer to the back buffer.
-                int pBackBuffer = (int)writeableBitmap.BackBuffer;
+                unsafe
+                {
+                    // Get a pointer to the back buffer.
+                    int pBackBuffer = (int)writeableBitmap.BackBuffer;
 
-                // Find the address of the pixel to draw.
-                pBackBuffer += row * writeableBitmap.BackBufferStride;
-                pBackBuffer += column * 4;
+                    // Find the address of the pixel to draw.
+                    pBackBuffer += row * writeableBitmap.BackBufferStride;
+                    pBackBuffer += column * 4;
 
-                // Compute the pixel's color.
-                int color_data = 255 << 16; // R
-                color_data |= 128 << 8;   // G
-                color_data |= 255 << 0;   // B
+                    // Compute the pixel's color.
+                    int color_data = 255 << 16; // R
+                    color_data |= 128 << 8;   // G
+                    color_data |= 255 << 0;   // B
 
-                // Assign the color data to the pixel.
-                *((int*) pBackBuffer) = color_data;
+                    // Assign the color data to the pixel.
+                    *((int*) pBackBuffer) = color_data;
+                }
+    
+                // Specify the area of the bitmap that changed.
+                writeableBitmap.AddDirtyRect(new Int32Rect(column, row, 1, 1));
             }
-
-            // Specify the area of the bitmap that changed.
-            writeableBitmap.AddDirtyRect(new Int32Rect(column, row, 1, 1));
-
-            // Release the back buffer and make it available for display.
-            writeableBitmap.Unlock();
+            finally{
+                // Release the back buffer and make it available for display.
+                writeableBitmap.Unlock();
+            }
         }
         // </snippet2>
 

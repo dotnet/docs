@@ -50,6 +50,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Threading.ReaderWriterLockSlim" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -122,7 +123,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=fullName> property of the new exception with the `message` parameter. The content of `message` is intended to be understood by humans. The caller of this constructor must make sure that this string has been localized for the current system culture.  
+ This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=nameWithType> property of the new exception with the `message` parameter. The content of `message` is intended to be understood by humans. The caller of this constructor must make sure that this string has been localized for the current system culture.  
   
  The following table shows the initial property values for an instance of <xref:System.Threading.LockRecursionException>.  
   
@@ -216,5 +217,16 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.LockRecursionException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

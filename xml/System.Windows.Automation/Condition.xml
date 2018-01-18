@@ -13,6 +13,9 @@
   <Docs>
     <summary>Base type for conditions used in filtering when searching for elements in the UI Automation tree.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Automation.AndCondition" />
+    <altmember cref="T:System.Windows.Automation.OrCondition" />
+    <altmember cref="T:System.Windows.Automation.NotCondition" />
   </Docs>
   <Members>
     <Member MemberName="FalseCondition">

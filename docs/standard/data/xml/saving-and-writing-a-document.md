@@ -9,15 +9,16 @@ ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 ms.assetid: 097b0cb1-5743-4c3a-86ef-caf5cbe6750d
 caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Saving and Writing a Document
 When you load and save an <xref:System.Xml.XmlDocument>, the saved document may differ from the original in the following ways:  
@@ -41,7 +42,7 @@ When you load and save an <xref:System.Xml.XmlDocument>, the saved document may 
   
  For the <xref:System.Xml.XmlDocument> properties of <xref:System.Xml.XmlNode.OuterXml%2A>, <xref:System.Xml.XmlDocument.InnerXml%2A>, and the <xref:System.Xml.XmlDocument.Save%2A>, <xref:System.Xml.XmlDocument.WriteTo%2A>, and <xref:System.Xml.XmlDocument.WriteContentTo%2A> methods, the encoding written out in the XML declaration is taken from the <xref:System.Xml.XmlDeclaration> node. If there is no <xref:System.Xml.XmlDeclaration> node, <xref:System.Xml.XmlDeclaration> is not written out. If there is no encoding in the <xref:System.Xml.XmlDeclaration> node, encoding is not written out in the XML declaration.  
   
- The <xref:System.Xml.XmlDocument.Save%2A?displayProperty=fullName> and <xref:System.Xml.XmlDocument.Save%2A?displayProperty=fullName> methods always write out an <xref:System.Xml.XmlDeclaration>. These methods take the encoding from the writer that it is writing to. That is, the encoding value on the writer overrides the encoding on the document and in the <xref:System.Xml.XmlDeclaration>. For example, the following code does not write an encoding in the XML declaration found in the output file `out.xml`.  
+ The <xref:System.Xml.XmlDocument.Save%2A?displayProperty=nameWithType> and <xref:System.Xml.XmlDocument.Save%2A?displayProperty=nameWithType> methods always write out an <xref:System.Xml.XmlDeclaration>. These methods take the encoding from the writer that it is writing to. That is, the encoding value on the writer overrides the encoding on the document and in the <xref:System.Xml.XmlDeclaration>. For example, the following code does not write an encoding in the XML declaration found in the output file `out.xml`.  
   
 ```vb  
 Dim doc As New XmlDocument()  

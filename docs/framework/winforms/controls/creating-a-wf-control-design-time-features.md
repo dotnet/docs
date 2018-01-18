@@ -10,10 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Windows Forms controls, creating"
-  - "design-time functionality, Windows Forms"
+  - "design-time functionality [Windows Forms], Windows Forms"
   - "DocumentDesigner class [Windows Forms]"
   - "walkthroughs [Windows Forms], controls"
 ms.assetid: 6f487c59-cb38-4afa-ad2e-95edacb1d626
@@ -21,6 +22,8 @@ caps.latest.revision: 46
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Creating a Windows Forms Control That Takes Advantage of Visual Studio Design-Time Features
 The design-time experience for a custom control can be enhanced by authoring an associated custom designer.  
@@ -232,7 +235,7 @@ using MarqueeControlLibrary;
   
  Common features of the two controls are factored into an interface called `IMarqueeWidget`. This allows the `MarqueeControl` to discover any Marquee-related child controls and give them special treatment.  
   
- To implement the periodic animation feature, you will use <xref:System.ComponentModel.BackgroundWorker> objects from the <xref:System.ComponentModel?displayProperty=fullName> namespace. You could use <xref:System.Windows.Forms.Timer> objects, but when many `IMarqueeWidget` objects are present, the single UI thread may be unable to keep up with the animation.  
+ To implement the periodic animation feature, you will use <xref:System.ComponentModel.BackgroundWorker> objects from the <xref:System.ComponentModel?displayProperty=nameWithType> namespace. You could use <xref:System.Windows.Forms.Timer> objects, but when many `IMarqueeWidget` objects are present, the single UI thread may be unable to keep up with the animation.  
   
 #### To create a child control for your custom control  
   
@@ -519,7 +522,7 @@ using MarqueeControlLibrary;
   
 2.  Drag two <xref:System.Windows.Forms.Panel> controls from the **Toolbox** onto the `LightShapeSelectionControl`. Name them `squarePanel` and `circlePanel`. Arrange them side by side. Set the <xref:System.Windows.Forms.Control.Size%2A> property of both <xref:System.Windows.Forms.Panel> controls to (60, 60). Set the <xref:System.Windows.Forms.Control.Location%2A> property of the `squarePanel` control to (8, 10). Set the <xref:System.Windows.Forms.Control.Location%2A> property of the `circlePanel` control to (80, 10). Finally, set the <xref:System.Windows.Forms.Control.Size%2A> property of the `LightShapeSelectionControl` to (150, 80).  
   
-3.  Open the `LightShapeSelectionControl` source file in the **Code Editor**. At the top of the file, import the <xref:System.Windows.Forms.Design?displayProperty=fullName> namespace:  
+3.  Open the `LightShapeSelectionControl` source file in the **Code Editor**. At the top of the file, import the <xref:System.Windows.Forms.Design?displayProperty=nameWithType> namespace:  
   
 ```vb  
 Imports System.Windows.Forms.Design  
@@ -638,14 +641,14 @@ private void stopButton_Click(object sender, System.EventArgs e)
 -   Control how your controls are serialized and how code is generated for them. For more information, see [Dynamic Source Code Generation and Compilation](../../../../docs/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation.md).  
   
 ## See Also  
- <xref:System.Windows.Forms.UserControl>   
- <xref:System.Windows.Forms.Design.ParentControlDesigner>   
- <xref:System.Windows.Forms.Design.DocumentDesigner>   
- <xref:System.ComponentModel.Design.IRootDesigner>   
- <xref:System.ComponentModel.Design.DesignerVerb>   
- <xref:System.Drawing.Design.UITypeEditor>   
- <xref:System.ComponentModel.BackgroundWorker>   
- [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](http://msdn.microsoft.com/library/8e0bad0e-56f3-43d2-bf63-a945c654d97c)   
- [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)   
- [Custom Designers](http://msdn.microsoft.com/library/ca11988e-d38e-44d8-a05d-71362ae7844d)   
+ <xref:System.Windows.Forms.UserControl>  
+ <xref:System.Windows.Forms.Design.ParentControlDesigner>  
+ <xref:System.Windows.Forms.Design.DocumentDesigner>  
+ <xref:System.ComponentModel.Design.IRootDesigner>  
+ <xref:System.ComponentModel.Design.DesignerVerb>  
+ <xref:System.Drawing.Design.UITypeEditor>  
+ <xref:System.ComponentModel.BackgroundWorker>  
+ [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](http://msdn.microsoft.com/library/8e0bad0e-56f3-43d2-bf63-a945c654d97c)  
+ [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)  
+ [Custom Designers](http://msdn.microsoft.com/library/ca11988e-d38e-44d8-a05d-71362ae7844d)  
  [.NET Shape Library: A Sample Designer](http://windowsforms.net/articles/shapedesigner.aspx)

@@ -48,6 +48,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.DataObject" />
+    <altmember cref="T:System.Windows.IDataObject" />
   </Docs>
   <Members>
     <Member MemberName="Clear">
@@ -105,6 +107,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Clipboard.ContainsData(System.String)" />
+        <altmember cref="M:System.Windows.Clipboard.ContainsFileDropList" />
+        <altmember cref="M:System.Windows.Clipboard.ContainsImage" />
+        <altmember cref="Overload:System.Windows.Clipboard.ContainsText" />
+        <altmember cref="T:System.Windows.DataFormats" />
       </Docs>
     </Member>
     <Member MemberName="ContainsData">
@@ -145,6 +152,13 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="format" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Clipboard.ContainsAudio" />
+        <altmember cref="M:System.Windows.Clipboard.ContainsFileDropList" />
+        <altmember cref="M:System.Windows.Clipboard.ContainsImage" />
+        <altmember cref="Overload:System.Windows.Clipboard.ContainsText" />
+        <altmember cref="M:System.Windows.Clipboard.GetData(System.String)" />
+        <altmember cref="M:System.Windows.Clipboard.SetData(System.String,System.Object)" />
+        <altmember cref="T:System.Windows.DataFormats" />
       </Docs>
     </Member>
     <Member MemberName="ContainsFileDropList">
@@ -172,6 +186,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Clipboard.ContainsAudio" />
+        <altmember cref="M:System.Windows.Clipboard.ContainsData(System.String)" />
+        <altmember cref="M:System.Windows.Clipboard.ContainsFileDropList" />
+        <altmember cref="M:System.Windows.Clipboard.ContainsImage" />
+        <altmember cref="Overload:System.Windows.Clipboard.ContainsText" />
+        <altmember cref="T:System.Windows.DataFormats" />
       </Docs>
     </Member>
     <Member MemberName="ContainsImage">
@@ -201,6 +221,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Clipboard.ContainsAudio" />
+        <altmember cref="M:System.Windows.Clipboard.ContainsData(System.String)" />
+        <altmember cref="M:System.Windows.Clipboard.ContainsFileDropList" />
+        <altmember cref="Overload:System.Windows.Clipboard.ContainsText" />
+        <altmember cref="T:System.Windows.DataFormats" />
       </Docs>
     </Member>
     <Member MemberName="ContainsText">
@@ -230,6 +255,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Clipboard.ContainsAudio" />
+        <altmember cref="M:System.Windows.Clipboard.ContainsData(System.String)" />
+        <altmember cref="M:System.Windows.Clipboard.ContainsFileDropList" />
+        <altmember cref="M:System.Windows.Clipboard.ContainsImage" />
+        <altmember cref="M:System.Windows.Clipboard.ContainsText(System.Windows.TextDataFormat)" />
+        <altmember cref="Overload:System.Windows.Clipboard.GetText" />
+        <altmember cref="Overload:System.Windows.Clipboard.SetText" />
+        <altmember cref="T:System.Windows.DataFormats" />
       </Docs>
     </Member>
     <Member MemberName="ContainsText">
@@ -262,6 +295,13 @@
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="format" /> does not specify a valid member of <see cref="T:System.Windows.TextDataFormat" />.</exception>
+        <altmember cref="M:System.Windows.Clipboard.ContainsAudio" />
+        <altmember cref="M:System.Windows.Clipboard.ContainsData(System.String)" />
+        <altmember cref="M:System.Windows.Clipboard.ContainsFileDropList" />
+        <altmember cref="M:System.Windows.Clipboard.ContainsImage" />
+        <altmember cref="Overload:System.Windows.Clipboard.GetText" />
+        <altmember cref="Overload:System.Windows.Clipboard.SetText" />
+        <altmember cref="T:System.Windows.DataFormats" />
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -306,6 +346,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Clipboard.GetData(System.String)" />
+        <altmember cref="M:System.Windows.Clipboard.GetDataObject" />
+        <altmember cref="M:System.Windows.Clipboard.GetFileDropList" />
+        <altmember cref="M:System.Windows.Clipboard.GetImage" />
+        <altmember cref="Overload:System.Windows.Clipboard.GetText" />
+        <altmember cref="M:System.Windows.Clipboard.ContainsAudio" />
+        <altmember cref="Overload:System.Windows.Clipboard.SetAudio" />
+        <altmember cref="T:System.Windows.DataFormats" />
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -340,6 +388,14 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="format" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Clipboard.GetAudioStream" />
+        <altmember cref="M:System.Windows.Clipboard.GetDataObject" />
+        <altmember cref="M:System.Windows.Clipboard.GetFileDropList" />
+        <altmember cref="M:System.Windows.Clipboard.GetImage" />
+        <altmember cref="Overload:System.Windows.Clipboard.GetText" />
+        <altmember cref="M:System.Windows.Clipboard.ContainsData(System.String)" />
+        <altmember cref="M:System.Windows.Clipboard.SetData(System.String,System.Object)" />
+        <altmember cref="T:System.Windows.DataFormats" />
       </Docs>
     </Member>
     <Member MemberName="GetDataObject">
@@ -376,6 +432,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for permission to access data on the system Clipboard.  Associated enumeration: **AllClipboard**.</permission>
+        <altmember cref="Overload:System.Windows.Clipboard.SetDataObject" />
       </Docs>
     </Member>
     <Member MemberName="GetFileDropList">
@@ -395,6 +452,14 @@
         <summary>Returns a string collection that contains a list of dropped files available on the Clipboard.</summary>
         <returns>A collection of strings, where each string specifies the name of a file in the list of dropped files on the Clipboard, or <see langword="null" /> if the data is unavailable in this format.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Clipboard.GetAudioStream" />
+        <altmember cref="M:System.Windows.Clipboard.GetDataObject" />
+        <altmember cref="M:System.Windows.Clipboard.GetData(System.String)" />
+        <altmember cref="M:System.Windows.Clipboard.GetImage" />
+        <altmember cref="Overload:System.Windows.Clipboard.GetText" />
+        <altmember cref="M:System.Windows.Clipboard.ContainsFileDropList" />
+        <altmember cref="M:System.Windows.Clipboard.SetFileDropList(System.Collections.Specialized.StringCollection)" />
+        <altmember cref="T:System.Windows.DataFormats" />
       </Docs>
     </Member>
     <Member MemberName="GetImage">
@@ -423,6 +488,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Clipboard.GetAudioStream" />
+        <altmember cref="M:System.Windows.Clipboard.GetDataObject" />
+        <altmember cref="M:System.Windows.Clipboard.GetData(System.String)" />
+        <altmember cref="M:System.Windows.Clipboard.GetFileDropList" />
+        <altmember cref="Overload:System.Windows.Clipboard.GetText" />
+        <altmember cref="M:System.Windows.Clipboard.ContainsImage" />
+        <altmember cref="M:System.Windows.Clipboard.SetImage(System.Windows.Media.Imaging.BitmapSource)" />
+        <altmember cref="T:System.Windows.DataFormats" />
       </Docs>
     </Member>
     <Member MemberName="GetText">
@@ -449,6 +522,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Clipboard.GetAudioStream" />
+        <altmember cref="M:System.Windows.Clipboard.GetDataObject" />
+        <altmember cref="M:System.Windows.Clipboard.GetData(System.String)" />
+        <altmember cref="M:System.Windows.Clipboard.GetFileDropList" />
+        <altmember cref="M:System.Windows.Clipboard.GetImage" />
+        <altmember cref="Overload:System.Windows.Clipboard.ContainsText" />
+        <altmember cref="Overload:System.Windows.Clipboard.SetText" />
+        <altmember cref="T:System.Windows.DataFormats" />
       </Docs>
     </Member>
     <Member MemberName="GetText">
@@ -471,6 +552,14 @@
         <summary>Returns a string containing text data on the Clipboard.</summary>
         <returns>A string containing text data in the specified data format, or an empty string if no corresponding text data is available.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Clipboard.GetAudioStream" />
+        <altmember cref="M:System.Windows.Clipboard.GetDataObject" />
+        <altmember cref="M:System.Windows.Clipboard.GetData(System.String)" />
+        <altmember cref="M:System.Windows.Clipboard.GetFileDropList" />
+        <altmember cref="M:System.Windows.Clipboard.GetImage" />
+        <altmember cref="Overload:System.Windows.Clipboard.ContainsText" />
+        <altmember cref="Overload:System.Windows.Clipboard.SetText" />
+        <altmember cref="T:System.Windows.DataFormats" />
       </Docs>
     </Member>
     <Member MemberName="IsCurrent">
@@ -542,6 +631,14 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="audioBytes" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Clipboard.SetData(System.String,System.Object)" />
+        <altmember cref="Overload:System.Windows.Clipboard.SetDataObject" />
+        <altmember cref="M:System.Windows.Clipboard.SetFileDropList(System.Collections.Specialized.StringCollection)" />
+        <altmember cref="M:System.Windows.Clipboard.SetImage(System.Windows.Media.Imaging.BitmapSource)" />
+        <altmember cref="Overload:System.Windows.Clipboard.SetText" />
+        <altmember cref="M:System.Windows.Clipboard.ContainsAudio" />
+        <altmember cref="M:System.Windows.Clipboard.GetAudioStream" />
+        <altmember cref="T:System.Windows.DataFormats" />
       </Docs>
     </Member>
     <Member MemberName="SetAudio">
@@ -572,6 +669,14 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="audioStream" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Clipboard.SetData(System.String,System.Object)" />
+        <altmember cref="Overload:System.Windows.Clipboard.SetDataObject" />
+        <altmember cref="M:System.Windows.Clipboard.SetFileDropList(System.Collections.Specialized.StringCollection)" />
+        <altmember cref="M:System.Windows.Clipboard.SetImage(System.Windows.Media.Imaging.BitmapSource)" />
+        <altmember cref="Overload:System.Windows.Clipboard.SetText" />
+        <altmember cref="M:System.Windows.Clipboard.ContainsAudio" />
+        <altmember cref="M:System.Windows.Clipboard.GetAudioStream" />
+        <altmember cref="T:System.Windows.DataFormats" />
       </Docs>
     </Member>
     <Member MemberName="SetData">
@@ -610,6 +715,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Clipboard.ContainsData(System.String)" />
+        <altmember cref="M:System.Windows.Clipboard.GetData(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SetDataObject">
@@ -652,6 +759,7 @@
           <paramref name="data" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Runtime.InteropServices.ExternalException">An error occurred when accessing the Clipboard. The exception details will include an <see langword="HResult" /> that identifies the specific error; see <see cref="P:System.Runtime.InteropServices.ErrorWrapper.ErrorCode" />.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for permission to access data on the system Clipboard.  Associated enumeration:  **AllClipboard**.</permission>
+        <altmember cref="M:System.Windows.Clipboard.GetDataObject" />
       </Docs>
     </Member>
     <Member MemberName="SetDataObject">
@@ -700,6 +808,7 @@
           <paramref name="data" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Runtime.InteropServices.ExternalException">An error occured when accessing the Clipboard.  The exception details will include an <see langword="HResult" /> that identifies the specific error; see <see cref="P:System.Runtime.InteropServices.ErrorWrapper.ErrorCode" />.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for permission to access data on the system Clipboard.  Associated enumeration:  **AllClipboard**.</permission>
+        <altmember cref="M:System.Windows.Clipboard.GetDataObject" />
       </Docs>
     </Member>
     <Member MemberName="SetFileDropList">
@@ -732,6 +841,14 @@
           <paramref name="fileDropList" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="fileDropList" /> contains zero strings, or the full path to file specified in the list cannot be resolved.</exception>
+        <altmember cref="Overload:System.Windows.Clipboard.SetAudio" />
+        <altmember cref="M:System.Windows.Clipboard.SetData(System.String,System.Object)" />
+        <altmember cref="Overload:System.Windows.Clipboard.SetDataObject" />
+        <altmember cref="M:System.Windows.Clipboard.SetImage(System.Windows.Media.Imaging.BitmapSource)" />
+        <altmember cref="Overload:System.Windows.Clipboard.SetText" />
+        <altmember cref="M:System.Windows.Clipboard.ContainsFileDropList" />
+        <altmember cref="M:System.Windows.Clipboard.GetFileDropList" />
+        <altmember cref="T:System.Windows.DataFormats" />
       </Docs>
     </Member>
     <Member MemberName="SetImage">
@@ -762,6 +879,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Clipboard.SetAudio" />
+        <altmember cref="M:System.Windows.Clipboard.SetData(System.String,System.Object)" />
+        <altmember cref="Overload:System.Windows.Clipboard.SetDataObject" />
+        <altmember cref="M:System.Windows.Clipboard.SetFileDropList(System.Collections.Specialized.StringCollection)" />
+        <altmember cref="Overload:System.Windows.Clipboard.SetText" />
+        <altmember cref="M:System.Windows.Clipboard.ContainsImage" />
+        <altmember cref="M:System.Windows.Clipboard.GetImage" />
+        <altmember cref="T:System.Windows.DataFormats" />
       </Docs>
     </Member>
     <Member MemberName="SetText">
@@ -794,6 +919,14 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="text" /> is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.Windows.Clipboard.SetAudio" />
+        <altmember cref="M:System.Windows.Clipboard.SetData(System.String,System.Object)" />
+        <altmember cref="Overload:System.Windows.Clipboard.SetDataObject" />
+        <altmember cref="M:System.Windows.Clipboard.SetFileDropList(System.Collections.Specialized.StringCollection)" />
+        <altmember cref="M:System.Windows.Clipboard.SetImage(System.Windows.Media.Imaging.BitmapSource)" />
+        <altmember cref="Overload:System.Windows.Clipboard.ContainsText" />
+        <altmember cref="M:System.Windows.Clipboard.GetImage" />
+        <altmember cref="T:System.Windows.DataFormats" />
       </Docs>
     </Member>
     <Member MemberName="SetText">
@@ -826,7 +959,60 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="text" /> is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.Windows.Clipboard.SetAudio" />
+        <altmember cref="M:System.Windows.Clipboard.SetData(System.String,System.Object)" />
+        <altmember cref="Overload:System.Windows.Clipboard.SetDataObject" />
+        <altmember cref="M:System.Windows.Clipboard.SetFileDropList(System.Collections.Specialized.StringCollection)" />
+        <altmember cref="M:System.Windows.Clipboard.SetImage(System.Windows.Media.Imaging.BitmapSource)" />
+        <altmember cref="Overload:System.Windows.Clipboard.ContainsText" />
+        <altmember cref="M:System.Windows.Clipboard.GetImage" />
+        <altmember cref="T:System.Windows.DataFormats" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ContainsText">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Queries the Clipboard for the presence of data in a valid text data format.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetText">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Stores text data on the Clipboard.  The text data to store is specified as a string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetText">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string containing the text data on the Clipboard.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetAudio">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Stores audio data (<see cref="F:System.Windows.DataFormats.WaveAudio" /> data format) on the Clipboard.  The audio data can be a byte array or a stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetDataObject">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Stores a specified data object on the system Clipboard.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -31,16 +31,18 @@
   
  To improve performance and minimize the overhead of repeated file open/close operations, the <xref:System.IO.Packaging.PackageStore> is used to manage instances of packages accessed by <xref:System.IO.Packaging.PackWebRequest> and directly by the application.  When accessing data in a package, the <xref:System.IO.Packaging.Package> address of a requested <xref:System.IO.Packaging.PackagePart> <xref:System.IO.Packaging.PackagePart.Uri%2A> is first checked to see if the package is already defined and open in the <xref:System.IO.Packaging.PackageStore>.  If the package is defined as open in the <xref:System.IO.Packaging.PackageStore>, requested parts can be accessed directly without repeatedly opening and closing the package for each  request.  
   
- If your application opens a package with <xref:System.IO.Packaging.Package.Open%2A?displayProperty=fullName>, <xref:System.IO.Packaging.PackageStore.AddPackage%2A> can be called to add the package to the <xref:System.IO.Packaging.PackageStore>.  <xref:System.IO.Packaging.PackageStore.RemovePackage%2A> should later be called to remove the package from the <xref:System.IO.Packaging.PackageStore> prior to calling <xref:System.IO.Packaging.Package.Close%2A?displayProperty=fullName>.  
+ If your application opens a package with <xref:System.IO.Packaging.Package.Open%2A?displayProperty=nameWithType>, <xref:System.IO.Packaging.PackageStore.AddPackage%2A> can be called to add the package to the <xref:System.IO.Packaging.PackageStore>.  <xref:System.IO.Packaging.PackageStore.RemovePackage%2A> should later be called to remove the package from the <xref:System.IO.Packaging.PackageStore> prior to calling <xref:System.IO.Packaging.Package.Close%2A?displayProperty=nameWithType>.  
   
  XPS packages opened with an <xref:System.Windows.Xps.Packaging.XpsDocument.%23ctor%2A> constructor are automatically added and removed from the <xref:System.IO.Packaging.PackageStore> when the document is created and disposed.  (You do not need to call <xref:System.IO.Packaging.PackageStore.AddPackage%2A> or <xref:System.IO.Packaging.PackageStore.RemovePackage%2A> separately for XPS packages opened with <xref:System.Windows.Xps.Packaging.XpsDocument.%23ctor%2A> constructors.)  
   
  The file I/O permissions of a package accessed through the <xref:System.IO.Packaging.PackageStore> remains the same as the I/O permissions set on the package when it is opened.  The <xref:System.IO.Packaging.PackageStore> only provides references to the packages that have been added the store.  It is up to the application to correctly open, update, and close each package.  
   
- Packages added to the <xref:System.IO.Packaging.PackageStore> can be accessed in multithreaded environments when they are used in combination with a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] parser such as <xref:System.Windows.Markup.XamlReader.Load%2A?displayProperty=fullName>.  When operating in a multithreaded environment, the application must lock the package before access.  
+ Packages added to the <xref:System.IO.Packaging.PackageStore> can be accessed in multithreaded environments when they are used in combination with a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] parser such as <xref:System.Windows.Markup.XamlReader.Load%2A?displayProperty=nameWithType>.  When operating in a multithreaded environment, the application must lock the package before access.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.Packaging.PackWebRequest" />
+    <altmember cref="T:System.IO.Packaging.PackWebResponse" />
   </Docs>
   <Members>
     <Member MemberName="AddPackage">
@@ -90,6 +92,8 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="packageUri" /> is an invalid package [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)].</exception>
         <exception cref="T:System.InvalidOperationException">A package with the specified <paramref name="packageUri" /> is already in the store.</exception>
+        <altmember cref="M:System.IO.Packaging.PackageStore.GetPackage(System.Uri)" />
+        <altmember cref="M:System.IO.Packaging.PackageStore.RemovePackage(System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="GetPackage">
@@ -133,6 +137,8 @@
           <paramref name="packageUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="packageUri" /> is an invalid package [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)].</exception>
+        <altmember cref="M:System.IO.Packaging.PackageStore.AddPackage(System.Uri,System.IO.Packaging.Package)" />
+        <altmember cref="M:System.IO.Packaging.PackageStore.RemovePackage(System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="RemovePackage">
@@ -175,6 +181,8 @@
           <paramref name="packageUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="packageUri" /> is an invalid package [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)].</exception>
+        <altmember cref="M:System.IO.Packaging.PackageStore.AddPackage(System.Uri,System.IO.Packaging.Package)" />
+        <altmember cref="M:System.IO.Packaging.PackageStore.GetPackage(System.Uri)" />
       </Docs>
     </Member>
   </Members>

@@ -13,6 +13,8 @@
   <Docs>
     <summary>Provides data related to the <see cref="E:System.Windows.FrameworkElement.SizeChanged" /> event.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="E:System.Windows.FrameworkElement.SizeChanged" />
+    <altmember cref="T:System.Windows.SizeChangedEventHandler" />
   </Docs>
   <Members>
     <Member MemberName="HeightChanged">
@@ -41,6 +43,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.FrameworkElement.SizeChanged" />
+        <altmember cref="T:System.Windows.SizeChangedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="InvokeEventHandler">
@@ -71,6 +75,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.RoutedEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
+        <altmember cref="E:System.Windows.FrameworkElement.SizeChanged" />
+        <altmember cref="T:System.Windows.SizeChangedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="NewSize">
@@ -89,6 +96,8 @@
         <summary>Gets the new <see cref="T:System.Windows.Size" /> of the object.</summary>
         <value>The new <see cref="T:System.Windows.Size" /> of the object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.FrameworkElement.SizeChanged" />
+        <altmember cref="T:System.Windows.SizeChangedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="PreviousSize">
@@ -107,6 +116,8 @@
         <summary>Gets the previous <see cref="T:System.Windows.Size" /> of the object.</summary>
         <value>The previous <see cref="T:System.Windows.Size" /> of the object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.FrameworkElement.SizeChanged" />
+        <altmember cref="T:System.Windows.SizeChangedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="WidthChanged">
@@ -135,6 +146,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.FrameworkElement.SizeChanged" />
+        <altmember cref="T:System.Windows.SizeChangedEventHandler" />
       </Docs>
     </Member>
   </Members>

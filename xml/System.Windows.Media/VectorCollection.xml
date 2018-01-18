@@ -76,6 +76,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.IList" />
+    <altmember cref="T:System.Collections.ICollection" />
+    <altmember cref="T:System.Collections.IEnumerable" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -153,7 +156,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unlike typical implementations of <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to add a **null** (**Nothing**) reference.  
+ Unlike typical implementations of <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=nameWithType>, this implementation throws an <xref:System.ArgumentException> if you attempt to add a **null** (**Nothing**) reference.  
   
  ]]></format>
         </remarks>
@@ -164,6 +167,7 @@
  \- or -  
   
  The <see cref="T:System.Windows.Media.VectorCollection" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.Add(`0)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -190,6 +194,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Media.VectorCollection" /> is read-only.</exception>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -214,7 +219,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -263,7 +268,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -311,6 +316,7 @@
         <returns>
           <see langword="true" /> if the <see cref="T:System.Windows.Vector" /> is found in the <see cref="T:System.Windows.Media.VectorCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.Contains(`0)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -344,6 +350,7 @@
  -or-  
   
  The number of items in the source <see cref="T:System.Windows.Media.VectorCollection" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -442,6 +449,7 @@
         <summary>Returns an enumerator that can iterate through the <see cref="T:System.Windows.Media.VectorCollection" />.</summary>
         <returns>An <see cref="T:System.Windows.Media.VectorCollection.Enumerator" /> that can be used to iterate through the <see cref="T:System.Windows.Media.VectorCollection" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -464,6 +472,7 @@
         <summary>Determines the index of the specified item in the <see cref="T:System.Windows.Media.VectorCollection" />.</summary>
         <returns>The index of <paramref name="value" /> if found in the <see cref="T:System.Windows.Media.VectorCollection" />; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.Generic.IList`1.IndexOf(`0)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -490,7 +499,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Insert%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
+ Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Insert%2A?displayProperty=nameWithType>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
   
  ]]></format>
         </remarks>
@@ -503,6 +512,7 @@
  \- or -  
   
  The <see cref="T:System.Windows.Media.VectorCollection" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -528,7 +538,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
+ Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=nameWithType>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
   
  ]]></format>
         </remarks>
@@ -541,6 +551,7 @@
  \- or -  
   
  The <see cref="T:System.Windows.Media.VectorCollection" /> has a fixed size.</exception>
+        <altmember cref="P:System.Collections.Generic.IList`1.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -591,6 +602,7 @@
  \- or -  
   
  The <see cref="T:System.Windows.Media.VectorCollection" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.Remove(`0)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -612,6 +624,7 @@
         <param name="index">The zero-based index of the <see cref="T:System.Windows.Vector" /> to remove.</param>
         <summary>Removes the <see cref="T:System.Windows.Vector" /> at the specified index.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Windows.Vector&gt;.IsReadOnly">
@@ -629,7 +642,7 @@
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
         <value>
-          <see langword="true" /> if the the <see cref="T:System.Windows.Media.VectorCollection" /> is read-only; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Media.VectorCollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -638,6 +651,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Freezable.IsFrozen" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;System.Windows.Vector&gt;.GetEnumerator">
@@ -664,6 +678,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.VectorCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -694,6 +709,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.VectorCollection.CopyTo(System.Windows.Vector[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -771,6 +787,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.VectorCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -800,6 +817,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.VectorCollection.Add(System.Windows.Vector)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -830,6 +848,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.VectorCollection.Contains(System.Windows.Vector)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -859,6 +878,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.VectorCollection.IndexOf(System.Windows.Vector)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -889,6 +909,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.VectorCollection.Insert(System.Int32,System.Windows.Vector)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -906,7 +927,7 @@
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Collections.IList.IsFixedSize" />.</summary>
         <value>
-          <see langword="true" /> if the the <see cref="T:System.Windows.Media.VectorCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Media.VectorCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -915,6 +936,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Freezable.IsFrozen" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsReadOnly">
@@ -932,7 +954,7 @@
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Collections.IList.IsReadOnly" />.</summary>
         <value>
-          <see langword="true" /> if the the <see cref="T:System.Windows.Media.VectorCollection" /> is read-only; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Media.VectorCollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -941,6 +963,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Freezable.IsFrozen" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Item">
@@ -970,6 +993,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.VectorCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -998,6 +1022,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.VectorCollection.Remove(System.Windows.Vector)" />
       </Docs>
     </Member>
     <Member MemberName="System.IFormattable.ToString">
@@ -1080,5 +1105,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.String" /> representation of this <see cref="T:System.Windows.Media.VectorCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.VectorCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

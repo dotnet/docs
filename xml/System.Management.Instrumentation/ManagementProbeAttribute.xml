@@ -50,6 +50,9 @@ public int ReadOnlyProperty
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Management.Instrumentation.ManagementConfigurationAttribute" />
+    <altmember cref="T:System.Management.Instrumentation.ManagementKeyAttribute" />
+    <altmember cref="T:System.Management.Instrumentation.ManagementTaskAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -86,7 +89,7 @@ public int ReadOnlyProperty
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the returned type is <xref:System.Object?displayProperty=fullName>, then the output should be treated as a value of type <xref:System.Object?displayProperty=fullName>.  
+ If the returned type is <xref:System.Object?displayProperty=nameWithType>, then the output should be treated as a value of type <xref:System.Object?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

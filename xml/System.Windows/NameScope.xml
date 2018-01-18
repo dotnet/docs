@@ -46,10 +46,9 @@
   
  Names in a XAML namescope must use a particular grammar that restricts the strings you might use for inputs of <xref:System.Windows.NameScope> API. See [XamlName Grammar](~/docs/framework/xaml-services/xamlname-grammar.md).  
   
-<a name="xamlTextUsage_NameScope"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Markup.INameScope" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -273,6 +272,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.FindName(System.String)" />
+        <altmember cref="M:System.Windows.FrameworkContentElement.FindName(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetNameScope">
@@ -309,6 +310,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="dependencyObject" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Markup.INameScope" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -425,6 +427,9 @@
  \- or -  
   
  <paramref name="name" /> provided would result in a duplicate name registration.</exception>
+        <altmember cref="T:System.Windows.Markup.INameScope" />
+        <altmember cref="M:System.Windows.FrameworkElement.RegisterName(System.String,System.Object)" />
+        <altmember cref="M:System.Windows.FrameworkContentElement.RegisterName(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -517,6 +522,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="dependencyObject" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Markup.INameScope" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;.GetEnumerator">
@@ -559,7 +565,7 @@
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public bool TryGetValue (string key, out object value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(string key, object value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(string key, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.TryGetValue(System.String,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -615,6 +621,10 @@
  <paramref name="name" /> provided had not been registered.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Markup.INameScope" />
+        <altmember cref="M:System.Windows.FrameworkElement.UnregisterName(System.String)" />
+        <altmember cref="M:System.Windows.FrameworkContentElement.UnregisterName(System.String)" />
+        <altmember cref="M:System.Windows.NameScope.RegisterName(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -635,5 +645,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specific object from the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an item to the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

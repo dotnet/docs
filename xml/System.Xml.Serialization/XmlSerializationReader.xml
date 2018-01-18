@@ -32,6 +32,8 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
+    <altmember cref="T:System.Xml.Serialization.XmlSerializationWriter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -257,7 +259,7 @@
     </Member>
     <Member MemberName="CheckReaderCount">
       <MemberSignature Language="C#" Value="protected void CheckReaderCount (ref int whileIterations, ref int readerCount);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void CheckReaderCount(int32 whileIterations, int32 readerCount) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void CheckReaderCount(int32&amp; whileIterations, int32&amp; readerCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationReader.CheckReaderCount(System.Int32@,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -290,7 +292,7 @@
 ## Remarks  
  The method is used by generated classes and should not be directly invoked.  
   
- The <xref:System.Xml.Serialization.XmlSerializationReader.CheckReaderCount%2A> method is used when the `checkDeserializerAdvances` attribute of the `<xmlSerializer>` configuration element is set to `true`. For more information, see [\&lt;xmlSerializer\&gt; Element](~/docs/standard/serialization/xmlserializer-element.md).  
+ The <xref:System.Xml.Serialization.XmlSerializationReader.CheckReaderCount%2A> method is used when the `checkDeserializerAdvances` attribute of the `<xmlSerializer>` configuration element is set to `true`. For more information, see [&lt;xmlSerializer&gt; Element](~/docs/standard/serialization/xmlserializer-element.md).  
   
  ]]></format>
         </remarks>
@@ -1574,7 +1576,7 @@
     </Member>
     <Member MemberName="ReadReference">
       <MemberSignature Language="C#" Value="protected bool ReadReference (out string fixupReference);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool ReadReference(string fixupReference) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool ReadReference([out] string&amp; fixupReference) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationReader.ReadReference(System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1784,7 +1786,7 @@
     </MemberGroup>
     <Member MemberName="ReadReferencingElement">
       <MemberSignature Language="C#" Value="protected object ReadReferencingElement (out string fixupReference);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object ReadReferencingElement(string fixupReference) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object ReadReferencingElement([out] string&amp; fixupReference) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationReader.ReadReferencingElement(System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1827,7 +1829,7 @@
     </Member>
     <Member MemberName="ReadReferencingElement">
       <MemberSignature Language="C#" Value="protected object ReadReferencingElement (string name, string ns, out string fixupReference);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object ReadReferencingElement(string name, string ns, string fixupReference) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object ReadReferencingElement(string name, string ns, [out] string&amp; fixupReference) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationReader.ReadReferencingElement(System.String,System.String,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1874,7 +1876,7 @@
     </Member>
     <Member MemberName="ReadReferencingElement">
       <MemberSignature Language="C#" Value="protected object ReadReferencingElement (string name, string ns, bool elementCanBeType, out string fixupReference);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object ReadReferencingElement(string name, string ns, bool elementCanBeType, string fixupReference) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object ReadReferencingElement(string name, string ns, bool elementCanBeType, [out] string&amp; fixupReference) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationReader.ReadReferencingElement(System.String,System.String,System.Boolean,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3204,5 +3206,65 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadSerializable">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Populates an object from its XML representation at the current location of the <see cref="T:System.Xml.XmlReader" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UnknownAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Raises a <see cref="E:System.Xml.Serialization.XmlSerializer.UnknownAttribute" /> event for the current position of the <see cref="T:System.Xml.XmlReader" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UnknownNode">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Raises an <see cref="E:System.Xml.Serialization.XmlSerializer.UnknownNode" /> event for the current position of the <see cref="T:System.Xml.XmlReader" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadString">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads and returns the current string appended to the input value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UnknownElement">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Raises an <see cref="E:System.Xml.Serialization.XmlSerializer.UnknownElement" /> event.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToByteArrayHex">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the current value as a hexadecimal byte array.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

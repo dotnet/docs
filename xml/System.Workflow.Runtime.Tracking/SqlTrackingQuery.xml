@@ -137,7 +137,7 @@
     </Member>
     <Member MemberName="TryGetWorkflow">
       <MemberSignature Language="C#" Value="public bool TryGetWorkflow (Guid workflowInstanceId, out System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance workflowInstance);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetWorkflow(valuetype System.Guid workflowInstanceId, class System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance workflowInstance) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetWorkflow(valuetype System.Guid workflowInstanceId, [out] class System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance&amp; workflowInstance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingQuery.TryGetWorkflow(System.Guid,System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -174,5 +174,14 @@
           <see cref="P:System.Workflow.Runtime.Tracking.SqlTrackingQuery.ConnectionString" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingQuery" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

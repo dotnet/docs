@@ -20,6 +20,8 @@ caps.latest.revision: 13
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Type Converters and Markup Extensions for XAML
 Type converters and markup extensions are two techniques that XAML type systems and XAML writers use to generate object graph components. Although they share some characteristics, type converters and markup extensions are represented differently in a XAML node stream. In this documentation set, type converters, markup extensions, and similar constructs are sometimes collectively referred to as value converters.  
@@ -57,7 +59,7 @@ Type converters and markup extensions are two techniques that XAML type systems 
 ## Value Serializers  
  A <xref:System.Windows.Markup.ValueSerializer> is a specialized type converter that is optimized for converting an object to a string. A <xref:System.Windows.Markup.ValueSerializer> for XAML might not implement the `ConvertFrom` method at all. A <xref:System.Windows.Markup.ValueSerializer> implementation obtains services in a manner that is like a <xref:System.ComponentModel.TypeConverter> implementation. The virtual methods provide an input `context` parameter. The `context` parameter is of type <xref:System.Windows.Markup.IValueSerializerContext>, which inherits from the <xref:System.IServiceProvider> interface and has a <xref:System.IServiceProvider.GetService%2A> method.  
   
- In the XAML type system and for XAML writer implementations that use XAML node loop processing for serialization, a value converter that is associated with a type or member is reported by its own <xref:System.Xaml.XamlType.ValueSerializer%2A?displayProperty=fullName> property. The meaning to XAML writers that perform serialization is that if a <xref:System.Xaml.XamlType.TypeConverter%2A?displayProperty=fullName> and <xref:System.Xaml.XamlType.ValueSerializer%2A?displayProperty=fullName> exist, the type converter should be used for the load path and the value serializer should be used for the save path. If <xref:System.Xaml.XamlType.TypeConverter%2A?displayProperty=fullName> exists but <xref:System.Xaml.XamlType.ValueSerializer%2A?displayProperty=fullName> is `null`, the type converter is also used for the save path.  
+ In the XAML type system and for XAML writer implementations that use XAML node loop processing for serialization, a value converter that is associated with a type or member is reported by its own <xref:System.Xaml.XamlType.ValueSerializer%2A?displayProperty=nameWithType> property. The meaning to XAML writers that perform serialization is that if a <xref:System.Xaml.XamlType.TypeConverter%2A?displayProperty=nameWithType> and <xref:System.Xaml.XamlType.ValueSerializer%2A?displayProperty=nameWithType> exist, the type converter should be used for the load path and the value serializer should be used for the save path. If <xref:System.Xaml.XamlType.TypeConverter%2A?displayProperty=nameWithType> exists but <xref:System.Xaml.XamlType.ValueSerializer%2A?displayProperty=nameWithType> is `null`, the type converter is also used for the save path.  
   
 <a name="other_value_converters"></a>   
 ## Other Value Converters  
@@ -72,8 +74,8 @@ Type converters and markup extensions are two techniques that XAML type systems 
  When you implement a value converter, you often need access to a context in which the value converter is applied. This context is known as the service context. The service context might include information such as the active XAML schema context, access to the type mapping system that the XAML schema context and XAML object writer provide, and so on. For more information about the service contexts available for a value converter and how to access the services that a service context might provide, see [Service Contexts Available to Type Converters and Markup Extensions](../../../docs/framework/xaml-services/service-contexts-available-to-type-converters-and-markup-extensions.md).  
   
 ## See Also  
- <xref:System.Windows.Markup.MarkupExtension>   
- <xref:System.Xaml.XamlObjectWriter>   
- [Markup Extensions for XAML Overview](../../../docs/framework/xaml-services/markup-extensions-for-xaml-overview.md)   
- [Type Converters for XAML Overview](../../../docs/framework/xaml-services/type-converters-for-xaml-overview.md)   
+ <xref:System.Windows.Markup.MarkupExtension>  
+ <xref:System.Xaml.XamlObjectWriter>  
+ [Markup Extensions for XAML Overview](../../../docs/framework/xaml-services/markup-extensions-for-xaml-overview.md)  
+ [Type Converters for XAML Overview](../../../docs/framework/xaml-services/type-converters-for-xaml-overview.md)  
  [Service Contexts Available to Type Converters and Markup Extensions](../../../docs/framework/xaml-services/service-contexts-available-to-type-converters-and-markup-extensions.md)

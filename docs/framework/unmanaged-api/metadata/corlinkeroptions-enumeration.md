@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorLinkerOptions"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorLinkerOptions enumeration [.NET Framework metadata]"
 ms.assetid: a656aad6-cc7e-4994-8251-004a6a45e18f
@@ -28,6 +26,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorLinkerOptions Enumeration
 Specifies flags to select options for the metadata linker.  

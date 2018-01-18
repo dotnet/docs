@@ -1,12 +1,16 @@
 ---
 title: State and data in Docker applications
 description: .NET Microservices Architecture for Containerized .NET Applications | State and data in Docker applications
-keywords: Docker, Microservices, ASP.NET, Container
+keywords: Docker, Microservices, ASP.NET, Container, SQL, CosmosDB, Docker
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
+ms.date: 10/18/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
+ms.topic: article
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # State and data in Docker applications
 
@@ -22,9 +26,9 @@ The following solutions are used to manage persistent data in Docker application
 
 -   [Volume plugins](https://docs.docker.com/engine/tutorials/dockervolumes/) that mount volumes to remote services, providing long-term persistence.
 
--   Remote data sources like SQL or NoSQL databases, or cache services like [Redis](https://redis.io/).
-
 -   [Azure Storage](https://docs.microsoft.com/azure/storage/), which provides geo-distributable storage, providing a good long-term persistence solution for containers.
+
+-   Remote relational databases like [Azure SQL Database](https://azure.microsoft.com/services/sql-database/) or NoSQL databases like [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction), or cache services like [Redis](https://redis.io/).
 
 The following provides more detail about these options.
 
@@ -42,9 +46,9 @@ In addition, when Docker containers are managed by an orchestrator, containers m
 
 **Volume plugins** like [Flocker](https://clusterhq.com/flocker/) provide data access across all hosts in a cluster. While not all volume plugins are created equally, volume plugins typically provide externalized persistent reliable storage from immutable containers.
 
-**Remote data sources and cache** tools like Azure SQL Database, Azure Document DB, or a remote cache like Redis can be used in containerized applications the same way they are used when developing without containers. This is a proven way to store business application data.
+**Remote data sources and cache** tools like Azure SQL Database, Azure Cosmos DB, or a remote cache like Redis can be used in containerized applications the same way they are used when developing without containers. This is a proven way to store business application data.
 
-**Azure Storage.** Business data usually will need to be placed in external resources or databases, like relational databases or NoSQL databases like Azure Storage and DocDB. Azure Storage, in concrete, provides the following services in the cloud:
+**Azure Storage.** Business data usually will need to be placed in external resources or databases, like Azure Storage. Azure Storage, in concrete, provides the following services in the cloud:
 
 -   Blob storage stores unstructured object data. A blob can be any type of text or binary data, such as document or media files (images, audio, and video files). Blob storage is also referred to as Object storage.
 
@@ -52,7 +56,7 @@ In addition, when Docker containers are managed by an orchestrator, containers m
 
 -   Table storage stores structured datasets. Table storage is a NoSQL key-attribute data store, which allows rapid development and fast access to large quantities of data.
 
-**Relational databases and NoSQL databases.** There are many choices for external databases, from relational databases like SQL Server, PostgreSQL, Oracle, or NoSQL databases like Azure DocDB, MongoDB, etc. These databases are not going to be explained as part of this guide since they are in a completely different subject.
+**Relational databases and NoSQL databases.** There are many choices for external databases, from relational databases like SQL Server, PostgreSQL, Oracle, or NoSQL databases like Azure Cosmos DB, MongoDB, etc. These databases are not going to be explained as part of this guide since they are in a completely different subject.
 
 
 >[!div class="step-by-step"]

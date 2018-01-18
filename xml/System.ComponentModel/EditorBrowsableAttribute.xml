@@ -54,6 +54,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.EditorBrowsableState" />
+    <altmember cref="T:System.ComponentModel.BrowsableAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -81,10 +83,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default for this property is <xref:System.ComponentModel.EditorBrowsableState?displayProperty=fullName>.  
+ The default for this property is <xref:System.ComponentModel.EditorBrowsableState.Always?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.EditorBrowsableState" />
+        <altmember cref="T:System.ComponentModel.BrowsableAttribute" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -116,6 +120,8 @@
         <param name="state">The <see cref="T:System.ComponentModel.EditorBrowsableState" /> to set <see cref="P:System.ComponentModel.EditorBrowsableAttribute.State" /> to.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.EditorBrowsableAttribute" /> class with an <see cref="T:System.ComponentModel.EditorBrowsableState" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.EditorBrowsableState" />
+        <altmember cref="T:System.ComponentModel.BrowsableAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -152,6 +158,8 @@
         <returns>
           <see langword="true" /> if the value of the given object is equal to that of the current; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.EditorBrowsableState" />
+        <altmember cref="T:System.ComponentModel.BrowsableAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -184,6 +192,7 @@
         <summary>Returns the hash code for this instance.</summary>
         <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Attribute.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -218,11 +227,23 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default for this property is <xref:System.ComponentModel.EditorBrowsableState?displayProperty=fullName>.  
+ The default for this property is <xref:System.ComponentModel.EditorBrowsableState.Always?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.EditorBrowsableState" />
+        <altmember cref="T:System.ComponentModel.BrowsableAttribute" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.EditorBrowsableAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

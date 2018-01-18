@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default web applications have a single <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object that is accessed through the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration?displayProperty=fullName> property. The first time the property is accessed a new <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> instance is initialized from settings in the configuration file and the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfigurationCreated?displayProperty=fullName> event is raised. You can use the properties and methods exposed by the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> class to modify or replace the object initialized from configuration in an event handler. This object is available through the <xref:System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs.FederationConfiguration%2A?displayProperty=fullName> property inside the event handler.  
+ By default web applications have a single <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object that is accessed through the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration?displayProperty=nameWithType> property. The first time the property is accessed a new <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> instance is initialized from settings in the configuration file and the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfigurationCreated?displayProperty=nameWithType> event is raised. You can use the properties and methods exposed by the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> class to modify or replace the object initialized from configuration in an event handler. This object is available through the <xref:System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs.FederationConfiguration%2A?displayProperty=nameWithType> property inside the event handler.  
   
  ]]></format>
     </remarks>
@@ -57,13 +57,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The properties in the new instance are initialized by loading settings from the `<system.identityModel.services>` configuration section. This constructor calls the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.%23ctor%28System.Boolean%29?displayProperty=fullName> constructor with the `loadConfig` parameter `true`.  
+ The properties in the new instance are initialized by loading settings from the `<system.identityModel.services>` configuration section. This constructor calls the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.%23ctor%28System.Boolean%29?displayProperty=nameWithType> constructor with the `loadConfig` parameter `true`.  
   
 > [!WARNING]
 >  Before the new <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> instance is used by any of the configured HTTP modules, call the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.Initialize%2A> method to ensure that the instance is properly initialized.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IdentityModel.Services.Configuration.FederationConfiguration.#ctor(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -122,7 +123,7 @@
       </Parameters>
       <Docs>
         <param name="federationConfigurationName">The name of the <see langword="&lt;federationConfiguration&gt;" /> element from which to load the configuration.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.Configuration.FederationConfiguration" /> class from the [\&lt;federationConfiguration\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md) element with the specified name.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.Configuration.FederationConfiguration" /> class from the [&lt;federationConfiguration&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md) element with the specified name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -176,7 +177,7 @@
 ## Remarks  
  Specifies the cookie handler that is used to read and write session cookies by the SAM.  
   
- When initialized from a configuration file, this property is set by the [\&lt;cookieHandler\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element.  
+ When initialized from a configuration file, this property is set by the [&lt;cookieHandler&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element.  
   
  ]]></format>
         </remarks>
@@ -214,7 +215,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Defines the name of the default [\&lt;federationConfiguration\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md) element from which settings should be loaded. This is an empty string as the default element is unnamed.</summary>
+        <summary>Defines the name of the default [&lt;federationConfiguration&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md) element from which settings should be loaded. This is an empty string as the default element is unnamed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,7 +238,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When initialized from a configuration file, this property is set by the [\&lt;identityConfiguration\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md) element.  
+ When initialized from a configuration file, this property is set by the [&lt;identityConfiguration&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md) element.  
   
  ]]></format>
         </remarks>
@@ -265,7 +266,7 @@
 ## Remarks  
  This method ensures that the current instance is properly initialized before it is used by the HTTP Modules to process incoming requests. It should only be called once. Check the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.IsInitialized%2A> property before calling the method. This method sets the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.IsInitialized%2A> property is set `true`.  
   
- The default implementation creates a default cookie handler if there is not one already configured through the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.CookieHandler%2A> property and calls the <xref:System.IdentityModel.Configuration.IdentityConfiguration.Initialize%2A?displayProperty=fullName> method on the identity configuration object that is configured through the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.IdentityConfiguration%2A> property. You can override this method to modify this behavior or to provide additional initialization in derived classes.  
+ The default implementation creates a default cookie handler if there is not one already configured through the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.CookieHandler%2A> property and calls the <xref:System.IdentityModel.Configuration.IdentityConfiguration.Initialize%2A?displayProperty=nameWithType> method on the identity configuration object that is configured through the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.IdentityConfiguration%2A> property. You can override this method to modify this behavior or to provide additional initialization in derived classes.  
   
  This method should be invoked before the class is used by the HTTP Modules to process incoming requests.  
   
@@ -353,7 +354,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Corresponds to the `name` attribute of a [\&lt;federationConfiguration\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md) element.  
+ Corresponds to the `name` attribute of a [&lt;federationConfiguration&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md) element.  
   
  ]]></format>
         </remarks>
@@ -378,7 +379,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When initialized from a configuration file, this property is set by the [\&lt;serviceCertificate\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/servicecertificate.md) element.  
+ When initialized from a configuration file, this property is set by the [&lt;serviceCertificate&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/servicecertificate.md) element.  
   
  ]]></format>
         </remarks>
@@ -403,7 +404,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When initialized from a configuration file, this property is set by the [\&lt;wsFederation\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/wsfederation.md) element.  
+ When initialized from a configuration file, this property is set by the [&lt;wsFederation&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/wsfederation.md) element.  
   
  ]]></format>
         </remarks>

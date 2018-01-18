@@ -37,6 +37,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
+    <altmember cref="T:System.Windows.Media.Imaging.BitmapEncoder" />
+    <altmember cref="T:System.Windows.Media.Imaging.BitmapFrame" />
+    <altmember cref="T:System.Windows.Controls.Image" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -90,6 +94,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapCodecInfo" />
       </Docs>
     </Member>
     <Member MemberName="ColorContexts">
@@ -149,6 +154,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -187,6 +193,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="bitmapUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.FileFormatException">The <paramref name="bitmapUri" /> specifies a class ID of an unsupported format type.</exception>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -254,6 +261,8 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The file original image stream is read only.</exception>
         <exception cref="T:System.NotImplementedException">The decoder is not a built in decoder.</exception>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapMetadata" />
+        <altmember cref="T:System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter" />
       </Docs>
     </Member>
     <Member MemberName="DownloadCompleted">
@@ -404,6 +413,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapFrame" />
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
       </Docs>
     </Member>
     <Member MemberName="IsDownloading">
@@ -453,6 +464,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapMetadata" />
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapFrame" />
       </Docs>
     </Member>
     <Member MemberName="Palette">
@@ -476,6 +489,7 @@
         <summary>Gets the <see cref="T:System.Windows.Media.Imaging.BitmapPalette" /> associated with this decoder.</summary>
         <value>The <see cref="T:System.Windows.Media.Imaging.BitmapPalette" /> associated with this decoder. If the bitmap has no palette, <see langword="null" /> is returned. This property has no default value.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapPalette" />
       </Docs>
     </Member>
     <Member MemberName="Preview">
@@ -506,6 +520,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
       </Docs>
     </Member>
     <Member MemberName="Thumbnail">
@@ -538,6 +553,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -559,5 +575,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Windows.Media.Imaging.BitmapDecoder" /> by using the specified <see cref="T:System.Windows.Media.Imaging.BitmapCreateOptions" /> and <see cref="T:System.Windows.Media.Imaging.BitmapCacheOption" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

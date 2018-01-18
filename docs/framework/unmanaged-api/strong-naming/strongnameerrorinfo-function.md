@@ -21,8 +21,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "StrongNameErrorInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StrongNameErrorInfo function [.NET Framework strong naming]"
 ms.assetid: e91bf8c3-7c26-4732-938e-2e5b04abfc99
@@ -32,6 +30,8 @@ caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # StrongNameErrorInfo Function
 Gets the last error code that was raised by one of the strong name functions.  

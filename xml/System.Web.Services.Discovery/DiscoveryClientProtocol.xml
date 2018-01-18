@@ -31,11 +31,14 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[DiscoveryClientProtocol#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientProtocol/CS/discocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DiscoveryClientProtocol#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientProtocol/VB/discovb.aspx#1)]  -->  
+ [!code-aspx-csharp[DiscoveryClientProtocol#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientProtocol/CS/discocs.aspx#1)]
+ [!code-aspx-vb[DiscoveryClientProtocol#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientProtocol/VB/discovb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Services.Discovery.DiscoveryDocument" />
+    <altmember cref="T:System.Web.Services.Description.ServiceDescription" />
+    <altmember cref="T:System.Web.Services.Protocols.HttpWebClientProtocol" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -201,16 +204,21 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[DiscoveryClientProtocol.Documents#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientProtocol.Documents/CS/discocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DiscoveryClientProtocol.Documents#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientProtocol.Documents/VB/discovb.aspx#1)]  -->  
+ [!code-aspx-csharp[DiscoveryClientProtocol.Documents#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientProtocol.Documents/CS/discocs.aspx#1)]
+ [!code-aspx-vb[DiscoveryClientProtocol.Documents#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientProtocol.Documents/VB/discovb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Services.Discovery.DiscoveryClientDocumentCollection" />
+        <altmember cref="M:System.Web.Services.Discovery.DiscoveryClientProtocol.DiscoverAny(System.String)" />
+        <altmember cref="M:System.Web.Services.Discovery.DiscoveryClientProtocol.Discover(System.String)" />
+        <altmember cref="M:System.Web.Services.Discovery.DiscoveryClientProtocol.ResolveOneLevel" />
+        <altmember cref="M:System.Web.Services.Discovery.DiscoveryClientProtocol.ResolveAll" />
       </Docs>
     </Member>
     <Member MemberName="Download">
       <MemberSignature Language="C#" Value="public System.IO.Stream Download (ref string url);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream Download(string url) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream Download(string&amp; url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientProtocol.Download(System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -243,7 +251,7 @@
     </Member>
     <Member MemberName="Download">
       <MemberSignature Language="C#" Value="public System.IO.Stream Download (ref string url, ref string contentType);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream Download(string url, string contentType) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream Download(string&amp; url, string&amp; contentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientProtocol.Download(System.String@,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -406,8 +414,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[DiscoveryClientProtocol.References#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientProtocol.References/CS/discocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DiscoveryClientProtocol.References#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientProtocol.References/VB/discovb.aspx#1)]  -->  
+ [!code-aspx-csharp[DiscoveryClientProtocol.References#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientProtocol.References/CS/discocs.aspx#1)]
+ [!code-aspx-vb[DiscoveryClientProtocol.References#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientProtocol.References/VB/discovb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -525,7 +533,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.Services.Discovery.DiscoveryClientProtocol.ReadAll(System.String)" />
+        <altmember cref="T:System.Web.Services.Discovery.DiscoveryClientProtocol.DiscoveryClientResultsFile" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Download">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Downloads the discovery document at the supplied URL into a <see cref="T:System.IO.Stream" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

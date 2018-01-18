@@ -9,15 +9,16 @@ ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 ms.assetid: 60e2541b-0cea-4b2e-a4fa-85f4c50f1bef
 caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # XSLT Stylesheet Scripting Using &lt;msxsl:script&gt;
 The <xref:System.Xml.Xsl.XslTransform> class supports embedded scripting using the `script` element.  

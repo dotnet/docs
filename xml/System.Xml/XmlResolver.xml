@@ -31,15 +31,15 @@
   
  The <xref:System.Xml> namespace includes two concrete implementations of the <xref:System.Xml.XmlResolver> class:  
   
--   <xref:System.Xml.XmlUrlResolver> is the default resolver for all classes in the <xref:System.Xml> namespace. It supports the `file://` and `http://` protocols and requests from the <xref:System.Net.WebRequest?displayProperty=fullName> class. For examples of extending the class to improve performance, see the <xref:System.Xml.XmlUrlResolver> reference page.  
+-   <xref:System.Xml.XmlUrlResolver> is the default resolver for all classes in the <xref:System.Xml> namespace. It supports the `file://` and `http://` protocols and requests from the <xref:System.Net.WebRequest?displayProperty=nameWithType> class. For examples of extending the class to improve performance, see the <xref:System.Xml.XmlUrlResolver> reference page.  
   
 -   <xref:System.Xml.XmlSecureResolver> helps secure another <xref:System.Xml.XmlResolver> object by wrapping the object object and restricting the resources that it can access. For example, the <xref:System.Xml.XmlSecureResolver> can prohibit access to specific Internet sites or zones.  
   
  You can create and specify your own resolver. If you don't specify a resolver, the reader uses a default <xref:System.Xml.XmlUrlResolver> with no user credentials.  
   
- You specify the <xref:System.Xml.XmlResolver> to use by setting the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=fullName> property and passing the <xref:System.Xml.XmlReaderSettings> object to the <xref:System.Xml.XmlReader.Create%2A> method.  
+ You specify the <xref:System.Xml.XmlResolver> to use by setting the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A?displayProperty=nameWithType> property and passing the <xref:System.Xml.XmlReaderSettings> object to the <xref:System.Xml.XmlReader.Create%2A> method.  
   
- If the resource is stored on a system that requires authentication, you use the <xref:System.Xml.XmlResolver.Credentials%2A?displayProperty=fullName> property to specify the necessary credentials.  
+ If the resource is stored on a system that requires authentication, you use the <xref:System.Xml.XmlResolver.Credentials%2A?displayProperty=nameWithType> property to specify the necessary credentials.  
   
 ## Supplying authentication credentials  
  The file that contains the XML data to read may have a restricted access policy. If authentication is required to access a network resource, use the <xref:System.Xml.XmlResolver.Credentials%2A> property to specify the necessary credentials. If the <xref:System.Xml.XmlResolver.Credentials%2A> property is not set, credentials are set to `null`.  
@@ -161,10 +161,12 @@ resolver.Credentials = myCache;
    
   
 ## Examples  
- See <xref:System.Xml.XmlUrlResolver.Credentials%2A?displayProperty=fullName> for an example that uses this property.  
+ See <xref:System.Xml.XmlUrlResolver.Credentials%2A?displayProperty=nameWithType> for an example that uses this property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.CredentialCache" />
+        <altmember cref="T:System.Net.NetworkCredential" />
       </Docs>
     </Member>
     <Member MemberName="GetEntity">
@@ -203,7 +205,7 @@ resolver.Credentials = myCache;
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used when the caller wants to map a given URI into the object containing the actual resource that the URI represents. The type of object returned is negotiable; however, the implementation must always support <xref:System.IO.Stream?displayProperty=fullName>.  
+ This method is used when the caller wants to map a given URI into the object containing the actual resource that the URI represents. The type of object returned is negotiable; however, the implementation must always support <xref:System.IO.Stream?displayProperty=nameWithType>.  
   
  For the asynchronous version of this method, see <xref:System.Xml.XmlResolver.GetEntityAsync%2A>.  
   
@@ -213,7 +215,7 @@ resolver.Credentials = myCache;
    
   
 ## Examples  
- See <xref:System.Xml.XmlUrlResolver.GetEntity%2A?displayProperty=fullName> for an example using this method.  
+ See <xref:System.Xml.XmlUrlResolver.GetEntity%2A?displayProperty=nameWithType> for an example using this method.  
   
  ]]></format>
         </remarks>
@@ -306,7 +308,7 @@ resolver.Credentials = myCache;
    
   
 ## Examples  
- See <xref:System.Xml.XmlUrlResolver.GetEntity%2A?displayProperty=fullName> for an example that uses this method.  
+ See <xref:System.Xml.XmlUrlResolver.GetEntity%2A?displayProperty=nameWithType> for an example that uses this method.  
   
  ]]></format>
         </remarks>

@@ -1,26 +1,17 @@
 ---
 title: "Walkthrough: Persisting an Object in Visual Studio (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "get-started-article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: a544ce46-ee25-49da-afd4-457a3d59bf63
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Walkthrough: Persisting an Object in Visual Studio (C#)
 Although you can set an object's properties to default values at design time, any values entered at run time are lost when the object is destroyed. You can use serialization to persist an object's data between instances, which enables you to store values and retrieve them the next time that the object is instantiated.  
@@ -226,5 +217,5 @@ Although you can set an object's properties to default values at design time, an
  At this point, you can again build and run the application. Initially, the default values appear in the text boxes. Try to change the values and enter a name in the fourth text box. Close the application and then run it again. Note that the new values now appear in the text boxes.  
   
 ## See Also  
- [Serialization (C# )](../../../../csharp/programming-guide/concepts/serialization/index.md)   
+ [Serialization (C# )](../../../../csharp/programming-guide/concepts/serialization/index.md)  
  [C# Programming Guide](../../../../csharp/programming-guide/index.md)

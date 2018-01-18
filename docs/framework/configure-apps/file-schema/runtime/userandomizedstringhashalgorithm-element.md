@@ -10,10 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "UseRandomizedStringHashAlgorithm element"
   - "<UseRandomizedStringHashAlgorithm> element"
@@ -22,6 +20,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;UseRandomizedStringHashAlgorithm&gt; Element
 Determines whether the common language runtime calculates hash codes for strings on a per application domain basis.  
@@ -64,9 +64,9 @@ Determines whether the common language runtime calculates hash codes for strings
 |`runtime`|Contains information about runtime initialization options.|  
   
 ## Remarks  
- By default, the <xref:System.StringComparer> class and the <xref:System.String.GetHashCode%2A?displayProperty=fullName> method use a single hashing algorithm that produces a consistent hash code across application domains. This is equivalent to setting the `enabled` attribute of the `<UseRandomizedStringHashAlgorithm>` element to `0`. This is the hashing algorithm used in the [!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)].  
+ By default, the <xref:System.StringComparer> class and the <xref:System.String.GetHashCode%2A?displayProperty=nameWithType> method use a single hashing algorithm that produces a consistent hash code across application domains. This is equivalent to setting the `enabled` attribute of the `<UseRandomizedStringHashAlgorithm>` element to `0`. This is the hashing algorithm used in the [!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)].  
   
- The <xref:System.StringComparer> class and the <xref:System.String.GetHashCode%2A?displayProperty=fullName> method can also use a different hashing algorithm that computes hash codes on a per application domain basis. As a result, hash codes for equivalent strings will differ across application domains. This is an opt-in feature; to take advantage of it, you must set the `enabled` attribute of the `<UseRandomizedStringHashAlgorithm>` element to `1`.  
+ The <xref:System.StringComparer> class and the <xref:System.String.GetHashCode%2A?displayProperty=nameWithType> method can also use a different hashing algorithm that computes hash codes on a per application domain basis. As a result, hash codes for equivalent strings will differ across application domains. This is an opt-in feature; to take advantage of it, you must set the `enabled` attribute of the `<UseRandomizedStringHashAlgorithm>` element to `1`.  
   
  The string lookup in a hash table is typically an O(1) operation. However, when a large number of collisions occur, the lookup can become an O(n<sup>2</sup>) operation. You can use the `<UseRandomizedStringHashAlgorithm>` configuration element to generate a random hashing algorithm per application domain, which in turn limits the number of potential collisions, particularly when the keys from which the hash codes are calculated are based on data input by users.  
   
@@ -102,6 +102,6 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 ```  
   
 ## See Also  
- <xref:System.StringComparer.GetHashCode%2A?displayProperty=fullName>   
- <xref:System.String.GetHashCode%2A?displayProperty=fullName>   
- <xref:System.Object.GetHashCode%2A?displayProperty=fullName>
+ <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType>  
+ <xref:System.String.GetHashCode%2A?displayProperty=nameWithType>  
+ <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>

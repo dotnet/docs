@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Security.PartialTrustVisibilityLevel> is passed as a property setting parameter to the <xref:System.Security.AllowPartiallyTrustedCallersAttribute.%23ctor%2A?displayProperty=fullName> constructor. If no parameter is passed to the constructor, the default is VisibleToAllHosts.  
+ <xref:System.Security.PartialTrustVisibilityLevel> is passed as a property setting parameter to the <xref:System.Security.AllowPartiallyTrustedCallersAttribute.%23ctor%2A?displayProperty=nameWithType> constructor. If no parameter is passed to the constructor, the default is VisibleToAllHosts.  
   
  You enable partially trusted assemblies that are identified as NotVisibleByDefault by adding them to the <xref:System.AppDomainSetup.PartialTrustVisibleAssemblies%2A> property of their application domain. If you enable an assembly that references (directly or indirectly) other partially trusted assemblies that are NotVisibleByDefault, those other assemblies should be enabled as well.  
   

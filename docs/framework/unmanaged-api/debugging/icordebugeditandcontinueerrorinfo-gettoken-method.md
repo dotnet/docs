@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEditAndContinueErrorInfo::GetToken"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetToken method, ICorDebugEditAndContinueErrorInfo interface [.NET Framework debugging]"
   - "ICorDebugEditAndContinueErrorInfo::GetToken method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEditAndContinueErrorInfo::GetToken Method
 `GetToken` is obsolete. Do not call this method.  

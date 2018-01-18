@@ -31,6 +31,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.OutputCacheSection" />
+    <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
+    <altmember cref="T:System.Web.Caching.CacheDependency" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -95,6 +98,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.OutputCacheSection" />
+        <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
       </Docs>
     </Member>
     <Member MemberName="Properties">

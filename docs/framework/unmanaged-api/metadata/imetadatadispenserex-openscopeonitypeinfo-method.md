@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataDispenserEx::OpenScopeOnITypeInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "OpenScopeOnITypeInfo method [.NET Framework metadata]"
   - "IMetaDataDispenserEx::OpenScopeOnITypeInfo method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataDispenserEx::OpenScopeOnITypeInfo Method
 This method is not implemented. If called, it returns E_NOTIMPL.  
@@ -67,5 +67,5 @@ HRESULT OpenScopeOnITypeInfo (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See Also  
- [IMetaDataDispenserEx Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)   
+ [IMetaDataDispenserEx Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)  
  [IMetaDataDispenser Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-interface.md)

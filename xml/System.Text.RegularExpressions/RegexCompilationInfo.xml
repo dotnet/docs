@@ -23,6 +23,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="Overload:System.Text.RegularExpressions.Regex.CompileToAssembly" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -172,6 +173,7 @@
  <paramref name="fullnamespace" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="matchTimeout" /> is negative, zero, or greater than approximately 24 days.</exception>
+        <altmember cref="P:System.Text.RegularExpressions.RegexCompilationInfo.MatchTimeout" />
       </Docs>
     </Member>
     <Member MemberName="IsPublic">
@@ -195,7 +197,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Text.RegularExpressions.RegexCompilationInfo.IsPublic%2A> property is `false`, the regular expression class defined by the current instance can be instantiated only by code that is executing in the assembly that contains the class. However, because the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=fullName> method generates an assembly that contains only compiled regular expressions and does not allow additional code to be added, there is generally no reason to assign this property a value of `false`.  
+ If the <xref:System.Text.RegularExpressions.RegexCompilationInfo.IsPublic%2A> property is `false`, the regular expression class defined by the current instance can be instantiated only by code that is executing in the assembly that contains the class. However, because the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> method generates an assembly that contains only compiled regular expressions and does not allow additional code to be added, there is generally no reason to assign this property a value of `false`.  
   
  ]]></format>
         </remarks>
@@ -228,7 +230,7 @@
   
  You can assign a default time-out value to a <xref:System.Text.RegularExpressions.RegexCompilationInfo> object in any of the following ways:  
   
--   By calling the <xref:System.AppDomain.SetData%2A?displayProperty=fullName> method and providing the string representation of a <xref:System.TimeSpan> value for the "REGEX_DEFAULT_MATCH_TIMEOUT" property.  
+-   By calling the <xref:System.AppDomain.SetData%2A?displayProperty=nameWithType> method and providing the string representation of a <xref:System.TimeSpan> value for the "REGEX_DEFAULT_MATCH_TIMEOUT" property.  
   
 -   By calling the <xref:System.Text.RegularExpressions.RegexCompilationInfo.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.String%2CSystem.String%2CSystem.Boolean%2CSystem.TimeSpan%29> constructor and providing a value for the `matchTimeout` parameter.  
   
@@ -262,6 +264,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Text.RegularExpressions.RegexCompilationInfo.#ctor(System.String,System.Text.RegularExpressions.RegexOptions,System.String,System.String,System.Boolean,System.TimeSpan)" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -372,5 +375,15 @@
         <exception cref="T:System.ArgumentNullException">The value for this property is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Text.RegularExpressions.RegexCompilationInfo" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

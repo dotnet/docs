@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.Linq</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -21,7 +25,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Extends the <see cref="T:System.Xml.Linq.XDocument" /> class by providing a method for navigating and editing an XML node.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,6 +43,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XPath.IXPathNavigable</ReturnType>
       </ReturnValue>
@@ -46,9 +54,9 @@
         <Parameter Name="node" Type="System.Xml.Linq.XNode" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="node">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="node">The XML node to navigate.</param>
+        <summary>Returns an accessor that allows you to navigate and edit the specified <see cref="T:System.Xml.Linq.XNode" />.</summary>
+        <returns>An interface that provides an accessor to the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

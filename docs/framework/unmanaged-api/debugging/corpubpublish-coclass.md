@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorpubPublish"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorpubPublish coclass [.NET Framework debugging]"
 ms.assetid: 191015da-f54a-4bac-a28a-1de7ab3c3428
@@ -28,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorpubPublish Coclass
 Provides interfaces for publishing information about application domains and processes.  

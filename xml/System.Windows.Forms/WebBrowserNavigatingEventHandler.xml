@@ -29,12 +29,15 @@
    
   
 ## Examples  
- The following code example demonstrates how to use a handler for the <xref:System.Windows.Forms.WebBrowser.Navigating?displayProperty=fullName> event to cancel navigation when a Web page form has not been filled in. The <xref:System.Windows.Forms.WebBrowser.Document%2A?displayProperty=fullName> property is used to determine whether the form input field contains a value. This example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control called `webBrowser1`.  
+ The following code example demonstrates how to use a handler for the <xref:System.Windows.Forms.WebBrowser.Navigating?displayProperty=nameWithType> event to cancel navigation when a Web page form has not been filled in. The <xref:System.Windows.Forms.WebBrowser.Document%2A?displayProperty=nameWithType> property is used to determine whether the form input field contains a value. This example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control called `webBrowser1`.  
   
  [!code-csharp[WebBrowserMisc#30](~/samples/snippets/csharp/VS_Snippets_Winforms/WebBrowserMisc/CS/WebBrowserMisc.cs#30)]
  [!code-vb[WebBrowserMisc#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/WebBrowserMisc/vb/WebBrowserMisc.vb#30)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.WebBrowser" />
+    <altmember cref="E:System.Windows.Forms.WebBrowser.Navigating" />
+    <altmember cref="T:System.Windows.Forms.WebBrowserNavigatingEventArgs" />
   </Docs>
 </Type>

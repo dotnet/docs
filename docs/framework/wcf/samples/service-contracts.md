@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9e34b694-aa56-45b3-8dd1-2616705b4fc5
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Service Contracts
 This section contains samples that demonstrate service contracts in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  

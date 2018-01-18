@@ -17,6 +17,8 @@
   <Docs>
     <summary>Provides a XAML type system identifier representation for attachable members. The identifier structure parallels the <paramref name="declaringType" /><see langword="." /><paramref name="memberName" /> string form for attachable member usage.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Xaml.AttachablePropertyServices" />
+    <altmember cref="T:System.Xaml.XamlMember" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,7 +60,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xaml.AttachableMemberIdentifier.DeclaringType%2A> value should match the name of the <xref:System.Xaml.XamlMember.Type%2A?displayProperty=fullName> of the attachable member's XAML type system information.  
+ The <xref:System.Xaml.AttachableMemberIdentifier.DeclaringType%2A> value should match the name of the <xref:System.Xaml.XamlMember.Type%2A?displayProperty=nameWithType> of the attachable member's XAML type system information.  
   
  ]]></format>
         </remarks>
@@ -155,7 +157,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xaml.AttachableMemberIdentifier.MemberName%2A> value should match the <xref:System.Xaml.XamlMember.Name%2A?displayProperty=fullName> of the attachable member's XAML type system information.  
+ The <xref:System.Xaml.AttachableMemberIdentifier.MemberName%2A> value should match the <xref:System.Xaml.XamlMember.Name%2A?displayProperty=nameWithType> of the attachable member's XAML type system information.  
   
  ]]></format>
         </remarks>
@@ -237,5 +239,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two <see cref="T:System.Xaml.AttachableMemberIdentifier" /> objects have the same value.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

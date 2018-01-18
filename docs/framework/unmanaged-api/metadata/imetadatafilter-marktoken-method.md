@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataFilter::MarkToken"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataFilter::MarkToken method [.NET Framework metadata]"
   - "MarkToken method, IMetaDataFilter interface [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataFilter::MarkToken Method
 Sets a value indicating that the specified metadata token has been processed.  

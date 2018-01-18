@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICeeGen::GetString"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICeeGen::GetString method [.NET Framework metadata]"
   - "GetString method, ICeeGen interface [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICeeGen::GetString Method
 Gets the string stored at the specified relative virtual address.  

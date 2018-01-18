@@ -15,14 +15,17 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typical (`Normal` type) messages are those that you send to a queue using either the <xref:System.Messaging.Message> class or any overload of the <xref:System.Messaging.MessageQueue.Send%2A?displayProperty=fullName> method.  
+ Typical (`Normal` type) messages are those that you send to a queue using either the <xref:System.Messaging.Message> class or any overload of the <xref:System.Messaging.MessageQueue.Send%2A?displayProperty=nameWithType> method.  
   
  Message Queuing generates acknowledgment messages whenever the sending application requests one. If you send a message using the <xref:System.Messaging.Message> class, you can use its <xref:System.Messaging.Message.AcknowledgeType%2A> property to specify the types of acknowledgments to receive. For example, Message Queuing can generate positive or negative messages to indicate that the original message arrived or was read. Message Queuing returns the appropriate acknowledgment message to the administration queue specified by the sending application. When you receive or peek an acknowledgment message using a <xref:System.Messaging.Message>, its <xref:System.Messaging.Message.Acknowledgment%2A> property indicates the reason Message Queuing sent the acknowledgment.  
   
- Message Queuing generates report messages whenever a report queue is defined at the source queue manager. When tracing is enabled (by setting the <xref:System.Messaging.Message.UseTracing%2A?displayProperty=fullName> property on the original message), Message Queuing sends a report message to the Message Queuing report queue each time the original message enters or leaves a Message Queuing server.  
+ Message Queuing generates report messages whenever a report queue is defined at the source queue manager. When tracing is enabled (by setting the <xref:System.Messaging.Message.UseTracing%2A?displayProperty=nameWithType> property on the original message), Message Queuing sends a report message to the Message Queuing report queue each time the original message enters or leaves a Message Queuing server.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Messaging.Message" />
+    <altmember cref="P:System.Messaging.Message.AcknowledgeType" />
+    <altmember cref="T:System.Messaging.Acknowledgment" />
   </Docs>
   <Members>
     <Member MemberName="Acknowledgment">

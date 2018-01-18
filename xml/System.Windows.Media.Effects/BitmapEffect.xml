@@ -40,6 +40,7 @@
   
  <see cref="M:System.Windows.Media.Effects.BitmapEffect.UpdateUnmanagedPropertyState(System.Runtime.InteropServices.SafeHandle)" /> must be overridden when an unmanaged effect has properties that the user can modify. Use this method in conjunction with <see cref="M:System.Windows.Media.Effects.BitmapEffect.SetValue(System.Runtime.InteropServices.SafeHandle,System.String,System.Object)" /> to update your unmanaged properties.</para>
     </block>
+    <altmember cref="T:System.Windows.Media.Effects.BitmapEffectInput" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -84,7 +85,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -112,7 +113,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

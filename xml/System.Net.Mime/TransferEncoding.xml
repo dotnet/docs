@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The values in the <xref:System.Net.Mime.TransferEncoding> enumeration are used with the <xref:System.Net.Mail.AttachmentBase.TransferEncoding?displayProperty=fullName> property.  
+ The values in the <xref:System.Net.Mime.TransferEncoding> enumeration are used with the <xref:System.Net.Mail.AttachmentBase.TransferEncoding?displayProperty=nameWithType> property.  
   
  The Content-Transfer-Encoding header specifies the encoding of the associated message body so that it meets SMTP requirements. SMTP requires data for transport to be in 7-bit US-ASCII characters with lines no longer than 1000 characters.  
   

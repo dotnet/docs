@@ -26,9 +26,9 @@
 ## Remarks  
  Handle the <xref:System.Windows.Forms.DataGridView.CellParsing> event to provide custom value conversion from a user-specified value to a value in the type specified by the cell <xref:System.Windows.Forms.DataGridViewCell.ValueType%2A> property.  
   
- When you handle the <xref:System.Windows.Forms.DataGridView.CellParsing> event, you can convert the value yourself or you can customize the default conversion. For example, you can convert the value yourself using the cell <xref:System.Windows.Forms.DataGridViewCell.ParseFormattedValue%2A> method with type converters of your choosing. Alternatively, you can let the default type converters parse the value, but modify the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>, <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A>, and <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A> properties of the object returned by the <xref:System.Windows.Forms.DataGridViewCellParsingEventArgs.InheritedCellStyle%2A?displayProperty=fullName> property, which is initialized using the cell <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A> property.  
+ When you handle the <xref:System.Windows.Forms.DataGridView.CellParsing> event, you can convert the value yourself or you can customize the default conversion. For example, you can convert the value yourself using the cell <xref:System.Windows.Forms.DataGridViewCell.ParseFormattedValue%2A> method with type converters of your choosing. Alternatively, you can let the default type converters parse the value, but modify the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>, <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A>, and <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A> properties of the object returned by the <xref:System.Windows.Forms.DataGridViewCellParsingEventArgs.InheritedCellStyle%2A?displayProperty=nameWithType> property, which is initialized using the cell <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A> property.  
   
- When you convert the value yourself, replace the initial, formatted value of the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A?displayProperty=fullName> property with the converted value in the type specified by the cell <xref:System.Windows.Forms.DataGridViewCell.ValueType%2A> property. To indicate that no further parsing is necessary, set the <xref:System.Windows.Forms.DataGridViewCellParsingEventArgs.ParsingApplied%2A?displayProperty=fullName> property to `true`.  
+ When you convert the value yourself, replace the initial, formatted value of the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A?displayProperty=nameWithType> property with the converted value in the type specified by the cell <xref:System.Windows.Forms.DataGridViewCell.ValueType%2A> property. To indicate that no further parsing is necessary, set the <xref:System.Windows.Forms.DataGridViewCellParsingEventArgs.ParsingApplied%2A?displayProperty=nameWithType> property to `true`.  
   
  When the event handler completes, if the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A> is `null` or is not of the correct type, or the <xref:System.Windows.Forms.DataGridViewCellParsingEventArgs.ParsingApplied%2A> property is `false`, the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A> is parsed using the cell <xref:System.Windows.Forms.DataGridViewCell.ParseFormattedValue%2A> method with default type converters. The default implementation of this method parses the value using the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>, <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A>, and <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A> properties of the cell style passed in. If the value is not equal to <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>, the value is parsed using the <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A> property and the type converters passed in.  
   
@@ -49,5 +49,19 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellParsing" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellFormatting" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.EditMode" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCell.ValueType" />
+    <altmember cref="M:System.Windows.Forms.DataGridViewCell.ParseFormattedValue(System.Object,System.Windows.Forms.DataGridViewCellStyle,System.ComponentModel.TypeConverter,System.ComponentModel.TypeConverter)" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCellParsingEventArgs" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellParsingEventArgs.InheritedCellStyle" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellParsingEventArgs.ParsingApplied" />
+    <altmember cref="P:System.Windows.Forms.ConvertEventArgs.Value" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.NullValue" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.Format" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.FormatProvider" />
   </Docs>
 </Type>

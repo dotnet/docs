@@ -24,7 +24,7 @@
 ## Remarks  
  Setting the <xref:System.Messaging.MessagePropertyFilter> on a <xref:System.Messaging.MessageQueue> instance controls the set of properties that are retrieved when peeking or receiving a message. The filter is set on the instance of <xref:System.Messaging.MessageQueue> that retrieves the message information. When you set a <xref:System.Messaging.MessagePropertyFilter> Boolean-valued member to `false`, you prevent the information of the associated <xref:System.Messaging.Message> property from being retrieved by the <xref:System.Messaging.MessageQueue>.  
   
- There are several filter properties that are not Boolean values. They are integer values that get or set the default sizes of the <xref:System.Messaging.Message.Body%2A?displayProperty=fullName>, <xref:System.Messaging.Message.Extension%2A?displayProperty=fullName>, or <xref:System.Messaging.Message.Label%2A?displayProperty=fullName>.  
+ There are several filter properties that are not Boolean values. They are integer values that get or set the default sizes of the <xref:System.Messaging.Message.Body%2A?displayProperty=nameWithType>, <xref:System.Messaging.Message.Extension%2A?displayProperty=nameWithType>, or <xref:System.Messaging.Message.Label%2A?displayProperty=nameWithType>.  
   
  Retrieving a limited set of properties helps improve performance because smaller amounts of data are transferred from the queue.  
   
@@ -43,6 +43,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Messaging.MessageQueue" />
+    <altmember cref="P:System.Messaging.MessageQueue.MessageReadPropertyFilter" />
+    <altmember cref="T:System.Messaging.Message" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,6 +82,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Messaging.MessageQueue" />
+        <altmember cref="T:System.Messaging.Message" />
       </Docs>
     </Member>
     <Member MemberName="AcknowledgeType">
@@ -109,7 +114,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Messaging.Message.AcknowledgeType%2A> property of the <xref:System.Messaging.Message> class specifies the type of acknowledgment messages requested by the sending application. The type of acknowledgment defines when acknowledgments are returned. Set the <xref:System.Messaging.Message.AcknowledgeType%2A?displayProperty=fullName> property before sending the message to request a specific type of acknowledgment.  
+ The <xref:System.Messaging.Message.AcknowledgeType%2A> property of the <xref:System.Messaging.Message> class specifies the type of acknowledgment messages requested by the sending application. The type of acknowledgment defines when acknowledgments are returned. Set the <xref:System.Messaging.Message.AcknowledgeType%2A?displayProperty=nameWithType> property before sending the message to request a specific type of acknowledgment.  
   
    
   
@@ -121,6 +126,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.AcknowledgeType" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.Acknowledgment" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="Acknowledgment">
@@ -151,11 +159,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Messaging.Message.Acknowledgment%2A?displayProperty=fullName> property of the <xref:System.Messaging.Message> class specifies the type of acknowledgment messages the system posts in the administration queue, which determines when acknowledgments are generated.  
+ The <xref:System.Messaging.Message.Acknowledgment%2A?displayProperty=nameWithType> property of the <xref:System.Messaging.Message> class specifies the type of acknowledgment messages the system posts in the administration queue, which determines when acknowledgments are generated.  
   
  Acknowledgments are returned from the destination queue and posted as messages to the <xref:System.Messaging.Message.AdministrationQueue%2A> specified by the original message. The type of acknowledgment generated depends on what was requested.  
   
- Read the <xref:System.Messaging.Message.Acknowledgment%2A?displayProperty=fullName> property when receiving a message from an administration queue to verify the status of the message originally sent to the message queue.  
+ Read the <xref:System.Messaging.Message.Acknowledgment%2A?displayProperty=nameWithType> property when receiving a message from an administration queue to verify the status of the message originally sent to the message queue.  
   
    
   
@@ -168,6 +176,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.Acknowledgment" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.AcknowledgeType" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="AdministrationQueue">
@@ -210,6 +221,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.AdministrationQueue" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="AppSpecific">
@@ -252,6 +265,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.AppSpecific" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="ArrivedTime">
@@ -294,6 +309,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.ArrivedTime" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.SentTime" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="AttachSenderId">
@@ -324,7 +342,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Messaging.Message.AttachSenderId%2A> property of the <xref:System.Messaging.Message> class specifies whether the <xref:System.Messaging.Message.SenderId%2A?displayProperty=fullName> should be or has been attached to the message. The <xref:System.Messaging.Message.SenderId%2A?displayProperty=fullName> is set by Message Queuing and is used by the receiving Queue Manager to verify whether the sender has access rights to a queue.  
+ The <xref:System.Messaging.Message.AttachSenderId%2A> property of the <xref:System.Messaging.Message> class specifies whether the <xref:System.Messaging.Message.SenderId%2A?displayProperty=nameWithType> should be or has been attached to the message. The <xref:System.Messaging.Message.SenderId%2A?displayProperty=nameWithType> is set by Message Queuing and is used by the receiving Queue Manager to verify whether the sender has access rights to a queue.  
   
    
   
@@ -336,6 +354,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.AttachSenderId" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="Authenticated">
@@ -380,6 +400,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.Authenticated" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="AuthenticationProviderName">
@@ -410,7 +432,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Messaging.Message.AuthenticationProviderName%2A> property of the <xref:System.Messaging.Message> class specifies the name of the cryptographic provider used to generate the digital signature of the message. <xref:System.Messaging.Message.AuthenticationProviderName%2A?displayProperty=fullName> is typically used when working with foreign queues.  
+ The <xref:System.Messaging.Message.AuthenticationProviderName%2A> property of the <xref:System.Messaging.Message> class specifies the name of the cryptographic provider used to generate the digital signature of the message. <xref:System.Messaging.Message.AuthenticationProviderName%2A?displayProperty=nameWithType> is typically used when working with foreign queues.  
   
  A foreign queue exists in a queuing system other than Microsoft Message Queuing. Microsoft Message Queuing communicates with such queues through a connector application.  
   
@@ -424,6 +446,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.AuthenticationProviderName" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.AuthenticationProviderType" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.ConnectorType" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="AuthenticationProviderType">
@@ -468,6 +494,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.AuthenticationProviderType" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="Body">
@@ -510,6 +538,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.Body" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.DefaultBodySize" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="ClearAll">
@@ -545,6 +576,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessagePropertyFilter.SetDefaults" />
+        <altmember cref="M:System.Messaging.MessagePropertyFilter.SetAll" />
+        <altmember cref="M:System.Messaging.MessagePropertyFilter.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -596,9 +630,9 @@
 ## Remarks  
  The <xref:System.Messaging.Message.ConnectorType%2A> property of the <xref:System.Messaging.Message> class is required when an application sets a message property that is typically set by Message Queuing. It is used in the following two instances:  
   
--   When a message is passed by a connector application, the <xref:System.Messaging.Message.ConnectorType%2A?displayProperty=fullName> is required for the sending and receiving applications to interpret the security and acknowledgment properties of the message.  
+-   When a message is passed by a connector application, the <xref:System.Messaging.Message.ConnectorType%2A?displayProperty=nameWithType> is required for the sending and receiving applications to interpret the security and acknowledgment properties of the message.  
   
--   When sending application-encrypted messages, the <xref:System.Messaging.Message.ConnectorType%2A?displayProperty=fullName> property informs Message Queuing to use the symmetric key.  
+-   When sending application-encrypted messages, the <xref:System.Messaging.Message.ConnectorType%2A?displayProperty=nameWithType> property informs Message Queuing to use the symmetric key.  
   
    
   
@@ -610,6 +644,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.ConnectorType" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="CorrelationId">
@@ -653,6 +689,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.CorrelationId" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="DefaultBodySize">
@@ -695,6 +733,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The assigned value is negative.</exception>
+        <altmember cref="T:System.Messaging.Message" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.Body" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="DefaultExtensionSize">
@@ -737,6 +778,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The assigned value is negative.</exception>
+        <altmember cref="T:System.Messaging.Message" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.Extension" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="DefaultLabelSize">
@@ -779,6 +823,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The assigned value is negative.</exception>
+        <altmember cref="T:System.Messaging.Message" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.Label" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="DestinationQueue">
@@ -821,6 +868,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.DestinationQueue" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="DestinationSymmetricKey">
@@ -865,6 +914,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.DestinationSymmetricKey" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="DigitalSignature">
@@ -907,6 +958,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.DigitalSignature" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.Authenticated" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="EncryptionAlgorithm">
@@ -949,6 +1003,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.EncryptionAlgorithm" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="Extension">
@@ -991,6 +1047,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.Extension" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.DefaultExtensionSize" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="HashAlgorithm">
@@ -1033,6 +1092,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.HashAlgorithm" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.DigitalSignature" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.Authenticated" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -1075,6 +1138,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.Id" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="IsFirstInTransaction">
@@ -1117,6 +1182,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.IsFirstInTransaction" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.IsLastInTransaction" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.TransactionId" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="IsLastInTransaction">
@@ -1159,6 +1228,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.IsLastInTransaction" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.IsFirstInTransaction" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.TransactionId" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="Label">
@@ -1201,6 +1274,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Messaging.MessageQueue" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.DefaultLabelSize" />
+        <altmember cref="P:System.Messaging.Message.Label" />
       </Docs>
     </Member>
     <Member MemberName="LookupId">
@@ -1235,6 +1311,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.LookupId" />
       </Docs>
     </Member>
     <Member MemberName="MessageType">
@@ -1277,6 +1354,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.MessageType" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="Priority">
@@ -1322,6 +1401,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.Priority" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="Recoverable">
@@ -1354,7 +1435,7 @@
 ## Remarks  
  The <xref:System.Messaging.Message.Recoverable%2A> property of the <xref:System.Messaging.Message> class indicates whether delivery of a message is guaranteed, even if a computer crashes while the message is en route to the destination queue.  
   
- If delivery of a message is guaranteed, the message is stored locally at every step until the message is successfully forwarded to the next computer. Setting <xref:System.Messaging.Message.Recoverable%2A?displayProperty=fullName> to `true` on the message could affect the throughput.  
+ If delivery of a message is guaranteed, the message is stored locally at every step until the message is successfully forwarded to the next computer. Setting <xref:System.Messaging.Message.Recoverable%2A?displayProperty=nameWithType> to `true` on the message could affect the throughput.  
   
    
   
@@ -1366,6 +1447,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.Recoverable" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="ResponseQueue">
@@ -1410,6 +1493,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.ResponseQueue" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="SenderCertificate">
@@ -1452,6 +1537,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.SenderCertificate" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="SenderId">
@@ -1494,6 +1581,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.SenderId" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.Authenticated" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="SenderVersion">
@@ -1526,7 +1616,7 @@
 ## Remarks  
  The <xref:System.Messaging.Message.SenderVersion%2A> property of the <xref:System.Messaging.Message> class specifies the version of Message Queuing used to send the message. The property is important to be aware of when using features like transaction processing, which is only supported by Message Queuing version 2.0 and later, or digital signatures, which are used to authenticate messages sent by version 1.0.  
   
- <xref:System.Messaging.Message.SenderVersion%2A?displayProperty=fullName> is set by the sending queue manager when the message is sent.  
+ <xref:System.Messaging.Message.SenderVersion%2A?displayProperty=nameWithType> is set by the sending queue manager when the message is sent.  
   
    
   
@@ -1538,6 +1628,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.SenderVersion" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.TransactionId" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.Authenticated" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="SentTime">
@@ -1580,6 +1674,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.SentTime" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.ArrivedTime" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="SetAll">
@@ -1615,6 +1712,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessagePropertyFilter.ClearAll" />
+        <altmember cref="M:System.Messaging.MessagePropertyFilter.SetDefaults" />
+        <altmember cref="M:System.Messaging.MessagePropertyFilter.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="SetDefaults">
@@ -1668,7 +1768,7 @@
 |<xref:System.Messaging.MessagePropertyFilter.DefaultExtensionSize%2A>|255|  
 |<xref:System.Messaging.MessagePropertyFilter.DefaultLabelSize%2A>|255|  
   
- The <xref:System.Messaging.MessageQueue.MessageReadPropertyFilter%2A?displayProperty=fullName> property represents a <xref:System.Messaging.MessagePropertyFilter> on which <xref:System.Messaging.MessagePropertyFilter.SetDefaults%2A> has been called.  
+ The <xref:System.Messaging.MessageQueue.MessageReadPropertyFilter%2A?displayProperty=nameWithType> property represents a <xref:System.Messaging.MessagePropertyFilter> on which <xref:System.Messaging.MessagePropertyFilter.SetDefaults%2A> has been called.  
   
    
   
@@ -1680,6 +1780,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessagePropertyFilter.ClearAll" />
+        <altmember cref="M:System.Messaging.MessagePropertyFilter.SetAll" />
+        <altmember cref="M:System.Messaging.MessagePropertyFilter.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="SourceMachine">
@@ -1722,6 +1825,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.SourceMachine" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="TimeToBeReceived">
@@ -1764,6 +1869,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.TimeToBeReceived" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.TimeToReachQueue" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="TimeToReachQueue">
@@ -1806,6 +1914,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.TimeToReachQueue" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.TimeToBeReceived" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="TransactionId">
@@ -1848,6 +1959,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.TransactionId" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.IsFirstInTransaction" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.IsLastInTransaction" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="TransactionStatusQueue">
@@ -1892,6 +2007,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.TransactionStatusQueue" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.ConnectorType" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="UseAuthentication">
@@ -1936,6 +2054,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.UseAuthentication" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.Authenticated" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="UseDeadLetterQueue">
@@ -1978,6 +2099,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.UseDeadLetterQueue" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="UseEncryption">
@@ -2020,6 +2143,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.UseEncryption" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="UseJournalQueue">
@@ -2062,6 +2187,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.UseJournalQueue" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
     <Member MemberName="UseTracing">
@@ -2106,6 +2233,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Messaging.Message.UseTracing" />
+        <altmember cref="P:System.Messaging.MessagePropertyFilter.ResponseQueue" />
+        <altmember cref="T:System.Messaging.MessageQueue" />
       </Docs>
     </Member>
   </Members>

@@ -9,16 +9,21 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "TileBrush, alignment of"
-  - "vertical alignment of TileBrushes"
-  - "aligning, TileBrushes"
-  - "horizontal alignment of TileBrushes"
+  - "TileBrush [WPF], alignment of"
+  - "vertical alignment of TileBrushes [WPF]"
+  - "aligning [WPF], TileBrushes"
+  - "horizontal alignment of Tilebrushes [WPF]"
 ms.assetid: 65ae89bd-9246-4c9e-bde4-2fb991d4060d
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set the Horizontal and Vertical Alignment of a TileBrush
 This example shows how to control the horizontal and vertical alignment of content in a tile. To control the horizontal and vertical alignment of a <xref:System.Windows.Media.TileBrush>, use its <xref:System.Windows.Media.TileBrush.AlignmentX%2A> and <xref:System.Windows.Media.TileBrush.AlignmentY%2A> properties.  
@@ -76,7 +81,7 @@ Tile pattern with content aligned to lower-right in base tile
  The examples use <xref:System.Windows.Media.DrawingBrush> objects to demonstrate how the <xref:System.Windows.Media.TileBrush.AlignmentX%2A> and <xref:System.Windows.Media.TileBrush.AlignmentY%2A> properties are used. These properties behave identically for all the tile brushes: <xref:System.Windows.Media.DrawingBrush>, <xref:System.Windows.Media.ImageBrush>, and <xref:System.Windows.Media.VisualBrush>. For more information about tile brushes, see [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md).  
   
 ## See Also  
- <xref:System.Windows.Media.DrawingBrush>   
- <xref:System.Windows.Media.ImageBrush>   
- <xref:System.Windows.Media.VisualBrush>   
+ <xref:System.Windows.Media.DrawingBrush>  
+ <xref:System.Windows.Media.ImageBrush>  
+ <xref:System.Windows.Media.VisualBrush>  
  [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)

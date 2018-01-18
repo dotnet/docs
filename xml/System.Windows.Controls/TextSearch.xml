@@ -20,7 +20,7 @@
   
  For example, assume that a <xref:System.Windows.Controls.ComboBox> contains a collection of <xref:System.Windows.Controls.Image> objects, one of which is an image of a dog.  If you assign the string, "Dog" to that item, the user can select the dog by typing the word in the combo box's text box. As soon as the user types enough of the word to distinguish it from other items in the selection, the image of the dog will be selected. If <xref:System.Windows.Controls.ComboBox.IsEditable%2A> is set to `true` on the <xref:System.Windows.Controls.ComboBox>, "Dog" will appear in the text box.  
   
- You can specify the text that identifies an item by using the <xref:System.Windows.Controls.TextSearch.TextPath%2A?displayProperty=fullName> property on a control or by setting the <xref:System.Windows.Controls.TextSearch.Text%2A> property on each item in the control's collection. Setting one of these properties ensures that unexpected text is not displayed. If you set the <xref:System.Windows.Controls.TextSearch.Text%2A> property on a control's collection item, the <xref:System.Windows.Controls.TextSearch.TextPath%2A> property will be ignored.  If you set the <xref:System.Windows.Controls.TextSearch.TextPath%2A> property to a value that is not the name of an actual property, <xref:System.Windows.Controls.TextSearch.TextPath%2A> is ignored.  
+ You can specify the text that identifies an item by using the <xref:System.Windows.Controls.TextSearch.TextPath%2A?displayProperty=nameWithType> property on a control or by setting the <xref:System.Windows.Controls.TextSearch.Text%2A> property on each item in the control's collection. Setting one of these properties ensures that unexpected text is not displayed. If you set the <xref:System.Windows.Controls.TextSearch.Text%2A> property on a control's collection item, the <xref:System.Windows.Controls.TextSearch.TextPath%2A> property will be ignored.  If you set the <xref:System.Windows.Controls.TextSearch.TextPath%2A> property to a value that is not the name of an actual property, <xref:System.Windows.Controls.TextSearch.TextPath%2A> is ignored.  
   
 <a name="xamlTextUsage_TextSearch"></a>   
 ## XAML Text Usage  
@@ -37,6 +37,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.ComboBox" />
   </Docs>
   <Members>
     <Member MemberName="GetText">

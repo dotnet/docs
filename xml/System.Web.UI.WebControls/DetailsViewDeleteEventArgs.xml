@@ -32,11 +32,19 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewDeleteEventArgs> object passed to the event handler for the <xref:System.Web.UI.WebControls.DetailsView.ItemDeleting> event to cancel a delete operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewDeleteEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewDeleteEventArgsCodeInline/CS/detailsviewdeleteeventargsinlinecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewDeleteEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewDeleteEventArgsCodeInline/VB/detailsviewdeleteeventargsinlinevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewDeleteEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewDeleteEventArgsCodeInline/CS/detailsviewdeleteeventargsinlinecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewDeleteEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewDeleteEventArgsCodeInline/VB/detailsviewdeleteeventargsinlinevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsViewDeleteEventHandler" />
+    <altmember cref="T:System.ComponentModel.CancelEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemDeleting" />
+    <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeleteEventArgs.Keys" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeleteEventArgs.RowIndex" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeleteEventArgs.Values" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,6 +79,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewDeletedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemDeleting" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsViewDeleteEventArgs.RowIndex" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -109,11 +121,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewDeleteEventArgs.Keys%2A> property to access the value of the key field for the record being deleted.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewDeleteEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewDeleteEventArgsCodeInline/CS/detailsviewdeleteeventargsinlinecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewDeleteEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewDeleteEventArgsCodeInline/VB/detailsviewdeleteeventargsinlinevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewDeleteEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewDeleteEventArgsCodeInline/CS/detailsviewdeleteeventargsinlinecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewDeleteEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewDeleteEventArgsCodeInline/VB/detailsviewdeleteeventargsinlinevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewDeleteEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
       </Docs>
     </Member>
     <Member MemberName="RowIndex">
@@ -142,11 +158,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewDeleteEventArgs.RowIndex%2A> property to determine the index of the row being deleted.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewDeleteEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewDeleteEventArgsCodeInline/CS/detailsviewdeleteeventargsinlinecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewDeleteEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewDeleteEventArgsCodeInline/VB/detailsviewdeleteeventargsinlinevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewDeleteEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewDeleteEventArgsCodeInline/CS/detailsviewdeleteeventargsinlinecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewDeleteEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewDeleteEventArgsCodeInline/VB/detailsviewdeleteeventargsinlinevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewDeleteEventHandler" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Rows" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -183,11 +202,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewDeleteEventArgs.Values%2A> property to access the values of the non-key fields of the record being deleted.  
   
- <!-- TODO: review snippet reference [!code-csharp[DetailsViewDeleteEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewDeleteEventArgsCodeInline/CS/detailsviewdeleteeventargsinlinecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DetailsViewDeleteEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewDeleteEventArgsCodeInline/VB/detailsviewdeleteeventargsinlinevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DetailsViewDeleteEventArgsCodeInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewDeleteEventArgsCodeInline/CS/detailsviewdeleteeventargsinlinecs.aspx#1)]
+ [!code-aspx-vb[DetailsViewDeleteEventArgsCodeInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewDeleteEventArgsCodeInline/VB/detailsviewdeleteeventargsinlinevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewDeleteEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
       </Docs>
     </Member>
   </Members>

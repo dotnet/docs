@@ -266,7 +266,7 @@
       </Docs>
     </Member>
     <Member MemberName="GroupBy">
-      <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;System.Data.Common.DbDataRecord&gt; GroupBy (string keys, string projection, System.Data.Objects.ObjectParameter[] parameters);" />
+      <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;System.Data.Common.DbDataRecord&gt; GroupBy (string keys, string projection, params System.Data.Objects.ObjectParameter[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectQuery`1&lt;class System.Data.Common.DbDataRecord&gt; GroupBy(string keys, string projection, class System.Data.Objects.ObjectParameter[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.GroupBy(System.String,System.String,System.Data.Objects.ObjectParameter[])" />
       <MemberType>Method</MemberType>
@@ -486,7 +486,7 @@
       </Docs>
     </Member>
     <Member MemberName="OrderBy">
-      <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;T&gt; OrderBy (string keys, System.Data.Objects.ObjectParameter[] parameters);" />
+      <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;T&gt; OrderBy (string keys, params System.Data.Objects.ObjectParameter[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectQuery`1&lt;!T&gt; OrderBy(string keys, class System.Data.Objects.ObjectParameter[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.OrderBy(System.String,System.Data.Objects.ObjectParameter[])" />
       <MemberType>Method</MemberType>
@@ -535,7 +535,7 @@
       </Docs>
     </Member>
     <Member MemberName="Select">
-      <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;System.Data.Common.DbDataRecord&gt; Select (string projection, System.Data.Objects.ObjectParameter[] parameters);" />
+      <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;System.Data.Common.DbDataRecord&gt; Select (string projection, params System.Data.Objects.ObjectParameter[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectQuery`1&lt;class System.Data.Common.DbDataRecord&gt; Select(string projection, class System.Data.Objects.ObjectParameter[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.Select(System.String,System.Data.Objects.ObjectParameter[])" />
       <MemberType>Method</MemberType>
@@ -589,7 +589,7 @@
       </Docs>
     </Member>
     <Member MemberName="SelectValue&lt;TResultType&gt;">
-      <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;TResultType&gt; SelectValue&lt;TResultType&gt; (string projection, System.Data.Objects.ObjectParameter[] parameters);" />
+      <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;TResultType&gt; SelectValue&lt;TResultType&gt; (string projection, params System.Data.Objects.ObjectParameter[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectQuery`1&lt;!!TResultType&gt; SelectValue&lt;TResultType&gt;(string projection, class System.Data.Objects.ObjectParameter[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.SelectValue``1(System.String,System.Data.Objects.ObjectParameter[])" />
       <MemberType>Method</MemberType>
@@ -647,7 +647,7 @@
       </Docs>
     </Member>
     <Member MemberName="Skip">
-      <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;T&gt; Skip (string keys, string count, System.Data.Objects.ObjectParameter[] parameters);" />
+      <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;T&gt; Skip (string keys, string count, params System.Data.Objects.ObjectParameter[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectQuery`1&lt;!T&gt; Skip(string keys, string count, class System.Data.Objects.ObjectParameter[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.Skip(System.String,System.String,System.Data.Objects.ObjectParameter[])" />
       <MemberType>Method</MemberType>
@@ -727,7 +727,7 @@
       </Docs>
     </Member>
     <Member MemberName="Top">
-      <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;T&gt; Top (string count, System.Data.Objects.ObjectParameter[] parameters);" />
+      <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;T&gt; Top (string count, params System.Data.Objects.ObjectParameter[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectQuery`1&lt;!T&gt; Top(string count, class System.Data.Objects.ObjectParameter[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.Top(System.String,System.Data.Objects.ObjectParameter[])" />
       <MemberType>Method</MemberType>
@@ -897,7 +897,7 @@ ObjectQuery <DiscontinuedProduct>.Union(ObjectQuery<Product>)
       </Docs>
     </Member>
     <Member MemberName="Where">
-      <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;T&gt; Where (string predicate, System.Data.Objects.ObjectParameter[] parameters);" />
+      <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;T&gt; Where (string predicate, params System.Data.Objects.ObjectParameter[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectQuery`1&lt;!T&gt; Where(string predicate, class System.Data.Objects.ObjectParameter[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.Where(System.String,System.Data.Objects.ObjectParameter[])" />
       <MemberType>Method</MemberType>

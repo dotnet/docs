@@ -23,6 +23,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.InputLanguageManager" />
+    <altmember cref="T:System.Windows.Input.TextComposition" />
+    <altmember cref="T:System.Windows.Input.InputMethodState" />
+    <altmember cref="T:System.Windows.Input.InputMethodStateChangedEventArgs" />
+    <altmember cref="T:System.Windows.Input.InputMethodStateChangedEventHandler" />
   </Docs>
   <Members>
     <Member MemberName="CanShowConfigurationUI">
@@ -53,6 +58,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Input.InputMethod.ShowConfigureUI" />
+        <altmember cref="P:System.Windows.Input.InputMethod.CanShowRegisterWordUI" />
       </Docs>
     </Member>
     <Member MemberName="CanShowRegisterWordUI">
@@ -73,6 +80,8 @@
   
  This property has no default value.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="Overload:System.Windows.Input.InputMethod.ShowRegisterWordUI" />
+        <altmember cref="P:System.Windows.Input.InputMethod.CanShowConfigurationUI" />
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -131,6 +140,7 @@
         <returns>An <see cref="T:System.Windows.Input.InputScope" /> object representing the current input scope for the specified dependency object.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+        <altmember cref="M:System.Windows.Input.InputMethod.SetInputScope(System.Windows.DependencyObject,System.Windows.Input.InputScope)" />
       </Docs>
     </Member>
     <Member MemberName="GetIsInputMethodEnabled">
@@ -159,6 +169,7 @@
         <returns>The current value of <see cref="P:System.Windows.Input.InputMethod.IsInputMethodEnabled" /> for the specified dependency object.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+        <altmember cref="M:System.Windows.Input.InputMethod.SetIsInputMethodEnabled(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetIsInputMethodSuspended">
@@ -187,6 +198,7 @@
         <returns>The current value of <see cref="P:System.Windows.Input.InputMethod.IsInputMethodSuspended" /> for the specified dependency object.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+        <altmember cref="M:System.Windows.Input.InputMethod.SetIsInputMethodSuspended(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetPreferredImeConversionMode">
@@ -215,6 +227,7 @@
         <returns>A member of the <see cref="T:System.Windows.Input.ImeConversionModeValues" /> enumeration specifying the current <see cref="P:System.Windows.Input.InputMethod.PreferredImeConversionMode" /> for the specified dependency object.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+        <altmember cref="M:System.Windows.Input.InputMethod.SetPreferredImeConversionMode(System.Windows.DependencyObject,System.Windows.Input.ImeConversionModeValues)" />
       </Docs>
     </Member>
     <Member MemberName="GetPreferredImeSentenceMode">
@@ -243,6 +256,7 @@
         <returns>A member of the <see cref="T:System.Windows.Input.ImeSentenceModeValues" /> enumeration specifying the current <see cref="P:System.Windows.Input.InputMethod.PreferredImeSentenceMode" /> for the specified dependency object.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+        <altmember cref="M:System.Windows.Input.InputMethod.SetPreferredImeSentenceMode(System.Windows.DependencyObject,System.Windows.Input.ImeSentenceModeValues)" />
       </Docs>
     </Member>
     <Member MemberName="GetPreferredImeState">
@@ -271,6 +285,7 @@
         <returns>A member of the <see cref="T:System.Windows.Input.InputMethodState" /> enumeration specifying the current <see cref="P:System.Windows.Input.InputMethod.PreferredImeState" /> for the specified dependency object.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+        <altmember cref="M:System.Windows.Input.InputMethod.SetPreferredImeState(System.Windows.DependencyObject,System.Windows.Input.InputMethodState)" />
       </Docs>
     </Member>
     <Member MemberName="HandwritingState">
@@ -309,6 +324,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Input.InputMethod.ImeState" />
+        <altmember cref="P:System.Windows.Input.InputMethod.MicrophoneState" />
       </Docs>
     </Member>
     <Member MemberName="ImeConversionMode">
@@ -337,6 +354,7 @@
   
  The default value is <see cref="F:System.Windows.Input.ImeConversionModeValues.Alphanumeric" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Input.InputMethod.ImeSentenceMode" />
       </Docs>
     </Member>
     <Member MemberName="ImeSentenceMode">
@@ -375,6 +393,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Input.InputMethod.ImeConversionMode" />
       </Docs>
     </Member>
     <Member MemberName="ImeState">
@@ -403,6 +422,8 @@
   
  The default value is <see cref="F:System.Windows.Input.InputMethodState.Off" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Input.InputMethod.HandwritingState" />
+        <altmember cref="P:System.Windows.Input.InputMethod.MicrophoneState" />
       </Docs>
     </Member>
     <Member MemberName="InputScopeProperty">
@@ -483,6 +504,8 @@
  The default value is <see cref="F:System.Windows.Input.InputMethodState.Off" />.</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for access to information about the microphone state.  Associated enumeration:  <see cref="T:System.Security.Permissions.PermissionState" />.**Unrestricted**.</permission>
+        <altmember cref="P:System.Windows.Input.InputMethod.ImeState" />
+        <altmember cref="P:System.Windows.Input.InputMethod.HandwritingState" />
       </Docs>
     </Member>
     <Member MemberName="PreferredImeConversionModeProperty">
@@ -568,6 +591,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+        <altmember cref="M:System.Windows.Input.InputMethod.GetInputScope(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetIsInputMethodEnabled">
@@ -592,6 +616,7 @@
         <summary>Sets the value of the <see cref="P:System.Windows.Input.InputMethod.IsInputMethodEnabled" /> attached property on the specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+        <altmember cref="M:System.Windows.Input.InputMethod.GetIsInputMethodEnabled(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetIsInputMethodSuspended">
@@ -616,6 +641,7 @@
         <summary>Sets the value of the <see cref="P:System.Windows.Input.InputMethod.IsInputMethodSuspended" /> attached property on the specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+        <altmember cref="M:System.Windows.Input.InputMethod.GetIsInputMethodSuspended(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetPreferredImeConversionMode">
@@ -640,6 +666,7 @@
         <summary>Sets the value of the <see cref="P:System.Windows.Input.InputMethod.PreferredImeConversionMode" /> attached property on the specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+        <altmember cref="M:System.Windows.Input.InputMethod.GetPreferredImeConversionMode(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetPreferredImeSentenceMode">
@@ -664,6 +691,7 @@
         <summary>Sets the value of the <see cref="P:System.Windows.Input.InputMethod.PreferredImeSentenceMode" /> attached property on the specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+        <altmember cref="M:System.Windows.Input.InputMethod.GetPreferredImeSentenceMode(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetPreferredImeState">
@@ -688,6 +716,7 @@
         <summary>Sets the value of the <see cref="P:System.Windows.Input.InputMethod.PreferredImeState" /> attached property on the specified dependency object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+        <altmember cref="M:System.Windows.Input.InputMethod.GetPreferredImeState(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="ShowConfigureUI">
@@ -706,6 +735,9 @@
       <Docs>
         <summary>Displays configuration [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] associated with the currently active keyboard text service.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Input.InputMethod.CanShowConfigurationUI" />
+        <altmember cref="M:System.Windows.Input.InputMethod.ShowConfigureUI(System.Windows.UIElement)" />
+        <altmember cref="Overload:System.Windows.Input.InputMethod.ShowRegisterWordUI" />
       </Docs>
     </Member>
     <Member MemberName="ShowConfigureUI">
@@ -727,6 +759,9 @@
         <param name="element">A <see cref="T:System.Windows.UIElement" /> that will be used as the parent element for the configuration [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)].  This parameter can be <see langword="null" />.</param>
         <summary>Displays configuration [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] associated with the currently active keyboard text service, using a specified <see cref="T:System.Windows.UIElement" /> as the parent element for the configuration [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)].</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Input.InputMethod.CanShowConfigurationUI" />
+        <altmember cref="M:System.Windows.Input.InputMethod.ShowConfigureUI" />
+        <altmember cref="Overload:System.Windows.Input.InputMethod.ShowRegisterWordUI" />
       </Docs>
     </Member>
     <Member MemberName="ShowRegisterWordUI">
@@ -745,6 +780,10 @@
       <Docs>
         <summary>Displays word registration [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] associated with the currently active keyboard text service.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Input.InputMethod.CanShowRegisterWordUI" />
+        <altmember cref="M:System.Windows.Input.InputMethod.ShowRegisterWordUI(System.String)" />
+        <altmember cref="M:System.Windows.Input.InputMethod.ShowRegisterWordUI(System.Windows.UIElement,System.String)" />
+        <altmember cref="Overload:System.Windows.Input.InputMethod.ShowConfigureUI" />
       </Docs>
     </Member>
     <Member MemberName="ShowRegisterWordUI">
@@ -773,6 +812,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Input.InputMethod.CanShowRegisterWordUI" />
+        <altmember cref="M:System.Windows.Input.InputMethod.ShowRegisterWordUI" />
+        <altmember cref="M:System.Windows.Input.InputMethod.ShowRegisterWordUI(System.Windows.UIElement,System.String)" />
+        <altmember cref="Overload:System.Windows.Input.InputMethod.ShowConfigureUI" />
       </Docs>
     </Member>
     <Member MemberName="ShowRegisterWordUI">
@@ -803,6 +846,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Input.InputMethod.CanShowRegisterWordUI" />
+        <altmember cref="M:System.Windows.Input.InputMethod.ShowRegisterWordUI" />
+        <altmember cref="M:System.Windows.Input.InputMethod.ShowRegisterWordUI(System.Windows.UIElement,System.String)" />
+        <altmember cref="Overload:System.Windows.Input.InputMethod.ShowConfigureUI" />
       </Docs>
     </Member>
     <Member MemberName="SpeechMode">
@@ -859,7 +906,30 @@
       <Docs>
         <summary>Occurs when the input method state (represented by the <see cref="P:System.Windows.Input.InputMethod.ImeState" /> property) changes.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.InputMethodStateChangedEventArgs" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ShowRegisterWordUI">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays word registration user interface (UI) associated with the currently active keyboard text service.</summary>
+        <altmember cref="P:System.Windows.Input.InputMethod.CanShowRegisterWordUI" />
+        <altmember cref="Overload:System.Windows.Input.InputMethod.ShowConfigureUI" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ShowConfigureUI">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays configuration user interface (UI) associated with the currently active keyboard text service.</summary>
+        <altmember cref="P:System.Windows.Input.InputMethod.CanShowConfigurationUI" />
+        <altmember cref="Overload:System.Windows.Input.InputMethod.ShowRegisterWordUI" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

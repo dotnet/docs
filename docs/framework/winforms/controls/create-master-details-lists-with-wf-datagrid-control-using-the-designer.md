@@ -9,17 +9,17 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "master-details lists"
   - "DataGrid control [Windows Forms], master-details lists"
-  - "related tables, displaying in DataGrid control"
+  - "related tables [Windows Forms], displaying in DataGrid control"
 ms.assetid: 19438ba2-f687-4417-a2fb-ab1cd69d4ded
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create Master-Details Lists with the Windows Forms DataGrid Control Using the Designer
 > [!NOTE]
@@ -60,7 +60,7 @@ manager: "wpickett"
     2.  Select the relationship (for example, "Customers.CustOrd") between the master and detail tables from the drop-down list in the <xref:System.Windows.Forms.DataGrid.DataMember%2A> property. In order to see the relationship, expand the node by clicking on the plus (**+**) sign next to the master table in the drop-down list.  
   
 ## See Also  
- [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)   
- [DataGrid Control Overview](../../../../docs/framework/winforms/controls/datagrid-control-overview-windows-forms.md)   
- [How to: Bind the Windows Forms DataGrid Control to a Data Source](../../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)   
+ [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)  
+ [DataGrid Control Overview](../../../../docs/framework/winforms/controls/datagrid-control-overview-windows-forms.md)  
+ [How to: Bind the Windows Forms DataGrid Control to a Data Source](../../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)  
  [Bind controls to data in Visual Studio](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio)

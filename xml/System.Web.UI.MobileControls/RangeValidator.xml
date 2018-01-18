@@ -27,7 +27,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The minimum and maximum values of the range are provided either directly or by reference to another control. This class behaves identically to the <xref:System.Web.UI.WebControls.RangeValidator?displayProperty=fullName> control.  
+ The minimum and maximum values of the range are provided either directly or by reference to another control. This class behaves identically to the <xref:System.Web.UI.WebControls.RangeValidator?displayProperty=nameWithType> control.  
   
  By default, <xref:System.Web.UI.MobileControls.Command> controls on a form raise validator controls on the form to perform validation when the form is submitted to the server. To disable automatic validation, set the <xref:System.Web.UI.MobileControls.Command.CausesValidation%2A> property on the <xref:System.Web.UI.MobileControls.Command> to `false`.  
   
@@ -46,6 +46,11 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.BaseValidator" />
+    <altmember cref="T:System.Web.UI.MobileControls.CompareValidator" />
+    <altmember cref="T:System.Web.UI.MobileControls.RegularExpressionValidator" />
+    <altmember cref="T:System.Web.UI.MobileControls.RequiredFieldValidator" />
+    <altmember cref="T:System.Web.UI.MobileControls.ValidationSummary" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,6 +66,8 @@
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.MobileControls.RangeValidator" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ValidationDataType" />
+        <altmember cref="T:System.Web.UI.MobileControls.BaseValidator" />
       </Docs>
     </Member>
     <Member MemberName="ControlPropertiesValid">
@@ -86,6 +93,8 @@
  -or-  
   
  the <see cref="P:System.Web.UI.MobileControls.RangeValidator.MinimumValue" /> is larger than <see cref="P:System.Web.UI.MobileControls.RangeValidator.MaximumValue" />.</exception>
+        <altmember cref="T:System.Web.UI.MobileControls.BaseValidator" />
+        <altmember cref="T:System.Web.UI.MobileControls.CompareValidator" />
       </Docs>
     </Member>
     <Member MemberName="CreateWebValidator">
@@ -165,6 +174,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.BaseValidator" />
       </Docs>
     </Member>
     <Member MemberName="MinimumValue">
@@ -206,6 +216,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.BaseValidator" />
+        <altmember cref="P:System.Web.UI.MobileControls.RangeValidator.MaximumValue" />
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -250,6 +262,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The specified value is not one of the <see cref="T:System.Web.UI.WebControls.ValidationDataType" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.ValidationDataType" />
+        <altmember cref="T:System.Web.UI.MobileControls.BaseValidator" />
       </Docs>
     </Member>
   </Members>

@@ -34,10 +34,11 @@
   
  Publisher evidence is based on Authenticode X.509v3 signatures.  
   
- By default, code access security (CAS) does not check for <xref:System.Security.Policy.Publisher> evidence. Unless your computer has a custom code group based on the <xref:System.Security.Policy.PublisherMembershipCondition> class, you can improve performance by bypassing Authenticode signature verification. This is accomplished by configuring the runtime to not provide <xref:System.Security.Policy.Publisher> evidence for CAS. For more information about how to configure this option and which applications can use it, see the  element.  
+ By default, code access security (CAS) does not check for <xref:System.Security.Policy.Publisher> evidence. Unless your computer has a custom code group based on the <xref:System.Security.Policy.PublisherMembershipCondition> class, you can improve performance by bypassing Authenticode signature verification. This is accomplished by configuring the runtime to not provide <xref:System.Security.Policy.Publisher> evidence for CAS. For more information about how to configure this option and which applications can use it, see the [\<generatePublisherEvidence>](~/docs/framework/configure-apps/file-schema/runtime/generatepublisherevidence-element.md) element.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.Cryptography.X509Certificates.X509Certificate" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

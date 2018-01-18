@@ -28,6 +28,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.SecurityZone" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -154,6 +155,7 @@
           <paramref name="securityElement" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="securityElement" /> is not a <see cref="T:System.Net.DnsPermission" /> element.</exception>
+        <altmember cref="T:System.Security.SecurityElement" />
       </Docs>
     </Member>
     <Member MemberName="Intersect">

@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListItem" />
+    <altmember cref="T:System.Web.UI.ControlBuilderAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,10 +60,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the inherited implementation of the <xref:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals%2A?displayProperty=fullName> method to always indicate that white spaces in the text associated with the <xref:System.Web.UI.WebControls.ListItem> control are not represented by <xref:System.Web.UI.LiteralControl?displayProperty=fullName> objects.  
+ This method overrides the inherited implementation of the <xref:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals%2A?displayProperty=nameWithType> method to always indicate that white spaces in the text associated with the <xref:System.Web.UI.WebControls.ListItem> control are not represented by <xref:System.Web.UI.LiteralControl?displayProperty=nameWithType> objects.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals" />
       </Docs>
     </Member>
     <Member MemberName="HtmlDecodeLiterals">
@@ -85,13 +88,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListItemControlBuilder.HtmlDecodeLiterals%2A> method is used to determine whether HTML entities in the text associated with the <xref:System.Web.UI.WebControls.ListItem> are converted to their equivalent characters when the text is parsed. This method overrides the inherited implementation of the <xref:System.Web.UI.ControlBuilder.HtmlDecodeLiterals%2A?displayProperty=fullName> method to always return `true`. This indicates that HTML entities in the text associated with the <xref:System.Web.UI.WebControls.ListItem> control are always automatically converted to their equivalent, plain text characters.  
+ The <xref:System.Web.UI.WebControls.ListItemControlBuilder.HtmlDecodeLiterals%2A> method is used to determine whether HTML entities in the text associated with the <xref:System.Web.UI.WebControls.ListItem> are converted to their equivalent characters when the text is parsed. This method overrides the inherited implementation of the <xref:System.Web.UI.ControlBuilder.HtmlDecodeLiterals%2A?displayProperty=nameWithType> method to always return `true`. This indicates that HTML entities in the text associated with the <xref:System.Web.UI.WebControls.ListItem> control are always automatically converted to their equivalent, plain text characters.  
   
 > [!NOTE]
 >  The text associated with the <xref:System.Web.UI.WebControls.ListItem> is rendered as an attribute of the `<option>` HTML element. When the attribute is rendered on the client, special characters are automatically converted to their equivalent HTML entity. For example, the less than character (<) is converted to `&lt;`. When the attribute is parsed, HTML entities are automatically converted back to their equivalent, plain text characters.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ControlBuilder.HtmlDecodeLiterals" />
       </Docs>
     </Member>
   </Members>

@@ -73,6 +73,7 @@
         <summary>Gets the name of the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
         <returns>A string that contains "RadioButton".</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassNameCore" />
       </Docs>
     </Member>
     <Member MemberName="GetPattern">
@@ -98,7 +99,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface.SelectionItem>, this method returns a `this` pointer. If `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName>, this method returns an object that implements the <xref:System.Windows.Automation.Provider.ISynchronizedInputProvider> interface.  
+ If `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface.SelectionItem>, this method returns a `this` pointer. If `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface.SynchronizedInput?displayProperty=nameWithType>, this method returns an object that implements the <xref:System.Windows.Automation.Provider.ISynchronizedInputProvider> interface.  
   
  ]]></format>
         </remarks>

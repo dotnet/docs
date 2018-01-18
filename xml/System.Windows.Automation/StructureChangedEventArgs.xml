@@ -13,6 +13,9 @@
   <Docs>
     <summary>Contains information about the event that is raised when the UI Automation tree structure has changed.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Automation.StructureChangedEventArgs" />
+    <altmember cref="M:System.Windows.Automation.Automation.AddStructureChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.StructureChangedEventHandler)" />
+    <altmember cref="M:System.Windows.Automation.Automation.RemoveStructureChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.StructureChangedEventHandler)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,6 +63,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Automation.AutomationElementIdentifiers.RuntimeIdProperty" />
       </Docs>
     </Member>
     <Member MemberName="GetRuntimeId">
@@ -88,6 +92,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Automation.AutomationElementIdentifiers.RuntimeIdProperty" />
       </Docs>
     </Member>
     <Member MemberName="StructureChangeType">

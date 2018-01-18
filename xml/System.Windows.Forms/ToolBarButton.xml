@@ -49,6 +49,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ToolBar" />
+    <altmember cref="T:System.Windows.Forms.MenuItem" />
+    <altmember cref="T:System.Windows.Forms.ImageList" />
+    <altmember cref="T:System.Windows.Forms.ToolTip" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -80,6 +84,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ToolBar" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -114,6 +119,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ToolBar" />
+        <altmember cref="P:System.Windows.Forms.ToolBarButton.Text" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -180,7 +187,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can specify a <xref:System.Windows.Forms.ContextMenu> to be displayed when the drop-down button is clicked. This property is not used unless the <xref:System.Windows.Forms.ToolBarButton.Style%2A> property value is set to <xref:System.Windows.Forms.ToolBarButtonStyle?displayProperty=fullName>.  
+ You can specify a <xref:System.Windows.Forms.ContextMenu> to be displayed when the drop-down button is clicked. This property is not used unless the <xref:System.Windows.Forms.ToolBarButton.Style%2A> property value is set to <xref:System.Windows.Forms.ToolBarButtonStyle.DropDownButton?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  Although the <xref:System.Windows.Forms.ToolBarButton.DropDownMenu%2A> property is defined as a <xref:System.Windows.Forms.Menu> type, you must assign it a <xref:System.Windows.Forms.ContextMenu> for it to display properly. If you are creating your own <xref:System.Windows.Forms.MenuItem> derived class you must assign that object to a <xref:System.Windows.Forms.ContextMenu> and assign the <xref:System.Windows.Forms.ContextMenu> to the <xref:System.Windows.Forms.ToolBarButton.DropDownMenu%2A> property.  
@@ -197,6 +204,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The assigned object is not a <see cref="T:System.Windows.Forms.ContextMenu" />.</exception>
+        <altmember cref="T:System.Windows.Forms.MenuItem" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -283,6 +291,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The assigned value is less than -1.</exception>
+        <altmember cref="T:System.Windows.Forms.ToolBar" />
+        <altmember cref="T:System.Windows.Forms.ImageList" />
       </Docs>
     </Member>
     <Member MemberName="ImageKey">
@@ -325,6 +335,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ImageList" />
+        <altmember cref="T:System.Windows.Forms.ToolBar" />
+        <altmember cref="P:System.Windows.Forms.ToolBar.ImageList" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -378,6 +391,7 @@
         <summary>Gets the toolbar control that the toolbar button is assigned to.</summary>
         <value>The <see cref="T:System.Windows.Forms.ToolBar" /> control that the <see cref="T:System.Windows.Forms.ToolBarButton" /> is assigned to.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.ToolBar" />
       </Docs>
     </Member>
     <Member MemberName="PartialPush">
@@ -418,6 +432,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ToolBarButtonStyle" />
       </Docs>
     </Member>
     <Member MemberName="Pushed">
@@ -458,6 +473,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ToolBarButtonStyle" />
       </Docs>
     </Member>
     <Member MemberName="Rectangle">
@@ -483,6 +499,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ToolBar" />
+        <altmember cref="P:System.Windows.Forms.ToolBarButton.Visible" />
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -526,6 +544,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.ToolBarButtonStyle" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.ToolBarButtonStyle" />
       </Docs>
     </Member>
     <Member MemberName="Tag">
@@ -574,6 +593,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -616,6 +636,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Image" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipText">
@@ -658,6 +679,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolBar.ShowToolTips" />
+        <altmember cref="T:System.Windows.Forms.ToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -720,5 +743,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolBarButton" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

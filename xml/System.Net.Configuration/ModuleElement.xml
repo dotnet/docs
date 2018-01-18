@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class corresponds to the `type` attribute of the [\&lt;module\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/module-element-network-settings.md) configuration element.  
+ This class corresponds to the `type` attribute of the [&lt;module&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/module-element-network-settings.md) configuration element.  
   
  This class is used to specify a Web proxy that handles requests made with the <xref:System.Net.WebRequest> and <xref:System.Net.WebClient> classes.  
   
@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.WebProxy" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,6 +47,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.WebProxy" />
+        <altmember cref="T:System.Net.IWebProxy" />
       </Docs>
     </Member>
     <Member MemberName="Properties">

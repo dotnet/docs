@@ -36,6 +36,10 @@
     <block subset="none" type="overrides">
       <para>When you inherit from <see cref="T:System.Web.UI.WebControls.HotSpot" />, you must override the following members: <see cref="M:System.Web.UI.WebControls.HotSpot.GetCoordinates" /> and <see cref="P:System.Web.UI.WebControls.HotSpot.MarkupName" />.</para>
     </block>
+    <altmember cref="T:System.Web.UI.WebControls.CircleHotSpot" />
+    <altmember cref="T:System.Web.UI.WebControls.RectangleHotSpot" />
+    <altmember cref="T:System.Web.UI.WebControls.PolygonHotSpot" />
+    <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -144,6 +148,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
+        <altmember cref="P:System.Web.UI.WebControls.Image.ImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="GetCoordinates">
@@ -219,14 +225,14 @@
   
  If you specify `HotSpotMode.PostBack` for the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A> property of a <xref:System.Web.UI.WebControls.HotSpot> object, the <xref:System.Web.UI.WebControls.HotSpot> object generates a post back to the server when the <xref:System.Web.UI.WebControls.HotSpot> is clicked. Use the <xref:System.Web.UI.WebControls.HotSpot.PostBackValue%2A> property to specify a name for the <xref:System.Web.UI.WebControls.HotSpot>. This name will be passed in the <xref:System.Web.UI.WebControls.ImageMapEventArgs> event data on when a postback event occurs. When a postback <xref:System.Web.UI.WebControls.HotSpot> is clicked, the <xref:System.Web.UI.WebControls.ImageMap.Click> event is raised. To programmatically control the actions performed when a postback <xref:System.Web.UI.WebControls.HotSpot> is clicked, provide an event handler for the <xref:System.Web.UI.WebControls.ImageMap.Click> event.  
   
- To cause all <xref:System.Web.UI.WebControls.HotSpot> objects in an <xref:System.Web.UI.WebControls.ImageMap> control to have the same behavior, set the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property on each individual <xref:System.Web.UI.WebControls.HotSpot> object to `HotSpotMode.NotSet` or do not specify a value for the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property.  
+ To cause all <xref:System.Web.UI.WebControls.HotSpot> objects in an <xref:System.Web.UI.WebControls.ImageMap> control to have the same behavior, set the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=nameWithType> property on each individual <xref:System.Web.UI.WebControls.HotSpot> object to `HotSpotMode.NotSet` or do not specify a value for the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=nameWithType> property.  
   
- To specify different behaviors for <xref:System.Web.UI.WebControls.HotSpot> objects in an <xref:System.Web.UI.WebControls.ImageMap> control, set the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property on each individual <xref:System.Web.UI.WebControls.HotSpot> object to either `HotSpotMode.Navigate`, `HotSpotMode.PostBack`, or `HotSpotMode.Inactive`.  
+ To specify different behaviors for <xref:System.Web.UI.WebControls.HotSpot> objects in an <xref:System.Web.UI.WebControls.ImageMap> control, set the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=nameWithType> property on each individual <xref:System.Web.UI.WebControls.HotSpot> object to either `HotSpotMode.Navigate`, `HotSpotMode.PostBack`, or `HotSpotMode.Inactive`.  
   
 > [!NOTE]
->  If an <xref:System.Web.UI.WebControls.ImageMap> control's <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property or the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property on the <xref:System.Web.UI.WebControls.HotSpot> objects it contains is either not set to a value or set to `HotSpotMode.NotSet`, by default the behavior is `HotSpotMode.Navigate`.  
+>  If an <xref:System.Web.UI.WebControls.ImageMap> control's <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=nameWithType> property or the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=nameWithType> property on the <xref:System.Web.UI.WebControls.HotSpot> objects it contains is either not set to a value or set to `HotSpotMode.NotSet`, by default the behavior is `HotSpotMode.Navigate`.  
   
- If you specify `HotSpotMode.Inactive` for the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property, the <xref:System.Web.UI.WebControls.HotSpot> object does not have any behavior when it is clicked. You can use this value to create an inactive hot spot within a larger active hot spot. This option is provided to allow you to create more complex hot-spot zones within an <xref:System.Web.UI.WebControls.ImageMap> control.  
+ If you specify `HotSpotMode.Inactive` for the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=nameWithType> property, the <xref:System.Web.UI.WebControls.HotSpot> object does not have any behavior when it is clicked. You can use this value to create an inactive hot spot within a larger active hot spot. This option is provided to allow you to create more complex hot-spot zones within an <xref:System.Web.UI.WebControls.ImageMap> control.  
   
  To create an inactive area within an active hot spot, you must specify the inactive hot spot before the active hot spot in the <xref:System.Web.UI.WebControls.ImageMap> control. For example, the following <xref:System.Web.UI.WebControls.ImageMap> defines an active ring by specifying an inactive circular hot spot within a larger active circular hot spot:  
   
@@ -246,6 +252,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified type is not one of the <see cref="T:System.Web.UI.WebControls.HotSpotMode" /> enumeration values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.HotSpotMode" />
+        <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
+        <altmember cref="P:System.Web.UI.WebControls.ImageMap.HotSpotMode" />
       </Docs>
     </Member>
     <Member MemberName="IsTrackingViewState">
@@ -272,6 +281,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.HotSpot.TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -304,6 +314,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.HotSpot.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="MarkupName">
@@ -376,6 +387,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.HotSpotMode" />
       </Docs>
     </Member>
     <Member MemberName="PostBackValue">
@@ -414,6 +426,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.HotSpotMode" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -444,6 +457,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.HotSpot.LoadViewState(System.Object)" />
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.ViewState" />
+        <altmember cref="T:System.Web.UI.StateBag" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -466,7 +482,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.HotSpot.IsTrackingViewState%2A?displayProperty=fullName> member to determine whether a <xref:System.Web.UI.WebControls.HotSpot> object is tracking view-state changes.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.HotSpot.IsTrackingViewState%2A?displayProperty=nameWithType> member to determine whether a <xref:System.Web.UI.WebControls.HotSpot> object is tracking view-state changes.  
   
  The <xref:System.Web.UI.WebControls.HotSpot.System%23Web%23UI%23IStateManager%23IsTrackingViewState%2A> member is an explicit interface member implementation. It can be used only when a <xref:System.Web.UI.WebControls.HotSpot> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
   
@@ -475,6 +491,8 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for tracking view state for a <see cref="T:System.Web.UI.WebControls.HotSpot" /> object, override the <see cref="P:System.Web.UI.WebControls.HotSpot.IsTrackingViewState" /> member. The explicit interface implementation calls the <see cref="P:System.Web.UI.WebControls.HotSpot.IsTrackingViewState" /> property to determine whether the object is tracking view-state changes.</para>
         </block>
+        <altmember cref="T:System.Web.UI.IStateManager" />
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.IsTrackingViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -499,7 +517,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.HotSpot.LoadViewState%2A?displayProperty=fullName> member to restore the view state for a <xref:System.Web.UI.WebControls.HotSpot> object.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.HotSpot.LoadViewState%2A?displayProperty=nameWithType> member to restore the view state for a <xref:System.Web.UI.WebControls.HotSpot> object.  
   
  The <xref:System.Web.UI.WebControls.HotSpot.System%23Web%23UI%23IStateManager%23LoadViewState%2A> member is an explicit interface member implementation. It can be used only when a <xref:System.Web.UI.WebControls.HotSpot> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
   
@@ -508,6 +526,8 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for restoring view state for a <see cref="T:System.Web.UI.WebControls.HotSpot" /> object, override the <see cref="M:System.Web.UI.WebControls.HotSpot.LoadViewState(System.Object)" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.HotSpot.LoadViewState(System.Object)" /> method to restore the view state for the <see cref="T:System.Web.UI.WebControls.HotSpot" /> object.</para>
         </block>
+        <altmember cref="T:System.Web.UI.IStateManager" />
+        <altmember cref="M:System.Web.UI.WebControls.HotSpot.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -530,7 +550,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.HotSpot.SaveViewState%2A?displayProperty=fullName> method to save the view state for the <xref:System.Web.UI.WebControls.HotSpot> region.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.HotSpot.SaveViewState%2A?displayProperty=nameWithType> method to save the view state for the <xref:System.Web.UI.WebControls.HotSpot> region.  
   
  The <xref:System.Web.UI.WebControls.HotSpot.System%23Web%23UI%23IStateManager%23SaveViewState%2A> method is an explicit interface member implementation. It can be used only when a <xref:System.Web.UI.WebControls.HotSpot> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
   
@@ -539,6 +559,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for tracking view state for a <see cref="T:System.Web.UI.WebControls.HotSpot" /> object, override the <see cref="M:System.Web.UI.WebControls.HotSpot.SaveViewState" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.HotSpot.SaveViewState" /> method to save view-state changes for the object.</para>
         </block>
+        <altmember cref="T:System.Web.UI.IStateManager" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -560,7 +581,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.HotSpot.TrackViewState%2A?displayProperty=fullName> method to start tracking view-state changes for the <xref:System.Web.UI.WebControls.HotSpot> region.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.HotSpot.TrackViewState%2A?displayProperty=nameWithType> method to start tracking view-state changes for the <xref:System.Web.UI.WebControls.HotSpot> region.  
   
  The <xref:System.Web.UI.WebControls.HotSpot.System%23Web%23UI%23IStateManager%23TrackViewState%2A> method is an explicit interface member implementation. It can be used only when a <xref:System.Web.UI.WebControls.HotSpot> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
   
@@ -569,6 +590,9 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for tracking view state for a <see cref="T:System.Web.UI.WebControls.HotSpot" /> object, override the <see cref="M:System.Web.UI.WebControls.HotSpot.TrackViewState" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.HotSpot.TrackViewState" /> method to initialize view-state tracking for the object.</para>
         </block>
+        <altmember cref="T:System.Web.UI.IStateManager" />
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="TabIndex">
@@ -610,6 +634,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified tab index is not between -32768 and 32767.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -665,6 +690,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.HotSpotMode" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -718,6 +744,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.IsTrackingViewState" />
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="ViewState">
@@ -757,6 +786,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
       </Docs>
     </Member>
   </Members>

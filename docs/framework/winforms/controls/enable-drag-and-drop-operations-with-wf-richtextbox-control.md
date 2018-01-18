@@ -10,17 +10,21 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "examples [Windows Forms], text boxes"
-  - "drag and drop, RichTextBox control"
-  - "text boxes, drag-and-drop operations"
+  - "drag and drop [Windows Forms], richTextBox control"
+  - "text boxes [Windows Forms], drag-and-drop operations"
   - "RichTextBox control [Windows Forms], drag-and-drop operations"
 ms.assetid: ca167d1c-2014-4cf0-96a0-20598470be3b
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Enable Drag-and-Drop Operations with the Windows Forms RichTextBox Control
 Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichTextBox> control are done by handling the <xref:System.Windows.Forms.RichTextBox.DragEnter> and <xref:System.Windows.Forms.RichTextBox.DragDrop> events. Thus, drag-and-drop operations are extremely simple with the <xref:System.Windows.Forms.RichTextBox> control.  
@@ -29,7 +33,7 @@ Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichT
   
 1.  Set the <xref:System.Windows.Forms.RichTextBox.AllowDrop%2A> property of the <xref:System.Windows.Forms.RichTextBox> control to `true`.  
   
-2.  Write code in the event handler of the <xref:System.Windows.Forms.RichTextBox.DragEnter> event. Use an `if` statement to ensure that the data being dragged is of an acceptable type (in this case, text). The <xref:System.Windows.Forms.DragEventArgs.Effect%2A?displayProperty=fullName> property can be set to any value of the <xref:System.Windows.Forms.DragDropEffects> enumeration.  
+2.  Write code in the event handler of the <xref:System.Windows.Forms.RichTextBox.DragEnter> event. Use an `if` statement to ensure that the data being dragged is of an acceptable type (in this case, text). The <xref:System.Windows.Forms.DragEventArgs.Effect%2A?displayProperty=nameWithType> property can be set to any value of the <xref:System.Windows.Forms.DragDropEffects> enumeration.  
   
     ```vb  
     Private Sub RichTextBox1_DragEnter(ByVal sender As Object, _   
@@ -80,7 +84,7 @@ Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichT
        (this, &Form1::richTextBox1_DragEnter);  
     ```  
   
-3.  Write code to handle the <xref:System.Windows.Forms.RichTextBox.DragDrop> event. Use the <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> method to retrieve the data being dragged.  
+3.  Write code to handle the <xref:System.Windows.Forms.RichTextBox.DragDrop> event. Use the <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> method to retrieve the data being dragged.  
   
      In the example below, the code sets the <xref:System.Windows.Forms.RichTextBox.Text%2A> property of the <xref:System.Windows.Forms.RichTextBox> control equal to the data being dragged. If there is already text in the <xref:System.Windows.Forms.RichTextBox> control, the dragged text is inserted at the insertion point.  
   
@@ -169,7 +173,7 @@ Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichT
      When you release the mouse button, the selected text is dropped (that is, the <xref:System.Windows.Forms.RichTextBox.DragDrop> event is raised) and is inserted within the <xref:System.Windows.Forms.RichTextBox> control.  
   
 ## See Also  
- <xref:System.Windows.Forms.RichTextBox>   
- [How to: Perform Drag-and-Drop Operations Between Applications](../../../../docs/framework/winforms/advanced/how-to-perform-drag-and-drop-operations-between-applications.md)   
- [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)   
+ <xref:System.Windows.Forms.RichTextBox>  
+ [How to: Perform Drag-and-Drop Operations Between Applications](../../../../docs/framework/winforms/advanced/how-to-perform-drag-and-drop-operations-between-applications.md)  
+ [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)  
  [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)

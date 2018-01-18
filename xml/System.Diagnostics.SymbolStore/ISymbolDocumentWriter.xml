@@ -43,6 +43,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Diagnostics.SymbolStore.ISymbolWriter" />
+    <altmember cref="M:System.Reflection.Emit.ILGenerator.MarkSequencePoint(System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32,System.Int32,System.Int32,System.Int32)" />
+    <altmember cref="M:System.Reflection.Emit.ModuleBuilder.DefineDocument(System.String,System.Guid,System.Guid,System.Guid)" />
   </Docs>
   <Members>
     <Member MemberName="SetCheckSum">

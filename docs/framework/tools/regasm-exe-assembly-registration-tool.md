@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "Assembly Registration tool"
   - "assemblies [.NET Framework], registering"
@@ -24,6 +19,8 @@ caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Regasm.exe (Assembly Registration Tool)
 The Assembly Registration tool reads the metadata within an assembly and adds the necessary entries to the registry, which allows COM clients to create .NET Framework classes transparently. Once a class is registered, any COM client can use it as though the class were a COM class. The class is registered only once, when the assembly is installed. Instances of classes within the assembly cannot be created from COM until they are actually registered.  
@@ -91,8 +88,8 @@ regasm myTest.dll /tlb:myTest.tlb
 ```  
   
 ## See Also  
- [Tools](../../../docs/framework/tools/index.md)   
- [Tlbexp.exe (Type Library Exporter)](../../../docs/framework/tools/tlbexp-exe-type-library-exporter.md)   
- [Tlbimp.exe (Type Library Importer)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md)   
- [Registering Assemblies with COM](../../../docs/framework/interop/registering-assemblies-with-com.md)   
+ [Tools](../../../docs/framework/tools/index.md)  
+ [Tlbexp.exe (Type Library Exporter)](../../../docs/framework/tools/tlbexp-exe-type-library-exporter.md)  
+ [Tlbimp.exe (Type Library Importer)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md)  
+ [Registering Assemblies with COM](../../../docs/framework/interop/registering-assemblies-with-com.md)  
  [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

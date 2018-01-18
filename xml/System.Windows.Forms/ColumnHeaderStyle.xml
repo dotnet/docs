@@ -20,7 +20,7 @@
    
   
 ## Examples  
- The following code example demonstrates using the <xref:System.Windows.Forms.ColumnHeaderStyle> enumeration to set the <xref:System.Windows.Forms.ListView.HeaderStyle%2A?displayProperty=fullName> property of a <xref:System.Windows.Forms.ListView> control. To run this example paste the following code in a form and call the `InitializeListView` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler.  
+ The following code example demonstrates using the <xref:System.Windows.Forms.ColumnHeaderStyle> enumeration to set the <xref:System.Windows.Forms.ListView.HeaderStyle%2A?displayProperty=nameWithType> property of a <xref:System.Windows.Forms.ListView> control. To run this example paste the following code in a form and call the `InitializeListView` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler.  
   
  [!code-cpp[System.Windows.Forms.ListView1#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListView1/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.ListView1#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListView1/CS/form1.cs#1)]
@@ -28,6 +28,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Forms.ListView.HeaderStyle" />
   </Docs>
   <Members>
     <Member MemberName="Clickable">

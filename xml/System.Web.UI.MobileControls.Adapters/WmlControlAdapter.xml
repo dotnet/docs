@@ -125,6 +125,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlSelectionListAdapter" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlTextBoxAdapter" />
       </Docs>
     </Member>
     <Member MemberName="LoadAdapterState">
@@ -146,6 +148,7 @@
         <param name="state">The current view state.</param>
         <summary>Loads the view state. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.LoadAdapterState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="NotSecondaryUI">
@@ -170,6 +173,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlControlAdapter" />
       </Docs>
     </Member>
     <Member MemberName="PageAdapter">
@@ -209,6 +214,7 @@
         <param name="writer">The text writer to receive output.</param>
         <summary>Generates the target-specific markup for the control to which the control adapter is attached, using the provided writer. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -345,6 +351,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderBeginLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.String,System.Boolean,System.Boolean)" />
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderEndLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="RenderPostBackEvent">
@@ -477,6 +485,7 @@
         <returns>
           <see langword="Null" /> in all cases.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.SaveAdapterState" />
       </Docs>
     </Member>
     <Member MemberName="SecondaryUIMode">
@@ -502,7 +511,27 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlControlAdapter" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="RenderPostBackEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Renders a postback event with the control as a target. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Render">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Generates the target-specific markup for the control to which the control adapter is attached. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

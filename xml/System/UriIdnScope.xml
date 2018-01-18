@@ -24,12 +24,14 @@
   
  The Internationalized Domain Name (IDN) attribute only controls IDN processing. All other IRI processing (character normalization, for example) is always performed by default.  
   
- The configuration setting for the <xref:System.Configuration.IdnElement?displayProperty=fullName> will be read once when the first <xref:System.Uri> class is constructed. Changes to configuration settings after that time are ignored.  
+ The configuration setting for the <xref:System.Configuration.IdnElement?displayProperty=nameWithType> will be read once when the first <xref:System.Uri> class is constructed. Changes to configuration settings after that time are ignored.  
   
  For more information on IRI support, see the Remarks section for the <xref:System.Uri> class.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.IdnElement" />
+    <altmember cref="T:System.Uri" />
   </Docs>
   <Members>
     <Member MemberName="All">

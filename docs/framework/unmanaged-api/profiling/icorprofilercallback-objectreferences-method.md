@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ObjectReferences"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ObjectReferences method [.NET Framework profiling]"
   - "ICorProfilerCallback::ObjectReferences method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 18
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::ObjectReferences Method
 Notifies the profiler about objects in memory that are being referenced by the specified object.  

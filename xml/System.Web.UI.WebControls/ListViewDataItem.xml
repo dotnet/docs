@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ListViewDataItem> class represents an individual data item in a <xref:System.Web.UI.WebControls.ListView> control. A data item usually corresponds to a record in a data source object. The class derives from the <xref:System.Web.UI.WebControls.ListViewItem> class.  
   
- Each item in the <xref:System.Web.UI.WebControls.ListView> control has a designated item type that is represented by the <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> property. When the item type is <xref:System.Web.UI.WebControls.ListViewItemType?displayProperty=fullName>, you can use the <xref:System.Web.UI.WebControls.ListViewDataItem> class to get more information about the item.  
+ Each item in the <xref:System.Web.UI.WebControls.ListView> control has a designated item type that is represented by the <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> property. When the item type is <xref:System.Web.UI.WebControls.ListViewItemType.DataItem?displayProperty=nameWithType>, you can use the <xref:System.Web.UI.WebControls.ListViewDataItem> class to get more information about the item.  
   
  The <xref:System.Web.UI.WebControls.ListView> control stores data items in the <xref:System.Web.UI.WebControls.ListView.Items%2A> collection. To determine the index of a <xref:System.Web.UI.WebControls.ListViewDataItem> object in the <xref:System.Web.UI.WebControls.ListView.Items%2A> collection, use the <xref:System.Web.UI.WebControls.ListViewDataItem.DisplayIndex%2A> property. To determine the index of the data item in the underlying data source, use the <xref:System.Web.UI.WebControls.ListViewDataItem.DataItemIndex%2A> property. The difference between these index properties is that <xref:System.Web.UI.WebControls.ListViewDataItem.DisplayIndex%2A> represents the position of the data item in the current page, whereas <xref:System.Web.UI.WebControls.ListViewDataItem.DataItemIndex%2A> is based on the page offset. If the paging functionality is not enabled in the <xref:System.Web.UI.WebControls.ListView> control by using a <xref:System.Web.UI.WebControls.DataPager> control, these two properties will contain the same value.  
   
@@ -36,11 +36,13 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListViewDataItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewDataItem/CS/ListViewDataItemDataItemCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListViewDataItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewDataItem/VB/ListViewDataItemDataItemVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ListViewDataItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewDataItem/CS/ListViewDataItemDataItemCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ListViewDataItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewDataItem/VB/ListViewDataItemDataItemVB.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListView" />
+    <altmember cref="T:System.Web.UI.WebControls.ListViewItem" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -106,6 +108,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListViewDataItem.DataItemIndex" />
       </Docs>
     </Member>
     <Member MemberName="DataItemIndex">
@@ -131,6 +134,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ListViewDataItem.DataItem" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewDataItem.DisplayIndex" />
       </Docs>
     </Member>
     <Member MemberName="DisplayIndex">
@@ -160,13 +165,15 @@
    
   
 ## Examples  
- The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewDataItem.DisplayIndex%2A> property to retrieve the index of the item that is being edited. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.ListView.UpdateItem%2A?displayProperty=fullName> method.  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewDataItem.DisplayIndex%2A> property to retrieve the index of the item that is being edited. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.ListView.UpdateItem%2A?displayProperty=nameWithType> method.  
   
  [!code-csharp[System.Web.UI.WebControls.ListView.UpdateItem#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.UpdateItem/CS/ListViewUpdateItemCS.aspx#2)]
  [!code-vb[System.Web.UI.WebControls.ListView.UpdateItem#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.UpdateItem/VB/ListViewUpdateItemVB.aspx#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ListView" />
+        <altmember cref="P:System.Web.UI.WebControls.ListViewDataItem.DataItemIndex" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">

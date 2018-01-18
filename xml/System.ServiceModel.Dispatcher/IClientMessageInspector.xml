@@ -7,6 +7,12 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Interfaces />
   <Docs>
     <summary>Defines a message inspector object that can be added to the <see cref="P:System.ServiceModel.Dispatcher.ClientRuntime.MessageInspectors" /> collection to view or modify messages.</summary>
@@ -24,7 +30,7 @@
  [!code-csharp[Interceptors#1](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/interceptors.cs#1)]
  [!code-vb[Interceptors#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/interceptors.vb#1)]  
   
- The following code example shows how to use an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=fullName> to insert the client message inspector in the client endpoint.  
+ The following code example shows how to use an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=nameWithType> to insert the client message inspector in the client endpoint.  
   
  [!code-csharp[Interceptors#2](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#2)]
  [!code-vb[Interceptors#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#2)]  
@@ -39,13 +45,19 @@
   <Members>
     <Member MemberName="AfterReceiveReply">
       <MemberSignature Language="C#" Value="public void AfterReceiveReply (ref System.ServiceModel.Channels.Message reply, object correlationState);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AfterReceiveReply(class System.ServiceModel.Channels.Message reply, object correlationState) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AfterReceiveReply(class System.ServiceModel.Channels.Message&amp; reply, object correlationState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IClientMessageInspector.AfterReceiveReply(System.ServiceModel.Channels.Message@,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -64,7 +76,7 @@
 ## Remarks  
  Implement <xref:System.ServiceModel.Dispatcher.IClientMessageInspector.AfterReceiveReply%2A> to inspect or modify a reply message after it has been received by the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client object but before it is deserialized into objects that are returned to the client application.  
   
- The `correlationState` is the object returned by the user when <xref:System.ServiceModel.Dispatcher.IClientMessageInspector.BeforeSendRequest%2A> is called for this message. The best practice is to make this a <xref:System.Guid?displayProperty=fullName> to ensure that no two `correlationState` objects are the same.  
+ The `correlationState` is the object returned by the user when <xref:System.ServiceModel.Dispatcher.IClientMessageInspector.BeforeSendRequest%2A> is called for this message. The best practice is to make this a <xref:System.Guid?displayProperty=nameWithType> to ensure that no two `correlationState` objects are the same.  
   
    
   
@@ -74,7 +86,7 @@
  [!code-csharp[Interceptors#1](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/interceptors.cs#1)]
  [!code-vb[Interceptors#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/interceptors.vb#1)]  
   
- The following code example shows how to use an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=fullName> to insert the client message inspector in the client endpoint.  
+ The following code example shows how to use an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=nameWithType> to insert the client message inspector in the client endpoint.  
   
  [!code-csharp[Interceptors#2](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#2)]
  [!code-vb[Interceptors#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#2)]  
@@ -89,13 +101,19 @@
     </Member>
     <Member MemberName="BeforeSendRequest">
       <MemberSignature Language="C#" Value="public object BeforeSendRequest (ref System.ServiceModel.Channels.Message request, System.ServiceModel.IClientChannel channel);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object BeforeSendRequest(class System.ServiceModel.Channels.Message request, class System.ServiceModel.IClientChannel channel) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object BeforeSendRequest(class System.ServiceModel.Channels.Message&amp; request, class System.ServiceModel.IClientChannel channel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IClientMessageInspector.BeforeSendRequest(System.ServiceModel.Channels.Message@,System.ServiceModel.IClientChannel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -125,7 +143,7 @@
  [!code-csharp[Interceptors#1](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/interceptors.cs#1)]
  [!code-vb[Interceptors#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/interceptors.vb#1)]  
   
- The following code example shows how to use an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=fullName> to insert the client message inspector in the client endpoint.  
+ The following code example shows how to use an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=nameWithType> to insert the client message inspector in the client endpoint.  
   
  [!code-csharp[Interceptors#2](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#2)]
  [!code-vb[Interceptors#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#2)]  

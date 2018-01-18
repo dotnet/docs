@@ -145,6 +145,8 @@
       <Docs>
         <summary>Sets the position of the signature within the envelope. Call this method while writing the envelope to indicate at which point the signature should be inserted.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.IdentityModel.EnvelopedSignatureWriter.WriteEndElement" />
+        <altmember cref="M:System.IdentityModel.EnvelopedSignatureWriter.WriteFullEndElement" />
       </Docs>
     </Member>
     <Member MemberName="WriteStartElement">

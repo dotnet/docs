@@ -1,41 +1,25 @@
 ---
 title: "Error Types (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 helpviewer_keywords: 
   - "exceptions, types"
   - "errors [Visual Basic], types"
   - "errors [Visual Basic], logic"
   - "errors [Visual Basic], syntax"
-  - "logic errors, Visual Basic"
-  - "run-time errors, types of errors"
-  - "syntax errors, Visual Basic"
+  - "logic errors [Visual Basic], Visual Basic"
+  - "run-time errors [Visual Basic], types of errors"
+  - "syntax errors [Visual Basic], Visual Basic"
 ms.assetid: 3048aabf-8c97-4e13-9150-853769cb5f6f
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Error Types (Visual Basic)
 In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], errors (also called *exceptions*) fall into one of three categories: syntax errors, run-time errors, and logic errors.  
@@ -53,5 +37,5 @@ In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], errors (also called *exceptions*
  *Logic errors* are those that appear once the application is in use. They are most often unwanted or unexpected results in response to user actions. For example, a mistyped key or other outside influence might cause your application to stop working within expected parameters, or altogether. Logic errors are generally the hardest type to fix, since it is not always clear where they originate.  
   
 ## See Also  
- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)   
+ [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)  
  [Debugger Basics](/visualstudio/debugger/debugger-basics)

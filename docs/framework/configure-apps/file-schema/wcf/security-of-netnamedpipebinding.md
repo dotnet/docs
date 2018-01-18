@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;security&gt; of &lt;netNamedPipeBinding&gt;
 Defines the security settings for a binding.  
@@ -58,13 +60,13 @@ Defines the security settings for a binding.
 |binding|The binding element of the [\<netNamedPipeBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/netnamedpipebinding.md).|  
   
 ## See Also  
- <xref:System.ServiceModel.NetNamedPipeSecurity>   
- <xref:System.ServiceModel.NetNamedPipeBinding.Security%2A>   
- <xref:System.ServiceModel.Configuration.NetNamedPipeBindingElement.Security%2A>   
- <xref:System.ServiceModel.Configuration.NetNamedPipeSecurityElement>   
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)   
- [Selecting a Credential Type](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)   
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)   
+ <xref:System.ServiceModel.NetNamedPipeSecurity>  
+ <xref:System.ServiceModel.NetNamedPipeBinding.Security%2A>  
+ <xref:System.ServiceModel.Configuration.NetNamedPipeBindingElement.Security%2A>  
+ <xref:System.ServiceModel.Configuration.NetNamedPipeSecurityElement>  
+ [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
+ [Selecting a Credential Type](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
+ [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

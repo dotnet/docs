@@ -239,5 +239,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Entity.Design.EntityClassGenerator" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GenerateCode">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Generates a source code file that contains the objects generated from the conceptual schema definition language (CSDL) file.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

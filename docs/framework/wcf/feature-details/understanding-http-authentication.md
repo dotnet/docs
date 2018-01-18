@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9376309a-39e3-4819-b47b-a73982b57620
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Understanding HTTP Authentication
 Authentication is the process of identifying whether a client is eligible to access a resource. The HTTP protocol supports authentication as a means of negotiating access to a secure resource.  
@@ -30,7 +32,7 @@ Authentication is the process of identifying whether a client is eligible to acc
 |Digest|Digest authentication is a challenge-response scheme that is intended to replace Basic authentication. The server sends a string of random data called a *nonce* to the client as a challenge. The client responds with a hash that includes the user name, password, and nonce, among additional information. The complexity this exchange introduces and the data hashing make it more difficult to steal and reuse the user's credentials with this authentication scheme.<br /><br /> Digest authentication requires the use of Windows domain accounts. The digest *realm* is the Windows domain name. Therefore, you cannot use a server running on an operating system that does not support Windows domains, such as Windows XP Home Edition, with Digest authentication. Conversely, when the client runs on an operating system that does not support Windows domains, a domain account must be explicitly specified during the authentication.|  
 |NTLM|NT LAN Manager (NTLM) authentication is a challenge-response scheme that is a securer variation of Digest authentication. NTLM uses Windows credentials to transform the challenge data instead of the unencoded user name and password. NTLM authentication requires multiple exchanges between the client and server. The server and any intervening proxies must support persistent connections to successfully complete the authentication.|  
 |Negotiate|Negotiate authentication automatically selects between the Kerberos protocol and NTLM authentication, depending on availability. The Kerberos protocol is used if it is available; otherwise, NTLM is tried. Kerberos authentication significantly improves upon NTLM. Kerberos authentication is both faster than NTLM and allows the use of mutual authentication and delegation of credentials to remote machines.|  
-|Windows Live ID|The underlying Windows HTTP service includes authentication using federated protocols. However, the standard HTTP transports in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] do not support the use of federated authentication schemes, such as Microsoft Windows Live ID. Support for this feature is currently available through the use of message security. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).|  
+|Windows Live ID|The underlying Windows HTTP service includes authentication using federated protocols. However, the standard HTTP transports in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] do not support the use of federated authentication schemes, such as Microsoft Windows Live ID. Support for this feature is currently available through the use of message security. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).|  
   
 ## Choosing an Authentication Scheme  
  When selecting the potential authentication schemes for an HTTP server, a few items to consider include the following:  
@@ -42,6 +44,6 @@ Authentication is the process of identifying whether a client is eligible to acc
 -   A server should not present (in the WWW-Authentication headers) any scheme that it is not prepared to accept or that does not adequately secure the protected resource. Clients are free to choose between any of the authentication schemes the server presents. Some clients default to a weak authentication scheme or the first authentication scheme in the server's list.  
   
 ## See Also  
- [Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md)   
- [Using Impersonation with Transport Security](../../../../docs/framework/wcf/feature-details/using-impersonation-with-transport-security.md)   
+ [Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md)  
+ [Using Impersonation with Transport Security](../../../../docs/framework/wcf/feature-details/using-impersonation-with-transport-security.md)  
  [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)

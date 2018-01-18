@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModule::GetProcess"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetProcess method, ICorDebugModule interface [.NET Framework debugging]"
   - "ICorDebugModule::GetProcess method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugModule::GetProcess Method
 Gets the containing process of this module.  

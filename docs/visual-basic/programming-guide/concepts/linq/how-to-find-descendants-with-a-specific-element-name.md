@@ -1,7 +1,7 @@
 ---
 title: "How to: Find Descendants with a Specific Element Name (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: 78915518-0d25-4051-ab55-929779989510
 caps.latest.revision: 3
 author: dotnet-bot
@@ -109,5 +107,5 @@ Some text that is broken up into multiple segments.
 ```  
   
 ## See Also  
- <xref:System.Xml.Linq.XContainer.Descendants%2A>   
+ <xref:System.Xml.Linq.XContainer.Descendants%2A>  
  [Basic Queries (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)

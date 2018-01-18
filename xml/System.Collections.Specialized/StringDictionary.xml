@@ -39,7 +39,7 @@
   
  The key is handled in a case-insensitive manner; it is translated to lowercase before it is used with the string dictionary.  
   
- In .NET Framework version 1.0, this class uses culture-sensitive string comparisons. However, in .NET Framework version 1.1 and later, this class uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> when comparing strings. For more information about how culture affects comparisons and sorting, see [Performing Culture-Insensitive String Operations](~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md).  
+ In .NET Framework version 1.0, this class uses culture-sensitive string comparisons. However, in .NET Framework version 1.1 and later, this class uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> when comparing strings. For more information about how culture affects comparisons and sorting, see [Performing Culture-Insensitive String Operations](~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md).  
   
    
   
@@ -57,6 +57,7 @@
  This implementation does not provide a synchronized (thread safe) wrapper for a <see cref="T:System.Collections.Specialized.StringDictionary" />, but derived classes can create their own synchronized versions of the <see cref="T:System.Collections.Specialized.StringDictionary" /> using the <see cref="P:System.Collections.Specialized.StringDictionary.SyncRoot" /> property.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.</threadsafe>
+    <altmember cref="T:System.Collections.Hashtable" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -153,6 +154,7 @@
           <paramref name="key" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">An entry with the same key already exists in the <see cref="T:System.Collections.Specialized.StringDictionary" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Specialized.StringDictionary" /> is read-only.</exception>
+        <altmember cref="M:System.Collections.Specialized.StringDictionary.Remove(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -288,7 +290,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The values of the elements of the StringDictionary are compared to the specified value using the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+ The values of the elements of the StringDictionary are compared to the specified value using the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method.  
   
  This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.Specialized.StringDictionary.Count%2A>. That is, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.StringDictionary.Count%2A>.  
   
@@ -341,7 +343,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Collections.Specialized.StringDictionary.CopyTo%2A> copies objects that can be typecast to <xref:System.Collections.DictionaryEntry?displayProperty=fullName>. <xref:System.Collections.DictionaryEntry> contains both the key and the value.  
+ <xref:System.Collections.Specialized.StringDictionary.CopyTo%2A> copies objects that can be typecast to <xref:System.Collections.DictionaryEntry?displayProperty=nameWithType>. <xref:System.Collections.DictionaryEntry> contains both the key and the value.  
   
  The elements copied to the <xref:System.Array> are sorted in the same order that the enumerator iterates through the <xref:System.Collections.Specialized.StringDictionary>.  
   
@@ -674,6 +676,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The key is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Specialized.StringDictionary" /> is read-only.</exception>
+        <altmember cref="M:System.Collections.Specialized.StringDictionary.Add(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">

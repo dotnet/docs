@@ -9,16 +9,18 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 f1_keywords: 
   - "EHInvalidOperation.WinForms.IllegalCrossThreadCall"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "thread safety, calling controls [Windows Forms]"
-  - "calling controls, thread safety [Windows Forms]"
+  - "thread safety [Windows Forms], calling controls [Windows Forms]"
+  - "calling controls [Windows Forms], thread safety [Windows Forms]"
   - "CheckForIllegalCrossThreadCalls property [Windows Forms]"
-  - "Windows Forms controls, multithreading"
-  - "BackgroundWorker class, examples"
+  - "Windows Forms controls [Windows Forms], multithreading"
+  - "BackgroundWorker class [Windows Forms], examples"
   - "threading [Windows Forms], cross-thread calls"
   - "controls [Windows Forms], multithreading"
 ms.assetid: 138f38b6-1099-4fd5-910c-390b41cbad35
@@ -26,6 +28,8 @@ caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Make Thread-Safe Calls to Windows Forms Controls
 If you use multithreading to improve the performance of your Windows Forms applications, you must make sure that you make calls to your controls in a thread-safe way.  
@@ -234,7 +238,7 @@ private void SetText(string text)
 ' Invoke method.  
 '  
 ' If the calling thread is the same as the thread that created  
- ' the TextBox control, the Text property is set directly.   
+ ' the TextBox control, the Text property is set directly.  
   
  Private Sub SetText(ByVal [text] As String)  
   
@@ -1052,8 +1056,8 @@ int main()
 >  When you use multithreading of any sort, your code can be exposed to very serious and complex bugs. For more information, see [Managed Threading Best Practices](../../../../docs/standard/threading/managed-threading-best-practices.md) before you implement any solution that uses multithreading.  
   
 ## See Also  
- <xref:System.ComponentModel.BackgroundWorker>   
- [How to: Run an Operation in the Background](../../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)   
- [How to: Implement a Form That Uses a Background Operation](../../../../docs/framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)   
- [Developing Custom Windows Forms Controls with the .NET Framework](../../../../docs/framework/winforms/controls/developing-custom-windows-forms-controls.md)   
+ <xref:System.ComponentModel.BackgroundWorker>  
+ [How to: Run an Operation in the Background](../../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)  
+ [How to: Implement a Form That Uses a Background Operation](../../../../docs/framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)  
+ [Developing Custom Windows Forms Controls with the .NET Framework](../../../../docs/framework/winforms/controls/developing-custom-windows-forms-controls.md)  
  [Windows Forms and Unmanaged Applications](../../../../docs/framework/winforms/advanced/windows-forms-and-unmanaged-applications.md)

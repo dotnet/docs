@@ -684,7 +684,7 @@
     </Member>
     <Member MemberName="TryGetEdmSpaceType">
       <MemberSignature Language="C#" Value="public bool TryGetEdmSpaceType (System.Data.Metadata.Edm.EnumType objectSpaceType, out System.Data.Metadata.Edm.EnumType edmSpaceType);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetEdmSpaceType(class System.Data.Metadata.Edm.EnumType objectSpaceType, class System.Data.Metadata.Edm.EnumType edmSpaceType) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetEdmSpaceType(class System.Data.Metadata.Edm.EnumType objectSpaceType, [out] class System.Data.Metadata.Edm.EnumType&amp; edmSpaceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.MetadataWorkspace.TryGetEdmSpaceType(System.Data.Metadata.Edm.EnumType,System.Data.Metadata.Edm.EnumType@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -709,7 +709,7 @@
     </Member>
     <Member MemberName="TryGetEdmSpaceType">
       <MemberSignature Language="C#" Value="public bool TryGetEdmSpaceType (System.Data.Metadata.Edm.StructuralType objectSpaceType, out System.Data.Metadata.Edm.StructuralType edmSpaceType);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetEdmSpaceType(class System.Data.Metadata.Edm.StructuralType objectSpaceType, class System.Data.Metadata.Edm.StructuralType edmSpaceType) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetEdmSpaceType(class System.Data.Metadata.Edm.StructuralType objectSpaceType, [out] class System.Data.Metadata.Edm.StructuralType&amp; edmSpaceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.MetadataWorkspace.TryGetEdmSpaceType(System.Data.Metadata.Edm.StructuralType,System.Data.Metadata.Edm.StructuralType@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -734,7 +734,7 @@
     </Member>
     <Member MemberName="TryGetEntityContainer">
       <MemberSignature Language="C#" Value="public bool TryGetEntityContainer (string name, System.Data.Metadata.Edm.DataSpace dataSpace, out System.Data.Metadata.Edm.EntityContainer entityContainer);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetEntityContainer(string name, valuetype System.Data.Metadata.Edm.DataSpace dataSpace, class System.Data.Metadata.Edm.EntityContainer entityContainer) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetEntityContainer(string name, valuetype System.Data.Metadata.Edm.DataSpace dataSpace, [out] class System.Data.Metadata.Edm.EntityContainer&amp; entityContainer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.MetadataWorkspace.TryGetEntityContainer(System.String,System.Data.Metadata.Edm.DataSpace,System.Data.Metadata.Edm.EntityContainer@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -761,7 +761,7 @@
     </Member>
     <Member MemberName="TryGetEntityContainer">
       <MemberSignature Language="C#" Value="public bool TryGetEntityContainer (string name, bool ignoreCase, System.Data.Metadata.Edm.DataSpace dataSpace, out System.Data.Metadata.Edm.EntityContainer entityContainer);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetEntityContainer(string name, bool ignoreCase, valuetype System.Data.Metadata.Edm.DataSpace dataSpace, class System.Data.Metadata.Edm.EntityContainer entityContainer) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetEntityContainer(string name, bool ignoreCase, valuetype System.Data.Metadata.Edm.DataSpace dataSpace, [out] class System.Data.Metadata.Edm.EntityContainer&amp; entityContainer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.MetadataWorkspace.TryGetEntityContainer(System.String,System.Boolean,System.Data.Metadata.Edm.DataSpace,System.Data.Metadata.Edm.EntityContainer@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -791,7 +791,7 @@
     </Member>
     <Member MemberName="TryGetItem&lt;T&gt;">
       <MemberSignature Language="C#" Value="public bool TryGetItem&lt;T&gt; (string identity, System.Data.Metadata.Edm.DataSpace space, out T item) where T : System.Data.Metadata.Edm.GlobalItem;" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetItem&lt;(class System.Data.Metadata.Edm.GlobalItem) T&gt;(string identity, valuetype System.Data.Metadata.Edm.DataSpace space, !!T item) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetItem&lt;(class System.Data.Metadata.Edm.GlobalItem) T&gt;(string identity, valuetype System.Data.Metadata.Edm.DataSpace space, [out] !!T&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.MetadataWorkspace.TryGetItem``1(System.String,System.Data.Metadata.Edm.DataSpace,``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -826,7 +826,7 @@
     </Member>
     <Member MemberName="TryGetItem&lt;T&gt;">
       <MemberSignature Language="C#" Value="public bool TryGetItem&lt;T&gt; (string identity, bool ignoreCase, System.Data.Metadata.Edm.DataSpace dataSpace, out T item) where T : System.Data.Metadata.Edm.GlobalItem;" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetItem&lt;(class System.Data.Metadata.Edm.GlobalItem) T&gt;(string identity, bool ignoreCase, valuetype System.Data.Metadata.Edm.DataSpace dataSpace, !!T item) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetItem&lt;(class System.Data.Metadata.Edm.GlobalItem) T&gt;(string identity, bool ignoreCase, valuetype System.Data.Metadata.Edm.DataSpace dataSpace, [out] !!T&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.MetadataWorkspace.TryGetItem``1(System.String,System.Boolean,System.Data.Metadata.Edm.DataSpace,``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -864,7 +864,7 @@
     </Member>
     <Member MemberName="TryGetItemCollection">
       <MemberSignature Language="C#" Value="public bool TryGetItemCollection (System.Data.Metadata.Edm.DataSpace dataSpace, out System.Data.Metadata.Edm.ItemCollection collection);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetItemCollection(valuetype System.Data.Metadata.Edm.DataSpace dataSpace, class System.Data.Metadata.Edm.ItemCollection collection) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetItemCollection(valuetype System.Data.Metadata.Edm.DataSpace dataSpace, [out] class System.Data.Metadata.Edm.ItemCollection&amp; collection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.MetadataWorkspace.TryGetItemCollection(System.Data.Metadata.Edm.DataSpace,System.Data.Metadata.Edm.ItemCollection@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -894,7 +894,7 @@
     </Member>
     <Member MemberName="TryGetObjectSpaceType">
       <MemberSignature Language="C#" Value="public bool TryGetObjectSpaceType (System.Data.Metadata.Edm.EnumType edmSpaceType, out System.Data.Metadata.Edm.EnumType objectSpaceType);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetObjectSpaceType(class System.Data.Metadata.Edm.EnumType edmSpaceType, class System.Data.Metadata.Edm.EnumType objectSpaceType) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetObjectSpaceType(class System.Data.Metadata.Edm.EnumType edmSpaceType, [out] class System.Data.Metadata.Edm.EnumType&amp; objectSpaceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.MetadataWorkspace.TryGetObjectSpaceType(System.Data.Metadata.Edm.EnumType,System.Data.Metadata.Edm.EnumType@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -919,7 +919,7 @@
     </Member>
     <Member MemberName="TryGetObjectSpaceType">
       <MemberSignature Language="C#" Value="public bool TryGetObjectSpaceType (System.Data.Metadata.Edm.StructuralType edmSpaceType, out System.Data.Metadata.Edm.StructuralType objectSpaceType);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetObjectSpaceType(class System.Data.Metadata.Edm.StructuralType edmSpaceType, class System.Data.Metadata.Edm.StructuralType objectSpaceType) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetObjectSpaceType(class System.Data.Metadata.Edm.StructuralType edmSpaceType, [out] class System.Data.Metadata.Edm.StructuralType&amp; objectSpaceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.MetadataWorkspace.TryGetObjectSpaceType(System.Data.Metadata.Edm.StructuralType,System.Data.Metadata.Edm.StructuralType@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -944,7 +944,7 @@
     </Member>
     <Member MemberName="TryGetType">
       <MemberSignature Language="C#" Value="public bool TryGetType (string name, string namespaceName, System.Data.Metadata.Edm.DataSpace dataSpace, out System.Data.Metadata.Edm.EdmType type);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetType(string name, string namespaceName, valuetype System.Data.Metadata.Edm.DataSpace dataSpace, class System.Data.Metadata.Edm.EdmType type) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetType(string name, string namespaceName, valuetype System.Data.Metadata.Edm.DataSpace dataSpace, [out] class System.Data.Metadata.Edm.EdmType&amp; type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.MetadataWorkspace.TryGetType(System.String,System.String,System.Data.Metadata.Edm.DataSpace,System.Data.Metadata.Edm.EdmType@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -973,7 +973,7 @@
     </Member>
     <Member MemberName="TryGetType">
       <MemberSignature Language="C#" Value="public bool TryGetType (string name, string namespaceName, bool ignoreCase, System.Data.Metadata.Edm.DataSpace dataSpace, out System.Data.Metadata.Edm.EdmType type);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetType(string name, string namespaceName, bool ignoreCase, valuetype System.Data.Metadata.Edm.DataSpace dataSpace, class System.Data.Metadata.Edm.EdmType type) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetType(string name, string namespaceName, bool ignoreCase, valuetype System.Data.Metadata.Edm.DataSpace dataSpace, [out] class System.Data.Metadata.Edm.EdmType&amp; type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.MetadataWorkspace.TryGetType(System.String,System.String,System.Boolean,System.Data.Metadata.Edm.DataSpace,System.Data.Metadata.Edm.EdmType@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1003,5 +1003,122 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryGetItem&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an item by using the specified identity and the data model.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryGetType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EdmType" /> object by using the specified type name, namespace name, and data model.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadFromAssembly">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads metadata from an assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryGetEntityContainer">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object by using the specified entity container name and the data model.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetObjectSpaceType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Data.Metadata.Edm.StructuralType" /> object that represents the object space type that matches the type supplied by the parameter <paramref name="edmSpaceType" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetItem&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an item by using the specified identity and the data model.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryGetEdmSpaceType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Data.Metadata.Edm.StructuralType" /> or <see cref="T:System.Data.Metadata.Edm.EnumType" /> object via the out parameter <paramref name="edmSpaceType" /> that represents the <see cref="T:System.Data.Metadata.Edm.EdmType" /> that matches the type supplied by the parameter <paramref name="objectSpaceType" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Metadata.Edm.MetadataWorkspace" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the type metadata that is described via an <see cref="T:System.Data.Metadata.Edm.EdmType" /> object by using the specified type name, the namespace name, and the data model.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEdmSpaceType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Data.Metadata.Edm.StructuralType" /> object that represents the <see cref="T:System.Data.Metadata.Edm.EdmType" /> that matches the type supplied by the parameter <paramref name="objectSpaceType" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryGetObjectSpaceType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Data.Metadata.Edm.StructuralType" /> or <see cref="T:System.Data.Metadata.Edm.EnumType" /> object via the out parameter <paramref name="objectSpaceType" /> that represents the type that matches the <see cref="T:System.Data.Metadata.Edm.EdmType" /> supplied by the parameter <paramref name="edmSpaceType" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEntityContainer">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object by using the specified entity container name and the data model.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFunctions">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns all the overloads of the functions by using the specified name, namespace name, and data model.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

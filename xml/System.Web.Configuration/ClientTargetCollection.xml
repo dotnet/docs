@@ -46,6 +46,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.ClientTarget" />
+    <altmember cref="T:System.Web.Configuration.ClientTargetSection" />
+    <altmember cref="P:System.Web.UI.Page.ClientTarget" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -106,6 +109,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ClientTarget" />
+        <altmember cref="T:System.Web.Configuration.ClientTargetSection" />
       </Docs>
     </Member>
     <Member MemberName="AllKeys">
@@ -145,12 +150,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The result of updating the configuration file after calling the <xref:System.Web.Configuration.ClientTargetCollection.Clear%2A> method is dependent upon the <xref:System.Configuration.ConfigurationSaveMode> value chosen. To update the configuration file you use one of these two methods: <xref:System.Configuration.Configuration.Save%2A?displayProperty=fullName> or  <xref:System.Configuration.Configuration.Save%2A?displayProperty=fullName>.  
+ The result of updating the configuration file after calling the <xref:System.Web.Configuration.ClientTargetCollection.Clear%2A> method is dependent upon the <xref:System.Configuration.ConfigurationSaveMode> value chosen. To update the configuration file you use one of these two methods: <xref:System.Configuration.Configuration.Save%2A?displayProperty=nameWithType> or  <xref:System.Configuration.Configuration.Save%2A?displayProperty=nameWithType>.  
   
 > [!NOTE]
->  Calling <xref:System.Configuration.Configuration.Save%2A?displayProperty=fullName> is equivalent to calling <xref:System.Configuration.Configuration.Save%2A> when the <xref:System.Configuration.ConfigurationSaveMode> value is modified.  
+>  Calling <xref:System.Configuration.Configuration.Save%2A?displayProperty=nameWithType> is equivalent to calling <xref:System.Configuration.Configuration.Save%2A> when the <xref:System.Configuration.ConfigurationSaveMode> value is modified.  
   
- If you use the <xref:System.Configuration.Configuration.Save%2A?displayProperty=fullName> method, the following conditions apply:  
+ If you use the <xref:System.Configuration.Configuration.Save%2A?displayProperty=nameWithType> method, the following conditions apply:  
   
 -   If you pass the <xref:System.Configuration.ConfigurationSaveMode.Full> or <xref:System.Configuration.ConfigurationSaveMode.Modified> parameter value, then a `clear` element is inserted into the `clientTarget` section of the configuration file at the current hierarchy level.  
   
@@ -177,6 +182,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ClientTarget" />
+        <altmember cref="T:System.Web.Configuration.ClientTargetSection" />
       </Docs>
     </Member>
     <Member MemberName="CreateNewElement">
@@ -340,6 +347,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ClientTarget" />
+        <altmember cref="T:System.Web.Configuration.ClientTargetSection" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -378,6 +387,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ClientTarget" />
+        <altmember cref="T:System.Web.Configuration.ClientTargetSection" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -416,7 +427,27 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ClientTarget" />
+        <altmember cref="T:System.Web.Configuration.ClientTargetSection" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.Configuration.ClientTarget" /> from the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a <see cref="T:System.Web.Configuration.ClientTarget" /> object from the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

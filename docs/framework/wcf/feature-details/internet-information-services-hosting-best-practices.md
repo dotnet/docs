@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0834768e-9665-46bf-86eb-d4b09ab91af5
 caps.latest.revision: 22
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Internet Information Services Hosting Best Practices
 This topic outlines some best practices for hosting [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] services.  
@@ -88,5 +90,5 @@ This topic outlines some best practices for hosting [!INCLUDE[indigo1](../../../
 ```  
   
 ## See Also  
- [Service Hosting Samples](http://msdn.microsoft.com/en-us/f703a3f6-0fba-418a-a92f-7ce75ccfa47e)   
+ [Service Hosting Samples](http://msdn.microsoft.com/en-us/f703a3f6-0fba-418a-a92f-7ce75ccfa47e)  
  [Windows Server App Fabric Hosting Features](http://go.microsoft.com/fwlink/?LinkId=201276)

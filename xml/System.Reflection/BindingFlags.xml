@@ -38,9 +38,9 @@
 ## Remarks  
  These `BindingFlags` control binding for a great many classes in the `System`, `System.Reflection`, and `System.Runtime` namespaces that invoke, create, get, set, and find members and types.  
   
- `BindingFlags` are used in the following <xref:System.Type> methods and other places such as <xref:System.Reflection.MethodBase.Invoke%2A?displayProperty=fullName> :  
+ `BindingFlags` are used in the following <xref:System.Type> methods and other places such as <xref:System.Reflection.MethodBase.Invoke%2A?displayProperty=nameWithType> :  
   
--   <xref:System.Reflection.MethodBase.Invoke%2A?displayProperty=fullName>  
+-   <xref:System.Reflection.MethodBase.Invoke%2A?displayProperty=nameWithType>  
   
 -   <xref:System.Type.GetMembers%2A>  
   
@@ -48,7 +48,7 @@
   
 -   <xref:System.Type.InvokeMember%2A>  
   
--   <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>  
+-   <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>  
   
 -   <xref:System.Type.GetConstructor%2A>  
   
@@ -83,7 +83,7 @@
 > [!NOTE]
 >  You must specify `Instance` or `Static` along with `Public` or `NonPublic` or no members will be returned.  
   
- The following table lists the coercions performed by the default <xref:System.Reflection.Binder.ChangeType%2A?displayProperty=fullName>. This table applies especially to the `ExactBinding` binding flag.  
+ The following table lists the coercions performed by the default <xref:System.Reflection.Binder.ChangeType%2A?displayProperty=nameWithType>. This table applies especially to the `ExactBinding` binding flag.  
   
 |Source Type|Target Type|  
 |-----------------|-----------------|  

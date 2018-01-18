@@ -20,10 +20,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is used by <xref:System.Windows.Forms.ScrollEventArgs.Type%2A?displayProperty=fullName>.  
+ This enumeration is used by <xref:System.Windows.Forms.ScrollEventArgs.Type%2A?displayProperty=nameWithType>.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ScrollEventArgs" />
+    <altmember cref="E:System.Windows.Forms.ScrollBar.Scroll" />
+    <altmember cref="P:System.Windows.Forms.ScrollEventArgs.Type" />
   </Docs>
   <Members>
     <Member MemberName="EndScroll">

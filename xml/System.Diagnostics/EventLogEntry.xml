@@ -28,7 +28,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You usually will not create instances of <xref:System.Diagnostics.EventLogEntry> directly when working with the <xref:System.Diagnostics.EventLog> class. The <xref:System.Diagnostics.EventLog.Entries%2A> member of the <xref:System.Diagnostics.EventLog> class contains a collection of <xref:System.Diagnostics.EventLogEntry> instances, which you iterate over when reading by using the <xref:System.Diagnostics.EventLogEntryCollection.Item%2A?displayProperty=fullName> class index member.  
+ You usually will not create instances of <xref:System.Diagnostics.EventLogEntry> directly when working with the <xref:System.Diagnostics.EventLog> class. The <xref:System.Diagnostics.EventLog.Entries%2A> member of the <xref:System.Diagnostics.EventLog> class contains a collection of <xref:System.Diagnostics.EventLogEntry> instances, which you iterate over when reading by using the <xref:System.Diagnostics.EventLogEntryCollection.Item%2A?displayProperty=nameWithType> class index member.  
   
 > [!IMPORTANT]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
@@ -44,6 +44,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Diagnostics.EventLog" />
+    <altmember cref="T:System.Diagnostics.EventLogEntryCollection" />
+    <altmember cref="T:System.Diagnostics.EventInstance" />
   </Docs>
   <Members>
     <Member MemberName="Category">
@@ -75,6 +78,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The space could not be allocated for one of the insertion strings associated with the category.</exception>
+        <altmember cref="P:System.Diagnostics.EventLogEntry.CategoryNumber" />
+        <altmember cref="P:System.Diagnostics.EventInstance.CategoryId" />
       </Docs>
     </Member>
     <Member MemberName="CategoryNumber">
@@ -101,10 +106,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Each application (event source) can define its own numbered categories and the text strings to which they are mapped. The Event Viewer can use the category to filter events in the log. The categories must be numbered consecutively beginning with the number 1. The category number is specified by the <xref:System.Diagnostics.EventInstance.CategoryId%2A?displayProperty=fullName> property. The Event Viewer can display the category as a numeric value, or it can use the category as a resource identifier to display a localized category string. For more information, see <xref:System.Diagnostics.EventInstance>.  
+ Each application (event source) can define its own numbered categories and the text strings to which they are mapped. The Event Viewer can use the category to filter events in the log. The categories must be numbered consecutively beginning with the number 1. The category number is specified by the <xref:System.Diagnostics.EventInstance.CategoryId%2A?displayProperty=nameWithType> property. The Event Viewer can display the category as a numeric value, or it can use the category as a resource identifier to display a localized category string. For more information, see <xref:System.Diagnostics.EventInstance>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.EventLogEntry.EntryType" />
+        <altmember cref="P:System.Diagnostics.EventLogEntry.Category" />
+        <altmember cref="P:System.Diagnostics.EventInstance.CategoryId" />
       </Docs>
     </Member>
     <Member MemberName="Data">
@@ -174,6 +182,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.EventLogEntryType" />
+        <altmember cref="P:System.Diagnostics.EventInstance.EntryType" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -239,6 +249,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.EventLogEntry.InstanceId" />
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -315,6 +326,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.EventInstance.InstanceId" />
+        <altmember cref="Overload:System.Diagnostics.EventLog.WriteEvent" />
       </Docs>
     </Member>
     <Member MemberName="MachineName">
@@ -372,6 +385,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The space could not be allocated for one of the insertion strings associated with the message.</exception>
+        <altmember cref="T:System.Diagnostics.EventInstance" />
+        <altmember cref="Overload:System.Diagnostics.EventLog.WriteEvent" />
       </Docs>
     </Member>
     <Member MemberName="ReplacementStrings">
@@ -413,6 +428,8 @@ e1.WriteEntry(LocRM.GetString("strMessage"),
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.EventLogEntry.Message" />
+        <altmember cref="Overload:System.Diagnostics.EventLog.WriteEvent" />
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -452,6 +469,7 @@ e1.WriteEntry(LocRM.GetString("strMessage"),
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.EventLog.Source" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -512,6 +530,7 @@ e1.WriteEntry(LocRM.GetString("strMessage"),
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.EventLogEntry.TimeWritten" />
       </Docs>
     </Member>
     <Member MemberName="TimeWritten">
@@ -542,6 +561,7 @@ e1.WriteEntry(LocRM.GetString("strMessage"),
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.EventLogEntry.TimeGenerated" />
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -573,6 +593,7 @@ e1.WriteEntry(LocRM.GetString("strMessage"),
  ]]></format>
         </remarks>
         <exception cref="T:System.SystemException">Account information could not be obtained for the user's SID.</exception>
+        <altmember cref="P:System.Diagnostics.EventLogEntry.Source" />
       </Docs>
     </Member>
   </Members>

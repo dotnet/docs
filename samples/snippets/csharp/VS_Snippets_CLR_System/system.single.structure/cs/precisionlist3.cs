@@ -15,7 +15,7 @@ public class Example
       if (total.Equals(result))
          Console.WriteLine("The sum of the values equals the total.");
       else
-         Console.WriteLine("The sum of the values ({0:R}) does not equal the total ({1:R}).",
+         Console.WriteLine("The sum of the values ({0}) does not equal the total ({1}).",
                            total, result); 
    }
 }

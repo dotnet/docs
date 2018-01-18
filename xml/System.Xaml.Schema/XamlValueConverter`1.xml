@@ -131,6 +131,7 @@
         <summary>Gets the <see cref="T:System.Type" /> for the class that implements the converter behavior.</summary>
         <value>The <see cref="T:System.Type" /> for the class that implements the converter behavior.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Xaml.Schema.XamlValueConverter`1.#ctor(System.Type,System.Xaml.XamlType,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -248,7 +249,7 @@
 ## Remarks  
  The value of this property is established by one of the following:  
   
--   A constructor parameter (see <xref:System.Xaml.Schema.XamlValueConverter%601.%23ctor%2A?displayProperty=fullName>).  
+-   A constructor parameter (see <xref:System.Xaml.Schema.XamlValueConverter%601.%23ctor%2A?displayProperty=nameWithType>).  
   
 -   Internal logic that processes other constructor inputs and forms a string.  
   
@@ -322,6 +323,7 @@
         <summary>Gets the target/destination <see cref="T:System.Xaml.XamlType" /> of the <see cref="T:System.Xaml.Schema.XamlValueConverter`1" />.</summary>
         <value>The target/destination <see cref="T:System.Xaml.XamlType" /> of the <see cref="T:System.Xaml.Schema.XamlValueConverter`1" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Xaml.Schema.XamlValueConverter`1.#ctor(System.Type,System.Xaml.XamlType,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -350,5 +352,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether this instance of <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> and an object have the same value.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

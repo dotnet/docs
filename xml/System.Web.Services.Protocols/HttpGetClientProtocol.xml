@@ -39,6 +39,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Services.Protocols.HttpSimpleClientProtocol" />
+    <altmember cref="T:System.Web.Services.Protocols.WebClientProtocol" />
+    <altmember cref="T:System.Web.Services.Protocols.HttpPostClientProtocol" />
+    <altmember cref="T:System.Web.Services.Protocols.SoapHttpClientProtocol" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -93,6 +97,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <paramref name="uri" /> parameter is null or has a length of zero.</exception>
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="T:System.Web.Services.Protocols.WebClientProtocol" />
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
   </Members>

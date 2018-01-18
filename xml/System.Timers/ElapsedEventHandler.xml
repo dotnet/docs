@@ -33,12 +33,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you create an <xref:System.Timers.ElapsedEventHandler> delegate, you identify the method that will handle the <xref:System.Timers.Timer.Elapsed?displayProperty=fullName> event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ When you create an <xref:System.Timers.ElapsedEventHandler> delegate, you identify the method that will handle the <xref:System.Timers.Timer.Elapsed?displayProperty=nameWithType> event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
    
   
 ## Examples  
- The following code example sets up an event handler for the <xref:System.Timers.Timer.Elapsed?displayProperty=fullName> event, creates a timer, and starts the timer. The event handler has the same signature as the <xref:System.Timers.ElapsedEventHandler> delegate. The event handler displays the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A> property each time it is raised.  
+ The following code example sets up an event handler for the <xref:System.Timers.Timer.Elapsed?displayProperty=nameWithType> event, creates a timer, and starts the timer. The event handler has the same signature as the <xref:System.Timers.ElapsedEventHandler> delegate. The event handler displays the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A> property each time it is raised.  
   
  [!code-cpp[Classic Timer Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Timer Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Timer Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Timer Example/CS/source.cs#1)]
@@ -46,5 +46,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.Timers.Timer.Elapsed" />
+    <altmember cref="T:System.Timers.ElapsedEventArgs" />
   </Docs>
 </Type>

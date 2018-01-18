@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::Close"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Close method, ISymUnmanagedWriter interface [.NET Framework debugging]"
   - "ISymUnmanagedWriter::Close method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedWriter::Close Method
 Closes the symbol writer after committing the symbols to the symbol store.  

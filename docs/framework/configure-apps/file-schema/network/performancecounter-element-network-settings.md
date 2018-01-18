@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/settings/performanceCounters"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#performanceCounters"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "performanceCounter element"
   - "<performanceCounter> element"
@@ -25,6 +20,8 @@ caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;performanceCounter&gt; Element (Network Settings)
 Enables or disables networking performance counters.  
@@ -67,7 +64,7 @@ Enables or disables networking performance counters.
   
  The default value is that networking performance counters are disabled.  
   
- The <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=fullName> property can be used to get the current value of the **enabled** attribute from applicable configuration files.  
+ The <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=nameWithType> property can be used to get the current value of the **enabled** attribute from applicable configuration files.  
   
 ## Example  
  The following example shows how to configure the <xref:System.Net> and related namespaces to enable networking performance counters.  
@@ -85,7 +82,7 @@ Enables or disables networking performance counters.
 ```  
   
 ## See Also  
- <xref:System.Net.Configuration.PerformanceCountersElement?displayProperty=fullName>   
- <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=fullName>   
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)   
+ <xref:System.Net.Configuration.PerformanceCountersElement?displayProperty=nameWithType>  
+ <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=nameWithType>  
+ [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)  
  [Networking Performance Counters](http://msdn.microsoft.com/en-us/d1860235-f643-46ae-846c-ff0ed8b0e3cd)

@@ -33,6 +33,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
+    <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+    <altmember cref="T:System.ComponentModel.DesignerAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,6 +75,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
       </Docs>
     </Member>
     <Member MemberName="AccessibilityObject">
@@ -97,6 +101,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
       </Docs>
     </Member>
     <Member MemberName="AssociatedComponents">
@@ -149,7 +154,7 @@
     </Member>
     <Member MemberName="BaseWndProc">
       <MemberSignature Language="C#" Value="protected void BaseWndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void BaseWndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void BaseWndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.BaseWndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -246,7 +251,7 @@
     </Member>
     <Member MemberName="DefWndProc">
       <MemberSignature Language="C#" Value="protected void DefWndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void DefWndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void DefWndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.DefWndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -270,6 +275,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.WndProc(System.Windows.Forms.Message@)" />
+        <altmember cref="M:System.Windows.Forms.Control.DefWndProc(System.Windows.Forms.Message@)" />
+        <altmember cref="M:System.Windows.Forms.Design.ControlDesigner.WndProc(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
     <Member MemberName="DisplayError">
@@ -328,6 +336,7 @@
   
  For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
       </Docs>
     </Member>
     <Member MemberName="EnableDesignMode">
@@ -574,6 +583,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
       </Docs>
     </Member>
     <Member MemberName="InitializeExistingComponent">
@@ -602,6 +612,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.Design.ComponentDesigner.InitializeExistingComponent(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="InitializeNewComponent">
@@ -630,6 +641,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.Design.ComponentDesigner.InitializeNewComponent(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="InternalControlDesigner">
@@ -1168,6 +1180,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
       </Docs>
     </Member>
     <Member MemberName="SelectionRules">
@@ -1193,6 +1206,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Design.SelectionRules" />
       </Docs>
     </Member>
     <Member MemberName="SnapLines">
@@ -1243,7 +1257,7 @@
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected virtual void WndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1265,23 +1279,26 @@
 ## Remarks  
  This method is called for each message the control would usually receive. This allows the designer to preprocess messages before optionally routing them to the control.  
   
- To send the message to the control’s <xref:System.Windows.Forms.Control.WndProc%2A?displayProperty=fullName> method, call <xref:System.Windows.Forms.Design.ControlDesigner.WndProc%2A> on the control's designer.  
+ To send the message to the control’s <xref:System.Windows.Forms.Control.WndProc%2A?displayProperty=nameWithType> method, call <xref:System.Windows.Forms.Design.ControlDesigner.WndProc%2A> on the control's designer.  
   
 > [!NOTE]
 >  The designer filters messages, so some messages will not be sent to the control. For example, mouse messages are intercepted by the designer. If this is not the behavior you want, call <xref:System.Windows.Forms.Design.ControlDesigner.DefWndProc%2A> instead.  
   
- Pass `m` as a parameter. Optionally, you can alter or create a new <xref:System.Windows.Forms.Message?displayProperty=fullName> to pass to the control's method.  
+ Pass `m` as a parameter. Optionally, you can alter or create a new <xref:System.Windows.Forms.Message?displayProperty=nameWithType> to pass to the control's method.  
   
  The following table shows the flow of messages.  
   
 |Without a designer|With a designer|  
 |------------------------|---------------------|  
-|USER32<br /><br /> <xref:System.Windows.Forms.Control.WndProc%2A?displayProperty=fullName><br /><br /> <xref:System.Windows.Forms.Control.DefWndProc%2A?displayProperty=fullName><br /><br /> USER32|USER32<br /><br /> `Control.Designer.` <xref:System.Windows.Forms.Design.ControlDesigner.WndProc%2A><br /><br /> <xref:System.Windows.Forms.Design.ControlDesigner.DefWndProc%2A><br /><br /> <xref:System.Windows.Forms.Control.WndProc%2A?displayProperty=fullName><br /><br /> <xref:System.Windows.Forms.Control.DefWndProc%2A?displayProperty=fullName><br /><br /> USER32|  
+|USER32<br /><br /> <xref:System.Windows.Forms.Control.WndProc%2A?displayProperty=nameWithType><br /><br /> <xref:System.Windows.Forms.Control.DefWndProc%2A?displayProperty=nameWithType><br /><br /> USER32|USER32<br /><br /> `Control.Designer.` <xref:System.Windows.Forms.Design.ControlDesigner.WndProc%2A><br /><br /> <xref:System.Windows.Forms.Design.ControlDesigner.DefWndProc%2A><br /><br /> <xref:System.Windows.Forms.Control.WndProc%2A?displayProperty=nameWithType><br /><br /> <xref:System.Windows.Forms.Control.DefWndProc%2A?displayProperty=nameWithType><br /><br /> USER32|  
   
- The designer intercepts messages by replacing the <xref:System.Windows.Forms.Control.WindowTarget%2A?displayProperty=fullName> property on the control. Usually, <xref:System.Windows.Forms.Control.WindowTarget%2A> points to the <xref:System.Windows.Forms.NativeWindow> contained within the control. During design time, the designer replaces this with its own window target, and caches the original value.  
+ The designer intercepts messages by replacing the <xref:System.Windows.Forms.Control.WindowTarget%2A?displayProperty=nameWithType> property on the control. Usually, <xref:System.Windows.Forms.Control.WindowTarget%2A> points to the <xref:System.Windows.Forms.NativeWindow> contained within the control. During design time, the designer replaces this with its own window target, and caches the original value.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Design.ControlDesigner.DefWndProc(System.Windows.Forms.Message@)" />
+        <altmember cref="M:System.Windows.Forms.Control.WndProc(System.Windows.Forms.Message@)" />
+        <altmember cref="M:System.Windows.Forms.Control.DefWndProc(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
   </Members>

@@ -13,7 +13,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This enumeration provides available options for the proxy settings used by an <see cref="T:System.Net.Http.HttpClient" /> when running on Windows.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
         <ReturnType>System.Net.Http.WindowsProxyUsePolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This value indicates that a proxy will not be used.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseCustomProxy">
@@ -52,7 +52,7 @@
         <ReturnType>System.Net.Http.WindowsProxyUsePolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This value indicates that a custom proxy is used by specifying an object that implements the <see cref="T:System.Net.IWebProxy" /> interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseWinHttpProxy">
@@ -71,7 +71,7 @@
         <ReturnType>System.Net.Http.WindowsProxyUsePolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This value indicates that the current proxy configuration of the WinHTTP API on the machine is used.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseWinInetProxy">
@@ -90,7 +90,7 @@
         <ReturnType>System.Net.Http.WindowsProxyUsePolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This value indicates that the current proxy configuration of the WinINet API on the machine is used. The proxy settings can be configured using the Internet Explorer Options and supports WPAD and PAC files.</summary>
       </Docs>
     </Member>
   </Members>

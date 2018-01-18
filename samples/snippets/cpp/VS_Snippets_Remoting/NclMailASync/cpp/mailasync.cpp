@@ -36,7 +36,7 @@ int main(array<String^>^ args)
 {
     if (args->Length > 1)
     {
-        // Command line argument must the the SMTP host.
+        // Command-line argument must be the SMTP host.
         SmtpClient^ client = gcnew SmtpClient(args[1]);
         // Specify the e-mail sender.
         //<snippet2>

@@ -28,7 +28,7 @@
   
  Both server-side and client-side validation are performed unless the browser does not support client-side validation or client-side validation is explicitly disabled (by setting the <xref:System.Web.UI.WebControls.BaseValidator.EnableClientScript%2A> property to `false`).  
   
- The regular-expression validation implementation is slightly different on the client than on the server. On the client, JScript regular-expression syntax is used. On the server, <xref:System.Text.RegularExpressions.Regex?displayProperty=fullName> syntax is used. Since JScript regular expression syntax is a subset of <xref:System.Text.RegularExpressions.Regex?displayProperty=fullName> syntax, it is recommended that JScript regular-expression syntax be used in order to yield the same results on both the client and the server.  
+ The regular-expression validation implementation is slightly different on the client than on the server. On the client, JScript regular-expression syntax is used. On the server, <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> syntax is used. Since JScript regular expression syntax is a subset of <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> syntax, it is recommended that JScript regular-expression syntax be used in order to yield the same results on both the client and the server.  
   
 > [!NOTE]
 >  When you use the <xref:System.Web.UI.WebControls.RegularExpressionValidator> control inside an <xref:System.Web.UI.UpdatePanel> control, make sure that the validator control and the control it is associated with are in the same panel. For more information about using the <xref:System.Web.UI.UpdatePanel> control for partial-page updates, see [Partial-Page Rendering Overview](http://msdn.microsoft.com/library/5c12736d-d9e9-464a-9388-3fe0f9f49e49).  
@@ -46,11 +46,14 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic RegularExpressionValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RegularExpressionValidator Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic RegularExpressionValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RegularExpressionValidator Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic RegularExpressionValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RegularExpressionValidator Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic RegularExpressionValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RegularExpressionValidator Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+    <altmember cref="P:System.Web.UI.WebControls.BaseValidator.EnableClientScript" />
+    <altmember cref="T:System.Text.RegularExpressions.Regex" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,6 +69,9 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.RegularExpressionValidator" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.EnableClientScript" />
+        <altmember cref="T:System.Text.RegularExpressions.Regex" />
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -100,11 +106,14 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomRegularExpressionValidatorAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomRegularExpressionValidatorAddAttributesToRender/CS/custom_regularexpressionvalidator_addattributestorendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomRegularExpressionValidatorAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomRegularExpressionValidatorAddAttributesToRender/VB/custom_regularexpressionvalidator_addattributestorendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomRegularExpressionValidatorAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomRegularExpressionValidatorAddAttributesToRender/CS/custom_regularexpressionvalidator_addattributestorendercs.aspx#1)]
+ [!code-aspx-vb[CustomRegularExpressionValidatorAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomRegularExpressionValidatorAddAttributesToRender/VB/custom_regularexpressionvalidator_addattributestorendervb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.EnableClientScript" />
+        <altmember cref="T:System.Text.RegularExpressions.Regex" />
       </Docs>
     </Member>
     <Member MemberName="EvaluateIsValid">
@@ -138,11 +147,14 @@
   
  The following code example demonstrates how to use the `CustomRegularExpressionValidatorEvaluateIsValid` control, defined in the preceding example, on a Web Forms page.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomRegularExpressionValidatorEvaluateIsValid#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomRegularExpressionValidatorEvaluateIsValid/CS/custom_regularexpressionvalidator_evaluateisvalidcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomRegularExpressionValidatorEvaluateIsValid#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomRegularExpressionValidatorEvaluateIsValid/VB/custom_regularexpressionvalidator_evaluateisvalidvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomRegularExpressionValidatorEvaluateIsValid#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomRegularExpressionValidatorEvaluateIsValid/CS/custom_regularexpressionvalidator_evaluateisvalidcs.aspx#1)]
+ [!code-aspx-vb[CustomRegularExpressionValidatorEvaluateIsValid#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomRegularExpressionValidatorEvaluateIsValid/VB/custom_regularexpressionvalidator_evaluateisvalidvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.EnableClientScript" />
+        <altmember cref="T:System.Text.RegularExpressions.Regex" />
       </Docs>
     </Member>
     <Member MemberName="MatchTimeout">
@@ -212,8 +224,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic RegularExpressionValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RegularExpressionValidator Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic RegularExpressionValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RegularExpressionValidator Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic RegularExpressionValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RegularExpressionValidator Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic RegularExpressionValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RegularExpressionValidator Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>

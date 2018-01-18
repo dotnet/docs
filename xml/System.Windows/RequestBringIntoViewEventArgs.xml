@@ -16,14 +16,16 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.FrameworkElement.RequestBringIntoView?displayProperty=fullName> event is raised by elements when you call <xref:System.Windows.FrameworkElement.BringIntoView%2A> from that element. Generally, this routed event is not handled by the source. Intermediate classes that do not implement scrollable regions or similar concepts that clip content should not handle the event.  The event should be permitted to bubble to parent elements that implement a scrollable region or otherwise specify <xref:System.Windows.UIElement.ClipToBounds%2A> `false`. Such parent elements typically provide class handling for the <xref:System.Windows.FrameworkElement.RequestBringIntoView> event, which is where the necessary rendering logic occurs whenever a given element requests that it be made viewable within the clipping region.  
+ The <xref:System.Windows.FrameworkElement.RequestBringIntoView?displayProperty=nameWithType> event is raised by elements when you call <xref:System.Windows.FrameworkElement.BringIntoView%2A> from that element. Generally, this routed event is not handled by the source. Intermediate classes that do not implement scrollable regions or similar concepts that clip content should not handle the event.  The event should be permitted to bubble to parent elements that implement a scrollable region or otherwise specify <xref:System.Windows.UIElement.ClipToBounds%2A> `false`. Such parent elements typically provide class handling for the <xref:System.Windows.FrameworkElement.RequestBringIntoView> event, which is where the necessary rendering logic occurs whenever a given element requests that it be made viewable within the clipping region.  
   
- Content elements can cause the event to be raised by their content hosts (through calling <xref:System.Windows.FrameworkContentElement.BringIntoView%2A> and raising <xref:System.Windows.FrameworkElement.RequestBringIntoView?displayProperty=fullName> from the content host). Similarly, you can request logical tree elements to be brought into view with the helper method <xref:System.Windows.LogicalTreeHelper.BringIntoView%2A?displayProperty=fullName>.  
+ Content elements can cause the event to be raised by their content hosts (through calling <xref:System.Windows.FrameworkContentElement.BringIntoView%2A> and raising <xref:System.Windows.FrameworkElement.RequestBringIntoView?displayProperty=nameWithType> from the content host). Similarly, you can request logical tree elements to be brought into view with the helper method <xref:System.Windows.LogicalTreeHelper.BringIntoView%2A?displayProperty=nameWithType>.  
   
  A <xref:System.Windows.Controls.ListBox> implements a related but different method <xref:System.Windows.Controls.ListBox.ScrollIntoView%2A>.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.ScrollViewer" />
+    <altmember cref="T:System.Windows.Controls.Primitives.ScrollBar" />
   </Docs>
   <Members>
     <Member MemberName="InvokeEventHandler">
@@ -54,6 +56,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.RoutedEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="TargetObject">
@@ -75,10 +78,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This object is typically the same object as returned by <xref:System.Windows.RoutedEventArgs.Source%2A?displayProperty=fullName>.  
+ This object is typically the same object as returned by <xref:System.Windows.RoutedEventArgs.Source%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.RoutedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="TargetRect">
@@ -104,6 +108,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.BringIntoView(System.Windows.Rect)" />
       </Docs>
     </Member>
   </Members>

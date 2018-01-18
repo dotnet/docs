@@ -32,7 +32,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If your code does not have <xref:System.Security.Permissions.FileIOPermissionAttribute.PathDiscovery%2A?displayProperty=fullName> permission, the error message for this exception may contain only file or directory names instead of full paths.  
+ If your code does not have <xref:System.Security.Permissions.FileIOPermissionAttribute.PathDiscovery%2A?displayProperty=nameWithType> permission, the error message for this exception may contain only file or directory names instead of full paths.  
   
  In apps that run under versions of the .NET Framework prior to the [!INCLUDE[net_v462](~/includes/net-v462-md.md)], full paths must not exceed 260 characters to maintain compatibility with Windows operating systems. Any path in excess of 260 characters automatically throws a <xref:System.IO.PathTooLongException>. For more information about this restriction, see the entry [Long Paths in .NET](http://go.microsoft.com/fwlink/?LinkID=163666) in the BCL Team blog.  
   
@@ -46,7 +46,7 @@
   
 -   The operating system returns `COR_E_PATHTOOLONG` or its equivalent.  
   
--   The length of the path exceeds <xref:System.Int16.MaxValue?displayProperty=fullName> (32,767) characters.  
+-   The length of the path exceeds <xref:System.Int16.MaxValue?displayProperty=nameWithType> (32,767) characters.  
   
  **Apps that target the [!INCLUDE[net_v461](~/includes/net-v461-md.md)] and earlier versions**  
  Long paths are disabled by default, and the legacy behavior is maintained. The runtime throws a <xref:System.IO.PathTooLongException> whenever a path exceeds 260 characters.  
@@ -65,6 +65,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -210,7 +211,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.PathTooLongException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

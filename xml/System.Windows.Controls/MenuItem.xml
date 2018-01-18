@@ -49,9 +49,9 @@
 -   It can be checked or unchecked.  
   
 > [!NOTE]
->  By default, the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> of a <xref:System.Windows.Controls.MenuItem> is set to <xref:System.Windows.HorizontalAlignment?displayProperty=fullName>. The default horizontal position of a <xref:System.Windows.Controls.StackPanel> is <xref:System.Windows.HorizontalAlignment?displayProperty=fullName>. If you set the <xref:System.Windows.FrameworkElement.Width%2A> property of a <xref:System.Windows.Controls.MenuItem> through a <xref:System.Windows.Controls.StackPanel>, the stack panel's default is applied and the item is centered.  
+>  By default, the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> of a <xref:System.Windows.Controls.MenuItem> is set to <xref:System.Windows.HorizontalAlignment.Stretch?displayProperty=nameWithType>. The default horizontal position of a <xref:System.Windows.Controls.StackPanel> is <xref:System.Windows.HorizontalAlignment.Center?displayProperty=nameWithType>. If you set the <xref:System.Windows.FrameworkElement.Width%2A> property of a <xref:System.Windows.Controls.MenuItem> through a <xref:System.Windows.Controls.StackPanel>, the stack panel's default is applied and the item is centered.  
   
- The<xref:System.Windows.Controls.MenuItem> handles the <xref:System.Windows.UIElement.MouseDown> event, so if you attach an event handler to <xref:System.Windows.UIElement.MouseDown>, your handler will never be called.  To add your own handler, subscribe to the <xref:System.Windows.UIElement.PreviewMouseDown> event or subscribe to <xref:System.Windows.UIElement.MouseDown> by calling <xref:System.Windows.UIElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> with `handledEventsToo` set to `true`.  
+ The <xref:System.Windows.Controls.MenuItem> handles the <xref:System.Windows.UIElement.MouseDown> event, so if you attach an event handler to <xref:System.Windows.UIElement.MouseDown>, your handler will never be called.  To add your own handler, subscribe to the <xref:System.Windows.UIElement.PreviewMouseDown> event or subscribe to <xref:System.Windows.UIElement.MouseDown> by calling <xref:System.Windows.UIElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> with `handledEventsToo` set to `true`.  
   
 ## Customizing the MenuItem Control  
  To apply the same property settings to multiple <xref:System.Windows.Controls.MenuItem> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.MenuItem>, see [Menu Styles and Templates](~/docs/framework/wpf/controls/menu-styles-and-templates.md).  
@@ -73,6 +73,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.Menu" />
+    <altmember cref="T:System.Windows.Controls.ContextMenu" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -1914,7 +1916,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this property to change the style of a <xref:System.Windows.Controls.MenuItem> whose <xref:System.Windows.Controls.MenuItem.Role%2A> property is set to <xref:System.Windows.Controls.MenuItemRole?displayProperty=fullName>.  
+ Use this property to change the style of a <xref:System.Windows.Controls.MenuItem> whose <xref:System.Windows.Controls.MenuItem.Role%2A> property is set to <xref:System.Windows.Controls.MenuItemRole.SubmenuHeader?displayProperty=nameWithType>.  
   
 <a name="xamlAttributeUsage_SubmenuHeaderTemplateKey"></a>   
 ## XAML Attribute Usage  
@@ -1943,7 +1945,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this property to change the style of a <xref:System.Windows.Controls.MenuItem> whose <xref:System.Windows.Controls.MenuItem.Role%2A> property is set to <xref:System.Windows.Controls.MenuItemRole?displayProperty=fullName>.  
+ Use this property to change the style of a <xref:System.Windows.Controls.MenuItem> whose <xref:System.Windows.Controls.MenuItem.Role%2A> property is set to <xref:System.Windows.Controls.MenuItemRole.SubmenuItem?displayProperty=nameWithType>.  
   
 <a name="xamlAttributeUsage_SubmenuItemTemplateKey"></a>   
 ## XAML Attribute Usage  
@@ -2036,7 +2038,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this property to change the style of a <xref:System.Windows.Controls.MenuItem> whose <xref:System.Windows.Controls.MenuItem.Role%2A> property is set to <xref:System.Windows.Controls.MenuItemRole?displayProperty=fullName>.  
+ Use this property to change the style of a <xref:System.Windows.Controls.MenuItem> whose <xref:System.Windows.Controls.MenuItem.Role%2A> property is set to <xref:System.Windows.Controls.MenuItemRole.TopLevelHeader?displayProperty=nameWithType>.  
   
 <a name="xamlAttributeUsage_TopLevelHeaderTemplateKey"></a>   
 ## XAML Attribute Usage  
@@ -2065,7 +2067,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this property to change the style of a <xref:System.Windows.Controls.MenuItem> whose <xref:System.Windows.Controls.MenuItem.Role%2A> property is set to <xref:System.Windows.Controls.MenuItemRole?displayProperty=fullName>.  
+ Use this property to change the style of a <xref:System.Windows.Controls.MenuItem> whose <xref:System.Windows.Controls.MenuItem.Role%2A> property is set to <xref:System.Windows.Controls.MenuItemRole.TopLevelItem?displayProperty=nameWithType>.  
   
 <a name="xamlAttributeUsage_TopLevelItemTemplateKey"></a>   
 ## XAML Attribute Usage  

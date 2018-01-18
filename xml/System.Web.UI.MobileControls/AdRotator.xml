@@ -39,7 +39,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.AdRotator> class uses the same configuration file as the Web Forms <xref:System.Web.UI.WebControls.AdRotator> class. The <xref:System.Web.UI.MobileControls.AdRotator?displayProperty=fullName> mobile control exposes many of the same properties and events as the <xref:System.Web.UI.WebControls.AdRotator?displayProperty=fullName> control, plus it adds mobile capability. The displayed advertisement changes whenever the page is refreshed.  
+ The <xref:System.Web.UI.MobileControls.AdRotator> class uses the same configuration file as the Web Forms <xref:System.Web.UI.WebControls.AdRotator> class. The <xref:System.Web.UI.MobileControls.AdRotator?displayProperty=nameWithType> mobile control exposes many of the same properties and events as the <xref:System.Web.UI.WebControls.AdRotator?displayProperty=nameWithType> control, plus it adds mobile capability. The displayed advertisement changes whenever the page is refreshed.  
   
  The <xref:System.Web.UI.MobileControls.AdRotator.AdvertisementFile%2A> property specifies the location of an XML file that contains advertisement information. This file must reside within the application domain. For security purposes, XML files should be in the App_Data folder, which is configured to not allow users direct access to XML files. If the <xref:System.Web.UI.MobileControls.AdRotator.AdvertisementFile%2A> property is empty, the <xref:System.Web.UI.MobileControls.AdRotator> control generates a single break tag as a placeholder. This is useful when you do not want to display an advertisement.  
   
@@ -59,8 +59,8 @@
   
  The `.aspx` file:  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileAdRotatorSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileAdRotatorSample/CS/MobileHome.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileAdRotatorSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileAdRotatorSample/VB/MobileHome.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileAdRotatorSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileAdRotatorSample/CS/MobileHome.aspx#1)]
+ [!code-aspx-vb[MobileAdRotatorSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileAdRotatorSample/VB/MobileHome.aspx#1)]  
   
  The sample `ads.xml` file (which must be located in the **App_Data** folder):  
   
@@ -69,6 +69,9 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
+    <altmember cref="P:System.Web.UI.MobileControls.AdRotator.AdvertisementFile" />
+    <altmember cref="P:System.Web.UI.MobileControls.Image.AlternateText" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -87,10 +90,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.AdRotator?displayProperty=fullName> mobile control exposes many of the same properties and events as the <xref:System.Web.UI.WebControls.AdRotator?displayProperty=fullName> control, plus it adds mobile capability.  
+ The <xref:System.Web.UI.MobileControls.AdRotator?displayProperty=nameWithType> mobile control exposes many of the same properties and events as the <xref:System.Web.UI.WebControls.AdRotator?displayProperty=nameWithType> control, plus it adds mobile capability.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
       </Docs>
     </Member>
     <Member MemberName="AdCreated">
@@ -132,6 +136,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
       </Docs>
     </Member>
     <Member MemberName="AdvertisementFile">
@@ -169,10 +174,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The file format and file name restrictions conform to those described for the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A?displayProperty=fullName> property.  
+ The file format and file name restrictions conform to those described for the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
       </Docs>
     </Member>
     <Member MemberName="CreateWebAdRotator">
@@ -199,6 +205,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
       </Docs>
     </Member>
     <Member MemberName="ImageKey">
@@ -239,8 +246,8 @@
   
  The `.aspx` file:  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileAdRotatorSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileAdRotatorSample/CS/MobileHome.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileAdRotatorSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileAdRotatorSample/VB/MobileHome.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileAdRotatorSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileAdRotatorSample/CS/MobileHome.aspx#1)]
+ [!code-aspx-vb[MobileAdRotatorSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileAdRotatorSample/VB/MobileHome.aspx#1)]  
   
  The sample `ads.xml` file (which must be located in the **App_Data** folder):  
   
@@ -248,6 +255,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
+        <altmember cref="P:System.Web.UI.MobileControls.AdRotator.ImageKey" />
       </Docs>
     </Member>
     <Member MemberName="KeywordFilter">
@@ -286,11 +295,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.MobileControls.AdRotator.KeywordFilter%2A> property to set the preference from a collection of images in the file referred by the <xref:System.Web.UI.MobileControls.AdRotator.AdvertisementFile%2A> property. For the complete sample code, see the <xref:System.Web.UI.MobileControls.AdRotator> class overview.  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileAdRotatorSample#4](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileAdRotatorSample/CS/MobileHome.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileAdRotatorSample#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileAdRotatorSample/VB/MobileHome.aspx#4)]  -->  
+ [!code-aspx-csharp[MobileAdRotatorSample#4](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileAdRotatorSample/CS/MobileHome.aspx#4)]
+ [!code-aspx-vb[MobileAdRotatorSample#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileAdRotatorSample/VB/MobileHome.aspx#4)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
       </Docs>
     </Member>
     <Member MemberName="NavigateUrlKey">
@@ -327,11 +337,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.MobileControls.AdRotator.NavigateUrlKey%2A> property to set the target URL for the advertisement. For the complete sample code, see the <xref:System.Web.UI.MobileControls.AdRotator> class overview.  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileAdRotatorSample#4](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileAdRotatorSample/CS/MobileHome.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileAdRotatorSample#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileAdRotatorSample/VB/MobileHome.aspx#4)]  -->  
+ [!code-aspx-csharp[MobileAdRotatorSample#4](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileAdRotatorSample/CS/MobileHome.aspx#4)]
+ [!code-aspx-vb[MobileAdRotatorSample#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileAdRotatorSample/VB/MobileHome.aspx#4)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
       </Docs>
     </Member>
     <Member MemberName="OnAdCreated">
@@ -360,6 +371,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AdRotator" />
       </Docs>
     </Member>
     <Member MemberName="Render">

@@ -41,6 +41,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Animation.ByteAnimationUsingKeyFrames" />
+    <altmember cref="T:System.Windows.Freezable" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +58,10 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.ByteAnimation" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Media.Animation.ByteAnimation.To" />
+        <altmember cref="P:System.Windows.Media.Animation.ByteAnimation.From" />
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.Duration" />
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.FillBehavior" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -76,6 +82,10 @@
         <param name="duration">The length of time the animation takes to play from start to finish, once. See the <see cref="P:System.Windows.Media.Animation.Timeline.Duration" /> property for more information.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.ByteAnimation" /> class that animates to the specified value over the specified duration. The starting value for the animation is the base value of the property being animated or the output from another animation.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Media.Animation.ByteAnimation.To" />
+        <altmember cref="P:System.Windows.Media.Animation.ByteAnimation.From" />
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.Duration" />
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.FillBehavior" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -98,6 +108,10 @@
         <param name="duration">The length of time the animation takes to play from start to finish, once. See the <see cref="P:System.Windows.Media.Animation.Timeline.Duration" /> property for more information.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.ByteAnimation" /> class that animates from the specified starting value to the specified destination value over the specified duration.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Media.Animation.ByteAnimation.To" />
+        <altmember cref="P:System.Windows.Media.Animation.ByteAnimation.From" />
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.Duration" />
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.FillBehavior" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -120,6 +134,10 @@
         <param name="fillBehavior">Specifies how the animation behaves when it is not active.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.ByteAnimation" /> class that animates to the specified value over the specified duration and has the specified fill behavior. The starting value for the animation is the base value of the property being animated or the output from another animation.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Media.Animation.ByteAnimation.To" />
+        <altmember cref="P:System.Windows.Media.Animation.ByteAnimation.From" />
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.Duration" />
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.FillBehavior" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -144,6 +162,10 @@
         <param name="fillBehavior">Specifies how the animation behaves when it is not active.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.ByteAnimation" /> class that animates from the specified starting value to the specified destination value over the specified duration and has the specified fill behavior.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Media.Animation.ByteAnimation.To" />
+        <altmember cref="P:System.Windows.Media.Animation.ByteAnimation.From" />
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.Duration" />
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.FillBehavior" />
       </Docs>
     </Member>
     <Member MemberName="By">
@@ -197,6 +219,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.ByteAnimation.From" />
+        <altmember cref="P:System.Windows.Media.Animation.ByteAnimation.To" />
       </Docs>
     </Member>
     <Member MemberName="ByProperty">
@@ -238,7 +262,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -261,6 +285,7 @@
         <summary>Creates a new instance of the <see cref="T:System.Windows.Media.Animation.ByteAnimation" />.</summary>
         <returns>The new instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.CreateInstanceCore" />
       </Docs>
     </Member>
     <Member MemberName="EasingFunction">
@@ -286,6 +311,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Animation.IEasingFunction" />
       </Docs>
     </Member>
     <Member MemberName="EasingFunctionProperty">
@@ -303,6 +329,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Media.Animation.ByteAnimation.EasingFunction" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Animation.IEasingFunction" />
       </Docs>
     </Member>
     <Member MemberName="From">
@@ -356,6 +383,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.ByteAnimation.By" />
+        <altmember cref="P:System.Windows.Media.Animation.ByteAnimation.To" />
       </Docs>
     </Member>
     <Member MemberName="FromProperty">
@@ -408,6 +437,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Animation.ByteAnimationBase.GetCurrentValueCore(System.Byte,System.Byte,System.Windows.Media.Animation.AnimationClock)" />
       </Docs>
     </Member>
     <Member MemberName="IsAdditive">
@@ -481,6 +511,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.RepeatBehavior" />
       </Docs>
     </Member>
     <Member MemberName="To">
@@ -534,6 +565,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.ByteAnimation.From" />
+        <altmember cref="P:System.Windows.Media.Animation.ByteAnimation.By" />
       </Docs>
     </Member>
     <Member MemberName="ToProperty">
@@ -553,5 +586,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.ByteAnimation" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

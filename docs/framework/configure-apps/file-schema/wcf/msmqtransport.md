@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 19d89f35-76ac-49dc-832b-e8bec2d5e33b
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;msmqTransport&gt;
 Causes a channel to transfers messages on the MSMQ transport when it is included in a custom binding.  
@@ -93,14 +95,14 @@ Causes a channel to transfers messages on the MSMQ transport when it is included
  This binding element is the default binding element used by the Message Queuing standard binding (`netMsmqBinding`).  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.MsmqTransportElement>   
- <xref:System.ServiceModel.Channels.MsmqTransportBindingElement>   
- <xref:System.ServiceModel.Channels.TransportBindingElement>   
- <xref:System.ServiceModel.Channels.CustomBinding>   
- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)   
- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)   
- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)   
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)   
+ <xref:System.ServiceModel.Configuration.MsmqTransportElement>  
+ <xref:System.ServiceModel.Channels.MsmqTransportBindingElement>  
+ <xref:System.ServiceModel.Channels.TransportBindingElement>  
+ <xref:System.ServiceModel.Channels.CustomBinding>  
+ [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)  
+ [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)  
+ [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
+ [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
  [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

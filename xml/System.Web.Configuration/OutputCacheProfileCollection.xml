@@ -38,6 +38,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -90,6 +91,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.OutputCacheProfile" /> object already exists in the collection or the collection is read only.</exception>
+        <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
       </Docs>
     </Member>
     <Member MemberName="AllKeys">
@@ -152,6 +154,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">The collection is read only.</exception>
+        <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
       </Docs>
     </Member>
     <Member MemberName="CreateNewElement">
@@ -203,6 +206,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -235,6 +239,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
       </Docs>
     </Member>
     <Member MemberName="GetElementKey">
@@ -289,6 +294,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -321,6 +327,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -353,6 +360,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -408,6 +416,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">There is no <see cref="T:System.Web.Configuration.OutputCacheProfile" /> object with the specified key in the collection, the element has already been removed, or the collection is read-only.</exception>
+        <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -445,6 +454,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">There is no <see cref="T:System.Web.Configuration.OutputCacheProfile" /> object with the specified key in the collection, the element has already been removed, or the collection is read-only.</exception>
+        <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
       </Docs>
     </Member>
     <Member MemberName="Set">
@@ -482,7 +492,26 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.OutputCacheProfileCollection" /> is read-only.</exception>
+        <altmember cref="T:System.Web.Configuration.OutputCacheProfile" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Get">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the specified <see cref="T:System.Web.Configuration.OutputCacheProfileCollection" /> element.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the specified <see cref="T:System.Web.Configuration.OutputCacheProfile" /> collection item.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

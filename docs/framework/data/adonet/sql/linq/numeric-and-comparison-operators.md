@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 25b4a26a-06f2-4f80-87a9-76705ed46197
 caps.latest.revision: 2
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Numeric and Comparison Operators
 Arithmetic and comparison operators work as expected in the common language runtime (CLR) except as follows:  
@@ -64,6 +66,6 @@ Arithmetic and comparison operators work as expected in the common language runt
     -   `>=`  
   
 ## See Also  
- [Data Types and Functions](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)   
- [C# Operators](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43)   
+ [Data Types and Functions](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)  
+ [C# Operators](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43)  
  [Operators](../../../../../visual-basic/language-reference/operators/index.md)

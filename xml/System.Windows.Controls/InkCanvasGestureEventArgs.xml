@@ -81,7 +81,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The collection returned by the <xref:System.Windows.Controls.InkCanvasGestureEventArgs.GetGestureRecognitionResults%2A> method is sorted by the <xref:System.Windows.Ink.GestureRecognitionResult.RecognitionConfidence%2A?displayProperty=fullName> property. For example, <xref:System.Windows.Controls.InkCanvasGestureEventArgs.GetGestureRecognitionResults%2A> might return a collection of <xref:System.Windows.Ink.GestureRecognitionResult> objects with the following values:  
+ The collection returned by the <xref:System.Windows.Controls.InkCanvasGestureEventArgs.GetGestureRecognitionResults%2A> method is sorted by the <xref:System.Windows.Ink.GestureRecognitionResult.RecognitionConfidence%2A?displayProperty=nameWithType> property. For example, <xref:System.Windows.Controls.InkCanvasGestureEventArgs.GetGestureRecognitionResults%2A> might return a collection of <xref:System.Windows.Ink.GestureRecognitionResult> objects with the following values:  
   
 |Index|ApplicationGesture|RecognitionConfidence|  
 |-----------|------------------------|---------------------------|  
@@ -120,6 +120,7 @@
         <param name="genericTarget">The target on which the provided handler should be invoked.</param>
         <summary>When overridden in a derived class, provides a way to invoke event handlers in a type-specific way, which can increase efficiency over the base implementation.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.RoutedEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Strokes">

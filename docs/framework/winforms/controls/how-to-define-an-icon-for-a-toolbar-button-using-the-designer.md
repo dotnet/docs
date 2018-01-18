@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "toolbars [Windows Forms], adding icons to buttons"
   - "examples [Windows Forms], toolbars"
@@ -23,6 +21,8 @@ caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Define an Icon for a ToolBar Button Using the Designer
 > [!NOTE]
@@ -50,7 +50,7 @@ manager: "wpickett"
 6.  In the **Properties** window that appears in the pane on the right side of the **ToolBarButton Collection Editor**, set the <xref:System.Windows.Forms.ToolBarButton.ImageIndex%2A> property of each toolbar button to one of the values in the list, which is drawn from the images you added to the <xref:System.Windows.Forms.ImageList> component.  
   
 ## See Also  
- <xref:System.Windows.Forms.ToolBar>   
- [How to: Trigger Menu Events for Toolbar Buttons](../../../../docs/framework/winforms/controls/how-to-trigger-menu-events-for-toolbar-buttons.md)   
- [ToolBar Control](../../../../docs/framework/winforms/controls/toolbar-control-windows-forms.md)   
+ <xref:System.Windows.Forms.ToolBar>  
+ [How to: Trigger Menu Events for Toolbar Buttons](../../../../docs/framework/winforms/controls/how-to-trigger-menu-events-for-toolbar-buttons.md)  
+ [ToolBar Control](../../../../docs/framework/winforms/controls/toolbar-control-windows-forms.md)  
  [ImageList Component](../../../../docs/framework/winforms/controls/imagelist-component-windows-forms.md)

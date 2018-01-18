@@ -16,9 +16,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management?displayProperty=fullName> namespace contains the health event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
+ ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management?displayProperty=nameWithType> namespace contains the health event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
   
- This class is not intended to be used from your code. It is created, configured, and used by the ASP.NET health-monitoring system to send event notifications by e-mail. You can define an e-mail Web event provider in a configuration file, as demonstrated in the Example section of this topic. In addition, you can configure the providers section programmatically by accessing the <xref:System.Web.Configuration.HealthMonitoringSection.Providers%2A?displayProperty=fullName> property.  
+ This class is not intended to be used from your code. It is created, configured, and used by the ASP.NET health-monitoring system to send event notifications by e-mail. You can define an e-mail Web event provider in a configuration file, as demonstrated in the Example section of this topic. In addition, you can configure the providers section programmatically by accessing the <xref:System.Web.Configuration.HealthMonitoringSection.Providers%2A?displayProperty=nameWithType> property.  
   
  The e-mail this class produces is defined and formatted using a template. This template consists of markup code defined in a standard .aspx file that outputs the text for the message body. The event information used by the template is provided by a <xref:System.Web.Management.MailEventNotificationInfo> object that is available from the static <xref:System.Web.Management.TemplatedMailWebEventProvider.CurrentNotification%2A> property of this class.  
   
@@ -107,6 +107,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Management.WebEventProvider" />
+    <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+    <altmember cref="T:System.Web.Management.MailWebEventProvider" />
+    <altmember cref="T:System.Web.Management.MailEventNotificationInfo" />
   </Docs>
   <Members>
     <Member MemberName="CurrentNotification">
@@ -132,6 +136,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.MailEventNotificationInfo" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">

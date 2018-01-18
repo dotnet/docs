@@ -40,6 +40,10 @@
     <block subset="none" type="overrides">
       <para>When you inherit from <see cref="T:System.Windows.Forms.BindingManagerBase" />, you must override the following abstract members: <see cref="M:System.Windows.Forms.BindingManagerBase.AddNew" />, <see cref="P:System.Windows.Forms.BindingManagerBase.Count" />, <see cref="M:System.Windows.Forms.BindingManagerBase.CancelCurrentEdit" />, <see cref="P:System.Windows.Forms.BindingManagerBase.Current" />, <see cref="M:System.Windows.Forms.BindingManagerBase.EndCurrentEdit" />, <see cref="M:System.Windows.Forms.BindingManagerBase.GetItemProperties" />, <see cref="M:System.Windows.Forms.BindingManagerBase.OnCurrentChanged(System.EventArgs)" />, <see cref="P:System.Windows.Forms.BindingManagerBase.Position" />, <see cref="M:System.Windows.Forms.BindingManagerBase.RemoveAt(System.Int32)" />, <see cref="M:System.Windows.Forms.BindingManagerBase.ResumeBinding" />, <see cref="M:System.Windows.Forms.BindingManagerBase.SuspendBinding" />, and <see cref="M:System.Windows.Forms.BindingManagerBase.UpdateIsBinding" />.</para>
     </block>
+    <altmember cref="T:System.Windows.Forms.BindingSource" />
+    <altmember cref="T:System.Windows.Forms.BindingContext" />
+    <altmember cref="T:System.Windows.Forms.CurrencyManager" />
+    <altmember cref="T:System.Windows.Forms.PropertyManager" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +66,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingManagerBase.Bindings" />
       </Docs>
     </Member>
     <Member MemberName="AddNew">
@@ -95,6 +100,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.AddingNewEventArgs.NewObject" />
+        <altmember cref="T:System.ComponentModel.AddingNewEventArgs" />
+        <altmember cref="T:System.ComponentModel.IEditableObject" />
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.CancelCurrentEdit" />
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.EndCurrentEdit" />
       </Docs>
     </Member>
     <Member MemberName="BindingComplete">
@@ -133,6 +143,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.OnBindingComplete(System.Windows.Forms.BindingCompleteEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.BindingCompleteEventArgs" />
+        <altmember cref="P:System.Windows.Forms.BindingManagerBase.Bindings" />
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.SuspendBinding" />
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.ResumeBinding" />
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.UpdateIsBinding" />
       </Docs>
     </Member>
     <Member MemberName="Bindings">
@@ -162,6 +178,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Binding" />
+        <altmember cref="T:System.Windows.Forms.BindingContext" />
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.SuspendBinding" />
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.ResumeBinding" />
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.UpdateIsBinding" />
+        <altmember cref="E:System.Windows.Forms.BindingManagerBase.BindingComplete" />
       </Docs>
     </Member>
     <Member MemberName="CancelCurrentEdit">
@@ -198,6 +220,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.AddNew" />
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.EndCurrentEdit" />
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.CancelCurrentEdit" />
+        <altmember cref="T:System.ComponentModel.IEditableObject" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -232,6 +258,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.BindingManagerBase.Position" />
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -269,6 +296,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.BindingManagerBase.CurrentChanged" />
+        <altmember cref="P:System.Windows.Forms.BindingManagerBase.Position" />
       </Docs>
     </Member>
     <Member MemberName="CurrentChanged">
@@ -304,6 +333,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.OnCurrentChanged(System.EventArgs)" />
+        <altmember cref="E:System.Windows.Forms.BindingManagerBase.PositionChanged" />
+        <altmember cref="E:System.Windows.Forms.BindingManagerBase.CurrentItemChanged" />
+        <altmember cref="P:System.Windows.Forms.BindingManagerBase.Current" />
       </Docs>
     </Member>
     <Member MemberName="CurrentItemChanged">
@@ -329,7 +362,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingManagerBase.CurrentItemChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingManagerBase.CurrentItemChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.BindingManagerBase>, such as a <xref:System.Windows.Forms.PropertyManager> or <xref:System.Windows.Forms.CurrencyManager>. Then name the instance `BindingManagerBase1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingManagerBase.CurrentItemChanged> event.  
   
@@ -338,6 +371,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.OnCurrentItemChanged(System.EventArgs)" />
+        <altmember cref="E:System.Windows.Forms.BindingManagerBase.CurrentChanged" />
+        <altmember cref="E:System.Windows.Forms.BindingManagerBase.CurrentItemChanged" />
       </Docs>
     </Member>
     <Member MemberName="DataError">
@@ -365,7 +401,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingManagerBase.DataError> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingManagerBase.DataError> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.BindingManagerBase>, such as a <xref:System.Windows.Forms.PropertyManager> or <xref:System.Windows.Forms.CurrencyManager>. Then name the instance `BindingManagerBase1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingManagerBase.DataError> event.  
   
@@ -408,6 +444,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.CancelCurrentEdit" />
       </Docs>
     </Member>
     <Member MemberName="GetItemProperties">
@@ -438,6 +475,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.GetListName(System.Collections.ArrayList)" />
       </Docs>
     </Member>
     <Member MemberName="GetItemProperties">
@@ -469,6 +507,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.GetListName(System.Collections.ArrayList)" />
       </Docs>
     </Member>
     <Member MemberName="GetItemProperties">
@@ -513,6 +552,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.GetListName(System.Collections.ArrayList)" />
       </Docs>
     </Member>
     <Member MemberName="GetListName">
@@ -620,6 +660,10 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.BindingManagerBase.OnCurrentChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.BindingManagerBase.OnCurrentChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.BindingManagerBase.CurrentChanged" />
+        <altmember cref="E:System.Windows.Forms.BindingManagerBase.CurrentItemChanged" />
+        <altmember cref="P:System.Windows.Forms.BindingManagerBase.Current" />
+        <altmember cref="P:System.Windows.Forms.BindingManagerBase.Position" />
       </Docs>
     </Member>
     <Member MemberName="onCurrentChangedHandler">
@@ -637,6 +681,7 @@
       <Docs>
         <summary>Specifies the event handler for the <see cref="E:System.Windows.Forms.BindingManagerBase.CurrentChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.Forms.BindingManagerBase.CurrentChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnCurrentItemChanged">
@@ -670,6 +715,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.BindingManagerBase.OnCurrentItemChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.BindingManagerBase.OnCurrentItemChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.BindingManagerBase.CurrentItemChanged" />
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.OnCurrentChanged(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.BindingManagerBase.Current" />
       </Docs>
     </Member>
     <Member MemberName="OnDataError">
@@ -720,6 +768,7 @@
       <Docs>
         <summary>Specifies the event handler for the <see cref="E:System.Windows.Forms.BindingManagerBase.PositionChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.Forms.BindingManagerBase.PositionChanged" />
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -756,6 +805,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.BindingManagerBase.PositionChanged" />
+        <altmember cref="P:System.Windows.Forms.BindingManagerBase.Current" />
+        <altmember cref="P:System.Windows.Forms.BindingManagerBase.Count" />
       </Docs>
     </Member>
     <Member MemberName="PositionChanged">
@@ -816,6 +868,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.PushData" />
+        <altmember cref="P:System.Windows.Forms.BindingManagerBase.Bindings" />
       </Docs>
     </Member>
     <Member MemberName="PushData">
@@ -837,12 +891,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.BindingManagerBase.PushData%2A> method is a programmatic way to push information from the data source into the data-bound control. This method is not required if the data source implements the <xref:System.ComponentModel.IBindingList?displayProperty=fullName> interface, because the <xref:System.ComponentModel.IBindingList.ListChanged?displayProperty=fullName> event should automatically cause the control to be updated through its currency manager.  
+ The <xref:System.Windows.Forms.BindingManagerBase.PushData%2A> method is a programmatic way to push information from the data source into the data-bound control. This method is not required if the data source implements the <xref:System.ComponentModel.IBindingList?displayProperty=nameWithType> interface, because the <xref:System.ComponentModel.IBindingList.ListChanged?displayProperty=nameWithType> event should automatically cause the control to be updated through its currency manager.  
   
  If this method is issued when a <xref:System.Windows.Forms.BindingManagerBase.PullData%2A> operation is being performed, the <xref:System.Windows.Forms.BindingManagerBase.PushData%2A> method returns immediately with a value of `true`.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.PullData" />
+        <altmember cref="P:System.Windows.Forms.BindingManagerBase.Bindings" />
+        <altmember cref="T:System.ComponentModel.IBindingList" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -881,6 +938,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">There is no row at the specified <paramref name="index" />.</exception>
+        <altmember cref="P:System.Windows.Forms.BindingManagerBase.Position" />
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.AddNew" />
       </Docs>
     </Member>
     <Member MemberName="ResumeBinding">
@@ -913,6 +972,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.BindingManagerBase.BindingComplete" />
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.SuspendBinding" />
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.UpdateIsBinding" />
+        <altmember cref="P:System.Windows.Forms.BindingManagerBase.Bindings" />
       </Docs>
     </Member>
     <Member MemberName="SuspendBinding">
@@ -945,6 +1008,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.BindingManagerBase.BindingComplete" />
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.ResumeBinding" />
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.UpdateIsBinding" />
+        <altmember cref="P:System.Windows.Forms.BindingManagerBase.Bindings" />
       </Docs>
     </Member>
     <Member MemberName="UpdateIsBinding">
@@ -970,7 +1037,20 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.BindingManagerBase.BindingComplete" />
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.SuspendBinding" />
+        <altmember cref="M:System.Windows.Forms.BindingManagerBase.ResumeBinding" />
+        <altmember cref="P:System.Windows.Forms.BindingManagerBase.Bindings" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetItemProperties">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the list of property descriptors for the data source.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

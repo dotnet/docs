@@ -90,7 +90,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.OrderedDictionary> collection must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.OrderedDictionary> collection must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
    
   
@@ -138,7 +138,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.OrderedDictionary> collection must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.OrderedDictionary> collection must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  The custom comparer enables such scenarios as doing lookups with case-insensitive strings.  
   
@@ -175,7 +175,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.OrderedDictionary> collection must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.OrderedDictionary> collection must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -216,7 +216,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.OrderedDictionary> collection must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.OrderedDictionary> collection must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  The custom comparer enables such scenarios as doing lookups with case-insensitive strings.  
   
@@ -254,7 +254,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.OrderedDictionary> collection must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.OrderedDictionary> collection must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1207,5 +1207,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the specified value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.OrderedDictionary" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

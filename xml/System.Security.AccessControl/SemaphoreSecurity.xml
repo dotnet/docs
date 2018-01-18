@@ -54,12 +54,12 @@
   
 -   Adding or removing access control entries in ways that do not maintain the canonical ordering.  
   
- To modify Windows access control security for a named semaphore, use the <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=fullName> method to get the <xref:System.Security.AccessControl.SemaphoreSecurity> object. Modify the security object by adding and removing rules, and then use the <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=fullName> method to reattach it.  
+ To modify Windows access control security for a named semaphore, use the <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=nameWithType> method to get the <xref:System.Security.AccessControl.SemaphoreSecurity> object. Modify the security object by adding and removing rules, and then use the <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=nameWithType> method to reattach it.  
   
 > [!IMPORTANT]
->  Changes you make to a <xref:System.Security.AccessControl.SemaphoreSecurity> object do not affect the access levels of the named semaphore until you call the <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=fullName> method to assign the altered security object to the named semaphore.  
+>  Changes you make to a <xref:System.Security.AccessControl.SemaphoreSecurity> object do not affect the access levels of the named semaphore until you call the <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=nameWithType> method to assign the altered security object to the named semaphore.  
   
- To copy access control security from one semaphore to another, use the <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=fullName> method to get a <xref:System.Security.AccessControl.SemaphoreSecurity> object representing the access and audit rules for the first semaphore, then use the <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=fullName> method, or a constructor that accepts a <xref:System.Security.AccessControl.SemaphoreSecurity> object, to assign those rules to the second semaphore.  
+ To copy access control security from one semaphore to another, use the <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=nameWithType> method to get a <xref:System.Security.AccessControl.SemaphoreSecurity> object representing the access and audit rules for the first semaphore, then use the <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=nameWithType> method, or a constructor that accepts a <xref:System.Security.AccessControl.SemaphoreSecurity> object, to assign those rules to the second semaphore.  
   
  Users with an investment in the security descriptor definition language (SDDL) can use the <xref:System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorSddlForm%2A> method to set access rules for a named semaphore, and the <xref:System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorSddlForm%2A> method to obtain a string that represents the access rules in SDDL format. This is not recommended for new development.  
   
@@ -72,13 +72,18 @@
  The following code example demonstrates the separation between <xref:System.Security.AccessControl.AccessControlType.Allow> rules and <xref:System.Security.AccessControl.AccessControlType.Deny> rules, and shows the combination of rights in compatible rules. The example creates a <xref:System.Security.AccessControl.SemaphoreSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType.Allow> rule.  
   
 > [!NOTE]
->  This example does not attach the security object to a <xref:System.Threading.Semaphore> object. Examples that attach security objects can be found in <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=fullName>.  
+>  This example does not attach the security object to a <xref:System.Threading.Semaphore> object. Examples that attach security objects can be found in <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=nameWithType> and <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Security.AccessControl.SemaphoreSecurity.AddAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.SemaphoreSecurity.AddAccessRule/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.SemaphoreSecurity.AddAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.SemaphoreSecurity.AddAccessRule/VB/source.vb#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.AccessControl.SemaphoreAccessRule" />
+    <altmember cref="T:System.Security.AccessControl.SemaphoreAuditRule" />
+    <altmember cref="T:System.Security.AccessControl.SemaphoreRights" />
+    <altmember cref="M:System.Threading.Semaphore.GetAccessControl" />
+    <altmember cref="M:System.Threading.Semaphore.SetAccessControl(System.Security.AccessControl.SemaphoreSecurity)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -302,7 +307,7 @@
  The following code example demonstrates the separation between <xref:System.Security.AccessControl.AccessControlType.Allow> rules and <xref:System.Security.AccessControl.AccessControlType.Deny> rules, and shows the combination of rights in compatible rules. The example creates a <xref:System.Security.AccessControl.SemaphoreSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType.Allow> rule.  
   
 > [!NOTE]
->  This example does not attach the security object to a <xref:System.Threading.Semaphore> object. Examples that attach security objects can be found in <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=fullName>.  
+>  This example does not attach the security object to a <xref:System.Threading.Semaphore> object. Examples that attach security objects can be found in <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=nameWithType> and <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Security.AccessControl.SemaphoreSecurity.AddAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.SemaphoreSecurity.AddAccessRule/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.SemaphoreSecurity.AddAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.SemaphoreSecurity.AddAccessRule/VB/source.vb#1)]  
@@ -479,7 +484,7 @@
  The example creates a <xref:System.Security.AccessControl.SemaphoreSecurity> object and adds rules that allow and deny various rights for the current user. The rights allowed include <xref:System.Security.AccessControl.SemaphoreRights.Modify>, <xref:System.Security.AccessControl.SemaphoreRights.ReadPermissions>, and <xref:System.Security.AccessControl.SemaphoreRights.Synchronize>. The example then creates a new rule for the current user, including <xref:System.Security.AccessControl.SemaphoreRights.ReadPermissions> and <xref:System.Security.AccessControl.SemaphoreRights.TakeOwnership> rights, and uses that rule with the <xref:System.Security.AccessControl.SemaphoreSecurity.RemoveAccessRule%2A> method to remove <xref:System.Security.AccessControl.SemaphoreRights.ReadPermissions> from the <xref:System.Security.AccessControl.AccessControlType.Allow> rule in the <xref:System.Security.AccessControl.SemaphoreSecurity> object. The extraneous <xref:System.Security.AccessControl.SemaphoreRights.TakeOwnership> right in `rule` is ignored.  
   
 > [!NOTE]
->  This example does not attach the security object to a <xref:System.Threading.Semaphore> object. Examples that attach security objects can be found in <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=fullName>.  
+>  This example does not attach the security object to a <xref:System.Threading.Semaphore> object. Examples that attach security objects can be found in <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=nameWithType> and <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Security.AccessControl.SemaphoreSecurity.RemoveAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.SemaphoreSecurity.RemoveAccessRule/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.SemaphoreSecurity.RemoveAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.SemaphoreSecurity.RemoveAccessRule/VB/source.vb#1)]  
@@ -528,7 +533,7 @@
  The example creates a <xref:System.Security.AccessControl.SemaphoreSecurity> object, adds rules that allow and deny various rights for the current user, and then merges additional rights into the <xref:System.Security.AccessControl.AccessControlType.Allow> rule. The example then creates a new rule that allows the current user to take ownership, and uses that rule to remove the <xref:System.Security.AccessControl.AccessControlType.Allow> rule from the <xref:System.Security.AccessControl.SemaphoreSecurity> object.  
   
 > [!NOTE]
->  This example does not attach the security object to a <xref:System.Threading.Semaphore> object. Examples that attach security objects can be found in <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=fullName>.  
+>  This example does not attach the security object to a <xref:System.Threading.Semaphore> object. Examples that attach security objects can be found in <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=nameWithType> and <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Security.AccessControl.SemaphoreSecurity.RemoveAccessRuleAll#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.SemaphoreSecurity.RemoveAccessRuleAll/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.SemaphoreSecurity.RemoveAccessRuleAll#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.SemaphoreSecurity.RemoveAccessRuleAll/VB/source.vb#1)]  
@@ -580,7 +585,7 @@
  The example creates a <xref:System.Security.AccessControl.SemaphoreSecurity> object, adds rules that allow and deny various rights for the current user, and then merges additional rights into the <xref:System.Security.AccessControl.AccessControlType.Allow> access rule. The example then passes the original <xref:System.Security.AccessControl.AccessControlType.Allow> rule to the <xref:System.Security.AccessControl.SemaphoreSecurity.RemoveAccessRuleSpecific%2A> method, and displays the results, showing that nothing is deleted. The example then constructs a rule that matches the <xref:System.Security.AccessControl.AccessControlType.Allow> rule in the <xref:System.Security.AccessControl.SemaphoreSecurity> object, and successfully uses the <xref:System.Security.AccessControl.SemaphoreSecurity.RemoveAccessRuleSpecific%2A> method to remove the rule.  
   
 > [!NOTE]
->  This example does not attach the security object to a <xref:System.Threading.Semaphore> object. Examples that attach security objects can be found in <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=fullName>.  
+>  This example does not attach the security object to a <xref:System.Threading.Semaphore> object. Examples that attach security objects can be found in <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=nameWithType> and <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Security.AccessControl.SemaphoreSecurity.RemoveAccessRuleSpecific#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.SemaphoreSecurity.RemoveAccessRuleSpecific/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.SemaphoreSecurity.RemoveAccessRuleSpecific#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.SemaphoreSecurity.RemoveAccessRuleSpecific/VB/source.vb#1)]  
@@ -745,7 +750,7 @@
  The example creates a <xref:System.Security.AccessControl.SemaphoreSecurity> object and adds rules that allow and deny various rights for the current user. The example then creates a new rule that allows the current user full control, and uses the <xref:System.Security.AccessControl.SemaphoreSecurity.ResetAccessRule%2A> method to replace both of the existing rules with the new rule.  
   
 > [!NOTE]
->  This example does not attach the security object to a <xref:System.Threading.Semaphore> object. Examples that attach security objects can be found in <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=fullName>.  
+>  This example does not attach the security object to a <xref:System.Threading.Semaphore> object. Examples that attach security objects can be found in <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=nameWithType> and <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Security.AccessControl.SemaphoreSecurity.ResetAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.SemaphoreSecurity.ResetAccessRule/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.SemaphoreSecurity.ResetAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.SemaphoreSecurity.ResetAccessRule/VB/source.vb#1)]  
@@ -796,7 +801,7 @@
  The example creates a <xref:System.Security.AccessControl.SemaphoreSecurity> object and adds rules that allow and deny various rights for the current user. The example then creates a new rule that allows the current user full control, and uses the <xref:System.Security.AccessControl.SemaphoreSecurity.SetAccessRule%2A> method to replace the existing Allow rule with the new rule. The rule that denies access is not affected.  
   
 > [!NOTE]
->  This example does not attach the security object to a <xref:System.Threading.Semaphore> object. Examples that attach security objects can be found in <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=fullName>.  
+>  This example does not attach the security object to a <xref:System.Threading.Semaphore> object. Examples that attach security objects can be found in <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=nameWithType> and <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Security.AccessControl.SemaphoreSecurity.SetAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.SemaphoreSecurity.SetAccessRule/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.SemaphoreSecurity.SetAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.SemaphoreSecurity.SetAccessRule/VB/source.vb#1)]  
@@ -843,5 +848,15 @@
           <paramref name="rule" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.SemaphoreSecurity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

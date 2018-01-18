@@ -32,6 +32,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.ImageDrawing" />
+    <altmember cref="T:System.Windows.Media.GeometryDrawing" />
+    <altmember cref="T:System.Windows.Media.GlyphRunDrawing" />
+    <altmember cref="T:System.Windows.Media.DrawingGroup" />
+    <altmember cref="T:System.Windows.Media.VideoDrawing" />
+    <altmember cref="T:System.Windows.Media.DrawingBrush" />
   </Docs>
   <Members>
     <Member MemberName="Bounds">
@@ -74,7 +80,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -102,7 +108,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

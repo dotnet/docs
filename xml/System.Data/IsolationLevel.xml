@@ -80,7 +80,7 @@
   
  If the transaction allows the behavior, the two Select operations will get the different results.  
   
- The ExchangeValuesThreads class demonstrates the difference between the Serializable and Snapshot transaction. For the the Serializable transaction, threads will operate in the following order:  
+ The ExchangeValuesThreads class demonstrates the difference between the Serializable and Snapshot transaction. For the Serializable transaction, threads will operate in the following order:  
   
 -   In first thread, get the Price of product(ProductId=2) and store in the variable.  
   

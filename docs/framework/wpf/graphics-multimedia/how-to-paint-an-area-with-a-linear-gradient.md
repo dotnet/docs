@@ -10,14 +10,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "linear gradients, painting with"
-  - "brushes, painting with linear gradients"
-  - "painting, with linear gradients"
+  - "linear gradients [WPF], painting with"
+  - "brushes [WPF], painting with linear gradients"
+  - "painting [WPF], with linear gradients"
 ms.assetid: 00e0cd04-48c0-4ec5-850e-d321beb37a34
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Paint an Area with a Linear Gradient
 This example shows how to use the <xref:System.Windows.Media.LinearGradientBrush> class to paint an area with a linear gradient. In the following example, the <xref:System.Windows.Shapes.Shape.Fill%2A> of a <xref:System.Windows.Shapes.Rectangle> is painted with a diagonal linear gradient that transitions from yellow to red to blue to lime green.  
@@ -52,6 +54,6 @@ This example shows how to use the <xref:System.Windows.Media.LinearGradientBrush
  ![Vertical linear gradient](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-verticallgb.jpg "graphicsmm_VerticalLGB")  
   
 > [!NOTE]
->  The examples in this topic use the default coordinate system for setting start points and end points. The default coordinate system is relative to a bounding box: 0 indicates 0 percent of the bounding box, and 1 indicates 100 percent of the bounding box. You can change this coordinate system by setting the <xref:System.Windows.Media.GradientBrush.MappingMode%2A> property to the value <xref:System.Windows.Media.BrushMappingMode.Absolute?displayProperty=fullName>. An absolute coordinate system is not relative to a bounding box. Values are interpreted directly in local space.  
+>  The examples in this topic use the default coordinate system for setting start points and end points. The default coordinate system is relative to a bounding box: 0 indicates 0 percent of the bounding box, and 1 indicates 100 percent of the bounding box. You can change this coordinate system by setting the <xref:System.Windows.Media.GradientBrush.MappingMode%2A> property to the value <xref:System.Windows.Media.BrushMappingMode.Absolute?displayProperty=nameWithType>. An absolute coordinate system is not relative to a bounding box. Values are interpreted directly in local space.  
   
  For additional examples, see [Brushes Sample](http://go.microsoft.com/fwlink/?LinkID=159973). For more information about gradients and other types of brushes, see [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md).

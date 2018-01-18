@@ -42,9 +42,9 @@
 > [!NOTE]
 >  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/collections/generic/ienumerable.cs#3acf01620172c7f0). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
   
- <xref:System.Collections.Generic.IEnumerable%601> is the base interface for collections in the <xref:System.Collections.Generic> namespace such as <xref:System.Collections.Generic.List%601>, <xref:System.Collections.Generic.Dictionary%602>, and <xref:System.Collections.Generic.Stack%601> and other generic collections such as <xref:System.Collections.ObjectModel.ObservableCollection%601> and <xref:System.Collections.Concurrent.ConcurrentStack%601>. Collections that implement <xref:System.Collections.Generic.IEnumerable%601> can be enumerated by using the `foreach` statement. For the non-generic version of this interface, see <xref:System.Collections.IEnumerable?displayProperty=fullName>.  
+ <xref:System.Collections.Generic.IEnumerable%601> is the base interface for collections in the <xref:System.Collections.Generic> namespace such as <xref:System.Collections.Generic.List%601>, <xref:System.Collections.Generic.Dictionary%602>, and <xref:System.Collections.Generic.Stack%601> and other generic collections such as <xref:System.Collections.ObjectModel.ObservableCollection%601> and <xref:System.Collections.Concurrent.ConcurrentStack%601>. Collections that implement <xref:System.Collections.Generic.IEnumerable%601> can be enumerated by using the `foreach` statement. For the non-generic version of this interface, see <xref:System.Collections.IEnumerable?displayProperty=nameWithType>.  
   
- For the non-generic version of this interface, see <xref:System.Collections.IEnumerable?displayProperty=fullName>.  
+ For the non-generic version of this interface, see <xref:System.Collections.IEnumerable?displayProperty=nameWithType>.  
   
  <xref:System.Collections.Generic.IEnumerable%601> contains a single method that you must implement when implementing this interface; <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A>, which returns an <xref:System.Collections.Generic.IEnumerator%601> object. The returned <xref:System.Collections.Generic.IEnumerator%601> provides the ability to iterate through the collection by exposing a <xref:System.Collections.Generic.IEnumerator%601.Current%2A> property.  
   
@@ -64,6 +64,8 @@
       <para>
         <see cref="T:System.Collections.Generic.IEnumerable`1" /> is included for parity with non-generic collections; implementing <see cref="T:System.Collections.Generic.IEnumerable`1" /> allows a generic collection to be passed to a method that expects an <see cref="T:System.Collections.IEnumerable" /> object.</para>
     </block>
+    <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
+    <altmember cref="N:System.Collections" />
   </Docs>
   <Members>
     <Member MemberName="GetEnumerator">
@@ -109,7 +111,7 @@
   
  An enumerator does not have exclusive access to the collection so an enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is invalidated and you may get unexpected results. Also, enumerating a collection is not a thread-safe procedure. To guarantee thread-safety, you should lock the collection during enumerator or implement synchronization on the collection.  
   
- Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace aren't synchronized.  
+ Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace aren't synchronized.  
   
    
   
@@ -123,6 +125,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
       </Docs>
     </Member>
   </Members>

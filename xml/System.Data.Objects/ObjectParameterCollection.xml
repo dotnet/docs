@@ -370,5 +370,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Contains">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Checks for the existence of a specified <see cref="T:System.Data.Objects.ObjectParameter" /> in the collection by reference.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

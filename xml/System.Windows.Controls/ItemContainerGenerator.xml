@@ -31,12 +31,13 @@
   
  Each <xref:System.Windows.Controls.ItemsControl> type has a corresponding container type. Container elements are the objects that contain the data items in the item collection. For example, for <xref:System.Windows.Controls.ListBox>, the generated containers are <xref:System.Windows.Controls.ListBoxItem> controls; for <xref:System.Windows.Controls.ComboBox>, they are <xref:System.Windows.Controls.ComboBoxItem> controls.  
   
- The <xref:System.Windows.Controls.ItemsControl> generates its items through the <xref:System.Windows.Controls.Primitives.IItemContainerGenerator> interface. The <xref:System.Windows.Controls.ItemsControl.ItemContainerGenerator%2A> property of the <xref:System.Windows.Controls.ItemsControl> is of type <xref:System.Windows.Controls.ItemContainerGenerator>, which implements the <xref:System.Windows.Controls.Primitives.IItemContainerGenerator> interface. Therefore, you can access the <xref:System.Windows.Controls.ItemContainerGenerator> object associated with your <xref:System.Windows.Controls.ItemsControl> using the <xref:System.Windows.Controls.ItemsControl.ItemContainerGenerator%2A> property. For example, if you have a data-bound <xref:System.Windows.Controls.TreeView>, and you want to get a <xref:System.Windows.Controls.TreeViewItem> based on its index or its associated data item, you can use the <xref:System.Windows.Controls.ItemContainerGenerator.ContainerFromIndex%2A?displayProperty=fullName> or the <xref:System.Windows.Controls.ItemContainerGenerator.ContainerFromItem%2A?displayProperty=fullName> method. Alternatively, you can use the <xref:System.Windows.Controls.ItemContainerGenerator.IndexFromContainer%2A?displayProperty=fullName> or the <xref:System.Windows.Controls.ItemContainerGenerator.ItemFromContainer%2A?displayProperty=fullName> method to get the index or data item associated with a given generated container element.  
+ The <xref:System.Windows.Controls.ItemsControl> generates its items through the <xref:System.Windows.Controls.Primitives.IItemContainerGenerator> interface. The <xref:System.Windows.Controls.ItemsControl.ItemContainerGenerator%2A> property of the <xref:System.Windows.Controls.ItemsControl> is of type <xref:System.Windows.Controls.ItemContainerGenerator>, which implements the <xref:System.Windows.Controls.Primitives.IItemContainerGenerator> interface. Therefore, you can access the <xref:System.Windows.Controls.ItemContainerGenerator> object associated with your <xref:System.Windows.Controls.ItemsControl> using the <xref:System.Windows.Controls.ItemsControl.ItemContainerGenerator%2A> property. For example, if you have a data-bound <xref:System.Windows.Controls.TreeView>, and you want to get a <xref:System.Windows.Controls.TreeViewItem> based on its index or its associated data item, you can use the <xref:System.Windows.Controls.ItemContainerGenerator.ContainerFromIndex%2A?displayProperty=nameWithType> or the <xref:System.Windows.Controls.ItemContainerGenerator.ContainerFromItem%2A?displayProperty=nameWithType> method. Alternatively, you can use the <xref:System.Windows.Controls.ItemContainerGenerator.IndexFromContainer%2A?displayProperty=nameWithType> or the <xref:System.Windows.Controls.ItemContainerGenerator.ItemFromContainer%2A?displayProperty=nameWithType> method to get the index or data item associated with a given generated container element.  
   
  Apart from those usages, the <xref:System.Windows.Controls.Primitives.IItemContainerGenerator> interface is used in advanced scenarios. Typically, advanced applications that have their own implementation of a virtualizing panel call members of the interface.  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Controls.ItemsControl.ItemContainerGenerator" />
   </Docs>
   <Members>
     <Member MemberName="ContainerFromIndex">
@@ -132,7 +133,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method is identical to calling the <xref:System.Windows.Controls.ItemContainerGenerator.IndexFromContainer%28System.Windows.DependencyObject%2CSystem.Boolean%29?displayProperty=fullName> method and passing `false` to the `returnLocalIndex` parameter.  
+ Calling this method is identical to calling the <xref:System.Windows.Controls.ItemContainerGenerator.IndexFromContainer%28System.Windows.DependencyObject%2CSystem.Boolean%29?displayProperty=nameWithType> method and passing `false` to the `returnLocalIndex` parameter.  
   
  ]]></format>
         </remarks>
@@ -271,6 +272,8 @@
       <Docs>
         <summary>The <see cref="E:System.Windows.Controls.ItemContainerGenerator.StatusChanged" /> event is raised by a <see cref="T:System.Windows.Controls.ItemContainerGenerator" /> to inform controls that its status has changed.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.ItemContainerGenerator.Status" />
+        <altmember cref="T:System.Windows.Controls.Primitives.GeneratorStatus" />
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext">
@@ -294,7 +297,7 @@
     </Member>
     <Member MemberName="System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext">
       <MemberSignature Language="C#" Value="System.Windows.DependencyObject IItemContainerGenerator.GenerateNext (out bool isNewlyRealized);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Windows.DependencyObject System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext(bool isNewlyRealized) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Windows.DependencyObject System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext([out] bool&amp; isNewlyRealized) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.System#Windows#Controls#Primitives#IItemContainerGenerator#GenerateNext(System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -542,5 +545,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the container element used to display the next item.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IndexFromContainer">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the index to an item that corresponds to the specified, generated <see cref="T:System.Windows.UIElement" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Prepares the generator to generate items, starting at the specified GeneratorPosition, and in the specified GeneratorDirection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

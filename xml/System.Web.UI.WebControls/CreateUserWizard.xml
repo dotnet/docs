@@ -113,7 +113,7 @@
   
 <a name="formatting_using_layout_templates"></a>   
 ## Formatting Using Layout Templates  
- The <xref:System.Web.UI.WebControls.CreateUserWizard> control lets you specify the layout of the control without requiring you to use an HTML `table` element. Instead, you can use a `LayoutTemplate` element to specify the layout. In the layout template, you create placeholder controls to indicate where items should be dynamically inserted into the control. (This is similar to how the template model for the <xref:System.Web.UI.WebControls.ListView> control works.) For more information, see the <xref:System.Web.UI.WebControls.Wizard.LayoutTemplate%2A?displayProperty=fullName> property.  
+ The <xref:System.Web.UI.WebControls.CreateUserWizard> control lets you specify the layout of the control without requiring you to use an HTML `table` element. Instead, you can use a `LayoutTemplate` element to specify the layout. In the layout template, you create placeholder controls to indicate where items should be dynamically inserted into the control. (This is similar to how the template model for the <xref:System.Web.UI.WebControls.ListView> control works.) For more information, see the <xref:System.Web.UI.WebControls.Wizard.LayoutTemplate%2A?displayProperty=nameWithType> property.  
   
 <a name="Accessibility"></a>   
 ## Accessibility  
@@ -362,16 +362,16 @@
 ## Examples  
  The first code example shows how to use the <xref:System.Web.UI.WebControls.CreateUserWizard> control in its basic form. This page will create a new Web site user account with the site's default <xref:System.Web.Security.MembershipProvider> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardBasic#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardBasic/CS/createuserwizardbasiccs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardBasic#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardBasic/VB/createuserwizardbasicvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardBasic#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardBasic/CS/createuserwizardbasiccs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardBasic#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardBasic/VB/createuserwizardbasicvb.aspx#1)]  
   
  The second code example shows how to use the <xref:System.Web.UI.WebControls.CreateUserWizard> control with the default templates.  
   
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardFullTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardFullTemplate/CS/createuserwizardfulltemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardFullTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardFullTemplate/VB/createuserwizardfulltemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardFullTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardFullTemplate/CS/createuserwizardfulltemplatecs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardFullTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardFullTemplate/VB/createuserwizardfulltemplatevb.aspx#1)]  
   
  The third code example adds an additional step to the <xref:System.Web.UI.WebControls.CreateUserWizard> control and uses the <xref:System.Web.UI.WebControls.CreateUserWizard.CreatedUser> event to store the user's first and last name in personalization properties. The code example requires the following entries in the Web.config file.  
   
@@ -396,11 +396,14 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardCreatedUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardCreatedUser/CS/createuserwizardcreatedusercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardCreatedUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardCreatedUser/VB/createuserwizardcreateduservb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardCreatedUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardCreatedUser/CS/createuserwizardcreatedusercs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardCreatedUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardCreatedUser/VB/createuserwizardcreateduservb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Wizard" />
+    <altmember cref="T:System.Web.UI.WebControls.CreateUserWizardStep" />
+    <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -496,11 +499,15 @@
   
  The following code example demonstrates a Web page that uses the `CustomCreateUserWizard`.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardOnSendingMail#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/CS/createuserwizardonsendingmailcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardOnSendingMail#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/VB/createuserwizardonsendingmailvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardOnSendingMail#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/CS/createuserwizardonsendingmailcs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardOnSendingMail#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/VB/createuserwizardonsendingmailvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Question" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.AnswerLabelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.AnswerRequiredErrorMessage" />
+        <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.SendingMail" />
       </Docs>
     </Member>
     <Member MemberName="AnswerLabelText">
@@ -531,6 +538,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Answer" />
       </Docs>
     </Member>
     <Member MemberName="AnswerRequiredErrorMessage">
@@ -561,6 +569,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Answer" />
       </Docs>
     </Member>
     <Member MemberName="AutoGeneratePassword">
@@ -633,6 +642,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CompleteWizardStep" />
       </Docs>
     </Member>
     <Member MemberName="CompleteSuccessText">
@@ -668,8 +678,8 @@
 ## Examples  
  The following code example uses the <xref:System.Web.UI.WebControls.CreateUserWizard.OnCreatedUser%2A> method to change the <xref:System.Web.UI.WebControls.CreateUserWizard.CompleteSuccessText%2A> property to include the user name in the displayed text.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardCompleteSuccessText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardCompleteSuccessText/CS/createuserwizardcompletesuccesstextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardCompleteSuccessText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardCompleteSuccessText/VB/createuserwizardcompletesuccesstextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardCompleteSuccessText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardCompleteSuccessText/CS/createuserwizardcompletesuccesstextcs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardCompleteSuccessText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardCompleteSuccessText/VB/createuserwizardcompletesuccesstextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -769,6 +779,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Password" />
       </Docs>
     </Member>
     <Member MemberName="ConfirmPasswordCompareErrorMessage">
@@ -799,6 +810,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Password" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ConfirmPassword" />
       </Docs>
     </Member>
     <Member MemberName="ConfirmPasswordLabelText">
@@ -829,6 +842,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ConfirmPassword" />
       </Docs>
     </Member>
     <Member MemberName="ConfirmPasswordRequiredErrorMessage">
@@ -859,6 +873,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ConfirmPassword" />
       </Docs>
     </Member>
     <Member MemberName="ContinueButtonClick">
@@ -885,6 +900,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnContinueButtonClick(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ContinueButtonCommandName">
@@ -949,6 +965,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonStyle" />
       </Docs>
     </Member>
     <Member MemberName="ContinueButtonStyle">
@@ -984,7 +1003,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Wizard.NavigationButtonStyle%2A?displayProperty=fullName> property determines the appearance of the **Continue** button in the <xref:System.Web.UI.WebControls.CreateUserWizard> control, but you can override these settings using the  <xref:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonStyle%2A> property. This property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.Style> object it returns. You can set these properties declaratively in the form `Property-Subproperty`, where `Subproperty` represents a property of the <xref:System.Web.UI.WebControls.Style> class (for example, `ContinueButtonStyle-ForeColor`). You can set the property programmatically in the form `Property.Subproperty` (for example, `ContinueButtonStyle.ForeColor`).  
+ The <xref:System.Web.UI.WebControls.Wizard.NavigationButtonStyle%2A?displayProperty=nameWithType> property determines the appearance of the **Continue** button in the <xref:System.Web.UI.WebControls.CreateUserWizard> control, but you can override these settings using the  <xref:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonStyle%2A> property. This property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.Style> object it returns. You can set these properties declaratively in the form `Property-Subproperty`, where `Subproperty` represents a property of the <xref:System.Web.UI.WebControls.Style> class (for example, `ContinueButtonStyle-ForeColor`). You can set the property programmatically in the form `Property.Subproperty` (for example, `ContinueButtonStyle.ForeColor`).  
   
  Common settings include custom background color, text color, and font properties.  
   
@@ -1012,6 +1031,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="ContinueButtonText">
@@ -1053,6 +1075,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="ContinueButtonType">
@@ -1077,6 +1102,9 @@
         <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> enumeration values. The default value is <see cref="F:System.Web.UI.WebControls.ButtonType.Button" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified button type is not one of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="ContinueDestinationPageUrl">
@@ -1123,8 +1151,8 @@
 ## Examples  
  The following code example uses the <xref:System.Web.UI.WebControls.CreateUserWizard.ContinueDestinationPageUrl%2A> property to return the user to the page that the user was viewing before reaching the registration page.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardContinueDestinationPageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardContinueDestinationPageUrl/CS/createuserwizardcontinuedestinationpageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardContinueDestinationPageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardContinueDestinationPageUrl/VB/createuserwizardcontinuedestinationpageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardContinueDestinationPageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardContinueDestinationPageUrl/CS/createuserwizardcontinuedestinationpageurlcs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardContinueDestinationPageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardContinueDestinationPageUrl/VB/createuserwizardcontinuedestinationpageurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1199,14 +1227,15 @@
   
  `</configuration>`  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardCreatedUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardCreatedUser/CS/createuserwizardcreatedusercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardCreatedUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardCreatedUser/VB/createuserwizardcreateduservb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardCreatedUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardCreatedUser/CS/createuserwizardcreatedusercs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardCreatedUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardCreatedUser/VB/createuserwizardcreateduservb.aspx#1)]  
   
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreatedUser(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="CreateUserButtonImageUrl">
@@ -1243,6 +1272,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonType" />
       </Docs>
     </Member>
     <Member MemberName="CreateUserButtonStyle">
@@ -1306,6 +1338,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="CreateUserButtonText">
@@ -1348,6 +1383,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified button type is not one of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="CreateUserButtonType">
@@ -1372,6 +1410,9 @@
         <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> enumeration values. The default value is <see cref="F:System.Web.UI.WebControls.ButtonType.Button" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified button type is not one of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CreateUserButtonImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="CreateUserError">
@@ -1400,6 +1441,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreateUserError(System.Web.UI.WebControls.CreateUserErrorEventArgs)" />
+        <altmember cref="T:System.Web.Security.MembershipCreateStatus" />
+        <altmember cref="T:System.Web.UI.WebControls.CreateUserErrorEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="CreateUserStep">
@@ -1451,6 +1495,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CreateUserWizardStep" />
       </Docs>
     </Member>
     <Member MemberName="CreatingUser">
@@ -1482,11 +1527,12 @@
 ## Examples  
  The following code example uses the <xref:System.Web.UI.WebControls.CreateUserWizard.CreatingUser> event to make the <xref:System.Web.UI.WebControls.CreateUserWizard.UserName%2A> property all lowercase before submitting it to the membership provider specified in the <xref:System.Web.UI.WebControls.CreateUserWizard.MembershipProvider%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardCreatingUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardCreatingUser/CS/createuserwizardcreatingusercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardCreatingUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardCreatingUser/VB/createuserwizardcreatinguservb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardCreatingUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardCreatingUser/CS/createuserwizardcreatingusercs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardCreatingUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardCreatingUser/VB/createuserwizardcreatinguservb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreatingUser(System.Web.UI.WebControls.LoginCancelEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="DisableCreatedUser">
@@ -1525,6 +1571,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Security.MembershipUser.IsApproved" />
       </Docs>
     </Member>
     <Member MemberName="DisplaySideBar">
@@ -1579,6 +1626,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.DuplicateUserNameErrorMessage" />
       </Docs>
     </Member>
     <Member MemberName="DuplicateUserNameErrorMessage">
@@ -1609,6 +1657,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.DuplicateEmailErrorMessage" />
       </Docs>
     </Member>
     <Member MemberName="EditProfileIconUrl">
@@ -1638,6 +1687,8 @@
         <summary>Gets or sets the URL of an image to display next to the link to the user profile editing page.</summary>
         <value>The URL of an image to display next to the link to the user profile editing page. The default value is an empty string ("").</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EditProfileText" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EditProfileUrl" />
       </Docs>
     </Member>
     <Member MemberName="EditProfileText">
@@ -1671,6 +1722,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EditProfileIconUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EditProfileUrl" />
       </Docs>
     </Member>
     <Member MemberName="EditProfileUrl">
@@ -1700,6 +1753,8 @@
         <summary>Gets or sets the URL of the user profile editing page.</summary>
         <value>The URL of the user profile editing page. The default value is an empty string ("").</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EditProfileIconUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EditProfileText" />
       </Docs>
     </Member>
     <Member MemberName="Email">
@@ -1730,6 +1785,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EmailLabelText" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EmailRegularExpression" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.MembershipProvider" />
       </Docs>
     </Member>
     <Member MemberName="EmailLabelText">
@@ -1760,6 +1818,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Email" />
       </Docs>
     </Member>
     <Member MemberName="EmailRegularExpression">
@@ -1792,11 +1851,12 @@
 ## Examples  
  The following code example assigns a regular expression to the <xref:System.Web.UI.WebControls.CreateUserWizard.EmailRegularExpression%2A> property to make sure that the user entered their e-mail address in a valid format, such as **username@contoso.com**.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardEmailRegex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardEmailRegex/CS/createuserwizardemailregexcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardEmailRegex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardEmailRegex/VB/createuserwizardemailregexvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardEmailRegex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardEmailRegex/CS/createuserwizardemailregexcs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardEmailRegex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardEmailRegex/VB/createuserwizardemailregexvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EmailRegularExpressionErrorMessage" />
       </Docs>
     </Member>
     <Member MemberName="EmailRegularExpressionErrorMessage">
@@ -1825,11 +1885,12 @@
 ## Examples  
  The following code example assigns an error message to the <xref:System.Web.UI.WebControls.CreateUserWizard.EmailRegularExpressionErrorMessage%2A> property to indicate to users that the e-mail address is not in a valid format.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardEmailRegex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardEmailRegex/CS/createuserwizardemailregexcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardEmailRegex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardEmailRegex/VB/createuserwizardemailregexvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardEmailRegex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardEmailRegex/CS/createuserwizardemailregexcs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardEmailRegex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardEmailRegex/VB/createuserwizardemailregexvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.EmailRegularExpression" />
       </Docs>
     </Member>
     <Member MemberName="EmailRequiredErrorMessage">
@@ -1860,6 +1921,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Email" />
       </Docs>
     </Member>
     <Member MemberName="ErrorMessageStyle">
@@ -1937,6 +1999,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.Security.MembershipProvider.CreateUser(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Object,System.Web.Security.MembershipCreateStatus@)" />
+        <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreateUserError(System.Web.UI.WebControls.CreateUserErrorEventArgs)" />
+        <altmember cref="T:System.Web.Security.MembershipCreateStatus" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignModeState">
@@ -1985,6 +2050,8 @@
         <summary>Gets or sets the URL of an image to display next to the link to the Help page.</summary>
         <value>The URL of an image to display next to the link to the Help page. The default value is an empty string ("").</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.HelpPageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.HelpPageText" />
       </Docs>
     </Member>
     <Member MemberName="HelpPageText">
@@ -2018,6 +2085,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.HelpPageIconUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.HelpPageUrl" />
       </Docs>
     </Member>
     <Member MemberName="HelpPageUrl">
@@ -2047,6 +2116,8 @@
         <summary>Gets or sets the URL of the Help page.</summary>
         <value>The URL of the Help page. The default value is an empty string ("").</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.HelpPageIconUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.HelpPageText" />
       </Docs>
     </Member>
     <Member MemberName="HyperLinkStyle">
@@ -2147,6 +2218,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.InstructionTextStyle" />
       </Docs>
     </Member>
     <Member MemberName="InstructionTextStyle">
@@ -2210,6 +2282,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.InstructionText" />
       </Docs>
     </Member>
     <Member MemberName="InvalidAnswerErrorMessage">
@@ -2245,8 +2318,8 @@
 ## Examples  
  The following code example changes the <xref:System.Web.UI.WebControls.CreateUserWizard.InvalidAnswerErrorMessage%2A> property for a membership provider that requires the answer to have a minimum length. The actual membership provider is not shown.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardInvalidAnswerErrorMessage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardInvalidAnswerErrorMessage/CS/createuserwizardinvalidanswererrormessagecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardInvalidAnswerErrorMessage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardInvalidAnswerErrorMessage/VB/createuserwizardinvalidanswererrormessagevb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardInvalidAnswerErrorMessage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardInvalidAnswerErrorMessage/CS/createuserwizardinvalidanswererrormessagecs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardInvalidAnswerErrorMessage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardInvalidAnswerErrorMessage/VB/createuserwizardinvalidanswererrormessagevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2317,8 +2390,8 @@
 ## Examples  
  The following code example changes the <xref:System.Web.UI.WebControls.CreateUserWizard.InvalidPasswordErrorMessage%2A> property for a membership provider that requires a password containing both lowercase and uppercase characters. The actual membership provider is not shown.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardInvalidPasswordErrorMessage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardInvalidPasswordErrorMessage/CS/createuserwizardinvalidpassworderrormessagecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardInvalidPasswordErrorMessage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardInvalidPasswordErrorMessage/VB/createuserwizardinvalidpassworderrormessagevb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardInvalidPasswordErrorMessage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardInvalidPasswordErrorMessage/CS/createuserwizardinvalidpassworderrormessagecs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardInvalidPasswordErrorMessage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardInvalidPasswordErrorMessage/VB/createuserwizardinvalidpassworderrormessagevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2357,8 +2430,8 @@
 ## Examples  
  The following code example changes the <xref:System.Web.UI.WebControls.CreateUserWizard.InvalidQuestionErrorMessage%2A> property for a membership provider that restricts questions to the alphanumeric characters a-z, A-Z, and 0-9. The actual membership provider is not shown.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardInvalidQuestionErrorMessage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardInvalidQuestionErrorMessage/CS/createuserwizardinvalidquestionerrormessagecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardInvalidQuestionErrorMessage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardInvalidQuestionErrorMessage/VB/createuserwizardinvalidquestionerrormessagevb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardInvalidQuestionErrorMessage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardInvalidQuestionErrorMessage/CS/createuserwizardinvalidquestionerrormessagecs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardInvalidQuestionErrorMessage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardInvalidQuestionErrorMessage/VB/createuserwizardinvalidquestionerrormessagevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2499,6 +2572,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.DisableCreatedUser" />
       </Docs>
     </Member>
     <Member MemberName="MailDefinition">
@@ -2575,13 +2649,16 @@ Thank you for creating an account with our Web site.
   
 ```  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardMailDefinition#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardMailDefinition/CS/createuserwizardmaildefinitioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardMailDefinition#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardMailDefinition/VB/createuserwizardmaildefinitionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardMailDefinition#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardMailDefinition/CS/createuserwizardmaildefinitioncs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardMailDefinition#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardMailDefinition/VB/createuserwizardmaildefinitionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">
           <see cref="P:System.Web.UI.WebControls.MailDefinition.From" /> is not set to an e-mail address.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.MailDefinition" />
+        <altmember cref="T:System.Web.Mail.MailMessage" />
+        <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnSendingMail(System.Web.UI.WebControls.MailMessageEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="MembershipProvider">
@@ -2744,8 +2821,8 @@ Thank you for creating an account with our Web site.
   
  The following code example inserts a step before the user account is created to determine which division of an organization the user belongs to. It then sets the <xref:System.Web.UI.WebControls.CreateUserWizard.MembershipProvider%2A> provider to the appropriate provider for that division.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardMembershipProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardMembershipProvider/CS/createuserwizardmembershipprovidercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardMembershipProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardMembershipProvider/VB/createuserwizardmembershipprovidervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardMembershipProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardMembershipProvider/CS/createuserwizardmembershipprovidercs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardMembershipProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardMembershipProvider/VB/createuserwizardmembershipprovidervb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2809,6 +2886,7 @@ Thank you for creating an account with our Web site.
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnContinueButtonClick(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnContinueButtonClick(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonClick" />
       </Docs>
     </Member>
     <Member MemberName="OnCreatedUser">
@@ -2846,6 +2924,7 @@ Thank you for creating an account with our Web site.
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreatedUser(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreatedUser(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.CreatedUser" />
       </Docs>
     </Member>
     <Member MemberName="OnCreateUserError">
@@ -2881,6 +2960,8 @@ Thank you for creating an account with our Web site.
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreateUserError(System.Web.UI.WebControls.CreateUserErrorEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreateUserError(System.Web.UI.WebControls.CreateUserErrorEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.CreateUserError" />
+        <altmember cref="T:System.Web.Security.MembershipCreateStatus" />
       </Docs>
     </Member>
     <Member MemberName="OnCreatingUser">
@@ -2923,14 +3004,15 @@ Thank you for creating an account with our Web site.
   
  The following code example demonstrates a Web page that uses the `CustomCreateUserWizard`.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardOnCreatingUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardOnCreatingUser/CS/createuserwizardoncreatingusercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardOnCreatingUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardOnCreatingUser/VB/createuserwizardoncreatinguservb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardOnCreatingUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardOnCreatingUser/CS/createuserwizardoncreatingusercs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardOnCreatingUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardOnCreatingUser/VB/createuserwizardoncreatinguservb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreatingUser(System.Web.UI.WebControls.LoginCancelEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreatingUser(System.Web.UI.WebControls.LoginCancelEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.CreatingUser" />
       </Docs>
     </Member>
     <Member MemberName="OnNextButtonClick">
@@ -2952,6 +3034,7 @@ Thank you for creating an account with our Web site.
         <param name="e">A <see cref="T:System.Web.UI.WebControls.WizardNavigationEventArgs" /> containing the event data.</param>
         <summary>Raises the <see cref="E:System.Web.UI.WebControls.Wizard.NextButtonClick" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Wizard.OnNextButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -2974,6 +3057,7 @@ Thank you for creating an account with our Web site.
         <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Web.HttpException">The membership provider for the page cannot be found. For more information, see <see cref="P:System.Web.Security.Membership.Providers" />.</exception>
+        <altmember cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnSendingMail">
@@ -3024,14 +3108,17 @@ To reset your password, you must answer the following question:
 Thank you for creating an account with our Web site.  
 ```  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardOnSendingMail#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/CS/createuserwizardonsendingmailcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardOnSendingMail#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/VB/createuserwizardonsendingmailvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardOnSendingMail#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/CS/createuserwizardonsendingmailcs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardOnSendingMail#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/VB/createuserwizardonsendingmailvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnSendingMail(System.Web.UI.WebControls.MailMessageEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnSendingMail(System.Web.UI.WebControls.MailMessageEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.SendingMail" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.MailDefinition" />
+        <altmember cref="T:System.Web.Mail.MailMessage" />
       </Docs>
     </Member>
     <Member MemberName="OnSendMailError">
@@ -3076,14 +3163,15 @@ Thank you for creating an account with our Web site.
   
  The following code example demonstrates a Web page that uses the `CustomCreateUserWizard`.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardOnSendMailError#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardOnSendMailError/CS/createuserwizardonsendmailerrorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardOnSendMailError#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardOnSendMailError/VB/createuserwizardonsendmailerrorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardOnSendMailError#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardOnSendMailError/CS/createuserwizardonsendmailerrorcs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardOnSendMailError#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardOnSendMailError/VB/createuserwizardonsendmailerrorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnSendMailError(System.Web.UI.WebControls.SendMailErrorEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Web.UI.WebControls.CreateUserWizard.OnSendMailError(System.Web.UI.WebControls.SendMailErrorEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.SendMailError" />
       </Docs>
     </Member>
     <Member MemberName="Password">
@@ -3117,6 +3205,7 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.ConfirmPassword" />
       </Docs>
     </Member>
     <Member MemberName="PasswordHintStyle">
@@ -3212,6 +3301,8 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.PasswordRegularExpression" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Password" />
       </Docs>
     </Member>
     <Member MemberName="PasswordLabelText">
@@ -3242,6 +3333,7 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Password" />
       </Docs>
     </Member>
     <Member MemberName="PasswordRegularExpression">
@@ -3280,11 +3372,12 @@ Thank you for creating an account with our Web site.
   
  If the password entered by the user does not meet these criteria, the text contained in the <xref:System.Web.UI.WebControls.CreateUserWizard.PasswordRegularExpressionErrorMessage%2A> property is displayed to the user.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardPasswordRegex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardPasswordRegex/CS/createuserwizardpasswordregexcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardPasswordRegex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardPasswordRegex/VB/createuserwizardpasswordregexvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardPasswordRegex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardPasswordRegex/CS/createuserwizardpasswordregexcs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardPasswordRegex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardPasswordRegex/VB/createuserwizardpasswordregexvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.PasswordRegularExpressionErrorMessage" />
       </Docs>
     </Member>
     <Member MemberName="PasswordRegularExpressionErrorMessage">
@@ -3319,11 +3412,12 @@ Thank you for creating an account with our Web site.
   
 -   Contain at least one special (non-alphanumeric) character.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardPasswordRegex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardPasswordRegex/CS/createuserwizardpasswordregexcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardPasswordRegex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardPasswordRegex/VB/createuserwizardpasswordregexvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardPasswordRegex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardPasswordRegex/CS/createuserwizardpasswordregexcs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardPasswordRegex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardPasswordRegex/VB/createuserwizardpasswordregexvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.PasswordRegularExpression" />
       </Docs>
     </Member>
     <Member MemberName="PasswordRequiredErrorMessage">
@@ -3354,6 +3448,7 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Password" />
       </Docs>
     </Member>
     <Member MemberName="Question">
@@ -3397,13 +3492,15 @@ Thank you for creating an account with our Web site.
 ## Examples  
  The following code example modifies the e-mail message in the <xref:System.Web.UI.WebControls.CreateUserWizard.SendingMail> event to include the user's password recovery confirmation question in the message sent to new users.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardOnSendingMail#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/CS/createuserwizardonsendingmailcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardOnSendingMail#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/VB/createuserwizardonsendingmailvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardOnSendingMail#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/CS/createuserwizardonsendingmailcs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardOnSendingMail#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/VB/createuserwizardonsendingmailvb.aspx#1)]  
 [!code-csharp[CreateUserWizardOnSendingMail#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/CS/CustomCreateUserWizard.cs#2)]
 [!code-vb[CreateUserWizardOnSendingMail#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardOnSendingMail/VB/CustomCreateUserWizard.vb#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.MembershipProvider" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Answer" />
       </Docs>
     </Member>
     <Member MemberName="QuestionAndAnswerRequired">
@@ -3437,6 +3534,8 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Question" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Answer" />
       </Docs>
     </Member>
     <Member MemberName="QuestionLabelText">
@@ -3467,6 +3566,7 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.Question" />
       </Docs>
     </Member>
     <Member MemberName="QuestionRequiredErrorMessage">
@@ -3557,6 +3657,7 @@ Thank you for creating an account with our Web site.
         <summary>Saves any state that was modified after the <see cref="M:System.Web.UI.WebControls.Style.TrackViewState" /> method was invoked.</summary>
         <returns>An object that contains the current view state of the control; otherwise, if there is no view state associated with the control, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Wizard.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="SendingMail">
@@ -3601,11 +3702,14 @@ To reset your password, you must answer the following question:
 Thank you for creating an account with our Web site.  
 ```  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardMailDefinition#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardMailDefinition/CS/createuserwizardmaildefinitioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardMailDefinition#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardMailDefinition/VB/createuserwizardmaildefinitionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardMailDefinition#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardMailDefinition/CS/createuserwizardmaildefinitioncs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardMailDefinition#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardMailDefinition/VB/createuserwizardmaildefinitionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnSendingMail(System.Web.UI.WebControls.MailMessageEventArgs)" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.MailDefinition" />
+        <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.SendMailError" />
       </Docs>
     </Member>
     <Member MemberName="SendMailError">
@@ -3637,11 +3741,14 @@ Thank you for creating an account with our Web site.
 ## Examples  
  The following code example is a handler for the <xref:System.Web.UI.WebControls.CreateUserWizard.SendMailError> event that calls a site-specific procedure to log the e-mail error. The <xref:System.Web.UI.WebControls.SendMailErrorEventArgs.Handled%2A> property of the <xref:System.Web.UI.WebControls.SendMailErrorEventArgs> object is set to `true` to indicate that the error has been handled.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardSendMailError#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardSendMailError/CS/createuserwizardsendmailerrorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardSendMailError#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardSendMailError/VB/createuserwizardsendmailerrorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardSendMailError#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardSendMailError/CS/createuserwizardsendmailerrorcs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardSendMailError#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardSendMailError/VB/createuserwizardsendmailerrorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnSendMailError(System.Web.UI.WebControls.SendMailErrorEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.CreateUserWizard.SendingMail" />
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.MailDefinition" />
       </Docs>
     </Member>
     <Member MemberName="SetDesignModeState">
@@ -3663,6 +3770,7 @@ Thank you for creating an account with our Web site.
         <param name="data">An <see cref="T:System.Collections.IDictionary" /> containing the design-time data for the control.</param>
         <summary>Sets design-time data for a control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.SetDesignModeState(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="SkipLinkText">
@@ -3880,6 +3988,8 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.CreateUserWizard.OnCreateUserError(System.Web.UI.WebControls.CreateUserErrorEventArgs)" />
+        <altmember cref="T:System.Web.Security.MembershipCreateStatus" />
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -3913,8 +4023,8 @@ Thank you for creating an account with our Web site.
 ## Examples  
  The following code example sets the <xref:System.Web.UI.WebControls.CreateUserWizard.UserName%2A> property to all lowercase alphabetical characters in the <xref:System.Web.UI.WebControls.CreateUserWizard.CreatingUser> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardLoggingIn#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardLoggingIn/CS/createuserwizardloggingincs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CreateUserWizardLoggingIn#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardLoggingIn/VB/createuserwizardlogginginvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CreateUserWizardLoggingIn#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardLoggingIn/CS/createuserwizardloggingincs.aspx#1)]
+ [!code-aspx-vb[CreateUserWizardLoggingIn#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardLoggingIn/VB/createuserwizardlogginginvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -3948,6 +4058,7 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.UserName" />
       </Docs>
     </Member>
     <Member MemberName="UserNameRequiredErrorMessage">
@@ -4087,6 +4198,8 @@ Thank you for creating an account with our Web site.
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
       </Docs>
     </Member>
   </Members>

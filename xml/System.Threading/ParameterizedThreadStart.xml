@@ -39,11 +39,11 @@
 ## Remarks  
  When a managed thread is created, the method that executes on the thread is represented by:  
   
--   A <xref:System.Threading.ThreadStart> delegate that is passed to the <xref:System.Threading.Thread.%23ctor%28System.Threading.ThreadStart%29?displayProperty=fullName> constructor.  Any method that has no parameters and that returns `void` in C# or is a `Sub` procedure in Visual Basic can represent the delegate.  
+-   A <xref:System.Threading.ThreadStart> delegate that is passed to the <xref:System.Threading.Thread.%23ctor%28System.Threading.ThreadStart%29?displayProperty=nameWithType> constructor.  Any method that has no parameters and that returns `void` in C# or is a `Sub` procedure in Visual Basic can represent the delegate.  
   
--   A <xref:System.Threading.ParameterizedThreadStart> delegate that is passed to the <xref:System.Threading.Thread.%23ctor%28System.Threading.ParameterizedThreadStart%2CSystem.Int32%29?displayProperty=fullName> constructor. Any method that has a single parameter of type <xref:System.Object> and that returns void in C# or is a Sub procedure in Visual Basic can represent the delegate.  
+-   A <xref:System.Threading.ParameterizedThreadStart> delegate that is passed to the <xref:System.Threading.Thread.%23ctor%28System.Threading.ParameterizedThreadStart%29?displayProperty=nameWithType> constructor. Any method that has a single parameter of type <xref:System.Object> and that returns void in C# or is a Sub procedure in Visual Basic can represent the delegate.  
   
- The thread does not begin executing until the <xref:System.Threading.Thread.Start%2A?displayProperty=fullName> method is called. The <xref:System.Threading.ThreadStart> or <xref:System.Threading.ParameterizedThreadStart> delegate is invoked on the thread, and execution begins at the first line of the method represented by the delegate. In the case of the <xref:System.Threading.ParameterizedThreadStart> delegate, the object that is passed to the <xref:System.Threading.Thread.Start%28System.Object%29> method is passed to the delegate.  
+ The thread does not begin executing until the <xref:System.Threading.Thread.Start%2A?displayProperty=nameWithType> method is called. The <xref:System.Threading.ThreadStart> or <xref:System.Threading.ParameterizedThreadStart> delegate is invoked on the thread, and execution begins at the first line of the method represented by the delegate. In the case of the <xref:System.Threading.ParameterizedThreadStart> delegate, the object that is passed to the <xref:System.Threading.Thread.Start%28System.Object%29> method is passed to the delegate.  
   
 > [!NOTE]
 >  Visual Basic and C# users can omit the <xref:System.Threading.ThreadStart> or <xref:System.Threading.ParameterizedThreadStart> delegate constructor when creating a thread. In Visual Basic, use the `AddressOf` operator when passing your method to the <xref:System.Threading.Thread.%23ctor%2A> constructor; for example, `Dim t As New Thread(AddressOf ThreadProc)`. In C#, simply specify the name of the thread procedure. The compiler selects the correct delegate constructor.  
@@ -51,7 +51,7 @@
 > [!NOTE]
 >  When you create a <xref:System.Threading.ParameterizedThreadStart> delegate for an instance method in C++, the first parameter of the constructor is the instance variable. For a static method, the first parameter of the constructor is zero. For a static method, the delegate constructor requires only one parameter: the address of the callback method, qualified by the class name.  
   
- The <xref:System.Threading.ParameterizedThreadStart> delegate and the <xref:System.Threading.Thread.Start%28System.Object%29?displayProperty=fullName> method overload make it easy to pass data to a thread procedure, but this technique is not type safe because any object can be passed to <xref:System.Threading.Thread.Start%28System.Object%29?displayProperty=fullName>. A more robust way to pass data to a thread procedure is to put both the thread procedure and the data fields into a worker object. For more information, see [Creating Threads and Passing Data at Start Time](~/docs/standard/threading/creating-threads-and-passing-data-at-start-time.md).  
+ The <xref:System.Threading.ParameterizedThreadStart> delegate and the <xref:System.Threading.Thread.Start%28System.Object%29?displayProperty=nameWithType> method overload make it easy to pass data to a thread procedure, but this technique is not type safe because any object can be passed to <xref:System.Threading.Thread.Start%28System.Object%29?displayProperty=nameWithType>. A more robust way to pass data to a thread procedure is to put both the thread procedure and the data fields into a worker object. For more information, see [Creating Threads and Passing Data at Start Time](~/docs/standard/threading/creating-threads-and-passing-data-at-start-time.md).  
   
  The <xref:System.Threading.ParameterizedThreadStart> delegate supports only a single parameter. You can pass multiple data items to the <xref:System.Threading.ParameterizedThreadStart> by making that parameter one of the following:  
   
@@ -64,7 +64,7 @@
    
   
 ## Examples  
- The following code example uses a <xref:System.Threading.ParameterizedThreadStart> delegate with to execute a static method and an instance method. The first <xref:System.Threading.ParameterizedThreadStart> delegate is represented by the static `DoWork` method and the second is represented by the instance `DoMoreWork` method. Both methods match the <xref:System.Threading.ParameterizedThreadStart> delegate signature; that is, they have a single parameter of type <xref:System.Object> and don't return a value.  
+ The following code example uses a <xref:System.Threading.ParameterizedThreadStart> delegate to execute a static method and an instance method. The first <xref:System.Threading.ParameterizedThreadStart> delegate is represented by the static `DoWork` method and the second is represented by the instance `DoMoreWork` method. Both methods match the <xref:System.Threading.ParameterizedThreadStart> delegate signature; that is, they have a single parameter of type <xref:System.Object> and don't return a value.  
   
 > [!NOTE]
 >  The Visual Basic and C# compilers infer the <xref:System.Threading.ParameterizedThreadStart> delegate from the signatures of the `DoWork` and `DoMoreWork` methods, and call the correct constructor. Thus, there is no explicit constructor call in the code.  
@@ -75,5 +75,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Threading.ThreadStart" />
+    <altmember cref="T:System.Threading.Thread" />
+    <altmember cref="Overload:System.Threading.Thread.Start" />
+    <altmember cref="T:System.AppDomain" />
   </Docs>
 </Type>

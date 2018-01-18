@@ -111,7 +111,7 @@
 ## Remarks  
  The returned proxy object points to an endpoint served by the specified well-known object. No messages are sent over the network until a method is called on the proxy.  
   
- The `data` object is used to communicate information to the channel, and is passed to the <xref:System.Runtime.Remoting.Channels.IChannelSender.CreateMessageSink%2A?displayProperty=fullName> method.  
+ The `data` object is used to communicate information to the channel, and is passed to the <xref:System.Runtime.Remoting.Channels.IChannelSender.CreateMessageSink%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -232,6 +232,8 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+        <altmember cref="T:System.Runtime.Remoting.IEnvoyInfo" />
+        <altmember cref="T:System.Runtime.Remoting.ObjRef" />
       </Docs>
     </Member>
     <Member MemberName="GetLifetimeService">
@@ -311,7 +313,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This determines the method base from the <xref:System.Runtime.Remoting.Messaging.IMethodMessage.TypeName%2A>, <xref:System.Runtime.Remoting.Messaging.IMethodMessage.MethodName%2A>, and <xref:System.Runtime.Remoting.Messaging.IMethodMessage.MethodSignature%2A> properties of <xref:System.Runtime.Remoting.Messaging.IMethodMessage> and is used by classes implementing the <xref:System.Runtime.Remoting.Messaging.IMethodMessage> interface. Consumers of <xref:System.Runtime.Remoting.Messaging.IMethodMessage> classes should reference the <xref:System.Runtime.Remoting.Messaging.IMethodMessage.MethodBase%2A?displayProperty=fullName> property.  
+ This determines the method base from the <xref:System.Runtime.Remoting.Messaging.IMethodMessage.TypeName%2A>, <xref:System.Runtime.Remoting.Messaging.IMethodMessage.MethodName%2A>, and <xref:System.Runtime.Remoting.Messaging.IMethodMessage.MethodSignature%2A> properties of <xref:System.Runtime.Remoting.Messaging.IMethodMessage> and is used by classes implementing the <xref:System.Runtime.Remoting.Messaging.IMethodMessage> interface. Consumers of <xref:System.Runtime.Remoting.Messaging.IMethodMessage> classes should reference the <xref:System.Runtime.Remoting.Messaging.IMethodMessage.MethodBase%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -346,6 +348,7 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> or <paramref name="info" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+        <altmember cref="T:System.Runtime.Serialization.ISerializable" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectUri">
@@ -464,6 +467,8 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+        <altmember cref="T:System.Runtime.Remoting.Proxies.RealProxy" />
+        <altmember cref="T:System.Runtime.Remoting.ObjRef" />
       </Docs>
     </Member>
     <Member MemberName="GetServerTypeForUri">
@@ -649,6 +654,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Remoting.Contexts.Context" />
       </Docs>
     </Member>
     <Member MemberName="IsOneWay">
@@ -739,6 +745,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Remoting.Proxies.RealProxy" />
+        <altmember cref="T:System.Runtime.Remoting.ObjRef" />
       </Docs>
     </Member>
     <Member MemberName="LogRemotingStage">
@@ -816,6 +824,9 @@
         <exception cref="T:System.Runtime.Remoting.RemotingException">The <paramref name="Obj" /> parameter is an object proxy.</exception>
         <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Runtime.Remoting.Proxies.RealProxy" />
+        <altmember cref="T:System.Runtime.Remoting.ObjRef" />
       </Docs>
     </Member>
     <Member MemberName="Marshal">
@@ -867,6 +878,9 @@
           <paramref name="Obj" /> is an object proxy, and the <paramref name="URI" /> parameter is not <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Runtime.Remoting.Proxies.RealProxy" />
+        <altmember cref="T:System.Runtime.Remoting.ObjRef" />
       </Docs>
     </Member>
     <Member MemberName="Marshal">
@@ -913,6 +927,9 @@
           <paramref name="Obj" /> is a proxy of a remote object, and the <paramref name="ObjUri" /> parameter is not <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Runtime.Remoting.Proxies.RealProxy" />
+        <altmember cref="T:System.Runtime.Remoting.ObjRef" />
       </Docs>
     </Member>
     <Member MemberName="SetObjectUriForMarshal">
@@ -961,6 +978,8 @@
           <paramref name="obj" /> is not a local object, has already been marshaled, or the current method has already been called on.</exception>
         <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Guid" />
       </Docs>
     </Member>
     <Member MemberName="Unmarshal">
@@ -1005,6 +1024,8 @@
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Runtime.Remoting.ObjRef" /> instance specified in the <paramref name="objectRef" /> parameter is not well-formed.</exception>
         <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
+        <altmember cref="T:System.Runtime.Remoting.Proxies.RealProxy" />
+        <altmember cref="T:System.Runtime.Remoting.ObjRef" />
       </Docs>
     </Member>
     <Member MemberName="Unmarshal">
@@ -1045,7 +1066,39 @@
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Runtime.Remoting.ObjRef" /> instance specified in the <paramref name="objectRef" /> parameter is not well-formed.</exception>
         <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
+        <altmember cref="T:System.Runtime.Remoting.Proxies.RealProxy" />
+        <altmember cref="T:System.Runtime.Remoting.ObjRef" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Connect">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a proxy for a well-known object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Unmarshal">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a given <see cref="T:System.Runtime.Remoting.ObjRef" /> into a proxy object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Marshal">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the given <see cref="T:System.MarshalByRefObject" /> into an instance of the <see cref="T:System.Runtime.Remoting.ObjRef" /> class, which can be serialized for transmission between application domains and over a network.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

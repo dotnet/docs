@@ -84,6 +84,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml" />
+        <altmember cref="Overload:System.Web.UI.Design.ContainerControlDesigner.GetDesignTimeHtml" />
       </Docs>
     </Member>
     <Member MemberName="MapPropertyToStyle">
@@ -112,13 +114,14 @@
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Web.UI.Design.ReadWriteControlDesigner.MapPropertyToStyle%2A> method is obsolete. Use the <xref:System.Web.UI.Design.ContainerControlDesigner.GetDesignTimeCssAttributes%2A?displayProperty=fullName> method for equivalent control designer functionality.  
+>  The <xref:System.Web.UI.Design.ReadWriteControlDesigner.MapPropertyToStyle%2A> method is obsolete. Use the <xref:System.Web.UI.Design.ContainerControlDesigner.GetDesignTimeCssAttributes%2A?displayProperty=nameWithType> method for equivalent control designer functionality.  
   
 > [!NOTE]
 >  this method must be overridden in a derived class to implement the designer.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.ContainerControlDesigner.GetDesignTimeCssAttributes" />
       </Docs>
     </Member>
     <Member MemberName="OnBehaviorAttached">
@@ -147,10 +150,12 @@
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Web.UI.Design.ReadWriteControlDesigner.OnBehaviorAttached%2A> method is obsolete. Use the members of the <xref:System.Web.UI.Design.ControlDesigner.Tag%2A?displayProperty=fullName> property instead. For example, use the <xref:System.Web.UI.Design.IControlDesignerTag.SetAttribute%2A> and <xref:System.Web.UI.Design.IControlDesignerTag.GetAttribute%2A> methods on the <xref:System.Web.UI.Design.ControlDesigner.Tag%2A?displayProperty=fullName> property to map properties to styles.  
+>  The <xref:System.Web.UI.Design.ReadWriteControlDesigner.OnBehaviorAttached%2A> method is obsolete. Use the members of the <xref:System.Web.UI.Design.ControlDesigner.Tag%2A?displayProperty=nameWithType> property instead. For example, use the <xref:System.Web.UI.Design.IControlDesignerTag.SetAttribute%2A> and <xref:System.Web.UI.Design.IControlDesignerTag.GetAttribute%2A> methods on the <xref:System.Web.UI.Design.ControlDesigner.Tag%2A?displayProperty=nameWithType> property to map properties to styles.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.ContainerControlDesigner.GetDesignTimeCssAttributes" />
+        <altmember cref="M:System.Web.UI.Design.HtmlControlDesigner.OnBehaviorAttached" />
       </Docs>
     </Member>
     <Member MemberName="OnComponentChanged">
@@ -185,6 +190,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" />
+        <altmember cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanged" />
       </Docs>
     </Member>
     <Member MemberName="UpdateDesignTimeHtml">

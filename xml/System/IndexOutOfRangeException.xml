@@ -49,7 +49,7 @@
      [!code-csharp[System.IndexOutOfRangeException#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.indexoutofrangeexception/cs/length2.cs#4)]
      [!code-vb[System.IndexOutOfRangeException#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.indexoutofrangeexception/vb/length2.vb#4)]  
   
-     Alternately, instead of iterating all the elements in the array by their index, you can use the  (in C#) or the  (in Visual Basic).  
+     Alternately, instead of iterating all the elements in the array by their index, you can use the `foreach` statement (in C#) or the `For Each` statement (in Visual Basic).  
   
 -   Attempting to assign an array element to another array that has not been adequately dimensioned and that has fewer elements than the original array. The following example attempts to assign the last element in the `value1` array to the same element in the `value2` array. However, the `value2` array has been incorrectly dimensioned to have six instead of seven elements. As a result, the assignment throws an <xref:System.IndexOutOfRangeException> exception.  
   
@@ -61,7 +61,7 @@
      [!code-csharp[System.IndexOutOfRangeException#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.indexoutofrangeexception/cs/negative1.cs#5)]
      [!code-vb[System.IndexOutOfRangeException#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.indexoutofrangeexception/vb/negative1.vb#5)]  
   
-     In this case, the <xref:System.Collections.Generic.List%601.IndexOf%2A?displayProperty=fullName> method returns -1, which is an invalid index value, when it fails to find a match. To correct this error, check the search method's return value before iterating the array, as shown in this example.  
+     In this case, the <xref:System.Collections.Generic.List%601.IndexOf%2A?displayProperty=nameWithType> method returns -1, which is an invalid index value, when it fails to find a match. To correct this error, check the search method's return value before iterating the array, as shown in this example.  
   
      [!code-csharp[System.IndexOutOfRangeException#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.indexoutofrangeexception/cs/negative2.cs#6)]
      [!code-vb[System.IndexOutOfRangeException#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.indexoutofrangeexception/vb/negative2.vb#6)]  
@@ -70,9 +70,9 @@
   
 -   Using a computed value to define the starting index, the ending index, or the number of items to be iterated. If the result of the computation is unexpected, it might result in an <xref:System.IndexOutOfRangeException> exception. You should check your program's logic in calculating the index value and validate the value before iterating the array or collection. The following conditions must all be true; otherwise, an <xref:System.IndexOutOfRangeException> exception is thrown:  
   
-    -   The starting index must be greater than or equal to <xref:System.Array.GetLowerBound%2A?displayProperty=fullName> for the dimension of the array that you want to iterate, or greater than or equal to 0 for a collection.  
+    -   The starting index must be greater than or equal to <xref:System.Array.GetLowerBound%2A?displayProperty=nameWithType> for the dimension of the array that you want to iterate, or greater than or equal to 0 for a collection.  
   
-    -   The ending index cannot exceed <xref:System.Array.GetUpperBound%2A?displayProperty=fullName> for the dimension of the array that you want to iterate, or cannot be greater than or equal to the `Count` property of a collection.  
+    -   The ending index cannot exceed <xref:System.Array.GetUpperBound%2A?displayProperty=nameWithType> for the dimension of the array that you want to iterate, or cannot be greater than or equal to the `Count` property of a collection.  
   
     -   The following equation must be true for the dimension of the array that you want to iterate:  
   
@@ -89,7 +89,7 @@
         > [!TIP]
         >  The starting index of an array or collection can never be a negative number.  
   
--   Assuming that an array must be zero-based. Arrays that are not zero-based can be created by the <xref:System.Array.CreateInstance%28System.Type%2CSystem.Int32%5B%5D%2CSystem.Int32%5B%5D%29?displayProperty=fullName> method and can be returned by COM interop, although they aren’t CLS-compliant. The following example illustrates the <xref:System.IndexOutOfRangeException> that is thrown when you try to iterate a non-zero-based array created by the <xref:System.Array.CreateInstance%28System.Type%2CSystem.Int32%5B%5D%2CSystem.Int32%5B%5D%29?displayProperty=fullName> method.  
+-   Assuming that an array must be zero-based. Arrays that are not zero-based can be created by the <xref:System.Array.CreateInstance%28System.Type%2CSystem.Int32%5B%5D%2CSystem.Int32%5B%5D%29?displayProperty=nameWithType> method and can be returned by COM interop, although they aren’t CLS-compliant. The following example illustrates the <xref:System.IndexOutOfRangeException> that is thrown when you try to iterate a non-zero-based array created by the <xref:System.Array.CreateInstance%28System.Type%2CSystem.Int32%5B%5D%2CSystem.Int32%5B%5D%29?displayProperty=nameWithType> method.  
   
      [!code-csharp[System.IndexOutOfRangeException#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.indexoutofrangeexception/cs/nonzero1.cs#1)]
      [!code-vb[System.IndexOutOfRangeException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.indexoutofrangeexception/vb/nonzero1.vb#1)]  
@@ -99,7 +99,7 @@
      [!code-csharp[System.IndexOutOfRangeException#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.indexoutofrangeexception/cs/nonzero2.cs#2)]
      [!code-vb[System.IndexOutOfRangeException#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.indexoutofrangeexception/vb/nonzero2.vb#2)]  
   
-     Note that when you call the <xref:System.Array.GetLowerBound%2A> method to get the starting index of an array, you should also call the <xref:System.Array.GetUpperBound%28System.Int32%29?displayProperty=fullName> method to get its ending index.  
+     Note that when you call the <xref:System.Array.GetLowerBound%2A> method to get the starting index of an array, you should also call the <xref:System.Array.GetUpperBound%28System.Int32%29?displayProperty=nameWithType> method to get its ending index.  
   
 -   Confusing an index and the value at that index in a numeric array or collection. This issue usually occurs when using the `foreach` statement (in C#) or the `For Each` statement (in Visual Basic). The following example illustrates the problem.  
   
@@ -111,7 +111,7 @@
      [!code-csharp[System.IndexOutOfRangeException#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.indexoutofrangeexception/cs/foreach2.cs#8)]
      [!code-vb[System.IndexOutOfRangeException#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.indexoutofrangeexception/vb/foreach2.vb#8)]  
   
--   Providing an invalid column name to the <xref:System.Data.DataView.Sort%2A?displayProperty=fullName> property.  
+-   Providing an invalid column name to the <xref:System.Data.DataView.Sort%2A?displayProperty=nameWithType> property.  
   
 -   Violating thread safety. Operations such as reading from the same <xref:System.IO.StreamReader> object, writing to the same <xref:System.IO.StreamWriter> object from multiple threads, or enumerating the objects in a <xref:System.Collections.Hashtable> from different threads can throw an <xref:System.IndexOutOfRangeException> if the object isn’t accessed in a thread-safe way. This exception is typically intermittent because it relies on a race condition.  
   
@@ -119,9 +119,9 @@
   
 -   Iterate the elements of the array using the [foreach](https://msdn.microsoft.com/library/ttw7t8t6.aspx) statement (in C#) or the [For Each...Next](https://msdn.microsoft.com/library/5ebk1751.aspx) construct (in Visual Basic)  instead of iterating elements by index.  
   
--   Iterate the elements by index starting with the index returned by the <xref:System.Array.GetLowerBound%2A?displayProperty=fullName> method and ending with the index returned by the <xref:System.Array.GetUpperBound%2A?displayProperty=fullName> method.  
+-   Iterate the elements by index starting with the index returned by the <xref:System.Array.GetLowerBound%2A?displayProperty=nameWithType> method and ending with the index returned by the <xref:System.Array.GetUpperBound%2A?displayProperty=nameWithType> method.  
   
--   If you are assigning elements in one array to another, ensure that  the target array has at least as many elements as the source array by comparing their <xref:System.Array.Length%2A?displayProperty=fullName> properties.  
+-   If you are assigning elements in one array to another, ensure that  the target array has at least as many elements as the source array by comparing their <xref:System.Array.Length%2A?displayProperty=nameWithType> properties.  
   
  For a list of initial property values for an instance of <xref:System.IndexOutOfRangeException>, see the <xref:System.IndexOutOfRangeException> constructors.  
   
@@ -137,6 +137,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -213,7 +214,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=fullName> property of the new exception using the `message` parameter. The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+ This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=nameWithType> property of the new exception using the `message` parameter. The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
   
  The following table shows the initial property values for an instance of <xref:System.IndexOutOfRangeException>.  
   
@@ -271,7 +272,21 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IndexOutOfRangeException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

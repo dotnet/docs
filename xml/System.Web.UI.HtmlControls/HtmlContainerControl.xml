@@ -32,11 +32,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> property of this class to dynamically generate a message on a Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlContainerControl Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlContainerControl Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlContainerControl Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlContainerControl Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlContainerControl Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlContainerControl Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlContainerControl Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlContainerControl Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -121,6 +122,7 @@
         <summary>Creates a new <see cref="T:System.Web.UI.ControlCollection" /> object to hold the child controls (both literal and server) of the server control.</summary>
         <returns>A <see cref="T:System.Web.UI.ControlCollection" /> that contains the <see cref="T:System.Web.UI.HtmlControls.HtmlControl" /> child server controls.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlControl.CreateControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="InnerHtml">
@@ -162,15 +164,15 @@
  To provide automatic HTML encoding and decoding, use the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerText%2A> property.  
   
 > [!NOTE]
->  If there are no child controls, the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> property contains the value <xref:System.String.Empty?displayProperty=fullName>.  
+>  If there are no child controls, the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> property contains the value <xref:System.String.Empty?displayProperty=nameWithType>.  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> property to dynamically set a text message.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlContainerControl Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlContainerControl Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlContainerControl Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlContainerControl Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlContainerControl Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlContainerControl Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlContainerControl Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlContainerControl Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -179,6 +181,10 @@
  \- or -  
   
  The HTML server control is not a <see cref="T:System.Web.UI.LiteralControl" /> or a <see cref="T:System.Web.UI.DataBoundLiteralControl" />.</exception>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlContainerControl.InnerText" />
+        <altmember cref="M:System.Web.UI.Control.IsLiteralContent" />
+        <altmember cref="M:System.Web.UI.Control.HasControls" />
+        <altmember cref="T:System.Web.UI.DataBoundLiteralControl" />
       </Docs>
     </Member>
     <Member MemberName="InnerText">
@@ -217,15 +223,15 @@
  To prevent automatic HTML encoding and decoding, use the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> property.  
   
 > [!NOTE]
->  If there are no child controls, the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> property contains the value <xref:System.String.Empty?displayProperty=fullName>.  
+>  If there are no child controls, the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> property contains the value <xref:System.String.Empty?displayProperty=nameWithType>.  
   
    
   
 ## Examples  
  The following code example demonstrates the HTML encoding service available through the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerText%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlContainerControl.InnerText Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlContainerControl.InnerText Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlContainerControl.InnerText Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlContainerControl.InnerText Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlContainerControl.InnerText Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlContainerControl.InnerText Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlContainerControl.InnerText Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlContainerControl.InnerText Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -234,6 +240,7 @@
  \- or -  
   
  The HTML server control is not a <see cref="T:System.Web.UI.LiteralControl" /> or a <see cref="T:System.Web.UI.DataBoundLiteralControl" />.</exception>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -264,6 +271,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlContainerControl.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.Control.SaveViewState" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -288,7 +298,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.HtmlControls.HtmlContainerControl.Render%2A> method overrides the <xref:System.Web.UI.HtmlControls.HtmlControl.Render%2A?displayProperty=fullName> method to render the opening tag, child controls, and closing tag of the <xref:System.Web.UI.HtmlControls.HtmlContainerControl> control.  
+ The <xref:System.Web.UI.HtmlControls.HtmlContainerControl.Render%2A> method overrides the <xref:System.Web.UI.HtmlControls.HtmlControl.Render%2A?displayProperty=nameWithType> method to render the opening tag, child controls, and closing tag of the <xref:System.Web.UI.HtmlControls.HtmlContainerControl> control.  
   
  The <xref:System.Web.UI.HtmlControls.HtmlContainerControl.Render%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlContainerControl> control.  
   
@@ -297,6 +307,9 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.HtmlControls.HtmlContainerControl.Render(System.Web.UI.HtmlTextWriter)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlControl.Render(System.Web.UI.HtmlTextWriter)" /> method so that the <see cref="T:System.Web.UI.HtmlControls.HtmlContainerControl" /> control is correctly rendered.</para>
         </block>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlControl.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.Control.RenderChildren(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlContainerControl.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderAttributes">
@@ -348,7 +361,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteEndTag(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlContainerControl" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

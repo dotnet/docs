@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "format specifiers, standard time interval"
   - "format strings"
@@ -24,16 +27,19 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Standard TimeSpan Format Strings
 <a name="Top"></a> A standard <xref:System.TimeSpan> format string uses a single format specifier to define the text representation of a <xref:System.TimeSpan> value that results from a formatting operation. Any format string that contains more than one character, including white space, is interpreted as a custom <xref:System.TimeSpan> format string. For more information, see [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md) .  
   
- The string representations of <xref:System.TimeSpan> values are produced by calls to the overloads of the <xref:System.TimeSpan.ToString%2A?displayProperty=fullName> method, as well as by methods that support composite formatting, such as <xref:System.String.Format%2A?displayProperty=fullName>. For more information, see [Formatting Types](../../../docs/standard/base-types/formatting-types.md) and [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md). The following example illustrates the use of standard format strings in formatting operations.  
+ The string representations of <xref:System.TimeSpan> values are produced by calls to the overloads of the <xref:System.TimeSpan.ToString%2A?displayProperty=nameWithType> method, as well as by methods that support composite formatting, such as <xref:System.String.Format%2A?displayProperty=nameWithType>. For more information, see [Formatting Types](../../../docs/standard/base-types/formatting-types.md) and [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md). The following example illustrates the use of standard format strings in formatting operations.  
   
  [!code-csharp[Conceptual.TimeSpan.Standard#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.timespan.standard/cs/formatexample1.cs#2)]
  [!code-vb[Conceptual.TimeSpan.Standard#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.timespan.standard/vb/formatexample1.vb#2)]  
   
- Standard <xref:System.TimeSpan> format strings are also used by the <xref:System.TimeSpan.ParseExact%2A?displayProperty=fullName> and <xref:System.TimeSpan.TryParseExact%2A?displayProperty=fullName> methods to define the required format of input strings for parsing operations. (Parsing converts the string representation of a value to that value.) The following example illustrates the use of standard format strings in parsing operations.  
+ Standard <xref:System.TimeSpan> format strings are also used by the <xref:System.TimeSpan.ParseExact%2A?displayProperty=nameWithType> and <xref:System.TimeSpan.TryParseExact%2A?displayProperty=nameWithType> methods to define the required format of input strings for parsing operations. (Parsing converts the string representation of a value to that value.) The following example illustrates the use of standard format strings in parsing operations.  
   
  [!code-csharp[Conceptual.TimeSpan.Standard#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.timespan.standard/cs/parseexample1.cs#3)]
  [!code-vb[Conceptual.TimeSpan.Standard#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.timespan.standard/vb/parseexample1.vb#3)]  
@@ -63,7 +69,7 @@ manager: "wpickett"
 |*ss*|The number of seconds, which ranges from "0" to "59".|  
 |*fffffff*|The optional fractional portion of a second.  Its value can range from "0000001" (one tick, or one ten-millionth of a second)  to "9999999" (9,999,999 ten-millionths of a second, or one second less one tick).|  
   
- Unlike the "g" and "G" format specifiers, the "c" format specifier is not culture-sensitive. It produces the string representation of a <xref:System.TimeSpan> value that is invariant and that is common to all previous versions of the .NET Framework before the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]. "c" is the default <xref:System.TimeSpan> format string; the <xref:System.TimeSpan.ToString?displayProperty=fullName> method formats a time interval value by using the "c" format string.  
+ Unlike the "g" and "G" format specifiers, the "c" format specifier is not culture-sensitive. It produces the string representation of a <xref:System.TimeSpan> value that is invariant and that is common to all previous versions of the .NET Framework before the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]. "c" is the default <xref:System.TimeSpan> format string; the <xref:System.TimeSpan.ToString?displayProperty=nameWithType> method formats a time interval value by using the "c" format string.  
   
 > [!NOTE]
 >  <xref:System.TimeSpan> also supports the "t" and "T" standard format strings, which are identical in behavior to the "c" standard format string.  
@@ -130,6 +136,6 @@ manager: "wpickett"
  [Back to table](#Top)  
   
 ## See Also  
- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)   
- [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md)   
+ [Formatting Types](../../../docs/standard/base-types/formatting-types.md)  
+ [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md)  
  [Parsing Strings](../../../docs/standard/base-types/parsing-strings.md)

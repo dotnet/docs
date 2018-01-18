@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugValueBreakpoint::GetValue"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetValue method, ICorDebugValueBreakpoint interface [.NET Framework debugging]"
   - "ICorDebugValueBreakpoint::GetValue method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugValueBreakpoint::GetValue Method
 Gets an interface pointer to an "ICorDebugValue" object that represents the value of the object on which the breakpoint is set.  

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COUNINITIEE"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COUNINITIEE enumeration [.NET Framework metadata]"
 ms.assetid: c42baa79-f469-4330-95a2-baf7f021c2fc
@@ -28,6 +26,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COUNINITIEE Enumeration
 Specifies constants used by [CoUninitializeEE](../../../../docs/framework/unmanaged-api/hosting/couninitializeee-function.md) when initializing the common language runtime.  

@@ -31,13 +31,14 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileDeviceSpecificChoiceCollectionSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileDeviceSpecificChoiceCollectionSample/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileDeviceSpecificChoiceCollectionSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileDeviceSpecificChoiceCollectionSample/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileDeviceSpecificChoiceCollectionSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileDeviceSpecificChoiceCollectionSample/cs/Default.aspx#1)]
+ [!code-aspx-vb[MobileDeviceSpecificChoiceCollectionSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileDeviceSpecificChoiceCollectionSample/vb/Default.aspx#1)]  
   
   
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -69,6 +70,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.AddAt(System.Int32,System.Web.UI.MobileControls.DeviceSpecificChoice)" />
+        <altmember cref="M:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.Remove(System.Web.UI.MobileControls.DeviceSpecificChoice)" />
+        <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
       </Docs>
     </Member>
     <Member MemberName="AddAt">
@@ -99,6 +103,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.Add(System.Web.UI.MobileControls.DeviceSpecificChoice)" />
+        <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
       </Docs>
     </Member>
     <Member MemberName="All">
@@ -125,6 +132,7 @@
         <summary>Retrieves an array of <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> objects from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The array of <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> objects contained by the collection.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -150,6 +158,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -172,6 +181,7 @@
         <summary>Returns a <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> item in the collection, by index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> object at the given <paramref name="index" /> in the collection.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -193,6 +203,7 @@
         <param name="choice">The <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> to remove</param>
         <summary>Removes the specified choice. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -214,6 +225,7 @@
         <param name="index">The index number of the item to remove.</param>
         <summary>Removes the item at the specified index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" />
       </Docs>
     </Member>
   </Members>

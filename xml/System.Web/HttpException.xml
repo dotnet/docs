@@ -26,8 +26,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[HttpException#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpException/cs/httpexceptioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpException#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpException/vb/httpexceptionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HttpException#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpException/cs/httpexceptioncs.aspx#1)]
+ [!code-aspx-vb[HttpException#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpException/vb/httpexceptionvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -61,11 +61,12 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[HttpException_Constructor1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpException_Constructor1/CS/httpexception_constructor1.cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpException_Constructor1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpException_Constructor1/VB/httpexception_constructor1.vb.aspx#1)]  -->  
+ [!code-aspx-csharp[HttpException_Constructor1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpException_Constructor1/CS/httpexception_constructor1.cs.aspx#1)]
+ [!code-aspx-vb[HttpException_Constructor1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpException_Constructor1/VB/httpexception_constructor1.vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Exception.InnerException" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -97,6 +98,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Exception.InnerException" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -117,6 +119,7 @@
         <param name="message">The error message displayed to the client when the exception is thrown.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.HttpException" /> class using an HTTP response status code and an error message.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Exception.InnerException" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -144,6 +147,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -179,11 +184,12 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[HttpException_Constructor2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpException_Constructor2/CS/httpexception_constructor2.cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpException_Constructor2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpException_Constructor2/VB/httpexception_constructor2.vb.aspx#1)]  -->  
+ [!code-aspx-csharp[HttpException_Constructor2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpException_Constructor2/CS/httpexception_constructor2.cs.aspx#1)]
+ [!code-aspx-vb[HttpException_Constructor2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpException_Constructor2/VB/httpexception_constructor2.vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Exception.InnerException" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -217,6 +223,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Exception.InnerException" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -254,11 +261,12 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[HttpException_Constructor3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpException_Constructor3/CS/httpexception_constructor3.cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpException_Constructor3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpException_Constructor3/VB/httpexception_constructor3.vb.aspx#1)]  -->  
+ [!code-aspx-csharp[HttpException_Constructor3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpException_Constructor3/CS/httpexception_constructor3.cs.aspx#1)]
+ [!code-aspx-vb[HttpException_Constructor3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpException_Constructor3/VB/httpexception_constructor3.vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Exception.InnerException" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -289,11 +297,12 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[HttpException_Constructor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpException_Constructor/CS/httpexception_constructor5.cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpException_Constructor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpException_Constructor/VB/httpexception_constructor5.vb.aspx#1)]  -->  
+ [!code-aspx-csharp[HttpException_Constructor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpException_Constructor/CS/httpexception_constructor5.cs.aspx#1)]
+ [!code-aspx-vb[HttpException_Constructor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpException_Constructor/VB/httpexception_constructor5.vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Exception.InnerException" />
       </Docs>
     </Member>
     <Member MemberName="CreateFromLastError">
@@ -316,6 +325,7 @@
         <summary>Creates a new <see cref="T:System.Web.HttpException" /> exception based on the error code that is returned from the Win32 API <see langword="GetLastError()" /> method.</summary>
         <returns>An <see cref="T:System.Web.HttpException" /> based on the error code that is returned from a call to the Win32 API <see langword="GetLastError()" /> method.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Exception.InnerException" />
       </Docs>
     </Member>
     <Member MemberName="GetHtmlErrorMessage">
@@ -335,6 +345,7 @@
         <summary>Gets the HTML error message to return to the client.</summary>
         <returns>The HTML error message.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Exception.InnerException" />
       </Docs>
     </Member>
     <Member MemberName="GetHttpCode">
@@ -361,6 +372,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Exception.InnerException" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -391,6 +403,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName="WebEventCode">
@@ -411,5 +425,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

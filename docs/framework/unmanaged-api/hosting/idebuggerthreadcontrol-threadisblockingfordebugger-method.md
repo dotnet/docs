@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ThreadIsBlockingForDebugger"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ThreadIsBlockingForDebugger method [.NET Framework hosting]"
   - "IDebuggerThreadControl::ThreadIsBlockingForDebugger method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IDebuggerThreadControl::ThreadIsBlockingForDebugger Method
 Notifies the host that the thread that is sending this callback is about to block within the debugging services.  

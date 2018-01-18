@@ -10,7 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "application settings [Windows Forms], architecture"
 ms.assetid: c8eb2ad0-fac6-4ea2-9140-675a4a44d562
@@ -18,6 +19,8 @@ caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Application Settings Architecture
 This topic describes how the Application Settings architecture works, and explores advanced features of the architecture, such as grouped settings and settings keys.  
@@ -114,7 +117,7 @@ This topic describes how the Application Settings architecture works, and explor
  If you implement your own settings class, you can use the <xref:System.Configuration.SettingsSerializeAsAttribute> to mark a setting for either binary or custom serialization using the <xref:System.Configuration.SettingsSerializeAs> enumeration. For more information on creating your own settings class in code, see [How to: Create Application Settings](../../../../docs/framework/winforms/advanced/how-to-create-application-settings.md).  
   
 ### Settings File Locations  
- The location of the `app`.exe.config and *user*.config files will differ based on how the application is installed. For a Windows Forms-based application copied onto the local computer, `app`.exe.config will reside in the same directory as the base directory of the application's main executable file, and *user*.config will reside in the location specified by the <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A?displayProperty=fullName> property. For an application installed by means of [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)], both of these files will reside in the [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] Data Directory underneath %InstallRoot%\Documents and Settings\\*username*\Local Settings.  
+ The location of the `app`.exe.config and *user*.config files will differ based on how the application is installed. For a Windows Forms-based application copied onto the local computer, `app`.exe.config will reside in the same directory as the base directory of the application's main executable file, and *user*.config will reside in the location specified by the <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A?displayProperty=nameWithType> property. For an application installed by means of [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)], both of these files will reside in the [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] Data Directory underneath %InstallRoot%\Documents and Settings\\*username*\Local Settings.  
   
  The storage location of these files is slightly different if a user has enabled roaming profiles, which enables a user to define different Windows and application settings when he or she is using other computers within a domain. In that case, both [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] applications and non-[!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] applications will have their `app`.exe.config and *user*.config files stored under %InstallRoot%\Documents and Settings\\*username*\Application Data.  
   
@@ -128,7 +131,7 @@ This topic describes how the Application Settings architecture works, and explor
 ## Custom Settings Providers  
  In the Application Settings architecture, there is a loose coupling between the applications settings wrapper class, derived from <xref:System.Configuration.ApplicationSettingsBase>, and the associated settings provider or providers, derived from <xref:System.Configuration.SettingsProvider>. This association is defined only by the <xref:System.Configuration.SettingsProviderAttribute> applied to the wrapper class or its individual properties. If a settings provider is not explicitly specified, the default provider, <xref:System.Configuration.LocalFileSettingsProvider>, is used. As a result, this architecture supports creating and using custom settings providers.  
   
- For example, suppose that you want to develop and use `SqlSettingsProvider`, a provider that will store all settings data in a Microsoft SQL Server database. Your <xref:System.Configuration.SettingsProvider>-derived class would receive this information in its `Initialize` method as a parameter of type <xref:System.Collections.Specialized.NameValueCollection?displayProperty=fullName>. You would then implement the <xref:System.Configuration.SettingsProvider.GetPropertyValues%2A> method to retrieve your settings from the data store, and <xref:System.Configuration.SettingsProvider.SetPropertyValues%2A> to save them. Your provider can use the <xref:System.Configuration.SettingsPropertyCollection> supplied to <xref:System.Configuration.SettingsProvider.GetPropertyValues%2A> to determine the property's name, type, and scope, as well as any other settings attributes defined for that property.  
+ For example, suppose that you want to develop and use `SqlSettingsProvider`, a provider that will store all settings data in a Microsoft SQL Server database. Your <xref:System.Configuration.SettingsProvider>-derived class would receive this information in its `Initialize` method as a parameter of type <xref:System.Collections.Specialized.NameValueCollection?displayProperty=nameWithType>. You would then implement the <xref:System.Configuration.SettingsProvider.GetPropertyValues%2A> method to retrieve your settings from the data store, and <xref:System.Configuration.SettingsProvider.SetPropertyValues%2A> to save them. Your provider can use the <xref:System.Configuration.SettingsPropertyCollection> supplied to <xref:System.Configuration.SettingsProvider.GetPropertyValues%2A> to determine the property's name, type, and scope, as well as any other settings attributes defined for that property.  
   
  Your provider will need to implement one property and one method whose implementations may not be obvious. The <xref:System.Configuration.SettingsProvider.ApplicationName%2A> property is an abstract property of <xref:System.Configuration.SettingsProvider>; you should program it to return the following:  
   
@@ -149,13 +152,13 @@ This topic describes how the Application Settings architecture works, and explor
 > [!IMPORTANT]
 >  You should ensure that your provider is thread-safe, and only allows one thread at a time to write to the configuration files.  
   
- Your provider does not need to support all of the settings attributes defined in the <xref:System.Configuration?displayProperty=fullName> namespace, though it must at a minimum support <xref:System.Configuration.ApplicationScopedSettingAttribute> and <xref:System.Configuration.UserScopedSettingAttribute>, and should also support <xref:System.Configuration.DefaultSettingValueAttribute>. For those attributes that it does not support, your provider should just fail without notification; it should not throw an exception. If the settings class uses an invalid combination of attributes, however — such as applying <xref:System.Configuration.ApplicationScopedSettingAttribute> and <xref:System.Configuration.UserScopedSettingAttribute> to the same setting — your provider should throw an exception and cease operation.  
+ Your provider does not need to support all of the settings attributes defined in the <xref:System.Configuration?displayProperty=nameWithType> namespace, though it must at a minimum support <xref:System.Configuration.ApplicationScopedSettingAttribute> and <xref:System.Configuration.UserScopedSettingAttribute>, and should also support <xref:System.Configuration.DefaultSettingValueAttribute>. For those attributes that it does not support, your provider should just fail without notification; it should not throw an exception. If the settings class uses an invalid combination of attributes, however — such as applying <xref:System.Configuration.ApplicationScopedSettingAttribute> and <xref:System.Configuration.UserScopedSettingAttribute> to the same setting — your provider should throw an exception and cease operation.  
   
 ## See Also  
- <xref:System.Configuration.ApplicationSettingsBase>   
- <xref:System.Configuration.SettingsProvider>   
- <xref:System.Configuration.LocalFileSettingsProvider>   
- [Application Settings Overview](../../../../docs/framework/winforms/advanced/application-settings-overview.md)   
- [Application Settings for Custom Controls](../../../../docs/framework/winforms/advanced/application-settings-for-custom-controls.md)   
- [ClickOnce and Application Settings](/visualstudio/deployment/clickonce-and-application-settings)   
+ <xref:System.Configuration.ApplicationSettingsBase>  
+ <xref:System.Configuration.SettingsProvider>  
+ <xref:System.Configuration.LocalFileSettingsProvider>  
+ [Application Settings Overview](../../../../docs/framework/winforms/advanced/application-settings-overview.md)  
+ [Application Settings for Custom Controls](../../../../docs/framework/winforms/advanced/application-settings-for-custom-controls.md)  
+ [ClickOnce and Application Settings](/visualstudio/deployment/clickonce-and-application-settings)  
  [Application Settings Schema](../../../../docs/framework/configure-apps/file-schema/application-settings-schema.md)

@@ -10,24 +10,27 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "toolbars [Windows Forms]"
   - "ToolStripPanel control [Windows Forms]"
-  - "MDI, creating forms"
+  - "MDI [Windows Forms], creating forms"
   - "multiple document interface forms"
   - "MDI forms"
   - "ToolStrip control [Windows Forms]"
-  - "MDI forms, creating"
-  - "MDI forms, walkthroughs"
+  - "MDI forms [Windows Forms], creating"
+  - "MDI forms [Windows Forms], walkthroughs"
 ms.assetid: fbab4221-74af-42d0-bbf4-3c97f7b2e544
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Creating an MDI Form with Menu Merging and ToolStrip Controls
-The <xref:System.Windows.Forms?displayProperty=fullName> namespace supports multiple document interface (MDI) applications, and the <xref:System.Windows.Forms.MenuStrip> control supports menu merging. MDI forms can also <xref:System.Windows.Forms.ToolStrip> controls.  
+The <xref:System.Windows.Forms?displayProperty=nameWithType> namespace supports multiple document interface (MDI) applications, and the <xref:System.Windows.Forms.MenuStrip> control supports menu merging. MDI forms can also <xref:System.Windows.Forms.ToolStrip> controls.  
   
  This walkthrough demonstrates how to use <xref:System.Windows.Forms.ToolStripPanel> controls with an MDI form. The form also supports menu merging with child menus. The following tasks are illustrated in this walkthrough:  
   
@@ -212,10 +215,10 @@ The <xref:System.Windows.Forms?displayProperty=fullName> namespace supports mult
 -   Give your <xref:System.Windows.Forms.ToolStrip> controls a professional appearance. For more information, see [How to: Set the ToolStrip Renderer for an Application](../../../../docs/framework/winforms/controls/how-to-set-the-toolstrip-renderer-for-an-application.md).  
   
 ## See Also  
- <xref:System.Windows.Forms.MenuStrip>   
- <xref:System.Windows.Forms.ToolStrip>   
- <xref:System.Windows.Forms.StatusStrip>   
- [How to: Create MDI Parent Forms](../../../../docs/framework/winforms/advanced/how-to-create-mdi-parent-forms.md)   
- [How to: Create MDI Child Forms](../../../../docs/framework/winforms/advanced/how-to-create-mdi-child-forms.md)   
- [How to: Insert a MenuStrip into an MDI Drop-Down Menu](../../../../docs/framework/winforms/controls/how-to-insert-a-menustrip-into-an-mdi-drop-down-menu-windows-forms.md)   
+ <xref:System.Windows.Forms.MenuStrip>  
+ <xref:System.Windows.Forms.ToolStrip>  
+ <xref:System.Windows.Forms.StatusStrip>  
+ [How to: Create MDI Parent Forms](../../../../docs/framework/winforms/advanced/how-to-create-mdi-parent-forms.md)  
+ [How to: Create MDI Child Forms](../../../../docs/framework/winforms/advanced/how-to-create-mdi-child-forms.md)  
+ [How to: Insert a MenuStrip into an MDI Drop-Down Menu](../../../../docs/framework/winforms/controls/how-to-insert-a-menustrip-into-an-mdi-drop-down-menu-windows-forms.md)  
  [ToolStrip Control](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)

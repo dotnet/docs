@@ -28,16 +28,16 @@
   
  The first part of the code example shows the user control. The user control implements all the properties of the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface, plus two additional public properties tied to controls in the user interface. The two custom properties each use the `Personalizable` attribute, which enables the values in those properties to be saved across browser sessions. Note that in the base <xref:System.Web.UI.WebControls.WebParts.WebPart> class implementation, all the properties of the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface are implemented as personalizable as well, though they are not in this code example.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_IWebPart_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountusercontrolcs.ascx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_IWebPart_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountusercontrolvb.ascx#2)]  -->  
+ [!code-aspx-csharp[WebParts_IWebPart_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountusercontrolcs.ascx#2)]
+ [!code-aspx-vb[WebParts_IWebPart_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountusercontrolvb.ascx#2)]  
   
  The second part of the code example shows the Web page that hosts the user control. The page has a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control, within which the user control is referenced. Notice that several of the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface's property values are set declaratively in the markup for the user control, which enables it to both behave and appear similar to a <xref:System.Web.UI.WebControls.WebParts.WebPart> control at design time and run time. If you load the page in a browser, you can use the UI on the page to demonstrate the ability to programmatically change the values of the implemented <xref:System.Web.UI.WebControls.WebParts.IWebPart> properties at run time. When you change some of the property values, the changes are not evident on the page, but are visible in the page source (the <xref:System.Web.UI.WebControls.WebParts.IWebPart.TitleIconImageUrl%2A> property), or are stored in the application's state data (the <xref:System.Web.UI.WebControls.WebParts.IWebPart.CatalogIconImageUrl%2A> property).  
   
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_IWebPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountuchostcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_IWebPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountuchostvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_IWebPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountuchostcs.aspx#1)]
+ [!code-aspx-vb[WebParts_IWebPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountuchostvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -46,6 +46,8 @@
   
  The main reason to implement the <see cref="T:System.Web.UI.WebControls.WebParts.IWebPart" /> interface yourself, whether in a custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control or another server control, is if you want to change the default implementation. For example, you might want to provide default values for some of the properties. Another reason to implement the interface in a user or server control is so that the design-time experience of working with these properties on the control will be enhanced.</para>
     </block>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPart" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" />
   </Docs>
   <Members>
     <Member MemberName="CatalogIconImageUrl">
@@ -89,11 +91,14 @@
   
  The third part of the code example shows how the user control that implements the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface is referenced in a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control, and how the <xref:System.Web.UI.WebControls.WebParts.IWebPart.CatalogIconImageUrl%2A> property is set declaratively on the control. Note that because there is no catalog of Web Parts controls provided with this example, you cannot see the actual effect of setting this property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_IWebPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountuchostcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_IWebPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountuchostvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_IWebPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountuchostcs.aspx#1)]
+ [!code-aspx-vb[WebParts_IWebPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountuchostvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.CatalogIconImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.GenericWebPart.CatalogIconImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartDescription.CatalogIconImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -137,11 +142,14 @@
   
  The third part of the code example shows how the user control that implements the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface is referenced in a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control, and how the <xref:System.Web.UI.WebControls.WebParts.IWebPart.Description%2A> property is set declaratively on the control. Note that you can see the value of this property by positioning your mouse pointer over the title text in the control's title bar, after you have loaded the page in a browser. You can also experiment with changing the property value programmatically at run time by loading the Web page and using the provided user interface (UI) to change the property value.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_IWebPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountuchostcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_IWebPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountuchostvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_IWebPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountuchostcs.aspx#1)]
+ [!code-aspx-vb[WebParts_IWebPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountuchostvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Description" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Description" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.GenericWebPart.Description" />
       </Docs>
     </Member>
     <Member MemberName="Subtitle">
@@ -179,11 +187,13 @@
   
  The second part of the code example shows how the user control that implements the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface is referenced in a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control, and how the writable properties from <xref:System.Web.UI.WebControls.WebParts.IWebPart> are set declaratively on the control. After you load the page in a browser, note that the default value of the <xref:System.Web.UI.WebControls.WebParts.IWebPart.Subtitle%2A> property, which was set in the user control's implementation code, is appended to the title in the control's title bar.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_IWebPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountuchostcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_IWebPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountuchostvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_IWebPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountuchostcs.aspx#1)]
+ [!code-aspx-vb[WebParts_IWebPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountuchostvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Subtitle" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.GenericWebPart.Subtitle" />
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -229,11 +239,14 @@
   
  The third part of the code example shows how the user control that implements the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface is referenced in a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control, and how the <xref:System.Web.UI.WebControls.WebParts.IWebPart.Title%2A> property is set declaratively on the control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_IWebPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountuchostcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_IWebPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountuchostvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_IWebPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountuchostcs.aspx#1)]
+ [!code-aspx-vb[WebParts_IWebPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountuchostvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Title" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.GenericWebPart.Title" />
       </Docs>
     </Member>
     <Member MemberName="TitleIconImageUrl">
@@ -279,11 +292,13 @@
   
  The third part of the code example shows how the user control that implements the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface is referenced in a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control, and how the <xref:System.Web.UI.WebControls.WebParts.IWebPart.TitleIconImageUrl%2A> property is set declaratively on the control. Note that if you do not provide the URL to a real image, a placeholder for the icon appears in the title bar.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_IWebPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountuchostcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_IWebPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountuchostvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_IWebPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountuchostcs.aspx#1)]
+ [!code-aspx-vb[WebParts_IWebPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountuchostvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.TitleIconImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.GenericWebPart.TitleIconImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="TitleUrl">
@@ -330,11 +345,13 @@
   
  The third part of the code example shows how the user control that implements the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface is referenced in a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control, and how the <xref:System.Web.UI.WebControls.WebParts.IWebPart.TitleUrl%2A> property is set declaratively on the control. Note that if you do not provide a URL to a real page, and then a user clicks the link in the title bar, an error message appears.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_IWebPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountuchostcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_IWebPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountuchostvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_IWebPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountuchostcs.aspx#1)]
+ [!code-aspx-vb[WebParts_IWebPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountuchostvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.TitleUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.GenericWebPart.TitleUrl" />
       </Docs>
     </Member>
   </Members>

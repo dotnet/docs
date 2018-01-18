@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_PRF_GC_ROOT_KIND"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_PRF_GC_ROOT_KIND enumeration [.NET Framework profiling]"
 ms.assetid: b9fb1c03-417f-41d4-aed4-02cb4ade8def
@@ -28,6 +26,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PRF_GC_ROOT_KIND Enumeration
 Indicates the kind of garbage collection root that is exposed by the [ICorProfilerCallback2::RootReferences2](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-rootreferences2-method.md) callback.  

@@ -30,6 +30,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider" />
+    <altmember cref="E:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.UserValidated" />
+    <altmember cref="P:System.Web.ClientServices.Providers.UserValidatedEventArgs.UserName" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,6 +51,8 @@
         <param name="username">The user name of the validated user.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.ClientServices.Providers.UserValidatedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider" />
+        <altmember cref="E:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.UserValidated" />
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -76,6 +81,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider" />
+        <altmember cref="E:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.UserValidated" />
       </Docs>
     </Member>
   </Members>

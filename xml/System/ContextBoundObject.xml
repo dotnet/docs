@@ -39,6 +39,7 @@
     <block subset="none" type="overrides">
       <para>The current version of the common language runtime does not support generic <see cref="T:System.ContextBoundObject" /> types or nongeneric <see cref="T:System.ContextBoundObject" /> types that have generic methods. Attempting to create an instance of such a type causes a <see cref="T:System.TypeLoadException" />.</para>
     </block>
+    <altmember cref="T:System.Runtime.Remoting.Contexts.SynchronizationAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,6 +64,7 @@
       <Docs>
         <summary>Instantiates an instance of the <see cref="T:System.ContextBoundObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ContextBoundObject" />
       </Docs>
     </Member>
   </Members>

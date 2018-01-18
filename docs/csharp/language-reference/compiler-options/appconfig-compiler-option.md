@@ -1,34 +1,18 @@
 ---
 title: "-appconfig (C# Compiler Options)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
 f1_keywords: 
   - "/appconfig"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/appconfig compiler option [C#]"
 ms.assetid: 1cdbcbcc-7813-4010-b5b8-e67c107c5a98
 caps.latest.revision: 26
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /appconfig (C# Compiler Options)
 The **/appconfig** compiler option enables a C# application to specify the location of an assembly's application configuration (app.config) file to the common language runtime (CLR) at assembly binding time.  
@@ -70,6 +54,5 @@ The **/appconfig** compiler option enables a C# application to specify the locat
 ```  
   
 ## See Also  
- [.NET Framework Assembly Unification Overview](http://msdn.microsoft.com/en-us/8d8cc65e-031d-463b-bde3-2c6dc2e3bc48)   
- [\<supportPortability> Element](../../../framework/configure-apps/file-schema/runtime/supportportability-element.md)   
+ [\<supportPortability> Element](../../../framework/configure-apps/file-schema/runtime/supportportability-element.md)  
  [C# Compiler Options Listed Alphabetically](../../../csharp/language-reference/compiler-options/listed-alphabetically.md)

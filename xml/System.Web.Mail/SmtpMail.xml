@@ -145,5 +145,14 @@ MailMessage to@contoso.com from@contoso.com test hello
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Send">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends an e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

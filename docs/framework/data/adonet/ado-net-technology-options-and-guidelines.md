@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c8577281-38e6-4ce5-b036-572039a4c3d8
 caps.latest.revision: 6
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # ADO.NET Technology Options and Guidelines
 The ADO.NET Data Platform is a multi-release strategy to decrease the amount of coding and maintenance required for developers by enabling them to program against conceptual entity data models. This platform includes the ADO.NET Entity Framework and related technologies.  
@@ -46,6 +48,6 @@ The ADO.NET Data Platform is a multi-release strategy to decrease the amount of 
  [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] deploys data services on the Web or on an intranet. The data is structured as entities and relationships according to the specifications of the Entity Data Model. Data deployed on this model is addressable by standard HTTP protocol. For more information, see [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md).  
   
 ## See Also  
- [ADO.NET Overview](../../../../docs/framework/data/adonet/ado-net-overview.md)   
- [What's New in ADO.NET](../../../../docs/framework/data/adonet/whats-new.md)   
+ [ADO.NET Overview](../../../../docs/framework/data/adonet/ado-net-overview.md)  
+ [What's New in ADO.NET](../../../../docs/framework/data/adonet/whats-new.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

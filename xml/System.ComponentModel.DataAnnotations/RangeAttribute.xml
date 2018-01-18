@@ -193,7 +193,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.DataAnnotations.RangeAttribute.FormatErrorMessage%2A> creates the error message by using the name of the data field that caused the validation failure. You can override this method in a custom validation attribute to customize how errors are created, or to provide a more complex message that contains parameters that you evaluate at run time. For an example, see the <xref:System.ComponentModel.DataAnnotations.RangeAttribute.%23ctor%2A?displayProperty=fullName> constructor.  
+ The <xref:System.ComponentModel.DataAnnotations.RangeAttribute.FormatErrorMessage%2A> creates the error message by using the name of the data field that caused the validation failure. You can override this method in a custom validation attribute to customize how errors are created, or to provide a more complex message that contains parameters that you evaluate at run time. For an example, see the <xref:System.ComponentModel.DataAnnotations.RangeAttribute.%23ctor%2A?displayProperty=nameWithType> constructor.  
   
  ]]></format>
         </remarks>
@@ -315,5 +315,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.RangeAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

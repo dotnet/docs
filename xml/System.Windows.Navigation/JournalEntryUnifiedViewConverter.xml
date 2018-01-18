@@ -35,9 +35,9 @@
   
  The navigation history is stored by both <xref:System.Windows.Navigation.NavigationWindow> and <xref:System.Windows.Controls.Frame> in the following properties:  
   
- **Back Navigation History**: <xref:System.Windows.Controls.Frame.BackStack%2A?displayProperty=fullName>, <xref:System.Windows.Navigation.NavigationWindow.BackStack%2A?displayProperty=fullName>.  
+ **Back Navigation History**: <xref:System.Windows.Controls.Frame.BackStack%2A?displayProperty=nameWithType>, <xref:System.Windows.Navigation.NavigationWindow.BackStack%2A?displayProperty=nameWithType>.  
   
- **Forward Navigation History**: <xref:System.Windows.Controls.Frame.ForwardStack%2A?displayProperty=fullName>, <xref:System.Windows.Navigation.NavigationWindow.ForwardStack%2A?displayProperty=fullName>.  
+ **Forward Navigation History**: <xref:System.Windows.Controls.Frame.ForwardStack%2A?displayProperty=nameWithType>, <xref:System.Windows.Navigation.NavigationWindow.ForwardStack%2A?displayProperty=nameWithType>.  
   
  To create the [!INCLUDE[TLA#tla_ie7](~/includes/tlasharptla-ie7-md.md)]-style drop-down list, <xref:System.Windows.Navigation.NavigationWindow> and <xref:System.Windows.Controls.Frame> use <xref:System.Windows.Navigation.JournalEntryUnifiedViewConverter> to merge their individual back navigation history and forward navigation history into a single list of navigation history entries. The resulting list contains up to nine entries from back navigation history and up to nine entries from forward navigation history, plus an entry for the current content.  
   
@@ -55,6 +55,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Navigation.JournalEntryPosition" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

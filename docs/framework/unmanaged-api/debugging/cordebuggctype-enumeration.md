@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugGCType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugGCType enumeration [.NET Framework debugging]"
 ms.assetid: 880ca92a-42d4-42a5-9b9c-c2848eb39c6a
@@ -28,6 +26,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugGCType Enumeration
 Indicates whether the garbage collector is running on a workstation or a server.  

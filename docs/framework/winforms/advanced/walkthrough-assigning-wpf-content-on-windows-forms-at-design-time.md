@@ -9,19 +9,19 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "WPF content [Windows Forms], assigning at design time"
-  - "ElementHost control, assigning WPF content at design time"
+  - "ElementHost control [Windows Forms], assigning WPF content at design time"
   - "interoperability [WPF]"
   - "Windows Forms, content assignments"
-  - "WPF user control, hosting in Windows Forms"
+  - "WPF user control [Windows Forms], hosting in Windows Forms"
 ms.assetid: b3e9ef93-7e0f-4a2f-8f1e-3437609a1eb7
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Assigning WPF Content on Windows Forms at Design Time
 This walkthrough show you how to select the Windows Presentation Foundation (WPF) control types you want to display on your form. You can select any WPF control types which are included in your project.  
@@ -63,15 +63,15 @@ This walkthrough show you how to select the Windows Presentation Foundation (WPF
   
 3.  In the **Properties** window, set the value of the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties to `200`.  
   
-4.  Add a <xref:System.Windows.Controls.TextBox?displayProperty=fullName> control to the <xref:System.Windows.Controls.UserControl> and set the value of the <xref:System.Windows.Controls.TextBox.Text%2A> property to **Hosted Content**.  
+4.  Add a <xref:System.Windows.Controls.TextBox?displayProperty=nameWithType> control to the <xref:System.Windows.Controls.UserControl> and set the value of the <xref:System.Windows.Controls.TextBox.Text%2A> property to **Hosted Content**.  
   
 5.  Add a second WPF <xref:System.Windows.Controls.UserControl> to the project. Use the default name for the control type, `UserControl2.xaml`.  
   
 6.  In the **Properties** window, set the value of the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties to `200`.  
   
-7.  Add a <xref:System.Windows.Controls.TextBox?displayProperty=fullName> control to the <xref:System.Windows.Controls.UserControl> and set the value of the <xref:System.Windows.Controls.TextBox.Text%2A> property to **Hosted Content 2**.  
+7.  Add a <xref:System.Windows.Controls.TextBox?displayProperty=nameWithType> control to the <xref:System.Windows.Controls.UserControl> and set the value of the <xref:System.Windows.Controls.TextBox.Text%2A> property to **Hosted Content 2**.  
   
- **Note** In general, you should host more sophisticated WPF content. The <xref:System.Windows.Controls.TextBox?displayProperty=fullName> control is used here for illustrative purposes only.  
+ **Note** In general, you should host more sophisticated WPF content. The <xref:System.Windows.Controls.TextBox?displayProperty=nameWithType> control is used here for illustrative purposes only.  
   
 1.  Build the project.  
   
@@ -105,8 +105,8 @@ This walkthrough show you how to select the Windows Presentation Foundation (WPF
 9. The `elementHost2` control now hosts an instance of the `UserControl1` type.  
   
 ## See Also  
- <xref:System.Windows.Forms.Integration.ElementHost>   
- <xref:System.Windows.Forms.Integration.WindowsFormsHost>   
- [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)   
- [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)   
+ <xref:System.Windows.Forms.Integration.ElementHost>  
+ <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
+ [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)  
+ [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)  
  [WPF Designer](http://msdn.microsoft.com/en-us/c6c65214-8411-4e16-b254-163ed4099c26)

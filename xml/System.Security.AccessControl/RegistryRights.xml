@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Security.AccessControl.RegistryRights> enumeration to specify registry access rights when you create <xref:System.Security.AccessControl.RegistrySecurity> objects. To apply access rights to a registry key, first add <xref:System.Security.AccessControl.RegistryAccessRule> objects to a <xref:System.Security.AccessControl.RegistrySecurity> object, then attach the <xref:System.Security.AccessControl.RegistrySecurity> object to the key using the <xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=fullName> method, or an appropriate overload of the <xref:Microsoft.Win32.RegistryKey.CreateSubKey%2A?displayProperty=fullName> method.  
+ Use the <xref:System.Security.AccessControl.RegistryRights> enumeration to specify registry access rights when you create <xref:System.Security.AccessControl.RegistrySecurity> objects. To apply access rights to a registry key, first add <xref:System.Security.AccessControl.RegistryAccessRule> objects to a <xref:System.Security.AccessControl.RegistrySecurity> object, then attach the <xref:System.Security.AccessControl.RegistrySecurity> object to the key using the <xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=nameWithType> method, or an appropriate overload of the <xref:Microsoft.Win32.RegistryKey.CreateSubKey%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -43,6 +43,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.AccessControl.RegistryAccessRule" />
+    <altmember cref="T:System.Security.AccessControl.RegistrySecurity" />
+    <altmember cref="T:System.Security.AccessControl.RegistryAuditRule" />
   </Docs>
   <Members>
     <Member MemberName="ChangePermissions">

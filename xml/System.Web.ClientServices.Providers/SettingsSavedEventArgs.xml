@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.ClientServices.Providers.ClientSettingsProvider.SettingsSaved?displayProperty=fullName> event occurs after the settings provider accesses the settings service, even if the settings were not successfully saved. One reason that the provider might fail to save the settings is if the current user has been logged out. You can use the <xref:System.Web.ClientServices.Providers.SettingsSavedEventArgs.FailedSettingsList%2A> property to determine whether any settings were not successfully saved.  
+ The <xref:System.Web.ClientServices.Providers.ClientSettingsProvider.SettingsSaved?displayProperty=nameWithType> event occurs after the settings provider accesses the settings service, even if the settings were not successfully saved. One reason that the provider might fail to save the settings is if the current user has been logged out. You can use the <xref:System.Web.ClientServices.Providers.SettingsSavedEventArgs.FailedSettingsList%2A> property to determine whether any settings were not successfully saved.  
   
  This event does not occur if the settings provider cannot access the settings service, which instead causes the provider to throw a <xref:System.Net.WebException>.  
   
@@ -32,6 +32,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.ClientServices.Providers.SettingsSavedEventArgs.FailedSettingsList" />
+    <altmember cref="T:System.Web.ClientServices.Providers.ClientSettingsProvider" />
+    <altmember cref="E:System.Web.ClientServices.Providers.ClientSettingsProvider.SettingsSaved" />
+    <altmember cref="E:System.Configuration.ApplicationSettingsBase.SettingsLoaded" />
+    <altmember cref="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.Logout" />
+    <altmember cref="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.Logout" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,6 +56,8 @@
         <param name="failedSettingsList">The settings that the settings provider was unable to save.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.ClientServices.Providers.SettingsSavedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.ClientServices.Providers.ClientSettingsProvider" />
+        <altmember cref="E:System.Web.ClientServices.Providers.ClientSettingsProvider.SettingsSaved" />
       </Docs>
     </Member>
     <Member MemberName="FailedSettingsList">
@@ -83,6 +91,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.ClientServices.Providers.SettingsSavedEventArgs.FailedSettingsList" />
+        <altmember cref="T:System.Web.ClientServices.Providers.ClientSettingsProvider" />
+        <altmember cref="E:System.Web.ClientServices.Providers.ClientSettingsProvider.SettingsSaved" />
+        <altmember cref="E:System.Configuration.ApplicationSettingsBase.SettingsLoaded" />
+        <altmember cref="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.Logout" />
+        <altmember cref="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.Logout" />
       </Docs>
     </Member>
   </Members>

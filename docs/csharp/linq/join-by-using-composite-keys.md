@@ -7,9 +7,8 @@ manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: dotnet
+ms.prod: .net
+ms.technology: devlang-csharp
 ms.assetid: da70b54d-3213-45eb-8437-fbe75cbcf935
 ---
 # Join by using composite keys
@@ -38,6 +37,6 @@ join...on new {Name = o.CustomerName, ID = o.CustID} equals
  Composite keys can be also used in a `group` clause.  
 
 ## See also  
- [LINQ query expressions](index.md)   
- [join clause](../language-reference/keywords/join-clause.md)   
+ [LINQ query expressions](index.md)  
+ [join clause](../language-reference/keywords/join-clause.md)  
  [group clause](../language-reference/keywords/group-clause.md)

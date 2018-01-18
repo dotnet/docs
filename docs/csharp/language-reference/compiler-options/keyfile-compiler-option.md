@@ -1,14 +1,12 @@
 ---
 title: "-keyfile (C# Compiler Options)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
 f1_keywords: 
   - "/keyfile"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/keyfile compiler option [C#]"
   - "-keyfile compiler option [C#]"
@@ -17,20 +15,6 @@ ms.assetid: 0815f9de-ace4-4e98-b4c6-13c55dea40c2
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /keyfile (C# Compiler Options)
 Specifies the filename containing the cryptographic key.  
@@ -58,7 +42,7 @@ Specifies the filename containing the cryptographic key.
   
  Note that a key file might contain only the public key.  
   
- For more information, see [Creating and Using Strong-Named Assemblies](https://msdn.microsoft.com/library/xwb8f617) and [Delay Signing an Assembly](../../../framework/app-domains/delay-sign-assembly.md).  
+ For more information, see [Creating and Using Strong-Named Assemblies](../../../framework/app-domains/create-and-use-strong-named-assemblies.md) and [Delay Signing an Assembly](../../../framework/app-domains/delay-sign-assembly.md).  
   
 ### To set this compiler option in the Visual Studio development environment  
   
@@ -71,5 +55,5 @@ Specifies the filename containing the cryptographic key.
  You can programmatically access this compiler option with <xref:VSLangProj.ProjectProperties.AssemblyOriginatorKeyFile%2A>.  
   
 ## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

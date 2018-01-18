@@ -39,7 +39,7 @@
   
  Standard input is usually the keyboard, and standard output and standard error are usually the monitor screen. However, you can use the <xref:System.Diagnostics.ProcessStartInfo.RedirectStandardInput%2A>, <xref:System.Diagnostics.ProcessStartInfo.RedirectStandardOutput%2A>, and <xref:System.Diagnostics.ProcessStartInfo.RedirectStandardError%2A> properties to cause the process to get input from or return output to a file or other device. If you use the <xref:System.Diagnostics.Process.StandardInput%2A>, <xref:System.Diagnostics.Process.StandardOutput%2A>, or <xref:System.Diagnostics.Process.StandardError%2A> properties on the <xref:System.Diagnostics.Process> component, you must first set the corresponding value on the <xref:System.Diagnostics.ProcessStartInfo> property. Otherwise, the system throws an exception when you read or write to the stream.  
   
- Set <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A> to specify whether to start the process by using the operating system shell.  
+ Set the <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A> property to specify whether to start the process by using the operating system shell. If <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A> is set to `false`, the new process inherits the standard input, standard output, and standard error streams of the calling process, unless the <xref:System.Diagnostics.ProcessStartInfo.RedirectStandardInput%2A>, <xref:System.Diagnostics.ProcessStartInfo.RedirectStandardOutput%2A>, or <xref:System.Diagnostics.ProcessStartInfo.RedirectStandardError%2A> properties, respectively, are set to `true`. 
   
  You can change the value of any <xref:System.Diagnostics.ProcessStartInfo> property up to the time that the process starts. After you start the process, changing these values has no effect.  
   
@@ -58,6 +58,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for calling members of <see cref="T:System.Diagnostics.ProcessStartInfo" />. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+    <altmember cref="T:System.Diagnostics.Process" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -317,9 +318,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that identifies the domain to use when starting the process.</summary>
-        <value>The Active Directory domain to use when starting the process. The domain property is primarily of interest to users within enterprise environments that use Active Directory.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that identifies the domain to use when starting the process. If this value is <see langword="null" />, the <see cref="P:System.Diagnostics.ProcessStartInfo.UserName" /> property must be specified in UPN format. </summary>
+        <value>The Active Directory domain to use when starting the process. If this value is <see langword="null" />, the <see cref="P:System.Diagnostics.ProcessStartInfo.UserName" /> property must be specified in UPN format. </value>
+        <remarks>This property is primarily of interest to users within enterprise environments that use Active Directory.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Environment">
@@ -368,6 +369,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.EnvironmentVariables" />
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.UseShellExecute" />
+        <altmember cref="M:System.Diagnostics.Process.Start" />
       </Docs>
     </Member>
     <Member MemberName="EnvironmentVariables">
@@ -664,7 +668,7 @@
  For more information about secure strings and an example of how to obtain a password to set this property, see the <xref:System.Security.SecureString> class.  
   
 > [!NOTE]
->  If you provide a value for the <xref:System.Diagnostics.ProcessStartInfo.Password%2A> property, the <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A> property must be `false`, or an <xref:System.InvalidOperationException> will be thrown when the <xref:System.Diagnostics.Process.Start%28System.Diagnostics.ProcessStartInfo%29?displayProperty=fullName> method is called.  
+>  If you provide a value for the <xref:System.Diagnostics.ProcessStartInfo.Password%2A> property, the <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A> property must be `false`, or an <xref:System.InvalidOperationException> will be thrown when the <xref:System.Diagnostics.Process.Start%28System.Diagnostics.ProcessStartInfo%29?displayProperty=nameWithType> method is called.  
   
  ]]></format>
         </remarks>
@@ -810,6 +814,8 @@ p.WaitForExit();
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.UseShellExecute" />
+        <altmember cref="P:System.Diagnostics.Process.StandardError" />
       </Docs>
     </Member>
     <Member MemberName="RedirectStandardInput">
@@ -871,6 +877,8 @@ p.WaitForExit();
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.UseShellExecute" />
+        <altmember cref="P:System.Diagnostics.Process.StandardInput" />
       </Docs>
     </Member>
     <Member MemberName="RedirectStandardOutput">
@@ -967,6 +975,8 @@ p.WaitForExit();
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.UseShellExecute" />
+        <altmember cref="P:System.Diagnostics.Process.StandardOutput" />
       </Docs>
     </Member>
     <Member MemberName="StandardErrorEncoding">
@@ -1067,8 +1077,8 @@ p.WaitForExit();
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the user name to be used when starting the process.</summary>
-        <value>The user name to use when starting the process.</value>
+        <summary>Gets or sets the user name to use when starting the process. If you use the UPN format, <paramref name="user" />@<paramref name="DNS_domain_name" />, the <see cref="P:System.Diagnostics.ProcessStartInfo.Domain" /> property must be <see langword="null" />.</summary>
+        <value>The user name to use when starting the process. If you use the UPN format, <paramref name="user" />@<paramref name="DNS_domain_name" />, the <see cref="P:System.Diagnostics.ProcessStartInfo.Domain" /> property must be <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1077,7 +1087,7 @@ p.WaitForExit();
 > [!IMPORTANT]
 >  The <xref:System.Diagnostics.ProcessStartInfo.WorkingDirectory%2A> property must be set if <xref:System.Diagnostics.ProcessStartInfo.UserName%2A> and <xref:System.Diagnostics.ProcessStartInfo.Password%2A> are provided. If the property is not set, the default working directory is %SYSTEMROOT%\system32.  
   
- If the <xref:System.Diagnostics.ProcessStartInfo.UserName%2A> property is not `null` or an empty string, the <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A> property must be `false`, or an <xref:System.InvalidOperationException> will be thrown when the <xref:System.Diagnostics.Process.Start%28System.Diagnostics.ProcessStartInfo%29?displayProperty=fullName> method is called.  
+ If the <xref:System.Diagnostics.ProcessStartInfo.UserName%2A> property is not `null` or an empty string, the <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A> property must be `false`, or an <xref:System.InvalidOperationException> will be thrown when the <xref:System.Diagnostics.Process.Start%28System.Diagnostics.ProcessStartInfo%29?displayProperty=nameWithType> method is called.  
   
  ]]></format>
         </remarks>
@@ -1119,7 +1129,7 @@ p.WaitForExit();
       <Docs>
         <summary>Gets or sets a value indicating whether to use the operating system shell to start the process.</summary>
         <value>
-          <see langword="true" /> if the shell should be used when starting the process; <see langword="false" /> if the process should be created directly from the executable file. The default is <see langword="true" />.</value>
+          <see langword="true" /> if the shell should be used when starting the process; <see langword="false" /> if the process should be created directly from the executable file. The default is <see langword="true" /> on .NET Framework apps and <see langword="false" /> on .NET Core apps.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1127,7 +1137,7 @@ p.WaitForExit();
  Setting this property to `false` enables you to redirect input, output, and error streams.  
   
 > [!NOTE]
->  <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A> must be `false` if the <xref:System.Diagnostics.ProcessStartInfo.UserName%2A> property is not `null` or an empty string, or an <xref:System.InvalidOperationException> will be thrown when the <xref:System.Diagnostics.Process.Start%28System.Diagnostics.ProcessStartInfo%29?displayProperty=fullName> method is called.  
+>  <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A> must be `false` if the <xref:System.Diagnostics.ProcessStartInfo.UserName%2A> property is not `null` or an empty string, or an <xref:System.InvalidOperationException> will be thrown when the <xref:System.Diagnostics.Process.Start%28System.Diagnostics.ProcessStartInfo%29?displayProperty=nameWithType> method is called.  
   
  When you use the operating system shell to start processes, you can start any document (which is any registered file type associated with an executable that has a default open action) and perform operations on the file, such as printing, by using the <xref:System.Diagnostics.Process> object. When <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A> is `false`, you can start only executables by using the <xref:System.Diagnostics.Process> object.  
   
@@ -1147,6 +1157,10 @@ p.WaitForExit();
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">An attempt to set the value to <see langword="true" /> on Universal Windows Platform (UWP) apps occurs.</exception>
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.RedirectStandardInput" />
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.RedirectStandardOutput" />
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.RedirectStandardError" />
       </Docs>
     </Member>
     <Member MemberName="Verb">
@@ -1205,6 +1219,7 @@ p.WaitForExit();
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.Verbs" />
       </Docs>
     </Member>
     <Member MemberName="Verbs">
@@ -1257,6 +1272,7 @@ p.WaitForExit();
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.Verb" />
       </Docs>
     </Member>
     <Member MemberName="WindowStyle">
@@ -1373,5 +1389,15 @@ p.WaitForExit();
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.ProcessStartInfo" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -15,6 +15,9 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # For Further Reading (Parallel Programming)
 The following resources contain additional information about Parallel Programming in the .NET Framework:  
@@ -30,5 +33,5 @@ The following resources contain additional information about Parallel Programmin
 -   The [Parallel Extensions Samples](http://go.microsoft.com/fwlink/?LinkID=165717) page on the MSDN Code Gallery Web site contains many samples that demonstrate intermediate and advanced parallel programming techniques.  
   
 ## See Also  
- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)   
+ [Parallel Programming](../../../docs/standard/parallel-programming/index.md)  
  [Patterns for Parallel Programming: Understanding and Applying Parallel Patterns with the .NET Framework 4](http://go.microsoft.com/fwlink/?LinkID=185142)

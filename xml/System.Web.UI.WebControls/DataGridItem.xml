@@ -34,11 +34,14 @@
 > [!NOTE]
 >  The following code example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataGridItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridItemDataBound/CS/datagriditemdataboundcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridItemDataBound/VB/datagriditemdataboundvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridItemDataBound/CS/datagriditemdataboundcs.aspx#1)]
+ [!code-aspx-vb[DataGridItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridItemDataBound/VB/datagriditemdataboundvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="T:System.Web.UI.WebControls.DataGridItemCollection" />
+    <altmember cref="P:System.Web.UI.WebControls.DataGrid.Items" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,6 +79,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="T:System.Web.UI.WebControls.ListItemType" />
       </Docs>
     </Member>
     <Member MemberName="DataItem">
@@ -110,11 +115,13 @@
 > [!NOTE]
 >  The following code example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic DataGridItem.DataItem Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridItem.DataItem Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic DataGridItem.DataItem Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridItem.DataItem Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic DataGridItem.DataItem Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridItem.DataItem Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic DataGridItem.DataItem Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridItem.DataItem Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="DataSetIndex">
@@ -149,11 +156,14 @@
 > [!NOTE]
 >  The following code example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic DataGridItem.DataSetIndex Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridItem.DataSetIndex Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic DataGridItem.DataSetIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridItem.DataSetIndex Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic DataGridItem.DataSetIndex Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridItem.DataSetIndex Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic DataGridItem.DataSetIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridItem.DataSetIndex Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridItem.ItemType" />
       </Docs>
     </Member>
     <Member MemberName="ItemIndex">
@@ -188,11 +198,14 @@
 > [!NOTE]
 >  The following code example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic DataGridItem.ItemIndex Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridItem.ItemIndex Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic DataGridItem.ItemIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridItem.ItemIndex Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic DataGridItem.ItemIndex Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridItem.ItemIndex Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic DataGridItem.ItemIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridItem.ItemIndex Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.Items" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridItem.ItemType" />
       </Docs>
     </Member>
     <Member MemberName="ItemType">
@@ -235,11 +248,13 @@
 > [!NOTE]
 >  The following code example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
- <!-- TODO: review snippet reference [!code-csharp[DataGridItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridItemDataBound/CS/datagriditemdataboundcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridItemDataBound/VB/datagriditemdataboundvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridItemDataBound/CS/datagriditemdataboundcs.aspx#1)]
+ [!code-aspx-vb[DataGridItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridItemDataBound/VB/datagriditemdataboundvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="T:System.Web.UI.WebControls.ListItemType" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">

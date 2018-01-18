@@ -18,9 +18,9 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewButtonCell> class is a specialized type of <xref:System.Windows.Forms.DataGridViewCell> used to display a button-like UI.  
   
- <xref:System.Windows.Forms.DataGridViewButtonColumn> is the column type specialized to hold cells of this type. By default, the <xref:System.Windows.Forms.DataGridViewButtonColumn.CellTemplate%2A?displayProperty=fullName> is initialized to a new <xref:System.Windows.Forms.DataGridViewButtonCell>. To pattern the cells within a column after an existing <xref:System.Windows.Forms.DataGridViewButtonCell>, set the column's <xref:System.Windows.Forms.DataGridViewButtonColumn.CellTemplate%2A> property to the cell to use as a pattern.  
+ <xref:System.Windows.Forms.DataGridViewButtonColumn> is the column type specialized to hold cells of this type. By default, the <xref:System.Windows.Forms.DataGridViewButtonColumn.CellTemplate%2A?displayProperty=nameWithType> is initialized to a new <xref:System.Windows.Forms.DataGridViewButtonCell>. To pattern the cells within a column after an existing <xref:System.Windows.Forms.DataGridViewButtonCell>, set the column's <xref:System.Windows.Forms.DataGridViewButtonColumn.CellTemplate%2A> property to the cell to use as a pattern.  
   
- To respond to user button clicks, handle the <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=fullName> or <xref:System.Windows.Forms.DataGridView.CellContentClick?displayProperty=fullName> event. In the event handler, you can use the <xref:System.Windows.Forms.DataGridViewCellEventArgs.ColumnIndex%2A?displayProperty=fullName> property to determine whether the click occurred a the button column. You can use the <xref:System.Windows.Forms.DataGridViewCellEventArgs.RowIndex%2A?displayProperty=fullName> property to determine whether the click occurred in a particular button cell.  
+ To respond to user button clicks, handle the <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=nameWithType> or <xref:System.Windows.Forms.DataGridView.CellContentClick?displayProperty=nameWithType> event. In the event handler, you can use the <xref:System.Windows.Forms.DataGridViewCellEventArgs.ColumnIndex%2A?displayProperty=nameWithType> property to determine whether the click occurred a the button column. You can use the <xref:System.Windows.Forms.DataGridViewCellEventArgs.RowIndex%2A?displayProperty=nameWithType> property to determine whether the click occurred in a particular button cell.  
   
  The cell-related properties of the column are wrappers for the similarly-named properties of the template cell. Changing the property values of the template cell will affect only cells based on the template that are added after the change. Changing the cell-related property values of the column, however, will update the template cell and all other cells in the column, and refresh the column display if necessary.  
   
@@ -30,7 +30,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use a <xref:System.Windows.Forms.DataGridViewButtonColumn> to perform actions on particular rows. You can use similar code when working with individual <xref:System.Windows.Forms.DataGridViewButtonCell> objects. In this example, a <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=fullName> event handler first determines whether a click is on a button cell, then retrieves a business object associated with the row. This example is part of a larger example available in [How to: Access Objects in a Windows Forms DataGridViewComboBoxCell Drop-Down List](~/docs/framework/winforms/controls/access-objects-in-a-wf-datagridviewcomboboxcell-drop-down-list.md).  
+ The following code example demonstrates how to use a <xref:System.Windows.Forms.DataGridViewButtonColumn> to perform actions on particular rows. You can use similar code when working with individual <xref:System.Windows.Forms.DataGridViewButtonCell> objects. In this example, a <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=nameWithType> event handler first determines whether a click is on a button cell, then retrieves a business object associated with the row. This example is part of a larger example available in [How to: Access Objects in a Windows Forms DataGridViewComboBoxCell Drop-Down List](~/docs/framework/winforms/controls/access-objects-in-a-wf-datagridviewcomboboxcell-drop-down-list.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewComboBoxObjectBinding#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewComboBoxObjectBinding/CS/form1.cs#100)]
  [!code-vb[System.Windows.Forms.DataGridViewComboBoxObjectBinding#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewComboBoxObjectBinding/vb/form1.vb#100)]  
@@ -40,6 +40,11 @@
     <block subset="none" type="overrides">
       <para>When you derive from <see cref="T:System.Windows.Forms.DataGridViewButtonCell" /> and add new properties to the derived class, be sure to override the <see cref="M:System.Windows.Forms.DataGridViewButtonCell.Clone" /> method to copy the new properties during cloning operations. You should also call the base class's <see cref="M:System.Windows.Forms.DataGridViewButtonCell.Clone" /> method so that the properties of the base class are copied to the new cell.</para>
     </block>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewButtonColumn" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewButtonColumn.CellTemplate" />
+    <altmember cref="M:System.Windows.Forms.DataGridViewButtonCell.Clone" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,6 +60,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewButtonCell" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -84,6 +90,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridViewButtonCell.Clone" /> in a derived class, call the base class's <see cref="M:System.Windows.Forms.DataGridViewButtonCell.Clone" /> method so that the properties of the base class are copied to the new cell, and be sure to also copy the values of any properties that were added to the derived class.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
@@ -113,6 +120,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewButtonCell.DataGridViewButtonCellAccessibleObject" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.AccessibilityObject" />
       </Docs>
     </Member>
     <Member MemberName="EditType">
@@ -138,6 +148,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="FlatStyle">
@@ -169,7 +181,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewButtonColumn.FlatStyle%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewButtonColumn.FlatStyle%2A?displayProperty=nameWithType> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
   
  [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#10](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#10)]
  [!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#10)]
@@ -178,6 +190,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value when setting this property is not a valid <see cref="T:System.Windows.Forms.FlatStyle" /> value.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.FlatStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewButtonColumn.FlatStyle" />
       </Docs>
     </Member>
     <Member MemberName="FormattedValueType">
@@ -196,6 +211,7 @@
         <summary>Gets the type of the formatted value associated with the cell.</summary>
         <value>A <see cref="T:System.Type" /> representing the type of the cell's formatted value.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.FormattedValueType" />
       </Docs>
     </Member>
     <Member MemberName="GetContentBounds">
@@ -222,6 +238,7 @@
         <summary>Returns the bounding rectangle that encloses the cell's content area, which is calculated using the specified <see cref="T:System.Drawing.Graphics" /> and cell style.</summary>
         <returns>The <see cref="T:System.Drawing.Rectangle" /> that bounds the cell's contents.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetContentBounds(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetErrorIconBounds">
@@ -248,6 +265,7 @@
         <summary>Returns the bounding rectangle that encloses the cell's error icon, if one is displayed.</summary>
         <returns>The <see cref="T:System.Drawing.Rectangle" /> that bounds the cell's error icon, if one is displayed; otherwise, <see cref="F:System.Drawing.Rectangle.Empty" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetErrorIconBounds(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetPreferredSize">
@@ -276,6 +294,7 @@
         <summary>Calculates the preferred size, in pixels, of the cell.</summary>
         <returns>A <see cref="T:System.Drawing.Size" /> that represents the preferred size, in pixels, of the cell.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetPreferredSize(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32,System.Drawing.Size)" />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -305,6 +324,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="KeyDownUnsharesRow">
@@ -339,6 +359,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.KeyEventArgs" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewButtonCell.OnKeyDown(System.Windows.Forms.KeyEventArgs,System.Int32)" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="KeyUpUnsharesRow">
@@ -373,6 +396,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.KeyEventArgs" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewButtonCell.OnKeyUp(System.Windows.Forms.KeyEventArgs,System.Int32)" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="MouseDownUnsharesRow">
@@ -405,6 +431,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellMouseEventArgs" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewButtonCell.OnMouseDown(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="MouseEnterUnsharesRow">
@@ -437,6 +466,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseEnter(System.Int32)" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="MouseLeaveUnsharesRow">
@@ -469,6 +500,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ButtonState" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewButtonCell.OnMouseLeave(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="MouseUpUnsharesRow">
@@ -501,6 +535,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellMouseEventArgs" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewButtonCell.OnMouseUp(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
@@ -529,13 +566,20 @@
 ## Remarks  
  When activated by the SPACE key, this method updates the cell's user interface (UI).  
   
- This method is similar to the <xref:System.Windows.Forms.Control.OnKeyDown%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyDown?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnKeyDown%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyDown?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridViewButtonCell.OnKeyDown(System.Windows.Forms.KeyEventArgs,System.Int32)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridViewButtonCell.OnKeyDown(System.Windows.Forms.KeyEventArgs,System.Int32)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.DataGridViewButtonCell.KeyDownUnsharesRow(System.Windows.Forms.KeyEventArgs,System.Int32)" />
+        <altmember cref="T:System.Windows.Forms.KeyEventArgs" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.Control.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.KeyDown" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewButtonCell.OnKeyUp(System.Windows.Forms.KeyEventArgs,System.Int32)" />
+        <altmember cref="F:System.Windows.Forms.Keys.Space" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyUp">
@@ -564,13 +608,22 @@
 ## Remarks  
  When activated by the SPACE key, this method updates the cell's user interface (UI) and raises the <xref:System.Windows.Forms.DataGridView.OnCellClick%2A> and <xref:System.Windows.Forms.DataGridView.OnCellContentClick%2A> events on the owning <xref:System.Windows.Forms.DataGridView>.  
   
- This method is similar to the <xref:System.Windows.Forms.Control.OnKeyUp%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyUp?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnKeyUp%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyUp?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridViewButtonCell.OnKeyUp(System.Windows.Forms.KeyEventArgs,System.Int32)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridViewButtonCell.OnKeyUp(System.Windows.Forms.KeyEventArgs,System.Int32)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.DataGridViewButtonCell.KeyUpUnsharesRow(System.Windows.Forms.KeyEventArgs,System.Int32)" />
+        <altmember cref="T:System.Windows.Forms.KeyEventArgs" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellClick(System.Windows.Forms.DataGridViewCellEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnCellContentClick(System.Windows.Forms.DataGridViewCellEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.OnKeyUp(System.Windows.Forms.KeyEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.KeyUp" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewButtonCell.OnKeyDown(System.Windows.Forms.KeyEventArgs,System.Int32)" />
+        <altmember cref="F:System.Windows.Forms.Keys.Space" />
       </Docs>
     </Member>
     <Member MemberName="OnLeave">
@@ -598,13 +651,17 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.Control.OnLeave%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.Leave?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnLeave%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.Leave?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridViewButtonCell.OnLeave(System.Int32,System.Boolean)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridViewButtonCell.OnLeave(System.Int32,System.Boolean)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.Control.OnLeave(System.EventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.Leave" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnEnter(System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseDown">
@@ -631,13 +688,19 @@
 ## Remarks  
  If activated by depressing the left mouse button, this method updates the cell's user interface (UI).  
   
- This method is similar to the <xref:System.Windows.Forms.Control.OnMouseDown%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseDown?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnMouseDown%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseDown?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridViewButtonCell.OnMouseDown(System.Windows.Forms.DataGridViewCellMouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridViewButtonCell.OnMouseDown(System.Windows.Forms.DataGridViewCellMouseEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.DataGridViewButtonCell.MouseDownUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellMouseEventArgs" />
+        <altmember cref="E:System.Windows.Forms.Control.MouseDown" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewButtonCell.OnMouseUp(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeave">
@@ -664,13 +727,17 @@
 ## Remarks  
  If the cell's button is not in its normal state, this method causes the cell's user interface (UI) to be updated.  
   
- This method is similar to the <xref:System.Windows.Forms.Control.OnMouseLeave%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseLeave> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnMouseLeave%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseLeave> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridViewButtonCell.OnMouseLeave(System.Int32)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridViewButtonCell.OnMouseLeave(System.Int32)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.DataGridViewButtonCell.MouseLeaveUnsharesRow(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.Control.OnMouseLeave(System.EventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.MouseLeave" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseMove">
@@ -695,13 +762,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.Control.OnMouseMove%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseMove?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnMouseMove%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseMove?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridViewButtonCell.OnMouseMove(System.Windows.Forms.DataGridViewCellMouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridViewCell.OnMouseMove(System.Windows.Forms.DataGridViewCellMouseEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.Control.OnMouseMove(System.Windows.Forms.MouseEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.MouseMove" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseUp">
@@ -728,13 +798,17 @@
 ## Remarks  
  If activated by the left mouse button, this method updates the cell's user interface (UI).  
   
- This method is similar to the <xref:System.Windows.Forms.Control.OnMouseUp%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseUp?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnMouseUp%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseUp?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridViewButtonCell.OnMouseUp(System.Windows.Forms.DataGridViewCellMouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridViewCell.OnMouseUp(System.Windows.Forms.DataGridViewCellMouseEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.DataGridViewButtonCell.MouseUpUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.MouseUp" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -802,6 +876,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.RowIndex" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ColumnIndex" />
       </Docs>
     </Member>
     <Member MemberName="UseColumnTextForButtonValue">
@@ -843,6 +920,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.FormattedValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewButtonColumn.Text" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewButtonColumn.UseColumnTextForButtonValue" />
       </Docs>
     </Member>
     <Member MemberName="ValueType">
@@ -861,6 +943,7 @@
         <summary>Gets or sets the data type of the values in the cell.</summary>
         <value>A <see cref="T:System.Type" /> representing the data type of the value in the cell.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ValueType" />
       </Docs>
     </Member>
   </Members>

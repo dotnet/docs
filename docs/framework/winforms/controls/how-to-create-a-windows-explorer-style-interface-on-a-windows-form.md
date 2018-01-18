@@ -9,17 +9,17 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "Windows Explorer, creating with Windows Forms"
+  - "Windows Explorer [Windows Forms], creating with Windows Forms"
   - "SplitContainer control [Windows Forms], Explorer-style interface"
-  - "forms, Windows Explorer type"
+  - "forms [Windows Forms], Windows Explorer type"
 ms.assetid: 9a3d5f4f-5dda-4350-9ad5-57ce5976dc47
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Windows Explorer–Style Interface on a Windows Form
 Windows Explorer is a common user-interface choice for applications because of its ready familiarity.  
@@ -58,8 +58,8 @@ Windows Explorer is a common user-interface choice for applications because of i
     >  When you drag the splitter, the panels resize themselves.  
   
 ## See Also  
- <xref:System.Windows.Forms.SplitContainer>   
- [How to: Create a Multipane User Interface with Windows Forms](../../../../docs/framework/winforms/controls/how-to-create-a-multipane-user-interface-with-windows-forms.md)   
- [How to: Define Resize and Positioning Behavior in a Split Window](../../../../docs/framework/winforms/controls/how-to-define-resize-and-positioning-behavior-in-a-split-window.md)   
- [How to: Split a Window Horizontally](../../../../docs/framework/winforms/controls/how-to-split-a-window-horizontally.md)   
+ <xref:System.Windows.Forms.SplitContainer>  
+ [How to: Create a Multipane User Interface with Windows Forms](../../../../docs/framework/winforms/controls/how-to-create-a-multipane-user-interface-with-windows-forms.md)  
+ [How to: Define Resize and Positioning Behavior in a Split Window](../../../../docs/framework/winforms/controls/how-to-define-resize-and-positioning-behavior-in-a-split-window.md)  
+ [How to: Split a Window Horizontally](../../../../docs/framework/winforms/controls/how-to-split-a-window-horizontally.md)  
  [SplitContainer Control](../../../../docs/framework/winforms/controls/splitcontainer-control-windows-forms.md)

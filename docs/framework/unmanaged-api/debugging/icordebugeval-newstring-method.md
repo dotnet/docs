@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval::NewString"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "NewString method [.NET Framework debugging]"
   - "ICorDebugEval::NewString method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEval::NewString Method
 Allocates a new string instance with the specified contents.  

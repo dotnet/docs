@@ -82,7 +82,7 @@
     </Member>
     <Member MemberName="ExtractMessageCode">
       <MemberSignature Language="C#" Value="public string ExtractMessageCode (string message, out string messageWithoutCodePrefix);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ExtractMessageCode(string message, string messageWithoutCodePrefix) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ExtractMessageCode(string message, [out] string&amp; messageWithoutCodePrefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TaskLoggingHelper.ExtractMessageCode(System.String,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -119,7 +119,7 @@
       </Docs>
     </Member>
     <Member MemberName="FormatResourceString">
-      <MemberSignature Language="C#" Value="public virtual string FormatResourceString (string resourceName, object[] args);" />
+      <MemberSignature Language="C#" Value="public virtual string FormatResourceString (string resourceName, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string FormatResourceString(string resourceName, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TaskLoggingHelper.FormatResourceString(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -162,7 +162,7 @@
       </Docs>
     </Member>
     <Member MemberName="FormatString">
-      <MemberSignature Language="C#" Value="public virtual string FormatString (string unformatted, object[] args);" />
+      <MemberSignature Language="C#" Value="public virtual string FormatString (string unformatted, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string FormatString(string unformatted, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TaskLoggingHelper.FormatString(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -357,7 +357,7 @@
       </Docs>
     </Member>
     <Member MemberName="LogCriticalMessage">
-      <MemberSignature Language="C#" Value="public void LogCriticalMessage (string subcategory, string code, string helpKeyword, string file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, string message, object[] messageArgs);" />
+      <MemberSignature Language="C#" Value="public void LogCriticalMessage (string subcategory, string code, string helpKeyword, string file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, string message, params object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LogCriticalMessage(string subcategory, string code, string helpKeyword, string file, int32 lineNumber, int32 columnNumber, int32 endLineNumber, int32 endColumnNumber, string message, object[] messageArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TaskLoggingHelper.LogCriticalMessage(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -424,7 +424,7 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="LogError">
-      <MemberSignature Language="C#" Value="public void LogError (string message, object[] messageArgs);" />
+      <MemberSignature Language="C#" Value="public void LogError (string message, params object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LogError(string message, object[] messageArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TaskLoggingHelper.LogError(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -469,7 +469,7 @@
       </Docs>
     </Member>
     <Member MemberName="LogError">
-      <MemberSignature Language="C#" Value="public void LogError (string subcategory, string errorCode, string helpKeyword, string file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, string message, object[] messageArgs);" />
+      <MemberSignature Language="C#" Value="public void LogError (string subcategory, string errorCode, string helpKeyword, string file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, string message, params object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LogError(string subcategory, string errorCode, string helpKeyword, string file, int32 lineNumber, int32 columnNumber, int32 endLineNumber, int32 endColumnNumber, string message, object[] messageArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TaskLoggingHelper.LogError(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -619,7 +619,7 @@
       </Docs>
     </Member>
     <Member MemberName="LogErrorFromResources">
-      <MemberSignature Language="C#" Value="public void LogErrorFromResources (string messageResourceName, object[] messageArgs);" />
+      <MemberSignature Language="C#" Value="public void LogErrorFromResources (string messageResourceName, params object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LogErrorFromResources(string messageResourceName, object[] messageArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TaskLoggingHelper.LogErrorFromResources(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -657,7 +657,7 @@
       </Docs>
     </Member>
     <Member MemberName="LogErrorFromResources">
-      <MemberSignature Language="C#" Value="public void LogErrorFromResources (string subcategoryResourceName, string errorCode, string helpKeyword, string file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, string messageResourceName, object[] messageArgs);" />
+      <MemberSignature Language="C#" Value="public void LogErrorFromResources (string subcategoryResourceName, string errorCode, string helpKeyword, string file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, string messageResourceName, params object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LogErrorFromResources(string subcategoryResourceName, string errorCode, string helpKeyword, string file, int32 lineNumber, int32 columnNumber, int32 endLineNumber, int32 endColumnNumber, string messageResourceName, object[] messageArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TaskLoggingHelper.LogErrorFromResources(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -713,7 +713,7 @@
       </Docs>
     </Member>
     <Member MemberName="LogErrorWithCodeFromResources">
-      <MemberSignature Language="C#" Value="public void LogErrorWithCodeFromResources (string messageResourceName, object[] messageArgs);" />
+      <MemberSignature Language="C#" Value="public void LogErrorWithCodeFromResources (string messageResourceName, params object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LogErrorWithCodeFromResources(string messageResourceName, object[] messageArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TaskLoggingHelper.LogErrorWithCodeFromResources(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -753,7 +753,7 @@
       </Docs>
     </Member>
     <Member MemberName="LogErrorWithCodeFromResources">
-      <MemberSignature Language="C#" Value="public void LogErrorWithCodeFromResources (string subcategoryResourceName, string file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, string messageResourceName, object[] messageArgs);" />
+      <MemberSignature Language="C#" Value="public void LogErrorWithCodeFromResources (string subcategoryResourceName, string file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, string messageResourceName, params object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LogErrorWithCodeFromResources(string subcategoryResourceName, string file, int32 lineNumber, int32 columnNumber, int32 endLineNumber, int32 endColumnNumber, string messageResourceName, object[] messageArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TaskLoggingHelper.LogErrorWithCodeFromResources(System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -883,7 +883,7 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="LogMessage">
-      <MemberSignature Language="C#" Value="public void LogMessage (string message, object[] messageArgs);" />
+      <MemberSignature Language="C#" Value="public void LogMessage (string message, params object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LogMessage(string message, object[] messageArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TaskLoggingHelper.LogMessage(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -928,7 +928,7 @@
       </Docs>
     </Member>
     <Member MemberName="LogMessage">
-      <MemberSignature Language="C#" Value="public void LogMessage (Microsoft.Build.Framework.MessageImportance importance, string message, object[] messageArgs);" />
+      <MemberSignature Language="C#" Value="public void LogMessage (Microsoft.Build.Framework.MessageImportance importance, string message, params object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LogMessage(valuetype Microsoft.Build.Framework.MessageImportance importance, string message, object[] messageArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TaskLoggingHelper.LogMessage(Microsoft.Build.Framework.MessageImportance,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -968,7 +968,7 @@
       </Docs>
     </Member>
     <Member MemberName="LogMessage">
-      <MemberSignature Language="C#" Value="public void LogMessage (string subcategory, string code, string helpKeyword, string file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, Microsoft.Build.Framework.MessageImportance importance, string message, object[] messageArgs);" />
+      <MemberSignature Language="C#" Value="public void LogMessage (string subcategory, string code, string helpKeyword, string file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, Microsoft.Build.Framework.MessageImportance importance, string message, params object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LogMessage(string subcategory, string code, string helpKeyword, string file, int32 lineNumber, int32 columnNumber, int32 endLineNumber, int32 endColumnNumber, valuetype Microsoft.Build.Framework.MessageImportance importance, string message, object[] messageArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TaskLoggingHelper.LogMessage(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,Microsoft.Build.Framework.MessageImportance,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1018,7 +1018,7 @@
       </Docs>
     </Member>
     <Member MemberName="LogMessageFromResources">
-      <MemberSignature Language="C#" Value="public void LogMessageFromResources (string messageResourceName, object[] messageArgs);" />
+      <MemberSignature Language="C#" Value="public void LogMessageFromResources (string messageResourceName, params object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LogMessageFromResources(string messageResourceName, object[] messageArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TaskLoggingHelper.LogMessageFromResources(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1056,7 +1056,7 @@
       </Docs>
     </Member>
     <Member MemberName="LogMessageFromResources">
-      <MemberSignature Language="C#" Value="public void LogMessageFromResources (Microsoft.Build.Framework.MessageImportance importance, string messageResourceName, object[] messageArgs);" />
+      <MemberSignature Language="C#" Value="public void LogMessageFromResources (Microsoft.Build.Framework.MessageImportance importance, string messageResourceName, params object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LogMessageFromResources(valuetype Microsoft.Build.Framework.MessageImportance importance, string messageResourceName, object[] messageArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TaskLoggingHelper.LogMessageFromResources(Microsoft.Build.Framework.MessageImportance,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1229,7 +1229,7 @@
       </Docs>
     </Member>
     <Member MemberName="LogWarning">
-      <MemberSignature Language="C#" Value="public void LogWarning (string message, object[] messageArgs);" />
+      <MemberSignature Language="C#" Value="public void LogWarning (string message, params object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LogWarning(string message, object[] messageArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TaskLoggingHelper.LogWarning(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1267,7 +1267,7 @@
       </Docs>
     </Member>
     <Member MemberName="LogWarning">
-      <MemberSignature Language="C#" Value="public void LogWarning (string subcategory, string warningCode, string helpKeyword, string file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, string message, object[] messageArgs);" />
+      <MemberSignature Language="C#" Value="public void LogWarning (string subcategory, string warningCode, string helpKeyword, string file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, string message, params object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LogWarning(string subcategory, string warningCode, string helpKeyword, string file, int32 lineNumber, int32 columnNumber, int32 endLineNumber, int32 endColumnNumber, string message, object[] messageArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TaskLoggingHelper.LogWarning(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1386,7 +1386,7 @@
       </Docs>
     </Member>
     <Member MemberName="LogWarningFromResources">
-      <MemberSignature Language="C#" Value="public void LogWarningFromResources (string messageResourceName, object[] messageArgs);" />
+      <MemberSignature Language="C#" Value="public void LogWarningFromResources (string messageResourceName, params object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LogWarningFromResources(string messageResourceName, object[] messageArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TaskLoggingHelper.LogWarningFromResources(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1424,7 +1424,7 @@
       </Docs>
     </Member>
     <Member MemberName="LogWarningFromResources">
-      <MemberSignature Language="C#" Value="public void LogWarningFromResources (string subcategoryResourceName, string warningCode, string helpKeyword, string file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, string messageResourceName, object[] messageArgs);" />
+      <MemberSignature Language="C#" Value="public void LogWarningFromResources (string subcategoryResourceName, string warningCode, string helpKeyword, string file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, string messageResourceName, params object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LogWarningFromResources(string subcategoryResourceName, string warningCode, string helpKeyword, string file, int32 lineNumber, int32 columnNumber, int32 endLineNumber, int32 endColumnNumber, string messageResourceName, object[] messageArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TaskLoggingHelper.LogWarningFromResources(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1480,7 +1480,7 @@
       </Docs>
     </Member>
     <Member MemberName="LogWarningWithCodeFromResources">
-      <MemberSignature Language="C#" Value="public void LogWarningWithCodeFromResources (string messageResourceName, object[] messageArgs);" />
+      <MemberSignature Language="C#" Value="public void LogWarningWithCodeFromResources (string messageResourceName, params object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LogWarningWithCodeFromResources(string messageResourceName, object[] messageArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TaskLoggingHelper.LogWarningWithCodeFromResources(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1520,7 +1520,7 @@
       </Docs>
     </Member>
     <Member MemberName="LogWarningWithCodeFromResources">
-      <MemberSignature Language="C#" Value="public void LogWarningWithCodeFromResources (string subcategoryResourceName, string file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, string messageResourceName, object[] messageArgs);" />
+      <MemberSignature Language="C#" Value="public void LogWarningWithCodeFromResources (string subcategoryResourceName, string file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, string messageResourceName, params object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LogWarningWithCodeFromResources(string subcategoryResourceName, string file, int32 lineNumber, int32 columnNumber, int32 endLineNumber, int32 endColumnNumber, string messageResourceName, object[] messageArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TaskLoggingHelper.LogWarningWithCodeFromResources(System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1643,5 +1643,104 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="LogWarningFromException">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Logs a warning using the message from the specified exception.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LogMessageFromResources">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Logs a message with the specified resource string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LogMessagesFromFile">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Logs errors, warnings, and messages for each line of text in the given file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LogErrorWithCodeFromResources">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Logs an error with an error code using the specified resource string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LogWarningFromResources">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Logs a warning using the specified resource string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Utilities.TaskLoggingHelper" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LogErrorFromResources">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Logs an error using the specified resource string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LogWarningWithCodeFromResources">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Logs a warning with a warning code using the specified resource string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LogCommandLine">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Logs the command line.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LogErrorFromException">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Logs an error using the message from the specified exception.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LogWarning">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Logs a warning.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

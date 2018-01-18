@@ -111,6 +111,7 @@
         <summary>Gets the comments for the namespace.</summary>
         <value>A <see cref="T:System.CodeDom.CodeCommentStatementCollection" /> that indicates the comments for the namespace.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeCommentStatementCollection" />
       </Docs>
     </Member>
     <Member MemberName="Imports">
@@ -133,6 +134,7 @@
         <summary>Gets the collection of namespace import directives used by the namespace.</summary>
         <value>A <see cref="T:System.CodeDom.CodeNamespaceImportCollection" /> that indicates the namespace import directives used by the namespace.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeNamespaceImportCollection" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -240,7 +242,17 @@
         <summary>Gets the collection of types that the namespace contains.</summary>
         <value>A <see cref="T:System.CodeDom.CodeTypeDeclarationCollection" /> that indicates the types contained in the namespace.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeTypeDeclarationCollection" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeNamespace" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

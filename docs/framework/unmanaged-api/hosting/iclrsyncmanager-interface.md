@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRSyncManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRSyncManager interface [.NET Framework hosting]"
 ms.assetid: a49f9d80-1c76-4ddd-8c49-34f913a5c596
@@ -28,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRSyncManager Interface
 Defines methods that allow the host to get information about requested tasks and to detect deadlocks in its synchronization implementation.  
@@ -51,7 +51,7 @@ Defines methods that allow the host to get information about requested tasks and
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- <xref:System.Threading.Thread>   
- [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)   
- [Managed and Unmanaged Threading](http://msdn.microsoft.com/en-us/db425c20-4b2f-4433-bf96-76071c7881e5)   
+ <xref:System.Threading.Thread>  
+ [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)  
+ [Managed and Unmanaged Threading](http://msdn.microsoft.com/en-us/db425c20-4b2f-4433-bf96-76071c7881e5)  
  [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

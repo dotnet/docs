@@ -1,31 +1,14 @@
 ---
 title: "-target:winmdobj (C# Compiler Options)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 1819a045-659d-498a-9457-c466e902986f
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # /target:winmdobj (C# Compiler Options)
 If you use the **/target:winmdobj** compiler option, the compiler creates an intermediate .winmdobj file that you can convert to a Windows Runtime binary (.winmd) file. The .winmd file can then be consumed by JavaScript and C++ programs, in addition to managed language programs.  
@@ -65,5 +48,5 @@ csc /target:winmdobj filename.cs
 ```  
   
 ## See Also  
- [/target (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)   
+ [/target (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)

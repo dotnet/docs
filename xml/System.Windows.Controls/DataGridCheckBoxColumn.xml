@@ -20,7 +20,7 @@
   
  ![A DataGridCheckBox column](~/add/media/wpf-datagrid-checkbox.png "A DataGridCheckBox column")  
   
- To populate the column, bind the column to the data by using the <xref:System.Windows.Controls.DataGridBoundColumn.Binding%2A> property. The <xref:System.Windows.Controls.DataGridBoundColumn.Binding%2A> property is applied to the <xref:System.Windows.Controls.CheckBox> element created in the column. The <xref:System.Windows.FrameworkElement.DataContext%2A> for the element in each cell is the data item for the row the cell is in. Therefore, to set up the binding you only have to set the <xref:System.Windows.Data.Binding.Path%2A?displayProperty=fullName>. Optionally, you can specify a <xref:System.Windows.Data.Binding.Converter%2A?displayProperty=fullName> if your data source and target are different types. For more information about data binding, see [Data Binding (WPF)](~/docs/framework/wpf/data/data-binding-wpf.md).  
+ To populate the column, bind the column to the data by using the <xref:System.Windows.Controls.DataGridBoundColumn.Binding%2A> property. The <xref:System.Windows.Controls.DataGridBoundColumn.Binding%2A> property is applied to the <xref:System.Windows.Controls.CheckBox> element created in the column. The <xref:System.Windows.FrameworkElement.DataContext%2A> for the element in each cell is the data item for the row the cell is in. Therefore, to set up the binding you only have to set the <xref:System.Windows.Data.Binding.Path%2A?displayProperty=nameWithType>. Optionally, you can specify a <xref:System.Windows.Data.Binding.Converter%2A?displayProperty=nameWithType> if your data source and target are different types. For more information about data binding, see [Data Binding (WPF)](~/docs/framework/wpf/data/data-binding-wpf.md).  
   
  You can customize the <xref:System.Windows.Controls.DataGridCheckBoxColumn> by setting properties, such as <xref:System.Windows.Controls.DataGridColumn.Width%2A>, <xref:System.Windows.Controls.DataGridColumn.Header%2A>, <xref:System.Windows.Controls.DataGridCheckBoxColumn.IsThreeState%2A>, and <xref:System.Windows.Controls.DataGridColumn.IsReadOnly%2A>.  
   
@@ -43,6 +43,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.CheckBox" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -164,12 +165,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Controls.DataGridCheckBoxColumn.IsThreeState%2A?displayProperty=fullName> property lets you use a nullable Boolean as the data type and has the same functionality as the <xref:System.Windows.Controls.Primitives.ToggleButton.IsThreeState%2A?displayProperty=fullName> property on <xref:System.Windows.Controls.CheckBox>.  
+ The <xref:System.Windows.Controls.DataGridCheckBoxColumn.IsThreeState%2A?displayProperty=nameWithType> property lets you use a nullable Boolean as the data type and has the same functionality as the <xref:System.Windows.Controls.Primitives.ToggleButton.IsThreeState%2A?displayProperty=nameWithType> property on <xref:System.Windows.Controls.CheckBox>.  
   
- The three states for the <xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A?displayProperty=fullName> property of the <xref:System.Windows.Controls.CheckBox> control are `true`, `false`, and `null`.  
+ The three states for the <xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A?displayProperty=nameWithType> property of the <xref:System.Windows.Controls.CheckBox> control are `true`, `false`, and `null`.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Primitives.ToggleButton" />
       </Docs>
     </Member>
     <Member MemberName="IsThreeStateProperty">

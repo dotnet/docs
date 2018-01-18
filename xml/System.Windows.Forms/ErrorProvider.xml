@@ -215,6 +215,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero.</exception>
+        <altmember cref="P:System.Windows.Forms.ErrorProvider.BlinkStyle" />
       </Docs>
     </Member>
     <Member MemberName="BlinkStyle">
@@ -255,6 +256,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.ErrorBlinkStyle" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.ErrorBlinkStyle" />
+        <altmember cref="P:System.Windows.Forms.ErrorProvider.BlinkRate" />
       </Docs>
     </Member>
     <Member MemberName="CanExtend">
@@ -431,6 +434,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ErrorProvider.DataMember" />
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -453,6 +458,7 @@
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases the unmanaged resources used by the <see cref="T:System.ComponentModel.Component" /> and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.Component.Dispose(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetError">
@@ -496,6 +502,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="control" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ErrorProvider.SetError(System.Windows.Forms.Control,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetIconAlignment">
@@ -528,6 +535,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="control" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ErrorProvider.SetIconPadding(System.Windows.Forms.Control,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.ErrorProvider.SetIconAlignment(System.Windows.Forms.Control,System.Windows.Forms.ErrorIconAlignment)" />
       </Docs>
     </Member>
     <Member MemberName="GetIconPadding">
@@ -567,6 +576,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="control" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ErrorProvider.SetIconPadding(System.Windows.Forms.Control,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Icon">
@@ -598,6 +608,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The assigned value of the <see cref="T:System.Drawing.Icon" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Drawing.Icon" />
       </Docs>
     </Member>
     <Member MemberName="OnRightToLeftChanged">
@@ -695,7 +706,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ErrorProvider.RightToLeftChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ErrorProvider.RightToLeftChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ErrorProvider> named `ErrorProvider1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ErrorProvider.RightToLeftChanged> event.  
   
@@ -745,6 +756,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="control" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ErrorProvider.GetError(System.Windows.Forms.Control)" />
       </Docs>
     </Member>
     <Member MemberName="SetIconAlignment">
@@ -786,6 +798,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="control" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ErrorProvider.GetIconAlignment(System.Windows.Forms.Control)" />
+        <altmember cref="M:System.Windows.Forms.ErrorProvider.SetIconAlignment(System.Windows.Forms.Control,System.Windows.Forms.ErrorIconAlignment)" />
       </Docs>
     </Member>
     <Member MemberName="SetIconPadding">
@@ -827,6 +841,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="control" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ErrorProvider.GetIconPadding(System.Windows.Forms.Control)" />
+        <altmember cref="M:System.Windows.Forms.ErrorProvider.SetIconAlignment(System.Windows.Forms.Control,System.Windows.Forms.ErrorIconAlignment)" />
       </Docs>
     </Member>
     <Member MemberName="Site">
@@ -845,6 +861,7 @@
         <summary>Gets or sets the <see cref="T:System.ComponentModel.ISite" /> of the <see cref="T:System.ComponentModel.Component" />.</summary>
         <value>The <see cref="T:System.ComponentModel.ISite" /> associated with the <see cref="T:System.ComponentModel.Component" />, or null if the <see cref="T:System.ComponentModel.Component" /> is not encapsulated in an <see cref="T:System.ComponentModel.IContainer" />, the <see cref="T:System.ComponentModel.Component" /> does not have an <see cref="T:System.ComponentModel.ISite" /> associated with it, or the <see cref="T:System.ComponentModel.Component" /> is removed from its <see cref="T:System.ComponentModel.IContainer" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.ComponentModel.Component.Site" />
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ISupportInitialize.BeginInit">
@@ -947,5 +964,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ErrorProvider" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -28,7 +28,7 @@
   <Members>
     <Member MemberName="CreateVirtualRootEx">
       <MemberSignature Language="C#" Value="public void CreateVirtualRootEx (string rootWebServer, string inBaseUrl, string inVirtualRoot, string homePage, string discoFile, string secureSockets, string authentication, string operation, out string baseUrl, out string virtualRoot, out string physicalPath);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreateVirtualRootEx(string rootWebServer, string inBaseUrl, string inVirtualRoot, string homePage, string discoFile, string secureSockets, string authentication, string operation, string baseUrl, string virtualRoot, string physicalPath) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreateVirtualRootEx(string rootWebServer, string inBaseUrl, string inVirtualRoot, string homePage, string discoFile, string secureSockets, string authentication, string operation, [out] string&amp; baseUrl, [out] string&amp; virtualRoot, [out] string&amp; physicalPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ISoapServerVRoot.CreateVirtualRootEx(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -119,7 +119,7 @@
     </Member>
     <Member MemberName="GetVirtualRootStatus">
       <MemberSignature Language="C#" Value="public void GetVirtualRootStatus (string rootWebServer, string inBaseUrl, string inVirtualRoot, out string exists, out string secureSockets, out string windowsAuth, out string anonymous, out string homePage, out string discoFile, out string physicalPath, out string baseUrl, out string virtualRoot);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetVirtualRootStatus(string rootWebServer, string inBaseUrl, string inVirtualRoot, string exists, string secureSockets, string windowsAuth, string anonymous, string homePage, string discoFile, string physicalPath, string baseUrl, string virtualRoot) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetVirtualRootStatus(string rootWebServer, string inBaseUrl, string inVirtualRoot, [out] string&amp; exists, [out] string&amp; secureSockets, [out] string&amp; windowsAuth, [out] string&amp; anonymous, [out] string&amp; homePage, [out] string&amp; discoFile, [out] string&amp; physicalPath, [out] string&amp; baseUrl, [out] string&amp; virtualRoot) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ISoapServerVRoot.GetVirtualRootStatus(System.String,System.String,System.String,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -18,6 +18,8 @@ caps.latest.revision: 14
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Type Converters for XAML Overview
 Type converters supply logic for an object writer that converts from a string in XAML markup into particular objects in an object graph. In .NET Framework XAML Services, the type converter must be a class that derives from <xref:System.ComponentModel.TypeConverter>. Some converters also support the XAML save path and can be used to serialize an object into a string form in serialization markup. This topic describes how and when type converters in XAML are invoked, and provides implementation advice for the method overrides of <xref:System.ComponentModel.TypeConverter>.  
@@ -111,9 +113,9 @@ Type converters supply logic for an object writer that converts from a string in
   
 <a name="type_converters_in_the_xaml_node_stream"></a>   
 ## Type Converters in the XAML Node Stream  
- If you are working with a XAML node stream, the action or end result of a type converter is not yet executed. In a load path, the attribute string that eventually needs to be type-converted in order to load remains as a text value within a start member and end member. The type converter that is eventually needed for this operation can be determined by using the <xref:System.Xaml.XamlMember.TypeConverter%2A?displayProperty=fullName> property. However, obtaining a valid value from <xref:System.Xaml.XamlMember.TypeConverter%2A?displayProperty=fullName> relies on having a XAML schema context, which can access such information through the underlying member, or the type of the object value that the member uses. Invoking the type conversion behavior also requires the XAML schema context because that requires type-mapping and creating a converter instance.  
+ If you are working with a XAML node stream, the action or end result of a type converter is not yet executed. In a load path, the attribute string that eventually needs to be type-converted in order to load remains as a text value within a start member and end member. The type converter that is eventually needed for this operation can be determined by using the <xref:System.Xaml.XamlMember.TypeConverter%2A?displayProperty=nameWithType> property. However, obtaining a valid value from <xref:System.Xaml.XamlMember.TypeConverter%2A?displayProperty=nameWithType> relies on having a XAML schema context, which can access such information through the underlying member, or the type of the object value that the member uses. Invoking the type conversion behavior also requires the XAML schema context because that requires type-mapping and creating a converter instance.  
   
 ## See Also  
- <xref:System.ComponentModel.TypeConverterAttribute>   
- [Type Converters and Markup Extensions for XAML](../../../docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md)   
+ <xref:System.ComponentModel.TypeConverterAttribute>  
+ [Type Converters and Markup Extensions for XAML](../../../docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md)  
  [XAML Overview (WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)

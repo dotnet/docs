@@ -20,13 +20,16 @@
    
   
 ## Examples  
- The following code example demonstrates how to override the <xref:System.Windows.Forms.DataGridView.AdjustedTopLeftHeaderBorderStyle%2A?displayProperty=fullName> property to customize the borders of the upper-left cell. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle> class.  
+ The following code example demonstrates how to override the <xref:System.Windows.Forms.DataGridView.AdjustedTopLeftHeaderBorderStyle%2A?displayProperty=nameWithType> property to customize the borders of the upper-left cell. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle> class.  
   
  [!code-csharp[System.Windows.Forms.DataGridViewAdvancedBorderStyle#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewAdvancedBorderStyle/CS/advancedborderstyle.cs#12)]
  [!code-vb[System.Windows.Forms.DataGridViewAdvancedBorderStyle#12](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewAdvancedBorderStyle/VB/advancedborderstyle.vb#12)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.AdvancedCellBorderStyle" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewAdvancedBorderStyle" />
   </Docs>
   <Members>
     <Member MemberName="Inset">

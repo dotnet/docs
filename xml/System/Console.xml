@@ -46,18 +46,18 @@
   
 <a name="Streams"></a>   
 ## Console I/O Streams  
- When a console application starts, the operating system automatically associates three I/O streams with the console: standard input stream, standard output stream, and standard error output stream. Your application can read user input from the standard input stream; write normal data to the standard output stream; and write error data to the standard error output stream. These streams are presented to your application as the values of the <xref:System.Console.In%2A?displayProperty=fullName>, <xref:System.Console.Out%2A?displayProperty=fullName>, and <xref:System.Console.Error%2A?displayProperty=fullName> properties.  
+ When a console application starts, the operating system automatically associates three I/O streams with the console: standard input stream, standard output stream, and standard error output stream. Your application can read user input from the standard input stream; write normal data to the standard output stream; and write error data to the standard error output stream. These streams are presented to your application as the values of the <xref:System.Console.In%2A?displayProperty=nameWithType>, <xref:System.Console.Out%2A?displayProperty=nameWithType>, and <xref:System.Console.Error%2A?displayProperty=nameWithType> properties.  
   
- By default, the value of the <xref:System.Console.In%2A> property is a <xref:System.IO.TextReader?displayProperty=fullName> object that represents the keyboard, and the values of the <xref:System.Console.Out%2A> and <xref:System.Console.Error%2A> properties are <xref:System.IO.TextWriter?displayProperty=fullName> objects that represent a console window. However, you can set these properties to streams that do not represent the console window or keyboard; for example, you can set these properties to streams that represent files. To redirect the standard input, standard output, or standard error stream, call the <xref:System.Console.SetIn%2A?displayProperty=fullName>, <xref:System.Console.SetOut%2A?displayProperty=fullName>, or <xref:System.Console.SetError%2A?displayProperty=fullName> method, respectively. I/O operations that use these streams are synchronized, which means that multiple threads can read from, or write to, the streams. This means that methods that are ordinarily asynchronous, such as <xref:System.IO.TextReader.ReadLineAsync%2A?displayProperty=fullName>, execute synchronously if the object represents a console stream.  
+ By default, the value of the <xref:System.Console.In%2A> property is a <xref:System.IO.TextReader?displayProperty=nameWithType> object that represents the keyboard, and the values of the <xref:System.Console.Out%2A> and <xref:System.Console.Error%2A> properties are <xref:System.IO.TextWriter?displayProperty=nameWithType> objects that represent a console window. However, you can set these properties to streams that do not represent the console window or keyboard; for example, you can set these properties to streams that represent files. To redirect the standard input, standard output, or standard error stream, call the <xref:System.Console.SetIn%2A?displayProperty=nameWithType>, <xref:System.Console.SetOut%2A?displayProperty=nameWithType>, or <xref:System.Console.SetError%2A?displayProperty=nameWithType> method, respectively. I/O operations that use these streams are synchronized, which means that multiple threads can read from, or write to, the streams. This means that methods that are ordinarily asynchronous, such as <xref:System.IO.TextReader.ReadLineAsync%2A?displayProperty=nameWithType>, execute synchronously if the object represents a console stream.  
   
 > [!NOTE]
->  Do not use the <xref:System.Console> class to display output in unattended applications, such as server applications. Calls to methods such as <xref:System.Console.Write%2A?displayProperty=fullName> and <xref:System.Console.WriteLine%2A?displayProperty=fullName> have no effect in GUI applications.  
+>  Do not use the <xref:System.Console> class to display output in unattended applications, such as server applications. Calls to methods such as <xref:System.Console.Write%2A?displayProperty=nameWithType> and <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> have no effect in GUI applications.  
   
- <xref:System.Console> class members that work normally when the underlying stream is directed to a console might throw an exception if the stream is redirected, for example, to a file. Program your application to catch <xref:System.IO.IOException?displayProperty=fullName> exceptions if you redirect a standard stream. You can also use the <xref:System.Console.IsOutputRedirected%2A>, <xref:System.Console.IsInputRedirected%2A>, and <xref:System.Console.IsErrorRedirected%2A> properties to determine whether a standard stream is redirected before performing an operation that throws an <xref:System.IO.IOException?displayProperty=fullName> exception.  
+ <xref:System.Console> class members that work normally when the underlying stream is directed to a console might throw an exception if the stream is redirected, for example, to a file. Program your application to catch <xref:System.IO.IOException?displayProperty=nameWithType> exceptions if you redirect a standard stream. You can also use the <xref:System.Console.IsOutputRedirected%2A>, <xref:System.Console.IsInputRedirected%2A>, and <xref:System.Console.IsErrorRedirected%2A> properties to determine whether a standard stream is redirected before performing an operation that throws an <xref:System.IO.IOException?displayProperty=nameWithType> exception.  
   
- It is sometimes useful to explicitly call the members of the stream objects represented by the <xref:System.Console.In%2A>, <xref:System.Console.Out%2A>, and <xref:System.Console.Error%2A> properties. For example, by default, the <xref:System.Console.ReadLine%2A?displayProperty=fullName> method reads input from the standard input stream. Similarly, the <xref:System.Console.WriteLine%2A?displayProperty=fullName> method writes data to the standard output stream, and the data is followed by the default line termination string, which is  a carriage return and line feed ("\r\n"). However, the <xref:System.Console> class does not provide a corresponding method to write data to the standard error output stream, or a property to change the line termination string for data written to that stream.  
+ It is sometimes useful to explicitly call the members of the stream objects represented by the <xref:System.Console.In%2A>, <xref:System.Console.Out%2A>, and <xref:System.Console.Error%2A> properties. For example, by default, the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method reads input from the standard input stream. Similarly, the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method writes data to the standard output stream, and the data is followed by the default line termination string, which is  a carriage return and line feed ("\r\n"). However, the <xref:System.Console> class does not provide a corresponding method to write data to the standard error output stream, or a property to change the line termination string for data written to that stream.  
   
- You can solve this problem by setting the <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName> property of the <xref:System.Console.Out%2A> or <xref:System.Console.Error%2A> property to another line termination string. For example, the following C# statement sets the line termination string for the standard error output stream to two carriage return and line feed sequences:  
+ You can solve this problem by setting the <xref:System.IO.TextWriter.NewLine%2A?displayProperty=nameWithType> property of the <xref:System.Console.Out%2A> or <xref:System.Console.Error%2A> property to another line termination string. For example, the following C# statement sets the line termination string for the standard error output stream to two carriage return and line feed sequences:  
   
  `Console.Error.NewLine = "\r\n\r\n";`  
   
@@ -73,7 +73,7 @@
   
  A cursor indicates the screen buffer position where text is currently read or written. The cursor can be hidden or made visible, and its height can be changed. If the cursor is visible, the console window position is moved automatically so the cursor is always in view.  
   
- The origin for character cell coordinates in the screen buffer is the upper left corner, and the positions of the cursor and the console window are measured relative to that origin. Use zero-based indexes to specify positions; that is, specify the topmost row as row 0, and the leftmost column as column 0. The maximum value for the row and column indexes is <xref:System.Int16.MaxValue?displayProperty=fullName>.  
+ The origin for character cell coordinates in the screen buffer is the upper left corner, and the positions of the cursor and the console window are measured relative to that origin. Use zero-based indexes to specify positions; that is, specify the topmost row as row 0, and the leftmost column as column 0. The maximum value for the row and column indexes is <xref:System.Int16.MaxValue?displayProperty=nameWithType>.  
   
 <a name="Unicode"></a>   
 ## Unicode Support for the Console  
@@ -106,7 +106,7 @@
   
 -   Display of characters in complex scripts is not supported.  
   
--   Combining character sequences (that is, characters that consist of a base character and one or more combining characters) are displayed as separate characters. To work around this limitation, you can normalize the string to be displayed by calling the <xref:System.String.Normalize%2A?displayProperty=fullName> method before sending output to the console. In the following example, a string that contains the combining character sequence U+0061 U+0308 is displayed to the console as two characters before the output string is normalized, and as a single character after the <xref:System.String.Normalize%2A?displayProperty=fullName> method is called.  
+-   Combining character sequences (that is, characters that consist of a base character and one or more combining characters) are displayed as separate characters. To work around this limitation, you can normalize the string to be displayed by calling the <xref:System.String.Normalize%2A?displayProperty=nameWithType> method before sending output to the console. In the following example, a string that contains the combining character sequence U+0061 U+0308 is displayed to the console as two characters before the output string is normalized, and as a single character after the <xref:System.String.Normalize%2A?displayProperty=nameWithType> method is called.  
   
      [!code-csharp[System.Console.Class#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.console.class/cs/normalize1.cs#5)]
      [!code-vb[System.Console.Class#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.console.class/vb/normalize1.vb#5)]  
@@ -152,15 +152,15 @@
   
 <a name="Core"></a>   
 ## [!INCLUDE[net_core](~/includes/net-core-md.md)] Notes  
- In the .NET Framework on the desktop, the <xref:System.Console> class uses the encoding returned by `GetConsoleCP` and `GetConsoleOutputCP`, which typically is a code page encoding. For example code, on systems whose culture is English (United States), code page 437 is the encoding that is used by default. However, [!INCLUDE[net_core](~/includes/net-core-md.md)] may make only a limited subset of these encodings available. Where this is the case, <xref:System.Text.Encoding.UTF8%2A?displayProperty=fullName> is used as the default encoding for the console.  
+ In the .NET Framework on the desktop, the <xref:System.Console> class uses the encoding returned by `GetConsoleCP` and `GetConsoleOutputCP`, which typically is a code page encoding. For example code, on systems whose culture is English (United States), code page 437 is the encoding that is used by default. However, [!INCLUDE[net_core](~/includes/net-core-md.md)] may make only a limited subset of these encodings available. Where this is the case, <xref:System.Text.Encoding.UTF8%2A?displayProperty=nameWithType> is used as the default encoding for the console.  
   
  If your app depends on specific code page encodings, you can still make them available by doing the following *before* you call any <xref:System.Console> methods:  
   
 1.  Add a reference to the System.Text.Encoding.CodePages.dll assembly to your project.  
   
-2.  Retrieve the <xref:System.Text.EncodingProvider> object from the <xref:System.Text.CodePagesEncodingProvider.Instance%2A?displayProperty=fullName> property.  
+2.  Retrieve the <xref:System.Text.EncodingProvider> object from the <xref:System.Text.CodePagesEncodingProvider.Instance%2A?displayProperty=nameWithType> property.  
   
-3.  Pass the <xref:System.Text.EncodingProvider> object to the <xref:System.Text.Encoding.RegisterProvider%2A?displayProperty=fullName> method to make the additional encodings supported by the encoding provider available.  
+3.  Pass the <xref:System.Text.EncodingProvider> object to the <xref:System.Text.Encoding.RegisterProvider%2A?displayProperty=nameWithType> method to make the additional encodings supported by the encoding provider available.  
   
  The <xref:System.Console> class will then automatically use the default system encoding rather than UTF8, provided that you have registered the encoding provider before calling any <xref:System.Console> output methods.  
   
@@ -212,7 +212,7 @@
  [!code-csharp[System.Console.BackgroundColor#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.console.backgroundcolor/cs/backgroundcolor1.cs#1)]
  [!code-vb[System.Console.BackgroundColor#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.console.backgroundcolor/vb/backgroundcolor1.vb#1)]  
   
- A get operation for a Windows-based application, in which a console does not exist, returns <xref:System.ConsoleColor?displayProperty=fullName>.  
+ A get operation for a Windows-based application, in which a console does not exist, returns <xref:System.ConsoleColor.Black?displayProperty=nameWithType>.  
   
    
   
@@ -481,11 +481,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event is used in conjunction with <xref:System.ConsoleCancelEventHandler?displayProperty=fullName> and <xref:System.ConsoleCancelEventArgs?displayProperty=fullName>. The <xref:System.Console.CancelKeyPress> event enables a console application to intercept the Ctrl+C signal so the event handler can decide whether to continue executing or terminate. For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ This event is used in conjunction with <xref:System.ConsoleCancelEventHandler?displayProperty=nameWithType> and <xref:System.ConsoleCancelEventArgs?displayProperty=nameWithType>. The <xref:System.Console.CancelKeyPress> event enables a console application to intercept the Ctrl+C signal so the event handler can decide whether to continue executing or terminate. For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
  When the user presses either Ctrl+C or Ctrl+Break, the <xref:System.Console.CancelKeyPress> event is fired and the application's <xref:System.ConsoleCancelEventHandler> event handler is executed. The event handler is passed a <xref:System.ConsoleCancelEventArgs> object that has two useful properties:  
   
--   <xref:System.ConsoleCancelEventArgs.SpecialKey%2A>, which allows you to determine whether the handler was invoked as a result of the user pressing Ctrl+C (the property value is <xref:System.ConsoleSpecialKey?displayProperty=fullName>) or Ctrl+Break (the property value is <xref:System.ConsoleSpecialKey?displayProperty=fullName>).  
+-   <xref:System.ConsoleCancelEventArgs.SpecialKey%2A>, which allows you to determine whether the handler was invoked as a result of the user pressing Ctrl+C (the property value is <xref:System.ConsoleSpecialKey.ControlC?displayProperty=nameWithType>) or Ctrl+Break (the property value is <xref:System.ConsoleSpecialKey.ControlBreak?displayProperty=nameWithType>).  
   
 -   <xref:System.ConsoleCancelEventArgs.Cancel%2A>, which allows you to determine how to your application should respond to the user pressing Ctrl+C or Ctrl+Break. By default, the <xref:System.ConsoleCancelEventArgs.Cancel%2A> property is `false`, which causes program execution to terminate when the event handler exits. Changing its property to `true` specifies that the application should continue to execute.  
   
@@ -497,7 +497,7 @@
    
   
 ## Examples  
- The following example demonstrates how the <xref:System.Console.CancelKeyPress> event is used. When you press Ctrl+C, the read operation is interrupted and the `myHandler` event handler is invoked. Upon entry to the event handler, the <xref:System.ConsoleCancelEventArgs.Cancel%2A?displayProperty=fullName> property is `false`, which means that the current process will terminate when the event handler terminates. However, the event handler sets the <xref:System.ConsoleCancelEventArgs.Cancel%2A?displayProperty=fullName> property to `true`, which means that the process will not terminate and the read operation will resume.  
+ The following example demonstrates how the <xref:System.Console.CancelKeyPress> event is used. When you press Ctrl+C, the read operation is interrupted and the `myHandler` event handler is invoked. Upon entry to the event handler, the <xref:System.ConsoleCancelEventArgs.Cancel%2A?displayProperty=nameWithType> property is `false`, which means that the current process will terminate when the event handler terminates. However, the event handler sets the <xref:System.ConsoleCancelEventArgs.Cancel%2A?displayProperty=nameWithType> property to `true`, which means that the process will not terminate and the read operation will resume.  
   
  [!code-cpp[console.cancelkeypress#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.cancelkeypress/cpp/ckp.cpp#1)]
  [!code-csharp[console.cancelkeypress#1](~/samples/snippets/csharp/VS_Snippets_CLR/console.cancelkeypress/cs/ckp.cs#1)]
@@ -506,6 +506,9 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="T:System.ConsoleCancelEventArgs" />
+        <altmember cref="T:System.ConsoleCancelEventHandler" />
+        <altmember cref="P:System.Console.TreatControlCAsInput" />
       </Docs>
     </Member>
     <Member MemberName="CapsLock">
@@ -827,10 +830,14 @@
  [!code-csharp[System.Console.OpenStandardError#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.console.openstandarderror/cs/viewtextfile.cs#1)]
  [!code-vb[System.Console.OpenStandardError#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.console.openstandarderror/vb/viewtextfile.vb#1)]  
   
- Note that the <xref:System.IO.StreamWriter.AutoFlush%2A?displayProperty=fullName> property is set to `true` before reacquiring the error stream. This ensures that output will be sent to the console immediately rather than buffered.  
+ Note that the <xref:System.IO.StreamWriter.AutoFlush%2A?displayProperty=nameWithType> property is set to `true` before reacquiring the error stream. This ensures that output will be sent to the console immediately rather than buffered.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Console.In" />
+        <altmember cref="P:System.Console.Out" />
+        <altmember cref="P:System.Console.IsErrorRedirected" />
+        <altmember cref="M:System.Console.SetError(System.IO.TextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="ForegroundColor">
@@ -929,6 +936,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Console.OpenStandardInput" />
+        <altmember cref="P:System.Console.IsInputRedirected" />
+        <altmember cref="P:System.Console.Error" />
+        <altmember cref="P:System.Console.Out" />
+        <altmember cref="M:System.Console.SetIn(System.IO.TextReader)" />
       </Docs>
     </Member>
     <Member MemberName="InputEncoding">
@@ -970,6 +982,7 @@
         <exception cref="T:System.IO.IOException">An error occurred during the execution of this operation.</exception>
         <exception cref="T:System.Security.SecurityException">Your application does not have permission to perform this operation.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for reading and writing to top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName="IsErrorRedirected">
@@ -999,6 +1012,9 @@
         <value>
           <see langword="true" /> if error output is redirected; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Console.Error" />
+        <altmember cref="M:System.Console.SetError(System.IO.TextWriter)" />
+        <altmember cref="M:System.Console.OpenStandardError" />
       </Docs>
     </Member>
     <Member MemberName="IsInputRedirected">
@@ -1028,6 +1044,9 @@
         <value>
           <see langword="true" /> if input is redirected; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Console.In" />
+        <altmember cref="M:System.Console.SetIn(System.IO.TextReader)" />
+        <altmember cref="M:System.Console.OpenStandardInput" />
       </Docs>
     </Member>
     <Member MemberName="IsOutputRedirected">
@@ -1057,6 +1076,9 @@
         <value>
           <see langword="true" /> if output is redirected; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Console.Out" />
+        <altmember cref="M:System.Console.SetOut(System.IO.TextWriter)" />
+        <altmember cref="M:System.Console.OpenStandardError" />
       </Docs>
     </Member>
     <Member MemberName="KeyAvailable">
@@ -1382,10 +1404,13 @@
  [!code-csharp[System.Console.OpenStandardError#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.console.openstandarderror/cs/viewtextfile.cs#1)]
  [!code-vb[System.Console.OpenStandardError#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.console.openstandarderror/vb/viewtextfile.vb#1)]  
   
- Note that the <xref:System.IO.StreamWriter.AutoFlush%2A?displayProperty=fullName> property is set to `true` before reacquiring the error stream. This ensures that output will be sent to the console immediately rather than buffered.  
+ Note that the <xref:System.IO.StreamWriter.AutoFlush%2A?displayProperty=nameWithType> property is set to `true` before reacquiring the error stream. This ensures that output will be sent to the console immediately rather than buffered.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Console.Error" />
+        <altmember cref="P:System.Console.IsErrorRedirected" />
+        <altmember cref="M:System.Console.SetError(System.IO.TextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="OpenStandardError">
@@ -1426,6 +1451,9 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="bufferSize" /> is less than or equal to zero.</exception>
+        <altmember cref="P:System.Console.Error" />
+        <altmember cref="P:System.Console.IsErrorRedirected" />
+        <altmember cref="M:System.Console.SetError(System.IO.TextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="OpenStandardInput">
@@ -1471,6 +1499,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Console.In" />
+        <altmember cref="P:System.Console.IsInputRedirected" />
+        <altmember cref="M:System.Console.SetIn(System.IO.TextReader)" />
       </Docs>
     </Member>
     <Member MemberName="OpenStandardInput">
@@ -1520,6 +1551,9 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="bufferSize" /> is less than or equal to zero.</exception>
+        <altmember cref="P:System.Console.In" />
+        <altmember cref="P:System.Console.IsInputRedirected" />
+        <altmember cref="M:System.Console.SetIn(System.IO.TextReader)" />
       </Docs>
     </Member>
     <Member MemberName="OpenStandardOutput">
@@ -1565,6 +1599,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Console.Out" />
+        <altmember cref="P:System.Console.IsOutputRedirected" />
+        <altmember cref="M:System.Console.SetOut(System.IO.TextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="OpenStandardOutput">
@@ -1614,6 +1651,9 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="bufferSize" /> is less than or equal to zero.</exception>
+        <altmember cref="P:System.Console.Out" />
+        <altmember cref="P:System.Console.IsOutputRedirected" />
+        <altmember cref="M:System.Console.SetOut(System.IO.TextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Out">
@@ -1659,6 +1699,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Console.Error" />
+        <altmember cref="P:System.Console.In" />
+        <altmember cref="M:System.Console.SetOut(System.IO.TextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="OutputEncoding">
@@ -1768,6 +1811,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="ReadKey">
@@ -1825,6 +1871,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Console.In" /> property is redirected from some stream other than the console.</exception>
+        <altmember cref="T:System.ConsoleKey" />
+        <altmember cref="P:System.Console.KeyAvailable" />
+        <altmember cref="P:System.Console.TreatControlCAsInput" />
+        <altmember cref="E:System.Console.CancelKeyPress" />
       </Docs>
     </Member>
     <Member MemberName="ReadKey">
@@ -1885,6 +1935,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Console.In" /> property is redirected from some stream other than the console.</exception>
+        <altmember cref="T:System.ConsoleKey" />
+        <altmember cref="P:System.Console.KeyAvailable" />
+        <altmember cref="P:System.Console.TreatControlCAsInput" />
+        <altmember cref="E:System.Console.CancelKeyPress" />
       </Docs>
     </Member>
     <Member MemberName="ReadLine">
@@ -1951,9 +2005,9 @@
   
      to read the contents of the file and display them to the console.  
   
- A line is defined as a sequence of characters followed by a carriage return (hexadecimal 0x000d), a line feed (hexadecimal 0x000a), or the value of the <xref:System.Environment.NewLine%2A?displayProperty=fullName> property. The returned string does not contain the terminating character(s). By default, the method reads input from a 256-character input buffer. Because this includes the <xref:System.Environment.NewLine%2A?displayProperty=fullName> character(s), the method can read lines that contain up to 254 characters. To read longer lines, call the <xref:System.Console.OpenStandardInput%28System.Int32%29> method.  
+ A line is defined as a sequence of characters followed by a carriage return (hexadecimal 0x000d), a line feed (hexadecimal 0x000a), or the value of the <xref:System.Environment.NewLine%2A?displayProperty=nameWithType> property. The returned string does not contain the terminating character(s). By default, the method reads input from a 256-character input buffer. Because this includes the <xref:System.Environment.NewLine%2A?displayProperty=nameWithType> character(s), the method can read lines that contain up to 254 characters. To read longer lines, call the <xref:System.Console.OpenStandardInput%28System.Int32%29> method.  
   
- The <xref:System.Console.ReadLine%2A> method executes synchronously. That is, it blocks until a line is read or the Ctrl+Z keyboard combination is pressed. The <xref:System.Console.In%2A> property returns a <xref:System.IO.TextReader> object that represents the standard input stream and that has both a synchronous <xref:System.IO.TextReader.ReadLine%2A?displayProperty=fullName> method and an asynchronous <xref:System.IO.TextReader.ReadLineAsync%2A?displayProperty=fullName> method. However, when used as the console's standard input stream, the <xref:System.IO.TextReader.ReadLineAsync%2A?displayProperty=fullName> executes synchronously rather than asynchronously and returns a `Task<String>` only after the read operation has completed.  
+ The <xref:System.Console.ReadLine%2A> method executes synchronously. That is, it blocks until a line is read or the Ctrl+Z keyboard combination is pressed. The <xref:System.Console.In%2A> property returns a <xref:System.IO.TextReader> object that represents the standard input stream and that has both a synchronous <xref:System.IO.TextReader.ReadLine%2A?displayProperty=nameWithType> method and an asynchronous <xref:System.IO.TextReader.ReadLineAsync%2A?displayProperty=nameWithType> method. However, when used as the console's standard input stream, the <xref:System.IO.TextReader.ReadLineAsync%2A?displayProperty=nameWithType> executes synchronously rather than asynchronously and returns a `Task<String>` only after the read operation has completed.  
   
  If this method throws an <xref:System.OutOfMemoryException> exception, the reader's position in the underlying <xref:System.IO.Stream> object is advanced by the number of characters the method was able to read, but the characters already read into the internal <xref:System.Console.ReadLine%2A> buffer are discarded. Since the position of the reader in the stream cannot be changed, the characters already read are unrecoverable, and can be accessed only by reinitializing the <xref:System.IO.TextReader>. If the initial position within the stream is unknown or the stream does not support seeking, the underlying <xref:System.IO.Stream> also needs to be reinitialized. To avoid such a situation and to produce robust code, you should use the <xref:System.Console.KeyAvailable%2A> property and <xref:System.Console.ReadKey%2A> method and store the read characters in a pre-allocated buffer.  
   
@@ -1966,7 +2020,7 @@
    
   
 ## Examples  
- The following example requires two command line arguments: the name of an existing text file, and the name of a file to write the output to. It opens the existing text file and redirects the standard input from the keyboard to that file. It also redirects the standard output from the console to the output file. It then uses the <xref:System.Console.ReadLine%2A?displayProperty=fullName> method to read each line in the file, replaces every sequence of four spaces with a tab character, and uses the <xref:System.Console.WriteLine%2A?displayProperty=fullName> method to write the result to the output file.  
+ The following example requires two command line arguments: the name of an existing text file, and the name of a file to write the output to. It opens the existing text file and redirects the standard input from the keyboard to that file. It also redirects the standard output from the console to the output file. It then uses the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method to read each line in the file, replaces every sequence of four spaces with a tab character, and uses the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method to write the result to the output file.  
   
  [!code-cpp[System.Console-INSERTTABS#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Console-INSERTTABS/CPP/inserttabs.cpp#1)]
  [!code-csharp[System.Console-INSERTTABS#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Console-INSERTTABS/CS/inserttabs.cs#1)]
@@ -1977,6 +2031,9 @@
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <exception cref="T:System.OutOfMemoryException">There is insufficient memory to allocate a buffer for the returned string.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The number of characters in the next line of characters is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="ResetColor">
@@ -2201,6 +2258,8 @@
           <paramref name="newError" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="P:System.Console.IsErrorRedirected" />
+        <altmember cref="P:System.Console.Error" />
       </Docs>
     </Member>
     <Member MemberName="SetIn">
@@ -2254,6 +2313,8 @@
           <paramref name="newIn" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.IO.TextReader" />
+        <altmember cref="P:System.Console.In" />
       </Docs>
     </Member>
     <Member MemberName="SetOut">
@@ -2311,6 +2372,8 @@
           <paramref name="newOut" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="P:System.Console.Out" />
       </Docs>
     </Member>
     <Member MemberName="SetWindowPosition">
@@ -2528,6 +2591,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">Unable to get or set the input mode of the console input buffer.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="F:System.ConsoleModifiers.Control" />
+        <altmember cref="F:System.ConsoleKey.C" />
+        <altmember cref="E:System.Console.CancelKeyPress" />
       </Docs>
     </Member>
     <Member MemberName="WindowHeight">
@@ -2782,7 +2848,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of `value` is produced by calling <xref:System.Boolean.ToString%2A?displayProperty=fullName>, which outputs either <xref:System.Boolean.TrueString?displayProperty=fullName> or <xref:System.Boolean.FalseString?displayProperty=fullName>.  
+ The text representation of `value` is produced by calling <xref:System.Boolean.ToString%2A?displayProperty=nameWithType>, which outputs either <xref:System.Boolean.TrueString?displayProperty=nameWithType> or <xref:System.Boolean.FalseString?displayProperty=nameWithType>.  
   
    
   
@@ -2797,6 +2863,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -2841,6 +2910,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -2874,6 +2946,9 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -2908,7 +2983,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of `value` is produced by calling <xref:System.Decimal.ToString%2A?displayProperty=fullName>.  
+ The text representation of `value` is produced by calling <xref:System.Decimal.ToString%2A?displayProperty=nameWithType>.  
   
    
   
@@ -2923,6 +2998,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -2957,7 +3035,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of `value` is produced by calling the <xref:System.Double.ToString%2A?displayProperty=fullName> method.  
+ The text representation of `value` is produced by calling the <xref:System.Double.ToString%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -2972,6 +3050,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3006,7 +3087,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of `value` is produced by calling the <xref:System.Int32.ToString%2A?displayProperty=fullName> method.  
+ The text representation of `value` is produced by calling the <xref:System.Int32.ToString%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -3021,6 +3102,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3055,7 +3139,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of `value` is produced by calling the <xref:System.Int64.ToString%2A?displayProperty=fullName> method.  
+ The text representation of `value` is produced by calling the <xref:System.Int64.ToString%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -3070,6 +3154,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3119,6 +3206,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3153,7 +3243,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of `value` is produced by calling the <xref:System.Single.ToString%2A?displayProperty=fullName> method.  
+ The text representation of `value` is produced by calling the <xref:System.Single.ToString%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -3168,6 +3258,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3217,6 +3310,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3256,7 +3352,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of `value` is produced by calling the <xref:System.UInt32.ToString%2A?displayProperty=fullName> method.  
+ The text representation of `value` is produced by calling the <xref:System.UInt32.ToString%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -3271,6 +3367,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3310,7 +3409,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of `value` is produced by calling the <xref:System.UInt64.ToString%2A?displayProperty=fullName> method.  
+ The text representation of `value` is produced by calling the <xref:System.UInt64.ToString%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -3325,6 +3424,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3401,10 +3503,13 @@
           <paramref name="format" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">The format specification in <paramref name="format" /> is invalid.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public static void Write (string format, object[] arg);" />
+      <MemberSignature Language="C#" Value="public static void Write (string format, params object[] arg);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write(string format, object[] arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.Write(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -3486,8 +3591,11 @@
         <exception cref="T:System.FormatException">The format specification in <paramref name="format" /> is invalid.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
         <block subset="none" type="usage">
-          <para>This method is not called by C++ code. The C++ compiler resolves calls to <see cref="Overload:System.Console.Write" /> that include a string and a list of four or more object parameters as a call to <see cref="M:System.Console.Write(System.String,System.Object,System.Object,System.Object,System.Object)" />. It resolves calls to <see cref="Overload:System.Console.Write" /> that include a string and an object array as a call to <see cref="M:System.Console.Write(System.String,System.Object)" />.</para>
+          <para>This method is not called by C++ code. The C++ compiler resolves calls to [System.Console.Write](xref:System.Console.Write*) that include a string and a list of four or more object parameters as a call to <see cref="M:System.Console.Write(System.String,System.Object,System.Object,System.Object,System.Object)" />. It resolves calls to [System.Console.Write](xref:System.Console.Write*) that include a string and an object array as a call to <see cref="M:System.Console.Write(System.String,System.Object)" />.</para>
         </block>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3538,6 +3646,9 @@
           <paramref name="index" /> plus <paramref name="count" /> specify a position that is not within <paramref name="buffer" />.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3616,6 +3727,9 @@
           <paramref name="format" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">The format specification in <paramref name="format" /> is invalid.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3696,6 +3810,9 @@
           <paramref name="format" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">The format specification in <paramref name="format" /> is invalid.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3740,7 +3857,7 @@
 ## Remarks  
   
 > [!NOTE]
->  This API is not CLS-compliant. The CLS-compliant alternative is <xref:System.Console.Write%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>. The C# and Visual Basic compilers automatically resolve a call to this method as a call to <xref:System.Console.Write%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>.  
+>  This API is not CLS-compliant. The CLS-compliant alternative is <xref:System.Console.Write%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType>. The C# and Visual Basic compilers automatically resolve a call to this method as a call to <xref:System.Console.Write%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType>.  
   
  This method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) of the .NET Framework to convert the value of an object to its text representation and embed that representation in a string. The resulting string is written to the output stream.  
   
@@ -3777,6 +3894,9 @@
         <block subset="none" type="usage">
           <para>This method is marked with the <see langword="vararg" /> keyword, which means that it supports a variable number of parameters. The method can be called from Visual C++, but it cannot be called from C# or Visual Basic code. The C# and Visual Basic compilers resolve calls to <see cref="M:System.Console.Write(System.String,System.Object,System.Object,System.Object,System.Object)" /> as calls to <see cref="M:System.Console.Write(System.String,System.Object[])" />.</para>
         </block>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteLine">
@@ -3790,7 +3910,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default line terminator is a string whose value is a carriage return followed by a line feed ("\r\n" in C#, or `vbCrLf` in Visual Basic). You can change the line terminator by setting the <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName> property of the <xref:System.Console.Out%2A> property to another string.  
+ The default line terminator is a string whose value is a carriage return followed by a line feed ("\r\n" in C#, or `vbCrLf` in Visual Basic). You can change the line terminator by setting the <xref:System.IO.TextWriter.NewLine%2A?displayProperty=nameWithType> property of the <xref:System.Console.Out%2A> property to another string.  
   
  ]]></format>
         </remarks>
@@ -3825,7 +3945,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default line terminator is a string whose value is a carriage return followed by a line feed ("\r\n" in C#, or `vbCrLf` in Visual Basic). You can change the line terminator by setting the <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName> property of the <xref:System.Console.Out%2A> property to another string. The example provides an illustration.  
+ The default line terminator is a string whose value is a carriage return followed by a line feed ("\r\n" in C#, or `vbCrLf` in Visual Basic). You can change the line terminator by setting the <xref:System.IO.TextWriter.NewLine%2A?displayProperty=nameWithType> property of the <xref:System.Console.Out%2A> property to another string. The example provides an illustration.  
   
    
   
@@ -3840,6 +3960,11 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
+        <altmember cref="P:System.IO.TextWriter.NewLine" />
+        <altmember cref="P:System.Console.Out" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -3874,14 +3999,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of `value` is produced by calling the <xref:System.Boolean.ToString%2A?displayProperty=fullName> method.  
+ The text representation of `value` is produced by calling the <xref:System.Boolean.ToString%2A?displayProperty=nameWithType> method.  
   
  For more information about the line terminator, see the Remarks section of the <xref:System.Console.WriteLine%2A> method that takes no parameters.  
   
    
   
 ## Examples  
- The following example generates ten random integers and uses the <xref:System.Console.WriteLine%28System.Boolean%29?displayProperty=fullName> method to indicate whether they are even.  
+ The following example generates ten random integers and uses the <xref:System.Console.WriteLine%28System.Boolean%29?displayProperty=nameWithType> method to indicate whether they are even.  
   
  [!code-cpp[System.Console.WriteLine#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Console.WriteLine/CPP/writeline_boolean1.cpp#4)]
  [!code-csharp[System.Console.WriteLine#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Console.WriteLine/CS/writeline_boolean1.cs#4)]
@@ -3891,6 +4016,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -3939,6 +4067,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -3979,6 +4110,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4013,7 +4147,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of `value` is produced by calling the <xref:System.Decimal.ToString%2A?displayProperty=fullName> method.  
+ The text representation of `value` is produced by calling the <xref:System.Decimal.ToString%2A?displayProperty=nameWithType> method.  
   
  For more information about the line terminator, see the Remarks section of the <xref:System.Console.WriteLine%2A> method that takes no parameters.  
   
@@ -4029,6 +4163,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4063,7 +4200,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of `value` is produced by calling the <xref:System.Double.ToString%2A?displayProperty=fullName> method.  
+ The text representation of `value` is produced by calling the <xref:System.Double.ToString%2A?displayProperty=nameWithType> method.  
   
  For more information about the line terminator, see the Remarks section of the <xref:System.Console.WriteLine%2A> method that takes no parameters.  
   
@@ -4079,6 +4216,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4113,7 +4253,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of `value` is produced by calling the <xref:System.Int32.ToString%2A?displayProperty=fullName> method.  
+ The text representation of `value` is produced by calling the <xref:System.Int32.ToString%2A?displayProperty=nameWithType> method.  
   
  For more information about the line terminator, see the Remarks section of the <xref:System.Console.WriteLine%2A> method that takes no parameters.  
   
@@ -4129,6 +4269,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4163,7 +4306,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of `value` is produced by calling the <xref:System.Int64.ToString%2A?displayProperty=fullName> method.  
+ The text representation of `value` is produced by calling the <xref:System.Int64.ToString%2A?displayProperty=nameWithType> method.  
   
  For more information about the line terminator, see the Remarks section of the <xref:System.Console.WriteLine%2A> method that takes no parameters.  
   
@@ -4179,6 +4322,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4230,6 +4376,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4264,7 +4413,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of `value` is produced by calling the <xref:System.Single.ToString%2A?displayProperty=fullName> method.  
+ The text representation of `value` is produced by calling the <xref:System.Single.ToString%2A?displayProperty=nameWithType> method.  
   
  For more information about the line terminator, see the Remarks section of the <xref:System.Console.WriteLine%2A> method that takes no parameters.  
   
@@ -4280,6 +4429,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4331,6 +4483,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4370,7 +4525,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of `value` is produced by calling the <xref:System.UInt32.ToString%2A?displayProperty=fullName> method.  
+ The text representation of `value` is produced by calling the <xref:System.UInt32.ToString%2A?displayProperty=nameWithType> method.  
   
  For more information about the line terminator, see the Remarks section of the <xref:System.Console.WriteLine%2A> method that takes no parameters.  
   
@@ -4386,6 +4541,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4425,7 +4583,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of `value` is produced by calling the <xref:System.UInt64.ToString%2A?displayProperty=fullName> method.  
+ The text representation of `value` is produced by calling the <xref:System.UInt64.ToString%2A?displayProperty=nameWithType> method.  
   
  For more information about the line terminator, see the Remarks section of the <xref:System.Console.WriteLine%2A> method that takes no parameters.  
   
@@ -4441,6 +4599,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4517,10 +4678,13 @@
           <paramref name="format" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">The format specification in <paramref name="format" /> is invalid.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
-      <MemberSignature Language="C#" Value="public static void WriteLine (string format, object[] arg);" />
+      <MemberSignature Language="C#" Value="public static void WriteLine (string format, params object[] arg);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(string format, object[] arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.WriteLine(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -4601,8 +4765,11 @@
         <exception cref="T:System.FormatException">The format specification in <paramref name="format" /> is invalid.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
         <block subset="none" type="usage">
-          <para>This method is not called by C++ code. The C++ compiler resolves calls to <see cref="Overload:System.Console.WriteLine" /> that include a string and a list of four or more object parameters as a call to <see cref="M:System.Console.WriteLine(System.String,System.Object,System.Object,System.Object,System.Object)" />. It resolves calls to <see cref="Overload:System.Console.WriteLine" /> that include a string and an object array as a call to <see cref="M:System.Console.WriteLine(System.String,System.Object)" />.</para>
+          <para>This method is not called by C++ code. The C++ compiler resolves calls to [System.Console.WriteLine](xref:System.Console.WriteLine*) that include a string and a list of four or more object parameters as a call to <see cref="M:System.Console.WriteLine(System.String,System.Object,System.Object,System.Object,System.Object)" />. It resolves calls to [System.Console.WriteLine](xref:System.Console.WriteLine*) that include a string and an object array as a call to <see cref="M:System.Console.WriteLine(System.String,System.Object)" />.</para>
         </block>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4655,6 +4822,9 @@
           <paramref name="index" /> plus <paramref name="count" /> specify a position that is not within <paramref name="buffer" />.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4734,6 +4904,9 @@
           <paramref name="format" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">The format specification in <paramref name="format" /> is invalid.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4815,6 +4988,9 @@
           <paramref name="format" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">The format specification in <paramref name="format" /> is invalid.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4859,7 +5035,7 @@
 ## Remarks  
   
 > [!NOTE]
->  This API is not CLS-compliant. The CLS-compliant alternative is <xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>. The C# and Visual Basic compilers automatically resolve a call to this method as a call to <xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>.  
+>  This API is not CLS-compliant. The CLS-compliant alternative is <xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType>. The C# and Visual Basic compilers automatically resolve a call to this method as a call to <xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType>.  
   
  This method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) of the .NET Framework to convert the value of an object to its text representation and embed that representation in a string. The resulting string is written to the output stream.  
   
@@ -4898,7 +5074,80 @@
         <block subset="none" type="usage">
           <para>This method is marked with the <see langword="vararg" /> keyword, which means that it supports a variable number of parameters. The method can be called from Visual C++, but it cannot be called from C# or Visual Basic code. The C# and Visual Basic compilers resolve calls to <see cref="M:System.Console.WriteLine(System.String,System.Object,System.Object,System.Object,System.Object)" /> as calls to <see cref="M:System.Console.WriteLine(System.String,System.Object[])" />.</para>
         </block>
+        <altmember cref="M:System.Console.Read" />
+        <altmember cref="M:System.Console.ReadLine" />
+        <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the text representation of the specified value or values to the standard output stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Beep">
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Plays the sound of a beep through the console speaker.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenStandardOutput">
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Acquires the standard output stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenStandardError">
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Acquires the standard error stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenStandardInput">
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Acquires the standard input stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadKey">
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Obtains the next character or function key pressed by the user.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MoveBufferArea">
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies a specified source area of the screen buffer to a specified destination area.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

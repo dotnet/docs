@@ -1,4 +1,4 @@
-<%--<Snippet3>--%>
+<!-- <Snippet3> -->
 <%@ Page Language="VB" MasterPageFile="MasterVB.master"
     Title="ScriptManager in Content Page" %>
 
@@ -35,4 +35,4 @@
         </asp:UpdatePanel>
     </asp:Panel>
 </asp:Content>
-<%-- </Snippet3> --%>
+<!-- </Snippet3> -->

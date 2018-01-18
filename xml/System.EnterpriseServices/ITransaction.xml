@@ -22,7 +22,7 @@
   <Members>
     <Member MemberName="Abort">
       <MemberSignature Language="C#" Value="public void Abort (ref System.EnterpriseServices.BOID pboidReason, int fRetaining, int fAsync);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Abort(valuetype System.EnterpriseServices.BOID pboidReason, int32 fRetaining, int32 fAsync) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Abort(valuetype System.EnterpriseServices.BOID&amp; pboidReason, int32 fRetaining, int32 fAsync) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ITransaction.Abort(System.EnterpriseServices.BOID@,System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -79,7 +79,7 @@
     </Member>
     <Member MemberName="GetTransactionInfo">
       <MemberSignature Language="C#" Value="public void GetTransactionInfo (out System.EnterpriseServices.XACTTRANSINFO pinfo);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTransactionInfo(valuetype System.EnterpriseServices.XACTTRANSINFO pinfo) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTransactionInfo([out] valuetype System.EnterpriseServices.XACTTRANSINFO&amp; pinfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ITransaction.GetTransactionInfo(System.EnterpriseServices.XACTTRANSINFO@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

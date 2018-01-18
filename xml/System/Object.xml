@@ -169,23 +169,23 @@
          [!code-csharp[System.Object.Equals#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.object.equals/cs/equals_val2.cs#4)]
          [!code-vb[System.Object.Equals#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.object.equals/vb/equals_val2.vb#4)]  
   
- Because the <xref:System.Object> class is the base class for all types in the .NET Framework, the <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> method provides the default equality comparison for all other types. However, types often override the <xref:System.Object.Equals%2A> method to implement value equality. For more information, see the Notes for Callers and Notes for Inheritors sections.  
+ Because the <xref:System.Object> class is the base class for all types in the .NET Framework, the <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method provides the default equality comparison for all other types. However, types often override the <xref:System.Object.Equals%2A> method to implement value equality. For more information, see the Notes for Callers and Notes for Inheritors sections.  
   
 ## Notes for the [!INCLUDE[wrt](~/includes/wrt-md.md)]  
- When you call the <xref:System.Object.Equals%28System.Object%29> method overload on a class in the [!INCLUDE[wrt](~/includes/wrt-md.md)], it provides the default behavior for classes that don’t override <xref:System.Object.Equals%28System.Object%29>. This is part of the support that the .NET Framework provides for the [!INCLUDE[wrt](~/includes/wrt-md.md)] (see [.NET Framework Support for Windows Store Apps and Windows Runtime](~/docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)). Classes in the [!INCLUDE[wrt](~/includes/wrt-md.md)] don’t inherit <xref:System.Object>, and currently don’t implement an <xref:System.Object.Equals%28System.Object%29>method. However, they appear to have <xref:System.Object.ToString%2A>, <xref:System.Object.Equals%28System.Object%29>, and <xref:System.Object.GetHashCode%2A> methods when you use them in your C# or Visual Basic code, and the .NET Framework provides the default behavior for these methods.  
+ When you call the <xref:System.Object.Equals%28System.Object%29> method overload on a class in the [!INCLUDE[wrt](~/includes/wrt-md.md)], it provides the default behavior for classes that don’t override <xref:System.Object.Equals%28System.Object%29>. This is part of the support that the .NET Framework provides for the [!INCLUDE[wrt](~/includes/wrt-md.md)] (see [.NET Framework Support for Windows Store Apps and Windows Runtime](~/docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)). Classes in the [!INCLUDE[wrt](~/includes/wrt-md.md)] don’t inherit <xref:System.Object>, and currently don’t implement an <xref:System.Object.Equals%28System.Object%29> method. However, they appear to have <xref:System.Object.ToString%2A>, <xref:System.Object.Equals%28System.Object%29>, and <xref:System.Object.GetHashCode%2A> methods when you use them in your C# or Visual Basic code, and the .NET Framework provides the default behavior for these methods.  
   
 > [!NOTE]
 >  [!INCLUDE[wrt](~/includes/wrt-md.md)] classes that are written in C# or Visual Basic can override the <xref:System.Object.Equals%28System.Object%29> method overload.  
   
 ## Notes for Callers  
- Derived classes frequently override the <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> method to implement value equality. In addition, types also frequently provide an additional strongly typed overload to the `Equals` method, typically by implementing the <xref:System.IEquatable%601> interface. When you call the `Equals` method to test for equality, you should know whether the current instance overrides <xref:System.Object.Equals%2A?displayProperty=fullName> and understand how a particular call to an `Equals` method is resolved. Otherwise, you may be performing a test for equality that is different from what you intended, and the method may return an unexpected value.  
+ Derived classes frequently override the <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method to implement value equality. In addition, types also frequently provide an additional strongly typed overload to the `Equals` method, typically by implementing the <xref:System.IEquatable%601> interface. When you call the `Equals` method to test for equality, you should know whether the current instance overrides <xref:System.Object.Equals%2A?displayProperty=nameWithType> and understand how a particular call to an `Equals` method is resolved. Otherwise, you may be performing a test for equality that is different from what you intended, and the method may return an unexpected value.  
   
  The following example provides an illustration. It instantiates three <xref:System.Text.StringBuilder> objects with identical strings, and then makes four calls to `Equals` methods. The first method call returns `true`, and the remaining three return `false`.  
   
  [!code-csharp[System.Object.Equals#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.object.equals/cs/equalssb1.cs#5)]
  [!code-vb[System.Object.Equals#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.object.equals/vb/equalssb1.vb#5)]  
   
- In the first case, the strongly typed <xref:System.Text.StringBuilder.Equals%28System.Text.StringBuilder%29?displayProperty=fullName> method overload, which tests for value equality, is called. Because the strings assigned to the two <xref:System.Text.StringBuilder> objects are equal, the method returns `true`. However, <xref:System.Text.StringBuilder> does not override <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName>. Because of this, when the <xref:System.Text.StringBuilder> object is cast to an <xref:System.Object>, when a <xref:System.Text.StringBuilder> instance is assigned to a variable of type <xref:System.Object>, and when the <xref:System.Object.Equals%28System.Object%2CSystem.Object%29?displayProperty=fullName> method is passed two <xref:System.Text.StringBuilder> objects, the default <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> method is called. Because <xref:System.Text.StringBuilder> is a reference type, this is equivalent to passing the two <xref:System.Text.StringBuilder> objects to the <xref:System.Object.ReferenceEquals%2A> method. Although all three <xref:System.Text.StringBuilder> objects contain identical strings, they refer to three distinct objects. As a result, these three method calls return `false`.  
+ In the first case, the strongly typed <xref:System.Text.StringBuilder.Equals%28System.Text.StringBuilder%29?displayProperty=nameWithType> method overload, which tests for value equality, is called. Because the strings assigned to the two <xref:System.Text.StringBuilder> objects are equal, the method returns `true`. However, <xref:System.Text.StringBuilder> does not override <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>. Because of this, when the <xref:System.Text.StringBuilder> object is cast to an <xref:System.Object>, when a <xref:System.Text.StringBuilder> instance is assigned to a variable of type <xref:System.Object>, and when the <xref:System.Object.Equals%28System.Object%2CSystem.Object%29?displayProperty=nameWithType> method is passed two <xref:System.Text.StringBuilder> objects, the default <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method is called. Because <xref:System.Text.StringBuilder> is a reference type, this is equivalent to passing the two <xref:System.Text.StringBuilder> objects to the <xref:System.Object.ReferenceEquals%2A> method. Although all three <xref:System.Text.StringBuilder> objects contain identical strings, they refer to three distinct objects. As a result, these three method calls return `false`.  
   
  You can compare the current object to another object for reference equality by calling the <xref:System.Object.ReferenceEquals%2A> method. In Visual Basic, you can also use the `is` keyword (for example, `If Me Is otherObject Then ...`).  
   
@@ -194,15 +194,15 @@
   
 |Type category|Equality defined by|Comments|  
 |-------------------|-------------------------|--------------|  
-|Class derived directly from <xref:System.Object>|<xref:System.Object.Equals%28System.Object%29?displayProperty=fullName>|Reference equality; equivalent to calling <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName>.|  
-|Structure|<xref:System.ValueType.Equals%2A?displayProperty=fullName>|Value equality; either direct byte-by-byte comparison or field-by-field comparison using reflection.|  
-|Enumeration|<xref:System.Enum.Equals%2A?displayProperty=fullName>|Values must have the same enumeration type and the same underlying value.|  
-|Delegate|<xref:System.MulticastDelegate.Equals%2A?displayProperty=fullName>|Delegates must have the same type with identical invocation lists.|  
-|Interface|<xref:System.Object.Equals%28System.Object%29?displayProperty=fullName>|Reference equality.|  
+|Class derived directly from <xref:System.Object>|<xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>|Reference equality; equivalent to calling <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType>.|  
+|Structure|<xref:System.ValueType.Equals%2A?displayProperty=nameWithType>|Value equality; either direct byte-by-byte comparison or field-by-field comparison using reflection.|  
+|Enumeration|<xref:System.Enum.Equals%2A?displayProperty=nameWithType>|Values must have the same enumeration type and the same underlying value.|  
+|Delegate|<xref:System.MulticastDelegate.Equals%2A?displayProperty=nameWithType>|Delegates must have the same type with identical invocation lists.|  
+|Interface|<xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>|Reference equality.|  
   
- For a value type, you should always override <xref:System.Object.Equals%2A>, because tests for equality that rely on reflection offer poor performance. You can also override the default implementation of <xref:System.Object.Equals%2A> for reference types to test for value equality instead of reference equality and to define the precise meaning of value equality. Such implementations of <xref:System.Object.Equals%2A> return `true` if the two objects have the same value, even if they are not the same instance. The type's implementer decides what constitutes an object's value, but it is typically some or all the data stored in the instance variables of the object. For example, the value of a <xref:System.String> object is based on the characters of the string; the <xref:System.String.Equals%28System.Object%29?displayProperty=fullName> method overrides the <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> method to return `true` for any two string instances that contain the same characters in the same order.  
+ For a value type, you should always override <xref:System.Object.Equals%2A>, because tests for equality that rely on reflection offer poor performance. You can also override the default implementation of <xref:System.Object.Equals%2A> for reference types to test for value equality instead of reference equality and to define the precise meaning of value equality. Such implementations of <xref:System.Object.Equals%2A> return `true` if the two objects have the same value, even if they are not the same instance. The type's implementer decides what constitutes an object's value, but it is typically some or all the data stored in the instance variables of the object. For example, the value of a <xref:System.String> object is based on the characters of the string; the <xref:System.String.Equals%28System.Object%29?displayProperty=nameWithType> method overrides the <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method to return `true` for any two string instances that contain the same characters in the same order.  
   
- The following example shows how to override the <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> method to test for value equality. It overrides the <xref:System.Object.Equals%2A> method for the `Person` class. If `Person` accepted its base class implementation of equality, two `Person` objects would be equal only if they referenced a single object. However, in this case, two `Person` objects are equal if they have the same value for the `Person.Id` property.  
+ The following example shows how to override the <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method to test for value equality. It overrides the <xref:System.Object.Equals%2A> method for the `Person` class. If `Person` accepted its base class implementation of equality, two `Person` objects would be equal only if they referenced a single object. However, in this case, two `Person` objects are equal if they have the same value for the `Person.Id` property.  
   
  [!code-csharp[System.Object.Equals#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.object.equals/cs/equalsoverride.cs#6)]
  [!code-vb[System.Object.Equals#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.object.equals/vb/equalsoverride.vb#6)]  
@@ -231,7 +231,7 @@
   
 -   Types that override <xref:System.Object.Equals%28System.Object%29> must also override <xref:System.Object.GetHashCode%2A>; otherwise, hash tables  might not work correctly.  
   
--   You should consider implementing the <xref:System.IEquatable%601> interface to support strongly typed tests for equality. Your <xref:System.IEquatable%601.Equals%2A?displayProperty=fullName> implementation should return results that are consistent with <xref:System.Object.Equals%2A>.  
+-   You should consider implementing the <xref:System.IEquatable%601> interface to support strongly typed tests for equality. Your <xref:System.IEquatable%601.Equals%2A?displayProperty=nameWithType> implementation should return results that are consistent with <xref:System.Object.Equals%2A>.  
   
 -   If your programming language supports operator overloading and you overload the equality operator for a given type, you must also override the <xref:System.Object.Equals%28System.Object%29> method to return the same result as the equality operator. This  helps ensure that class library code that uses <xref:System.Object.Equals%2A> (such as <xref:System.Collections.ArrayList> and <xref:System.Collections.Hashtable>) behaves in a manner that is consistent with the way the equality operator is used by application code.  
   
@@ -251,12 +251,12 @@
   
 -   If you override <xref:System.Object.Equals%2A> and your development language supports operator overloading, you must overload the equality operator.  
   
--   You should implement the <xref:System.IEquatable%601> interface. Calling the strongly typed <xref:System.IEquatable%601.Equals%2A?displayProperty=fullName> method avoids boxing the `obj` argument.  
+-   You should implement the <xref:System.IEquatable%601> interface. Calling the strongly typed <xref:System.IEquatable%601.Equals%2A?displayProperty=nameWithType> method avoids boxing the `obj` argument.  
   
    
   
 ## Examples  
- The following example shows a `Point` class that overrides the <xref:System.Object.Equals%2A> method to provide value equality, and a `Point3D` class that is derived from `Point`. Because `Point` overrides <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> to test for value equality, the <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> method is not called. However, `Point3D.Equals` calls `Point.Equals` because `Point` implements <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> in a manner that provides value equality.  
+ The following example shows a `Point` class that overrides the <xref:System.Object.Equals%2A> method to provide value equality, and a `Point3D` class that is derived from `Point`. Because `Point` overrides <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> to test for value equality, the <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method is not called. However, `Point3D.Equals` calls `Point.Equals` because `Point` implements <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> in a manner that provides value equality.  
   
  [!code-csharp[ECMA-System.Object.Equals2#1](~/samples/snippets/csharp/VS_Snippets_CLR/ECMA-System.Object.Equals2/CS/equals2.cs#1)]
  [!code-vb[ECMA-System.Object.Equals2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ECMA-System.Object.Equals2/VB/equals2.vb#1)]  
@@ -265,9 +265,9 @@
   
  The `Point.Equals` method calls the <xref:System.Object.GetType%2A> method to determine whether the run-time types of the two objects are identical. If the method used a check of the form `obj is Point` in C# or `TryCast(obj, Point)` in Visual Basic, the check would return `true` in cases where `obj` is an instance of a derived class of `Point`, even though `obj` and the current instance are not of the same run-time type. Having verified that both objects are of the same type, the method casts `obj` to type `Point` and returns the result of comparing the instance fields of the two objects.  
   
- In `Point3D.Equals`, the inherited `Point.Equals` method, which overrides <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName>, is invoked before anything else is done. Because `Point3D` is a sealed class (`NotInheritable` in Visual Basic), a check in the form `obj is Point` in C# or `TryCast(obj, Point)` in Visual Basic is adequate to ensure that `obj` is a `Point3D` object. If it is a `Point3D` object, it is cast to a `Point` object and passed to the base class implementation of <xref:System.Object.Equals%2A>. Only when the inherited `Point.Equals` method returns `true` does the method compare the `z` instance fields introduced in the derived class.  
+ In `Point3D.Equals`, the inherited `Point.Equals` method, which overrides <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>, is invoked before anything else is done. Because `Point3D` is a sealed class (`NotInheritable` in Visual Basic), a check in the form `obj is Point` in C# or `TryCast(obj, Point)` in Visual Basic is adequate to ensure that `obj` is a `Point3D` object. If it is a `Point3D` object, it is cast to a `Point` object and passed to the base class implementation of <xref:System.Object.Equals%2A>. Only when the inherited `Point.Equals` method returns `true` does the method compare the `z` instance fields introduced in the derived class.  
   
- The following example defines a `Rectangle` class that internally implements a rectangle as two `Point` objects. The `Rectangle` class also overrides <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> to provide for value equality.  
+ The following example defines a `Rectangle` class that internally implements a rectangle as two `Point` objects. The `Rectangle` class also overrides <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> to provide for value equality.  
   
  [!code-csharp[ECMA-System.Object.Equals3#1](~/samples/snippets/csharp/VS_Snippets_CLR/ECMA-System.Object.Equals3/CS/equals3.cs#1)]
  [!code-vb[ECMA-System.Object.Equals3#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ECMA-System.Object.Equals3/VB/equals3.vb#1)]  
@@ -281,6 +281,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.ReferenceEquals(System.Object,System.Object)" />
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="T:System.ValueType" />
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="T:System.Collections.ArrayList" />
+        <altmember cref="T:System.Collections.Hashtable" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -328,7 +334,7 @@
   
 -   It determines whether either `objA` or `objB` is **null**. If so, it returns `false`.  
   
--   If the two objects do not represent the same object reference and neither is **null**, it calls `objA`.`Equals`(`objB`) and returns the result. This means that if `objA` overrides the <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> method, this override is called.  
+-   If the two objects do not represent the same object reference and neither is **null**, it calls `objA`.`Equals`(`objB`) and returns the result. This means that if `objA` overrides the <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method, this override is called.  
   
    
   
@@ -340,6 +346,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.Equals(System.Object)" />
+        <altmember cref="M:System.Object.ReferenceEquals(System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -395,15 +403,15 @@
   
  If a type does override the <xref:System.Object.Finalize%2A> method, the garbage collector adds an entry for each instance of the type to an internal structure called the finalization queue. The finalization queue contains entries for all the objects in the managed heap whose finalization code must run before the garbage collector can reclaim their memory. The garbage collector then calls the <xref:System.Object.Finalize%2A> method automatically under the following conditions:  
   
--   After the garbage collector has discovered that an object is inaccessible, unless the object has been exempted from finalization by a call to the <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> method.  
+-   After the garbage collector has discovered that an object is inaccessible, unless the object has been exempted from finalization by a call to the <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> method.  
   
 -   During shutdown of an application domain, unless the object is exempt from finalization. During shutdown, even objects that are still accessible are finalized.  
   
- <xref:System.Object.Finalize%2A> is automatically called only once on a given instance, unless the object is re-registered by using a mechanism such as <xref:System.GC.ReRegisterForFinalize%2A?displayProperty=fullName> and the <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> method has not been subsequently called.  
+ <xref:System.Object.Finalize%2A> is automatically called only once on a given instance, unless the object is re-registered by using a mechanism such as <xref:System.GC.ReRegisterForFinalize%2A?displayProperty=nameWithType> and the <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> method has not been subsequently called.  
   
  <xref:System.Object.Finalize%2A> operations have the following limitations:  
   
--   The exact time when the finalizer executes is undefined. To ensure deterministic release of resources for instances of your class, implement a `Close` method or provide a <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> implementation.  
+-   The exact time when the finalizer executes is undefined. To ensure deterministic release of resources for instances of your class, implement a `Close` method or provide a <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation.  
   
 -   The finalizers of two objects are not guaranteed to run in any specific order, even if one object refers to the other. That is, if Object A has a reference to Object B and both have finalizers, Object B might have already been finalized when the finalizer of Object A starts.  
   
@@ -426,9 +434,9 @@
 > [!IMPORTANT]
 >  If a <xref:System.Runtime.InteropServices.SafeHandle> object is available that wraps your unmanaged resource, the recommended alternative is to implement the dispose pattern with a safe handle and not override <xref:System.Object.Finalize%2A>. For more information, see [The SafeHandle alternative](#SafeHandle) section.  
   
- The <xref:System.Object.Finalize%2A?displayProperty=fullName> method does nothing by default, but you should override <xref:System.Object.Finalize%2A> only if necessary, and only to release unmanaged resources. Reclaiming memory tends to take much longer if a finalization operation runs, because it requires at least two garbage collections. In addition, you should override the <xref:System.Object.Finalize%2A> method for reference types only. The common language runtime only finalizes reference types. It ignores finalizers on value types.  
+ The <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method does nothing by default, but you should override <xref:System.Object.Finalize%2A> only if necessary, and only to release unmanaged resources. Reclaiming memory tends to take much longer if a finalization operation runs, because it requires at least two garbage collections. In addition, you should override the <xref:System.Object.Finalize%2A> method for reference types only. The common language runtime only finalizes reference types. It ignores finalizers on value types.  
 
-The scope of the <xref:System.Object.Finalize%2A?displayProperty=fullName> method is `protected`. You should maintain this limited scope when you override the method in your class. By keeping a <xref:System.Object.Finalize%2A> method protected, you prevent users of your application from calling an object's <xref:System.Object.Finalize%2A> method directly.
+The scope of the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method is `protected`. You should maintain this limited scope when you override the method in your class. By keeping a <xref:System.Object.Finalize%2A> method protected, you prevent users of your application from calling an object's <xref:System.Object.Finalize%2A> method directly.
   
  Every implementation of <xref:System.Object.Finalize%2A> in a derived type must call its base type's implementation of <xref:System.Object.Finalize%2A>. This is the only case in which application code is allowed to call <xref:System.Object.Finalize%2A>. An object's <xref:System.Object.Finalize%2A> method shouldn't call a method on any objects other than that of its base class. This is because the other objects being called could be collected at the same time as the calling object, such as in the case of a common language runtime shutdown. 
   
@@ -437,13 +445,13 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=fullName> metho
 >   
 >  Visual C++ also provides its own syntax for implementing the <xref:System.Object.Finalize%2A> method. For more information, see the "Destructors and finalizers" section of [How to: Define and Consume Classes and Structs (C++/CLI)](http://msdn.microsoft.com/library/1c03cb0d-1459-4b5e-af65-97d6b3094fd7).  
   
- Because garbage collection is non-deterministic, you do not know precisely when the garbage collector performs finalization. To release resources immediately, you can also choose to implement the [dispose pattern](~/docs/standard/design-guidelines/dispose-pattern.md) and the <xref:System.IDisposable> interface. The <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> implementation can be called by consumers of your class to free unmanaged resources, and you can use the <xref:System.Object.Finalize%2A> method to free unmanaged resources in the event that the <xref:System.IDisposable.Dispose%2A> method is not called.  
+ Because garbage collection is non-deterministic, you do not know precisely when the garbage collector performs finalization. To release resources immediately, you can also choose to implement the [dispose pattern](~/docs/standard/design-guidelines/dispose-pattern.md) and the <xref:System.IDisposable> interface. The <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation can be called by consumers of your class to free unmanaged resources, and you can use the <xref:System.Object.Finalize%2A> method to free unmanaged resources in the event that the <xref:System.IDisposable.Dispose%2A> method is not called.  
   
  <xref:System.Object.Finalize%2A> can take almost any action, including resurrecting an object (that is, making the object accessible again) after it has been cleaned up during garbage collection. However, the object can only be resurrected once; <xref:System.Object.Finalize%2A> cannot be called on resurrected objects during garbage collection. There is one action that your implementation of <xref:System.Object.Finalize%2A> should never take: it should never throw an exception. If any exceptions thrown by methods called from the <xref:System.Object.Finalize%2A> method are unhandled by the <xref:System.Object.Finalize%2A> method, the runtime assumes that the <xref:System.Object.Finalize%2A> method returned and continues to call the <xref:System.Object.Finalize%2A> methods of other objects. 
   
 <a name="SafeHandle"></a>   
 ## The SafeHandle alternative  
- Creating reliable finalizers is often difficult, because you cannot make assumptions about the state of your application, and because unhandled system exceptions such as <xref:System.OutOfMemoryException> and <xref:System.StackOverflowException> terminate the finalizer. Instead of implementing a finalizer for your class to release unmanaged resources, you can use an object that is derived from the <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=fullName> class to wrap your unmanaged resources, and then implement the dispose pattern without a finalizer. The .NET Framework provides the following classes in the <xref:Microsoft.Win32?displayProperty=fullName> namespace that are derived from <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=fullName>:  
+ Creating reliable finalizers is often difficult, because you cannot make assumptions about the state of your application, and because unhandled system exceptions such as <xref:System.OutOfMemoryException> and <xref:System.StackOverflowException> terminate the finalizer. Instead of implementing a finalizer for your class to release unmanaged resources, you can use an object that is derived from the <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> class to wrap your unmanaged resources, and then implement the dispose pattern without a finalizer. The .NET Framework provides the following classes in the <xref:Microsoft.Win32?displayProperty=nameWithType> namespace that are derived from <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType>:  
   
 -   <xref:Microsoft.Win32.SafeHandles.SafeFileHandle> is a wrapper class for a file handle.  
   
@@ -472,10 +480,14 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=fullName> metho
  [!code-csharp[System.Object.Finalize#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.object.finalize/cs/finalize1.cs#1)]
  [!code-vb[System.Object.Finalize#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.object.finalize/vb/finalize1.vb#1)]  
   
- For an additional example that overrides the <xref:System.Object.Finalize%2A> method, see the <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> method.  
+ For an additional example that overrides the <xref:System.Object.Finalize%2A> method, see the <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.GC.SuppressFinalize(System.Object)" />
+        <altmember cref="M:System.GC.ReRegisterForFinalize(System.Object)" />
+        <altmember cref="M:System.GC.WaitForPendingFinalizers" />
+        <altmember cref="T:System.WeakReference" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -528,10 +540,10 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=fullName> metho
 >  -   Do not serialize hash code values or store them in databases.  
 > -   Do not use the hash code as the key to retrieve an object from a keyed collection.  
 > -   Do not send hash codes across application domains or processes. In some cases, hash codes may be computed on a per-process or per-application domain basis.  
-> -   Do not use the hash code instead of a value returned by a cryptographic hashing function if you need a cryptographically strong hash. For cryptographic hashes, use a class derived from the <xref:System.Security.Cryptography.HashAlgorithm?displayProperty=fullName> or <xref:System.Security.Cryptography.KeyedHashAlgorithm?displayProperty=fullName> class.  
+> -   Do not use the hash code instead of a value returned by a cryptographic hashing function if you need a cryptographically strong hash. For cryptographic hashes, use a class derived from the <xref:System.Security.Cryptography.HashAlgorithm?displayProperty=nameWithType> or <xref:System.Security.Cryptography.KeyedHashAlgorithm?displayProperty=nameWithType> class.  
 > -   Do not test for equality of hash codes to determine whether two objects are equal. (Unequal objects can have identical hash codes.) To test for equality, call the <xref:System.Object.ReferenceEquals%2A> or <xref:System.Object.Equals%2A> method.  
   
- The <xref:System.Object.GetHashCode%2A> method can be overridden by a derived type. If <xref:System.Object.GetHashCode%2A> is not overridden, hash codes for reference types are computed by calling the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> method of the base class, which computes a hash code based on an object's reference; for more information, see <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A?displayProperty=fullName>. In other words, two objects for which the <xref:System.Object.ReferenceEquals%2A> method returns `true` have identical hash codes. If value types do not override <xref:System.Object.GetHashCode%2A>, the <xref:System.ValueType.GetHashCode%2A?displayProperty=fullName> method of the base class uses reflection to compute the hash code based on the values of the type's fields. In other words, value types whose fields have equal values have equal hash codes. For more information about overriding <xref:System.Object.GetHashCode%2A>, see the "Notes to Inheritors" section.  
+ The <xref:System.Object.GetHashCode%2A> method can be overridden by a derived type. If <xref:System.Object.GetHashCode%2A> is not overridden, hash codes for reference types are computed by calling the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> method of the base class, which computes a hash code based on an object's reference; for more information, see <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A?displayProperty=nameWithType>. In other words, two objects for which the <xref:System.Object.ReferenceEquals%2A> method returns `true` have identical hash codes. If value types do not override <xref:System.Object.GetHashCode%2A>, the <xref:System.ValueType.GetHashCode%2A?displayProperty=nameWithType> method of the base class uses reflection to compute the hash code based on the values of the type's fields. In other words, value types whose fields have equal values have equal hash codes. For more information about overriding <xref:System.Object.GetHashCode%2A>, see the "Notes to Inheritors" section.  
   
 > [!WARNING]
 >  If you override the <xref:System.Object.GetHashCode%2A> method, you should also override <xref:System.Object.Equals%2A>, and vice versa. If your overridden <xref:System.Object.Equals%2A> method returns `true` when two objects are tested for equality, your overridden <xref:System.Object.GetHashCode%2A> method must return the same value for the two objects.  
@@ -596,7 +608,7 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=fullName> metho
   
 -   If two objects compare as equal, the <see cref="M:System.Object.GetHashCode" /> method for each object must return the same value. However, if two objects do not compare as equal, the <see cref="M:System.Object.GetHashCode" /> methods for the two objects do not have to return different values.  
   
--   The <see cref="M:System.Object.GetHashCode" /> method for an object must consistently return the same hash code as long as there is no modification to the object state that determines the return value of the object's <see cref="Overload:System.Object.Equals" /> method. Note that this is true only for the current execution of an application, and that a different hash code can be returned if the application is run again.  
+-   The <see cref="M:System.Object.GetHashCode" /> method for an object must consistently return the same hash code as long as there is no modification to the object state that determines the return value of the object's [System.Object.Equals](xref:System.Object.Equals*) method. Note that this is true only for the current execution of an application, and that a different hash code can be returned if the application is run again.  
   
 -   For the best performance, a hash function should generate an even distribution for all input, including input that is heavily clustered. An implication is that small modifications to object state should result in large modifications to the resulting hash code for best hash table performance.  
   
@@ -606,7 +618,7 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=fullName> metho
   
  For example, the implementation of the <see cref="M:System.String.GetHashCode" /> method provided by the <see cref="T:System.String" /> class returns identical hash codes for identical string values. Therefore, two <see cref="T:System.String" /> objects return the same hash code if they represent the same string value. Also, the method uses all the characters in the string to generate reasonably randomly distributed output, even when the input is clustered in certain ranges (for example, many users might have strings that contain only the lower 128 ASCII characters, even though a string can contain any of the 65,535 Unicode characters).  
   
- Providing a good hash function on a class can significantly affect the performance of adding those objects to a hash table. In a hash table with keys that provide a good implementation of a hash function, searching for an element takes constant time (for example, an O(1) operation). In a hash table with a poor implementation of a hash function, the performance of a search depends on the number of items in the hash table (for example, an O(<paramref name="n" />) operation, where <paramref name="n" /> is the number of items in the hash table). A malicious user can input data that increases the number of collisions, which can significantly degrade the performance of applications that depend on hash tables, under the following conditions:  
+ Providing a good hash function on a class can significantly affect the performance of adding those objects to a hash table. In a hash table with keys that provide a good implementation of a hash function, searching for an element takes constant time (for example, an O(1) operation). In a hash table with a poor implementation of a hash function, the performance of a search depends on the number of items in the hash table (for example, an O(`n`) operation, where `n` is the number of items in the hash table). A malicious user can input data that increases the number of collisions, which can significantly degrade the performance of applications that depend on hash tables, under the following conditions:  
   
 -   When hash functions produce frequent collisions.  
   
@@ -616,6 +628,9 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=fullName> metho
   
  Derived classes that override <see cref="M:System.Object.GetHashCode" /> must also override <see cref="M:System.Object.Equals(System.Object)" /> to guarantee that two objects considered equal have the same hash code; otherwise, the <see cref="T:System.Collections.Hashtable" /> type might not work correctly.</para>
         </block>
+        <altmember cref="T:System.Collections.Hashtable" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
+        <altmember cref="M:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -651,17 +666,17 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=fullName> metho
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because <xref:System.Object?displayProperty=fullName> is the base class for all types in the .NET Framework type system, the <xref:System.Object.GetType%2A> method can be used to return <xref:System.Type> objects that represent all .NET Framework types. The .NET Framework recognizes the following five categories of types:  
+ Because <xref:System.Object?displayProperty=nameWithType> is the base class for all types in the .NET Framework type system, the <xref:System.Object.GetType%2A> method can be used to return <xref:System.Type> objects that represent all .NET Framework types. The .NET Framework recognizes the following five categories of types:  
   
--   Classes, which are derived from <xref:System.Object?displayProperty=fullName>,  
+-   Classes, which are derived from <xref:System.Object?displayProperty=nameWithType>,  
   
--   Value types, which are derived from <xref:System.ValueType?displayProperty=fullName>.  
+-   Value types, which are derived from <xref:System.ValueType?displayProperty=nameWithType>.  
   
--   Interfaces, which are derived from <xref:System.Object?displayProperty=fullName> starting with the .NET Framework 2.0.  
+-   Interfaces, which are derived from <xref:System.Object?displayProperty=nameWithType> starting with the .NET Framework 2.0.  
   
--   Enumerations, which are derived from <xref:System.Enum?displayProperty=fullName>.  
+-   Enumerations, which are derived from <xref:System.Enum?displayProperty=nameWithType>.  
   
--   Delegates, which are derived from <xref:System.MulticastDelegate?displayProperty=fullName>.  
+-   Delegates, which are derived from <xref:System.MulticastDelegate?displayProperty=nameWithType>.  
   
  For two objects `x` and `y` that have identical runtime types, `Object.ReferenceEquals(x.GetType(),y.GetType())` returns `true`. The following example uses the <xref:System.Object.GetType%2A> method with the <xref:System.Object.ReferenceEquals%2A> method to determine whether one numeric value is the same type as two other numeric values.  
   
@@ -689,6 +704,7 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=fullName> metho
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="MemberwiseClone">
@@ -812,7 +828,7 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=fullName> metho
      [!code-csharp[System.Object.ReferenceEquals#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.object.referenceequals/cs/referenceequalsa.cs#2)]
      [!code-vb[System.Object.ReferenceEquals#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.object.referenceequals/vb/referenceequalsa.vb#2)]  
   
-     For more information about string interning, see <xref:System.String.IsInterned%2A?displayProperty=fullName>.  
+     For more information about string interning, see <xref:System.String.IsInterned%2A?displayProperty=nameWithType>.  
   
    
   
@@ -825,6 +841,7 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=fullName> metho
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -860,12 +877,12 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=fullName> metho
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Object.ToString%2A?displayProperty=fullName> is the major formatting method in the .NET Framework. It converts an object to its string representation so that it is suitable for display. (For information about formatting support in the .NET Framework, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).) Default implementations of the <xref:System.Object.ToString%2A?displayProperty=fullName> method return the fully qualified name of the object's type.  
+ <xref:System.Object.ToString%2A?displayProperty=nameWithType> is the major formatting method in the .NET Framework. It converts an object to its string representation so that it is suitable for display. (For information about formatting support in the .NET Framework, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).) Default implementations of the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method return the fully qualified name of the object's type.  
   
 > [!IMPORTANT]
->  You may have reached this page by following the link from the member list of another type. That is because that type does not override <xref:System.Object.ToString%2A?displayProperty=fullName>. Instead, it inherits the functionality of the <xref:System.Object.ToString%2A?displayProperty=fullName> method.  
+>  You may have reached this page by following the link from the member list of another type. That is because that type does not override <xref:System.Object.ToString%2A?displayProperty=nameWithType>. Instead, it inherits the functionality of the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method.  
   
- Types frequently override the <xref:System.Object.ToString%2A?displayProperty=fullName> method to provide a more suitable string representation of a particular type. Types also frequently overload the <xref:System.Object.ToString%2A?displayProperty=fullName> method to provide support for format strings or culture-sensitive formatting.  
+ Types frequently override the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method to provide a more suitable string representation of a particular type. Types also frequently overload the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method to provide support for format strings or culture-sensitive formatting.  
   
  In this section:  
   
@@ -891,19 +908,19 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=fullName> metho
   
 <a name="Overriding"></a>   
 ## Overriding the Object.ToString() method  
- Types commonly override the <xref:System.Object.ToString%2A?displayProperty=fullName> method to return a string that represents the object instance. For example, the base types such as <xref:System.Char>, <xref:System.Int32>, and <xref:System.String> provide <xref:System.Object.ToString%2A> implementations that return the string form of the value that the object represents. The following example defines a class, `Object2`, that overrides the <xref:System.Object.ToString%2A> method to return the type name along with its value.  
+ Types commonly override the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method to return a string that represents the object instance. For example, the base types such as <xref:System.Char>, <xref:System.Int32>, and <xref:System.String> provide <xref:System.Object.ToString%2A> implementations that return the string form of the value that the object represents. The following example defines a class, `Object2`, that overrides the <xref:System.Object.ToString%2A> method to return the type name along with its value.  
   
  [!code-cpp[System.Object.ToString#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.object.tostring/cpp/tostring3.cpp#3)]
  [!code-csharp[System.Object.ToString#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.object.tostring/cs/tostring3.cs#3)]
  [!code-vb[System.Object.ToString#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.object.tostring/vb/tostring3.vb#3)]  
   
- The following table lists the type categories in the .NET Framework and indicates whether or not they override the <xref:System.Object.ToString%2A?displayProperty=fullName> method.  
+ The following table lists the type categories in the .NET Framework and indicates whether or not they override the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method.  
   
 |Type category|Overrides Object.ToString()|Behavior|  
 |-------------------|-----------------------------------|--------------|  
 |Class|n/a|n/a|  
-|Structure|Yes (<xref:System.ValueType.ToString%2A?displayProperty=fullName>)|Same as Object.ToString()|  
-|Enumeration|Yes (<xref:System.Enum.ToString?displayProperty=fullName>)|The member name|  
+|Structure|Yes (<xref:System.ValueType.ToString%2A?displayProperty=nameWithType>)|Same as Object.ToString()|  
+|Enumeration|Yes (<xref:System.Enum.ToString?displayProperty=nameWithType>)|The member name|  
 |Interface|No|n/a|  
 |Delegate|No|n/a|  
   
@@ -911,14 +928,14 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=fullName> metho
   
 <a name="Overloading"></a>   
 ## Overloading the ToString method  
- In addition to overriding the parameterless <xref:System.Object.ToString?displayProperty=fullName> method, many types overload the `ToString` method to provide versions of the method that accept parameters. Most commonly, this is done to provide support for variable formatting and culture-sensitive formatting.  
+ In addition to overriding the parameterless <xref:System.Object.ToString?displayProperty=nameWithType> method, many types overload the `ToString` method to provide versions of the method that accept parameters. Most commonly, this is done to provide support for variable formatting and culture-sensitive formatting.  
   
  The following example overloads the `ToString` method to return a result string that includes the value of various fields of an `Automobile` class. It defines four format strings: G, which returns the model name and year; D, which returns the model name, year, and number of doors; C, which returns the model name, year, and number of cylinders; and A, which returns a string with all four field values.  
   
  [!code-csharp[System.Object.ToString#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.object.tostring/cs/tostringoverload1.cs#4)]
  [!code-vb[System.Object.ToString#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.object.tostring/vb/tostringoverload1.vb#4)]  
   
- The following example calls the overloaded <xref:System.Decimal.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName> method to display culture-sensitive formatting of a currency value.  
+ The following example calls the overloaded <xref:System.Decimal.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method to display culture-sensitive formatting of a currency value.  
   
  [!code-csharp[System.Object.ToString#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.object.tostring/cs/tostringoverload2.cs#5)]
  [!code-vb[System.Object.ToString#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.object.tostring/vb/tostringoverload2.vb#5)]  
@@ -927,7 +944,7 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=fullName> metho
   
 <a name="Extending"></a>   
 ## Extending the Object.ToString method  
- Because a type inherits the default <xref:System.Object.ToString%2A?displayProperty=fullName> method, you may find its behavior undesirable and want to change it. This is particularly true of arrays and collection classes. While you may expect the `ToString` method of an array or collection class to display the values of its members, it instead displays the type fully qualified type name, as the following example shows.  
+ Because a type inherits the default <xref:System.Object.ToString%2A?displayProperty=nameWithType> method, you may find its behavior undesirable and want to change it. This is particularly true of arrays and collection classes. While you may expect the `ToString` method of an array or collection class to display the values of its members, it instead displays the type fully qualified type name, as the following example shows.  
   
  [!code-csharp[System.Object.ToString#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.object.tostring/cs/array1.cs#6)]
  [!code-vb[System.Object.ToString#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.object.tostring/vb/array1.vb#6)]  
@@ -936,18 +953,18 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=fullName> metho
   
 -   If the type is an array, a collection object, or an object that implements the <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601> interfaces, you can enumerate its elements by using the `foreach` statement in C# or the `For Each...Next` construct in Visual Basic.  
   
--   If the class is not `sealed` (in C#) or `NotInheritable` (in Visual Basic), you can develop a wrapper class that inherits from the base class whose <xref:System.Object.ToString%2A?displayProperty=fullName> method you want to customize. At a minimum, this requires that you do the following:  
+-   If the class is not `sealed` (in C#) or `NotInheritable` (in Visual Basic), you can develop a wrapper class that inherits from the base class whose <xref:System.Object.ToString%2A?displayProperty=nameWithType> method you want to customize. At a minimum, this requires that you do the following:  
   
     1.  Implement any necessary constructors. Derived classes do not inherit their base class constructors.  
   
-    2.  Override the <xref:System.Object.ToString%2A?displayProperty=fullName> method to return the result string that you'd like.  
+    2.  Override the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method to return the result string that you'd like.  
   
-     The following example defines a wrapper class for the <xref:System.Collections.Generic.List%601> class. It overrides the <xref:System.Object.ToString%2A?displayProperty=fullName> method to display the value of each method of the collection rather than the fully qualified type name.  
+     The following example defines a wrapper class for the <xref:System.Collections.Generic.List%601> class. It overrides the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method to display the value of each method of the collection rather than the fully qualified type name.  
   
      [!code-csharp[System.Object.ToString#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.object.tostring/cs/customize1.cs#7)]
      [!code-vb[System.Object.ToString#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.object.tostring/vb/customize1.vb#7)]  
   
--   Develop an [extension method](~/docs/standard/design-guidelines/extension-methods.md) that returns the result string that you want. Note that you can't override the default <xref:System.Object.ToString%2A?displayProperty=fullName> method in this way (that is, your extension class (in C#) or module (in Visual Basic) cannot have a parameterless method named `ToString` that is called in place of the original type's `ToString` method. You'll have to provide some other name for your parameterless `ToString` replacement.  
+-   Develop an [extension method](~/docs/standard/design-guidelines/extension-methods.md) that returns the result string that you want. Note that you can't override the default <xref:System.Object.ToString%2A?displayProperty=nameWithType> method in this way (that is, your extension class (in C#) or module (in Visual Basic) cannot have a parameterless method named `ToString` that is called in place of the original type's `ToString` method. You'll have to provide some other name for your parameterless `ToString` replacement.  
   
      The following example defines two methods that extend the <xref:System.Collections.Generic.List%601> class: a parameterless `ToString2` method, and a `ToString` method with a <xref:System.String> parameter that represents a format string.  
   
@@ -958,15 +975,15 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=fullName> metho
 ## Notes for the [!INCLUDE[wrt](~/includes/wrt-md.md)]  
  When you call the <xref:System.Object.ToString%2A> method on a class in the [!INCLUDE[wrt](~/includes/wrt-md.md)], it provides the default behavior for classes that don’t override <xref:System.Object.ToString%2A>. This is part of the support that the .NET Framework provides for the [!INCLUDE[wrt](~/includes/wrt-md.md)] (see [.NET Framework Support for Windows Store Apps and Windows Runtime](~/docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)). Classes in the [!INCLUDE[wrt](~/includes/wrt-md.md)] don’t inherit <xref:System.Object>, and don’t always implement a <xref:System.Object.ToString%2A>. However, they always appear to have <xref:System.Object.ToString%2A>, <xref:System.Object.Equals%28System.Object%29>, and <xref:System.Object.GetHashCode%2A> methods when you use them in your C# or Visual Basic code, and the .NET Framework provides a default behavior for these methods.  
   
- Starting with the [!INCLUDE[net_v451](~/includes/net-v451-md.md)], the common language runtime will use [IStringable.ToString](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.tostring.aspx) on a [!INCLUDE[wrt](~/includes/wrt-md.md)] object before falling back to the default implementation of <xref:System.Object.ToString%2A?displayProperty=fullName>.  
+ Starting with the [!INCLUDE[net_v451](~/includes/net-v451-md.md)], the common language runtime will use [IStringable.ToString](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.tostring.aspx) on a [!INCLUDE[wrt](~/includes/wrt-md.md)] object before falling back to the default implementation of <xref:System.Object.ToString%2A?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  [!INCLUDE[wrt](~/includes/wrt-md.md)] classes that are written in C# or Visual Basic can override the <xref:System.Object.ToString%2A> method.  
   
 ### The [!INCLUDE[wrt](~/includes/wrt-md.md)] and the IStringable Interface  
- Starting with [!INCLUDE[win81](~/includes/win81-md.md)], the [!INCLUDE[wrt](~/includes/wrt-md.md)] includes an [IStringable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.aspx) interface whose single method, [IStringable.ToString](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.tostring.aspx), provides basic formatting support comparable to that provided by <xref:System.Object.ToString%2A?displayProperty=fullName>. To prevent ambiguity, you should not implement [IStringable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.aspx) on managed types.  
+ Starting with [!INCLUDE[win81](~/includes/win81-md.md)], the [!INCLUDE[wrt](~/includes/wrt-md.md)] includes an [IStringable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.aspx) interface whose single method, [IStringable.ToString](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.tostring.aspx), provides basic formatting support comparable to that provided by <xref:System.Object.ToString%2A?displayProperty=nameWithType>. To prevent ambiguity, you should not implement [IStringable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.aspx) on managed types.  
   
- When managed objects are called by native code or by code written in languages such as JavaScript or C++/CX, they appear to implement [IStringable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.aspx). The common language runtime will automatically route calls from [IStringable.ToString](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.tostring.aspx) to <xref:System.Object.ToString%2A?displayProperty=fullName> in the event [IStringable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.aspx) is not implemented on the managed object.  
+ When managed objects are called by native code or by code written in languages such as JavaScript or C++/CX, they appear to implement [IStringable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.aspx). The common language runtime will automatically route calls from [IStringable.ToString](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.tostring.aspx) to <xref:System.Object.ToString%2A?displayProperty=nameWithType> in the event [IStringable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.aspx) is not implemented on the managed object.  
   
 > [!WARNING]
 >  Because the common language runtime auto-implements [IStringable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.aspx) for all managed types in [!INCLUDE[win8_appstore_long](~/includes/win8-appstore-long-md.md)] apps, we recommend that you do not provide your own [IStringable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.aspx) implementation. Implementing [IStringable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.istringable.aspx) may result in unintended behavior when calling `ToString` from the [!INCLUDE[wrt](~/includes/wrt-md.md)], C++/CX, or JavaScript.  
@@ -1038,5 +1055,18 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=fullName> metho
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two object instances are equal.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

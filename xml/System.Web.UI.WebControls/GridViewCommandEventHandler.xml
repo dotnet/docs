@@ -36,15 +36,19 @@
 ## Examples  
  The following example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.GridViewCommandEventHandler> delegate to the <xref:System.Web.UI.WebControls.GridView.RowCommand> event of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewCommandEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewCommandEventHandler/CS/gridviewcommandeventhandlercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewCommandEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewCommandEventHandler/VB/gridviewcommandeventhandlervb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewCommandEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewCommandEventHandler/CS/gridviewcommandeventhandlercs.aspx#1)]
+ [!code-aspx-vb[GridViewCommandEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewCommandEventHandler/VB/gridviewcommandeventhandlervb.aspx#1)]  
   
  The following example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.GridViewCommandEventHandler> delegate to the <xref:System.Web.UI.WebControls.GridView.RowCommand> event of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowCommmand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCommmand/CS/gridviewrowcommandcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowCommmand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCommmand/VB/gridviewrowcommandvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowCommmand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCommmand/CS/gridviewrowcommandcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowCommmand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCommmand/VB/gridviewrowcommandvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewCommandEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.RowCommand" />
+    <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowCommand(System.Web.UI.WebControls.GridViewCommandEventArgs)" />
   </Docs>
 </Type>

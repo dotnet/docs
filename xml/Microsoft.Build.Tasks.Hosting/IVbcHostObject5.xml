@@ -32,7 +32,7 @@
   <Members>
     <Member MemberName="CompileAsync">
       <MemberSignature Language="C#" Value="public int CompileAsync (out IntPtr buildSucceededEvent, out IntPtr buildFailedEvent);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompileAsync(native int buildSucceededEvent, native int buildFailedEvent) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompileAsync([out] native int&amp; buildSucceededEvent, [out] native int&amp; buildFailedEvent) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject5.CompileAsync(System.IntPtr@,System.IntPtr@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

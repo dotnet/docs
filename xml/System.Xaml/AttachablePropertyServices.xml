@@ -140,7 +140,7 @@
     </Member>
     <Member MemberName="TryGetProperty">
       <MemberSignature Language="C#" Value="public static bool TryGetProperty (object instance, System.Xaml.AttachableMemberIdentifier name, out object value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetProperty(object instance, class System.Xaml.AttachableMemberIdentifier name, object value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetProperty(object instance, class System.Xaml.AttachableMemberIdentifier name, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.AttachablePropertyServices.TryGetProperty(System.Object,System.Xaml.AttachableMemberIdentifier,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -167,7 +167,7 @@
     </Member>
     <Member MemberName="TryGetProperty&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static bool TryGetProperty&lt;T&gt; (object instance, System.Xaml.AttachableMemberIdentifier name, out T value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetProperty&lt;T&gt;(object instance, class System.Xaml.AttachableMemberIdentifier name, !!T value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetProperty&lt;T&gt;(object instance, class System.Xaml.AttachableMemberIdentifier name, [out] !!T&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.AttachablePropertyServices.TryGetProperty``1(System.Object,System.Xaml.AttachableMemberIdentifier,``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

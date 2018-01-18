@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.NetworkInformation.Ping> class uses the values in this enumeration to set the <xref:System.Net.NetworkInformation.PingReply.Status%2A?displayProperty=fullName> property. The <xref:System.Net.NetworkInformation.Ping> class returns <xref:System.Net.NetworkInformation.PingReply> objects when you call the <xref:System.Net.NetworkInformation.Ping.Send%2A?displayProperty=fullName> or <xref:System.Net.NetworkInformation.Ping.SendAsync%2A?displayProperty=fullName> methods to check whether you can reach a computer across the network.  
+ The <xref:System.Net.NetworkInformation.Ping> class uses the values in this enumeration to set the <xref:System.Net.NetworkInformation.PingReply.Status%2A?displayProperty=nameWithType> property. The <xref:System.Net.NetworkInformation.Ping> class returns <xref:System.Net.NetworkInformation.PingReply> objects when you call the <xref:System.Net.NetworkInformation.Ping.Send%2A?displayProperty=nameWithType> or <xref:System.Net.NetworkInformation.Ping.SendAsync%2A?displayProperty=nameWithType> methods to check whether you can reach a computer across the network.  
   
 > [!WARNING]
 >  The DestinationProhibited and DestinationProtocolUnreachable enumeration values have the same numeric value. This is possible because DestinationProhibited applies only to IPv6 and DestinationProtocolUnreachable applies only to IPv4.  

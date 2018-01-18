@@ -43,7 +43,7 @@
  Applications that already use <xref:System.Windows.Forms.TextBox> controls can easily be adapted to make use of <xref:System.Windows.Forms.RichTextBox> controls. However, the <xref:System.Windows.Forms.RichTextBox> control does not have the same 64K character capacity limit of the <xref:System.Windows.Forms.TextBox> control. The <xref:System.Windows.Forms.RichTextBox> is typically used to provide text manipulation and display features similar to word processing applications such as Microsoft Word.  
   
 > [!NOTE]
->  The <xref:System.Windows.Forms.TextBoxBase.Undo%2A?displayProperty=fullName> method does not work with the <xref:System.Windows.Forms.Control.KeyPress> or <xref:System.Windows.Forms.Control.TextChanged> events.  
+>  The <xref:System.Windows.Forms.TextBoxBase.Undo%2A?displayProperty=nameWithType> method does not work with the <xref:System.Windows.Forms.Control.KeyPress> or <xref:System.Windows.Forms.Control.TextChanged> events.  
   
    
   
@@ -56,6 +56,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.TextBoxBase" />
+    <altmember cref="T:System.Windows.Forms.TextBox" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -87,6 +89,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.Multiline" />
       </Docs>
     </Member>
     <Member MemberName="AllowDrop">
@@ -379,6 +382,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The specified indentation was less than zero.</exception>
+        <altmember cref="P:System.Windows.Forms.RichTextBox.SelectionBullet" />
       </Docs>
     </Member>
     <Member MemberName="CanPaste">
@@ -418,6 +422,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.RichTextBox.Paste(System.Windows.Forms.DataFormats.Format)" />
+        <altmember cref="T:System.Windows.Forms.DataFormats.Format" />
       </Docs>
     </Member>
     <Member MemberName="CanRedo">
@@ -461,6 +467,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.RichTextBox.Redo" />
       </Docs>
     </Member>
     <Member MemberName="ContentsResized">
@@ -486,7 +493,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.ContentsResized> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.ContentsResized> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.RichTextBox> named `RichTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.RichTextBox.ContentsResized> event.  
   
@@ -495,6 +502,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ContentsResizedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="CreateParams">
@@ -554,6 +562,7 @@
         <summary>Gets the default size of the control.</summary>
         <value>A <see cref="T:System.Drawing.Size" /> value.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.DefaultSize" />
       </Docs>
     </Member>
     <Member MemberName="DetectUrls">
@@ -586,7 +595,7 @@
    
   
 ## Examples  
- The following code example contains an event handler for the <xref:System.Windows.Forms.RichTextBox.LinkClicked> event. The event handler processes link clicks within the document of a <xref:System.Windows.Forms.RichTextBox> control and launches an instance of the default browser (using the <xref:System.Diagnostics.Process.Start%2A?displayProperty=fullName> method), displaying the page for the link that was clicked. This example requires that the event handler has been connected to the <xref:System.Windows.Forms.RichTextBox.LinkClicked> event for a <xref:System.Windows.Forms.RichTextBox>.  
+ The following code example contains an event handler for the <xref:System.Windows.Forms.RichTextBox.LinkClicked> event. The event handler processes link clicks within the document of a <xref:System.Windows.Forms.RichTextBox> control and launches an instance of the default browser (using the <xref:System.Diagnostics.Process.Start%2A?displayProperty=nameWithType> method), displaying the page for the link that was clicked. This example requires that the event handler has been connected to the <xref:System.Windows.Forms.RichTextBox.LinkClicked> event for a <xref:System.Windows.Forms.RichTextBox>.  
   
  [!code-cpp[Classic RichTextBox.LinkClicked Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic RichTextBox.LinkClicked Example/CPP/source.cpp#1)]
  [!code-csharp[Classic RichTextBox.LinkClicked Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic RichTextBox.LinkClicked Example/CS/source.cs#1)]
@@ -594,6 +603,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.RichTextBox.LinkClicked" />
+        <altmember cref="T:System.Windows.Forms.LinkClickedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="DragDrop">
@@ -646,7 +657,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.DragEnter> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.DragEnter> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.RichTextBox> named `RichTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.RichTextBox.DragEnter> event.  
   
@@ -1105,6 +1116,7 @@
         <summary>Gets or sets the font of the text displayed by the control.</summary>
         <value>The <see cref="T:System.Drawing.Font" /> to apply to the text displayed by the control. The default is the value of the <see cref="P:System.Windows.Forms.Control.DefaultFont" /> property.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Font" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -1123,6 +1135,7 @@
         <summary>Gets or sets the foreground color of the control.</summary>
         <value>A <see cref="T:System.Drawing.Color" /> that represents the control's foreground color.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.ForeColor" />
       </Docs>
     </Member>
     <Member MemberName="GetCharIndexFromPosition">
@@ -1161,6 +1174,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.RichTextBox.GetLineFromCharIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.RichTextBox.GetPositionFromCharIndex(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetLineFromCharIndex">
@@ -1210,6 +1225,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.RichTextBox.GetCharIndexFromPosition(System.Drawing.Point)" />
+        <altmember cref="M:System.Windows.Forms.RichTextBox.GetPositionFromCharIndex(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetPositionFromCharIndex">
@@ -1239,6 +1256,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.RichTextBox.GetCharIndexFromPosition(System.Drawing.Point)" />
+        <altmember cref="M:System.Windows.Forms.RichTextBox.GetLineFromCharIndex(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GiveFeedback">
@@ -1296,7 +1315,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.HScroll> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.HScroll> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.RichTextBox> named `RichTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.RichTextBox.HScroll> event.  
   
@@ -1330,7 +1349,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.ImeChange> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.ImeChange> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.RichTextBox> named `RichTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.RichTextBox.ImeChange> event.  
   
@@ -1395,7 +1414,7 @@
    
   
 ## Examples  
- The following code example contains an event handler for the <xref:System.Windows.Forms.RichTextBox.LinkClicked> event. The event handler processes link clicks within the document of a <xref:System.Windows.Forms.RichTextBox> control and launches an instance of the default browser (using the <xref:System.Diagnostics.Process.Start%2A?displayProperty=fullName> method), displaying the page for the link that was clicked. This example requires that the event handler has been connected to the <xref:System.Windows.Forms.RichTextBox.LinkClicked> event for a <xref:System.Windows.Forms.RichTextBox>.  
+ The following code example contains an event handler for the <xref:System.Windows.Forms.RichTextBox.LinkClicked> event. The event handler processes link clicks within the document of a <xref:System.Windows.Forms.RichTextBox> control and launches an instance of the default browser (using the <xref:System.Diagnostics.Process.Start%2A?displayProperty=nameWithType> method), displaying the page for the link that was clicked. This example requires that the event handler has been connected to the <xref:System.Windows.Forms.RichTextBox.LinkClicked> event for a <xref:System.Windows.Forms.RichTextBox>.  
   
  [!code-cpp[Classic RichTextBox.LinkClicked Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic RichTextBox.LinkClicked Example/CPP/source.cpp#1)]
  [!code-csharp[Classic RichTextBox.LinkClicked Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic RichTextBox.LinkClicked Example/CS/source.cs#1)]
@@ -1403,6 +1422,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.RichTextBox.DetectUrls" />
       </Docs>
     </Member>
     <Member MemberName="LoadFile">
@@ -1449,6 +1469,7 @@
         <exception cref="T:System.IO.IOException">An error occurred while loading the file into the control.</exception>
         <exception cref="T:System.ArgumentException">The file being loaded is not an RTF document.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for opening a file. Associated enumeration: The <see langword="Read" /> value of <see cref="T:System.Security.Permissions.FileIOPermissionAccess" />.</permission>
+        <altmember cref="M:System.Windows.Forms.RichTextBox.SaveFile(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="LoadFile">
@@ -1485,7 +1506,7 @@
    
   
 ## Examples  
- The following code example demonstrates using the <xref:System.Windows.Forms.RichTextBox.SaveFile%2A> and <xref:System.Windows.Forms.RichTextBox.LoadFile%2A> methods with streams. It also demonstrates using the <xref:System.Windows.Forms.FileDialog.FileName%2A?displayProperty=fullName>, <xref:System.Windows.Forms.FileDialog.DefaultExt%2A?displayProperty=fullName>, <xref:System.Windows.Forms.SaveFileDialog.CreatePrompt%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.SaveFileDialog.OverwritePrompt%2A?displayProperty=fullName> members.  
+ The following code example demonstrates using the <xref:System.Windows.Forms.RichTextBox.SaveFile%2A> and <xref:System.Windows.Forms.RichTextBox.LoadFile%2A> methods with streams. It also demonstrates using the <xref:System.Windows.Forms.FileDialog.FileName%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.FileDialog.DefaultExt%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.SaveFileDialog.CreatePrompt%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.SaveFileDialog.OverwritePrompt%2A?displayProperty=nameWithType> members.  
   
  This is a complete example that is ready to run when you copy it to your project.  
   
@@ -1497,6 +1518,9 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An error occurred while loading the file into the control.</exception>
         <exception cref="T:System.ArgumentException">The file being loaded is not an RTF document.</exception>
+        <altmember cref="M:System.Windows.Forms.RichTextBox.SaveFile(System.String)" />
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="T:System.Windows.Forms.RichTextBoxStreamType" />
       </Docs>
     </Member>
     <Member MemberName="LoadFile">
@@ -1544,6 +1568,8 @@
         <exception cref="T:System.IO.IOException">An error occurred while loading the file into the control.</exception>
         <exception cref="T:System.ArgumentException">The file being loaded is not an RTF document.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for opening a file. Associated enumeration: The <see langword="Read" /> value of <see cref="T:System.Security.Permissions.FileIOPermissionAccess" />.</permission>
+        <altmember cref="M:System.Windows.Forms.RichTextBox.SaveFile(System.String)" />
+        <altmember cref="T:System.Windows.Forms.RichTextBoxStreamType" />
       </Docs>
     </Member>
     <Member MemberName="MaxLength">
@@ -1587,6 +1613,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value assigned to the property is less than 0.</exception>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.MaxLength" />
       </Docs>
     </Member>
     <Member MemberName="Multiline">
@@ -1665,6 +1692,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.RichTextBox.OnContentsResized(System.Windows.Forms.ContentsResizedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.RichTextBox.OnContentsResized(System.Windows.Forms.ContentsResizedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.RichTextBox.ContentsResized" />
       </Docs>
     </Member>
     <Member MemberName="OnContextMenuChanged">
@@ -1761,6 +1789,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.RichTextBox.OnHScroll(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.RichTextBox.OnHScroll(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.RichTextBox.HScroll" />
       </Docs>
     </Member>
     <Member MemberName="OnImeChange">
@@ -1794,6 +1823,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.RichTextBox.OnImeChange(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.RichTextBox.OnImeChange(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.RichTextBox.ImeChange" />
       </Docs>
     </Member>
     <Member MemberName="OnLinkClicked">
@@ -1827,6 +1857,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.RichTextBox.OnLinkClicked(System.Windows.Forms.LinkClickedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.RichTextBox.OnLinkClicked(System.Windows.Forms.LinkClickedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.RichTextBox.LinkClicked" />
       </Docs>
     </Member>
     <Member MemberName="OnProtected">
@@ -1860,6 +1891,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.RichTextBox.OnProtected(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.RichTextBox.OnProtected(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.RichTextBox.Protected" />
       </Docs>
     </Member>
     <Member MemberName="OnRightToLeftChanged">
@@ -1881,6 +1913,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.RightToLeftChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnRightToLeftChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnSelectionChanged">
@@ -1914,6 +1947,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.RichTextBox.OnSelectionChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.RichTextBox.OnSelectionChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.RichTextBox.SelectionChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnVScroll">
@@ -1947,6 +1981,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.RichTextBox.OnVScroll(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.RichTextBox.OnVScroll(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.RichTextBox.VScroll" />
       </Docs>
     </Member>
     <Member MemberName="Paste">
@@ -1971,7 +2006,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use this method to paste data from the clipboard into the control. This version of the <xref:System.Windows.Forms.RichTextBox.Paste%2A> method is different from the <xref:System.Windows.Forms.TextBoxBase.Paste%2A?displayProperty=fullName> method as it enables you to paste only text in a specified Clipboard format. You can use the <xref:System.Windows.Forms.RichTextBox.CanPaste%2A> method to determine whether the data within the Clipboard is in the specified Clipboard format. You can then call this version of the <xref:System.Windows.Forms.RichTextBox.Paste%2A> method to ensure that the paste operation is made with the appropriate data format.  
+ You can use this method to paste data from the clipboard into the control. This version of the <xref:System.Windows.Forms.RichTextBox.Paste%2A> method is different from the <xref:System.Windows.Forms.TextBoxBase.Paste%2A?displayProperty=nameWithType> method as it enables you to paste only text in a specified Clipboard format. You can use the <xref:System.Windows.Forms.RichTextBox.CanPaste%2A> method to determine whether the data within the Clipboard is in the specified Clipboard format. You can then call this version of the <xref:System.Windows.Forms.RichTextBox.Paste%2A> method to ensure that the paste operation is made with the appropriate data format.  
   
    
   
@@ -1985,11 +2020,14 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for reading from the Clipboard. Associated enumeration: the <see langword="AllClipboard" /> value of <see cref="T:System.Security.Permissions.UIPermissionClipboard" />.</permission>
+        <altmember cref="M:System.Windows.Forms.RichTextBox.CanPaste(System.Windows.Forms.DataFormats.Format)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Paste" />
+        <altmember cref="T:System.Windows.Forms.DataFormats.Format" />
       </Docs>
     </Member>
     <Member MemberName="ProcessCmdKey">
       <MemberSignature Language="C#" Value="protected override bool ProcessCmdKey (ref System.Windows.Forms.Message m, System.Windows.Forms.Keys keyData);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message m, valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message&amp; m, valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2010,6 +2048,7 @@
         <returns>
           <see langword="true" /> if the character was processed by the control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       </Docs>
     </Member>
     <Member MemberName="Protected">
@@ -2037,7 +2076,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.Protected> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.Protected> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.RichTextBox> named `RichTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.RichTextBox.Protected> event.  
   
@@ -2112,6 +2151,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.RichTextBox.CanRedo" />
       </Docs>
     </Member>
     <Member MemberName="RedoActionName">
@@ -2154,6 +2194,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.RichTextBox.CanRedo" />
+        <altmember cref="M:System.Windows.Forms.RichTextBox.Redo" />
       </Docs>
     </Member>
     <Member MemberName="RichTextShortcutsEnabled">
@@ -2274,6 +2316,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.Text" />
       </Docs>
     </Member>
     <Member MemberName="SaveFile">
@@ -2315,6 +2358,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An error occurs in saving the contents of the control to a file.</exception>
+        <altmember cref="M:System.Windows.Forms.RichTextBox.LoadFile(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SaveFile">
@@ -2348,7 +2392,7 @@
    
   
 ## Examples  
- The following code example demonstrates using the <xref:System.Windows.Forms.RichTextBox.SaveFile%2A> and <xref:System.Windows.Forms.RichTextBox.LoadFile%2A> methods with streams. It also demonstrates using the <xref:System.Windows.Forms.FileDialog.FileName%2A?displayProperty=fullName>, <xref:System.Windows.Forms.FileDialog.DefaultExt%2A?displayProperty=fullName>, <xref:System.Windows.Forms.SaveFileDialog.CreatePrompt%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.SaveFileDialog.OverwritePrompt%2A?displayProperty=fullName> members.  
+ The following code example demonstrates using the <xref:System.Windows.Forms.RichTextBox.SaveFile%2A> and <xref:System.Windows.Forms.RichTextBox.LoadFile%2A> methods with streams. It also demonstrates using the <xref:System.Windows.Forms.FileDialog.FileName%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.FileDialog.DefaultExt%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.SaveFileDialog.CreatePrompt%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.SaveFileDialog.OverwritePrompt%2A?displayProperty=nameWithType> members.  
   
  This is a complete example that is ready to run when you copy it to your project.  
   
@@ -2361,6 +2405,9 @@
         <exception cref="T:System.ArgumentException">An invalid file type is specified in the <paramref name="fileType" /> parameter.</exception>
         <exception cref="T:System.IO.IOException">An error occurs in saving the contents of the control to a file.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for creating or modifying a file. Associated enumeration: The <see langword="Write" /> value of <see cref="T:System.Security.Permissions.FileIOPermissionAccess" />.</permission>
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="M:System.Windows.Forms.RichTextBox.LoadFile(System.String)" />
+        <altmember cref="T:System.Windows.Forms.RichTextBoxStreamType" />
       </Docs>
     </Member>
     <Member MemberName="SaveFile">
@@ -2405,6 +2452,8 @@
         <exception cref="T:System.ArgumentException">An invalid file type is specified in the <paramref name="fileType" /> parameter.</exception>
         <exception cref="T:System.IO.IOException">An error occurs in saving the contents of the control to a file.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for creating or modifying a file. Associated enumeration: The <see langword="Write" /> value of <see cref="T:System.Security.Permissions.FileIOPermissionAccess" />.</permission>
+        <altmember cref="M:System.Windows.Forms.RichTextBox.LoadFile(System.String)" />
+        <altmember cref="T:System.Windows.Forms.RichTextBoxStreamType" />
       </Docs>
     </Member>
     <Member MemberName="ScrollBars">
@@ -2442,6 +2491,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value is not defined in the <see cref="T:System.Windows.Forms.RichTextBoxScrollBars" /> enumeration.</exception>
+        <altmember cref="T:System.Windows.Forms.RichTextBoxScrollBars" />
       </Docs>
     </Member>
     <Member MemberName="SelectedRtf">
@@ -2480,6 +2530,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.RichTextBox.Rtf" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.SelectedText" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.Text" />
       </Docs>
     </Member>
     <Member MemberName="SelectedText">
@@ -2571,6 +2624,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value is not one of the values defined in the <see cref="T:System.Windows.Forms.HorizontalAlignment" /> class.</exception>
+        <altmember cref="T:System.Windows.Forms.HorizontalAlignment" />
       </Docs>
     </Member>
     <Member MemberName="SelectionBackColor">
@@ -2654,6 +2708,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.RichTextBox.BulletIndent" />
       </Docs>
     </Member>
     <Member MemberName="SelectionChanged">
@@ -2681,7 +2736,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.SelectionChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.SelectionChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.RichTextBox> named `RichTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.RichTextBox.SelectionChanged> event.  
   
@@ -2788,6 +2843,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.RichTextBox.SelectionFont" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Select(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="SelectionFont">
@@ -2834,6 +2891,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.RichTextBox.SelectionColor" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Select(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="SelectionHangingIndent">
@@ -2883,6 +2942,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.RichTextBox.SelectionIndent" />
       </Docs>
     </Member>
     <Member MemberName="SelectionIndent">
@@ -2932,6 +2992,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.RichTextBox.SelectionRightIndent" />
+        <altmember cref="P:System.Windows.Forms.RichTextBox.SelectionHangingIndent" />
       </Docs>
     </Member>
     <Member MemberName="SelectionLength">
@@ -2974,6 +3036,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.SelectionStart" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.SelectedText" />
       </Docs>
     </Member>
     <Member MemberName="SelectionProtected">
@@ -3027,6 +3091,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.RichTextBox.Protected" />
       </Docs>
     </Member>
     <Member MemberName="SelectionRightIndent">
@@ -3143,6 +3208,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.RichTextBox.SelectedRtf" />
       </Docs>
     </Member>
     <Member MemberName="ShowSelectionMargin">
@@ -3210,6 +3276,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.Lines" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.Multiline" />
       </Docs>
     </Member>
     <Member MemberName="TextLength">
@@ -3233,6 +3301,7 @@
         <summary>Gets the length of text in the control.</summary>
         <value>The number of characters contained in the text of the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.TextLength" />
       </Docs>
     </Member>
     <Member MemberName="UndoActionName">
@@ -3266,6 +3335,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Undo" />
       </Docs>
     </Member>
     <Member MemberName="VScroll">
@@ -3291,7 +3361,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.VScroll> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.VScroll> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.RichTextBox> named `RichTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.RichTextBox.VScroll> event.  
   
@@ -3304,7 +3374,7 @@
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3366,5 +3436,32 @@
         <exception cref="T:System.ArgumentException">The specified zoom factor did not fall within the permissible range.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Find">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Searches for text within the contents of the <see cref="T:System.Windows.Forms.RichTextBox" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SaveFile">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves the contents of the <see cref="T:System.Windows.Forms.RichTextBox" /> to a file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadFile">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads the contents of a file into the <see cref="T:System.Windows.Forms.RichTextBox" /> control.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

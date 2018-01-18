@@ -41,6 +41,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Diagnostics.DataReceivedEventHandler" />
+    <altmember cref="E:System.Diagnostics.Process.OutputDataReceived" />
+    <altmember cref="E:System.Diagnostics.Process.ErrorDataReceived" />
+    <altmember cref="T:System.Diagnostics.Process" />
   </Docs>
   <Members>
     <Member MemberName="Data">
@@ -76,7 +80,7 @@
   
  A line is defined as a sequence of characters followed by a line feed ("\n") or a carriage return immediately followed by a line feed ("\r\n"). The line characters are encoded using the default system ANSI code page. The <xref:System.Diagnostics.DataReceivedEventArgs.Data%2A> property does not include the terminating carriage return or line feed.  
   
- When the redirected stream is closed, a null line is sent to the event handler. Ensure your event handler checks the <xref:System.Diagnostics.DataReceivedEventArgs.Data%2A> property appropriately before accessing it. For example, you can use the static method <xref:System.String.IsNullOrEmpty%2A?displayProperty=fullName> to validate the <xref:System.Diagnostics.DataReceivedEventArgs.Data%2A> property in your event handler.  
+ When the redirected stream is closed, a null line is sent to the event handler. Ensure your event handler checks the <xref:System.Diagnostics.DataReceivedEventArgs.Data%2A> property appropriately before accessing it. For example, you can use the static method <xref:System.String.IsNullOrEmpty%2A?displayProperty=nameWithType> to validate the <xref:System.Diagnostics.DataReceivedEventArgs.Data%2A> property in your event handler.  
   
    
   

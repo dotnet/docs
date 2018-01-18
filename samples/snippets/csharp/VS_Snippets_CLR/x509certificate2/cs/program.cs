@@ -34,7 +34,7 @@ namespace X509CertEncrypt
             X509Certificate2 cert = GetCertificateFromStore("CN=CERT_SIGN_TEST_CERT");
             if (cert == null)
             {
-                Console.WriteLine("Certificatge 'CN=CERT_SIGN_TEST_CERT' not found.");
+                Console.WriteLine("Certificate 'CN=CERT_SIGN_TEST_CERT' not found.");
                 Console.ReadLine();
             }
 

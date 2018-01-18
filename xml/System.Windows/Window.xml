@@ -96,6 +96,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Windows.Window.Show" />
+    <altmember cref="M:System.Windows.Window.ShowDialog" />
+    <altmember cref="P:System.Windows.Window.DialogResult" />
+    <altmember cref="T:System.Windows.Application" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -164,6 +168,9 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for permission to activate a window. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="E:System.Windows.Window.Activated" />
+        <altmember cref="E:System.Windows.Window.Deactivated" />
+        <altmember cref="P:System.Windows.Window.IsActive" />
       </Docs>
     </Member>
     <Member MemberName="Activated">
@@ -200,6 +207,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Window.Deactivated" />
+        <altmember cref="M:System.Windows.Window.Activate" />
+        <altmember cref="P:System.Windows.Window.IsActive" />
       </Docs>
     </Member>
     <Member MemberName="AllowsTransparency">
@@ -286,6 +296,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.ArrangeOverride(System.Windows.Size)" />
+        <altmember cref="M:System.Windows.Window.MeasureOverride(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -336,7 +348,7 @@
   
  Closing a window causes the <xref:System.Windows.Window.Closing> event to be raised. If the <xref:System.Windows.Window.Closing> event isn't canceled, the following occurs:  
   
--   The <xref:System.Windows.Window> is removed from <xref:System.Windows.Application.Windows%2A?displayProperty=fullName> (if an <xref:System.Windows.Application> object exists).  
+-   The <xref:System.Windows.Window> is removed from <xref:System.Windows.Application.Windows%2A?displayProperty=nameWithType> (if an <xref:System.Windows.Application> object exists).  
   
 -   The <xref:System.Windows.Window> is removed from the owner <xref:System.Windows.Window> if the owner/owned relationship was established before the owned <xref:System.Windows.Window> was shown and after the owner <xref:System.Windows.Window> was opened.  
   
@@ -346,7 +358,7 @@
   
 -   If <xref:System.Windows.Window.ShowDialog%2A> was called to show the <xref:System.Windows.Window>, <xref:System.Windows.Window.ShowDialog%2A> returns.  
   
- Closing a <xref:System.Windows.Window> causes any windows that it owns to be closed. Furthermore, closing a <xref:System.Windows.Window> may cause an application to stop running depending on how the <xref:System.Windows.Application.ShutdownMode%2A?displayProperty=fullName> property is set.  
+ Closing a <xref:System.Windows.Window> causes any windows that it owns to be closed. Furthermore, closing a <xref:System.Windows.Window> may cause an application to stop running depending on how the <xref:System.Windows.Application.ShutdownMode%2A?displayProperty=nameWithType> property is set.  
   
 > [!NOTE]
 >  This method cannot be called when a window is hosted in a browser.  
@@ -364,6 +376,11 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for permission to use all windows and user input events without restriction. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="M:System.Windows.Window.Show" />
+        <altmember cref="M:System.Windows.Window.ShowDialog" />
+        <altmember cref="P:System.Windows.Window.DialogResult" />
+        <altmember cref="P:System.Windows.Window.Owner" />
+        <altmember cref="P:System.Windows.Window.OwnedWindows" />
       </Docs>
     </Member>
     <Member MemberName="Closed">
@@ -390,6 +407,11 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Windows.UIElement.Visibility" /> is set, or <see cref="M:System.Windows.Window.Show" />, <see cref="M:System.Windows.Window.ShowDialog" />, or <see cref="M:System.Windows.Window.Hide" /> is called while a window is closing.</exception>
+        <altmember cref="M:System.Windows.Window.Close" />
+        <altmember cref="E:System.Windows.Window.Closing" />
+        <altmember cref="M:System.Windows.Application.Shutdown" />
+        <altmember cref="P:System.Windows.Application.ShutdownMode" />
+        <altmember cref="E:System.Windows.Application.SessionEnding" />
       </Docs>
     </Member>
     <Member MemberName="Closing">
@@ -439,6 +461,9 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Windows.UIElement.Visibility" /> is set, or <see cref="M:System.Windows.Window.Show" />, <see cref="M:System.Windows.Window.ShowDialog" />, or <see cref="M:System.Windows.Window.Close" /> is called while a window is closing.</exception>
+        <altmember cref="P:System.Windows.Application.ShutdownMode" />
+        <altmember cref="M:System.Windows.Window.Close" />
+        <altmember cref="E:System.Windows.Window.Closed" />
       </Docs>
     </Member>
     <Member MemberName="ContentRendered">
@@ -463,6 +488,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.ContentControl.Content" />
+        <altmember cref="E:System.Windows.FrameworkElement.Loaded" />
       </Docs>
     </Member>
     <Member MemberName="Deactivated">
@@ -499,6 +526,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Window.Activated" />
+        <altmember cref="M:System.Windows.Window.Activate" />
+        <altmember cref="P:System.Windows.Window.IsActive" />
       </Docs>
     </Member>
     <Member MemberName="DialogResult">
@@ -650,6 +680,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The left mouse button is not down.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for permission to drag a window. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="E:System.Windows.Window.LocationChanged" />
       </Docs>
     </Member>
     <Member MemberName="GetWindow">
@@ -695,7 +726,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A window is not closed when it is hidden, and neither the <xref:System.Windows.Window.Closing> nor <xref:System.Windows.Window.Closed> event is raised. Instead, the window's <xref:System.Windows.UIElement.Visibility%2A> property is set to <xref:System.Windows.Visibility?displayProperty=fullName>.  
+ A window is not closed when it is hidden, and neither the <xref:System.Windows.Window.Closing> nor <xref:System.Windows.Window.Closed> event is raised. Instead, the window's <xref:System.Windows.UIElement.Visibility%2A> property is set to <xref:System.Windows.Visibility.Hidden?displayProperty=nameWithType>.  
   
  If a window is the application's <xref:System.Windows.Application.MainWindow%2A> and the application's <xref:System.Windows.Application.ShutdownMode%2A> is <xref:System.Windows.ShutdownMode.OnMainWindowClose>, the application does not shut down. Likewise, the application does not shut down if a window is the only window and the application's shutdown mode is <xref:System.Windows.ShutdownMode.OnLastWindowClose>.  
   
@@ -705,6 +736,9 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Windows.Window.Hide" /> is called on a window that is closing (<see cref="E:System.Windows.Window.Closing" />) or has been closed (<see cref="E:System.Windows.Window.Closed" />).</exception>
+        <altmember cref="M:System.Windows.Window.Show" />
+        <altmember cref="M:System.Windows.Window.ShowDialog" />
+        <altmember cref="M:System.Windows.Window.Close" />
       </Docs>
     </Member>
     <Member MemberName="Icon">
@@ -831,6 +865,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Window.Activate" />
+        <altmember cref="E:System.Windows.Window.Activated" />
+        <altmember cref="E:System.Windows.Window.Deactivated" />
       </Docs>
     </Member>
     <Member MemberName="IsActiveProperty">
@@ -893,6 +930,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Window.Top" />
       </Docs>
     </Member>
     <Member MemberName="LeftProperty">
@@ -944,6 +982,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Window.Left" />
+        <altmember cref="P:System.Windows.Window.Top" />
+        <altmember cref="P:System.Windows.Window.RestoreBounds" />
       </Docs>
     </Member>
     <Member MemberName="LogicalChildren">
@@ -962,6 +1003,7 @@
         <summary>Gets an enumerator for a window's logical child elements.</summary>
         <value>An <see cref="T:System.Collections.IEnumerator" /> a window's logical child elements.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.FrameworkElement.LogicalChildren" />
       </Docs>
     </Member>
     <Member MemberName="MeasureOverride">
@@ -994,6 +1036,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.MeasureOverride(System.Windows.Size)" />
+        <altmember cref="M:System.Windows.Window.ArrangeOverride(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="OnActivated">
@@ -1024,6 +1068,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Window.OnDeactivated(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnClosed">
@@ -1054,6 +1099,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Window.OnClosing(System.ComponentModel.CancelEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnClosing">
@@ -1084,6 +1130,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Window.OnClosed(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnContentChanged">
@@ -1193,6 +1240,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Window.OnActivated(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnDpiChanged">
@@ -1246,6 +1294,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Window.Left" />
+        <altmember cref="P:System.Windows.Window.Top" />
       </Docs>
     </Member>
     <Member MemberName="OnManipulationBoundaryFeedback">
@@ -1358,6 +1408,7 @@
         <param name="oldParent">The previous parent. Set to null if the <see cref="T:System.Windows.DependencyObject" /> did not have a previous parent.</param>
         <summary>Called when the parent of the window is changed.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.UIElement.OnVisualParentChanged(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="OwnedWindows">
@@ -1478,6 +1529,7 @@
   
  The <see cref="P:System.Windows.Window.Owner" /> property is set with a window that has not been previously shown.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for permission to use all windows and user input events without restriction. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="P:System.Windows.Window.OwnedWindows" />
       </Docs>
     </Member>
     <Member MemberName="ResizeMode">
@@ -1522,6 +1574,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Primitives.ResizeGrip" />
       </Docs>
     </Member>
     <Member MemberName="ResizeModeProperty">
@@ -1639,6 +1692,9 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Windows.Window.Show" /> is called on a window that is closing (<see cref="E:System.Windows.Window.Closing" />) or has been closed (<see cref="E:System.Windows.Window.Closed" />).</exception>
+        <altmember cref="M:System.Windows.Window.Close" />
+        <altmember cref="M:System.Windows.Window.Hide" />
+        <altmember cref="P:System.Windows.Window.WindowState" />
       </Docs>
     </Member>
     <Member MemberName="ShowActivated">
@@ -1761,6 +1817,8 @@
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Windows.Window.ShowDialog" /> is called on a window that is closing (<see cref="E:System.Windows.Window.Closing" />) or has been closed (<see cref="E:System.Windows.Window.Closed" />).</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for permission to activate a window. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="M:System.Windows.Window.Close" />
+        <altmember cref="P:System.Windows.Window.WindowState" />
       </Docs>
     </Member>
     <Member MemberName="ShowInTaskbar">
@@ -1873,6 +1931,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Window.MeasureOverride(System.Windows.Size)" />
+        <altmember cref="M:System.Windows.Window.ArrangeOverride(System.Windows.Size)" />
+        <altmember cref="P:System.Windows.Window.ResizeMode" />
       </Docs>
     </Member>
     <Member MemberName="SizeToContentProperty">
@@ -1924,6 +1985,7 @@
       <Docs>
         <summary>Occurs when the window's <see cref="P:System.Windows.Window.WindowState" /> property changes.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Window.WindowState" />
       </Docs>
     </Member>
     <Member MemberName="TaskbarItemInfo">
@@ -1949,6 +2011,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.Windows.Shell" />
       </Docs>
     </Member>
     <Member MemberName="TaskbarItemInfoProperty">
@@ -1992,7 +2055,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The title of a <xref:System.Windows.Window>, <xref:System.Windows.Navigation.NavigationWindow>, or [!INCLUDE[TLA#tla_iegeneric](~/includes/tlasharptla-iegeneric-md.md)], can also be set by using <xref:System.Windows.Controls.Page.WindowTitle%2A?displayProperty=fullName>.  
+ The title of a <xref:System.Windows.Window>, <xref:System.Windows.Navigation.NavigationWindow>, or [!INCLUDE[TLA#tla_iegeneric](~/includes/tlasharptla-iegeneric-md.md)], can also be set by using <xref:System.Windows.Controls.Page.WindowTitle%2A?displayProperty=nameWithType>.  
   
 <a name="dependencyPropertyInfo_WindowTitle"></a>   
 ## Dependency Property Information  
@@ -2066,6 +2129,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Window.Left" />
       </Docs>
     </Member>
     <Member MemberName="Topmost">
@@ -2105,6 +2169,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Window.Activated" />
+        <altmember cref="E:System.Windows.Window.Deactivated" />
       </Docs>
     </Member>
     <Member MemberName="TopmostProperty">
@@ -2219,6 +2285,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Window.RestoreBounds" />
       </Docs>
     </Member>
     <Member MemberName="WindowStateProperty">

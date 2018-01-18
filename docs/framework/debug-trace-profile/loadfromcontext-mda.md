@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "MDAs (managed debugging assistants), LoadFrom context"
   - "managed debugging assistants (MDAs), LoadFrom context"
@@ -24,15 +19,17 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # loadFromContext MDA
-The `loadFromContext` managed debugging assistant (MDA) is activated if an assembly is loaded into the `LoadFrom` context. This situation can occur as a result of calling <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> or other similar methods.  
+The `loadFromContext` managed debugging assistant (MDA) is activated if an assembly is loaded into the `LoadFrom` context. This situation can occur as a result of calling <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> or other similar methods.  
   
 ## Symptoms  
  The use of some loader methods can result in assemblies being loaded in the `LoadFrom` context. The use of this context can result in unexpected behavior for serialization, casting, and dependency resolution. In general, it is recommended that assemblies be loaded into the `Load` context to avoid these problems. It is difficult to determine which context an assembly has been loaded into without this MDA.  
   
 ## Cause  
- Generally, an assembly was loaded into the `LoadFrom` context if it was loaded from a path outside the `Load` context, such as the global assembly cache or the <xref:System.AppDomainSetup.ApplicationBase%2A?displayProperty=fullName> property.  
+ Generally, an assembly was loaded into the `LoadFrom` context if it was loaded from a path outside the `Load` context, such as the global assembly cache or the <xref:System.AppDomainSetup.ApplicationBase%2A?displayProperty=nameWithType> property.  
   
 ## Resolution  
  Configure applications such that <xref:System.Reflection.Assembly.LoadFrom%2A> calls are no longer needed. You can use the following techniques for doing so:  
@@ -43,7 +40,7 @@ The `loadFromContext` managed debugging assistant (MDA) is activated if an assem
   
 -   Add a probing path to your application configuration (.config) file or to secondary  application domains if dependent assemblies are in child directories relative to the executable.  
   
- In each case, the code can be changed to use the <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> method.  
+ In each case, the code can be changed to use the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method.  
   
 ## Effect on the Runtime  
  The MDA does not have any effect on the CLR. It reports the context that was used as a result of a load request.  

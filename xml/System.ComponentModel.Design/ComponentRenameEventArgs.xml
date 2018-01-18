@@ -51,6 +51,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentRename" />
+    <altmember cref="T:System.ComponentModel.Design.ComponentRenameEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -82,6 +84,7 @@
         <param name="newName">The new name of the component.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.ComponentRenameEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.Design.ComponentRenameEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Component">
@@ -136,6 +139,7 @@
         <summary>Gets the name of the component after the rename event.</summary>
         <value>The name of the component after the rename event.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.ComponentModel.Design.ComponentRenameEventArgs.OldName" />
       </Docs>
     </Member>
     <Member MemberName="OldName">
@@ -163,6 +167,7 @@
         <summary>Gets the name of the component before the rename event.</summary>
         <value>The previous name of the component.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.ComponentModel.Design.ComponentRenameEventArgs.NewName" />
       </Docs>
     </Member>
   </Members>

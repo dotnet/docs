@@ -351,5 +351,23 @@
  The configuration file is read-only.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets a property, attribute, or child element of this <see cref="T:System.Configuration.ConfigurationElement" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RemoveAt">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the configuration element at the specified value in the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

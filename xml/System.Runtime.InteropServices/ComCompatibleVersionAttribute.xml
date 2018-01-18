@@ -37,7 +37,7 @@
   
  By default, the [Tlbexp.exe (Type Library Exporter)](~/docs/framework/tools/tlbexp-exe-type-library-exporter.md) uses an assembly's version number to calculate class identifiers (CLSIDs). All public, COM-visible classes receive new CLSIDs each time you export a new assembly version.  
   
- You can apply the `ComCompatibleVersionAttribute` attribute to force all CLSIDs for classes in the current version of an assembly to be the same as CLSIDs for classes in an earlier version of the assembly. As long as the CLSIDs remain the same, a legacy COM application can use the later version of a compatible assembly after you uninstall the original assembly. If you apply the <xref:System.Runtime.InteropServices.GuidAttribute?displayProperty=fullName> to a class to explicitly set its CLSID, the `ComCompatibleVersionAttribute` has no effect.  
+ You can apply the `ComCompatibleVersionAttribute` attribute to force all CLSIDs for classes in the current version of an assembly to be the same as CLSIDs for classes in an earlier version of the assembly. As long as the CLSIDs remain the same, a legacy COM application can use the later version of a compatible assembly after you uninstall the original assembly. If you apply the <xref:System.Runtime.InteropServices.GuidAttribute?displayProperty=nameWithType> to a class to explicitly set its CLSID, the `ComCompatibleVersionAttribute` has no effect.  
   
  The properties of this attribute combine to form the four parts of an assembly version. Always specify the lowest version that the current assembly is backward compatible with so that version is used to calculate all CLSIDs in the assembly.  
   
@@ -52,6 +52,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.InteropServices.GuidAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

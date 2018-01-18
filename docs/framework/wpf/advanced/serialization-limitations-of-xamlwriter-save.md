@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "XamlWriter.Save, serialization limitations of"
+  - "XamlWriter.Save [WPF], serialization limitations of"
   - "limitations of XamlWriter.Save"
   - "serialization limitations of XamlWriter.Save"
 ms.assetid: f86acc91-2b67-4039-8555-505734491d36
@@ -18,6 +18,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Serialization Limitations of XamlWriter.Save
 The [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)] <xref:System.Windows.Markup.XamlWriter.Save%2A> can be used to serialize the contents of a [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] application as a [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] file. However, there are some notable limitations in exactly what is serialized. These limitations and some general considerations are documented in this topic.  

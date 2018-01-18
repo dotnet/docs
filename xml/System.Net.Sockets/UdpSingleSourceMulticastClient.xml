@@ -376,7 +376,7 @@
     </Member>
     <Member MemberName="EndReceiveFromSource">
       <MemberSignature Language="C#" Value="public int EndReceiveFromSource (IAsyncResult result, out int sourcePort);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceiveFromSource(class System.IAsyncResult result, int32 sourcePort) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceiveFromSource(class System.IAsyncResult result, [out] int32&amp; sourcePort) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpSingleSourceMulticastClient.EndReceiveFromSource(System.IAsyncResult,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

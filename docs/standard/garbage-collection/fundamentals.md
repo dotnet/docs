@@ -20,6 +20,9 @@ caps.latest.revision: 51
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Fundamentals of Garbage Collection
 <a name="top"></a> In the common language runtime (CLR), the garbage collector serves as an automatic memory manager. It provides the following benefits:  
@@ -86,11 +89,11 @@ manager: "wpickett"
 ## Conditions for a garbage collection  
  Garbage collection occurs when one of the following conditions is true:  
   
--   The system has low physical memory.  
+-   The system has low physical memory. This is detected by either the low memory notification from the OS or low memory indicated by the host.
   
 -   The memory that is used by allocated objects on the managed heap surpasses an acceptable threshold. This threshold is continuously adjusted as the process runs.  
   
--   The <xref:System.GC.Collect%2A?displayProperty=fullName> method is called. In almost all cases, you do not have to call this method, because the garbage collector runs continuously. This method is primarily used for unique situations and testing.  
+-   The <xref:System.GC.Collect%2A?displayProperty=nameWithType> method is called. In almost all cases, you do not have to call this method, because the garbage collector runs continuously. This method is primarily used for unique situations and testing.  
   
  [Back to top](#top)  
   
@@ -100,7 +103,7 @@ manager: "wpickett"
   
  There is a managed heap for each managed process. All threads in the process allocate memory for objects on the same heap.  
   
- To reserve memory, the garbage collector calls the Win32 [VirtualAlloc](http://go.microsoft.com/fwlink/?LinkId=179047) function, and reserves one segment of memory at a time for managed applications. The garbage collector also reserves segments as needed, and releases segments back to the operating system (after clearing them of any objects) by calling the Win32 [VirtualFree](http://go.microsoft.com/fwlink/?LinkId=179050) function.  
+ To reserve memory, the garbage collector calls the Win32 [VirtualAlloc](https://msdn.microsoft.com/library/aa366887.aspx) function, and reserves one segment of memory at a time for managed applications. The garbage collector also reserves segments as needed, and releases segments back to the operating system (after clearing them of any objects) by calling the Win32 [VirtualFree](https://msdn.microsoft.com/library/aa366892.aspx) function.  
   
 > [!IMPORTANT]
 >  The size of segments allocated by the garbage collector is implementation-specific and is subject to change at any time, including in periodic updates. Your app should never make assumptions about or depend on a particular segment size, nor should it attempt to configure the amount of memory available for segment allocations.  
@@ -170,7 +173,7 @@ manager: "wpickett"
   
      Because generation 2 collections can occupy multiple segments, objects that are promoted into generation 2 can be moved into an older segment. Both generation 1 and generation 2 survivors can be moved to a different segment, because they are promoted to generation 2.  
   
-     Ordinarily, the large object heap is not compacted, because copying large objects imposes a performance penalty. However, starting with the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)], you can use the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=fullName> property to compact the large object heap on demand.  
+     Ordinarily, the large object heap is not compacted, because copying large objects imposes a performance penalty. However, starting with the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)], you can use the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=nameWithType> property to compact the large object heap on demand.  
   
  The garbage collector uses the following information to determine whether objects are live:  
   

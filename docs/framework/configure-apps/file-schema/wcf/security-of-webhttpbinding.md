@@ -14,6 +14,8 @@ caps.latest.revision: 9
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;security&gt; of &lt;webHttpBinding&gt;
 Specifies the security requirements for an endpoint configured with a [\<wsHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md).  
@@ -72,15 +74,15 @@ Specifies the security requirements for an endpoint configured with a [\<wsHttpB
 |[\<webHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/webhttpbinding.md)|A binding element that is used to configure endpoints for [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] Web services that respond to HTTP requests instead of SOAP messages.|  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.WebHttpBindingElement>   
- <xref:System.ServiceModel.Configuration.WSHttpSecurityElement>   
- <xref:System.ServiceModel.WebHttpBinding.Security%2A>   
- <xref:System.ServiceModel.Configuration.WebHttpBindingElement.Security%2A>   
- <xref:System.ServiceModel.WebHttpSecurity>   
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)   
- [Selecting a Credential Type](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)   
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)   
- [\<binding>](../../../../../docs/framework/misc/binding.md)   
+ <xref:System.ServiceModel.Configuration.WebHttpBindingElement>  
+ <xref:System.ServiceModel.Configuration.WSHttpSecurityElement>  
+ <xref:System.ServiceModel.WebHttpBinding.Security%2A>  
+ <xref:System.ServiceModel.Configuration.WebHttpBindingElement.Security%2A>  
+ <xref:System.ServiceModel.WebHttpSecurity>  
+ [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
+ [Selecting a Credential Type](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
+ [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [\<binding>](../../../../../docs/framework/misc/binding.md)  
  [WCF Web HTTP Programming Model](../../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)

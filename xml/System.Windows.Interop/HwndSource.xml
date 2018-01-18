@@ -66,7 +66,7 @@
   
  **Window Procedures**  
   
- The <xref:System.Windows.Interop.HwndSource> class implements its own window procedure. This window procedure is used to process important window messages, such as those related to layout, rendering, and input. However, you can also hook the window procedure for your own use. You can specify your own hook during construction by setting the <xref:System.Windows.Interop.HwndSourceParameters.HwndSourceHook%2A?displayProperty=fullName> property, or you can also use <xref:System.Windows.Interop.HwndSource.AddHook%2A> and <xref:System.Windows.Interop.HwndSource.RemoveHook%2A> to add and remove hooks after the window is created. The hooks are called by last-in first-out order, which enables your hooks to execute before the built-in processing. The actual hooks are held by a weak reference. Therefore, make sure that you manage the lifetime of your hook delegate.  
+ The <xref:System.Windows.Interop.HwndSource> class implements its own window procedure. This window procedure is used to process important window messages, such as those related to layout, rendering, and input. However, you can also hook the window procedure for your own use. You can specify your own hook during construction by setting the <xref:System.Windows.Interop.HwndSourceParameters.HwndSourceHook%2A?displayProperty=nameWithType> property, or you can also use <xref:System.Windows.Interop.HwndSource.AddHook%2A> and <xref:System.Windows.Interop.HwndSource.RemoveHook%2A> to add and remove hooks after the window is created. The hooks are called by last-in first-out order, which enables your hooks to execute before the built-in processing. The actual hooks are held by a weak reference. Therefore, make sure that you manage the lifetime of your hook delegate.  
   
  For more information about <xref:System.Windows.Interop.HwndSource> and other interoperation classes, see [WPF and Win32 Interoperation](~/docs/framework/wpf/advanced/wpf-and-win32-interoperation.md).  
   
@@ -76,6 +76,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Interop.HwndHost" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -349,6 +350,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to add handling. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="T:System.Windows.Interop.HwndSourceHook" />
+        <altmember cref="M:System.Windows.Interop.HwndSource.RemoveHook(System.Windows.Interop.HwndSourceHook)" />
       </Docs>
     </Member>
     <Member MemberName="AutoResized">
@@ -454,6 +457,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Interop.HwndSource.Handle" />
       </Docs>
     </Member>
     <Member MemberName="DefaultAcquireHwndFocusInMenuMode">
@@ -481,6 +485,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">to get this property. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.Windows.Interop.HwndSourceParameters.AcquireHwndFocusInMenuMode" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -512,6 +517,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Interop.HwndSource.IsDisposed" />
       </Docs>
     </Member>
     <Member MemberName="Disposed">
@@ -538,6 +544,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Interop.HwndSource.Dispose" />
       </Docs>
     </Member>
     <Member MemberName="DpiChanged">
@@ -602,6 +609,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="T:System.Windows.Interop.WindowInteropHelper" />
       </Docs>
     </Member>
     <Member MemberName="GetCompositionTargetCore">
@@ -636,6 +644,8 @@
         <block subset="none" type="overrides">
           <para>Implement this method to return a type-specific visual target. <see cref="T:System.Windows.Interop.HwndSource" /> implements this method to return <see cref="T:System.Windows.Interop.HwndTarget" />.</para>
         </block>
+        <altmember cref="T:System.Windows.Media.CompositionTarget" />
+        <altmember cref="P:System.Windows.Interop.HwndSource.CompositionTarget" />
       </Docs>
     </Member>
     <Member MemberName="Handle">
@@ -689,6 +699,7 @@
         <returns>
           <see langword="true" /> if the sink or one of its contained components has focus; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Interop.IKeyboardInputSink.HasFocusWithin" />
       </Docs>
     </Member>
     <Member MemberName="IsDisposed">
@@ -715,6 +726,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Interop.HwndSource.Dispose" />
       </Docs>
     </Member>
     <Member MemberName="KeyboardInputSiteCore">
@@ -742,6 +754,7 @@
         <value>A reference to the container's <see cref="T:System.Windows.Interop.IKeyboardInputSite" /> interface; or <see langword="null" /> if no site is assigned. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to set this property. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="P:System.Windows.Interop.IKeyboardInputSink.KeyboardInputSite" />
       </Docs>
     </Member>
     <Member MemberName="OnDpiChanged">
@@ -782,7 +795,7 @@
     </Member>
     <Member MemberName="OnMnemonicCore">
       <MemberSignature Language="C#" Value="protected virtual bool OnMnemonicCore (ref System.Windows.Interop.MSG msg, System.Windows.Input.ModifierKeys modifiers);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnMnemonicCore(valuetype System.Windows.Interop.MSG msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnMnemonicCore(valuetype System.Windows.Interop.MSG&amp; msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndSource.OnMnemonicCore(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -811,6 +824,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="msg" /> is not WM_KEYDOWN, WM_SYSKEYDOWN, WM_CHAR, or WM_DEADCHAR.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="M:System.Windows.Interop.IKeyboardInputSink.OnMnemonic(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterKeyboardInputSinkCore">
@@ -839,6 +853,7 @@
         <returns>The <see cref="T:System.Windows.Interop.IKeyboardInputSite" /> site of the contained component.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="M:System.Windows.Interop.IKeyboardInputSink.RegisterKeyboardInputSink(System.Windows.Interop.IKeyboardInputSink)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveHook">
@@ -875,6 +890,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to remove handlers. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="M:System.Windows.Interop.HwndSource.AddHook(System.Windows.Interop.HwndSourceHook)" />
+        <altmember cref="T:System.Windows.Interop.HwndSourceHook" />
       </Docs>
     </Member>
     <Member MemberName="RestoreFocusMode">
@@ -896,7 +913,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property can be set only in the <xref:System.Windows.Interop.HwndSource.%23ctor%28System.Windows.Interop.HwndSourceParameters%29?displayProperty=fullName> constructor by using the <xref:System.Windows.Interop.HwndSourceParameters.RestoreFocusMode%2A?displayProperty=fullName> property.  
+ This property can be set only in the <xref:System.Windows.Interop.HwndSource.%23ctor%28System.Windows.Interop.HwndSourceParameters%29?displayProperty=nameWithType> constructor by using the <xref:System.Windows.Interop.HwndSourceParameters.RestoreFocusMode%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -938,6 +955,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to set this property. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="P:System.Windows.Interop.HwndTarget.RootVisual" />
       </Docs>
     </Member>
     <Member MemberName="SizeToContent">
@@ -965,6 +983,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Window.SizeToContent" />
       </Docs>
     </Member>
     <Member MemberName="SizeToContentChanged">
@@ -989,6 +1008,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Interop.HwndSource.AutoResized" />
+        <altmember cref="P:System.Windows.Interop.HwndSource.SizeToContent" />
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Interop.IKeyboardInputSink.HasFocusWithin">
@@ -1051,7 +1072,7 @@
     </Member>
     <Member MemberName="System.Windows.Interop.IKeyboardInputSink.OnMnemonic">
       <MemberSignature Language="C#" Value="bool IKeyboardInputSink.OnMnemonic (ref System.Windows.Interop.MSG msg, System.Windows.Input.ModifierKeys modifiers);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.Interop.IKeyboardInputSink.OnMnemonic(valuetype System.Windows.Interop.MSG msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.Interop.IKeyboardInputSink.OnMnemonic(valuetype System.Windows.Interop.MSG&amp; msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndSource.System#Windows#Interop#IKeyboardInputSink#OnMnemonic(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1154,7 +1175,7 @@
     </Member>
     <Member MemberName="System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator">
       <MemberSignature Language="C#" Value="bool IKeyboardInputSink.TranslateAccelerator (ref System.Windows.Interop.MSG msg, System.Windows.Input.ModifierKeys modifiers);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator(valuetype System.Windows.Interop.MSG msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator(valuetype System.Windows.Interop.MSG&amp; msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndSource.System#Windows#Interop#IKeyboardInputSink#TranslateAccelerator(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1192,7 +1213,7 @@
     </Member>
     <Member MemberName="System.Windows.Interop.IKeyboardInputSink.TranslateChar">
       <MemberSignature Language="C#" Value="bool IKeyboardInputSink.TranslateChar (ref System.Windows.Interop.MSG msg, System.Windows.Input.ModifierKeys modifiers);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.Interop.IKeyboardInputSink.TranslateChar(valuetype System.Windows.Interop.MSG msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.Interop.IKeyboardInputSink.TranslateChar(valuetype System.Windows.Interop.MSG&amp; msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndSource.System#Windows#Interop#IKeyboardInputSink#TranslateChar(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1250,11 +1271,12 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="request" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Interop.IKeyboardInputSink.TabInto(System.Windows.Input.TraversalRequest)" />
       </Docs>
     </Member>
     <Member MemberName="TranslateAcceleratorCore">
       <MemberSignature Language="C#" Value="protected virtual bool TranslateAcceleratorCore (ref System.Windows.Interop.MSG msg, System.Windows.Input.ModifierKeys modifiers);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool TranslateAcceleratorCore(valuetype System.Windows.Interop.MSG msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool TranslateAcceleratorCore(valuetype System.Windows.Interop.MSG&amp; msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndSource.TranslateAcceleratorCore(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1281,11 +1303,12 @@
           <see langword="true" /> if the message was handled by the method implementation; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="M:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       </Docs>
     </Member>
     <Member MemberName="TranslateCharCore">
       <MemberSignature Language="C#" Value="protected virtual bool TranslateCharCore (ref System.Windows.Interop.MSG msg, System.Windows.Input.ModifierKeys modifiers);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool TranslateCharCore(valuetype System.Windows.Interop.MSG msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool TranslateCharCore(valuetype System.Windows.Interop.MSG&amp; msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndSource.TranslateCharCore(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

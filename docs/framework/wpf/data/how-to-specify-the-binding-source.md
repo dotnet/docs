@@ -9,15 +9,20 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "binding data, binding sources"
-  - "data binding, binding source"
-  - "binding sources"
+  - "binding data [WPF], binding sources"
+  - "data binding [WPF], binding source"
+  - "binding sources [WPF]"
 ms.assetid: 55d47757-2648-4a52-987f-b767953f168c
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Specify the Binding Source
 In data binding, the binding source object refers to the object you obtain your data from. This topic describes the different ways of specifying the binding source.  
@@ -47,9 +52,9 @@ In data binding, the binding source object refers to the object you obtain your 
 |<xref:System.Windows.Data.Binding.ElementName%2A>|You specify a string that represents the element you want to bind to. This is useful when you want to bind to the property of another element on your application. For example, if you want to use a <xref:System.Windows.Controls.Slider> to control the height of another control in your application, or if you want to bind the <xref:System.Windows.Controls.ContentControl.Content%2A> of your control to the <xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A> property of your <xref:System.Windows.Controls.ListBox> control. For more information, see <xref:System.Windows.Data.Binding.ElementName%2A>.|  
   
 ## See Also  
- <xref:System.Windows.FrameworkElement.DataContext%2A?displayProperty=fullName>   
- <xref:System.Windows.FrameworkContentElement.DataContext%2A?displayProperty=fullName>   
- [Property Value Inheritance](../../../../docs/framework/wpf/advanced/property-value-inheritance.md)   
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)   
- [Binding Declarations Overview](../../../../docs/framework/wpf/data/binding-declarations-overview.md)   
+ <xref:System.Windows.FrameworkElement.DataContext%2A?displayProperty=nameWithType>  
+ <xref:System.Windows.FrameworkContentElement.DataContext%2A?displayProperty=nameWithType>  
+ [Property Value Inheritance](../../../../docs/framework/wpf/advanced/property-value-inheritance.md)  
+ [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
+ [Binding Declarations Overview](../../../../docs/framework/wpf/data/binding-declarations-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

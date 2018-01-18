@@ -31,7 +31,7 @@
   
  By default, the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel> class uses a binary formatter to serialize all messages.  
   
- A <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel> object has associated configuration properties that can be set at run time either in a configuration file (by invoking the static <xref:System.Runtime.Remoting.RemotingConfiguration.Configure%2A?displayProperty=fullName> method) or programmatically (by passing a <xref:System.Collections.IDictionary> collection to the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.%23ctor%2A> constructor). For a list of these configuration properties, see the documentation for the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.%23ctor%2A> constructor.  
+ A <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel> object has associated configuration properties that can be set at run time either in a configuration file (by invoking the static <xref:System.Runtime.Remoting.RemotingConfiguration.Configure%2A?displayProperty=nameWithType> method) or programmatically (by passing a <xref:System.Collections.IDictionary> collection to the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.%23ctor%2A> constructor). For a list of these configuration properties, see the documentation for the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.%23ctor%2A> constructor.  
   
    
   
@@ -180,7 +180,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Every registered channel has a unique name. The name is used to retrieve a specific channel when calling the <xref:System.Runtime.Remoting.Channels.ChannelServices.GetChannel%2A?displayProperty=fullName> method. The default name is "ipc client".  
+ Every registered channel has a unique name. The name is used to retrieve a specific channel when calling the <xref:System.Runtime.Remoting.Channels.ChannelServices.GetChannel%2A?displayProperty=nameWithType> method. The default name is "ipc client".  
   
    
   
@@ -229,7 +229,7 @@
     </Member>
     <Member MemberName="CreateMessageSink">
       <MemberSignature Language="C#" Value="public virtual System.Runtime.Remoting.Messaging.IMessageSink CreateMessageSink (string url, object remoteChannelData, out string objectURI);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Remoting.Messaging.IMessageSink CreateMessageSink(string url, object remoteChannelData, string objectURI) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Remoting.Messaging.IMessageSink CreateMessageSink(string url, object remoteChannelData, [out] string&amp; objectURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.CreateMessageSink(System.String,System.Object,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -289,7 +289,7 @@
     </Member>
     <Member MemberName="Parse">
       <MemberSignature Language="C#" Value="public string Parse (string url, out string objectURI);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Parse(string url, string objectURI) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Parse(string url, [out] string&amp; objectURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.Parse(System.String,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -321,5 +321,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel" /> class</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

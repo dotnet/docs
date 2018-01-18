@@ -18,6 +18,8 @@ caps.latest.revision: 7
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Routing
 The topics in this section cover the Routing Service. The Routing Service is a generic configurable SOAP intermediary that lets you configure content-based routing, set up protocol bridging, handle communication errors, and dynamically update routing logic at run time.  

@@ -56,7 +56,7 @@ manager: "wpickett"
 uid: System.Threading.Tasks.Task.FromException
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -297,7 +297,7 @@ manager: "wpickett"
 uid: System.Threading.Tasks.Task.FromCanceled
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

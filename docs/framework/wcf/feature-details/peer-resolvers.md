@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d86d12a1-7358-450f-9727-b6afb95adb9c
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Peer Resolvers
 In order to connect to a mesh, a peer node requires the IP addresses of other nodes. IP addresses are obtained by contacting a resolver service, which takes the mesh ID and returns a list of addresses corresponding to nodes registered with that particular mesh ID. The resolver keeps a list of registered addresses, which it creates by having each node in the mesh register with the service.  
@@ -44,6 +46,6 @@ In order to connect to a mesh, a peer node requires the IP addresses of other no
  [Inside the CustomPeerResolverService: Client Registrations](../../../../docs/framework/wcf/feature-details/inside-the-custompeerresolverservice-client-registrations.md)  
   
 ## See Also  
- [Peer Channel Concepts](../../../../docs/framework/wcf/feature-details/peer-channel-concepts.md)   
- [Peer Channel Security](../../../../docs/framework/wcf/feature-details/peer-channel-security.md)   
+ [Peer Channel Concepts](../../../../docs/framework/wcf/feature-details/peer-channel-concepts.md)  
+ [Peer Channel Security](../../../../docs/framework/wcf/feature-details/peer-channel-security.md)  
  [Building a Peer Channel Application](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)

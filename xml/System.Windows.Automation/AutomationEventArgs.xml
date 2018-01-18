@@ -13,6 +13,8 @@
   <Docs>
     <summary>Provides data for UI Automation events that are passed to an <see cref="T:System.Windows.Automation.AutomationEventHandler" /> delegate.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="M:System.Windows.Automation.Automation.AddAutomationEventHandler(System.Windows.Automation.AutomationEvent,System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.AutomationEventHandler)" />
+    <altmember cref="M:System.Windows.Automation.Automation.RemoveAutomationEventHandler(System.Windows.Automation.AutomationEvent,System.Windows.Automation.AutomationElement,System.Windows.Automation.AutomationEventHandler)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +36,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code shows how a UI Automation provider might create an<xref:System.Windows.Automation.AutomationEventArgs> and raise the event.  
+ The following code shows how a UI Automation provider might create an <xref:System.Windows.Automation.AutomationEventArgs> and raise the event.  
   
  [!code-csharp[UIAFragmentProvider_snip#122](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#122)]
  [!code-vb[UIAFragmentProvider_snip#122](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#122)]  

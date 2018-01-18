@@ -61,7 +61,7 @@
   
 -   You get a **null** return value from a method, and then call a method on the returned type. This sometimes is the result of a documentation error; the documentation fails to note that a method call can return `null`. In other cases, your code erroneously assumes that the method will always return a non-**null** value.  
   
-     The code in the following example assumes that the <xref:System.Array.Find%2A?displayProperty=fullName> method always returns `Person` object whose `FirstName` field matches a search string. Because there is no match, the runtime throws a <xref:System.NullReferenceException> exception.  
+     The code in the following example assumes that the <xref:System.Array.Find%2A?displayProperty=nameWithType> method always returns `Person` object whose `FirstName` field matches a search string. Because there is no match, the runtime throws a <xref:System.NullReferenceException> exception.  
   
      [!code-csharp[System.NullReferenceException.Class#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.nullreferenceexception.class/cs/nullreturn2.cs#4)]
      [!code-vb[System.NullReferenceException.Class#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.nullreferenceexception.class/vb/nullreturn2.vb#4)]  
@@ -95,7 +95,7 @@
      [!code-csharp[System.NullReferenceException.Class#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.nullreferenceexception.class/cs/Array2.cs#9)]
      [!code-vb[System.NullReferenceException.Class#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.nullreferenceexception.class/vb/Array2.vb#9)]  
   
--   A <xref:System.NullReferenceException> exception is thrown by a method that is passed `null`. Some methods validate the arguments that are passed to them. If they do and one of the arguments is `null`, the method throws an <xref:System.ArgumentNullException?displayProperty=fullName> exception. Otherwise, it throws a <xref:System.NullReferenceException> exception. The following example illustrates this scenario.  
+-   A <xref:System.NullReferenceException> exception is thrown by a method that is passed `null`. Some methods validate the arguments that are passed to them. If they do and one of the arguments is `null`, the method throws an <xref:System.ArgumentNullException?displayProperty=nameWithType> exception. Otherwise, it throws a <xref:System.NullReferenceException> exception. The following example illustrates this scenario.  
   
      [!code-csharp[System.NullReferenceException.Class#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.nullreferenceexception.class/cs/example2.cs#3)]
      [!code-vb[System.NullReferenceException.Class#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.nullreferenceexception.class/vb/example2.vb#3)]  
@@ -124,6 +124,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -290,7 +291,21 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.NullReferenceException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

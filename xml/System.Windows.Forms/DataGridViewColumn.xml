@@ -57,6 +57,11 @@
     <block subset="none" type="overrides">
       <para>When you derive from <see cref="T:System.Windows.Forms.DataGridViewColumn" /> and add new properties to the derived class, be sure to override the <see cref="M:System.Windows.Forms.DataGridViewColumn.Clone" /> method to copy the new properties during cloning operations. You should also call the base class's <see cref="M:System.Windows.Forms.DataGridViewColumn.Clone" /> method so that the properties of the base class are copied to the new cell.</para>
     </block>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.Columns" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewColumn.CellTemplate" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,6 +77,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewColumn" /> class to the default state.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -97,6 +103,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
       </Docs>
     </Member>
     <Member MemberName="AutoSizeMode">
@@ -126,7 +135,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The automatic sizing behavior of the column is determined by the value of the <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> property, which is the same as the value of the <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A> property for all values except <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode.NotSet>, which indicates that the value is inherited from the <xref:System.Windows.Forms.DataGridView.AutoSizeColumnsMode%2A?displayProperty=fullName> property instead.  
+ The automatic sizing behavior of the column is determined by the value of the <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> property, which is the same as the value of the <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A> property for all values except <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode.NotSet>, which indicates that the value is inherited from the <xref:System.Windows.Forms.DataGridView.AutoSizeColumnsMode%2A?displayProperty=nameWithType> property instead.  
   
  When the <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> property value is <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill>, the column is resized along with other columns in that mode. All fill-mode columns in the control divide the available space in proportions determined by their <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A> property values. The width available for fill mode is determined by subtracting the widths of all other columns from the width of the client area of the control. If this width is smaller than the combined <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A> values of all fill-mode columns, the horizontal scroll bar is displayed, all fill-mode columns are shown with their minimum widths, and user column-resizing is disabled. For more information about column fill mode, see [Column Fill Mode in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/column-fill-mode-in-the-windows-forms-datagridview-control.md).  
   
@@ -155,6 +164,10 @@
  -or-  
   
  The specified value when setting this property results in an <see cref="P:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode" /> value of <see cref="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill" /> for a visible column that is frozen.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnMode" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.AutoSizeColumnsMode" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode" />
       </Docs>
     </Member>
     <Member MemberName="CellTemplate">
@@ -190,7 +203,7 @@
  The constructors for the <xref:System.Windows.Forms.DataGridViewColumn> class initialize this property. The default constructor sets the property to `null`; the other constructor copies the cell template from its parameter.  
   
 > [!NOTE]
->  Changing the properties of the cell template will not immediately affect the user interface (UI) of the column's existing cells. These changes are only apparent after the column is regenerated (for example, by sorting the column or through a call to the <xref:System.Windows.Forms.DataGridView.InvalidateColumn%2A?displayProperty=fullName> method).  
+>  Changing the properties of the cell template will not immediately affect the user interface (UI) of the column's existing cells. These changes are only apparent after the column is regenerated (for example, by sorting the column or through a call to the <xref:System.Windows.Forms.DataGridView.InvalidateColumn%2A?displayProperty=nameWithType> method).  
   
    
   
@@ -203,6 +216,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="Overload:System.Windows.Forms.DataGridViewColumn.#ctor" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.InvalidateColumn(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="CellType">
@@ -236,6 +253,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Type" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.CellTemplate" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -255,6 +276,7 @@
         <summary>Creates an exact copy of this band.</summary>
         <returns>An <see cref="T:System.Object" /> that represents the cloned <see cref="T:System.Windows.Forms.DataGridViewBand" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewBand.Clone" />
       </Docs>
     </Member>
     <Member MemberName="ContextMenuStrip">
@@ -294,6 +316,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="DataPropertyName">
@@ -344,6 +367,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.ColumnDataPropertyNameChanged" />
       </Docs>
     </Member>
     <Member MemberName="DefaultCellStyle">
@@ -370,7 +395,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridView> control displays its cells using the styles indicated by the cell <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A> property, which inherits styles from other properties of type <xref:System.Windows.Forms.DataGridViewCellStyle>. For cells in this column, the styles specified through the <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A> property override the styles specified through the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=fullName> property, but are overridden by the styles specified through the <xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A?displayProperty=fullName>, <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A?displayProperty=fullName>, <xref:System.Windows.Forms.DataGridViewRow.DefaultCellStyle%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.DataGridViewCell.Style%2A?displayProperty=fullName> properties.  
+ The <xref:System.Windows.Forms.DataGridView> control displays its cells using the styles indicated by the cell <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A> property, which inherits styles from other properties of type <xref:System.Windows.Forms.DataGridViewCellStyle>. For cells in this column, the styles specified through the <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A> property override the styles specified through the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=nameWithType> property, but are overridden by the styles specified through the <xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.DataGridViewRow.DefaultCellStyle%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.DataGridViewCell.Style%2A?displayProperty=nameWithType> properties.  
   
  For more information, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
@@ -384,6 +409,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="DisplayIndex">
@@ -440,6 +467,12 @@
  -or-  
   
  The specified value when setting this property is equal to <see cref="F:System.Int32.MaxValue" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewBand.Index" />
+        <altmember cref="Overload:System.Windows.Forms.DataGridViewColumnCollection.GetFirstColumn" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewColumnCollection.GetLastColumn(System.Windows.Forms.DataGridViewElementStates,System.Windows.Forms.DataGridViewElementStates)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewColumnCollection.GetNextColumn(System.Windows.Forms.DataGridViewColumn,System.Windows.Forms.DataGridViewElementStates,System.Windows.Forms.DataGridViewElementStates)" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumnCollection" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -462,6 +495,7 @@
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.DataGridViewBand" /> and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewBand.Dispose" />
       </Docs>
     </Member>
     <Member MemberName="Disposed">
@@ -495,7 +529,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridViewColumn.Disposed> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridViewColumn.Disposed> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridViewColumn> named `DataGridViewColumn1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridViewColumn.Disposed> event.  
   
@@ -504,6 +538,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="DividerWidth">
@@ -543,6 +578,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.DividerHeight" />
       </Docs>
     </Member>
     <Member MemberName="FillWeight">
@@ -584,6 +621,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value when setting this property is less than or equal to 0.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.AutoSizeMode" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.AutoSizeColumnsMode" />
       </Docs>
     </Member>
     <Member MemberName="Frozen">
@@ -619,7 +659,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewBand.Frozen%2A?displayProperty=fullName> property, which is nearly identical to the <xref:System.Windows.Forms.DataGridViewColumn.Frozen%2A> property of the <xref:System.Windows.Forms.DataGridViewColumn> class. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewBand> class.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewBand.Frozen%2A?displayProperty=nameWithType> property, which is nearly identical to the <xref:System.Windows.Forms.DataGridViewColumn.Frozen%2A> property of the <xref:System.Windows.Forms.DataGridViewColumn> class. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewBand> class.  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewBandDemo.cpp#7)]
  [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewBandDemo.cs#7)]
@@ -627,6 +667,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.AllowUserToOrderColumns" />
       </Docs>
     </Member>
     <Member MemberName="GetPreferredWidth">
@@ -667,6 +709,10 @@
           <paramref name="autoSizeColumnMode" /> is <see cref="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.NotSet" />, <see cref="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.None" />, or <see cref="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill" />.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="autoSizeColumnMode" /> is not a valid <see cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnMode" /> value.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnMode" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewRow.GetPreferredHeight(System.Int32,System.Windows.Forms.DataGridViewAutoSizeRowMode,System.Boolean)" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.WrapMode" />
       </Docs>
     </Member>
     <Member MemberName="HeaderCell">
@@ -696,7 +742,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The header of a column is typically used to display a column label. Depending on the current values of the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> and <xref:System.Windows.Forms.DataGridView.SelectionMode%2A?displayProperty=fullName> properties, users can also click the column header to sort or select the column.  
+ The header of a column is typically used to display a column label. Depending on the current values of the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> and <xref:System.Windows.Forms.DataGridView.SelectionMode%2A?displayProperty=nameWithType> properties, users can also click the column header to sort or select the column.  
   
    
   
@@ -709,6 +755,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="HeaderText">
@@ -738,7 +785,7 @@
  This property is useful only when the column has an associated header cell. For more information, see the <xref:System.Windows.Forms.DataGridViewBand.HeaderCellCore%2A> property.  
   
 > [!NOTE]
->  There is no corresponding header text property for rows. To display labels in row headers, you must handle the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event and paint your own labels when <xref:System.Windows.Forms.DataGridViewCellPaintingEventArgs.ColumnIndex%2A?displayProperty=fullName> is -1.  
+>  There is no corresponding header text property for rows. To display labels in row headers, you must handle the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=nameWithType> event and paint your own labels when <xref:System.Windows.Forms.DataGridViewCellPaintingEventArgs.ColumnIndex%2A?displayProperty=nameWithType> is -1.  
   
    
   
@@ -751,6 +798,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewBand.HeaderCellCore" />
       </Docs>
     </Member>
     <Member MemberName="InheritedAutoSizeMode">
@@ -783,7 +832,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The automatic sizing behavior of the column is determined by the value of the <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> property, which is the same as the value of the <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A> property for all values except <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode.NotSet>, which indicates that the value is inherited from the <xref:System.Windows.Forms.DataGridView.AutoSizeColumnsMode%2A?displayProperty=fullName> property instead.  
+ The automatic sizing behavior of the column is determined by the value of the <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> property, which is the same as the value of the <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A> property for all values except <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode.NotSet>, which indicates that the value is inherited from the <xref:System.Windows.Forms.DataGridView.AutoSizeColumnsMode%2A?displayProperty=nameWithType> property instead.  
   
  When the <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> property value is <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill>, the column is resized along with other columns in that mode so that all visible columns in the control exactly fill the horizontal width of the available display area. All fill-mode columns in the control divide the available space in proportions determined by their <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A> property values. For more information about column fill mode, see [Column Fill Mode in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/column-fill-mode-in-the-windows-forms-datagridview-control.md).  
   
@@ -797,6 +846,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.AutoSizeMode" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnMode" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.AutoSizeColumnsMode" />
       </Docs>
     </Member>
     <Member MemberName="InheritedStyle">
@@ -823,12 +876,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is useful to determine which cell styles are applied to all cells in a column regardless of any row styles that are also applied to the cells. The column <xref:System.Windows.Forms.DataGridViewColumn.InheritedStyle%2A> property inherits its values from the <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A> and the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=fullName> property.  
+ This property is useful to determine which cell styles are applied to all cells in a column regardless of any row styles that are also applied to the cells. The column <xref:System.Windows.Forms.DataGridViewColumn.InheritedStyle%2A> property inherits its values from the <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A> and the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=nameWithType> property.  
   
  For more information about cell style inheritance, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewBand.DefaultCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.DefaultCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="IsDataBound">
@@ -863,6 +920,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="MinimumWidth">
@@ -909,6 +967,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than 2 or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.MinimumHeight" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -947,6 +1007,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewColumnCollection.Remove(System.Windows.Forms.DataGridViewColumn)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewColumnCollection.Contains(System.Windows.Forms.DataGridViewColumn)" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnColumnNameChanged(System.Windows.Forms.DataGridViewColumnEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -969,12 +1033,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewColumn.ReadOnly%2A> property affects the <xref:System.Windows.Forms.DataGridViewCell.ReadOnly%2A?displayProperty=fullName> property of each cell in the column.  
+ The <xref:System.Windows.Forms.DataGridViewColumn.ReadOnly%2A> property affects the <xref:System.Windows.Forms.DataGridViewCell.ReadOnly%2A?displayProperty=nameWithType> property of each cell in the column.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewBand.ReadOnly%2A?displayProperty=fullName> property, which is nearly identical to the <xref:System.Windows.Forms.DataGridViewColumn.ReadOnly%2A> property of the <xref:System.Windows.Forms.DataGridViewColumn> class. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewBand> class overview.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewBand.ReadOnly%2A?displayProperty=nameWithType> property, which is nearly identical to the <xref:System.Windows.Forms.DataGridViewColumn.ReadOnly%2A> property of the <xref:System.Windows.Forms.DataGridViewColumn> class. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewBand> class overview.  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#11](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewBandDemo.cpp#11)]
  [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewBandDemo.cs#11)]
@@ -983,6 +1047,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This property is set to <see langword="false" /> for a column that is bound to a read-only data source.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewBand.ReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="Resizable">
@@ -1006,7 +1072,7 @@
 ## Remarks  
  If the <xref:System.Windows.Forms.DataGridViewColumn.Resizable%2A> property is <xref:System.Windows.Forms.DataGridViewTriState.False>, the user will not be able to manually adjust the column width.  
   
- By default, the <xref:System.Windows.Forms.DataGridViewColumn.Resizable%2A> property value is based on the <xref:System.Windows.Forms.DataGridView.AllowUserToResizeColumns%2A?displayProperty=fullName> property value. If you explicitly set <xref:System.Windows.Forms.DataGridViewColumn.Resizable%2A> to <xref:System.Windows.Forms.DataGridViewTriState.True> or <xref:System.Windows.Forms.DataGridViewTriState.False>, however, the control value is ignored. Set <xref:System.Windows.Forms.DataGridViewColumn.Resizable%2A> to <xref:System.Windows.Forms.DataGridViewTriState.NotSet> to restore the value-inheritance behavior.  
+ By default, the <xref:System.Windows.Forms.DataGridViewColumn.Resizable%2A> property value is based on the <xref:System.Windows.Forms.DataGridView.AllowUserToResizeColumns%2A?displayProperty=nameWithType> property value. If you explicitly set <xref:System.Windows.Forms.DataGridViewColumn.Resizable%2A> to <xref:System.Windows.Forms.DataGridViewTriState.True> or <xref:System.Windows.Forms.DataGridViewTriState.False>, however, the control value is ignored. Set <xref:System.Windows.Forms.DataGridViewColumn.Resizable%2A> to <xref:System.Windows.Forms.DataGridViewTriState.NotSet> to restore the value-inheritance behavior.  
   
  Because <xref:System.Windows.Forms.DataGridViewTriState.NotSet> restores the value inheritance, the <xref:System.Windows.Forms.DataGridViewColumn.Resizable%2A> property will never return a <xref:System.Windows.Forms.DataGridViewTriState.NotSet> value unless the column has not been added to a <xref:System.Windows.Forms.DataGridView> control. If you need to determine whether the <xref:System.Windows.Forms.DataGridViewColumn.Resizable%2A> property value of a column is inherited, check its <xref:System.Windows.Forms.DataGridViewElement.State%2A> property. If the <xref:System.Windows.Forms.DataGridViewElement.State%2A> property value includes the <xref:System.Windows.Forms.DataGridViewElementStates.ResizableSet> flag, the <xref:System.Windows.Forms.DataGridViewColumn.Resizable%2A> property value is not inherited.  
   
@@ -1021,6 +1087,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="Site">
@@ -1047,6 +1114,7 @@
         <summary>Gets or sets the site of the column.</summary>
         <value>The <see cref="T:System.ComponentModel.ISite" /> associated with the column, if any.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="SortMode">
@@ -1089,7 +1157,7 @@
   
  The <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> value does not prevent you from sorting a column programmatically, although other restrictions may apply. For more information, see the <xref:System.Windows.Forms.DataGridView.Sort%2A> method.  
   
- A <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode.NotSortable> will not prevent the <xref:System.Windows.Forms.DataGridView.ColumnHeaderMouseClick?displayProperty=fullName> event from occurring, but it will prevent the header from changing its appearance when it is clicked.  
+ A <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode.NotSortable> will not prevent the <xref:System.Windows.Forms.DataGridView.ColumnHeaderMouseClick?displayProperty=nameWithType> event from occurring, but it will prevent the header from changing its appearance when it is clicked.  
   
    
   
@@ -1102,6 +1170,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The value assigned to the property conflicts with <see cref="P:System.Windows.Forms.DataGridView.SelectionMode" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumnSortMode" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.SelectionMode" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipText">
@@ -1144,6 +1216,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1166,10 +1239,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the <xref:System.Object.ToString%2A?displayProperty=fullName> method. The returned string contains the <xref:System.Windows.Forms.DataGridViewColumn.Name%2A> and <xref:System.Windows.Forms.DataGridViewBand.Index%2A> properties of the <xref:System.Windows.Forms.DataGridViewColumn>.  
+ This method overrides the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method. The returned string contains the <xref:System.Windows.Forms.DataGridViewColumn.Name%2A> and <xref:System.Windows.Forms.DataGridViewBand.Index%2A> properties of the <xref:System.Windows.Forms.DataGridViewColumn>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.Name" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewBand.Index" />
       </Docs>
     </Member>
     <Member MemberName="ValueType">
@@ -1214,6 +1290,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -1244,14 +1322,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this property to hide a column from view while keeping the column in the <xref:System.Windows.Forms.DataGridView>. To completely remove a column, use the <xref:System.Windows.Forms.DataGridViewColumnCollection.Remove%2A?displayProperty=fullName> method.  
+ Use this property to hide a column from view while keeping the column in the <xref:System.Windows.Forms.DataGridView>. To completely remove a column, use the <xref:System.Windows.Forms.DataGridViewColumnCollection.Remove%2A?displayProperty=nameWithType> method.  
   
  To hide a column that is automatically generated when binding to a data source, set this property in a <xref:System.Windows.Forms.DataGridView.DataBindingComplete> event handler.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewBand.Visible%2A?displayProperty=fullName> property, which is nearly identical to the <xref:System.Windows.Forms.DataGridViewColumn.Visible%2A> property of the <xref:System.Windows.Forms.DataGridViewColumn> class. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewBand> class overview.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewBand.Visible%2A?displayProperty=nameWithType> property, which is nearly identical to the <xref:System.Windows.Forms.DataGridViewColumn.Visible%2A> property of the <xref:System.Windows.Forms.DataGridViewColumn> class. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewBand> class overview.  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewBandDemo.cpp#9)]
  [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewBandDemo.cs#9)]
@@ -1259,6 +1337,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -1302,7 +1381,18 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value when setting this property is greater than 65536.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.MinimumWidth" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewColumn" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

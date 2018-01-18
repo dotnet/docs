@@ -45,6 +45,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Compilation.CompilerType" />
+    <altmember cref="T:System.Web.Compilation.ClientBuildManager" />
+    <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
+    <altmember cref="T:System.Web.Configuration.BuildProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -106,6 +110,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Compilation.CompilerType" />
       </Docs>
     </Member>
     <Member MemberName="GenerateCode">
@@ -146,11 +151,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.Compilation.BuildProvider.OpenReader" />
+        <altmember cref="Overload:System.Web.Compilation.BuildProvider.OpenStream" />
+        <altmember cref="T:System.Web.Compilation.AssemblyBuilder" />
       </Docs>
     </Member>
     <Member MemberName="GetCodeCompileUnit">
       <MemberSignature Language="C#" Value="protected virtual System.CodeDom.CodeCompileUnit GetCodeCompileUnit (out System.Collections.IDictionary linePragmasTable);" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.CodeDom.CodeCompileUnit GetCodeCompileUnit(class System.Collections.IDictionary linePragmasTable) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.CodeDom.CodeCompileUnit GetCodeCompileUnit([out] class System.Collections.IDictionary&amp; linePragmasTable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProvider.GetCodeCompileUnit(System.Collections.IDictionary@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -208,6 +216,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
+        <altmember cref="M:System.Web.Compilation.BuildManager.GetCompiledCustomString(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetDefaultCompilerType">
@@ -238,6 +248,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Compilation.CompilerType" />
+        <altmember cref="M:System.Web.Compilation.BuildProvider.GetDefaultCompilerTypeForLanguage(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetDefaultCompilerTypeForLanguage">
@@ -265,7 +277,7 @@
 ## Remarks  
  Use the <xref:System.Web.Compilation.BuildProvider.GetDefaultCompilerTypeForLanguage%2A> method to examine the compiler type configured in the build provider for a specific language name. Use the <xref:System.Web.Compilation.BuildProvider.GetDefaultCompilerType%2A> method to examine the default compiler type for a build provider.  
   
- The base <xref:System.Web.Compilation.BuildProvider> class determines the default compiler type using the <xref:System.Web.Configuration.Compiler> elements in the <xref:System.Web.Configuration.CompilationSection.Compilers%2A> property of the <xref:System.Web.Configuration.CompilationSection> object for the configuration file. This is equivalent to examining the  elements in the  and the  elements in the  sections of the configuration file. For example, for the `language` value VB, the base class method returns a <xref:System.Web.Compilation.CompilerType> object that corresponds to the configured settings for an instance of <xref:Microsoft.VisualBasic.VBCodeProvider?displayProperty=fullName>.  
+ The base <xref:System.Web.Compilation.BuildProvider> class determines the default compiler type using the <xref:System.Web.Configuration.Compiler> elements in the <xref:System.Web.Configuration.CompilationSection.Compilers%2A> property of the <xref:System.Web.Configuration.CompilationSection> object for the configuration file. This is equivalent to examining the  elements in the  and the  elements in the  sections of the configuration file. For example, for the `language` value VB, the base class method returns a <xref:System.Web.Compilation.CompilerType> object that corresponds to the configured settings for an instance of <xref:Microsoft.VisualBasic.VBCodeProvider?displayProperty=nameWithType>.  
   
  When you derive from the <xref:System.Web.Compilation.BuildProvider> class, you can use <xref:System.Web.Compilation.BuildProvider.GetDefaultCompilerTypeForLanguage%2A> to set the <xref:System.Web.Compilation.BuildProvider.CodeCompilerType%2A> property value for the language supported by your implementation.  
   
@@ -275,6 +287,10 @@
           <paramref name="language" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Web.HttpException">
           <paramref name="language" /> does not match a configured compiler for the build provider.</exception>
+        <altmember cref="T:System.Web.Compilation.CompilerType" />
+        <altmember cref="M:System.Web.Compilation.BuildProvider.GetDefaultCompilerType" />
+        <altmember cref="P:System.Web.Configuration.CompilationSection.Compilers" />
+        <altmember cref="T:System.Web.Configuration.Compiler" />
       </Docs>
     </Member>
     <Member MemberName="GetGeneratedType">
@@ -306,6 +322,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
       </Docs>
     </Member>
     <Member MemberName="GetResultFlags">
@@ -339,6 +356,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
+        <altmember cref="T:System.Web.Compilation.BuildProviderResultFlags" />
       </Docs>
     </Member>
     <Member MemberName="OpenReader">
@@ -367,6 +386,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextReader" />
+        <altmember cref="P:System.Web.Compilation.BuildProvider.VirtualPath" />
       </Docs>
     </Member>
     <Member MemberName="OpenReader">
@@ -398,6 +419,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextReader" />
       </Docs>
     </Member>
     <Member MemberName="OpenStream">
@@ -426,6 +448,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="P:System.Web.Compilation.BuildProvider.VirtualPath" />
       </Docs>
     </Member>
     <Member MemberName="OpenStream">
@@ -457,6 +481,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName="ProcessCompileErrors">
@@ -516,6 +541,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.Compilation.AssemblyBuilder.AddAssemblyReference(System.Reflection.Assembly)" />
+        <altmember cref="P:System.Web.Compilation.BuildProvider.VirtualPathDependencies" />
       </Docs>
     </Member>
     <Member MemberName="RegisterBuildProvider">
@@ -575,6 +602,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Hosting.VirtualFile" />
+        <altmember cref="P:System.Web.Hosting.VirtualFileBase.VirtualPath" />
       </Docs>
     </Member>
     <Member MemberName="VirtualPathDependencies">
@@ -600,7 +629,27 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Hosting.VirtualFile" />
+        <altmember cref="P:System.Web.Hosting.VirtualFileBase.VirtualPath" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="OpenStream">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a stream for reading from a virtual path.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenReader">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a text reader for reading from a virtual path.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorPublishAppDomain::GetID"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetID method, ICorPublishAppDomain interface [.NET Framework debugging]"
   - "ICorPublishAppDomain::GetID method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorPublishAppDomain::GetID Method
 Gets the unique identifier for this [ICorPublishAppDomain](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomain-interface.md).  

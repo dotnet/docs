@@ -45,7 +45,7 @@
       </Docs>
     </Member>
     <Member MemberName="AddCacheDependency">
-      <MemberSignature Language="C#" Value="public virtual void AddCacheDependency (System.Web.Caching.CacheDependency[] dependencies);" />
+      <MemberSignature Language="C#" Value="public virtual void AddCacheDependency (params System.Web.Caching.CacheDependency[] dependencies);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddCacheDependency(class System.Web.Caching.CacheDependency[] dependencies) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpResponseBase.AddCacheDependency(System.Web.Caching.CacheDependency[])" />
       <MemberType>Method</MemberType>
@@ -586,7 +586,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see <xref:System.Web.HttpResponse.ClientDisconnectedToken%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Web.HttpResponse.ClientDisconnectedToken%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -706,7 +706,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about this member, see <xref:System.Web.HttpResponse.DisableUserCache%2A?displayProperty=fullName>.  
+ For information about this member, see <xref:System.Web.HttpResponse.DisableUserCache%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1217,7 +1217,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoute%28System.Object%29?displayProperty=fullName>.  
+ For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoute%28System.Object%29?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1246,7 +1246,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoute%28System.String%29?displayProperty=fullName>.  
+ For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoute%28System.String%29?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1275,7 +1275,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoute%28System.Web.Routing.RouteValueDictionary%29?displayProperty=fullName>.  
+ For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoute%28System.Web.Routing.RouteValueDictionary%29?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1306,7 +1306,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoute%28System.String%2CSystem.Object%29?displayProperty=fullName>.  
+ For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoute%28System.String%2CSystem.Object%29?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1337,7 +1337,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoute%28System.String%2CSystem.Web.Routing.RouteValueDictionary%29?displayProperty=fullName>.  
+ For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoute%28System.String%2CSystem.Web.Routing.RouteValueDictionary%29?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1366,7 +1366,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoutePermanent%28System.Object%29?displayProperty=fullName>.  
+ For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoutePermanent%28System.Object%29?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1395,7 +1395,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoutePermanent%28System.String%29?displayProperty=fullName>.  
+ For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoutePermanent%28System.String%29?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1424,7 +1424,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoutePermanent%28System.Web.Routing.RouteValueDictionary%29?displayProperty=fullName>.  
+ For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoutePermanent%28System.Web.Routing.RouteValueDictionary%29?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1455,7 +1455,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoutePermanent%28System.String%2CSystem.Object%29?displayProperty=fullName>.  
+ For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoutePermanent%28System.String%2CSystem.Object%29?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1486,7 +1486,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoutePermanent%28System.String%2CSystem.Web.Routing.RouteValueDictionary%29?displayProperty=fullName>.  
+ For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoutePermanent%28System.String%2CSystem.Web.Routing.RouteValueDictionary%29?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1732,7 +1732,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about this member, see <xref:System.Web.HttpResponse.SuppressFormsAuthenticationRedirect%2A?displayProperty=fullName>.  
+ For information about this member, see <xref:System.Web.HttpResponse.SuppressFormsAuthenticationRedirect%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -2019,5 +2019,104 @@
         <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RedirectPermanent">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a permanent redirect from the requested URL to a specified URL.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RemoveOutputCacheItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes cached items from the output cache by using the default output-cache provider.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteFile">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the specified file to the HTTP response output stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddCacheItemDependencies">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Makes the validity of a cached response dependent on other items in the cache.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RedirectToRoutePermanent">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a permanent redirection from the requested URL to a new URL by using route parameter values, a route name, or both.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TransmitFile">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the specified file to the HTTP response output stream, without buffering it in memory.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Redirect">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Redirects a request to a different URL.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RedirectToRoute">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Redirects the request to a new URL by using route parameter values, a route name, or both.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddFileDependencies">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Makes the validity of a cached response dependent on a specified file or files.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes information to the HTTP response output stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="PushPromise">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Promotes a promised object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

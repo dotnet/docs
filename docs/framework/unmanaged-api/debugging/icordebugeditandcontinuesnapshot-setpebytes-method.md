@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEditAndContinueSnapshot::SetPEBytes"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetPEBytes method [.NET Framework debugging]"
   - "ICorDebugEditAndContinueSnapshot::SetPEBytes method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEditAndContinueSnapshot::SetPEBytes Method
 `SetPEBytes` is obsolete. Do not call this method.  

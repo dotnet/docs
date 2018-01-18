@@ -9,21 +9,25 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 f1_keywords: 
   - "NonVisualSelection"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "invisible controls"
+  - "invisible controls [Windows Forms]"
   - "Windows Forms controls, adding to form"
   - "controls [Windows Forms], nonvisual"
   - "Windows Forms controls, nonvisual"
-  - "nonvisual controls"
+  - "nonvisual controls [Windows Forms]"
 ms.assetid: 52134d9c-cff6-4eed-8e2b-3d5eb3bd494e
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Add Controls Without a User Interface to Windows Forms
 A nonvisual control (or component) provides functionality to your application. Unlike other controls, components do not provide a user interface to the user and thus do not need to be displayed on the Windows Forms Designer surface. When a component is added to a form, the Windows Forms Designer displays a resizable tray at the bottom of the form where all components are displayed. Once a control has been added to the component tray, you can select the component and set its properties as you would any other control on the form.  
@@ -84,11 +88,11 @@ A nonvisual control (or component) provides functionality to your application. U
     >  You might expose your local computer to a security risk through the network by referencing a malicious UserControl. This would only be a concern in the case of a malicious person creating a damaging custom control, followed by you mistakenly adding it to your project.  
   
 ## See Also  
- [Windows Forms Controls](../../../../docs/framework/winforms/controls/index.md)   
- [How to: Add Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md)   
- [How to: Add ActiveX Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-add-activex-controls-to-windows-forms.md)   
- [How to: Copy Controls Between Windows Forms](../../../../docs/framework/winforms/controls/how-to-copy-controls-between-windows-forms.md)   
- [Putting Controls on Windows Forms](../../../../docs/framework/winforms/controls/putting-controls-on-windows-forms.md)   
- [Labeling Individual Windows Forms Controls and Providing Shortcuts to Them](../../../../docs/framework/winforms/controls/labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)   
- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)   
+ [Windows Forms Controls](../../../../docs/framework/winforms/controls/index.md)  
+ [How to: Add Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md)  
+ [How to: Add ActiveX Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-add-activex-controls-to-windows-forms.md)  
+ [How to: Copy Controls Between Windows Forms](../../../../docs/framework/winforms/controls/how-to-copy-controls-between-windows-forms.md)  
+ [Putting Controls on Windows Forms](../../../../docs/framework/winforms/controls/putting-controls-on-windows-forms.md)  
+ [Labeling Individual Windows Forms Controls and Providing Shortcuts to Them](../../../../docs/framework/winforms/controls/labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)  
+ [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)  
  [Windows Forms Controls by Function](../../../../docs/framework/winforms/controls/windows-forms-controls-by-function.md)

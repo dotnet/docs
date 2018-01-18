@@ -1,40 +1,21 @@
 ---
 title: "&#39;Custom&#39; modifier is not valid on events declared without explicit delegate types"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbc31122"
   - "bc31122"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC31122"
 ms.assetid: 6911f0d1-641a-473b-906d-8ee5681194be
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &#39;Custom&#39; modifier is not valid on events declared without explicit delegate types
 Unlike a non-custom event, a `Custom Event` declaration requires an `As` clause following the event name that explicitly specifies the delegate type for the event.  
@@ -63,6 +44,6 @@ Unlike a non-custom event, a `Custom Event` declaration requires an `As` clause 
  [!code-vb[VbVbalrEventError#2](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/custom-modifier-is-not-valid-on-events-declared-without-explicit-delegate-types_3.vb)]  
   
 ## See Also  
- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)   
- [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md)   
+ [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)  
+ [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md)  
  [Events](../../../visual-basic/programming-guide/language-features/events/index.md)

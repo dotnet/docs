@@ -16,12 +16,15 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.SiteMapPath.ItemCreated?displayProperty=fullName> event is raised when a <xref:System.Web.UI.WebControls.SiteMapNodeItem> is created by the <xref:System.Web.UI.WebControls.SiteMapPath> control. The <xref:System.Web.UI.WebControls.SiteMapPath.ItemDataBound?displayProperty=fullName> event is raised when `DataBind` is called on the item during a call to <xref:System.Web.UI.WebControls.SiteMapPath.CreateControlHierarchy%2A?displayProperty=fullName>.  
+ The <xref:System.Web.UI.WebControls.SiteMapPath.ItemCreated?displayProperty=nameWithType> event is raised when a <xref:System.Web.UI.WebControls.SiteMapNodeItem> is created by the <xref:System.Web.UI.WebControls.SiteMapPath> control. The <xref:System.Web.UI.WebControls.SiteMapPath.ItemDataBound?displayProperty=nameWithType> event is raised when `DataBind` is called on the item during a call to <xref:System.Web.UI.WebControls.SiteMapPath.CreateControlHierarchy%2A?displayProperty=nameWithType>.  
   
  For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.SiteMapNodeItem" />
+    <altmember cref="T:System.Web.UI.WebControls.SiteMapNodeItemEventHandler" />
+    <altmember cref="T:System.Web.UI.WebControls.SiteMapPath" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,6 +53,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.SiteMapNodeItem" />
       </Docs>
     </Member>
     <Member MemberName="Item">

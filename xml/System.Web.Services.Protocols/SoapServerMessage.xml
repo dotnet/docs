@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code fragment is part of a SOAP extension that logs the SOAP messages sent and received by an XML Web service method. This specific fragment processes the <xref:System.Web.Services.Protocols.SoapServerMessage> passed into the <xref:System.Web.Services.Protocols.SoapExtension.ProcessMessage%2A?displayProperty=fullName> method of the SOAP extension by writing properties of the <xref:System.Web.Services.Protocols.SoapServerMessage> to the log file.  
+ The following code fragment is part of a SOAP extension that logs the SOAP messages sent and received by an XML Web service method. This specific fragment processes the <xref:System.Web.Services.Protocols.SoapServerMessage> passed into the <xref:System.Web.Services.Protocols.SoapExtension.ProcessMessage%2A?displayProperty=nameWithType> method of the SOAP extension by writing properties of the <xref:System.Web.Services.Protocols.SoapServerMessage> to the log file.  
   
   
   
@@ -122,6 +122,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Services.Protocols.LogicalMethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="OneWay">

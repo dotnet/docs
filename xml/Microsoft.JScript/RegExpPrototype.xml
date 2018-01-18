@@ -14,6 +14,7 @@
     <summary>Provides static methods and properties for <see cref="T:Microsoft.JScript.RegExpObject" /> objects. All methods of this class are called by passing in a reference to the object that is requesting access to the method. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.RegExpConstructor" />
   </Docs>
   <Members>
     <Member MemberName="compile">
@@ -46,6 +47,7 @@
         <returns>A new <see cref="T:Microsoft.JScript.RegExpObject" /> object.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.RegExpConstructor" />
       </Docs>
     </Member>
     <Member MemberName="constructor">
@@ -65,6 +67,8 @@
         <value>A reference to a prototype-based object.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.RegExpObject" />
+        <altmember cref="T:Microsoft.JScript.RegExpConstructor" />
       </Docs>
     </Member>
     <Member MemberName="exec">
@@ -95,6 +99,8 @@
         <returns>The result of the search for the regular expression pattern.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.RegExpObject" />
+        <altmember cref="T:Microsoft.JScript.RegExpConstructor" />
       </Docs>
     </Member>
     <Member MemberName="test">
@@ -126,6 +132,8 @@
           <see langword="true" /> if the search succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.RegExpObject" />
+        <altmember cref="T:Microsoft.JScript.RegExpConstructor" />
       </Docs>
     </Member>
     <Member MemberName="toString">
@@ -154,6 +162,8 @@
         <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.RegExpObject" />
+        <altmember cref="T:Microsoft.JScript.RegExpConstructor" />
       </Docs>
     </Member>
   </Members>

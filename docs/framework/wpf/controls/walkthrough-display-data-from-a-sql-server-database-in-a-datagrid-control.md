@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "DataGrid [WPF], displaying data from SQL Server"
   - "controls [WPF], DataGrid"
@@ -17,6 +20,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Display Data from a SQL Server Database in a DataGrid Control
 In this walkthrough, you retrieve data from a SQL Server database and display that data in a <xref:System.Windows.Controls.DataGrid> control. You use the ADO.NET Entity Framework to create the entity classes that represent the data, and use LINQ to write a query that retrieves the specified data from an entity class.  
@@ -26,7 +31,7 @@ In this walkthrough, you retrieve data from a SQL Server database and display th
   
 -   [!INCLUDE[vs_dev11_long](../../../../includes/vs-dev11-long-md.md)].  
   
--   Access to a running instance of SQL Server or SQL Server Express that has the AdventureWorksLT2008 sample database attached to it. You can download the AdventureWorksLT2008 database from the [CodePlex Web site](http://go.microsoft.com/fwlink/?LinkId=159848).  
+-   Access to a running instance of SQL Server or SQL Server Express that has the AdventureWorks sample database attached to it. You can download the AdventureWorks database from the [GitHub](https://github.com/Microsoft/sql-server-samples/releases).  
   
 ### To create entity classes  
   
@@ -105,5 +110,5 @@ In this walkthrough, you retrieve data from a SQL Server database and display th
 ## Next Steps  
   
 ## See Also  
- <xref:System.Windows.Controls.DataGrid>   
+ <xref:System.Windows.Controls.DataGrid>  
  [How Do I: Get Started with Entity Framework in WPF Applications?](http://go.microsoft.com/fwlink/?LinkId=159868)

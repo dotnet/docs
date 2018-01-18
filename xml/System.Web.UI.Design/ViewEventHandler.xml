@@ -32,5 +32,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+    <altmember cref="M:System.Web.UI.Design.ControlDesigner.OnPaint(System.Windows.Forms.PaintEventArgs)" />
+    <altmember cref="M:System.Web.UI.Design.ControlDesigner.OnClick(System.Web.UI.Design.DesignerRegionMouseEventArgs)" />
+    <altmember cref="M:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged" />
+    <altmember cref="P:System.Web.UI.Design.ControlDesigner.InTemplateMode" />
+    <altmember cref="T:System.Web.UI.Design.ViewEventArgs" />
   </Docs>
 </Type>

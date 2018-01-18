@@ -7,6 +7,12 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Duplex</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
   </Base>
@@ -75,6 +81,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Duplex</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.CallbackBehaviorAttribute" /> class.</summary>
@@ -117,6 +129,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Duplex</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -165,7 +183,7 @@
   
  In addition, if the <xref:System.ServiceModel.ConcurrencyMode> is set to <xref:System.ServiceModel.ConcurrencyMode.Single> and a reentrant call is blocked while waiting for the instance to be freed, the system detects the deadlock and throws an exception.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] concurrency, see <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A?displayProperty=fullName> and [Sessions, Instancing, and Concurrency](~/docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md).  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] concurrency, see <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A?displayProperty=nameWithType> and [Sessions, Instancing, and Concurrency](~/docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md).  
   
  ]]></format>
         </remarks>
@@ -197,7 +215,7 @@
   
  Regardless of the <xref:System.ServiceModel.CallbackBehaviorAttribute.IgnoreExtensionDataObject%2A> setting, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] always processes known data (both in and out) and does not throw exceptions when extra data comes in.  
   
- You can use the [\&lt;callbackDebug\&gt;](~/docs/framework/configure-apps/file-schema/wcf/callbackdebug.md) element to set this property in a client application configuration file.  
+ You can use the [&lt;callbackDebug&gt;](~/docs/framework/configure-apps/file-schema/wcf/callbackdebug.md) element to set this property in a client application configuration file.  
   
  ]]></format>
         </remarks>
@@ -227,7 +245,7 @@
  Set <xref:System.ServiceModel.CallbackBehaviorAttribute.IncludeExceptionDetailInFaults%2A> to `true` to enable exception information to flow back to services for debugging purposes when possible. This is a development-only feature and should not be employed in deployed services. These faults appear to the calling service as <xref:System.ServiceModel.FaultException> objects.  
   
 > [!IMPORTANT]
->  Setting <xref:System.ServiceModel.CallbackBehaviorAttribute.IncludeExceptionDetailInFaults%2A>to `true` enables services to obtain information about internal client callback exceptions; it is only recommended as a way of temporarily debugging a duplex client application.  
+>  Setting <xref:System.ServiceModel.CallbackBehaviorAttribute.IncludeExceptionDetailInFaults%2A> to `true` enables services to obtain information about internal client callback exceptions; it is only recommended as a way of temporarily debugging a duplex client application.  
   
    
   
@@ -261,7 +279,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.ServiceBehaviorAttribute.MaxItemsInObjectGraph%2A> property set a limit on the number of items in an object graph that are serialized. You can also use the [\&lt;dataContractSerializer\&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer.md) element to set this value in a client application configuration file.  
+ Use the <xref:System.ServiceModel.ServiceBehaviorAttribute.MaxItemsInObjectGraph%2A> property set a limit on the number of items in an object graph that are serialized. You can also use the [&lt;dataContractSerializer&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer.md) element to set this value in a client application configuration file.  
   
  ]]></format>
         </remarks>
@@ -276,6 +294,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Duplex</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -301,6 +325,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Duplex</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -325,6 +355,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Duplex</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -348,6 +384,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Duplex</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -423,6 +465,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Duplex</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -436,7 +484,7 @@
 ## Remarks  
  Use this property to provide the user interface thread affinity that some applications require. For example, a Windows Forms application may be registered as a singleton service object. In this case, all calls into the service must run on the Windows Forms thread. The default case, in which <xref:System.ServiceModel.ServiceBehaviorAttribute.UseSynchronizationContext%2A> is set to `true`, synchronizes all calls to the service to run on the user interface thread.  
   
- Note that the thread used is the current synchronization thread when <xref:System.ServiceModel.DuplexChannelFactory%601.CreateChannel%2A?displayProperty=fullName> or <xref:System.ServiceModel.DuplexClientBase%601.CreateChannel%2A?displayProperty=fullName> is called. In the case of an Windows Forms application, this means that these calls should occur after a call to the <xref:System.Windows.Forms.Application.Run%2A?displayProperty=fullName> method.  
+ Note that the thread used is the current synchronization thread when <xref:System.ServiceModel.DuplexChannelFactory%601.CreateChannel%2A?displayProperty=nameWithType> or <xref:System.ServiceModel.DuplexClientBase%601.CreateChannel%2A?displayProperty=nameWithType> is called. In the case of an Windows Forms application, this means that these calls should occur after a call to the <xref:System.Windows.Forms.Application.Run%2A?displayProperty=nameWithType> method.  
   
    
   

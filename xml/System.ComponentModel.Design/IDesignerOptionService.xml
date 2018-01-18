@@ -35,6 +35,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.Design.IDesigner" />
+    <altmember cref="T:System.ComponentModel.Design.DesignerOptionService" />
   </Docs>
   <Members>
     <Member MemberName="GetOptionValue">
@@ -101,6 +103,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.Design.IDesignerOptionService.SetOptionValue(System.String,System.String,System.Object)" />
+        <altmember cref="T:System.ComponentModel.Design.DesignerOptionService" />
       </Docs>
     </Member>
     <Member MemberName="SetOptionValue">
@@ -159,6 +163,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.Design.IDesignerOptionService.GetOptionValue(System.String,System.String)" />
+        <altmember cref="T:System.ComponentModel.Design.DesignerOptionService" />
       </Docs>
     </Member>
   </Members>

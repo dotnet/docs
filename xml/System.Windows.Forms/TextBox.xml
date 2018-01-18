@@ -55,6 +55,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.TextBoxBase" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -189,6 +190,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBox.AutoCompleteSource" />
+        <altmember cref="P:System.Windows.Forms.TextBox.AutoCompleteMode" />
       </Docs>
     </Member>
     <Member MemberName="AutoCompleteMode">
@@ -259,6 +262,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value is not one of the values of <see cref="T:System.Windows.Forms.AutoCompleteMode" />.</exception>
+        <altmember cref="P:System.Windows.Forms.TextBox.AutoCompleteCustomSource" />
+        <altmember cref="P:System.Windows.Forms.TextBox.AutoCompleteSource" />
       </Docs>
     </Member>
     <Member MemberName="AutoCompleteSource">
@@ -323,6 +328,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value is not one of the values of <see cref="T:System.Windows.Forms.AutoCompleteSource" />.</exception>
+        <altmember cref="P:System.Windows.Forms.TextBox.AutoCompleteCustomSource" />
+        <altmember cref="P:System.Windows.Forms.TextBox.AutoCompleteMode" />
       </Docs>
     </Member>
     <Member MemberName="CharacterCasing">
@@ -363,6 +370,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">A value that is not within the range of valid values for the enumeration was assigned to the property.</exception>
+        <altmember cref="T:System.Windows.Forms.CharacterCasing" />
       </Docs>
     </Member>
     <Member MemberName="CreateParams">
@@ -381,6 +389,7 @@
         <summary>Gets the required creation parameters when the control handle is created.</summary>
         <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.CreateParams" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -673,6 +682,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TextBox.OnTextAlignChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TextBox.OnTextAlignChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.TextBox.TextAlignChanged" />
+        <altmember cref="P:System.Windows.Forms.TextBox.TextAlign" />
       </Docs>
     </Member>
     <Member MemberName="PasswordChar">
@@ -755,7 +766,7 @@
     </Member>
     <Member MemberName="ProcessCmdKey">
       <MemberSignature Language="C#" Value="protected override bool ProcessCmdKey (ref System.Windows.Forms.Message m, System.Windows.Forms.Keys keyData);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message m, valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message&amp; m, valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextBox.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -842,6 +853,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">A value that is not within the range of valid values for the enumeration was assigned to the property.</exception>
+        <altmember cref="T:System.Windows.Forms.ScrollBars" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -860,6 +872,7 @@
         <summary>Gets or sets the text associated with this control.</summary>
         <value>The text associated with this control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.Text" />
       </Docs>
     </Member>
     <Member MemberName="TextAlign">
@@ -903,6 +916,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">A value that is not within the range of valid values for the enumeration was assigned to the property.</exception>
+        <altmember cref="T:System.Windows.Forms.HorizontalAlignment" />
       </Docs>
     </Member>
     <Member MemberName="TextAlignChanged">
@@ -928,7 +942,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBox.TextAlignChanged> event. This report helps you find out when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBox.TextAlignChanged> event. This report helps you find out when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TextBox> named `TextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TextBox.TextAlignChanged> event.  
   
@@ -937,6 +951,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TextBox.OnTextAlignChanged(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.TextBox.TextAlign" />
       </Docs>
     </Member>
     <Member MemberName="UseSystemPasswordChar">
@@ -974,11 +990,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBox.PasswordChar" />
       </Docs>
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextBox.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

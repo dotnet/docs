@@ -58,7 +58,7 @@
    
   
 ## Examples  
- This code example is part of a larger example provided for the <xref:System.IO.FileStream.Lock%2A?displayProperty=fullName> method.  
+ This code example is part of a larger example provided for the <xref:System.IO.FileStream.Lock%2A?displayProperty=nameWithType> method.  
   
  [!code-cpp[System.IO.FileStream3#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream3/CPP/fstreamlock.cpp#6)]
  [!code-csharp[System.IO.FileStream3#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream3/CS/fstreamlock.cs#6)]
@@ -66,6 +66,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -223,6 +224,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -260,5 +262,16 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.IOException" /> class with its message string.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

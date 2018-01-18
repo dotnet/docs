@@ -30,6 +30,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxEditingControl" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxEditingControl" />
+    <altmember cref="T:System.Windows.Forms.IDataGridViewEditingControl" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewEditingControlShowingEventHandler" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.CellStyle" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.Control" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,6 +57,12 @@
         <param name="cellStyle">A <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> representing the style of the cell being edited.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxEditingControl" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxEditingControl" />
+        <altmember cref="T:System.Windows.Forms.IDataGridViewEditingControl" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.CellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.Control" />
       </Docs>
     </Member>
     <Member MemberName="CellStyle">
@@ -84,6 +97,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The specified value when setting this property is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.Control" />
       </Docs>
     </Member>
     <Member MemberName="Control">
@@ -110,13 +125,18 @@
    
   
 ## Examples  
- The following code example illustrates the use of this property. In the example, a <xref:System.Windows.Forms.DataGridView.EditingControlShowing?displayProperty=fullName> event handler adds a handler for a <xref:System.Windows.Forms.DataGridViewComboBoxEditingControl> event. The editing control is cast to a <xref:System.Windows.Forms.ComboBox> to handle the <xref:System.Windows.Forms.ComboBox.SelectedIndexChanged?displayProperty=fullName> event.  
+ The following code example illustrates the use of this property. In the example, a <xref:System.Windows.Forms.DataGridView.EditingControlShowing?displayProperty=nameWithType> event handler adds a handler for a <xref:System.Windows.Forms.DataGridViewComboBoxEditingControl> event. The editing control is cast to a <xref:System.Windows.Forms.ComboBox> to handle the <xref:System.Windows.Forms.ComboBox.SelectedIndexChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.DataGridViewMisc2#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc2/cs/misc2.cs#20)]
  [!code-vb[System.Windows.Forms.DataGridViewMisc2#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc2/vb/misc2.vb#20)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxEditingControl" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxEditingControl" />
+        <altmember cref="T:System.Windows.Forms.IDataGridViewEditingControl" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.CellStyle" />
       </Docs>
     </Member>
   </Members>

@@ -38,6 +38,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Documents.TableCellCollection" />
+    <altmember cref="T:System.Windows.Documents.TableColumnCollection" />
+    <altmember cref="T:System.Windows.Documents.TableRowCollection" />
+    <altmember cref="T:System.Windows.Documents.TableRowGroupCollection" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -61,6 +65,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">Raised when *item* already belongs to a collection.</exception>
         <exception cref="T:System.ArgumentNullException">Raised when *item* is **null**.</exception>
+        <altmember cref="M:System.Windows.Documents.TextElementCollection`1.AddRange(System.Collections.IEnumerable)" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -84,6 +89,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">Raised when *range* includes any **null** items.</exception>
         <exception cref="T:System.ArgumentNullException">Raised when *range* is **null**.</exception>
+        <altmember cref="M:System.Windows.Documents.TextElementCollection`1.Add(`0)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">

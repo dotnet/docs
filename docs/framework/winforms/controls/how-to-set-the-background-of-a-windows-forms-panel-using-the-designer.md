@@ -9,18 +9,18 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "background colors, Windows Forms Panel controls"
-  - "background images, Windows Forms Panel controls"
+  - "background colors [Windows Forms], Windows Forms Panel controls"
+  - "background images [Windows Forms], Windows Forms Panel controls"
   - "Panel control [Windows Forms], background"
-  - "colors, Windows Forms Panel controls"
+  - "colors [Windows Forms], Windows Forms Panel controls"
 ms.assetid: db83cf54-3c69-4b08-ac6c-25b9b5abb1b0
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set the Background of a Windows Forms Panel Using the Designer
 A Windows Forms <xref:System.Windows.Forms.Panel> control can display both a background color and a background image. The <xref:System.Windows.Forms.Control.BackColor%2A> property sets the background color for controls that are contained in the panel, such as labels and radio buttons. If the <xref:System.Windows.Forms.Control.BackgroundImage%2A> property is not set, the <xref:System.Windows.Forms.Control.BackColor%2A> selection will fill all of the panel. If the <xref:System.Windows.Forms.Control.BackgroundImage%2A> property is set, the image will be displayed behind the controls that are contained in the panel.  
@@ -45,8 +45,8 @@ A Windows Forms <xref:System.Windows.Forms.Panel> control can display both a bac
 6.  In the **Open** dialog box, select the file that you want to display.  
   
 ## See Also  
- <xref:System.Windows.Forms.Control.BackColor%2A>   
- <xref:System.Windows.Forms.Control.BackgroundImage%2A>   
- [Panel Control](../../../../docs/framework/winforms/controls/panel-control-windows-forms.md)   
- [Panel Control Overview](../../../../docs/framework/winforms/controls/panel-control-overview-windows-forms.md)   
+ <xref:System.Windows.Forms.Control.BackColor%2A>  
+ <xref:System.Windows.Forms.Control.BackgroundImage%2A>  
+ [Panel Control](../../../../docs/framework/winforms/controls/panel-control-windows-forms.md)  
+ [Panel Control Overview](../../../../docs/framework/winforms/controls/panel-control-overview-windows-forms.md)  
  [How to: Group Controls with the Windows Forms Panel Control Using the Designer](../../../../docs/framework/winforms/controls/group-controls-with-wf-panel-control-using-the-designer.md)

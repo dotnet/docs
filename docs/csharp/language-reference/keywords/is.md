@@ -1,7 +1,7 @@
 ---
 title: "is (C# Reference)"
 keywords: is keyword (C#), is (C#)
-ms.date: "2017-02-17"
+ms.date: 02/17/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -9,28 +9,12 @@ ms.topic: "article"
 f1_keywords: 
   - "is_CSharpKeyword"
   - "is"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "is keyword [C#]"
 ms.assetid: bc62316a-d41f-4f90-8300-c6f4f0556e43
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # is (C# Reference) #
 
@@ -48,7 +32,7 @@ where *expr* is an expression that evaluates to an instance of some type, and *t
 
 For example, the following code determines if `obj` can be cast to an instance of the `Person` type:
 
-[!code-cs[is#1](../../../../samples/snippets/csharp/language-reference/keywords/is/is1.cs#1)]
+[!code-csharp[is#1](../../../../samples/snippets/csharp/language-reference/keywords/is/is1.cs#1)]
 
 The `is` statement is true if:
 
@@ -62,14 +46,14 @@ The `is` statement is true if:
 
 The following example shows that the `is` expression evaluates to `true` for each of these conversions.
 
-[!code-cs[is#3](../../../../samples/snippets/csharp/language-reference/keywords/is/is3.cs#3)]
+[!code-csharp[is#3](../../../../samples/snippets/csharp/language-reference/keywords/is/is3.cs#3)]
 
 The `is` keyword generates a compile-time warning if the expression is known to always be either `true` or `false`. It only considers reference conversions, boxing conversions, and unboxing conversions; it does not consider user-defined conversions or conversions defined by a type's [implicit](implicit.md) and [explicit](explicit.md) operators. The following example generates warnings because the result of the conversion is known at compile-time. Note that the `is` expression for conversions from `int` to `long` and `double` return false, since these conversions are handled by the [implicit](implicit.md) operator.
 
-[!code-cs[is#2](../../../../samples/snippets/csharp/language-reference/keywords/is/is2.cs#2)]
+[!code-csharp[is#2](../../../../samples/snippets/csharp/language-reference/keywords/is/is2.cs#2)]
 
 `expr` can be any expression that returns a value, with the exception of anonymous methods and lambda expressions. The following example uses  `is` to evaluate the return value of a method call.   
-[!code-cs[is#4](../../../../samples/snippets/csharp/language-reference/keywords/is/is4.cs#4)]
+[!code-csharp[is#4](../../../../samples/snippets/csharp/language-reference/keywords/is/is4.cs#4)]
 
 Starting with C# 7, you can use pattern matching with the [type pattern](#type) to write more concise code that uses the `is` statement.
 
@@ -105,21 +89,21 @@ The `is` expression is `true` if any of the following is true:
 
 If *exp* is `true` and `is` is used with an `if` statement, *varname* is assigned and has local scope within the `if` statement only.
 
-The following example uses the `is` type pattern to provide the implementation of a type's <xref:System.IComparable.CompareTo(System.Object)?displayProperty=fullName> method.
+The following example uses the `is` type pattern to provide the implementation of a type's <xref:System.IComparable.CompareTo(System.Object)?displayProperty=nameWithType> method.
 
-[!code-cs[is#5](../../../../samples/snippets/csharp/language-reference/keywords/is/is-type-pattern5.cs#5)]
+[!code-csharp[is#5](../../../../samples/snippets/csharp/language-reference/keywords/is/is-type-pattern5.cs#5)]
 
 Without pattern matching, this code might be written as follows. The use of type pattern matching produces more compact, readable code by eliminating the need to test whether the result of a conversion is a `null`.  
 
-[!code-cs[is#6](../../../../samples/snippets/csharp/language-reference/keywords/is/is-type-pattern6.cs#6)]
+[!code-csharp[is#6](../../../../samples/snippets/csharp/language-reference/keywords/is/is-type-pattern6.cs#6)]
 
 The `is` type pattern also produces more compact code when determining the type of a value type. The following example uses the `is` type pattern to determine whether an object is a `Person` or a `Dog` instance before displaying the value of an appropriate property. 
 
-[!code-cs[is#9](../../../../samples/snippets/csharp/language-reference/keywords/is/is-type-pattern9.cs#9)]
+[!code-csharp[is#9](../../../../samples/snippets/csharp/language-reference/keywords/is/is-type-pattern9.cs#9)]
 
 The equivalent code without pattern matching requires a separate assignment that includes an explicit cast.
 
-[!code-cs[is#10](../../../../samples/snippets/csharp/language-reference/keywords/is/is-type-pattern10.cs#10)]
+[!code-csharp[is#10](../../../../samples/snippets/csharp/language-reference/keywords/is/is-type-pattern10.cs#10)]
 
 ### <a name="constant" /> Constant pattern ###
 
@@ -145,7 +129,7 @@ The constant expression is evaluated as follows:
 
 The following example combines the type and constant patterns to test whether an object is a `Dice` instance and, if it is, to determine whether the value of a dice roll is 6.
 
-[!code-cs[is#7](../../../../samples/snippets/csharp/language-reference/keywords/is/is-const-pattern7.cs#7)]
+[!code-csharp[is#7](../../../../samples/snippets/csharp/language-reference/keywords/is/is-const-pattern7.cs#7)]
  
 ### <a name="var" /> var pattern </a>
 
@@ -157,7 +141,7 @@ A pattern match with the var pattern always succeeds. Its syntax is
 
 where the value of *expr* is always assigned to a local variable named *varname*. *varname* is a static variable of the same type as *expr*. The following example uses the var pattern to assign an expression to a variable named `obj`. It then displays the value and the type of `obj`.
 
-[!code-cs[is#8](../../../../samples/snippets/csharp/language-reference/keywords/is/is-var-pattern8.cs#8)]
+[!code-csharp[is#8](../../../../samples/snippets/csharp/language-reference/keywords/is/is-var-pattern8.cs#8)]
 
 Note that if *expr* is `null`, the `is` expression still is true and assigns `null` to *varname*. 
 
@@ -166,8 +150,8 @@ Note that if *expr* is `null`, the `is` expression still is true and assigns `nu
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [typeof](../../../csharp/language-reference/keywords/typeof.md)   
- [as](../../../csharp/language-reference/keywords/as.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [typeof](../../../csharp/language-reference/keywords/typeof.md)  
+ [as](../../../csharp/language-reference/keywords/as.md)  
  [Operator Keywords](../../../csharp/language-reference/keywords/operator-keywords.md)

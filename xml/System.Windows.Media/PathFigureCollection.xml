@@ -72,6 +72,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Generic.IList`1" />
+    <altmember cref="T:System.Collections.Generic.ICollection`1" />
+    <altmember cref="T:System.Collections.Generic.IEnumerable`1" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -188,6 +191,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Media.PathFigureCollection" /> is read-only.</exception>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -212,7 +216,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -261,7 +265,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -309,6 +313,7 @@
         <returns>
           <see langword="true" /> if <paramref name="value" /> is in the <see cref="T:System.Windows.Media.PathFigureCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.Contains(`0)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -342,6 +347,7 @@
  -or-  
   
  The number of items in the source <see cref="T:System.Windows.Media.PathFigureCollection" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -462,6 +468,7 @@
         <summary>Returns an enumerator that can iterate through the collection.</summary>
         <returns>An <see cref="T:System.Windows.Media.PathFigureCollection.Enumerator" /> that can iterate through the collection.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -493,6 +500,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.IList`1.IndexOf(`0)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -519,7 +527,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Insert%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
+ Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Insert%2A?displayProperty=nameWithType>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
   
  ]]></format>
         </remarks>
@@ -532,6 +540,7 @@
  -or-  
   
  The <see cref="T:System.Windows.Media.PathFigureCollection" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -557,7 +566,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
+ Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=nameWithType>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
   
  ]]></format>
         </remarks>
@@ -570,6 +579,7 @@
  -or-  
   
  The <see cref="T:System.Windows.Media.PathFigureCollection" /> has a fixed size.</exception>
+        <altmember cref="P:System.Collections.Generic.IList`1.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -620,6 +630,7 @@
  -or-  
   
  The <see cref="T:System.Windows.Media.PathFigureCollection" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.Remove(`0)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -641,6 +652,7 @@
         <param name="index">Index position of the <see cref="T:System.Windows.Media.PathFigure" /> to be removed.</param>
         <summary>Removes the <see cref="T:System.Windows.Media.PathFigure" /> at the specified index position from the collection.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Windows.Media.PathFigure&gt;.IsReadOnly">
@@ -658,7 +670,7 @@
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
         <value>
-          <see langword="true" /> if the the <see cref="T:System.Windows.Media.PathFigureCollection" /> is read-only; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Media.PathFigureCollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -935,7 +947,7 @@
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Collections.IList.IsFixedSize" />.</summary>
         <value>
-          <see langword="true" /> if the the <see cref="T:System.Windows.Media.PathFigureCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Media.PathFigureCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -961,7 +973,7 @@
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Collections.IList.IsReadOnly" />.</summary>
         <value>
-          <see langword="true" /> if the the <see cref="T:System.Windows.Media.PathFigureCollection" /> is read-only; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Media.PathFigureCollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1109,5 +1121,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.PathFigureCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the current value of a <see cref="T:System.Windows.Media.PathFigureCollection" /> to a <see cref="T:System.String" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

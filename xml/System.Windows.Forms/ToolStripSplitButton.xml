@@ -126,7 +126,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ToolStripSplitButton (string text, System.Drawing.Image image, System.Windows.Forms.ToolStripItem[] dropDownItems);" />
+      <MemberSignature Language="C#" Value="public ToolStripSplitButton (string text, System.Drawing.Image image, params System.Windows.Forms.ToolStripItem[] dropDownItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, class System.Drawing.Image image, class System.Windows.Forms.ToolStripItem[] dropDownItems) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSplitButton.#ctor(System.String,System.Drawing.Image,System.Windows.Forms.ToolStripItem[])" />
       <MemberType>Constructor</MemberType>
@@ -229,6 +229,7 @@
         <summary>Gets the size and location of the standard button portion of a <see cref="T:System.Windows.Forms.ToolStripSplitButton" />.</summary>
         <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the size and location of the standard button portion of a <see cref="T:System.Windows.Forms.ToolStripSplitButton" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStripSplitButton.DropDownButtonBounds" />
       </Docs>
     </Member>
     <Member MemberName="ButtonClick">
@@ -254,7 +255,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripSplitButton.ButtonClick> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripSplitButton.ButtonClick> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripSplitButton> named `ToolStripSplitButton1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripSplitButton.ButtonClick> event.  
   
@@ -288,7 +289,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripSplitButton.ButtonDoubleClick> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripSplitButton.ButtonDoubleClick> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripSplitButton> named `ToolStripSplitButton1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripSplitButton.ButtonDoubleClick> event.  
   
@@ -345,6 +346,7 @@
         <value>
           <see langword="true" /> if the button portion of a <see cref="T:System.Windows.Forms.ToolStripSplitButton" /> is selected or whether <see cref="P:System.Windows.Forms.ToolStripSplitButton.DropDownButtonPressed" /> is <see langword="true" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStripSplitButton.DropDownButtonSelected" />
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
@@ -383,6 +385,7 @@
         <summary>Creates a generic <see cref="T:System.Windows.Forms.ToolStripDropDown" /> for which events can be defined.</summary>
         <returns>A <see cref="T:System.Windows.Forms.ToolStripDropDown" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripDropDownItem.CreateDefaultDropDown" />
       </Docs>
     </Member>
     <Member MemberName="DefaultAutoToolTip">
@@ -462,7 +465,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripSplitButton.DefaultItemChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripSplitButton.DefaultItemChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripSplitButton> named `ToolStripSplitButton1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripSplitButton.DefaultItemChanged> event.  
   
@@ -513,6 +516,7 @@
         <summary>Gets the size and location, in screen coordinates, of the drop-down button portion of a <see cref="T:System.Windows.Forms.ToolStripSplitButton" />.</summary>
         <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the size and location of the drop-down button portion of a <see cref="T:System.Windows.Forms.ToolStripSplitButton" />, in screen coordinates.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStripSplitButton.ButtonBounds" />
       </Docs>
     </Member>
     <Member MemberName="DropDownButtonPressed">
@@ -561,6 +565,7 @@
         <value>
           <see langword="true" /> if the drop-down button portion of a <see cref="T:System.Windows.Forms.ToolStripSplitButton" /> is selected; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStripSplitButton.ButtonSelected" />
       </Docs>
     </Member>
     <Member MemberName="DropDownButtonWidth">
@@ -580,6 +585,7 @@
         <value>An <see cref="T:System.Int32" /> representing the width in pixels. The default is 11. Starting with the [!INCLUDE[net_2015](~/includes/net-2015-md.md)], the default value is based on the DPI setting of the device running the app.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is less than zero (0).</exception>
+        <altmember cref="M:System.Windows.Forms.ToolStripSplitButton.ResetDropDownButtonWidth" />
       </Docs>
     </Member>
     <Member MemberName="GetPreferredSize">
@@ -821,6 +827,7 @@
         <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.Paint" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripItem.OnPaint(System.Windows.Forms.PaintEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnRightToLeftChanged">
@@ -961,6 +968,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStripSplitButton.DropDownButtonWidth" />
       </Docs>
     </Member>
     <Member MemberName="SplitterBounds">
@@ -991,7 +999,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SplitContainer.SplitterWidth" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripSplitButton" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -53,7 +53,7 @@
 |<xref:System.Net.NetworkInformation.PingCompletedEventArgs>|Contains the data associated with <xref:System.Net.NetworkInformation.Ping.PingCompleted> events, which are raised when a <xref:System.Net.NetworkInformation.Ping.SendAsync%2A> call completes or is canceled.|  
 |<xref:System.Net.NetworkInformation.PingCompletedEventHandler>|The delegate that provides the callback method invoked when a <xref:System.Net.NetworkInformation.Ping.SendAsync%2A> call completes or is canceled.|  
   
- The <xref:System.Net.NetworkInformation.Ping.Send%2A> and <xref:System.Net.NetworkInformation.Ping.SendAsync%2A> methods return the reply in a <xref:System.Net.NetworkInformation.PingReply> object. The <xref:System.Net.NetworkInformation.PingReply.Status%2A?displayProperty=fullName> property returns an <xref:System.Net.NetworkInformation.IPStatus> value to indicate the outcome of the request.  
+ The <xref:System.Net.NetworkInformation.Ping.Send%2A> and <xref:System.Net.NetworkInformation.Ping.SendAsync%2A> methods return the reply in a <xref:System.Net.NetworkInformation.PingReply> object. The <xref:System.Net.NetworkInformation.PingReply.Status%2A?displayProperty=nameWithType> property returns an <xref:System.Net.NetworkInformation.IPStatus> value to indicate the outcome of the request.  
   
  When sending the request, you must specify the remote computer. You can do this by providing a host name string, an IP address in string format, or an <xref:System.Net.IPAddress> object.  
   
@@ -1872,5 +1872,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SendPingAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Ping</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends an Internet Control Message Protocol (ICMP) echo message to a computer, and receives a corresponding ICMP echo reply message from that computer as an asynchronous operation.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

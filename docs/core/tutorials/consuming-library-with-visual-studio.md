@@ -1,15 +1,16 @@
 ---
 title: Consuming a class library with .NET Core in Visual Studio 2017
 description: Learn how to call the members in a class library with Visual Studio 2017.
-keywords: .NET Core, .NET Core class library, .NET Standard, .NET Standard class library distribution
 author: BillWagner
-ms.author: wiwang
+ms.author: wiwagn
 ms.date: 08/07/2017
 ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
-ms.assetid: d7b94076-1108-4174-94e7-a18f00072bb7
+ms.prod: .net-core
+dev_langs: 
+  - "csharp"
+  - "vb"
+ms.workload: 
+  - dotnetcore
 ---
 
 # Consuming a class library with .NET Core in Visual Studio 2017

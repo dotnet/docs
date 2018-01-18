@@ -7,6 +7,12 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
   </Base>
@@ -19,7 +25,7 @@
 ## Remarks  
  This class contains properties common to all parts of a SOAP message. For example, all parts have a name and a namespace, and potentially a level of security applied.  
   
- For information on controlling the serialization of the contents of a SOAP body without modifying the default SOAP envelope itself, see <xref:System.Runtime.Serialization.DataContractAttribute?displayProperty=fullName>, [Specifying Data Transfer in Service Contracts](~/docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md), and [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md).  
+ For information on controlling the serialization of the contents of a SOAP body without modifying the default SOAP envelope itself, see <xref:System.Runtime.Serialization.DataContractAttribute?displayProperty=nameWithType>, [Specifying Data Transfer in Service Contracts](~/docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md), and [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md).  
   
  For more information about creating message contracts, see [Using Message Contracts](~/docs/framework/wcf/feature-details/using-message-contracts.md).  
   
@@ -61,6 +67,12 @@ public class BankingTransaction
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MessageContractMemberAttribute" /> class.</summary>
@@ -96,6 +108,12 @@ public class BankingTransaction
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -136,6 +154,12 @@ public class BankingTransaction
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -187,7 +211,7 @@ public class BankingTransaction
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To make use of the <xref:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel%2A> property in either the <xref:System.ServiceModel.MessageHeaderAttribute> or <xref:System.ServiceModel.MessageBodyMemberAttribute> attributes you must properly configure the binding and behaviors. If these security features are used without a proper configuration (for example, using <xref:System.Net.Security.ProtectionLevel?displayProperty=fullName> with a message part without supplying security credentials) an exception is thrown at run time.  
+ To make use of the <xref:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel%2A> property in either the <xref:System.ServiceModel.MessageHeaderAttribute> or <xref:System.ServiceModel.MessageBodyMemberAttribute> attributes you must properly configure the binding and behaviors. If these security features are used without a proper configuration (for example, using <xref:System.Net.Security.ProtectionLevel.Sign?displayProperty=nameWithType> with a message part without supplying security credentials) an exception is thrown at run time.  
   
  In addition, the protection level is determined for each header individually. However, the SOAP body has only one protection level, regardless of the number of body parts. The protection level of the body is determined by the highest <xref:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel%2A> property value of all the body parts. For example, consider the following class:  
   
@@ -204,29 +228,29 @@ public class PatientRecord
 }  
 ```  
   
- In this example, the `recordID` header is not protected, `patientName` is signed, and `SSN` is encrypted and signed. There is at least one body part, `medicalHistory`, with <xref:System.Net.Security.ProtectionLevel?displayProperty=fullName> and thus the entire message body is encrypted and signed, even though the `comments` and `diagnosis` body parts specify lower protection levels.  
+ In this example, the `recordID` header is not protected, `patientName` is signed, and `SSN` is encrypted and signed. There is at least one body part, `medicalHistory`, with <xref:System.Net.Security.ProtectionLevel.EncryptAndSign?displayProperty=nameWithType> and thus the entire message body is encrypted and signed, even though the `comments` and `diagnosis` body parts specify lower protection levels.  
   
  The protection behavior at runtime is the combination of the protection-level values set on the following properties. These properties have a hierarchical structure. Setting the outermost value establishes the default setting for all narrower scopes unless a different value for a narrower scope is explicitly set. In this case, the outer value remains the default for all narrower scopes with the exception of that specifically set.  
   
- For example, if <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel%2A?displayProperty=fullName> is set to <xref:System.Net.Security.ProtectionLevel?displayProperty=fullName> and no other narrower scopes have protection level settings, all messages in an operation contract are encrypted and signed. If, however, one of those operations has the <xref:System.ServiceModel.OperationContractAttribute> set to <xref:System.Net.Security.ProtectionLevel?displayProperty=fullName>, then the messages for that operation are signed but all other messages in the contract are encrypted and signed.  
+ For example, if <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel%2A?displayProperty=nameWithType> is set to <xref:System.Net.Security.ProtectionLevel.EncryptAndSign?displayProperty=nameWithType> and no other narrower scopes have protection level settings, all messages in an operation contract are encrypted and signed. If, however, one of those operations has the <xref:System.ServiceModel.OperationContractAttribute> set to <xref:System.Net.Security.ProtectionLevel.Sign?displayProperty=nameWithType>, then the messages for that operation are signed but all other messages in the contract are encrypted and signed.  
   
  For details about protection levels and their assumptions and scopes, see [Understanding Protection Level](~/docs/framework/wcf/understanding-protection-level.md).  
   
  The scopes at which these values are set are:  
   
- <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel%2A?displayProperty=fullName>  
+ <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel%2A?displayProperty=nameWithType>  
   
- <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel%2A?displayProperty=fullName>  
+ <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel%2A?displayProperty=nameWithType>  
   
- <xref:System.ServiceModel.FaultContractAttribute.ProtectionLevel%2A?displayProperty=fullName>  
+ <xref:System.ServiceModel.FaultContractAttribute.ProtectionLevel%2A?displayProperty=nameWithType>  
   
- <xref:System.ServiceModel.MessageContractAttribute.ProtectionLevel%2A?displayProperty=fullName>  
+ <xref:System.ServiceModel.MessageContractAttribute.ProtectionLevel%2A?displayProperty=nameWithType>  
   
- The <xref:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel%2A?displayProperty=fullName> property on <xref:System.ServiceModel.MessageHeaderAttribute?displayProperty=fullName>.  
+ The <xref:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel%2A?displayProperty=nameWithType> property on <xref:System.ServiceModel.MessageHeaderAttribute?displayProperty=nameWithType>.  
   
- The <xref:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel%2A?displayProperty=fullName> property on <xref:System.ServiceModel.MessageBodyMemberAttribute?displayProperty=fullName>.  
+ The <xref:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel%2A?displayProperty=nameWithType> property on <xref:System.ServiceModel.MessageBodyMemberAttribute?displayProperty=nameWithType>.  
   
- When there is no protection level explicitly specified on the contract and the underlying binding supports security (whether at the transport or message level), the effective protection level for the whole contract is <xref:System.Net.Security.ProtectionLevel?displayProperty=fullName>. If the binding does not support security (such as <xref:System.ServiceModel.BasicHttpBinding>), the effective <xref:System.Net.Security.ProtectionLevel?displayProperty=fullName> is <xref:System.Net.Security.ProtectionLevel?displayProperty=fullName> for the whole contract. The result is that depending upon the endpoint binding, clients can require different message or transport level security protection even when the contract specifies <xref:System.Net.Security.ProtectionLevel?displayProperty=fullName>.  
+ When there is no protection level explicitly specified on the contract and the underlying binding supports security (whether at the transport or message level), the effective protection level for the whole contract is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign?displayProperty=nameWithType>. If the binding does not support security (such as <xref:System.ServiceModel.BasicHttpBinding>), the effective <xref:System.Net.Security.ProtectionLevel?displayProperty=nameWithType> is <xref:System.Net.Security.ProtectionLevel.None?displayProperty=nameWithType> for the whole contract. The result is that depending upon the endpoint binding, clients can require different message or transport level security protection even when the contract specifies <xref:System.Net.Security.ProtectionLevel.None?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

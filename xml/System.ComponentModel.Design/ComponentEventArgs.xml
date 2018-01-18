@@ -43,6 +43,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.Design.ComponentEventHandler" />
+    <altmember cref="T:System.ComponentModel.Design.IComponentChangeService" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,6 +72,7 @@
         <param name="component">The component that is the source of the event.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.ComponentEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.Design.ComponentEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Component">
@@ -97,6 +100,7 @@
         <summary>Gets the component associated with the event.</summary>
         <value>The component associated with the event.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.IComponent" />
       </Docs>
     </Member>
   </Members>

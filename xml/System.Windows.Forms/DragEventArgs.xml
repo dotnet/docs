@@ -30,11 +30,11 @@
    
   
 ## Examples  
- The following example demonstrates a drag-and-drop operation between two <xref:System.Windows.Forms.ListBox> controls. The example calls the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method when the drag action starts. The drag action starts if the mouse has moved more than <xref:System.Windows.Forms.SystemInformation.DragSize%2A?displayProperty=fullName> from the mouse location during the <xref:System.Windows.Forms.Control.MouseDown> event. The <xref:System.Windows.Forms.ListBox.IndexFromPoint%2A> method is used to determine the index of the item to drag during the `MouseDown` event.  
+ The following example demonstrates a drag-and-drop operation between two <xref:System.Windows.Forms.ListBox> controls. The example calls the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method when the drag action starts. The drag action starts if the mouse has moved more than <xref:System.Windows.Forms.SystemInformation.DragSize%2A?displayProperty=nameWithType> from the mouse location during the <xref:System.Windows.Forms.Control.MouseDown> event. The <xref:System.Windows.Forms.ListBox.IndexFromPoint%2A> method is used to determine the index of the item to drag during the `MouseDown` event.  
   
  The example also demonstrates using custom cursors for the drag-and-drop operation. The example assumes that two cursor files, `3dwarro.cur` and `3dwno.cur`, exist in the application directory, for the custom drag and no-drop cursors, respectively. The custom cursors will be used if the `UseCustomCursorsCheck`<xref:System.Windows.Forms.CheckBox> is checked. The custom cursors are set in the <xref:System.Windows.Forms.Control.GiveFeedback> event handler.  
   
- The keyboard state is evaluated in the <xref:System.Windows.Forms.Control.DragOver> event handler for the right `ListBox`, to determine what the drag operation will be based upon state of the SHIFT, CTRL, ALT, or CTRL+ALT keys. The location in the `ListBox` where the drop would occur is also determined during the `DragOver` event. If the data to drop is not a `String`, then the <xref:System.Windows.Forms.DragEventArgs.Effect%2A?displayProperty=fullName> is set to <xref:System.Windows.Forms.DragDropEffects?displayProperty=fullName>. Finally, the status of the drop is displayed in the `DropLocationLabel`<xref:System.Windows.Forms.Label>.  
+ The keyboard state is evaluated in the <xref:System.Windows.Forms.Control.DragOver> event handler for the right `ListBox`, to determine what the drag operation will be based upon state of the SHIFT, CTRL, ALT, or CTRL+ALT keys. The location in the `ListBox` where the drop would occur is also determined during the `DragOver` event. If the data to drop is not a `String`, then the <xref:System.Windows.Forms.DragEventArgs.Effect%2A?displayProperty=nameWithType> is set to <xref:System.Windows.Forms.DragDropEffects.None?displayProperty=nameWithType>. Finally, the status of the drop is displayed in the `DropLocationLabel`<xref:System.Windows.Forms.Label>.  
   
  The data to drop for the right `ListBox` is determined in the <xref:System.Windows.Forms.Control.DragDrop> event handler and the `String` value is added at the appropriate place in the `ListBox`. If the drag operation moves outside the bounds of the form, then the drag-and-drop operation is canceled in the <xref:System.Windows.Forms.Control.QueryContinueDrag> event handler.  
   
@@ -54,6 +54,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DragDropEffects" />
+    <altmember cref="M:System.Windows.Forms.Control.OnDragDrop(System.Windows.Forms.DragEventArgs)" />
+    <altmember cref="E:System.Windows.Forms.Control.DragDrop" />
+    <altmember cref="M:System.Windows.Forms.Control.OnDragEnter(System.Windows.Forms.DragEventArgs)" />
+    <altmember cref="E:System.Windows.Forms.Control.DragEnter" />
+    <altmember cref="M:System.Windows.Forms.Control.OnDragOver(System.Windows.Forms.DragEventArgs)" />
+    <altmember cref="E:System.Windows.Forms.Control.DragOver" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -82,6 +89,8 @@
         <param name="effect">One of the <see cref="T:System.Windows.Forms.DragDropEffects" /> values.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DragEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DragDropEffects" />
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
       </Docs>
     </Member>
     <Member MemberName="AllowedEffect">
@@ -103,18 +112,18 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When a control initiates a drag-and-drop operation by calling the <xref:System.Windows.Forms.Control.DoDragDrop%2A?displayProperty=fullName> method, it specifies the permissible effects of the operation. For example, when you drag a file from a source, if the file is read-only (or from a read-only storage medium such as a CD), the source will indicate that the file can be copied, but not transferred, to the target.  
+ When a control initiates a drag-and-drop operation by calling the <xref:System.Windows.Forms.Control.DoDragDrop%2A?displayProperty=nameWithType> method, it specifies the permissible effects of the operation. For example, when you drag a file from a source, if the file is read-only (or from a read-only storage medium such as a CD), the source will indicate that the file can be copied, but not transferred, to the target.  
   
  Before attempting to perform an operation on the dragged data, you should examine this property to ensure that the operation is allowed.  
   
    
   
 ## Examples  
- The following example demonstrates a drag-and-drop operation between two <xref:System.Windows.Forms.ListBox> controls. The example calls the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method when the drag action starts. The drag action starts if the mouse has moved more than <xref:System.Windows.Forms.SystemInformation.DragSize%2A?displayProperty=fullName> from the mouse location during the <xref:System.Windows.Forms.Control.MouseDown> event. The <xref:System.Windows.Forms.ListBox.IndexFromPoint%2A> method is used to determine the index of the item to drag during the `MouseDown` event.  
+ The following example demonstrates a drag-and-drop operation between two <xref:System.Windows.Forms.ListBox> controls. The example calls the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method when the drag action starts. The drag action starts if the mouse has moved more than <xref:System.Windows.Forms.SystemInformation.DragSize%2A?displayProperty=nameWithType> from the mouse location during the <xref:System.Windows.Forms.Control.MouseDown> event. The <xref:System.Windows.Forms.ListBox.IndexFromPoint%2A> method is used to determine the index of the item to drag during the `MouseDown` event.  
   
  The example also demonstrates using custom cursors for the drag-and-drop operation. The example assumes that two cursor files, `3dwarro.cur` and `3dwno.cur`, exist in the application directory, for the custom drag and no-drop cursors, respectively. The custom cursors will be used if the `UseCustomCursorsCheck`<xref:System.Windows.Forms.CheckBox> is checked. The custom cursors are set in the <xref:System.Windows.Forms.Control.GiveFeedback> event handler.  
   
- The keyboard state is evaluated in the <xref:System.Windows.Forms.Control.DragOver> event handler for the right `ListBox`, to determine what the drag operation will be based upon state of the SHIFT, CTRL, ALT, or CTRL+ALT keys. The location in the `ListBox` where the drop would occur is also determined during the `DragOver` event. If the data to drop is not a `String`, then the <xref:System.Windows.Forms.DragEventArgs.Effect%2A?displayProperty=fullName> is set to <xref:System.Windows.Forms.DragDropEffects?displayProperty=fullName>. Finally, the status of the drop is displayed in the `DropLocationLabel`<xref:System.Windows.Forms.Label>.  
+ The keyboard state is evaluated in the <xref:System.Windows.Forms.Control.DragOver> event handler for the right `ListBox`, to determine what the drag operation will be based upon state of the SHIFT, CTRL, ALT, or CTRL+ALT keys. The location in the `ListBox` where the drop would occur is also determined during the `DragOver` event. If the data to drop is not a `String`, then the <xref:System.Windows.Forms.DragEventArgs.Effect%2A?displayProperty=nameWithType> is set to <xref:System.Windows.Forms.DragDropEffects.None?displayProperty=nameWithType>. Finally, the status of the drop is displayed in the `DropLocationLabel`<xref:System.Windows.Forms.Label>.  
   
  The data to drop for the right `ListBox` is determined in the <xref:System.Windows.Forms.Control.DragDrop> event handler and the `String` value is added at the appropriate place in the `ListBox`. If the drag operation moves outside the bounds of the form, then the drag-and-drop operation is canceled in the <xref:System.Windows.Forms.Control.QueryContinueDrag> event handler.  
   
@@ -126,6 +135,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DragDropEffects" />
       </Docs>
     </Member>
     <Member MemberName="Data">
@@ -152,11 +162,11 @@
    
   
 ## Examples  
- The following example demonstrates a drag-and-drop operation between two <xref:System.Windows.Forms.ListBox> controls. The example calls the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method when the drag action starts. The drag action starts if the mouse has moved more than <xref:System.Windows.Forms.SystemInformation.DragSize%2A?displayProperty=fullName> from the mouse location during the <xref:System.Windows.Forms.Control.MouseDown> event. The <xref:System.Windows.Forms.ListBox.IndexFromPoint%2A> method is used to determine the index of the item to drag during the `MouseDown` event.  
+ The following example demonstrates a drag-and-drop operation between two <xref:System.Windows.Forms.ListBox> controls. The example calls the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method when the drag action starts. The drag action starts if the mouse has moved more than <xref:System.Windows.Forms.SystemInformation.DragSize%2A?displayProperty=nameWithType> from the mouse location during the <xref:System.Windows.Forms.Control.MouseDown> event. The <xref:System.Windows.Forms.ListBox.IndexFromPoint%2A> method is used to determine the index of the item to drag during the `MouseDown` event.  
   
  The example also demonstrates using custom cursors for the drag-and-drop operation. The example assumes that two cursor files, `3dwarro.cur` and `3dwno.cur`, exist in the application directory, for the custom drag and no-drop cursors, respectively. The custom cursors will be used if the `UseCustomCursorsCheck`<xref:System.Windows.Forms.CheckBox> is checked. The custom cursors are set in the <xref:System.Windows.Forms.Control.GiveFeedback> event handler.  
   
- The keyboard state is evaluated in the <xref:System.Windows.Forms.Control.DragOver> event handler for the right `ListBox`, to determine what the drag operation will be based upon state of the SHIFT, CTRL, ALT, or CTRL+ALT keys. The location in the `ListBox` where the drop would occur is also determined during the `DragOver` event. If the data to drop is not a `String`, then the <xref:System.Windows.Forms.DragEventArgs.Effect%2A?displayProperty=fullName> is set to <xref:System.Windows.Forms.DragDropEffects?displayProperty=fullName>. Finally, the status of the drop is displayed in the `DropLocationLabel`<xref:System.Windows.Forms.Label>.  
+ The keyboard state is evaluated in the <xref:System.Windows.Forms.Control.DragOver> event handler for the right `ListBox`, to determine what the drag operation will be based upon state of the SHIFT, CTRL, ALT, or CTRL+ALT keys. The location in the `ListBox` where the drop would occur is also determined during the `DragOver` event. If the data to drop is not a `String`, then the <xref:System.Windows.Forms.DragEventArgs.Effect%2A?displayProperty=nameWithType> is set to <xref:System.Windows.Forms.DragDropEffects.None?displayProperty=nameWithType>. Finally, the status of the drop is displayed in the `DropLocationLabel`<xref:System.Windows.Forms.Label>.  
   
  The data to drop for the right `ListBox` is determined in the <xref:System.Windows.Forms.Control.DragDrop> event handler and the `String` value is added at the appropriate place in the `ListBox`. If the drag operation moves outside the bounds of the form, then the drag-and-drop operation is canceled in the <xref:System.Windows.Forms.Control.QueryContinueDrag> event handler.  
   
@@ -168,6 +178,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.IDataObject" />
       </Docs>
     </Member>
     <Member MemberName="Effect">
@@ -189,18 +200,18 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the effect applied determines the mouse cursor for the target of a drag-and-drop operation. This is useful to provide feedback to the user on the operation that will occur. For example, if you press the CTRL key when you drag a file from a source, specify <xref:System.Windows.Forms.DragDropEffects?displayProperty=fullName> to indicate the target will try to perform a copy operation.  
+ By default, the effect applied determines the mouse cursor for the target of a drag-and-drop operation. This is useful to provide feedback to the user on the operation that will occur. For example, if you press the CTRL key when you drag a file from a source, specify <xref:System.Windows.Forms.DragDropEffects.Copy?displayProperty=nameWithType> to indicate the target will try to perform a copy operation.  
   
- To use custom cursors for a drag operation, see <xref:System.Windows.Forms.GiveFeedbackEventArgs.UseDefaultCursors%2A?displayProperty=fullName>.  
+ To use custom cursors for a drag operation, see <xref:System.Windows.Forms.GiveFeedbackEventArgs.UseDefaultCursors%2A?displayProperty=nameWithType>.  
   
    
   
 ## Examples  
- The following example demonstrates a drag-and-drop operation between two <xref:System.Windows.Forms.ListBox> controls. The example calls the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method when the drag action starts. The drag action starts if the mouse has moved more than <xref:System.Windows.Forms.SystemInformation.DragSize%2A?displayProperty=fullName> from the mouse location during the <xref:System.Windows.Forms.Control.MouseDown> event. The <xref:System.Windows.Forms.ListBox.IndexFromPoint%2A> method is used to determine the index of the item to drag during the `MouseDown` event.  
+ The following example demonstrates a drag-and-drop operation between two <xref:System.Windows.Forms.ListBox> controls. The example calls the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method when the drag action starts. The drag action starts if the mouse has moved more than <xref:System.Windows.Forms.SystemInformation.DragSize%2A?displayProperty=nameWithType> from the mouse location during the <xref:System.Windows.Forms.Control.MouseDown> event. The <xref:System.Windows.Forms.ListBox.IndexFromPoint%2A> method is used to determine the index of the item to drag during the `MouseDown` event.  
   
  The example also demonstrates using custom cursors for the drag-and-drop operation. The example assumes that two cursor files, `3dwarro.cur` and `3dwno.cur`, exist in the application directory, for the custom drag and no-drop cursors, respectively. The custom cursors will be used if the `UseCustomCursorsCheck`<xref:System.Windows.Forms.CheckBox> is checked. The custom cursors are set in the <xref:System.Windows.Forms.Control.GiveFeedback> event handler.  
   
- The keyboard state is evaluated in the <xref:System.Windows.Forms.Control.DragOver> event handler for the right `ListBox`, to determine what the drag operation will be based upon state of the SHIFT, CTRL, ALT, or CTRL+ALT keys. The location in the `ListBox` where the drop would occur is also determined during the `DragOver` event. If the data to drop is not a `String`, then the <xref:System.Windows.Forms.DragEventArgs.Effect%2A?displayProperty=fullName> is set to <xref:System.Windows.Forms.DragDropEffects?displayProperty=fullName>. Finally, the status of the drop is displayed in the `DropLocationLabel`<xref:System.Windows.Forms.Label>.  
+ The keyboard state is evaluated in the <xref:System.Windows.Forms.Control.DragOver> event handler for the right `ListBox`, to determine what the drag operation will be based upon state of the SHIFT, CTRL, ALT, or CTRL+ALT keys. The location in the `ListBox` where the drop would occur is also determined during the `DragOver` event. If the data to drop is not a `String`, then the <xref:System.Windows.Forms.DragEventArgs.Effect%2A?displayProperty=nameWithType> is set to <xref:System.Windows.Forms.DragDropEffects.None?displayProperty=nameWithType>. Finally, the status of the drop is displayed in the `DropLocationLabel`<xref:System.Windows.Forms.Label>.  
   
  The data to drop for the right `ListBox` is determined in the <xref:System.Windows.Forms.Control.DragDrop> event handler and the `String` value is added at the appropriate place in the `ListBox`. If the drag operation moves outside the bounds of the form, then the drag-and-drop operation is canceled in the <xref:System.Windows.Forms.Control.QueryContinueDrag> event handler.  
   
@@ -212,6 +223,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DragDropEffects" />
       </Docs>
     </Member>
     <Member MemberName="KeyState">
@@ -251,11 +263,11 @@
    
   
 ## Examples  
- The following example demonstrates a drag-and-drop operation between two <xref:System.Windows.Forms.ListBox> controls. The example calls the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method when the drag action starts. The drag action starts if the mouse has moved more than <xref:System.Windows.Forms.SystemInformation.DragSize%2A?displayProperty=fullName> from the mouse location during the <xref:System.Windows.Forms.Control.MouseDown> event. The <xref:System.Windows.Forms.ListBox.IndexFromPoint%2A> method is used to determine the index of the item to drag during the `MouseDown` event.  
+ The following example demonstrates a drag-and-drop operation between two <xref:System.Windows.Forms.ListBox> controls. The example calls the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method when the drag action starts. The drag action starts if the mouse has moved more than <xref:System.Windows.Forms.SystemInformation.DragSize%2A?displayProperty=nameWithType> from the mouse location during the <xref:System.Windows.Forms.Control.MouseDown> event. The <xref:System.Windows.Forms.ListBox.IndexFromPoint%2A> method is used to determine the index of the item to drag during the `MouseDown` event.  
   
  The example also demonstrates using custom cursors for the drag-and-drop operation. The example assumes that two cursor files, `3dwarro.cur` and `3dwno.cur`, exist in the application directory, for the custom drag and no-drop cursors, respectively. The custom cursors will be used if the `UseCustomCursorsCheck`<xref:System.Windows.Forms.CheckBox> is checked. The custom cursors are set in the <xref:System.Windows.Forms.Control.GiveFeedback> event handler.  
   
- The keyboard state is evaluated in the <xref:System.Windows.Forms.Control.DragOver> event handler for the right `ListBox`, to determine what the drag operation will be based upon state of the SHIFT, CTRL, ALT, or CTRL+ALT keys. The location in the `ListBox` where the drop would occur is also determined during the `DragOver` event. If the data to drop is not a `String`, then the <xref:System.Windows.Forms.DragEventArgs.Effect%2A?displayProperty=fullName> is set to <xref:System.Windows.Forms.DragDropEffects?displayProperty=fullName>. Finally, the status of the drop is displayed in the `DropLocationLabel`<xref:System.Windows.Forms.Label>.  
+ The keyboard state is evaluated in the <xref:System.Windows.Forms.Control.DragOver> event handler for the right `ListBox`, to determine what the drag operation will be based upon state of the SHIFT, CTRL, ALT, or CTRL+ALT keys. The location in the `ListBox` where the drop would occur is also determined during the `DragOver` event. If the data to drop is not a `String`, then the <xref:System.Windows.Forms.DragEventArgs.Effect%2A?displayProperty=nameWithType> is set to <xref:System.Windows.Forms.DragDropEffects.None?displayProperty=nameWithType>. Finally, the status of the drop is displayed in the `DropLocationLabel`<xref:System.Windows.Forms.Label>.  
   
  The data to drop for the right `ListBox` is determined in the <xref:System.Windows.Forms.Control.DragDrop> event handler and the `String` value is added at the appropriate place in the `ListBox`. If the drag operation moves outside the bounds of the form, then the drag-and-drop operation is canceled in the <xref:System.Windows.Forms.Control.QueryContinueDrag> event handler.  
   
@@ -288,11 +300,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example demonstrates a drag-and-drop operation between two <xref:System.Windows.Forms.ListBox> controls. The example calls the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method when the drag action starts. The drag action starts if the mouse has moved more than <xref:System.Windows.Forms.SystemInformation.DragSize%2A?displayProperty=fullName> from the mouse location during the <xref:System.Windows.Forms.Control.MouseDown> event. The <xref:System.Windows.Forms.ListBox.IndexFromPoint%2A> method is used to determine the index of the item to drag during the `MouseDown` event.  
+ The following example demonstrates a drag-and-drop operation between two <xref:System.Windows.Forms.ListBox> controls. The example calls the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method when the drag action starts. The drag action starts if the mouse has moved more than <xref:System.Windows.Forms.SystemInformation.DragSize%2A?displayProperty=nameWithType> from the mouse location during the <xref:System.Windows.Forms.Control.MouseDown> event. The <xref:System.Windows.Forms.ListBox.IndexFromPoint%2A> method is used to determine the index of the item to drag during the `MouseDown` event.  
   
  The example also demonstrates using custom cursors for the drag-and-drop operation. The example assumes that two cursor files, `3dwarro.cur` and `3dwno.cur`, exist in the application directory, for the custom drag and no-drop cursors, respectively. The custom cursors will be used if the `UseCustomCursorsCheck`<xref:System.Windows.Forms.CheckBox> is checked. The custom cursors are set in the <xref:System.Windows.Forms.Control.GiveFeedback> event handler.  
   
- The keyboard state is evaluated in the <xref:System.Windows.Forms.Control.DragOver> event handler for the right `ListBox`, to determine what the drag operation will be based upon state of the SHIFT, CTRL, ALT, or CTRL+ALT keys. The location in the `ListBox` where the drop would occur is also determined during the `DragOver` event. If the data to drop is not a `String`, then the <xref:System.Windows.Forms.DragEventArgs.Effect%2A?displayProperty=fullName> is set to <xref:System.Windows.Forms.DragDropEffects?displayProperty=fullName>. Finally, the status of the drop is displayed in the `DropLocationLabel`<xref:System.Windows.Forms.Label>.  
+ The keyboard state is evaluated in the <xref:System.Windows.Forms.Control.DragOver> event handler for the right `ListBox`, to determine what the drag operation will be based upon state of the SHIFT, CTRL, ALT, or CTRL+ALT keys. The location in the `ListBox` where the drop would occur is also determined during the `DragOver` event. If the data to drop is not a `String`, then the <xref:System.Windows.Forms.DragEventArgs.Effect%2A?displayProperty=nameWithType> is set to <xref:System.Windows.Forms.DragDropEffects.None?displayProperty=nameWithType>. Finally, the status of the drop is displayed in the `DropLocationLabel`<xref:System.Windows.Forms.Label>.  
   
  The data to drop for the right `ListBox` is determined in the <xref:System.Windows.Forms.Control.DragDrop> event handler and the `String` value is added at the appropriate place in the `ListBox`. If the drag operation moves outside the bounds of the form, then the drag-and-drop operation is canceled in the <xref:System.Windows.Forms.Control.QueryContinueDrag> event handler.  
   
@@ -304,6 +316,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DragEventArgs.Y" />
       </Docs>
     </Member>
     <Member MemberName="Y">
@@ -325,11 +338,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example demonstrates a drag-and-drop operation between two <xref:System.Windows.Forms.ListBox> controls. The example calls the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method when the drag action starts. The drag action starts if the mouse has moved more than <xref:System.Windows.Forms.SystemInformation.DragSize%2A?displayProperty=fullName> from the mouse location during the <xref:System.Windows.Forms.Control.MouseDown> event. The <xref:System.Windows.Forms.ListBox.IndexFromPoint%2A> method is used to determine the index of the item to drag during the `MouseDown` event.  
+ The following example demonstrates a drag-and-drop operation between two <xref:System.Windows.Forms.ListBox> controls. The example calls the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method when the drag action starts. The drag action starts if the mouse has moved more than <xref:System.Windows.Forms.SystemInformation.DragSize%2A?displayProperty=nameWithType> from the mouse location during the <xref:System.Windows.Forms.Control.MouseDown> event. The <xref:System.Windows.Forms.ListBox.IndexFromPoint%2A> method is used to determine the index of the item to drag during the `MouseDown` event.  
   
  The example also demonstrates using custom cursors for the drag-and-drop operation. The example assumes that two cursor files, `3dwarro.cur` and `3dwno.cur`, exist in the application directory, for the custom drag and no-drop cursors, respectively. The custom cursors will be used if the `UseCustomCursorsCheck`<xref:System.Windows.Forms.CheckBox> is checked. The custom cursors are set in the <xref:System.Windows.Forms.Control.GiveFeedback> event handler.  
   
- The keyboard state is evaluated in the <xref:System.Windows.Forms.Control.DragOver> event handler for the right `ListBox`, to determine what the drag operation will be based upon state of the SHIFT, CTRL, ALT, or CTRL+ALT keys. The location in the `ListBox` where the drop would occur is also determined during the `DragOver` event. If the data to drop is not a `String`, then the <xref:System.Windows.Forms.DragEventArgs.Effect%2A?displayProperty=fullName> is set to <xref:System.Windows.Forms.DragDropEffects?displayProperty=fullName>. Finally, the status of the drop is displayed in the `DropLocationLabel`<xref:System.Windows.Forms.Label>.  
+ The keyboard state is evaluated in the <xref:System.Windows.Forms.Control.DragOver> event handler for the right `ListBox`, to determine what the drag operation will be based upon state of the SHIFT, CTRL, ALT, or CTRL+ALT keys. The location in the `ListBox` where the drop would occur is also determined during the `DragOver` event. If the data to drop is not a `String`, then the <xref:System.Windows.Forms.DragEventArgs.Effect%2A?displayProperty=nameWithType> is set to <xref:System.Windows.Forms.DragDropEffects.None?displayProperty=nameWithType>. Finally, the status of the drop is displayed in the `DropLocationLabel`<xref:System.Windows.Forms.Label>.  
   
  The data to drop for the right `ListBox` is determined in the <xref:System.Windows.Forms.Control.DragDrop> event handler and the `String` value is added at the appropriate place in the `ListBox`. If the drag operation moves outside the bounds of the form, then the drag-and-drop operation is canceled in the <xref:System.Windows.Forms.Control.QueryContinueDrag> event handler.  
   
@@ -341,6 +354,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DragEventArgs.X" />
       </Docs>
     </Member>
   </Members>

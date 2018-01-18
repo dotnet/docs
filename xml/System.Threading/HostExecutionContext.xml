@@ -129,7 +129,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The copy can be used as the parameter to a <xref:System.Threading.HostExecutionContextManager.SetHostExecutionContext%2A?displayProperty=fullName> method call.  
+ The copy can be used as the parameter to a <xref:System.Threading.HostExecutionContextManager.SetHostExecutionContext%2A?displayProperty=nameWithType> method call.  
   
  ]]></format>
         </remarks>
@@ -250,5 +250,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.HostExecutionContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases resources used by the current instance of the <see cref="T:System.Threading.HostExecutionContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

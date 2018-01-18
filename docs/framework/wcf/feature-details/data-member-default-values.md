@@ -9,14 +9,19 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "data members [WCF], default values"
   - "data members [WCF]"
 ms.assetid: 53a3b505-4b27-444b-b079-0eb84a97cfd8
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Data Member Default Values
 In the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)], types have a concept of *default values*. For example, for any reference type the default value is `null`, and for an integer type it is zero. It is occasionally desirable to omit a data member from serialized data when it is set to its default value. Because the member has a default value, an actual value need not be serialized; this has a performance advantage.  
@@ -60,5 +65,5 @@ In the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)], types ha
  On schema import, the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> property is automatically set to `false` whenever the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]-specific annotation mentioned previously is detected. It is also set to `false` for reference types that have the `nillable` property set to `false` to support specific interoperability scenarios that commonly occur when consuming [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web services.  
   
 ## See Also  
- <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A>   
+ <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A>  
  <xref:System.Runtime.Serialization.DataMemberAttribute>

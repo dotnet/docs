@@ -10,21 +10,25 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "buttons, responding to Click events"
+  - "buttons [Windows Forms], responding to Click events"
   - "events [Windows Forms], Click events"
-  - "Click event, Button control"
+  - "Click event [Windows Forms], Button control"
   - "MouseDown event"
   - "Button control [Windows Forms], click response"
   - "double-clicks"
   - "examples [Windows Forms], controls"
-  - "Click event, responding to"
+  - "Click event [Windows Forms], responding to"
 ms.assetid: 7a4951bd-369c-4662-b246-28ad83eda484
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Respond to Windows Forms Button Clicks
 The most basic use of a Windows Forms <xref:System.Windows.Forms.Button> control is to run some code when the button is clicked.  
@@ -50,7 +54,7 @@ The most basic use of a Windows Forms <xref:System.Windows.Forms.Button> control
     }  
     ```  
   
-    ```cpp#  
+    ```cpp  
     private:  
        void button1_Click(System::Object ^ sender,  
           System::EventArgs ^ e)  
@@ -60,6 +64,6 @@ The most basic use of a Windows Forms <xref:System.Windows.Forms.Button> control
     ```  
   
 ## See Also  
- [Button Control Overview](../../../../docs/framework/winforms/controls/button-control-overview-windows-forms.md)   
- [Ways to Select a Windows Forms Button Control](../../../../docs/framework/winforms/controls/ways-to-select-a-windows-forms-button-control.md)   
+ [Button Control Overview](../../../../docs/framework/winforms/controls/button-control-overview-windows-forms.md)  
+ [Ways to Select a Windows Forms Button Control](../../../../docs/framework/winforms/controls/ways-to-select-a-windows-forms-button-control.md)  
  [Button Control](../../../../docs/framework/winforms/controls/button-control-windows-forms.md)

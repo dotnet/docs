@@ -13,6 +13,7 @@
   <Docs>
     <summary>Defines an abstract base class for a <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandler" /> that processes security tokens of type <see cref="T:System.IdentityModel.Tokens.UserNameSecurityToken" />.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.IdentityModel.Tokens.WindowsUserNameSecurityTokenHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

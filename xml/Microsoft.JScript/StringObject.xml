@@ -14,6 +14,8 @@
     <summary>Represents a string object. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.StringPrototype" />
+    <altmember cref="T:Microsoft.JScript.StringConstructor" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,6 +37,8 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.StringObject" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringPrototype" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -59,6 +63,8 @@
           <see langword="true" /> if this string and <paramref name="ob" /> have the same value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringPrototype" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -79,6 +85,8 @@
         <returns>A hash code for this string.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringPrototype" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -100,6 +108,8 @@
           <see cref="T:System.String" /> or <see cref="T:Microsoft.JScript.StringObject" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringPrototype" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
     <Member MemberName="length">
@@ -119,6 +129,8 @@
         <value>The number of characters in the string.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.StringPrototype" />
+        <altmember cref="T:Microsoft.JScript.StringConstructor" />
       </Docs>
     </Member>
   </Members>

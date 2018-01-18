@@ -34,8 +34,7 @@
   
 ## Remarks  
   
-> [!NOTE]
->  The TPL Dataflow Library (<xref:System.Threading.Tasks.Dataflow?displayProperty=fullName> namespace) is not distributed with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)]. To install the <xref:System.Threading.Tasks.Dataflow> namespace, open your project in [!INCLUDE[vs_dev11_long](~/includes/vs-dev11-long-md.md)], choose **Manage NuGet Packages** from the Project menu, and search online for the `Microsoft.Tpl.Dataflow` package.  
+[!INCLUDE [tpl-install-instructions](~/includes/tpl-install-instructions.md)]
   
  ]]></format>
     </remarks>
@@ -218,7 +217,7 @@
     </Member>
     <Member MemberName="System.Threading.Tasks.Dataflow.ISourceBlock&lt;System.Tuple&lt;T1,T2,T3&gt;&gt;.ConsumeMessage">
       <MemberSignature Language="C#" Value="Tuple&lt;T1,T2,T3&gt; ISourceBlock&lt;Tuple&lt;T1,T2,T3&gt;&gt;.ConsumeMessage (System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, System.Threading.Tasks.Dataflow.ITargetBlock&lt;Tuple&lt;T1,T2,T3&gt;&gt; target, out bool messageConsumed);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Tuple`3&lt;!T1, !T2, !T3&gt; System.Threading.Tasks.Dataflow.ISourceBlock&lt;System.Tuple&lt;T1,T2,T3&gt;&gt;.ConsumeMessage(valuetype System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;class System.Tuple`3&lt;!T1, !T2, !T3&gt;&gt; target, bool messageConsumed) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Tuple`3&lt;!T1, !T2, !T3&gt; System.Threading.Tasks.Dataflow.ISourceBlock&lt;System.Tuple&lt;T1,T2,T3&gt;&gt;.ConsumeMessage(valuetype System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;class System.Tuple`3&lt;!T1, !T2, !T3&gt;&gt; target, [out] bool&amp; messageConsumed) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.JoinBlock`3.System#Threading#Tasks#Dataflow#ISourceBlock&lt;System#Tuple&lt;T1,T2,T3&gt;&gt;#ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{System.Tuple{`0,`1,`2}},System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -385,7 +384,7 @@
     </Member>
     <Member MemberName="TryReceive">
       <MemberSignature Language="C#" Value="public bool TryReceive (Predicate&lt;Tuple&lt;T1,T2,T3&gt;&gt; filter, out Tuple&lt;T1,T2,T3&gt; item);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryReceive(class System.Predicate`1&lt;class System.Tuple`3&lt;!T1, !T2, !T3&gt;&gt; filter, class System.Tuple`3&lt;!T1, !T2, !T3&gt; item) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryReceive(class System.Predicate`1&lt;class System.Tuple`3&lt;!T1, !T2, !T3&gt;&gt; filter, [out] class System.Tuple`3&lt;!T1, !T2, !T3&gt;&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.JoinBlock`3.TryReceive(System.Predicate{System.Tuple{`0,`1,`2}},System.Tuple{`0,`1,`2}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -421,7 +420,7 @@
     </Member>
     <Member MemberName="TryReceiveAll">
       <MemberSignature Language="C#" Value="public bool TryReceiveAll (out System.Collections.Generic.IList&lt;Tuple&lt;T1,T2,T3&gt;&gt; items);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryReceiveAll(class System.Collections.Generic.IList`1&lt;class System.Tuple`3&lt;!T1, !T2, !T3&gt;&gt; items) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryReceiveAll([out] class System.Collections.Generic.IList`1&lt;class System.Tuple`3&lt;!T1, !T2, !T3&gt;&gt;&amp; items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.JoinBlock`3.TryReceiveAll(System.Collections.Generic.IList{System.Tuple{`0,`1,`2}}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

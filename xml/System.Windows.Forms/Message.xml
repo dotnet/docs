@@ -23,7 +23,7 @@
    
   
 ## Examples  
- The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message>. The WM_ACTIVATEAPP operating system message is handled in this example to know when another application is becoming active. For information about the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=fullName> values, see the [MSG Structure](http://go.microsoft.com/fwlink/?LinkId=198816) documentation. For information about the actual constant values, see [Message Constants](http://go.microsoft.com/fwlink/?LinkId=198817).  
+ The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message>. The WM_ACTIVATEAPP operating system message is handled in this example to know when another application is becoming active. For information about the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=nameWithType> values, see the [MSG Structure](http://go.microsoft.com/fwlink/?LinkId=198816) documentation. For information about the actual constant values, see [Message Constants](http://go.microsoft.com/fwlink/?LinkId=198817).  
   
  [!code-cpp[System.Windows.Forms.Control.WndProc#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Control.WndProc/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.Control.WndProc#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Control.WndProc/CS/form1.cs#1)]
@@ -108,6 +108,7 @@
         <summary>Returns the hash code for this instance.</summary>
         <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ValueType.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="GetLParam">
@@ -201,7 +202,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message>. The WM_ACTIVATEAPP operating system message is handled in this example to know when another application is becoming active. For information about the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=fullName> values, see the [MSG Structure](http://go.microsoft.com/fwlink/?LinkId=198816) documentation. For information about the actual constant values, see [Message Constants](http://go.microsoft.com/fwlink/?LinkId=198817).  
+ The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message>. The WM_ACTIVATEAPP operating system message is handled in this example to know when another application is becoming active. For information about the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=nameWithType> values, see the [MSG Structure](http://go.microsoft.com/fwlink/?LinkId=198816) documentation. For information about the actual constant values, see [Message Constants](http://go.microsoft.com/fwlink/?LinkId=198817).  
   
  [!code-cpp[System.Windows.Forms.Control.WndProc#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Control.WndProc/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.Control.WndProc#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Control.WndProc/CS/form1.cs#1)]
@@ -234,7 +235,7 @@
         <returns>
           <see langword="true" /> if <paramref name="a" /> and <paramref name="b" /> represent the same <see cref="T:System.Windows.Forms.Message" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Forms.Message.Equals%2A?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Forms.Message.Equals%2A?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -261,7 +262,7 @@
         <returns>
           <see langword="true" /> if <paramref name="a" /> and <paramref name="b" /> do not represent the same <see cref="T:System.Windows.Forms.Message" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is the negation of <xref:System.Windows.Forms.Message.Equals%2A?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is the negation of <xref:System.Windows.Forms.Message.Equals%2A?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -326,7 +327,7 @@
    
   
 ## Examples  
- The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message>. The WM_ACTIVATEAPP operating system message is handled in this example to know when another application is becoming active. For information about the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=fullName> values, see the [MSG Structure](http://go.microsoft.com/fwlink/?LinkId=198816) documentation. For information about the actual constant values, see [Message Constants](http://go.microsoft.com/fwlink/?LinkId=198817).  
+ The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message>. The WM_ACTIVATEAPP operating system message is handled in this example to know when another application is becoming active. For information about the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=nameWithType> values, see the [MSG Structure](http://go.microsoft.com/fwlink/?LinkId=198816) documentation. For information about the actual constant values, see [Message Constants](http://go.microsoft.com/fwlink/?LinkId=198817).  
   
  [!code-cpp[System.Windows.Forms.Control.WndProc#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Control.WndProc/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.Control.WndProc#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Control.WndProc/CS/form1.cs#1)]

@@ -1324,7 +1324,7 @@
 ## Remarks  
   
 > [!WARNING]
->  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
   
 <a name="dependencyPropertyInfo_ToolTipDescription"></a>   
 ## Dependency Property Information  
@@ -1336,6 +1336,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Ribbon.RibbonToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipDescriptionProperty">
@@ -1376,7 +1377,7 @@
 ## Remarks  
   
 > [!WARNING]
->  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
   
 <a name="dependencyPropertyInfo_ToolTipFooterDescription"></a>   
 ## Dependency Property Information  
@@ -1388,6 +1389,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Ribbon.RibbonToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipFooterDescriptionProperty">
@@ -1428,7 +1430,7 @@
 ## Remarks  
   
 > [!WARNING]
->  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
   
 <a name="dependencyPropertyInfo_ToolTipFooterImageSource"></a>   
 ## Dependency Property Information  
@@ -1440,6 +1442,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Ribbon.RibbonToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipFooterImageSourceProperty">
@@ -1480,7 +1483,7 @@
 ## Remarks  
   
 > [!WARNING]
->  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
   
 <a name="dependencyPropertyInfo_ToolTipFooterTitle"></a>   
 ## Dependency Property Information  
@@ -1492,6 +1495,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Ribbon.RibbonToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipFooterTitleProperty">
@@ -1532,7 +1536,7 @@
 ## Remarks  
   
 > [!WARNING]
->  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
   
 <a name="dependencyPropertyInfo_ToolTipImageSource"></a>   
 ## Dependency Property Information  
@@ -1544,6 +1548,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Ribbon.RibbonToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipImageSourceProperty">
@@ -1584,7 +1589,7 @@
 ## Remarks  
   
 > [!WARNING]
->  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
   
 <a name="dependencyPropertyInfo_ToolTipTitle"></a>   
 ## Dependency Property Information  
@@ -1596,6 +1601,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Ribbon.RibbonToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipTitleProperty">

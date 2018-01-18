@@ -9,9 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "WCF, guidelines"
   - "best practices [WCF], application design"
@@ -20,9 +17,11 @@ helpviewer_keywords:
   - "Windows Communication Foundation, guidelines"
 ms.assetid: 5098ba46-6e8d-4e02-b0c5-d737f9fdad84
 caps.latest.revision: 18
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Guidelines and Best Practices
 This section contains topics that provide guidelines for creating [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applications.  
@@ -54,7 +53,7 @@ This section contains topics that provide guidelines for creating [!INCLUDE[indi
  [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)  
   
 ## See Also  
- [What Is Windows Communication Foundation](../../../docs/framework/wcf/whats-wcf.md)   
- [Windows Communication Foundation Samples](http://msdn.microsoft.com/en-us/8ec9d192-5d81-4f64-bfd3-90c5e5858c91)   
- [Conceptual Overview](../../../docs/framework/wcf/conceptual-overview.md)   
+ [What Is Windows Communication Foundation](../../../docs/framework/wcf/whats-wcf.md)  
+ [Windows Communication Foundation Samples](http://msdn.microsoft.com/en-us/8ec9d192-5d81-4f64-bfd3-90c5e5858c91)  
+ [Conceptual Overview](../../../docs/framework/wcf/conceptual-overview.md)  
  [Building Clients](../../../docs/framework/wcf/building-clients.md)

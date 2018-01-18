@@ -19,10 +19,13 @@
  The <xref:System.Web.UI.WebControls.FontUnitConverter> class is used to convert data to and from <xref:System.Web.UI.WebControls.FontUnit> and string types.  
   
 > [!CAUTION]
->  You should never access a type converter directly. Instead, call the appropriate converter by using <xref:System.ComponentModel.TypeDescriptor?displayProperty=fullName>. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter?displayProperty=fullName> base class.  
+>  You should never access a type converter directly. Instead, call the appropriate converter by using <xref:System.ComponentModel.TypeDescriptor?displayProperty=nameWithType>. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter?displayProperty=nameWithType> base class.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Unit" />
+    <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+    <altmember cref="T:System.ComponentModel.TypeConverter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -82,6 +85,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.TypeConverter.CanConvertFrom(System.Type)" />
+        <altmember cref="T:System.Web.UI.WebControls.FontUnit" />
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="CanConvertTo">
@@ -144,13 +151,19 @@
  Use the <xref:System.Web.UI.WebControls.FontUnitConverter.ConvertFrom%2A> method to convert the object specified by the `value` parameter to a <xref:System.Web.UI.WebControls.FontUnit> in the culture specified by the `culture` parameter.  
   
 > [!NOTE]
->  If the specified object is `null`, the returned value is also `null`. Similarly, if the specified object is <xref:System.String.Empty?displayProperty=fullName>, <xref:System.Web.UI.WebControls.FontUnit.Empty> is returned.  
+>  If the specified object is `null`, the returned value is also `null`. Similarly, if the specified object is <xref:System.String.Empty?displayProperty=nameWithType>, <xref:System.Web.UI.WebControls.FontUnit.Empty> is returned.  
   
 > [!NOTE]
 >  This method can only convert a string to a  <xref:System.Web.UI.WebControls.FontUnit>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.TypeConverter.ConvertFrom(System.Object)" />
+        <altmember cref="T:System.Web.UI.WebControls.FontUnit" />
+        <altmember cref="F:System.String.Empty" />
+        <altmember cref="F:System.Web.UI.WebControls.FontUnit.Empty" />
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -185,13 +198,21 @@
  Use the <xref:System.Web.UI.WebControls.FontUnitConverter.ConvertTo%2A> method to convert the <xref:System.Web.UI.WebControls.FontUnit> specified by the `value` parameter to an object with the data type specified by the `destinationType` parameter.  
   
 > [!NOTE]
->  <xref:System.String.Empty?displayProperty=fullName> is returned from this method if the `value` parameter contains `null`. <xref:System.String.Empty?displayProperty=fullName> is also returned if the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property of the <xref:System.Web.UI.WebControls.FontUnit> specified by the `value` parameter contains the value `FontSize.NotSet`.  
+>  <xref:System.String.Empty?displayProperty=nameWithType> is returned from this method if the `value` parameter contains `null`. <xref:System.String.Empty?displayProperty=nameWithType> is also returned if the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property of the <xref:System.Web.UI.WebControls.FontUnit> specified by the `value` parameter contains the value `FontSize.NotSet`.  
   
 > [!NOTE]
 >  This method can only convert a <xref:System.Web.UI.WebControls.FontUnit> to a string.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.TypeConverter.ConvertTo(System.Object,System.Type)" />
+        <altmember cref="T:System.Web.UI.WebControls.FontUnit" />
+        <altmember cref="P:System.Web.UI.WebControls.FontUnit.Type" />
+        <altmember cref="F:System.String.Empty" />
+        <altmember cref="T:System.Web.UI.WebControls.FontSize" />
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValues">
@@ -217,10 +238,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnitConverter.GetStandardValues%2A> method to retrieve a <xref:System.ComponentModel.TypeConverter.StandardValuesCollection?displayProperty=fullName> containing the standard values for a <xref:System.Web.UI.WebControls.FontUnit>. This collection contains all the fields in the <xref:System.Web.UI.WebControls.FontUnit> class.  
+ Use the <xref:System.Web.UI.WebControls.FontUnitConverter.GetStandardValues%2A> method to retrieve a <xref:System.ComponentModel.TypeConverter.StandardValuesCollection?displayProperty=nameWithType> containing the standard values for a <xref:System.Web.UI.WebControls.FontUnit>. This collection contains all the fields in the <xref:System.Web.UI.WebControls.FontUnit> class.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.TypeConverter.GetStandardValues" />
+        <altmember cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" />
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesExclusive">
@@ -247,10 +271,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnitConverter.GetStandardValuesExclusive%2A> method to determine whether the <xref:System.ComponentModel.TypeConverter.StandardValuesCollection?displayProperty=fullName> returned by the <xref:System.Web.UI.WebControls.FontUnitConverter.GetStandardValues%2A> method is an exclusive list of values. This method is overridden to always return `false` to indicate that the list of values is not an exclusive list.  
+ Use the <xref:System.Web.UI.WebControls.FontUnitConverter.GetStandardValuesExclusive%2A> method to determine whether the <xref:System.ComponentModel.TypeConverter.StandardValuesCollection?displayProperty=nameWithType> returned by the <xref:System.Web.UI.WebControls.FontUnitConverter.GetStandardValues%2A> method is an exclusive list of values. This method is overridden to always return `false` to indicate that the list of values is not an exclusive list.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.TypeConverter.GetStandardValuesExclusive" />
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesSupported">
@@ -281,6 +307,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.TypeConverter.GetStandardValuesSupported" />
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
   </Members>

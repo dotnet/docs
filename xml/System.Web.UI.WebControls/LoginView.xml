@@ -128,11 +128,12 @@
 ## Examples  
  The following code example shows how to set templates for each of the three template types supported by the <xref:System.Web.UI.WebControls.LoginView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[LoginViewClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginViewClass/CS/loginviewclasscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[LoginViewClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginViewClass/VB/loginviewclassvb.aspx#1)]  -->  
+ [!code-aspx-csharp[LoginViewClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginViewClass/CS/loginviewclasscs.aspx#1)]
+ [!code-aspx-vb[LoginViewClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginViewClass/VB/loginviewclassvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Security.Roles" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -192,8 +193,8 @@
 ## Examples  
  The following code example uses the template specified in the <xref:System.Web.UI.WebControls.LoginView.AnonymousTemplate%2A> template to display an invitation to sign up for personalized services.  
   
- <!-- TODO: review snippet reference [!code-csharp[LoginViewAnonymousTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginViewAnonymousTemplate/CS/loginviewanonymoustemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[LoginViewAnonymousTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginViewAnonymousTemplate/VB/loginviewanonymoustemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[LoginViewAnonymousTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginViewAnonymousTemplate/CS/loginviewanonymoustemplatecs.aspx#1)]
+ [!code-aspx-vb[LoginViewAnonymousTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginViewAnonymousTemplate/VB/loginviewanonymoustemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -298,6 +299,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LoginView.SkinID" />
       </Docs>
     </Member>
     <Member MemberName="Focus">
@@ -398,11 +400,12 @@
 ## Examples  
  The following code example uses the <xref:System.Web.UI.WebControls.LoginView.LoggedInTemplate%2A> template to display links to personalized information for logged-in users.  
   
- <!-- TODO: review snippet reference [!code-csharp[LoginViewAnonymousTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginViewAnonymousTemplate/CS/loginviewanonymoustemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[LoginViewAnonymousTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginViewAnonymousTemplate/VB/loginviewanonymoustemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[LoginViewAnonymousTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginViewAnonymousTemplate/CS/loginviewanonymoustemplatecs.aspx#1)]
+ [!code-aspx-vb[LoginViewAnonymousTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginViewAnonymousTemplate/VB/loginviewanonymoustemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Security.Roles" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -510,6 +513,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.LoginView.OnViewChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Web.UI.WebControls.LoginView.OnViewChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.LoginView.ViewChanged" />
+        <altmember cref="M:System.Web.UI.WebControls.LoginView.OnViewChanging(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnViewChanging">
@@ -547,6 +552,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.LoginView.OnViewChanging(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Web.UI.WebControls.LoginView.OnViewChanging(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.LoginView.ViewChanging" />
+        <altmember cref="M:System.Web.UI.WebControls.LoginView.OnViewChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -571,12 +578,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.LoginView.Render%2A> method is used to render the server control content to the client's browser using the specified <xref:System.Web.UI.HtmlTextWriter?displayProperty=fullName> object.  
+ The <xref:System.Web.UI.WebControls.LoginView.Render%2A> method is used to render the server control content to the client's browser using the specified <xref:System.Web.UI.HtmlTextWriter?displayProperty=nameWithType> object.  
   
  **Note** This method is used primarily by control developers to extend the <xref:System.Web.UI.WebControls.LoginView> control.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RoleGroups">
@@ -625,11 +633,12 @@
 ## Examples  
  The following code example demonstrates using the <xref:System.Web.UI.WebControls.LoginView.RoleGroups%2A> collection. Because the <xref:System.Web.UI.WebControls.LoginView.AnonymousTemplate%2A> and <xref:System.Web.UI.WebControls.LoginView.LoggedInTemplate%2A> properties are not set, the content is displayed only to users who belong to roles with a defined content template.  
   
- <!-- TODO: review snippet reference [!code-csharp[LoginViewRoleGroups#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginViewRoleGroups/CS/loginviewrolegroupscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[LoginViewRoleGroups#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginViewRoleGroups/VB/loginviewrolegroupsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[LoginViewRoleGroups#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginViewRoleGroups/CS/loginviewrolegroupscs.aspx#1)]
+ [!code-aspx-vb[LoginViewRoleGroups#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginViewRoleGroups/VB/loginviewrolegroupsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Security.Roles" />
       </Docs>
     </Member>
     <Member MemberName="SaveControlState">
@@ -649,6 +658,7 @@
         <summary>Saves any server control state changes that have occurred since the time the page was posted back to the server.</summary>
         <returns>Returns the server control's current state. If there is no state associated with the control, this method returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.SaveControlState" />
       </Docs>
     </Member>
     <Member MemberName="SetDesignModeState">
@@ -670,6 +680,7 @@
         <param name="data">An <see cref="T:System.Collections.IDictionary" /> containing the design-time data for the control.</param>
         <summary>Sets design-time data for a control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.SetDesignModeState(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="SkinID">
@@ -705,6 +716,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The skin specified in the <see cref="P:System.Web.UI.WebControls.LoginView.SkinID" /> property does not exist in the theme.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.LoginView.EnableTheming" />
       </Docs>
     </Member>
     <Member MemberName="ViewChanged">
@@ -736,6 +748,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.LoginView.OnViewChanged(System.EventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.LoginView.ViewChanging" />
       </Docs>
     </Member>
     <Member MemberName="ViewChanging">
@@ -767,6 +781,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.LoginView.OnViewChanging(System.EventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.LoginView.ViewChanged" />
       </Docs>
     </Member>
   </Members>

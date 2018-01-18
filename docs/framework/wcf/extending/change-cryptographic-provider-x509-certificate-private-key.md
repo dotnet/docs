@@ -9,14 +9,19 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "cryptographic provider [WCF], changing"
   - "cryptographic provider [WCF]"
 ms.assetid: b4254406-272e-4774-bd61-27e39bbb6c12
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Change the Cryptographic Provider for an X.509 Certificate&#39;s Private Key
 This topic shows how to change the cryptographic provider used to provide an X.509 certificate's private key and how to integrate the provider into the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] security framework. For more information about using certificates, see [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md).  
@@ -80,14 +85,14 @@ This topic shows how to change the cryptographic provider used to provide an X.5
      [!code-vb[c_CustomX509Token#7](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customx509token/vb/source.vb#7)]  
   
 ## See Also  
- <xref:System.IdentityModel.Tokens.X509AsymmetricSecurityKey>   
- <xref:System.IdentityModel.Tokens.AsymmetricSecurityKey>   
- <xref:System.IdentityModel.Tokens.SecurityKey>   
- <xref:System.Security.Cryptography.AsymmetricAlgorithm>   
- <xref:System.Security.Cryptography.HashAlgorithm>   
- <xref:System.Security.Cryptography.AsymmetricSignatureFormatter>   
- [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)   
- [How to: Create a Custom Security Token Authenticator](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md)   
- [How to: Create a Custom Security Token Provider](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md)   
- [How to: Create a Custom Token](../../../../docs/framework/wcf/extending/how-to-create-a-custom-token.md)   
+ <xref:System.IdentityModel.Tokens.X509AsymmetricSecurityKey>  
+ <xref:System.IdentityModel.Tokens.AsymmetricSecurityKey>  
+ <xref:System.IdentityModel.Tokens.SecurityKey>  
+ <xref:System.Security.Cryptography.AsymmetricAlgorithm>  
+ <xref:System.Security.Cryptography.HashAlgorithm>  
+ <xref:System.Security.Cryptography.AsymmetricSignatureFormatter>  
+ [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)  
+ [How to: Create a Custom Security Token Authenticator](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md)  
+ [How to: Create a Custom Security Token Provider](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md)  
+ [How to: Create a Custom Token](../../../../docs/framework/wcf/extending/how-to-create-a-custom-token.md)  
  [Security Architecture](http://msdn.microsoft.com/en-us/16593476-d36a-408d-808c-ae6fd483e28f)

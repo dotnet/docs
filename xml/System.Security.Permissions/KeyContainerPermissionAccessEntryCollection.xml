@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.ICollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -176,6 +177,7 @@
  -or-  
   
  The number of elements in the collection is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -206,6 +208,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntry" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -246,6 +251,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -307,10 +313,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property implements the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=fullName> property and always returns `false`.  
+ This property implements the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=nameWithType> property and always returns `false`.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -349,6 +357,7 @@
           <paramref name="index" /> is greater than or equal to the collection count.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="index" /> is negative.</exception>
+        <altmember cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntry" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -412,10 +421,12 @@
 ## Remarks  
  The object returned in this implementation is the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection> object itself.  
   
- For more information on the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A>property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information on the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">

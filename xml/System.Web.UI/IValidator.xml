@@ -26,11 +26,20 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[IValidator_IsValid_Resubmit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/IValidator_IsValid_ReSubmit/CS/ivalidator_isvalid.cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[IValidator_IsValid_Resubmit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/IValidator_IsValid_ReSubmit/VB/ivalidator_isvalid.vb.aspx#1)]  -->  
+ [!code-aspx-csharp[IValidator_IsValid_Resubmit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/IValidator_IsValid_ReSubmit/CS/ivalidator_isvalid.cs.aspx#1)]
+ [!code-aspx-vb[IValidator_IsValid_Resubmit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/IValidator_IsValid_ReSubmit/VB/ivalidator_isvalid.vb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.ValidatorCollection" />
+    <altmember cref="P:System.Web.UI.Page.Validators" />
+    <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+    <altmember cref="T:System.Web.UI.WebControls.BaseCompareValidator" />
+    <altmember cref="T:System.Web.UI.WebControls.CompareValidator" />
+    <altmember cref="T:System.Web.UI.WebControls.CustomValidator" />
+    <altmember cref="T:System.Web.UI.WebControls.RangeValidator" />
+    <altmember cref="T:System.Web.UI.WebControls.RegularExpressionValidator" />
+    <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
   </Docs>
   <Members>
     <Member MemberName="ErrorMessage">
@@ -61,11 +70,12 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[IValidator_IsValid_Resubmit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/IValidator_IsValid_ReSubmit/CS/ivalidator_isvalid.cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[IValidator_IsValid_Resubmit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/IValidator_IsValid_ReSubmit/VB/ivalidator_isvalid.vb.aspx#1)]  -->  
+ [!code-aspx-csharp[IValidator_IsValid_Resubmit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/IValidator_IsValid_ReSubmit/CS/ivalidator_isvalid.cs.aspx#1)]
+ [!code-aspx-vb[IValidator_IsValid_Resubmit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/IValidator_IsValid_ReSubmit/VB/ivalidator_isvalid.vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
       </Docs>
     </Member>
     <Member MemberName="IsValid">
@@ -92,11 +102,12 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[IValidator_IsValid_Resubmit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/IValidator_IsValid_ReSubmit/CS/ivalidator_isvalid.cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[IValidator_IsValid_Resubmit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/IValidator_IsValid_ReSubmit/VB/ivalidator_isvalid.vb.aspx#1)]  -->  
+ [!code-aspx-csharp[IValidator_IsValid_Resubmit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/IValidator_IsValid_ReSubmit/CS/ivalidator_isvalid.cs.aspx#1)]
+ [!code-aspx-vb[IValidator_IsValid_Resubmit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/IValidator_IsValid_ReSubmit/VB/ivalidator_isvalid.vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -122,11 +133,12 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[IValidator_IsValid_Resubmit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/IValidator_IsValid_ReSubmit/CS/ivalidator_isvalid.cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[IValidator_IsValid_Resubmit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/IValidator_IsValid_ReSubmit/VB/ivalidator_isvalid.vb.aspx#1)]  -->  
+ [!code-aspx-csharp[IValidator_IsValid_Resubmit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/IValidator_IsValid_ReSubmit/CS/ivalidator_isvalid.cs.aspx#1)]
+ [!code-aspx-vb[IValidator_IsValid_Resubmit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/IValidator_IsValid_ReSubmit/VB/ivalidator_isvalid.vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
       </Docs>
     </Member>
   </Members>

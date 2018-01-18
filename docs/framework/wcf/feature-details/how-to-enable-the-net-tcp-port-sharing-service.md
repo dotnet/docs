@@ -14,9 +14,11 @@ helpviewer_keywords:
   - "activation services [WCF]"
 ms.assetid: c9175af4-c27c-4765-bf45-b8f7528a7282
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Enable the Net.TCP Port Sharing Service
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] uses a Windows service called the Net.TCP Port Sharing Service to facilitate the sharing of TCP ports across multiple processes. This service is installed as part of [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], but the service is not enabled by default as a security precaution and so must be manually enabled prior to first use. This topic describes how to configure the Net TCP Port Sharing Service using the Microsoft Management Console (MMC) snap-In.  
@@ -40,5 +42,5 @@ manager: "erikre"
 ## Example  
   
 ## See Also  
- [Net.TCP Port Sharing](../../../../docs/framework/wcf/feature-details/net-tcp-port-sharing.md)   
+ [Net.TCP Port Sharing](../../../../docs/framework/wcf/feature-details/net-tcp-port-sharing.md)  
  [Configuring the Net.TCP Port Sharing Service](../../../../docs/framework/wcf/feature-details/configuring-the-net-tcp-port-sharing-service.md)

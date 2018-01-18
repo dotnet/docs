@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b0d03456-546f-44bb-ab12-1b2ce7f98fca
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;policyImporter&gt;
 Specifies a policy importer that controls the import of custom policy assertions about bindings.  
@@ -56,9 +58,9 @@ Specifies a policy importer that controls the import of custom policy assertions
  A policy importer is used to search custom policy assertions about binding features, as well as attach a custom binding element that implements the features the assertion requires.  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.PolicyImporterElementCollection>   
- <xref:System.ServiceModel.Configuration.PolicyImporterElement>   
- <xref:System.ServiceModel.Configuration.MetadataElement>   
- <xref:System.ServiceModel.Description.MetadataImporter>   
- [WCF Client Configuration](../../../../../docs/framework/wcf/feature-details/client-configuration.md)   
+ <xref:System.ServiceModel.Configuration.PolicyImporterElementCollection>  
+ <xref:System.ServiceModel.Configuration.PolicyImporterElement>  
+ <xref:System.ServiceModel.Configuration.MetadataElement>  
+ <xref:System.ServiceModel.Description.MetadataImporter>  
+ [WCF Client Configuration](../../../../../docs/framework/wcf/feature-details/client-configuration.md)  
  [Clients](../../../../../docs/framework/wcf/feature-details/clients.md)

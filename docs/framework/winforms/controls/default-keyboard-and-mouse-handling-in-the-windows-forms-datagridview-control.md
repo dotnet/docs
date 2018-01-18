@@ -9,21 +9,21 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "data grids, mouse handling"
+  - "data grids [Windows Forms], mouse handling"
   - "DataGridView control [Windows Forms], navigation keys"
-  - "keyboards, default handling in DataGridView control"
+  - "keyboards [Windows Forms], default handling in DataGridView control"
   - "DataGridView control [Windows Forms], keyboard handling"
-  - "mouse, default handling in DataGridView control"
+  - "mouse [Windows Forms], default handling in DataGridView control"
   - "DataGridView control [Windows Forms], mouse handling"
-  - "navigation keys, DataGridView control"
+  - "navigation keys [Windows Forms], DataGridView control"
 ms.assetid: 4519b928-bfc8-4e8b-bb9c-b1e76a0ca552
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Default Keyboard and Mouse Handling in the Windows Forms DataGridView Control
 The following tables describe how users can interact with the <xref:System.Windows.Forms.DataGridView> control through a keyboard and a mouse.  
@@ -62,7 +62,7 @@ The following tables describe how users can interact with the <xref:System.Windo
 |BACKSPACE|Deletes the character before the insertion point when editing a cell.|  
 |DELETE|Deletes the character after the insertion point when editing a cell.|  
 |CTRL+ENTER|Commits any changes to the current cell without moving the focus. Also commits any changes to the current row if the control is bound to a data source that supports editing or virtual mode has been implemented with row-level commit scope.|  
-|CTRL+0|Enters a <xref:System.DBNull.Value?displayProperty=fullName> value into the current cell if the cell can be edited. By default, the display value for a <xref:System.DBNull> cell value is the value of the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property of the <xref:System.Windows.Forms.DataGridViewCellStyle> in effect for the current cell.|  
+|CTRL+0|Enters a <xref:System.DBNull.Value?displayProperty=nameWithType> value into the current cell if the cell can be edited. By default, the display value for a <xref:System.DBNull> cell value is the value of the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property of the <xref:System.Windows.Forms.DataGridViewCellStyle> in effect for the current cell.|  
   
 ### Selection Keys  
  If the <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> property is set to `false` and the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> property is set to <xref:System.Windows.Forms.DataGridViewSelectionMode.CellSelect>, changing the current cell by using the navigation keys changes the selection to the new cell. The SHIFT, CTRL, and ALT keys do not affect this behavior.  
@@ -89,10 +89,10 @@ The following tables describe how users can interact with the <xref:System.Windo
   
 |Mouse action|Description|  
 |------------------|-----------------|  
-|Left mouse button down|Makes the clicked cell the current cell, and raises the <xref:System.Windows.Forms.DataGridView.CellMouseDown?displayProperty=fullName> event.|  
-|Left mouse button up|Raises the <xref:System.Windows.Forms.DataGridView.CellMouseUp?displayProperty=fullName> event|  
-|Left mouse button click|Raises the <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=fullName> and <xref:System.Windows.Forms.DataGridView.CellMouseClick?displayProperty=fullName> events|  
-|Left mouse button down, and drag on a column header cell|If the <xref:System.Windows.Forms.DataGridView.AllowUserToOrderColumns%2A?displayProperty=fullName> property is `true`, moves the column so that it can be dropped into a new position.|  
+|Left mouse button down|Makes the clicked cell the current cell, and raises the <xref:System.Windows.Forms.DataGridView.CellMouseDown?displayProperty=nameWithType> event.|  
+|Left mouse button up|Raises the <xref:System.Windows.Forms.DataGridView.CellMouseUp?displayProperty=nameWithType> event|  
+|Left mouse button click|Raises the <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataGridView.CellMouseClick?displayProperty=nameWithType> events|  
+|Left mouse button down, and drag on a column header cell|If the <xref:System.Windows.Forms.DataGridView.AllowUserToOrderColumns%2A?displayProperty=nameWithType> property is `true`, moves the column so that it can be dropped into a new position.|  
   
 ### Mouse Selection  
  No selection behavior is associated with the middle mouse button or the mouse wheel.  
@@ -119,5 +119,5 @@ The following tables describe how users can interact with the <xref:System.Windo
  If <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> is set to `true` and <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> is set to <xref:System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect> or <xref:System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect>, clicking a cell while pressing SHIFT or CTRL behaves the same way except that only full rows and columns are affected.  
   
 ## See Also  
- <xref:System.Windows.Forms.DataGridView>   
+ <xref:System.Windows.Forms.DataGridView>  
  [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)

@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "asynchronous thread aborts"
   - "AsynchronousThreadAbort MDA"
@@ -25,6 +20,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # asynchronousThreadAbort MDA
 The `asynchronousThreadAbort` managed debugging assistant (MDA) is activated when a thread attempts to introduce an asynchronous abort into another thread. Synchronous thread aborts do not activate the `asynchronousThreadAbort` MDA.
@@ -37,7 +34,7 @@ The `asynchronousThreadAbort` managed debugging assistant (MDA) is activated whe
  Symptoms can vary widely due to the randomness inherent to the problem.
 
 ## Cause
- Code in one thread called the <xref:System.Threading.Thread.Abort%2A?displayProperty=fullName> method on a target thread to introduce an asynchronous thread abort. The thread abort is asynchronous because the code that makes the call to <xref:System.Threading.Thread.Abort%2A> is running on a different thread than the target of the abort operation. Synchronous thread aborts should not cause a problem because the thread performing the <xref:System.Threading.Thread.Abort%2A> should have done so only at a safe checkpoint where application state is consistent.
+ Code in one thread called the <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method on a target thread to introduce an asynchronous thread abort. The thread abort is asynchronous because the code that makes the call to <xref:System.Threading.Thread.Abort%2A> is running on a different thread than the target of the abort operation. Synchronous thread aborts should not cause a problem because the thread performing the <xref:System.Threading.Thread.Abort%2A> should have done so only at a safe checkpoint where application state is consistent.
 
  Asynchronous thread aborts present a problem because they are processed at unpredictable points in the target thread's execution. To avoid this, code written to run on a thread that might be aborted in this manner would need to handle a <xref:System.Threading.ThreadAbortException> at almost every line of code, taking care to put application data back into a consistent state. It is not realistic to expect code to be written with this problem in mind or to write code that protects against all possible circumstances.
 

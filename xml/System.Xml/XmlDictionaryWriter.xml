@@ -2382,5 +2382,95 @@ binarywriter.WriteEndAttribute();
           <paramref name="namespaceUri" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteElementString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes an element with a text content.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteStartElement">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, writes the specified start tag.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteArray">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes repeated occurrences of a data type from a typed array.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteAttributeString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes an attribute qualified name and value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a single simple-typed value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteXmlnsAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a namespace declaration attribute.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateTextWriter">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes text XML.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteStartAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, writes the start of an attribute.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteNode">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the current XML node from a given <see cref="T:System.Xml.XmlDictionaryReader" /> or <see langword="XmlReader" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

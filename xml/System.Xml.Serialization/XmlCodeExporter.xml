@@ -29,6 +29,10 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Xml.Serialization.CodeGenerationOptions" />
+    <altmember cref="T:System.Xml.Serialization.XmlSchemaImporter" />
+    <altmember cref="T:System.Xml.Serialization.SoapCodeExporter" />
+    <altmember cref="T:System.Web.Services.Description.ServiceDescriptionImporter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -326,5 +330,23 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddMappingMetadata">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an <see cref="T:System.Xml.Serialization.XmlElementAttribute" /> declaration to a method parameter or return value that corresponds to a <see langword="&amp;lt;part&amp;gt;" /> element of a SOAP message definition in a Web Services Description Language (WSDL) document.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlCodeExporter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

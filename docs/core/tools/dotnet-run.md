@@ -3,10 +3,12 @@ title: dotnet run command - .NET Core CLI
 description: The dotnet run command provides a convenient option to run your application from the source code.
 author: mairaw
 ms.author: mairaw
-ms.date: 08/14/2017
+ms.date: 09/24/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
+ms.workload: 
+  - dotnetcore
 ---
 # dotnet run
 
@@ -68,6 +70,10 @@ Defines the build configuration. The default value is `Debug`.
 
 Builds and runs the app using the specified [framework](../../standard/frameworks.md). The framework must be specified in the project file.
 
+`--force`
+
+Forces all dependencies to be resolved even if the last restore was successful. This is equivalent to deleting *project.assets.json*.
+
 `-h|--help`
 
 Prints out a short help for the command.
@@ -75,11 +81,15 @@ Prints out a short help for the command.
 `--launch-profile <NAME>`
 
 The name of the launch profile (if any) to use when launching the application. Launch profiles are defined in the *launchSettings.json* file and are typically called `Development`,
-`Staging` and `Production`. For more information, see [Working with multiple environments](/aspnetcore/fundamentals/environments).
+`Staging` and `Production`. For more information, see [Working with multiple environments](/aspnet/core/fundamentals/environments).
 
 `--no-build`
 
 Doesn't build the project before running.
+
+`--no-dependencies`
+
+When restoring a project with project-to-project (P2P) references, restores the root project and not the references.
 
 `--no-launch-profile`
 

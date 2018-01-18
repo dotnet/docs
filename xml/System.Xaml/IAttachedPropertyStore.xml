@@ -17,6 +17,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xaml.AttachableMemberIdentifier" />
+    <altmember cref="T:System.Xaml.AttachablePropertyServices" />
   </Docs>
   <Members>
     <Member MemberName="CopyPropertiesTo">
@@ -111,11 +113,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xaml.AttachableMemberIdentifier" />
       </Docs>
     </Member>
     <Member MemberName="TryGetProperty">
       <MemberSignature Language="C#" Value="public bool TryGetProperty (System.Xaml.AttachableMemberIdentifier attachableMemberIdentifier, out object value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetProperty(class System.Xaml.AttachableMemberIdentifier attachableMemberIdentifier, object value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetProperty(class System.Xaml.AttachableMemberIdentifier attachableMemberIdentifier, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.IAttachedPropertyStore.TryGetProperty(System.Xaml.AttachableMemberIdentifier,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

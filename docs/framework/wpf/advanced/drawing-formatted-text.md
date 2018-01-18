@@ -9,16 +9,21 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "text [WPF]"
-  - "typography, drawing formatted text"
+  - "typography [WPF], drawing formatted text"
   - "formatted text [WPF]"
-  - "drawing, formatted text"
+  - "drawing [WPF], formatted text"
 ms.assetid: b1d851c1-331c-4814-9964-6fe769db6f1f
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Drawing Formatted Text
 This topic provides an overview of the features of the <xref:System.Windows.Media.FormattedText> object. This object provides low-level control for drawing text in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications.  
@@ -127,8 +132,8 @@ Video displaying in the path geometry of text
 |DT_WORD_ELLIPSIS|<xref:System.Windows.Media.FormattedText.Trimming%2A>|Use the <xref:System.Windows.Media.FormattedText.Trimming%2A> property with the value <xref:System.Windows.TextTrimming.WordEllipsis>.|  
   
 ## See Also  
- <xref:System.Windows.Media.FormattedText>   
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)   
- [Typography in WPF](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)   
- [Create Outlined Text](../../../../docs/framework/wpf/advanced/how-to-create-outlined-text.md)   
+ <xref:System.Windows.Media.FormattedText>  
+ [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
+ [Typography in WPF](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)  
+ [Create Outlined Text](../../../../docs/framework/wpf/advanced/how-to-create-outlined-text.md)  
  [How to: Create a PathGeometry Animation for Text](http://msdn.microsoft.com/en-us/29f8051e-798a-463f-a926-a099a99e9c67)

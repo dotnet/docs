@@ -39,11 +39,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputButton> control to create a command button, a Submit button, and a Reset button.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.HtmlControls.HtmlInputButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputButton/cs/htmlinputbuttoncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.HtmlControls.HtmlInputButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputButton/vb/htmlinputbuttonvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.HtmlControls.HtmlInputButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputButton/cs/htmlinputbuttoncs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.HtmlControls.HtmlInputButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInputButton/vb/htmlinputbuttonvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputControl" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlButton" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -73,8 +75,8 @@
 ## Examples  
  The following code example demonstrates how to create a new instance of an <xref:System.Web.UI.HtmlControls.HtmlInputButton> control using the default constructor.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputButtonCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputButtonCtor/CS/htmlinputbuttonctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputButtonCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputButtonCtor/VB/htmlinputbuttonctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputButtonCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputButtonCtor/CS/htmlinputbuttonctorcs.aspx#1)]
+ [!code-aspx-vb[HtmlInputButtonCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputButtonCtor/VB/htmlinputbuttonctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -118,8 +120,8 @@
 ## Examples  
  The following code example demonstrates how to create a new instance of the <xref:System.Web.UI.HtmlControls.HtmlInputButton> control using the overloaded constructor.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputButtonCtor2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputButtonCtor2/CS/htmlinputbuttonctor2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputButtonCtor2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputButtonCtor2/VB/htmlinputbuttonctor2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputButtonCtor2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputButtonCtor2/CS/htmlinputbuttonctor2cs.aspx#1)]
+ [!code-aspx-vb[HtmlInputButtonCtor2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputButtonCtor2/VB/htmlinputbuttonctor2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -161,11 +163,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputButton.CausesValidation%2A> property to prevent page validation from occurring. Notice how the <xref:System.Web.UI.WebControls.BaseValidator.Validate%2A> method activates each validation control independently.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputButtonCausesValidation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputButtonCausesValidation/CS/htmlinputbuttoncausesvalidationcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputButtonCausesValidation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputButtonCausesValidation/VB/htmlinputbuttoncausesvalidationvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputButtonCausesValidation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputButtonCausesValidation/CS/htmlinputbuttoncausesvalidationcs.aspx#1)]
+ [!code-aspx-vb[HtmlInputButtonCausesValidation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputButtonCausesValidation/VB/htmlinputbuttoncausesvalidationvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Page.Validate" />
+        <altmember cref="E:System.Web.UI.HtmlControls.HtmlInputButton.ServerClick" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -190,15 +194,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.HtmlControls.HtmlInputButton.OnPreRender%2A> method overrides the <xref:System.Web.UI.Control.OnPreRender%2A?displayProperty=fullName> method. <xref:System.Web.UI.HtmlControls.HtmlInputButton.OnPreRender%2A> is used primarily by control developers.  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputButton.OnPreRender%2A> method overrides the <xref:System.Web.UI.Control.OnPreRender%2A?displayProperty=nameWithType> method. <xref:System.Web.UI.HtmlControls.HtmlInputButton.OnPreRender%2A> is used primarily by control developers.  
   
    
   
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlInputButton.OnPreRender%2A> method so that it always displays a custom <xref:System.Web.UI.HtmlControls.HtmlInputButton> control with bold text.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHtmlInputButtonOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputButtonOnPreRender/CS/custom_htmlinputbutton_onprerendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHtmlInputButtonOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputButtonOnPreRender/VB/custom_htmlinputbutton_onprerendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHtmlInputButtonOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputButtonOnPreRender/CS/custom_htmlinputbutton_onprerendercs.aspx#1)]
+ [!code-aspx-vb[CustomHtmlInputButtonOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputButtonOnPreRender/VB/custom_htmlinputbutton_onprerendervb.aspx#1)]  
   
  [!code-csharp[CustomHtmlInputButtonOnPreRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputButtonOnPreRender/CS/custom_htmlinputbutton_onprerender.cs#2)]
  [!code-vb[CustomHtmlInputButtonOnPreRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputButtonOnPreRender/VB/custom_htmlinputbutton_onprerender.vb#2)]  
@@ -241,14 +245,16 @@
 ## Examples  
  The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.HtmlControls.HtmlInputButton.ServerClick> event. The event handler adds the values of the two text boxes on the page and displays the results.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputButton/CS/htmlinputbuttoncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputButton/VB/htmlinputbuttonvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputButton/CS/htmlinputbuttoncs.aspx#1)]
+ [!code-aspx-vb[HtmlInputButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputButton/VB/htmlinputbuttonvb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputButtonServerClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputButtonServerClick/CS/htmlinputbuttonserverclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputButtonServerClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputButtonServerClick/VB/htmlinputbuttonserverclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputButtonServerClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputButtonServerClick/CS/htmlinputbuttonserverclickcs.aspx#1)]
+ [!code-aspx-vb[HtmlInputButtonServerClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputButtonServerClick/VB/htmlinputbuttonserverclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.HtmlControls.HtmlInputButton.ServerClick" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -275,12 +281,14 @@
 ## Remarks  
  The <xref:System.Web.UI.HtmlControls.HtmlInputButton.RaisePostBackEvent%2A> method is used by the <xref:System.Web.UI.HtmlControls.HtmlInputButton> control, when it is clicked, to raise a <xref:System.Web.UI.HtmlControls.HtmlInputButton.ServerClick> event.  
   
- If the <xref:System.Web.UI.HtmlControls.HtmlInputButton.CausesValidation%2A> property is `true`, the <xref:System.Web.UI.Page.Validate%2A?displayProperty=fullName> method is called using the group of controls specified in the <xref:System.Web.UI.HtmlControls.HtmlInputButton.ValidationGroup%2A> property.  
+ If the <xref:System.Web.UI.HtmlControls.HtmlInputButton.CausesValidation%2A> property is `true`, the <xref:System.Web.UI.Page.Validate%2A?displayProperty=nameWithType> method is called using the group of controls specified in the <xref:System.Web.UI.HtmlControls.HtmlInputButton.ValidationGroup%2A> property.  
   
  This method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlInputButton> control.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputButton.CausesValidation" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputButton.ValidationGroup" />
       </Docs>
     </Member>
     <Member MemberName="RenderAttributes">
@@ -305,15 +313,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.HtmlControls.HtmlInputButton.RenderAttributes%2A> method overrides the base <xref:System.Web.UI.HtmlControls.HtmlControl.RenderAttributes%2A?displayProperty=fullName>.method. <xref:System.Web.UI.HtmlControls.HtmlInputButton.RenderAttributes%2A> is used primarily by control developers.  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputButton.RenderAttributes%2A> method overrides the base <xref:System.Web.UI.HtmlControls.HtmlControl.RenderAttributes%2A?displayProperty=nameWithType>.method. <xref:System.Web.UI.HtmlControls.HtmlInputButton.RenderAttributes%2A> is used primarily by control developers.  
   
    
   
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlInputButton.OnPreRender%2A> method in a custom server control so that specific title text, accessible as a ToolTip, is always displayed for the <xref:System.Web.UI.HtmlControls.HtmlInputButton>.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHtmlInputButtonRenderAttributes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputButtonRenderAttributes/CS/custom_htmlinputbutton_renderattributescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHtmlInputButtonRenderAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputButtonRenderAttributes/VB/custom_htmlinputbutton_renderattributesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHtmlInputButtonRenderAttributes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputButtonRenderAttributes/CS/custom_htmlinputbutton_renderattributescs.aspx#1)]
+ [!code-aspx-vb[CustomHtmlInputButtonRenderAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputButtonRenderAttributes/VB/custom_htmlinputbutton_renderattributesvb.aspx#1)]  
   
  [!code-csharp[CustomHtmlInputButtonRenderAttributes#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputButtonRenderAttributes/CS/custom_htmlinputbutton_renderattributes.cs#2)]
  [!code-vb[CustomHtmlInputButtonRenderAttributes#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputButtonRenderAttributes/VB/custom_htmlinputbutton_renderattributes.vb#2)]  
@@ -352,14 +360,15 @@
 ## Examples  
  The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.HtmlControls.HtmlInputButton.ServerClick> event. The event handler adds the values of the two text boxes on the page and displays the results.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputButton/CS/htmlinputbuttoncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputButton/VB/htmlinputbuttonvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputButton/CS/htmlinputbuttoncs.aspx#1)]
+ [!code-aspx-vb[HtmlInputButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputButton/VB/htmlinputbuttonvb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputButtonServerClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputButtonServerClick/CS/htmlinputbuttonserverclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputButtonServerClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputButtonServerClick/VB/htmlinputbuttonserverclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputButtonServerClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputButtonServerClick/CS/htmlinputbuttonserverclickcs.aspx#1)]
+ [!code-aspx-vb[HtmlInputButtonServerClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputButtonServerClick/VB/htmlinputbuttonserverclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlInputButton.OnServerClick(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -416,12 +425,22 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputButton.ValidationGroup%2A> property to specify the controls to validate when an <xref:System.Web.UI.HtmlControls.HtmlInputButton> control posts back to the server. The page contains two text boxes to capture data from the user and two <xref:System.Web.UI.WebControls.RequiredFieldValidator> controls to ensure that the user does not leave a text box blank. The <xref:System.Web.UI.WebControls.RequiredFieldValidator> control for the first text box is in the `CityInfoGroup` validation group and the <xref:System.Web.UI.WebControls.RequiredFieldValidator> control for the second box is in the `StateInfoGroup` validation group. When the `CityQueryButton` is clicked, only the control in the `CityInfoGroup` validation group is validated. When the `StateQueryButton` is clicked, only the control in the `StateInfoGroup` validation group is validated.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputButtonValidationGroup#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputButtonValidationGroup/CS/htmlinputbuttonvalidationgroupcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputButtonValidationGroup#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputButtonValidationGroup/VB/htmlinputbuttonvalidationgroupvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputButtonValidationGroup#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputButtonValidationGroup/CS/htmlinputbuttonvalidationgroupcs.aspx#1)]
+ [!code-aspx-vb[HtmlInputButtonValidationGroup#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputButtonValidationGroup/VB/htmlinputbuttonvalidationgroupvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputButton.CausesValidation" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlInputButton" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

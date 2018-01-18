@@ -32,7 +32,7 @@
     </Member>
     <Member MemberName="Authenticate">
       <MemberSignature Language="C#" Value="public virtual System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; Authenticate (System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; authPolicy, Uri listenUri, ref System.ServiceModel.Channels.Message message);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; Authenticate(class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; authPolicy, class System.Uri listenUri, class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; Authenticate(class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; authPolicy, class System.Uri listenUri, class System.ServiceModel.Channels.Message&amp; message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceAuthenticationManager.Authenticate(System.Collections.ObjectModel.ReadOnlyCollection{System.IdentityModel.Policy.IAuthorizationPolicy},System.Uri,System.ServiceModel.Channels.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

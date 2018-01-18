@@ -72,7 +72,7 @@
   
  Keys must be immutable as long as they are used as keys in the <xref:System.Collections.Generic.SortedDictionary%602>. Every key in a <xref:System.Collections.Generic.SortedDictionary%602> must be unique. A key cannot be `null`, but a value can be, if the value type `TValue` is a reference type.  
   
- <xref:System.Collections.Generic.SortedDictionary%602> requires a comparer implementation to perform key comparisons. You can specify an implementation of the <xref:System.Collections.Generic.IComparer%601> generic interface by using a constructor that accepts a `comparer` parameter; if you do not specify an implementation, the default genericcomparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> is used. If type `TKey` implements the <xref:System.IComparable%601?displayProperty=fullName> generic interface, the default comparer uses that implementation.  
+ <xref:System.Collections.Generic.SortedDictionary%602> requires a comparer implementation to perform key comparisons. You can specify an implementation of the <xref:System.Collections.Generic.IComparer%601> generic interface by using a constructor that accepts a `comparer` parameter; if you do not specify an implementation, the default genericcomparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> is used. If type `TKey` implements the <xref:System.IComparable%601?displayProperty=nameWithType> generic interface, the default comparer uses that implementation.  
   
  The `foreach` statement of the C# language (`for each` in C++, `For Each` in Visual Basic) returns an object of the type of the elements in the collection. Since each element of the <xref:System.Collections.Generic.SortedDictionary%602> is a key/value pair, the element type is not the type of the key or the type of the value. Instead, the element type is <xref:System.Collections.Generic.KeyValuePair%602>. The following code shows C#, C++, and Visual Basic syntax.  
   
@@ -103,6 +103,8 @@
     <threadsafe>Public static (<see langword="Shared" /> in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.  
   
  A <see cref="T:System.Collections.Generic.SortedDictionary`2" /> can support multiple readers concurrently, as long as the collection is not modified.  Even so, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.</threadsafe>
+    <altmember cref="T:System.Collections.SortedList" />
+    <altmember cref="T:System.Collections.Generic.Dictionary`2" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -134,7 +136,7 @@
 ## Remarks  
  Every key in a <xref:System.Collections.Generic.SortedDictionary%602> must be unique according to the default comparer.  
   
- <xref:System.Collections.Generic.SortedDictionary%602> requires a comparer implementation to perform key comparisons. This constructor uses the default generic equality comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName>. If type `TKey` implements the <xref:System.IComparable%601?displayProperty=fullName> generic interface, the default comparer uses that implementation. Alternatively, you can specify an implementation of the <xref:System.Collections.Generic.IComparer%601> generic interface by using a constructor that accepts a `comparer` parameter.  
+ <xref:System.Collections.Generic.SortedDictionary%602> requires a comparer implementation to perform key comparisons. This constructor uses the default generic equality comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType>. If type `TKey` implements the <xref:System.IComparable%601?displayProperty=nameWithType> generic interface, the default comparer uses that implementation. Alternatively, you can specify an implementation of the <xref:System.Collections.Generic.IComparer%601> generic interface by using a constructor that accepts a `comparer` parameter.  
   
  This constructor is an O(1) operation.  
   
@@ -150,6 +152,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.Generic.Comparer`1.Default" />
+        <altmember cref="T:System.IComparable`1" />
+        <altmember cref="T:System.IComparable" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -184,7 +189,7 @@
 ## Remarks  
  Every key in a <xref:System.Collections.Generic.SortedDictionary%602> must be unique according to the specified comparer.  
   
- <xref:System.Collections.Generic.SortedDictionary%602> requires a comparer implementation to perform key comparisons. If `comparer` is `null`, this constructor uses the default generic equality comparer, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName>. If type `TKey` implements the <xref:System.IComparable%601?displayProperty=fullName> generic interface, the default comparer uses that implementation.  
+ <xref:System.Collections.Generic.SortedDictionary%602> requires a comparer implementation to perform key comparisons. If `comparer` is `null`, this constructor uses the default generic equality comparer, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType>. If type `TKey` implements the <xref:System.IComparable%601?displayProperty=nameWithType> generic interface, the default comparer uses that implementation.  
   
  This constructor is an O(1) operation.  
   
@@ -198,6 +203,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.IComparer`1" />
+        <altmember cref="P:System.Collections.Generic.Comparer`1.Default" />
+        <altmember cref="T:System.IComparable`1" />
+        <altmember cref="T:System.IComparable" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -232,7 +241,7 @@
 ## Remarks  
  Every key in a <xref:System.Collections.Generic.SortedDictionary%602> must be unique according to the default comparer; therefore, every key in the source `dictionary` must also be unique according to the default comparer.  
   
- <xref:System.Collections.Generic.SortedDictionary%602> requires a comparer implementation to perform key comparisons. This constructor uses the default generic equality comparer, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName>. If type `TKey` implements the <xref:System.IComparable%601?displayProperty=fullName> generic interface, the default comparer uses that implementation. Alternatively, you can specify an implementation of the <xref:System.Collections.Generic.IComparer%601> generic interface by using a constructor that accepts a `comparer` parameter.  
+ <xref:System.Collections.Generic.SortedDictionary%602> requires a comparer implementation to perform key comparisons. This constructor uses the default generic equality comparer, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType>. If type `TKey` implements the <xref:System.IComparable%601?displayProperty=nameWithType> generic interface, the default comparer uses that implementation. Alternatively, you can specify an implementation of the <xref:System.Collections.Generic.IComparer%601> generic interface by using a constructor that accepts a `comparer` parameter.  
   
  This constructor is an O(`n` log `n`) operation, where `n` is the number of elements in `dictionary`.  
   
@@ -250,6 +259,10 @@
           <paramref name="dictionary" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="dictionary" /> contains one or more duplicate keys.</exception>
+        <altmember cref="T:System.Collections.Generic.IDictionary`2" />
+        <altmember cref="P:System.Collections.Generic.Comparer`1.Default" />
+        <altmember cref="T:System.IComparable`1" />
+        <altmember cref="T:System.IComparable" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -286,7 +299,7 @@
 ## Remarks  
  Every key in a <xref:System.Collections.Generic.SortedDictionary%602> must be unique according to the specified comparer; therefore, every key in the source `dictionary` must also be unique according to the specified comparer.  
   
- <xref:System.Collections.Generic.SortedDictionary%602> requires a comparer implementation to perform key comparisons. If `comparer` is `null`, this constructor uses the default generic equality comparer, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName>. If type `TKey` implements the <xref:System.IComparable%601?displayProperty=fullName> generic interface, the default comparer uses that implementation.  
+ <xref:System.Collections.Generic.SortedDictionary%602> requires a comparer implementation to perform key comparisons. If `comparer` is `null`, this constructor uses the default generic equality comparer, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType>. If type `TKey` implements the <xref:System.IComparable%601?displayProperty=nameWithType> generic interface, the default comparer uses that implementation.  
   
  This constructor is an O(`n` log `n`) operation, where `n` is the number of elements in `dictionary`.  
   
@@ -304,6 +317,11 @@
           <paramref name="dictionary" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="dictionary" /> contains one or more duplicate keys.</exception>
+        <altmember cref="T:System.Collections.Generic.IDictionary`2" />
+        <altmember cref="T:System.Collections.Generic.IComparer`1" />
+        <altmember cref="P:System.Collections.Generic.Comparer`1.Default" />
+        <altmember cref="T:System.IComparable`1" />
+        <altmember cref="T:System.IComparable" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -341,7 +359,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can also use the <xref:System.Collections.Generic.SortedDictionary%602.Item%2A> property to add new elements by setting the value of a key that does not exist in the <xref:System.Collections.Generic.SortedDictionary%602>; for example, `myCollection["myNonexistentKey"] = myValue` (in Visual Basic, `myCollection("myNonexistantKey") = myValue`). However, if the specified key already exists in the <xref:System.Collections.Generic.SortedDictionary%602>, setting the <xref:System.Collections.Generic.SortedDictionary%602.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.Generic.SortedDictionary%602.Add%2A>method throws an exception if an element with the specified key already exists.  
+ You can also use the <xref:System.Collections.Generic.SortedDictionary%602.Item%2A> property to add new elements by setting the value of a key that does not exist in the <xref:System.Collections.Generic.SortedDictionary%602>; for example, `myCollection["myNonexistentKey"] = myValue` (in Visual Basic, `myCollection("myNonexistantKey") = myValue`). However, if the specified key already exists in the <xref:System.Collections.Generic.SortedDictionary%602>, setting the <xref:System.Collections.Generic.SortedDictionary%602.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.Generic.SortedDictionary%602.Add%2A> method throws an exception if an element with the specified key already exists.  
   
  A key cannot be `null`, but a value can be, if the value type `TValue` is a reference type.  
   
@@ -362,6 +380,9 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">An element with the same key already exists in the <see cref="T:System.Collections.Generic.SortedDictionary`2" />.</exception>
+        <altmember cref="M:System.Collections.Generic.SortedDictionary`2.Remove(`0)" />
+        <altmember cref="P:System.Collections.Generic.SortedDictionary`2.Item(`0)" />
+        <altmember cref="M:System.Collections.Generic.IDictionary`2.Add(`0,`1)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -432,12 +453,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Collections.Generic.SortedDictionary%602> requires a comparer implementation to perform key comparisons. You can specify an implementation of the <xref:System.Collections.Generic.IComparer%601> generic interface by using a constructor that accepts a `comparer` parameter. If you do not, the default generic equality comparer, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName>, is used. If type `TKey` implements the <xref:System.IComparable%601?displayProperty=fullName> generic interface, the default comparer uses that implementation.  
+ <xref:System.Collections.Generic.SortedDictionary%602> requires a comparer implementation to perform key comparisons. You can specify an implementation of the <xref:System.Collections.Generic.IComparer%601> generic interface by using a constructor that accepts a `comparer` parameter. If you do not, the default generic equality comparer, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType>, is used. If type `TKey` implements the <xref:System.IComparable%601?displayProperty=nameWithType> generic interface, the default comparer uses that implementation.  
   
  Getting the value of this property is an O(1) operation.  
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Collections.Generic.SortedDictionary`2.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -495,6 +517,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.Generic.SortedDictionary`2.ContainsValue(`1)" />
       </Docs>
     </Member>
     <Member MemberName="ContainsValue">
@@ -532,12 +555,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for the value type `TValue`.  
+ This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for the value type `TValue`.  
   
  This method performs a linear search; therefore, the average execution time is proportional to the <xref:System.Collections.Generic.SortedDictionary%602.Count%2A> property. That is, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.SortedDictionary%602.Count%2A>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.SortedDictionary`2.ContainsKey(`0)" />
+        <altmember cref="P:System.Collections.Generic.EqualityComparer`1.Default" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -577,7 +602,7 @@
 ## Remarks  
   
 > [!NOTE]
->  If the type of the source <xref:System.Collections.Generic.SortedDictionary%602> cannot be cast automatically to the type of the destination `array`, the nongeneric implementations of <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName> throw <xref:System.InvalidCastException>, whereas the generic implementations throw <xref:System.ArgumentException>.  
+>  If the type of the source <xref:System.Collections.Generic.SortedDictionary%602> cannot be cast automatically to the type of the destination `array`, the nongeneric implementations of <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=nameWithType> throw <xref:System.InvalidCastException>, whereas the generic implementations throw <xref:System.ArgumentException>.  
   
  This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.SortedDictionary%602.Count%2A>.  
   
@@ -675,12 +700,14 @@
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are not synchronized.  
+ Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace are not synchronized.  
   
  This method is an O(log n) operation, where n is count.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.SortedDictionary`2.Enumerator" />
+        <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -748,6 +775,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Collections.Generic.KeyNotFoundException">The property is retrieved and <paramref name="key" /> does not exist in the collection.</exception>
+        <altmember cref="M:System.Collections.Generic.SortedDictionary`2.Add(`0,`1)" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -800,6 +828,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.SortedDictionary`2.KeyCollection" />
+        <altmember cref="P:System.Collections.Generic.SortedDictionary`2.Values" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -855,6 +885,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.Generic.SortedDictionary`2.Add(`0,`1)" />
+        <altmember cref="M:System.Collections.Generic.IDictionary`2.Remove(`0)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Add">
@@ -1165,7 +1197,7 @@
 ## Remarks  
   
 > [!NOTE]
->  If the type of the source <xref:System.Collections.ICollection> cannot be cast automatically to the type of the destination `array`, the nongeneric implementations of <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName> throw an <xref:System.InvalidCastException>, whereas the generic implementations throw an <xref:System.ArgumentException>.  
+>  If the type of the source <xref:System.Collections.ICollection> cannot be cast automatically to the type of the destination `array`, the nongeneric implementations of <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=nameWithType> throw an <xref:System.InvalidCastException>, whereas the generic implementations throw an <xref:System.ArgumentException>.  
   
  This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.SortedDictionary%602.Count%2A>.  
   
@@ -1222,7 +1254,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are not synchronized.  
+ Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace are not synchronized.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which can cause the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
   
@@ -1232,6 +1264,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -1264,11 +1297,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are not synchronized.  
+ Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace are not synchronized.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- The <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23ICollection%23SyncRoot%2A>property returns an object that can be used to synchronize access to the <xref:System.Collections.ICollection>. Synchronization is effective only if all threads lock the object before accessing the collection. The following code shows the use of the <xref:System.Collections.ICollection.SyncRoot%2A> property for C#, C++, and Visual Basic.  
+ The <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23ICollection%23SyncRoot%2A> property returns an object that can be used to synchronize access to the <xref:System.Collections.ICollection>. Synchronization is effective only if all threads lock the object before accessing the collection. The following code shows the use of the <xref:System.Collections.ICollection.SyncRoot%2A> property for C#, C++, and Visual Basic.  
   
 ```csharp  
 ICollection ic = ...;  
@@ -1302,6 +1335,7 @@ finally
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Add">
@@ -1339,16 +1373,16 @@ finally
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can also use the <xref:System.Collections.IDictionary.Item%2A>property to add new elements by setting the value of a key that does not exist in the dictionary; for example, `myCollection["myNonexistentKey"] = myValue`. However, if the specified key already exists in the dictionary, setting the <xref:System.Collections.IDictionary.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.IDictionary.Add%2A> method does not modify existing elements.  
+ You can also use the <xref:System.Collections.IDictionary.Item%2A> property to add new elements by setting the value of a key that does not exist in the dictionary; for example, `myCollection["myNonexistentKey"] = myValue`. However, if the specified key already exists in the dictionary, setting the <xref:System.Collections.IDictionary.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.IDictionary.Add%2A> method does not modify existing elements.  
   
  This method is an O(log `n`) operation, where `n` is <xref:System.Collections.Generic.SortedDictionary%602.Count%2A>.  
   
    
   
 ## Examples  
- The following code example shows how to access the <xref:System.Collections.Generic.SortedDictionary%602> class through the <xref:System.Collections.IDictionary?displayProperty=fullName> interface. The code example creates an empty <xref:System.Collections.Generic.SortedDictionary%602> of strings with string keys and uses the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Add%2A> method to add some elements. The example demonstrates that the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Add%2A> method throws an <xref:System.ArgumentException> when attempting to add a duplicate key, or when a key or value of the wrong data type is supplied.  
+ The following code example shows how to access the <xref:System.Collections.Generic.SortedDictionary%602> class through the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface. The code example creates an empty <xref:System.Collections.Generic.SortedDictionary%602> of strings with string keys and uses the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Add%2A> method to add some elements. The example demonstrates that the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Add%2A> method throws an <xref:System.ArgumentException> when attempting to add a duplicate key, or when a key or value of the wrong data type is supplied.  
   
- The code example demonstrates the use of several other members of the <xref:System.Collections.IDictionary?displayProperty=fullName> interface.  
+ The code example demonstrates the use of several other members of the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface.  
   
  [!code-csharp[Generic.SortedDictionary.IDictionary#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.SortedDictionary.IDictionary/CS/source.cs#1)]
  [!code-vb[Generic.SortedDictionary.IDictionary#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.SortedDictionary.IDictionary/VB/source.vb#1)]  
@@ -1367,6 +1401,7 @@ finally
  -or-  
   
  An element with the same key already exists in the <see cref="T:System.Collections.IDictionary" />.</exception>
+        <altmember cref="P:System.Collections.IDictionary.Item(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Contains">
@@ -1411,7 +1446,7 @@ finally
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Contains%2A> method of the <xref:System.Collections.IDictionary?displayProperty=fullName> interface with a <xref:System.Collections.Generic.SortedDictionary%602>. The example demonstrates that the method returns `false` if a key of the wrong data type is supplied.  
+ The following code example shows how to use the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Contains%2A> method of the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface with a <xref:System.Collections.Generic.SortedDictionary%602>. The example demonstrates that the method returns `false` if a key of the wrong data type is supplied.  
   
  The code example is part of a larger example, including output, provided for the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Add%2A> method.  
   
@@ -1475,14 +1510,14 @@ finally
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are not synchronized.  
+ Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace are not synchronized.  
   
  This method is an O(1) operation.  
   
    
   
 ## Examples  
- The following code example shows how to enumerate the key/value pairs in the dictionary by using the `foreach` statement (`For Each` in Visual Basic, `for each` in C++), which hides the use of the enumerator. In particular, note that the enumerator for the <xref:System.Collections.IDictionary?displayProperty=fullName> interface returns <xref:System.Collections.DictionaryEntry> objects rather than <xref:System.Collections.Generic.KeyValuePair%602> objects.  
+ The following code example shows how to enumerate the key/value pairs in the dictionary by using the `foreach` statement (`For Each` in Visual Basic, `for each` in C++), which hides the use of the enumerator. In particular, note that the enumerator for the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface returns <xref:System.Collections.DictionaryEntry> objects rather than <xref:System.Collections.Generic.KeyValuePair%602> objects.  
   
  The code example is part of a larger example, including output, provided for the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Add%2A> method.  
   
@@ -1495,6 +1530,8 @@ finally
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionaryEnumerator" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.IsFixedSize">
@@ -1615,7 +1652,7 @@ finally
 ## Remarks  
  This property provides the ability to access a specific element in the collection by using the following C# syntax: `myCollection[key]` (`myCollection(key)` in Visual Basic).  
   
- You can also use the <xref:System.Collections.IDictionary.Item%2A>property to add new elements by setting the value of a key that does not exist in the dictionary; for example, `myCollection["myNonexistentKey"] = myValue`. However, if the specified key already exists in the dictionary, setting the <xref:System.Collections.IDictionary.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Add%2A> method does not modify existing elements.  
+ You can also use the <xref:System.Collections.IDictionary.Item%2A> property to add new elements by setting the value of a key that does not exist in the dictionary; for example, `myCollection["myNonexistentKey"] = myValue`. However, if the specified key already exists in the dictionary, setting the <xref:System.Collections.IDictionary.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Add%2A> method does not modify existing elements.  
   
  The C# language uses the [this](~/docs/csharp/language-reference/keywords/this.md) keyword to define the indexers instead of implementing the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Item%2A> property. Visual Basic implements <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Item%2A> as a default property, which provides the same indexing functionality.  
   
@@ -1624,9 +1661,9 @@ finally
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Item%2A> property (the indexer in C#) of the <xref:System.Collections.IDictionary?displayProperty=fullName> interface with a <xref:System.Collections.Generic.SortedDictionary%602>, and ways the property differs from the <xref:System.Collections.Generic.SortedDictionary%602.Item%2A?displayProperty=fullName> property.  
+ The following code example shows how to use the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Item%2A> property (the indexer in C#) of the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface with a <xref:System.Collections.Generic.SortedDictionary%602>, and ways the property differs from the <xref:System.Collections.Generic.SortedDictionary%602.Item%2A?displayProperty=nameWithType> property.  
   
- The example shows that, like the <xref:System.Collections.Generic.SortedDictionary%602.Item%2A?displayProperty=fullName> property, the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Item%2A?displayProperty=fullName> property can change the value associated with an existing key and can be used to add a new key/value pair if the specified key is not in the dictionary. The example also shows that unlike the <xref:System.Collections.Generic.SortedDictionary%602.Item%2A?displayProperty=fullName> property, the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Item%2A?displayProperty=fullName> property does not throw an exception if `key` is not in the dictionary, returning a null reference instead. Finally, the example demonstrates that getting the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Item%2A?displayProperty=fullName> property returns a null reference if `key` is not the correct data type, and that setting the property throws an exception if `key` is not the correct data type.  
+ The example shows that, like the <xref:System.Collections.Generic.SortedDictionary%602.Item%2A?displayProperty=nameWithType> property, the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Item%2A?displayProperty=nameWithType> property can change the value associated with an existing key and can be used to add a new key/value pair if the specified key is not in the dictionary. The example also shows that unlike the <xref:System.Collections.Generic.SortedDictionary%602.Item%2A?displayProperty=nameWithType> property, the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Item%2A?displayProperty=nameWithType> property does not throw an exception if `key` is not in the dictionary, returning a null reference instead. Finally, the example demonstrates that getting the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Item%2A?displayProperty=nameWithType> property returns a null reference if `key` is not the correct data type, and that setting the property throws an exception if `key` is not the correct data type.  
   
  The code example is part of a larger example, including output, provided for the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Add%2A> method.  
   
@@ -1648,6 +1685,7 @@ finally
  -or-  
   
  A value is being assigned, and <paramref name="value" /> is of a type that is not assignable to the value type <paramref name="TValue" /> of the <see cref="T:System.Collections.Generic.SortedDictionary`2" />.</exception>
+        <altmember cref="M:System.Collections.IDictionary.Add(System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Keys">
@@ -1687,7 +1725,7 @@ finally
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Collections.IDictionary.Keys%2A> property of the <xref:System.Collections.IDictionary?displayProperty=fullName> interface with a <xref:System.Collections.Generic.SortedDictionary%602>, to list the keys in the dictionary. The example also shows how to enumerate the key/value pairs in the dictionary; note that the enumerator for the <xref:System.Collections.IDictionary?displayProperty=fullName> interface returns <xref:System.Collections.DictionaryEntry> objects rather than <xref:System.Collections.Generic.KeyValuePair%602> objects.  
+ The following code example shows how to use the <xref:System.Collections.IDictionary.Keys%2A> property of the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface with a <xref:System.Collections.Generic.SortedDictionary%602>, to list the keys in the dictionary. The example also shows how to enumerate the key/value pairs in the dictionary; note that the enumerator for the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface returns <xref:System.Collections.DictionaryEntry> objects rather than <xref:System.Collections.Generic.KeyValuePair%602> objects.  
   
  The code example is part of a larger example, including output, provided for the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Add%2A> method.  
   
@@ -1702,6 +1740,7 @@ finally
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Remove">
@@ -1742,7 +1781,7 @@ finally
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Remove%2A> of the <xref:System.Collections.IDictionary?displayProperty=fullName> interface with a <xref:System.Collections.Generic.SortedDictionary%602>.  
+ The following code example shows how to use the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Remove%2A> of the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface with a <xref:System.Collections.Generic.SortedDictionary%602>.  
   
  The code example is part of a larger example, including output, provided for the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Add%2A> method.  
   
@@ -1796,7 +1835,7 @@ finally
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Values%2A> property of the <xref:System.Collections.IDictionary?displayProperty=fullName> interface with a <xref:System.Collections.Generic.SortedDictionary%602>, to list the values in the dictionary. The example also shows how to enumerate the key/value pairs in the dictionary; note that the enumerator for the <xref:System.Collections.IDictionary?displayProperty=fullName> interface returns <xref:System.Collections.DictionaryEntry> objects rather than <xref:System.Collections.Generic.KeyValuePair%602> objects.  
+ The following code example shows how to use the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Values%2A> property of the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface with a <xref:System.Collections.Generic.SortedDictionary%602>, to list the values in the dictionary. The example also shows how to enumerate the key/value pairs in the dictionary; note that the enumerator for the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface returns <xref:System.Collections.DictionaryEntry> objects rather than <xref:System.Collections.Generic.KeyValuePair%602> objects.  
   
  The code example is part of a larger example, including output, provided for the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Add%2A> method.  
   
@@ -1811,6 +1850,7 @@ finally
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -1860,17 +1900,19 @@ finally
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are not synchronized.  
+ Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace are not synchronized.  
   
  This method is an O(1) operation.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.SortedDictionary`2.GetEnumerator" />
+        <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
       </Docs>
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public bool TryGetValue (TKey key, out TValue value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(!TKey key, !TValue value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(!TKey key, [out] !TValue&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedDictionary`2.TryGetValue(`0,`1@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1927,6 +1969,8 @@ finally
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.Generic.SortedDictionary`2.ContainsKey(`0)" />
+        <altmember cref="P:System.Collections.Generic.SortedDictionary`2.Item(`0)" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -1979,7 +2023,20 @@ finally
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.SortedDictionary`2.ValueCollection" />
+        <altmember cref="P:System.Collections.Generic.SortedDictionary`2.Keys" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SortedDictionary`2" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

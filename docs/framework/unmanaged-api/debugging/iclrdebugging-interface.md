@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDebugging"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRDebugging interface [.NET Framework debugging]"
 ms.assetid: 429d8fce-b1b1-49d7-895c-28c1c1aa2dbd
@@ -28,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRDebugging Interface
 Provides methods that handle loading and unloading modules for debugging.  
@@ -52,5 +52,5 @@ Provides methods that handle loading and unloading modules for debugging.
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)   
+ [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
  [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

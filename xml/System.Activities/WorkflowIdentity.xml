@@ -233,7 +233,7 @@
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string identity, out System.Activities.WorkflowIdentity result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string identity, class System.Activities.WorkflowIdentity result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string identity, [out] class System.Activities.WorkflowIdentity&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowIdentity.TryParse(System.String,System.Activities.WorkflowIdentity@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -274,5 +274,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the current WorkflowIdentity and the specified WorkflowIdentity are the same.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.WorkflowIdentity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripRenderer> class to apply a particular style or theme to a <xref:System.Windows.Forms.ToolStrip>. Rather than custom painting a <xref:System.Windows.Forms.ToolStrip> and the <xref:System.Windows.Forms.ToolStripItem> objects it contains, you set the <xref:System.Windows.Forms.ToolStrip.Renderer%2A?displayProperty=fullName> property to an object that inherits from <xref:System.Windows.Forms.ToolStripRenderer>. The painting specified by the <xref:System.Windows.Forms.ToolStripRenderer> is applied to the <xref:System.Windows.Forms.ToolStrip>, as well as the items it contains.  
+ Use the <xref:System.Windows.Forms.ToolStripRenderer> class to apply a particular style or theme to a <xref:System.Windows.Forms.ToolStrip>. Rather than custom painting a <xref:System.Windows.Forms.ToolStrip> and the <xref:System.Windows.Forms.ToolStripItem> objects it contains, you set the <xref:System.Windows.Forms.ToolStrip.Renderer%2A?displayProperty=nameWithType> property to an object that inherits from <xref:System.Windows.Forms.ToolStripRenderer>. The painting specified by the <xref:System.Windows.Forms.ToolStripRenderer> is applied to the <xref:System.Windows.Forms.ToolStrip>, as well as the items it contains.  
   
  You can do custom painting in <xref:System.Windows.Forms.ToolStrip> controls in several ways. As with other Windows Forms controls, the <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.ToolStripItem> both have overridable `OnPaint` methods and `Paint` events. As with regular painting, the coordinate system is relative to the client area of the control; that is, the upper left-hand corner of the control is 0, 0. The `Paint` event and `OnPaint` method for a <xref:System.Windows.Forms.ToolStripItem> behave like other control paint events.  
   
@@ -38,6 +38,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.MenuStrip" />
+    <altmember cref="T:System.Windows.Forms.StatusStrip" />
+    <altmember cref="T:System.Windows.Forms.ToolStripProfessionalRenderer" />
+    <altmember cref="T:System.Windows.Forms.ToolStripSystemRenderer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -106,7 +110,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripRenderer.DrawArrow%2A> method provides an entry point to the arrow rendering code. Use this method to draw an arrow when overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A?displayProperty=fullName> method, or to force an arrow to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way an arrow is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderArrow%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
+ The <xref:System.Windows.Forms.ToolStripRenderer.DrawArrow%2A> method provides an entry point to the arrow rendering code. Use this method to draw an arrow when overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A?displayProperty=nameWithType> method, or to force an arrow to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way an arrow is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderArrow%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
   
  ]]></format>
         </remarks>
@@ -134,7 +138,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripRenderer.DrawButtonBackground%2A> method provides an entry point to the rendering code for the background of a <xref:System.Windows.Forms.ToolStripButton>. Use this method to draw the background of a button when overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A?displayProperty=fullName> method, or to force the background of a button to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the background is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderButtonBackground%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
+ The <xref:System.Windows.Forms.ToolStripRenderer.DrawButtonBackground%2A> method provides an entry point to the rendering code for the background of a <xref:System.Windows.Forms.ToolStripButton>. Use this method to draw the background of a button when overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A?displayProperty=nameWithType> method, or to force the background of a button to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the background is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderButtonBackground%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
   
  ]]></format>
         </remarks>
@@ -162,7 +166,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripRenderer.DrawDropDownButtonBackground%2A> method provides the entry point to the rendering code for the background of a <xref:System.Windows.Forms.ToolStripDropDownButton>. Use this method to draw the background of a drop-down button when overriding the <xref:System.Windows.Forms.ToolStripDropDownButton.OnPaint%2A?displayProperty=fullName> method, or to force the background of a drop-down button to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the background is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderDropDownButtonBackground%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
+ The <xref:System.Windows.Forms.ToolStripRenderer.DrawDropDownButtonBackground%2A> method provides the entry point to the rendering code for the background of a <xref:System.Windows.Forms.ToolStripDropDownButton>. Use this method to draw the background of a drop-down button when overriding the <xref:System.Windows.Forms.ToolStripDropDownButton.OnPaint%2A?displayProperty=nameWithType> method, or to force the background of a drop-down button to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the background is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderDropDownButtonBackground%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
   
  ]]></format>
         </remarks>
@@ -190,7 +194,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripRenderer.DrawGrip%2A> method provides an entry point to the rendering code for a move handle located on a <xref:System.Windows.Forms.ToolStrip>. Use this method when overriding the <xref:System.Windows.Forms.ToolStrip.OnPaintGrip%2A?displayProperty=fullName> method, or to force a move handle to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way a move handle is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderGrip%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
+ The <xref:System.Windows.Forms.ToolStripRenderer.DrawGrip%2A> method provides an entry point to the rendering code for a move handle located on a <xref:System.Windows.Forms.ToolStrip>. Use this method when overriding the <xref:System.Windows.Forms.ToolStrip.OnPaintGrip%2A?displayProperty=nameWithType> method, or to force a move handle to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way a move handle is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderGrip%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
   
  ]]></format>
         </remarks>
@@ -218,7 +222,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripRenderer.DrawImageMargin%2A> method provides the entry point to the rendering code for the image. Use this method to draw the image margin when overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A?displayProperty=fullName> method, or to force the image margin to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the image margin is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderImageMargin%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
+ The <xref:System.Windows.Forms.ToolStripRenderer.DrawImageMargin%2A> method provides the entry point to the rendering code for the image. Use this method to draw the image margin when overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A?displayProperty=nameWithType> method, or to force the image margin to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the image margin is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderImageMargin%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
   
  ]]></format>
         </remarks>
@@ -246,7 +250,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripRenderer.DrawItemBackground%2A> method provides the entry point to the rendering code for the background of an item. Use this method to draw the background of an item when overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A?displayProperty=fullName> method, or to force the background of an item to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the background of an item is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderItemBackground%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
+ The <xref:System.Windows.Forms.ToolStripRenderer.DrawItemBackground%2A> method provides the entry point to the rendering code for the background of an item. Use this method to draw the background of an item when overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A?displayProperty=nameWithType> method, or to force the background of an item to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the background of an item is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderItemBackground%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
   
  ]]></format>
         </remarks>
@@ -274,7 +278,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripRenderer.DrawItemCheck%2A> method provides the entry point to the rendering code for an image in a selected state. Use this method to draw a selected image when overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A?displayProperty=fullName> method, or to force a selected image to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way a selected image is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderItemCheck%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
+ The <xref:System.Windows.Forms.ToolStripRenderer.DrawItemCheck%2A> method provides the entry point to the rendering code for an image in a selected state. Use this method to draw a selected image when overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A?displayProperty=nameWithType> method, or to force a selected image to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way a selected image is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderItemCheck%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
   
  ]]></format>
         </remarks>
@@ -302,7 +306,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripRenderer.DrawItemImage%2A> method provides the entry point to the rendering code for an image. Use this method to draw an image when overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A?displayProperty=fullName> method or to force the image to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the image is rendered, override the `OnDrawItem` method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
+ The <xref:System.Windows.Forms.ToolStripRenderer.DrawItemImage%2A> method provides the entry point to the rendering code for an image. Use this method to draw an image when overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A?displayProperty=nameWithType> method or to force the image to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the image is rendered, override the `OnDrawItem` method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
   
  ]]></format>
         </remarks>
@@ -330,7 +334,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripRenderer.DrawItemText%2A> method provides the entry point to the rendering code for the text of a <xref:System.Windows.Forms.ToolStripItem>. Use this method to draw the item text when overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A?displayProperty=fullName> method, or to force the item text to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the item text is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderItemText%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
+ The <xref:System.Windows.Forms.ToolStripRenderer.DrawItemText%2A> method provides the entry point to the rendering code for the text of a <xref:System.Windows.Forms.ToolStripItem>. Use this method to draw the item text when overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A?displayProperty=nameWithType> method, or to force the item text to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the item text is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderItemText%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
   
  ]]></format>
         </remarks>
@@ -358,7 +362,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripRenderer.DrawLabelBackground%2A> method provides the entry point to the rendering code for the background of a <xref:System.Windows.Forms.ToolStripLabel>. Use this method to draw the background of a <xref:System.Windows.Forms.ToolStripLabel> when overriding the <xref:System.Windows.Forms.ToolStripLabel.OnPaint%2A?displayProperty=fullName> method, or to force the background of a <xref:System.Windows.Forms.ToolStripLabel> to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the background of a <xref:System.Windows.Forms.ToolStripLabel> is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderLabelBackground%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
+ The <xref:System.Windows.Forms.ToolStripRenderer.DrawLabelBackground%2A> method provides the entry point to the rendering code for the background of a <xref:System.Windows.Forms.ToolStripLabel>. Use this method to draw the background of a <xref:System.Windows.Forms.ToolStripLabel> when overriding the <xref:System.Windows.Forms.ToolStripLabel.OnPaint%2A?displayProperty=nameWithType> method, or to force the background of a <xref:System.Windows.Forms.ToolStripLabel> to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the background of a <xref:System.Windows.Forms.ToolStripLabel> is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderLabelBackground%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
   
  ]]></format>
         </remarks>
@@ -386,7 +390,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripRenderer.DrawMenuItemBackground%2A> method provides the entry point to the rendering code for the background of a <xref:System.Windows.Forms.ToolStripMenuItem>. Use this method to draw the background of a <xref:System.Windows.Forms.ToolStripMenuItem> when overriding the <xref:System.Windows.Forms.ToolStripMenuItem.OnPaint%2A?displayProperty=fullName> method, or to force the background of a <xref:System.Windows.Forms.ToolStripMenuItem> to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the background for a <xref:System.Windows.Forms.ToolStripMenuItem> is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderMenuItemBackground%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
+ The <xref:System.Windows.Forms.ToolStripRenderer.DrawMenuItemBackground%2A> method provides the entry point to the rendering code for the background of a <xref:System.Windows.Forms.ToolStripMenuItem>. Use this method to draw the background of a <xref:System.Windows.Forms.ToolStripMenuItem> when overriding the <xref:System.Windows.Forms.ToolStripMenuItem.OnPaint%2A?displayProperty=nameWithType> method, or to force the background of a <xref:System.Windows.Forms.ToolStripMenuItem> to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the background for a <xref:System.Windows.Forms.ToolStripMenuItem> is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderMenuItemBackground%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
   
  ]]></format>
         </remarks>
@@ -414,7 +418,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripRenderer.DrawOverflowButtonBackground%2A> method provides the entry point to the rendering code for the background of an overflow button. Use this method to draw the background of an overflow button when overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A?displayProperty=fullName> method, or to force the background for an overflow button to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the background for an overflow button is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderOverflowButtonBackground%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
+ The <xref:System.Windows.Forms.ToolStripRenderer.DrawOverflowButtonBackground%2A> method provides the entry point to the rendering code for the background of an overflow button. Use this method to draw the background of an overflow button when overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A?displayProperty=nameWithType> method, or to force the background for an overflow button to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the background for an overflow button is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderOverflowButtonBackground%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
   
  ]]></format>
         </remarks>
@@ -442,7 +446,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripRenderer.DrawSeparator%2A> method provides the entry point to the rendering code for a <xref:System.Windows.Forms.ToolStripSeparator>. Use this method to draw the <xref:System.Windows.Forms.ToolStripSeparator> when overriding the <xref:System.Windows.Forms.ToolStrip.OnPaint%2A?displayProperty=fullName> method, or to force a <xref:System.Windows.Forms.ToolStripSeparator> to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the <xref:System.Windows.Forms.ToolStripSeparator> is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderSeparator%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
+ The <xref:System.Windows.Forms.ToolStripRenderer.DrawSeparator%2A> method provides the entry point to the rendering code for a <xref:System.Windows.Forms.ToolStripSeparator>. Use this method to draw the <xref:System.Windows.Forms.ToolStripSeparator> when overriding the <xref:System.Windows.Forms.ToolStrip.OnPaint%2A?displayProperty=nameWithType> method, or to force a <xref:System.Windows.Forms.ToolStripSeparator> to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the <xref:System.Windows.Forms.ToolStripSeparator> is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderSeparator%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
   
  ]]></format>
         </remarks>
@@ -470,7 +474,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripRenderer.DrawSplitButton%2A> method provides the entry point to the rendering code for a <xref:System.Windows.Forms.ToolStripSplitButton>. Use this method to draw a <xref:System.Windows.Forms.ToolStripSplitButton> when overriding the <xref:System.Windows.Forms.ToolStripSplitButton.OnPaint%2A?displayProperty=fullName> method, or to force a <xref:System.Windows.Forms.ToolStripSplitButton> to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the <xref:System.Windows.Forms.ToolStripSplitButton> is rendered, override the <xref:System.Windows.Forms.ToolStripSystemRenderer.OnRenderSplitButtonBackground%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
+ The <xref:System.Windows.Forms.ToolStripRenderer.DrawSplitButton%2A> method provides the entry point to the rendering code for a <xref:System.Windows.Forms.ToolStripSplitButton>. Use this method to draw a <xref:System.Windows.Forms.ToolStripSplitButton> when overriding the <xref:System.Windows.Forms.ToolStripSplitButton.OnPaint%2A?displayProperty=nameWithType> method, or to force a <xref:System.Windows.Forms.ToolStripSplitButton> to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the <xref:System.Windows.Forms.ToolStripSplitButton> is rendered, override the <xref:System.Windows.Forms.ToolStripSystemRenderer.OnRenderSplitButtonBackground%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
   
  ]]></format>
         </remarks>
@@ -519,7 +523,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripRenderer.DrawToolStripBackground%2A> method provides the entry point to the rendering code for the background of a <xref:System.Windows.Forms.ToolStrip>. Use this method to draw the background of a <xref:System.Windows.Forms.ToolStrip> when overriding the <xref:System.Windows.Forms.ToolStrip.OnPaintBackground%2A?displayProperty=fullName> method, or to force the background of a <xref:System.Windows.Forms.ToolStrip> to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the background of a <xref:System.Windows.Forms.ToolStrip> is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderToolStripBackground%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
+ The <xref:System.Windows.Forms.ToolStripRenderer.DrawToolStripBackground%2A> method provides the entry point to the rendering code for the background of a <xref:System.Windows.Forms.ToolStrip>. Use this method to draw the background of a <xref:System.Windows.Forms.ToolStrip> when overriding the <xref:System.Windows.Forms.ToolStrip.OnPaintBackground%2A?displayProperty=nameWithType> method, or to force the background of a <xref:System.Windows.Forms.ToolStrip> to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the background of a <xref:System.Windows.Forms.ToolStrip> is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderToolStripBackground%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
   
  ]]></format>
         </remarks>
@@ -547,7 +551,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripRenderer.DrawToolStripBorder%2A> method provides the entry point to the rendering code for the border of a <xref:System.Windows.Forms.ToolStrip>. Use this method to draw the border of a <xref:System.Windows.Forms.ToolStrip> when overriding the <xref:System.Windows.Forms.ToolStrip.OnPaint%2A?displayProperty=fullName> method, or to force the border of a <xref:System.Windows.Forms.ToolStrip> to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the border of a <xref:System.Windows.Forms.ToolStrip> is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderToolStripBorder%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
+ The <xref:System.Windows.Forms.ToolStripRenderer.DrawToolStripBorder%2A> method provides the entry point to the rendering code for the border of a <xref:System.Windows.Forms.ToolStrip>. Use this method to draw the border of a <xref:System.Windows.Forms.ToolStrip> when overriding the <xref:System.Windows.Forms.ToolStrip.OnPaint%2A?displayProperty=nameWithType> method, or to force the border of a <xref:System.Windows.Forms.ToolStrip> to be drawn in a custom <xref:System.Windows.Forms.ToolStripRenderer>. To change the way the border of a <xref:System.Windows.Forms.ToolStrip> is rendered, override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderToolStripBorder%2A> method in a class derived from <xref:System.Windows.Forms.ToolStripRenderer>.  
   
  ]]></format>
         </remarks>
@@ -638,7 +642,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripRenderer.Initialize%2A> method to set properties, such as the <xref:System.Windows.Forms.ToolStrip.BackColor%2A?displayProperty=fullName> or <xref:System.Windows.Forms.ToolStrip.Font%2A?displayProperty=fullName>, when a <xref:System.Windows.Forms.ToolStrip> is rendered.  
+ Use the <xref:System.Windows.Forms.ToolStripRenderer.Initialize%2A> method to set properties, such as the <xref:System.Windows.Forms.ToolStrip.BackColor%2A?displayProperty=nameWithType> or <xref:System.Windows.Forms.ToolStrip.Font%2A?displayProperty=nameWithType>, when a <xref:System.Windows.Forms.ToolStrip> is rendered.  
   
  ]]></format>
         </remarks>
@@ -687,7 +691,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripRenderer.InitializeItem%2A> method to set properties, such as the <xref:System.Windows.Forms.ToolStripItem.BackColor%2A?displayProperty=fullName> or <xref:System.Windows.Forms.ToolStripItem.Font%2A?displayProperty=fullName>, when a <xref:System.Windows.Forms.ToolStripItem> is rendered.  
+ Use the <xref:System.Windows.Forms.ToolStripRenderer.InitializeItem%2A> method to set properties, such as the <xref:System.Windows.Forms.ToolStripItem.BackColor%2A?displayProperty=nameWithType> or <xref:System.Windows.Forms.ToolStripItem.Font%2A?displayProperty=nameWithType>, when a <xref:System.Windows.Forms.ToolStripItem> is rendered.  
   
    
   

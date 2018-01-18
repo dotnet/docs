@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class corresponds to the `servicePointManager` attribute of the `settings`[\&lt;servicePointManager\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/servicepointmanager-element-network-settings.md) configuration element.  
+ This class corresponds to the `servicePointManager` attribute of the `settings`[&lt;servicePointManager&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/servicepointmanager-element-network-settings.md) configuration element.  
   
  This class is used to specify the values that are used to initialize new <xref:System.Net.ServicePoint> objects.  
   
@@ -24,6 +24,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.ServicePointManager" />
+    <altmember cref="T:System.Net.ServicePoint" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,6 +41,8 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.ServicePointManagerElement" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.ServicePointManager" />
+        <altmember cref="T:System.Net.ServicePoint" />
       </Docs>
     </Member>
     <Member MemberName="CheckCertificateName">
@@ -63,6 +67,8 @@
         <value>
           <see langword="true" /> to specify host name checking; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.ServicePointManager" />
+        <altmember cref="T:System.Net.ServicePoint" />
       </Docs>
     </Member>
     <Member MemberName="CheckCertificateRevocationList">
@@ -94,6 +100,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.ServicePointManager" />
+        <altmember cref="T:System.Net.ServicePoint" />
       </Docs>
     </Member>
     <Member MemberName="DnsRefreshTimeout">
@@ -124,6 +132,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.ServicePointManager" />
+        <altmember cref="T:System.Net.ServicePoint" />
       </Docs>
     </Member>
     <Member MemberName="EnableDnsRoundRobin">
@@ -148,6 +158,8 @@
         <value>
           <see langword="true" /> to enable DNS round-robin behavior; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.ServicePointManager" />
+        <altmember cref="T:System.Net.ServicePoint" />
       </Docs>
     </Member>
     <Member MemberName="EncryptionPolicy">
@@ -174,10 +186,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Security.EncryptionPolicy> property can require, allow, or prevent encryption. The <xref:System.Net.Security.EncryptionPolicy> will be applied to an SSL/TLS session. The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy?displayProperty=fullName>.  
+ The <xref:System.Net.Security.EncryptionPolicy> property can require, allow, or prevent encryption. The <xref:System.Net.Security.EncryptionPolicy> will be applied to an SSL/TLS session. The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy.NoEncryption?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.ServicePointManager.EncryptionPolicy" />
+        <altmember cref="T:System.Net.Security.EncryptionPolicy" />
+        <altmember cref="Overload:System.Net.Security.SslStream.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="Expect100Continue">
@@ -207,10 +222,12 @@
 ## Remarks  
  When this property is set to `true`, client requests that use the `POST` method expect to receive a 100-Continue response from the server to indicate that the client should send the data to be posted. This mechanism allows clients to avoid sending large amounts of data over the network when the server, based on the request headers, intends to reject the request.  
   
- For additional information, see <xref:System.Net.ServicePointManager.Expect100Continue%2A?displayProperty=fullName>.  
+ For additional information, see <xref:System.Net.ServicePointManager.Expect100Continue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.ServicePointManager" />
+        <altmember cref="T:System.Net.ServicePoint" />
       </Docs>
     </Member>
     <Member MemberName="PostDeserialize">
@@ -283,6 +300,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.ServicePointManager" />
+        <altmember cref="T:System.Net.ServicePoint" />
       </Docs>
     </Member>
   </Members>

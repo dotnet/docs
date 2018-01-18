@@ -37,6 +37,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.Principal.IPrincipal" />
+    <altmember cref="P:System.Threading.Thread.CurrentPrincipal" />
+    <altmember cref="P:System.Web.HttpContext.User" />
+    <altmember cref="P:System.Web.HttpContext.Current" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -114,6 +118,7 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">The caller does not have the permission required to set the principal.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />.</permission>
+        <altmember cref="T:System.Security.Principal.IPrincipal" />
       </Docs>
     </Member>
     <Member MemberName="InitializeWithWindowsUser">
@@ -140,7 +145,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use the `My.User.InitializeWithWindowsUser` method to set the thread's current principal to the Windows user that started the application. The Visual Basic Application Model in a Windows application calls this method at startup by default. In other project types, you must set the thread's current principal by calling this method explicitly or by assigning a value to <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName>.  
+ You can use the `My.User.InitializeWithWindowsUser` method to set the thread's current principal to the Windows user that started the application. The Visual Basic Application Model in a Windows application calls this method at startup by default. In other project types, you must set the thread's current principal by calling this method explicitly or by assigning a value to <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType>.  
   
  In Windows projects, the `My.User` object is based on the thread's current principal; therefore, this method can change the information `My.User` returns. In an ASP.NET application, the `My.User` object is based on the current HTTP request's user identity, and is unaffected by this method.  
   
@@ -185,7 +190,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In the <xref:Microsoft.VisualBasic.ApplicationServices.User> object, this property wraps the <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property. Override this method in a derived class to provide different behavior. For example, the <xref:Microsoft.VisualBasic.ApplicationServices.WebUser.InternalPrincipal%2A?displayProperty=fullName> property overrides this property.  
+ In the <xref:Microsoft.VisualBasic.ApplicationServices.User> object, this property wraps the <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property. Override this method in a derived class to provide different behavior. For example, the <xref:Microsoft.VisualBasic.ApplicationServices.WebUser.InternalPrincipal%2A?displayProperty=nameWithType> property overrides this property.  
   
  ]]></format>
         </remarks>
@@ -352,6 +357,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />.</permission>
+        <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.BuiltInRole" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -408,5 +414,14 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsInRole">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the current user belongs to the specified role.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

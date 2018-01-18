@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 22682566-1cd9-4672-9791-fb3523638e18
 caps.latest.revision: 21
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Tracking Profiles
 Tracking profiles contain tracking queries that permit a tracking participant to subscribe to workflow events that are emitted when the state of a workflow instance changes at runtime.  
@@ -235,7 +237,7 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
   
 -   <xref:System.Activities.Tracking.CancelRequestedQuery> - Use this to track requests to cancel a child activity by the parent activity. The query is necessary for a <xref:System.Activities.Tracking.TrackingParticipant> to subscribe to <xref:System.Activities.Tracking.CancelRequestedRecord> objects.  
   
-     The configuration and code used to subscribe to records related to activity cancellation using <xref:System.Activities.Tracking.CancelRequestedQuery>is shown in the following example.  
+     The configuration and code used to subscribe to records related to activity cancellation using <xref:System.Activities.Tracking.CancelRequestedQuery> is shown in the following example.  
   
     ```xml  
     <cancelRequestedQueries>  
@@ -385,6 +387,6 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
 ```  
   
 ## See Also  
- [SQL Tracking](../../../docs/framework/windows-workflow-foundation/samples/sql-tracking.md)   
- [Windows Server App Fabric Monitoring](http://go.microsoft.com/fwlink/?LinkId=201273)   
+ [SQL Tracking](../../../docs/framework/windows-workflow-foundation/samples/sql-tracking.md)  
+ [Windows Server App Fabric Monitoring](http://go.microsoft.com/fwlink/?LinkId=201273)  
  [Monitoring Applications with App Fabric](http://go.microsoft.com/fwlink/?LinkId=201275)

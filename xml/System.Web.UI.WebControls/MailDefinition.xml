@@ -35,7 +35,7 @@
   
  You can make text substitutions in the body of the e-mail message by passing to the <xref:System.Web.UI.WebControls.MailDefinition.CreateMailMessage%2A> method an <xref:System.Collections.IDictionary> instance that maps strings to their replacements.  
   
- The <xref:System.Net.Mail.MailMessage> object created by the <xref:System.Web.UI.WebControls.MailDefinition> class is sent using the <xref:System.Net.Mail.SmtpClient.Send%2A> method of the <xref:System.Net.Mail.SmtpClient> class. To be able to send e-mail, you must configure an SMTP mail server in your Web.config file. For more information, see the [\&lt;smtp\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/smtp-element-network-settings.md).  
+ The <xref:System.Net.Mail.MailMessage> object created by the <xref:System.Web.UI.WebControls.MailDefinition> class is sent using the <xref:System.Net.Mail.SmtpClient.Send%2A> method of the <xref:System.Net.Mail.SmtpClient> class. To be able to send e-mail, you must configure an SMTP mail server in your Web.config file. For more information, see the [&lt;smtp&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/smtp-element-network-settings.md).  
   
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.MailDefinition> class does not support data binding. Properties of the <xref:System.Web.UI.WebControls.MailDefinition> class cannot be bound to data using the `<%#   %>` data-binding expression syntax.  
@@ -50,11 +50,14 @@
 > [!IMPORTANT]
 >  This control has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[MailDefinitionClassSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MailDefinitionClassSample/CS/maildefinitionsamplecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MailDefinitionClassSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MailDefinitionClassSample/VB/maildefinitionsamplevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MailDefinitionClassSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MailDefinitionClassSample/CS/maildefinitionsamplecs.aspx#1)]
+ [!code-aspx-vb[MailDefinitionClassSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MailDefinitionClassSample/VB/maildefinitionsamplevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.Mail.SmtpClient" />
+    <altmember cref="T:System.Net.Mail.MailMessage" />
+    <altmember cref="T:System.Web.UI.WebControls.EmbeddedMailObject" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -123,6 +126,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
+        <altmember cref="T:System.Net.Mail.MailMessage" />
+        <altmember cref="T:System.Web.UI.WebControls.EmbeddedMailObject" />
       </Docs>
     </Member>
     <Member MemberName="CC">
@@ -168,6 +174,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
+        <altmember cref="T:System.Net.Mail.MailMessage" />
+        <altmember cref="T:System.Web.UI.WebControls.EmbeddedMailObject" />
       </Docs>
     </Member>
     <Member MemberName="CreateMailMessage">
@@ -197,9 +206,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.MailDefinition.CreateMailMessage%2A> method creates a new <xref:System.Net.Mail.MailMessage> object that can be sent using the <xref:System.Net.Mail.SmtpClient.Send%2A?displayProperty=fullName> method.  
+ The <xref:System.Web.UI.WebControls.MailDefinition.CreateMailMessage%2A> method creates a new <xref:System.Net.Mail.MailMessage> object that can be sent using the <xref:System.Net.Mail.SmtpClient.Send%2A?displayProperty=nameWithType> method.  
   
- The <xref:System.Web.Mail.MailMessage.BodyFormat%2A> property must be set to indicate whether the mail message should be formatted as plain text (<xref:System.Web.Mail.MailFormat?displayProperty=fullName>) or HTML (<xref:System.Web.Mail.MailFormat?displayProperty=fullName>).  
+ The <xref:System.Web.Mail.MailMessage.BodyFormat%2A> property must be set to indicate whether the mail message should be formatted as plain text (<xref:System.Web.Mail.MailFormat.Text?displayProperty=nameWithType>) or HTML (<xref:System.Web.Mail.MailFormat.Html?displayProperty=nameWithType>).  
   
  The `recipients` parameter contains a comma-separated list of recipients of the e-mail message. If the `recipients` parameter contains an improperly formatted Internet e-mail address, the <xref:System.Net.Mail.SmtpClient.Send%2A> method throws an <xref:System.Web.HttpException> exception and the e-mail message is not sent.  
   
@@ -235,6 +244,9 @@
  <paramref name="recipients" /> contains an incorrect e-mail address.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="owner" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
+        <altmember cref="T:System.Net.Mail.MailMessage" />
+        <altmember cref="T:System.Web.UI.WebControls.EmbeddedMailObject" />
       </Docs>
     </Member>
     <Member MemberName="CreateMailMessage">
@@ -266,7 +278,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.MailDefinition.CreateMailMessage%2A> method creates a new <xref:System.Net.Mail.MailMessage> object that can be sent with the <xref:System.Net.Mail.SmtpClient.Send%2A?displayProperty=fullName> method.  
+ The <xref:System.Web.UI.WebControls.MailDefinition.CreateMailMessage%2A> method creates a new <xref:System.Net.Mail.MailMessage> object that can be sent with the <xref:System.Net.Mail.SmtpClient.Send%2A?displayProperty=nameWithType> method.  
   
  The `recipients` parameter contains a comma-separated list of recipients of the e-mail message. If the `recipients` parameter contains an improperly formatted Internet e-mail address, the <xref:System.Net.Mail.SmtpClient.Send%2A> method throws an <xref:System.Web.HttpException> exception and the e-mail message is not sent.  
   
@@ -304,6 +316,9 @@
  <paramref name="recipients" /> contains an incorrect e-mail address.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="owner" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
+        <altmember cref="T:System.Net.Mail.MailMessage" />
+        <altmember cref="T:System.Web.UI.WebControls.EmbeddedMailObject" />
       </Docs>
     </Member>
     <Member MemberName="EmbeddedObjects">
@@ -340,6 +355,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ChangePassword.SendingMail" />
+        <altmember cref="E:System.Web.UI.WebControls.PasswordRecovery.SendingMail" />
       </Docs>
     </Member>
     <Member MemberName="From">
@@ -369,7 +386,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.MailDefinition.From%2A> property contains the e-mail address of the sender of the e-mail message. If the <xref:System.Web.UI.WebControls.MailDefinition.From%2A> property is left blank, or contains an improperly formed e-mail address, the <xref:System.Net.Mail.SmtpClient.Send%2A?displayProperty=fullName> method throws an <xref:System.Web.HttpException> exception and the e-mail message is not sent.  
+ The <xref:System.Web.UI.WebControls.MailDefinition.From%2A> property contains the e-mail address of the sender of the e-mail message. If the <xref:System.Web.UI.WebControls.MailDefinition.From%2A> property is left blank, or contains an improperly formed e-mail address, the <xref:System.Net.Mail.SmtpClient.Send%2A?displayProperty=nameWithType> method throws an <xref:System.Web.HttpException> exception and the e-mail message is not sent.  
   
    
   
@@ -383,6 +400,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
+        <altmember cref="T:System.Net.Mail.MailMessage" />
+        <altmember cref="T:System.Web.UI.WebControls.EmbeddedMailObject" />
       </Docs>
     </Member>
     <Member MemberName="IsBodyHtml">
@@ -417,6 +437,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
+        <altmember cref="T:System.Net.Mail.MailMessage" />
+        <altmember cref="T:System.Web.UI.WebControls.EmbeddedMailObject" />
       </Docs>
     </Member>
     <Member MemberName="Priority">
@@ -461,6 +484,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not one of the <see cref="T:System.Net.Mail.MailPriority" /> values.</exception>
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
+        <altmember cref="T:System.Net.Mail.MailMessage" />
+        <altmember cref="T:System.Web.UI.WebControls.EmbeddedMailObject" />
       </Docs>
     </Member>
     <Member MemberName="Subject">
@@ -504,6 +530,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
+        <altmember cref="T:System.Net.Mail.MailMessage" />
+        <altmember cref="T:System.Web.UI.WebControls.EmbeddedMailObject" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -614,5 +643,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateMailMessage">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an e-mail message to send by means of SMTP (Simple Mail Transfer Protocol).</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -15,9 +15,11 @@ helpviewer_keywords:
   - "data [.NET Framework], accessing"
 ms.assetid: 8c37635d-e2c1-4b64-a258-61d9e87405e6
 caps.latest.revision: 17
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Data and Modeling in the .NET Framework
 This section provides information on how to access data using ADO.NET, Language Integrated Query (LINQ), WCF Data Services, and XML.  

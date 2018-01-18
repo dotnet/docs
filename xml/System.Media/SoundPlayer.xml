@@ -49,6 +49,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Media.SystemSounds" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -204,6 +205,8 @@
         <exception cref="T:System.ServiceProcess.TimeoutException">The elapsed time during loading exceeds the time, in milliseconds, specified by <see cref="P:System.Media.SoundPlayer.LoadTimeout" />.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The file specified by <see cref="P:System.Media.SoundPlayer.SoundLocation" /> cannot be found.</exception>
         <permission cref="T:System.Net.WebPermission">for access to HTTP Internet resources. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
+        <altmember cref="M:System.Media.SoundPlayer.LoadAsync" />
+        <altmember cref="E:System.Media.SoundPlayer.LoadCompleted" />
       </Docs>
     </Member>
     <Member MemberName="LoadAsync">
@@ -246,6 +249,8 @@
         </remarks>
         <exception cref="T:System.ServiceProcess.TimeoutException">The elapsed time during loading exceeds the time, in milliseconds, specified by <see cref="P:System.Media.SoundPlayer.LoadTimeout" />.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The file specified by <see cref="P:System.Media.SoundPlayer.SoundLocation" /> cannot be found.</exception>
+        <altmember cref="M:System.Media.SoundPlayer.Load" />
+        <altmember cref="E:System.Media.SoundPlayer.LoadCompleted" />
       </Docs>
     </Member>
     <Member MemberName="LoadCompleted">
@@ -281,6 +286,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.AsyncCompletedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="LoadTimeout">
@@ -341,6 +347,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Media.SoundPlayer.OnLoadCompleted(System.ComponentModel.AsyncCompletedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Media.SoundPlayer.OnLoadCompleted(System.ComponentModel.AsyncCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Media.SoundPlayer.LoadCompleted" />
       </Docs>
     </Member>
     <Member MemberName="OnSoundLocationChanged">
@@ -376,6 +383,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Media.SoundPlayer.OnSoundLocationChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Media.SoundPlayer.OnSoundLocationChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Media.SoundPlayer.SoundLocation" />
       </Docs>
     </Member>
     <Member MemberName="OnStreamChanged">
@@ -411,6 +419,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Media.SoundPlayer.OnStreamChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Media.SoundPlayer.OnStreamChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Media.SoundPlayer.Stream" />
       </Docs>
     </Member>
     <Member MemberName="Play">
@@ -452,6 +461,8 @@
         <exception cref="T:System.InvalidOperationException">The .wav header is corrupted; the file specified by <see cref="P:System.Media.SoundPlayer.SoundLocation" /> is not a PCM .wav file.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Security.Permissions.UIPermission">for access to native code. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
+        <altmember cref="M:System.Media.SoundPlayer.PlayLooping" />
+        <altmember cref="M:System.Media.SoundPlayer.PlaySync" />
       </Docs>
     </Member>
     <Member MemberName="PlayLooping">
@@ -495,6 +506,8 @@
         <exception cref="T:System.InvalidOperationException">The .wav header is corrupted; the file specified by <see cref="P:System.Media.SoundPlayer.SoundLocation" /> is not a PCM .wav file.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Security.Permissions.UIPermission">for access to native code. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
+        <altmember cref="M:System.Media.SoundPlayer.Play" />
+        <altmember cref="M:System.Media.SoundPlayer.PlaySync" />
       </Docs>
     </Member>
     <Member MemberName="PlaySync">
@@ -536,6 +549,8 @@
         <exception cref="T:System.InvalidOperationException">The .wav header is corrupted; the file specified by <see cref="P:System.Media.SoundPlayer.SoundLocation" /> is not a PCM .wav file.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <permission cref="T:System.Security.Permissions.UIPermission">for access to native code. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
+        <altmember cref="M:System.Media.SoundPlayer.Play" />
+        <altmember cref="M:System.Media.SoundPlayer.PlayLooping" />
       </Docs>
     </Member>
     <Member MemberName="SoundLocation">
@@ -557,7 +572,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is set to <xref:System.String?displayProperty=fullName> when the <xref:System.Media.SoundPlayer.Stream%2A> property is set to a <xref:System.IO.Stream>.  
+ This property is set to <xref:System.String.Empty?displayProperty=nameWithType> when the <xref:System.Media.SoundPlayer.Stream%2A> property is set to a <xref:System.IO.Stream>.  
   
    
   
@@ -661,6 +676,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName="StreamChanged">
@@ -737,5 +753,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Media.SoundPlayer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -36,6 +36,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ToolStripRenderer" />
+    <altmember cref="T:System.Windows.Forms.ToolStripProfessionalRenderer" />
+    <altmember cref="T:System.Windows.Forms.ToolStripContainer" />
+    <altmember cref="T:System.Windows.Forms.MergeAction" />
+    <altmember cref="P:System.Windows.Forms.ToolStripItem.MergeIndex" />
+    <altmember cref="P:System.Windows.Forms.ToolStripItem.MergeAction" />
+    <altmember cref="P:System.Windows.Forms.ToolStrip.AllowMerge" />
   </Docs>
   <Members>
     <Member MemberName="FindToolStrip">
@@ -96,6 +103,7 @@
         <returns>
           <see langword="true" /> if the shortcut key is used by any <see cref="T:System.Windows.Forms.ToolStrip" /> on the form; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripManager.IsValidShortcut(System.Windows.Forms.Keys)" />
       </Docs>
     </Member>
     <Member MemberName="IsValidShortcut">
@@ -126,6 +134,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripManager.IsShortcutDefined(System.Windows.Forms.Keys)" />
       </Docs>
     </Member>
     <Member MemberName="LoadSettings">
@@ -214,11 +223,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripManager.Merge%2A?displayProperty=fullName> method to combine <xref:System.Windows.Forms.ToolStrip> objects of identical type, such as <xref:System.Windows.Forms.ToolStrip> objects with other <xref:System.Windows.Forms.ToolStrip> objects, <xref:System.Windows.Forms.MenuStrip> objects with other <xref:System.Windows.Forms.MenuStrip> objects, and so on.  
+ Use the <xref:System.Windows.Forms.ToolStripManager.Merge%2A?displayProperty=nameWithType> method to combine <xref:System.Windows.Forms.ToolStrip> objects of identical type, such as <xref:System.Windows.Forms.ToolStrip> objects with other <xref:System.Windows.Forms.ToolStrip> objects, <xref:System.Windows.Forms.MenuStrip> objects with other <xref:System.Windows.Forms.MenuStrip> objects, and so on.  
   
- Use the <xref:System.Windows.Forms.ToolStripManager.Merge%2A?displayProperty=fullName> method to combine <xref:System.Windows.Forms.ToolStrip> objects of different types.  
+ Use the <xref:System.Windows.Forms.ToolStripManager.Merge%2A?displayProperty=nameWithType> method to combine <xref:System.Windows.Forms.ToolStrip> objects of different types.  
   
- The <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A?displayProperty=fullName> property must be set to `true` for both <xref:System.Windows.Forms.ToolStrip> objects, and the source and target types must be identical, or this method returns `false`.  
+ The <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A?displayProperty=nameWithType> property must be set to `true` for both <xref:System.Windows.Forms.ToolStrip> objects, and the source and target types must be identical, or this method returns `false`.  
   
 > [!NOTE]
 >  If there are two <xref:System.Windows.Forms.MenuStrip> controls on an MDI child form, setting <xref:System.Windows.Forms.Form.IsMdiContainer%2A> to `true` for the parent form merges the contents of only one of the <xref:System.Windows.Forms.MenuStrip> controls. Use <xref:System.Windows.Forms.ToolStripManager.Merge%2A> to merge the contents of additional child <xref:System.Windows.Forms.MenuStrip> controls on the MDI parent form.  
@@ -227,6 +236,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="sourceToolStrip" /> or <paramref name="targetName" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="sourceToolStrip" /> or <paramref name="targetName" /> parameters refer to the same <see cref="T:System.Windows.Forms.ToolStrip" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ToolStripManager.RevertMerge(System.Windows.Forms.ToolStrip)" />
       </Docs>
     </Member>
     <Member MemberName="Merge">
@@ -255,11 +265,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripManager.Merge%2A?displayProperty=fullName> method to combine <xref:System.Windows.Forms.ToolStrip> objects of different types.  
+ Use the <xref:System.Windows.Forms.ToolStripManager.Merge%2A?displayProperty=nameWithType> method to combine <xref:System.Windows.Forms.ToolStrip> objects of different types.  
   
- Use the <xref:System.Windows.Forms.ToolStripManager.Merge%2A?displayProperty=fullName> method to combine <xref:System.Windows.Forms.ToolStrip> objects of identical type, such as <xref:System.Windows.Forms.ToolStrip> objects with other <xref:System.Windows.Forms.ToolStrip> objects, <xref:System.Windows.Forms.MenuStrip> objects with other <xref:System.Windows.Forms.MenuStrip> objects, and so on.  
+ Use the <xref:System.Windows.Forms.ToolStripManager.Merge%2A?displayProperty=nameWithType> method to combine <xref:System.Windows.Forms.ToolStrip> objects of identical type, such as <xref:System.Windows.Forms.ToolStrip> objects with other <xref:System.Windows.Forms.ToolStrip> objects, <xref:System.Windows.Forms.MenuStrip> objects with other <xref:System.Windows.Forms.MenuStrip> objects, and so on.  
   
- The <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A?displayProperty=fullName> property must be set to `true` for both <xref:System.Windows.Forms.ToolStrip> objects, or this method returns `false`.  
+ The <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A?displayProperty=nameWithType> property must be set to `true` for both <xref:System.Windows.Forms.ToolStrip> objects, or this method returns `false`.  
   
 > [!NOTE]
 >  If there are two <xref:System.Windows.Forms.MenuStrip> controls on an MDI child form, setting <xref:System.Windows.Forms.Form.IsMdiContainer%2A> to `true` for the parent form merges the contents of only one of the <xref:System.Windows.Forms.MenuStrip> controls. Use <xref:System.Windows.Forms.ToolStripManager.Merge%2A> to merge the contents of additional child <xref:System.Windows.Forms.MenuStrip> controls on the MDI parent form.  
@@ -274,6 +284,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripManager.RevertMerge(System.Windows.Forms.ToolStrip)" />
       </Docs>
     </Member>
     <Member MemberName="Renderer">
@@ -335,7 +346,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripManager.RendererChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripManager.RendererChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripManager> named `ToolStripManager1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripManager.RendererChanged> event.  
   
@@ -406,10 +417,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A?displayProperty=fullName> property must be set to `true` for both <xref:System.Windows.Forms.ToolStrip> objects, or this method returns `false`.  
+ The <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A?displayProperty=nameWithType> property must be set to `true` for both <xref:System.Windows.Forms.ToolStrip> objects, or this method returns `false`.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripManager.Merge(System.Windows.Forms.ToolStrip,System.Windows.Forms.ToolStrip)" />
       </Docs>
     </Member>
     <Member MemberName="RevertMerge">
@@ -436,7 +448,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A?displayProperty=fullName> property must be set to `true` for both <xref:System.Windows.Forms.ToolStrip> objects, or this method returns `false`.  
+ The <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A?displayProperty=nameWithType> property must be set to `true` for both <xref:System.Windows.Forms.ToolStrip> objects, or this method returns `false`.  
   
    
   
@@ -448,6 +460,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripManager.Merge(System.Windows.Forms.ToolStrip,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RevertMerge">
@@ -476,7 +489,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A?displayProperty=fullName> property must be set to `true` for both <xref:System.Windows.Forms.ToolStrip> objects, or this method returns `false`.  
+ The <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A?displayProperty=nameWithType> property must be set to `true` for both <xref:System.Windows.Forms.ToolStrip> objects, or this method returns `false`.  
   
  ]]></format>
         </remarks>
@@ -562,5 +575,43 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="LoadSettings">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads settings for a <see cref="T:System.Windows.Forms.Form" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RevertMerge">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Undoes a merging of two <see cref="T:System.Windows.Forms.ToolStrip" /> objects.</summary>
+        <altmember cref="M:System.Windows.Forms.ToolStripManager.Merge(System.Windows.Forms.ToolStrip,System.Windows.Forms.ToolStrip)" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Merge">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Combines <see cref="T:System.Windows.Forms.ToolStrip" /> controls.</summary>
+        <altmember cref="M:System.Windows.Forms.ToolStripManager.RevertMerge(System.Windows.Forms.ToolStrip)" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SaveSettings">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves settings for the specified <see cref="T:System.Windows.Forms.Form" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -23,9 +23,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This application normally instantiate this class and then set the inner handler or provide an inner handler in the constructor.  
+ An application should provide an inner handler either in the constructor or through the <xref:System.Net.Http.DelegatingHandler.InnerHandler%2A> property before calling <xref:System.Net.Http.DelegatingHandler.SendAsync%2A>; otherwise, an <xref:System.InvalidOperationException> will be thrown.
   
- Note that <xref:System.Net.Http.DelegatingHandler.InnerHandler%2A> property may be a delegating handler too. This approach allows the creation of handler stacks to process the HTTP response messages.  
+ Note that <xref:System.Net.Http.DelegatingHandler.InnerHandler%2A> property may be a delegating handler as well. This approach allows the creation of handler stacks to process the HTTP response messages.  
   
  ]]></format>
     </remarks>
@@ -189,5 +189,17 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="request" /> was <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Net.Http.DelegatingHandler" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

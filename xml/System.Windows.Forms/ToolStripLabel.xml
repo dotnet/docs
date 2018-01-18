@@ -21,7 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripLabel> class to create a label that can render text and images that can implement the <xref:System.Windows.Forms.ToolStripItem.TextAlign%2A?displayProperty=fullName> and <xref:System.Windows.Forms.ToolStripItem.ImageAlign%2A?displayProperty=fullName> properties. The <xref:System.Windows.Forms.ToolStripLabel> also has many properties that enable it to display one or more hyperlinks, and other properties that modify the appearance and behavior of hyperlinks.  
+ Use the <xref:System.Windows.Forms.ToolStripLabel> class to create a label that can render text and images that can implement the <xref:System.Windows.Forms.ToolStripItem.TextAlign%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.ToolStripItem.ImageAlign%2A?displayProperty=nameWithType> properties. The <xref:System.Windows.Forms.ToolStripLabel> also has many properties that enable it to display one or more hyperlinks, and other properties that modify the appearance and behavior of hyperlinks.  
   
  The <xref:System.Windows.Forms.ToolStripLabel> is like a <xref:System.Windows.Forms.ToolStripButton> that does not get focus by default and that does not render as pushed or highlighted.  
   
@@ -273,6 +273,7 @@
         <summary>Creates a new accessibility object for the <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
         <returns>A new <see cref="T:System.Windows.Forms.AccessibleObject" /> for the <see cref="T:System.Windows.Forms.ToolStripItem" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ToolStripItem.CreateAccessibilityInstance" />
       </Docs>
     </Member>
     <Member MemberName="IsLink">
@@ -615,5 +616,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripLabel" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

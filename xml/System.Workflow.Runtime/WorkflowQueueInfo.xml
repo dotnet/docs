@@ -25,7 +25,7 @@
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
   
- <xref:System.Workflow.Runtime.WorkflowQueueInfo> contains information about the state of a <xref:System.Workflow.Runtime.WorkflowQueue>. You can call <xref:System.Workflow.Runtime.WorkflowInstance.GetWorkflowQueueData%2A?displayProperty=fullName> to get a collection of <xref:System.Workflow.Runtime.WorkflowQueueInfo> objects that represents the state of the workflow queues associated with a workflow instance.  
+ <xref:System.Workflow.Runtime.WorkflowQueueInfo> contains information about the state of a <xref:System.Workflow.Runtime.WorkflowQueue>. You can call <xref:System.Workflow.Runtime.WorkflowInstance.GetWorkflowQueueData%2A?displayProperty=nameWithType> to get a collection of <xref:System.Workflow.Runtime.WorkflowQueueInfo> objects that represents the state of the workflow queues associated with a workflow instance.  
   
  ]]></format>
     </remarks>

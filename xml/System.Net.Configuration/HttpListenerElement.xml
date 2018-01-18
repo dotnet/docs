@@ -20,7 +20,7 @@
   
  The <xref:System.Net.Configuration.HttpListenerElement.UnescapeRequestUrl%2A> property indicates if <xref:System.Net.HttpListener> uses the raw unescaped URI instead of the converted URI where any percent-encoded values are converted and other normalization steps are taken.  
   
- When a <xref:System.Net.HttpListener> instance receives a request through the `http.sys` service, it creates an instance of the URI string provided by `http.sys`, and exposes it as the <xref:System.Net.HttpListenerRequest.Url%2A?displayProperty=fullName> property.  
+ When a <xref:System.Net.HttpListener> instance receives a request through the `http.sys` service, it creates an instance of the URI string provided by `http.sys`, and exposes it as the <xref:System.Net.HttpListenerRequest.Url%2A?displayProperty=nameWithType> property.  
   
  The `http.sys` service exposes two request URI strings:  
   
@@ -28,7 +28,7 @@
   
 -   Converted URI  
   
- The raw URI is the <xref:System.Uri?displayProperty=fullName> provided in the request line of a HTTP request:  
+ The raw URI is the <xref:System.Uri?displayProperty=nameWithType> provided in the request line of a HTTP request:  
   
  `GET /path/`  
   
@@ -42,7 +42,7 @@
   
  `http://www.contoso.com/path/`  
   
- The `http.sys` service combines the <xref:System.Uri.Host%2A?displayProperty=fullName> property value and the string in the request line to create a converted URI. In addition, `http.sys` and the <xref:System.Uri?displayProperty=fullName> class also do the following:  
+ The `http.sys` service combines the <xref:System.Uri.Host%2A?displayProperty=nameWithType> property value and the string in the request line to create a converted URI. In addition, `http.sys` and the <xref:System.Uri?displayProperty=nameWithType> class also do the following:  
   
 -   Un-escapes all percent encoded values.  
   
@@ -83,6 +83,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.HttpListener" />
+    <altmember cref="P:System.Net.HttpListenerRequest.Url" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -141,6 +143,9 @@
   
  The timeout elements used for an <see cref="T:System.Net.HttpListener" /> object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerTimeoutManager" />
+        <altmember cref="T:System.Net.Configuration.HttpListenerTimeoutsElement" />
       </Docs>
     </Member>
     <Member MemberName="UnescapeRequestUrl">
@@ -169,7 +174,7 @@
 ## Remarks  
  The <xref:System.Net.Configuration.HttpListenerElement.UnescapeRequestUrl%2A> property indicates if <xref:System.Net.HttpListener> uses the raw unescaped URI instead of the converted URI where any percent-encoded values are converted and other normalization steps are taken.  
   
- When a <xref:System.Net.HttpListener> instance receives a request through the `http.sys` service, it creates an instance of the URI string provided by `http.sys`, and exposes it as the <xref:System.Net.HttpListenerRequest.Url%2A?displayProperty=fullName> property.  
+ When a <xref:System.Net.HttpListener> instance receives a request through the `http.sys` service, it creates an instance of the URI string provided by `http.sys`, and exposes it as the <xref:System.Net.HttpListenerRequest.Url%2A?displayProperty=nameWithType> property.  
   
  The `http.sys` service exposes two request URI strings:  
   
@@ -177,7 +182,7 @@
   
 -   Converted URI  
   
- The raw URI is the <xref:System.Uri?displayProperty=fullName> provided in the request line of a HTTP request:  
+ The raw URI is the <xref:System.Uri?displayProperty=nameWithType> provided in the request line of a HTTP request:  
   
  `GET /path/`  
   
@@ -191,7 +196,7 @@
   
  `http://www.contoso.com/path/`  
   
- The `http.sys` service combines the <xref:System.Uri.Host%2A?displayProperty=fullName> property value and the string in the request line to create a converted URI. In addition, `http.sys` and the <xref:System.Uri?displayProperty=fullName> class also do the following:  
+ The `http.sys` service combines the <xref:System.Uri.Host%2A?displayProperty=nameWithType> property value and the string in the request line to create a converted URI. In addition, `http.sys` and the <xref:System.Uri?displayProperty=nameWithType> class also do the following:  
   
 -   Un-escapes all percent encoded values.  
   
@@ -232,6 +237,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="P:System.Net.HttpListenerRequest.Url" />
       </Docs>
     </Member>
   </Members>

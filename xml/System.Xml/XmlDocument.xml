@@ -283,6 +283,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xml.XmlNodeChangedEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -326,6 +327,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XmlDocument.Load(System.String)" />
+        <altmember cref="M:System.Xml.XmlDocument.LoadXml(System.String)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -426,7 +429,7 @@
   
  For Document nodes, `BaseURI` returns the location of the XML document. For example, if the `XmlDocument` was loaded using the following call doc.Load("http://server/mydata.xml"), the `BaseURI` for the document node is http://server/mydata.xml. However, if the <xref:System.Xml.XmlDocument.Load%2A> method is redirected by server to a different URI, `BaseURI` returns the original URI passed to the `Load` method.  
   
- This property is a Microsoft extension to the Document Object Model (DOM). For additional information on `BaseURI` and how it behaves with other node types, see <xref:System.Xml.XmlNode.BaseURI%2A?displayProperty=fullName>.  
+ This property is a Microsoft extension to the Document Object Model (DOM). For additional information on `BaseURI` and how it behaves with other node types, see <xref:System.Xml.XmlNode.BaseURI%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -471,7 +474,7 @@
 ## Remarks  
  This method serves as a copy constructor for nodes. The cloned node has no parent (<xref:System.Xml.XmlNode.ParentNode%2A> returns `null`).  
   
- If `deep` is `true`, the cloned node includes all the child nodes, otherwise only the `XmlDocument` node is cloned. See the <xref:System.Xml.XmlNode.CloneNode%2A?displayProperty=fullName> method to see how this method behaves on other node types.  
+ If `deep` is `true`, the cloned node includes all the child nodes, otherwise only the `XmlDocument` node is cloned. See the <xref:System.Xml.XmlNode.CloneNode%2A?displayProperty=nameWithType> method to see how this method behaves on other node types.  
   
    
   
@@ -1180,7 +1183,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
    
   
 ## Examples  
- See <xref:System.Xml.XmlNode.CreateNavigator%2A?displayProperty=fullName> for an example using this method.  
+ See <xref:System.Xml.XmlNode.CreateNavigator%2A?displayProperty=nameWithType> for an example using this method.  
   
  ]]></format>
         </remarks>
@@ -1223,7 +1226,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
    
   
 ## Examples  
- See <xref:System.Xml.XmlNode.CreateNavigator%2A?displayProperty=fullName> for an example using this method.  
+ See <xref:System.Xml.XmlNode.CreateNavigator%2A?displayProperty=nameWithType> for an example using this method.  
   
  ]]></format>
         </remarks>
@@ -1764,6 +1767,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The values of <paramref name="version" /> or <paramref name="standalone" /> are something other than the ones specified above.</exception>
+        <altmember cref="T:System.Xml.XmlDeclaration" />
       </Docs>
     </Member>
     <Member MemberName="DocumentElement">
@@ -1858,6 +1862,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlDocumentType" />
       </Docs>
     </Member>
     <Member MemberName="GetElementById">
@@ -1968,7 +1973,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
  The nodes are placed in the order in which they would be encountered in the document.  
   
 > [!NOTE]
->  It is recommended that you use the <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=fullName> or <xref:System.Xml.XmlNode.SelectSingleNode%2A?displayProperty=fullName> method instead of the <xref:System.Xml.XmlDocument.GetElementsByTagName%2A> method.  
+>  It is recommended that you use the <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=nameWithType> or <xref:System.Xml.XmlNode.SelectSingleNode%2A?displayProperty=nameWithType> method instead of the <xref:System.Xml.XmlDocument.GetElementsByTagName%2A> method.  
   
    
   
@@ -2028,7 +2033,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
  The nodes are placed in the order in which they would be encountered in the document tree.  
   
 > [!NOTE]
->  It is recommended that you use the <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=fullName> or <xref:System.Xml.XmlNode.SelectSingleNode%2A?displayProperty=fullName> method instead of the <xref:System.Xml.XmlDocument.GetElementsByTagName%2A> method.  
+>  It is recommended that you use the <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=nameWithType> or <xref:System.Xml.XmlNode.SelectSingleNode%2A?displayProperty=nameWithType> method instead of the <xref:System.Xml.XmlDocument.GetElementsByTagName%2A> method.  
   
  ]]></format>
         </remarks>
@@ -2414,11 +2419,14 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
   
  This method is a Microsoft extension to the Document Object Model (DOM).  
   
- This method automatically detects the string format of the input XML (for example, UTF-8, ANSI, and so on). If your application needs to know which encoding is used to read the stream, consider using an <xref:System.Xml.XmlTextReader> object to read the stream, and then use the <xref:System.Xml.XmlTextReader.Encoding%2A?displayProperty=fullName> property to determine the encoding. If you need to use a <xref:System.Xml.XmlDocument> object to work with XML, you can use the <xref:System.Xml.XmlTextReader> object to create one. For more information, see [Reading XML Data using XPathDocument and XmlDocument](~/docs/standard/data/xml/reading-xml-data-using-xpathdocument-and-xmldocument.md).  
+ This method automatically detects the string format of the input XML (for example, UTF-8, ANSI, and so on). If your application needs to know which encoding is used to read the stream, consider using an <xref:System.Xml.XmlTextReader> object to read the stream, and then use the <xref:System.Xml.XmlTextReader.Encoding%2A?displayProperty=nameWithType> property to determine the encoding. If you need to use a <xref:System.Xml.XmlDocument> object to work with XML, you can use the <xref:System.Xml.XmlTextReader> object to create one. For more information, see [Reading XML Data using XPathDocument and XmlDocument](~/docs/standard/data/xml/reading-xml-data-using-xpathdocument-and-xmldocument.md).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">There is a load or parse error in the XML. In this case, a <see cref="T:System.IO.FileNotFoundException" /> is raised.</exception>
+        <altmember cref="T:System.Xml.Schema.ValidationEventArgs" />
+        <altmember cref="T:System.Xml.Schema.XmlSeverityType" />
+        <altmember cref="P:System.Xml.XmlValidatingReader.Schemas" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -2476,6 +2484,10 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">There is a load or parse error in the XML. In this case, the document remains empty.</exception>
+        <altmember cref="T:System.IO.StreamReader" />
+        <altmember cref="T:System.Xml.Schema.ValidationEventArgs" />
+        <altmember cref="T:System.Xml.Schema.XmlSeverityType" />
+        <altmember cref="P:System.Xml.XmlValidatingReader.Schemas" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -2545,6 +2557,9 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <exception cref="T:System.NotSupportedException">
           <paramref name="filename" /> is in an invalid format.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        <altmember cref="T:System.Xml.Schema.ValidationEventArgs" />
+        <altmember cref="T:System.Xml.Schema.XmlSeverityType" />
+        <altmember cref="P:System.Xml.XmlValidatingReader.Schemas" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -2626,6 +2641,9 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">There is a load or parse error in the XML. In this case, the document remains empty.</exception>
+        <altmember cref="T:System.Xml.Schema.ValidationEventArgs" />
+        <altmember cref="T:System.Xml.Schema.XmlSeverityType" />
+        <altmember cref="P:System.Xml.XmlValidatingReader.Schemas" />
       </Docs>
     </Member>
     <Member MemberName="LoadXml">
@@ -2683,6 +2701,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">There is a load or parse error in the XML. In this case, the document remains empty.</exception>
+        <altmember cref="P:System.Xml.XmlDocument.PreserveWhitespace" />
       </Docs>
     </Member>
     <Member MemberName="LocalName">
@@ -2801,6 +2820,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlNameTable" />
       </Docs>
     </Member>
     <Member MemberName="NodeChanged">
@@ -2840,6 +2860,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlNodeChangedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="NodeChanging">
@@ -2879,6 +2900,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlNodeChangedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="NodeInserted">
@@ -2916,6 +2938,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlNodeChangedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="NodeInserting">
@@ -2955,6 +2978,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlNodeChangedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="NodeRemoved">
@@ -2992,6 +3016,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlNodeChangedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="NodeRemoving">
@@ -3031,6 +3056,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlNodeChangedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="NodeType">
@@ -3062,6 +3088,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
         <summary>Gets the type of the current node.</summary>
         <value>The node type. For <see langword="XmlDocument" /> nodes, this value is XmlNodeType.Document.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xml.XmlNodeType" />
       </Docs>
     </Member>
     <Member MemberName="OwnerDocument">
@@ -3235,7 +3262,7 @@ while (reader.MoveToNextAttribute())
 }  
 ```  
   
- `ReadNode` does consume the attribute value though, which means after calling `ReadNode` on an attribute, <xref:System.Xml.XmlReader.ReadAttributeValue%2A?displayProperty=fullName> returns `false`.  
+ `ReadNode` does consume the attribute value though, which means after calling `ReadNode` on an attribute, <xref:System.Xml.XmlReader.ReadAttributeValue%2A?displayProperty=nameWithType> returns `false`.  
   
    
   
@@ -3258,6 +3285,8 @@ while (reader.MoveToNextAttribute())
   
  This method is a Microsoft extension to the Document Object Model (DOM).</para>
         </block>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlDocument.ImportNode(System.Xml.XmlNode,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -3297,7 +3326,7 @@ while (reader.MoveToNextAttribute())
 ## Remarks  
  White space is preserved only if <xref:System.Xml.XmlDocument.PreserveWhitespace%2A> is set to `true`.  
   
- The XmlDeclaration of the current `XmlDocument` object determines the encoding attribute in the saved document. The value of the encoding attribute is taken from the <xref:System.Xml.XmlDeclaration.Encoding%2A?displayProperty=fullName> property. If the `XmlDocument` does not have an XmlDeclaration, or if the XmlDeclaration does not have an encoding attribute, the saved document will not have one either.  
+ The XmlDeclaration of the current `XmlDocument` object determines the encoding attribute in the saved document. The value of the encoding attribute is taken from the <xref:System.Xml.XmlDeclaration.Encoding%2A?displayProperty=nameWithType> property. If the `XmlDocument` does not have an XmlDeclaration, or if the XmlDeclaration does not have an encoding attribute, the saved document will not have one either.  
   
  When the document is saved, xmlns attributes are generated to persist the node identity (local name + namespace URI) correctly. For example, the following C# code  
   
@@ -3397,7 +3426,7 @@ doc.Save(Console.Out);
 ## Remarks  
  White space is preserved in the output file only if <xref:System.Xml.XmlDocument.PreserveWhitespace%2A> is set to `true`.  
   
- The XmlDeclaration of the current `XmlDocument` object determines the encoding attribute in the saved document. The value of the encoding attribute is taken from the <xref:System.Xml.XmlDeclaration.Encoding%2A?displayProperty=fullName> property. If the `XmlDocument` does not have an XmlDeclaration, or if the XmlDeclaration does not have an encoding attribute, the saved document will not have one either.  
+ The XmlDeclaration of the current `XmlDocument` object determines the encoding attribute in the saved document. The value of the encoding attribute is taken from the <xref:System.Xml.XmlDeclaration.Encoding%2A?displayProperty=nameWithType> property. If the `XmlDocument` does not have an XmlDeclaration, or if the XmlDeclaration does not have an encoding attribute, the saved document will not have one either.  
   
  When the document is saved, xmlns attributes are generated to persist the node identity (local name + namespace URI) correctly. For example, the following C# code  
   
@@ -3499,6 +3528,7 @@ doc.Save(Console.Out);
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">The operation would not result in a well formed XML document (for example, no document element or duplicate XML declarations).</exception>
+        <altmember cref="P:System.Xml.XmlTextWriter.Formatting" />
       </Docs>
     </Member>
     <Member MemberName="SchemaInfo">
@@ -3571,6 +3601,7 @@ doc.Save(Console.Out);
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.XmlDocument.Validate" />
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -3730,7 +3761,7 @@ doc.Save(Console.Out);
 ## Remarks  
  This method is a Microsoft extension to the Document Object Model (DOM). It is functionally equivalent to the <xref:System.Xml.XmlDocument.InnerXml%2A> property.  
   
- The <xref:System.Xml.XmlDeclaration.Encoding%2A?displayProperty=fullName> property determines the encoding that is written out. If the `Encoding` property does not have a value, the `XmlDocument` is written out without an encoding attribute.  
+ The <xref:System.Xml.XmlDeclaration.Encoding%2A?displayProperty=nameWithType> property determines the encoding that is written out. If the `Encoding` property does not have a value, the `XmlDocument` is written out without an encoding attribute.  
   
    
   
@@ -3782,7 +3813,7 @@ doc.Save(Console.Out);
 ## Remarks  
  This method is a Microsoft extension to the Document Object Model (DOM). It is functionally equivalent to the <xref:System.Xml.XmlNode.OuterXml%2A> property.  
   
- The <xref:System.Xml.XmlDeclaration.Encoding%2A?displayProperty=fullName> property determines the encoding that is written out. If the `Encoding` property does not have a value, the `XmlDocument` is written out without an encoding attribute.  
+ The <xref:System.Xml.XmlDeclaration.Encoding%2A?displayProperty=nameWithType> property determines the encoding that is written out. If the `Encoding` property does not have a value, the `XmlDocument` is written out without an encoding attribute.  
   
    
   
@@ -3827,7 +3858,7 @@ doc.Save(Console.Out);
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `XmlResolver` can be used to load DTDs or expand entity references. Using the <xref:System.Xml.XmlResolver.Credentials%2A?displayProperty=fullName> property, you can set credentials on the `XmlResolver` to access resources stored on a secure network resource.  
+ The `XmlResolver` can be used to load DTDs or expand entity references. Using the <xref:System.Xml.XmlResolver.Credentials%2A?displayProperty=nameWithType> property, you can set credentials on the `XmlResolver` to access resources stored on a secure network resource.  
   
 -   If the document was not loaded using an <xref:System.Xml.XmlReader> (that is, if it was loaded using a stream, file, and so on) the `XmlResolver` on the `XmlDocument` is always used.  
   
@@ -3872,7 +3903,94 @@ doc.Save(Console.Out);
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">This property is set to <see langword="null" /> and an external DTD or entity is encountered.</exception>
+        <altmember cref="P:System.Xml.XmlUrlResolver.Credentials" />
+        <altmember cref="T:System.Net.CredentialCache" />
+        <altmember cref="T:System.Net.NetworkCredential" />
+        <altmember cref="T:System.Xml.XmlSecureResolver" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateNavigator">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Xml.XPath.XPathNavigator" /> object for navigating this document.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetElementsByTagName">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Xml.XmlNodeList" /> containing a list of all descendant elements that match the specified name.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Validate">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Validates the <see cref="T:System.Xml.XmlDocument" /> against the XML Schema Definition Language (XSD) schemas contained in the <see cref="P:System.Xml.XmlDocument.Schemas" /> property.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlDocument" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateNode">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Xml.XmlNode" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Save">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves the XML document to the specified location.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads the specified XML data from a <see cref="T:System.IO.Stream" />, a URL, a <see cref="T:System.IO.TextReader" />, or an <see cref="T:System.Xml.XmlReader" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateElement">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Xml.XmlElement" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Xml.XmlAttribute" /> with the specified name.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

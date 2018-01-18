@@ -70,8 +70,8 @@
   
  The second part of the code example is the Web page. It contains a declarative reference to an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control, with a child `<zonetemplate>` element that contains a declarative reference to a <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control. The page references the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control, using a `Register` directive for the assembly, and the `<aspSample:UserInfoWebPart>` element for the control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_PropertyGridEditorPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_PropertyGridEditorPart_Overview/CS/propertyGridEditorPartCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_PropertyGridEditorPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_PropertyGridEditorPart_Overview/VB/propertyGridEditorPartVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_PropertyGridEditorPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_PropertyGridEditorPart_Overview/CS/propertyGridEditorPartCS.aspx#1)]
+ [!code-aspx-vb[WebParts_PropertyGridEditorPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_PropertyGridEditorPart_Overview/VB/propertyGridEditorPartVB.aspx#1)]  
   
  The third part of the code example is a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> class named `UserInfoWebPart`, which is referenced in the Web page. Notice that the various properties that contain information about a user are all marked with the `WebBrowsable` attribute. This enables the <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control to provide the UI for editing those properties. The properties are also marked with a `WebDisplayName` attribute, to specify the text of the label that appears next to each control in the editing UI.  
   
@@ -87,6 +87,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.BehaviorEditorPart" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.LayoutEditorPart" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.AppearanceEditorPart" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -144,6 +147,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">An error occurred when trying to set the value for a property on the associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" />.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.EditorPart.ApplyChanges" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart.SyncChanges" />
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -200,6 +205,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Panel.DefaultButton" />
       </Docs>
     </Member>
     <Member MemberName="Display">
@@ -227,6 +233,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.EditorPart.Display" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -290,7 +297,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart.SyncChanges%2A> method is a critical method on a <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control. It implements the <xref:System.Web.UI.WebControls.WebParts.EditorPart.SyncChanges%2A?displayProperty=fullName> method from the base class, retrieves the current values from the associated <xref:System.Web.UI.WebControls.WebParts.WebPart> control, and updates the controls in the <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control with those values so a user can edit them.  
+ The <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart.SyncChanges%2A> method is a critical method on a <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control. It implements the <xref:System.Web.UI.WebControls.WebParts.EditorPart.SyncChanges%2A?displayProperty=nameWithType> method from the base class, retrieves the current values from the associated <xref:System.Web.UI.WebControls.WebParts.WebPart> control, and updates the controls in the <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control with those values so a user can edit them.  
   
  The <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart.SyncChanges%2A> method is called whenever the values in the associated <xref:System.Web.UI.WebControls.WebParts.WebPart> control might have changed. For a <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control, the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> zone that contains the control calls the <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart.SyncChanges%2A> method immediately after calling the <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart.ApplyChanges%2A> method, so that the values in the <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control are always synchronized with the values in the associated <xref:System.Web.UI.WebControls.WebParts.WebPart> control. Another case where the <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart.SyncChanges%2A> method is called is when a <xref:System.Web.UI.WebControls.WebParts.WebPart> control is entering edit mode.  
   
@@ -328,8 +335,8 @@
   
  The following code example shows how to set the title on a <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control declaratively in a Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_PropertyGridEditorPart_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_PropertyGridEditorPart_Overview/CS/propertyGridEditorPartCS.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_PropertyGridEditorPart_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_PropertyGridEditorPart_Overview/VB/propertyGridEditorPartVB.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_PropertyGridEditorPart_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_PropertyGridEditorPart_Overview/CS/propertyGridEditorPartCS.aspx#2)]
+ [!code-aspx-vb[WebParts_PropertyGridEditorPart_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_PropertyGridEditorPart_Overview/VB/propertyGridEditorPartVB.aspx#2)]  
   
  The next part of the code example shows how to set the value of the <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart.Title%2A> property programmatically. In order to persist the programmatically assigned value, a static variable named `editControlTitle` is used, and this value is assigned to the <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart.Title%2A> property each time the control is initialized, so that the value is persisted between postback events.  
   
@@ -340,6 +347,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
       </Docs>
     </Member>
   </Members>

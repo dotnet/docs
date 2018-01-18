@@ -410,7 +410,7 @@
     </Member>
     <Member MemberName="TryOpenAssociatedPortablePdb">
       <MemberSignature Language="C#" Value="public bool TryOpenAssociatedPortablePdb (string peImagePath, Func&lt;string,System.IO.Stream&gt; pdbFileStreamProvider, out System.Reflection.Metadata.MetadataReaderProvider pdbReaderProvider, out string pdbPath);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryOpenAssociatedPortablePdb(string peImagePath, class System.Func`2&lt;string, class System.IO.Stream&gt; pdbFileStreamProvider, class System.Reflection.Metadata.MetadataReaderProvider pdbReaderProvider, string pdbPath) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryOpenAssociatedPortablePdb(string peImagePath, class System.Func`2&lt;string, class System.IO.Stream&gt; pdbFileStreamProvider, [out] class System.Reflection.Metadata.MetadataReaderProvider&amp; pdbReaderProvider, [out] string&amp; pdbPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.TryOpenAssociatedPortablePdb(System.String,System.Func{System.String,System.IO.Stream},System.Reflection.Metadata.MetadataReaderProvider@,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -22,6 +22,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Xps.Serialization.XpsSerializationManagerAsync" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,6 +44,7 @@
           <see langword="true" /> to specify batch mode; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Serialization.XpsSerializationManager" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Xps.Serialization.XpsSerializationManager.IsBatchMode" />
       </Docs>
     </Member>
     <Member MemberName="Commit">
@@ -145,6 +147,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsSerializationManager.SetFontSubsettingPolicy(System.Windows.Xps.Serialization.FontSubsetterCommitPolicies)" />
       </Docs>
     </Member>
     <Member MemberName="SetFontSubsettingPolicy">
@@ -183,6 +186,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Xps.Serialization.XpsSerializationManager.SetFontSubsettingCountPolicy(System.Int32)" />
+        <altmember cref="T:System.Windows.Documents.Glyphs" />
       </Docs>
     </Member>
     <Member MemberName="XpsSerializationPrintTicketRequired">

@@ -34,9 +34,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This delegate is available for use with your own events when the <xref:System.ComponentModel.HandledEventArgs.Handled%2A?displayProperty=fullName> property provides sufficient event data. The event handler can set the <xref:System.ComponentModel.HandledEventArgs.Handled%2A> property to `true` if all necessary processing has been completed in the handler.  
+ This delegate is available for use with your own events when the <xref:System.ComponentModel.HandledEventArgs.Handled%2A?displayProperty=nameWithType> property provides sufficient event data. The event handler can set the <xref:System.ComponentModel.HandledEventArgs.Handled%2A> property to `true` if all necessary processing has been completed in the handler.  
   
- Typically, events that require this functionality will also require additional event data, and will use a class that derives from <xref:System.ComponentModel.HandledEventArgs> along with a corresponding, similarly-named delegate type. For example, the <xref:System.Windows.Forms.DataGridView.RowPrePaint?displayProperty=fullName> event uses the <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs> event-data type and the <xref:System.Windows.Forms.DataGridViewRowPrePaintEventHandler> delegate type. Because delegates are not inherited, the <xref:System.ComponentModel.HandledEventHandler> is rarely used.  
+ Typically, events that require this functionality will also require additional event data, and will use a class that derives from <xref:System.ComponentModel.HandledEventArgs> along with a corresponding, similarly-named delegate type. For example, the <xref:System.Windows.Forms.DataGridView.RowPrePaint?displayProperty=nameWithType> event uses the <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs> event-data type and the <xref:System.Windows.Forms.DataGridViewRowPrePaintEventHandler> delegate type. Because delegates are not inherited, the <xref:System.ComponentModel.HandledEventHandler> is rarely used.  
   
  ]]></format>
     </remarks>

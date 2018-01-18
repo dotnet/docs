@@ -82,6 +82,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="activationContext" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.AppDomainSetup.ActivationArguments" />
+        <altmember cref="T:System.Runtime.Hosting.ActivationArguments" />
+        <altmember cref="T:System.ActivationContext" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -176,6 +179,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.AppDomainInitializer" />
+        <altmember cref="P:System.AppDomainSetup.AppDomainInitializerArguments" />
       </Docs>
     </Member>
     <Member MemberName="AppDomainInitializerArguments">
@@ -213,6 +218,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.AppDomainInitializer" />
+        <altmember cref="P:System.AppDomainSetup.AppDomainInitializer" />
       </Docs>
     </Member>
     <Member MemberName="AppDomainManagerAssembly">
@@ -236,7 +243,7 @@
 ## Remarks  
  To specify the type of the application domain manager, set both this property and the <xref:System.AppDomainSetup.AppDomainManagerType%2A> property. If either of these properties is not set, the other is ignored.  
   
- If no type is provided, the application domain manager is created from the same type as the parent application domain (that is, the application domain from which the <xref:System.AppDomain.CreateDomain%2A?displayProperty=fullName> method is called).  
+ If no type is provided, the application domain manager is created from the same type as the parent application domain (that is, the application domain from which the <xref:System.AppDomain.CreateDomain%2A?displayProperty=nameWithType> method is called).  
   
  When the application domain is loaded, <xref:System.TypeLoadException> is thrown if the assembly does not exist, or if the assembly does not contain the type specified by the <xref:System.AppDomainSetup.AppDomainManagerType%2A> property. <xref:System.IO.FileLoadException> is thrown if the assembly is found but the version information does not match.  
   
@@ -244,7 +251,7 @@
   
  This feature requires the application to have full trust. (For example, an application running on the desktop has full trust.) If the application does not have full trust, a <xref:System.TypeLoadException> is thrown.  
   
- The format of the assembly display name is given by the <xref:System.Reflection.Assembly.FullName%2A?displayProperty=fullName> property.  
+ The format of the assembly display name is given by the <xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -271,7 +278,7 @@
 ## Remarks  
  To specify the type of the application domain manager, set both this property and the <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A> property. If either of these properties is not set, the other is ignored.  
   
- If no type is provided, the application domain manager is created from the same type as the parent application domain (that is, the application domain from which the <xref:System.AppDomain.CreateDomain%2A?displayProperty=fullName> method is called).  
+ If no type is provided, the application domain manager is created from the same type as the parent application domain (that is, the application domain from which the <xref:System.AppDomain.CreateDomain%2A?displayProperty=nameWithType> method is called).  
   
  When the application domain is loaded, <xref:System.TypeLoadException> is thrown if the assembly specified by the <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A> property does not contain the type specified by this property.  
   
@@ -279,7 +286,7 @@
   
  This feature requires the application to have full trust. (For example, an application running on the desktop has full trust.) If the application does not have full trust, a <xref:System.TypeLoadException> is thrown.  
   
- The format of the full name of a type is given by the <xref:System.Type.FullName%2A?displayProperty=fullName> property.  
+ The format of the full name of a type is given by the <xref:System.Type.FullName%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -348,7 +355,7 @@
 ## Examples  
  The following example shows how to set the <xref:System.AppDomainSetup.ApplicationName%2A> property when you create a new application domain.  
   
- The example creates a new application domain, and then calls the <xref:System.AppDomain.CreateInstanceAndUnwrap%2A?displayProperty=fullName> method to load the example assembly into the new application domain and create an instance of the `Worker` class. The `Worker` class inherits <xref:System.MarshalByRefObject>, so the example can use the proxy returned by <xref:System.AppDomain.CreateInstanceAndUnwrap%2A> to call the `TestLoad` method.  
+ The example creates a new application domain, and then calls the <xref:System.AppDomain.CreateInstanceAndUnwrap%2A?displayProperty=nameWithType> method to load the example assembly into the new application domain and create an instance of the `Worker` class. The `Worker` class inherits <xref:System.MarshalByRefObject>, so the example can use the proxy returned by <xref:System.AppDomain.CreateInstanceAndUnwrap%2A> to call the `TestLoad` method.  
   
  The `TestLoad` method loads an assembly that you specify. You must either specify a valid, fully qualified assembly name, or comment out the <xref:System.Reflection.Assembly.Load%28System.String%29> method. The `TestLoad` method lists the assemblies that are loaded into the new application domain, showing that your specified assembly and the example assembly are loaded.  
   
@@ -417,6 +424,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the path information. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
+        <altmember cref="P:System.AppDomainSetup.ShadowCopyFiles" />
+        <altmember cref="P:System.AppDomainSetup.ShadowCopyDirectories" />
       </Docs>
     </Member>
     <Member MemberName="ConfigurationFile">
@@ -471,7 +480,7 @@
 ## Remarks  
  If the <xref:System.AppDomainSetup.DisallowApplicationBaseProbing%2A> property is `true`, the value of the <xref:System.AppDomainSetup.ApplicationBase%2A> property is ignored. That is, no assemblies are probed for in the directories specified by the <xref:System.AppDomainSetup.ApplicationBase%2A> property. In addition, the values of the <xref:System.AppDomainSetup.PrivateBinPath%2A> property and the <xref:System.AppDomainSetup.PrivateBinPathProbe%2A> property are ignored. No assemblies are probed for in the directories specified by the <xref:System.AppDomainSetup.PrivateBinPath%2A> property.  
   
- The <xref:System.AppDomainSetup.DisallowApplicationBaseProbing%2A> property provides an additional layer of control over the loading process. In the normal assembly loading sequence, the application base is probed before the <xref:System.AppDomain.AssemblyResolve?displayProperty=fullName> event is raised. However, some applications might need to load assemblies from an OLE compound file within a document, or from a unique known location that is neither in the global assembly cache nor in the directories specified by the <xref:System.AppDomainSetup.ApplicationBase%2A> and <xref:System.AppDomainSetup.PrivateBinPath%2A> properties. Such applications can use the <xref:System.AppDomainSetup.DisallowApplicationBaseProbing%2A> property to avoid the delay caused by normal probing, and to avoid loading copies of the necessary assembly that might be located in the normal probing paths.  
+ The <xref:System.AppDomainSetup.DisallowApplicationBaseProbing%2A> property provides an additional layer of control over the loading process. In the normal assembly loading sequence, the application base is probed before the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event is raised. However, some applications might need to load assemblies from an OLE compound file within a document, or from a unique known location that is neither in the global assembly cache nor in the directories specified by the <xref:System.AppDomainSetup.ApplicationBase%2A> and <xref:System.AppDomainSetup.PrivateBinPath%2A> properties. Such applications can use the <xref:System.AppDomainSetup.DisallowApplicationBaseProbing%2A> property to avoid the delay caused by normal probing, and to avoid loading copies of the necessary assembly that might be located in the normal probing paths.  
   
  ]]></format>
         </remarks>
@@ -586,7 +595,7 @@
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks  
- Use this property to set the base directory where the dynamic directory for the new application domain will be located. When code in the new application domain loads an assembly, assembly resolution looks first in the normal probing paths. If it does not find the assembly, it looks in the dynamic directory, which is returned by the <xref:System.AppDomain.DynamicDirectory%2A?displayProperty=fullName> property. Dynamic assemblies that will be loaded and executed by the new application domain can be placed there.  
+ Use this property to set the base directory where the dynamic directory for the new application domain will be located. When code in the new application domain loads an assembly, assembly resolution looks first in the normal probing paths. If it does not find the assembly, it looks in the dynamic directory, which is returned by the <xref:System.AppDomain.DynamicDirectory%2A?displayProperty=nameWithType> property. Dynamic assemblies that will be loaded and executed by the new application domain can be placed there.  
   
  When you assign a path to the <xref:System.AppDomainSetup.DynamicBase%2A> property, an additional subdirectory is added; the name of this subdirectory is the hash code of the value assigned to the <xref:System.AppDomainSetup.ApplicationName%2A> property. Thus, the base directory subsequently returned by this property is always different from the value assigned.  
   
@@ -605,7 +614,7 @@
 > [!NOTE]
 >  The base directory in this example is intended to be outside the probing path for the example application. Be sure to compile the example in a different location. Delete the base directory and all its subdirectories each time you run the example.  
   
- The example creates a new application domain using the <xref:System.AppDomainSetup> object. The example then creates the dynamic directory if it does not already exist. Although the example uses the application domain's <xref:System.AppDomain.DynamicDirectory%2A?displayProperty=fullName> property to get the name of the dynamic directory, it could just as easily create the directory beforehand by concatenating the original path, the hash code of the application name, and the application name.  
+ The example creates a new application domain using the <xref:System.AppDomainSetup> object. The example then creates the dynamic directory if it does not already exist. Although the example uses the application domain's <xref:System.AppDomain.DynamicDirectory%2A?displayProperty=nameWithType> property to get the name of the dynamic directory, it could just as easily create the directory beforehand by concatenating the original path, the hash code of the application name, and the application name.  
   
  The example has a `GenerateDynamicAssembly` method that emits an assembly named `DynamicHelloWorld.dll` and stores it in the new application domain's dynamic directory. The dynamic assembly contains one type, `HelloWorld`, that has a static method (`Shared` method in Visual Basic) named `HelloFromAD`. Calling this method displays the name of the application domain.  
   
@@ -651,7 +660,7 @@
   
  The XML in `value` is the same as the XML in a normal configuration file, except that it is stored as a <xref:System.Byte> array.  
   
- To access the configuration bytes for an application domain, use the <xref:System.AppDomain.SetupInformation%2A?displayProperty=fullName> property to get the <xref:System.AppDomainSetup> object for the application domain, then use the <xref:System.AppDomainSetup.GetConfigurationBytes%2A> method.  
+ To access the configuration bytes for an application domain, use the <xref:System.AppDomain.SetupInformation%2A?displayProperty=nameWithType> property to get the <xref:System.AppDomainSetup> object for the application domain, then use the <xref:System.AppDomainSetup.GetConfigurationBytes%2A> method.  
   
  ]]></format>
         </remarks>
@@ -738,6 +747,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Security.AllowPartiallyTrustedCallersAttribute" />
+        <altmember cref="P:System.Security.AllowPartiallyTrustedCallersAttribute.PartialTrustVisibilityLevel" />
+        <altmember cref="F:System.Security.PartialTrustVisibilityLevel.NotVisibleByDefault" />
       </Docs>
     </Member>
     <Member MemberName="PrivateBinPath">
@@ -786,7 +798,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Set this property to any non-null string value, including <xref:System.String?displayProperty=fullName> (""), to exclude the application directory path — that is, <xref:System.AppDomainSetup.ApplicationBase%2A> — from the search path for the application, and to search for assemblies only in <xref:System.AppDomainSetup.PrivateBinPath%2A>.  
+ Set this property to any non-null string value, including <xref:System.String.Empty?displayProperty=nameWithType> (""), to exclude the application directory path — that is, <xref:System.AppDomainSetup.ApplicationBase%2A> — from the search path for the application, and to search for assemblies only in <xref:System.AppDomainSetup.PrivateBinPath%2A>.  
   
  ]]></format>
         </remarks>
@@ -853,14 +865,15 @@
   
 |Switch|Meaning|  
 |------------|-------------|  
-|"NetFx40_LegacySecurityPolicy"|Code access security (CAS) for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] is enabled in this application domain. See [\&lt;NetFx40_LegacySecurityPolicy\&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).|  
-|"NetFx40_Legacy20SortingBehavior"|String sorting defaults for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] are enabled in this application domain. Successfully restoring legacy sorting behavior also requires the sort00001000.dll dynamic link library to be available on the local system. See [\&lt;CompatSortNLSVersion\&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/compatsortnlsversion-element.md).|  
+|"NetFx40_LegacySecurityPolicy"|Code access security (CAS) for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] is enabled in this application domain. See [&lt;NetFx40_LegacySecurityPolicy&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).|  
+|"NetFx40_Legacy20SortingBehavior"|String sorting defaults for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] are enabled in this application domain. Successfully restoring legacy sorting behavior also requires the sort00001000.dll dynamic link library to be available on the local system. See [&lt;CompatSortNLSVersion&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/compatsortnlsversion-element.md).|  
 |"NetFx40_Legacy40SortingBehavior"|String sorting defaults for the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and Unicode 5.0 are enabled in this application domain. Successfully restoring legacy sorting behavior also requires the sort00060101.dll dynamic link library to be available on the local system.|  
-|"NetFx40_TimeSpanLegacyFormatMode"|<xref:System.TimeSpan> formatting behavior for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] is enabled in this application domain. See [\&lt;TimeSpan_LegacyFormatMode\&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/timespan-legacyformatmode-element.md) and the "Restoring Legacy TimeSpan Formatting" section of the <xref:System.TimeSpan> topic.|  
-|"UseRandomizedStringHashAlgorithm"|The runtime calculates hash codes for strings on a per application domain basis instead of using a single hashing algorithm that produces a consistent hash code across application domains. See [\&lt;UseRandomizedStringHashAlgorithm\&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/userandomizedstringhashalgorithm-element.md).|  
+|"NetFx40_TimeSpanLegacyFormatMode"|<xref:System.TimeSpan> formatting behavior for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] is enabled in this application domain. See [&lt;TimeSpan_LegacyFormatMode&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/timespan-legacyformatmode-element.md) and the "Restoring Legacy TimeSpan Formatting" section of the <xref:System.TimeSpan> topic.|  
+|"UseRandomizedStringHashAlgorithm"|The runtime calculates hash codes for strings on a per application domain basis instead of using a single hashing algorithm that produces a consistent hash code across application domains. See [&lt;UseRandomizedStringHashAlgorithm&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/userandomizedstringhashalgorithm-element.md).|  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.AppDomain.IsCompatibilitySwitchSet(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SetConfigurationBytes">
@@ -989,6 +1002,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the path information. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
+        <altmember cref="P:System.AppDomainSetup.CachePath" />
+        <altmember cref="P:System.AppDomainSetup.ShadowCopyFiles" />
       </Docs>
     </Member>
     <Member MemberName="ShadowCopyFiles">
@@ -1015,6 +1030,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.AppDomainSetup.CachePath" />
+        <altmember cref="P:System.AppDomainSetup.ShadowCopyDirectories" />
       </Docs>
     </Member>
     <Member MemberName="TargetFrameworkName">
@@ -1045,5 +1062,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.AppDomainSetup" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

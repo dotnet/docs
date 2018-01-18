@@ -7,6 +7,12 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -31,7 +37,7 @@
   
 -   Access other types of contexts, such as security, instance, and request contexts.  
   
--   Access the channel associated with the <xref:System.ServiceModel.OperationContext> object or (if the channel implements <xref:System.ServiceModel.Channels.ISession?displayProperty=fullName>) the associated channel's session identifier.  
+-   Access the channel associated with the <xref:System.ServiceModel.OperationContext> object or (if the channel implements <xref:System.ServiceModel.Channels.ISession?displayProperty=nameWithType>) the associated channel's session identifier.  
   
  When an <xref:System.ServiceModel.OperationContextScope> is created, the current <xref:System.ServiceModel.OperationContext> is stored and the new <xref:System.ServiceModel.OperationContext> becomes the one returned by the <xref:System.ServiceModel.OperationContext.Current%2A> property. When the <xref:System.ServiceModel.OperationContextScope> is disposed, the original <xref:System.ServiceModel.OperationContext> is restored.  
   
@@ -60,6 +66,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="channel" Type="System.ServiceModel.IContextChannel" />
       </Parameters>
@@ -72,7 +84,7 @@
 ## Remarks  
  Use the <xref:System.ServiceModel.OperationContextScope.%23ctor%2A> constructor to create a new <xref:System.ServiceModel.OperationContext> for a client channel that can be used to add or modify outbound message headers, read incoming message headers, or access other run-time properties of the <xref:System.ServiceModel.OperationContext>.  
   
- The headers added to the <xref:System.ServiceModel.OperationContext.IncomingMessageHeaders%2A?displayProperty=fullName> property of the newly created <xref:System.ServiceModel.OperationContext> apply only to the channel that was passed to the <xref:System.ServiceModel.OperationContextScope.%23ctor%2A> constructor. If the user creates a new channel within its scope then the headers are not applied to messages sent on the new channel.  
+ The headers added to the <xref:System.ServiceModel.OperationContext.IncomingMessageHeaders%2A?displayProperty=nameWithType> property of the newly created <xref:System.ServiceModel.OperationContext> apply only to the channel that was passed to the <xref:System.ServiceModel.OperationContextScope.%23ctor%2A> constructor. If the user creates a new channel within its scope then the headers are not applied to messages sent on the new channel.  
   
    
   
@@ -95,6 +107,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="context" Type="System.ServiceModel.OperationContext" />
@@ -122,6 +140,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -131,5 +155,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.OperationContextScope" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

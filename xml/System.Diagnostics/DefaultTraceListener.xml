@@ -26,9 +26,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An instance of this class is automatically added to the <xref:System.Diagnostics.Debug.Listeners%2A?displayProperty=fullName> and <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collections. Explicitly adding a second <xref:System.Diagnostics.DefaultTraceListener> causes duplicate messages in the debugger output window and duplicate message boxes for asserts.  
+ An instance of this class is automatically added to the <xref:System.Diagnostics.Debug.Listeners%2A?displayProperty=nameWithType> and <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> collections. Explicitly adding a second <xref:System.Diagnostics.DefaultTraceListener> causes duplicate messages in the debugger output window and duplicate message boxes for asserts.  
   
- By default, the <xref:System.Diagnostics.DefaultTraceListener.Write%2A> and <xref:System.Diagnostics.DefaultTraceListener.WriteLine%2A> methods emit the message to the Win32 `OutputDebugString` function and to the <xref:System.Diagnostics.Debugger.Log%2A?displayProperty=fullName> method. For information about the `OutputDebugString` function, see the Platform SDK or MSDN.  
+ By default, the <xref:System.Diagnostics.DefaultTraceListener.Write%2A> and <xref:System.Diagnostics.DefaultTraceListener.WriteLine%2A> methods emit the message to the Win32 `OutputDebugString` function and to the <xref:System.Diagnostics.Debugger.Log%2A?displayProperty=nameWithType> method. For information about the `OutputDebugString` function, see the Platform SDK or MSDN.  
   
  The <xref:System.Diagnostics.DefaultTraceListener.Fail%2A> method, by default, displays a message box when the application is running in a user interface mode; it also emits the message using <xref:System.Diagnostics.DefaultTraceListener.WriteLine%2A>.  
   
@@ -59,11 +59,11 @@
    
   
 ## Examples  
- The following code example calculates binomial coefficients, which are values used in probability and statistics. This example uses a <xref:System.Diagnostics.DefaultTraceListener> to trace results and log errors. It creates a new <xref:System.Diagnostics.DefaultTraceListener>, adds it to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection, and sets the <xref:System.Diagnostics.DefaultTraceListener.LogFileName%2A> property to the log file specified in the command-line arguments.  
+ The following code example calculates binomial coefficients, which are values used in probability and statistics. This example uses a <xref:System.Diagnostics.DefaultTraceListener> to trace results and log errors. It creates a new <xref:System.Diagnostics.DefaultTraceListener>, adds it to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> collection, and sets the <xref:System.Diagnostics.DefaultTraceListener.LogFileName%2A> property to the log file specified in the command-line arguments.  
   
  If an error is detected while processing the input parameter, or if the `CalcBinomial` function throws an exception, the <xref:System.Diagnostics.DefaultTraceListener.Fail%2A> method logs and displays an error message. If the <xref:System.Diagnostics.DefaultTraceListener.AssertUiEnabled%2A> property is `false`, the error message is also written to the console. When the result is calculated successfully, the <xref:System.Diagnostics.DefaultTraceListener.Write%28System.String%29> and <xref:System.Diagnostics.DefaultTraceListener.WriteLine%28System.String%29> methods write the results to the log file.  
   
- The <xref:System.Diagnostics.DefaultTraceListener.Fail%2A>, <xref:System.Diagnostics.DefaultTraceListener.Write%2A>, and <xref:System.Diagnostics.DefaultTraceListener.WriteLine%2A> methods cause trace information to be written only to the <xref:System.Diagnostics.DefaultTraceListener>. To write trace information to all listeners in the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection, use the <xref:System.Diagnostics.Trace.Fail%2A>, <xref:System.Diagnostics.Trace.Write%2A>, and <xref:System.Diagnostics.Trace.WriteLine%2A> methods of the <xref:System.Diagnostics.Trace> class.  
+ The <xref:System.Diagnostics.DefaultTraceListener.Fail%2A>, <xref:System.Diagnostics.DefaultTraceListener.Write%2A>, and <xref:System.Diagnostics.DefaultTraceListener.WriteLine%2A> methods cause trace information to be written only to the <xref:System.Diagnostics.DefaultTraceListener>. To write trace information to all listeners in the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> collection, use the <xref:System.Diagnostics.Trace.Fail%2A>, <xref:System.Diagnostics.Trace.Write%2A>, and <xref:System.Diagnostics.Trace.WriteLine%2A> methods of the <xref:System.Diagnostics.Trace> class.  
   
  [!code-csharp[System.Diagnostics.DefaultTraceListener#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.DefaultTraceListener/CS/binomial.cs#11)]
  [!code-vb[System.Diagnostics.DefaultTraceListener#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.DefaultTraceListener/VB/binomial.vb#11)]  
@@ -71,6 +71,11 @@
  ]]></format>
     </remarks>
     <threadsafe>This class is thread safe.</threadsafe>
+    <altmember cref="T:System.Diagnostics.TraceListener" />
+    <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+    <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+    <altmember cref="T:System.Diagnostics.Debug" />
+    <altmember cref="T:System.Diagnostics.Trace" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -99,13 +104,19 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example removes the <xref:System.Diagnostics.DefaultTraceListener> provided by the application from the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection and then creates a new <xref:System.Diagnostics.DefaultTraceListener> and adds it to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection.  
+ The following code example removes the <xref:System.Diagnostics.DefaultTraceListener> provided by the application from the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> collection and then creates a new <xref:System.Diagnostics.DefaultTraceListener> and adds it to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> collection.  
   
  [!code-csharp[System.Diagnostics.DefaultTraceListener#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.DefaultTraceListener/CS/binomial.cs#3)]
  [!code-vb[System.Diagnostics.DefaultTraceListener#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.DefaultTraceListener/VB/binomial.vb#3)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="AssertUiEnabled">
@@ -195,6 +206,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="Fail">
@@ -243,6 +260,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="LogFileName">
@@ -278,7 +301,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example creates a new <xref:System.Diagnostics.DefaultTraceListener>, adds it to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection, and sets the <xref:System.Diagnostics.DefaultTraceListener.LogFileName%2A> property to the log file specified in the command-line arguments.  
+ The following code example creates a new <xref:System.Diagnostics.DefaultTraceListener>, adds it to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> collection, and sets the <xref:System.Diagnostics.DefaultTraceListener.LogFileName%2A> property to the log file specified in the command-line arguments.  
   
  [!code-csharp[System.Diagnostics.DefaultTraceListener#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.DefaultTraceListener/CS/binomial.cs#4)]
  [!code-vb[System.Diagnostics.DefaultTraceListener#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.DefaultTraceListener/VB/binomial.vb#4)]  
@@ -331,6 +354,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -381,7 +410,23 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.TextWriterTraceListener" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Fail">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Emits or displays a message and a stack trace for an assertion that always fails.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

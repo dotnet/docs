@@ -14,6 +14,9 @@
   <Docs>
     <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException" /> exception is thrown when the request to synchronize from all servers fails.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.ADAMInstance.SyncReplicaFromAllServers(System.String,System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions)" />
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.DirectoryServer.SyncReplicaFromAllServers(System.String,System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions)" />
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.DomainController.SyncReplicaFromAllServers(System.String,System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -114,6 +117,7 @@
         <param name="errors">An array of one or more <see cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorInformation" /> objects that describe the errors.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException" /> class with a specified error message, an underlying exception object, and a specified <see cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorInformation" /> object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorInformation" />
       </Docs>
     </Member>
     <Member MemberName="ErrorInformation">
@@ -133,6 +137,7 @@
         <summary>Gets an array of <see cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorInformation" /> objects that describe the errors.</summary>
         <value>An array of one or more <see cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorInformation" /> objects that describe the errors.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorInformation" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -157,7 +162,19 @@
         <param name="streamingContext">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> object that contains contextual information about the source or destination.</param>
         <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with information about the exception.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

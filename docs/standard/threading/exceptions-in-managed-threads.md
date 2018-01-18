@@ -18,6 +18,9 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Exceptions in Managed Threads
 Starting with the .NET Framework version 2.0, the common language runtime allows most unhandled exceptions in threads to proceed naturally. In most cases this means that the unhandled exception causes the application to terminate.  
@@ -64,7 +67,7 @@ Starting with the .NET Framework version 2.0, the common language runtime allows
   
 -   Restructure the code so the thread exits gracefully when a signal is received.  
   
--   Use the <xref:System.Threading.Thread.Abort%2A?displayProperty=fullName> method to abort the thread.  
+-   Use the <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method to abort the thread.  
   
 -   If a thread must be stopped so that process termination can proceed, make the thread a background thread so that it is automatically terminated on process exit.  
   

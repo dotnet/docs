@@ -22,9 +22,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The current class is used by the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A?displayProperty=fullName> method, which is the server-side counterpart of the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A?displayProperty=fullName> method. The <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> method is used on the server to allow remote activation by clients of specified object types.  
+ The current class is used by the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A?displayProperty=nameWithType> method, which is the server-side counterpart of the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A?displayProperty=nameWithType> method. The <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> method is used on the server to allow remote activation by clients of specified object types.  
   
- To create a client-activated object on the server, you must know its <xref:System.Type>, and it must be registered on the server end by using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> method. To obtain a proxy for a new client-activated object, the client must first register a channel with <xref:System.Runtime.Remoting.Channels.ChannelServices> and then activate the object by calling `new` or <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.  
+ To create a client-activated object on the server, you must know its <xref:System.Type>, and it must be registered on the server end by using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> method. To obtain a proxy for a new client-activated object, the client must first register a channel with <xref:System.Runtime.Remoting.Channels.ChannelServices> and then activate the object by calling `new` or <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>.  
   
  To activate a client-activated object type with the `new` keyword, you must first register the object type on the client using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method. By calling <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> you are giving the remoting infrastructure the location of the remote application where `new` attempts to create it. If, on the other hand, you use the <xref:System.Activator.CreateInstance%2A> method to create a new instance of the client-activated object, you must supply the remote application's URL as a parameter, so no prior registration on the client is necessary. To supply the <xref:System.Activator.CreateInstance%2A> method with the URL of the server on which you want to create the object, you must encapsulate the URL in an instance of the <xref:System.Runtime.Remoting.Activation.UrlAttribute> class.  
   
@@ -39,6 +39,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType(System.Type)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -107,6 +108,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Remoting.Contexts.Context" />
+        <altmember cref="T:System.Runtime.Remoting.Contexts.ContextAttribute" />
+        <altmember cref="T:System.Runtime.Remoting.Contexts.ContextProperty" />
+        <altmember cref="T:System.Runtime.Remoting.Contexts.IContextAttribute" />
       </Docs>
     </Member>
     <Member MemberName="ObjectType">
@@ -148,5 +153,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.ActivatedServiceTypeEntry" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

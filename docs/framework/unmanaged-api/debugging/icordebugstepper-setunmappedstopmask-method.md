@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugStepper::SetUnmappedStopMask"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugStepper::SetUnmappedStopMask method [.NET Framework debugging]"
   - "SetUnmappedStopMask method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugStepper::SetUnmappedStopMask Method
 Sets a value that specifies the type of unmapped code in which execution will halt.  

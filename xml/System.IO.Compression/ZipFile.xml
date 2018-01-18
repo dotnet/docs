@@ -34,13 +34,13 @@
   
 |To…|Use…|  
 |---------|----------|  
-|Create a zip archive from a directory|<xref:System.IO.Compression.ZipFile.CreateFromDirectory%2A?displayProperty=fullName>|  
-|Extract the contents of a zip archive to a directory|<xref:System.IO.Compression.ZipFile.ExtractToDirectory%2A?displayProperty=fullName>|  
-|Add new files to an existing zip archive|<xref:System.IO.Compression.ZipArchive.CreateEntry%2A?displayProperty=fullName>|  
-|Retrieve an file in a zip archive|<xref:System.IO.Compression.ZipArchive.GetEntry%2A?displayProperty=fullName>|  
-|Retrieve all of the files in a zip archive|<xref:System.IO.Compression.ZipArchive.Entries%2A?displayProperty=fullName>|  
-|To open a stream to an individual file contained in a zip archive|<xref:System.IO.Compression.ZipArchiveEntry.Open%2A?displayProperty=fullName>|  
-|Delete a file from a zip archive|<xref:System.IO.Compression.ZipArchiveEntry.Delete%2A?displayProperty=fullName>|  
+|Create a zip archive from a directory|<xref:System.IO.Compression.ZipFile.CreateFromDirectory%2A?displayProperty=nameWithType>|  
+|Extract the contents of a zip archive to a directory|<xref:System.IO.Compression.ZipFile.ExtractToDirectory%2A?displayProperty=nameWithType>|  
+|Add new files to an existing zip archive|<xref:System.IO.Compression.ZipArchive.CreateEntry%2A?displayProperty=nameWithType>|  
+|Retrieve an file in a zip archive|<xref:System.IO.Compression.ZipArchive.GetEntry%2A?displayProperty=nameWithType>|  
+|Retrieve all of the files in a zip archive|<xref:System.IO.Compression.ZipArchive.Entries%2A?displayProperty=nameWithType>|  
+|To open a stream to an individual file contained in a zip archive|<xref:System.IO.Compression.ZipArchiveEntry.Open%2A?displayProperty=nameWithType>|  
+|Delete a file from a zip archive|<xref:System.IO.Compression.ZipArchiveEntry.Delete%2A?displayProperty=nameWithType>|  
   
  You cannot use the <xref:System.IO.Compression.ZipFile> or  <xref:System.IO.Compression.ZipFileExtensions> classes  in [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. In [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, you should use the following classes to work with compressed files.  
   
@@ -575,9 +575,9 @@
 ## Remarks  
  When you set the `mode` parameter to <xref:System.IO.Compression.ZipArchiveMode.Read>, the archive is opened with <xref:System.IO.FileMode.Open> from the <xref:System.IO.FileMode> enumeration as the file mode value. If the archive does not exist, a <xref:System.IO.FileNotFoundException> exception is thrown. Setting the `mode` parameter to <xref:System.IO.Compression.ZipArchiveMode.Read> is equivalent to calling the <xref:System.IO.Compression.ZipFile.OpenRead%2A> method.  
   
- When you set the `mode` parameter to <xref:System.IO.Compression.ZipArchiveMode.Create>, the archive is opened with <xref:System.IO.FileMode?displayProperty=fullName> as the file mode value. If the archive already exists, an <xref:System.IO.IOException> is thrown.  
+ When you set the `mode` parameter to <xref:System.IO.Compression.ZipArchiveMode.Create>, the archive is opened with <xref:System.IO.FileMode.CreateNew?displayProperty=nameWithType> as the file mode value. If the archive already exists, an <xref:System.IO.IOException> is thrown.  
   
- When you set the `mode` parameter to <xref:System.IO.Compression.ZipArchiveMode.Update>,  the archive is opened with <xref:System.IO.FileMode?displayProperty=fullName> as the file mode value. If the archive exists, it is opened. The existing entries can be modified and new entries can be created. If the archive does not exist, a new archive is created; however, creating a zip archive in <xref:System.IO.Compression.ZipArchiveMode.Update> mode is not as efficient as creating it in <xref:System.IO.Compression.ZipArchiveMode.Create> mode.  
+ When you set the `mode` parameter to <xref:System.IO.Compression.ZipArchiveMode.Update>,  the archive is opened with <xref:System.IO.FileMode.OpenOrCreate?displayProperty=nameWithType> as the file mode value. If the archive exists, it is opened. The existing entries can be modified and new entries can be created. If the archive does not exist, a new archive is created; however, creating a zip archive in <xref:System.IO.Compression.ZipArchiveMode.Update> mode is not as efficient as creating it in <xref:System.IO.Compression.ZipArchiveMode.Create> mode.  
   
    
   
@@ -663,11 +663,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you set the `mode` parameter to <xref:System.IO.Compression.ZipArchiveMode.Read>, the archive is opened with <xref:System.IO.FileMode?displayProperty=fullName> as the file mode value. If the archive does not exist, a <xref:System.IO.FileNotFoundException> exception is thrown. Setting the `mode` parameter to <xref:System.IO.Compression.ZipArchiveMode.Read> is equivalent to calling the <xref:System.IO.Compression.ZipFile.OpenRead%2A> method.  
+ When you set the `mode` parameter to <xref:System.IO.Compression.ZipArchiveMode.Read>, the archive is opened with <xref:System.IO.FileMode.Open?displayProperty=nameWithType> as the file mode value. If the archive does not exist, a <xref:System.IO.FileNotFoundException> exception is thrown. Setting the `mode` parameter to <xref:System.IO.Compression.ZipArchiveMode.Read> is equivalent to calling the <xref:System.IO.Compression.ZipFile.OpenRead%2A> method.  
   
- When you set the `mode` parameter to <xref:System.IO.Compression.ZipArchiveMode.Create>, the archive is opened with <xref:System.IO.FileMode?displayProperty=fullName> as the file mode value. If the archive already exists, an <xref:System.IO.IOException> is thrown.  
+ When you set the `mode` parameter to <xref:System.IO.Compression.ZipArchiveMode.Create>, the archive is opened with <xref:System.IO.FileMode.CreateNew?displayProperty=nameWithType> as the file mode value. If the archive already exists, an <xref:System.IO.IOException> is thrown.  
   
- When you set the `mode` parameter to <xref:System.IO.Compression.ZipArchiveMode.Update>,  the archive is opened with <xref:System.IO.FileMode?displayProperty=fullName> as the file mode value. If the archive exists, it is opened. The existing entries can be modified and new entries can be created. If the archive does not exist, a new archive is created; however, creating a zip archive in <xref:System.IO.Compression.ZipArchiveMode.Update> mode is not as efficient as creating it in <xref:System.IO.Compression.ZipArchiveMode.Create> mode.  
+ When you set the `mode` parameter to <xref:System.IO.Compression.ZipArchiveMode.Update>,  the archive is opened with <xref:System.IO.FileMode.OpenOrCreate?displayProperty=nameWithType> as the file mode value. If the archive exists, it is opened. The existing entries can be modified and new entries can be created. If the archive does not exist, a new archive is created; however, creating a zip archive in <xref:System.IO.Compression.ZipArchiveMode.Update> mode is not as efficient as creating it in <xref:System.IO.Compression.ZipArchiveMode.Create> mode.  
   
  When you open a zip archive file for reading and `entryNameEncoding` is set to `null`, entry names are decoded according to the following rules:  
   
@@ -765,7 +765,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is equivalent to calling the <xref:System.IO.Compression.ZipFile.Open%2A> method and setting the `mode` parameter to <xref:System.IO.Compression.ZipArchiveMode.Read>. The archive is opened with <xref:System.IO.FileMode?displayProperty=fullName> as the file mode value. If the archive does not exist, a <xref:System.IO.FileNotFoundException> exception is thrown.  
+ This method is equivalent to calling the <xref:System.IO.Compression.ZipFile.Open%2A> method and setting the `mode` parameter to <xref:System.IO.Compression.ZipArchiveMode.Read>. The archive is opened with <xref:System.IO.FileMode.Open?displayProperty=nameWithType> as the file mode value. If the archive does not exist, a <xref:System.IO.FileNotFoundException> exception is thrown.  
   
    
   
@@ -799,5 +799,35 @@
           <paramref name="archiveFileName" /> could not be interpreted as a zip archive.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Open">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a zip archive at the specified path and in the specified mode.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ExtractToDirectory">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Extracts all the files in the specified zip archive to a directory on the file system.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateFromDirectory">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a zip archive that contains the files and directories from the specified directory.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

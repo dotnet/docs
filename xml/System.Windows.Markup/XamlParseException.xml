@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Markup.XamlParseException> is used only for the WPF-implemented XAML parser that performs the XAML parsing and loading for WPF applications. Specifically, the exception is only relevant when an application targets [!INCLUDE[net_v30_short](~/includes/net-v30-short-md.md)] and [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)]. The exception can also originate from user code in run-time calls to APIs that hook up the WPF-implemented XAML parser to load XAML from within a running WPF application (for example, calls to <xref:System.Windows.Markup.XamlReader.Load%2A?displayProperty=fullName>).  
+ <xref:System.Windows.Markup.XamlParseException> is used only for the WPF-implemented XAML parser that performs the XAML parsing and loading for WPF applications. Specifically, the exception is only relevant when an application targets [!INCLUDE[net_v30_short](~/includes/net-v30-short-md.md)] and [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)]. The exception can also originate from user code in run-time calls to APIs that hook up the WPF-implemented XAML parser to load XAML from within a running WPF application (for example, calls to <xref:System.Windows.Markup.XamlReader.Load%2A?displayProperty=nameWithType>).  
   
  For [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], the <xref:System.Xaml.XamlParseException> exception that typically reports XAML processing exceptions is defined in a different namespace (<xref:System.Xaml>) and a different assembly (System.Xaml).  
   
@@ -245,6 +245,7 @@
         <summary>Gets or sets the key value of the item in a dictionary where the exception occurred.</summary>
         <value>The relevant XAML <see langword="x:Key" /> value.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.ResourceDictionary" />
       </Docs>
     </Member>
     <Member MemberName="LineNumber">
@@ -319,5 +320,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XamlParseException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

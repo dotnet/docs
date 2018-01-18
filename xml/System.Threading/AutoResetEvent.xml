@@ -52,7 +52,7 @@
   
  For more information about thread synchronization mechanisms, see [AutoResetEvent](~/docs/standard/threading/autoresetevent.md) in the conceptual documentation.  
   
- Beginning with the .NET Framework version 2.0, <xref:System.Threading.AutoResetEvent> derives from the new <xref:System.Threading.EventWaitHandle> class. An <xref:System.Threading.AutoResetEvent> is functionally equivalent to an <xref:System.Threading.EventWaitHandle> created with <xref:System.Threading.EventResetMode?displayProperty=fullName>.  
+ Beginning with the .NET Framework version 2.0, <xref:System.Threading.AutoResetEvent> derives from the new <xref:System.Threading.EventWaitHandle> class. An <xref:System.Threading.AutoResetEvent> is functionally equivalent to an <xref:System.Threading.EventWaitHandle> created with <xref:System.Threading.EventResetMode.AutoReset?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  Unlike the <xref:System.Threading.AutoResetEvent> class, the <xref:System.Threading.EventWaitHandle> class provides access to named system synchronization events.  
@@ -71,6 +71,7 @@
  ]]></format>
     </remarks>
     <threadsafe>This class is thread safe.</threadsafe>
+    <altmember cref="T:System.Threading.WaitHandle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -110,7 +111,7 @@
   
  The program logic guarantees that the `ThreadProc` method will never read the same value two times. It does not guarantee that the `ThreadProc` method will read every value written by `Main`. That guarantee would require a second <xref:System.Threading.AutoResetEvent> lock.  
   
- After each write operation, `Main` yields by calling the <xref:System.Threading.Thread.Sleep%2A?displayProperty=fullName> method, to give the second thread a chance to execute. Otherwise, on a single-processor computer `Main` would write many values between any two read operations.  
+ After each write operation, `Main` yields by calling the <xref:System.Threading.Thread.Sleep%2A?displayProperty=nameWithType> method, to give the second thread a chance to execute. Otherwise, on a single-processor computer `Main` would write many values between any two read operations.  
   
  [!code-cpp[System.Threading.AutoResetEvent#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.AutoResetEvent/CPP/class1.cpp#1)]
  [!code-csharp[System.Threading.AutoResetEvent#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.AutoResetEvent/CS/class1.cs#1)]
@@ -118,6 +119,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.WaitHandle" />
       </Docs>
     </Member>
   </Members>

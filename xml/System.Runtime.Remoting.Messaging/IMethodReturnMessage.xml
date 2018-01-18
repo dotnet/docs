@@ -175,7 +175,7 @@
  Although the <xref:System.Runtime.Remoting.Messaging.IMethodReturnMessage.OutArgs%2A> property is redundant since the same functionality can be achieved through the <xref:System.Runtime.Remoting.Messaging.IMethodReturnMessage.OutArgCount%2A> field and <xref:System.Runtime.Remoting.Messaging.IMethodReturnMessage.GetOutArg%2A> method, there might be performance optimization available if the implementer understands when all the arguments will be retrieved.  
   
 > [!WARNING]
->  If <xref:System.Runtime.Remoting.Messaging.IMethodReturnMessage.Exception%2A> is not `null`, a <xref:System.IndexOutOfRangeException?displayProperty=fullName> exception is thrown when <xref:System.Runtime.Remoting.Messaging.IMethodReturnMessage.OutArgs%2A> is accessed.  
+>  If <xref:System.Runtime.Remoting.Messaging.IMethodReturnMessage.Exception%2A> is not `null`, a <xref:System.IndexOutOfRangeException?displayProperty=nameWithType> exception is thrown when <xref:System.Runtime.Remoting.Messaging.IMethodReturnMessage.OutArgs%2A> is accessed.  
   
    
   

@@ -30,7 +30,7 @@
   
  A <xref:System.Collections.Specialized.BitVector32> structure can be set up to contain either sections for small integers or bit flags for Booleans, but not both. A <xref:System.Collections.Specialized.BitVector32.Section> is a window into the <xref:System.Collections.Specialized.BitVector32> and is composed of the smallest number of consecutive bits that can contain the maximum value specified in <xref:System.Collections.Specialized.BitVector32.CreateSection%2A>. For example, a section with a maximum value of 1 is composed of only one bit, whereas a section with a maximum value of 5 is composed of three bits. You can create a <xref:System.Collections.Specialized.BitVector32.Section> with a maximum value of 1 to serve as a Boolean, thereby allowing you to store integers and Booleans in the same <xref:System.Collections.Specialized.BitVector32>.  
   
- Some members can be used for a <xref:System.Collections.Specialized.BitVector32> that is set up as sections, while other members can be used for one that is set up as bit flags. For example, the <xref:System.Collections.Specialized.BitVector32.Item%2A?displayProperty=fullName> property is the indexer for a <xref:System.Collections.Specialized.BitVector32> that is set up as sections, and the <xref:System.Collections.Specialized.BitVector32.Item%2A?displayProperty=fullName> property is the indexer for a <xref:System.Collections.Specialized.BitVector32> that is set up as bit flags. <xref:System.Collections.Specialized.BitVector32.CreateMask%2A> creates a series of masks that can be used to access individual bits in a <xref:System.Collections.Specialized.BitVector32> that is set up as bit flags.  
+ Some members can be used for a <xref:System.Collections.Specialized.BitVector32> that is set up as sections, while other members can be used for one that is set up as bit flags. For example, the <xref:System.Collections.Specialized.BitVector32.Item%2A?displayProperty=nameWithType> property is the indexer for a <xref:System.Collections.Specialized.BitVector32> that is set up as sections, and the <xref:System.Collections.Specialized.BitVector32.Item%2A?displayProperty=nameWithType> property is the indexer for a <xref:System.Collections.Specialized.BitVector32> that is set up as bit flags. <xref:System.Collections.Specialized.BitVector32.CreateMask%2A> creates a series of masks that can be used to access individual bits in a <xref:System.Collections.Specialized.BitVector32> that is set up as bit flags.  
   
  Using a mask on a <xref:System.Collections.Specialized.BitVector32> that is set up as sections might cause unexpected results.  
   
@@ -51,6 +51,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.BitArray" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -385,6 +386,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.Specialized.BitVector32.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -519,6 +521,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Specialized.BitVector32.CreateSection(System.Int16)" />
+        <altmember cref="T:System.Collections.Specialized.BitVector32.Section" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -565,6 +569,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Specialized.BitVector32.CreateMask" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -597,12 +602,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Object.ToString%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Object.ToString%2A?displayProperty=nameWithType>.  
   
  This method is an O(1) operation.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.ToString" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -642,7 +649,58 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateMask">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a series of masks that can be used to retrieve individual bits in a <see cref="T:System.Collections.Specialized.BitVector32" /> that is set up as bit flags.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateSection">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a series of sections that contain small integers.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.BitVector32" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the value of the specified section or bit flag.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string that represents a <see cref="T:System.Collections.Specialized.BitVector32" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

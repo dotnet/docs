@@ -16,12 +16,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext> object passed to the <xref:System.ServiceModel.Description.IOperationContractGenerationExtension.GenerateOperation%2A?displayProperty=fullName> method to modify the code document object model prior to the generation of code. Typically, the <xref:System.ServiceModel.Description.IOperationContractGenerationExtension?displayProperty=fullName> interface is implemented on a custom <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=fullName> implementation that is used to import custom WSDL elements or otherwise modify the code at the service or operation level. To modify the code at the service level, see <xref:System.ServiceModel.Description.IServiceContractGenerationExtension?displayProperty=fullName>.  
+ Use the <xref:System.ServiceModel.Description.OperationContractGenerationContext> object passed to the <xref:System.ServiceModel.Description.IOperationContractGenerationExtension.GenerateOperation%2A?displayProperty=nameWithType> method to modify the code document object model prior to the generation of code. Typically, the <xref:System.ServiceModel.Description.IOperationContractGenerationExtension?displayProperty=nameWithType> interface is implemented on a custom <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=nameWithType> implementation that is used to import custom WSDL elements or otherwise modify the code at the service or operation level. To modify the code at the service level, see <xref:System.ServiceModel.Description.IServiceContractGenerationExtension?displayProperty=nameWithType>.  
   
    
   
 ## Examples  
- The following example shows the use of the <xref:System.ServiceModel.Description.OperationContractGenerationContext> object passed to the <xref:System.ServiceModel.Description.IOperationContractGenerationExtension.GenerateOperation%2A?displayProperty=fullName> method to add code comments extracted from custom WSDL elements.  
+ The following example shows the use of the <xref:System.ServiceModel.Description.OperationContractGenerationContext> object passed to the <xref:System.ServiceModel.Description.IOperationContractGenerationExtension.GenerateOperation%2A?displayProperty=nameWithType> method to add code comments extracted from custom WSDL elements.  
   
  [!code-csharp[C_CustomWSDLExtensions#14](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationimporter.cs#14)]  
   
@@ -362,7 +362,7 @@
    
   
 ## Examples  
- The following example shows the use of the <xref:System.ServiceModel.Description.OperationContractGenerationContext> object passed to the <xref:System.ServiceModel.Description.IOperationContractGenerationExtension.GenerateOperation%2A?displayProperty=fullName> method to add code comments extracted from custom WSDL elements.  
+ The following example shows the use of the <xref:System.ServiceModel.Description.OperationContractGenerationContext> object passed to the <xref:System.ServiceModel.Description.IOperationContractGenerationExtension.GenerateOperation%2A?displayProperty=nameWithType> method to add code comments extracted from custom WSDL elements.  
   
  [!code-csharp[C_CustomWSDLExtensions#14](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationimporter.cs#14)]  
   
@@ -393,5 +393,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.OperationContractGenerationContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

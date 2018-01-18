@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example attempts to create a <xref:System.Web.Caching.SqlCacheDependency> object and add an item to the <xref:System.Web.Caching.Cache> with a dependency on the <xref:System.Web.Caching.SqlCacheDependency> object. If the SQL Server database table is not enabled for dependency notifications, the <xref:System.Web.Caching.TableNotEnabledForNotificationException> is thrown and handled by calling the <xref:System.Web.Caching.SqlCacheDependencyAdmin.EnableTableForNotifications%2A?displayProperty=fullName> method.  
+ The following code example attempts to create a <xref:System.Web.Caching.SqlCacheDependency> object and add an item to the <xref:System.Web.Caching.Cache> with a dependency on the <xref:System.Web.Caching.SqlCacheDependency> object. If the SQL Server database table is not enabled for dependency notifications, the <xref:System.Web.Caching.TableNotEnabledForNotificationException> is thrown and handled by calling the <xref:System.Web.Caching.SqlCacheDependencyAdmin.EnableTableForNotifications%2A?displayProperty=nameWithType> method.  
   
  [!code-csharp[CachingSamples_SqlCacheDependency#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CachingSamples_SqlCacheDependency/CS/sqlcachedepsamplecs.aspx#2)]
  [!code-vb[CachingSamples_SqlCacheDependency#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CachingSamples_SqlCacheDependency/VB/sqlcachedepsamplevb.aspx#2)]  
@@ -78,5 +78,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Caching.TableNotEnabledForNotificationException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

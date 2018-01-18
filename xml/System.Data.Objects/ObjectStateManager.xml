@@ -463,7 +463,7 @@
     </Member>
     <Member MemberName="TryGetObjectStateEntry">
       <MemberSignature Language="C#" Value="public bool TryGetObjectStateEntry (System.Data.EntityKey key, out System.Data.Objects.ObjectStateEntry entry);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetObjectStateEntry(class System.Data.EntityKey key, class System.Data.Objects.ObjectStateEntry entry) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetObjectStateEntry(class System.Data.EntityKey key, [out] class System.Data.Objects.ObjectStateEntry&amp; entry) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectStateManager.TryGetObjectStateEntry(System.Data.EntityKey,System.Data.Objects.ObjectStateEntry@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -510,7 +510,7 @@
     </Member>
     <Member MemberName="TryGetObjectStateEntry">
       <MemberSignature Language="C#" Value="public bool TryGetObjectStateEntry (object entity, out System.Data.Objects.ObjectStateEntry entry);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetObjectStateEntry(object entity, class System.Data.Objects.ObjectStateEntry entry) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetObjectStateEntry(object entity, [out] class System.Data.Objects.ObjectStateEntry&amp; entry) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectStateManager.TryGetObjectStateEntry(System.Object,System.Data.Objects.ObjectStateEntry@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -541,7 +541,7 @@
     </Member>
     <Member MemberName="TryGetRelationshipManager">
       <MemberSignature Language="C#" Value="public bool TryGetRelationshipManager (object entity, out System.Data.Objects.DataClasses.RelationshipManager relationshipManager);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetRelationshipManager(object entity, class System.Data.Objects.DataClasses.RelationshipManager relationshipManager) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetRelationshipManager(object entity, [out] class System.Data.Objects.DataClasses.RelationshipManager&amp; relationshipManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectStateManager.TryGetRelationshipManager(System.Object,System.Data.Objects.DataClasses.RelationshipManager@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -575,5 +575,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryGetObjectStateEntry">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tries to return an <see cref="T:System.Data.Objects.ObjectStateEntry" /> object for a specific object or relationship entry.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetObjectStateEntry">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Data.Objects.ObjectStateEntry" /> for a specific object or relationship entry.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

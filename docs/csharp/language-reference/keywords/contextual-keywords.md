@@ -1,32 +1,16 @@
 ---
 title: "Contextual Keywords (C# Reference)"
-ms.date: "2017-03-07"
+ms.date: 03/07/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "contextual keywords [C#]"
 ms.assetid: 7c76bc29-a754-4389-b0ab-f6b441018298
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Contextual Keywords (C# Reference)
 A contextual keyword is used to provide a specific meaning in the code, but it is not a reserved word in C#. The following contextual keywords are introduced in this section:  
@@ -51,6 +35,6 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
  All query keywords introduced in C# 3.0 are also contextual. For more information, see [Query Keywords (LINQ)](../../../csharp/language-reference/keywords/query-keywords.md).  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)

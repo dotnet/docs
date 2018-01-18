@@ -41,7 +41,7 @@
   
  A path is a string that provides the location of a file or directory. A path does not necessarily point to a location on disk; for example, a path might map to a location in memory or on a device. The exact format of a path is determined by the current platform. For example, on some systems, a path can start with a drive or volume letter, while this element is not present in other systems. On some systems, file paths can contain extensions, which indicate the type of information stored in the file. The format of a file name extension is platform-dependent; for example, some systems limit extensions to three characters, and others do not. The current platform also determines the set of characters used to separate the elements of a path, and the set of characters that cannot be used when specifying paths. Because of these differences, the fields of the `Path` class as well as the exact behavior of some members of the `Path` class are platform-dependent.  
   
- A path can contain absolute or relative location information. Absolute paths fully specify a location: the file or directory can be uniquely identified regardless of the current location. Relative paths specify a partial location: the current location is used as the starting point when locating a file specified with a relative path. To determine the current directory, call <xref:System.IO.Directory.GetCurrentDirectory%2A?displayProperty=fullName>.  
+ A path can contain absolute or relative location information. Absolute paths fully specify a location: the file or directory can be uniquely identified regardless of the current location. Relative paths specify a partial location: the current location is used as the starting point when locating a file specified with a relative path. To determine the current directory, call <xref:System.IO.Directory.GetCurrentDirectory%2A?displayProperty=nameWithType>.  
   
  Most members of the `Path` class do not interact with the file system and do not verify the existence of the file specified by a path string. `Path` class members that modify a path string, such as <xref:System.IO.Path.ChangeExtension%2A>, have no effect on names of files in the file system. `Path` members do, however, validate the contents of a specified path string, and throw an <xref:System.ArgumentException> exception if the string contains characters that are not valid in path strings, as defined in the characters returned from the <xref:System.IO.Path.GetInvalidPathChars%2A> method. For example, on Windows-based desktop platforms, invalid path characters might include quote ("), less than (\<), greater than (>), pipe (&#124;), backspace (\b), null (\0), and Unicode characters 16 through 18 and 20 through 25.  
   
@@ -196,7 +196,7 @@
       </Docs>
     </Member>
     <Member MemberName="Combine">
-      <MemberSignature Language="C#" Value="public static string Combine (string[] paths);" />
+      <MemberSignature Language="C#" Value="public static string Combine (params string[] paths);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Combine(string[] paths) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.Combine(System.String[])" />
       <MemberType>Method</MemberType>
@@ -1242,7 +1242,7 @@ C:\Users\UserName\AppData\Local\Temp\
  The array returned from this method is not guaranteed to contain the complete set of characters that are invalid in file and directory names. The full set of invalid characters can vary by file system. For example, on Windows-based desktop platforms, invalid path characters might include ASCII/Unicode characters 1 through 31, as well as quote ("), less than (\<), greater than (>), pipe (&#124;), backspace (\b), null (\0) and tab (\t).  
   
 > [!CAUTION]
->  Do not use<xref:System.IO.Path.InvalidPathChars> if you think your code might execute in the same application domain as untrusted code. <xref:System.IO.Path.InvalidPathChars> is an array, so its elements can be overwritten. If untrusted code overwrites elements of <xref:System.IO.Path.InvalidPathChars>, it might cause your code to malfunction in ways that could be exploited.  
+>  Do not use <xref:System.IO.Path.InvalidPathChars> if you think your code might execute in the same application domain as untrusted code. <xref:System.IO.Path.InvalidPathChars> is an array, so its elements can be overwritten. If untrusted code overwrites elements of <xref:System.IO.Path.InvalidPathChars>, it might cause your code to malfunction in ways that could be exploited.  
   
    
   
@@ -1402,5 +1402,17 @@ C:\Users\UserName\AppData\Local\Temp\
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Combine">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Combines strings into a path.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

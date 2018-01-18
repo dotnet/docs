@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "transformations"
   - "examples [Windows Forms], transformations"
@@ -19,6 +17,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Using Transformations in Managed GDI+
 Affine transformations include rotating, scaling, reflecting, shearing, and translating. In [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)], the <xref:System.Drawing.Drawing2D.Matrix> class provides the foundation for performing affine transformations on vector drawings, images, and text.  

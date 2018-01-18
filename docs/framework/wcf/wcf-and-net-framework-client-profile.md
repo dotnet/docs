@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b9f836a7-68f4-4e7e-a3cc-a1bae5d775d6
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WCF and .NET Framework Client Profile
 [!INCLUDE[arrowhead](../../../includes/arrowhead-md.md)] is a lightweight version of the full .Net Framework designed for clients that don’t need the entire framework. Not all of Windows Communication Foundation is supported by the client framework.  

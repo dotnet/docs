@@ -57,7 +57,7 @@ namespace WPF_CS1
                 images[x] = Task.Factory.StartNew(() => LoadImage(files[x]));
             }
 
-            // When they�ve all been loaded, tile them into a single byte array.
+            // When they've all been loaded, tile them into a single byte array.
             var tiledImage = Task.Factory.ContinueWhenAll(
                 images, (i) => TileImages(i));
 

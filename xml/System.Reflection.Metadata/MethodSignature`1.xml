@@ -16,8 +16,9 @@
   <Interfaces />
   <Docs>
     <typeparam name="TType">The method type.</typeparam>
-    <summary>Represents a method (definition, reference, or standalone) or property signature. In the case of properties, the signature matches that of a getter with a distinguishing <see cref="T:System.Reflection.Metadata.SignatureHeader"/>.</summary>
-    <remarks></remarks>
+    <summary>Represents a method (definition, reference, or standalone) or property signature. In the case of properties, the signature matches that of a getter with a distinguishing <see cref="T:System.Reflection.Metadata.SignatureHeader" />.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,7 +45,8 @@
         <param name="genericParameterCount">The number of generic type parameters.</param>
         <param name="parameterTypes">The parameter types.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Reflection.Metadata.MethodSignature`1" /> structure using the specified header, return type, and parameter information.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GenericParameterCount">
@@ -63,7 +65,8 @@
       <Docs>
         <summary>Gets the number of generic type parameters for the method.</summary>
         <value>The number of generic type parameters, or 0 for non-generic methods.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Header">
@@ -82,7 +85,8 @@
       <Docs>
         <summary>Gets the information in the leading byte of the signature (kind, calling convention, flags).</summary>
         <value>The header signature.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ParameterTypes">
@@ -101,7 +105,8 @@
       <Docs>
         <summary>Gets the method's parameter types.</summary>
         <value>An immutable collection of parameter types.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiredParameterCount">
@@ -127,7 +132,7 @@
  This value is equal to the length of the <xref:System.Reflection.Metadata.MethodSignature`1.ParameterTypes> property, unless this method signature represents the standalone call site of a `vararg` method, in which case, the extra entries in <xref:System.Reflection.Metadata.MethodSignature`1.ParameterTypes> are the types used for the optional parameters.
   
  ]]></format>
-      </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReturnType">
@@ -146,7 +151,8 @@
       <Docs>
         <summary>Gets the return type of the method.</summary>
         <value>The return type.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

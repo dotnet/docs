@@ -52,6 +52,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.Serialization.ISerializable" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -1853,7 +1854,7 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the data stored in the <xref:System.Runtime.Serialization.SerializationInfo> is of the type requested (or one of its derived classes), that value is returned directly. Otherwise, <xref:System.Runtime.Serialization.IFormatterConverter.Convert%2A?displayProperty=fullName> is called to convert it to the appropriate type.  
+ If the data stored in the <xref:System.Runtime.Serialization.SerializationInfo> is of the type requested (or one of its derived classes), that value is returned directly. Otherwise, <xref:System.Runtime.Serialization.IFormatterConverter.Convert%2A?displayProperty=nameWithType> is called to convert it to the appropriate type.  
   
  The value returned by the <xref:System.Runtime.Serialization.SerializationInfo.GetValue%2A> method can always be safely cast to the type specified in the `type` parameter.  
   
@@ -2049,5 +2050,25 @@ End Sub
         <exception cref="T:System.ArgumentNullException">The <paramref name="type" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a value into the <see cref="T:System.Runtime.Serialization.SerializationInfo" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

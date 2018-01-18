@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a8cebf4c-06d2-4667-8f5b-c3e1fc90df6f
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;system.runtime.serialization&gt;
 Represents the root element for the <xref:System.Runtime.Serialization> namespace section and contains elements for setting options of the <xref:System.Runtime.Serialization.DataContractSerializer>.  
@@ -58,6 +60,6 @@ Represents the root element for the <xref:System.Runtime.Serialization> namespac
 |[\<configuration> Element](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)|The top level element for configuration.|  
   
 ## See Also  
- <xref:System.Runtime.Serialization>   
- [Using Data Contracts](../../../../../docs/framework/wcf/feature-details/using-data-contracts.md)   
+ <xref:System.Runtime.Serialization>  
+ [Using Data Contracts](../../../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
  [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)

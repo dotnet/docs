@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModule::GetAssembly"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugModule::GetAssembly method [.NET Framework debugging]"
   - "GetAssembly method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugModule::GetAssembly Method
 Gets the containing assembly for this module.  

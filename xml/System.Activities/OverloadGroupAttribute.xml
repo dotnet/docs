@@ -27,7 +27,7 @@
   
  Any violation of the preceding rules results in a <xref:System.Activities.InvalidWorkflowException> being thrown when the containing activity is prepared for execution.  
   
- The <xref:System.Activities.RuntimeArgument.IsRequired%2A?displayProperty=fullName> is set to `true` if the <xref:System.Activities.RequiredArgumentAttribute?displayProperty=fullName> is applied to an argument.  
+ The <xref:System.Activities.RuntimeArgument.IsRequired%2A?displayProperty=nameWithType> is set to `true` if the <xref:System.Activities.RequiredArgumentAttribute?displayProperty=nameWithType> is applied to an argument.  
   
  ]]></format>
     </remarks>
@@ -102,5 +102,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.OverloadGroupAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

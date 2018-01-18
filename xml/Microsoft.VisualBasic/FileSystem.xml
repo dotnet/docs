@@ -82,6 +82,13 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="Path" /> is empty.</exception>
         <exception cref="T:System.IO.FileNotFoundException">Invalid drive is specified, or drive is unavailable.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.ChDrive" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.CurDir" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Dir" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.MkDir(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.RmDir(System.String)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.IO.FileNotFoundException" />
       </Docs>
     </Member>
     <Member MemberName="ChDrive">
@@ -118,6 +125,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">Invalid drive is specified, or drive is unavailable.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.ChDir(System.String)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.CurDir" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Dir" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.MkDir(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.RmDir(System.String)" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="ChDrive">
@@ -154,6 +167,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">Invalid drive is specified, or drive is unavailable.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.ChDir(System.String)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.CurDir" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Dir" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.MkDir(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.RmDir(System.String)" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="CurDir">
@@ -182,6 +201,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.ChDrive" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.ChDir(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.MkDir(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.RmDir(System.String)" />
+        <altmember cref="T:System.IO.IOException" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="CurDir">
@@ -213,6 +238,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.ChDrive" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.ChDir(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.MkDir(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.RmDir(System.String)" />
+        <altmember cref="T:System.IO.IOException" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="Dir">
@@ -242,7 +273,7 @@
  You must supply a `PathName` the first time that you call the `Dir` function. To retrieve the next item, you can make subsequent calls to the `Dir` function without parameters.  
   
 > [!IMPORTANT]
->  To run correctly, the `Dir` function requires the <xref:System.Security.Permissions.FileIOPermissionAccess.Read> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery>flags of <xref:System.Security.Permissions.FileIOPermission> to be granted to the executing code. For more information, see <xref:System.Security.Permissions.FileIOPermission>, <xref:System.Security.SecurityException>, and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  To run correctly, the `Dir` function requires the <xref:System.Security.Permissions.FileIOPermissionAccess.Read> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery> flags of <xref:System.Security.Permissions.FileIOPermission> to be granted to the executing code. For more information, see <xref:System.Security.Permissions.FileIOPermission>, <xref:System.Security.SecurityException>, and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
  The `Attributes` argument enumeration values are as follows:  
   
@@ -269,6 +300,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.ChDir(System.String)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.ChDrive" />
+        <altmember cref="T:Microsoft.VisualBasic.FileAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Dir">
@@ -303,7 +337,7 @@
  You must supply a `PathName` the first time that you call the `Dir` function. To retrieve the next item, you can make subsequent calls to the `Dir` function with no parameters.  
   
 > [!IMPORTANT]
->  To run correctly, the `Dir` function requires the <xref:System.Security.Permissions.FileIOPermissionAccess.Read> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery>flags of <xref:System.Security.Permissions.FileIOPermission> to be granted to the executing code. For more information, see <xref:System.Security.Permissions.FileIOPermission>, <xref:System.Security.SecurityException>, and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  To run correctly, the `Dir` function requires the <xref:System.Security.Permissions.FileIOPermissionAccess.Read> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery> flags of <xref:System.Security.Permissions.FileIOPermission> to be granted to the executing code. For more information, see <xref:System.Security.Permissions.FileIOPermission>, <xref:System.Security.SecurityException>, and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
  The `Attributes` argument enumeration values are as follows:  
   
@@ -330,6 +364,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.ChDir(System.String)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.ChDrive" />
+        <altmember cref="T:Microsoft.VisualBasic.FileAttribute" />
       </Docs>
     </Member>
     <Member MemberName="EOF">
@@ -371,6 +408,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FileGet" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Loc(System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.LOF(System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="FileAttr">
@@ -423,10 +465,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.GetAttr(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.SetAttr(System.String,Microsoft.VisualBasic.FileAttribute)" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="FileClose">
-      <MemberSignature Language="C#" Value="public static void FileClose (int[] FileNumbers);" />
+      <MemberSignature Language="C#" Value="public static void FileClose (params int[] FileNumbers);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FileClose(int32[] FileNumbers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileClose(System.Int32[])" />
       <MemberType>Method</MemberType>
@@ -472,6 +518,8 @@
         </remarks>
         <exception cref="T:System.IO.IOException">
           <paramref name="FileNumber" /> does not exist.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Reset" />
       </Docs>
     </Member>
     <Member MemberName="FileCopy">
@@ -515,6 +563,10 @@
           <paramref name="Source" /> or <paramref name="Destination" /> is invalid or not specified.</exception>
         <exception cref="T:System.IO.IOException">File is already open.</exception>
         <exception cref="T:System.IO.FileNotFoundException">File does not exist.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Kill(System.String)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.IO.IOException" />
+        <altmember cref="T:System.IO.FileNotFoundException" />
       </Docs>
     </Member>
     <Member MemberName="FileDateTime">
@@ -550,11 +602,15 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="PathName" /> is invalid or contains wildcards.</exception>
         <exception cref="T:System.IO.FileNotFoundException">Target file does not exist.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileLen(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.GetAttr(System.String)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.IO.FileNotFoundException" />
       </Docs>
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref bool Value, long RecordNumber = -1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, bool Value, int64 RecordNumber) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, bool&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Boolean@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -627,11 +683,15 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref byte Value, long RecordNumber = -1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, unsigned int8 Value, int64 RecordNumber) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, unsigned int8&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Byte@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -704,11 +764,15 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref char Value, long RecordNumber = -1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, char Value, int64 RecordNumber) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, char&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Char@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -781,11 +845,15 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref DateTime Value, long RecordNumber = -1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, valuetype System.DateTime Value, int64 RecordNumber) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, valuetype System.DateTime&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.DateTime@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -858,11 +926,15 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref decimal Value, long RecordNumber = -1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, valuetype System.Decimal Value, int64 RecordNumber) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, valuetype System.Decimal&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Decimal@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -935,11 +1007,15 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref double Value, long RecordNumber = -1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, float64 Value, int64 RecordNumber) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, float64&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Double@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1012,11 +1088,15 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref short Value, long RecordNumber = -1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, int16 Value, int64 RecordNumber) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, int16&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Int16@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1089,11 +1169,15 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref int Value, long RecordNumber = -1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, int32 Value, int64 RecordNumber) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, int32&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Int32@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1166,11 +1250,15 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref long Value, long RecordNumber = -1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, int64 Value, int64 RecordNumber) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, int64&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Int64@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1243,11 +1331,15 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref float Value, long RecordNumber = -1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, float32 Value, int64 RecordNumber) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, float32&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Single@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1320,11 +1412,15 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref ValueType Value, long RecordNumber = -1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, class System.ValueType Value, int64 RecordNumber) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, class System.ValueType&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.ValueType@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1397,11 +1493,15 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref string Value, long RecordNumber = -1, bool StringIsFixedLength = false);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, string Value, int64 RecordNumber, bool StringIsFixedLength) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, string&amp; Value, int64 RecordNumber, bool StringIsFixedLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.String@,System.Int64,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1476,11 +1576,15 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref Array Value, long RecordNumber = -1, bool ArrayIsDynamic = false, bool StringIsFixedLength = false);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, class System.Array Value, int64 RecordNumber, bool ArrayIsDynamic, bool StringIsFixedLength) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, class System.Array&amp; Value, int64 RecordNumber, bool ArrayIsDynamic, bool StringIsFixedLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Array@,System.Int64,System.Boolean,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1557,11 +1661,15 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="FileGetObject">
       <MemberSignature Language="C#" Value="public static void FileGetObject (int FileNumber, ref object Value, long RecordNumber = -1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGetObject(int32 FileNumber, object Value, int64 RecordNumber) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGetObject(int32 FileNumber, object&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1633,6 +1741,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FileGet" />
       </Docs>
     </Member>
     <Member MemberName="FileLen">
@@ -1674,6 +1786,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.FileNotFoundException">File does not exist.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileDateTime(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.GetAttr(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.LOF(System.Int32)" />
+        <altmember cref="T:System.IO.FileNotFoundException" />
       </Docs>
     </Member>
     <Member MemberName="FileOpen">
@@ -1750,6 +1866,8 @@
         <exception cref="T:System.ArgumentException">Record length is negative (and not equal to -1).</exception>
         <exception cref="T:System.IO.IOException">
           <paramref name="FileName" /> is already open, or <paramref name="FileName" /> is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileClose(System.Int32[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FreeFile" />
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -1833,6 +1951,14 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FileGet" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -1916,6 +2042,14 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FileGet" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -1999,6 +2133,14 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FileGet" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -2082,6 +2224,14 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FileGet" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -2165,6 +2315,14 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FileGet" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -2248,6 +2406,14 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FileGet" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -2331,6 +2497,14 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FileGet" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -2414,6 +2588,14 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FileGet" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -2497,6 +2679,14 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FileGet" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -2580,6 +2770,14 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FileGet" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -2663,6 +2861,14 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FileGet" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -2751,6 +2957,14 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FileGet" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -2836,6 +3050,14 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FileGet" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -2923,6 +3145,14 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="RecordNumber" /> &lt; 1 and not equal to -1.</exception>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FileGet" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="FilePutObject">
@@ -2988,6 +3218,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FileGet" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
       </Docs>
     </Member>
     <Member MemberName="FileWidth">
@@ -3021,6 +3256,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="FreeFile">
@@ -3055,6 +3294,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">More than 255 files are in use.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="GetAttr">
@@ -3125,11 +3366,16 @@ Result = GetAttr(FName) And vbArchive
         <exception cref="T:System.IO.IOException">
           <paramref name="Pathname" /> is invalid or contains wildcards.</exception>
         <exception cref="T:System.IO.FileNotFoundException">Target file does not exist.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileAttr(System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.SetAttr(System.String,Microsoft.VisualBasic.FileAttribute)" />
+        <altmember cref="T:System.IO.IOException" />
+        <altmember cref="T:System.IO.FileNotFoundException" />
+        <altmember cref="T:Microsoft.VisualBasic.FileAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Input">
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref bool Value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, bool Value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, bool&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3186,11 +3432,17 @@ Result = GetAttr(FName) And vbArchive
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.InputString(System.Int32,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="Input">
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref byte Value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, unsigned int8 Value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, unsigned int8&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Byte@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3247,11 +3499,17 @@ Result = GetAttr(FName) And vbArchive
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.InputString(System.Int32,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="Input">
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref char Value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, char Value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, char&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Char@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3308,11 +3566,17 @@ Result = GetAttr(FName) And vbArchive
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.InputString(System.Int32,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="Input">
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref DateTime Value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, valuetype System.DateTime Value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, valuetype System.DateTime&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.DateTime@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3369,11 +3633,17 @@ Result = GetAttr(FName) And vbArchive
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.InputString(System.Int32,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="Input">
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref decimal Value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, valuetype System.Decimal Value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, valuetype System.Decimal&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Decimal@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3430,11 +3700,17 @@ Result = GetAttr(FName) And vbArchive
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.InputString(System.Int32,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="Input">
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref double Value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, float64 Value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, float64&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Double@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3491,11 +3767,17 @@ Result = GetAttr(FName) And vbArchive
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.InputString(System.Int32,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="Input">
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref short Value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, int16 Value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, int16&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Int16@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3552,11 +3834,17 @@ Result = GetAttr(FName) And vbArchive
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.InputString(System.Int32,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="Input">
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref int Value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, int32 Value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, int32&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3613,11 +3901,17 @@ Result = GetAttr(FName) And vbArchive
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.InputString(System.Int32,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="Input">
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref long Value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, int64 Value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, int64&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Int64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3674,11 +3968,17 @@ Result = GetAttr(FName) And vbArchive
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.InputString(System.Int32,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="Input">
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref object Value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, object Value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, object&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3735,11 +4035,17 @@ Result = GetAttr(FName) And vbArchive
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.InputString(System.Int32,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="Input">
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref float Value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, float32 Value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, float32&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Single@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3796,11 +4102,17 @@ Result = GetAttr(FName) And vbArchive
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.InputString(System.Int32,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="Input">
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref string Value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, string Value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, string&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3857,6 +4169,12 @@ Result = GetAttr(FName) And vbArchive
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.InputString(System.Int32,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="InputString">
@@ -3908,6 +4226,7 @@ Result = GetAttr(FName) And vbArchive
           <paramref name="FileNumber" /> does not exist.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="CharCount" /> &lt; 0 or &gt; 214.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Input" />
       </Docs>
     </Member>
     <Member MemberName="Kill">
@@ -3948,6 +4267,9 @@ Result = GetAttr(FName) And vbArchive
         <exception cref="T:System.IO.IOException">Target file(s) open.</exception>
         <exception cref="T:System.IO.FileNotFoundException">Target file(s) not found.</exception>
         <exception cref="T:System.Security.SecurityException">Permission denied.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.RmDir(System.String)" />
+        <altmember cref="T:System.IO.IOException" />
+        <altmember cref="T:System.IO.FileNotFoundException" />
       </Docs>
     </Member>
     <Member MemberName="LineInput">
@@ -3997,6 +4319,9 @@ Result = GetAttr(FName) And vbArchive
         <exception cref="T:System.IO.EndOfStreamException">End of file reached.</exception>
         <exception cref="T:System.IO.IOException">
           <paramref name="FileNumber" /> does not exist.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Chr(System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.ChrW(System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Input" />
       </Docs>
     </Member>
     <Member MemberName="Loc">
@@ -4044,6 +4369,10 @@ Result = GetAttr(FName) And vbArchive
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.EOF(System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.LOF(System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="Lock">
@@ -4086,6 +4415,8 @@ Result = GetAttr(FName) And vbArchive
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="Lock">
@@ -4130,6 +4461,8 @@ Result = GetAttr(FName) And vbArchive
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="Lock">
@@ -4176,6 +4509,8 @@ Result = GetAttr(FName) And vbArchive
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="LOF">
@@ -4213,6 +4548,11 @@ Result = GetAttr(FName) And vbArchive
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.EOF(System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileLen(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Loc(System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="MkDir">
@@ -4252,10 +4592,15 @@ Result = GetAttr(FName) And vbArchive
           <paramref name="Path" /> is not specified or is empty.</exception>
         <exception cref="T:System.Security.SecurityException">Permission denied.</exception>
         <exception cref="T:System.IO.IOException">Directory already exists.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.ChDir(System.String)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.CurDir" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.RmDir(System.String)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="Print">
-      <MemberSignature Language="C#" Value="public static void Print (int FileNumber, object[] Output);" />
+      <MemberSignature Language="C#" Value="public static void Print (int FileNumber, params object[] Output);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Print(int32 FileNumber, object[] Output) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -4319,10 +4664,16 @@ Result = GetAttr(FName) And vbArchive
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.SPC(System.Int16)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.TAB" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="PrintLine">
-      <MemberSignature Language="C#" Value="public static void PrintLine (int FileNumber, object[] Output);" />
+      <MemberSignature Language="C#" Value="public static void PrintLine (int FileNumber, params object[] Output);" />
       <MemberSignature Language="ILAsm" Value=".method public static void PrintLine(int32 FileNumber, object[] Output) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -4386,6 +4737,12 @@ Result = GetAttr(FName) And vbArchive
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.SPC(System.Int16)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.TAB" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="Rename">
@@ -4432,6 +4789,10 @@ Result = GetAttr(FName) And vbArchive
         <exception cref="T:System.IO.FileNotFoundException">
           <paramref name="OldPath" /> file does not exist.</exception>
         <exception cref="T:System.IO.IOException">Cannot rename to different device.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Kill(System.String)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.IO.FileNotFoundException" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -4464,6 +4825,8 @@ Result = GetAttr(FName) And vbArchive
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileClose(System.Int32[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="RmDir">
@@ -4503,6 +4866,13 @@ Result = GetAttr(FName) And vbArchive
           <paramref name="Path" /> is not specified or is empty.</exception>
         <exception cref="T:System.IO.IOException">Target directory contains files.</exception>
         <exception cref="T:System.IO.FileNotFoundException">Directory does not exist.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.ChDir(System.String)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.CurDir" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Kill(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.MkDir(System.String)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.IO.IOException" />
+        <altmember cref="T:System.IO.FileNotFoundException" />
       </Docs>
     </Member>
     <Member MemberName="Seek">
@@ -4561,6 +4931,11 @@ Result = GetAttr(FName) And vbArchive
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FileGet" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Loc(System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="Seek">
@@ -4620,6 +4995,11 @@ Result = GetAttr(FName) And vbArchive
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FileGet" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Loc(System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="SetAttr">
@@ -4675,6 +5055,11 @@ Result = GetAttr(FName) And vbArchive
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Attribute" /> type is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileAttr(System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.GetAttr(System.String)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:Microsoft.VisualBasic.FileAttribute" />
+        <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
       </Docs>
     </Member>
     <Member MemberName="SPC">
@@ -4718,6 +5103,11 @@ Result = GetAttr(FName) And vbArchive
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Space(System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.TAB" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileWidth(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="TAB">
@@ -4748,7 +5138,7 @@ Result = GetAttr(FName) And vbArchive
   
  The leftmost print position on an output line is always 1. When you use the `Print` or `PrintLine` functions to print to files, the rightmost print position is the current width of the output file, which you can set using the `FileWidth` function.  
   
- The `TAB` function can also be used with the `WriteLine` function. It cannot be used with <xref:System.Diagnostics.Debug.WriteLine%2A?displayProperty=fullName> or <xref:System.Console.WriteLine%2A?displayProperty=fullName>.  
+ The `TAB` function can also be used with the `WriteLine` function. It cannot be used with <xref:System.Diagnostics.Debug.WriteLine%2A?displayProperty=nameWithType> or <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  Make sure your tabular columns are wide enough to contain wide letters.  
@@ -4762,6 +5152,11 @@ Result = GetAttr(FName) And vbArchive
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Space(System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.SPC(System.Int16)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileWidth(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="TAB">
@@ -4795,7 +5190,7 @@ Result = GetAttr(FName) And vbArchive
   
  The leftmost print position on an output line is always 1. When you use the `Print` or `PrintLine` functions to print to files, the rightmost print position is the current width of the output file, which you can set using the `FileWidth` function.  
   
- The `TAB` function can also be used with the `WriteLine` function. It cannot be used with <xref:System.Diagnostics.Debug.WriteLine%2A?displayProperty=fullName> or <xref:System.Console.WriteLine%2A?displayProperty=fullName>.  
+ The `TAB` function can also be used with the `WriteLine` function. It cannot be used with <xref:System.Diagnostics.Debug.WriteLine%2A?displayProperty=nameWithType> or <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  Make sure your tabular columns are wide enough to contain wide letters.  
@@ -4809,6 +5204,11 @@ Result = GetAttr(FName) And vbArchive
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Space(System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.SPC(System.Int16)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileWidth(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Unlock">
@@ -4851,6 +5251,8 @@ Result = GetAttr(FName) And vbArchive
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="Unlock">
@@ -4895,6 +5297,8 @@ Result = GetAttr(FName) And vbArchive
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="Unlock">
@@ -4941,10 +5345,12 @@ Result = GetAttr(FName) And vbArchive
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public static void Write (int FileNumber, object[] Output);" />
+      <MemberSignature Language="C#" Value="public static void Write (int FileNumber, params object[] Output);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Write(int32 FileNumber, object[] Output) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -5009,10 +5415,15 @@ Result = GetAttr(FName) And vbArchive
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Input" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
-      <MemberSignature Language="C#" Value="public static void WriteLine (int FileNumber, object[] Output);" />
+      <MemberSignature Language="C#" Value="public static void WriteLine (int FileNumber, params object[] Output);" />
       <MemberSignature Language="ILAsm" Value=".method public static void WriteLine(int32 FileNumber, object[] Output) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -5076,7 +5487,102 @@ Result = GetAttr(FName) And vbArchive
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Input" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Input">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads data from an open sequential file and assigns the data to variables.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dir">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string representing the name of a file, directory, or folder that matches a specified pattern or file attribute, or the volume label of a drive. The <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" /> gives you better productivity and performance in file I/O operations than the <see langword="Dir" /> function. See <see cref="M:Microsoft.VisualBasic.FileIO.FileSystem.GetDirectoryInfo(System.String)" /> for more information.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Unlock">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Controls access by other processes to all or part of a file opened by using the <see langword="Open" /> function. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="Lock" /> and <see langword="Unlock" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Seek">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see langword="Long" /> specifying the current read/write position in a file opened by using the <see langword="FileOpen" /> function, or sets the position for the next read/write operation in a file opened by using the <see langword="FileOpen" /> function. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="Seek" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Lock">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Controls access by other processes to all or part of a file opened by using the <see langword="Open" /> function. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="Lock" /> and <see langword="Unlock" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TAB">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Used with the <see langword="Print" /> or <see langword="PrintLine" /> functions to position output.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FilePut">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes data from a variable to a disk file. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="FilePut" />. F For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FileGet">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads data from an open disk file into a variable. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="FileGet" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CurDir">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string representing the current path. The <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" /> gives you better productivity and performance in file I/O operations than <see langword="CurDir" />. For more information, see <see cref="P:Microsoft.VisualBasic.FileIO.FileSystem.CurrentDirectory" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ChDrive">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Changes the current drive.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

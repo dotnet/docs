@@ -7,11 +7,6 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "authentication [.NET Framework], classes"
   - "IAuthenticationModule interface"
@@ -30,6 +25,8 @@ caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Internet Authentication
 The <xref:System.Net> classes support a variety of client authentication mechanisms, including the standard Internet authentication methods basic, digest, negotiate, NTLM, and Kerberos authentication, as well as custom methods that you can create.  
@@ -40,7 +37,7 @@ The <xref:System.Net> classes support a variety of client authentication mechani
   
  The **CredentialCache** class stores a collection of credentials for various Web resources. When the <xref:System.Net.CredentialCache.GetCredential%2A> method is called, **CredentialCache** returns the proper set of credentials, as determined by the URI of the Web resource and the requested authentication scheme. Applications that use a variety of Internet resources with different authentication schemes benefit from using the **CredentialCache** class, since it stores all the credentials and provides them as requested.  
   
- When an Internet resource requests authentication, the <xref:System.Net.WebRequest.GetResponse%2A?displayProperty=fullName> method sends the <xref:System.Net.WebRequest> to the **AuthenticationManager** along with the request for credentials. The request is then authenticated according to the following process:  
+ When an Internet resource requests authentication, the <xref:System.Net.WebRequest.GetResponse%2A?displayProperty=nameWithType> method sends the <xref:System.Net.WebRequest> to the **AuthenticationManager** along with the request for credentials. The request is then authenticated according to the following process:  
   
 1.  The **AuthenticationManager** calls the <xref:System.Net.IAuthenticationModule.Authenticate%2A> method on each of the registered authentication modules in the order they were registered. The **AuthenticationManager** uses the first module that does not return **null** to carry out the authentication process. The details of the process vary depending on the type of authentication module involved.  
   
@@ -49,6 +46,6 @@ The <xref:System.Net> classes support a variety of client authentication mechani
  Some authentication schemes can authenticate a user without first making a request for a resource. An application can save time by preauthenticating the user with the resource, thus eliminating at least one round trip to the server. Or, it can perform authentication during program startup in order to be more responsive to the user later. Authentication schemes that can use preauthentication set the <xref:System.Net.IAuthenticationModule.PreAuthenticate%2A> property to **true**.  
   
 ## See Also  
- [Basic and Digest Authentication](../../../docs/framework/network-programming/basic-and-digest-authentication.md)   
- [NTLM and Kerberos Authentication](../../../docs/framework/network-programming/ntlm-and-kerberos-authentication.md)   
+ [Basic and Digest Authentication](../../../docs/framework/network-programming/basic-and-digest-authentication.md)  
+ [NTLM and Kerberos Authentication](../../../docs/framework/network-programming/ntlm-and-kerberos-authentication.md)  
  [Security in Network Programming](../../../docs/framework/network-programming/security-in-network-programming.md)

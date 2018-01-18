@@ -10,14 +10,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "custom classes in XAML"
-  - "XAML, custom classes"
-  - "classes, custom classes in XAML"
+  - "custom classes in XAML [WPF]"
+  - "XAML [WPF], custom classes"
+  - "classes [WPF], custom classes in XAML"
 ms.assetid: e7313137-581e-4a64-8453-d44e15a6164a
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # XAML and Custom Classes for WPF
 XAML as implemented in [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] frameworks supports the ability to define a custom class or structure in any [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] language, and then access that class using XAML markup. You can use a mixture of [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]-defined types and your custom types within the same markup file, typically by mapping the custom types to a XAML namespace prefix. This topic discusses the requirements that a custom class must satisfy to be usable as a XAML element.  
@@ -108,7 +110,7 @@ XAML as implemented in [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-c
   
 <a name="XAMLCONtent"></a>   
 ## Declaring XAML Content Properties  
- The XAML language defines the concept of a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] content property. Each class that is usable in object syntax can have exactly one XAML content property. To declare a property to be the XAML content property for your class, apply the <xref:System.Windows.Markup.ContentPropertyAttribute> as part of the class definition. Specify the name of the intended XAML content property as the <xref:System.Windows.Markup.ContentPropertyAttribute.Name%2A> in the attribute. The property is specified as a string by name, not as a reflection construct such as<xref:System.Reflection.PropertyInfo>.  
+ The XAML language defines the concept of a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] content property. Each class that is usable in object syntax can have exactly one XAML content property. To declare a property to be the XAML content property for your class, apply the <xref:System.Windows.Markup.ContentPropertyAttribute> as part of the class definition. Specify the name of the intended XAML content property as the <xref:System.Windows.Markup.ContentPropertyAttribute.Name%2A> in the attribute. The property is specified as a string by name, not as a reflection construct such as <xref:System.Reflection.PropertyInfo>.  
   
  You can specify a collection property to be the XAML content property. This results in a usage for that property whereby the object element can have one or more child elements, without any intervening collection object elements or property element tags. These elements are then treated as the value for the XAML content property and added to the backing collection instance.  
   
@@ -119,8 +121,8 @@ XAML as implemented in [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-c
  For certain scenarios, such as if you are a control author, you may also want to assure that any object representation that can be instantiated in XAML can also be serialized back to equivalent XAML markup. Serialization requirements are not described in this topic. See [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md) and [Element Tree and Serialization](../../../../docs/framework/wpf/advanced/element-tree-and-serialization.md).  
   
 ## See Also  
- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)   
- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)   
- [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md)   
- [Base Elements Overview](../../../../docs/framework/wpf/advanced/base-elements-overview.md)   
+ [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
+ [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)  
+ [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md)  
+ [Base Elements Overview](../../../../docs/framework/wpf/advanced/base-elements-overview.md)  
  [XAML Loading and Dependency Properties](../../../../docs/framework/wpf/advanced/xaml-loading-and-dependency-properties.md)

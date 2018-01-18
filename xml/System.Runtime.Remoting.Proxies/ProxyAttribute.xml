@@ -44,6 +44,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission Value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+    <altmember cref="T:System.Runtime.Remoting.Proxies.RealProxy" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -135,7 +136,7 @@
 ## Remarks  
   
 > [!NOTE]
->  The current method is called when a proxy is created out of a<xref:System.Runtime.Remoting.ObjRef> instance that references a class that is marked with the <xref:System.Runtime.Remoting.Proxies.ProxyAttribute> attribute. Therefore, the method is used only when a <xref:System.Runtime.Remoting.ObjRef> is received from a return or parameter on a call, or during the activation of a client-activated object. The <xref:System.Runtime.Remoting.Proxies.ProxyAttribute> is not used for well-known object types.  
+>  The current method is called when a proxy is created out of a <xref:System.Runtime.Remoting.ObjRef> instance that references a class that is marked with the <xref:System.Runtime.Remoting.Proxies.ProxyAttribute> attribute. Therefore, the method is used only when a <xref:System.Runtime.Remoting.ObjRef> is received from a return or parameter on a call, or during the activation of a client-activated object. The <xref:System.Runtime.Remoting.Proxies.ProxyAttribute> is not used for well-known object types.  
   
    
   

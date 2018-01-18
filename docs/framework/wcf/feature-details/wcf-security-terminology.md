@@ -18,6 +18,8 @@ caps.latest.revision: 14
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # WCF Security Terminology
 Some of the terminology used when discussing security may be unfamiliar. This topic provides short explanations of some of security terms, but is not intended to provide comprehensive documentation for every item.  
@@ -188,6 +190,6 @@ Some of the terminology used when discussing security may be unfamiliar. This to
  An internationally recognized standard for certificates that defines their required parts.  
   
 ## See Also  
- [Fundamental Windows Communication Foundation Concepts](../../../../docs/framework/wcf/fundamental-concepts.md)   
- [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)   
+ [Fundamental Windows Communication Foundation Concepts](../../../../docs/framework/wcf/fundamental-concepts.md)  
+ [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)  
  [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

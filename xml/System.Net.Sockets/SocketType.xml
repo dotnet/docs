@@ -28,12 +28,12 @@
  Before a <xref:System.Net.Sockets.Socket> can send and receive data, it must first be created using an <xref:System.Net.Sockets.AddressFamily>, a <xref:System.Net.Sockets.SocketType>, and a <xref:System.Net.Sockets.ProtocolType>. The <xref:System.Net.Sockets.SocketType> enumeration provides several options for defining the type of <xref:System.Net.Sockets.Socket> that you intend to open.  
   
 > [!NOTE]
->  <xref:System.Net.Sockets.SocketType> sometimes implicitly indicates which <xref:System.Net.Sockets.ProtocolType> is used within an <xref:System.Net.Sockets.AddressFamily>. For example, when the <xref:System.Net.Sockets.SocketType?displayProperty=fullName> is <xref:System.Net.Sockets.SocketType.Dgram?displayProperty=fullName>, the <xref:System.Net.Sockets.ProtocolType?displayProperty=fullName> is always <xref:System.Net.Sockets.ProtocolType.Udp?displayProperty=fullName>. When the <xref:System.Net.Sockets.SocketType?displayProperty=fullName> is <xref:System.Net.Sockets.SocketType.Stream?displayProperty=fullName>, the <xref:System.Net.Sockets.ProtocolType?displayProperty=fullName> is always <xref:System.Net.Sockets.ProtocolType.Tcp?displayProperty=fullName>. If you try to create a <xref:System.Net.Sockets.Socket> with an incompatible combination, <xref:System.Net.Sockets.Socket> throws a <xref:System.Net.Sockets.SocketException>.  
+>  <xref:System.Net.Sockets.SocketType> sometimes implicitly indicates which <xref:System.Net.Sockets.ProtocolType> is used within an <xref:System.Net.Sockets.AddressFamily>. For example, when the <xref:System.Net.Sockets.SocketType?displayProperty=nameWithType> is <xref:System.Net.Sockets.SocketType.Dgram?displayProperty=nameWithType>, the <xref:System.Net.Sockets.ProtocolType?displayProperty=nameWithType> is always <xref:System.Net.Sockets.ProtocolType.Udp?displayProperty=nameWithType>. When the <xref:System.Net.Sockets.SocketType?displayProperty=nameWithType> is <xref:System.Net.Sockets.SocketType.Stream?displayProperty=nameWithType>, the <xref:System.Net.Sockets.ProtocolType?displayProperty=nameWithType> is always <xref:System.Net.Sockets.ProtocolType.Tcp?displayProperty=nameWithType>. If you try to create a <xref:System.Net.Sockets.Socket> with an incompatible combination, <xref:System.Net.Sockets.Socket> throws a <xref:System.Net.Sockets.SocketException>.  
   
    
   
 ## Examples  
- The following example uses <xref:System.Net.Sockets.SocketType.Stream?displayProperty=fullName> as a parameter to the <xref:System.Net.Sockets.Socket> constructor.  
+ The following example uses <xref:System.Net.Sockets.SocketType.Stream?displayProperty=nameWithType> as a parameter to the <xref:System.Net.Sockets.Socket> constructor.  
   
  [!code-cpp[SelectModeExample#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SelectModeExample/CPP/source.cpp#1)]
  [!code-csharp[SelectModeExample#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SelectModeExample/CS/source.cs#1)]
@@ -41,6 +41,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.Sockets.AddressFamily" />
+    <altmember cref="T:System.Net.Sockets.ProtocolType" />
+    <altmember cref="T:System.Net.Sockets.Socket" />
   </Docs>
   <Members>
     <Member MemberName="Dgram">
@@ -170,7 +173,7 @@
         <ReturnType>System.Net.Sockets.SocketType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Supports reliable, two-way, connection-based byte streams without the duplication of data and without preservation of boundaries. A <see cref="T:System.Net.Sockets.Socket" /> of this type communicates with a single peer and requires a remote host connection before communication can begin. <see cref="F:System.Net.Sockets.SocketType.Stream" /> uses the Transmission Control Protocol (<see langword="ProtocolType" />.<see cref="F:System.Net.Sockets.ProtocolType.Tcp" />) and the <see langword="AddressFamily" />.<see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" /> address family.</summary> 
+        <summary>Supports reliable, two-way, connection-based byte streams without the duplication of data and without preservation of boundaries. A <see cref="T:System.Net.Sockets.Socket" /> of this type communicates with a single peer and requires a remote host connection before communication can begin. <see cref="F:System.Net.Sockets.SocketType.Stream" /> uses the Transmission Control Protocol (<see langword="ProtocolType" />.<see cref="F:System.Net.Sockets.ProtocolType.Tcp" />) and the <see langword="AddressFamily" />.<see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" /> address family.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">

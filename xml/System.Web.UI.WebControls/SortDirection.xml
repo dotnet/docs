@@ -22,11 +22,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.SortDirection> enumeration to determine the direction in which the <xref:System.Web.UI.WebControls.GridView> control is displaying its items. The <xref:System.Web.UI.WebControls.GridView.SortDirection%2A> property of the <xref:System.Web.UI.WebControls.GridView> control is tested for its value to determine the sort direction.  
   
- <!-- TODO: review snippet reference [!code-csharp[SortDirection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SortDirection/CS/sortdirectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[SortDirection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SortDirection/VB/sortdirectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[SortDirection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SortDirection/CS/sortdirectioncs.aspx#1)]
+ [!code-aspx-vb[SortDirection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SortDirection/VB/sortdirectionvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.GridView.SortDirection" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.SortExpression" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.Sorted" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.Sorting" />
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
   </Docs>
   <Members>
     <Member MemberName="Ascending">

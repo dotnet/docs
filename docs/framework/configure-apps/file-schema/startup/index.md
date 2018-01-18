@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "startup settings schema"
   - "schema startup settings"
@@ -23,6 +18,8 @@ caps.latest.revision: 10
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Startup Settings Schema
 Startup settings specify the version of the common language runtime that should run the application.  
@@ -34,5 +31,5 @@ Startup settings specify the version of the common language runtime that should 
 |[\<startup>](../../../../../docs/framework/configure-apps/file-schema/startup/startup-element.md)|Contains the **\<requiredRuntime>** and **\<supportedRuntime>** elements.|  
   
 ## See Also  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)   
+ [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
  [\<PaveOver> Specifying Which Runtime Version to Use](http://msdn.microsoft.com/en-us/c376208d-980d-42b4-865b-fbe0d9cc97c2)

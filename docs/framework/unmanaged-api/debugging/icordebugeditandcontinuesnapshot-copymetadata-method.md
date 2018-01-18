@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEditAndContinueSnapshot::CopyMetaData"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugEditAndContinueSnapshot::CopyMetaData method [.NET Framework debugging]"
   - "CopyMetaData method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEditAndContinueSnapshot::CopyMetaData Method
 `CopyMetaData` is obsolete. Do not call this method.  

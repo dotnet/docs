@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is used by members such as <xref:System.Windows.Forms.ToolBar.TextAlign%2A?displayProperty=fullName>.  
+ This enumeration is used by members such as <xref:System.Windows.Forms.ToolBar.TextAlign%2A?displayProperty=nameWithType>.  
   
  Room is reserved for an image to be displayed on toolbar buttons. The alignment of text is in relation to the image displayed on the toolbar button. If no image is assigned to the button, the reserved space will appear to the left, or above the text displayed.  
   
@@ -30,6 +30,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Forms.ToolBarButton.ImageIndex" />
   </Docs>
   <Members>
     <Member MemberName="Right">

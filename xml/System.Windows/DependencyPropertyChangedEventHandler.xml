@@ -26,11 +26,13 @@
 ## Remarks  
  This delegate is the handler signature for particular events that report dependency property changes.  
   
- An event that uses this handler is exposed as a [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] event, not as a routed event. Typically these events follow the naming pattern `Is(`*PropertyName*`)Changed`, where *PropertyName* is the <xref:System.Windows.DependencyProperty.Name%2A?displayProperty=fullName> of the property that changed. The arguments of the event are used to query the old and new value of the property, as reported by the particular event. Typically there is a 1:1 correspondence between properties that change and a particular event that reports the change. It is also possible, though uncommon, to have the same event report changes to more than one property. In this case, the <xref:System.Windows.DependencyPropertyChangedEventArgs> should be checked to determine the property that changed.  
+ An event that uses this handler is exposed as a [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] event, not as a routed event. Typically these events follow the naming pattern `Is(`*PropertyName*`)Changed`, where *PropertyName* is the <xref:System.Windows.DependencyProperty.Name%2A?displayProperty=nameWithType> of the property that changed. The arguments of the event are used to query the old and new value of the property, as reported by the particular event. Typically there is a 1:1 correspondence between properties that change and a particular event that reports the change. It is also possible, though uncommon, to have the same event report changes to more than one property. In this case, the <xref:System.Windows.DependencyPropertyChangedEventArgs> should be checked to determine the property that changed.  
   
  The event data class <xref:System.Windows.DependencyPropertyChangedEventArgs> has a wider usage than just this delegate. <xref:System.Windows.DependencyPropertyChangedEventArgs> is also used to communicate data for <xref:System.Windows.PropertyChangedCallback> implementations, which are part of the customization features and internals of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] property system, and by the <xref:System.Windows.DependencyObject.OnPropertyChanged%2A> virtual method, which can be overridden to provide class-specific notifications whenever any dependency property on the object changes.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.DependencyPropertyChangedEventArgs" />
+    <altmember cref="T:System.Windows.RoutedEvent" />
   </Docs>
 </Type>

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugReferenceValue::DereferenceStrong"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugReferenceValue::DereferenceStrong method [.NET Framework debugging]"
   - "DereferenceStrong method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugReferenceValue::DereferenceStrong Method
 `DereferenceStrong` is not implemented. Do not call this method.  

@@ -34,6 +34,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.ICustomTypeDescriptor" />
+    <altmember cref="T:System.ComponentModel.TypeDescriptionProvider" />
+    <altmember cref="T:System.ComponentModel.TypeDescriptor" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,12 +65,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor is equivalent to calling the other <xref:System.ComponentModel.CustomTypeDescriptor.%23ctor%2A?displayProperty=fullName> constructor with a parameter that is `null`.  
+ This constructor is equivalent to calling the other <xref:System.ComponentModel.CustomTypeDescriptor.%23ctor%2A?displayProperty=nameWithType> constructor with a parameter that is `null`.  
   
  All methods of a <xref:System.ComponentModel.CustomTypeDescriptor> created with this constructor will return default values.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.CustomTypeDescriptor.#ctor(System.ComponentModel.ICustomTypeDescriptor)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -105,13 +109,14 @@
   
 |Method|Default return value|  
 |------------|--------------------------|  
-|<xref:System.ComponentModel.CustomTypeDescriptor.GetAttributes%2A>|An empty attribute collection (<xref:System.ComponentModel.AttributeCollection.Empty?displayProperty=fullName>).|  
+|<xref:System.ComponentModel.CustomTypeDescriptor.GetAttributes%2A>|An empty attribute collection (<xref:System.ComponentModel.AttributeCollection.Empty?displayProperty=nameWithType>).|  
 |<xref:System.ComponentModel.CustomTypeDescriptor.GetConverter%2A>|The default <xref:System.ComponentModel.TypeConverter> instance.|  
-|<xref:System.ComponentModel.CustomTypeDescriptor.GetEvents%2A>|An empty events collection (<xref:System.ComponentModel.EventDescriptorCollection.Empty?displayProperty=fullName>).|  
-|<xref:System.ComponentModel.CustomTypeDescriptor.GetProperties%2A>|An empty property collection (<xref:System.ComponentModel.PropertyDescriptorCollection.Empty?displayProperty=fullName>).|  
+|<xref:System.ComponentModel.CustomTypeDescriptor.GetEvents%2A>|An empty events collection (<xref:System.ComponentModel.EventDescriptorCollection.Empty?displayProperty=nameWithType>).|  
+|<xref:System.ComponentModel.CustomTypeDescriptor.GetProperties%2A>|An empty property collection (<xref:System.ComponentModel.PropertyDescriptorCollection.Empty?displayProperty=nameWithType>).|  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.CustomTypeDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="GetAttributes">
@@ -148,6 +153,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetAttributes" />
+        <altmember cref="T:System.Attribute" />
+        <altmember cref="T:System.ComponentModel.AttributeCollection" />
+        <altmember cref="Overload:System.ComponentModel.CustomTypeDescriptor.GetEvents" />
+        <altmember cref="Overload:System.ComponentModel.CustomTypeDescriptor.GetProperties" />
       </Docs>
     </Member>
     <Member MemberName="GetClassName">
@@ -188,6 +198,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetClassName" />
+        <altmember cref="M:System.ComponentModel.CustomTypeDescriptor.GetComponentName" />
       </Docs>
     </Member>
     <Member MemberName="GetComponentName">
@@ -224,6 +236,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetComponentName" />
+        <altmember cref="M:System.ComponentModel.CustomTypeDescriptor.GetClassName" />
       </Docs>
     </Member>
     <Member MemberName="GetConverter">
@@ -260,6 +274,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetConverter" />
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <altmember cref="M:System.ComponentModel.CustomTypeDescriptor.GetEditor(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="GetDefaultEvent">
@@ -296,6 +313,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent" />
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="M:System.ComponentModel.CustomTypeDescriptor.GetDefaultProperty" />
       </Docs>
     </Member>
     <Member MemberName="GetDefaultProperty">
@@ -332,6 +352,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="M:System.ComponentModel.CustomTypeDescriptor.GetDefaultEvent" />
       </Docs>
     </Member>
     <Member MemberName="GetEditor">
@@ -371,6 +394,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetEditor(System.Type)" />
+        <altmember cref="M:System.ComponentModel.CustomTypeDescriptor.GetConverter" />
       </Docs>
     </Member>
     <MemberGroup MemberName="GetEvents">
@@ -424,6 +449,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.ICustomTypeDescriptor.GetEvents" />
+        <altmember cref="T:System.ComponentModel.EventDescriptorCollection" />
+        <altmember cref="M:System.ComponentModel.CustomTypeDescriptor.GetAttributes" />
+        <altmember cref="M:System.ComponentModel.CustomTypeDescriptor.GetDefaultEvent" />
       </Docs>
     </Member>
     <Member MemberName="GetEvents">
@@ -465,6 +494,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.ICustomTypeDescriptor.GetEvents" />
+        <altmember cref="T:System.ComponentModel.EventDescriptorCollection" />
+        <altmember cref="M:System.ComponentModel.CustomTypeDescriptor.GetAttributes" />
+        <altmember cref="M:System.ComponentModel.CustomTypeDescriptor.GetDefaultEvent" />
       </Docs>
     </Member>
     <MemberGroup MemberName="GetProperties">
@@ -518,6 +551,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.ICustomTypeDescriptor.GetProperties" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
+        <altmember cref="Overload:System.ComponentModel.ICustomTypeDescriptor.GetEvents" />
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetAttributes" />
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty" />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -559,6 +597,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.GetProperties(System.Object,System.Attribute[])" />
+        <altmember cref="Overload:System.ComponentModel.ICustomTypeDescriptor.GetProperties" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
+        <altmember cref="Overload:System.ComponentModel.ICustomTypeDescriptor.GetEvents" />
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetAttributes" />
+        <altmember cref="M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty" />
       </Docs>
     </Member>
     <Member MemberName="GetPropertyOwner">
@@ -598,7 +642,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="Overload:System.ComponentModel.CustomTypeDescriptor.GetProperties" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.CustomTypeDescriptor" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

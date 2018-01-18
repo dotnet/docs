@@ -118,7 +118,7 @@
  Implementing this method means that the <xref:System.ComponentModel.IBindingList> list must understand the type of objects to add to the list and must understand how to create a new instance of that type. For example, if you have a collection of `myCustomer` objects, the <xref:System.ComponentModel.IBindingList.AddNew%2A> method should add a new `myCustomer` object to the list.  
   
 > [!NOTE]
->  If the objects in this list implement the <xref:System.ComponentModel.IEditableObject> interface, calling the <xref:System.ComponentModel.IEditableObject.CancelEdit%2A> method should discard an object, not add it to the list, when the object was created using the <xref:System.ComponentModel.IBindingList.AddNew%2A> method. The object should only be added to the list when the <xref:System.ComponentModel.IEditableObject.EndEdit%2A?displayProperty=fullName> method is called. Therefore, you must sychronize the object and the list carefully.  
+>  If the objects in this list implement the <xref:System.ComponentModel.IEditableObject> interface, calling the <xref:System.ComponentModel.IEditableObject.CancelEdit%2A> method should discard an object, not add it to the list, when the object was created using the <xref:System.ComponentModel.IBindingList.AddNew%2A> method. The object should only be added to the list when the <xref:System.ComponentModel.IEditableObject.EndEdit%2A?displayProperty=nameWithType> method is called. Therefore, you must sychronize the object and the list carefully.  
   
  When this method is called, you should raise a <xref:System.ComponentModel.IBindingList.ListChanged> event with the <xref:System.ComponentModel.ListChangedType.ItemAdded> enumeration carrying the appropriate index. The added row is in a state where hitting Esc on a <xref:System.Windows.Forms.DataGridView> control can remove the new row. Raising the <xref:System.ComponentModel.IBindingList.ListChanged> event with the <xref:System.ComponentModel.ListChangedType.ItemAdded> enumeration a second time on this row indicates that the item is now a normal row (not in new state).  
   
@@ -185,7 +185,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.Collections.IList.IsFixedSize%2A?displayProperty=fullName> or <xref:System.Collections.IList.IsReadOnly%2A?displayProperty=fullName> is `true`, this property returns `false`.  
+ If <xref:System.Collections.IList.IsFixedSize%2A?displayProperty=nameWithType> or <xref:System.Collections.IList.IsReadOnly%2A?displayProperty=nameWithType> is `true`, this property returns `false`.  
   
  ]]></format>
         </remarks>
@@ -220,10 +220,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.Collections.IList.IsFixedSize%2A?displayProperty=fullName> or <xref:System.Collections.IList.IsReadOnly%2A?displayProperty=fullName> is `true`, this property returns `false`.  
+ If <xref:System.Collections.IList.IsFixedSize%2A?displayProperty=nameWithType> or <xref:System.Collections.IList.IsReadOnly%2A?displayProperty=nameWithType> is `true`, this property returns `false`.  
   
 > [!NOTE]
->  If <xref:System.ComponentModel.IBindingList.AllowRemove%2A> returns `false`, <xref:System.Collections.IList.Remove%2A?displayProperty=fullName> and <xref:System.Collections.IList.RemoveAt%2A?displayProperty=fullName> throw a <xref:System.NotSupportedException>.  
+>  If <xref:System.ComponentModel.IBindingList.AllowRemove%2A> returns `false`, <xref:System.Collections.IList.Remove%2A?displayProperty=nameWithType> and <xref:System.Collections.IList.RemoveAt%2A?displayProperty=nameWithType> throw a <xref:System.NotSupportedException>.  
   
  ]]></format>
         </remarks>

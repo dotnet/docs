@@ -10,17 +10,20 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "sounds, playing from resources"
+  - "sounds [Windows Forms], playing from resources"
   - "resources [Windows Forms], playing sounds"
-  - "playing sounds, from resources"
-  - "SoundPlayer class, playing sounds from resources"
+  - "playing sounds [Windows Forms], from resources"
+  - "SoundPlayer class [Windows Forms], playing sounds from resources"
 ms.assetid: 7d148bb6-8a1e-47d7-a08d-35828d2e688f
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Play a Sound Embedded in a Resource from a Windows Form
 You can use the <xref:System.Media.SoundPlayer> class to play a sound from an embedded resource.  
@@ -32,13 +35,13 @@ You can use the <xref:System.Media.SoundPlayer> class to play a sound from an em
 ## Compiling the Code  
  This example requires:  
   
- Importing the <xref:System.Media?displayProperty=fullName> namespace.  
+ Importing the <xref:System.Media?displayProperty=nameWithType> namespace.  
   
  Including the sound file as an embedded resource in your project.  
   
  Replacing "\<AssemblyName>" with the name of the assembly in which the sound file is embedded. Do not include the ".dll" suffix.  
   
 ## See Also  
- <xref:System.Media.SoundPlayer>   
- [How to: Play a Sound from a Windows Form](../../../../docs/framework/winforms/controls/how-to-play-a-sound-from-a-windows-form.md)   
+ <xref:System.Media.SoundPlayer>  
+ [How to: Play a Sound from a Windows Form](../../../../docs/framework/winforms/controls/how-to-play-a-sound-from-a-windows-form.md)  
  [How to: Loop a Sound Playing on a Windows Form](../../../../docs/framework/winforms/controls/how-to-loop-a-sound-playing-on-a-windows-form.md)

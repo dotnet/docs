@@ -30,7 +30,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You add a <xref:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar> to a <xref:System.Windows.Controls.Ribbon.Ribbon> control by specifying it as the content of the <xref:System.Windows.Controls.Ribbon.Ribbon.QuickAccessToolBar%2A?displayProperty=fullName> property using XAML [Property Element Syntax](~/docs/framework/wpf/advanced/xaml-syntax-in-detail.md).  
+ You add a <xref:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar> to a <xref:System.Windows.Controls.Ribbon.Ribbon> control by specifying it as the content of the <xref:System.Windows.Controls.Ribbon.Ribbon.QuickAccessToolBar%2A?displayProperty=nameWithType> property using XAML [Property Element Syntax](~/docs/framework/wpf/advanced/xaml-syntax-in-detail.md).  
   
 ```  
 <ribbon:Ribbon>  
@@ -46,7 +46,7 @@
   
 -   <xref:System.Windows.Controls.Ribbon.Ribbon>  
   
-    -   <xref:System.Windows.Controls.Ribbon.Ribbon.QuickAccessToolBar%2A?displayProperty=fullName> property  
+    -   <xref:System.Windows.Controls.Ribbon.Ribbon.QuickAccessToolBar%2A?displayProperty=nameWithType> property  
   
         -   <xref:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar>  
   
@@ -241,6 +241,7 @@
         <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar.IsOverflowItem" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar.IsOverflowItem" />
       </Docs>
     </Member>
     <Member MemberName="HasOverflowItems">

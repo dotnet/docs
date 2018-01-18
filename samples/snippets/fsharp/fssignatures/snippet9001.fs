@@ -7,17 +7,17 @@ module Module1 =
 
     type Type1() =
         member type1.method1() =
-            printfn "test1.method1"
+            printfn "type1.method1"
         member type1.method2() =
-            printfn "test1.method2"
+            printfn "type1.method2"
 
 
     [<Sealed>]
     type Type2() =
         member type2.method1() =
-            printfn "test1.method1"
-        member type1.method2() =
-            printfn "test1.method2"
+            printfn "type2.method1"
+        member type2.method2() =
+            printfn "type2.method2"
 
     [<Interface>]
     type InterfaceType1 =

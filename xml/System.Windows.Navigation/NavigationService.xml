@@ -22,17 +22,17 @@
   
  Content can be navigated to by providing an instance of an object and calling an overload of the <xref:System.Windows.Navigation.NavigationService.Navigate%2A> method that accepts an object:  
   
--   <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Object%29?displayProperty=fullName>  
+-   <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Object%29?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Object%2CSystem.Object%29?displayProperty=fullName>  
+-   <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Object%2CSystem.Object%29?displayProperty=nameWithType>  
   
  Alternatively, content can be navigated to by passing a relative or absolute [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] to one of the <xref:System.Windows.Navigation.NavigationService.Navigate%2A> method overloads that accepts a [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)]:  
   
--   <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Uri%29?displayProperty=fullName>  
+-   <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Uri%29?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Uri%2CSystem.Object%29?displayProperty=fullName>  
+-   <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Uri%2CSystem.Object%29?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Uri%2CSystem.Object%2CSystem.Boolean%29?displayProperty=fullName>  
+-   <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Uri%2CSystem.Object%2CSystem.Boolean%29?displayProperty=nameWithType>  
   
  When content is navigated to by [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)], <xref:System.Windows.Navigation.NavigationService> will return an object that contains the content.  
   
@@ -109,6 +109,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="state" /> is <see langword="null" />, and a <see cref="T:System.Windows.Navigation.CustomContentState" /> object isn't returned from <see cref="M:System.Windows.Navigation.IProvideCustomContentState.GetContentState" />.</exception>
+        <altmember cref="M:System.Windows.Navigation.NavigationService.RemoveBackEntry" />
       </Docs>
     </Member>
     <Member MemberName="CanGoBack">
@@ -138,6 +139,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Navigation.NavigationService.CanGoForward" />
+        <altmember cref="M:System.Windows.Navigation.NavigationService.GoForward" />
       </Docs>
     </Member>
     <Member MemberName="CanGoForward">
@@ -164,6 +167,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Navigation.NavigationService.CanGoBack" />
+        <altmember cref="M:System.Windows.Navigation.NavigationService.GoBack" />
       </Docs>
     </Member>
     <Member MemberName="Content">
@@ -195,6 +200,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Navigation.NavigationService.Navigate" />
       </Docs>
     </Member>
     <Member MemberName="CurrentSource">
@@ -267,7 +273,7 @@
  You should avoid directly initiating navigation from within a <xref:System.Windows.Navigation.NavigationService.FragmentNavigation> event handler. Since <xref:System.Windows.Navigation.NavigationService.FragmentNavigation> is raised during an existing navigation, initiating a new navigation from a <xref:System.Windows.Navigation.NavigationService.FragmentNavigation> event handler creates a nested navigation that can cause the <xref:System.ExecutionEngineException> to be thrown. Instead, you can indirectly initiate navigation by creating an asynchronous work item using the <xref:System.Windows.Threading.Dispatcher>.  
   
 > [!NOTE]
->  When <xref:System.Windows.Navigation.NavigationService> raises <xref:System.Windows.Navigation.NavigationService.FragmentNavigation>, it also raises <xref:System.Windows.Application.FragmentNavigation?displayProperty=fullName> event on the <xref:System.Windows.Application> object.  
+>  When <xref:System.Windows.Navigation.NavigationService> raises <xref:System.Windows.Navigation.NavigationService.FragmentNavigation>, it also raises <xref:System.Windows.Application.FragmentNavigation?displayProperty=nameWithType> event on the <xref:System.Windows.Application> object.  
   
 > [!IMPORTANT]
 >  Fragment navigation is not supported for loose [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] pages (markup-only [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] files with `Page` as the root element) in the following cases:  
@@ -288,6 +294,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Navigation.NavigationService.Navigating" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.Navigated" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.LoadCompleted" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.NavigationProgress" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.NavigationStopped" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.NavigationFailed" />
       </Docs>
     </Member>
     <Member MemberName="GetNavigationService">
@@ -329,7 +341,7 @@
   
  [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] offers two shortcuts for acquiring a reference to the <xref:System.Windows.Navigation.NavigationService>:  
   
--   The <xref:System.Windows.Navigation.NavigationService> that processed the navigation to a <xref:System.Windows.Controls.Page> can be accessed from the <xref:System.Windows.Controls.Page> itself by getting the value of its <xref:System.Windows.Controls.Page.NavigationService%2A?displayProperty=fullName> property.  
+-   The <xref:System.Windows.Navigation.NavigationService> that processed the navigation to a <xref:System.Windows.Controls.Page> can be accessed from the <xref:System.Windows.Controls.Page> itself by getting the value of its <xref:System.Windows.Controls.Page.NavigationService%2A?displayProperty=nameWithType> property.  
   
 -   The <xref:System.Windows.Navigation.NavigationService> that is used by a <xref:System.Windows.Controls.Frame> to process navigation can be accessed by getting the value of the <xref:System.Windows.Controls.Frame.NavigationService%2A> property.  
   
@@ -381,6 +393,8 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Windows.Navigation.NavigationService.GoBack" /> is called when there are no entries in back navigation history.</exception>
+        <altmember cref="P:System.Windows.Navigation.NavigationService.CanGoForward" />
+        <altmember cref="M:System.Windows.Navigation.NavigationService.GoForward" />
       </Docs>
     </Member>
     <Member MemberName="GoForward">
@@ -416,6 +430,8 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Windows.Navigation.NavigationService.GoForward" /> is called when there are no entries in forward navigation history.</exception>
+        <altmember cref="P:System.Windows.Navigation.NavigationService.CanGoBack" />
+        <altmember cref="M:System.Windows.Navigation.NavigationService.GoBack" />
       </Docs>
     </Member>
     <Member MemberName="LoadCompleted">
@@ -449,7 +465,7 @@
  <xref:System.Windows.Navigation.NavigationService.LoadCompleted> is not raised when the source page could not be found or loaded, in which case <xref:System.Windows.Navigation.NavigationService.NavigationFailed> is raised.  
   
 > [!NOTE]
->  When <xref:System.Windows.Navigation.NavigationService> raises <xref:System.Windows.Navigation.NavigationService.LoadCompleted>, it also raises <xref:System.Windows.Application.LoadCompleted?displayProperty=fullName> event on the <xref:System.Windows.Application> object.  
+>  When <xref:System.Windows.Navigation.NavigationService> raises <xref:System.Windows.Navigation.NavigationService.LoadCompleted>, it also raises <xref:System.Windows.Application.LoadCompleted?displayProperty=nameWithType> event on the <xref:System.Windows.Application> object.  
   
    
   
@@ -461,6 +477,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Navigation.NavigationService.Navigating" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.Navigated" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.NavigationProgress" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.NavigationStopped" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.FragmentNavigation" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.NavigationFailed" />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -508,6 +530,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Navigation.NavigationService.Navigate(System.Uri)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationService.Navigate(System.Uri,System.Object)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationService.Navigate(System.Uri,System.Object,System.Boolean)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationService.Navigate(System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -559,6 +585,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Navigation.NavigationService.Navigate(System.Uri,System.Object)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationService.Navigate(System.Uri,System.Object,System.Boolean)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationService.Navigate(System.Object)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationService.Navigate(System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -587,7 +617,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method has the same behavior as <xref:System.Windows.Navigation.NavigationService.Navigate%2A?displayProperty=fullName>, although an object is passed instead of a [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)].  
+ This method has the same behavior as <xref:System.Windows.Navigation.NavigationService.Navigate%2A?displayProperty=nameWithType>, although an object is passed instead of a [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)].  
   
    
   
@@ -599,6 +629,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Navigation.NavigationService.Navigate(System.Uri)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationService.Navigate(System.Uri,System.Object)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationService.Navigate(System.Uri,System.Object,System.Boolean)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationService.Navigate(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -645,6 +679,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Navigation.NavigationService.Navigate(System.Uri)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationService.Navigate(System.Uri,System.Object,System.Boolean)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationService.Navigate(System.Object)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationService.Navigate(System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -677,10 +715,14 @@
 ## Remarks  
  This method is only for standalone applications and [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] content.  
   
- This method exhibits the same behavior as <xref:System.Windows.Navigation.NavigationService.Navigate%2A?displayProperty=fullName>, and extends it by ensuring that the content that is being downloaded is placed into a partial trust security sandbox (with the default Internet zone set of permissions - see [WPF Partial Trust Security](~/docs/framework/wpf/wpf-partial-trust-security.md)).  
+ This method exhibits the same behavior as <xref:System.Windows.Navigation.NavigationService.Navigate%2A?displayProperty=nameWithType>, and extends it by ensuring that the content that is being downloaded is placed into a partial trust security sandbox (with the default Internet zone set of permissions - see [WPF Partial Trust Security](~/docs/framework/wpf/wpf-partial-trust-security.md)).  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Navigation.NavigationService.Navigate(System.Uri)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationService.Navigate(System.Uri,System.Object)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationService.Navigate(System.Object)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationService.Navigate(System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Navigated">
@@ -716,7 +758,7 @@
  <xref:System.Windows.Navigation.NavigationService.Navigated> is not raised when the source page could not be found or loaded, in which case <xref:System.Windows.Navigation.NavigationService.NavigationFailed> is raised.  
   
 > [!NOTE]
->  When <xref:System.Windows.Navigation.NavigationService> raises <xref:System.Windows.Navigation.NavigationService.NavigationFailed>, it also raises <xref:System.Windows.Application.NavigationFailed?displayProperty=fullName> event on the <xref:System.Windows.Application> object.  
+>  When <xref:System.Windows.Navigation.NavigationService> raises <xref:System.Windows.Navigation.NavigationService.NavigationFailed>, it also raises <xref:System.Windows.Application.NavigationFailed?displayProperty=nameWithType> event on the <xref:System.Windows.Application> object.  
   
    
   
@@ -728,6 +770,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Navigation.NavigationService.Navigating" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.LoadCompleted" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.NavigationProgress" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.NavigationStopped" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.FragmentNavigation" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.NavigationFailed" />
       </Docs>
     </Member>
     <Member MemberName="Navigating">
@@ -768,7 +816,7 @@
  After the first piece of content is navigated to by a navigator (<xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>), each piece of content that is navigated away from is added to navigation history. If you need to save state information about the content you are navigating away from, you can add the state to the journal entry for that content by setting <xref:System.Windows.Navigation.NavigatingCancelEventArgs.ContentStateToSave%2A> with a <xref:System.Windows.Navigation.CustomContentState> object.  
   
 > [!NOTE]
->  When <xref:System.Windows.Navigation.NavigationService> raises <xref:System.Windows.Navigation.NavigationService.Navigating>, it also raises <xref:System.Windows.Application.Navigating?displayProperty=fullName> event on the <xref:System.Windows.Application> object.  
+>  When <xref:System.Windows.Navigation.NavigationService> raises <xref:System.Windows.Navigation.NavigationService.Navigating>, it also raises <xref:System.Windows.Application.Navigating?displayProperty=nameWithType> event on the <xref:System.Windows.Application> object.  
   
    
   
@@ -782,6 +830,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Navigation.NavigationService.FragmentNavigation" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.Navigated" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.LoadCompleted" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.NavigationProgress" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.NavigationStopped" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.NavigationFailed" />
+        <altmember cref="M:System.Windows.Navigation.NavigationService.Refresh" />
       </Docs>
     </Member>
     <Member MemberName="NavigationFailed">
@@ -806,11 +861,11 @@
   
  When an exception results from a failed navigation, and is unhandled, the following events are raised in the order listed:  
   
--   <xref:System.Windows.Navigation.NavigationService.NavigationFailed?displayProperty=fullName>.  
+-   <xref:System.Windows.Navigation.NavigationService.NavigationFailed?displayProperty=nameWithType>.  
   
--   <xref:System.Windows.Controls.Frame.NavigationFailed?displayProperty=fullName> or <xref:System.Windows.Navigation.NavigationWindow.NavigationFailed?displayProperty=fullName>.  
+-   <xref:System.Windows.Controls.Frame.NavigationFailed?displayProperty=nameWithType> or <xref:System.Windows.Navigation.NavigationWindow.NavigationFailed?displayProperty=nameWithType>.  
   
--   <xref:System.Windows.Application.NavigationFailed?displayProperty=fullName>.  
+-   <xref:System.Windows.Application.NavigationFailed?displayProperty=nameWithType>.  
   
 -   <xref:System.Windows.Application.DispatcherUnhandledException>.  
   
@@ -826,6 +881,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Navigation.NavigationService.FragmentNavigation" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.Navigating" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.Navigated" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.LoadCompleted" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.NavigationProgress" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.NavigationStopped" />
+        <altmember cref="M:System.Windows.Navigation.NavigationService.Refresh" />
       </Docs>
     </Member>
     <Member MemberName="NavigationProgress">
@@ -859,7 +921,7 @@
  When navigating to a compiled XAML resource, the final <xref:System.Windows.Navigation.NavigationService.NavigationProgress> event may not be raised. This means that at the end of the download, the last reported <xref:System.Windows.Navigation.NavigationProgressEventArgs.BytesRead%2A> value may not equal the <xref:System.Windows.Navigation.NavigationProgressEventArgs.MaxBytes%2A> value. Handle the <xref:System.Windows.Navigation.NavigationService.LoadCompleted> event to be notified when the navigation has finished.  
   
 > [!NOTE]
->  When <xref:System.Windows.Navigation.NavigationService> raises <xref:System.Windows.Navigation.NavigationService.NavigationProgress>, it also raises <xref:System.Windows.Application.NavigationProgress?displayProperty=fullName> event on the <xref:System.Windows.Application> object.  
+>  When <xref:System.Windows.Navigation.NavigationService> raises <xref:System.Windows.Navigation.NavigationService.NavigationProgress>, it also raises <xref:System.Windows.Application.NavigationProgress?displayProperty=nameWithType> event on the <xref:System.Windows.Application> object.  
   
    
   
@@ -871,6 +933,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Navigation.NavigationService.FragmentNavigation" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.Navigating" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.Navigated" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.LoadCompleted" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.NavigationStopped" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.NavigationFailed" />
       </Docs>
     </Member>
     <Member MemberName="NavigationStopped">
@@ -897,10 +965,10 @@
   
 -   The navigator (<xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>).  
   
--   Additional data, if the navigation was initiated by calling either <xref:System.Windows.Navigation.NavigationService.Navigate%2A?displayProperty=fullName> or <xref:System.Windows.Navigation.NavigationService.Navigate%2A?displayProperty=fullName>.  
+-   Additional data, if the navigation was initiated by calling either <xref:System.Windows.Navigation.NavigationService.Navigate%2A?displayProperty=nameWithType> or <xref:System.Windows.Navigation.NavigationService.Navigate%2A?displayProperty=nameWithType>.  
   
 > [!NOTE]
->  When <xref:System.Windows.Navigation.NavigationService> raises <xref:System.Windows.Navigation.NavigationService.NavigationStopped>, it also raises <xref:System.Windows.Application.NavigationStopped?displayProperty=fullName> event on the <xref:System.Windows.Application> object.  
+>  When <xref:System.Windows.Navigation.NavigationService> raises <xref:System.Windows.Navigation.NavigationService.NavigationStopped>, it also raises <xref:System.Windows.Application.NavigationStopped?displayProperty=nameWithType> event on the <xref:System.Windows.Application> object.  
   
    
   
@@ -912,6 +980,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Navigation.NavigationService.FragmentNavigation" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.Navigating" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.Navigated" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.LoadCompleted" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.NavigationProgress" />
+        <altmember cref="E:System.Windows.Navigation.NavigationService.NavigationFailed" />
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -939,6 +1013,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Navigation.NavigationService.Navigating" />
       </Docs>
     </Member>
     <Member MemberName="RemoveBackEntry">
@@ -965,6 +1040,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Navigation.NavigationService.AddBackEntry(System.Windows.Navigation.CustomContentState)" />
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -1034,7 +1110,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Navigation.NavigationService.Navigate" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Navigate">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Navigate asynchronously to the specified source content.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

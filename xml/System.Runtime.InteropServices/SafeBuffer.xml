@@ -31,11 +31,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You must call the <xref:System.Runtime.InteropServices.SafeBuffer.Initialize%2A?displayProperty=fullName> method before you use any instance of <xref:System.Runtime.InteropServices.SafeBuffer>. To avoid races when you store an instance of a <xref:System.Runtime.InteropServices.SafeBuffer> object in a static variable, you should use one of the following approaches:  
+ You must call the <xref:System.Runtime.InteropServices.SafeBuffer.Initialize%2A?displayProperty=nameWithType> method before you use any instance of <xref:System.Runtime.InteropServices.SafeBuffer>. To avoid races when you store an instance of a <xref:System.Runtime.InteropServices.SafeBuffer> object in a static variable, you should use one of the following approaches:  
   
 -   Create a lock when publishing the <xref:System.Runtime.InteropServices.SafeBuffer>.  
   
--   Create a local variable, initialize the <xref:System.Runtime.InteropServices.SafeBuffer>, and then assign the <xref:System.Runtime.InteropServices.SafeBuffer> to the static variable, for example, by using the <xref:System.Threading.Interlocked.CompareExchange%2A?displayProperty=fullName> method.  
+-   Create a local variable, initialize the <xref:System.Runtime.InteropServices.SafeBuffer>, and then assign the <xref:System.Runtime.InteropServices.SafeBuffer> to the static variable, for example, by using the <xref:System.Threading.Interlocked.CompareExchange%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
 >  Assignments in a static class constructor are implicitly locked.  
@@ -81,7 +81,7 @@
     </Member>
     <Member MemberName="AcquirePointer">
       <MemberSignature Language="C#" Value="public void AcquirePointer (ref byte* pointer);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AcquirePointer(unsigned int8* pointer) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AcquirePointer(unsigned int8*&amp; pointer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeBuffer.AcquirePointer(System.Byte*@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -123,9 +123,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When <xref:System.Runtime.InteropServices.SafeBuffer.AcquirePointer%2A> returns, you should perform bounds checking by verifying that the `pointer` parameter is `null`. If it is not `null`, you must call the <xref:System.Runtime.InteropServices.SafeBuffer.ReleasePointer%2A?displayProperty=fullName> method in a constrained execution region (CER).  
+ When <xref:System.Runtime.InteropServices.SafeBuffer.AcquirePointer%2A> returns, you should perform bounds checking by verifying that the `pointer` parameter is `null`. If it is not `null`, you must call the <xref:System.Runtime.InteropServices.SafeBuffer.ReleasePointer%2A?displayProperty=nameWithType> method in a constrained execution region (CER).  
   
- <xref:System.Runtime.InteropServices.SafeBuffer.AcquirePointer%2A> calls the <xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A?displayProperty=fullName> method and exposes the pointer. Unlike the <xref:System.Runtime.InteropServices.SafeBuffer.Read%2A> method, it does not change the current position of the pointer.  
+ <xref:System.Runtime.InteropServices.SafeBuffer.AcquirePointer%2A> calls the <xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A?displayProperty=nameWithType> method and exposes the pointer. Unlike the <xref:System.Runtime.InteropServices.SafeBuffer.Read%2A> method, it does not change the current position of the pointer.  
   
  The following exampledemonstrates how to use the <xref:System.Runtime.InteropServices.SafeBuffer.AcquirePointer%2A> method:  
   
@@ -425,6 +425,7 @@ finally {
         <returns>The value type that was read from memory.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Runtime.InteropServices.SafeBuffer.Initialize" /> method has not been called.</exception>
+        <altmember cref="M:System.Runtime.InteropServices.SafeBuffer.Write``1(System.UInt64,``0)" />
       </Docs>
     </Member>
     <Member MemberName="ReadArray&lt;T&gt;">
@@ -494,6 +495,7 @@ finally {
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The length of the array minus the index is less than <paramref name="count" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Runtime.InteropServices.SafeBuffer.Initialize" /> method has not been called.</exception>
+        <altmember cref="M:System.Runtime.InteropServices.SafeBuffer.WriteArray``1(System.UInt64,``0[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReleasePointer">
@@ -606,6 +608,7 @@ finally {
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Runtime.InteropServices.SafeBuffer.Initialize" /> method has not been called.</exception>
+        <altmember cref="M:System.Runtime.InteropServices.SafeBuffer.Read``1(System.UInt64)" />
       </Docs>
     </Member>
     <Member MemberName="WriteArray&lt;T&gt;">
@@ -678,7 +681,22 @@ finally {
           <paramref name="index" /> or <paramref name="count" /> is less than zero.</exception>
         <exception cref="T:System.ArgumentException">The length of the input array minus <paramref name="index" /> is less than <paramref name="count" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Runtime.InteropServices.SafeBuffer.Initialize" /> method has not been called.</exception>
+        <altmember cref="M:System.Runtime.InteropServices.SafeBuffer.ReadArray``1(System.UInt64,``0[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Initialize">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Specifies the size of the memory buffer to allocate. You must call this method before you use the <see cref="T:System.Runtime.InteropServices.SafeBuffer" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

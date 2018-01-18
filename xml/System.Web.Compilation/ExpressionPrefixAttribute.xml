@@ -59,6 +59,11 @@ Text="<%$ MyCustomExpression:Hello, world! %>" />
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.ExpressionEditor" />
+    <altmember cref="T:System.Web.UI.Design.ExpressionEditorSheet" />
+    <altmember cref="T:System.Web.UI.Design.AppSettingsExpressionEditor" />
+    <altmember cref="T:System.Web.Compilation.ExpressionBuilder" />
+    <altmember cref="P:System.Web.Configuration.ExpressionBuilder.ExpressionPrefix" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -86,6 +91,11 @@ Text="<%$ MyCustomExpression:Hello, world! %>" />
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="expressionPrefix" /> is null or an empty string ("").</exception>
+        <altmember cref="T:System.Web.UI.Design.ExpressionEditor" />
+        <altmember cref="T:System.Web.UI.Design.ExpressionEditorSheet" />
+        <altmember cref="T:System.Web.UI.Design.AppSettingsExpressionEditor" />
+        <altmember cref="T:System.Web.Compilation.ExpressionBuilder" />
+        <altmember cref="P:System.Web.Configuration.ExpressionBuilder.ExpressionPrefix" />
       </Docs>
     </Member>
     <Member MemberName="ExpressionPrefix">
@@ -111,6 +121,11 @@ Text="<%$ MyCustomExpression:Hello, world! %>" />
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.ExpressionEditor" />
+        <altmember cref="T:System.Web.UI.Design.ExpressionEditorSheet" />
+        <altmember cref="T:System.Web.UI.Design.AppSettingsExpressionEditor" />
+        <altmember cref="T:System.Web.Compilation.ExpressionBuilder" />
+        <altmember cref="P:System.Web.Configuration.ExpressionBuilder.ExpressionPrefix" />
       </Docs>
     </Member>
   </Members>

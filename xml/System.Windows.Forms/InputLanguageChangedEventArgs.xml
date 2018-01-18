@@ -33,6 +33,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.InputLanguage" />
+    <altmember cref="T:System.Windows.Forms.InputLanguageChangingEventArgs" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,6 +55,8 @@
         <param name="charSet">The character set associated with the new input language.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.InputLanguageChangedEventArgs" /> class with the specified locale and character set.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.InputLanguage" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -82,6 +86,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.InputLanguage" />
+        <altmember cref="P:System.Windows.Forms.InputLanguageChangedEventArgs.CharSet" />
       </Docs>
     </Member>
     <Member MemberName="CharSet">
@@ -194,9 +200,9 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.InputLanguageChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.InputLanguageChanged?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.InputLanguageChanged?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.InputLanguageChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#400](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#400)]
  [!code-vb[System.Windows.Forms.EventExamples#400](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#400)]  
@@ -229,15 +235,16 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.InputLanguageChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.InputLanguageChanged?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.InputLanguageChanged?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.InputLanguageChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#400](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#400)]
  [!code-vb[System.Windows.Forms.EventExamples#400](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#400)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <Member MemberName="InputLanguage">
@@ -259,16 +266,26 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.InputLanguageChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.InputLanguageChanged?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.InputLanguageChanged?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.InputLanguageChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#400](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#400)]
  [!code-vb[System.Windows.Forms.EventExamples#400](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#400)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.InputLanguage" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.InputLanguageChangedEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

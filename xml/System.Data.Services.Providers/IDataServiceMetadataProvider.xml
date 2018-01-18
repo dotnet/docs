@@ -168,7 +168,7 @@
     </Member>
     <Member MemberName="TryResolveResourceSet">
       <MemberSignature Language="C#" Value="public bool TryResolveResourceSet (string name, out System.Data.Services.Providers.ResourceSet resourceSet);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryResolveResourceSet(string name, class System.Data.Services.Providers.ResourceSet resourceSet) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryResolveResourceSet(string name, [out] class System.Data.Services.Providers.ResourceSet&amp; resourceSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServiceMetadataProvider.TryResolveResourceSet(System.String,System.Data.Services.Providers.ResourceSet@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -193,7 +193,7 @@
     </Member>
     <Member MemberName="TryResolveResourceType">
       <MemberSignature Language="C#" Value="public bool TryResolveResourceType (string name, out System.Data.Services.Providers.ResourceType resourceType);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryResolveResourceType(string name, class System.Data.Services.Providers.ResourceType resourceType) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryResolveResourceType(string name, [out] class System.Data.Services.Providers.ResourceType&amp; resourceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServiceMetadataProvider.TryResolveResourceType(System.String,System.Data.Services.Providers.ResourceType@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -218,7 +218,7 @@
     </Member>
     <Member MemberName="TryResolveServiceOperation">
       <MemberSignature Language="C#" Value="public bool TryResolveServiceOperation (string name, out System.Data.Services.Providers.ServiceOperation serviceOperation);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryResolveServiceOperation(string name, class System.Data.Services.Providers.ServiceOperation serviceOperation) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryResolveServiceOperation(string name, [out] class System.Data.Services.Providers.ServiceOperation&amp; serviceOperation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServiceMetadataProvider.TryResolveServiceOperation(System.String,System.Data.Services.Providers.ServiceOperation@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

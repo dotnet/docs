@@ -27,7 +27,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.DataAnnotations.CustomValidationAttribute> attribute is used to perform custom validation when the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid%2A>method is invoked to perform validation. The <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid%2A> method then redirects the call to the method that is identified by the <xref:System.ComponentModel.DataAnnotations.CustomValidationAttribute.Method%2A> property, which in turn performs the actual validation.  
+ The <xref:System.ComponentModel.DataAnnotations.CustomValidationAttribute> attribute is used to perform custom validation when the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid%2A> method is invoked to perform validation. The <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid%2A> method then redirects the call to the method that is identified by the <xref:System.ComponentModel.DataAnnotations.CustomValidationAttribute.Method%2A> property, which in turn performs the actual validation.  
   
  The <xref:System.ComponentModel.DataAnnotations.CustomValidationAttribute> attribute can be applied to types, properties, fields, methods, and method parameters. When it is applied to a property, the attribute is invoked whenever a value is assigned to that property. When it is applied to a method, the attribute is invoked whenever the program calls that method. When it is applied to a method parameter, the attribute is invoked before the method is called.  
   
@@ -216,7 +216,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns the type that is passed to the ctor <xref:System.ComponentModel.DataAnnotations.CustomValidationAttribute.%23ctor%2A>constructor overload.  
+ This property returns the type that is passed to the ctor <xref:System.ComponentModel.DataAnnotations.CustomValidationAttribute.%23ctor%2A> constructor overload.  
   
  ]]></format>
         </remarks>

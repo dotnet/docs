@@ -27,7 +27,7 @@
 ## Remarks  
  You can use client application services to retrieve user settings from an existing Web settings service by configuring your application to use the <xref:System.Web.ClientServices.Providers.ClientSettingsProvider> class. For more information, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md). After configuration, you can get and set user settings through an application settings class derived from <xref:System.Configuration.ApplicationSettingsBase> and configured to use the <xref:System.Web.ClientServices.Providers.ClientSettingsProvider> class. You can use [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] to generate a `Settings` class for your project (accessed as `Properties.Settings.Default` in C# and `My.Settings` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]). For more information about application settings, see [Application Settings Overview](~/docs/framework/winforms/advanced/application-settings-overview.md).  
   
- You can retrieve the current <xref:System.Web.ClientServices.Providers.ClientSettingsProvider> through the <xref:System.Configuration.ApplicationSettingsBase.Providers%2A?displayProperty=fullName> property using the fully-qualified <xref:System.Web.ClientServices.Providers.ClientSettingsProvider> class name as a key. You can also retrieve the provider through the <xref:System.Configuration.SettingsLoadedEventArgs.Provider%2A?displayProperty=fullName> property when you handle the <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded?displayProperty=fullName> event.  
+ You can retrieve the current <xref:System.Web.ClientServices.Providers.ClientSettingsProvider> through the <xref:System.Configuration.ApplicationSettingsBase.Providers%2A?displayProperty=nameWithType> property using the fully-qualified <xref:System.Web.ClientServices.Providers.ClientSettingsProvider> class name as a key. You can also retrieve the provider through the <xref:System.Configuration.SettingsLoadedEventArgs.Provider%2A?displayProperty=nameWithType> property when you handle the <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded?displayProperty=nameWithType> event.  
   
 > [!NOTE]
 >  This class contains a <xref:System.Security.SecurityCriticalAttribute> at the class level that applies to all members of the class. A run-time exception is thrown if the immediate caller is security-transparent or partially trusted. For more information about security-critical types and members, see [Security-Transparent Code, Level 2](~/docs/framework/misc/security-transparent-code-level-2.md).  
@@ -47,6 +47,8 @@
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
     <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This class cannot be used by partially trusted or transparent code.</permission>
+    <altmember cref="P:System.Configuration.ApplicationSettingsBase.Providers" />
+    <altmember cref="E:System.Configuration.ApplicationSettingsBase.SettingsLoaded" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -280,11 +282,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used internally by the application settings system and it not meant to be used by your application code. To reset Web settings to their default values, you will typically use the <xref:System.Configuration.ApplicationSettingsBase.Reset%2A?displayProperty=fullName> method of your project's `Settings` class (typically accessed as `Properties.Settings.Default` in C# and `My.Settings` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]). You can also revert Web settings to the previously cached values by calling the <xref:System.Configuration.ApplicationSettingsBase.Reload%2A?displayProperty=fullName> method.  
+ This method is used internally by the application settings system and it not meant to be used by your application code. To reset Web settings to their default values, you will typically use the <xref:System.Configuration.ApplicationSettingsBase.Reset%2A?displayProperty=nameWithType> method of your project's `Settings` class (typically accessed as `Properties.Settings.Default` in C# and `My.Settings` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]). You can also revert Web settings to the previously cached values by calling the <xref:System.Configuration.ApplicationSettingsBase.Reload%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.WebException">The <see cref="P:System.Web.ClientServices.ConnectivityStatus.IsOffline" /> property value is <see langword="false" /> and the Web settings service at the <see cref="P:System.Web.ClientServices.Providers.ClientSettingsProvider.ServiceUri" /> location is unavailable.</exception>
+        <altmember cref="M:System.Configuration.ApplicationSettingsBase.Reset" />
+        <altmember cref="M:System.Configuration.ApplicationSettingsBase.Reload" />
       </Docs>
     </Member>
     <Member MemberName="ServiceUri">
@@ -371,7 +375,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event occurs after the settings provider accesses the settings service, even if the settings were not successfully saved. One reason that the provider might fail to save the settings is if the current user has been logged out. You can use the <xref:System.Web.ClientServices.Providers.SettingsSavedEventArgs.FailedSettingsList%2A?displayProperty=fullName> property to determine whether any settings were not successfully saved.  
+ This event occurs after the settings provider accesses the settings service, even if the settings were not successfully saved. One reason that the provider might fail to save the settings is if the current user has been logged out. You can use the <xref:System.Web.ClientServices.Providers.SettingsSavedEventArgs.FailedSettingsList%2A?displayProperty=nameWithType> property to determine whether any settings were not successfully saved.  
   
  This event does not occur if the settings provider cannot access the settings service, which instead causes the provider to throw a <xref:System.Net.WebException>.  
   
@@ -385,6 +389,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.ClientServices.Providers.SettingsSavedEventArgs.FailedSettingsList" />
+        <altmember cref="E:System.Configuration.ApplicationSettingsBase.SettingsLoaded" />
+        <altmember cref="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.Logout" />
+        <altmember cref="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.Logout" />
       </Docs>
     </Member>
     <Member MemberName="Upgrade">

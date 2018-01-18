@@ -1,14 +1,12 @@
 ---
 title: "-refout (C# Compiler Options)"
-ms.date: "2017-08-08"
+ms.date: 08/08/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
 f1_keywords: 
   - "/refout"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "refout compiler option [C#]"
   - "/refout compiler option [C#]"
@@ -49,5 +47,5 @@ Reference assemblies further remove metadata (private members) from metadata-onl
 The `/refout` and [`/refonly`](refonly-compiler-option.md) options are mutually exclusive.
 
 ## See Also
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

@@ -47,6 +47,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xaml.XamlMember" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,7 +73,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  This signature of the constructor always generates an identifier for the directive where <xref:System.Xaml.XamlMember.IsUnknown%2A> reports `true` for the XAML type system. If the necessary information is available (the backing type and a text syntax information item for conversion) and you want an identifier that can apply the directive, use the <xref:System.Xaml.XamlDirective.%23ctor%2A?displayProperty=fullName> constructor signature instead.  
+>  This signature of the constructor always generates an identifier for the directive where <xref:System.Xaml.XamlMember.IsUnknown%2A> reports `true` for the XAML type system. If the necessary information is available (the backing type and a text syntax information item for conversion) and you want an identifier that can apply the directive, use the <xref:System.Xaml.XamlDirective.%23ctor%2A?displayProperty=nameWithType> constructor signature instead.  
   
  If you use this signature, the <xref:System.Xaml.XamlDirective.AllowedLocation%2A> value for the instance is <xref:System.Xaml.Schema.AllowedMemberLocations.Any>; and the <xref:System.Xaml.XamlMember.Type%2A> value and <xref:System.Xaml.XamlMember.TypeConverter%2A> value are both `null`.  
   
@@ -135,7 +136,7 @@
 ## Remarks  
  You can set this value in the <xref:System.Xaml.XamlDirective.%23ctor%28System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String%2CSystem.Xaml.XamlType%2CSystem.Xaml.Schema.XamlValueConverter%7BSystem.ComponentModel.TypeConverter%7D%2CSystem.Xaml.Schema.AllowedMemberLocations%29> constructor signature. If you construct by using the <xref:System.Xaml.XamlDirective.%23ctor%28System.String%2CSystem.String%29> constructor signature, the <xref:System.Xaml.XamlDirective.AllowedLocation%2A> value for the instance is <xref:System.Xaml.Schema.AllowedMemberLocations.Any>. However, the instance always reports <xref:System.Xaml.XamlMember.IsUnknown%2A> as `true`. This behavior typically affects attempts to write object graphs and also affects other practical uses of a <xref:System.Xaml.XamlMember> value.  
   
- You typically would not construct a XAML directive case where <xref:System.Xaml.XamlDirective.AllowedLocation%2A> is <xref:System.Xaml.Schema.AllowedMemberLocations?displayProperty=fullName>.  
+ You typically would not construct a XAML directive case where <xref:System.Xaml.XamlDirective.AllowedLocation%2A> is <xref:System.Xaml.Schema.AllowedMemberLocations.None?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -180,7 +181,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The XAML namespace identifiers are strings that typically appear in the Uniform Resource Identifier (URI) string form according to the usual conventions for XAML and XML namespaces. If the list contains more than one item, the first item in the set is usually the relevant primary XAML namespace for processing purposes, and the other items are alternates. <xref:System.Xaml.XamlMember.PreferredXamlNamespace%2A?displayProperty=fullName> relies on this ordering.  
+ The XAML namespace identifiers are strings that typically appear in the Uniform Resource Identifier (URI) string form according to the usual conventions for XAML and XML namespaces. If the list contains more than one item, the first item in the set is usually the relevant primary XAML namespace for processing purposes, and the other items are alternates. <xref:System.Xaml.XamlMember.PreferredXamlNamespace%2A?displayProperty=nameWithType> relies on this ordering.  
   
  ]]></format>
         </remarks>
@@ -236,6 +237,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.DeferringLoader" />
       </Docs>
     </Member>
     <Member MemberName="LookupDependsOn">
@@ -262,6 +264,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.DependsOn" />
       </Docs>
     </Member>
     <Member MemberName="LookupInvoker">
@@ -290,6 +293,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.Invoker" />
       </Docs>
     </Member>
     <Member MemberName="LookupIsAmbient">
@@ -316,6 +320,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xaml.XamlMember.LookupIsAmbient" />
       </Docs>
     </Member>
     <Member MemberName="LookupIsEvent">
@@ -342,6 +347,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.IsEvent" />
       </Docs>
     </Member>
     <Member MemberName="LookupIsReadOnly">
@@ -368,6 +374,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="LookupIsReadPublic">
@@ -394,6 +401,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.IsReadPublic" />
       </Docs>
     </Member>
     <Member MemberName="LookupIsUnknown">
@@ -447,6 +455,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.IsWriteOnly" />
       </Docs>
     </Member>
     <Member MemberName="LookupIsWritePublic">
@@ -473,6 +482,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.IsWritePublic" />
       </Docs>
     </Member>
     <Member MemberName="LookupTargetType">
@@ -499,6 +509,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.TargetType" />
       </Docs>
     </Member>
     <Member MemberName="LookupType">
@@ -523,10 +534,11 @@
 ## Remarks  
  The <xref:System.Xaml.XamlDirective> implementation only calls base and does nothing more. The base implementation returns results based either on internal reflection, or checking for a null value of <xref:System.Xaml.XamlMember.UnderlyingMember%2A>, processing in that order. <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
   
- See Remarks in <xref:System.Xaml.XamlMember.LookupType%2A?displayProperty=fullName> for more information about what information <xref:System.Xaml.XamlMember.Type%2A> carries.  
+ See Remarks in <xref:System.Xaml.XamlMember.LookupType%2A?displayProperty=nameWithType> for more information about what information <xref:System.Xaml.XamlMember.Type%2A> carries.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.Type" />
       </Docs>
     </Member>
     <Member MemberName="LookupTypeConverter">
@@ -549,10 +561,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xaml.XamlDirective> implementation only calls base and does nothing more. See <xref:System.Xaml.XamlMember.LookupTypeConverter%2A?displayProperty=fullName>. <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
+ The <xref:System.Xaml.XamlDirective> implementation only calls base and does nothing more. See <xref:System.Xaml.XamlMember.LookupTypeConverter%2A?displayProperty=nameWithType>. <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.Type" />
       </Docs>
     </Member>
     <Member MemberName="LookupUnderlyingGetter">
@@ -605,6 +618,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlMember.UnderlyingMember" />
       </Docs>
     </Member>
     <Member MemberName="LookupUnderlyingSetter">
@@ -659,5 +673,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlDirective" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -41,7 +41,7 @@
   
      To address this exception, use the version of the tool that corresponds to the version of the .NET Framework that was used to develop the assembly. This may require modifying the `Path` environment variable or providing a fully qualified path to the correct executable.  
   
--   You try to load an unmanaged dynamic link library or executable (such as a Windows system DLL) as if it were a .NET Framework assembly. The following example illustrates this by using the <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName> method to load Kernel32.dll.  
+-   You try to load an unmanaged dynamic link library or executable (such as a Windows system DLL) as if it were a .NET Framework assembly. The following example illustrates this by using the <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=nameWithType> method to load Kernel32.dll.  
   
      [!code-csharp[System.BadImageFormatException.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.badimageformatexception.class/cs/condition1.cs#1)]
      [!code-vb[System.BadImageFormatException.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.badimageformatexception.class/vb/condition1.vb#1)]  
@@ -57,7 +57,7 @@
      [!code-csharp[System.BadImageFormatException.Class#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.badimageformatexception.class/cs/stringlib.cs#2)]
      [!code-vb[System.BadImageFormatException.Class#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.badimageformatexception.class/vb/stringlib.vb#2)]  
   
-     The following example uses reflection to load an assembly named StringLib.dll. If the source code is compiled with a [!INCLUDE[net_v11_short](~/includes/net-v11-short-md.md)] compiler, a <xref:System.BadImageFormatException> is thrown by the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> method.  
+     The following example uses reflection to load an assembly named StringLib.dll. If the source code is compiled with a [!INCLUDE[net_v11_short](~/includes/net-v11-short-md.md)] compiler, a <xref:System.BadImageFormatException> is thrown by the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method.  
   
      [!code-csharp[System.BadImageFormatException.Class#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.badimageformatexception.class/cs/loadstringlib.cs#3)]
      [!code-vb[System.BadImageFormatException.Class#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.badimageformatexception.class/vb/loadstringlib.vb#3)]  
@@ -77,6 +77,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -247,6 +248,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -535,5 +537,18 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.BadImageFormatException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

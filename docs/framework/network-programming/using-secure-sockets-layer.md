@@ -8,10 +8,8 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Networking"
   - "SSL"
@@ -27,6 +25,8 @@ caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Using Secure Sockets Layer
 The <xref:System.Net> classes use the Secure Sockets Layer (SSL) to encrypt the connection for several network protocols.  
@@ -69,6 +69,6 @@ FtpWebResponse response = (FtpWebResponse)request.GetResponse();
 -   References to the **System.Net** namespace.  
   
 ## See Also  
- [Security in Network Programming](../../../docs/framework/network-programming/security-in-network-programming.md)   
- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)   
+ [Security in Network Programming](../../../docs/framework/network-programming/security-in-network-programming.md)  
+ [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)  
  [Certificate Selection and Validation](../../../docs/framework/network-programming/certificate-selection-and-validation.md)

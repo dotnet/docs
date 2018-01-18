@@ -46,6 +46,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Data.MultiBinding" />
+    <altmember cref="T:System.Windows.Data.PriorityBinding" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -162,6 +164,9 @@
         <summary>Gets or sets opaque data passed to the asynchronous data dispatcher.</summary>
         <value>Data passed to the asynchronous data dispatcher.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Data.Binding.IsAsync" />
+        <altmember cref="P:System.Windows.Data.ObjectDataProvider.IsAsynchronous" />
+        <altmember cref="P:System.Windows.Data.XmlDataProvider.IsAsynchronous" />
       </Docs>
     </Member>
     <Member MemberName="BindsDirectlyToSource">
@@ -193,6 +198,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Data.ObjectDataProvider" />
+        <altmember cref="T:System.Windows.Data.XmlDataProvider" />
       </Docs>
     </Member>
     <Member MemberName="Converter">
@@ -324,7 +331,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A binding source property or a converter can return <xref:System.Windows.Data.Binding.DoNothing?displayProperty=fullName> to instruct the binding engine not to perform any action. For example, to instruct the binding engine not to transfer a value to the binding target, not to move to the next <xref:System.Windows.Data.Binding> in a <xref:System.Windows.Data.PriorityBinding>, or not to use the `FallBackValue` or default value.  
+ A binding source property or a converter can return <xref:System.Windows.Data.Binding.DoNothing?displayProperty=nameWithType> to instruct the binding engine not to perform any action. For example, to instruct the binding engine not to transfer a value to the binding target, not to move to the next <xref:System.Windows.Data.Binding> in a <xref:System.Windows.Data.PriorityBinding>, or not to use the `FallBackValue` or default value.  
   
  ]]></format>
         </remarks>
@@ -451,6 +458,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Data.Binding.AsyncState" />
+        <altmember cref="P:System.Windows.Data.ObjectDataProvider.IsAsynchronous" />
+        <altmember cref="P:System.Windows.Data.XmlDataProvider.IsAsynchronous" />
+        <altmember cref="T:System.Windows.PropertyChangedCallback" />
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -511,6 +522,7 @@
         <value>
           <see langword="true" /> if the <see cref="E:System.Windows.Data.Binding.SourceUpdated" /> event should be raised when the binding source value is updated; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Data.BindingExpression.UpdateSource" />
       </Docs>
     </Member>
     <Member MemberName="NotifyOnTargetUpdated">
@@ -535,6 +547,7 @@
         <value>
           <see langword="true" /> if the <see cref="E:System.Windows.Data.Binding.TargetUpdated" /> event should be raised when the binding target value is updated; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Data.BindingExpression.UpdateTarget" />
       </Docs>
     </Member>
     <Member MemberName="NotifyOnValidationError">
@@ -562,7 +575,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the binding has <xref:System.Windows.Data.Binding.ValidationRules%2A> associated with it, the binding engine checks each rule each time it transfers the target property value to the source property. If a rule invalidates a value, the binding engine creates a <xref:System.Windows.Controls.ValidationError> object and adds it to the <xref:System.Windows.Controls.Validation>.<xref:System.Windows.Controls.Validation.Errors%2A> collection of the bound object. When the <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=fullName> property is not empty, the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property of the object is set to `true`. If the <xref:System.Windows.Data.Binding.NotifyOnValidationError%2A> property of the <xref:System.Windows.Data.Binding> is set to `true`, then the binding engine raises the <xref:System.Windows.Controls.Validation.Error?displayProperty=fullName> attached event on the object.  
+ If the binding has <xref:System.Windows.Data.Binding.ValidationRules%2A> associated with it, the binding engine checks each rule each time it transfers the target property value to the source property. If a rule invalidates a value, the binding engine creates a <xref:System.Windows.Controls.ValidationError> object and adds it to the <xref:System.Windows.Controls.Validation>.<xref:System.Windows.Controls.Validation.Errors%2A> collection of the bound object. When the <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=nameWithType> property is not empty, the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property of the object is set to `true`. If the <xref:System.Windows.Data.Binding.NotifyOnValidationError%2A> property of the <xref:System.Windows.Data.Binding> is set to `true`, then the binding engine raises the <xref:System.Windows.Controls.Validation.Error?displayProperty=nameWithType> attached event on the object.  
   
  For a detailed discussion of the validation process, see the Data Validation section in the [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
@@ -597,7 +610,7 @@
   
 -   Subproperties of a property can be specified by a syntax similar to that used in [!INCLUDE[TLA#tla_cshrp](~/includes/tlasharptla-cshrp-md.md)]. For instance, the clause `Path=ShoppingCart.Order` sets the binding to the subproperty `Order` of the object or property `ShoppingCart`.  
   
--   To bind to an attached property, place parentheses around the attached property. For example, to bind to the attached property <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=fullName>, the syntax is `Path=(DockPanel.Dock)`.  
+-   To bind to an attached property, place parentheses around the attached property. For example, to bind to the attached property <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType>, the syntax is `Path=(DockPanel.Dock)`.  
   
 -   Indexers of a property can be specified within square brackets following the property name where the indexer is applied. For instance, the clause `Path=ShoppingCart[0]` sets the binding to the index that corresponds to how your property's internal indexing handles the literal string "0". Multiple indexers are also supported.  
   
@@ -656,14 +669,10 @@
   
  By default, bindings inherit the data context specified by the `DataContext` property, if one has been set. However, the <xref:System.Windows.Data.Binding.RelativeSource%2A> property is one of the ways you can explicitly set the source of a <xref:System.Windows.Data.Binding> and override the inherited data context. For more information, see [How to: Specify the Binding Source](~/docs/framework/wpf/data/how-to-specify-the-binding-source.md).  
   
- The <xref:System.Windows.Data.Binding.ElementName%2A?displayProperty=fullName> and <xref:System.Windows.Data.Binding.Source%2A?displayProperty=fullName> properties also enable you to set the source of the binding explicitly. However, only one of the three properties, <xref:System.Windows.Data.Binding.ElementName%2A>, <xref:System.Windows.Data.Binding.Source%2A>, and <xref:System.Windows.Data.Binding.RelativeSource%2A>, should be set for each binding, or a conflict can occur. This property throws an exception if there is a binding source conflict.  
+ The <xref:System.Windows.Data.Binding.ElementName%2A?displayProperty=nameWithType> and <xref:System.Windows.Data.Binding.Source%2A?displayProperty=nameWithType> properties also enable you to set the source of the binding explicitly. However, only one of the three properties, <xref:System.Windows.Data.Binding.ElementName%2A>, <xref:System.Windows.Data.Binding.Source%2A>, and <xref:System.Windows.Data.Binding.RelativeSource%2A>, should be set for each binding, or a conflict can occur. This property throws an exception if there is a binding source conflict.  
   
  For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [RelativeSource MarkupExtension](~/docs/framework/wpf/advanced/relativesource-markupextension.md).  
-  
-<a name="xamlTextUsage_RelativeSource"></a>   
-## XAML Text Usage  
-   
-  
+    
 ## Examples  
  The following example shows a style trigger that creates a <xref:System.Windows.Controls.ToolTip> that reports a validation error message. The value of the setter binds to the error content of the current <xref:System.Windows.Controls.TextBox> (the <xref:System.Windows.Controls.TextBox> using the style) using the <xref:System.Windows.Data.Binding.RelativeSource%2A> property. For more information on this example, see [How to: Implement Binding Validation](~/docs/framework/wpf/data/how-to-implement-binding-validation.md).  
   
@@ -673,6 +682,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Data.Binding.Source" />
       </Docs>
     </Member>
     <Member MemberName="RemoveSourceUpdatedHandler">
@@ -884,9 +894,9 @@
 ## Remarks  
  By default, bindings inherit the data context specified by the `DataContext` property, if one has been set. However, the <xref:System.Windows.Data.Binding.Source%2A> property is one of the ways you can explicitly set the source of a <xref:System.Windows.Data.Binding> and override the inherited data context. If you do not need the functionality of establishing a scope in which several properties inherit the same data context, you can use the <xref:System.Windows.Data.Binding.Source%2A> property instead of the `DataContext` property.  
   
- The <xref:System.Windows.Data.Binding.ElementName%2A?displayProperty=fullName> and <xref:System.Windows.Data.Binding.RelativeSource%2A?displayProperty=fullName> properties also enable you to set the source of the binding explicitly. However, only one of the three properties, <xref:System.Windows.Data.Binding.ElementName%2A>, <xref:System.Windows.Data.Binding.Source%2A>, and <xref:System.Windows.Data.Binding.RelativeSource%2A>, should be set for each binding, or a conflict can occur. This property throws an exception if there is a binding source conflict.  
+ The <xref:System.Windows.Data.Binding.ElementName%2A?displayProperty=nameWithType> and <xref:System.Windows.Data.Binding.RelativeSource%2A?displayProperty=nameWithType> properties also enable you to set the source of the binding explicitly. However, only one of the three properties, <xref:System.Windows.Data.Binding.ElementName%2A>, <xref:System.Windows.Data.Binding.Source%2A>, and <xref:System.Windows.Data.Binding.RelativeSource%2A>, should be set for each binding, or a conflict can occur. This property throws an exception if there is a binding source conflict.  
   
- To clear this property, set it to <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=fullName>.  
+ To clear this property, set it to <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=nameWithType>.  
   
 <a name="xamlAttributeUsage_Source"></a>   
 ## XAML Attribute Usage  
@@ -917,7 +927,7 @@
   
  As a result, the <xref:System.Windows.Controls.TextBlock> appears with the value "Joe".  
   
- In the following example, the <xref:System.Windows.Data.Binding.Source%2A> values of the <xref:System.Windows.Data.Binding> objects are set to the `static` property <xref:System.Windows.Application.Current%2A?displayProperty=fullName>:  
+ In the following example, the <xref:System.Windows.Data.Binding.Source%2A> values of the <xref:System.Windows.Data.Binding> objects are set to the `static` property <xref:System.Windows.Application.Current%2A?displayProperty=nameWithType>:  
   
  [!code-xaml[DataBindingLab#ComboBoxMultiBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/AddProductWindow.xaml#comboboxmultibinding)]  
   
@@ -985,7 +995,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Controls.ExceptionValidationRule> is a built-in validation rule that checks for exceptions thrown during the update of the binding source property. If you have associated the <xref:System.Windows.Controls.ExceptionValidationRule> with your <xref:System.Windows.Data.Binding> object, you can use this property to set a handler to provide custom logic for handling these exceptions. If an <xref:System.Windows.Data.Binding.UpdateSourceExceptionFilter%2A> is not specified on the <xref:System.Windows.Data.Binding>, the binding engine creates a <xref:System.Windows.Controls.ValidationError> with the exception and adds it to the <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=fullName> collection of the bound element.  
+ The <xref:System.Windows.Controls.ExceptionValidationRule> is a built-in validation rule that checks for exceptions thrown during the update of the binding source property. If you have associated the <xref:System.Windows.Controls.ExceptionValidationRule> with your <xref:System.Windows.Data.Binding> object, you can use this property to set a handler to provide custom logic for handling these exceptions. If an <xref:System.Windows.Data.Binding.UpdateSourceExceptionFilter%2A> is not specified on the <xref:System.Windows.Data.Binding>, the binding engine creates a <xref:System.Windows.Controls.ValidationError> with the exception and adds it to the <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=nameWithType> collection of the bound element.  
   
    
   
@@ -1042,6 +1052,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Data.Binding.Mode" />
       </Docs>
     </Member>
     <Member MemberName="ValidatesOnDataErrors">
@@ -1069,7 +1080,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting this property provides an alternative to using the <xref:System.Windows.Controls.DataErrorValidationRule> element explicitly. The <xref:System.Windows.Controls.DataErrorValidationRule> is a built-in validation rule that checks for errors that are raised by the <xref:System.ComponentModel.IDataErrorInfo> implementation of the source object. If an error is raised, the binding engine creates a <xref:System.Windows.Controls.ValidationError> with the error and adds it to the <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=fullName> collection of the bound element. The lack of an error clears this validation feedback, unless another rule raises a validation issue.  
+ Setting this property provides an alternative to using the <xref:System.Windows.Controls.DataErrorValidationRule> element explicitly. The <xref:System.Windows.Controls.DataErrorValidationRule> is a built-in validation rule that checks for errors that are raised by the <xref:System.ComponentModel.IDataErrorInfo> implementation of the source object. If an error is raised, the binding engine creates a <xref:System.Windows.Controls.ValidationError> with the error and adds it to the <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=nameWithType> collection of the bound element. The lack of an error clears this validation feedback, unless another rule raises a validation issue.  
   
  <xref:System.Windows.Data.Binding.ValidatesOnDataErrors%2A> is introduced in the .NET Framework version 3.5.  For more information, see [.NET Framework Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
@@ -1087,6 +1098,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Data.Binding.ValidatesOnExceptions" />
       </Docs>
     </Member>
     <Member MemberName="ValidatesOnExceptions">
@@ -1114,7 +1126,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting this property provides an alternative to using the <xref:System.Windows.Controls.ExceptionValidationRule> element explicitly. The <xref:System.Windows.Controls.ExceptionValidationRule> is a built-in validation rule that checks for exceptions that are thrown during the update of the source property. If an exception is thrown, the binding engine creates a <xref:System.Windows.Controls.ValidationError> with the exception and adds it to the <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=fullName> collection of the bound element. The lack of an error clears this validation feedback, unless another rule raises a validation issue.  
+ Setting this property provides an alternative to using the <xref:System.Windows.Controls.ExceptionValidationRule> element explicitly. The <xref:System.Windows.Controls.ExceptionValidationRule> is a built-in validation rule that checks for exceptions that are thrown during the update of the source property. If an exception is thrown, the binding engine creates a <xref:System.Windows.Controls.ValidationError> with the exception and adds it to the <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=nameWithType> collection of the bound element. The lack of an error clears this validation feedback, unless another rule raises a validation issue.  
   
  <xref:System.Windows.Data.Binding.ValidatesOnExceptions%2A> is introduced in the .NET Framework version 3.5.  For more information, see [.NET Framework Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
@@ -1132,6 +1144,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Data.Binding.ValidatesOnDataErrors" />
       </Docs>
     </Member>
     <Member MemberName="ValidatesOnNotifyDataErrors">
@@ -1210,6 +1223,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Validation" />
       </Docs>
     </Member>
     <Member MemberName="XmlNamespaceManagerProperty">
@@ -1255,9 +1269,9 @@
 ## Remarks  
  When the binding source is [!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)] data instead of a [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] object, the <xref:System.Windows.Data.Binding.XPath%2A> property is used instead of the <xref:System.Windows.Data.Binding.Path%2A> property to indicate the path to the value on the binding source to use.  
   
- By setting the <xref:System.Windows.Data.Binding.XPath%2A> property, you are creating an `XPath` query to select a node or a collection of nodes (<xref:System.Xml.XmlElement?displayProperty=fullName> and <xref:System.Xml.XmlAttribute?displayProperty=fullName> both derive from <xref:System.Xml.XmlNode?displayProperty=fullName>). <xref:System.Xml.XmlNode?displayProperty=fullName> is a [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] object, which means you can bind to its properties using the <xref:System.Windows.Data.Binding.Path%2A> property.  
+ By setting the <xref:System.Windows.Data.Binding.XPath%2A> property, you are creating an `XPath` query to select a node or a collection of nodes (<xref:System.Xml.XmlElement?displayProperty=nameWithType> and <xref:System.Xml.XmlAttribute?displayProperty=nameWithType> both derive from <xref:System.Xml.XmlNode?displayProperty=nameWithType>). <xref:System.Xml.XmlNode?displayProperty=nameWithType> is a [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] object, which means you can bind to its properties using the <xref:System.Windows.Data.Binding.Path%2A> property.  
   
- The <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=fullName> method handles the `XPath` expressions from the <xref:System.Windows.Data.Binding.XPath%2A> property. `XPath` functions are not supported. For `XPath` expression information, see the <xref:System.Xml.XmlNode.SelectNodes%2A> documentation and some examples provided in the Example section.  
+ The <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=nameWithType> method handles the `XPath` expressions from the <xref:System.Windows.Data.Binding.XPath%2A> property. `XPath` functions are not supported. For `XPath` expression information, see the <xref:System.Xml.XmlNode.SelectNodes%2A> documentation and some examples provided in the Example section.  
   
  LINQ to XML objects <xref:System.Xml.Linq.XDocument> and <xref:System.Xml.Linq.XElement> do not use `XPath`. For details, see [How to: Bind to XDocument, XElement, or LINQ for XML Query Results](~/docs/framework/wpf/data/how-to-bind-to-xdocument-xelement-or-linq-for-xml-query-results.md).  
   
@@ -1265,5 +1279,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Data.Binding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

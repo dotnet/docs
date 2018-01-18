@@ -193,10 +193,10 @@
 ## Remarks  
  The <xref:System.Threading.WaitHandle> returned by this method is automatically signaled when the asynchronous operation has completed.  
   
- The wait handle is not closed automatically when you call `EndInvoke` on the delegate that was used to make the asynchronous method call. If you release all references to the wait handle, system resources are freed when garbage collection reclaims the wait handle. To free the system resources as soon as you are finished using the wait handle, call the <xref:System.Threading.WaitHandle.Close%2A?displayProperty=fullName> method. Garbage collection works more efficiently when disposable objects are explicitly closed or disposed.  
+ The wait handle is not closed automatically when you call `EndInvoke` on the delegate that was used to make the asynchronous method call. If you release all references to the wait handle, system resources are freed when garbage collection reclaims the wait handle. To free the system resources as soon as you are finished using the wait handle, call the <xref:System.Threading.WaitHandle.Close%2A?displayProperty=nameWithType> method. Garbage collection works more efficiently when disposable objects are explicitly closed or disposed.  
   
 > [!CAUTION]
->  The <xref:System.Threading.WaitHandle> contained in the <xref:System.Runtime.Remoting.Messaging.AsyncResult.AsyncWaitHandle%2A> property can be used to block the current thread until the asynchronous call is complete. However the <xref:System.Threading.WaitHandle> will ignore the <xref:System.AsyncCallback>, if one was specified during the `BeginInvoke` call. Therefore, a situation can occur where the application shuts down before the <xref:System.AsyncCallback> has finished executing, even if a <xref:System.Threading.WaitHandle> is used to block until the asynchronous call completion. For an example of such a situation, see the example for the <xref:System.Runtime.Remoting.Messaging.AsyncResult> class, and remove the <xref:System.Threading.Thread.Sleep%2A?displayProperty=fullName> statement.  
+>  The <xref:System.Threading.WaitHandle> contained in the <xref:System.Runtime.Remoting.Messaging.AsyncResult.AsyncWaitHandle%2A> property can be used to block the current thread until the asynchronous call is complete. However the <xref:System.Threading.WaitHandle> will ignore the <xref:System.AsyncCallback>, if one was specified during the `BeginInvoke` call. Therefore, a situation can occur where the application shuts down before the <xref:System.AsyncCallback> has finished executing, even if a <xref:System.Threading.WaitHandle> is used to block until the asynchronous call completion. For an example of such a situation, see the example for the <xref:System.Runtime.Remoting.Messaging.AsyncResult> class, and remove the <xref:System.Threading.Thread.Sleep%2A?displayProperty=nameWithType> statement.  
   
    
   
@@ -216,6 +216,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.WaitHandle" />
       </Docs>
     </Member>
     <Member MemberName="CompletedSynchronously">

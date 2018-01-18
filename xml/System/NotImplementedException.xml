@@ -37,7 +37,7 @@
 ## Remarks  
  The <xref:System.NotImplementedException> exception is thrown when a particular method, get accessor, or set accessor is present as a member of a type but is not implemented.  
   
- <xref:System.NotImplementedException> uses the default <xref:System.Object.Equals%2A?displayProperty=fullName> implementation, which supports reference equality. For a list of initial values for an instance of <xref:System.NotImplementedException>, see the <xref:System.NotImplementedException.%23ctor%2A> constructors.  
+ <xref:System.NotImplementedException> uses the default <xref:System.Object.Equals%2A?displayProperty=nameWithType> implementation, which supports reference equality. For a list of initial values for an instance of <xref:System.NotImplementedException>, see the <xref:System.NotImplementedException.%23ctor%2A> constructors.  
   
 ## Throwing the exception  
  You might choose to throw a  <xref:System.NotImplementedException> exception in properties or methods in your own types when the that member is still in development and will only later be implemented in production code. In other words,  a <xref:System.NotImplementedException> exception should be synonymous with "still in development."  
@@ -54,7 +54,7 @@
  If you've designed a type with one or more members that are available on some platforms or in some versions but not on others, you can throw  this exception on platforms on which the functionality is not supported.  
   
  <xref:System.NotSupportedException> exception  
- Throw a <xref:System.NotSupportedException> exception if the implementation of an interface  member or an override to an abstract base class method is not possible. For example, the   <xref:System.Convert.ToInt32%28System.DateTime%29?displayProperty=fullName> method throws a <xref:System.NotSupportedException> exception because no meaningful conversion between a date and time and a 32-bit signed integer exists. The method must be present in this case because the <xref:System.Convert> class implements the <xref:System.IConvertible> interface.  
+ Throw a <xref:System.NotSupportedException> exception if the implementation of an interface  member or an override to an abstract base class method is not possible. For example, the   <xref:System.Convert.ToInt32%28System.DateTime%29?displayProperty=nameWithType> method throws a <xref:System.NotSupportedException> exception because no meaningful conversion between a date and time and a 32-bit signed integer exists. The method must be present in this case because the <xref:System.Convert> class implements the <xref:System.IConvertible> interface.  
   
  You should also throw a <xref:System.NotSupportedException> exception if you've implemented an abstract base class and add a new member to it that must be overridden by derived classes. In that case, making the member abstract causes existing subclasses to fail to load.  
   
@@ -68,6 +68,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Exception" />
+    <altmember cref="T:System.NotSupportedException" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -229,5 +231,18 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.NotImplementedException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

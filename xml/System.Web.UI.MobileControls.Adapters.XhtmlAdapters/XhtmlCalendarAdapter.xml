@@ -21,13 +21,15 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Control or device developers can inherit the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter> to create a custom adapter to take advantage of a new kind of target device, or to support a custom version of the <xref:System.Web.UI.MobileControls.Calendar?displayProperty=fullName> control.  
+ Control or device developers can inherit the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter> to create a custom adapter to take advantage of a new kind of target device, or to support a custom version of the <xref:System.Web.UI.MobileControls.Calendar?displayProperty=nameWithType> control.  
   
  A custom adapter might override the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter.OnInit%2A> or <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter.OnLoad%2A> methods to change how the <xref:System.Web.UI.MobileControls.Calendar> is first presented to the user. Or, you might change <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter.LoadAdapterState%2A> and <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter.SaveAdapterState%2A> to track different information about the state of the adapter. You might change <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter.OnPreRender%2A> to modify data structures for a custom calendar, or add custom processing to the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter.Render%2A> method to take advantage of new capabilities in a specific target device. A new target device might also have special needs that require modification to the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter.HandlePostBackEvent%2A> method.  
   
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.Calendar" />
+    <altmember cref="T:System.Web.UI.MobileControls.Adapters.ControlAdapter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,6 +63,7 @@
         <summary>Returns a strongly typed reference to the associated control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>A <see cref="T:System.Web.UI.MobileControls.Calendar" /> control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Calendar" />
       </Docs>
     </Member>
     <Member MemberName="HandlePostBackEvent">
@@ -86,10 +89,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Web.UI.MobileControls.Calendar?displayProperty=fullName> displays on one or more pages of a mobile device. When the user takes an action on one of those pages, this event handler processes the user's response and determines if the user is done with the calendar and whether the adapter should call <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ExitSecondaryUIMode%2A>, or if the user should be directed to one of the secondary pages of the control.  
+ A <xref:System.Web.UI.MobileControls.Calendar?displayProperty=nameWithType> displays on one or more pages of a mobile device. When the user takes an action on one of those pages, this event handler processes the user's response and determines if the user is done with the calendar and whether the adapter should call <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ExitSecondaryUIMode%2A>, or if the user should be directed to one of the secondary pages of the control.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.SecondaryUIMode" />
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ExitSecondaryUIMode" />
       </Docs>
     </Member>
     <Member MemberName="LoadAdapterState">
@@ -118,6 +123,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobilePage.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -191,6 +197,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -234,7 +241,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is called by the page adapter during <xref:System.Web.UI.MobileControls.MobilePage.SaveViewState%2A?displayProperty=fullName>.  
+ This method is called by the page adapter during <xref:System.Web.UI.MobileControls.MobilePage.SaveViewState%2A?displayProperty=nameWithType>.  
   
  The state of the adapter can include the following information, returned inclusively in the following order:  
   
@@ -251,6 +258,7 @@
         <block subset="none" type="overrides">
           <para>When you inherit from the <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter" /> class and the adapter overrides the <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter.SaveAdapterState" /> method, the adapter should call the corresponding base class method before any additional processing.</para>
         </block>
+        <altmember cref="M:System.Web.UI.MobileControls.MobilePage.SaveViewState" />
       </Docs>
     </Member>
   </Members>

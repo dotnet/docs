@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#system.Net"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.Net"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "system.Net element"
   - "<system.Net> element"
@@ -25,6 +20,8 @@ caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;system.Net&gt; Element (Network Settings)
 Contains settings that specify how the .NET Framework connects to the network.  
@@ -35,7 +32,7 @@ Contains settings that specify how the .NET Framework connects to the network.
 ## Syntax  
   
 ```xml  
-      <system.net>   
+<system.net>   
 </system.net>  
 ```  
   
@@ -55,7 +52,7 @@ Contains settings that specify how the .NET Framework connects to the network.
 |[mailSettings](../../../../../docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md)|Configures Simple Mail Transport Protocol (SMTP) mail sending options.|  
 |[requestCaching](../../../../../docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md)|Controls the caching mechanism for network requests.|  
 |[settings](../../../../../docs/framework/configure-apps/file-schema/network/settings-element-network-settings.md)|Configures basic network options for classes in the <xref:System.Net> and related child namespaces.|  
-|[\<webRequestModules> Element (Network Settings)](../../../../../docs/framework/configure-apps/file-schema/network/webrequestmodules-element-network-settings.md)|Specifies modules to use to request information from Internet hosts.|  
+|[webRequestModules](../../../../../docs/framework/configure-apps/file-schema/network/webrequestmodules-element-network-settings.md)|Specifies modules to use to request information from Internet hosts.|  
   
 ### Parent Elements  
   
@@ -73,30 +70,30 @@ Contains settings that specify how the .NET Framework connects to the network.
 <configuration>  
   <system.net>  
     <authenticationModules>  
-      <add type = "System.Net.DigestClient" />  
-      <add type = "System.Net.NegotiateClient" />  
-      <add type = "System.Net.KerberosClient" />  
-      <add type = "System.Net.NtlmClient" />  
-      <add type = "System.Net.BasicClient" />  
+      <add type="System.Net.DigestClient" />  
+      <add type="System.Net.NegotiateClient" />  
+      <add type="System.Net.KerberosClient" />  
+      <add type="System.Net.NtlmClient" />  
+      <add type="System.Net.BasicClient" />  
     </authenticationModules>  
     <connectionManagement>  
-      <add address = "*" maxconnection = "2" />  
+      <add address="*" maxconnection="2" />  
     </connectionManagement>  
     <defaultProxy>  
       <proxy  
-        usesystemdefault = "true"  
-        bypassonlocal = "true"  
+        usesystemdefault="true"  
+        bypassonlocal="true"  
       />  
     </defaultProxy>  
     <webRequestModules>  
-      <add prefix = "http"  
-        type = "System.Net.HttpRequestCreator"  
+      <add prefix="http"  
+           type="System.Net.HttpRequestCreator"  
       />  
-      <add prefix = "https"  
-        type = "System.Net.HttpRequestCreator"  
+      <add prefix="https"  
+           type="System.Net.HttpRequestCreator"  
       />  
-      <add prefix = "file"  
-        type = "System.Net.FileWebRequestCreator"  
+      <add prefix="file"  
+           type="System.Net.FileWebRequestCreator"  
       />  
     </webRequestModules>  
   </system.net>  

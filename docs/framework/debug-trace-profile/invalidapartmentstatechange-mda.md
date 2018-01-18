@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "MDAs (managed debugging assistants), invalid apartment state"
   - "managed debugging assistants (MDAs), invalid apartment state"
@@ -28,6 +23,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # invalidApartmentStateChange MDA
 The `invalidApartmentStateChange` managed debugging assistant (MDS) is activated by either of two problems:  
@@ -44,7 +41,7 @@ The `invalidApartmentStateChange` managed debugging assistant (MDS) is activated
   
 ## Cause  
   
--   The thread was previously initialized to a different COM apartment state. Note that the apartment state of a thread can be set either explicitly or implicitly. The explicit operations include the <xref:System.Threading.Thread.ApartmentState%2A?displayProperty=fullName> property and the <xref:System.Threading.Thread.SetApartmentState%2A> and <xref:System.Threading.Thread.TrySetApartmentState%2A> methods. A thread created using the <xref:System.Threading.Thread.Start%2A> method is implicitly set to <xref:System.Threading.ApartmentState.MTA> unless <xref:System.Threading.Thread.SetApartmentState%2A> is called before the thread is started. The main thread of the application is also implicitly initialized to <xref:System.Threading.ApartmentState.MTA> unless the <xref:System.STAThreadAttribute> attribute is specified on the main method.  
+-   The thread was previously initialized to a different COM apartment state. Note that the apartment state of a thread can be set either explicitly or implicitly. The explicit operations include the <xref:System.Threading.Thread.ApartmentState%2A?displayProperty=nameWithType> property and the <xref:System.Threading.Thread.SetApartmentState%2A> and <xref:System.Threading.Thread.TrySetApartmentState%2A> methods. A thread created using the <xref:System.Threading.Thread.Start%2A> method is implicitly set to <xref:System.Threading.ApartmentState.MTA> unless <xref:System.Threading.Thread.SetApartmentState%2A> is called before the thread is started. The main thread of the application is also implicitly initialized to <xref:System.Threading.ApartmentState.MTA> unless the <xref:System.STAThreadAttribute> attribute is specified on the main method.  
   
 -   The `CoUninitialize` method (or the `CoInitializeEx` method) with a different concurrency model is called on the thread.  
   
@@ -87,6 +84,6 @@ namespace ApartmentStateMDA
 ```  
   
 ## See Also  
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>   
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)   
+ <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
+ [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)  
  [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)

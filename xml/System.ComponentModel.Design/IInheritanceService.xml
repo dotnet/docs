@@ -28,6 +28,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.InheritanceAttribute" />
   </Docs>
   <Members>
     <Member MemberName="AddInheritedComponents">
@@ -101,12 +102,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the component has been profiled by the <xref:System.ComponentModel.Design.IInheritanceService.AddInheritedComponents%2A> method, this method returns the value <xref:System.ComponentModel.InheritanceAttribute.NotInherited?displayProperty=fullName>. Otherwise, it returns the inheritance attribute for this component.  
+ If the component has been profiled by the <xref:System.ComponentModel.Design.IInheritanceService.AddInheritedComponents%2A> method, this method returns the value <xref:System.ComponentModel.InheritanceAttribute.NotInherited?displayProperty=nameWithType>. Otherwise, it returns the inheritance attribute for this component.  
   
  You should call <xref:System.ComponentModel.Design.IInheritanceService.AddInheritedComponents%2A> on the specified component or a parent of the specified component before attempting to obtain an <xref:System.ComponentModel.InheritanceAttribute> that reflects the inheritance level of the specified component.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.InheritanceAttribute" />
       </Docs>
     </Member>
   </Members>

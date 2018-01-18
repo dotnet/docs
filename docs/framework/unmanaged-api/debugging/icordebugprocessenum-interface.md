@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcessEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugProcessEnum interface [.NET Framework debugging]"
 ms.assetid: b63a507a-ca97-4be0-8e4f-401cce2125f6
@@ -28,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcessEnum Interface1
 Implements ICorDebugEnum methods and enumerates ICorDebugProcess arrays.  

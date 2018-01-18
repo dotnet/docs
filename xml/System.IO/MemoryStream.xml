@@ -856,7 +856,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the <xref:System.IO.Stream.Flush%2A?displayProperty=fullName> method.  
+ This method overrides the <xref:System.IO.Stream.Flush%2A?displayProperty=nameWithType> method.  
   
  Because any data written to a <xref:System.IO.MemoryStream> object is written into RAM, this method is redundant.  
   
@@ -1054,7 +1054,7 @@
     </Member>
     <Member MemberName="Read">
       <MemberSignature Language="C#" Value="public override int Read (byte[] buffer, int offset, int count);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read(unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read([out] unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryStream.Read(System.Byte[],System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1285,7 +1285,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.IO.Stream.Seek%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.IO.Stream.Seek%2A?displayProperty=nameWithType>.  
   
  Seeking to any location beyond the length of the stream is supported.  
   
@@ -1416,7 +1416,7 @@
     </Member>
     <Member MemberName="TryGetBuffer">
       <MemberSignature Language="C#" Value="public virtual bool TryGetBuffer (out ArraySegment&lt;byte&gt; buffer);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetBuffer(valuetype System.ArraySegment`1&lt;unsigned int8&gt; buffer) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetBuffer([out] valuetype System.ArraySegment`1&lt;unsigned int8&gt;&amp; buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryStream.TryGetBuffer(System.ArraySegment{System.Byte}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1686,7 +1686,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the current stream is open, this method is equivalent to calling <xref:System.IO.Stream.Write%2A?displayProperty=fullName> on the underlying buffer of this stream.  
+ When the current stream is open, this method is equivalent to calling <xref:System.IO.Stream.Write%2A?displayProperty=nameWithType> on the underlying buffer of this stream.  
   
  ]]></format>
         </remarks>
@@ -1695,5 +1695,16 @@
         <exception cref="T:System.ObjectDisposedException">The current or target stream is closed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.MemoryStream" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

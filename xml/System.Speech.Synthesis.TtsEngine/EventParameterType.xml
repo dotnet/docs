@@ -96,6 +96,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Speech.Synthesis.TtsEngine.SpeechEventInfo" />
   </Docs>
   <Members>
     <Member MemberName="Object">
@@ -193,7 +194,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Generally, `param1` and `param2` are then ignored. However, if<xref:System.Speech.Synthesis.TtsEngine.TtsEventId> is <xref:System.Speech.Synthesis.TtsEngine.TtsEventId.WordBoundary>, a progress meter event can be generated `param1` should be an integer containing the length of the current word, and `param2` a `System.IntPtr` referencing an integer containing the offset of the current word.  
+ Generally, `param1` and `param2` are then ignored. However, if <xref:System.Speech.Synthesis.TtsEngine.TtsEventId> is <xref:System.Speech.Synthesis.TtsEngine.TtsEventId.WordBoundary>, a progress meter event can be generated `param1` should be an integer containing the length of the current word, and `param2` a `System.IntPtr` referencing an integer containing the offset of the current word.  
   
  ]]></format>
         </remarks>

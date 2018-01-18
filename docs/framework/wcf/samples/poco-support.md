@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3846ca73-2819-4ca2-8367-dc739dde5a5b
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # POCO Support
 This sample demonstrates the serialization support for unmarked types; that is, types to which serialization attributes have not been applied, sometimes referred to as Plain Old CLR Object (POCO) types. The <xref:System.Runtime.Serialization.DataContractSerializer> infers a data contract for all public unmarked types that have a default constructor. Data contracts allow you to pass structured data to and from services. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] unmarked types, see [Serializable Types](../../../../docs/framework/wcf/feature-details/serializable-types.md).  
@@ -63,5 +65,5 @@ public class ComplexNumber
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Data\POCO`  
   
 ## See Also  
- <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute>   
+ <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute>  
  [Serializable Types](../../../../docs/framework/wcf/feature-details/serializable-types.md)

@@ -237,7 +237,7 @@
 ## Remarks  
  This method can be overridden by a derived class. The base implementation returns `null`.  
   
- The common language runtime calls this method when evidence of the specified type is needed for the current <xref:System.AppDomain>. The returned value is used as host-supplied evidence, and is stored in the <xref:System.AppDomain.Evidence%2A> collection of the <xref:System.AppDomain.CurrentDomain%2A> property. You can use the <xref:System.Security.Policy.Evidence.GetAssemblyEvidence%2A?displayProperty=fullName> method to obtain the generated evidence from the collection.  
+ The common language runtime calls this method when evidence of the specified type is needed for the current <xref:System.AppDomain>. The returned value is used as host-supplied evidence, and is stored in the <xref:System.AppDomain.Evidence%2A> collection of the <xref:System.AppDomain.CurrentDomain%2A> property. You can use the <xref:System.Security.Policy.Evidence.GetAssemblyEvidence%2A?displayProperty=nameWithType> method to obtain the generated evidence from the collection.  
   
  To get a callback to this method, hosts must specify the <xref:System.Security.HostSecurityManagerOptions.HostAppDomainEvidence> flag in the <xref:System.Security.HostSecurityManager.Flags%2A> property.  
   
@@ -290,7 +290,7 @@
 ## Remarks  
  This method can be overridden by a derived class. The base implementation returns `null`.  
   
- The common language runtime calls this method when evidence of the specified type is needed for the current assembly. The returned value is used as host-supplied evidence, and is stored in the <xref:System.Reflection.Assembly.Evidence%2A> property. You can use the <xref:System.Security.Policy.Evidence.GetAssemblyEvidence%2A?displayProperty=fullName> method to obtain the generated evidence from the <xref:System.Reflection.Assembly.Evidence%2A> property.  
+ The common language runtime calls this method when evidence of the specified type is needed for the current assembly. The returned value is used as host-supplied evidence, and is stored in the <xref:System.Reflection.Assembly.Evidence%2A> property. You can use the <xref:System.Security.Policy.Evidence.GetAssemblyEvidence%2A?displayProperty=nameWithType> method to obtain the generated evidence from the <xref:System.Reflection.Assembly.Evidence%2A> property.  
   
  To get a callback to this method, hosts must specify the <xref:System.Security.HostSecurityManagerOptions.HostAssemblyEvidence> flag in the <xref:System.Security.HostSecurityManager.Flags%2A> property.  
   

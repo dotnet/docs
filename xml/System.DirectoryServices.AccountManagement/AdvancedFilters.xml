@@ -26,6 +26,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="N:System.DirectoryServices.AccountManagement" />
+    <altmember cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,6 +54,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <altmember cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />
       </Docs>
     </Member>
     <Member MemberName="AccountExpirationDate">
@@ -79,7 +83,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.  
   
    
   
@@ -111,6 +115,8 @@ foreach (UserPrincipal u in results)
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <altmember cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />
       </Docs>
     </Member>
     <Member MemberName="AccountLockoutTime">
@@ -138,7 +144,7 @@ foreach (UserPrincipal u in results)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.  
   
    
   
@@ -170,6 +176,8 @@ foreach (UserPrincipal u in results)
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <altmember cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />
       </Docs>
     </Member>
     <Member MemberName="AdvancedFilterSet">
@@ -223,6 +231,8 @@ public class InetOrgPersonSearchFilter : AdvancedFilters
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <altmember cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />
       </Docs>
     </Member>
     <Member MemberName="BadLogonCount">
@@ -275,6 +285,8 @@ foreach (UserPrincipal u in results)
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <altmember cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />
       </Docs>
     </Member>
     <Member MemberName="LastBadPasswordAttempt">
@@ -302,7 +314,7 @@ foreach (UserPrincipal u in results)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.  
   
    
   
@@ -334,6 +346,8 @@ foreach (UserPrincipal u in results)
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <altmember cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />
       </Docs>
     </Member>
     <Member MemberName="LastLogonTime">
@@ -361,7 +375,7 @@ foreach (UserPrincipal u in results)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.  
   
    
   
@@ -391,6 +405,8 @@ foreach (UserPrincipal u in results)
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <altmember cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />
       </Docs>
     </Member>
     <Member MemberName="LastPasswordSetTime">
@@ -418,7 +434,7 @@ foreach (UserPrincipal u in results)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.  
   
    
   
@@ -450,6 +466,8 @@ foreach (UserPrincipal u in results)
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <altmember cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />
       </Docs>
     </Member>
   </Members>

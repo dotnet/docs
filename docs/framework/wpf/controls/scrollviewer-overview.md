@@ -9,14 +9,20 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "controls, ScrollViewer"
-  - "ScrollViewer control, about ScrollViewer control"
+  - "controls [WPF], ScrollViewer"
+  - "ScrollViewer control [WPF], about ScrollViewer control"
 ms.assetid: 94a13b94-cfdf-4b12-a1aa-90cb50c6e9b9
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ScrollViewer Overview
 Content within a user interface is often larger than a computer screen's display area. The <xref:System.Windows.Controls.ScrollViewer> control provides a convenient way to enable scrolling of content in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications. This topic introduces the <xref:System.Windows.Controls.ScrollViewer> element and provides several usage examples.  
@@ -63,10 +69,10 @@ Content within a user interface is often larger than a computer screen's display
  For additional information about document formats and presentation options, see [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md).  
   
 ## See Also  
- <xref:System.Windows.Controls.ScrollViewer>   
- <xref:System.Windows.Controls.Primitives.ScrollBar>   
- <xref:System.Windows.Controls.Primitives.IScrollInfo>   
- [Create a Scroll Viewer](http://msdn.microsoft.com/en-us/c8e46af7-b417-441b-aa30-791cbdbd43ef)   
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)   
- [ScrollBar Styles and Templates](../../../../docs/framework/wpf/controls/scrollbar-styles-and-templates.md)   
+ <xref:System.Windows.Controls.ScrollViewer>  
+ <xref:System.Windows.Controls.Primitives.ScrollBar>  
+ <xref:System.Windows.Controls.Primitives.IScrollInfo>  
+ [Create a Scroll Viewer](http://msdn.microsoft.com/en-us/c8e46af7-b417-441b-aa30-791cbdbd43ef)  
+ [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
+ [ScrollBar Styles and Templates](../../../../docs/framework/wpf/controls/scrollbar-styles-and-templates.md)  
  [Controls](../../../../docs/framework/wpf/advanced/optimizing-performance-controls.md)

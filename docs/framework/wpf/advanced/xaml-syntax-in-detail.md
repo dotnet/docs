@@ -10,37 +10,39 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "XML, namespaces"
-  - "XAML, parsing of attributes"
-  - "parsing of attributes"
-  - "XAML, markup extensions"
-  - "attached properties"
+  - "XML [WPF], namespaces"
+  - "XAML [WPF], parsing of attributes"
+  - "parsing of attributes [WPF]"
+  - "XAML [WPF], markup extensions"
+  - "attached properties [WPF]"
   - "tag syntax [XAML]"
-  - "markup extensions"
-  - "XAML, object element syntax"
-  - "XAML, syntax terminology"
-  - "attached events"
-  - "lookup semantics"
-  - "XAML, attached events"
-  - "XAML, content syntax"
-  - "XAML, lookup semantics"
-  - "content syntax"
-  - "object element syntax"
+  - "markup extensions [WPF]"
+  - "XAML [WPF], object element syntax"
+  - "XAML [WPF], syntax terminology"
+  - "attached events [WPF]"
+  - "lookup semantics [WPF]"
+  - "XAML [WPF], attached events"
+  - "XAML [WPF], content syntax"
+  - "XAML [WPF], lookup semantics"
+  - "content syntax [WPF]"
+  - "object element syntax [WPF]"
   - "syntax terminology [XAML]"
-  - "XAML, attached properties"
+  - "XAML [WPF], attached properties"
   - "attributes [XAML], parsing"
-  - "XAML, tag syntax"
-  - "XAML, attribute syntax"
-  - "property element syntax"
+  - "XAML [WPF], tag syntax"
+  - "XAML [WPF], attribute syntax"
+  - "property element syntax [WPF]"
   - "terminology [XAML]"
-  - "namespaces, XML"
+  - "namespaces [WPF], XML"
   - "attribute syntax [XAML]"
-  - "XAML, property element syntax"
+  - "XAML [WPF], property element syntax"
 ms.assetid: 67cce290-ca26-4c41-a797-b68aabc45479
 caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # XAML Syntax In Detail
 This topic defines the terms that are used to describe the elements of XAML syntax. These terms are used frequently throughout the remainder of this documentation, both for WPF documentation specifically and for the other frameworks that use XAML or the basic XAML concepts enabled by the XAML language support at the System.Xaml level. This topic expands on the basic terminology introduced in the topic [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md).  
@@ -118,7 +120,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
  For nonflag enumeration values, the native behavior is to process the string of an attribute value and resolve it to one of the enumeration values. You do not specify the enumeration in the format *Enumeration*.*Value*, as you do in code. Instead, you specify only *Value*, and *Enumeration* is inferred by the type of the property you are setting. If you specify an attribute in the *Enumeration*.*Value* form, it will not resolve correctly.  
   
- For flagwise enumerations, the behavior is based on the <xref:System.Enum.Parse%2A?displayProperty=fullName> method. You can specify multiple values for a flagwise enumeration by separating each value with a comma. However, you cannot combine enumeration values that are not flagwise. For instance, you cannot use the comma syntax to attempt to create a <xref:System.Windows.Trigger> that acts on multiple conditions of a nonflag enumeration:  
+ For flagwise enumerations, the behavior is based on the <xref:System.Enum.Parse%2A?displayProperty=nameWithType> method. You can specify multiple values for a flagwise enumeration by separating each value with a comma. However, you cannot combine enumeration values that are not flagwise. For instance, you cannot use the comma syntax to attempt to create a <xref:System.Windows.Trigger> that acts on multiple conditions of a nonflag enumeration:  
   
 ```  
 <!--This will not compile, because Visibility is not a flagwise enumeration.-->  
@@ -129,7 +131,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
 ...  
 ```  
   
- Flagwise enumerations that support attributes that are settable in XAML are rare in WPF. However, one such enumeration is <xref:System.Windows.Media.StyleSimulations>. You could, for instance, use the comma-delimited flagwise attribute syntax to modify the example provided in the Remarks for the <xref:System.Windows.Documents.Glyphs> class; `StyleSimulations = "BoldSimulation"` could become `StyleSimulations = "BoldSimulation,ItalicSimulation"`. <xref:System.Windows.Input.KeyBinding.Modifiers%2A?displayProperty=fullName> is another property where more than one enumeration value can be specified. However, this property happens to be a special case, because the <xref:System.Windows.Input.ModifierKeys> enumeration supports its own type converter. The type converter for modifiers uses a plus sign (+) as a delimiter rather than a comma (,). This conversion supports the more traditional syntax to represent key combinations in Microsoft Windows programming, such as "Ctrl+Alt".  
+ Flagwise enumerations that support attributes that are settable in XAML are rare in WPF. However, one such enumeration is <xref:System.Windows.Media.StyleSimulations>. You could, for instance, use the comma-delimited flagwise attribute syntax to modify the example provided in the Remarks for the <xref:System.Windows.Documents.Glyphs> class; `StyleSimulations = "BoldSimulation"` could become `StyleSimulations = "BoldSimulation,ItalicSimulation"`. <xref:System.Windows.Input.KeyBinding.Modifiers%2A?displayProperty=nameWithType> is another property where more than one enumeration value can be specified. However, this property happens to be a special case, because the <xref:System.Windows.Input.ModifierKeys> enumeration supports its own type converter. The type converter for modifiers uses a plus sign (+) as a delimiter rather than a comma (,). This conversion supports the more traditional syntax to represent key combinations in Microsoft Windows programming, such as "Ctrl+Alt".  
   
 ### Properties and Event Member Name References  
  When specifying an attribute, you can reference any property or event that exists as a member of the CLR type you instantiated for the containing object element.  
@@ -322,9 +324,9 @@ This topic defines the terms that are used to describe the elements of XAML synt
  But just like *typeName*.*memberName* form for attributes, *baseTypeName*.*memberName* is poor style in markup, and you should avoid it.  
   
 ## See Also  
- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)   
- [XAML Namespace (x:) Language Features](../../../../docs/framework/xaml-services/xaml-namespace-x-language-features.md)   
- [WPF XAML Extensions](../../../../docs/framework/wpf/advanced/wpf-xaml-extensions.md)   
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)   
- [TypeConverters and XAML](../../../../docs/framework/wpf/advanced/typeconverters-and-xaml.md)   
+ [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
+ [XAML Namespace (x:) Language Features](../../../../docs/framework/xaml-services/xaml-namespace-x-language-features.md)  
+ [WPF XAML Extensions](../../../../docs/framework/wpf/advanced/wpf-xaml-extensions.md)  
+ [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
+ [TypeConverters and XAML](../../../../docs/framework/wpf/advanced/typeconverters-and-xaml.md)  
  [XAML and Custom Classes for WPF](../../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)

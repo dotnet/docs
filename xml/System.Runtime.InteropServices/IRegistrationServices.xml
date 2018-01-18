@@ -140,7 +140,7 @@
 ## Remarks  
  `RegisterAssembly` adds the appropriate registry entries for the types in the specified assembly. This method also calls any registration functions found in the assembly.  
   
- Use <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> to get an assembly.  
+ Use <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> to get an assembly.  
   
  ]]></format>
         </remarks>
@@ -164,7 +164,7 @@
     </Member>
     <Member MemberName="RegisterTypeForComClients">
       <MemberSignature Language="C#" Value="public void RegisterTypeForComClients (Type type, ref Guid g);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterTypeForComClients(class System.Type type, valuetype System.Guid g) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterTypeForComClients(class System.Type type, valuetype System.Guid&amp; g) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.IRegistrationServices.RegisterTypeForComClients(System.Type,System.Guid@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

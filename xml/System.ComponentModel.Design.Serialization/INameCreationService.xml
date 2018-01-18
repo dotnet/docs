@@ -76,7 +76,7 @@
    
   
 ## Examples  
- The following code example provides an example <xref:System.ComponentModel.Design.Serialization.INameCreationService.CreateName%2A?displayProperty=fullName> method implementation. The method can create a name based on the name of a specified type that is unique to the names of the components within the specified container.  
+ The following code example provides an example <xref:System.ComponentModel.Design.Serialization.INameCreationService.CreateName%2A?displayProperty=nameWithType> method implementation. The method can create a name based on the name of a specified type that is unique to the names of the components within the specified container.  
   
  [!code-cpp[INameCreationServiceExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/INameCreationServiceExample/CPP/class1.cpp#2)]
  [!code-csharp[INameCreationServiceExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/INameCreationServiceExample/CS/class1.cs#2)]
@@ -127,7 +127,7 @@
    
   
 ## Examples  
- The following code example provides an example <xref:System.ComponentModel.Design.Serialization.INameCreationService.IsValidName%2A?displayProperty=fullName> method implementation. The method uses a string validation scheme that examines each character of the specified string to determine whether the specified string is a valid name. The method returns `true` if the string is valid, or `false` otherwise.  
+ The following code example provides an example <xref:System.ComponentModel.Design.Serialization.INameCreationService.IsValidName%2A?displayProperty=nameWithType> method implementation. The method uses a string validation scheme that examines each character of the specified string to determine whether the specified string is a valid name. The method returns `true` if the string is valid, or `false` otherwise.  
   
  [!code-cpp[INameCreationServiceExample#3](~/samples/snippets/cpp/VS_Snippets_Winforms/INameCreationServiceExample/CPP/class1.cpp#3)]
  [!code-csharp[INameCreationServiceExample#3](~/samples/snippets/csharp/VS_Snippets_Winforms/INameCreationServiceExample/CS/class1.cs#3)]
@@ -175,7 +175,7 @@
    
   
 ## Examples  
- The following code example provides an example <xref:System.ComponentModel.Design.Serialization.INameCreationService.IsValidName%2A?displayProperty=fullName> method implementation that uses a string validation scheme that examines each character of the specified string to determine whether the specified string is a valid name. The method throws an exception if the string is not valid.  
+ The following code example provides an example <xref:System.ComponentModel.Design.Serialization.INameCreationService.IsValidName%2A?displayProperty=nameWithType> method implementation that uses a string validation scheme that examines each character of the specified string to determine whether the specified string is a valid name. The method throws an exception if the string is not valid.  
   
  [!code-cpp[INameCreationServiceExample#4](~/samples/snippets/cpp/VS_Snippets_Winforms/INameCreationServiceExample/CPP/class1.cpp#4)]
  [!code-csharp[INameCreationServiceExample#4](~/samples/snippets/csharp/VS_Snippets_Winforms/INameCreationServiceExample/CS/class1.cs#4)]

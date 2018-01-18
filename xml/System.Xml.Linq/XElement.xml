@@ -69,8 +69,7 @@
  The following example creates an XML tree. The content of the new element comes from a LINQ query.  
   
 ```csharp  
-  
-                XElement xmlTree1 = new XElement("Root",  
+XElement xmlTree1 = new XElement("Root",  
     new XElement("Child1", 1),  
     new XElement("Child2", 2),  
     new XElement("Child3", 3),  
@@ -88,8 +87,7 @@ Console.WriteLine(xmlTree2);
 ```  
   
 ```vb  
-  
-                Dim xmlTree1 As XElement = _  
+Dim xmlTree1 As XElement = _  
         <Root>  
             <Child1>1</Child1>  
             <Child2>2</Child2>  
@@ -107,14 +105,12 @@ Dim xmlTree2 As XElement = _
     </Root>  
   
 Console.WriteLine(xmlTree2)  
-  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child3>3</Child3>  
   <Child4>4</Child4>  
   <Child5>5</Child5>  
@@ -124,8 +120,7 @@ Console.WriteLine(xmlTree2)
  The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree1 = new XElement(aw + "Root",  
     new XElement(aw + "Child1", 1),  
     new XElement(aw + "Child2", 2),  
@@ -144,8 +139,7 @@ Console.WriteLine(xmlTree2);
 ```  
   
 ```vb  
-  
-                Imports <xmlns="http://www.adventure-works.com">  
+Imports <xmlns="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -174,8 +168,7 @@ End Module
  This example produces the following output:  
   
 ```xml  
-  
-                <Root xmlns="http://www.adventure-works.com">  
+<Root xmlns="http://www.adventure-works.com">  
   <Child3>3</Child3>  
   <Child4>4</Child4>  
   <Child5>5</Child5>  
@@ -210,8 +203,7 @@ End Module
  The following example creates an XML tree. The content of the new element comes from a LINQ query.  
   
 ```csharp  
-  
-                XElement xmlTree1 = new XElement("Root",  
+XElement xmlTree1 = new XElement("Root",  
     new XElement("Child", 1),  
     new XElement("Child", 2),  
     new XElement("Child", 3),  
@@ -229,8 +221,7 @@ Console.WriteLine(xmlTree2);
 ```  
   
 ```vb  
-  
-                Dim xmlTree1 As XElement = _   
+Dim xmlTree1 As XElement = _   
         <Root>  
             <Child>1</Child>  
             <Child>2</Child>  
@@ -248,14 +239,12 @@ Dim xmlTree2 As XElement = _
     </Root>  
   
 Console.WriteLine(xmlTree2)  
-  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child>3</Child>  
   <Child>4</Child>  
   <Child>5</Child>  
@@ -304,8 +293,7 @@ Console.WriteLine(xmlTree2)
  The following example creates an XML tree, creates a clone of the tree, and then calls <xref:System.Xml.Linq.XNode.DeepEquals%2A>, which tests whether the two XML trees are equal.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XAttribute("Att1", 1),  
     new XElement("Child1", 1),  
     new XElement("Child2", 2)  
@@ -323,8 +311,7 @@ Console.WriteLine("xmlTree = treeClone: {0}", XNode.DeepEquals(xmlTree, treeClon
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _  
+Dim xmlTree As XElement = _  
         <Root Att1="1">  
             <Child1>1</Child1>  
             <Child2>2</Child2>  
@@ -339,14 +326,12 @@ Console.WriteLine("xmlTree = treeClone: {0}", XNode.DeepEquals(xmlTree, treeClon
 xmlTree.Add(New XElement("Child3", 3))  
   
 Console.WriteLine("xmlTree = treeClone: {0}", XNode.DeepEquals(xmlTree, treeClone))  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
-                xmlTree = treeClone: True  
+xmlTree = treeClone: True  
 xmlTree = treeClone: False  
 ```  
   
@@ -394,36 +379,32 @@ xmlTree = treeClone: False
  The following example creates an element with no content.  
   
 ```csharp  
-  
-                XElement el = new XElement("Root");  
+XElement el = new XElement("Root");  
 Console.WriteLine(el);  
 ```  
   
 ```vb  
-  
-                Dim el As XElement = <Root/>  
+Dim el As XElement = <Root/>  
 Console.WriteLine(el)  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
 <Root />  
 ```  
   
  The following example creates an element in a namespace with no content. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+
+XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root");  
 Console.WriteLine(root);  
 ```  
   
 ```vb  
-  
-                Imports <xmlns="http://www.adventure-works.com">  
+Imports <xmlns="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -436,7 +417,6 @@ End Module
  This example produces the following output:  
   
 ```xml  
-  
 <Root xmlns="http://www.adventure-works.com" />  
 ```  
   
@@ -482,8 +462,7 @@ End Module
  The following example creates a source XML tree, and then creates an <xref:System.Xml.Linq.XStreamingElement> from a query on the source XML tree. It then serializes the <xref:System.Xml.Linq.XStreamingElement> to the console, adds a new element to the source XML tree, and then serializes the <xref:System.Xml.Linq.XStreamingElement> again. You can see that element newly added to the source XML tree is not included in the first serialization, but is included in the second.  
   
 ```csharp  
-  
-                XElement src = new XElement("Root",  
+XElement src = new XElement("Root",  
                    new XElement("Child1", 1),  
                    new XElement("Child2", 2),  
                    new XElement("Child3", 3)  
@@ -500,8 +479,7 @@ Console.WriteLine(xse);
 ```  
   
 ```vb  
-  
-                Dim src As XElement = _   
+Dim src As XElement = _   
         <Root>  
             <Child1>1</Child1>  
             <Child2>2</Child2>  
@@ -521,8 +499,7 @@ Console.WriteLine(xse)
  This example produces the following output:  
   
 ```  
-  
-                <NewRoot>  
+<NewRoot>  
   <Child2>2</Child2>  
   <Child3>3</Child3>  
 </NewRoot>  
@@ -584,8 +561,7 @@ Console.WriteLine(xse)
  The following example creates an XML tree. The content of the new element comes from a LINQ query.  
   
 ```csharp  
-  
-                XElement xmlTree1 = new XElement("Root",  
+XElement xmlTree1 = new XElement("Root",  
     new XElement("Child1", 1),  
     new XElement("Child2", 2),  
     new XElement("Child3", 3),  
@@ -603,8 +579,7 @@ Console.WriteLine(xmlTree2);
 ```  
   
 ```vb  
-  
-                Dim xmlTree1 As XElement = _   
+Dim xmlTree1 As XElement = _   
         <Root>  
             <Child1>1</Child1>  
             <Child2>2</Child2>  
@@ -622,14 +597,12 @@ Dim xmlTree2 As XElement = _
     </Root>  
   
 Console.WriteLine(xmlTree2)  
-  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child3>3</Child3>  
   <Child4>4</Child4>  
   <Child5>5</Child5>  
@@ -639,8 +612,7 @@ Console.WriteLine(xmlTree2)
  The following example creates an XML tree with a variety of types of content.  
   
 ```csharp  
-  
-                XElement root;  
+XElement root;  
   
 // String content:  
 root = new XElement("Root", "Some text");  
@@ -699,8 +671,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                Dim root As XElement  
+Dim root As XElement  
   
 ' String content:  
 root = <Root>Some text</Root>  
@@ -756,14 +727,12 @@ Dim attArray As XAttribute() = { _
 }  
 root = <Root><%= attArray %></Root>  
 Console.WriteLine(root)  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
-                <Root>Some text</Root>  
+<Root>Some text</Root>  
 <Root>  
   <NewChild>n</NewChild>  
 </Root>  
@@ -782,8 +751,7 @@ Console.WriteLine(root)
  The following example creates an XML tree in a namespace.  
   
 ```csharp  
-  
-                // Create an XML tree in a namespace.  
+// Create an XML tree in a namespace.  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root",  
     new XElement(aw + "Child", "child content")  
@@ -792,8 +760,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                ' Create an XML tree in a namespace.  
+' Create an XML tree in a namespace.  
 Dim root As XElement = _   
     <Root xmlns='http://www.adventure-works.com'>  
         <Child>child content</Child>  
@@ -804,8 +771,7 @@ Console.WriteLine(root)
  This example produces the following output:  
   
 ```xml  
-  
-                <Root xmlns="http://www.adventure-works.com">  
+<Root xmlns="http://www.adventure-works.com">  
   <Child>child content</Child>  
 </Root>  
 ```  
@@ -813,8 +779,7 @@ Console.WriteLine(root)
  The following example creates an XML tree with nested namespaces.  
   
 ```csharp  
-  
-                // Create an XML tree with nested namespaces.  
+// Create an XML tree with nested namespaces.  
 XNamespace aw = "http://www.adventure-works.com";  
 XNamespace fc = "www.fourthcoffee.com";  
 XDocument root = new XDocument(  
@@ -829,8 +794,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                ' Create an XML tree with nested namespaces.  
+' Create an XML tree with nested namespaces.  
 Dim root As XDocument = _   
     <?xml version='1.0'?>  
     <Root xmlns='http://www.adventure-works.com'>  
@@ -844,8 +808,7 @@ Console.WriteLine(root)
  This example produces the following output:  
   
 ```xml  
-  
-                <Root xmlns="http://www.adventure-works.com">  
+<Root xmlns="http://www.adventure-works.com">  
   <Child xmlns="www.fourthcoffee.com">  
     <DifferentChild xmlns="http://www.adventure-works.com">other content</DifferentChild>  
   </Child>  
@@ -857,7 +820,7 @@ Console.WriteLine(root)
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public XElement (System.Xml.Linq.XName name, object[] content);" />
+      <MemberSignature Language="C#" Value="public XElement (System.Xml.Linq.XName name, params object[] content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Linq.XName name, object[] content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.#ctor(System.Xml.Linq.XName,System.Object[])" />
       <MemberType>Constructor</MemberType>
@@ -908,8 +871,7 @@ Console.WriteLine(root)
  The following example creates an XML tree. The content of the new element comes from a LINQ query.  
   
 ```csharp  
-  
-                XElement xmlTree1 = new XElement("Root",  
+XElement xmlTree1 = new XElement("Root",  
     new XElement("Child1", 1),  
     new XElement("Child2", 2),  
     new XElement("Child3", 3),  
@@ -927,8 +889,7 @@ Console.WriteLine(xmlTree2);
 ```  
   
 ```vb  
-  
-                Dim xmlTree1 As XElement = _   
+Dim xmlTree1 As XElement = _   
         <Root>  
             <Child1>1</Child1>  
             <Child2>2</Child2>  
@@ -946,14 +907,12 @@ Dim xmlTree2 As XElement = _
     </Root>  
   
 Console.WriteLine(xmlTree2)  
-  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child3>3</Child3>  
   <Child4>4</Child4>  
   <Child5>5</Child5>  
@@ -963,8 +922,7 @@ Console.WriteLine(xmlTree2)
  The following example creates an XML tree with a variety of types of content.  
   
 ```csharp  
-  
-                XElement root;  
+XElement root;  
   
 // String content:  
 root = new XElement("Root", "Some text");  
@@ -1023,8 +981,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                Dim root As XElement  
+Dim root As XElement  
   
 ' String content:  
 root = <Root>Some text</Root>  
@@ -1080,14 +1037,12 @@ Dim attArray As XAttribute() = { _
 }  
 root = <Root><%= attArray %></Root>  
 Console.WriteLine(root)  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
-                <Root>Some text</Root>  
+<Root>Some text</Root>  
 <Root>  
   <NewChild>n</NewChild>  
 </Root>  
@@ -1106,8 +1061,7 @@ Console.WriteLine(root)
  The following example creates an XML tree in a namespace.  
   
 ```csharp  
-  
-                // Create an XML tree in a namespace.  
+// Create an XML tree in a namespace.  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root",  
     new XElement(aw + "Child", "child content")  
@@ -1116,8 +1070,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                ' Create an XML tree in a namespace.  
+' Create an XML tree in a namespace.  
 Dim root As XElement = _   
     <Root xmlns='http://www.adventure-works.com'>  
         <Child>child content</Child>  
@@ -1128,8 +1081,7 @@ Console.WriteLine(root)
  This example produces the following output:  
   
 ```xml  
-  
-                <Root xmlns="http://www.adventure-works.com">  
+<Root xmlns="http://www.adventure-works.com">  
   <Child>child content</Child>  
 </Root>  
 ```  
@@ -1137,8 +1089,7 @@ Console.WriteLine(root)
  The following example creates an XML tree with nested namespaces.  
   
 ```csharp  
-  
-                // Create an XML tree with nested namespaces.  
+// Create an XML tree with nested namespaces.  
 XNamespace aw = "http://www.adventure-works.com";  
 XNamespace fc = "www.fourthcoffee.com";  
 XElement root = new XElement(aw + "Root",  
@@ -1150,8 +1101,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                ' Create an XML tree with nested namespaces.  
+' Create an XML tree with nested namespaces.  
 Dim root As XDocument = _   
     <?xml version='1.0'?>  
     <Root xmlns='http://www.adventure-works.com'>  
@@ -1160,19 +1110,16 @@ Dim root As XDocument = _
         </Child>  
     </Root>  
 Console.WriteLine(root)  
-  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
-                <Root xmlns="http://www.adventure-works.com">  
+<Root xmlns="http://www.adventure-works.com">  
   <Child xmlns="www.fourthcoffee.com">  
     <DifferentChild xmlns="http://www.adventure-works.com">other content</DifferentChild>  
   </Child>  
 </Root>  
-  
 ```  
   
  ]]></format>
@@ -1197,6 +1144,7 @@ Console.WriteLine(root)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XNode.Ancestors" />
       </Docs>
     </MemberGroup>
     <Member MemberName="AncestorsAndSelf">
@@ -1240,8 +1188,7 @@ Console.WriteLine(root)
  The following example creates an XML tree. It then finds the `GrandChild` element, and then prints the ancestors of it.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Child",  
         new XElement("GrandChild", "element content")  
     )  
@@ -1255,8 +1202,7 @@ foreach (XElement el in aas)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _   
+Dim xmlTree As XElement = _   
     <Root>  
         <Child>  
             <GrandChild>element content</GrandChild>  
@@ -1272,20 +1218,19 @@ Dim aas As IEnumerable(Of XElement) = _
 For Each el In aas  
     Console.WriteLine(el.Name)  
 Next  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
-                GrandChild  
+GrandChild  
 Child  
 Root  
 ```  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XNode.Ancestors" />
       </Docs>
     </Member>
     <Member MemberName="AncestorsAndSelf">
@@ -1332,8 +1277,7 @@ Root
  The following example uses this .  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Child",  
         new XElement("GrandChild", "element content")  
     )  
@@ -1345,8 +1289,7 @@ foreach (XElement el in aas)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _   
+Dim xmlTree As XElement = _   
     <Root>  
         <Child>  
             <GrandChild>element content</GrandChild>  
@@ -1358,18 +1301,17 @@ Dim aas As IEnumerable(Of XElement) = GC.AncestorsAndSelf("Child")
 For Each el In aas  
     Console.WriteLine(el.Name)  
 Next  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
 Child  
 ```  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XNode.Ancestors" />
       </Docs>
     </Member>
     <Member MemberName="Attribute">
@@ -1416,8 +1358,7 @@ Child
  The following example creates an element with an attribute. It then retrieves the attribute using this method.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XAttribute("Att", "attribute content")  
 );  
 XAttribute att = xmlTree.Attribute("Att");  
@@ -1425,26 +1366,22 @@ Console.WriteLine(att);
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = <Root Att="attribute content"/>  
+Dim xmlTree As XElement = <Root Att="attribute content"/>  
   
 Dim att As XAttribute = xmlTree.Attribute("Att")  
 Console.WriteLine(att)  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
 Att="attribute content"  
 ```  
   
  The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = new XElement(aw + "Root",  
     new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"),  
     new XAttribute(aw + "Att", "attribute content")  
@@ -1454,8 +1391,7 @@ Console.WriteLine(att);
 ```  
   
 ```vb  
-  
-                Imports <xmlns:aw="http://www.adventure-works.com">  
+Imports <xmlns:aw="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -1470,7 +1406,6 @@ End Module
  This example produces the following output:  
   
 ```  
-  
 aw:Att="attribute content"  
 ```  
   
@@ -1537,8 +1472,7 @@ aw:Att="attribute content"
  The following example creates an element with two attributes. It then uses this  to retrieve all attributes of the element.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XAttribute("Att1", "content1"),  
     new XAttribute("Att2", "content2")  
 );  
@@ -1550,8 +1484,7 @@ foreach (XAttribute att in attList)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = <Root Att1="content1" Att2="content2"/>  
+Dim xmlTree As XElement = <Root Att1="content1" Att2="content2"/>  
   
 Dim attList As IEnumerable(Of XAttribute) = _  
 From at In xmlTree.Attributes() _  
@@ -1560,22 +1493,19 @@ Select at
 For Each att In attList  
     Console.WriteLine(att)  
 Next  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
-                Att1="content1"  
+Att1="content1"  
 Att2="content2"  
 ```  
   
  The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = new XElement(aw + "Root",  
     new XAttribute(aw + "Att1", "content1"),  
     new XAttribute(aw + "Att2", "content2"),  
@@ -1589,8 +1519,7 @@ foreach (XAttribute att in attList)
 ```  
   
 ```vb  
-  
-                Imports <xmlns:aw="http://www.adventure-works.com">  
+Imports <xmlns:aw="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -1610,14 +1539,14 @@ End Module
  This example produces the following output:  
   
 ```  
-  
-                aw:Att1="content1"  
+aw:Att1="content1"  
 aw:Att2="content2"  
 xmlns:aw="http://www.adventure-works.com"  
 ```  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XContainer.Elements" />
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -1664,8 +1593,7 @@ xmlns:aw="http://www.adventure-works.com"
  The following example uses this .  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XAttribute("Att1", "content1"),  
     new XAttribute("Att2", "content2")  
 );  
@@ -1675,29 +1603,25 @@ foreach (XAttribute att in attList)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = <Root Att1="content1" Att2="content2"/>  
+Dim xmlTree As XElement = <Root Att1="content1" Att2="content2"/>  
   
 Dim attList As IEnumerable(Of XAttribute) = xmlTree.Attributes("Att1")  
   
 For Each att In attList  
     Console.WriteLine(att)  
 Next  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
 Att1="content1"  
 ```  
   
  The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = new XElement(aw + "Root",  
     new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"),  
     new XAttribute(aw + "Att1", "content1"),  
@@ -1709,8 +1633,7 @@ foreach (XAttribute att in attList)
 ```  
   
 ```vb  
-  
-                Imports <xmlns:aw="http://www.adventure-works.com">  
+Imports <xmlns:aw="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -1728,7 +1651,6 @@ End Module
  This example produces the following output:  
   
 ```  
-  
 aw:Att1="content1"  
 ```  
   
@@ -1775,8 +1697,7 @@ aw:Att1="content1"
  The following example creates an XML tree, and then uses this .  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     // Attributes are not nodes, so will not be returned by DescendantNodesAndSelf.  
     new XAttribute("Att1", "AttributeContent"),  
     new XElement("Child",  
@@ -1797,8 +1718,7 @@ foreach (XNode node in dnas)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _  
+Dim xmlTree As XElement = _  
     <Root Att1="AttributeContent">  
         <Child>Some text<GrandChild>element content</GrandChild>  
         </Child>  
@@ -1815,14 +1735,12 @@ For Each node In dnas
         Console.WriteLine(node)  
     End If  
 Next  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
-                Root  
+Root  
 Child  
 Some text  
 GrandChild  
@@ -1890,8 +1808,7 @@ element content
  The following example creates an XML tree, and then uses this .  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XAttribute("Att1", "AttributeContent"),  
     new XElement("Child",  
         new XText("Some text"),  
@@ -1906,8 +1823,7 @@ foreach (XElement el in das)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _  
+Dim xmlTree As XElement = _  
     <Root Att1="AttributeContent">  
         <Child>Some text  
             <GrandChild>element content</GrandChild>  
@@ -1921,14 +1837,12 @@ Dim das As IEnumerable(Of XElement) = _
 For Each el In das  
     Console.WriteLine(el.Name)  
 Next  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
-                Root  
+Root  
 Child  
 GrandChild  
 ```  
@@ -1979,8 +1893,7 @@ GrandChild
  The following example creates an XML tree, and then uses this .  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XAttribute("Att1", "AttributeContent"),  
     new XElement("Child",  
         new XText("Some text"),  
@@ -1993,8 +1906,7 @@ foreach (XElement el in das)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _  
+Dim xmlTree As XElement = _  
     <Root Att1="AttributeContent">  
         <Child>Some text  
             <GrandChild>element content</GrandChild>  
@@ -2006,13 +1918,11 @@ Dim das As IEnumerable(Of XElement) = xmlTree.DescendantsAndSelf("Child")
 For Each el In das  
     Console.WriteLine(el.Name)  
 Next  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
 Child  
 ```  
   
@@ -2094,8 +2004,7 @@ Child
  The following example uses this property.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XAttribute("Att1", 1),  
     new XAttribute("Att2", 2),  
     new XAttribute("Att3", 3)  
@@ -2104,16 +2013,13 @@ Console.WriteLine(xmlTree.FirstAttribute);
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = <Root Att1="1" Att2="2" Att3="3"/>  
+Dim xmlTree As XElement = <Root Att1="1" Att2="2" Att3="3"/>  
 Console.WriteLine(xmlTree.FirstAttribute)  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
 Att1="1"  
 ```  
   
@@ -2154,7 +2060,7 @@ Att1="1"
 ## Remarks  
  Namespace declarations may be persisted as attributes in the XML tree. These special attributes declare namespaces, including default namespaces. This method finds the namespace declaration that declares the default namespace, if there is one, and returns the <xref:System.Xml.Linq.XNamespace> for the default namespace.  
   
- If there is no attribute that declares the default namespace, then this method returns <xref:System.Xml.Linq.XNamespace.None%2A?displayProperty=fullName>.  
+ If there is no attribute that declares the default namespace, then this method returns <xref:System.Xml.Linq.XNamespace.None%2A?displayProperty=nameWithType>.  
   
  When creating XML trees using C#, even if an XML tree would be serialized with a default namespace, if the namespace is not persisted in the XML tree as an attribute, this method will not report the namespace as the default namespace.  
   
@@ -2166,15 +2072,13 @@ Att1="1"
  The following example creates an XML tree that has a default namespace. It then uses this method to retrieve the default namespace.  
   
 ```csharp  
-  
-                String xml = "<root xmlns='http://www.adventure-works.com'/>";  
+String xml = "<root xmlns='http://www.adventure-works.com'/>";  
 XElement e = XElement.Parse(xml);  
 Console.WriteLine("Default namespace: {0}", e.GetDefaultNamespace());  
 ```  
   
 ```vb  
-  
-                Imports <xmlns="http://www.adventure-works.com">  
+Imports <xmlns="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -2187,7 +2091,6 @@ End Module
  This example produces the following output:  
   
 ```  
-  
 Default namespace: http://www.adventure-works.com  
 ```  
   
@@ -2237,8 +2140,7 @@ Default namespace: http://www.adventure-works.com
  The following example creates an XML tree that has a namespace with an associated prefix. It then uses this method to retrieve the <xref:System.Xml.Linq.XNamespace> for the prefix.  
   
 ```csharp  
-  
-                XElement xmlTree = XElement.Parse("<Root xmlns:aw='http://www.adventure-works.com'/>");  
+XElement xmlTree = XElement.Parse("<Root xmlns:aw='http://www.adventure-works.com'/>");  
 XNamespace awNamespace = xmlTree.GetNamespaceOfPrefix("aw");  
 Console.WriteLine("Namespace: {0}", awNamespace);  
 ```  
@@ -2246,8 +2148,7 @@ Console.WriteLine("Namespace: {0}", awNamespace);
  When using Visual Basic, you would typically use the [GetXmlNamespace Operator](~/docs/visual-basic/language-reference/operators/getxmlnamespace-operator.md) operator, as follows  
   
 ```vb  
-  
-                Imports <xmlns:aw="http://www.adventure-works.com">  
+Imports <xmlns:aw="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -2256,13 +2157,11 @@ Module Module1
         Console.WriteLine("Namespace: {0}", awNamespace)  
     End Sub  
 End Module  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
 Namespace: http://www.adventure-works.com  
 ```  
   
@@ -2314,15 +2213,13 @@ Namespace: http://www.adventure-works.com
  The following example creates an XML tree that contains a namespace with a prefix. It then uses this method to retrieve the prefix for the namespace. Notice that this example uses the implicit conversion from string to <xref:System.Xml.Linq.XNamespace> when calling this method.  
   
 ```csharp  
-  
-                XElement xmlTree = XElement.Parse("<Root xmlns:aw='http://www.adventure-works.com'/>");  
+XElement xmlTree = XElement.Parse("<Root xmlns:aw='http://www.adventure-works.com'/>");  
 string prefix = xmlTree.GetPrefixOfNamespace("http://www.adventure-works.com");  
 Console.WriteLine("Prefix: {0}", prefix);  
 ```  
   
 ```vb  
-  
-                Imports <xmlns:aw="http://www.adventure-works.com">  
+Imports <xmlns:aw="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -2336,7 +2233,6 @@ End Module
  This example produces the following output:  
   
 ```  
-  
 Prefix: aw  
 ```  
   
@@ -2378,8 +2274,7 @@ Prefix: aw
  The following example uses this property.  
   
 ```csharp  
-  
-                XElement xmlTree1 = new XElement("Root",  
+XElement xmlTree1 = new XElement("Root",  
     new XAttribute("Att1", 1)  
 );  
 Console.WriteLine(xmlTree1.HasAttributes);  
@@ -2388,13 +2283,11 @@ Console.WriteLine(xmlTree2.HasAttributes);
 ```  
   
 ```vb  
-  
-                Dim xmlTree1 As XElement = <Root Att1="1"/>  
+Dim xmlTree1 As XElement = <Root Att1="1"/>  
 Console.WriteLine(xmlTree1.HasAttributes)  
   
 Dim xmlTree2 As XElement = <Root/>  
 Console.WriteLine(xmlTree2.HasAttributes)  
-  
 ```  
   
  This example produces the following output:  
@@ -2442,8 +2335,7 @@ False
  The following example uses this property.  
   
 ```csharp  
-  
-                XElement xmlTree1 = new XElement("Root",  
+XElement xmlTree1 = new XElement("Root",  
     new XElement("Child", 1)  
 );  
 Console.WriteLine(xmlTree1.HasElements);  
@@ -2452,8 +2344,7 @@ Console.WriteLine(xmlTree2.HasElements);
 ```  
   
 ```vb  
-  
-                Dim xmlTree1 As XElement = _   
+Dim xmlTree1 As XElement = _   
         <Root>  
             <Child>1</Child>  
         </Root>  
@@ -2461,14 +2352,12 @@ Console.WriteLine(xmlTree1.HasElements)
   
 Dim xmlTree2 As XElement = <Root>contents</Root>  
 Console.WriteLine(xmlTree2.HasElements)  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
-                True  
+True  
 False  
 ```  
   
@@ -2515,8 +2404,7 @@ False
  The following example creates a variety of XML trees, and shows the value of this property with each tree.  
   
 ```csharp  
-  
-                XElement el1 = new XElement("Root");  
+XElement el1 = new XElement("Root");  
 Console.WriteLine(el1);  
 Console.WriteLine(el1.IsEmpty);  
 Console.WriteLine();  
@@ -2534,8 +2422,7 @@ Console.WriteLine(el3.IsEmpty);
 ```  
   
 ```vb  
-  
-                Dim el1 As XElement = <Root/>  
+Dim el1 As XElement = <Root/>  
 Console.WriteLine(el1)  
 Console.WriteLine(el1.IsEmpty)  
 Console.WriteLine()  
@@ -2550,14 +2437,12 @@ Console.WriteLine()
 el3.ReplaceAll(Nothing)  
 Console.WriteLine(el3)  
 Console.WriteLine(el3.IsEmpty)  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
-                <Root />  
+<Root />  
 True  
   
 <Root>content</Root>  
@@ -2612,8 +2497,7 @@ True
  The following example creates an XML tree with three attributes. It then writes the last attribute as output.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XAttribute("Att1", 1),  
     new XAttribute("Att2", 2),  
     new XAttribute("Att3", 3)  
@@ -2622,16 +2506,13 @@ Console.WriteLine(xmlTree.LastAttribute);
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = <Root Att1="1" Att2="2" Att3="3"/>  
+Dim xmlTree As XElement = <Root Att1="1" Att2="2" Att3="3"/>  
 Console.WriteLine(xmlTree.LastAttribute)  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
 Att3="3"  
 ```  
   
@@ -2657,6 +2538,8 @@ Att3="3"
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <altmember cref="Overload:System.Xml.Linq.XElement.Parse" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Load">
@@ -2695,7 +2578,7 @@ Att3="3"
 ## Remarks  
  If you want to control load options, use the <xref:System.Xml.Linq.XElement.Load%2A> overload that takes <xref:System.Xml.Linq.LoadOptions> as a parameter.  
   
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
   
  If you have to modify <xref:System.Xml.XmlReaderSettings>, following these steps:  
   
@@ -2743,7 +2626,7 @@ Att3="3"
 ## Remarks  
  This method reads the raw XML into the XML tree. It discards all insignificant white space in the file.  
   
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
   
    
   
@@ -2751,27 +2634,23 @@ Att3="3"
  The following example loads an element from a <xref:System.IO.StringReader>.  
   
 ```csharp  
-  
-                TextReader sr = new StringReader("<Root><Child/></Root>");  
+TextReader sr = new StringReader("<Root><Child/></Root>");  
 XElement xmlTree = XElement.Load(sr);  
 sr.Close();  
 Console.WriteLine(xmlTree);  
 ```  
   
 ```vb  
-  
-                Dim sr As TextReader = New StringReader("<Root><Child/></Root>")  
+Dim sr As TextReader = New StringReader("<Root><Child/></Root>")  
 Dim xmlTree As XElement = XElement.Load(sr)  
 sr.Close()  
 Console.WriteLine(xmlTree)  
-  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child />  
 </Root>  
 ```  
@@ -2816,7 +2695,7 @@ Console.WriteLine(xmlTree)
 ## Remarks  
  This method reads the raw XML into the XML tree. It discards all insignificant white space in the file.  
   
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
   
    
   
@@ -2824,8 +2703,7 @@ Console.WriteLine(xmlTree)
  The following example creates an XML tree, saves it to a file, and then uses this method to load the <xref:System.Xml.Linq.XElement> from the file.  
   
 ```csharp  
-  
-                XElement xmlTree1 = new XElement("Root",  
+XElement xmlTree1 = new XElement("Root",  
     new XElement("Child", "content")  
 );  
 xmlTree1.Save("Tree.xml");  
@@ -2835,8 +2713,7 @@ Console.WriteLine(xmlTree2.Name);
 ```  
   
 ```vb  
-  
-                Dim xmlTree1 As XElement = _   
+Dim xmlTree1 As XElement = _   
         <Root>  
             <Child>Content</Child>  
         </Root>  
@@ -2844,18 +2721,18 @@ xmlTree1.Save("Tree.xml")
   
 Dim xmlTree2 As XElement = XElement.Load("Tree.xml")  
 Console.WriteLine(xmlTree2.Name)  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
 Root  
 ```  
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <altmember cref="Overload:System.Xml.Linq.XElement.Parse" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -2894,7 +2771,7 @@ Root
 ## Remarks  
  By creating an <xref:System.Xml.XmlNodeReader> from a DOM document, and then using the <xref:System.Xml.XmlNodeReader> to create an <xref:System.Xml.Linq.XElement>, this method can be used to create a copy of a DOM document in a LINQ to XML tree.  
   
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
   
    
   
@@ -2939,14 +2816,12 @@ Using nodeReader = New XmlNodeReader(doc)
     Dim xRoot As XElement = XElement.Load(nodeReader)  
     Console.WriteLine(xRoot)  
 End Using  
-  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child>child contents</Child>  
 </Root>  
 ```  
@@ -2991,7 +2866,7 @@ End Using
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
   
  If you have to modify <xref:System.Xml.XmlReaderSettings>, following these steps:  
   
@@ -3055,7 +2930,7 @@ End Using
   
  The line information is accurate immediately after loading the XML document. If you modify the XML tree after loading the document, the line information may become meaningless.  
   
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
   
    
   
@@ -3063,8 +2938,7 @@ End Using
  The following example loads an <xref:System.Xml.Linq.XElement> from a <xref:System.IO.StringReader> in two different ways: preserving white space, and not preserving white space. It then uses a query to determine the number of white space nodes in the resulting XML tree.  
   
 ```csharp  
-  
-                TextReader sr;  
+TextReader sr;  
 int whiteSpaceNodes;  
   
 sr = new StringReader("<Root> <Child> </Child> </Root>");  
@@ -3089,8 +2963,7 @@ Console.WriteLine("Count of white space nodes (preserving whitespace): {0}", whi
 ```  
   
 ```vb  
-  
-                Dim sr As TextReader  
+Dim sr As TextReader  
 Dim whiteSpaceNodes As Integer  
   
 sr = New StringReader("<Root> <Child> </Child> </Root>")  
@@ -3117,16 +2990,14 @@ Console.WriteLine("Count of white space nodes (preserving whitespace): {0}", whi
  This example produces the following output:  
   
 ```  
-  
-                Count of white space nodes (not preserving whitespace): 0  
+Count of white space nodes (not preserving whitespace): 0  
 Count of white space nodes (preserving whitespace): 3  
 ```  
   
  The following example loads the line information as it loads from the <xref:System.IO.TextReader>. It then prints the line information.  
   
 ```csharp  
-  
-                TextReader sr = new StringReader(  
+TextReader sr = new StringReader(  
 @"<Root>  
   <Child>  
     <GrandChild1/>  
@@ -3151,8 +3022,7 @@ foreach (XElement e in po.DescendantsAndSelf())
 ```  
   
 ```vb  
-  
-                Dim sr As TextReader = New StringReader( _  
+Dim sr As TextReader = New StringReader( _  
     "<Root>" & Environment.NewLine & _  
     "  <Child>" & Environment.NewLine & _  
     "    <GrandChild1/>" & Environment.NewLine & _  
@@ -3179,8 +3049,7 @@ Next
  This example produces the following output:  
   
 ```  
-  
-                Element Name        Line Position  
+Element Name        Line Position  
 ------------        ---- --------  
 Root                1    2  
   Child             2    4  
@@ -3242,7 +3111,7 @@ Root                1    2
   
  The base URI and the line information are accurate immediately after loading the XML document. If you modify the XML tree after loading the document, the base URI and line information may become meaningless.  
   
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
   
    
   
@@ -3250,8 +3119,7 @@ Root                1    2
  The following example loads an <xref:System.Xml.Linq.XElement> from a file in two different ways: preserving white space, and not preserving white space. It then uses a query to determine the number of white space nodes in the resulting XML tree.  
   
 ```csharp  
-  
-                XElement xmlTree1 = XElement.Parse("<Root> <Child>  </Child> </Root>", LoadOptions.PreserveWhitespace);  
+XElement xmlTree1 = XElement.Parse("<Root> <Child>  </Child> </Root>", LoadOptions.PreserveWhitespace);  
 xmlTree1.Save("Tree.xml");  
 Console.WriteLine(xmlTree1);  
   
@@ -3276,8 +3144,7 @@ Console.WriteLine("Count of white space nodes (preserving whitespace): {0}", whi
 ```  
   
 ```vb  
-  
-                Dim xmlTree1 As XElement = XElement.Parse("<Root> <Child>  </Child> </Root>", LoadOptions.PreserveWhitespace)  
+Dim xmlTree1 As XElement = XElement.Parse("<Root> <Child>  </Child> </Root>", LoadOptions.PreserveWhitespace)  
 xmlTree1.Save("Tree.xml")  
 Console.WriteLine(xmlTree1)  
   
@@ -3302,8 +3169,7 @@ Console.WriteLine("Count of white space nodes (preserving whitespace): {0}", whi
  This example produces the following output:  
   
 ```  
-  
-                <Root> <Child>  </Child> </Root>  
+<Root> <Child>  </Child> </Root>  
 Count of white space nodes (not preserving whitespace): 0  
 Count of white space nodes (preserving whitespace): 3  
 ```  
@@ -3313,8 +3179,7 @@ Count of white space nodes (preserving whitespace): 3
  This example uses the following resource file: [Sample XML File: Typical Purchase Order (LINQ to XML)](http://msdn.microsoft.com/library/0606c09f-6e43-4f8d-95c8-e8e2e08d2348).  
   
 ```csharp  
-  
-                XElement po = XElement.Load("PurchaseOrder.xml",  
+XElement po = XElement.Load("PurchaseOrder.xml",  
     LoadOptions.SetBaseUri | LoadOptions.SetLineInfo);  
 string[] splitUri = po.BaseUri.Split('/');  
 Console.WriteLine("BaseUri: {0}", splitUri[splitUri.Length - 1]);  
@@ -3335,8 +3200,7 @@ foreach (XElement e in po.DescendantsAndSelf())
 ```  
   
 ```vb  
-  
-        Dim po As XElement = XElement.Load("PurchaseOrder.xml", LoadOptions.SetBaseUri Or LoadOptions.SetLineInfo)  
+Dim po As XElement = XElement.Load("PurchaseOrder.xml", LoadOptions.SetBaseUri Or LoadOptions.SetLineInfo)  
 Dim splitUri() As String = po.BaseUri.Split("/")  
 Console.WriteLine("BaseUri: {0}", splitUri(splitUri.Length - 1))  
 Console.WriteLine()  
@@ -3359,8 +3223,7 @@ Next
  This example produces the following output:  
   
 ```  
-  
-                BaseUri: PurchaseOrder.xml  
+BaseUri: PurchaseOrder.xml  
   
 Element Name        Line Position  
 ------------        ---- --------  
@@ -3447,7 +3310,7 @@ PurchaseOrder       2    2
   
  The line information is accurate immediately after loading the XML document. If you modify the XML tree after loading the document, the line information may become meaningless.  
   
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
   
    
   
@@ -3455,8 +3318,7 @@ PurchaseOrder       2    2
  The following example loads the line information that it loads from the <xref:System.Xml.XmlReader>. It then prints the line information.  
   
 ```csharp  
-  
-                string markup =  
+string markup =  
 @"<Root>  
     <Child>  
         <GrandChild/>  
@@ -3488,8 +3350,7 @@ using (XmlReader nodeReader = XmlReader.Create(new StringReader(markup)))
 ```  
   
 ```vb  
-  
-                Dim markup As String = _  
+Dim markup As String = _  
     "<Root>" & Environment.NewLine & _  
     "    <Child>" & Environment.NewLine & _  
     "        <GrandChild/>" & Environment.NewLine & _  
@@ -3524,8 +3385,7 @@ End Using
  This example produces the following output:  
   
 ```  
-  
-                Element Name        Line Position  
+Element Name        Line Position  
 ------------        ---- --------  
 Root                1    2  
   Child             2    6  
@@ -3652,8 +3512,7 @@ Root                1    2
  The following example uses this property to determine the name of an element.  
   
 ```csharp  
-  
-                XElement el1 = new XElement("Root", "content");  
+XElement el1 = new XElement("Root", "content");  
 Console.WriteLine(el1.Name);  
   
 XNamespace ns = "http://www.adventure-works.com";  
@@ -3666,8 +3525,7 @@ Console.WriteLine(el2.Name);
 ```  
   
 ```vb  
-  
-                Imports <xmlns:aw="http://www.adventure-works.com">  
+Imports <xmlns:aw="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -3688,8 +3546,7 @@ End Module
  This example produces the following output:  
   
 ```  
-  
-                Root  
+Root  
 {http://www.adventure-works.com}Root  
 http://www.adventure-works.com  
 Root  
@@ -3738,24 +3595,20 @@ Root
  The following example uses this property to print the node type of an element.  
   
 ```csharp  
-  
-                XElement el1 = new XElement("Root", "content");  
+XElement el1 = new XElement("Root", "content");  
 Console.WriteLine(el1.NodeType);  
 Console.WriteLine();  
 ```  
   
 ```vb  
-  
-                Dim el1 As XElement = <Root>content</Root>  
+Dim el1 As XElement = <Root>content</Root>  
 Console.WriteLine(el1.NodeType.ToString())  
 Console.WriteLine()  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
 Element  
 ```  
   
@@ -3795,10 +3648,52 @@ Element
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Xml.Linq.XElement" /> to cast to <see cref="T:System.Boolean" />.</param>
+        <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Boolean" />.</summary>
+        <returns>A <see cref="T:System.Boolean" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When converting to <xref:System.Boolean> from an attribute or element, allowed values are "0", "1", and any string that produces "true" or "false" after trimming and conversion to lower case.
+  
+## Examples  
+ The following example creates some elements with boolean values. It then casts them to <xref:System.Boolean>.  
+  
+```csharp  
+XElement root = new XElement("Root",   
+    new XElement("BoolValue1", true),  
+    new XElement("BoolValue2", false)  
+);  
+bool bool1 = (bool)root.Element("BoolValue1");  
+bool bool2 = (bool)root.Element("BoolValue2");  
+Console.WriteLine("(bool)BoolValue1={0}", bool1);  
+Console.WriteLine("(bool)BoolValue2={0}", bool2);  
+```  
+  
+```vb  
+Dim root As XElement = _   
+        <Root>  
+            <BoolValue1>true</BoolValue1>  
+            <BoolValue2>false</BoolValue2>  
+        </Root>  
+Dim bool1 As Boolean = CBool(root.Element("BoolValue1"))  
+Dim bool2 As Boolean = CBool(root.Element("BoolValue2"))  
+Console.WriteLine("(bool)BoolValue1={0}", bool1)  
+Console.WriteLine("(bool)BoolValue2={0}", bool2)  
+```  
+  
+ This example produces the following output:  
+  
+```  
+(bool)BoolValue1=True  
+(bool)BoolValue2=False  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.Boolean" /> value.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3833,10 +3728,72 @@ Element
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Xml.Linq.XElement" /> to cast to <see cref="T:System.DateTime" />.</param>
+        <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.DateTime" />.</summary>
+        <returns>A <see cref="T:System.DateTime" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value space of an attribute or element that contains date and time content is closely related to the dates and times described in ISO 8601. When creating an attribute or element that contains date and time content, the attribute or element values are formatted per the W3C specification. See the W3C specification for more details.  
+  
+ Behavior is lax when casting to a <xref:System.DateTime> from an attribute or element. Even if the attribute or element value is not formatted exactly per the W3C specification, the value is appropriately converted to a <xref:System.DateTime>.  
+  
+ This conversion operator uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> to convert from a <xref:System.DateTime>.
+
+## Examples  
+ The following example creates an element with date and time content. It then casts it to <xref:System.DateTime> to retrieve the value.  
+  
+```csharp  
+// Behavior is strict when formatting an XML element or attribute from a DateTime,  
+// but behavior is lax when casting to a DateTime from an element or attribute.  
+XElement root = new XElement("Root", new DateTime(2006, 10, 6, 12, 30, 0));  
+Console.WriteLine(root);  
+  
+// Cast from a strictly formatted XML element.  
+DateTime dt = (DateTime)root;  
+Console.WriteLine("dt={0}", dt);  
+Console.WriteLine("-----");  
+  
+// If root is formatted in some different way:  
+XElement dtElement = new XElement("OrderDate", "October 6, 2006");  
+Console.WriteLine(dtElement);  
+DateTime orderDate = (DateTime)dtElement;  
+Console.WriteLine("orderDate={0:d}", orderDate);  
+```  
+  
+```vb  
+' Behavior is strict when formatting an XML element or attribute from a DateTime,  
+' but behavior is lax when casting to a DateTime from an element or attribute.  
+Dim root As XElement = <Root><%= New DateTime(2006, 10, 6, 12, 30, 0) %></Root>  
+Console.WriteLine(root)  
+  
+' Cast from a strictly formatted XML element.  
+Dim dt As DateTime = CType(root, DateTime)  
+Console.WriteLine("dt={0}", dt)  
+Console.WriteLine("-----")  
+  
+' If root is formatted in some different way:  
+Dim dtElement As XElement = <OrderDate>October 6, 2006</OrderDate>  
+Console.WriteLine(dtElement)  
+Dim orderDate As DateTime = CType(dtElement, DateTime)  
+Console.WriteLine("orderDate={0:d}", orderDate)  
+```  
+  
+ This example produces the following output:  
+  
+```  
+<Root>2006-10-06T12:30:00</Root>  
+dt=10/6/2006 12:30:00 PM  
+-----  
+<OrderDate>October 6, 2006</OrderDate>  
+orderDate=10/6/2006  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.DateTime" /> value.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3871,10 +3828,52 @@ Element
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Xml.Linq.XElement" /> to cast to <see cref="T:System.DateTimeOffset" />.</param>
+        <summary>Cast the value of this <see cref="T:System.Xml.Linq.XAttribute" /> to a <see cref="T:System.DateTimeOffset" />.</summary>
+        <returns>A <see cref="T:System.DateTimeOffset" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This conversion operator uses the <xref:System.Xml.XmlConvert> class to do the conversion.  
+  
+## Examples  
+ The following example creates an element with date and time content. It then casts to <xref:System.DateTimeOffset> to retrieve the value.  
+  
+```csharp  
+XElement root = new XElement("Root",  
+    new XElement("Child", new DateTimeOffset(new DateTime(2006, 10, 6, 12, 30, 0)))  
+);  
+Console.WriteLine(root);  
+  
+DateTimeOffset dt = (DateTimeOffset)root.Element("Child");  
+Console.WriteLine("dt={0}", dt);  
+```  
+  
+```vb  
+Dim root As XElement = _  
+    <Root>  
+        <Child><%= New DateTimeOffset(New DateTime(2006, 10, 6, 12, 30, 0)) %></Child>  
+    </Root>  
+Console.WriteLine(root)  
+  
+Dim dt As DateTimeOffset = CType(root.<Child>(0), DateTimeOffset)  
+Console.WriteLine("dt={0}", dt)  
+```  
+  
+ This example produces the following output:  
+  
+```  
+<Root>  
+  <Child>2006-10-06T12:30:00-07:00</Child>  
+</Root>  
+dt=10/6/2006 12:30:00 PM -07:00  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.DateTimeOffset" /> value.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3909,10 +3908,38 @@ Element
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Xml.Linq.XElement" /> to cast to <see cref="T:System.Decimal" />.</param>
+        <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Decimal" />.</summary>
+        <returns>A <see cref="T:System.Decimal" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+  
+## Examples  
+ The following example creates an element with a decimal value. It then retrieves the value of the attribute by casting to <xref:System.Decimal>.  
+  
+```csharp  
+XElement root = new XElement("Root", "79228162514264337593543950335");  
+decimal value = (decimal)root;  
+Console.WriteLine("value={0}", value);  
+```  
+  
+```vb  
+Dim root As XElement = <Root>79228162514264337593543950335</Root>  
+Dim value As Decimal = CDec(root)  
+Console.WriteLine("value={0}", value)  
+  
+```  
+  
+ This example produces the following output:  
+  
+```  
+value=79228162514264337593543950335  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.Decimal" /> value.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3947,10 +3974,36 @@ Element
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Xml.Linq.XElement" /> to cast to <see cref="T:System.Double" />.</param>
+        <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Double" />.</summary>
+        <returns>A <see cref="T:System.Double" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+## Examples  
+ The following example creates an attribute with `double` content. It then retrieves the value by casting to <xref:System.Double>.  
+  
+```csharp  
+XElement root = new XElement("Root", 1.79769313486231e308);  
+double value = (double)root;  
+Console.WriteLine("value={0}", value);  
+```  
+  
+```vb  
+Dim root As XElement = <Root>1.79769313486231E+308</Root>  
+Dim value As Double = CDbl(root)  
+Console.WriteLine("value={0}", value)  
+```  
+  
+ This example produces the following output:  
+  
+```  
+value=1.79769313486231E+308  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.Double" /> value.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3985,10 +4038,37 @@ Element
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Xml.Linq.XElement" /> to cast to <see cref="T:System.Guid" />.</param>
+        <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Guid" />.</summary>
+        <returns>A <see cref="T:System.Guid" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+  
+## Examples  
+ The following example creates an element with a guid as content. It then retrieves the value by casting to <xref:System.Guid>.  
+  
+```csharp  
+XElement root = new XElement("Root", new Guid("3c1cc55b-baff-4b7a-9d17-077af3aa5730"));  
+Guid value = (Guid)root;  
+Console.WriteLine("value={0}", value);  
+```  
+  
+```vb  
+Dim root As XElement = <Root><%= New Guid("3c1cc55b-baff-4b7a-9d17-077af3aa5730") %></Root>  
+Dim value As Guid = CType(root, Guid)  
+Console.WriteLine("value={0}", value)  
+```  
+  
+ This example produces the following output:  
+  
+```  
+value=3c1cc55b-baff-4b7a-9d17-077af3aa5730  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.Guid" /> value.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4023,10 +4103,37 @@ Element
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Xml.Linq.XElement" /> to cast to <see cref="T:System.Int32" />.</param>
+        <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to an <see cref="T:System.Int32" />.</summary>
+        <returns>A <see cref="T:System.Int32" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+  
+## Examples  
+ The following example creates an element with an integer as content. It then retrieves the value by casting to <xref:System.Int32>.  
+  
+```csharp  
+XElement root = new XElement("Root", 2147483647);  
+int value = (int)root;  
+Console.WriteLine("value={0}", value);  
+```  
+  
+```vb  
+Dim root As XElement = <Root>2147483647</Root>  
+Dim value As Integer = CInt(root)  
+Console.WriteLine("value={0}", value)  
+```  
+  
+ This example produces the following output:  
+  
+```  
+value=2147483647  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.Int32" /> value.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4061,10 +4168,37 @@ Element
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Xml.Linq.XElement" /> to cast to <see cref="T:System.Int64" />.</param>
+        <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to an <see cref="T:System.Int64" />.</summary>
+        <returns>A <see cref="T:System.Int64" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+  
+## Examples  
+ The following example creates an element with a long integer as content. It then retrieves the value of the element by casting to <xref:System.Int64>.  
+  
+```csharp  
+XElement root = new XElement("Root", 9223372036854775807);  
+long value = (long)root;  
+Console.WriteLine("value={0}", value);  
+```  
+  
+```vb  
+Dim root As XElement = <Root>9223372036854775807</Root>  
+Dim value As Long = CLng(root)  
+Console.WriteLine("value={0}", value)  
+```  
+  
+ This example produces the following output:  
+  
+```  
+value=9223372036854775807  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.Int64" /> value.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4099,10 +4233,51 @@ Element
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Xml.Linq.XElement" /> to cast to <see cref="T:System.Nullable`1" /> of <see cref="T:System.Boolean" />.</param>
+        <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.Boolean" />.</summary>
+        <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Boolean" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When converting to <xref:System.Nullable%601> of <xref:System.Boolean> from an attribute or element, allowed values are "0", "1", and any string that produces "true" or "false" after trimming and conversion to lower case.
+  
+## Examples  
+ The following example creates an element with boolean content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Boolean>.  
+  
+```csharp  
+XElement root = new XElement("Root",   
+    new XElement("BoolValue1", true),  
+    new XElement("BoolValue2", false));  
+bool? bool1 = (bool?)root.Element("BoolValue1");  
+bool? bool2 = (bool?)root.Element("BoolValue2");  
+Console.WriteLine("Nullable Boolean: value1={0}", bool1);  
+Console.WriteLine("Nullable Boolean: value2={0}", bool2);  
+```  
+  
+```vb  
+Dim root As XElement = _   
+        <Root>  
+            <BoolValue1>true</BoolValue1>  
+            <BoolValue2>false</BoolValue2>  
+        </Root>  
+  
+Dim value1 As Nullable(Of Boolean) = CType(root.Element("BoolValue1"), Nullable(Of Boolean))  
+Dim value2 As Nullable(Of Boolean) = CType(root.Element("BoolValue2"), Nullable(Of Boolean))  
+Console.WriteLine("Nullable Boolean: value1={0}", IIf(value1.HasValue, value1.ToString(), "null"))  
+Console.WriteLine("Nullable Boolean: value2={0}", IIf(value2.HasValue, value2.ToString(), "null"))  
+```  
+  
+ This example produces the following output:  
+  
+```  
+Nullable Boolean: value1=True  
+Nullable Boolean: value2=False  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.Boolean" /> value.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4137,10 +4312,48 @@ Element
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Xml.Linq.XElement" /> to cast to <see cref="T:System.Nullable`1" /> of <see cref="T:System.DateTime" />.</param>
+        <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.DateTime" />.</summary>
+        <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.DateTime" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value space of an attribute or element that contains date and time content is closely related to the dates and times described in ISO 8601. When creating an attribute or element that contains date and time content, the attribute or element values are formatted per the W3C specification. See the W3C specification for more details.  
+  
+ The behavior is lax when casting to a <xref:System.Nullable%601> of <xref:System.DateTime> from an attribute or element. Even if the attribute or element value is not formatted exactly per the W3C specification, the value is appropriately converted to a <xref:System.Nullable%601> of <xref:System.DateTime>.  
+  
+ This conversion operator uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> to convert from a <xref:System.DateTime>.
+  
+## Examples  
+ The following example creates an element with a date and time as content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.DateTime>.  
+  
+```csharp
+XElement root = new XElement("Root",  
+    new XElement("Value", new DateTime(2006, 10, 6, 12, 30, 0))  
+);  
+DateTime? value = (DateTime?)root.Element("Value");  
+Console.WriteLine("Nullable DateTime: value={0}", value == null ? "null" : value.ToString());  
+```  
+  
+```vb  
+Dim root As XElement = _   
+    <Root>  
+        <Value><%= New DateTime(2006, 10, 6, 12, 30, 0) %></Value>  
+    </Root>  
+Dim value As Nullable(Of DateTime) = CType(root.Element("Value"), Nullable(Of DateTime))  
+Console.WriteLine("Nullable DateTime: value={0}", IIf(value.HasValue, value.ToString(), "null"))  
+```  
+  
+ This example produces the following output:  
+  
+```  
+Nullable DateTime: value=10/6/2006 12:30:00 PM  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.DateTime" /> value.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4175,10 +4388,51 @@ Element
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Xml.Linq.XElement" /> to cast to an <see cref="T:System.Nullable`1" /> of <see cref="T:System.DateTimeOffset" />.</param>
+        <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.DateTimeOffset" />.</summary>
+        <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.DateTimeOffset" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This conversion operator uses the <xref:System.Xml.XmlConvert> class to do the conversion.
+  
+## Examples  
+ The following example creates an element with date and time content. It then casts to <xref:System.Nullable%601> of <xref:System.DateTimeOffset> to retrieve the value.  
+  
+```csharp  
+XElement root = new XElement("Root",  
+    new XElement("Child", new DateTimeOffset(new DateTime(2006, 10, 6, 12, 30, 0)))  
+);  
+Console.WriteLine(root);  
+  
+DateTimeOffset? dt = (DateTimeOffset?)root.Element("Child");  
+Console.WriteLine("dt={0}", dt);  
+```  
+  
+```vb  
+Dim root As XElement = _  
+    <Root>  
+        <Child><%= New DateTimeOffset(New DateTime(2006, 10, 6, 12, 30, 0)) %></Child>  
+    </Root>  
+Console.WriteLine(root)  
+  
+Dim dt As Nullable(Of DateTimeOffset) = CType(root.<Child>(0), Nullable(Of DateTimeOffset))  
+Console.WriteLine("dt={0}", dt)  
+```  
+  
+ This example produces the following output:  
+  
+```  
+<Root>  
+  <Child>2006-10-06T12:30:00-07:00</Child>  
+</Root>  
+dt=10/6/2006 12:30:00 PM -07:00  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.DateTimeOffset" /> value.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4213,10 +4467,41 @@ Element
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Xml.Linq.XElement" /> to cast to <see cref="T:System.Nullable`1" /> of <see cref="T:System.Decimal" />.</param>
+        <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.Decimal" />.</summary>
+        <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Decimal" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+  
+## Examples  
+ The following example creates an element with decimal content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Decimal>.  
+  
+```csharp  
+XElement root = new XElement("Root",  
+    new XElement("Value", "79228162514264337593543950335")  
+);  
+decimal? value = (decimal?)root.Element("Value");  
+Console.WriteLine("Nullable decimal: value={0}", value == null ? "null" : value.ToString());  
+```  
+  
+```vb  
+Dim root As XElement = _   
+    <Root>  
+        <Value>79228162514264337593543950335</Value>  
+    </Root>  
+Dim value As Nullable(Of Decimal) = CType(root.Element("Value"), Nullable(Of Decimal))  
+Console.WriteLine("Nullable decimal: value={0}", IIf(value.HasValue, value.ToString(), "null"))  
+```  
+  
+ This example produces the following output:  
+  
+```  
+Nullable decimal: value=79228162514264337593543950335  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.Decimal" /> value.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4251,10 +4536,42 @@ Element
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Xml.Linq.XElement" /> to cast to <see cref="T:System.Nullable`1" /> of <see cref="T:System.Double" />.</param>
+        <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.Double" />.</summary>
+        <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Double" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Examples  
+ The following example creates an element with double precision floating point content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Double>.  
+  
+```csharp  
+XElement root = new XElement("Root",  
+    new XElement("Value", 1.79769313486231e308)  
+);  
+double? value = (double?)root.Element("Value");  
+Console.WriteLine("Nullable double: value={0}", value == null ? "null" : value.ToString());  
+```  
+  
+```vb  
+Dim root As XElement = _  
+        <Root>  
+            <Value>1.79769313486231e308</Value>  
+        </Root>  
+  
+Dim value As Nullable(Of Double) = CType(root.Element("Value"), Nullable(Of Double))  
+Console.WriteLine("Nullable double: value={0}", IIf(value.HasValue, value.ToString(), "null"))  
+```  
+  
+ This example produces the following output:  
+  
+```  
+Nullable double: value=1.79769313486231E+308  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.Double" /> value.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4289,10 +4606,41 @@ Element
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Xml.Linq.XElement" /> to cast to <see cref="T:System.Nullable`1" /> of <see cref="T:System.Guid" />.</param>
+        <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.Guid" />.</summary>
+        <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Guid" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Examples  
+ The following example creates an element with guid content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Guid>.  
+  
+```csharp  
+XElement root = new XElement("Root",  
+    new XElement("Value", new Guid("3c1cc55b-baff-4b7a-9d17-077af3aa5730"))  
+);  
+Guid? value = (Guid?)root.Element("Value");  
+Console.WriteLine("Nullable Guid: value={0}", value == null ? "null" : value.ToString());  
+```  
+  
+```vb  
+Dim root As XElement = _   
+    <Root>  
+        <Value><%= New Guid("3c1cc55b-baff-4b7a-9d17-077af3aa5730") %></Value>  
+    </Root>  
+Dim value As Nullable(Of Guid) = CType(root.Element("Value"), Nullable(Of Guid))  
+Console.WriteLine("Nullable Guid: value={0}", IIf(value.HasValue, value.ToString(), "null"))  
+```  
+  
+ This example produces the following output:  
+  
+```  
+Nullable Guid: value=3c1cc55b-baff-4b7a-9d17-077af3aa5730  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.Guid" /> value.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4327,10 +4675,42 @@ Element
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Xml.Linq.XElement" /> to cast to <see cref="T:System.Nullable`1" /> of <see cref="T:System.Int32" />.</param>
+        <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.Int32" />.</summary>
+        <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Int32" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Examples  
+ The following example creates an element with unsigned integer content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Int32>.  
+  
+```csharp  
+XElement root = new XElement("Root",   
+    new XElement("Value", 2147483647)  
+);  
+int? value = (int?)root.Element("Value");  
+Console.WriteLine("Nullable integer: value={0}", value == null ? "null" : value.ToString());  
+```  
+  
+```vb  
+Dim root As XElement = _   
+        <Root>  
+            <Value>2147483647</Value>  
+        </Root>  
+Dim value As Nullable(Of Integer) = CType(root.Element("Value"), Nullable(Of Integer))  
+Console.WriteLine("Nullable integer: value={0}", IIf(value.HasValue, value.ToString(), "null"))  
+  
+```  
+  
+ This example produces the following output:  
+  
+```  
+Nullable integer: value=2147483647  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.Int32" /> value.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4365,10 +4745,41 @@ Element
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Xml.Linq.XElement" /> to cast to <see cref="T:System.Nullable`1" /> of <see cref="T:System.Int64" />.</param>
+        <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.Int64" />.</summary>
+        <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Int64" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Examples  
+ The following example creates an element with long integer content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Int64>.  
+  
+```csharp  
+XElement root = new XElement("Root",    
+    new XElement("Value", 9223372036854775807)  
+);  
+ulong? value = (ulong?)root.Element("Value");  
+Console.WriteLine("Nullable ulong: value={0}", value == null ? "null" : value.ToString());  
+```  
+  
+```vb  
+Dim root As XElement = _   
+        <Root>  
+            <Value>9223372036854775807</Value>  
+        </Root>  
+Dim value As Nullable(Of ULong) = CType(root.Element("Value"), Nullable(Of ULong))  
+Console.WriteLine("Nullable ulong: value={0}", IIf(value.HasValue, value.ToString(), "null"))  
+```  
+  
+ This example produces the following output:  
+  
+```  
+Nullable ulong: value=9223372036854775807  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.Int64" /> value.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4403,10 +4814,41 @@ Element
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Xml.Linq.XElement" /> to cast to <see cref="T:System.Nullable`1" /> of <see cref="T:System.Single" />.</param>
+        <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.Single" />.</summary>
+        <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.Single" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Examples  
+ The following example creates an element with single precision floating point content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.Single>.  
+  
+```csharp  
+XElement root = new XElement("Root",   
+    new XElement("Value", 3.402823e38)  
+);  
+float? value = (float?)root.Element("Value");  
+Console.WriteLine("Nullable Single: value={0}", value == null ? "null" : value.ToString());  
+```  
+  
+```vb  
+Dim root As XElement = _   
+        <Root>  
+            <Value>3.402823e38</Value>  
+        </Root>  
+Dim value As Nullable(Of Single) = CType(root.Element("Value"), Nullable(Of Single))  
+Console.WriteLine("Nullable Single: value={0}", IIf(value.HasValue, value.ToString(), "null"))  
+```  
+  
+ This example produces the following output:  
+  
+```  
+Nullable Single: value=3.402823E+38  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.Single" /> value.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4441,10 +4883,46 @@ Element
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Xml.Linq.XElement" /> to cast to <see cref="T:System.Nullable`1" /> of <see cref="T:System.TimeSpan" />.</param>
+        <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.TimeSpan" />.</summary>
+        <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.TimeSpan" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value space of an attribute or element that contains time span content is closely related to duration content as described in ISO 8601. When creating an attribute or element that contains time span content, the attribute or element values are formatted per the W3C specification. Please see the W3C specification for more details.  
+  
+ Behavior is lax when casting to a <xref:System.Nullable%601> of <xref:System.TimeSpan> from an attribute or element. Even if the attribute or element value is not formatted exactly per the W3C specification, the value is appropriately converted to a <xref:System.Nullable%601> of <xref:System.TimeSpan>.
+  
+## Examples  
+ The following example creates an element with time span content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.TimeSpan>.  
+  
+```csharp  
+XElement root = new XElement("Root",  
+    new XElement("Value", new TimeSpan(1, 5, 30))  
+);  
+TimeSpan? value = (TimeSpan?)root.Element("Value");  
+Console.WriteLine("Nullable TimeSpan: value={0}", value == null ? "null" : value.ToString());  
+```  
+  
+```vb  
+Dim root As XElement = _  
+    <Root>  
+        <Value><%= New TimeSpan(1, 5, 30) %></Value>  
+    </Root>  
+Dim value As Nullable(Of TimeSpan) = CType(root.Element("Value"), Nullable(Of TimeSpan))  
+Console.WriteLine("Nullable TimeSpan: value={0}", IIf(value.HasValue, value.ToString(), "null"))  
+```  
+  
+ This example produces the following output:  
+  
+```  
+Nullable TimeSpan: value=01:05:30  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.TimeSpan" /> value.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4479,10 +4957,41 @@ Element
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Xml.Linq.XElement" /> to cast to <see cref="T:System.Nullable`1" /> of <see cref="T:System.UInt32" />.</param>
+        <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.UInt32" />.</summary>
+        <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.UInt32" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Examples  
+ The following example creates an element with unsigned integer content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.UInt32>.  
+  
+```csharp  
+XElement root = new XElement("Root",   
+    new XElement("Value", 4294967295)  
+);  
+uint? value = (uint?)root.Element("Value");  
+Console.WriteLine("Nullable uint: value={0}", value == null ? "null" : value.ToString());  
+```  
+  
+```vb  
+Dim root As XElement = _   
+        <Root>  
+            <Value>4294967295</Value>  
+        </Root>  
+Dim value As Nullable(Of UInteger) = CType(root.Element("Value"), Nullable(Of UInteger))  
+Console.WriteLine("Nullable uint: value={0}", IIf(value.HasValue, value.ToString(), "null"))  
+```  
+  
+ This example produces the following output:  
+  
+```  
+Nullable uint: value=4294967295  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.UInt32" /> value.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4517,10 +5026,42 @@ Element
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Xml.Linq.XElement" /> to cast to <see cref="T:System.Nullable`1" /> of <see cref="T:System.UInt64" />.</param>
+        <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Nullable`1" /> of <see cref="T:System.UInt64" />.</summary>
+        <returns>A <see cref="T:System.Nullable`1" /> of <see cref="T:System.UInt64" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Examples  
+ The following example creates an element with unsigned long integer content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.UInt64>.  
+  
+```csharp  
+XElement root = new XElement("Root",   
+    new XElement("Value", 9223372036854775807)  
+);  
+ulong? value = (ulong?)root.Element("Value");  
+Console.WriteLine("Nullable ulong: value={0}", value == null ? "null" : value.ToString());  
+```  
+  
+```vb  
+Dim root As XElement = _   
+        <Root>  
+            <Value>9223372036854775807</Value>  
+        </Root>  
+  
+Dim value As Nullable(Of ULong) = CType(root.Element("Value"), Nullable(Of ULong))  
+Console.WriteLine("Nullable ulong: value={0}", IIf(value.HasValue, value.ToString(), "null"))  
+```  
+  
+ This example produces the following output:  
+  
+```  
+Nullable ulong: value=9223372036854775807  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.UInt64" /> value.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4555,10 +5096,37 @@ Element
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Xml.Linq.XElement" /> to cast to <see cref="T:System.Single" />.</param>
+        <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.Single" />.</summary>
+        <returns>A <see cref="T:System.Single" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+  
+## Examples  
+ The following example creates an element with single precision floating point content. It then retrieves the value by casting to <xref:System.Single>.  
+  
+```csharp  
+XElement root = new XElement("Root", 3.402823e38);  
+float value = (float)root;  
+Console.WriteLine("value={0}", value);  
+```  
+  
+```vb  
+Dim root As XElement = <Root>3.402823E+38</Root>  
+Dim value As Single = CSng(root)  
+Console.WriteLine("value={0}", value)  
+```  
+  
+ This example produces the following output:  
+  
+```  
+value=3.402823E+38  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.Single" /> value.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4593,10 +5161,36 @@ Element
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Xml.Linq.XElement" /> to cast to <see cref="T:System.String" />.</param>
+        <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.String" />.</summary>
+        <returns>A <see cref="T:System.String" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Xml.Linq.XElement> has children, the concatenated string value of all of the element's text and descendant's text is returned.  
+  
+## Examples  
+ The following example creates an element with string content. It then retrieves the value by casting to <xref:System.String>.  
+  
+```csharp  
+XElement root = XElement.Parse("<Root>abc <b>def </b>ghi</Root>");  
+Console.WriteLine("(string)root={0}", (string)root);  
+```  
+  
+```vb  
+Dim root As XElement = <Root>abc <b>def </b>ghi</Root>  
+Console.WriteLine("(string)root={0}", root.Value)  
+```  
+  
+ This example produces the following output:  
+  
+```  
+(string)root=abc def ghi  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4631,10 +5225,42 @@ Element
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Xml.Linq.XElement" /> to cast to <see cref="T:System.TimeSpan" />.</param>
+        <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.TimeSpan" />.</summary>
+        <returns>A <see cref="T:System.TimeSpan" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value space of an attribute or element that contains time span content is closely related to duration content as described in ISO 8601. When creating an attribute or element that contains time span content, the attribute or element values are formatted per the W3C specification. Please see the W3C specification for more details.  
+  
+ Behavior is lax when casting to a <xref:System.TimeSpan> from an attribute or element. Even if the attribute or element value is not formatted exactly per the W3C specification, the value is appropriately converted to a <xref:System.TimeSpan>.
+  
+## Examples  
+ The following example creates an element with time span content. It then retrieves the value by casting to <xref:System.TimeSpan>.  
+  
+```csharp  
+XElement root = new XElement("Root", new TimeSpan(1, 5, 30));  
+TimeSpan value = (TimeSpan)root;  
+Console.WriteLine("value={0}", value);  
+```  
+  
+```vb  
+Dim root As XElement = <Root><%= New TimeSpan(1, 5, 30) %></Root>  
+Dim value As TimeSpan = CType(root, TimeSpan)  
+Console.WriteLine("value={0}", value)  
+```  
+  
+ This example produces the following output:  
+  
+```  
+value=01:05:30  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.TimeSpan" /> value.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4669,10 +5295,37 @@ Element
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Xml.Linq.XElement" /> to cast to <see cref="T:System.UInt32" />.</param>
+        <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.UInt32" />.</summary>
+        <returns>A <see cref="T:System.UInt32" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Examples  
+ The following example creates an element with unsigned integer content. It then retrieves the value by casting to <xref:System.UInt32>.  
+  
+```csharp  
+XElement root = new XElement("Root", 4294967295);  
+uint value = (uint)root;  
+Console.WriteLine("value={0}", value);  
+```  
+  
+```vb  
+Dim root As XElement = <Root>4294967295</Root>  
+Dim value As UInteger = CUInt(root)  
+Console.WriteLine("value={0}", value)  
+```  
+  
+ This example produces the following output:  
+  
+```  
+value=4294967295  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.UInt32" /> value.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4707,10 +5360,37 @@ Element
         <Parameter Name="element" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Xml.Linq.XElement" /> to cast to <see cref="T:System.UInt64" />.</param>
+        <summary>Cast the value of this <see cref="T:System.Xml.Linq.XElement" /> to a <see cref="T:System.UInt64" />.</summary>
+        <returns>A <see cref="T:System.UInt64" /> that contains the content of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+  
+## Examples  
+ The following example creates an element with unsigned long integer content. It then retrieves the value by casting to <xref:System.UInt64>.  
+  
+```csharp  
+XElement root = new XElement("Root", 18446744073709551615);  
+ulong value = (ulong)root;  
+Console.WriteLine("value={0}", value);  
+```  
+  
+```vb  
+Dim root As XElement = <Root>18446744073709551615</Root>  
+Dim value As ULong = CULng(root)  
+Console.WriteLine("value={0}", value)  
+```  
+  
+ This example produces the following output:  
+  
+```  
+value=18446744073709551615  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.UInt64" /> value.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -4749,7 +5429,7 @@ Element
 ## Remarks  
  This method does not preserve white space. If you want to preserve white space in the XML tree, use the overload of the <xref:System.Xml.Linq.XElement.Parse%2A> method that takes <xref:System.Xml.Linq.LoadOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
   
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
   
    
   
@@ -4757,22 +5437,19 @@ Element
  The following example creates a string that contains XML. It then parses the string into an <xref:System.Xml.Linq.XElement>.  
   
 ```csharp  
-  
-                XElement xmlTree = XElement.Parse("<Root> <Child> </Child> </Root>");  
+XElement xmlTree = XElement.Parse("<Root> <Child> </Child> </Root>");  
 Console.WriteLine(xmlTree);  
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = <Root><Child></Child></Root>  
+Dim xmlTree As XElement = <Root><Child></Child></Root>  
 Console.WriteLine(xmlTree)  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child></Child>  
 </Root>  
 ```  
@@ -4833,7 +5510,7 @@ Console.WriteLine(xmlTree)
   
  The line information is accurate immediately after loading the XML document. If you modify the XML tree after loading the document, the line information may become meaningless.  
   
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
   
    
   
@@ -4841,8 +5518,7 @@ Console.WriteLine(xmlTree)
  The following example parses a string into an <xref:System.Xml.Linq.XElement> in two different ways: preserving white space, and not preserving white space. It then uses a query to determine the number of white space nodes in the resulting XML tree.  
   
 ```csharp  
-  
-                int whiteSpaceNodes;  
+int whiteSpaceNodes;  
   
 XElement xmlTree1 = XElement.Parse("<Root> <Child> </Child> </Root>",  
     LoadOptions.None);  
@@ -4866,8 +5542,7 @@ Console.WriteLine("Count of white space nodes (preserving whitespace): {0}",
 ```  
   
 ```vb  
-  
-                Dim whiteSpaceNodes As Integer  
+Dim whiteSpaceNodes As Integer  
   
 Dim xmlTree1 As XElement = XElement.Parse("<Root> <Child> </Child> </Root>", LoadOptions.None)  
 whiteSpaceNodes = xmlTree1 _  
@@ -4889,16 +5564,14 @@ Console.WriteLine("Count of white space nodes (preserving whitespace): {0}", whi
  This example produces the following output:  
   
 ```  
-  
-                Count of white space nodes (not preserving whitespace): 0  
+Count of white space nodes (not preserving whitespace): 0  
 Count of white space nodes (preserving whitespace): 3  
 ```  
   
  The following example retains line information as it parses the string.  
   
 ```csharp  
-  
-                string markup =  
+string markup =  
 @"<Root>  
     <Child>  
         <GrandChild/>  
@@ -4922,8 +5595,7 @@ foreach (XElement e in xRoot.DescendantsAndSelf())
 ```  
   
 ```vb  
-  
-                Dim markup As String = _  
+Dim markup As String = _  
 "<Root>" & Environment.NewLine & _  
 "    <Child>" & Environment.NewLine & _  
 "        <GrandChild/>" & Environment.NewLine & _  
@@ -4950,8 +5622,7 @@ Next
  This example produces the following output:  
   
 ```  
-  
-                Element Name        Line Position  
+Element Name        Line Position  
 ------------        ---- --------  
 Root                1    2  
   Child             2    6  
@@ -5000,8 +5671,7 @@ Root                1    2
  The following example creates an element with attributes and child elements. It then calls this method to remove both the attributes and the child elements.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att1", 1),  
     new XAttribute("Att2", 2),  
     new XAttribute("Att3", 3),  
@@ -5014,8 +5684,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = _   
+Dim root As XElement = _   
         <Root Attr1="1" Attr2="2" Attr3="3">  
             <Child1>1</Child1>  
             <Child2>2</Child2>  
@@ -5029,12 +5698,13 @@ Console.WriteLine(root)
  This example produces the following output:  
   
 ```xml  
-  
 <Root />  
 ```  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XElement.RemoveAttributes" />
+        <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAttributes">
@@ -5075,8 +5745,7 @@ Console.WriteLine(root)
  The following example creates an element with attributes and child elements. It then calls this method to remove the attributes. The child elements remain.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att1", 1),  
     new XAttribute("Att2", 2),  
     new XAttribute("Att3", 3),  
@@ -5089,8 +5758,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = _   
+Dim root As XElement = _   
     <Root Attr1="1" Attr2="2" Attr3="3">  
         <Child1>1</Child1>  
         <Child2>2</Child2>  
@@ -5104,8 +5772,7 @@ Console.WriteLine(root)
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child1>1</Child1>  
   <Child2>2</Child2>  
   <Child3>3</Child3>  
@@ -5114,6 +5781,8 @@ Console.WriteLine(root)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XElement.RemoveAttributes" />
+        <altmember cref="M:System.Xml.Linq.XElement.RemoveAll" />
       </Docs>
     </Member>
     <MemberGroup MemberName="ReplaceAll">
@@ -5140,8 +5809,7 @@ Console.WriteLine(root)
  The following example passes the results of a LINQ query to this method, replacing the contents of an element with the query results. It queries the element that is having its contents replaced.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Data", 1),  
     new XElement("Data", 2),  
     new XElement("Data", 3),  
@@ -5162,8 +5830,7 @@ Console.WriteLine(xmlTree);
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _  
+Dim xmlTree As XElement = _  
     <Root>  
         <Data>1</Data>  
         <Data>2</Data>  
@@ -5182,14 +5849,12 @@ xmlTree.ReplaceAll( _
 )  
   
 Console.WriteLine(xmlTree)  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
-                <Root>  
+<Root>  
   <Data>1</Data>  
   <Data>2</Data>  
   <Data>3</Data>  
@@ -5255,8 +5920,7 @@ Console.WriteLine(xmlTree)
  The following example uses this method.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XElement("Child", "child content")  
 );  
   
@@ -5313,8 +5977,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = _   
+Dim root As XElement = _   
     <Root>  
         <Child>child content</Child>  
     </Root>  
@@ -5369,14 +6032,12 @@ New XAttribute("NewAtt3", 3) _
 }  
 root.ReplaceAll(attArray)  
 Console.WriteLine(root)  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
-                <Root>  
+<Root>  
   <NewChild>n</NewChild>  
 </Root>  
 <Root NewAttribute="n" />  
@@ -5397,7 +6058,7 @@ Console.WriteLine(root)
       </Docs>
     </Member>
     <Member MemberName="ReplaceAll">
-      <MemberSignature Language="C#" Value="public void ReplaceAll (object[] content);" />
+      <MemberSignature Language="C#" Value="public void ReplaceAll (params object[] content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReplaceAll(object[] content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.ReplaceAll(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -5449,8 +6110,7 @@ Console.WriteLine(root)
  The following example passes the results of a LINQ query to this method, replacing the contents of an element with the query results.  
   
 ```csharp  
-  
-                XElement xmlTree1 = new XElement("Root",  
+XElement xmlTree1 = new XElement("Root",  
     new XElement("Child1", 1),  
     new XElement("Child2", 2),  
     new XElement("Child3", 3),  
@@ -5472,8 +6132,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                Dim xmlTree1 As XElement = _   
+Dim xmlTree1 As XElement = _   
         <Root>  
             <Child1>1</Child1>  
             <Child2>2</Child2>  
@@ -5494,14 +6153,12 @@ root.ReplaceAll( _
 )  
   
 Console.WriteLine(root)  
-  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child3>3</Child3>  
   <Child4>4</Child4>  
   <Child5>5</Child5>  
@@ -5534,8 +6191,7 @@ Console.WriteLine(root)
  The following example creates an element with three attributes. It then uses this method to replace all of the attributes of the element with a single attribute.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att1", 1),  
     new XAttribute("Att2", 2),  
     new XAttribute("Att3", 3)  
@@ -5547,8 +6203,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att1="1" Att2="2" Att3="3"/>  
+Dim root As XElement = <Root Att1="1" Att2="2" Att3="3"/>  
 root.ReplaceAttributes(New XAttribute("NewAtt1", 101))  
 Console.WriteLine(root)  
 ```  
@@ -5556,7 +6211,6 @@ Console.WriteLine(root)
  This example produces the following output:  
   
 ```xml  
-  
 <Root NewAtt1="101" />  
 ```  
   
@@ -5609,8 +6263,7 @@ Console.WriteLine(root)
  The following example creates an element with three attributes. It then uses this method to replace all of the attributes of the element with a single attribute.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att1", 1),  
     new XAttribute("Att2", 2),  
     new XAttribute("Att3", 3)  
@@ -5622,8 +6275,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att1="1" Att2="2" Att3="3"/>  
+Dim root As XElement = <Root Att1="1" Att2="2" Att3="3"/>  
 root.ReplaceAttributes(New XAttribute("NewAtt1", 101))  
 Console.WriteLine(root)  
 ```  
@@ -5631,7 +6283,6 @@ Console.WriteLine(root)
  This example produces the following output:  
   
 ```xml  
-  
 <Root NewAtt1="101" />  
 ```  
   
@@ -5640,7 +6291,7 @@ Console.WriteLine(root)
       </Docs>
     </Member>
     <Member MemberName="ReplaceAttributes">
-      <MemberSignature Language="C#" Value="public void ReplaceAttributes (object[] content);" />
+      <MemberSignature Language="C#" Value="public void ReplaceAttributes (params object[] content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReplaceAttributes(object[] content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.ReplaceAttributes(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -5690,8 +6341,7 @@ Console.WriteLine(root)
  The following example creates an element with three attributes. It then replaces the attributes with other attributes.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute("Att1", 1),  
     new XAttribute("Att2", 2),  
     new XAttribute("Att3", 3)  
@@ -5705,8 +6355,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root Att1="1" Att2="2" Att3="3"/>  
+Dim root As XElement = <Root Att1="1" Att2="2" Att3="3"/>  
 root.ReplaceAttributes( _  
 New XAttribute("NewAtt1", 101), _  
 New XAttribute("NewAtt2", 102), _  
@@ -5717,7 +6366,6 @@ Console.WriteLine(root)
  This example produces the following output:  
   
 ```xml  
-  
 <Root NewAtt1="101" NewAtt2="102" NewAtt3="103" />  
 ```  
   
@@ -5811,8 +6459,7 @@ Console.WriteLine(root)
  The following example creates an <xref:System.Xml.Linq.XElement>, saves the document to a <xref:System.IO.StringWriter>, and then prints the string to the console.  
   
 ```csharp  
-  
-                XElement root = XElement.Parse(@"<Root> <Child> Text </Child> </Root>");  
+XElement root = XElement.Parse(@"<Root> <Child> Text </Child> </Root>");  
 using (StringWriter sw = new StringWriter()) {  
     root.Save(sw);  
     Console.WriteLine(sw.ToString());  
@@ -5820,8 +6467,7 @@ using (StringWriter sw = new StringWriter()) {
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root><Child> Text </Child></Root>  
+Dim root As XElement = <Root><Child> Text </Child></Root>  
 Using sw = New StringWriter()  
     root.Save(sw)  
     Console.WriteLine(sw.ToString())  
@@ -5831,8 +6477,7 @@ End Using
  This example produces the following output:  
   
 ```xml  
-  
-                <?xml version="1.0" encoding="utf-16"?>  
+<?xml version="1.0" encoding="utf-16"?>  
 <Root>  
   <Child> Text </Child>  
 </Root>  
@@ -5883,8 +6528,7 @@ End Using
  The following example creates an <xref:System.Xml.Linq.XElement>, saves the document to a file, and then prints the file to the console.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XElement("Child", "child content")  
 );  
 root.Save("Root.xml");  
@@ -5893,8 +6537,7 @@ Console.WriteLine(str);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = _   
+Dim root As XElement = _   
         <Root>  
             <Child>child content</Child>  
         </Root>  
@@ -5906,8 +6549,7 @@ Console.WriteLine(Str)
  This example produces the following output:  
   
 ```xml  
-  
-                <?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>  
 <Root>  
   <Child>child content</Child>  
 </Root>  
@@ -5953,8 +6595,7 @@ Console.WriteLine(Str)
  The following example shows how to save an <xref:System.Xml.Linq.XElement> to an <xref:System.Xml.XmlWriter>.  
   
 ```csharp  
-  
-                StringBuilder sb = new StringBuilder();  
+StringBuilder sb = new StringBuilder();  
 XmlWriterSettings xws = new XmlWriterSettings();  
 xws.OmitXmlDeclaration = true;  
 using (XmlWriter xw = XmlWriter.Create(sb, xws)) {  
@@ -5967,8 +6608,7 @@ Console.WriteLine(sb.ToString());
 ```  
   
 ```vb  
-  
-                Dim sb As StringBuilder = New StringBuilder()  
+Dim sb As StringBuilder = New StringBuilder()  
 Dim xws As XmlWriterSettings = New XmlWriterSettings()  
 xws.OmitXmlDeclaration = True  
 Using xw = XmlWriter.Create(sb, xws)  
@@ -5983,7 +6623,6 @@ Console.WriteLine(sb.ToString())
  This example produces the following output:  
   
 ```xml  
-  
 <Root><Child>child content</Child></Root>  
 ```  
   
@@ -6083,8 +6722,7 @@ Console.WriteLine(sb.ToString())
  The following example shows two uses of this method. The first use preserves white space. The second serializes the <xref:System.Xml.Linq.XElement> with formatting. Because the document has no white space in it as constructed, preserving white space outputs the XML without any indenting.  
   
 ```csharp  
-  
-                XElement root = XElement.Parse(@"<Root> <Child> Text </Child> </Root>");  
+XElement root = XElement.Parse(@"<Root> <Child> Text </Child> </Root>");  
   
 using (StringWriter sw = new StringWriter())  
 {  
@@ -6102,8 +6740,7 @@ using (StringWriter sw = new StringWriter())
 ```  
   
 ```vb  
-  
-                Dim root As XElement = <Root><Child> Text </Child></Root>  
+Dim root As XElement = <Root><Child> Text </Child></Root>  
   
 Using sw = New StringWriter()  
     root.Save(sw, SaveOptions.DisableFormatting)  
@@ -6116,14 +6753,12 @@ Using sw = New StringWriter()
     root.Save(sw, SaveOptions.None)  
     Console.WriteLine(sw.ToString())  
 End Using  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
-                <?xml version="1.0" encoding="utf-16"?><Root><Child> Text </Child></Root>  
+<?xml version="1.0" encoding="utf-16"?><Root><Child> Text </Child></Root>  
 =====  
 <?xml version="1.0" encoding="utf-16"?>  
 <Root>  
@@ -6180,8 +6815,7 @@ End Using
  The following example shows two uses of this method. The first use preserves white space. The second one serializes the <xref:System.Xml.Linq.XElement> with formatting.  
   
 ```csharp  
-  
-                string str;  
+string str;  
 XElement root = XElement.Parse(@"<Root> <Child> Text </Child> </Root>");  
   
 root.Save("Root.xml", SaveOptions.DisableFormatting);  
@@ -6196,8 +6830,7 @@ Console.WriteLine(str);
 ```  
   
 ```vb  
-  
-                Dim str As String  
+Dim str As String  
 Dim root As XElement = <Root><Child> Text </Child></Root>  
   
 root.Save("Root.xml", SaveOptions.DisableFormatting)  
@@ -6209,14 +6842,12 @@ Console.WriteLine("=====")
 root.Save("Root.xml", SaveOptions.None)  
 str = File.ReadAllText("Root.xml")  
 Console.WriteLine(str)  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
-                <?xml version="1.0" encoding="utf-8"?><Root><Child> Text </Child></Root>  
+<?xml version="1.0" encoding="utf-8"?><Root><Child> Text </Child></Root>  
 =====  
 <?xml version="1.0" encoding="utf-8"?>  
 <Root>  
@@ -6388,14 +7019,12 @@ Console.WriteLine(root)
 ' Remove one of the name/value pairs.  
 root.SetAttributeValue("Att3", Nothing)  
 Console.WriteLine(root)  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
-                <Root Att1="1" Att2="2" Att3="3" />  
+<Root Att1="1" Att2="2" Att3="3" />  
 <Root Att1="1" Att2="22" Att3="3" />  
 <Root Att1="1" Att2="22" />  
 ```  
@@ -6403,6 +7032,9 @@ Console.WriteLine(root)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="value" /> is an instance of <see cref="T:System.Xml.Linq.XObject" />.</exception>
+        <altmember cref="M:System.Xml.Linq.XAttribute.SetValue(System.Object)" />
+        <altmember cref="M:System.Xml.Linq.XElement.SetElementValue(System.Xml.Linq.XName,System.Object)" />
+        <altmember cref="M:System.Xml.Linq.XElement.SetValue(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="SetElementValue">
@@ -6491,14 +7123,12 @@ Console.WriteLine(root)
 ' Remove one of the name/value pairs.  
 root.SetElementValue("Ele3", Nothing)  
 Console.WriteLine(root)  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
-                <Root>  
+<Root>  
   <Ele1>1</Ele1>  
   <Ele2>2</Ele2>  
   <Ele3>3</Ele3>  
@@ -6517,6 +7147,9 @@ Console.WriteLine(root)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="value" /> is an instance of <see cref="T:System.Xml.Linq.XObject" />.</exception>
+        <altmember cref="M:System.Xml.Linq.XAttribute.SetValue(System.Object)" />
+        <altmember cref="M:System.Xml.Linq.XElement.SetElementValue(System.Xml.Linq.XName,System.Object)" />
+        <altmember cref="M:System.Xml.Linq.XElement.SetValue(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -6562,8 +7195,7 @@ Console.WriteLine(root)
  The following example creates an element that contains a child element. It then sets the value of the element using this method.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XElement("Child", "child content")  
 );  
 root.SetValue("new content");  
@@ -6571,8 +7203,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = _   
+Dim root As XElement = _   
         <Root>  
             <Child>child content</Child>  
         </Root>  
@@ -6584,7 +7215,6 @@ Console.WriteLine(root)
  This example produces the following output:  
   
 ```xml  
-  
 <Root>new content</Root>  
 ```  
   
@@ -6592,6 +7222,9 @@ Console.WriteLine(root)
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="value" /> is an <see cref="T:System.Xml.Linq.XObject" />.</exception>
+        <altmember cref="M:System.Xml.Linq.XAttribute.SetValue(System.Object)" />
+        <altmember cref="M:System.Xml.Linq.XElement.SetAttributeValue(System.Xml.Linq.XName,System.Object)" />
+        <altmember cref="M:System.Xml.Linq.XElement.SetValue(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Xml.Serialization.IXmlSerializable.GetSchema">
@@ -6752,22 +7385,18 @@ Console.WriteLine(root)
  The following example uses this property to retrieve the text of an element with mixed content.  
   
 ```csharp  
-  
-                XElement el = XElement.Parse("<Root>This is <b>mixed</b> content</Root>");  
+XElement el = XElement.Parse("<Root>This is <b>mixed</b> content</Root>");  
 Console.WriteLine("{0}", el.Value);  
 ```  
   
 ```vb  
-  
-                Dim el As XElement = <Root>This is <b>mixed</b> content</Root>  
+Dim el As XElement = <Root>This is <b>mixed</b> content</Root>  
 Console.WriteLine("{0}", el.Value)  
-  
 ```  
   
  This example produces the following output:  
   
 ```  
-  
 This is mixed content  
 ```  
   
@@ -6811,8 +7440,7 @@ This is mixed content
  The following example shows how to write an <xref:System.Xml.Linq.XElement> to an <xref:System.Xml.XmlWriter>. Note that the example did not write an XML declaration.  
   
 ```csharp  
-  
-                StringBuilder sb = new StringBuilder();  
+StringBuilder sb = new StringBuilder();  
 XmlWriterSettings xws = new XmlWriterSettings();  
 xws.OmitXmlDeclaration = true;  
 xws.Indent = true;  
@@ -6837,8 +7465,7 @@ Console.WriteLine(sb.ToString());
 ```  
   
 ```vb  
-  
-                Dim sb As StringBuilder = New StringBuilder()  
+Dim sb As StringBuilder = New StringBuilder()  
 Dim xws As XmlWriterSettings = New XmlWriterSettings()  
 xws.OmitXmlDeclaration = True  
 xws.Indent = True  
@@ -6859,14 +7486,12 @@ Using xw = XmlWriter.Create(sb, xws)
 End Using  
   
 Console.WriteLine(sb.ToString())  
-  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child>  
     <GrandChild>some content</GrandChild>  
   </Child>  
@@ -6904,5 +7529,27 @@ Console.WriteLine(sb.ToString())
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Parse">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Load an <see cref="T:System.Xml.Linq.XElement" /> from a string that contains XML, optionally preserving white space and retaining line information.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Save">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Serialize this element's underlying XML tree. The output can be saved to a file, an <see cref="T:System.Xml.XmlTextWriter" />, a <see cref="T:System.IO.TextWriter" />, or an <see cref="T:System.Xml.XmlWriter" />. Optionally, formatting (indenting) can be disabled.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

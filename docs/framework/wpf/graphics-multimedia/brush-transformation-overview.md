@@ -9,15 +9,20 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "brushes, transformation properties"
-  - "properties, transformation"
-  - "transformation properties of brushes"
+  - "brushes [WPF], transformation properties"
+  - "properties [WPF], transformation"
+  - "transformation properties of brushes [WPF]"
 ms.assetid: 8b9bfc09-12fd-4cd5-b445-99949f27bc39
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Brush Transformation Overview
 The Brush class provides two transformation properties: <xref:System.Windows.Media.Brush.Transform%2A> and <xref:System.Windows.Media.Brush.RelativeTransform%2A>. The properties enable you to rotate, scale, skew, and translate a brush's contents. This topic describes the differences between these two properties and provides examples of their usage.  
@@ -101,10 +106,10 @@ The Brush class provides two transformation properties: <xref:System.Windows.Med
  This example is part of a larger sample. For the complete sample, see the [Brushes Sample](http://go.microsoft.com/fwlink/?LinkID=159973). For more information about brushes, see the  [WPF Brushes Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-brushes-overview.md).  
   
 ## See Also  
- <xref:System.Windows.Media.Brush.Transform%2A>   
- <xref:System.Windows.Media.Brush.RelativeTransform%2A>   
- <xref:System.Windows.Media.Transform>   
- <xref:System.Windows.Media.Brush>   
- [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)   
- [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)   
+ <xref:System.Windows.Media.Brush.Transform%2A>  
+ <xref:System.Windows.Media.Brush.RelativeTransform%2A>  
+ <xref:System.Windows.Media.Transform>  
+ <xref:System.Windows.Media.Brush>  
+ [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)  
+ [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)  
  [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)

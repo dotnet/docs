@@ -25,7 +25,7 @@
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
   
- A <xref:System.Workflow.Runtime.Tracking.TrackingDataItemValue> specifies the value of a piece of data extracted from a workflow. It is used to constrain the set of <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects returned by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows%2A?displayProperty=fullName> in a query of the tracking data base used by a <xref:System.Workflow.Runtime.Tracking.SqlTrackingService>. You can add <xref:System.Workflow.Runtime.Tracking.TrackingDataItemValue> objects to <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.TrackingDataItems%2A?displayProperty=fullName> to specify that the set of <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects returned by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows%2A?displayProperty=fullName> be constrained to those possessing the specified set of extracted data.  
+ A <xref:System.Workflow.Runtime.Tracking.TrackingDataItemValue> specifies the value of a piece of data extracted from a workflow. It is used to constrain the set of <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects returned by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows%2A?displayProperty=nameWithType> in a query of the tracking data base used by a <xref:System.Workflow.Runtime.Tracking.SqlTrackingService>. You can add <xref:System.Workflow.Runtime.Tracking.TrackingDataItemValue> objects to <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.TrackingDataItems%2A?displayProperty=nameWithType> to specify that the set of <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects returned by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows%2A?displayProperty=nameWithType> be constrained to those possessing the specified set of extracted data.  
   
  ]]></format>
     </remarks>
@@ -142,7 +142,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Workflow.Runtime.Tracking.TrackingDataItemValue.FieldName%2A> corresponds to the name specified in a <xref:System.Workflow.Runtime.Tracking.TrackingDataItem.FieldName%2A?displayProperty=fullName>. <xref:System.Workflow.Runtime.Tracking.TrackingDataItemValue.FieldName%2A> can, therefore, be set to specify an activity field or property; a member of an activity field or property; or a single element of an activity field or property (or a member of either) that implements the <xref:System.Collections.IEnumerable> interface. For more information see <xref:System.Workflow.Runtime.Tracking.TrackingDataItem.FieldName%2A?displayProperty=fullName>, <xref:System.Workflow.Runtime.Tracking.TrackingExtract.Member%2A?displayProperty=fullName>, <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract.Member%2A?displayProperty=fullName> or <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.Member%2A?displayProperty=fullName>.  
+ <xref:System.Workflow.Runtime.Tracking.TrackingDataItemValue.FieldName%2A> corresponds to the name specified in a <xref:System.Workflow.Runtime.Tracking.TrackingDataItem.FieldName%2A?displayProperty=nameWithType>. <xref:System.Workflow.Runtime.Tracking.TrackingDataItemValue.FieldName%2A> can, therefore, be set to specify an activity field or property; a member of an activity field or property; or a single element of an activity field or property (or a member of either) that implements the <xref:System.Collections.IEnumerable> interface. For more information see <xref:System.Workflow.Runtime.Tracking.TrackingDataItem.FieldName%2A?displayProperty=nameWithType>, <xref:System.Workflow.Runtime.Tracking.TrackingExtract.Member%2A?displayProperty=nameWithType>, <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract.Member%2A?displayProperty=nameWithType> or <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.Member%2A?displayProperty=nameWithType>.  
   
    
   
@@ -189,5 +189,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.TrackingDataItemValue" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

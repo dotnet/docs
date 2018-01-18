@@ -150,6 +150,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.DynamicData.MetaForeignKeyColumn.GetForeignKeyPath" />
       </Docs>
     </Member>
     <Member MemberName="GetForeignKeyPath">
@@ -183,6 +184,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.DynamicData.PageAction" />
       </Docs>
     </Member>
     <Member MemberName="GetForeignKeyPath">
@@ -218,6 +220,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.DynamicData.PageAction" />
       </Docs>
     </Member>
     <Member MemberName="GetForeignKeyString">
@@ -247,6 +250,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.DynamicData.MetaForeignKeyColumn.GetForeignKeyValues(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetForeignKeyValues">
@@ -276,6 +280,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.DynamicData.MetaForeignKeyColumn.GetForeignKeyString(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -327,6 +332,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.DynamicData.MetaForeignKeyColumn.ParentTable" />
       </Docs>
     </Member>
     <Member MemberName="ParentTable">
@@ -347,5 +353,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetForeignKeyPath">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the path for the specified action page of the parent table of the specified foreign-key field.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

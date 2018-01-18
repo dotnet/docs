@@ -27,9 +27,9 @@
 ## Remarks  
  The <xref:System.Data.MissingPrimaryKeyException> is thrown when invoking the following methods to access a row in a table that has no primary key.  
   
--   <xref:System.Data.DataRowCollection.Contains%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRowCollection.Contains%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.DataRowCollection.Find%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRowCollection.Find%2A?displayProperty=nameWithType>  
   
  ]]></format>
     </remarks>
@@ -113,6 +113,8 @@
         <param name="context">A description of the source and destination of the specified serialized stream.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.MissingPrimaryKeyException" /> class with serialization information.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -144,5 +146,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.MissingPrimaryKeyException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

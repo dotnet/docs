@@ -50,6 +50,7 @@
         <summary>Gets the default property of the specified component.</summary>
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> that represents the default property.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Design.PropertyTab.GetDefaultProperty(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -74,6 +75,7 @@
         <summary>Gets the properties of the specified component that match the specified attributes.</summary>
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that contains the properties</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Design.PropertyTab.GetProperties(System.Object,System.Attribute[])" />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -100,6 +102,7 @@
         <summary>Gets the properties of the specified component that match the specified attributes and context.</summary>
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that contains the properties matching the specified context and attributes.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Design.PropertyTab.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])" />
       </Docs>
     </Member>
     <Member MemberName="HelpKeyword">
@@ -138,5 +141,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetProperties">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the properties of the specified component.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

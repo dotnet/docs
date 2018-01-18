@@ -35,15 +35,21 @@
 ## Examples  
  The following example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.GridViewRowEventHandler> delegate to the <xref:System.Web.UI.WebControls.GridView.RowDataBound> event of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowEventHandler/CS/gridviewroweventhandlercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowEventHandler/VB/gridviewroweventhandlervb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowEventHandler/CS/gridviewroweventhandlercs.aspx#1)]
+ [!code-aspx-vb[GridViewRowEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowEventHandler/VB/gridviewroweventhandlervb.aspx#1)]  
   
  The following example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.GridViewRowEventHandler> delegate to the <xref:System.Web.UI.WebControls.GridView.RowDataBound> event of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowDataBound/CS/gridviewrowdataboundcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowDataBound/VB/gridviewrowdataboundvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowDataBound/CS/gridviewrowdataboundcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowDataBound/VB/gridviewrowdataboundvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewRowEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.RowCreated" />
+    <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowCreated(System.Web.UI.WebControls.GridViewRowEventArgs)" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.RowDataBound" />
+    <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowDataBound(System.Web.UI.WebControls.GridViewRowEventArgs)" />
   </Docs>
 </Type>

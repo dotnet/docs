@@ -31,6 +31,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.DataError" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,6 +57,8 @@
         <param name="context">A bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewDataErrorContexts" /> values indicating the context in which the error occurred.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewDataErrorEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.DataError" />
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -89,6 +93,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.DataError" />
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -123,6 +129,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.DataError" />
       </Docs>
     </Member>
     <Member MemberName="ThrowException">
@@ -161,6 +169,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">When setting this property to <see langword="true" />, the <see cref="P:System.Windows.Forms.DataGridViewDataErrorEventArgs.Exception" /> property value is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.DataError" />
       </Docs>
     </Member>
   </Members>

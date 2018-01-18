@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.ComponentModel.Design.Data.DesignerDataStoredProcedure> class is one of several types that represent the schema of a data store at design-time. These schema items are made available to controls by designers implementing the <xref:System.ComponentModel.Design.Data.IDataEnvironment> interface. Controls access schema objects by calling the <xref:System.ComponentModel.Design.Data.IDataEnvironment.GetConnectionSchema%2A> method of the interface.  
   
- The <xref:System.ComponentModel.Design.Data.DesignerDataStoredProcedure> class represents a single table in the data store. A collection of <xref:System.ComponentModel.Design.Data.DesignerDataStoredProcedure> objects is returned when you call the <xref:System.ComponentModel.Design.Data.IDesignerDataSchema.GetSchemaItems%2A> method with the `schemaClass` parameter set to <xref:System.ComponentModel.Design.Data.DesignerDataSchemaClass.StoredProcedures?displayProperty=fullName>.  
+ The <xref:System.ComponentModel.Design.Data.DesignerDataStoredProcedure> class represents a single table in the data store. A collection of <xref:System.ComponentModel.Design.Data.DesignerDataStoredProcedure> objects is returned when you call the <xref:System.ComponentModel.Design.Data.IDesignerDataSchema.GetSchemaItems%2A> method with the `schemaClass` parameter set to <xref:System.ComponentModel.Design.Data.DesignerDataSchemaClass.StoredProcedures?displayProperty=nameWithType>.  
   
  ]]></format>
     </remarks>
@@ -149,5 +149,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Data.DesignerDataStoredProcedure" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

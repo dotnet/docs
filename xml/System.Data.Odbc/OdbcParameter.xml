@@ -163,7 +163,7 @@ OleDbDataReader reader = command.ExecuteReader();
 Parameter = new OdbcParameter("@pname", Convert.ToInt32(0));  
 ```  
   
- If you do not perform this conversion, the compiler assumes that you are trying to call the <xref:System.Data.Odbc.OdbcParameter.%23ctor%2A?displayProperty=fullName> constructor overload.  
+ If you do not perform this conversion, the compiler assumes that you are trying to call the <xref:System.Data.Odbc.OdbcParameter.%23ctor%2A?displayProperty=nameWithType> constructor overload.  
   
  ]]></format>
         </remarks>
@@ -1195,5 +1195,14 @@ public void CreateOdbcParameter()
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Odbc.OdbcParameter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 7d2d59d7-f08b-44ed-bd31-913908b83d97
 caps.latest.revision: 18
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Service Endpoints and Queue Addressing
 This topic discusses how clients address services that read from queues and how service endpoints map to queues. As a reminder, the following illustration shows the classic [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] queued application deployment.  

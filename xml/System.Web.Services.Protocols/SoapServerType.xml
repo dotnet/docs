@@ -96,6 +96,7 @@
         <value>
           <see langword="true" /> if SOAP data transmissions sent to and from this XML Web service are encoded by default; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Services.Description.SoapBindingUse" />
       </Docs>
     </Member>
     <Member MemberName="ServiceNamespace">
@@ -133,6 +134,7 @@
         <value>
           <see langword="true" /> if SOAP messages that are routed to this XML Web service are routed based on the <see langword="SOAPAction" /> HTTP header; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Services.Protocols.SoapServiceRoutingStyle" />
       </Docs>
     </Member>
   </Members>

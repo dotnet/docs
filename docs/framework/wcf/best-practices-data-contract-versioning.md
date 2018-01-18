@@ -9,9 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "data contracts"
   - "service contracts"
@@ -19,9 +16,11 @@ helpviewer_keywords:
   - "Windows Communication Foundation, data contracts"
 ms.assetid: bf0ab338-4d36-4e12-8002-8ebfdeb346cb
 caps.latest.revision: 24
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Best Practices: Data Contract Versioning
 This topic lists the best practices for creating data contracts that can evolve easily over time. [!INCLUDE[crabout](../../../includes/crabout-md.md)] data contracts, see the topics in [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md).  
@@ -63,7 +62,7 @@ This topic lists the best practices for creating data contracts that can evolve 
   
 2.  The use of inheritance together with data contracts is allowed, provided that inheritance is not used as a versioning mechanism and that certain rules are followed. If a type derives from a certain base type, do not make it derive from a different base type in a future version (unless it has the same data contract). There is one exception to this: you can insert a type into the hierarchy between a data contract type and its base type, but only if it does not contain data members with the same names as other members in any possible versions of the other types in the hierarchy. In general, using data members with the same names at different levels of the same inheritance hierarchy can lead to serious versioning problems and should be avoided.  
   
-3.  Starting with the first version of a data contract, always implement <xref:System.Runtime.Serialization.IExtensibleDataObject> to enable round-tripping. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Forward-Compatible Data Contracts](../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md). If you have released one or more versions of a type without implementing this interface, implement it in the next version of the type.  
+3.  Starting with the first version of a data contract, always implement <xref:System.Runtime.Serialization.IExtensibleDataObject> to enable round-tripping. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Forward-Compatible Data Contracts](../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md). If you have released one or more versions of a type without implementing this interface, implement it in the next version of the type.  
   
 4.  In later versions, do not change the data contract name or namespace. If changing the name or namespace of the type underlying the data contract, be sure to preserve the data contract name and namespace by using the appropriate mechanisms, such as the <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A> property of the <xref:System.Runtime.Serialization.DataContractAttribute>. [!INCLUDE[crabout](../../../includes/crabout-md.md)] naming, see [Data Contract Names](../../../docs/framework/wcf/feature-details/data-contract-names.md).  
   
@@ -100,17 +99,17 @@ This topic lists the best practices for creating data contracts that can evolve 
  Some of the guidelines listed here can be safely ignored when special circumstances apply. Make sure you fully understand the serialization, deserialization, and schema mechanisms involved before deviating from the guidelines.  
   
 ## See Also  
- <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A>   
- <xref:System.Runtime.Serialization.DataContractAttribute>   
- <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A>   
- <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A>   
- <xref:System.Runtime.Serialization.IExtensibleDataObject>   
- <xref:System.ServiceModel.ServiceBehaviorAttribute>   
- <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A>   
- <xref:System.Runtime.Serialization.ExtensionDataObject>   
- <xref:System.Runtime.Serialization.OnDeserializingAttribute>   
- [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md)   
- [Data Contract Versioning](../../../docs/framework/wcf/feature-details/data-contract-versioning.md)   
- [Data Contract Names](../../../docs/framework/wcf/feature-details/data-contract-names.md)   
- [Forward-Compatible Data Contracts](../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md)   
+ <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A>  
+ <xref:System.Runtime.Serialization.DataContractAttribute>  
+ <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A>  
+ <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A>  
+ <xref:System.Runtime.Serialization.IExtensibleDataObject>  
+ <xref:System.ServiceModel.ServiceBehaviorAttribute>  
+ <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A>  
+ <xref:System.Runtime.Serialization.ExtensionDataObject>  
+ <xref:System.Runtime.Serialization.OnDeserializingAttribute>  
+ [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
+ [Data Contract Versioning](../../../docs/framework/wcf/feature-details/data-contract-versioning.md)  
+ [Data Contract Names](../../../docs/framework/wcf/feature-details/data-contract-names.md)  
+ [Forward-Compatible Data Contracts](../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md)  
  [Version-Tolerant Serialization Callbacks](../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md)

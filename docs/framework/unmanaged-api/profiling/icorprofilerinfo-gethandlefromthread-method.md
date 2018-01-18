@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetHandleFromThread"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetHandleFromThread method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetHandleFromThread method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::GetHandleFromThread Method
 Maps the ID of a thread to a Win32 thread handle.  

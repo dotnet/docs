@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "queues [WCF], differences in operating systems"
 ms.assetid: aa809d93-d0a3-4ae6-a726-d015cca37c04
 caps.latest.revision: 21
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP
 This topic summarizes the differences in the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] queues feature between [!INCLUDE[wv](../../../../includes/wv-md.md)], [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)], and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
@@ -42,5 +44,5 @@ This topic summarizes the differences in the [!INCLUDE[indigo1](../../../../incl
  MSMQ on [!INCLUDE[wv](../../../../includes/wv-md.md)] supports remote transactional reads. This allows an application that is reading from a queue to be hosted on a computer that is different from the computer on which the queue is hosted. This ensures the ability to have a farm of services reading from a central queue, which increases the overall throughput of the system. It also ensures that if a failure occurs when reading and processing the message, the transaction rolls back and the message remains in the queue for later processing.  
   
 ## See Also  
- [Using Dead-Letter Queues to Handle Message Transfer Failures](../../../../docs/framework/wcf/feature-details/using-dead-letter-queues-to-handle-message-transfer-failures.md)   
+ [Using Dead-Letter Queues to Handle Message Transfer Failures](../../../../docs/framework/wcf/feature-details/using-dead-letter-queues-to-handle-message-transfer-failures.md)  
  [Poison Message Handling](../../../../docs/framework/wcf/feature-details/poison-message-handling.md)

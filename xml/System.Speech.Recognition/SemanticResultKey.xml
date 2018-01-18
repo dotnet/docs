@@ -82,6 +82,8 @@ private void pwdGrammar()
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Speech.Recognition.SemanticValue" />
+    <altmember cref="T:System.Speech.Recognition.SemanticResultValue" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -106,7 +108,7 @@ private void pwdGrammar()
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SemanticResultKey (string semanticResultKey, System.Speech.Recognition.GrammarBuilder[] builders);" />
+      <MemberSignature Language="C#" Value="public SemanticResultKey (string semanticResultKey, params System.Speech.Recognition.GrammarBuilder[] builders);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string semanticResultKey, class System.Speech.Recognition.GrammarBuilder[] builders) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticResultKey.#ctor(System.String,System.Speech.Recognition.GrammarBuilder[])" />
       <MemberType>Constructor</MemberType>
@@ -216,7 +218,7 @@ private void pwdGrammar()
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SemanticResultKey (string semanticResultKey, string[] phrases);" />
+      <MemberSignature Language="C#" Value="public SemanticResultKey (string semanticResultKey, params string[] phrases);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string semanticResultKey, string[] phrases) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticResultKey.#ctor(System.String,System.String[])" />
       <MemberType>Constructor</MemberType>

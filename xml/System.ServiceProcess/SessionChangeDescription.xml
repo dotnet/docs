@@ -139,7 +139,7 @@
 ## Remarks  
  This operator is implemented using the <xref:System.ServiceProcess.SessionChangeDescription.Equals%28System.Object%29> method.  
   
- The equivalent method for this operator is <xref:System.ServiceProcess.SessionChangeDescription.Equals%28System.Object%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.ServiceProcess.SessionChangeDescription.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -171,7 +171,7 @@
 ## Remarks  
  This operator is implemented using the <xref:System.ServiceProcess.SessionChangeDescription.Equals%28System.Object%29> method.  
   
- The equivalent method for this operator is <xref:System.ServiceProcess.SessionChangeDescription.Equals%28System.Object%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.ServiceProcess.SessionChangeDescription.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -231,5 +231,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two session change descriptions are equal.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "interfaces [.NET Framework hosting]"
   - "hosting interfaces [.NET Framework]"
@@ -20,6 +18,8 @@ caps.latest.revision: 23
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Hosting Interfaces
 This section describes the interfaces that unmanaged hosts can use to integrate the common language runtime (CLR) into their applications.  

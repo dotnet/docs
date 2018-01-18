@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class does not have a public constructor; therefore, it cannot be publicly instantiated. It is a read-only class accessible from the <xref:System.Security.Cryptography.Pkcs.SignedCms.SignerInfos%2A?displayProperty=fullName> property or the <xref:System.Security.Cryptography.Pkcs.SignerInfo.CounterSignerInfos%2A?displayProperty=fullName> property.  
+ This class does not have a public constructor; therefore, it cannot be publicly instantiated. It is a read-only class accessible from the <xref:System.Security.Cryptography.Pkcs.SignedCms.SignerInfos%2A?displayProperty=nameWithType> property or the <xref:System.Security.Cryptography.Pkcs.SignerInfo.CounterSignerInfos%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
     </remarks>
@@ -113,6 +113,7 @@
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.SignerInfoCollection.GetEnumerator" /> method returns a <see cref="T:System.Security.Cryptography.Pkcs.SignerInfoEnumerator" /> object for the <see cref="T:System.Security.Cryptography.Pkcs.SignerInfoCollection" /> collection.</summary>
         <returns>A <see cref="T:System.Security.Cryptography.Pkcs.SignerInfoEnumerator" /> object that can be used to enumerate the <see cref="T:System.Security.Cryptography.Pkcs.SignerInfoCollection" /> collection.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.Cryptography.Pkcs.SignerInfoEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -191,7 +192,17 @@
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.SignerInfoCollection.System#Collections#IEnumerable#GetEnumerator" /> method returns a <see cref="T:System.Security.Cryptography.Pkcs.SignerInfoEnumerator" /> object for the <see cref="T:System.Security.Cryptography.Pkcs.SignerInfoCollection" /> collection.</summary>
         <returns>A <see cref="T:System.Security.Cryptography.Pkcs.SignerInfoEnumerator" /> object that can be used to enumerate the <see cref="T:System.Security.Cryptography.Pkcs.SignerInfoCollection" /> collection.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.Cryptography.Pkcs.SignerInfoEnumerator" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>The <see cref="Overload:System.Security.Cryptography.Pkcs.SignerInfoCollection.CopyTo" /> method copies the <see cref="T:System.Security.Cryptography.Pkcs.SignerInfoCollection" /> collection to an array.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -418,5 +418,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateDecimalTypeUsage">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object to describe a decimal type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateBinaryTypeUsage">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object to describe a binary type by using the specified facet values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateStringTypeUsage">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object to describe a string type by using the specified facet values.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugController::IsRunning"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsRunning method [.NET Framework debugging]"
   - "ICorDebugController::IsRunning method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugController::IsRunning Method
 Gets a value that indicates whether the threads in the process are currently running freely.  

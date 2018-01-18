@@ -199,13 +199,14 @@
  `Semi-trusted code:` External references are not resolved.  
   
 > [!NOTE]
->  If the `XmlSchemaCollection` is being accessed using the <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=fullName> property, the `Add` method uses the `XmlResolver` specified by the <xref:System.Xml.XmlValidatingReader.XmlResolver%2A?displayProperty=fullName> property.  
+>  If the `XmlSchemaCollection` is being accessed using the <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=nameWithType> property, the `Add` method uses the `XmlResolver` specified by the <xref:System.Xml.XmlValidatingReader.XmlResolver%2A?displayProperty=nameWithType> property.  
   
 > [!IMPORTANT]
 >  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Schema.XmlSchema" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -246,7 +247,7 @@
  `Semi-trusted code:` External references are not resolved.  
   
 > [!NOTE]
->  If the `XmlSchemaCollection` is being accessed using the <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=fullName> property, the `Add` method uses the `XmlResolver` specified by the <xref:System.Xml.XmlValidatingReader.XmlResolver%2A?displayProperty=fullName> property.  
+>  If the `XmlSchemaCollection` is being accessed using the <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=nameWithType> property, the `Add` method uses the `XmlResolver` specified by the <xref:System.Xml.XmlValidatingReader.XmlResolver%2A?displayProperty=nameWithType> property.  
   
 > [!IMPORTANT]
 >  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
@@ -303,7 +304,7 @@ schemaColl.Add("urn:author", "names.xsd");
  `Semi-trusted code:` External references are not resolved.  
   
 > [!NOTE]
->  If the `XmlSchemaCollection` is being accessed using the <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=fullName> property, the `Add` method uses the `XmlResolver` specified by the <xref:System.Xml.XmlValidatingReader.XmlResolver%2A?displayProperty=fullName> property.  
+>  If the `XmlSchemaCollection` is being accessed using the <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=nameWithType> property, the `Add` method uses the `XmlResolver` specified by the <xref:System.Xml.XmlValidatingReader.XmlResolver%2A?displayProperty=nameWithType> property.  
   
 > [!IMPORTANT]
 >  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
@@ -390,7 +391,7 @@ schemaColl.Add("urn:author", "names.xsd");
  `Semi-trusted code:` External references are not resolved.  
   
 > [!NOTE]
->  If the `XmlSchemaCollection` is being accessed using the <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=fullName> property, the `Add` method uses the `XmlResolver` specified by the <xref:System.Xml.XmlValidatingReader.XmlResolver%2A?displayProperty=fullName> property.  
+>  If the `XmlSchemaCollection` is being accessed using the <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=nameWithType> property, the `Add` method uses the `XmlResolver` specified by the <xref:System.Xml.XmlValidatingReader.XmlResolver%2A?displayProperty=nameWithType> property.  
   
 > [!IMPORTANT]
 >  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
@@ -453,6 +454,9 @@ schemaColl.Add("urn:author", "names.xsd");
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">The schema is not a valid schema.</exception>
+        <altmember cref="P:System.Xml.XmlResolver.Credentials" />
+        <altmember cref="T:System.Net.NetworkCredential" />
+        <altmember cref="T:System.Net.CredentialCache" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -504,6 +508,9 @@ schemaColl.Add("urn:author", "names.xsd");
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">The schema is not a valid schema.</exception>
+        <altmember cref="P:System.Xml.XmlUrlResolver.Credentials" />
+        <altmember cref="T:System.Net.NetworkCredential" />
+        <altmember cref="T:System.Net.CredentialCache" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Contains">
@@ -738,6 +745,7 @@ schemaColl.Add("urn:author", "names.xsd");
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Schema.XmlSchemaCollectionEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -823,6 +831,7 @@ schemaColl.Add("urn:author", "names.xsd");
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlNameTable" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">

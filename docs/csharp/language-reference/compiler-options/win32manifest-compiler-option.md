@@ -1,14 +1,12 @@
 ---
 title: "-win32manifest (C# Compiler Options)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
 f1_keywords: 
   - "/win32manifest"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/win32manifest compiler option [C#]"
   - "win32manifest compiler option [C#]"
@@ -17,20 +15,6 @@ ms.assetid: 9460ea1b-6c9f-44b8-8f73-301b30a01de1
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /win32manifest (C# Compiler Options)
 Use the **/win32manifest** option to specify a user-defined Win32 application manifest file to be embedded into a project's portable executable (PE) file.  
@@ -51,7 +35,7 @@ Use the **/win32manifest** option to specify a user-defined Win32 application ma
 > [!NOTE]
 >  This option and the [/win32res (C# Compiler Options)](../../../csharp/language-reference/compiler-options/win32res-compiler-option.md) option are mutually exclusive. If you try to use both options in the same command line you will get a build error.  
   
- An application that has no application manifest that specifies a requested execution level will be subject to file/registry virtualization under the User Account Control feature in Windows Vista. For more information about virtualization, see [The Windows Vista Developer Story: Windows Vista Application Development Requirements for User Account Control (UAC)](http://go.microsoft.com/fwlink/?LinkId=95452).  
+ An application that has no application manifest that specifies a requested execution level will be subject to file/registry virtualization under the User Account Control feature in Windows. For more information, see [User Account Control](/windows/access-protection/user-account-control/user-account-control-overview).  
   
  Your application will be subject to virtualization if either of these conditions is true:  
   
@@ -84,6 +68,6 @@ Use the **/win32manifest** option to specify a user-defined Win32 application ma
 ```  
   
 ## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [/nowin32manifest (C# Compiler Options)](../../../csharp/language-reference/compiler-options/nowin32manifest-compiler-option.md)   
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+ [/nowin32manifest (C# Compiler Options)](../../../csharp/language-reference/compiler-options/nowin32manifest-compiler-option.md)  
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

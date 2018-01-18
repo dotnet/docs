@@ -18,10 +18,15 @@
 ## Remarks  
  An instance of the <xref:System.Web.UI.WebControls.DataPagerFieldItem> class is created to hold the pager controls in a <xref:System.Web.UI.WebControls.DataPager> control. The <xref:System.Web.UI.INamingContainer> interface is a marker that indicates that the container control represented by the <xref:System.Web.UI.WebControls.DataPagerFieldItem> class is part of the <xref:System.Web.UI.Page> object's control hierarchy.  
   
- The <xref:System.Web.UI.WebControls.DataPagerFieldItem> class is typically used in the handler for the <xref:System.Web.UI.WebControls.TemplatePagerField.PagerCommand> event of a <xref:System.Web.UI.WebControls.TemplatePagerField> object. It is used to access controls inside the <xref:System.Web.UI.WebControls.TemplatePagerField> object and to access the properties of the <xref:System.Web.UI.WebControls.DataPager> control. The <xref:System.Web.UI.WebControls.DataPagerCommandEventArgs.Item%2A?displayProperty=fullName> property represents the pager field item.  
+ The <xref:System.Web.UI.WebControls.DataPagerFieldItem> class is typically used in the handler for the <xref:System.Web.UI.WebControls.TemplatePagerField.PagerCommand> event of a <xref:System.Web.UI.WebControls.TemplatePagerField> object. It is used to access controls inside the <xref:System.Web.UI.WebControls.TemplatePagerField> object and to access the properties of the <xref:System.Web.UI.WebControls.DataPager> control. The <xref:System.Web.UI.WebControls.DataPagerCommandEventArgs.Item%2A?displayProperty=nameWithType> property represents the pager field item.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+    <altmember cref="T:System.Web.UI.INamingContainer" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplatePagerField" />
+    <altmember cref="E:System.Web.UI.WebControls.TemplatePagerField.PagerCommand" />
+    <altmember cref="P:System.Web.UI.WebControls.DataPagerCommandEventArgs.Item" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,6 +47,8 @@
         <param name="pager">The pager control that contains the pager field object.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DataPagerFieldItem" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -88,18 +95,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.DataPagerFieldItem.Pager%2A> property to retrieve the <xref:System.Web.UI.WebControls.DataPager> control. This property is typically used to access the properties of the control in an event handler for the <xref:System.Web.UI.WebControls.TemplatePagerField.PagerCommand?displayProperty=fullName> event.  
+ Use the <xref:System.Web.UI.WebControls.DataPagerFieldItem.Pager%2A> property to retrieve the <xref:System.Web.UI.WebControls.DataPager> control. This property is typically used to access the properties of the control in an event handler for the <xref:System.Web.UI.WebControls.TemplatePagerField.PagerCommand?displayProperty=nameWithType> event.  
   
    
   
 ## Examples  
- The following example shows how to access properties of the <xref:System.Web.UI.WebControls.DataPager> control by using the <xref:System.Web.UI.WebControls.DataPagerFieldItem.Pager%2A> property in a handler for the <xref:System.Web.UI.WebControls.TemplatePagerField.PagerCommand?displayProperty=fullName> event. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.DataPagerCommandEventArgs> class.  
+ The following example shows how to access properties of the <xref:System.Web.UI.WebControls.DataPager> control by using the <xref:System.Web.UI.WebControls.DataPagerFieldItem.Pager%2A> property in a handler for the <xref:System.Web.UI.WebControls.TemplatePagerField.PagerCommand?displayProperty=nameWithType> event. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.DataPagerCommandEventArgs> class.  
   
  [!code-csharp[System.Web.UI.WebControls.DataPagerCommandEventArgs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.DataPagerCommandEventArgs/CS/DataPagerCommandEventArgsCS.aspx#2)]
  [!code-vb[System.Web.UI.WebControls.DataPagerCommandEventArgs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.DataPagerCommandEventArgs/VB/DataPagerCommandEventArgsVB.aspx#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <altmember cref="E:System.Web.UI.WebControls.TemplatePagerField.PagerCommand" />
       </Docs>
     </Member>
     <Member MemberName="PagerField">
@@ -118,6 +127,7 @@
         <summary>Gets the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object.</summary>
         <value>The pager field object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
       </Docs>
     </Member>
   </Members>

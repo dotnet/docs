@@ -21,7 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This collection holds instances of the [\&lt;webRequestModules\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/webrequestmodules-element-network-settings.md) configuration element, which are used to specify modules registered to create requests made with the <xref:System.Net.WebRequest> and <xref:System.Net.WebClient> classes.  
+ This collection holds instances of the [&lt;webRequestModules&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/webrequestmodules-element-network-settings.md) configuration element, which are used to specify modules registered to create requests made with the <xref:System.Net.WebRequest> and <xref:System.Net.WebClient> classes.  
   
  ]]></format>
     </remarks>
@@ -268,5 +268,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the element with the specified index or key.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes an element from the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

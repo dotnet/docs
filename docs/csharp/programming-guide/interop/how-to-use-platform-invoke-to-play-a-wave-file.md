@@ -1,16 +1,10 @@
 ---
 title: "How to: Use Platform Invoke to Play a Wave File (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "platform invoke, sound files"
   - "interoperability [C#], playing WAV files using pinvoke"
@@ -20,21 +14,6 @@ ms.assetid: f7f62f53-e026-4c40-b221-3a26adb0c2c5
 caps.latest.revision: 30
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Use Platform Invoke to Play a Wave File (C# Programming Guide)
 The following C# code example illustrates how to use platform invoke services to play a wave sound file on the Windows operating system.  
@@ -44,9 +23,9 @@ The following C# code example illustrates how to use platform invoke services to
   
  The **Open Files** dialog box is filtered to show only files that have a .wav extension through the filter settings:  
   
- [!code-cs[csProgGuideInterop#5](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-use-platform-invoke-to-play-a-wave-file_1.cs)]  
+ [!code-csharp[csProgGuideInterop#5](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-use-platform-invoke-to-play-a-wave-file_1.cs)]  
   
- [!code-cs[csProgGuideInterop#3](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-use-platform-invoke-to-play-a-wave-file_2.cs)]  
+ [!code-csharp[csProgGuideInterop#3](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-use-platform-invoke-to-play-a-wave-file_2.cs)]  
   
 ## Compiling the Code  
   
@@ -58,7 +37,7 @@ The following C# code example illustrates how to use platform invoke services to
   
 3.  Copy the following code, and paste it in the `Form1.Designer.cs` file, in the `InitializeComponent()` method, after any existing code.  
   
-     [!code-cs[csProgGuideInterop#4](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-use-platform-invoke-to-play-a-wave-file_3.cs)]  
+     [!code-csharp[csProgGuideInterop#4](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-use-platform-invoke-to-play-a-wave-file_3.cs)]  
   
 4.  Compile and run the code.  
   
@@ -66,8 +45,8 @@ The following C# code example illustrates how to use platform invoke services to
  For more information, see [.NET Framework Security](http://go.microsoft.com/fwlink/?LinkId=37122).  
   
 ## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Interoperability Overview](../../../csharp/programming-guide/interop/interoperability-overview.md)   
- [Interoperability Overview](../../../csharp/programming-guide/interop/interoperability-overview.md)   
- [A Closer Look at Platform Invoke](http://msdn.microsoft.com/en-us/ba9dd55b-2eaa-45cd-8afd-75cb8d64d243)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [Interoperability Overview](../../../csharp/programming-guide/interop/interoperability-overview.md)  
+ [Interoperability Overview](../../../csharp/programming-guide/interop/interoperability-overview.md)  
+ [A Closer Look at Platform Invoke](http://msdn.microsoft.com/en-us/ba9dd55b-2eaa-45cd-8afd-75cb8d64d243)  
  [Marshaling Data with Platform Invoke](../../../framework/interop/marshaling-data-with-platform-invoke.md)

@@ -62,6 +62,8 @@
  This implementation does not provide a synchronized (thread safe) wrapper for a <see cref="T:System.Collections.Specialized.ListDictionary" />, but derived classes can create their own synchronized versions of the <see cref="T:System.Collections.Specialized.ListDictionary" /> using the <see cref="P:System.Collections.Specialized.ListDictionary.SyncRoot" /> property.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.</threadsafe>
+    <altmember cref="T:System.Collections.IDictionary" />
+    <altmember cref="T:System.Collections.Hashtable" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -90,7 +92,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.ListDictionary> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.ListDictionary> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  This constructor is an O(1) operation.  
   
@@ -140,7 +142,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.ListDictionary> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.ListDictionary> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  The custom comparer enables such scenarios as doing lookups with case-insensitive strings.  
   
@@ -148,6 +150,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IComparer" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -204,6 +208,9 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">An entry with the same key already exists in the <see cref="T:System.Collections.Specialized.ListDictionary" />.</exception>
+        <altmember cref="M:System.Collections.Specialized.ListDictionary.Remove(System.Object)" />
+        <altmember cref="P:System.Collections.Specialized.ListDictionary.Item(System.Object)" />
+        <altmember cref="M:System.Collections.IDictionary.Add(System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -250,6 +257,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IDictionary.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -303,6 +311,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -369,6 +378,9 @@
   
  The number of elements in the source <see cref="T:System.Collections.Specialized.ListDictionary" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
         <exception cref="T:System.InvalidCastException">The type of the source <see cref="T:System.Collections.Specialized.ListDictionary" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
+        <altmember cref="T:System.Array" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="M:System.Collections.Specialized.ListDictionary.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -472,6 +484,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionaryEnumerator" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="IsFixedSize">
@@ -503,7 +517,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Collections.Specialized.ListDictionary> implements the <xref:System.Collections.Specialized.ListDictionary.IsFixedSize%2A> property because it is required by the <xref:System.Collections.IDictionary?displayProperty=fullName> interface.  
+ <xref:System.Collections.Specialized.ListDictionary> implements the <xref:System.Collections.Specialized.ListDictionary.IsFixedSize%2A> property because it is required by the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface.  
   
  A collection with a fixed size does not allow the addition or removal of elements after the collection is created, but it allows the modification of existing elements.  
   
@@ -544,7 +558,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Collections.Specialized.ListDictionary> implements the <xref:System.Collections.Specialized.ListDictionary.IsReadOnly%2A> property because it is required by the <xref:System.Collections.IDictionary?displayProperty=fullName> interface.  
+ <xref:System.Collections.Specialized.ListDictionary> implements the <xref:System.Collections.Specialized.ListDictionary.IsReadOnly%2A> property because it is required by the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface.  
   
  A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
   
@@ -585,7 +599,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Collections.Specialized.ListDictionary> implements the <xref:System.Collections.Specialized.ListDictionary.IsSynchronized%2A> property because it is required by the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ <xref:System.Collections.Specialized.ListDictionary> implements the <xref:System.Collections.Specialized.ListDictionary.IsSynchronized%2A> property because it is required by the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  Derived classes can provide a synchronized version of the <xref:System.Collections.Specialized.ListDictionary> using the <xref:System.Collections.Specialized.ListDictionary.SyncRoot%2A> property.  
   
@@ -604,6 +618,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.Specialized.ListDictionary.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -662,6 +677,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.Specialized.ListDictionary.Add(System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -710,6 +726,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.Specialized.ListDictionary.Values" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -761,6 +779,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.Specialized.ListDictionary.Add(System.Object,System.Object)" />
+        <altmember cref="M:System.Collections.IDictionary.Remove(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -809,6 +829,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.Specialized.ListDictionary.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -868,6 +889,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionaryEnumerator" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -916,7 +939,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.Specialized.ListDictionary.Keys" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.ListDictionary" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

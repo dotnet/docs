@@ -56,6 +56,7 @@
 -   The <paramref name="bridgeName" /> parameter is an empty string.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="context" /> parameter or the <paramref name="bridgeName" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -91,6 +92,7 @@
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="transport" /> is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> value.</exception>
         <exception cref="T:System.NotSupportedException">The transport type specified in the <paramref name="transport" /> parameter is not supported.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -191,6 +193,7 @@
   
 -   The <paramref name="bridgeName" /> parameter is an empty string.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="context" /> or the <paramref name="bridgeName" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="FindByName">
@@ -228,6 +231,8 @@
 -   The <paramref name="bridgeName" /> parameter is an empty string.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="context" /> or the <paramref name="bridgeName" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="transport" /> parameter is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> value.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryEntry">
@@ -250,6 +255,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> object has not yet been saved in the Active Directory Domain Services store.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.DirectoryEntry" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -316,6 +322,8 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkCollection" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -357,7 +365,28 @@
         <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> value that represents the transport type that is used by the current site link bridge object.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindByName">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> object that matches a given name.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

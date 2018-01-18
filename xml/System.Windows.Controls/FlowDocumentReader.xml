@@ -95,6 +95,8 @@
       <Docs>
         <summary>Cancels any current printing job.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.IsPrintEnabled" />
+        <altmember cref="M:System.Windows.Controls.FlowDocumentReader.Print" />
       </Docs>
     </Member>
     <Member MemberName="CanDecreaseZoom">
@@ -129,6 +131,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Input.NavigationCommands.DecreaseZoom" />
+        <altmember cref="P:System.Windows.Input.NavigationCommands.IncreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.FlowDocumentReader.IncreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.CanIncreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.MinZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.MaxZoom" />
       </Docs>
     </Member>
     <Member MemberName="CanDecreaseZoomProperty">
@@ -179,6 +187,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.CanGoToPreviousPage" />
+        <altmember cref="P:System.Windows.Input.NavigationCommands.PreviousPage" />
       </Docs>
     </Member>
     <Member MemberName="CanGoToNextPageProperty">
@@ -259,6 +269,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.CanGoToNextPage" />
+        <altmember cref="P:System.Windows.Input.NavigationCommands.NextPage" />
       </Docs>
     </Member>
     <Member MemberName="CanGoToPreviousPageProperty">
@@ -310,6 +322,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Input.NavigationCommands.DecreaseZoom" />
+        <altmember cref="P:System.Windows.Input.NavigationCommands.IncreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.FlowDocumentReader.IncreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.CanIncreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.MinZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.MaxZoom" />
       </Docs>
     </Member>
     <Member MemberName="CanIncreaseZoomProperty">
@@ -356,6 +374,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.FlowDocumentReader.IncreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.CanIncreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.MinZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.MaxZoom" />
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -475,6 +497,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.FlowDocumentReader.DecreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.CanDecreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.MinZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.MaxZoom" />
       </Docs>
     </Member>
     <Member MemberName="IsFindEnabled">
@@ -525,6 +551,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.FlowDocumentReader.Find" />
       </Docs>
     </Member>
     <Member MemberName="IsFindEnabledProperty">
@@ -629,6 +656,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Setting this property to <see langword="false" /> while <see cref="P:System.Windows.Controls.FlowDocumentReader.IsScrollViewEnabled" /> and <see cref="P:System.Windows.Controls.FlowDocumentReader.IsTwoPageViewEnabled" /> are also <see langword="false" />.</exception>
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.IsScrollViewEnabled" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.IsTwoPageViewEnabled" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.ViewingMode" />
       </Docs>
     </Member>
     <Member MemberName="IsPageViewEnabledProperty">
@@ -691,6 +721,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.FlowDocumentReader.Print" />
+        <altmember cref="M:System.Windows.Controls.FlowDocumentReader.CancelPrint" />
       </Docs>
     </Member>
     <Member MemberName="IsPrintEnabledProperty">
@@ -743,6 +775,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Setting this property to <see langword="false" /> while <see cref="P:System.Windows.Controls.FlowDocumentReader.IsPageViewEnabled" /> and <see cref="P:System.Windows.Controls.FlowDocumentReader.IsTwoPageViewEnabled" /> are also <see langword="false" />.</exception>
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.IsScrollViewEnabled" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.IsTwoPageViewEnabled" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.ViewingMode" />
       </Docs>
     </Member>
     <Member MemberName="IsScrollViewEnabledProperty">
@@ -847,6 +882,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Setting this property to <see langword="false" /> while <see cref="P:System.Windows.Controls.FlowDocumentReader.IsPageViewEnabled" /> and <see cref="P:System.Windows.Controls.FlowDocumentReader.IsScrollViewEnabled" /> are also <see langword="false" />.</exception>
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.IsScrollViewEnabled" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.IsTwoPageViewEnabled" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.ViewingMode" />
       </Docs>
     </Member>
     <Member MemberName="IsTwoPageViewEnabledProperty">
@@ -927,6 +965,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.CanDecreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.CanIncreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.FlowDocumentReader.DecreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.FlowDocumentReader.IncreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.MinZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.ZoomIncrement" />
       </Docs>
     </Member>
     <Member MemberName="MaxZoomProperty">
@@ -989,6 +1033,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.CanDecreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.CanIncreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.FlowDocumentReader.DecreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.FlowDocumentReader.IncreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.MaxZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.ZoomIncrement" />
       </Docs>
     </Member>
     <Member MemberName="MinZoomProperty">
@@ -1029,7 +1079,7 @@
 ## Remarks  
  This method is invoked whenever <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> is called.  
   
- This method overrides <xref:System.Windows.FrameworkElement.OnApplyTemplate%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Windows.FrameworkElement.OnApplyTemplate%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1080,7 +1130,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Windows.ContentElement.OnCreateAutomationPeer%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Windows.ContentElement.OnCreateAutomationPeer%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1208,7 +1258,7 @@
 ## Remarks  
  This method is called when the <xref:System.Windows.FrameworkElement.IsInitialized%2A> property is `true`.  
   
- This method overrides <xref:System.Windows.FrameworkElement.OnInitialized%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Windows.FrameworkElement.OnInitialized%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1282,6 +1332,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.KeyDown" />
       </Docs>
     </Member>
     <Member MemberName="OnPrintCommand">
@@ -1388,6 +1439,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.PageNumber" />
       </Docs>
     </Member>
     <Member MemberName="PageCountProperty">
@@ -1440,6 +1492,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.PageCount" />
       </Docs>
     </Member>
     <Member MemberName="PageNumberProperty">
@@ -1488,6 +1541,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.FlowDocumentReader.CancelPrint" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.IsPrintEnabled" />
       </Docs>
     </Member>
     <Member MemberName="Selection">
@@ -1687,6 +1742,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.FlowDocumentReader.OnSwitchViewingModeCommand(System.Windows.Controls.FlowDocumentReaderViewingMode)" />
+        <altmember cref="T:System.Windows.Controls.FlowDocumentReaderViewingMode" />
       </Docs>
     </Member>
     <Member MemberName="SwitchViewingModeCore">
@@ -1794,6 +1851,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.IsPageViewEnabled" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.IsScrollViewEnabled" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.IsTwoPageViewEnabled" />
       </Docs>
     </Member>
     <Member MemberName="ViewingModeProperty">
@@ -1860,6 +1920,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.CanDecreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.CanIncreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.FlowDocumentReader.DecreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.FlowDocumentReader.IncreaseZoom" />
       </Docs>
     </Member>
     <Member MemberName="ZoomIncrement">
@@ -1909,6 +1973,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.CanDecreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.CanIncreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.FlowDocumentReader.DecreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.FlowDocumentReader.IncreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.MaxZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentReader.MinZoom" />
       </Docs>
     </Member>
     <Member MemberName="ZoomIncrementProperty">

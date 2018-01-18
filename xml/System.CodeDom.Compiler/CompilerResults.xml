@@ -49,6 +49,7 @@
  ]]></format>
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
+    <altmember cref="T:System.CodeDom.Compiler.ICodeCompiler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,6 +73,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.CompilerResults" /> class that uses the specified temporary files.</summary>
         <remarks>To be added.</remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+        <altmember cref="T:System.CodeDom.Compiler.TempFileCollection" />
       </Docs>
     </Member>
     <Member MemberName="CompiledAssembly">
@@ -104,6 +106,7 @@
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="T:System.Reflection.Assembly" />
       </Docs>
     </Member>
     <Member MemberName="Errors">
@@ -133,6 +136,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerErrorCollection" />
       </Docs>
     </Member>
     <Member MemberName="Evidence">
@@ -158,6 +162,7 @@
         <remarks>To be added.</remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to control evidence. Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /> Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" /></permission>
+        <altmember cref="T:System.Security.Policy.Evidence" />
       </Docs>
     </Member>
     <Member MemberName="NativeCompilerReturnValue">
@@ -218,6 +223,7 @@
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="T:System.Collections.Specialized.StringCollection" />
       </Docs>
     </Member>
     <Member MemberName="PathToAssembly">
@@ -264,6 +270,7 @@
         <value>A <see cref="T:System.CodeDom.Compiler.TempFileCollection" /> with which to manage and store references to intermediate files generated during compilation.</value>
         <remarks>To be added.</remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="T:System.CodeDom.Compiler.TempFileCollection" />
       </Docs>
     </Member>
   </Members>

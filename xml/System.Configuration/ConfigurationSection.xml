@@ -85,6 +85,9 @@
   
     -   Read permissions on all the configuration files.</para>
     </block>
+    <altmember cref="T:System.Configuration.Configuration" />
+    <altmember cref="T:System.Configuration.SectionInformation" />
+    <altmember cref="T:System.Configuration.ConfigurationElement" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -278,6 +281,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.SectionInformation" />
       </Docs>
     </Member>
     <Member MemberName="SerializeSection">

@@ -22,7 +22,7 @@
 ## Remarks  
  The <xref:System.Web.UI.Design.ControlDesigner> class, and any derived class, uses the <xref:System.Web.UI.Design.DesignerRegionCollection> class to contain and enumerate the designer regions for the control in a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)].  
   
- For example, the <xref:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml%2A?displayProperty=fullName> method can be used to define and add regions to the collection.  
+ For example, the <xref:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml%2A?displayProperty=nameWithType> method can be used to define and add regions to the collection.  
   
  Use the <xref:System.Web.UI.Design.DesignerRegionCollection.Owner%2A> property to access the control designer object that contains the designer region collection. Use the <xref:System.Web.UI.Design.DesignerRegionCollection> methods and properties to examine and maintain the <xref:System.Web.UI.Design.DesignerRegion> objects that are in the collection.  
   
@@ -46,6 +46,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.DesignerRegion" />
+    <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml" />
+    <altmember cref="P:System.Web.UI.Design.ViewRendering.Regions" />
+    <altmember cref="T:System.Web.UI.Design.EditableDesignerRegion" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -95,6 +99,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.DesignerRegionCollection.Owner" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -181,6 +186,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.DesignerRegionCollection.IndexOf(System.Web.UI.Design.DesignerRegion)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -293,6 +299,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.DesignerRegionCollection.Contains(System.Web.UI.Design.DesignerRegion)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -398,6 +405,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.DesignerRegionCollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -460,6 +468,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.DesignerRegionCollection.#ctor(System.Web.UI.Design.ControlDesigner)" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -557,10 +566,11 @@
 ## Remarks  
  Enumerating through a collection is not a thread-safe procedure intrinsically. Even when a collection is synchronized, other threads can still modify the collection. This causes exceptions during enumeration.  
   
- Lock the collection by using the <xref:System.Web.UI.Design.DesignerRegionCollection.SyncRoot%2A> method during the whole enumeration to guarantee thread safety. For detailed information about locking collections for thread-safe access, see <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName>.  
+ Lock the collection by using the <xref:System.Web.UI.Design.DesignerRegionCollection.SyncRoot%2A> method during the whole enumeration to guarantee thread safety. For detailed information about locking collections for thread-safe access, see <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.DesignerRegionCollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -591,6 +601,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.Count">
@@ -616,6 +627,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.Count" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -642,6 +654,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.DesignerRegionCollection.IsSynchronized" />
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -667,6 +682,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.DesignerRegionCollection.SyncRoot" />
+        <altmember cref="P:System.Web.UI.Design.DesignerRegionCollection.IsSynchronized" />
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -693,6 +711,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.DesignerRegionCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -887,6 +906,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.DesignerRegionCollection.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Item">
@@ -974,5 +994,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.DesignerRegionCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

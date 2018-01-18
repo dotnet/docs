@@ -9,10 +9,8 @@ ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "keys, encryption and decryption"
   - "keys, asymmetric"
@@ -26,6 +24,9 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Generating Keys for Encryption and Decryption
 Creating and managing keys is an important part of the cryptographic process. Symmetric algorithms require the creation of a key and an initialization vector (IV). The key must be kept secret from anyone who should not decrypt your data. The IV does not have to be secret, but should be changed for each session. Asymmetric algorithms require the creation of a public key and a private key. The public key can be made public to anyone, while the private key must known only by the party who will decrypt the data encrypted with the public key. This section describes how to generate and manage keys for both symmetric and asymmetric algorithms.  
@@ -93,7 +94,7 @@ RSAParameters RSAKeyInfo = RSA.ExportParameters(false);
 ```  
   
 ## See Also  
- [Encrypting Data](../../../docs/standard/security/encrypting-data.md)   
- [Decrypting Data](../../../docs/standard/security/decrypting-data.md)   
- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)   
+ [Encrypting Data](../../../docs/standard/security/encrypting-data.md)  
+ [Decrypting Data](../../../docs/standard/security/decrypting-data.md)  
+ [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)  
  [How to: Store Asymmetric Keys in a Key Container](../../../docs/standard/security/how-to-store-asymmetric-keys-in-a-key-container.md)

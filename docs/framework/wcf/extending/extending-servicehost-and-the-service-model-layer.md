@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "extending service models [WCF]"
 ms.assetid: 954c138a-1cd0-45a0-8abe-e4d2b8ff5400
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Extending ServiceHost and the Service Model Layer
 The service model layer is responsible for pulling incoming messages out of the underlying channels, translating them into method invocations in application code, and sending the results back to the caller. Service model extensions modify or implement execution or communication behavior and features involving client or dispatcher functionality, custom behaviors, message and parameter interception, and other extensibility functionality.  
@@ -34,7 +36,7 @@ The service model layer is responsible for pulling incoming messages out of the 
  To change settings on or insert extensions in the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] runtime, you use Behaviors. WCF includes system-implemented behaviors for controlling throttling, instancing, and many other aspects of services and operations. This section describes how to create your own custom behaviors and how to make them available for use both programmatically and using configuration files.  
   
  [Extending Hosting Using ServiceHostFactory](../../../../docs/framework/wcf/extending/extending-hosting-using-servicehostfactory.md)  
- Describes how to extend <xref:System.ServiceModel.ServiceHostBase?displayProperty=fullName>, <xref:System.ServiceModel.ServiceHost?displayProperty=fullName>, and use the <xref:System.ServiceModel.Activation.ServiceHostFactory?displayProperty=fullName> classes to customize the host environment.  
+ Describes how to extend <xref:System.ServiceModel.ServiceHostBase?displayProperty=nameWithType>, <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType>, and use the <xref:System.ServiceModel.Activation.ServiceHostFactory?displayProperty=nameWithType> classes to customize the host environment.  
   
 ## Reference  
   

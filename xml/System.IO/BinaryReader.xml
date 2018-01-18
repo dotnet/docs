@@ -106,6 +106,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The stream does not support reading, is <see langword="null" />, or is already closed.</exception>
+        <altmember cref="T:System.Text.UTF8Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -525,6 +526,7 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -713,7 +715,7 @@
 ## Remarks  
  <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read.  
   
- If the integer will fit in seven bits, the integer takes only one byte of space. The integer is expected to have been written through <xref:System.IO.BinaryWriter.Write7BitEncodedInt%2A?displayProperty=fullName>.  
+ If the integer will fit in seven bits, the integer takes only one byte of space. The integer is expected to have been written through <xref:System.IO.BinaryWriter.Write7BitEncodedInt%2A?displayProperty=nameWithType>.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -970,6 +972,7 @@
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
         <exception cref="T:System.ArgumentException">A surrogate character was read.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName="ReadChars">
@@ -1035,6 +1038,7 @@
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="count" /> is negative.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName="ReadDecimal">
@@ -1622,5 +1626,38 @@
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.IO.BinaryReader" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.BinaryReader" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Read">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads bytes from the underlying stream and advances the current position of the stream.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

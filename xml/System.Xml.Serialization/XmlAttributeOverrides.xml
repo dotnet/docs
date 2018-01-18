@@ -57,6 +57,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.IO.Stream)" />
+    <altmember cref="M:System.Xml.Serialization.XmlSerializer.Serialize(System.IO.TextWriter,System.Object)" />
+    <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
+    <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -133,6 +137,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
+        <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -186,6 +192,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
+        <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -236,6 +244,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
+        <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -286,7 +296,29 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
+        <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an object that represents the collection of overriding attributes.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an <see cref="T:System.Xml.Serialization.XmlAttributes" /> object to the collection of <see cref="T:System.Xml.Serialization.XmlAttributes" /> objects.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

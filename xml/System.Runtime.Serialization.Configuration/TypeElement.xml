@@ -16,10 +16,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class is used to handle the [\&lt;dataContractSerializer\&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md) within the [\&lt;dataContractSerializer\&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md) element, specifically, to allow the addition of types to the collection of known types.  
+ This class is used to handle the [&lt;dataContractSerializer&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md) within the [&lt;dataContractSerializer&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md) element, specifically, to allow the addition of types to the collection of known types.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.Serialization.DataContractSerializer" />
+    <altmember cref="P:System.Runtime.Serialization.DataContractSerializer.KnownTypes" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -169,5 +171,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Configuration.TypeElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

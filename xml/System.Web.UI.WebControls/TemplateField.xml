@@ -50,11 +50,28 @@
 ## Examples  
  The following code example demonstrates how to create a custom <xref:System.Web.UI.WebControls.TemplateField> object that displays two fields in the same cell. The first name and last name fields are combined into the same <xref:System.Web.UI.WebControls.TemplateField> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[TemplateField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateField/CS/templatefieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TemplateField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateField/VB/templatefieldvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TemplateField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateField/CS/templatefieldcs.aspx#1)]
+ [!code-aspx-vb[TemplateField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateField/VB/templatefieldvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.Fields" />
+    <altmember cref="T:System.Web.UI.WebControls.BoundField" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonField" />
+    <altmember cref="T:System.Web.UI.WebControls.CheckBoxField" />
+    <altmember cref="T:System.Web.UI.WebControls.CommandField" />
+    <altmember cref="T:System.Web.UI.WebControls.DataControlField" />
+    <altmember cref="T:System.Web.UI.WebControls.HyperLinkField" />
+    <altmember cref="P:System.Web.UI.WebControls.TemplateField.AlternatingItemTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.TemplateField.EditItemTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.TemplateField.FooterTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.TemplateField.HeaderTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.TemplateField.InsertItemTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.TemplateField.ItemTemplate" />
+    <altmember cref="P:System.Web.UI.WebControls.DataControlField.Visible" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -85,11 +102,15 @@
 ## Examples  
  The following code example demonstrates how to use the constructor to dynamically add a <xref:System.Web.UI.WebControls.TemplateField> field column to a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[TemplateFieldCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldCtor/CS/templatefieldctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TemplateFieldCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldCtor/VB/templatefieldctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TemplateFieldCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldCtor/CS/templatefieldctorcs.aspx#1)]
+ [!code-aspx-vb[TemplateFieldCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldCtor/VB/templatefieldctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+        <altmember cref="P:System.Web.UI.WebControls.DetailsView.Fields" />
       </Docs>
     </Member>
     <Member MemberName="AlternatingItemTemplate">
@@ -139,11 +160,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TemplateField.AlternatingItemTemplate%2A> property to create a custom template for the alternating items in a <xref:System.Web.UI.WebControls.TemplateField> field column of a <xref:System.Web.UI.WebControls.GridView> control. The template is a variation of the template specified by the <xref:System.Web.UI.WebControls.TemplateField.ItemTemplate%2A> property, where an image is displayed on the opposite side of the cell.  
   
- <!-- TODO: review snippet reference [!code-csharp[TemplateFieldAlternatingItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldAlternatingItemTemplate/CS/templatefieldalternatingitemtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TemplateFieldAlternatingItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldAlternatingItemTemplate/VB/templatefieldalternatingitemtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TemplateFieldAlternatingItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldAlternatingItemTemplate/CS/templatefieldalternatingitemtemplatecs.aspx#1)]
+ [!code-aspx-vb[TemplateFieldAlternatingItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldAlternatingItemTemplate/VB/templatefieldalternatingitemtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.ItemTemplate" />
       </Docs>
     </Member>
     <Member MemberName="ConvertEmptyStringToNull">
@@ -177,6 +203,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
       </Docs>
     </Member>
     <Member MemberName="CopyProperties">
@@ -208,6 +237,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.TemplateField.CopyProperties(System.Web.UI.WebControls.DataControlField)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.DataControlField.CopyProperties(System.Web.UI.WebControls.DataControlField)" /> method.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
       </Docs>
     </Member>
     <Member MemberName="CreateField">
@@ -237,6 +269,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.TemplateField.CreateField" /> in a derived class, be sure to create a new instance of your type and not call the base method.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
       </Docs>
     </Member>
     <Member MemberName="EditItemTemplate">
@@ -283,11 +318,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TemplateField.EditItemTemplate%2A> property to create a custom template for an item in edit mode in a <xref:System.Web.UI.WebControls.TemplateField> field column of a <xref:System.Web.UI.WebControls.GridView> control. The template contains validation server controls to prevent a user from leaving a value field empty.  
   
- <!-- TODO: review snippet reference [!code-csharp[TemplateFieldEditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldEditItemTemplate/CS/templatefieldedititemtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TemplateFieldEditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldEditItemTemplate/VB/templatefieldedititemtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TemplateFieldEditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldEditItemTemplate/CS/templatefieldedititemtemplatecs.aspx#1)]
+ [!code-aspx-vb[TemplateFieldEditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldEditItemTemplate/VB/templatefieldedititemtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.AlternatingItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.ItemTemplate" />
       </Docs>
     </Member>
     <Member MemberName="ExtractValuesFromCell">
@@ -323,6 +363,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.ExtractValuesFromCell(System.Collections.Specialized.IOrderedDictionary,System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlRowState,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="FooterTemplate">
@@ -369,11 +410,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TemplateField.FooterTemplate%2A> property to create a custom template for the footer section of a <xref:System.Web.UI.WebControls.TemplateField> field column in a <xref:System.Web.UI.WebControls.GridView> control. The template displays the sum of the values in the <xref:System.Web.UI.WebControls.TemplateField> field column.  
   
- <!-- TODO: review snippet reference [!code-csharp[TemplateFieldFooterTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldFooterTemplate/CS/templatefieldfootertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TemplateFieldFooterTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldFooterTemplate/VB/templatefieldfootertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TemplateFieldFooterTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldFooterTemplate/CS/templatefieldfootertemplatecs.aspx#1)]
+ [!code-aspx-vb[TemplateFieldFooterTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldFooterTemplate/VB/templatefieldfootertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.AlternatingItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.ItemTemplate" />
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplate">
@@ -420,11 +466,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TemplateField.HeaderTemplate%2A> property to create a custom template for the header section of a <xref:System.Web.UI.WebControls.TemplateField> field column in a <xref:System.Web.UI.WebControls.GridView> control. The template displays a check box that allows the user to show or hide the rows of the <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[TemplateFieldHeaderTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldHeaderTemplate/CS/templatefieldheadertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TemplateFieldHeaderTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldHeaderTemplate/VB/templatefieldheadertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TemplateFieldHeaderTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldHeaderTemplate/CS/templatefieldheadertemplatecs.aspx#1)]
+ [!code-aspx-vb[TemplateFieldHeaderTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldHeaderTemplate/VB/templatefieldheadertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.AlternatingItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.InsertItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.ItemTemplate" />
       </Docs>
     </Member>
     <Member MemberName="InitializeCell">
@@ -459,6 +510,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
       </Docs>
     </Member>
     <Member MemberName="InsertItemTemplate">
@@ -508,11 +562,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TemplateField.InsertItemTemplate%2A> property to create a custom template for an item in insert mode in a <xref:System.Web.UI.WebControls.TemplateField> field row in a <xref:System.Web.UI.WebControls.DetailsView> control. The template displays a <xref:System.Web.UI.WebControls.DropDownList> control that allows the user to select a value from a predefined list.  
   
- <!-- TODO: review snippet reference [!code-csharp[TemplateFieldInsertItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldInsertItemTemplate/CS/templatefieldinsertitemtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TemplateFieldInsertItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldInsertItemTemplate/VB/templatefieldinsertitemtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TemplateFieldInsertItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldInsertItemTemplate/CS/templatefieldinsertitemtemplatecs.aspx#1)]
+ [!code-aspx-vb[TemplateFieldInsertItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldInsertItemTemplate/VB/templatefieldinsertitemtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.AlternatingItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.ItemTemplate" />
       </Docs>
     </Member>
     <Member MemberName="ItemTemplate">
@@ -562,11 +621,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TemplateField.ItemTemplate%2A> property to create a custom template for the items of a <xref:System.Web.UI.WebControls.TemplateField> field in a <xref:System.Web.UI.WebControls.GridView> control. The template displays the field's value in a <xref:System.Web.UI.WebControls.RadioButtonList> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[TemplateFieldItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldItemTemplate/CS/templatefielditemtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TemplateFieldItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldItemTemplate/VB/templatefielditemtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TemplateFieldItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateFieldItemTemplate/CS/templatefielditemtemplatecs.aspx#1)]
+ [!code-aspx-vb[TemplateFieldItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateFieldItemTemplate/VB/templatefielditemtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.AlternatingItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.EditItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.FooterTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.TemplateField.InsertItemTemplate" />
       </Docs>
     </Member>
     <Member MemberName="ValidateRequestMode">
@@ -620,6 +684,9 @@
         <block subset="none" type="overrides">
           <para>Classes that derive from the <see cref="T:System.Web.UI.WebControls.TemplateField" /> class can override this method to indicate whether the controls contained by the field support callbacks. To indicate that callbacks are supported, implement this method as an empty method that does not throw an exception; otherwise, throw an exception with a useful message describing why callbacks are not supported.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
       </Docs>
     </Member>
   </Members>

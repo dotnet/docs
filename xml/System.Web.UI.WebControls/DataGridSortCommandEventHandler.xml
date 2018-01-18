@@ -33,13 +33,16 @@
 ## Examples  
  The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.DataGrid.SortCommand> event to sort a <xref:System.Web.UI.WebControls.DataGrid> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataGridAllowSorting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridAllowSorting/CS/datagridallowsortingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridAllowSorting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridAllowSorting/VB/datagridallowsortingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridAllowSorting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridAllowSorting/CS/datagridallowsortingcs.aspx#1)]
+ [!code-aspx-vb[DataGridAllowSorting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridAllowSorting/VB/datagridallowsortingvb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[DataGridSortCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridSortCommand/CS/datagridsortcommandcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridSortCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridSortCommand/VB/datagridsortcommandvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridSortCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridSortCommand/CS/datagridsortcommandcs.aspx#1)]
+ [!code-aspx-vb[DataGridSortCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridSortCommand/VB/datagridsortcommandvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataGridSortCommandEventArgs" />
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="E:System.Web.UI.WebControls.DataGrid.SortCommand" />
   </Docs>
 </Type>

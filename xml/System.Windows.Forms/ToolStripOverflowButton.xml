@@ -65,6 +65,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Control.ControlAccessibleObject" />
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
       </Docs>
     </Member>
     <Member MemberName="CreateDefaultDropDown">
@@ -102,6 +104,7 @@
         <summary>Gets the space, in pixels, that is specified by default between controls.</summary>
         <value>A <see cref="T:System.Windows.Forms.Padding" /> value representing the space between controls.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.Padding" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">

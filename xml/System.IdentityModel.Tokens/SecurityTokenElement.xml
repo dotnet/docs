@@ -43,7 +43,7 @@
 ## Remarks  
  When this constructor is used, the <xref:System.IdentityModel.Tokens.SecurityTokenElement.GetIdentities%2A> method is not supported by the new instance unless the <xref:System.IdentityModel.Tokens.SecurityTokenElement.ValidateToken%2A> method is overridden.  
   
- If the `securityToken` parameter is an instance of <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken> then the <xref:System.IdentityModel.Tokens.SecurityTokenElement.SecurityTokenXml%2A> property is set to the value of the <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken.TokenXml%2A?displayProperty=fullName> property.  
+ If the `securityToken` parameter is an instance of <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken> then the <xref:System.IdentityModel.Tokens.SecurityTokenElement.SecurityTokenXml%2A> property is set to the value of the <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken.TokenXml%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -108,7 +108,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the current instance was not constructed explicitly from a <xref:System.IdentityModel.Tokens.SecurityToken> object by using the <xref:System.IdentityModel.Tokens.SecurityTokenElement.%23ctor%28System.IdentityModel.Tokens.SecurityToken%29?displayProperty=fullName> constructor, then the <xref:System.IdentityModel.Tokens.SecurityTokenElement.ReadSecurityToken%2A> method is called to return the security token.  
+ If the current instance was not constructed explicitly from a <xref:System.IdentityModel.Tokens.SecurityToken> object by using the <xref:System.IdentityModel.Tokens.SecurityTokenElement.%23ctor%28System.IdentityModel.Tokens.SecurityToken%29?displayProperty=nameWithType> constructor, then the <xref:System.IdentityModel.Tokens.SecurityTokenElement.ReadSecurityToken%2A> method is called to return the security token.  
   
  ]]></format>
         </remarks>
@@ -157,7 +157,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is `null` unless the current instance was initialized by using the <xref:System.IdentityModel.Tokens.SecurityTokenElement.%23ctor%28System.Xml.XmlElement%2CSystem.IdentityModel.Tokens.SecurityTokenHandlerCollection%29?displayProperty=fullName> constructor.  
+ This property is `null` unless the current instance was initialized by using the <xref:System.IdentityModel.Tokens.SecurityTokenElement.%23ctor%28System.Xml.XmlElement%2CSystem.IdentityModel.Tokens.SecurityTokenHandlerCollection%29?displayProperty=nameWithType> constructor.  
   
  ]]></format>
         </remarks>
@@ -193,5 +193,14 @@
  <paramref name="securityTokenHandlers" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityTokenElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Automation.Provider.IGridItemProvider" />
   </Docs>
   <Members>
     <Member MemberName="Cached">
@@ -198,7 +199,7 @@
    
   
 ## Examples  
- In the following example, a <xref:System.Windows.Automation.GridItemPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement>.  
+ In the following example, a <xref:System.Windows.Automation.GridItemPattern> control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement>.  
   
  [!code-csharp[UIAGridItemPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#101)]
  [!code-vb[UIAGridItemPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#101)]  

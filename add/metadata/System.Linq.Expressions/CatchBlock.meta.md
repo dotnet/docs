@@ -3,7 +3,7 @@ uid: System.Linq.Expressions.CatchBlock
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -56,5 +56,5 @@ uid: System.Linq.Expressions.CatchBlock.Variable
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---

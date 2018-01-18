@@ -39,6 +39,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ConfigurationValidatorAttribute" />
+    <altmember cref="T:System.Configuration.ConfigurationPropertyAttribute" />
+    <altmember cref="T:System.Configuration.RegexStringValidator" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -78,6 +81,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.RegexStringValidator" />
       </Docs>
     </Member>
     <Member MemberName="Regex">
@@ -147,6 +151,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConfigurationValidatorAttribute" />
       </Docs>
     </Member>
   </Members>

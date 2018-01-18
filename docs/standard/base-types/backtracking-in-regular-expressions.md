@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - ".NET Framework regular expressions, backtracking"
   - "alternative matching patterns"
@@ -23,6 +26,9 @@ caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Backtracking in Regular Expressions
 <a name="top"></a> Backtracking occurs when a regular expression pattern contains optional [quantifiers](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md) or [alternation constructs](../../../docs/standard/base-types/alternation-constructs-in-regular-expressions.md), and the regular expression engine returns to a previous saved state to continue its search for a match. Backtracking is central to the power of regular expressions; it makes it possible for expressions to be powerful and flexible, and to match very complex patterns. At the same time, this power comes at a cost. Backtracking is often the single most important factor that affects the performance of the regular expression engine. Fortunately, the developer has control over the behavior of the regular expression engine and how it uses backtracking. This topic explains how backtracking works and how it can be controlled.  
@@ -104,7 +110,7 @@ manager: "wpickett"
   
 <a name="backtracking_with_nested_optional_quantifiers"></a>   
 ## Backtracking with Nested Optional Quantifiers  
- The number of comparison operations required to match a regular expression pattern can increase exponentially if the pattern includes a large number of alternation constructs, if it includes nested alternation constructs, or, most commonly, if it includes nested optional quantifiers. For example, the regular expression pattern `^(a+)+$` is designed to match a complete string that contains one or more "a" characters. The example provides two input strings of identical length, but only the first string matches the pattern. The <xref:System.Diagnostics.Stopwatch?displayProperty=fullName> class is used to determine how long the match operation takes.  
+ The number of comparison operations required to match a regular expression pattern can increase exponentially if the pattern includes a large number of alternation constructs, if it includes nested alternation constructs, or, most commonly, if it includes nested optional quantifiers. For example, the regular expression pattern `^(a+)+$` is designed to match a complete string that contains one or more "a" characters. The example provides two input strings of identical length, but only the first string matches the pattern. The <xref:System.Diagnostics.Stopwatch?displayProperty=nameWithType> class is used to determine how long the match operation takes.  
   
  [!code-csharp[Conceptual.RegularExpressions.Backtracking#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.backtracking/cs/backtracking3.cs#3)]
  [!code-vb[Conceptual.RegularExpressions.Backtracking#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.backtracking/vb/backtracking3.vb#3)]  
@@ -127,14 +133,14 @@ manager: "wpickett"
   
 <a name="Timeout"></a>   
 ### Defining a Time-out Interval  
- Starting with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], you can set a time-out value that represents the longest interval the regular expression engine will search for a single match before it abandons the attempt and throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. You specify the time-out interval by supplying a <xref:System.TimeSpan> value to the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=fullName> constructor for instance regular expressions. In addition, each static pattern matching method has an overload with a <xref:System.TimeSpan> parameter that allows you to specify a time-out value. By default, the time-out interval is set to <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=fullName> and the regular expression engine does not time out.  
+ Starting with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], you can set a time-out value that represents the longest interval the regular expression engine will search for a single match before it abandons the attempt and throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. You specify the time-out interval by supplying a <xref:System.TimeSpan> value to the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType> constructor for instance regular expressions. In addition, each static pattern matching method has an overload with a <xref:System.TimeSpan> parameter that allows you to specify a time-out value. By default, the time-out interval is set to <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=nameWithType> and the regular expression engine does not time out.  
   
 > [!IMPORTANT]
 >  We recommend that you always set a time-out interval if your regular expression relies on backtracking.  
   
  A <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception indicates that the regular expression engine was unable to find a match within in the specified time-out interval but does not indicate why the exception was thrown. The reason might be excessive backtracking, but it is also possible that the time-out interval was set too low given the system load at the time the exception was thrown. When you handle the exception, you can choose to abandon further matches with the input string or increase the time-out interval and retry the matching operation.  
   
- For example, the following code calls the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=fullName> constructor to instantiate a <xref:System.Text.RegularExpressions.Regex> object with a time-out value of one second. The regular expression pattern `(a+)+$`, which matches one or more sequences of one or more "a" characters at the end of a line, is subject to excessive backtracking. If a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> is thrown, the example increases the time-out value up to a maximum interval of three seconds. After that, it abandons the attempt to match the pattern.  
+ For example, the following code calls the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType> constructor to instantiate a <xref:System.Text.RegularExpressions.Regex> object with a time-out value of one second. The regular expression pattern `(a+)+$`, which matches one or more sequences of one or more "a" characters at the end of a line, is subject to excessive backtracking. If a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> is thrown, the example increases the time-out value up to a maximum interval of three seconds. After that, it abandons the attempt to match the pattern.  
   
  [!code-csharp[System.Text.RegularExpressions.Regex.ctor#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.regex.ctor/cs/ctor1.cs#1)]
  [!code-vb[System.Text.RegularExpressions.Regex.ctor#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.regex.ctor/vb/ctor1.vb#1)]  
@@ -154,7 +160,7 @@ manager: "wpickett"
   
  `(?<=` *subexpression* `)` is a positive lookbehind assertion; that is, the character or characters before the current position must match *subexpression*. `(?<!`*subexpression*`)` is a negative lookbehind assertion; that is, the character or characters before the current position must not match *subexpression*. Both positive and negative lookbehind assertions are most useful when *subexpression* is a subset of the previous subexpression.  
   
- The following example uses two equivalent regular expression patterns that validate the user name in an e-mail address. The first pattern is subject to poor performance because of excessive backtracking. The second pattern modifies the first regular expression by replacing a nested quantifier with a positive lookbehind assertion. The output from the example displays the execution time of the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=fullName> method.  
+ The following example uses two equivalent regular expression patterns that validate the user name in an e-mail address. The first pattern is subject to poor performance because of excessive backtracking. The second pattern modifies the first regular expression by replacing a nested quantifier with a positive lookbehind assertion. The output from the example displays the execution time of the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> method.  
   
  [!code-csharp[Conceptual.RegularExpressions.Backtracking#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.backtracking/cs/backtracking5.cs#5)]
  [!code-vb[Conceptual.RegularExpressions.Backtracking#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.backtracking/vb/backtracking5.vb#5)]  
@@ -164,7 +170,7 @@ manager: "wpickett"
 |Pattern|Description|  
 |-------------|-----------------|  
 |`^`|Start the match at the beginning of the string.|  
-|`[0-9A-Z]`|Match an alphanumeric character. This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=fullName> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=fullName> option.|  
+|`[0-9A-Z]`|Match an alphanumeric character. This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> option.|  
 |`[-.\w]*`|Match zero, one, or more occurrences of a hyphen, period, or word character.|  
 |`[0-9A-Z]`|Match an alphanumeric character.|  
 |`([-.\w]*[0-9A-Z])*`|Match zero or more occurrences of the combination of zero or more hyphens, periods, or word characters, followed by an alphanumeric character. This is the first capturing group.|  
@@ -175,7 +181,7 @@ manager: "wpickett"
 |Pattern|Description|  
 |-------------|-----------------|  
 |`^`|Start the match at the beginning of the string.|  
-|`[0-9A-Z]`|Match an alphanumeric character. This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=fullName> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=fullName> option.|  
+|`[0-9A-Z]`|Match an alphanumeric character. This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> option.|  
 |`[-.\w]*`|Match zero or more occurrences of a hyphen, period, or word character.|  
 |`(?<=[0-9A-Z])`|Look back at the last matched character and continue the match if it is alphanumeric. Note that alphanumeric characters are a subset of the set that consists of periods, hyphens, and all word characters.|  
 |`@`|Match an at sign ("@").|  
@@ -186,7 +192,7 @@ manager: "wpickett"
   
  `(?=` *subexpression* `)` is a positive lookahead assertion; that is, the character or characters after the current position must match *subexpression*. `(?!`*subexpression*`)` is a negative lookahead assertion; that is, the character or characters after the current position must not match *subexpression*. Both positive and negative lookahead assertions are most useful when *subexpression* is a subset of the next subexpression.  
   
- The following example uses two equivalent regular expression patterns that validate a fully qualified type name. The first pattern is subject to poor performance because of excessive backtracking. The second modifies the first regular expression by replacing a nested quantifier with a positive lookahead assertion. The output from the example displays the execution time of the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=fullName> method.  
+ The following example uses two equivalent regular expression patterns that validate a fully qualified type name. The first pattern is subject to poor performance because of excessive backtracking. The second modifies the first regular expression by replacing a nested quantifier with a positive lookahead assertion. The output from the example displays the execution time of the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> method.  
   
  [!code-csharp[Conceptual.RegularExpressions.Backtracking#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.backtracking/cs/backtracking6.cs#6)]
  [!code-vb[Conceptual.RegularExpressions.Backtracking#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.backtracking/vb/backtracking6.vb#6)]  
@@ -196,7 +202,7 @@ manager: "wpickett"
 |Pattern|Description|  
 |-------------|-----------------|  
 |`^`|Start the match at the beginning of the string.|  
-|`([A-Z]\w*)+\.`|Match an alphabetical character (A-Z) followed by zero or more word characters one or more times, followed by a period. This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=fullName> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=fullName> option.|  
+|`([A-Z]\w*)+\.`|Match an alphabetical character (A-Z) followed by zero or more word characters one or more times, followed by a period. This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> option.|  
 |`(([A-Z]\w*)+\.)*`|Match the previous pattern zero or more times.|  
 |`[A-Z]\w*`|Match an alphabetical character followed by zero or more word characters.|  
 |`$`|End the match at the end of the input string.|  
@@ -206,7 +212,7 @@ manager: "wpickett"
 |Pattern|Description|  
 |-------------|-----------------|  
 |`^`|Start the match at the beginning of the string.|  
-|`(?=[A-Z])`|Look ahead to the first character and continue the match if it is alphabetical (A-Z). This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=fullName> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=fullName> option.|  
+|`(?=[A-Z])`|Look ahead to the first character and continue the match if it is alphabetical (A-Z). This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> option.|  
 |`\w+\.`|Match one or more word characters followed by a period.|  
 |`((?=[A-Z])\w+\.)*`|Match the pattern of one or more word characters followed by a period zero or more times. The initial word character must be alphabetical.|  
 |`[A-Z]\w*`|Match an alphabetical character followed by zero or more word characters.|  
@@ -215,8 +221,8 @@ manager: "wpickett"
  [Back to top](#top)  
   
 ## See Also  
- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)   
- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)   
- [Quantifiers](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md)   
- [Alternation Constructs](../../../docs/standard/base-types/alternation-constructs-in-regular-expressions.md)   
+ [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)  
+ [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
+ [Quantifiers](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md)  
+ [Alternation Constructs](../../../docs/standard/base-types/alternation-constructs-in-regular-expressions.md)  
  [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md)

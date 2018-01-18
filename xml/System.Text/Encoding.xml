@@ -45,7 +45,7 @@
   
  Encoding is the process of transforming a set of Unicode characters into a sequence of bytes. In contrast, decoding is the process of transforming a sequence of encoded bytes into a set of Unicode characters. For information about the Unicode Transformation Formats (UTFs) and other encodings supported by <xref:System.Text.Encoding>, see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md).  
   
- Note that <xref:System.Text.Encoding> is intended to operate on Unicode characters instead of arbitrary binary data, such as byte arrays. If you must encode arbitrary binary data into text, you should use a protocol such as uuencode, which is implemented by methods such as <xref:System.Convert.ToBase64CharArray%2A?displayProperty=fullName>.  
+ Note that <xref:System.Text.Encoding> is intended to operate on Unicode characters instead of arbitrary binary data, such as byte arrays. If you must encode arbitrary binary data into text, you should use a protocol such as uuencode, which is implemented by methods such as <xref:System.Convert.ToBase64CharArray%2A?displayProperty=nameWithType>.  
   
  The .NET Framework provides the following implementations of the <xref:System.Text.Encoding> class to support current Unicode encodings and other encodings:  
   
@@ -63,7 +63,7 @@
   
  Use the <xref:System.Text.Encoding.GetEncoding%2A> method to obtain other encodings, and call the <xref:System.Text.Encoding.GetEncodings%2A> method to get a list of all encodings.  
   
- The following table lists the encodings supported by the .NET Framework. It lists each encoding's code page number and the values of the encoding's <xref:System.Text.EncodingInfo.Name%2A?displayProperty=fullName> and <xref:System.Text.EncodingInfo.DisplayName%2A?displayProperty=fullName> properties. An asterisk in the last column indicates that the code page is natively supported by the .NET Framework, regardless of the underlying platform. Note that code pages whose <xref:System.Text.EncodingInfo.Name%2A?displayProperty=fullName> property corresponds to an international standard do not necessarily comply in full with that standard.  
+ The following table lists the encodings supported by the .NET Framework. It lists each encoding's code page number and the values of the encoding's <xref:System.Text.EncodingInfo.Name%2A?displayProperty=nameWithType> and <xref:System.Text.EncodingInfo.DisplayName%2A?displayProperty=nameWithType> properties. An asterisk in the last column indicates that the code page is natively supported by the .NET Framework, regardless of the underlying platform. Note that code pages whose <xref:System.Text.EncodingInfo.Name%2A?displayProperty=nameWithType> property corresponds to an international standard do not necessarily comply in full with that standard.  
   
 |Code page|Name|Display name|.NET Framework support|  
 |---------------|----------|------------------|----------------------------|  
@@ -291,6 +291,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.Encoding.CodePage" />
+        <altmember cref="M:System.Text.Encoding.GetEncoding(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -337,6 +339,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="codePage" /> is less than zero.</exception>
+        <altmember cref="P:System.Text.Encoding.CodePage" />
+        <altmember cref="M:System.Text.Encoding.GetEncoding(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -445,6 +449,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.ASCIIEncoding" />
+        <altmember cref="M:System.Text.Encoding.GetEncoding(System.Int32)" />
+        <altmember cref="P:System.Text.Encoding.UTF8" />
+        <altmember cref="P:System.Text.Encoding.Unicode" />
       </Docs>
     </Member>
     <Member MemberName="BigEndianUnicode">
@@ -480,7 +488,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.UnicodeEncoding> object that is returned by this property may not have the appropriate behavior for your app. It uses replacement fallback to replace each string that it cannot encode and each byte that it cannot decode with a question mark ("?") character. Instead, you can call the <xref:System.Text.UnicodeEncoding.%23ctor%28System.Boolean%2CSystem.Boolean%2CSystem.Boolean%29?displayProperty=fullName> constructor to instantiate a big endian <xref:System.Text.UnicodeEncoding> object whose fallback is either an <xref:System.Text.EncoderFallbackException> or a <xref:System.Text.DecoderFallbackException>, as the following example illustrates.  
+ The <xref:System.Text.UnicodeEncoding> object that is returned by this property may not have the appropriate behavior for your app. It uses replacement fallback to replace each string that it cannot encode and each byte that it cannot decode with a question mark ("?") character. Instead, you can call the <xref:System.Text.UnicodeEncoding.%23ctor%28System.Boolean%2CSystem.Boolean%2CSystem.Boolean%29?displayProperty=nameWithType> constructor to instantiate a big endian <xref:System.Text.UnicodeEncoding> object whose fallback is either an <xref:System.Text.EncoderFallbackException> or a <xref:System.Text.DecoderFallbackException>, as the following example illustrates.  
   
  [!code-csharp[System.Text.Encoding.BigEndianUnicode#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.Encoding.BigEndianUnicode/CS/bigendianunicode1.cs#2)]
  [!code-vb[System.Text.Encoding.BigEndianUnicode#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.Encoding.BigEndianUnicode/VB/bigendianunicode1.vb#2)]  
@@ -504,6 +512,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.UnicodeEncoding" />
+        <altmember cref="M:System.Text.Encoding.GetEncoding(System.Int32)" />
+        <altmember cref="P:System.Text.Encoding.Unicode" />
       </Docs>
     </Member>
     <Member MemberName="BodyName">
@@ -545,7 +556,7 @@
    
   
 ## Examples  
- The following example retrieves the different names for each encoding and displays the encodings with one or more names that are different from <xref:System.Text.EncodingInfo.Name%2A?displayProperty=fullName>. It displays <xref:System.Text.Encoding.EncodingName%2A> but does not compare against it.  
+ The following example retrieves the different names for each encoding and displays the encodings with one or more names that are different from <xref:System.Text.EncodingInfo.Name%2A?displayProperty=nameWithType>. It displays <xref:System.Text.Encoding.EncodingName%2A> but does not compare against it.  
   
  [!code-cpp[System.Text.Encoding.Names#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.Encoding.Names/CPP/names.cpp#1)]
  [!code-csharp[System.Text.Encoding.Names#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.Encoding.Names/CS/names.cs#1)]
@@ -553,6 +564,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.EncodingInfo.Name" />
+        <altmember cref="P:System.Text.Encoding.EncodingName" />
+        <altmember cref="P:System.Text.Encoding.HeaderName" />
+        <altmember cref="P:System.Text.Encoding.WebName" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -633,7 +648,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example retrieves the different names for each encoding and displays the encodings with one or more names that are different from <xref:System.Text.EncodingInfo.Name%2A?displayProperty=fullName>. It displays <xref:System.Text.Encoding.EncodingName%2A> but does not compare against it.  
+ The following example retrieves the different names for each encoding and displays the encodings with one or more names that are different from <xref:System.Text.EncodingInfo.Name%2A?displayProperty=nameWithType>. It displays <xref:System.Text.Encoding.EncodingName%2A> but does not compare against it.  
   
  [!code-cpp[System.Text.Encoding.Names#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.Encoding.Names/CPP/names.cpp#1)]
  [!code-csharp[System.Text.Encoding.Names#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.Encoding.Names/CS/names.cs#1)]
@@ -641,6 +656,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.EncodingInfo.CodePage" />
+        <altmember cref="P:System.Text.Encoding.WindowsCodePage" />
       </Docs>
     </Member>
     <Member MemberName="Convert">
@@ -829,6 +846,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value in a set operation is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">A value cannot be assigned in a set operation because the current <see cref="T:System.Text.Encoding" /> object is read-only.</exception>
+        <altmember cref="T:System.Text.DecoderFallback" />
+        <altmember cref="T:System.Text.DecoderFallbackBuffer" />
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -870,7 +889,7 @@
 
 ### The Default property in the .NET Framework
 
-In the .NET Framework on the Windows desktop, the <xref:System.Text.Encoding.Default%2A> property always gets the system's active code page and creates a <xref:System.Text.Encoding> object that corresponds to it. The active code page may be an ANSI code page, which includes the ASCII character set along with additional characters that vary by code page. Because all <xref:System.Text.Encoding.Default%2A> encodings based on ANSI code pages lose data, consider using the <xref:System.Text.Encoding.UTF8%2A?displayProperty=fullName> encoding instead. UTF-8 is often identical in the U+00 to U+7F range, but can encode characters outside the ASCII range without loss.
+In the .NET Framework on the Windows desktop, the <xref:System.Text.Encoding.Default%2A> property always gets the system's active code page and creates a <xref:System.Text.Encoding> object that corresponds to it. The active code page may be an ANSI code page, which includes the ASCII character set along with additional characters that vary by code page. Because all <xref:System.Text.Encoding.Default%2A> encodings based on ANSI code pages lose data, consider using the <xref:System.Text.Encoding.UTF8%2A?displayProperty=nameWithType> encoding instead. UTF-8 is often identical in the U+00 to U+7F range, but can encode characters outside the ASCII range without loss.
 
 ## The Default property on .NET Core
 
@@ -929,6 +948,8 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value in a set operation is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">A value cannot be assigned in a set operation because the current <see cref="T:System.Text.Encoding" /> object is read-only.</exception>
+        <altmember cref="T:System.Text.EncoderFallback" />
+        <altmember cref="T:System.Text.EncoderFallbackBuffer" />
       </Docs>
     </Member>
     <Member MemberName="EncodingName">
@@ -968,7 +989,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
    
   
 ## Examples  
- The following example retrieves the different names for each encoding and displays the encodings with one or more names that are different from <xref:System.Text.EncodingInfo.Name%2A?displayProperty=fullName>. It displays <xref:System.Text.Encoding.EncodingName%2A> but does not compare against it.  
+ The following example retrieves the different names for each encoding and displays the encodings with one or more names that are different from <xref:System.Text.EncodingInfo.Name%2A?displayProperty=nameWithType>. It displays <xref:System.Text.Encoding.EncodingName%2A> but does not compare against it.  
   
  [!code-cpp[System.Text.Encoding.Names#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.Encoding.Names/CPP/names.cpp#1)]
  [!code-csharp[System.Text.Encoding.Names#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.Encoding.Names/CS/names.cs#1)]
@@ -976,6 +997,10 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.EncodingInfo.DisplayName" />
+        <altmember cref="P:System.Text.Encoding.BodyName" />
+        <altmember cref="P:System.Text.Encoding.HeaderName" />
+        <altmember cref="P:System.Text.Encoding.WebName" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -1029,6 +1054,8 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Text.Encoding.#ctor" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetByteCount">
@@ -1070,7 +1097,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
 ## Remarks  
  To calculate the exact array size required by <xref:System.Text.Encoding.GetBytes%2A> to store the resulting bytes, call the <xref:System.Text.Encoding.GetByteCount%2A> method. To calculate the maximum array size, call the <xref:System.Text.Encoding.GetMaxByteCount%2A> method. The <xref:System.Text.Encoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.Encoding.GetMaxByteCount%2A> method generally executes faster.  
   
- The <xref:System.Text.Encoding.GetByteCount%2A> method determines how many bytes result in encoding a set of Unicode characters, and the <xref:System.Text.Encoding.GetBytes%2A> method performs the actual encoding. The <xref:System.Text.Encoding.GetBytes%2A> method expects discrete conversions, in contrast to the <xref:System.Text.Encoder.GetBytes%2A?displayProperty=fullName> method, which handles multiple conversions on a single input stream.  
+ The <xref:System.Text.Encoding.GetByteCount%2A> method determines how many bytes result in encoding a set of Unicode characters, and the <xref:System.Text.Encoding.GetBytes%2A> method performs the actual encoding. The <xref:System.Text.Encoding.GetBytes%2A> method expects discrete conversions, in contrast to the <xref:System.Text.Encoder.GetBytes%2A?displayProperty=nameWithType> method, which handles multiple conversions on a single input stream.  
   
  Several versions of <xref:System.Text.Encoding.GetByteCount%2A> and <xref:System.Text.Encoding.GetBytes%2A> are supported. The following are some programming considerations for use of these methods:  
   
@@ -1082,7 +1109,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
 -   If your app must convert a large amount of data, you should reuse the output buffer. In this case, the <xref:System.Text.Encoding.GetBytes%2A> version that supports byte arrays is the best choice.  
   
--   Consider using the <xref:System.Text.Encoder.Convert%2A?displayProperty=fullName> method instead of <xref:System.Text.Encoding.GetByteCount%2A>. The conversion method converts as much data as possible, and does throw an exception if the output buffer is too small. For continuous encoding of a stream, this method is often the best choice.  
+-   Consider using the <xref:System.Text.Encoder.Convert%2A?displayProperty=nameWithType> method instead of <xref:System.Text.Encoding.GetByteCount%2A>. The conversion method converts as much data as possible, and does throw an exception if the output buffer is too small. For continuous encoding of a stream, this method is often the best choice.  
   
    
   
@@ -1102,6 +1129,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetBytes(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxByteCount(System.Int32)" />
+        <altmember cref="M:System.Text.Encoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetByteCount">
@@ -1143,7 +1173,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
 ## Remarks  
  To calculate the exact array size required by <xref:System.Text.Encoding.GetBytes%2A> to store the resulting bytes, call the <xref:System.Text.Encoding.GetByteCount%2A> method. To calculate the maximum array size, call the <xref:System.Text.Encoding.GetMaxByteCount%2A> method. The <xref:System.Text.Encoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.Encoding.GetMaxByteCount%2A> method generally executes faster.  
   
- The <xref:System.Text.Encoding.GetByteCount%2A> method determines how many bytes result in encoding a set of Unicode characters, and the <xref:System.Text.Encoding.GetBytes%2A> method performs the actual encoding. The <xref:System.Text.Encoding.GetBytes%2A> method expects discrete conversions, in contrast to the <xref:System.Text.Encoder.GetBytes%2A?displayProperty=fullName> method, which handles multiple conversions on a single input stream.  
+ The <xref:System.Text.Encoding.GetByteCount%2A> method determines how many bytes result in encoding a set of Unicode characters, and the <xref:System.Text.Encoding.GetBytes%2A> method performs the actual encoding. The <xref:System.Text.Encoding.GetBytes%2A> method expects discrete conversions, in contrast to the <xref:System.Text.Encoder.GetBytes%2A?displayProperty=nameWithType> method, which handles multiple conversions on a single input stream.  
   
  Several versions of <xref:System.Text.Encoding.GetByteCount%2A> and <xref:System.Text.Encoding.GetBytes%2A> are supported. The following are some programming considerations for use of these methods:  
   
@@ -1155,7 +1185,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
 -   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the <xref:System.Text.Encoding.GetBytes%2A> version that supports byte arrays is the best choice.  
   
--   Consider using the <xref:System.Text.Encoder.Convert%2A?displayProperty=fullName> method instead of <xref:System.Text.Encoding.GetByteCount%2A>. The conversion method converts as much data as possible, and does throw an exception if the output buffer is too small. For continuous encoding of a stream, this method is often the best choice.  
+-   Consider using the <xref:System.Text.Encoder.Convert%2A?displayProperty=nameWithType> method instead of <xref:System.Text.Encoding.GetByteCount%2A>. The conversion method converts as much data as possible, and does throw an exception if the output buffer is too small. For continuous encoding of a stream, this method is often the best choice.  
   
    
   
@@ -1175,6 +1205,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetBytes(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxByteCount(System.Int32)" />
+        <altmember cref="M:System.Text.Encoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetByteCount">
@@ -1228,7 +1261,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
 ## Remarks  
  To calculate the exact array size that <xref:System.Text.Encoding.GetBytes%2A> requires to store the resulting bytes, you should call the <xref:System.Text.Encoding.GetByteCount%2A> method. To calculate the maximum array size, call the <xref:System.Text.Encoding.GetMaxByteCount%2A> method. The <xref:System.Text.Encoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.Encoding.GetMaxByteCount%2A> method generally executes faster.  
   
- The <xref:System.Text.Encoding.GetByteCount%28System.Char%2A%2CSystem.Int32%29> method determines how many bytes result in encoding a set of Unicode characters, and the <xref:System.Text.Encoding.GetBytes%28System.Char%2A%2CSystem.Int32%2CSystem.Byte%2A%2CSystem.Int32%29> method performs the actual encoding. The <xref:System.Text.Encoding.GetBytes%2A> method expects discrete conversions, in contrast to the <xref:System.Text.Encoder.GetBytes%2A?displayProperty=fullName> method, which handles multiple conversions on a single input stream.  
+ The <xref:System.Text.Encoding.GetByteCount%28System.Char%2A%2CSystem.Int32%29> method determines how many bytes result in encoding a set of Unicode characters, and the <xref:System.Text.Encoding.GetBytes%28System.Char%2A%2CSystem.Int32%2CSystem.Byte%2A%2CSystem.Int32%29> method performs the actual encoding. The <xref:System.Text.Encoding.GetBytes%2A> method expects discrete conversions, in contrast to the <xref:System.Text.Encoder.GetBytes%2A?displayProperty=nameWithType> method, which handles multiple conversions on a single input stream.  
   
  Several versions of <xref:System.Text.Encoding.GetByteCount%2A> and <xref:System.Text.Encoding.GetBytes%2A> are supported. The following are some considerations for using these methods:  
   
@@ -1240,7 +1273,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
 -   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the <xref:System.Text.Encoding.GetBytes%2A> version that supports byte arrays is the best choice.  
   
--   Consider using the <xref:System.Text.Encoder.Convert%2A?displayProperty=fullName> method instead of <xref:System.Text.Encoding.GetByteCount%2A>. The conversion method converts as much data as possible, and does throw an exception if the output buffer is too small. For continuous encoding of a stream, this method is often the best choice.  
+-   Consider using the <xref:System.Text.Encoder.Convert%2A?displayProperty=nameWithType> method instead of <xref:System.Text.Encoding.GetByteCount%2A>. The conversion method converts as much data as possible, and does throw an exception if the output buffer is too small. For continuous encoding of a stream, this method is often the best choice.  
   
  ]]></format>
         </remarks>
@@ -1254,6 +1287,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Text.Encoding.GetBytes(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxByteCount(System.Int32)" />
+        <altmember cref="M:System.Text.Encoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetByteCount">
@@ -1299,7 +1335,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
 ## Remarks  
  To calculate the exact array size required by <xref:System.Text.Encoding.GetBytes%2A> to store the resulting bytes, call the <xref:System.Text.Encoding.GetByteCount%2A> method. To calculate the maximum array size, call the <xref:System.Text.Encoding.GetMaxByteCount%2A> method. The <xref:System.Text.Encoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.Encoding.GetMaxByteCount%2A> method generally executes faster.  
   
- The <xref:System.Text.Encoding.GetByteCount%2A> method determines how many bytes result in encoding a set of Unicode characters, and the <xref:System.Text.Encoding.GetBytes%2A> method performs the actual encoding. The <xref:System.Text.Encoding.GetBytes%2A> method expects discrete conversions, in contrast to the <xref:System.Text.Encoder.GetBytes%2A?displayProperty=fullName> method, which handles multiple conversions on a single input stream.  
+ The <xref:System.Text.Encoding.GetByteCount%2A> method determines how many bytes result in encoding a set of Unicode characters, and the <xref:System.Text.Encoding.GetBytes%2A> method performs the actual encoding. The <xref:System.Text.Encoding.GetBytes%2A> method expects discrete conversions, in contrast to the <xref:System.Text.Encoder.GetBytes%2A?displayProperty=nameWithType> method, which handles multiple conversions on a single input stream.  
   
  Several versions of <xref:System.Text.Encoding.GetByteCount%2A> and <xref:System.Text.Encoding.GetBytes%2A> are supported. The following are some programming considerations for use of these methods:  
   
@@ -1311,7 +1347,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
 -   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the <xref:System.Text.Encoding.GetBytes%2A> version that supports byte arrays is the best choice.  
   
--   Consider using the <xref:System.Text.Encoder.Convert%2A?displayProperty=fullName> method instead of <xref:System.Text.Encoding.GetByteCount%2A>. The conversion method converts as much data as possible, and does throw an exception if the output buffer is too small. For continuous encoding of a stream, this method is often the best choice.  
+-   Consider using the <xref:System.Text.Encoder.Convert%2A?displayProperty=nameWithType> method instead of <xref:System.Text.Encoding.GetByteCount%2A>. The conversion method converts as much data as possible, and does throw an exception if the output buffer is too small. For continuous encoding of a stream, this method is often the best choice.  
   
    
   
@@ -1337,6 +1373,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetBytes(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxByteCount(System.Int32)" />
+        <altmember cref="M:System.Text.Encoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetByteCount">
@@ -1404,7 +1443,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
 ## Remarks  
  If the data to be converted is available only in sequential blocks (such as data read from a stream) or if the amount of data is so large that it needs to be divided into smaller blocks, you should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.Encoding.GetDecoder%2A> method or the <xref:System.Text.Encoding.GetEncoder%2A> method, respectively, of a derived class.  
   
- The <xref:System.Text.Encoding.GetByteCount%2A> method determines how many bytes result in encoding a set of Unicode characters, and the <xref:System.Text.Encoding.GetBytes%2A> method performs the actual encoding. The <xref:System.Text.Encoding.GetBytes%2A> method expects discrete conversions, in contrast to the <xref:System.Text.Encoder.GetBytes%2A?displayProperty=fullName> method, which handles multiple conversions on a single input stream.  
+ The <xref:System.Text.Encoding.GetByteCount%2A> method determines how many bytes result in encoding a set of Unicode characters, and the <xref:System.Text.Encoding.GetBytes%2A> method performs the actual encoding. The <xref:System.Text.Encoding.GetBytes%2A> method expects discrete conversions, in contrast to the <xref:System.Text.Encoder.GetBytes%2A?displayProperty=nameWithType> method, which handles multiple conversions on a single input stream.  
   
  Several versions of <xref:System.Text.Encoding.GetByteCount%2A> and <xref:System.Text.Encoding.GetBytes%2A> are supported. The following are some programming considerations for use of these methods:  
   
@@ -1416,7 +1455,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
 -   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the <xref:System.Text.Encoding.GetBytes%2A> version that supports byte arrays is the best choice.  
   
--   Consider using the <xref:System.Text.Encoder.Convert%2A?displayProperty=fullName> method instead of <xref:System.Text.Encoding.GetByteCount%2A>. The conversion method converts as much data as possible, and does throw an exception if the output buffer is too small. For continuous encoding of a stream, this method is often the best choice.  
+-   Consider using the <xref:System.Text.Encoder.Convert%2A?displayProperty=nameWithType> method instead of <xref:System.Text.Encoding.GetByteCount%2A>. The conversion method converts as much data as possible, and does throw an exception if the output buffer is too small. For continuous encoding of a stream, this method is often the best choice.  
   
    
   
@@ -1436,6 +1475,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetEncoder" />
+        <altmember cref="M:System.Text.Encoding.GetByteCount(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxByteCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -1477,7 +1519,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
 ## Remarks  
  If the data to be converted is available only in sequential blocks (such as data read from a stream) or if the amount of data is so large that it needs to be divided into smaller blocks, you should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.Encoding.GetDecoder%2A> method or the <xref:System.Text.Encoding.GetEncoder%2A> method, respectively, of a derived class.  
   
- The <xref:System.Text.Encoding.GetByteCount%2A> method determines how many bytes result in encoding a set of Unicode characters, and the <xref:System.Text.Encoding.GetBytes%2A> method performs the actual encoding. The <xref:System.Text.Encoding.GetBytes%2A?displayProperty=fullName> method expects discrete conversions, in contrast to the <xref:System.Text.Encoder.GetBytes%2A?displayProperty=fullName> method, which handles multiple conversions on a single input stream.  
+ The <xref:System.Text.Encoding.GetByteCount%2A> method determines how many bytes result in encoding a set of Unicode characters, and the <xref:System.Text.Encoding.GetBytes%2A> method performs the actual encoding. The <xref:System.Text.Encoding.GetBytes%2A?displayProperty=nameWithType> method expects discrete conversions, in contrast to the <xref:System.Text.Encoder.GetBytes%2A?displayProperty=nameWithType> method, which handles multiple conversions on a single input stream.  
   
  Several versions of <xref:System.Text.Encoding.GetByteCount%2A> and <xref:System.Text.Encoding.GetBytes%2A> are supported. The following are some programming considerations for use of these methods:  
   
@@ -1489,7 +1531,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
 -   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the <xref:System.Text.Encoding.GetBytes%2A> version that supports byte arrays is the best choice.  
   
--   Consider using the <xref:System.Text.Encoder.Convert%2A?displayProperty=fullName> method instead of <xref:System.Text.Encoding.GetByteCount%2A>. The conversion method converts as much data as possible, and does throw an exception if the output buffer is too small. For continuous encoding of a stream, this method is often the best choice.  
+-   Consider using the <xref:System.Text.Encoder.Convert%2A?displayProperty=nameWithType> method instead of <xref:System.Text.Encoding.GetByteCount%2A>. The conversion method converts as much data as possible, and does throw an exception if the output buffer is too small. For continuous encoding of a stream, this method is often the best choice.  
   
    
   
@@ -1509,6 +1551,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetEncoder" />
+        <altmember cref="M:System.Text.Encoding.GetByteCount(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxByteCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -1554,7 +1599,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
 ## Remarks  
  If the data to be converted is available only in sequential blocks (such as data read from a stream) or if the amount of data is so large that it needs to be divided into smaller blocks, you should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.Encoding.GetDecoder%2A> method or the <xref:System.Text.Encoding.GetEncoder%2A> method, respectively, of a derived class.  
   
- The <xref:System.Text.Encoding.GetByteCount%2A> method determines how many bytes result in encoding a set of Unicode characters, and the <xref:System.Text.Encoding.GetBytes%2A> method performs the actual encoding. The <xref:System.Text.Encoding.GetBytes%2A?displayProperty=fullName> method expects discrete conversions, in contrast to the <xref:System.Text.Encoder.GetBytes%2A?displayProperty=fullName> method, which handles multiple conversions on a single input stream.  
+ The <xref:System.Text.Encoding.GetByteCount%2A> method determines how many bytes result in encoding a set of Unicode characters, and the <xref:System.Text.Encoding.GetBytes%2A> method performs the actual encoding. The <xref:System.Text.Encoding.GetBytes%2A?displayProperty=nameWithType> method expects discrete conversions, in contrast to the <xref:System.Text.Encoder.GetBytes%2A?displayProperty=nameWithType> method, which handles multiple conversions on a single input stream.  
   
  Several versions of <xref:System.Text.Encoding.GetByteCount%2A> and <xref:System.Text.Encoding.GetBytes%2A> are supported. The following are some programming considerations for use of these methods:  
   
@@ -1566,7 +1611,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
 -   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the <xref:System.Text.Encoding.GetBytes%2A> version that supports byte arrays is the best choice.  
   
--   Consider using the <xref:System.Text.Encoder.Convert%2A?displayProperty=fullName> method instead of <xref:System.Text.Encoding.GetByteCount%2A>. The conversion method converts as much data as possible, and does throw an exception if the output buffer is too small. For continuous encoding of a stream, this method is often the best choice.  
+-   Consider using the <xref:System.Text.Encoder.Convert%2A?displayProperty=nameWithType> method instead of <xref:System.Text.Encoding.GetByteCount%2A>. The conversion method converts as much data as possible, and does throw an exception if the output buffer is too small. For continuous encoding of a stream, this method is often the best choice.  
   
    
   
@@ -1592,6 +1637,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetEncoder" />
+        <altmember cref="M:System.Text.Encoding.GetByteCount(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxByteCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -1677,7 +1725,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
  If the data to be converted is available only in sequential blocks (such as data read from a stream) or if the amount of data is so large that it needs to be divided into smaller blocks, you should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> object provided by the <xref:System.Text.Encoding.GetDecoder%2A> or the <xref:System.Text.Encoding.GetEncoder%2A> method, respectively, of a derived class.  
   
- The <xref:System.Text.Encoding.GetByteCount%2A> method determines how many bytes result in encoding a set of Unicode characters, and the <xref:System.Text.Encoding.GetBytes%2A> method performs the actual encoding. The <xref:System.Text.Encoding.GetBytes%2A> method expects discrete conversions, in contrast to the <xref:System.Text.Encoder.GetBytes%2A?displayProperty=fullName> method, which handles multiple conversions on a single input stream.  
+ The <xref:System.Text.Encoding.GetByteCount%2A> method determines how many bytes result in encoding a set of Unicode characters, and the <xref:System.Text.Encoding.GetBytes%2A> method performs the actual encoding. The <xref:System.Text.Encoding.GetBytes%2A> method expects discrete conversions, in contrast to the <xref:System.Text.Encoder.GetBytes%2A?displayProperty=nameWithType> method, which handles multiple conversions on a single input stream.  
   
  Several versions of <xref:System.Text.Encoding.GetByteCount%2A> and <xref:System.Text.Encoding.GetBytes%2A> are supported. The following are some programming considerations for use of these methods:  
   
@@ -1689,7 +1737,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
 -   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the <xref:System.Text.Encoding.GetBytes%2A> version that supports byte arrays is the best choice.  
   
--   Consider using the <xref:System.Text.Encoder.Convert%2A?displayProperty=fullName> method instead of <xref:System.Text.Encoding.GetByteCount%2A>. The conversion method converts as much data as possible, and does throw an exception if the output buffer is too small. For continuous encoding of a stream, this method is often the best choice.  
+-   Consider using the <xref:System.Text.Encoder.Convert%2A?displayProperty=nameWithType> method instead of <xref:System.Text.Encoding.GetByteCount%2A>. The conversion method converts as much data as possible, and does throw an exception if the output buffer is too small. For continuous encoding of a stream, this method is often the best choice.  
   
  ]]></format>
         </remarks>
@@ -1709,6 +1757,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Text.Encoding.GetEncoder" />
+        <altmember cref="M:System.Text.Encoding.GetByteCount(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxByteCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -1760,7 +1811,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
  If the data to be converted is available only in sequential blocks (such as data read from a stream) or if the amount of data is so large that it needs to be divided into smaller blocks, you should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.Encoding.GetDecoder%2A> method or the <xref:System.Text.Encoding.GetEncoder%2A> method, respectively, of a derived class.  
   
- The <xref:System.Text.Encoding.GetByteCount%2A> method determines how many bytes result in encoding a set of Unicode characters, and the <xref:System.Text.Encoding.GetBytes%2A> method performs the actual encoding. The <xref:System.Text.Encoding.GetBytes%2A?displayProperty=fullName> method expects discrete conversions, in contrast to the <xref:System.Text.Encoder.GetBytes%2A?displayProperty=fullName> method, which handles multiple conversions on a single input stream.  
+ The <xref:System.Text.Encoding.GetByteCount%2A> method determines how many bytes result in encoding a set of Unicode characters, and the <xref:System.Text.Encoding.GetBytes%2A> method performs the actual encoding. The <xref:System.Text.Encoding.GetBytes%2A?displayProperty=nameWithType> method expects discrete conversions, in contrast to the <xref:System.Text.Encoder.GetBytes%2A?displayProperty=nameWithType> method, which handles multiple conversions on a single input stream.  
   
  Several versions of <xref:System.Text.Encoding.GetByteCount%2A> and <xref:System.Text.Encoding.GetBytes%2A> are supported. The following are some programming considerations for use of these methods:  
   
@@ -1772,7 +1823,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
 -   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the <xref:System.Text.Encoding.GetBytes%2A> version that supports byte arrays is the best choice.  
   
--   Consider using the <xref:System.Text.Encoder.Convert%2A?displayProperty=fullName> method instead of <xref:System.Text.Encoding.GetByteCount%2A>. The conversion method converts as much data as possible, and does throw an exception if the output buffer is too small. For continuous encoding of a stream, this method is often the best choice.  
+-   Consider using the <xref:System.Text.Encoder.Convert%2A?displayProperty=nameWithType> method instead of <xref:System.Text.Encoding.GetByteCount%2A>. The conversion method converts as much data as possible, and does throw an exception if the output buffer is too small. For continuous encoding of a stream, this method is often the best choice.  
   
    
   
@@ -1808,6 +1859,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetEncoder" />
+        <altmember cref="M:System.Text.Encoding.GetByteCount(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxByteCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -1859,7 +1913,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
  If the data to be converted is available only in sequential blocks (such as data read from a stream) or if the amount of data is so large that it needs to be divided into smaller blocks, you should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.Encoding.GetDecoder%2A> method or the <xref:System.Text.Encoding.GetEncoder%2A> method, respectively, of a derived class.  
   
- The <xref:System.Text.Encoding.GetByteCount%2A> method determines how many bytes result in encoding a set of Unicode characters, and the <xref:System.Text.Encoding.GetBytes%2A> method performs the actual encoding. The <xref:System.Text.Encoding.GetBytes%2A?displayProperty=fullName> method expects discrete conversions, in contrast to the <xref:System.Text.Encoder.GetBytes%2A?displayProperty=fullName> method, which handles multiple conversions on a single input stream.  
+ The <xref:System.Text.Encoding.GetByteCount%2A> method determines how many bytes result in encoding a set of Unicode characters, and the <xref:System.Text.Encoding.GetBytes%2A> method performs the actual encoding. The <xref:System.Text.Encoding.GetBytes%2A?displayProperty=nameWithType> method expects discrete conversions, in contrast to the <xref:System.Text.Encoder.GetBytes%2A?displayProperty=nameWithType> method, which handles multiple conversions on a single input stream.  
   
  Several versions of <xref:System.Text.Encoding.GetByteCount%2A> and <xref:System.Text.Encoding.GetBytes%2A> are supported. The following are some programming considerations for use of these methods:  
   
@@ -1871,7 +1925,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
 -   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the <xref:System.Text.Encoding.GetBytes%2A> version that supports byte arrays is the best choice.  
   
--   Consider using the <xref:System.Text.Encoder.Convert%2A?displayProperty=fullName> method instead of <xref:System.Text.Encoding.GetByteCount%2A>. The conversion method converts as much data as possible, and does throw an exception if the output buffer is too small. For continuous encoding of a stream, this method is often the best choice.  
+-   Consider using the <xref:System.Text.Encoder.Convert%2A?displayProperty=nameWithType> method instead of <xref:System.Text.Encoding.GetByteCount%2A>. The conversion method converts as much data as possible, and does throw an exception if the output buffer is too small. For continuous encoding of a stream, this method is often the best choice.  
   
    
   
@@ -1907,6 +1961,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetEncoder" />
+        <altmember cref="M:System.Text.Encoding.GetByteCount(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxByteCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetCharCount">
@@ -1948,7 +2005,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
 ## Remarks  
  To calculate the exact array size required by <xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%29> to store the resulting characters, you should use the <xref:System.Text.Encoding.GetCharCount%28System.Byte%5B%5D%29> method. To calculate the maximum array size, you should use the <xref:System.Text.Encoding.GetMaxCharCount%28System.Int32%29> method. The <xref:System.Text.Encoding.GetCharCount%28System.Byte%5B%5D%29> method generally allows allocation of less memory, while the <xref:System.Text.Encoding.GetMaxCharCount%2A> method generally executes faster.  
   
- The <xref:System.Text.Encoding.GetCharCount%28System.Byte%5B%5D%29> method determines how many characters result in decoding a sequence of bytes, and the  <xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%29> method performs the actual decoding. The <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> method expects discrete conversions, in contrast to the <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> method, which handles multiple passes on a single input stream.  
+ The <xref:System.Text.Encoding.GetCharCount%28System.Byte%5B%5D%29> method determines how many characters result in decoding a sequence of bytes, and the  <xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%29> method performs the actual decoding. The <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> method expects discrete conversions, in contrast to the <xref:System.Text.Decoder.GetChars%2A?displayProperty=nameWithType> method, which handles multiple passes on a single input stream.  
   
  Several versions of <xref:System.Text.Encoding.GetCharCount%2A> and <xref:System.Text.Encoding.GetChars%2A> are supported. The following are some programming considerations for use of these methods:  
   
@@ -1960,7 +2017,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
 -   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29> version that supports output character buffers is the best choice.  
   
--   Consider using the <xref:System.Text.Decoder.Convert%2A?displayProperty=fullName> method instead of <xref:System.Text.Encoding.GetCharCount%2A>. The conversion method converts as much data as possible and throws an exception if the output buffer is too small. For continuous decoding of a stream, this method is often the best choice.  
+-   Consider using the <xref:System.Text.Decoder.Convert%2A?displayProperty=nameWithType> method instead of <xref:System.Text.Encoding.GetCharCount%2A>. The conversion method converts as much data as possible and throws an exception if the output buffer is too small. For continuous decoding of a stream, this method is often the best choice.  
   
    
   
@@ -1980,6 +2037,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="Overload:System.Text.Encoding.GetChars" />
+        <altmember cref="M:System.Text.Encoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.Encoding.GetDecoder" />
       </Docs>
     </Member>
     <Member MemberName="GetCharCount">
@@ -2033,7 +2093,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
 ## Remarks  
  To calculate the exact array size that <xref:System.Text.Encoding.GetChars%2A> requires to store the resulting characters, you should use the <xref:System.Text.Encoding.GetCharCount%2A> method. To calculate the maximum array size, use the <xref:System.Text.Encoding.GetMaxCharCount%2A> method. The <xref:System.Text.Encoding.GetCharCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.Encoding.GetMaxCharCount%2A> method generally executes faster.  
   
- The <xref:System.Text.Encoding.GetCharCount%2A> method determines how many characters result in decoding a sequence of bytes, and the <xref:System.Text.Encoding.GetChars%2A> method performs the actual decoding. The <xref:System.Text.Encoding.GetChars%2A> method expects discrete conversions, in contrast to the <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> method, which handles multiple passes on a single input stream.  
+ The <xref:System.Text.Encoding.GetCharCount%2A> method determines how many characters result in decoding a sequence of bytes, and the <xref:System.Text.Encoding.GetChars%2A> method performs the actual decoding. The <xref:System.Text.Encoding.GetChars%2A> method expects discrete conversions, in contrast to the <xref:System.Text.Decoder.GetChars%2A?displayProperty=nameWithType> method, which handles multiple passes on a single input stream.  
   
  Several versions of <xref:System.Text.Encoding.GetCharCount%2A> and <xref:System.Text.Encoding.GetChars%2A> are supported. The following are some programming considerations for use of these methods:  
   
@@ -2045,7 +2105,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
 -   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29> version that supports output character buffers is the best choice.  
   
--   Consider using the <xref:System.Text.Decoder.Convert%2A?displayProperty=fullName> method instead of <xref:System.Text.Encoding.GetCharCount%2A>. The conversion method converts as much data as possible and throws an exception if the output buffer is too small. For continuous decoding of a stream, this method is often the best choice.  
+-   Consider using the <xref:System.Text.Decoder.Convert%2A?displayProperty=nameWithType> method instead of <xref:System.Text.Encoding.GetCharCount%2A>. The conversion method converts as much data as possible and throws an exception if the output buffer is too small. For continuous decoding of a stream, this method is often the best choice.  
   
  ]]></format>
         </remarks>
@@ -2059,6 +2119,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="Overload:System.Text.Encoding.GetChars" />
+        <altmember cref="M:System.Text.Encoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.Encoding.GetDecoder" />
       </Docs>
     </Member>
     <Member MemberName="GetCharCount">
@@ -2104,7 +2167,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
 ## Remarks  
  To calculate the exact array size required by <xref:System.Text.Encoding.GetChars%2A> to store the resulting characters, you should use the <xref:System.Text.Encoding.GetCharCount%2A> method. To calculate the maximum array size, use the <xref:System.Text.Encoding.GetMaxCharCount%2A> method. The <xref:System.Text.Encoding.GetCharCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.Encoding.GetMaxCharCount%2A> method generally executes faster.  
   
- The <xref:System.Text.Encoding.GetCharCount%2A> method determines how many characters result in decoding a sequence of bytes, and the <xref:System.Text.Encoding.GetChars%2A> method performs the actual decoding. The <xref:System.Text.Encoding.GetChars%2A> method expects discrete conversions, in contrast to the <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> method, which handles multiple passes on a single input stream.  
+ The <xref:System.Text.Encoding.GetCharCount%2A> method determines how many characters result in decoding a sequence of bytes, and the <xref:System.Text.Encoding.GetChars%2A> method performs the actual decoding. The <xref:System.Text.Encoding.GetChars%2A> method expects discrete conversions, in contrast to the <xref:System.Text.Decoder.GetChars%2A?displayProperty=nameWithType> method, which handles multiple passes on a single input stream.  
   
  Several versions of <xref:System.Text.Encoding.GetCharCount%2A> and <xref:System.Text.Encoding.GetChars%2A> are supported. The following are some programming considerations for use of these methods:  
   
@@ -2116,7 +2179,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
 -   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29> version that supports output character buffers is the best choice.  
   
--   Consider using the <xref:System.Text.Decoder.Convert%2A?displayProperty=fullName> method instead of <xref:System.Text.Encoding.GetCharCount%2A>. The conversion method converts as much data as possible and throws an exception if the output buffer is too small. For continuous decoding of a stream, this method is often the best choice.  
+-   Consider using the <xref:System.Text.Decoder.Convert%2A?displayProperty=nameWithType> method instead of <xref:System.Text.Encoding.GetCharCount%2A>. The conversion method converts as much data as possible and throws an exception if the output buffer is too small. For continuous decoding of a stream, this method is often the best choice.  
   
    
   
@@ -2148,6 +2211,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="Overload:System.Text.Encoding.GetChars" />
+        <altmember cref="M:System.Text.Encoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.Encoding.GetDecoder" />
       </Docs>
     </Member>
     <Member MemberName="GetChars">
@@ -2187,17 +2253,17 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> gets characters from an input byte sequence. <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> is different than <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> because <xref:System.Text.Encoding> expects discrete conversions, while <xref:System.Text.Decoder> is designed for multiple passes on a single input stream.  
+ <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> gets characters from an input byte sequence. <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> is different than <xref:System.Text.Decoder.GetChars%2A?displayProperty=nameWithType> because <xref:System.Text.Encoding> expects discrete conversions, while <xref:System.Text.Decoder> is designed for multiple passes on a single input stream.  
   
  If the data to be converted is available only in sequential blocks (such as data read from a stream) or if the amount of data is so large that it needs to be divided into smaller blocks, you should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.Encoding.GetDecoder%2A> method or the <xref:System.Text.Encoding.GetEncoder%2A> method, respectively, of a derived class.  
   
- **Note** This method is intended to operate on Unicode characters, not on arbitrary binary data, such as byte arrays. If you need to encode arbitrary binary data into text, you should use a protocol such as uuencode, which is implemented by methods such as <xref:System.Convert.ToBase64CharArray%2A?displayProperty=fullName>.  
+ **Note** This method is intended to operate on Unicode characters, not on arbitrary binary data, such as byte arrays. If you need to encode arbitrary binary data into text, you should use a protocol such as uuencode, which is implemented by methods such as <xref:System.Convert.ToBase64CharArray%2A?displayProperty=nameWithType>.  
   
- The <xref:System.Text.Encoding.GetCharCount%2A> method determines how many characters result in decoding a sequence of bytes, and the <xref:System.Text.Encoding.GetChars%2A> method performs the actual decoding. The <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> method expects discrete conversions, in contrast to the <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> method, which handles multiple passes on a single input stream.  
+ The <xref:System.Text.Encoding.GetCharCount%2A> method determines how many characters result in decoding a sequence of bytes, and the <xref:System.Text.Encoding.GetChars%2A> method performs the actual decoding. The <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> method expects discrete conversions, in contrast to the <xref:System.Text.Decoder.GetChars%2A?displayProperty=nameWithType> method, which handles multiple passes on a single input stream.  
   
  Several versions of <xref:System.Text.Encoding.GetCharCount%2A> and <xref:System.Text.Encoding.GetChars%2A> are supported. The following are some programming considerations for use of these methods:  
   
--   Your app might need to decode multiple input bytes from a code page and process the bytes using multiple calls. In this case, you probably need to maintain state between calls, because byte sequences can be interrupted when processed in batches. (For example, part of an ISO-2022 shift sequence may end one <xref:System.Text.Encoding.GetChars%2A> call and continue at the beginning of the next <xref:System.Text.Encoding.GetChars%2A> call. <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> will call the fallback for those incomplete sequences, but <xref:System.Text.Decoder> will remember those sequences for the next call.)  
+-   Your app might need to decode multiple input bytes from a code page and process the bytes using multiple calls. In this case, you probably need to maintain state between calls, because byte sequences can be interrupted when processed in batches. (For example, part of an ISO-2022 shift sequence may end one <xref:System.Text.Encoding.GetChars%2A> call and continue at the beginning of the next <xref:System.Text.Encoding.GetChars%2A> call. <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> will call the fallback for those incomplete sequences, but <xref:System.Text.Decoder> will remember those sequences for the next call.)  
   
 -   If your app handles string outputs, it is recommended to use the <xref:System.Text.Encoding.GetString%2A> method. Since this method must check string length and allocate a buffer, it is slightly slower, but the resulting <xref:System.String> type is to be preferred.  
   
@@ -2205,7 +2271,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
 -   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29> version that supports output character buffers is the best choice.  
   
--   Consider using the <xref:System.Text.Decoder.Convert%2A?displayProperty=fullName> method instead of <xref:System.Text.Encoding.GetCharCount%2A>. The conversion method converts as much data as possible and throws an exception if the output buffer is too small. For continuous decoding of a stream, this method is often the best choice.  
+-   Consider using the <xref:System.Text.Decoder.Convert%2A?displayProperty=nameWithType> method instead of <xref:System.Text.Encoding.GetCharCount%2A>. The conversion method converts as much data as possible and throws an exception if the output buffer is too small. For continuous decoding of a stream, this method is often the best choice.  
   
    
   
@@ -2225,6 +2291,10 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetCharCount(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.Encoding.GetDecoder" />
+        <altmember cref="M:System.Text.Encoding.GetString(System.Byte[])" />
       </Docs>
     </Member>
     <Member MemberName="GetChars">
@@ -2268,17 +2338,17 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> gets characters from an input byte sequence. <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> is different than <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> because <xref:System.Text.Encoding> expects discrete conversions, while <xref:System.Text.Decoder> is designed for multiple passes on a single input stream.  
+ <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> gets characters from an input byte sequence. <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> is different than <xref:System.Text.Decoder.GetChars%2A?displayProperty=nameWithType> because <xref:System.Text.Encoding> expects discrete conversions, while <xref:System.Text.Decoder> is designed for multiple passes on a single input stream.  
   
  If the data to be converted is available only in sequential blocks (such as data read from a stream) or if the amount of data is so large that it needs to be divided into smaller blocks, you should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.Encoding.GetDecoder%2A> method or the <xref:System.Text.Encoding.GetEncoder%2A> method, respectively, of a derived class.  
   
- **Note** This method is intended to operate on Unicode characters, not on arbitrary binary data, such as byte arrays. If you need to encode arbitrary binary data into text, you should use a protocol such as uuencode, which is implemented by methods such as <xref:System.Convert.ToBase64CharArray%2A?displayProperty=fullName>.  
+ **Note** This method is intended to operate on Unicode characters, not on arbitrary binary data, such as byte arrays. If you need to encode arbitrary binary data into text, you should use a protocol such as uuencode, which is implemented by methods such as <xref:System.Convert.ToBase64CharArray%2A?displayProperty=nameWithType>.  
   
- The <xref:System.Text.Encoding.GetCharCount%2A> method determines how many characters result in decoding a sequence of bytes, and the <xref:System.Text.Encoding.GetChars%2A> method performs the actual decoding. The <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> method expects discrete conversions, in contrast to the <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> method, which handles multiple passes on a single input stream.  
+ The <xref:System.Text.Encoding.GetCharCount%2A> method determines how many characters result in decoding a sequence of bytes, and the <xref:System.Text.Encoding.GetChars%2A> method performs the actual decoding. The <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> method expects discrete conversions, in contrast to the <xref:System.Text.Decoder.GetChars%2A?displayProperty=nameWithType> method, which handles multiple passes on a single input stream.  
   
  Several versions of <xref:System.Text.Encoding.GetCharCount%2A> and <xref:System.Text.Encoding.GetChars%2A> are supported. The following are some programming considerations for use of these methods:  
   
--   Your app might need to decode multiple input bytes from a code page and process the bytes using multiple calls. In this case, you probably need to maintain state between calls, because byte sequences can be interrupted when processed in batches. (For example, part of an ISO-2022 shift sequence may end one <xref:System.Text.Encoding.GetChars%2A> call and continue at the beginning of the next <xref:System.Text.Encoding.GetChars%2A> call. <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> will call the fallback for those incomplete sequences, but <xref:System.Text.Decoder> will remember those sequences for the next call.)  
+-   Your app might need to decode multiple input bytes from a code page and process the bytes using multiple calls. In this case, you probably need to maintain state between calls, because byte sequences can be interrupted when processed in batches. (For example, part of an ISO-2022 shift sequence may end one <xref:System.Text.Encoding.GetChars%2A> call and continue at the beginning of the next <xref:System.Text.Encoding.GetChars%2A> call. <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> will call the fallback for those incomplete sequences, but <xref:System.Text.Decoder> will remember those sequences for the next call.)  
   
 -   If your app handles string outputs, it is recommended to use the <xref:System.Text.Encoding.GetString%2A> method. Since this method must check string length and allocate a buffer, it is slightly slower, but the resulting <xref:System.String> type is to be preferred.  
   
@@ -2286,7 +2356,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
 -   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29> version that supports output character buffers is the best choice.  
   
--   Consider using the <xref:System.Text.Decoder.Convert%2A?displayProperty=fullName> method instead of <xref:System.Text.Encoding.GetCharCount%2A>. The conversion method converts as much data as possible and throws an exception if the output buffer is too small. For continuous decoding of a stream, this method is often the best choice.  
+-   Consider using the <xref:System.Text.Decoder.Convert%2A?displayProperty=nameWithType> method instead of <xref:System.Text.Encoding.GetCharCount%2A>. The conversion method converts as much data as possible and throws an exception if the output buffer is too small. For continuous decoding of a stream, this method is often the best choice.  
   
    
   
@@ -2312,6 +2382,10 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetCharCount(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.Encoding.GetDecoder" />
+        <altmember cref="M:System.Text.Encoding.GetString(System.Byte[])" />
       </Docs>
     </Member>
     <Member MemberName="GetChars">
@@ -2369,17 +2443,17 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
 ## Remarks  
  To calculate the exact array size that <xref:System.Text.Encoding.GetChars%2A> requires to store the resulting characters, you should use the <xref:System.Text.Encoding.GetCharCount%2A> method. To calculate the maximum array size, use the <xref:System.Text.Encoding.GetMaxCharCount%2A> method. The <xref:System.Text.Encoding.GetCharCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.Encoding.GetMaxCharCount%2A> method generally executes faster.  
   
- <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> gets characters from an input byte sequence. <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> is different than <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> because <xref:System.Text.Encoding> expects discrete conversions, while <xref:System.Text.Decoder> is designed for multiple passes on a single input stream.  
+ <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> gets characters from an input byte sequence. <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> is different than <xref:System.Text.Decoder.GetChars%2A?displayProperty=nameWithType> because <xref:System.Text.Encoding> expects discrete conversions, while <xref:System.Text.Decoder> is designed for multiple passes on a single input stream.  
   
  If the data to be converted is available only in sequential blocks (such as data read from a stream) or if the amount of data is so large that it needs to be divided into smaller blocks, you should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> object provided by the <xref:System.Text.Encoding.GetDecoder%2A> or the <xref:System.Text.Encoding.GetEncoder%2A> method, respectively, of a derived class.  
   
- **Note** This method is intended to operate on Unicode characters, not on arbitrary binary data, such as byte arrays. If you need to encode arbitrary binary data into text, you should use a protocol such as uuencode, which is implemented by methods such as <xref:System.Convert.ToBase64CharArray%2A?displayProperty=fullName>.  
+ **Note** This method is intended to operate on Unicode characters, not on arbitrary binary data, such as byte arrays. If you need to encode arbitrary binary data into text, you should use a protocol such as uuencode, which is implemented by methods such as <xref:System.Convert.ToBase64CharArray%2A?displayProperty=nameWithType>.  
   
- The <xref:System.Text.Encoding.GetCharCount%2A> method determines how many characters result in decoding a sequence of bytes, and the <xref:System.Text.Encoding.GetChars%2A> method performs the actual decoding. The <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> method expects discrete conversions, in contrast to the <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> method, which handles multiple passes on a single input stream.  
+ The <xref:System.Text.Encoding.GetCharCount%2A> method determines how many characters result in decoding a sequence of bytes, and the <xref:System.Text.Encoding.GetChars%2A> method performs the actual decoding. The <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> method expects discrete conversions, in contrast to the <xref:System.Text.Decoder.GetChars%2A?displayProperty=nameWithType> method, which handles multiple passes on a single input stream.  
   
  Several versions of <xref:System.Text.Encoding.GetCharCount%2A> and <xref:System.Text.Encoding.GetChars%2A> are supported. The following are some programming considerations for use of these methods:  
   
--   Your app might need to decode multiple input bytes from a code page and process the bytes using multiple calls. In this case, you probably need to maintain state between calls, because byte sequences can be interrupted when processed in batches. (For example, part of an ISO-2022 shift sequence may end one <xref:System.Text.Encoding.GetChars%2A> call and continue at the beginning of the next <xref:System.Text.Encoding.GetChars%2A> call. <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> will call the fallback for those incomplete sequences, but <xref:System.Text.Decoder> will remember those sequences for the next call.)  
+-   Your app might need to decode multiple input bytes from a code page and process the bytes using multiple calls. In this case, you probably need to maintain state between calls, because byte sequences can be interrupted when processed in batches. (For example, part of an ISO-2022 shift sequence may end one <xref:System.Text.Encoding.GetChars%2A> call and continue at the beginning of the next <xref:System.Text.Encoding.GetChars%2A> call. <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> will call the fallback for those incomplete sequences, but <xref:System.Text.Decoder> will remember those sequences for the next call.)  
   
 -   If your app handles string outputs, the <xref:System.Text.Encoding.GetString%2A> method is recommended. Since this method must check string length and allocate a buffer, it is slightly slower, but the resulting <xref:System.String> type is to be preferred.  
   
@@ -2387,7 +2461,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
 -   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29> version that supports output character buffers is the best choice.  
   
--   Consider using the <xref:System.Text.Decoder.Convert%2A?displayProperty=fullName> method instead of <xref:System.Text.Encoding.GetCharCount%2A>. The conversion method converts as much data as possible and throws an exception if the output buffer is too small. For continuous decoding of a stream, this method is often the best choice.  
+-   Consider using the <xref:System.Text.Decoder.Convert%2A?displayProperty=nameWithType> method instead of <xref:System.Text.Encoding.GetCharCount%2A>. The conversion method converts as much data as possible and throws an exception if the output buffer is too small. For continuous decoding of a stream, this method is often the best choice.  
   
  ]]></format>
         </remarks>
@@ -2407,6 +2481,10 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Text.Encoding.GetCharCount(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.Encoding.GetDecoder" />
+        <altmember cref="M:System.Text.Encoding.GetString(System.Byte[])" />
       </Docs>
     </Member>
     <Member MemberName="GetChars">
@@ -2456,17 +2534,17 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
 ## Remarks  
  To calculate the exact array size required by <xref:System.Text.Encoding.GetChars%2A> to store the resulting characters, you should use the <xref:System.Text.Encoding.GetCharCount%2A> method. To calculate the maximum array size, use the <xref:System.Text.Encoding.GetMaxCharCount%2A> method. The <xref:System.Text.Encoding.GetCharCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.Encoding.GetMaxCharCount%2A> method generally executes faster.  
   
- [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> gets characters from an input byte sequence. [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> is different than <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> because <xref:System.Text.Encoding> expects discrete conversions, while <xref:System.Text.Decoder> is designed for multiple passes on a single input stream.  
+ [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> gets characters from an input byte sequence. [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> is different than <xref:System.Text.Decoder.GetChars%2A?displayProperty=nameWithType> because <xref:System.Text.Encoding> expects discrete conversions, while <xref:System.Text.Decoder> is designed for multiple passes on a single input stream.  
   
  If the data to be converted is available only in sequential blocks (such as data read from a stream) or if the amount of data is so large that it needs to be divided into smaller blocks, you should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.Encoding.GetDecoder%2A> method or the <xref:System.Text.Encoding.GetEncoder%2A> method, respectively, of a derived class.  
   
- **Note** This method is intended to operate on Unicode characters, not on arbitrary binary data, such as byte arrays. If you need to encode arbitrary binary data into text, you should use a protocol such as uuencode, which is implemented by methods such as <xref:System.Convert.ToBase64CharArray%2A?displayProperty=fullName>.  
+ **Note** This method is intended to operate on Unicode characters, not on arbitrary binary data, such as byte arrays. If you need to encode arbitrary binary data into text, you should use a protocol such as uuencode, which is implemented by methods such as <xref:System.Convert.ToBase64CharArray%2A?displayProperty=nameWithType>.  
   
- The <xref:System.Text.Encoding.GetCharCount%2A> method determines how many characters result in decoding a sequence of bytes, and the <xref:System.Text.Encoding.GetChars%2A> method performs the actual decoding. The <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> method expects discrete conversions, in contrast to the <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> method, which handles multiple passes on a single input stream.  
+ The <xref:System.Text.Encoding.GetCharCount%2A> method determines how many characters result in decoding a sequence of bytes, and the <xref:System.Text.Encoding.GetChars%2A> method performs the actual decoding. The <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> method expects discrete conversions, in contrast to the <xref:System.Text.Decoder.GetChars%2A?displayProperty=nameWithType> method, which handles multiple passes on a single input stream.  
   
  Several versions of <xref:System.Text.Encoding.GetCharCount%2A> and <xref:System.Text.Encoding.GetChars%2A> are supported. The following are some programming considerations for use of these methods:  
   
--   Your app might need to decode multiple input bytes from a code page and process the bytes using multiple calls. In this case, you probably need to maintain state between calls, because byte sequences can be interrupted when processed in batches. (For example, part of an ISO-2022 shift sequence may end one [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%2A> call and continue at the beginning of the next [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%2A> call. [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> will call the fallback for those incomplete sequences, but <xref:System.Text.Decoder> will remember those sequences for the next call.)  
+-   Your app might need to decode multiple input bytes from a code page and process the bytes using multiple calls. In this case, you probably need to maintain state between calls, because byte sequences can be interrupted when processed in batches. (For example, part of an ISO-2022 shift sequence may end one [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%2A> call and continue at the beginning of the next [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%2A> call. [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> will call the fallback for those incomplete sequences, but <xref:System.Text.Decoder> will remember those sequences for the next call.)  
   
 -   If your app handles string outputs, the <xref:System.Text.Encoding.GetString%2A> method is recommended. Since this method must check string length and allocate a buffer, it is slightly slower, but the resulting <xref:System.String> type is to be preferred.  
   
@@ -2474,7 +2552,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
 -   If your app must convert a large amount of data, it should reuse the output buffer. In this case, the [\], Int32, Int32, Char\<xref:System.Text.Encoding.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29> version that supports output character buffers is the best choice.  
   
--   Consider using the <xref:System.Text.Decoder.Convert%2A?displayProperty=fullName> method instead of <xref:System.Text.Encoding.GetCharCount%2A>. The conversion method converts as much data as possible and throws an exception if the output buffer is too small. For continuous decoding of a stream, this method is often the best choice.  
+-   Consider using the <xref:System.Text.Decoder.Convert%2A?displayProperty=nameWithType> method instead of <xref:System.Text.Encoding.GetCharCount%2A>. The conversion method converts as much data as possible and throws an exception if the output buffer is too small. For continuous decoding of a stream, this method is often the best choice.  
   
    
   
@@ -2516,6 +2594,10 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetCharCount(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.Encoding.GetDecoder" />
+        <altmember cref="M:System.Text.Encoding.GetString(System.Byte[])" />
       </Docs>
     </Member>
     <Member MemberName="GetDecoder">
@@ -2552,13 +2634,18 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> method converts sequential blocks of bytes into sequential blocks of characters, in a manner similar to the <xref:System.Text.Encoding.GetChars%2A> method of this class. However, a <xref:System.Text.Decoder> maintains state information between calls so it correctly decodes byte sequences that span blocks. The <xref:System.Text.Decoder> also preserves trailing bytes at the end of data blocks and uses the trailing bytes in the next decoding operation. Therefore, <xref:System.Text.Encoding.GetDecoder%2A> and <xref:System.Text.Encoding.GetEncoder%2A> are useful for network transmission and file operations, because those operations often deal with blocks of data instead of a complete data stream.  
+ The <xref:System.Text.Decoder.GetChars%2A?displayProperty=nameWithType> method converts sequential blocks of bytes into sequential blocks of characters, in a manner similar to the <xref:System.Text.Encoding.GetChars%2A> method of this class. However, a <xref:System.Text.Decoder> maintains state information between calls so it correctly decodes byte sequences that span blocks. The <xref:System.Text.Decoder> also preserves trailing bytes at the end of data blocks and uses the trailing bytes in the next decoding operation. Therefore, <xref:System.Text.Encoding.GetDecoder%2A> and <xref:System.Text.Encoding.GetEncoder%2A> are useful for network transmission and file operations, because those operations often deal with blocks of data instead of a complete data stream.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>The default implementation returns a <see cref="T:System.Text.Decoder" /> that calls the <see cref="M:System.Text.Encoding.GetCharCount(System.Byte[])" /> and <see cref="M:System.Text.Encoding.GetChars(System.Byte[])" /> methods of the current <see cref="T:System.Text.Encoding" />. You must override this method to return a <see cref="T:System.Text.Decoder" /> that maintains its state between calls.</para>
         </block>
+        <altmember cref="T:System.Text.Decoder" />
+        <altmember cref="M:System.Text.Encoding.GetChars(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetString(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetCharCount(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetEncoder">
@@ -2595,13 +2682,17 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.Encoder.GetBytes%2A?displayProperty=fullName> method converts sequential blocks of characters into sequential blocks of bytes, in a manner similar to the <xref:System.Text.Encoding.GetBytes%2A> method of this class. However, a <xref:System.Text.Encoder> maintains state information between calls so it correctly encodes character sequences that span blocks. The <xref:System.Text.Encoder> also preserves trailing characters at the end of data blocks and uses the trailing characters in the next encoding operation. For example, a data block might end with an unmatched high surrogate, and the matching low surrogate might be in the next data block. Therefore, <xref:System.Text.Encoding.GetDecoder%2A> and <xref:System.Text.Encoding.GetEncoder%2A> are useful for network transmission and file operations, because those operations often deal with blocks of data instead of a complete data stream.  
+ The <xref:System.Text.Encoder.GetBytes%2A?displayProperty=nameWithType> method converts sequential blocks of characters into sequential blocks of bytes, in a manner similar to the <xref:System.Text.Encoding.GetBytes%2A> method of this class. However, a <xref:System.Text.Encoder> maintains state information between calls so it correctly encodes character sequences that span blocks. The <xref:System.Text.Encoder> also preserves trailing characters at the end of data blocks and uses the trailing characters in the next encoding operation. For example, a data block might end with an unmatched high surrogate, and the matching low surrogate might be in the next data block. Therefore, <xref:System.Text.Encoding.GetDecoder%2A> and <xref:System.Text.Encoding.GetEncoder%2A> are useful for network transmission and file operations, because those operations often deal with blocks of data instead of a complete data stream.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>The default implementation returns a <see cref="T:System.Text.Encoder" /> that calls the <see cref="M:System.Text.Encoding.GetByteCount(System.Char[])" /> and <see cref="M:System.Text.Encoding.GetBytes(System.Char[])" /> methods of the current <see cref="T:System.Text.Encoding" />. You must override this method to return a <see cref="T:System.Text.Encoder" /> that maintains its state between calls.</para>
         </block>
+        <altmember cref="T:System.Text.Encoder" />
+        <altmember cref="M:System.Text.Encoding.GetBytes(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetByteCount(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetDecoder" />
       </Docs>
     </Member>
     <Member MemberName="GetEncoding">
@@ -2688,6 +2779,10 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
           <paramref name="codepage" /> is not supported by the underlying platform.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="codepage" /> is not supported by the underlying platform.</exception>
+        <altmember cref="P:System.Text.Encoding.CodePage" />
+        <altmember cref="P:System.Text.Encoding.EncoderFallback" />
+        <altmember cref="T:System.Text.EncoderFallback" />
+        <altmember cref="M:System.Text.Encoding.GetEncodings" />
       </Docs>
     </Member>
     <Member MemberName="GetEncoding">
@@ -2754,6 +2849,9 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
  -or-  
   
  The code page indicated by <paramref name="name" /> is not supported by the underlying platform.</exception>
+        <altmember cref="P:System.Text.Encoding.EncoderFallback" />
+        <altmember cref="T:System.Text.EncoderFallback" />
+        <altmember cref="M:System.Text.Encoding.GetEncodings" />
       </Docs>
     </Member>
     <Member MemberName="GetEncoding">
@@ -2819,14 +2917,14 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
 > [!NOTE]
 >  The ANSI code pages can be different on different computers and can change on a single computer, leading to data corruption. For this reason, if the active code page is an ANSI code page, encoding and decoding data using the default code page returned by `Encoding.GetEncoding(0)` is not recommended. For the most consistent results, you should use Unicode, such as UTF-8 (code page 65001) or UTF-16, instead of a specific code page. 
   
- To get the encoding associated with the active code page, you can either supply a value of 0 for the `codepage` argument or, if your code is running on the full .NET Framework on the Windows desktop, retrieve the value of the <xref:System.Text.Encoding.Default%2A?displayProperty=fullName> property. To determine the current active code page, call the Windows [GetACP](http://msdn.microsoft.com/library/windows/desktop/dd318070.aspx) function from the .NET Framework on the Windows desktop.  
+ To get the encoding associated with the active code page, you can either supply a value of 0 for the `codepage` argument or, if your code is running on the full .NET Framework on the Windows desktop, retrieve the value of the <xref:System.Text.Encoding.Default%2A?displayProperty=nameWithType> property. To determine the current active code page, call the Windows [GetACP](http://msdn.microsoft.com/library/windows/desktop/dd318070.aspx) function from the .NET Framework on the Windows desktop.  
   
  <xref:System.Text.Encoding.GetEncoding%2A> returns a cached instance with default settings. You should use the constructors of derived classes to get an instance with different settings. For example, the <xref:System.Text.UTF32Encoding> class provides a constructor that lets you enable error detection.  
   
    
   
 ## Examples  
- The following example demonstrates the <xref:System.Text.Encoding.GetEncoding%28System.String%2CSystem.Text.EncoderFallback%2CSystem.Text.DecoderFallback%29?displayProperty=fullName> method.  
+ The following example demonstrates the <xref:System.Text.Encoding.GetEncoding%28System.String%2CSystem.Text.EncoderFallback%2CSystem.Text.DecoderFallback%29?displayProperty=nameWithType> method.  
   
  [!code-cpp[sys.txt.fallbackEncRpl#1](~/samples/snippets/cpp/VS_Snippets_CLR/sys.txt.fallbackEncRpl/cpp/fallEncRpl.cpp#1)]
  [!code-csharp[sys.txt.fallbackEncRpl#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.txt.fallbackEncRpl/cs/fallEncRpl.cs#1)]
@@ -2840,6 +2938,10 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
           <paramref name="codepage" /> is not supported by the underlying platform.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="codepage" /> is not supported by the underlying platform.</exception>
+        <altmember cref="P:System.Text.Encoding.CodePage" />
+        <altmember cref="P:System.Text.Encoding.EncoderFallback" />
+        <altmember cref="T:System.Text.EncoderFallback" />
+        <altmember cref="M:System.Text.Encoding.GetEncodings" />
       </Docs>
     </Member>
     <Member MemberName="GetEncoding">
@@ -2896,7 +2998,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
    
   
 ## Examples  
- The following example demonstrates the <xref:System.Text.Encoding.GetEncoding%28System.String%2CSystem.Text.EncoderFallback%2CSystem.Text.DecoderFallback%29?displayProperty=fullName> method.  
+ The following example demonstrates the <xref:System.Text.Encoding.GetEncoding%28System.String%2CSystem.Text.EncoderFallback%2CSystem.Text.DecoderFallback%29?displayProperty=nameWithType> method.  
   
  [!code-cpp[sys.txt.fallbackEncRpl#1](~/samples/snippets/cpp/VS_Snippets_CLR/sys.txt.fallbackEncRpl/cpp/fallEncRpl.cpp#1)]
  [!code-csharp[sys.txt.fallbackEncRpl#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.txt.fallbackEncRpl/cs/fallEncRpl.cs#1)]
@@ -2910,6 +3012,9 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
  -or-  
   
  The code page indicated by <paramref name="name" /> is not supported by the underlying platform.</exception>
+        <altmember cref="P:System.Text.Encoding.EncoderFallback" />
+        <altmember cref="T:System.Text.EncoderFallback" />
+        <altmember cref="M:System.Text.Encoding.GetEncodings" />
       </Docs>
     </Member>
     <Member MemberName="GetEncodings">
@@ -2965,6 +3070,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Text.Encoding.GetEncoding(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -2998,6 +3104,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
         <summary>Returns the hash code for the current instance.</summary>
         <returns>The hash code for the current instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="GetMaxByteCount">
@@ -3043,7 +3150,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
   
  <xref:System.Text.Encoding.GetMaxByteCount%2A> retrieves a worst-case number, including the worst case for the currently selected <xref:System.Text.EncoderFallback>. If a fallback is chosen with a potentially large string, <xref:System.Text.Encoding.GetMaxByteCount%2A> retrieves large values, particularly in cases where the worst case for the encoding involves switching modes for every character. For example, this can happen for ISO-2022-JP. For more information, see the blog entry "[What's with Encoding.GetMaxByteCount() and Encoding.GetMaxCharCount()?](http://go.microsoft.com/fwlink/?LinkId=153702)" (http://blogs.msdn.com/shawnste/archive/2005/03/02/383903.aspx).  
   
- In most cases, this method retrieves reasonable values for small strings. For large strings, you might have to choose between using very large buffers and catching errors in the rare case when a more reasonable buffer is too small. You might also want to consider a different approach using <xref:System.Text.Encoding.GetByteCount%2A> or <xref:System.Text.Encoder.Convert%2A?displayProperty=fullName>.  
+ In most cases, this method retrieves reasonable values for small strings. For large strings, you might have to choose between using very large buffers and catching errors in the rare case when a more reasonable buffer is too small. You might also want to consider a different approach using <xref:System.Text.Encoding.GetByteCount%2A> or <xref:System.Text.Encoder.Convert%2A?displayProperty=nameWithType>.  
   
  When using <xref:System.Text.Encoding.GetMaxByteCount%2A>, you should allocate the output buffer based on the maximum size of the input buffer. If the output buffer is constrained in size, you might use the <xref:System.Text.Encoding.Convert%2A> method.  
   
@@ -3073,6 +3180,9 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
         <block subset="none" type="overrides">
           <para>All <see cref="T:System.Text.Encoding" /> implementations must guarantee that no buffer overflow exceptions occur if buffers are sized according to the results of this method's calculations.</para>
         </block>
+        <altmember cref="M:System.Text.Encoding.GetBytes(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetByteCount(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetMaxCharCount">
@@ -3116,11 +3226,11 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
   
  <xref:System.Text.Encoding.GetMaxCharCount%2A> retrieves a worst-case number, including the worst case for the currently selected <xref:System.Text.DecoderFallback>. If a fallback is chosen with a potentially large string, <xref:System.Text.Encoding.GetMaxCharCount%2A> retrieves large values.  
   
- In most cases, this method retrieves reasonable numbers for small strings. For large strings, you might have to choose between using very large buffers and catching errors in the rare case that a more reasonable buffer is too small. You might also want to consider a different approach using <xref:System.Text.Encoding.GetCharCount%2A> or <xref:System.Text.Decoder.Convert%2A?displayProperty=fullName>.  
+ In most cases, this method retrieves reasonable numbers for small strings. For large strings, you might have to choose between using very large buffers and catching errors in the rare case that a more reasonable buffer is too small. You might also want to consider a different approach using <xref:System.Text.Encoding.GetCharCount%2A> or <xref:System.Text.Decoder.Convert%2A?displayProperty=nameWithType>.  
   
  <xref:System.Text.Encoding.GetMaxCharCount%2A> has no relation to <xref:System.Text.Encoding.GetBytes%2A>. If you needs a similar function to use with <xref:System.Text.Encoding.GetBytes%2A>, you should use <xref:System.Text.Encoding.GetMaxByteCount%2A>.  
   
- When using <xref:System.Text.Encoding.GetMaxCharCount%2A>, you should allocate the output buffer based on the maximum size of the input buffer. If the output buffer is constrained in size, you might use the <xref:System.Text.Decoder.Convert%2A?displayProperty=fullName> method.  
+ When using <xref:System.Text.Encoding.GetMaxCharCount%2A>, you should allocate the output buffer based on the maximum size of the input buffer. If the output buffer is constrained in size, you might use the <xref:System.Text.Decoder.Convert%2A?displayProperty=nameWithType> method.  
   
  Note that <xref:System.Text.Encoding.GetMaxCharCount%2A> considers the worst case for leftover bytes from a previous encoder operation. For most code pages, passing a value of 0 to this method retrieves values greater than or equal to 1.  
   
@@ -3148,6 +3258,10 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
         <block subset="none" type="overrides">
           <para>All <see cref="T:System.Text.Encoding" /> implementations must guarantee that no buffer overflow exceptions occur if buffers are sized according to the results of this method's calculations.</para>
         </block>
+        <altmember cref="M:System.Text.Encoding.GetChars(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetString(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetCharCount(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetDecoder" />
       </Docs>
     </Member>
     <Member MemberName="GetPreamble">
@@ -3264,14 +3378,14 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
 ## Remarks  
  If the data to be converted is available only in sequential blocks (such as data read from a stream) or if the amount of data is so large that it needs to be divided into smaller blocks, you should use the <xref:System.Text.Decoder> object returned by the <xref:System.Text.Encoding.GetDecoder%2A> method of a derived class.  
   
- See the Remarks section of the <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> reference topic for a discussion of decoding techniques and considerations.  
+ See the Remarks section of the <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> reference topic for a discussion of decoding techniques and considerations.  
   
  Note that the precise behavior of the <xref:System.Text.Encoding.GetString%2A> method for a particular <xref:System.Text.Encoding> implementation depends on the fallback strategy defined for that <xref:System.Text.Encoding> object. For more information, see the "Choosing a Fallback Strategy" section of the [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) topic.  
   
    
   
 ## Examples  
- The following example reads a UTF-8 encoded string from a binary file represented by a <xref:System.IO.FileStream> object. For files that are smaller than 2,048 bytes, it reads the contents of the entire file into a byte array and calls the <xref:System.Text.Encoding.GetString%28System.Byte%5B%5D%29> method to perform the decoding. For larger files, it reads 2,048 bytes at a time into a byte array, calls the <xref:System.Text.Decoder.GetCharCount%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method to determine how many characters are contained in the array, and then calls the <xref:System.Text.Decoder.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29?displayProperty=fullName> method to perform the decoding.  
+ The following example reads a UTF-8 encoded string from a binary file represented by a <xref:System.IO.FileStream> object. For files that are smaller than 2,048 bytes, it reads the contents of the entire file into a byte array and calls the <xref:System.Text.Encoding.GetString%28System.Byte%5B%5D%29> method to perform the decoding. For larger files, it reads 2,048 bytes at a time into a byte array, calls the <xref:System.Text.Decoder.GetCharCount%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method to determine how many characters are contained in the array, and then calls the <xref:System.Text.Decoder.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29?displayProperty=nameWithType> method to perform the decoding.  
   
  [!code-csharp[System.Text.Encoding.GetString#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.Encoding.GetString/CS/getstring1.cs#2)]
  [!code-vb[System.Text.Encoding.GetString#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.Encoding.GetString/VB/getstring1.vb#2)]  
@@ -3299,6 +3413,10 @@ The goal is to save this file, then open and decode it as a binary stream.
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetChars(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetDecoder" />
+        <altmember cref="M:System.Text.Encoding.GetCharCount(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxCharCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetString">
@@ -3354,7 +3472,7 @@ The goal is to save this file, then open and decode it as a binary stream.
   
  If the data to be converted is available only in sequential blocks (such as data read from a stream) or if the amount of data is so large that it needs to be divided into smaller blocks, you should use the <xref:System.Text.Decoder> object returned by the <xref:System.Text.Encoding.GetDecoder%2A> method of a derived class.  
   
- See the Remarks section of the <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> reference topic for a discussion of decoding techniques and considerations.  
+ See the Remarks section of the <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> reference topic for a discussion of decoding techniques and considerations.  
   
  Note that the precise behavior of the <xref:System.Text.Encoding.GetString%2A> method for a particular <xref:System.Text.Encoding> implementation depends on the fallback strategy defined for that <xref:System.Text.Encoding> object. For more information, see the "Choosing a Fallback Strategy" section of the [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) topic.  
   
@@ -3369,6 +3487,10 @@ The goal is to save this file, then open and decode it as a binary stream.
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetCharCount(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetChars(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetDecoder" />
+        <altmember cref="M:System.Text.Encoding.GetMaxCharCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetString">
@@ -3414,12 +3536,12 @@ The goal is to save this file, then open and decode it as a binary stream.
 ## Remarks  
  If the data to be converted is available only in sequential blocks (such as data read from a stream) or if the amount of data is so large that it needs to be divided into smaller blocks, you should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.Encoding.GetDecoder%2A> method or the <xref:System.Text.Encoding.GetEncoder%2A> method, respectively, of a derived class.  
   
- See the Remarks section of the <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> reference topic for a discussion of decoding techniques and considerations.  
+ See the Remarks section of the <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> reference topic for a discussion of decoding techniques and considerations.  
   
    
   
 ## Examples  
- The following example reads a UTF-8 encoded string from a binary file that is represented by a <xref:System.IO.FileStream> object. For files that are smaller than 2,048 bytes, it reads the contents of the entire file into a byte array and calls the <xref:System.Text.Encoding.GetString%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method to perform the decoding. For larger files, it reads 2,048 bytes at a time into a byte array, calls the <xref:System.Text.Decoder.GetCharCount%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method to determine how many characters are contained in the array, and then calls the <xref:System.Text.Decoder.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29?displayProperty=fullName> method to perform the decoding.  
+ The following example reads a UTF-8 encoded string from a binary file that is represented by a <xref:System.IO.FileStream> object. For files that are smaller than 2,048 bytes, it reads the contents of the entire file into a byte array and calls the <xref:System.Text.Encoding.GetString%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method to perform the decoding. For larger files, it reads 2,048 bytes at a time into a byte array, calls the <xref:System.Text.Decoder.GetCharCount%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method to determine how many characters are contained in the array, and then calls the <xref:System.Text.Decoder.GetChars%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.Int32%29?displayProperty=nameWithType> method to perform the decoding.  
   
  [!code-csharp[System.Text.Encoding.GetString#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.Encoding.GetString/CS/getstring2.cs#3)]
  [!code-vb[System.Text.Encoding.GetString#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.Encoding.GetString/VB/getstring2.vb#3)]  
@@ -3453,6 +3575,10 @@ The goal is to save this file, then open and decode it as a binary stream.
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetChars(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetDecoder" />
+        <altmember cref="M:System.Text.Encoding.GetCharCount(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxCharCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="HeaderName">
@@ -3496,7 +3622,7 @@ The goal is to save this file, then open and decode it as a binary stream.
    
   
 ## Examples  
- The following example retrieves the different names for each encoding and displays the encodings with one or more names that are different from <xref:System.Text.EncodingInfo.Name%2A?displayProperty=fullName>. It displays <xref:System.Text.Encoding.EncodingName%2A> but does not compare against it.  
+ The following example retrieves the different names for each encoding and displays the encodings with one or more names that are different from <xref:System.Text.EncodingInfo.Name%2A?displayProperty=nameWithType>. It displays <xref:System.Text.Encoding.EncodingName%2A> but does not compare against it.  
   
  [!code-cpp[System.Text.Encoding.Names#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.Encoding.Names/CPP/names.cpp#1)]
  [!code-csharp[System.Text.Encoding.Names#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.Encoding.Names/CS/names.cs#1)]
@@ -3504,6 +3630,10 @@ The goal is to save this file, then open and decode it as a binary stream.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.EncodingInfo.Name" />
+        <altmember cref="P:System.Text.Encoding.BodyName" />
+        <altmember cref="P:System.Text.Encoding.EncodingName" />
+        <altmember cref="P:System.Text.Encoding.WebName" />
       </Docs>
     </Member>
     <Member MemberName="IsAlwaysNormalized">
@@ -3545,6 +3675,7 @@ The goal is to save this file, then open and decode it as a binary stream.
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.NormalizationForm" />
       </Docs>
     </Member>
     <Member MemberName="IsAlwaysNormalized">
@@ -3589,6 +3720,7 @@ The goal is to save this file, then open and decode it as a binary stream.
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.NormalizationForm" />
       </Docs>
     </Member>
     <Member MemberName="IsBrowserDisplay">
@@ -3628,6 +3760,7 @@ The goal is to save this file, then open and decode it as a binary stream.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.Encoding.IsBrowserSave" />
       </Docs>
     </Member>
     <Member MemberName="IsBrowserSave">
@@ -3667,6 +3800,7 @@ The goal is to save this file, then open and decode it as a binary stream.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.Encoding.IsBrowserDisplay" />
       </Docs>
     </Member>
     <Member MemberName="IsMailNewsDisplay">
@@ -3706,6 +3840,7 @@ The goal is to save this file, then open and decode it as a binary stream.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.Encoding.IsMailNewsDisplay" />
       </Docs>
     </Member>
     <Member MemberName="IsMailNewsSave">
@@ -3745,6 +3880,7 @@ The goal is to save this file, then open and decode it as a binary stream.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.Encoding.IsMailNewsSave" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -3821,7 +3957,7 @@ The goal is to save this file, then open and decode it as a binary stream.
  For a single-byte encoding, for example, <xref:System.Text.ASCIIEncoding>, this property retrieves `true`.  
   
 > [!CAUTION]
->  You should be careful in what your application does with the value for <xref:System.Text.Encoding.IsSingleByte%2A>. An assumption of how an Encoding will proceed may still be wrong. For example, Windows-1252 has a value of `true` for <xref:System.Text.Encoding.IsSingleByte%2A?displayProperty=fullName>, but Encoding.GetMaxByteCount(1) returns 2. This is because the method considers potential leftover surrogates from a previous decoder operation.  
+>  You should be careful in what your application does with the value for <xref:System.Text.Encoding.IsSingleByte%2A>. An assumption of how an Encoding will proceed may still be wrong. For example, Windows-1252 has a value of `true` for <xref:System.Text.Encoding.IsSingleByte%2A?displayProperty=nameWithType>, but Encoding.GetMaxByteCount(1) returns 2. This is because the method considers potential leftover surrogates from a previous decoder operation.  
   
    
   
@@ -3876,13 +4012,13 @@ The goal is to save this file, then open and decode it as a binary stream.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.Encoding.RegisterProvider%2A> method allows you to register a class derived from <xref:System.Text.EncodingProvider> that makes character encodings available on a platform that does not otherwise support them. Once the encoding provider is registered, the encodings that it supports can be retrieved by calling any <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=fullName> overload. If there are multiple encoding providers, the <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=fullName> method attempts to retrieve a specified encoding from each provider starting with the one most recently registered.
+ The <xref:System.Text.Encoding.RegisterProvider%2A> method allows you to register a class derived from <xref:System.Text.EncodingProvider> that makes character encodings available on a platform that does not otherwise support them. Once the encoding provider is registered, the encodings that it supports can be retrieved by calling any <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType> overload. If there are multiple encoding providers, the <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType> method attempts to retrieve a specified encoding from each provider starting with the one most recently registered.
 
 Registering an encoding provider by using the <xref:System.Text.Encoding.RegisterProvider%2A> method also modifies the behavior of the [Encoding.GetEncoding(Int32)](<xref:System.Text.Encoding.GetEncoding(System.Int32)>) and [EncodingProvider.GetEncoding(Int32, EncoderFallback, DecoderFallback)](xref:System.Text.Encoding.GetEncoding(System.Int32,System.Text.EncoderFallback,System.Text.DecoderFallback)) methods when passed an argument of `0`:
 
 - If the registered provider is the <xref:System.Text.CodePagesEncodingProvider>, the method returns the encoding that matches the system active code page when running on the Windows operating system.
 
-- A custom encoding provider can choose which encoding to return when either of these <xref:System.Text.Encoding.GetEncoding%2A> method overloads is passed an argument of `0`. The provider can also choose to not return an encoding by having the <xref:System.Text.EncodingProvider.GetEncoding%2A?displayProperty=fullName> method return `null`. 
+- A custom encoding provider can choose which encoding to return when either of these <xref:System.Text.Encoding.GetEncoding%2A> method overloads is passed an argument of `0`. The provider can also choose to not return an encoding by having the <xref:System.Text.EncodingProvider.GetEncoding%2A?displayProperty=nameWithType> method return `null`. 
   
  [!INCLUDE[net_v46](~/includes/net-v46-md.md)] includes one encoding provider, <xref:System.Text.CodePagesEncodingProvider>, that makes the encodings available that are present in the full .NET Framework but are not available in [!INCLUDE[net_v46](~/includes/net-v46-md.md)]. By default, [!INCLUDE[net_v46](~/includes/net-v46-md.md)] only supports the Unicode encodings, ASCII, and code page 28591.  
   
@@ -3894,6 +4030,8 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="provider" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Text.CodePagesEncodingProvider" />
+        <altmember cref="T:System.Text.EncodingProvider" />
       </Docs>
     </Member>
     <Member MemberName="Unicode">
@@ -3931,7 +4069,7 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
 ## Remarks  
  For information about the encodings supported by the .NET Framework and a discussion of which Unicode encoding to use, see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md).  
   
- The <xref:System.Text.UnicodeEncoding> object that is returned by this property may not have the appropriate behavior for your app. It uses replacement fallback to replace each string that it cannot encode and each byte that it cannot decode with a question mark ("?") character. Instead, you can call the <xref:System.Text.UnicodeEncoding.%23ctor%28System.Boolean%2CSystem.Boolean%2CSystem.Boolean%29?displayProperty=fullName> constructor to instantiate a little endian <xref:System.Text.UnicodeEncoding> object whose fallback is either an <xref:System.Text.EncoderFallbackException> or a <xref:System.Text.DecoderFallbackException>, as the following example illustrates.  
+ The <xref:System.Text.UnicodeEncoding> object that is returned by this property may not have the appropriate behavior for your app. It uses replacement fallback to replace each string that it cannot encode and each byte that it cannot decode with a question mark ("?") character. Instead, you can call the <xref:System.Text.UnicodeEncoding.%23ctor%28System.Boolean%2CSystem.Boolean%2CSystem.Boolean%29?displayProperty=nameWithType> constructor to instantiate a little endian <xref:System.Text.UnicodeEncoding> object whose fallback is either an <xref:System.Text.EncoderFallbackException> or a <xref:System.Text.DecoderFallbackException>, as the following example illustrates.  
   
  [!code-csharp[System.Text.Encoding.Unicode#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.encoding.unicode/cs/unicode1.cs#2)]
  [!code-vb[System.Text.Encoding.Unicode#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.encoding.unicode/vb/unicode1.vb#2)]  
@@ -3947,6 +4085,9 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.UnicodeEncoding" />
+        <altmember cref="M:System.Text.Encoding.GetEncoding(System.Int32)" />
+        <altmember cref="P:System.Text.Encoding.BigEndianUnicode" />
       </Docs>
     </Member>
     <Member MemberName="UTF32">
@@ -3981,7 +4122,7 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.UTF32Encoding> object that is returned by this property may not have the appropriate behavior for your app. It uses replacement fallback to replace each string that it cannot encode and each byte that it cannot decode with the Unicode REPLACEMENT CHARACTER (U+FFFE). Instead, you can call the <xref:System.Text.UTF32Encoding.%23ctor%28System.Boolean%2CSystem.Boolean%2CSystem.Boolean%29?displayProperty=fullName> constructor to instantiate a <xref:System.Text.UTF32Encoding> object whose fallback is either an <xref:System.Text.EncoderFallbackException> or a <xref:System.Text.DecoderFallbackException>, as the following example illustrates.  
+ The <xref:System.Text.UTF32Encoding> object that is returned by this property may not have the appropriate behavior for your app. It uses replacement fallback to replace each string that it cannot encode and each byte that it cannot decode with the Unicode REPLACEMENT CHARACTER (U+FFFE). Instead, you can call the <xref:System.Text.UTF32Encoding.%23ctor%28System.Boolean%2CSystem.Boolean%2CSystem.Boolean%29?displayProperty=nameWithType> constructor to instantiate a <xref:System.Text.UTF32Encoding> object whose fallback is either an <xref:System.Text.EncoderFallbackException> or a <xref:System.Text.DecoderFallbackException>, as the following example illustrates.  
   
  [!code-csharp[System.Text.Encoding.UTF32#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.encoding.utf32/cs/encoding.utf32.1.cs#1)]
  [!code-vb[System.Text.Encoding.UTF32#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.encoding.utf32/vb/encoding.utf32.1.vb#1)]  
@@ -4001,6 +4142,10 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.UTF32Encoding" />
+        <altmember cref="P:System.Text.Encoding.UTF8" />
+        <altmember cref="P:System.Text.Encoding.Unicode" />
+        <altmember cref="P:System.Text.Encoding.BigEndianUnicode" />
       </Docs>
     </Member>
     <Member MemberName="UTF7">
@@ -4048,6 +4193,8 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.UTF7Encoding" />
+        <altmember cref="P:System.Text.Encoding.UTF8" />
       </Docs>
     </Member>
     <Member MemberName="UTF8">
@@ -4089,7 +4236,7 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
   
 -   It returns a <xref:System.Text.UTF8Encoding> object that provides a Unicode byte order mark (BOM). To instantiate a UTF8 encoding that doesn't provide a BOM, call any overload of the <xref:System.Text.UTF8Encoding.%23ctor%2A> constructor.  
   
--   It returns a <xref:System.Text.UTF8Encoding> object that uses replacement fallback to replace each string that it can't encode and each byte that it can't decode with a question mark ("?") character. Instead, you can call the <xref:System.Text.UTF8Encoding.%23ctor%28System.Boolean%2CSystem.Boolean%29?displayProperty=fullName> constructor to instantiate a <xref:System.Text.UTF8Encoding> object whose fallback is either an <xref:System.Text.EncoderFallbackException> or a <xref:System.Text.DecoderFallbackException>, as the following example illustrates.  
+-   It returns a <xref:System.Text.UTF8Encoding> object that uses replacement fallback to replace each string that it can't encode and each byte that it can't decode with a question mark ("?") character. Instead, you can call the <xref:System.Text.UTF8Encoding.%23ctor%28System.Boolean%2CSystem.Boolean%29?displayProperty=nameWithType> constructor to instantiate a <xref:System.Text.UTF8Encoding> object whose fallback is either an <xref:System.Text.EncoderFallbackException> or a <xref:System.Text.DecoderFallbackException>, as the following example illustrates.  
   
      [!code-csharp[System.Text.Encoding.UTF8#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.encoding.utf8/cs/encoding.utf8.1.cs#1)]
      [!code-vb[System.Text.Encoding.UTF8#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.encoding.utf8/vb/encoding.utf8.1.vb#1)]  
@@ -4118,6 +4265,8 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.UTF8Encoding" />
+        <altmember cref="M:System.Text.Encoding.GetEncoding(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="WebName">
@@ -4159,7 +4308,7 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
   
  For more information on the IANA, go to [www.iana.org](http://www.iana.org/).  
   
- The <xref:System.Text.Encoding.WebName%2A?displayProperty=fullName> is the same as the <xref:System.Text.EncodingInfo.Name%2A?displayProperty=fullName> returned by <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName>. Some of the web names are duplicates; see the remarks for <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName> for more information.  
+ The <xref:System.Text.Encoding.WebName%2A?displayProperty=nameWithType> is the same as the <xref:System.Text.EncodingInfo.Name%2A?displayProperty=nameWithType> returned by <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=nameWithType>. Some of the web names are duplicates; see the remarks for <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=nameWithType> for more information.  
   
    
   
@@ -4170,7 +4319,7 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
  [!code-csharp[System.Text.Encoding.WebName#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.Encoding.WebName/CS/webname.cs#1)]
  [!code-vb[System.Text.Encoding.WebName#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.Encoding.WebName/VB/webname.vb#1)]  
   
- The following example retrieves the different names for each encoding and displays the encodings with one or more names that are different from <xref:System.Text.EncodingInfo.Name%2A?displayProperty=fullName>. It displays <xref:System.Text.Encoding.EncodingName%2A> but does not compare against it.  
+ The following example retrieves the different names for each encoding and displays the encodings with one or more names that are different from <xref:System.Text.EncodingInfo.Name%2A?displayProperty=nameWithType>. It displays <xref:System.Text.Encoding.EncodingName%2A> but does not compare against it.  
   
  [!code-cpp[System.Text.Encoding.Names#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.Encoding.Names/CPP/names.cpp#1)]
  [!code-csharp[System.Text.Encoding.Names#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.Encoding.Names/CS/names.cs#1)]
@@ -4178,6 +4327,10 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.EncodingInfo.Name" />
+        <altmember cref="P:System.Text.Encoding.BodyName" />
+        <altmember cref="P:System.Text.Encoding.EncodingName" />
+        <altmember cref="P:System.Text.Encoding.HeaderName" />
       </Docs>
     </Member>
     <Member MemberName="WindowsCodePage">
@@ -4221,7 +4374,97 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.Encoding.CodePage" />
+        <altmember cref="P:System.Text.EncodingInfo.CodePage" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetString">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, decodes a sequence of bytes into a string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEncoding">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an encoding for the specified code page.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Convert">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a byte array from one encoding to another.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetChars">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, decodes a sequence of bytes into a set of characters.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetByteCount">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, calculates the number of bytes produced by encoding a set of characters.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCharCount">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, calculates the number of characters produced by decoding a sequence of bytes.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetBytes">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, encodes a set of characters into a sequence of bytes.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsAlwaysNormalized">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value indicating whether the current encoding is always normalized.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Text.Encoding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

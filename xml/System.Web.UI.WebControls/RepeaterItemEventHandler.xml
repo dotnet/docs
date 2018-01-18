@@ -33,10 +33,14 @@
 ## Examples  
  The following example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.Repeater.ItemCreated> event of the <xref:System.Web.UI.WebControls.Repeater>. A new line of text indicating the item type is displayed whenever a <xref:System.Web.UI.WebControls.Repeater> item is created.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic RepeaterItemEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RepeaterItemEventArgs Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic RepeaterItemEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RepeaterItemEventArgs Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic RepeaterItemEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RepeaterItemEventArgs Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic RepeaterItemEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RepeaterItemEventArgs Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Repeater" />
+    <altmember cref="T:System.Web.UI.WebControls.RepeaterItemEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.Repeater.ItemCreated" />
+    <altmember cref="E:System.Web.UI.WebControls.Repeater.ItemDataBound" />
   </Docs>
 </Type>

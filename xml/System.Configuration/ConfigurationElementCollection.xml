@@ -76,6 +76,12 @@
   
  The declarative model, also referred to as the attributed model, allows you to define an element attribute by using a property and configuring it with attributes. These attributes instruct the ASP.NET configuration system about the property types and their default values. ASP.NET can use reflection to obtain this information and then create the element property objects and perform the required initialization.</para>
     </block>
+    <altmember cref="T:System.Configuration.ElementInformation" />
+    <altmember cref="T:System.Configuration.ConfigurationElement" />
+    <altmember cref="T:System.Configuration.ConfigurationElementCollectionType" />
+    <altmember cref="T:System.Configuration.ConfigurationProperty" />
+    <altmember cref="T:System.Configuration.ConfigurationPropertyCollection" />
+    <altmember cref="T:System.Configuration.ConfigurationSection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -1464,5 +1470,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BaseGet">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Configuration.ConfigurationElement" /> at the specified index location.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationElementCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

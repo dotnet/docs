@@ -65,7 +65,7 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.HttpWebResponse.Dispose
+uid: System.Net.HttpWebResponse.Dispose*
 ---
 
 ---
@@ -87,7 +87,7 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.HttpWebResponse.#ctor
+uid: System.Net.HttpWebResponse.#ctor*
 ms.author: "bobdel"
 manager: "markl"
 ---
@@ -100,6 +100,12 @@ manager: "markl"
 
 ---
 uid: System.Net.HttpWebResponse.LastModified
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.HttpWebResponse.#ctor
 ms.author: "bobdel"
 manager: "markl"
 ---

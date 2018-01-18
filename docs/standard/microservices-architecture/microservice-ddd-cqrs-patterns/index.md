@@ -7,6 +7,10 @@ ms.author: wiwagn
 ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
+ms.topic: article
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Tackling Business Complexity in a Microservice with DDD and CQRS Patterns
 
@@ -67,5 +71,5 @@ DDD training
 
 
 >[!div class="step-by-step"]
-[Previous] (../multi-container-microservice-net-applications/test-aspnet-core-services-web-apps.md)
+[Previous] (../multi-container-microservice-net-applications/background-tasks-with-ihostedservice.md)
 [Next] (apply-simplified-microservice-cqrs-ddd-patterns.md)

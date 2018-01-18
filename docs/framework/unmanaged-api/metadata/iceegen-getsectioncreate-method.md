@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICeeGen::GetSectionCreate"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICeeGen::GetSectionCreate method [.NET Framework metadata]"
   - "GetSectionCreate method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICeeGen::GetSectionCreate Method
 Generates and gets a code section using the specified name and flag values.  

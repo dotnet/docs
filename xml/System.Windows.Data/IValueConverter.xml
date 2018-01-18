@@ -21,6 +21,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Data.IMultiValueConverter" />
+    <altmember cref="T:System.Windows.Data.ValueConversionAttribute" />
   </Docs>
   <Members>
     <Member MemberName="Convert">
@@ -54,11 +56,11 @@
 ## Remarks  
  The data binding engine calls this method when it propagates a value from the binding source to the binding target.  
   
- The data binding engine does not catch exceptions that are thrown by a user-supplied converter. Any exception that is thrown by the <xref:System.Windows.Data.IValueConverter.Convert%2A> method, or any uncaught exceptions that are thrown by methods that the <xref:System.Windows.Data.IValueConverter.Convert%2A> method calls, are treated as run-time errors. Handle anticipated problems by returning <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=fullName>.  
+ The data binding engine does not catch exceptions that are thrown by a user-supplied converter. Any exception that is thrown by the <xref:System.Windows.Data.IValueConverter.Convert%2A> method, or any uncaught exceptions that are thrown by methods that the <xref:System.Windows.Data.IValueConverter.Convert%2A> method calls, are treated as run-time errors. Handle anticipated problems by returning <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=nameWithType>.  
   
- A return value of <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=fullName> indicates that the converter produced no value and that the binding uses the <xref:System.Windows.Data.BindingBase.FallbackValue%2A>, if available, or the default value instead.  
+ A return value of <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=nameWithType> indicates that the converter produced no value and that the binding uses the <xref:System.Windows.Data.BindingBase.FallbackValue%2A>, if available, or the default value instead.  
   
- A return value of <xref:System.Windows.Data.Binding.DoNothing?displayProperty=fullName> indicates that the binding does not transfer the value or use the <xref:System.Windows.Data.BindingBase.FallbackValue%2A> or default value.  
+ A return value of <xref:System.Windows.Data.Binding.DoNothing?displayProperty=nameWithType> indicates that the binding does not transfer the value or use the <xref:System.Windows.Data.BindingBase.FallbackValue%2A> or default value.  
   
  ]]></format>
         </remarks>
@@ -99,9 +101,9 @@
   
  The data binding engine does not catch exceptions that are thrown by a user-supplied converter. Any exception that is thrown by the <xref:System.Windows.Data.IValueConverter.ConvertBack%2A> method, or any uncaught exceptions that are thrown by methods that the <xref:System.Windows.Data.IValueConverter.ConvertBack%2A> method calls, are treated as run-time errors. Handle anticipated problems by returning <xref:System.Windows.DependencyProperty>.<xref:System.Windows.DependencyProperty.UnsetValue>.  
   
- A return value of <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=fullName> indicates that the converter produced no value and that the binding uses the <xref:System.Windows.Data.BindingBase.FallbackValue%2A>, if available, or the default value instead.  
+ A return value of <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=nameWithType> indicates that the converter produced no value and that the binding uses the <xref:System.Windows.Data.BindingBase.FallbackValue%2A>, if available, or the default value instead.  
   
- A return value of <xref:System.Windows.Data.Binding.DoNothing?displayProperty=fullName> indicates that the binding does not transfer the value or use the <xref:System.Windows.Data.BindingBase.FallbackValue%2A> or default value.  
+ A return value of <xref:System.Windows.Data.Binding.DoNothing?displayProperty=nameWithType> indicates that the binding does not transfer the value or use the <xref:System.Windows.Data.BindingBase.FallbackValue%2A> or default value.  
   
  ]]></format>
         </remarks>

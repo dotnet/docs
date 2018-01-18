@@ -32,10 +32,12 @@
   
  Controls that implement <xref:System.Windows.Automation.Provider.ITableProvider> are also required to implement <xref:System.Windows.Automation.Provider.IGridProvider> so as to expose the inherent grid functionality of a table control.  
   
- Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.TablePattern> and <xref:System.Windows.Automation.GridPattern>control patterns.  
+ Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.TablePattern> and <xref:System.Windows.Automation.GridPattern> control patterns.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Automation.TablePattern" />
+    <altmember cref="T:System.Windows.Automation.GridPattern" />
   </Docs>
   <Members>
     <Member MemberName="GetColumnHeaders">

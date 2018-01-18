@@ -14,6 +14,8 @@ caps.latest.revision: 15
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;security&gt; of &lt;netMsmqBinding&gt;
 Defines the security settings for a MSMQ binding. It specifies whether transport or SOAP security is enabled and, if so, what authentication mode and protection levels are in use.  
@@ -61,13 +63,13 @@ Defines the security settings for a MSMQ binding. It specifies whether transport
 |binding|The binding element of the [\<netMsmqBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/netmsmqbinding.md)|  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement>   
- <xref:System.ServiceModel.NetMsmqBinding.Security%2A>   
- <xref:System.ServiceModel.Configuration.NetMsmqBindingElement.Security%2A>   
- <xref:System.ServiceModel.NetMsmqSecurity>   
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)   
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)   
- [\<binding>](../../../../../docs/framework/misc/binding.md)   
+ <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement>  
+ <xref:System.ServiceModel.NetMsmqBinding.Security%2A>  
+ <xref:System.ServiceModel.Configuration.NetMsmqBindingElement.Security%2A>  
+ <xref:System.ServiceModel.NetMsmqSecurity>  
+ [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
+ [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [\<binding>](../../../../../docs/framework/misc/binding.md)  
  [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)

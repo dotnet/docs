@@ -64,10 +64,14 @@
   
  This implementation of the <xref:System.Globalization.HijriCalendar> class adjusts the calendar date by adding or subtracting a value from zero to two days to accommodate the variances in the start and the end of Ramadan and to accommodate the date difference between countries/regions. That value is stored in the <xref:System.Globalization.HijriCalendar.HijriAdjustment%2A> property. If <xref:System.Globalization.HijriCalendar.HijriAdjustment%2A> is not set explicitly, it derives its value from the settings in the regional and language options portion of Control Panel and is stored in the registry value HKEY_CURRENT_USER\Control Panel\International\AddHijriDate. However, that information can change during the life of the <xref:System.AppDomain>. The <xref:System.Globalization.HijriCalendar> class does not detect changes in the system settings automatically.  
   
- Each <xref:System.Globalization.CultureInfo> supports a set of calendars. The <xref:System.Globalization.CultureInfo.Calendar%2A> property returns the default calendar for the culture, and the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A> property returns an array containing all the calendars supported by the culture. To change the calendar used by a <xref:System.Globalization.CultureInfo>, the application should set the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> to a new <xref:System.Globalization.Calendar>.  
+ Each <xref:System.Globalization.CultureInfo> supports a set of calendars. The <xref:System.Globalization.CultureInfo.Calendar%2A> property returns the default calendar for the culture, and the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A> property returns an array containing all the calendars supported by the culture. To change the calendar used by a <xref:System.Globalization.CultureInfo>, the application should set the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> to a new <xref:System.Globalization.Calendar>.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Globalization.Calendar" />
+    <altmember cref="P:System.Globalization.CultureInfo.Calendar" />
+    <altmember cref="P:System.Globalization.CultureInfo.OptionalCalendars" />
+    <altmember cref="T:System.Globalization.UmAlQuraCalendar" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -142,7 +146,7 @@
   
  If the value of the `months` parameter is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
   
- The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#5)]
  [!code-vb[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#5)]  
@@ -165,6 +169,14 @@
  -or-  
   
  <paramref name="months" /> is greater than 120000.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="M:System.Globalization.HijriCalendar.AddYears(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddWeeks(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddDays(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddHours(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMinutes(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddSeconds(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMilliseconds(System.DateTime,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="AddYears">
@@ -211,7 +223,7 @@
   
  If `years` is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
   
- The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#8)]
  [!code-vb[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#8)]  
@@ -228,6 +240,14 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The resulting <see cref="T:System.DateTime" /> is outside the supported range.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="M:System.Globalization.HijriCalendar.AddMonths(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddWeeks(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddDays(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddHours(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMinutes(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddSeconds(System.DateTime,System.Int32)" />
+        <altmember cref="M:System.Globalization.Calendar.AddMilliseconds(System.DateTime,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="AlgorithmType">
@@ -342,6 +362,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="F:System.Globalization.HijriCalendar.HijriEra" />
       </Docs>
     </Member>
     <Member MemberName="GetDayOfMonth">
@@ -388,6 +410,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTime.Day" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetEra(System.DateTime)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetDayOfYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetDayOfWeek(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)" />
       </Docs>
     </Member>
     <Member MemberName="GetDayOfWeek">
@@ -449,6 +478,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTime.DayOfWeek" />
+        <altmember cref="T:System.DayOfWeek" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetEra(System.DateTime)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetDayOfYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetDayOfMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)" />
       </Docs>
     </Member>
     <Member MemberName="GetDayOfYear">
@@ -500,6 +537,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTime.DayOfYear" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetEra(System.DateTime)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetDayOfMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetDayOfWeek(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)" />
       </Docs>
     </Member>
     <Member MemberName="GetDaysInMonth">
@@ -565,6 +609,11 @@
  -or-  
   
  <paramref name="month" /> is outside the range supported by this calendar.</exception>
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="F:System.Globalization.HijriCalendar.HijriEra" />
+        <altmember cref="P:System.Globalization.HijriCalendar.Eras" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetMonthsInYear(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetDaysInYear(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetDaysInYear">
@@ -615,6 +664,11 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="year" /> or <paramref name="era" /> is outside the range supported by this calendar.</exception>
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="F:System.Globalization.HijriCalendar.HijriEra" />
+        <altmember cref="P:System.Globalization.HijriCalendar.Eras" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetMonthsInYear(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetDaysInMonth(System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetEra">
@@ -666,6 +720,20 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="F:System.Globalization.HijriCalendar.HijriEra" />
+        <altmember cref="P:System.Globalization.HijriCalendar.Eras" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetDayOfYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetDayOfMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetDayOfWeek(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)" />
+        <altmember cref="M:System.Globalization.Calendar.GetHour(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMinute(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetSecond(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMilliseconds(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="GetLeapMonth">
@@ -767,6 +835,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTime.Month" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetEra(System.DateTime)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetDayOfYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetDayOfMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetDayOfWeek(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)" />
+        <altmember cref="M:System.Globalization.Calendar.GetHour(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMinute(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetSecond(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMilliseconds(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="GetMonthsInYear">
@@ -821,6 +900,11 @@
  -or-  
   
  <paramref name="year" /> is outside the range supported by this calendar.</exception>
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="F:System.Globalization.HijriCalendar.HijriEra" />
+        <altmember cref="P:System.Globalization.HijriCalendar.Eras" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetDaysInYear(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetDaysInMonth(System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetYear">
@@ -867,6 +951,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTime.Year" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetEra(System.DateTime)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetDayOfYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetDayOfMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetDayOfWeek(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)" />
+        <altmember cref="M:System.Globalization.Calendar.GetHour(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMinute(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetSecond(System.DateTime)" />
+        <altmember cref="M:System.Globalization.Calendar.GetMilliseconds(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="HijriAdjustment">
@@ -955,6 +1050,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="P:System.Globalization.HijriCalendar.Eras" />
       </Docs>
     </Member>
     <Member MemberName="IsLeapDay">
@@ -1029,6 +1126,13 @@
  -or-  
   
  <paramref name="day" /> is outside the range supported by this calendar.</exception>
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="F:System.Globalization.HijriCalendar.HijriEra" />
+        <altmember cref="P:System.Globalization.HijriCalendar.Eras" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetMonthsInYear(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetDaysInMonth(System.Int32,System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.IsLeapYear(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.IsLeapMonth(System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsLeapMonth">
@@ -1096,6 +1200,12 @@
  -or-  
   
  <paramref name="month" /> is outside the range supported by this calendar.</exception>
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="F:System.Globalization.HijriCalendar.HijriEra" />
+        <altmember cref="P:System.Globalization.HijriCalendar.Eras" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetMonthsInYear(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.IsLeapYear(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.IsLeapDay(System.Int32,System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsLeapYear">
@@ -1156,6 +1266,11 @@
  -or-  
   
  <paramref name="year" /> is outside the range supported by this calendar.</exception>
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="F:System.Globalization.HijriCalendar.HijriEra" />
+        <altmember cref="P:System.Globalization.HijriCalendar.Eras" />
+        <altmember cref="M:System.Globalization.HijriCalendar.IsLeapMonth(System.Int32,System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.IsLeapDay(System.Int32,System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="MaxSupportedDateTime">
@@ -1339,6 +1454,12 @@
  -or-  
   
  <paramref name="millisecond" /> is less than zero or greater than 999.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="F:System.Globalization.HijriCalendar.HijriEra" />
+        <altmember cref="P:System.Globalization.HijriCalendar.Eras" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetMonthsInYear(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.HijriCalendar.GetDaysInMonth(System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ToFourDigitYear">
@@ -1385,6 +1506,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="year" /> is outside the range supported by this calendar.</exception>
+        <altmember cref="P:System.Globalization.HijriCalendar.TwoDigitYearMax" />
       </Docs>
     </Member>
     <Member MemberName="TwoDigitYearMax">
@@ -1429,6 +1551,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">This calendar is read-only.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The value in a set operation is less than 100 or greater than 9666.</exception>
+        <altmember cref="M:System.Globalization.HijriCalendar.ToFourDigitYear(System.Int32)" />
       </Docs>
     </Member>
   </Members>

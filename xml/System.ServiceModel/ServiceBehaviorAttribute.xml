@@ -83,6 +83,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ServiceModel.OperationBehaviorAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -219,7 +220,7 @@
  This property indicates whether an instance of a service can handle one thread or multiple threads that execute concurrently, and if single-threaded, whether reentrancy is supported.  
   
 > [!NOTE]
->  The <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> property interacts with some other settings. For example, if the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> value is set to <xref:System.ServiceModel.InstanceContextMode.Single> the result is that your service can only process one message at a time unless you also set the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> value to <xref:System.ServiceModel.ConcurrencyMode.Multiple>. This property also produces behavior in combination with the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=fullName> property. For details, see [Sessions, Instancing, and Concurrency](~/docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md).  
+>  The <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> property interacts with some other settings. For example, if the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> value is set to <xref:System.ServiceModel.InstanceContextMode.Single> the result is that your service can only process one message at a time unless you also set the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> value to <xref:System.ServiceModel.ConcurrencyMode.Multiple>. This property also produces behavior in combination with the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=nameWithType> property. For details, see [Sessions, Instancing, and Concurrency](~/docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md).  
   
  Setting <xref:System.ServiceModel.ConcurrencyMode> to <xref:System.ServiceModel.ConcurrencyMode.Single> instructs the system to restrict instances of the service to one thread of execution at a time, which frees you from dealing with threading issues. A value of <xref:System.ServiceModel.ConcurrencyMode.Multiple> means that service objects can be executed by multiple threads at any one time. In this case, you must ensure thread safety.  
   
@@ -257,7 +258,7 @@ public void MyMethod()
 > [!NOTE]
 >  A <xref:System.InvalidOperationException> is thrown at runtime if <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> is `true` when the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> property is set to <xref:System.ServiceModel.ConcurrencyMode.Single>.  
   
- Note that you must explicitly set <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> to `false` if there is an operation with <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A?displayProperty=fullName> set to true and you set <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> to <xref:System.ServiceModel.ConcurrencyMode.Reentrant>. Otherwise a validation exception is thrown because the default value of <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> is `true`.  
+ Note that you must explicitly set <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> to `false` if there is an operation with <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A?displayProperty=nameWithType> set to true and you set <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> to <xref:System.ServiceModel.ConcurrencyMode.Reentrant>. Otherwise a validation exception is thrown because the default value of <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> is `true`.  
   
  There is an interaction of the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> and other properties that can alter runtime behavior. For a complete description of these interactions, see [Sessions, Instancing, and Concurrency](~/docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md).  
   
@@ -382,7 +383,7 @@ public void MyMethod()
 ## Remarks  
  If a type implements the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface, it stores any extra data it doesn’t know about that comes over the wire when deserializing into that type. For example, if a type `Person` has members `FirstName` and `LastName`, and an element called `PhoneNumber` comes in, it is stored. When later serializing the type, `PhoneNumber` will be re-emitted. The problem is that the schema for `Person` exported by that service only has `FirstName` and `LastName`, so [!INCLUDE[indigo1](~/includes/indigo1-md.md)] generates a schema-invalid instance! If strict schema compliance is important, you can set <xref:System.ServiceModel.ServiceBehaviorAttribute.IgnoreExtensionDataObject%2A> to `true` to turn this re-emitting behavior off.  
   
- Regardless <xref:System.ServiceModel.ServiceBehaviorAttribute.IgnoreExtensionDataObject%2A> setting, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] always processes known data (both in and out) and does not throw exceptions when extra data comes in. You can also set this property using the [\&lt;dataContractSerializer\&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md) element in an application configuration file.  
+ Regardless <xref:System.ServiceModel.ServiceBehaviorAttribute.IgnoreExtensionDataObject%2A> setting, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] always processes known data (both in and out) and does not throw exceptions when extra data comes in. You can also set this property using the [&lt;dataContractSerializer&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md) element in an application configuration file.  
   
    
   
@@ -431,9 +432,9 @@ public void MyMethod()
  When enabled, the service automatically returns safer exception information to the caller. These faults appear to the client as <xref:System.ServiceModel.FaultException%601> objects of type <xref:System.ServiceModel.ExceptionDetail>.  
   
 > [!IMPORTANT]
->  Setting <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A>to `true` enables clients to obtain information about internal service method exceptions; it is only recommended as a way of temporarily debugging a service application. In addition, the WSDL for a method that returns unhandled managed exceptions in this way does not contain the contract for the <xref:System.ServiceModel.FaultException%601> of type <xref:System.ServiceModel.ExceptionDetail>. Clients must expect the possibility of an unknown SOAP fault to obtain the debugging information properly.  
+>  Setting <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A> to `true` enables clients to obtain information about internal service method exceptions; it is only recommended as a way of temporarily debugging a service application. In addition, the WSDL for a method that returns unhandled managed exceptions in this way does not contain the contract for the <xref:System.ServiceModel.FaultException%601> of type <xref:System.ServiceModel.ExceptionDetail>. Clients must expect the possibility of an unknown SOAP fault to obtain the debugging information properly.  
   
- Setting this property to `true` can also be done using an application configuration file and the [\&lt;serviceDebug\&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicedebug.md) element, as the following code example shows.  
+ Setting this property to `true` can also be done using an application configuration file and the [&lt;serviceDebug&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicedebug.md) element, as the following code example shows.  
   
  [!code-xml[OperationBehaviorAttribute1#10](~/samples/snippets/csharp/VS_Snippets_CFX/operationbehaviorattribute1/cs/hostapplication.exe.config#10)]   
    
@@ -489,7 +490,7 @@ public void MyMethod()
  <xref:System.ServiceModel.InstanceContextMode.PerSession> indicates that each service object handles requests from one client channel.  
   
 > [!NOTE]
->  The <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property interacts with some other settings. For example, if the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> value is set to <xref:System.ServiceModel.InstanceContextMode.Single> the result is that your service can only process one message at a time unless you also set the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> value to <xref:System.ServiceModel.ConcurrencyMode.Multiple>. This property also produces behavior in combination with the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=fullName> property. For details, see [Sessions, Instancing, and Concurrency](~/docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md).  
+>  The <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property interacts with some other settings. For example, if the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> value is set to <xref:System.ServiceModel.InstanceContextMode.Single> the result is that your service can only process one message at a time unless you also set the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> value to <xref:System.ServiceModel.ConcurrencyMode.Multiple>. This property also produces behavior in combination with the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=nameWithType> property. For details, see [Sessions, Instancing, and Concurrency](~/docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md).  
   
  For singleton lifetime behavior (for example, if the host application calls the <xref:System.ServiceModel.ServiceHost.%23ctor%2A> constructor and passes an object to use as the service), the service class must set <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> to `Single`, or an exception is thrown at run time.  
   
@@ -542,7 +543,7 @@ public void MyMethod()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.ServiceBehaviorAttribute.MaxItemsInObjectGraph%2A> property set a limit on the number of items in an object graph that are serialized. You can also set this property using the [\&lt;dataContractSerializer\&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md) element in an application configuration file.  
+ Use the <xref:System.ServiceModel.ServiceBehaviorAttribute.MaxItemsInObjectGraph%2A> property set a limit on the number of items in an object graph that are serialized. You can also set this property using the [&lt;dataContractSerializer&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md) element in an application configuration file.  
   
  ]]></format>
         </remarks>
@@ -614,9 +615,9 @@ public void MyMethod()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Note that you must explicitly set <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> to `false` if there is an operation with <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A?displayProperty=fullName> set to true and you set <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> to <xref:System.ServiceModel.ConcurrencyMode.Reentrant>. Otherwise a validation exception is thrown because the default value of <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> is `true`.  
+ Note that you must explicitly set <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> to `false` if there is an operation with <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A?displayProperty=nameWithType> set to true and you set <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> to <xref:System.ServiceModel.ConcurrencyMode.Reentrant>. Otherwise a validation exception is thrown because the default value of <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> is `true`.  
   
- In addition, it is important to realize that if the service is created by passing a service object to the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29?displayProperty=fullName> constructor, the value of this property is treated as if it were `false`.  
+ In addition, it is important to realize that if the service is created by passing a service object to the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29?displayProperty=nameWithType> constructor, the value of this property is treated as if it were `false`.  
   
    
   
@@ -916,7 +917,7 @@ public void MyMethod()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This value sets the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.TransactionTimeout%2A?displayProperty=fullName> property. You can also set this property using the [\&lt;serviceTimeouts\&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicetimeouts.md) element in an application configuration file.  
+ This value sets the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.TransactionTimeout%2A?displayProperty=nameWithType> property. You can also set this property using the [&lt;serviceTimeouts&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicetimeouts.md) element in an application configuration file.  
   
    
   
@@ -957,7 +958,7 @@ public void MyMethod()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this property to provide the user interface thread affinity that some applications require. For example, a Windows Forms application may be registered as a singleton service object. In this case, all calls into the service must run on the Windows Forms thread. The default case, in which <xref:System.ServiceModel.ServiceBehaviorAttribute.UseSynchronizationContext%2A> is set to `true`, synchronizes all calls to the service to run on the thread captured from the <xref:System.Threading.SynchronizationContext?displayProperty=fullName>.  
+ Use this property to provide the user interface thread affinity that some applications require. For example, a Windows Forms application may be registered as a singleton service object. In this case, all calls into the service must run on the Windows Forms thread. The default case, in which <xref:System.ServiceModel.ServiceBehaviorAttribute.UseSynchronizationContext%2A> is set to `true`, synchronizes all calls to the service to run on the thread captured from the <xref:System.Threading.SynchronizationContext?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

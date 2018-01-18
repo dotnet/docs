@@ -33,15 +33,19 @@
 ## Examples  
  The following example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.GridViewSelectEventHandler> delegate to the <xref:System.Web.UI.WebControls.GridView.SelectedIndexChanging> event of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewSelectEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelectEventHandler/CS/gridviewselecteventhandlercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewSelectEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelectEventHandler/VB/gridviewselecteventhandlervb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewSelectEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelectEventHandler/CS/gridviewselecteventhandlercs.aspx#1)]
+ [!code-aspx-vb[GridViewSelectEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelectEventHandler/VB/gridviewselecteventhandlervb.aspx#1)]  
   
  The following example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.GridViewSelectEventHandler> delegate to the <xref:System.Web.UI.WebControls.GridView.SelectedIndexChanging> event of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewSelect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelect/CS/gridviewselectcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewSelect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelect/VB/gridviewselectvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewSelect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelect/CS/gridviewselectcs.aspx#1)]
+ [!code-aspx-vb[GridViewSelect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelect/VB/gridviewselectvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewSelectEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.SelectedIndexChanging" />
+    <altmember cref="M:System.Web.UI.WebControls.GridView.OnSelectedIndexChanging(System.Web.UI.WebControls.GridViewSelectEventArgs)" />
   </Docs>
 </Type>

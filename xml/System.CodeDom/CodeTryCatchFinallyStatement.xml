@@ -33,7 +33,7 @@
  The <xref:System.CodeDom.CodeTryCatchFinallyStatement.TryStatements%2A> property contains the statements to execute within a `try` block. The <xref:System.CodeDom.CodeTryCatchFinallyStatement.CatchClauses%2A> property contains the `catch` clauses to handle caught exceptions. The <xref:System.CodeDom.CodeTryCatchFinallyStatement.FinallyStatements%2A> property contains the statements to execute within a `finally` block.  
   
 > [!NOTE]
->  Not all languages support `try`/`catch` blocks. Call the <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> method with the <xref:System.CodeDom.Compiler.GeneratorSupport?displayProperty=fullName> flag to determine whether a code generator supports `try`/`catch` blocks.  
+>  Not all languages support `try`/`catch` blocks. Call the <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> method with the <xref:System.CodeDom.Compiler.GeneratorSupport.TryCatchStatements?displayProperty=nameWithType> flag to determine whether a code generator supports `try`/`catch` blocks.  
   
    
   
@@ -137,6 +137,8 @@
         <summary>Gets the catch clauses to use.</summary>
         <value>A <see cref="T:System.CodeDom.CodeCatchClauseCollection" /> that indicates the catch clauses to use.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeCatchClauseCollection" />
+        <altmember cref="T:System.CodeDom.CodeCatchClause" />
       </Docs>
     </Member>
     <Member MemberName="FinallyStatements">
@@ -159,6 +161,7 @@
         <summary>Gets the finally statements to use.</summary>
         <value>A <see cref="T:System.CodeDom.CodeStatementCollection" /> that indicates the finally statements.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeStatementCollection" />
       </Docs>
     </Member>
     <Member MemberName="TryStatements">
@@ -181,7 +184,17 @@
         <summary>Gets the statements to try.</summary>
         <value>A <see cref="T:System.CodeDom.CodeStatementCollection" /> that indicates the statements to try.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeStatementCollection" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTryCatchFinallyStatement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

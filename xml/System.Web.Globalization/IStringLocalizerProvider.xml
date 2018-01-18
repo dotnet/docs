@@ -13,7 +13,7 @@
   </Docs>
   <Members>
     <Member MemberName="GetLocalizedString">
-      <MemberSignature Language="C#" Value="public string GetLocalizedString (System.Globalization.CultureInfo culture, string name, object[] arguments);" />
+      <MemberSignature Language="C#" Value="public string GetLocalizedString (System.Globalization.CultureInfo culture, string name, params object[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetLocalizedString(class System.Globalization.CultureInfo culture, string name, object[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Globalization.IStringLocalizerProvider.GetLocalizedString(System.Globalization.CultureInfo,System.String,System.Object[])" />
       <MemberType>Method</MemberType>

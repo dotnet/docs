@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 6d4c4b69-8919-4224-8a65-6cca1c61b48f
 caps.latest.revision: 4
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # DataSets, DataTables, and DataViews
 The ADO.NET <xref:System.Data.DataSet> is a memory-resident representation of data that provides a consistent relational programming model regardless of the source of the data it contains. A <xref:System.Data.DataSet> represents a complete set of data including the tables that contain, order, and constrain the data, as well as the relationships between the tables.  
@@ -85,5 +87,5 @@ The ADO.NET <xref:System.Data.DataSet> is a memory-resident representation of da
  Describes how to populate a **DataSet** with primary key information from a data source.  
   
 ## See Also  
- [ADO.NET](../../../../../docs/framework/data/adonet/index.md)   
+ [ADO.NET](../../../../../docs/framework/data/adonet/index.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

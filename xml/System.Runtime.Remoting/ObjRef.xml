@@ -29,7 +29,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Runtime.Remoting.ObjRef> is a serializable representation of an object that extends <xref:System.MarshalByRefObject> (MBR). A <xref:System.Runtime.Remoting.ObjRef> is used to transfer an object reference across a <xref:System.AppDomain> boundary. Creating a <xref:System.Runtime.Remoting.ObjRef> for an object is known as marshaling. You can create a <xref:System.Runtime.Remoting.ObjRef> (marshal a <xref:System.MarshalByRefObject>) either explicitly, by registering the MBR object with the remoting infrastructure (see <xref:System.Runtime.Remoting.RemotingConfiguration> and <xref:System.Runtime.Remoting.RemotingServices.Marshal%2A?displayProperty=fullName>), or implicitly, by passing an MBR object as a parameter when calling a remote object. Remoting uses <xref:System.Runtime.Remoting.ObjRef> objects to store and transmit all the relevant information about the <xref:System.MarshalByRefObject> being remoted.  
+ A <xref:System.Runtime.Remoting.ObjRef> is a serializable representation of an object that extends <xref:System.MarshalByRefObject> (MBR). A <xref:System.Runtime.Remoting.ObjRef> is used to transfer an object reference across a <xref:System.AppDomain> boundary. Creating a <xref:System.Runtime.Remoting.ObjRef> for an object is known as marshaling. You can create a <xref:System.Runtime.Remoting.ObjRef> (marshal a <xref:System.MarshalByRefObject>) either explicitly, by registering the MBR object with the remoting infrastructure (see <xref:System.Runtime.Remoting.RemotingConfiguration> and <xref:System.Runtime.Remoting.RemotingServices.Marshal%2A?displayProperty=nameWithType>), or implicitly, by passing an MBR object as a parameter when calling a remote object. Remoting uses <xref:System.Runtime.Remoting.ObjRef> objects to store and transmit all the relevant information about the <xref:System.MarshalByRefObject> being remoted.  
   
  The <xref:System.Runtime.Remoting.ObjRef> contains information that describes the <xref:System.Type> and class of the object being marshaled, its exact location, and communication-related information on how to reach the remoting subdivision where the object is located.  
   
@@ -53,6 +53,10 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission Value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+    <altmember cref="T:System.Runtime.Serialization.ISerializable" />
+    <altmember cref="M:System.Runtime.Remoting.RemotingServices.Marshal(System.MarshalByRefObject)" />
+    <altmember cref="M:System.Runtime.Remoting.RemotingServices.Unmarshal(System.Runtime.Remoting.ObjRef)" />
+    <altmember cref="T:System.Runtime.Remoting.Proxies.RealProxy" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -169,6 +173,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.AppDomain" />
       </Docs>
     </Member>
     <Member MemberName="EnvoyInfo">
@@ -195,6 +200,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Remoting.IEnvoyInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -275,6 +281,7 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have serialization formatter permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for providing serialization services. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" /></permission>
+        <altmember cref="T:System.Runtime.Serialization.ObjectManager" />
       </Docs>
     </Member>
     <Member MemberName="IsFromThisAppDomain">
@@ -400,7 +407,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.ObjRef" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

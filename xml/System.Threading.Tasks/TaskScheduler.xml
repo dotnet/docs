@@ -58,7 +58,7 @@
   
 <a name="Queues"></a>   
 ### The global queue vs. local queues  
- The thread pool maintains a global FIFO (first-in, first-out) work queue for threads in each application domain. Whenever a program calls the <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A?displayProperty=fullName> (or <xref:System.Threading.ThreadPool.UnsafeQueueUserWorkItem%2A?displayProperty=fullName>) method, the work is put on this shared queue and eventually de-queued onto the next thread that becomes available. Starting with the .NET Framework 4, this queue has been improved to use a lock-free algorithm that resembles the <xref:System.Collections.Concurrent.ConcurrentQueue%601> class. By using this lock-free implementation, the thread pool spends less time when it queues and de-queues work items. This performance benefit is available to all programs that use the thread pool.  
+ The thread pool maintains a global FIFO (first-in, first-out) work queue for threads in each application domain. Whenever a program calls the <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A?displayProperty=nameWithType> (or <xref:System.Threading.ThreadPool.UnsafeQueueUserWorkItem%2A?displayProperty=nameWithType>) method, the work is put on this shared queue and eventually de-queued onto the next thread that becomes available. Starting with the .NET Framework 4, this queue has been improved to use a lock-free algorithm that resembles the <xref:System.Collections.Concurrent.ConcurrentQueue%601> class. By using this lock-free implementation, the thread pool spends less time when it queues and de-queues work items. This performance benefit is available to all programs that use the thread pool.  
   
  Top-level tasks, which are tasks that are not created in the context of another task, are put on the global queue just like any other work item. However, nested or child tasks, which are created in the context of another task, are handled quite differently. A child or nested task is put on a local queue that is specific to the thread on which the parent task is executing. The parent task may be a top-level task or it also may be the child of another task. When this thread is ready for more work, it first looks in the local queue. If work items are waiting there, they can be accessed quickly. The local queues are accessed in last-in, first-out order (LIFO) to preserve cache locality and reduce contention. For more information about child tasks and nested tasks, see [Attached and Detached Child Tasks](~/docs/standard/parallel-programming/attached-and-detached-child-tasks.md).  
   
@@ -70,7 +70,7 @@
   
 <a name="LongRunning"></a>   
 ### Long-running tasks  
- You may want to explicitly prevent a task from being put on a local queue. For example, you may know that a particular work item will run for a relatively long time and is likely to block all other work items on the local queue. In this case, you can specify the <xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=fullName> option, which provides a hint to the scheduler that an additional thread might be required for the task so that it does not block the forward progress of other threads or work items on the local queue. By using this option you avoid the thread pool completely, including the global and local queues.  
+ You may want to explicitly prevent a task from being put on a local queue. For example, you may know that a particular work item will run for a relatively long time and is likely to block all other work items on the local queue. In this case, you can specify the <xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=nameWithType> option, which provides a hint to the scheduler that an additional thread might be required for the task so that it does not block the forward progress of other threads or work items on the local queue. By using this option you avoid the thread pool completely, including the global and local queues.  
   
 <a name="Inlining"></a>   
 ### Task inlining  
@@ -78,16 +78,16 @@
   
 <a name="Sync"></a>   
 ## Specifying a synchronization context  
- You can use the <xref:System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext%2A?displayProperty=fullName> method to specify that a task should be scheduled to run on a particular thread. This is useful in frameworks such as Windows Forms and Windows Presentation Foundation where access to user interface objects is often restricted to code that is running on the same thread on which the UI object was created. For more information, see How to: Schedule Work on the User Interface (UI) Thread.  
+ You can use the <xref:System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext%2A?displayProperty=nameWithType> method to specify that a task should be scheduled to run on a particular thread. This is useful in frameworks such as Windows Forms and Windows Presentation Foundation where access to user interface objects is often restricted to code that is running on the same thread on which the UI object was created.  
   
- The following example uses the <xref:System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext%2A?displayProperty=fullName> method in a Windows Presentation Foundation (WPF) app to schedule a task on the same thread that the user interface (UI) control was created on.   The example creates a mosaic of images that are randomly selected from a specified directory. The WPF objects are used to load and resize the images. The raw pixels are then passed to a task that uses a `For` loop to write the pixel data into a large single-byte array. No synchronization is required because no two tiles occupy the same array elements. The tiles can also be written in any order because their position is calculated independently of any other tile. The large array is then passed to a task that runs on the UI thread, where the pixel data is loaded into an Image control.  
+ The following example uses the <xref:System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext%2A?displayProperty=nameWithType> method in a Windows Presentation Foundation (WPF) app to schedule a task on the same thread that the user interface (UI) control was created on.   The example creates a mosaic of images that are randomly selected from a specified directory. The WPF objects are used to load and resize the images. The raw pixels are then passed to a task that uses a <xref:System.Threading.Tasks.Parallel.For%2A> loop to write the pixel data into a large single-byte array. No synchronization is required because no two tiles occupy the same array elements. The tiles can also be written in any order because their position is calculated independently of any other tile. The large array is then passed to a task that runs on the UI thread, where the pixel data is loaded into an Image control.  
   
- The example moves data off the UI thread, modifies it by using parallel loops and <xref:System.Threading.Tasks.Task> objects, and then passes it back to a task that runs on the UI thread. This approach is useful when you have to use the Task Parallel Library to perform operations that either are not supported by the WPF API, or are not sufficiently fast. Another way to create an image mosaic in WPF is to use a <xref:System.Windows.Controls.WrapPanel?displayProperty=fullName> control and add images to it. The <xref:System.Windows.Controls.WrapPanel> handles the work of positioning the tiles. However, this work can only be performed on the UI thread.  
+ The example moves data off the UI thread, modifies it by using parallel loops and <xref:System.Threading.Tasks.Task> objects, and then passes it back to a task that runs on the UI thread. This approach is useful when you have to use the Task Parallel Library to perform operations that either are not supported by the WPF API, or are not sufficiently fast. Another way to create an image mosaic in WPF is to use a <xref:System.Windows.Controls.WrapPanel?displayProperty=nameWithType> control and add images to it. The <xref:System.Windows.Controls.WrapPanel> handles the work of positioning the tiles. However, this work can only be performed on the UI thread.  
   
  [!code-csharp[TPL_SyncContext#01](~/samples/snippets/csharp/VS_Snippets_Misc/tpl_synccontext/cs/mainwindow.xaml.cs#01)]
  [!code-vb[TPL_SyncContext#01](~/samples/snippets/visualbasic/VS_Snippets_Misc/tpl_synccontext/vb/MainWindow.xaml.vb#01)]  
   
- To create the example, crate a WPF application project in Visual Studio and assign it a name of your choice. Then do the following:  
+ To create the example, create a WPF application project in Visual Studio and assign it a name of your choice. Then do the following:  
   
 1.  In design view, drag an <xref:System.Windows.Controls.Image> control from the **Toolbox** to the design surface. In XAML view, specify the horizontal alignment as "Left." The size does not matter because the control is be dynamically resized at run time. Accept the default name, "image".  
   
@@ -178,7 +178,7 @@
 ## Remarks  
  When not called from within a task, <xref:System.Threading.Tasks.TaskScheduler.Current%2A> will return the <xref:System.Threading.Tasks.TaskScheduler.Default%2A> scheduler.  
   
- For more information, see [Task Schedulers](http://msdn.microsoft.com/library/638f8ea5-21db-47a2-a934-86e1e961bf65).  
+ For more information, see <xref:System.Threading.Tasks.TaskScheduler>.  
   
  ]]></format>
         </remarks>

@@ -85,11 +85,11 @@ Public Module MemoryProtectionSample
 
 
     Sub EncryptInMemoryData(ByVal Buffer() As Byte, ByVal Scope As MemoryProtectionScope)
-        If Buffer.Length <= 0 Then
-            Throw New ArgumentException("Buffer")
-        End If
         If Buffer Is Nothing Then
             Throw New ArgumentNullException("Buffer")
+        End If
+        If Buffer.Length <= 0 Then
+            Throw New ArgumentException("Buffer")
         End If
 
         ' Encrypt the data in memory. The result is stored in the same same array as the original data.
@@ -99,11 +99,11 @@ Public Module MemoryProtectionSample
 
 
     Sub DecryptInMemoryData(ByVal Buffer() As Byte, ByVal Scope As MemoryProtectionScope)
-        If Buffer.Length <= 0 Then
-            Throw New ArgumentException("Buffer")
-        End If
         If Buffer Is Nothing Then
             Throw New ArgumentNullException("Buffer")
+        End If
+        If Buffer.Length <= 0 Then
+            Throw New ArgumentException("Buffer")
         End If
 
         ' Decrypt the data in memory. The result is stored in the same same array as the original data.
@@ -130,17 +130,17 @@ Public Module MemoryProtectionSample
 
 
     Function EncryptDataToStream(ByVal Buffer() As Byte, ByVal Entropy() As Byte, ByVal Scope As DataProtectionScope, ByVal S As Stream) As Integer
-        If Buffer.Length <= 0 Then
-            Throw New ArgumentException("Buffer")
-        End If
         If Buffer Is Nothing Then
             Throw New ArgumentNullException("Buffer")
         End If
-        If Entropy.Length <= 0 Then
-            Throw New ArgumentException("Entropy")
+        If Buffer.Length <= 0 Then
+            Throw New ArgumentException("Buffer")
         End If
         If Entropy Is Nothing Then
             Throw New ArgumentNullException("Entropy")
+        End If
+        If Entropy.Length <= 0 Then
+            Throw New ArgumentException("Entropy")
         End If
         If S Is Nothing Then
             Throw New ArgumentNullException("S")
@@ -148,13 +148,13 @@ Public Module MemoryProtectionSample
         Dim length As Integer = 0
 
         ' Encrypt the data in memory. The result is stored in the same same array as the original data.
-        Dim encrptedData As Byte() = ProtectedData.Protect(Buffer, Entropy, Scope)
+        Dim encryptedData As Byte() = ProtectedData.Protect(Buffer, Entropy, Scope)
 
         ' Write the encrypted data to a stream.
-        If S.CanWrite AndAlso Not (encrptedData Is Nothing) Then
-            S.Write(encrptedData, 0, encrptedData.Length)
+        If S.CanWrite AndAlso Not (encryptedData Is Nothing) Then
+            S.Write(encryptedData, 0, encryptedData.Length)
 
-            length = encrptedData.Length
+            length = encryptedData.Length
         End If
 
         ' Return the length that was written to the stream. 

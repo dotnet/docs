@@ -15,9 +15,11 @@ helpviewer_keywords:
   - "WCF Data Services, versioning"
 ms.assetid: e3e899cc-7f25-4f67-958f-063f01f79766
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Data Service Versioning (WCF Data Services)
 The [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] enables you to create data services so that clients can access data as resources using URIs that are based on a data model. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] also supports the definition of service operations. After initial deployment, and potentially several times during their lifetime, these data services may need to be changed for a variety of reasons, such as changing business needs, information technology requirements, or to address other issues. When you make changes to an existing data service, you must consider whether to define a new version of your data service and how best to minimize the impact on existing client applications. This topic provides guidance on when and how to create a new version of a data service. It also describes how [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] handles an exchange between clients and data services that support different versions of the [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] protocol.  
@@ -80,5 +82,5 @@ The [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] enables you 
  The `DataServices` element of the returned metadata also contains a `DataServiceVersion` attribute, which is the same value as the `DataServiceVersion` header in the response message. Client applications, such as the **Add Service Reference** dialog box in [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)], use this information to generate client data service classes that work correctly with the version of [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] that host the data service. For more information, see [OData: Protocol Versioning](http://go.microsoft.com/fwlink/?LinkId=186071).  
   
 ## See Also  
- [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md)   
+ [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md)  
  [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)

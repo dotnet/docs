@@ -27,10 +27,14 @@
 ## Remarks  
  The order of columns in the collection is not guaranteed to match the order in which they were selected.  
   
- The <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> does not perform efficiently when working with large numbers of columns. Typically, <xref:System.Windows.Forms.DataGridView> controls will not contain enough columns for this to be an issue, but if you are working with large numbers of columns, you can use the <xref:System.Windows.Forms.DataGridView.AreAllCellsSelected%2A?displayProperty=fullName> to determine if the entire grid is selected, or you can use the <xref:System.Windows.Forms.DataGridViewColumnCollection.GetColumnCount%2A?displayProperty=fullName> to determine the number of selected columns (or the number of columns in a specified state). For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
+ The <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> does not perform efficiently when working with large numbers of columns. Typically, <xref:System.Windows.Forms.DataGridView> controls will not contain enough columns for this to be an issue, but if you are working with large numbers of columns, you can use the <xref:System.Windows.Forms.DataGridView.AreAllCellsSelected%2A?displayProperty=nameWithType> to determine if the entire grid is selected, or you can use the <xref:System.Windows.Forms.DataGridViewColumnCollection.GetColumnCount%2A?displayProperty=nameWithType> to determine the number of selected columns (or the number of columns in a specified state). For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+    <altmember cref="M:System.Windows.Forms.DataGridView.AreAllCellsSelected(System.Boolean)" />
+    <altmember cref="M:System.Windows.Forms.DataGridViewColumnCollection.GetColumnCount(System.Windows.Forms.DataGridViewElementStates)" />
   </Docs>
   <Members>
     <Member MemberName="Clear">
@@ -57,11 +61,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is not relevant for this class. You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To clear the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridView.ClearSelection%2A?displayProperty=fullName> method.  
+ This method is not relevant for this class. You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To clear the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridView.ClearSelection%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.ClearSelection" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -85,6 +92,8 @@
         <returns>
           <see langword="true" /> if the <paramref name="dataGridViewColumn" /> parameter is in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -119,6 +128,8 @@
   
  The number of elements in the <see cref="T:System.Windows.Forms.DataGridViewCellCollection" /> is greater than the available space from <paramref name="index" /> to the end of <paramref name="array" />.</exception>
         <exception cref="T:System.InvalidCastException">The <see cref="T:System.Windows.Forms.DataGridViewColumnCollection" /> cannot be cast automatically to the type of <paramref name="array" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -150,11 +161,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is not relevant for this class. You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To insert a column into the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=fullName> property.  
+ This method is not relevant for this class. You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To insert a column into the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewBand.Selected" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -183,6 +197,8 @@
  -or-  
   
  <paramref name="index" /> is equal to or greater than the number of columns in the collection.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
     <Member MemberName="List">
@@ -201,6 +217,7 @@
         <summary>Gets the list of elements contained in the <see cref="T:System.Windows.Forms.BaseCollection" /> instance.</summary>
         <value>An <see cref="T:System.Collections.ArrayList" /> containing the elements of the collection. This property returns <see langword="null" /> unless overridden in a derived class.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.BaseCollection.List" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -242,6 +259,9 @@
   
  The number of elements in the <see cref="T:System.Windows.Forms.DataGridViewCellCollection" /> is greater than the available space from <paramref name="index" /> to the end of <paramref name="array" />.</exception>
         <exception cref="T:System.InvalidCastException">The <see cref="T:System.Windows.Forms.DataGridViewColumnCollection" /> cannot be cast automatically to the type of <paramref name="array" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.Count">
@@ -267,6 +287,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -293,6 +316,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -318,6 +344,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -344,6 +373,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="T:System.Collections.IEnumerable" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -369,13 +401,17 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To add a column to the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=fullName> property.  
+ You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To add a column to the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=nameWithType> property.  
   
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewBand.Selected" />
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Clear">
@@ -397,13 +433,17 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To clear the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridView.ClearSelection%2A?displayProperty=fullName> method.  
+ You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To clear the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridView.ClearSelection%2A?displayProperty=nameWithType> method.  
   
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.ClearSelection" />
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -434,6 +474,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -463,6 +506,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -489,13 +535,17 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To add a column to the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=fullName> property.  
+ You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To add a column to the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=nameWithType> property.  
   
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewBand.Selected" />
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -522,6 +572,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsReadOnly">
@@ -548,6 +601,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Item">
@@ -584,6 +640,9 @@
  -or-  
   
  <paramref name="index" /> is equal to or greater than the number of columns in the collection.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -608,13 +667,17 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To remove a column from the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=fullName> property.  
+ You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To remove a column from the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=nameWithType> property.  
   
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewBand.Selected" />
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.RemoveAt">
@@ -639,13 +702,17 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To remove a column from the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=fullName> property.  
+ You cannot change the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class directly. To remove a column from the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>, use the <xref:System.Windows.Forms.DataGridViewBand.Selected%2A?displayProperty=nameWithType> property.  
   
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewBand.Selected" />
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
   </Members>

@@ -20,11 +20,11 @@
   
  Windows Identity Foundation (WIF) ships with a cookie handler called the chunked cookie handler that is implemented by the <xref:System.IdentityModel.Services.ChunkedCookieHandler> class. The chunked cookie handler splits the session token across one or more cookies according to a specified chunk size. This is to meet size limitations on individual cookies imposed by many browsers.  
   
- You can derive from <xref:System.IdentityModel.Services.CookieHandler> to create your own cookie handler. When you do so, you must override the <xref:System.IdentityModel.Services.CookieHandler.DeleteCore%2A>, <xref:System.IdentityModel.Services.CookieHandler.ReadCore%2A>, and <xref:System.IdentityModel.Services.CookieHandler.WriteCore%2A> methods to perform the actual work of deleting, reading, and writing the session cookie. These methods typically read the cookie from the <xref:System.Web.HttpRequest.Cookies%2A?displayProperty=fullName> collection and write or delete cookies through the <xref:System.Web.HttpResponse.Cookies%2A?displayProperty=fullName> collection. The <xref:System.Web.HttpContext> object through which you can access the request and response is provided as a parameter to each of these methods. In addition to the required methods, you can optionally override other virtual methods properties exposed by the <xref:System.IdentityModel.Services.CookieHandler> class to customize the behavior of your handler.  
+ You can derive from <xref:System.IdentityModel.Services.CookieHandler> to create your own cookie handler. When you do so, you must override the <xref:System.IdentityModel.Services.CookieHandler.DeleteCore%2A>, <xref:System.IdentityModel.Services.CookieHandler.ReadCore%2A>, and <xref:System.IdentityModel.Services.CookieHandler.WriteCore%2A> methods to perform the actual work of deleting, reading, and writing the session cookie. These methods typically read the cookie from the <xref:System.Web.HttpRequest.Cookies%2A?displayProperty=nameWithType> collection and write or delete cookies through the <xref:System.Web.HttpResponse.Cookies%2A?displayProperty=nameWithType> collection. The <xref:System.Web.HttpContext> object through which you can access the request and response is provided as a parameter to each of these methods. In addition to the required methods, you can optionally override other virtual methods properties exposed by the <xref:System.IdentityModel.Services.CookieHandler> class to customize the behavior of your handler.  
   
  Several properties are exposed by the <xref:System.IdentityModel.Services.CookieHandler> class that specify default behavior and properties for the session cookie. The <xref:System.IdentityModel.Services.CookieHandler.Name%2A>, <xref:System.IdentityModel.Services.CookieHandler.Domain%2A>, and <xref:System.IdentityModel.Services.CookieHandler.Path%2A> properties supply the base name for the cookie, the domain in which it is valid and the path under which it is stored on the client. The <xref:System.IdentityModel.Services.CookieHandler.HideFromClientScript%2A> property specifies whether the cookie is accessible to client-side scripts. The <xref:System.IdentityModel.Services.CookieHandler.RequireSsl%2A> property specifies whether the cookie should be transmitted only over secure (HTTPS) connections. If set, the <xref:System.IdentityModel.Services.CookieHandler.PersistentSessionLifetime%2A> property is used to set the expiration time for persistent sessions, that is for sessions that remain valid even after the browser is closed. All of these properties have equivalent properties that are typically set on the underlying <xref:System.Web.HttpCookie> object (or objects) by the "core" methods of the handler. For more information see the documentation for each property.  
   
- The cookie handler that is used by the SAM can be specified in configuration through the [\&lt;cookieHandler\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element. The cookie handler set by this element can be modified in an event delegate for the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfigurationCreated?displayProperty=fullName> event or it can be set or accessed directly through the <xref:System.IdentityModel.Services.SessionAuthenticationModule.CookieHandler%2A?displayProperty=fullName> property.  
+ The cookie handler that is used by the SAM can be specified in configuration through the [&lt;cookieHandler&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element. The cookie handler set by this element can be modified in an event delegate for the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfigurationCreated?displayProperty=nameWithType> event or it can be set or accessed directly through the <xref:System.IdentityModel.Services.SessionAuthenticationModule.CookieHandler%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -39,6 +39,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Services.ChunkedCookieHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,7 +76,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The name, domain and path are specified by the <xref:System.IdentityModel.Services.CookieHandler.Name%2A>, <xref:System.IdentityModel.Services.CookieHandler.Domain%2A>, and <xref:System.IdentityModel.Services.CookieHandler.Path%2A> properties. The request is specified by <xref:System.Web.HttpContext.Current%2A?displayProperty=fullName>  
+ The name, domain and path are specified by the <xref:System.IdentityModel.Services.CookieHandler.Name%2A>, <xref:System.IdentityModel.Services.CookieHandler.Domain%2A>, and <xref:System.IdentityModel.Services.CookieHandler.Path%2A> properties. The request is specified by <xref:System.Web.HttpContext.Current%2A?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -103,7 +104,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The domain and path are specified by the <xref:System.IdentityModel.Services.CookieHandler.Domain%2A> and <xref:System.IdentityModel.Services.CookieHandler.Path%2A> properties. The request is specified by <xref:System.Web.HttpContext.Current%2A?displayProperty=fullName>  
+ The domain and path are specified by the <xref:System.IdentityModel.Services.CookieHandler.Domain%2A> and <xref:System.IdentityModel.Services.CookieHandler.Path%2A> properties. The request is specified by <xref:System.Web.HttpContext.Current%2A?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -256,9 +257,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Corresponds to the <xref:System.Web.HttpCookie.Domain%2A?displayProperty=fullName> property.  
+ Corresponds to the <xref:System.Web.HttpCookie.Domain%2A?displayProperty=nameWithType> property.  
   
- The property can be initialized by specifying the `domain` attribute on the [\&lt;cookieHandler\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element in configuration.  
+ The property can be initialized by specifying the `domain` attribute on the [&lt;cookieHandler&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element in configuration.  
   
  ]]></format>
         </remarks>
@@ -286,9 +287,9 @@
 ## Remarks  
  Controls whether the "HttpOnly" flag is emitted in the Set-Cookie header for cookies written by the handler. Some web browsers honor this flag by keeping client-side script from accessing the cookie value.  
   
- This property corresponds to the <xref:System.Web.HttpCookie.HttpOnly%2A?displayProperty=fullName> property.  
+ This property corresponds to the <xref:System.Web.HttpCookie.HttpOnly%2A?displayProperty=nameWithType> property.  
   
- The property can be initialized by specifying the `hideFromScript` attribute on the [\&lt;cookieHandler\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element in configuration.  
+ The property can be initialized by specifying the `hideFromScript` attribute on the [&lt;cookieHandler&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element in configuration.  
   
  ]]></format>
         </remarks>
@@ -337,9 +338,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property corresponds to the <xref:System.Web.HttpCookie.Name%2A?displayProperty=fullName> property.  
+ This property corresponds to the <xref:System.Web.HttpCookie.Name%2A?displayProperty=nameWithType> property.  
   
- The property can be initialized by specifying the `name` attribute on the [\&lt;cookieHandler\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element in configuration.  
+ The property can be initialized by specifying the `name` attribute on the [&lt;cookieHandler&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element in configuration.  
   
  ]]></format>
         </remarks>
@@ -365,9 +366,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property corresponds to the <xref:System.Web.HttpCookie.Path%2A?displayProperty=fullName> property.  
+ This property corresponds to the <xref:System.Web.HttpCookie.Path%2A?displayProperty=nameWithType> property.  
   
- The property can be initialized by specifying the `path` attribute on the [\&lt;cookieHandler\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element in configuration.  
+ The property can be initialized by specifying the `path` attribute on the [&lt;cookieHandler&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element in configuration.  
   
  ]]></format>
         </remarks>
@@ -395,9 +396,9 @@
 ## Remarks  
  Tickets for persistent sessions are stored in file-based cookies, meaning that the sign-in session may continue after the web browser is closed and reopened.  
   
- This property is used to set the <xref:System.Web.HttpCookie.Expires%2A?displayProperty=fullName> property.  
+ This property is used to set the <xref:System.Web.HttpCookie.Expires%2A?displayProperty=nameWithType> property.  
   
- The property can be initialized by specifying the `persistentSessionLifetime` attribute on the [\&lt;cookieHandler\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element in configuration.  
+ The property can be initialized by specifying the `persistentSessionLifetime` attribute on the [&lt;cookieHandler&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element in configuration.  
   
  ]]></format>
         </remarks>
@@ -424,7 +425,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The name of the cookie is specified by the <xref:System.IdentityModel.Services.CookieHandler.Name%2A> property. The request is specified by <xref:System.Web.HttpContext.Current%2A?displayProperty=fullName>.  
+ The name of the cookie is specified by the <xref:System.IdentityModel.Services.CookieHandler.Name%2A> property. The request is specified by <xref:System.Web.HttpContext.Current%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -453,7 +454,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The request is specified by <xref:System.Web.HttpContext.Current%2A?displayProperty=fullName>  
+ The request is specified by <xref:System.Web.HttpContext.Current%2A?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -572,9 +573,9 @@
 ## Remarks  
  Controls whether the "Secure" flag in the Set-Cookie header is emitted for any cookies written. If this value is `true`, the session cookies will only be available over HTTPS.  
   
- This property corresponds to the <xref:System.Web.HttpCookie.Secure%2A?displayProperty=fullName> property.  
+ This property corresponds to the <xref:System.Web.HttpCookie.Secure%2A?displayProperty=nameWithType> property.  
   
- The property can be initialized by specifying the `requireSSL` attribute on the [\&lt;cookieHandler\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element in configuration.  
+ The property can be initialized by specifying the `requireSSL` attribute on the [&lt;cookieHandler&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element in configuration.  
   
  ]]></format>
         </remarks>
@@ -607,7 +608,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the `isPersistent` parameter is `false`, the cookie expiration time is set to <xref:System.DateTime?displayProperty=fullName>. If the `isPersistent` parameter is `true`, the cookie expiration time is set to the value of the <xref:System.IdentityModel.Services.CookieHandler.PersistentSessionLifetime%2A> property if it is not `null` or, if the <xref:System.IdentityModel.Services.CookieHandler.PersistentSessionLifetime%2A> property is `null`, the expiration time is set to the value of the `tokenExpirationTime` parameter.  
+ If the `isPersistent` parameter is `false`, the cookie expiration time is set to <xref:System.DateTime.MinValue?displayProperty=nameWithType>. If the `isPersistent` parameter is `true`, the cookie expiration time is set to the value of the <xref:System.IdentityModel.Services.CookieHandler.PersistentSessionLifetime%2A> property if it is not `null` or, if the <xref:System.IdentityModel.Services.CookieHandler.PersistentSessionLifetime%2A> property is `null`, the expiration time is set to the value of the `tokenExpirationTime` parameter.  
   
  The cookie name, domain and path are specified by the <xref:System.IdentityModel.Services.CookieHandler.Name%2A>, <xref:System.IdentityModel.Services.CookieHandler.Domain%2A>, and <xref:System.IdentityModel.Services.CookieHandler.Path%2A> properties. The request is specified by <xref:System.Web.HttpContext.Current%2A>. Whether the cookie should be sent only over SSL is specified by the <xref:System.IdentityModel.Services.CookieHandler.RequireSsl%2A> property and whether the cookie should be hidden from client-side scripts is specified by the <xref:System.IdentityModel.Services.CookieHandler.HideFromClientScript%2A> property.  
   
@@ -643,7 +644,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The cookie domain and path are specified by the <xref:System.IdentityModel.Services.CookieHandler.Domain%2A> and <xref:System.IdentityModel.Services.CookieHandler.Path%2A> properties. The request is specified by <xref:System.Web.HttpContext.Current%2A?displayProperty=fullName>.  The request is specified by <xref:System.Web.HttpContext.Current%2A>. Whether the cookie should be sent only over SSL is specified by the <xref:System.IdentityModel.Services.CookieHandler.RequireSsl%2A> property and whether the cookie should be hidden from client-side scripts is specified by the <xref:System.IdentityModel.Services.CookieHandler.HideFromClientScript%2A> property.  
+ The cookie domain and path are specified by the <xref:System.IdentityModel.Services.CookieHandler.Domain%2A> and <xref:System.IdentityModel.Services.CookieHandler.Path%2A> properties. The request is specified by <xref:System.Web.HttpContext.Current%2A?displayProperty=nameWithType>.  The request is specified by <xref:System.Web.HttpContext.Current%2A>. Whether the cookie should be sent only over SSL is specified by the <xref:System.IdentityModel.Services.CookieHandler.RequireSsl%2A> property and whether the cookie should be hidden from client-side scripts is specified by the <xref:System.IdentityModel.Services.CookieHandler.HideFromClientScript%2A> property.  
   
  ]]></format>
         </remarks>
@@ -779,5 +780,32 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a cookie.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Read">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads a cookie.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Delete">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deletes a cookie.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

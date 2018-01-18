@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::UpdateModuleSymbols"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "UpdateModuleSymbols method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::UpdateModuleSymbols method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugManagedCallback::UpdateModuleSymbols Method
 Notifies the debugger that the symbols for a common language runtime module have changed.  

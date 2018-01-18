@@ -48,8 +48,8 @@
 ## Examples  
  The following code example demonstrates using properties on the <xref:System.Web.Security.ActiveDirectoryMembershipUser> object on a Web page that may return user information from multiple membership data stores. Because the <xref:System.Web.Security.ActiveDirectoryMembershipUser> object that underlies the <xref:System.Web.Security.MembershipUser> object returned by the membership provider does not implement the <xref:System.Web.Security.ActiveDirectoryMembershipUser.LastActivityDate%2A> and <xref:System.Web.Security.ActiveDirectoryMembershipUser.LastLoginDate%2A> properties, the code first checks the type of the user object returned from the membership provider before displaying the contents of those properties.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.ActiveDirectoryMembershipUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.ActiveDirectoryMembershipUser/CS/admuClassExamplecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.ActiveDirectoryMembershipUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.ActiveDirectoryMembershipUser/VB/admuClassExamplevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Security.ActiveDirectoryMembershipUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.ActiveDirectoryMembershipUser/CS/admuClassExamplecs.aspx#1)]
+ [!code-aspx-vb[System.Web.Security.ActiveDirectoryMembershipUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.ActiveDirectoryMembershipUser/VB/admuClassExamplevb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -324,5 +324,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Security.ActiveDirectoryMembershipUser" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

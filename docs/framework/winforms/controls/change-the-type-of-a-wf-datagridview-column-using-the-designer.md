@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Windows Forms, columns"
   - "columns [Windows Forms], types"
@@ -21,6 +19,8 @@ caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Change the Type of a Windows Forms DataGridView Column Using the Designer
 Sometimes you will want to change the type of a column that has already been added to a Windows Forms <xref:System.Windows.Forms.DataGridView> control. For example, you may want to modify the types of some of the columns that are generated automatically when you bind the control to a data source. This is useful when the table you display has columns containing foreign keys to rows in a related table. In this case, you may want to replace the text box columns that display these foreign keys with combo box columns that display more meaningful values from the related table.  
@@ -42,7 +42,7 @@ Sometimes you will want to change the type of a column that has already been add
     >  The `ColumnType` property is a design-time-only property that indicates the class representing the column type. It is not an actual property defined in a column class.  
   
 ## See Also  
- <xref:System.Windows.Forms.DataGridView>   
- <xref:System.Windows.Forms.DataGridViewColumn>   
- [How to: Create a Windows Application Project](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa)   
+ <xref:System.Windows.Forms.DataGridView>  
+ <xref:System.Windows.Forms.DataGridViewColumn>  
+ [How to: Create a Windows Application Project](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa)  
  [How to: Add Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md)

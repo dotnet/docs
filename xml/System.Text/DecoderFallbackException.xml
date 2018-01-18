@@ -38,6 +38,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Text.DecoderFallback" />
+    <altmember cref="T:System.Text.DecoderExceptionFallback" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,7 +72,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Exception.HResult%2A?displayProperty=fullName> property for this exception is set to COR_E_ARGUMENT (0x80070057).  
+ The <xref:System.Exception.HResult%2A?displayProperty=nameWithType> property for this exception is set to COR_E_ARGUMENT (0x80070057).  
   
  ]]></format>
         </remarks>
@@ -109,7 +111,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Exception.HResult%2A?displayProperty=fullName> property for this exception is set to COR_E_ARGUMENT (0x80070057).  
+ The <xref:System.Exception.HResult%2A?displayProperty=nameWithType> property for this exception is set to COR_E_ARGUMENT (0x80070057).  
   
  ]]></format>
         </remarks>
@@ -150,7 +152,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Exception.HResult%2A?displayProperty=fullName> property for this exception is set to COR_E_ARGUMENT (0x80070057).  
+ The <xref:System.Exception.HResult%2A?displayProperty=nameWithType> property for this exception is set to COR_E_ARGUMENT (0x80070057).  
   
  ]]></format>
         </remarks>
@@ -193,7 +195,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Exception.HResult%2A?displayProperty=fullName> property for this exception is set to COR_E_ARGUMENT (0x80070057).  
+ The <xref:System.Exception.HResult%2A?displayProperty=nameWithType> property for this exception is set to COR_E_ARGUMENT (0x80070057).  
   
  ]]></format>
         </remarks>
@@ -277,5 +279,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Text.DecoderFallbackException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedDocument::HasEmbeddedSource"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "HasEmbeddedSource method [.NET Framework debugging]"
   - "ISymUnmanagedDocument::HasEmbeddedSource method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedDocument::HasEmbeddedSource Method
 Returns `true` if the document has source embedded in the debugging symbols; otherwise, returns `false`.  

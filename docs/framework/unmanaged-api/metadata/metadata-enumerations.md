@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "enumerations [.NET Framework metadata]"
   - "metadata enumerations [.NET Framework]"
@@ -20,6 +18,8 @@ caps.latest.revision: 27
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Metadata Enumerations
 This section describes the unmanaged enumerations that the metadata API uses.  

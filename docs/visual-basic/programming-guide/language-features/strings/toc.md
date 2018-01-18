@@ -4,6 +4,7 @@
 ### [Types of String Manipulation Methods](types-of-string-manipulation-methods.md)
 ### [Nothing and Strings](nothing-and-strings.md)
 ### [How Culture Affects Strings](how-culture-affects-strings.md)
+### [Interpolated strings](interpolated-strings.md)
 ### [Zero-based vs. One-based String Access](zero-based-vs-one-based-string-access.md)
 ## [How to: Create Strings Using a StringBuilder](how-to-create-strings-using-a-stringbuilder.md)
 ## [How to: Search Within a String](how-to-search-within-a-string.md)

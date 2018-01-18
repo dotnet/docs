@@ -60,11 +60,12 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ClearHmenuProps">
       <MemberSignature Language="C#" Value="public virtual void ClearHmenuProps (ref Accessibility._RemotableHandle hmenu, uint idChild, ref Guid paProps, int cProps);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearHmenuProps(valuetype Accessibility._RemotableHandle hmenu, unsigned int32 idChild, valuetype System.Guid paProps, int32 cProps) runtime managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearHmenuProps([in]valuetype Accessibility._RemotableHandle&amp; hmenu, [in]unsigned int32 idChild, [in]valuetype System.Guid&amp; paProps, [in]int32 cProps) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.ClearHmenuProps(Accessibility._RemotableHandle@,System.UInt32,System.Guid@,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -104,7 +105,7 @@
     </Member>
     <Member MemberName="ClearHwndProps">
       <MemberSignature Language="C#" Value="public virtual void ClearHwndProps (ref Accessibility._RemotableHandle hwnd, uint idObject, uint idChild, ref Guid paProps, int cProps);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearHwndProps(valuetype Accessibility._RemotableHandle hwnd, unsigned int32 idObject, unsigned int32 idChild, valuetype System.Guid paProps, int32 cProps) runtime managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearHwndProps([in]valuetype Accessibility._RemotableHandle&amp; hwnd, [in]unsigned int32 idObject, [in]unsigned int32 idChild, [in]valuetype System.Guid&amp; paProps, [in]int32 cProps) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.ClearHwndProps(Accessibility._RemotableHandle@,System.UInt32,System.UInt32,System.Guid@,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -146,7 +147,7 @@
     </Member>
     <Member MemberName="ClearProps">
       <MemberSignature Language="C#" Value="public virtual void ClearProps (ref byte pIDString, uint dwIDStringLen, ref Guid paProps, int cProps);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearProps(unsigned int8 pIDString, unsigned int32 dwIDStringLen, valuetype System.Guid paProps, int32 cProps) runtime managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearProps([in]unsigned int8&amp; pIDString, [in]unsigned int32 dwIDStringLen, [in]valuetype System.Guid&amp; paProps, [in]int32 cProps) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.ClearProps(System.Byte@,System.UInt32,System.Guid@,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -180,7 +181,7 @@
     </Member>
     <Member MemberName="ComposeHmenuIdentityString">
       <MemberSignature Language="C#" Value="public virtual void ComposeHmenuIdentityString (ref Accessibility._RemotableHandle hmenu, uint idChild, IntPtr ppIDString, out uint pdwIDStringLen);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ComposeHmenuIdentityString(valuetype Accessibility._RemotableHandle hmenu, unsigned int32 idChild, native int ppIDString, unsigned int32 pdwIDStringLen) runtime managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ComposeHmenuIdentityString([in]valuetype Accessibility._RemotableHandle&amp; hmenu, [in]unsigned int32 idChild, [out] native int ppIDString, [out] unsigned int32&amp; pdwIDStringLen) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.ComposeHmenuIdentityString(Accessibility._RemotableHandle@,System.UInt32,System.IntPtr,System.UInt32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -220,7 +221,7 @@
     </Member>
     <Member MemberName="ComposeHwndIdentityString">
       <MemberSignature Language="C#" Value="public virtual void ComposeHwndIdentityString (ref Accessibility._RemotableHandle hwnd, uint idObject, uint idChild, IntPtr ppIDString, out uint pdwIDStringLen);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ComposeHwndIdentityString(valuetype Accessibility._RemotableHandle hwnd, unsigned int32 idObject, unsigned int32 idChild, native int ppIDString, unsigned int32 pdwIDStringLen) runtime managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ComposeHwndIdentityString([in]valuetype Accessibility._RemotableHandle&amp; hwnd, [in]unsigned int32 idObject, [in]unsigned int32 idChild, [out] native int ppIDString, [out] unsigned int32&amp; pdwIDStringLen) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.ComposeHwndIdentityString(Accessibility._RemotableHandle@,System.UInt32,System.UInt32,System.IntPtr,System.UInt32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -262,7 +263,7 @@
     </Member>
     <Member MemberName="DecomposeHmenuIdentityString">
       <MemberSignature Language="C#" Value="public virtual void DecomposeHmenuIdentityString (ref byte pIDString, uint dwIDStringLen, IntPtr phmenu, out uint pidChild);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DecomposeHmenuIdentityString(unsigned int8 pIDString, unsigned int32 dwIDStringLen, native int phmenu, unsigned int32 pidChild) runtime managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DecomposeHmenuIdentityString([in]unsigned int8&amp; pIDString, [in]unsigned int32 dwIDStringLen, [out] native int phmenu, [out] unsigned int32&amp; pidChild) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.DecomposeHmenuIdentityString(System.Byte@,System.UInt32,System.IntPtr,System.UInt32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -295,7 +296,7 @@
     </Member>
     <Member MemberName="DecomposeHwndIdentityString">
       <MemberSignature Language="C#" Value="public virtual void DecomposeHwndIdentityString (ref byte pIDString, uint dwIDStringLen, IntPtr phwnd, out uint pidObject, out uint pidChild);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DecomposeHwndIdentityString(unsigned int8 pIDString, unsigned int32 dwIDStringLen, native int phwnd, unsigned int32 pidObject, unsigned int32 pidChild) runtime managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DecomposeHwndIdentityString([in]unsigned int8&amp; pIDString, [in]unsigned int32 dwIDStringLen, [out] native int phwnd, [out] unsigned int32&amp; pidObject, [out] unsigned int32&amp; pidChild) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.DecomposeHwndIdentityString(System.Byte@,System.UInt32,System.IntPtr,System.UInt32@,System.UInt32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -330,7 +331,7 @@
     </Member>
     <Member MemberName="SetHmenuProp">
       <MemberSignature Language="C#" Value="public virtual void SetHmenuProp (ref Accessibility._RemotableHandle hmenu, uint idChild, Guid idProp, object var);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHmenuProp(valuetype Accessibility._RemotableHandle hmenu, unsigned int32 idChild, valuetype System.Guid idProp, object var) runtime managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHmenuProp([in]valuetype Accessibility._RemotableHandle&amp; hmenu, [in]unsigned int32 idChild, [in]valuetype System.Guid idProp, [in]object var) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.SetHmenuProp(Accessibility._RemotableHandle@,System.UInt32,System.Guid,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -370,7 +371,7 @@
     </Member>
     <Member MemberName="SetHmenuPropServer">
       <MemberSignature Language="C#" Value="public virtual void SetHmenuPropServer (ref Accessibility._RemotableHandle hmenu, uint idChild, ref Guid paProps, int cProps, Accessibility.IAccPropServer pServer, Accessibility.AnnoScope AnnoScope);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHmenuPropServer(valuetype Accessibility._RemotableHandle hmenu, unsigned int32 idChild, valuetype System.Guid paProps, int32 cProps, class Accessibility.IAccPropServer pServer, valuetype Accessibility.AnnoScope AnnoScope) runtime managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHmenuPropServer([in]valuetype Accessibility._RemotableHandle&amp; hmenu, [in]unsigned int32 idChild, [in]valuetype System.Guid&amp; paProps, [in]int32 cProps, [in]class Accessibility.IAccPropServer pServer, [in]valuetype Accessibility.AnnoScope AnnoScope) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.SetHmenuPropServer(Accessibility._RemotableHandle@,System.UInt32,System.Guid@,System.Int32,Accessibility.IAccPropServer,Accessibility.AnnoScope)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -414,7 +415,7 @@
     </Member>
     <Member MemberName="SetHmenuPropStr">
       <MemberSignature Language="C#" Value="public virtual void SetHmenuPropStr (ref Accessibility._RemotableHandle hmenu, uint idChild, Guid idProp, string str);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHmenuPropStr(valuetype Accessibility._RemotableHandle hmenu, unsigned int32 idChild, valuetype System.Guid idProp, string str) runtime managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHmenuPropStr([in]valuetype Accessibility._RemotableHandle&amp; hmenu, [in]unsigned int32 idChild, [in]valuetype System.Guid idProp, [in]string str) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.SetHmenuPropStr(Accessibility._RemotableHandle@,System.UInt32,System.Guid,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -454,7 +455,7 @@
     </Member>
     <Member MemberName="SetHwndProp">
       <MemberSignature Language="C#" Value="public virtual void SetHwndProp (ref Accessibility._RemotableHandle hwnd, uint idObject, uint idChild, Guid idProp, object var);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHwndProp(valuetype Accessibility._RemotableHandle hwnd, unsigned int32 idObject, unsigned int32 idChild, valuetype System.Guid idProp, object var) runtime managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHwndProp([in]valuetype Accessibility._RemotableHandle&amp; hwnd, [in]unsigned int32 idObject, [in]unsigned int32 idChild, [in]valuetype System.Guid idProp, [in]object var) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.SetHwndProp(Accessibility._RemotableHandle@,System.UInt32,System.UInt32,System.Guid,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -496,7 +497,7 @@
     </Member>
     <Member MemberName="SetHwndPropServer">
       <MemberSignature Language="C#" Value="public virtual void SetHwndPropServer (ref Accessibility._RemotableHandle hwnd, uint idObject, uint idChild, ref Guid paProps, int cProps, Accessibility.IAccPropServer pServer, Accessibility.AnnoScope AnnoScope);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHwndPropServer(valuetype Accessibility._RemotableHandle hwnd, unsigned int32 idObject, unsigned int32 idChild, valuetype System.Guid paProps, int32 cProps, class Accessibility.IAccPropServer pServer, valuetype Accessibility.AnnoScope AnnoScope) runtime managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHwndPropServer([in]valuetype Accessibility._RemotableHandle&amp; hwnd, [in]unsigned int32 idObject, [in]unsigned int32 idChild, [in]valuetype System.Guid&amp; paProps, [in]int32 cProps, [in]class Accessibility.IAccPropServer pServer, [in]valuetype Accessibility.AnnoScope AnnoScope) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.SetHwndPropServer(Accessibility._RemotableHandle@,System.UInt32,System.UInt32,System.Guid@,System.Int32,Accessibility.IAccPropServer,Accessibility.AnnoScope)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -542,7 +543,7 @@
     </Member>
     <Member MemberName="SetHwndPropStr">
       <MemberSignature Language="C#" Value="public virtual void SetHwndPropStr (ref Accessibility._RemotableHandle hwnd, uint idObject, uint idChild, Guid idProp, string str);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHwndPropStr(valuetype Accessibility._RemotableHandle hwnd, unsigned int32 idObject, unsigned int32 idChild, valuetype System.Guid idProp, string str) runtime managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHwndPropStr([in]valuetype Accessibility._RemotableHandle&amp; hwnd, [in]unsigned int32 idObject, [in]unsigned int32 idChild, [in]valuetype System.Guid idProp, [in]string str) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.SetHwndPropStr(Accessibility._RemotableHandle@,System.UInt32,System.UInt32,System.Guid,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -584,7 +585,7 @@
     </Member>
     <Member MemberName="SetPropServer">
       <MemberSignature Language="C#" Value="public virtual void SetPropServer (ref byte pIDString, uint dwIDStringLen, ref Guid paProps, int cProps, Accessibility.IAccPropServer pServer, Accessibility.AnnoScope AnnoScope);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetPropServer(unsigned int8 pIDString, unsigned int32 dwIDStringLen, valuetype System.Guid paProps, int32 cProps, class Accessibility.IAccPropServer pServer, valuetype Accessibility.AnnoScope AnnoScope) runtime managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetPropServer([in]unsigned int8&amp; pIDString, [in]unsigned int32 dwIDStringLen, [in]valuetype System.Guid&amp; paProps, [in]int32 cProps, [in]class Accessibility.IAccPropServer pServer, [in]valuetype Accessibility.AnnoScope AnnoScope) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.SetPropServer(System.Byte@,System.UInt32,System.Guid@,System.Int32,Accessibility.IAccPropServer,Accessibility.AnnoScope)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -622,7 +623,7 @@
     </Member>
     <Member MemberName="SetPropValue">
       <MemberSignature Language="C#" Value="public virtual void SetPropValue (ref byte pIDString, uint dwIDStringLen, Guid idProp, object var);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetPropValue(unsigned int8 pIDString, unsigned int32 dwIDStringLen, valuetype System.Guid idProp, object var) runtime managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetPropValue([in]unsigned int8&amp; pIDString, [in]unsigned int32 dwIDStringLen, [in]valuetype System.Guid idProp, [in]object var) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.CAccPropServicesClass.SetPropValue(System.Byte@,System.UInt32,System.Guid,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -29,7 +29,7 @@
    
   
 ## Examples  
- The following code example illustrates how to create an event delegate (<xref:System.Messaging.ReceiveCompletedEventHandler>) for the event handler (`MyReceiveCompleted`) and associate it with the <xref:System.Messaging.MessageQueue.ReceiveCompleted?displayProperty=fullName> event. The event handler receives a message from a queue, and writes its label to the screen.  
+ The following code example illustrates how to create an event delegate (<xref:System.Messaging.ReceiveCompletedEventHandler>) for the event handler (`MyReceiveCompleted`) and associate it with the <xref:System.Messaging.MessageQueue.ReceiveCompleted?displayProperty=nameWithType> event. The event handler receives a message from a queue, and writes its label to the screen.  
   
  [!code-cpp[MessageQueue.ReceiveCompleted#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueue.ReceiveCompleted/CPP/mqreceivecompletedeventhandler.cpp#1)]
  [!code-csharp[MessageQueue.ReceiveCompleted#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueue.ReceiveCompleted/CS/mqreceivecompletedeventhandler.cs#1)]
@@ -37,5 +37,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Messaging.MessageQueue" />
+    <altmember cref="T:System.Messaging.PeekCompletedEventHandler" />
+    <altmember cref="T:System.Messaging.ReceiveCompletedEventArgs" />
   </Docs>
 </Type>

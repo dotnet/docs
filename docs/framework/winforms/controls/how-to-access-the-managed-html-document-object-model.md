@@ -10,15 +10,18 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "HTML DOM, accessing"
-  - "managed HTML DOM, accessing"
+  - "HTML DOM [Windows Forms], accessing"
+  - "managed HTML DOM [Windows Forms], accessing"
 ms.assetid: 40fa5cd5-1ed8-42f6-a93f-9ac01608bbeb
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Access the Managed HTML Document Object Model
 You can access the managed HTML Document Object Model (DOM) from two types of applications:  

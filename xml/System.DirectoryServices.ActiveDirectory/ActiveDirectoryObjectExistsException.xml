@@ -30,6 +30,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectExistsException" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectExistsException" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -49,6 +50,7 @@
         <param name="message">A message that describes the error.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectExistsException" /> class, using a specified error message.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectExistsException" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -70,6 +72,9 @@
         <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> object for the exception.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectExistsException" /> class, using the specified serialization information and streaming context.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectExistsException" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -91,7 +96,18 @@
         <param name="inner">An <see cref="T:System.Exception" /> object that contains underlying exception information.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectExistsException" /> class, using a specified error message and an underlying exception object.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectExistsException" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectExistsException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

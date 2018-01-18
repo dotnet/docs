@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 6239592e-fa7d-4dea-9f00-d296d0048b01
 caps.latest.revision: 4
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Secure Client Applications
 Applications typically consist of many parts that must all be protected from vulnerabilities that could result in data loss or otherwise compromise the system. Creating secure user interfaces can prevent many problems by blocking attackers before they can access data or system resources.  
@@ -72,8 +74,8 @@ Applications typically consist of many parts that must all be protected from vul
 |[Security and Remoting Considerations](../../../../docs/framework/misc/security-and-remoting-considerations.md)|Describes security issues with protected objects and application domain crossing.|  
   
 ## See Also  
- [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)   
- [Recommendations for Data Access Strategies](http://msdn.microsoft.com/en-us/72411f32-d12a-4de8-b961-e54fca7faaf5)   
- [Securing Applications](/visualstudio/ide/securing-applications)   
- [Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md)   
+ [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
+ [Recommendations for Data Access Strategies](http://msdn.microsoft.com/en-us/72411f32-d12a-4de8-b961-e54fca7faaf5)  
+ [Securing Applications](/visualstudio/ide/securing-applications)  
+ [Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

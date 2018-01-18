@@ -11,7 +11,7 @@ Module Example
       Console.WriteLine("{0} = {1}: {2}", 
                         value1, value2, value1.Equals(value2)) 
       Console.WriteLine()
-      Console.WriteLine("{0:R} = {1:R}", value1, value2) 
+      Console.WriteLine("{0:G9} = {1:G9}", value1, value2) 
    End Sub
 End Module
 ' The example displays the following output:

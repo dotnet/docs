@@ -28,7 +28,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Mail.MailMessage.To%2A?displayProperty=fullName>, <xref:System.Net.Mail.MailMessage.CC%2A?displayProperty=fullName>, and <xref:System.Net.Mail.MailMessage.Bcc%2A?displayProperty=fullName> properties return instances of this class that are used to hold the respective e-mail addresses.  
+ The <xref:System.Net.Mail.MailMessage.To%2A?displayProperty=nameWithType>, <xref:System.Net.Mail.MailMessage.CC%2A?displayProperty=nameWithType>, and <xref:System.Net.Mail.MailMessage.Bcc%2A?displayProperty=nameWithType> properties return instances of this class that are used to hold the respective e-mail addresses.  
   
  For details on the mail address formats supported by the <xref:System.Net.Mail.MailAddressCollection> class, see the <xref:System.Net.Mail.MailAddress> class.  
   
@@ -42,6 +42,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.Mail.SmtpClient" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -215,6 +216,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Mail.SmtpClient" />
+        <altmember cref="T:System.Net.Mail.MailMessage" />
+        <altmember cref="T:System.Net.Mail.MailAddress" />
       </Docs>
     </Member>
   </Members>

@@ -13,6 +13,8 @@
   <Docs>
     <summary>Provides a design-time view of data for the <see cref="T:System.Web.UI.Design.WebControls.XmlDataSourceDesigner" /> class.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Web.UI.Design.WebControls.SqlDataSourceDesigner" />
+    <altmember cref="T:System.Web.UI.Design.DesignerDataSourceView" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,11 +35,12 @@
         <param name="viewName">The name of the view in the data source.</param>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.Design.WebControls.XmlDesignerDataSourceView" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.WebControls.SqlDataSourceDesigner" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeData">
       <MemberSignature Language="C#" Value="public override System.Collections.IEnumerable GetDesignTimeData (int minimumRows, out bool isSampleData);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.IEnumerable GetDesignTimeData(int32 minimumRows, bool isSampleData) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.IEnumerable GetDesignTimeData(int32 minimumRows, [out] bool&amp; isSampleData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.XmlDesignerDataSourceView.GetDesignTimeData(System.Int32,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -58,6 +61,7 @@
         <summary>Generates design-time data that matches the schema of the associated data source control and returns a value indicating whether the data is sample or real data.</summary>
         <returns>A <see cref="T:System.Web.UI.DataSourceView" /> object containing data to display at design time.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Design.DesignerDataSourceView.GetDesignTimeData(System.Int32,System.Boolean@)" />
       </Docs>
     </Member>
     <Member MemberName="Schema">
@@ -76,6 +80,7 @@
         <summary>Gets a schema that describes the data source view that is represented by this view object.</summary>
         <value>An <see cref="T:System.Web.UI.Design.IDataSourceViewSchema" /> object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.Design.DesignerDataSourceView.Schema" />
       </Docs>
     </Member>
   </Members>

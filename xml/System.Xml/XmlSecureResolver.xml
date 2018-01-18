@@ -31,7 +31,7 @@
   
  <xref:System.Xml.XmlSecureResolver> wraps around a concrete implementation of <xref:System.Xml.XmlResolver> and restricts the resources that the underlying <xref:System.Xml.XmlResolver> has access to. For example, <xref:System.Xml.XmlSecureResolver> has the ability to prohibit cross-domain redirection, which occurs from an embedded Uniform Resource Identifier (URI) reference.  
   
- When you construct an <xref:System.Xml.XmlSecureResolver> object, you provide a valid <xref:System.Xml.XmlResolver> implementation along with a URL, an instance of an evidence object, or a permission set, which is used by the <xref:System.Xml.XmlSecureResolver> to determine security. Either a <xref:System.Security.PermissionSet?displayProperty=fullName> is generated or the existing one is used and <xref:System.Security.PermissionSet.PermitOnly%2A?displayProperty=fullName> is called on it to help secure the underlying <xref:System.Xml.XmlResolver>.  
+ When you construct an <xref:System.Xml.XmlSecureResolver> object, you provide a valid <xref:System.Xml.XmlResolver> implementation along with a URL, an instance of an evidence object, or a permission set, which is used by the <xref:System.Xml.XmlSecureResolver> to determine security. Either a <xref:System.Security.PermissionSet?displayProperty=nameWithType> is generated or the existing one is used and <xref:System.Security.PermissionSet.PermitOnly%2A?displayProperty=nameWithType> is called on it to help secure the underlying <xref:System.Xml.XmlResolver>.  
   
 > [!IMPORTANT]
 >  <xref:System.Xml.XmlSecureResolver> objects can contain sensitive information such as user credentials. You should be careful when caching <xref:System.Xml.XmlSecureResolver> objects and should not pass the <xref:System.Xml.XmlSecureResolver> object to an untrusted component.  
@@ -178,6 +178,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XmlSecureResolver.CreateEvidenceForUrl(System.String)" />
+        <altmember cref="T:System.Security.Policy.Evidence" />
+        <altmember cref="T:System.Net.WebPermission" />
+        <altmember cref="T:System.Security.SecurityManager" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -340,6 +344,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.NetworkCredential" />
+        <altmember cref="T:System.Net.CredentialCache" />
+        <altmember cref="P:System.Net.CredentialCache.DefaultCredentials" />
       </Docs>
     </Member>
     <Member MemberName="GetEntity">

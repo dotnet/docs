@@ -35,6 +35,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.ProfileSection" />
+    <altmember cref="P:System.Web.Configuration.ProfileSection.PropertySettings" />
+    <altmember cref="T:System.Web.Configuration.ProfileGroupSettingsCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,6 +67,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfileSection" />
       </Docs>
     </Member>
     <Member MemberName="AllowClear">
@@ -112,6 +116,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.RootProfilePropertySettingsCollection" />
+        <altmember cref="T:System.Configuration.ConfigurationElementCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -138,6 +144,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.RootProfilePropertySettingsCollection" />
+        <altmember cref="T:System.Configuration.ConfigurationElementCollection" />
       </Docs>
     </Member>
     <Member MemberName="GroupSettings">
@@ -176,6 +184,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfileGroupSettingsCollection" />
       </Docs>
     </Member>
     <Member MemberName="IsModified">

@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you specify one of the <xref:System.Web.UI.XhtmlMobileDocType> enumeration values as the parameter in a <xref:System.Web.UI.XhtmlTextWriter.SetDocType%2A?displayProperty=fullName> method call, that value forces the text writer to adhere to the restrictions of that XHTML document type.  
+ When you specify one of the <xref:System.Web.UI.XhtmlMobileDocType> enumeration values as the parameter in a <xref:System.Web.UI.XhtmlTextWriter.SetDocType%2A?displayProperty=nameWithType> method call, that value forces the text writer to adhere to the restrictions of that XHTML document type.  
   
  XHTML Basic is the mobile version of XHTML 1.0 and supports the minimum number of XHTML modules to be an XHTML document. It is designed for clients that do not support the full set of XHTML features, such as mobile phones, personal digital assistants (PDAs), pagers, and set-top boxes. With XHTML Basic, a document can be presented on the maximum number of clients, including a wide range of mobile phones with different display formats and presentation capabilities.  
   
@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.XhtmlTextWriter" />
   </Docs>
   <Members>
     <Member MemberName="Wml20">

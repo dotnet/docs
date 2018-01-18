@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Xps.Packaging.XpsThumbnail> class has no public constructor.  A reference to an <xref:System.Windows.Xps.Packaging.XpsThumbnail> is provided through the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddThumbnail%2A?displayProperty=fullName>, <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentWriter.AddThumbnail%2A?displayProperty=fullName>, or <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceWriter.AddThumbnail%2A?displayProperty=fullName> methods.  
+ The <xref:System.Windows.Xps.Packaging.XpsThumbnail> class has no public constructor.  A reference to an <xref:System.Windows.Xps.Packaging.XpsThumbnail> is provided through the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddThumbnail%2A?displayProperty=nameWithType>, <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentWriter.AddThumbnail%2A?displayProperty=nameWithType>, or <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceWriter.AddThumbnail%2A?displayProperty=nameWithType> methods.  
   
  It is recommended that if any page in an <xref:System.Windows.Xps.Packaging.XpsDocument> has a thumbnail, that all pages be specified with thumbnails.  
   

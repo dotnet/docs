@@ -10,14 +10,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "threading [Windows Forms], forms"
   - "BackgroundWorker component"
   - "background tasks"
-  - "forms, multithreading"
+  - "forms [Windows Forms], multithreading"
   - "threading [Windows Forms], walkthroughs"
-  - "forms, background operations"
+  - "forms [Windows Forms], background operations"
   - "threading [Windows Forms], background operations"
   - "background operations"
 ms.assetid: 4691b796-9200-471a-89c3-ba4c7cc78c03
@@ -25,6 +27,8 @@ caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Implementing a Form That Uses a Background Operation
 If you have an operation that will take a long time to complete, and you do not want your user interface (UI) to stop responding or "hang," you can use the <xref:System.ComponentModel.BackgroundWorker> class to execute the operation on another thread.  
@@ -168,10 +172,10 @@ If you have an operation that will take a long time to complete, and you do not 
     >  When using multithreading of any sort, you potentially expose yourself to very serious and complex bugs. Consult the [Managed Threading Best Practices](../../../../docs/standard/threading/managed-threading-best-practices.md) before implementing any solution that uses multithreading.  
   
 ## See Also  
- <xref:System.ComponentModel.BackgroundWorker>   
- [Managed Threading Best Practices](../../../../docs/standard/threading/managed-threading-best-practices.md)   
- [Multithreading in Components](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)   
- [NOT IN BUILD: Multithreading in Visual Basic](http://msdn.microsoft.com/en-us/c731a50c-09c1-4468-9646-54c86b75d269)   
- [How to: Implement a Form That Uses a Background Operation](../../../../docs/framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)   
- [Walkthrough: Running an Operation in the Background](../../../../docs/framework/winforms/controls/walkthrough-running-an-operation-in-the-background.md)   
+ <xref:System.ComponentModel.BackgroundWorker>  
+ [Managed Threading Best Practices](../../../../docs/standard/threading/managed-threading-best-practices.md)  
+ [Multithreading in Components](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
+ [NOT IN BUILD: Multithreading in Visual Basic](http://msdn.microsoft.com/en-us/c731a50c-09c1-4468-9646-54c86b75d269)  
+ [How to: Implement a Form That Uses a Background Operation](../../../../docs/framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)  
+ [Walkthrough: Running an Operation in the Background](../../../../docs/framework/winforms/controls/walkthrough-running-an-operation-in-the-background.md)  
  [BackgroundWorker Component](../../../../docs/framework/winforms/controls/backgroundworker-component.md)

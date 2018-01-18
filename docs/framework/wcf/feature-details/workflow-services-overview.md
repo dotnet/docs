@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e536dda3-e286-441e-99a7-49ddc004b646
 caps.latest.revision: 30
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Workflow Services Overview
 Workflow services are [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]-based services that are implemented using workflows. Workflow services are workflows that use the messaging activities to send and receive [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] messages. .NET Framework 4.5 introduces a number of messaging activities that allow you send and receive messages from within a workflow. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] messaging activities and how they can be used to implement different message exchange patterns, see [Messaging Activities](../../../../docs/framework/wcf/feature-details/messaging-activities.md).  
@@ -64,7 +66,7 @@ Workflow services are [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]-ba
   
  Workflow services hosted in a managed [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] application or a managed Windows service create an instance of the <xref:System.ServiceModel.Activities.WorkflowServiceHost> class and pass it an instance of the <xref:System.ServiceModel.Activities.WorkflowService> that contains the workflow definition within the <xref:System.ServiceModel.Activities.WorkflowService.Body%2A> property. A workflow definition that contains messaging activities is exposed as a workflow service.  
   
- To host a workflow service in IIS or WAS, place the .xamlx file that contains the workflow service definition into a virtual directory. A default endpoint (using <xref:System.ServiceModel.BasicHttpBinding>) is created automatically [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md). You can also place a Web.config file in the virtual directory to specify your own endpoints. If your workflow definition is in an assembly you can place a .svc file in the virtual directory and the workflow assembly in the App_Code directory. The .svc file must specify the service host factory and the class that implements the workflow service. The following example shows how to specify the service host factory and specify the class that implements the workflow service.  
+ To host a workflow service in IIS or WAS, place the .xamlx file that contains the workflow service definition into a virtual directory. A default endpoint (using <xref:System.ServiceModel.BasicHttpBinding>) is created automatically [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md). You can also place a Web.config file in the virtual directory to specify your own endpoints. If your workflow definition is in an assembly you can place a .svc file in the virtual directory and the workflow assembly in the App_Code directory. The .svc file must specify the service host factory and the class that implements the workflow service. The following example shows how to specify the service host factory and specify the class that implements the workflow service.  
   
 ```  
 <%@ServiceHost Factory=" System.ServiceModel.Activities.Activation.WorkflowServiceHostFactory  

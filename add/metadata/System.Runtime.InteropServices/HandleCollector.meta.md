@@ -20,7 +20,7 @@ manager: "wpickett"
 uid: System.Runtime.InteropServices.HandleCollector.#ctor
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

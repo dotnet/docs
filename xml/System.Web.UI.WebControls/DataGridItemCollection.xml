@@ -24,9 +24,9 @@
   
 -   Use the indexer to get a single <xref:System.Web.UI.WebControls.DataGridItem> object from the collection, using array notation.  
   
--   Use the <xref:System.Web.UI.WebControls.DataGridItemCollection.CopyTo%2A> method to copy the contents of the collection to a <xref:System.Array?displayProperty=fullName>, which can then be used to get items from the collection.  
+-   Use the <xref:System.Web.UI.WebControls.DataGridItemCollection.CopyTo%2A> method to copy the contents of the collection to a <xref:System.Array?displayProperty=nameWithType>, which can then be used to get items from the collection.  
   
--   Use the <xref:System.Web.UI.WebControls.DataGridItemCollection.GetEnumerator%2A> method to create a <xref:System.Collections.IEnumerator?displayProperty=fullName> interface, which can then be used to get items from the collection.  
+-   Use the <xref:System.Web.UI.WebControls.DataGridItemCollection.GetEnumerator%2A> method to create a <xref:System.Collections.IEnumerator?displayProperty=nameWithType> interface, which can then be used to get items from the collection.  
   
  The <xref:System.Web.UI.WebControls.DataGridItemCollection.Count%2A> property specifies the total number of items in the collection and is commonly used to determine the upper bound of the collection.  
   
@@ -35,11 +35,17 @@
 ## Examples  
  The following code example shows how to iterate through <xref:System.Web.UI.WebControls.DataGridItem> objects in a <xref:System.Web.UI.WebControls.DataGridItemCollection> collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataGridColumnVisible#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridColumnVisible/CS/datagridcolumnvisiblecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridColumnVisible#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridColumnVisible/VB/datagridcolumnvisiblevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridColumnVisible#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridColumnVisible/CS/datagridcolumnvisiblecs.aspx#1)]
+ [!code-aspx-vb[DataGridColumnVisible#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridColumnVisible/VB/datagridcolumnvisiblevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataGridItem" />
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="P:System.Web.UI.WebControls.DataGrid.Items" />
+    <altmember cref="M:System.Web.UI.WebControls.DataGridItemCollection.CopyTo(System.Array,System.Int32)" />
+    <altmember cref="M:System.Web.UI.WebControls.DataGridItemCollection.GetEnumerator" />
+    <altmember cref="P:System.Web.UI.WebControls.DataGridItemCollection.Count" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,6 +71,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ArrayList" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -91,13 +98,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to copy the contents of the <xref:System.Web.UI.WebControls.DataGridItemCollection> collection into the specified <xref:System.Array?displayProperty=fullName>, starting at the specified index.  
+ Use this method to copy the contents of the <xref:System.Web.UI.WebControls.DataGridItemCollection> collection into the specified <xref:System.Array?displayProperty=nameWithType>, starting at the specified index.  
   
 > [!NOTE]
->  The `array` parameter must be a zero-based <xref:System.Array?displayProperty=fullName>.  
+>  The `array` parameter must be a zero-based <xref:System.Array?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -123,6 +131,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGridItem" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -145,19 +154,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to create a <xref:System.Collections.IEnumerator?displayProperty=fullName>-implemented object that can be iterated through to get each item in the <xref:System.Web.UI.WebControls.DataGridItemCollection> collection.  
+ Use this method to create a <xref:System.Collections.IEnumerator?displayProperty=nameWithType>-implemented object that can be iterated through to get each item in the <xref:System.Web.UI.WebControls.DataGridItemCollection> collection.  
   
- Use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property to get the item currently pointed to in the collection.  
+ Use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property to get the item currently pointed to in the collection.  
   
- Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method to move to the next item in the collection.  
+ Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method to move to the next item in the collection.  
   
- Use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator to its initial position.  
+ Use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method to move the enumerator to its initial position.  
   
 > [!NOTE]
->  After you create a <xref:System.Collections.IEnumerator?displayProperty=fullName>-implemented object or use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator to the first item in the collection, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property is undefined.  
+>  After you create a <xref:System.Collections.IEnumerator?displayProperty=nameWithType>-implemented object or use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method to move the enumerator to the first item in the collection, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property is undefined.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGridItem" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -206,12 +217,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is derived from the <xref:System.Collections.ICollection?displayProperty=fullName> interface and is overridden to always return `false`.  
+ This property is derived from the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface and is overridden to always return `false`.  
   
- For more information on the <xref:System.Web.UI.WebControls.DataGridColumnCollection.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information on the <xref:System.Web.UI.WebControls.DataGridColumnCollection.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=nameWithType> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -241,6 +254,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGridItem" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -264,10 +278,13 @@
 ## Remarks  
  The object returned in this implementation is the <xref:System.Web.UI.WebControls.DataGridItemCollection> object itself.  
   
- For more information on the <xref:System.Web.UI.WebControls.DataGridColumnCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information on the <xref:System.Web.UI.WebControls.DataGridColumnCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=nameWithType> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
   </Members>

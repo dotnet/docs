@@ -477,7 +477,7 @@ Public Class Form1
         ' Create a bitmap.
         Dim bmp As New Bitmap("c:\fakePhoto.jpg")
 
-        ' Retrieve the bitmap data from the the bitmap.
+        ' Retrieve the bitmap data from the bitmap.
         Dim bmpData As System.Drawing.Imaging.BitmapData = bmp.LockBits(New Rectangle(0, 0, bmp.Width, bmp.Height), _
             ImageLockMode.ReadOnly, bmp.PixelFormat)
 

@@ -22,10 +22,11 @@
  The <xref:System.Drawing.ImageFormatConverter> converts to and from known image formats, as specified in the <xref:System.Drawing.Imaging.ImageFormat> class.  
   
 > [!NOTE]
->  If you want to convert between image formats, such as converting between BMP and JPEG, use one of the <xref:System.Drawing.Image.Save%2A?displayProperty=fullName> methods that takes an <xref:System.Drawing.Imaging.ImageFormat> object as a parameter.  
+>  If you want to convert between image formats, such as converting between BMP and JPEG, use one of the <xref:System.Drawing.Image.Save%2A?displayProperty=nameWithType> methods that takes an <xref:System.Drawing.Imaging.ImageFormat> object as a parameter.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.TypeConverter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

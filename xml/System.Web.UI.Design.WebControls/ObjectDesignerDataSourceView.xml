@@ -28,6 +28,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.DesignerDataSourceView" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner" />
+    <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+    <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+    <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+    <altmember cref="T:System.Web.UI.DataSourceControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,6 +61,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerDataSourceView" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
       </Docs>
     </Member>
     <Member MemberName="CanDelete">
@@ -81,6 +91,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.DeleteMethod" />
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner" />
       </Docs>
     </Member>
     <Member MemberName="CanInsert">
@@ -107,6 +120,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.InsertMethod" />
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner" />
       </Docs>
     </Member>
     <Member MemberName="CanPage">
@@ -132,6 +148,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner" />
       </Docs>
     </Member>
     <Member MemberName="CanRetrieveTotalRowCount">
@@ -157,6 +175,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner" />
       </Docs>
     </Member>
     <Member MemberName="CanSort">
@@ -182,6 +202,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.SortParameterName" />
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.SelectParameters" />
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner" />
       </Docs>
     </Member>
     <Member MemberName="CanUpdate">
@@ -208,11 +232,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.UpdateMethod" />
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeData">
       <MemberSignature Language="C#" Value="public override System.Collections.IEnumerable GetDesignTimeData (int minimumRows, out bool isSampleData);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.IEnumerable GetDesignTimeData(int32 minimumRows, bool isSampleData) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.IEnumerable GetDesignTimeData(int32 minimumRows, [out] bool&amp; isSampleData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.GetDesignTimeData(System.Int32,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -241,6 +268,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.Design.DesignerDataSourceView" />
       </Docs>
     </Member>
     <Member MemberName="Schema">
@@ -268,6 +298,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner" />
+        <altmember cref="T:System.Web.UI.Design.DesignerDataSourceView" />
+        <altmember cref="T:System.Data.DataTable" />
+        <altmember cref="T:System.Web.UI.Design.DataSetViewSchema" />
       </Docs>
     </Member>
   </Members>

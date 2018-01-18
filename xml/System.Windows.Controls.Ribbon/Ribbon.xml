@@ -50,7 +50,7 @@
   
 -   <xref:System.Windows.Controls.Ribbon.Ribbon>  
   
-    -   <xref:System.Windows.Controls.Ribbon.Ribbon.HelpPaneContent%2A?displayProperty=fullName>  
+    -   <xref:System.Windows.Controls.Ribbon.Ribbon.HelpPaneContent%2A?displayProperty=nameWithType>  
   
     -   <xref:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar>  
   
@@ -790,6 +790,9 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Ribbon.Ribbon.IsMinimized" />
+        <altmember cref="E:System.Windows.Controls.Ribbon.Ribbon.Collapsed" />
+        <altmember cref="E:System.Windows.Controls.Ribbon.Ribbon.Expanded" />
       </Docs>
     </Member>
     <Member MemberName="IsCollapsedProperty">
@@ -843,6 +846,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Ribbon.Ribbon.IsMinimized" />
       </Docs>
     </Member>
     <Member MemberName="IsDropDownOpenProperty">
@@ -969,6 +973,8 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Ribbon.Ribbon.IsDropDownOpen" />
+        <altmember cref="P:System.Windows.Controls.Ribbon.Ribbon.IsCollapsed" />
       </Docs>
     </Member>
     <Member MemberName="IsMinimizedProperty">
@@ -1627,11 +1633,11 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You will typically set the <xref:System.Windows.Window.Title%2A> property on the <xref:System.Windows.Controls.Ribbon.RibbonWindow> instead of setting the <xref:System.Windows.Controls.Ribbon.Ribbon.Title%2A?displayProperty=fullName> property.  
+ You will typically set the <xref:System.Windows.Window.Title%2A> property on the <xref:System.Windows.Controls.Ribbon.RibbonWindow> instead of setting the <xref:System.Windows.Controls.Ribbon.Ribbon.Title%2A?displayProperty=nameWithType> property.  
   
- The <xref:System.Windows.Controls.Ribbon.Ribbon.Title%2A?displayProperty=fullName> is shown in the title bar of the <xref:System.Windows.Controls.Ribbon.RibbonWindow> if the <xref:System.Windows.Window.Title%2A?displayProperty=fullName> property of the <xref:System.Windows.Controls.Ribbon.RibbonWindow> is `null`. If the <xref:System.Windows.Window.Title%2A?displayProperty=fullName> property is not `null`, the <xref:System.Windows.Controls.Ribbon.RibbonWindow> title is shown instead of the <xref:System.Windows.Controls.Ribbon.Ribbon.Title%2A?displayProperty=fullName> value.  
+ The <xref:System.Windows.Controls.Ribbon.Ribbon.Title%2A?displayProperty=nameWithType> is shown in the title bar of the <xref:System.Windows.Controls.Ribbon.RibbonWindow> if the <xref:System.Windows.Window.Title%2A?displayProperty=nameWithType> property of the <xref:System.Windows.Controls.Ribbon.RibbonWindow> is `null`. If the <xref:System.Windows.Window.Title%2A?displayProperty=nameWithType> property is not `null`, the <xref:System.Windows.Controls.Ribbon.RibbonWindow> title is shown instead of the <xref:System.Windows.Controls.Ribbon.Ribbon.Title%2A?displayProperty=nameWithType> value.  
   
- If the <xref:System.Windows.Controls.Ribbon.Ribbon> is hosted in a <xref:System.Windows.Window> instead of a <xref:System.Windows.Controls.Ribbon.RibbonWindow>, the <xref:System.Windows.Controls.Ribbon.Ribbon.Title%2A?displayProperty=fullName> is shown next to the Quick Access Toolbar, below the <xref:System.Windows.Window.Title%2A?displayProperty=fullName>.  
+ If the <xref:System.Windows.Controls.Ribbon.Ribbon> is hosted in a <xref:System.Windows.Window> instead of a <xref:System.Windows.Controls.Ribbon.RibbonWindow>, the <xref:System.Windows.Controls.Ribbon.Ribbon.Title%2A?displayProperty=nameWithType> is shown next to the Quick Access Toolbar, below the <xref:System.Windows.Window.Title%2A?displayProperty=nameWithType>.  
   
 <a name="dependencyPropertyInfo_Title"></a>   
 ## Dependency Property Information  
@@ -1643,6 +1649,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Ribbon.Ribbon.IsHostedInRibbonWindow" />
       </Docs>
     </Member>
     <Member MemberName="TitleProperty">

@@ -16,11 +16,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use client application services to retrieve role information from an existing roles service by configuring your application to use the <xref:System.Web.ClientServices.Providers.ClientRoleProvider> class. After configuration, you can determine whether an authenticated user is in a particular role by calling the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method of the <xref:System.Security.Principal.IPrincipal> returned by the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property. For applications configured to use client application services, this property returns a <xref:System.Web.ClientServices.ClientRolePrincipal>. Because this class implements the <xref:System.Security.Principal.IPrincipal> interface, you do not need to reference it explicitly. The <xref:System.Web.ClientServices.ClientRolePrincipal.IsInRole%2A?displayProperty=fullName> method internally calls the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole%2A?displayProperty=fullName> method.  
+ You can use client application services to retrieve role information from an existing roles service by configuring your application to use the <xref:System.Web.ClientServices.Providers.ClientRoleProvider> class. After configuration, you can determine whether an authenticated user is in a particular role by calling the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method of the <xref:System.Security.Principal.IPrincipal> returned by the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property. For applications configured to use client application services, this property returns a <xref:System.Web.ClientServices.ClientRolePrincipal>. Because this class implements the <xref:System.Security.Principal.IPrincipal> interface, you do not need to reference it explicitly. The <xref:System.Web.ClientServices.ClientRolePrincipal.IsInRole%2A?displayProperty=nameWithType> method internally calls the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole%2A?displayProperty=nameWithType> method.  
   
  The <xref:System.Web.ClientServices.Providers.ClientRoleProvider> class is a read-only role membership provider that retrieves role information for authenticated users from the roles service indicated by the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ServiceUri%2A> property. The value of the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ServiceUri%2A> property is typically retrieved from the application configuration file along with other configuration values. For more information, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
   
- You can retrieve the current <xref:System.Web.ClientServices.Providers.ClientRoleProvider> instance through the `static` <xref:System.Web.Security.Roles.Provider%2A?displayProperty=fullName> property.  
+ You can retrieve the current <xref:System.Web.ClientServices.Providers.ClientRoleProvider> instance through the `static` <xref:System.Web.Security.Roles.Provider%2A?displayProperty=nameWithType> property.  
   
  The <xref:System.Web.ClientServices.Providers.ClientRoleProvider> class supports only the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser%2A> and <xref:System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole%2A> methods of the <xref:System.Web.Security.RoleProvider> abstract class. When you call one of these methods for a particular user, the service provider first checks the local data cache for role information. If the cache does not contain any role information or the cache has expired, the service provider retrieves the role information from the roles service and adds it to the cache.  
   
@@ -38,6 +38,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Threading.Thread.CurrentPrincipal" />
+    <altmember cref="T:System.Web.ClientServices.ClientRolePrincipal" />
+    <altmember cref="M:System.Web.ClientServices.ClientRolePrincipal.IsInRole(System.String)" />
+    <altmember cref="P:System.Web.ClientServices.Providers.ClientRoleProvider.ServiceUri" />
+    <altmember cref="M:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser(System.String)" />
+    <altmember cref="M:System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole(System.String,System.String)" />
+    <altmember cref="M:System.Web.ClientServices.Providers.ClientRoleProvider.ResetCache" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -219,7 +226,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser%2A> method retrieves role information for the current, authenticated user, which you must specify in the `username` parameter. You can get the user name through the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property as follows: `Thread.CurrentPrincipal.Identity.Name`.  
+ The <xref:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser%2A> method retrieves role information for the current, authenticated user, which you must specify in the `username` parameter. You can get the user name through the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property as follows: `Thread.CurrentPrincipal.Identity.Name`.  
   
  The service provider caches role information about the local file system to avoid unnecessary service calls. For more information, see the <xref:System.Web.ClientServices.Providers.ClientRoleProvider> class overview.  
   
@@ -239,6 +246,8 @@
  -or-  
   
  <paramref name="username" /> is not the user name of the current, authenticated user.</exception>
+        <altmember cref="P:System.Threading.Thread.CurrentPrincipal" />
+        <altmember cref="M:System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetUsersInRole">
@@ -351,7 +360,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can determine whether an authenticated user is in a particular role by calling the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method of the <xref:System.Security.Principal.IPrincipal> returned by the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property. For applications configured to use client application services, this property returns a <xref:System.Web.ClientServices.ClientRolePrincipal>. Because this class implements the <xref:System.Security.Principal.IPrincipal> interface, you do not need to reference it explicitly. The <xref:System.Web.ClientServices.ClientRolePrincipal.IsInRole%2A?displayProperty=fullName> method internally calls the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole%2A> method. The <xref:System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole%2A> method uses the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser%2A> method to determine whether the user indicated by `username` is in the role indicated by `roleName`.  
+ You can determine whether an authenticated user is in a particular role by calling the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method of the <xref:System.Security.Principal.IPrincipal> returned by the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property. For applications configured to use client application services, this property returns a <xref:System.Web.ClientServices.ClientRolePrincipal>. Because this class implements the <xref:System.Security.Principal.IPrincipal> interface, you do not need to reference it explicitly. The <xref:System.Web.ClientServices.ClientRolePrincipal.IsInRole%2A?displayProperty=nameWithType> method internally calls the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole%2A> method. The <xref:System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole%2A> method uses the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser%2A> method to determine whether the user indicated by `username` is in the role indicated by `roleName`.  
   
  The service provider caches role information about the local file system to avoid unnecessary service calls. For more information, see the <xref:System.Web.ClientServices.Providers.ClientRoleProvider> class overview.  
   
@@ -376,6 +385,10 @@
  -or-  
   
  The roles service is not available.</exception>
+        <altmember cref="M:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser(System.String)" />
+        <altmember cref="P:System.Threading.Thread.CurrentPrincipal" />
+        <altmember cref="T:System.Web.ClientServices.ClientRolePrincipal" />
+        <altmember cref="M:System.Web.ClientServices.ClientRolePrincipal.IsInRole(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveUsersFromRoles">
@@ -435,6 +448,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser(System.String)" />
+        <altmember cref="M:System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RoleExists">

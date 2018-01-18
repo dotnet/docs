@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.BulletedList" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.DataBoundControlDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,6 +44,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BulletedList" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.DataBoundControlDesigner" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <altmember cref="T:System.Web.UI.Design.HtmlControlDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
       </Docs>
     </Member>
     <Member MemberName="PostFilterEvents">
@@ -66,7 +74,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PostFilterEvents%2A?displayProperty=fullName> method to filter the set of events that the control it is designing will expose through the <xref:System.ComponentModel.TypeDescriptor> object.  
+ Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PostFilterEvents%2A?displayProperty=nameWithType> method to filter the set of events that the control it is designing will expose through the <xref:System.ComponentModel.TypeDescriptor> object.  
   
  For the <xref:System.Web.UI.WebControls.BulletedList> control, the <xref:System.Web.UI.Design.WebControls.BulletedListDesigner.PostFilterEvents%2A> method removes the <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> event from the list that is exposed by the designer.  
   
@@ -79,6 +87,9 @@
   
  You can directly filter the dictionary that is accessible through the <paramref name="events" /> parameter, or you can leave it unchanged. If you are overriding the <see cref="M:System.Web.UI.Design.WebControls.BulletedListDesigner.PostFilterEvents(System.Collections.IDictionary)" /> method, call the base implementation after you perform your own filtering.</para>
         </block>
+        <altmember cref="M:System.ComponentModel.Design.ComponentDesigner.PostFilterEvents(System.Collections.IDictionary)" />
+        <altmember cref="E:System.Web.UI.WebControls.ListControl.SelectedIndexChanged" />
+        <altmember cref="T:System.Web.UI.WebControls.BulletedList" />
       </Docs>
     </Member>
     <Member MemberName="UsePreviewControl">
@@ -107,6 +118,11 @@
         <block subset="none" type="overrides">
           <para>You can override the <see cref="P:System.Web.UI.Design.WebControls.DetailsViewDesigner.UsePreviewControl" /> property to return <see langword="false" /> or to determine its value based on whether the control is marked with a class-level <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" /> object. If the <see cref="P:System.Web.UI.Design.WebControls.DetailsViewDesigner.UsePreviewControl" /> property is not overridden, the <see cref="T:System.Web.UI.Design.WebControls.BulletedListDesigner" /> object ignores the <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" />.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.BulletedList" />
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.ViewControl" />
+        <altmember cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.UsePreviewControl" />
       </Docs>
     </Member>
   </Members>

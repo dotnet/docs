@@ -10,9 +10,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "time, displaying in DateTimePicker control"
+  - "time [Windows Forms], displaying in DateTimePicker control"
   - "examples [Windows Forms], DateTimePicker control"
   - "DateTimePicker control [Windows Forms], displaying time"
 ms.assetid: 0c1c8b40-1b50-4301-a90c-39516775ccb1
@@ -20,6 +21,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Display Time with the DateTimePicker Control
 If you want your application to enable users to select a date and time, and to display that date and time in the specified format, use the <xref:System.Windows.Forms.DateTimePicker> control. The following procedure shows how to use the <xref:System.Windows.Forms.DateTimePicker> control to display the time.  

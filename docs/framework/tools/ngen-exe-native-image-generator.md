@@ -10,10 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "Native Image Generator"
   - "images [.NET Framework], native"
@@ -31,6 +30,8 @@ caps.latest.revision: 57
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Ngen.exe (Native Image Generator)
 The Native Image Generator (Ngen.exe) is a tool that improves the performance of managed applications. Ngen.exe creates native images, which are files containing compiled processor-specific machine code, and installs them into the native image cache on the local computer. The runtime can use native images from the cache instead of using the just-in-time (JIT) compiler to compile the original assembly.  
@@ -55,7 +56,7 @@ The Native Image Generator (Ngen.exe) is a tool that improves the performance of
   
  On Windows 8, see [Native Image Task](http://msdn.microsoft.com/en-us/9b1f7590-4e0d-4737-90ef-eaf696932afb).  
   
- For additional information on using Ngen.exe and the native image service, see [Native Image Service](http://msdn.microsoft.com/en-us/b15e0e32-59cb-4ae4-967c-6c9527781309).  
+ For additional information on using Ngen.exe and the native image service, see [Native Image Service][Native Image Service].  
   
 > [!NOTE]
 >  Ngen.exe syntax for versions 1.0 and 1.1 of the .NET Framework can be found in [Native Image Generator (Ngen.exe) Legacy Syntax](http://msdn.microsoft.com/en-us/5a69fc7a-103f-4afc-8ab4-606adcb46324).  
@@ -83,7 +84,7 @@ ngen /? | /help
 |`uninstall` [`assemblyName` &#124; `assemblyPath`] [`scenarios`] [`config`]|Delete the native images of an assembly and its dependencies from the native image cache.<br /><br /> To uninstall a single image and its dependencies, use the same command-line arguments that were used to install the image. **Note:**  Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], the action `uninstall` * is no longer supported.|  
 |`update` [`/queue`]|Update native images that have become invalid.<br /><br /> If `/queue` is specified, the updates are queued for the native image service. Updates are always scheduled at priority 3, so they run when the computer is idle.|  
 |`display` [`assemblyName` &#124; `assemblyPath`]|Display the state of the native images for an assembly and its dependencies.<br /><br /> If no argument is supplied, everything in the native image cache is displayed.|  
-|`executeQueuedItems` [`1``&#124;``2``&#124;``3`]<br /><br /> -or-<br /><br /> `eqi` [1&#124;2&#124;3]|Execute queued compilation jobs.<br /><br /> If a priority is specified, compilation jobs with greater or equal priority are executed. If no priority is specified, all queued compilation jobs are executed.|  
+|`executeQueuedItems` [<code>1&#124;2&#124;3</code>]<br /><br /> -or-<br /><br /> `eqi` [1&#124;2&#124;3]|Execute queued compilation jobs.<br /><br /> If a priority is specified, compilation jobs with greater or equal priority are executed. If no priority is specified, all queued compilation jobs are executed.|  
 |`queue` {`pause` &#124; `continue` &#124; `status`}|Pause the native image service, allow the paused service to continue, or query the status of the service.|  
   
 <a name="ArgumentTable"></a>   
@@ -101,7 +102,7 @@ ngen /? | /help
 |--------------|-----------------|  
 |`1`|Native images are generated and installed immediately, without waiting for idle time.|  
 |`2`|Native images are generated and installed without waiting for idle time, but after all priority 1 actions (and their dependencies) have completed.|  
-|`3`|Native images are installed when the native image service detects that the computer is idle. See [Native Image Service](http://msdn.microsoft.com/en-us/b15e0e32-59cb-4ae4-967c-6c9527781309).|  
+|`3`|Native images are installed when the native image service detects that the computer is idle. See [Native Image Service][Native Image Service].|  
   
 <a name="ScenarioTable"></a>   
 ## Scenarios  
@@ -138,20 +139,20 @@ ngen /? | /help
   
  Starting with the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], the native images that are generated with Ngen.exe can no longer be loaded into applications that are running in partial trust. Instead, the just-in-time (JIT) compiler is invoked.  
   
- Ngen.exe generates native images for the assembly specified by the `assemblyname` argument to the `install` action and all its dependencies. Dependencies are determined from references in the assembly manifest. The only scenario in which you need to install a dependency separately is when the application loads it using reflection, for example by calling the <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> method.  
+ Ngen.exe generates native images for the assembly specified by the `assemblyname` argument to the `install` action and all its dependencies. Dependencies are determined from references in the assembly manifest. The only scenario in which you need to install a dependency separately is when the application loads it using reflection, for example by calling the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method.  
   
 > [!IMPORTANT]
->  Do not use the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> method with native images. An image loaded with this method cannot be used by other assemblies in the execution context.  
+>  Do not use the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method with native images. An image loaded with this method cannot be used by other assemblies in the execution context.  
   
  Ngen.exe maintains a count on dependencies. For example, suppose `MyAssembly.exe` and `YourAssembly.exe` are both installed in the native image cache, and both have references to `OurDependency.dll`. If `MyAssembly.exe` is uninstalled, `OurDependency.dll` is not uninstalled. It is only removed when `YourAssembly.exe` is also uninstalled.  
   
- If you are generating a native image for an assembly in the global assembly cache, specify its display name. See <xref:System.Reflection.Assembly.FullName%2A?displayProperty=fullName>.  
+ If you are generating a native image for an assembly in the global assembly cache, specify its display name. See <xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType>.  
   
  The native images that Ngen.exe generates can be shared across application domains. This means you can use Ngen.exe in application scenarios that require assemblies to be shared across application domains. To specify domain neutrality:  
   
 -   Apply the <xref:System.LoaderOptimizationAttribute> attribute to your application.  
   
--   Set the <xref:System.AppDomainSetup.LoaderOptimization%2A?displayProperty=fullName> property when you create setup information for a new application domain.  
+-   Set the <xref:System.AppDomainSetup.LoaderOptimization%2A?displayProperty=nameWithType> property when you create setup information for a new application domain.  
   
  Always use domain-neutral code when loading the same assembly into multiple application domains. If a native image is loaded into a nonshared application domain after having been loaded into a shared domain, it cannot be used.  
   
@@ -283,7 +284,7 @@ ngen /? | /help
   
 <a name="DependencyHint"></a>   
 ### Specifying a binding hint for a dependency  
- Apply the <xref:System.Runtime.CompilerServices.DependencyAttribute> to an assembly to indicate the likelihood that a specified dependency will be loaded. <xref:System.Runtime.CompilerServices.LoadHint.Always?displayProperty=fullName> indicates that hard binding is appropriate, <xref:System.Runtime.CompilerServices.LoadHint.Default> indicates that the default for the dependency should be used, and <xref:System.Runtime.CompilerServices.LoadHint.Sometimes> indicates that hard binding is not appropriate.  
+ Apply the <xref:System.Runtime.CompilerServices.DependencyAttribute> to an assembly to indicate the likelihood that a specified dependency will be loaded. <xref:System.Runtime.CompilerServices.LoadHint.Always?displayProperty=nameWithType> indicates that hard binding is appropriate, <xref:System.Runtime.CompilerServices.LoadHint.Default> indicates that the default for the dependency should be used, and <xref:System.Runtime.CompilerServices.LoadHint.Sometimes> indicates that hard binding is not appropriate.  
   
  The following code shows the attributes for an assembly that has two dependencies. The first dependency (Assembly1) is an appropriate candidate for hard binding, and the second (Assembly2) is not.  
   
@@ -299,7 +300,7 @@ using System.Runtime.CompilerServices;
 [assembly:DependencyAttribute("Assembly2", LoadHint.Sometimes)]  
 ```  
   
-```cpp#  
+```cpp  
 using namespace System::Runtime::CompilerServices;  
 [assembly:DependencyAttribute("Assembly1", LoadHint.Always)];  
 [assembly:DependencyAttribute("Assembly2", LoadHint.Sometimes)];  
@@ -309,16 +310,16 @@ using namespace System::Runtime::CompilerServices;
   
 <a name="AssemblyHint"></a>   
 ### Specifying a default binding hint for an assembly  
- Default binding hints are only needed for assemblies that will be used immediately and frequently by any application that has a dependency on them. Apply the <xref:System.Runtime.CompilerServices.DefaultDependencyAttribute> with <xref:System.Runtime.CompilerServices.LoadHint.Always?displayProperty=fullName> to such assemblies to specify that hard binding should be used.  
+ Default binding hints are only needed for assemblies that will be used immediately and frequently by any application that has a dependency on them. Apply the <xref:System.Runtime.CompilerServices.DefaultDependencyAttribute> with <xref:System.Runtime.CompilerServices.LoadHint.Always?displayProperty=nameWithType> to such assemblies to specify that hard binding should be used.  
   
 > [!NOTE]
->  There is no reason to apply <xref:System.Runtime.CompilerServices.DefaultDependencyAttribute> to .dll assemblies that do not fall into this category, because applying the attribute with any value other than <xref:System.Runtime.CompilerServices.LoadHint.Always?displayProperty=fullName> has the same effect as not applying the attribute at all.  
+>  There is no reason to apply <xref:System.Runtime.CompilerServices.DefaultDependencyAttribute> to .dll assemblies that do not fall into this category, because applying the attribute with any value other than <xref:System.Runtime.CompilerServices.LoadHint.Always?displayProperty=nameWithType> has the same effect as not applying the attribute at all.  
   
  Microsoft uses the <xref:System.Runtime.CompilerServices.DefaultDependencyAttribute> to specify that hard binding is the default for a very small number of assemblies in the .NET Framework, such as mscorlib.dll.  
   
 <a name="Deferred"></a>   
 ## Deferred processing  
- Generation of native images for a very large application can take considerable time. Similarly, changes to a shared component or changes to computer settings might require many native images to be updated. The `install` and `update` actions have a `/queue` option that queues the operation for deferred execution by the native image service. In addition, Ngen.exe has `queue` and `executeQueuedItems` actions that provide some control over the service. For more information, see [Native Image Service](http://msdn.microsoft.com/en-us/b15e0e32-59cb-4ae4-967c-6c9527781309).  
+ Generation of native images for a very large application can take considerable time. Similarly, changes to a shared component or changes to computer settings might require many native images to be updated. The `install` and `update` actions have a `/queue` option that queues the operation for deferred execution by the native image service. In addition, Ngen.exe has `queue` and `executeQueuedItems` actions that provide some control over the service. For more information, see [Native Image Service][Native Image Service].  
   
 <a name="JITCompilation"></a>   
 ## Native images and JIT compilation  
@@ -380,7 +381,7 @@ using namespace System::Runtime::CompilerServices;
 ### Opting out of native image generation  
  In some cases, NGen.exe may have difficulty generating a native image for a specific method, or you may prefer that the method be JIT compiled rather then compiled to a native image. In this case, you can use the `System.Runtime.BypassNGenAttribute` attribute to prevent NGen.exe from generating a native image for a particular method. The attribute must be applied individually to each method whose code you do not want to include in the native image. NGen.exe recognizes the attribute and does not generate code in the native image for the corresponding method.  
   
- Note, however, that `BypassNGenAttribute` is not defined as a type in the .NET Framework Class library. In order to consume the attribute in your code, you must first define it as follows:  
+ Note, however, that `BypassNGenAttribute` is not defined as a type in the .NET Framework Class Library. In order to consume the attribute in your code, you must first define it as follows:  
   
  [!code-csharp[System.Runtime.BypassNGenAttribute#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/System.Runtime.BypassNGenAttribute/cs/Optout1.cs#1)]
  [!code-vb[System.Runtime.BypassNGenAttribute#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Runtime.BypassNGenAttribute/vb/Optout1.vb#1)]  
@@ -410,7 +411,7 @@ ngen install c:\myfiles\MyAssembly.exe
 > [!NOTE]
 >  This is a change from Ngen.exe behavior in the .NET Framework versions 1.0 and 1.1, where the application base is set to the current directory.  
   
- An assembly can have a dependency without a reference, for example if it loads a .dll file by using the <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> method. You can create a native image for such a .dll file by using configuration information for the application assembly, with the `/ExeConfig` option. The following command generates a native image for `MyLib.dll,` using the configuration information from `MyApp.exe`.  
+ An assembly can have a dependency without a reference, for example if it loads a .dll file by using the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method. You can create a native image for such a .dll file by using configuration information for the application assembly, with the `/ExeConfig` option. The following command generates a native image for `MyLib.dll,` using the configuration information from `MyApp.exe`.  
   
 ```  
 ngen install c:\myfiles\MyLib.dll /ExeConfig:c:\myapps\MyApp.exe  
@@ -475,7 +476,7 @@ ngen display "myAssembly, version=1.0.0.0"
 ngen update  
 ```  
   
- Updating all images can be a lengthy process. You can queue the updates for execution by the native image service by using the `/queue` option. For more information on the `/queue` option and installation priorities, see [Native Image Service](http://msdn.microsoft.com/en-us/b15e0e32-59cb-4ae4-967c-6c9527781309).  
+ Updating all images can be a lengthy process. You can queue the updates for execution by the native image service by using the `/queue` option. For more information on the `/queue` option and installation priorities, see [Native Image Service][Native Image Service].  
   
 ```  
 ngen update /queue  
@@ -516,7 +517,7 @@ ngen uninstall "ClientApp, Version=1.0.0.0, Culture=neutral,
   
  As with the `install` action, supplying an extension requires either executing Ngen.exe from the directory containing the assembly or specifying a full path.  
   
- For examples relating to the native image service, see [Native Image Service](http://msdn.microsoft.com/en-us/b15e0e32-59cb-4ae4-967c-6c9527781309).  
+ For examples relating to the native image service, see [Native Image Service][Native Image Service].  
   
 ## Native Image Task  
  The native image task is a Windows task that generates and maintains native images. The native image task generates and reclaims native images automatically for supported scenarios. (See [Creating Native Images](http://msdn.microsoft.com/en-us/2bc8b678-dd8d-4742-ad82-319e9bf52418).) It also enables installers to use [Ngen.exe (Native Image Generator)](../../../docs/framework/tools/ngen-exe-native-image-generator.md) to create and update native images at a deferred time.  
@@ -528,7 +529,7 @@ ngen uninstall "ClientApp, Version=1.0.0.0, Culture=neutral,
 |NET Framework NGEN v4.0.30319|Yes|Yes|  
 |NET Framework NGEN v4.0.30319 64|No|Yes|  
   
- The native image task is is available in the .NET Framework 4.5 and later versions, when running on Windows 8 or later. On earlier versions of Windows, the .NET Framework uses the [Native Image Service](http://msdn.microsoft.com/en-us/b15e0e32-59cb-4ae4-967c-6c9527781309).  
+ The native image task is is available in the .NET Framework 4.5 and later versions, when running on Windows 8 or later. On earlier versions of Windows, the .NET Framework uses the [Native Image Service][Native Image Service].  
   
 ### Task Lifetime  
  In general, the Windows Task Scheduler starts the native image task every night when the computer is idle. The task checks for any deferred work that is queued by application installers, any deferred native image update requests, and any automatic image creation. The task completes outstanding work items and then shuts down. If the computer stops being idle while the task is running, the task stops.  
@@ -590,9 +591,9 @@ ngen executeQueuedItems
  In the .NET Framework version 2.0, the only interaction with the native image service is through the command-line tool Ngen.exe. Use the command-line tool in installation scripts to queue actions for the native image service and to interact with the service.  
   
 ## See Also  
- [Native Image Service](http://msdn.microsoft.com/en-us/b15e0e32-59cb-4ae4-967c-6c9527781309)   
- [Native Image Task](http://msdn.microsoft.com/en-us/9b1f7590-4e0d-4737-90ef-eaf696932afb)   
- [Tools](../../../docs/framework/tools/index.md)   
- [Managed Execution Process](../../../docs/standard/managed-execution-process.md)   
- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)   
+ [Tools](../../../docs/framework/tools/index.md)  
+ [Managed Execution Process](../../../docs/standard/managed-execution-process.md)  
+ [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
  [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+
+[Native Image Service]: #native-image-service

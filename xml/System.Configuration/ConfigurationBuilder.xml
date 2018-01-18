@@ -1,0 +1,78 @@
+<Type Name="ConfigurationBuilder" FullName="System.Configuration.ConfigurationBuilder">
+  <TypeSignature Language="C#" Value="public abstract class ConfigurationBuilder : System.Configuration.Provider.ProviderBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ConfigurationBuilder extends System.Configuration.Provider.ProviderBase" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.Provider.ProviderBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the base class to be extended by custom configuration builder implementations.</summary>
+    <remarks>Derive from this class to read configuration from an external source that you would like to consume in your .NET Framework application using the standard ConfigurationManager API.  ConfigurationBuilders are available on NuGet.org to read from environment variables, Azure key vault, and a number of other sources.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ConfigurationBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationBuilder" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessConfigurationSection">
+      <MemberSignature Language="C#" Value="public virtual System.Configuration.ConfigurationSection ProcessConfigurationSection (System.Configuration.ConfigurationSection configSection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Configuration.ConfigurationSection ProcessConfigurationSection(class System.Configuration.ConfigurationSection configSection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationBuilder.ProcessConfigurationSection(System.Configuration.ConfigurationSection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationSection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="configSection" Type="System.Configuration.ConfigurationSection" />
+      </Parameters>
+      <Docs>
+        <param name="configSection">The <see cref="T:System.Configuration.ConfigurationSection" /> to process.</param>
+        <summary>Accepts a <see cref="T:System.Configuration.ConfigurationSection" /> object from the configuration system and returns a modified or new <see cref="T:System.Configuration.ConfigurationSection" /> object for further use.</summary>
+        <returns>The processed <see cref="T:System.Configuration.ConfigurationSection" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessRawXml">
+      <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNode ProcessRawXml (System.Xml.XmlNode rawXml);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlNode ProcessRawXml(class System.Xml.XmlNode rawXml) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationBuilder.ProcessRawXml(System.Xml.XmlNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rawXml" Type="System.Xml.XmlNode" />
+      </Parameters>
+      <Docs>
+        <param name="rawXml">The <see cref="T:System.Xml.XmlNode" /> to process.</param>
+        <summary>Accepts an <see cref="T:System.Xml.XmlNode" /> representing the raw configuration section from a config file and returns a modified or new <see cref="T:System.Xml.XmlNode" /> for further use.</summary>
+        <returns>The processed <see cref="T:System.Xml.XmlNode" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

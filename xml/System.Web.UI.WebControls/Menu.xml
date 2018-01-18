@@ -502,13 +502,13 @@
   
  The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.Menu> control with static menu items using declarative syntax.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuDeclarative#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDeclarative/CS/menudeclarativecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuDeclarative#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDeclarative/VB/menudeclarativevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuDeclarative#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDeclarative/CS/menudeclarativecs.aspx#1)]
+ [!code-aspx-vb[MenuDeclarative#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDeclarative/VB/menudeclarativevb.aspx#1)]  
   
  The following code example demonstrates how to bind the <xref:System.Web.UI.WebControls.Menu> control to a <xref:System.Web.UI.WebControls.SiteMapDataSource> control. For this example to work correctly, you must copy the sample site map data below to a file named Web.sitemap.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuDataBind#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDataBind/CS/menudatabindcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuDataBind#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDataBind/VB/menudatabindvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuDataBind#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDataBind/CS/menudatabindcs.aspx#1)]
+ [!code-aspx-vb[MenuDataBind#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDataBind/VB/menudatabindvb.aspx#1)]  
   
  The following is sample site map data for the previous example.  
   
@@ -549,6 +549,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.TreeView" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -574,11 +575,13 @@
 ## Examples  
  The following code example demonstrates how to use the constructor to dynamically add a <xref:System.Web.UI.WebControls.Menu> control to a page.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuCtor/CS/menuctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuCtor/VB/menuctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuCtor/CS/menuctorcs.aspx#1)]
+ [!code-aspx-vb[MenuCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuCtor/VB/menuctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
+        <altmember cref="T:System.Web.UI.WebControls.PlaceHolder" />
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -747,8 +750,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.DataBindings%2A> collection to define the relationship between the fields of an <xref:System.Web.UI.WebControls.XmlDataSource> control and the menu items in a <xref:System.Web.UI.WebControls.Menu> control. For this example to work correctly, you must copy the sample XML data below to a file named Map.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuBindings#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuBindings/CS/menubindingscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuBindings#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuBindings/VB/menubindingsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuBindings#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuBindings/CS/menubindingscs.aspx#1)]
+ [!code-aspx-vb[MenuBindings#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuBindings/VB/menubindingsvb.aspx#1)]  
   
  The following is sample site map data for the previous example.  
   
@@ -787,6 +790,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBinding" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemBindingCollection" />
       </Docs>
     </Member>
     <Member MemberName="DisappearAfter">
@@ -830,12 +835,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.DisappearAfter%2A> property to specify that a dynamic menu should disappear after the user moves the mouse pointer away from the menu for more than two seconds.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuDisappearAfter#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDisappearAfter/CS/menudisappearaftercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuDisappearAfter#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDisappearAfter/VB/menudisappearaftervb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuDisappearAfter#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDisappearAfter/CS/menudisappearaftercs.aspx#1)]
+ [!code-aspx-vb[MenuDisappearAfter#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDisappearAfter/VB/menudisappearaftervb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is less than -1.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuStyle" />
       </Docs>
     </Member>
     <Member MemberName="DynamicBottomSeparatorImageUrl">
@@ -881,11 +887,18 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.DynamicBottomSeparatorImageUrl%2A> property to display a separator image at the bottom of each dynamic menu item.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuDynamicBottomSeparatorImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDynamicBottomSeparatorImageUrl/CS/menudynamicbottomseparatorimageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuDynamicBottomSeparatorImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDynamicBottomSeparatorImageUrl/VB/menudynamicbottomseparatorimageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuDynamicBottomSeparatorImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDynamicBottomSeparatorImageUrl/CS/menudynamicbottomseparatorimageurlcs.aspx#1)]
+ [!code-aspx-vb[MenuDynamicBottomSeparatorImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDynamicBottomSeparatorImageUrl/VB/menudynamicbottomseparatorimageurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicTopSeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticBottomSeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticTopSeparatorImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="DynamicEnableDefaultPopOutImage">
@@ -931,11 +944,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.DynamicEnableDefaultPopOutImage%2A> property to hide the image that indicates that a dynamic menu item has a submenu. The <xref:System.Web.UI.WebControls.Menu.DynamicPopOutImageUrl%2A> property must also be set to an empty string ("") for the image to be hidden.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuDynamicEnableDefaultPopOutImage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDynamicEnableDefaultPopOutImage/CS/menudynamicenabledefaultpopoutimagecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuDynamicEnableDefaultPopOutImage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDynamicEnableDefaultPopOutImage/VB/menudynamicenabledefaultpopoutimagevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuDynamicEnableDefaultPopOutImage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDynamicEnableDefaultPopOutImage/CS/menudynamicenabledefaultpopoutimagecs.aspx#1)]
+ [!code-aspx-vb[MenuDynamicEnableDefaultPopOutImage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDynamicEnableDefaultPopOutImage/VB/menudynamicenabledefaultpopoutimagevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicPopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicPopOutImageTextFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticEnableDefaultPopOutImage" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticPopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticPopOutImageTextFormatString" />
       </Docs>
     </Member>
     <Member MemberName="DynamicHorizontalOffset">
@@ -977,11 +995,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.DynamicHorizontalOffset%2A> property to specify a 5-pixel gap between a dynamic menu and its parent menu item.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuDynamicHorizontalOffset#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDynamicHorizontalOffset/CS/menudynamichorizontaloffsetcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuDynamicHorizontalOffset#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDynamicHorizontalOffset/VB/menudynamichorizontaloffsetvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuDynamicHorizontalOffset#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDynamicHorizontalOffset/CS/menudynamichorizontaloffsetcs.aspx#1)]
+ [!code-aspx-vb[MenuDynamicHorizontalOffset#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDynamicHorizontalOffset/VB/menudynamichorizontaloffsetvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicVerticalOffset" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSubMenuIndent" />
       </Docs>
     </Member>
     <Member MemberName="DynamicHoverStyle">
@@ -1034,11 +1054,21 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.DynamicHoverStyle%2A> property to change the background color of a dynamic menu item to light sky blue when the user positions the mouse pointer over it.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuDynamicHoverStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDynamicHoverStyle/CS/menudynamichoverstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuDynamicHoverStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDynamicHoverStyle/VB/menudynamichoverstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuDynamicHoverStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDynamicHoverStyle/CS/menudynamichoverstylecs.aspx#1)]
+ [!code-aspx-vb[MenuDynamicHoverStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDynamicHoverStyle/VB/menudynamichoverstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicSelectedStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSubMenuStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSelectedStyle" />
       </Docs>
     </Member>
     <Member MemberName="DynamicItemFormatString">
@@ -1077,11 +1107,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.StaticItemFormatString%2A> and <xref:System.Web.UI.WebControls.Menu.DynamicItemFormatString%2A> properties to add text to each menu item.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemFormatString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemFormatString/CS/menuitemformatstringcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemFormatString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemFormatString/VB/menuitemformatstringvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemFormatString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemFormatString/CS/menuitemformatstringcs.aspx#1)]
+ [!code-aspx-vb[MenuItemFormatString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemFormatString/VB/menuitemformatstringvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticItemFormatString" />
       </Docs>
     </Member>
     <Member MemberName="DynamicItemTemplate">
@@ -1121,6 +1153,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicItemFormatString" />
       </Docs>
     </Member>
     <Member MemberName="DynamicMenuItemStyle">
@@ -1173,11 +1207,21 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.DynamicMenuItemStyle%2A> property to specify a light sky blue background color for the menu items in a dynamic menu.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuDynamicMenuItemStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/menudynamicmenuitemstyle/CS/MenuDynamicMenuItemStylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuDynamicMenuItemStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/menudynamicmenuitemstyle/VB/MenuDynamicMenuItemStylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuDynamicMenuItemStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/menudynamicmenuitemstyle/CS/MenuDynamicMenuItemStylecs.aspx#1)]
+ [!code-aspx-vb[MenuDynamicMenuItemStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/menudynamicmenuitemstyle/VB/MenuDynamicMenuItemStylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicSelectedStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSubMenuStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSelectedStyle" />
       </Docs>
     </Member>
     <Member MemberName="DynamicMenuStyle">
@@ -1230,11 +1274,21 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.DynamicMenuStyle%2A> property to specify a light sky blue background color for a dynamic menu.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuDynamicMenuStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDynamicMenuStyle/CS/menudynamicmenustylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuDynamicMenuStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDynamicMenuStyle/VB/menudynamicmenustylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuDynamicMenuStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDynamicMenuStyle/CS/menudynamicmenustylecs.aspx#1)]
+ [!code-aspx-vb[MenuDynamicMenuStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDynamicMenuStyle/VB/menudynamicmenustylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicSelectedStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSubMenuStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSelectedStyle" />
       </Docs>
     </Member>
     <Member MemberName="DynamicPopOutImageTextFormatString">
@@ -1272,11 +1326,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.DynamicPopOutImageTextFormatString%2A> property to specify the alternate text for the image used to indicate that a dynamic menu item has a submenu. This text is displayed as a ToolTip when the user positions the mouse pointer over the image.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuDynamicPopoutImageText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDynamicPopoutImageText/CS/menudynamicpopoutimagetextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuDynamicPopoutImageText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDynamicPopoutImageText/VB/menudynamicpopoutimagetextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuDynamicPopoutImageText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDynamicPopoutImageText/CS/menudynamicpopoutimagetextcs.aspx#1)]
+ [!code-aspx-vb[MenuDynamicPopoutImageText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDynamicPopoutImageText/VB/menudynamicpopoutimagetextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicEnableDefaultPopOutImage" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicPopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticEnableDefaultPopOutImage" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticPopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticPopOutImageTextFormatString" />
       </Docs>
     </Member>
     <Member MemberName="DynamicPopOutImageUrl">
@@ -1329,11 +1388,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.DynamicPopOutImageUrl%2A> property to specify a custom image to display in a dynamic menu item to indicate that the menu item has a submenu.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuDynamicPopoutImageText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDynamicPopoutImageText/CS/menudynamicpopoutimagetextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuDynamicPopoutImageText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDynamicPopoutImageText/VB/menudynamicpopoutimagetextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuDynamicPopoutImageText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDynamicPopoutImageText/CS/menudynamicpopoutimagetextcs.aspx#1)]
+ [!code-aspx-vb[MenuDynamicPopoutImageText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDynamicPopoutImageText/VB/menudynamicpopoutimagetextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicEnableDefaultPopOutImage" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicPopOutImageTextFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticEnableDefaultPopOutImage" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticPopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticPopOutImageTextFormatString" />
       </Docs>
     </Member>
     <Member MemberName="DynamicSelectedStyle">
@@ -1386,11 +1450,21 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.DynamicSelectedStyle%2A> property to specify a light blue background color for the selected dynamic menu item.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuDynamicSelectedStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDynamicSelectedStyle/CS/menudynamicselectedstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuDynamicSelectedStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDynamicSelectedStyle/VB/menudynamicselectedstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuDynamicSelectedStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDynamicSelectedStyle/CS/menudynamicselectedstylecs.aspx#1)]
+ [!code-aspx-vb[MenuDynamicSelectedStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDynamicSelectedStyle/VB/menudynamicselectedstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSubMenuStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSelectedStyle" />
       </Docs>
     </Member>
     <Member MemberName="DynamicTopSeparatorImageUrl">
@@ -1433,11 +1507,18 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.DynamicTopSeparatorImageUrl%2A> property to display a separator image at the top of each dynamic menu item.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuDynamicTopSeparatorImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDynamicTopSeparatorImageUrl/CS/menudynamictopseparatorimageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuDynamicTopSeparatorImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDynamicTopSeparatorImageUrl/VB/menudynamictopseparatorimageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuDynamicTopSeparatorImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDynamicTopSeparatorImageUrl/CS/menudynamictopseparatorimageurlcs.aspx#1)]
+ [!code-aspx-vb[MenuDynamicTopSeparatorImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDynamicTopSeparatorImageUrl/VB/menudynamictopseparatorimageurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicBottomSeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticBottomSeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticTopSeparatorImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="DynamicVerticalOffset">
@@ -1479,11 +1560,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.DynamicVerticalOffset%2A> property to shift a dynamic menu down by 10 pixels from the top of its parent menu item.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuDynamicHorizontalOffset#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDynamicHorizontalOffset/CS/menudynamichorizontaloffsetcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuDynamicHorizontalOffset#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDynamicHorizontalOffset/VB/menudynamichorizontaloffsetvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuDynamicHorizontalOffset#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuDynamicHorizontalOffset/CS/menudynamichorizontaloffsetcs.aspx#1)]
+ [!code-aspx-vb[MenuDynamicHorizontalOffset#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuDynamicHorizontalOffset/VB/menudynamichorizontaloffsetvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHorizontalOffset" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.Orientation" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSubMenuIndent" />
       </Docs>
     </Member>
     <Member MemberName="EnsureDataBound">
@@ -1543,11 +1627,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.FindItem%2A> method to retrieve a menu item from a <xref:System.Web.UI.WebControls.Menu> control at a specified value path.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuPathSeparator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuPathSeparator/CS/menupathseparatorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuPathSeparator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuPathSeparator/VB/menupathseparatorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuPathSeparator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuPathSeparator/CS/menupathseparatorcs.aspx#1)]
+ [!code-aspx-vb[MenuPathSeparator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuPathSeparator/VB/menupathseparatorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.PathSeparator" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ValuePath" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignModeState">
@@ -1574,6 +1660,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="IncludeStyleBlock">
@@ -1656,11 +1743,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.Items%2A> collection to traverse the menu items in the <xref:System.Web.UI.WebControls.Menu> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItems#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItems/CS/menuitemscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItems#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItems/VB/menuitemsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItems#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItems/CS/menuitemscs.aspx#1)]
+ [!code-aspx-vb[MenuItems#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItems/VB/menuitemsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.MenuItem" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuItemCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
       </Docs>
     </Member>
     <Member MemberName="ItemWrap">
@@ -1695,11 +1785,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.ItemWrap%2A> property to enable text wrapping in the <xref:System.Web.UI.WebControls.Menu> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemWrap#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemWrap/CS/menuitemwrapcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemWrap#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemWrap/VB/menuitemwrapvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemWrap#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemWrap/CS/menuitemwrapcs.aspx#1)]
+ [!code-aspx-vb[MenuItemWrap#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemWrap/VB/menuitemwrapvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Font" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.ForeColor" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHorizontalOffset" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicVerticalOffset" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSubMenuIndent" />
       </Docs>
     </Member>
     <Member MemberName="LevelMenuItemStyles">
@@ -1742,11 +1837,21 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.LevelMenuItemStyles%2A> collection to apply style settings to the menu items in a <xref:System.Web.UI.WebControls.Menu> control based on their level.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuLevelMenuItemStyles#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuLevelMenuItemStyles/CS/menulevelmenuitemstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuLevelMenuItemStyles#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuLevelMenuItemStyles/VB/menulevelmenuitemstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuLevelMenuItemStyles#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuLevelMenuItemStyles/CS/menulevelmenuitemstylecs.aspx#1)]
+ [!code-aspx-vb[MenuLevelMenuItemStyles#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuLevelMenuItemStyles/VB/menulevelmenuitemstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicSelectedStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSubMenuStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSelectedStyle" />
       </Docs>
     </Member>
     <Member MemberName="LevelSelectedStyles">
@@ -1789,11 +1894,21 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.LevelSelectedStyles%2A> collection to apply a style setting to the selected menu item in a <xref:System.Web.UI.WebControls.Menu> control based on its level.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuLevelMenuItemStyles#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuLevelMenuItemStyles/CS/menulevelmenuitemstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuLevelMenuItemStyles#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuLevelMenuItemStyles/VB/menulevelmenuitemstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuLevelMenuItemStyles#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuLevelMenuItemStyles/CS/menulevelmenuitemstylecs.aspx#1)]
+ [!code-aspx-vb[MenuLevelMenuItemStyles#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuLevelMenuItemStyles/VB/menulevelmenuitemstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicSelectedStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSubMenuStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSelectedStyle" />
       </Docs>
     </Member>
     <Member MemberName="LevelSubMenuStyles">
@@ -1836,11 +1951,21 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.LevelSubMenuStyles%2A> collection to apply style settings to the submenu items displayed in the static menu of a <xref:System.Web.UI.WebControls.Menu> control based on their level.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuLevelSubMenuStyles#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuLevelSubMenuStyles/CS/menulevelsubmenustylescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuLevelSubMenuStyles#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuLevelSubMenuStyles/VB/menulevelsubmenustylesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuLevelSubMenuStyles#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuLevelSubMenuStyles/CS/menulevelsubmenustylescs.aspx#1)]
+ [!code-aspx-vb[MenuLevelSubMenuStyles#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuLevelSubMenuStyles/VB/menulevelsubmenustylesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicSelectedStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSelectedStyle" />
       </Docs>
     </Member>
     <Member MemberName="LoadControlState">
@@ -1931,12 +2056,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.MaximumDynamicDisplayLevels%2A> property to limit the number of menu levels to display in a dynamic menu to 1. Only the root menu level is displayed.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuMaximumDynamicDisplayLevels#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuMaximumDynamicDisplayLevels/CS/menumaximumdynamicdisplaylevelscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuMaximumDynamicDisplayLevels#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuMaximumDynamicDisplayLevels/VB/menumaximumdynamicdisplaylevelsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuMaximumDynamicDisplayLevels#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuMaximumDynamicDisplayLevels/CS/menumaximumdynamicdisplaylevelscs.aspx#1)]
+ [!code-aspx-vb[MenuMaximumDynamicDisplayLevels#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuMaximumDynamicDisplayLevels/VB/menumaximumdynamicdisplaylevelsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.Menu.MaximumDynamicDisplayLevels" /> property is set to a value less than 0.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticDisplayLevels" />
       </Docs>
     </Member>
     <Member MemberName="MenuItemClick">
@@ -1968,11 +2094,15 @@
 ## Examples  
  The following code example demonstrates how to create an event handler for the <xref:System.Web.UI.WebControls.Menu.MenuItemClick> event that displays the text of the menu item selected by the user.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuMenuItemClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuMenuItemClick/CS/menumenuitemclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuMenuItemClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuMenuItemClick/VB/menumenuitemclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuMenuItemClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuMenuItemClick/CS/menumenuitemclickcs.aspx#1)]
+ [!code-aspx-vb[MenuMenuItemClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuMenuItemClick/VB/menumenuitemclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.MenuEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemDataBound" />
+        <altmember cref="M:System.Web.UI.WebControls.Menu.OnMenuItemClick(System.Web.UI.WebControls.MenuEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="MenuItemClickCommandName">
@@ -2028,11 +2158,15 @@
 ## Examples  
  The following code example demonstrates how to create an event handler for the <xref:System.Web.UI.WebControls.Menu.MenuItemDataBound> event that modifies the text of the `Home` menu item before it is displayed in a <xref:System.Web.UI.WebControls.Menu> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemDataBound/CS/menumenuitemdataboundcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemDataBound/VB/menumenuitemdataboundvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemDataBound/CS/menumenuitemdataboundcs.aspx#1)]
+ [!code-aspx-vb[MenuItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemDataBound/VB/menumenuitemdataboundvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.MenuEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemClick" />
+        <altmember cref="M:System.Web.UI.WebControls.Menu.OnMenuItemDataBound(System.Web.UI.WebControls.MenuEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -2105,6 +2239,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Menu.OnDataBinding(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Menu.OnDataBinding(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.MenuEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemDataBound" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -2175,6 +2312,10 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Menu.OnMenuItemClick(System.Web.UI.WebControls.MenuEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Menu.OnMenuItemClick(System.Web.UI.WebControls.MenuEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.MenuEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemClick" />
+        <altmember cref="M:System.Web.UI.WebControls.Menu.OnMenuItemDataBound(System.Web.UI.WebControls.MenuEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMenuItemDataBound">
@@ -2210,6 +2351,10 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.Menu.OnMenuItemDataBound(System.Web.UI.WebControls.MenuEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.Menu.OnMenuItemDataBound(System.Web.UI.WebControls.MenuEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.MenuEventArgs" />
+        <altmember cref="T:System.Web.UI.WebControls.MenuEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemDataBound" />
+        <altmember cref="M:System.Web.UI.WebControls.Menu.OnMenuItemClick(System.Web.UI.WebControls.MenuEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -2283,11 +2428,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.Orientation%2A> property to display a horizontal menu.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuOrientation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuOrientation/CS/menuorientationcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuOrientation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuOrientation/VB/menuorientationvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuOrientation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuOrientation/CS/menuorientationcs.aspx#1)]
+ [!code-aspx-vb[MenuOrientation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuOrientation/VB/menuorientationvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Orientation" />
       </Docs>
     </Member>
     <Member MemberName="PathSeparator">
@@ -2323,11 +2469,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.PathSeparator%2A> property to change the delimiter character for a menu item's value path to a comma.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuPathSeparator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuPathSeparator/CS/menupathseparatorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuPathSeparator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuPathSeparator/VB/menupathseparatorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuPathSeparator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuPathSeparator/CS/menupathseparatorcs.aspx#1)]
+ [!code-aspx-vb[MenuPathSeparator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuPathSeparator/VB/menupathseparatorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.ValuePath" />
+        <altmember cref="M:System.Web.UI.WebControls.Menu.FindItem(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="PerformDataBinding">
@@ -2353,6 +2501,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.HierarchicalDataBoundControl.PerformDataBinding" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -2374,6 +2523,7 @@
         <param name="eventArgument">A <see cref="T:System.String" /> that represents the event argument passed to the event handler.</param>
         <summary>Processes an event raised when a form is posted to the server.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -2480,7 +2630,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Web.UI.WebControls.WebControl.RenderEndTag%2A?displayProperty=fullName> to render <xref:System.Web.UI.WebControls.Menu> submenus and the <xref:System.Web.UI.WebControls.Menu.SkipLinkText%2A> property.  
+ This method overrides <xref:System.Web.UI.WebControls.WebControl.RenderEndTag%2A?displayProperty=nameWithType> to render <xref:System.Web.UI.WebControls.Menu> submenus and the <xref:System.Web.UI.WebControls.Menu.SkipLinkText%2A> property.  
   
 > [!NOTE]
 >  This method is used primarily by control developers to extend the <xref:System.Web.UI.WebControls.Menu> control.  
@@ -2517,7 +2667,7 @@
   
  In ASP.NET 3.5 and earlier versions, the <xref:System.Web.UI.WebControls.Menu> control uses HTML `table` elements and inline styles to specify the appearance of the menu in a browser. In ASP.NET 4 and later versions, by default the <xref:System.Web.UI.WebControls.Menu> control uses HTML `listitem` elements and cascading style sheet (CSS) styles.  
   
- If you do not set this property, the <xref:System.Web.UI.WebControls.Menu> control renders markup that is appropriate to the ASP.NET version that is indicated by the <xref:System.Web.UI.Control.RenderingCompatibility%2A?displayProperty=fullName> property. The <xref:System.Web.UI.WebControls.Menu> control uses the following rules:  
+ If you do not set this property, the <xref:System.Web.UI.WebControls.Menu> control renders markup that is appropriate to the ASP.NET version that is indicated by the <xref:System.Web.UI.Control.RenderingCompatibility%2A?displayProperty=nameWithType> property. The <xref:System.Web.UI.WebControls.Menu> control uses the following rules:  
   
 -   If the value of the <xref:System.Web.UI.Control.RenderingCompatibility%2A> property is `3.5`, the <xref:System.Web.UI.WebControls.Menu> control uses HTML `table` elements and inline styles.  
   
@@ -2527,6 +2677,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
       </Docs>
     </Member>
     <Member MemberName="SaveControlState">
@@ -2625,11 +2776,14 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.ScrollDownImageUrl%2A> property to display a custom image indicating that the user can scroll down in a dynamic menu for additional menu items.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuScrollDownImage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuScrollDownImage/CS/menuscrolldownimagecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuScrollDownImage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuScrollDownImage/VB/menuscrolldownimagevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuScrollDownImage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuScrollDownImage/CS/menuscrolldownimagecs.aspx#1)]
+ [!code-aspx-vb[MenuScrollDownImage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuScrollDownImage/VB/menuscrolldownimagevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpText" />
       </Docs>
     </Member>
     <Member MemberName="ScrollDownText">
@@ -2671,11 +2825,14 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.ScrollDownText%2A> property to specify the alternate text for the image used to indicate that the user can scroll down in a dynamic menu for additional menu items.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuScrollDownImage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuScrollDownImage/CS/menuscrolldownimagecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuScrollDownImage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuScrollDownImage/VB/menuscrolldownimagevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuScrollDownImage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuScrollDownImage/CS/menuscrolldownimagecs.aspx#1)]
+ [!code-aspx-vb[MenuScrollDownImage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuScrollDownImage/VB/menuscrolldownimagevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpText" />
       </Docs>
     </Member>
     <Member MemberName="ScrollUpImageUrl">
@@ -2726,11 +2883,14 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.ScrollUpImageUrl%2A> property to display a custom image indicating that the user can scroll up in a dynamic menu for additional menu items.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuScrollDownImage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuScrollDownImage/CS/menuscrolldownimagecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuScrollDownImage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuScrollDownImage/VB/menuscrolldownimagevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuScrollDownImage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuScrollDownImage/CS/menuscrolldownimagecs.aspx#1)]
+ [!code-aspx-vb[MenuScrollDownImage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuScrollDownImage/VB/menuscrolldownimagevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpText" />
       </Docs>
     </Member>
     <Member MemberName="ScrollUpText">
@@ -2772,11 +2932,14 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.ScrollUpText%2A> property to specify the alternate text for the image used to indicate that the user can scroll up in a dynamic menu for additional menu items.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuScrollDownImage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuScrollDownImage/CS/menuscrolldownimagecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuScrollDownImage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuScrollDownImage/VB/menuscrolldownimagevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuScrollDownImage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuScrollDownImage/CS/menuscrolldownimagecs.aspx#1)]
+ [!code-aspx-vb[MenuScrollDownImage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuScrollDownImage/VB/menuscrolldownimagevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="SelectedItem">
@@ -2818,11 +2981,13 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.SelectedItem%2A> property to determine the selected menu item in a <xref:System.Web.UI.WebControls.Menu> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuSelectedItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuSelectedItem/CS/menuselecteditemcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuSelectedItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuSelectedItem/VB/menuselecteditemvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuSelectedItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuSelectedItem/CS/menuselecteditemcs.aspx#1)]
+ [!code-aspx-vb[MenuSelectedItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuSelectedItem/VB/menuselecteditemvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.SelectedValue" />
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemClick" />
       </Docs>
     </Member>
     <Member MemberName="SelectedValue">
@@ -2862,11 +3027,13 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.SelectedValue%2A> property to determine the text of the selected menu item in a <xref:System.Web.UI.WebControls.Menu> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuSelectedItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuSelectedItem/CS/menuselecteditemcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuSelectedItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuSelectedItem/VB/menuselecteditemvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuSelectedItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuSelectedItem/CS/menuselecteditemcs.aspx#1)]
+ [!code-aspx-vb[MenuSelectedItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuSelectedItem/VB/menuselecteditemvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.SelectedItem" />
+        <altmember cref="E:System.Web.UI.WebControls.Menu.MenuItemClick" />
       </Docs>
     </Member>
     <Member MemberName="SetDesignModeState">
@@ -2929,6 +3096,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Menu.SetItemDataItem(System.Web.UI.WebControls.MenuItem,System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.Menu.SetItemDataPath(System.Web.UI.WebControls.MenuItem,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SetItemDataItem">
@@ -2959,6 +3128,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Menu.SetItemDataBound(System.Web.UI.WebControls.MenuItem,System.Boolean)" />
+        <altmember cref="M:System.Web.UI.WebControls.Menu.SetItemDataPath(System.Web.UI.WebControls.MenuItem,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SetItemDataPath">
@@ -2989,6 +3160,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Menu.SetItemDataItem(System.Web.UI.WebControls.MenuItem,System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.Menu.SetItemDataPath(System.Web.UI.WebControls.MenuItem,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SkipLinkText">
@@ -3026,11 +3199,15 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.SkipLinkText%2A> property to specify the alternate text for a hidden image read by screen readers to provide the ability to skip the list of links.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuSkipLinkText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuSkipLinkText/CS/menuskiplinktextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuSkipLinkText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuSkipLinkText/VB/menuskiplinktextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuSkipLinkText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuSkipLinkText/CS/menuskiplinktextcs.aspx#1)]
+ [!code-aspx-vb[MenuSkipLinkText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuSkipLinkText/VB/menuskiplinktextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicPopOutImageTextFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticPopOutImageTextFormatString" />
       </Docs>
     </Member>
     <Member MemberName="StaticBottomSeparatorImageUrl">
@@ -3073,11 +3250,18 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.StaticBottomSeparatorImageUrl%2A> property to specify a separator image to display at the bottom of each static menu item.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuStaticBottomSeparatorImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuStaticBottomSeparatorImageUrl/CS/menustaticbottomseparatorimageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuStaticBottomSeparatorImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuStaticBottomSeparatorImageUrl/VB/menustaticbottomseparatorimageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuStaticBottomSeparatorImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuStaticBottomSeparatorImageUrl/CS/menustaticbottomseparatorimageurlcs.aspx#1)]
+ [!code-aspx-vb[MenuStaticBottomSeparatorImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuStaticBottomSeparatorImageUrl/VB/menustaticbottomseparatorimageurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicBottomSeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicTopSeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticTopSeparatorImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="StaticDisplayLevels">
@@ -3114,12 +3298,13 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.StaticDisplayLevels%2A> property to display the first two menu levels in the static menu.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuStaticDisplayLevels#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuStaticDisplayLevels/CS/menustaticdisplaylevelscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuStaticDisplayLevels#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuStaticDisplayLevels/VB/menustaticdisplaylevelsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuStaticDisplayLevels#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuStaticDisplayLevels/CS/menustaticdisplaylevelscs.aspx#1)]
+ [!code-aspx-vb[MenuStaticDisplayLevels#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuStaticDisplayLevels/VB/menustaticdisplaylevelsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is less than 1.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.MaximumDynamicDisplayLevels" />
       </Docs>
     </Member>
     <Member MemberName="StaticEnableDefaultPopOutImage">
@@ -3165,11 +3350,16 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.StaticEnableDefaultPopOutImage%2A> property to hide the image that indicates that a static menu item has a submenu. The <xref:System.Web.UI.WebControls.Menu.StaticPopOutImageUrl%2A> property must also be set to an empty string ("") for the image to be hidden.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuStaticEnableDefaultPopOutImage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuStaticEnableDefaultPopOutImage/CS/menustaticenabledefaultpopoutimagecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuStaticEnableDefaultPopOutImage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuStaticEnableDefaultPopOutImage/VB/menustaticenabledefaultpopoutimagevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuStaticEnableDefaultPopOutImage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuStaticEnableDefaultPopOutImage/CS/menustaticenabledefaultpopoutimagecs.aspx#1)]
+ [!code-aspx-vb[MenuStaticEnableDefaultPopOutImage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuStaticEnableDefaultPopOutImage/VB/menustaticenabledefaultpopoutimagevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicPopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicPopOutImageTextFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicEnableDefaultPopOutImage" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticPopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticPopOutImageTextFormatString" />
       </Docs>
     </Member>
     <Member MemberName="StaticHoverStyle">
@@ -3222,11 +3412,21 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.StaticHoverStyle%2A> property to change the background color of a static menu item to light sky blue when the user positions the mouse pointer over it.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuStaticHoverStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuStaticHoverStyle/CS/menustatichoverstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuStaticHoverStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuStaticHoverStyle/VB/menustatichoverstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuStaticHoverStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuStaticHoverStyle/CS/menustatichoverstylecs.aspx#1)]
+ [!code-aspx-vb[MenuStaticHoverStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuStaticHoverStyle/VB/menustatichoverstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicSelectedStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSubMenuStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSelectedStyle" />
       </Docs>
     </Member>
     <Member MemberName="StaticItemFormatString">
@@ -3265,11 +3465,13 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.StaticItemFormatString%2A> and <xref:System.Web.UI.WebControls.Menu.DynamicItemFormatString%2A> properties to add text to each menu item.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemFormatString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemFormatString/CS/menuitemformatstringcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemFormatString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemFormatString/VB/menuitemformatstringvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemFormatString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemFormatString/CS/menuitemformatstringcs.aspx#1)]
+ [!code-aspx-vb[MenuItemFormatString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemFormatString/VB/menuitemformatstringvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticItemTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicItemFormatString" />
       </Docs>
     </Member>
     <Member MemberName="StaticItemTemplate">
@@ -3361,11 +3563,21 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.StaticMenuItemStyle%2A> property to specify a light sky blue background color for the menu items in a static menu.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuStaticMenuItemStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuStaticMenuItemStyle/CS/menustaticmenuitemstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuStaticMenuItemStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuStaticMenuItemStyle/VB/menustaticmenuitemstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuStaticMenuItemStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuStaticMenuItemStyle/CS/menustaticmenuitemstylecs.aspx#1)]
+ [!code-aspx-vb[MenuStaticMenuItemStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuStaticMenuItemStyle/VB/menustaticmenuitemstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicSelectedStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSubMenuStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSelectedStyle" />
       </Docs>
     </Member>
     <Member MemberName="StaticMenuStyle">
@@ -3418,11 +3630,21 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.StaticMenuStyle%2A> property to specify a light sky blue background color for the entire static menu.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuStaticMenuStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuStaticMenuStyle/CS/menustaticmenustylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuStaticMenuStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuStaticMenuStyle/VB/menustaticmenustylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuStaticMenuStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuStaticMenuStyle/CS/menustaticmenustylecs.aspx#1)]
+ [!code-aspx-vb[MenuStaticMenuStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuStaticMenuStyle/VB/menustaticmenustylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicSelectedStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSubMenuStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticSelectedStyle" />
       </Docs>
     </Member>
     <Member MemberName="StaticPopOutImageTextFormatString">
@@ -3460,11 +3682,16 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.StaticPopOutImageTextFormatString%2A> property to specify the alternate text for the image used to indicate that a static menu item has a submenu. This text is displayed as a ToolTip when the user positions the mouse pointer over the image.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuStaticPopoutImageText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuStaticPopoutImageText/CS/menustaticpopoutimagetextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuStaticPopoutImageText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuStaticPopoutImageText/VB/menustaticpopoutimagetextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuStaticPopoutImageText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuStaticPopoutImageText/CS/menustaticpopoutimagetextcs.aspx#1)]
+ [!code-aspx-vb[MenuStaticPopoutImageText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuStaticPopoutImageText/VB/menustaticpopoutimagetextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicEnableDefaultPopOutImage" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicPopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicPopOutImageTextFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticEnableDefaultPopOutImage" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticPopOutImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="StaticPopOutImageUrl">
@@ -3517,11 +3744,16 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.StaticPopOutImageUrl%2A> property to specify a custom image to display in a static menu item when the menu item has a submenu.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuStaticPopoutImageText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuStaticPopoutImageText/CS/menustaticpopoutimagetextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuStaticPopoutImageText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuStaticPopoutImageText/VB/menustaticpopoutimagetextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuStaticPopoutImageText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuStaticPopoutImageText/CS/menustaticpopoutimagetextcs.aspx#1)]
+ [!code-aspx-vb[MenuStaticPopoutImageText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuStaticPopoutImageText/VB/menustaticpopoutimagetextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicEnableDefaultPopOutImage" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicPopOutImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicPopOutImageTextFormatString" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticEnableDefaultPopOutImage" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticPopOutImageTextFormatString" />
       </Docs>
     </Member>
     <Member MemberName="StaticSelectedStyle">
@@ -3614,11 +3846,21 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.StaticSelectedStyle%2A> property to specify a light blue background color for the selected static menu item.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuStaticSelectedStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuStaticSelectedStyle/CS/menustaticselectedstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuStaticSelectedStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuStaticSelectedStyle/VB/menustaticselectedstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuStaticSelectedStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuStaticSelectedStyle/CS/menustaticselectedstylecs.aspx#1)]
+ [!code-aspx-vb[MenuStaticSelectedStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuStaticSelectedStyle/VB/menustaticselectedstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicMenuStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicSelectedStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSubMenuStyles" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticHoverStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticMenuStyle" />
       </Docs>
     </Member>
     <Member MemberName="StaticSubMenuIndent">
@@ -3655,12 +3897,15 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.StaticSubMenuIndent%2A> property to indent the submenu items in a static menu by 10 pixels.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuStaticSubMenuIndent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuStaticSubMenuIndent/CS/menustaticsubmenuindentcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuStaticSubMenuIndent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuStaticSubMenuIndent/VB/menustaticsubmenuindentvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuStaticSubMenuIndent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuStaticSubMenuIndent/CS/menustaticsubmenuindentcs.aspx#1)]
+ [!code-aspx-vb[MenuStaticSubMenuIndent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuStaticSubMenuIndent/VB/menustaticsubmenuindentvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value of the selected <see cref="T:System.Web.UI.WebControls.Unit" /> is less than 0.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticDisplayLevels" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicHorizontalOffset" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicVerticalOffset" />
       </Docs>
     </Member>
     <Member MemberName="StaticTopSeparatorImageUrl">
@@ -3703,11 +3948,18 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.StaticTopSeparatorImageUrl%2A> property to specify a separator image to display at the top of each static menu item.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuStaticTopSeparatorImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuStaticTopSeparatorImageUrl/CS/menustatictopseparatorimageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuStaticTopSeparatorImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuStaticTopSeparatorImageUrl/VB/menustatictopseparatorimageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuStaticTopSeparatorImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuStaticTopSeparatorImageUrl/CS/menustatictopseparatorimageurlcs.aspx#1)]
+ [!code-aspx-vb[MenuStaticTopSeparatorImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuStaticTopSeparatorImageUrl/VB/menustatictopseparatorimageurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicBottomSeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.DynamicTopSeparatorImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollDownText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.ScrollUpText" />
+        <altmember cref="P:System.Web.UI.WebControls.Menu.StaticBottomSeparatorImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -3754,6 +4006,7 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -3803,11 +4056,12 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Menu.Target%2A> property to specify that the content linked to each menu item should be displayed in a new window when the user clicks that menu item.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuTarget#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuTarget/CS/menutargetcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuTarget#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuTarget/VB/menutargetvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuTarget#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuTarget/CS/menutargetcs.aspx#1)]
+ [!code-aspx-vb[MenuTarget#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuTarget/VB/menutargetvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.MenuItem.Target" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -3826,6 +4080,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <Docs>
         <summary>Tracks view-state changes to the <see cref="T:System.Web.UI.WebControls.Menu" /> control so they can be stored in the control's <see cref="T:System.Web.UI.StateBag" /> object. This object is accessible through the <see cref="P:System.Web.UI.Control.ViewState" /> property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
   </Members>

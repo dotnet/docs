@@ -331,7 +331,7 @@ private void CloneExample(PaintEventArgs e)
     </Member>
     <Member MemberName="GetStrokeCaps">
       <MemberSignature Language="C#" Value="public void GetStrokeCaps (out System.Drawing.Drawing2D.LineCap startCap, out System.Drawing.Drawing2D.LineCap endCap);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetStrokeCaps(valuetype System.Drawing.Drawing2D.LineCap startCap, valuetype System.Drawing.Drawing2D.LineCap endCap) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetStrokeCaps([out] valuetype System.Drawing.Drawing2D.LineCap&amp; startCap, [out] valuetype System.Drawing.Drawing2D.LineCap&amp; endCap) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.CustomLineCap.GetStrokeCaps(System.Drawing.Drawing2D.LineCap@,System.Drawing.Drawing2D.LineCap@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -445,5 +445,14 @@ private void CloneExample(PaintEventArgs e)
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Drawing2D.CustomLineCap" /> class with the specified outline and fill.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

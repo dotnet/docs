@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Runtime.Caching.Configuration.MemoryCacheElement> class defines a  element that you can use to configure the cache. Multiple instances of the <xref:System.Runtime.Caching.MemoryCache> class can be used in a single application. Each `memoryCache` element in the configuration file can contain settings for a named <xref:System.Runtime.Caching.MemoryCache> instance.  
   
- The `memoryCache` element requires a `namedCaches` child element. To define named configurations of the cache in addition to the default configuration, you can add `namedCaches` elements. For more information about how to add named cache configurations, see [\&lt;namedCaches\&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md).  
+ The `memoryCache` element requires a `namedCaches` child element. To define named configurations of the cache in addition to the default configuration, you can add `namedCaches` elements. For more information about how to add named cache configurations, see [&lt;namedCaches&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md).  
   
  ]]></format>
     </remarks>
@@ -77,7 +77,7 @@
   
  The settings for the <xref:System.Runtime.Caching.MemoryCache.CacheMemoryLimit%2A> property can be read from the `cacheMemoryLimitMegabytes` configuration attribute in the configuration file. Alternatively, the settings can be passed when the <xref:System.Runtime.Caching.MemoryCache> class is initialized.  
   
- For more information about how to configure the cache, see [\&lt;namedCaches\&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md).  
+ For more information about how to configure the cache, see [&lt;namedCaches&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md).  
   
  ]]></format>
         </remarks>
@@ -117,7 +117,7 @@
   
  In the `memoryCache` section of a configuration file, a unique cache configuration is defined by a `namedCaches` configuration collection. Each named cache entry requires a unique name in the configuration file. This value must be at least one character long.  
   
- For more information about how to configure the cache, see [\&lt;namedCaches\&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md).  
+ For more information about how to configure the cache, see [&lt;namedCaches&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md).  
   
  ]]></format>
         </remarks>
@@ -154,7 +154,7 @@
   
  The setting for the <xref:System.Runtime.Caching.MemoryCache.PhysicalMemoryLimit%2A> property can be read from `physicalMemoryLimitPercentage` configuration attribute in the application configuration file. Alternatively, the value can be passed when the <xref:System.Runtime.Caching.MemoryCache> class is initialized.  
   
- For more information about how to configure the cache, see [\&lt;namedCaches\&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md).  
+ For more information about how to configure the cache, see [&lt;namedCaches&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md).  
   
  ]]></format>
         </remarks>
@@ -189,7 +189,7 @@
 ## Remarks  
  The <xref:System.Runtime.Caching.Configuration.MemoryCacheElement.PollingInterval%2A> property corresponds to the `pollingInterval` configuration attribute of the `namedCaches` element. The settings for this configuration attribute are specified in the format `HH:MM:SS` and can be read from the `pollingInterval` configuration attribute in the application configuration. Alternatively, the value can be passed when the <xref:System.Runtime.Caching.MemoryCache> class is initialized.  
   
- For more information about how to configure the cache, see [\&lt;namedCaches\&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md).  
+ For more information about how to configure the cache, see [&lt;namedCaches&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md).  
   
  ]]></format>
         </remarks>

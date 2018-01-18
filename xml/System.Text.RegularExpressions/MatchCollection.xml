@@ -33,19 +33,19 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The collection is immutable (read-only) and has no public constructor. The <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=fullName> method returns a <xref:System.Text.RegularExpressions.MatchCollection> object.  
+ The collection is immutable (read-only) and has no public constructor. The <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> method returns a <xref:System.Text.RegularExpressions.MatchCollection> object.  
   
- The collection contains zero or more <xref:System.Text.RegularExpressions.Match?displayProperty=fullName> objects. If the match is successful, the collection is populated with one <xref:System.Text.RegularExpressions.Match?displayProperty=fullName> object for each match found in the input string. If the match is unsuccessful, the collection contains no <xref:System.Text.RegularExpressions.Match?displayProperty=fullName> objects, and its <xref:System.Text.RegularExpressions.MatchCollection.Count%2A> property equals zero.  
+ The collection contains zero or more <xref:System.Text.RegularExpressions.Match?displayProperty=nameWithType> objects. If the match is successful, the collection is populated with one <xref:System.Text.RegularExpressions.Match?displayProperty=nameWithType> object for each match found in the input string. If the match is unsuccessful, the collection contains no <xref:System.Text.RegularExpressions.Match?displayProperty=nameWithType> objects, and its <xref:System.Text.RegularExpressions.MatchCollection.Count%2A> property equals zero.  
   
  When applying a regular expression pattern to a particular input string, the regular expression engine uses either of two techniques to build the <xref:System.Text.RegularExpressions.MatchCollection> object:  
   
 -   Direct evaluation.  
   
-     The <xref:System.Text.RegularExpressions.MatchCollection> object is populated all at once, with all matches resulting from a particular call to the <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=fullName> method. This technique is used when the collection's <xref:System.Text.RegularExpressions.MatchCollection.Count%2A> property is accessed. It typically is the more expensive method of populating the collection and entails a greater performance hit.  
+     The <xref:System.Text.RegularExpressions.MatchCollection> object is populated all at once, with all matches resulting from a particular call to the <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> method. This technique is used when the collection's <xref:System.Text.RegularExpressions.MatchCollection.Count%2A> property is accessed. It typically is the more expensive method of populating the collection and entails a greater performance hit.  
   
 -   Lazy evaluation.  
   
-     The <xref:System.Text.RegularExpressions.MatchCollection> object is populated as needed on a match-by-match basis. It is equivalent to the regular expression engine calling the <xref:System.Text.RegularExpressions.Regex.Match%2A?displayProperty=fullName> method repeatedly and adding each match to the collection. This technique is used when the collection is accessed through its <xref:System.Text.RegularExpressions.MatchCollection.GetEnumerator%2A> method, or when it is accessed using the `foreach` statement (in C#) or the `For Each`...`Next` statement (in Visual Basic).  
+     The <xref:System.Text.RegularExpressions.MatchCollection> object is populated as needed on a match-by-match basis. It is equivalent to the regular expression engine calling the <xref:System.Text.RegularExpressions.Regex.Match%2A?displayProperty=nameWithType> method repeatedly and adding each match to the collection. This technique is used when the collection is accessed through its <xref:System.Text.RegularExpressions.MatchCollection.GetEnumerator%2A> method, or when it is accessed using the `foreach` statement (in C#) or the `For Each`...`Next` statement (in Visual Basic).  
   
  To iterate through the members of the collection, you should use the collection iteration construct provided by your language (such as `foreach` in C# and `For Each`…`Next` in Visual Basic) instead of retrieving the enumerator that is returned by the <xref:System.Text.RegularExpressions.MatchCollection.GetEnumerator%2A> method.  
   
@@ -98,7 +98,7 @@
  Because the collection is copied into the array starting at the given index, the destination array must be at least as large as the entire collection.  
   
 > [!WARNING]
->  This member is not present in the [!INCLUDE[net_portable](~/includes/net-portable-md.md)]. If you are developing applications that target the [!INCLUDE[net_portable](~/includes/net-portable-md.md)], use the <xref:System.Text.RegularExpressions.CaptureCollection.System%23Collections%23ICollection%23CopyTo%2A?displayProperty=fullName> method instead.  
+>  This member is not present in the [!INCLUDE[net_portable](~/includes/net-portable-md.md)]. If you are developing applications that target the [!INCLUDE[net_portable](~/includes/net-portable-md.md)], use the <xref:System.Text.RegularExpressions.CaptureCollection.System%23Collections%23ICollection%23CopyTo%2A?displayProperty=nameWithType> method instead.  
   
  Because the <xref:System.Text.RegularExpressions.MatchCollection> object is generally populated by using lazy evaluation, trying to copy the collection before it has been fully populated may throw a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. This exception can be thrown if a time-out value for matching operations is in effect, and the attempt to find a single match exceeds that time-out interval.  
   
@@ -177,7 +177,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.Text.RegularExpressions.MatchCollection.Count%2A> property to determine whether the call to the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%29?displayProperty=fullName> method found any matches. If not, it indicates that no matches were found. Otherwise, it enumerates the matches and displays their value and the position in the input string at which they were found.  
+ The following example uses the <xref:System.Text.RegularExpressions.MatchCollection.Count%2A> property to determine whether the call to the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%29?displayProperty=nameWithType> method found any matches. If not, it indicates that no matches were found. Otherwise, it enumerates the matches and displays their value and the position in the input string at which they were found.  
   
  [!code-csharp[System.Text.RegularExpressions.MatchCollection.Count#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.matchcollection.count/cs/countex1.cs#1)]
  [!code-vb[System.Text.RegularExpressions.MatchCollection.Count#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.matchcollection.count/vb/countex1.vb#1)]  
@@ -224,7 +224,7 @@
 ## Remarks  
  Instead of  calling the <xref:System.Text.RegularExpressions.MatchCollection.GetEnumerator%2A> method to retrieve an enumerator that lets you iterate through the <xref:System.Text.RegularExpressions.Match> objects in the collection, you should use the group iteration construct (such as `foreach` in C# and `For Each`…`Next` in Visual Basic) provided by your programming language.  
   
- Iterating the members of the <xref:System.Text.RegularExpressions.MatchCollection> object using the <xref:System.Text.RegularExpressions.MatchCollection.GetEnumerator%2A> method (or the `foreach` statement in C# and the `For Each`...`Next` statement in Visual Basic) causes the regular expression engine to populate the collection on an as needed basis using lazy evaluation. This is analogous to repeatedly calling the <xref:System.Text.RegularExpressions.Regex.Match%2A?displayProperty=fullName> method, and then adding the resulting match to the <xref:System.Text.RegularExpressions.MatchCollection> object. In contrast, the regular expression engine uses direct evaluation to populate the collection all at once when the <xref:System.Text.RegularExpressions.MatchCollection.Count%2A> property is accessed. This can be a much more expensive method of building the collection than lazy evaluation.  
+ Iterating the members of the <xref:System.Text.RegularExpressions.MatchCollection> object using the <xref:System.Text.RegularExpressions.MatchCollection.GetEnumerator%2A> method (or the `foreach` statement in C# and the `For Each`...`Next` statement in Visual Basic) causes the regular expression engine to populate the collection on an as needed basis using lazy evaluation. This is analogous to repeatedly calling the <xref:System.Text.RegularExpressions.Regex.Match%2A?displayProperty=nameWithType> method, and then adding the resulting match to the <xref:System.Text.RegularExpressions.MatchCollection> object. In contrast, the regular expression engine uses direct evaluation to populate the collection all at once when the <xref:System.Text.RegularExpressions.MatchCollection.Count%2A> property is accessed. This can be a much more expensive method of building the collection than lazy evaluation.  
   
  Because the <xref:System.Text.RegularExpressions.MatchCollection> object is generally populated by using lazy evaluation, trying to navigate to the next member of the collection may throw a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. This exception can be thrown if a time-out value for matching operations is in effect, and the attempt to find the next match exceeds that time-out interval.  
   
@@ -292,10 +292,11 @@
 ## Remarks  
   
 > [!WARNING]
->  This member is not present in the [!INCLUDE[net_portable](~/includes/net-portable-md.md)]. If you are developing applications that target the [!INCLUDE[net_portable](~/includes/net-portable-md.md)], use the <xref:System.Text.RegularExpressions.MatchCollection.System%23Collections%23ICollection%23IsSynchronized%2A?displayProperty=fullName> property instead.  
+>  This member is not present in the [!INCLUDE[net_portable](~/includes/net-portable-md.md)]. If you are developing applications that target the [!INCLUDE[net_portable](~/includes/net-portable-md.md)], use the <xref:System.Text.RegularExpressions.MatchCollection.System%23Collections%23ICollection%23IsSynchronized%2A?displayProperty=nameWithType> property instead.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.RegularExpressions.MatchCollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -361,6 +362,7 @@ huge
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="i" /> is less than 0 or greater than or equal to <see cref="P:System.Text.RegularExpressions.MatchCollection.Count" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred.</exception>
+        <altmember cref="P:System.Text.RegularExpressions.MatchCollection.Count" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -393,10 +395,11 @@ huge
 ## Remarks  
   
 > [!WARNING]
->  This member is not present in the [!INCLUDE[net_portable](~/includes/net-portable-md.md)]. If you are developing applications that target the [!INCLUDE[net_portable](~/includes/net-portable-md.md)], use the <xref:System.Text.RegularExpressions.MatchCollection.System%23Collections%23ICollection%23SyncRoot%2A?displayProperty=fullName> property instead.  
+>  This member is not present in the [!INCLUDE[net_portable](~/includes/net-portable-md.md)]. If you are developing applications that target the [!INCLUDE[net_portable](~/includes/net-portable-md.md)], use the <xref:System.Text.RegularExpressions.MatchCollection.System%23Collections%23ICollection%23SyncRoot%2A?displayProperty=nameWithType> property instead.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.RegularExpressions.MatchCollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Text.RegularExpressions.Match&gt;.Add">

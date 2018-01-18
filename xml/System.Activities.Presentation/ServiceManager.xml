@@ -467,5 +467,14 @@
           <paramref name="callback" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Publish">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Publishes the given service type, but does not declare an instance. When the service is requested, the Publish service callback will be invoked to create the instance. The callback is invoked only once. After that, the instance it returned is cached.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

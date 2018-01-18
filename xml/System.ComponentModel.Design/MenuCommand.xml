@@ -62,6 +62,9 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+    <altmember cref="T:System.ComponentModel.Design.StandardCommands" />
+    <altmember cref="T:System.ComponentModel.Design.IMenuCommandService" />
+    <altmember cref="T:System.ComponentModel.Design.CommandID" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -102,6 +105,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.IMenuCommandService" />
+        <altmember cref="T:System.ComponentModel.Design.CommandID" />
       </Docs>
     </Member>
     <Member MemberName="Checked">
@@ -190,6 +195,7 @@
         <summary>Gets the <see cref="T:System.ComponentModel.Design.CommandID" /> associated with this menu command.</summary>
         <value>The <see cref="T:System.ComponentModel.Design.CommandID" /> associated with the menu command.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.Design.CommandID" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -500,5 +506,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Invoke">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the command.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

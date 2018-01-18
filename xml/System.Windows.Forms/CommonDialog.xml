@@ -82,6 +82,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.CommonDialog.OnHelpRequest(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="HookProc">
@@ -118,9 +119,9 @@
  By default, the hook procedure centers the dialog box on the screen in response to a WM_INITDIALOG message.  
   
 > [!NOTE]
->  This method uses <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> to prevent it from being called from untrusted code; only the immediate caller is required to have <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A?displayProperty=fullName> permission. If your code can be called from partially trusted code, do not pass user input to <xref:System.Runtime.InteropServices.Marshal> class methods without validation. For important limitations on using the `LinkDemand` member, see [Demand vs. LinkDemand](http://msdn.microsoft.com/en-us/1ab877f2-70f4-4e0d-8116-943999dfe8f5).  
+>  This method uses <xref:System.Security.Permissions.SecurityAction.LinkDemand?displayProperty=nameWithType> to prevent it from being called from untrusted code; only the immediate caller is required to have <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A?displayProperty=nameWithType> permission. If your code can be called from partially trusted code, do not pass user input to <xref:System.Runtime.InteropServices.Marshal> class methods without validation. For important limitations on using the `LinkDemand` member, see [Demand vs. LinkDemand](http://msdn.microsoft.com/en-us/1ab877f2-70f4-4e0d-8116-943999dfe8f5).  
   
- This property also uses the <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> security attribute; to override this member, the derived class must have the `CustomPermission` permission.  
+ This property also uses the <xref:System.Security.Permissions.SecurityAction.InheritanceDemand?displayProperty=nameWithType> security attribute; to override this member, the derived class must have the `CustomPermission` permission.  
   
    
   
@@ -254,6 +255,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for unmanaged code to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:System.Windows.Forms.CommonDialog.ShowDialog" />
+        <altmember cref="M:System.Windows.Forms.CommonDialog.HookProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="ShowDialog">
@@ -292,6 +295,8 @@
         </remarks>
         <permission cref="T:System.Drawing.Printing.PrintingPermission">to print from a <see cref="T:System.Windows.Forms.PrintDialog" />. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.SafePrinting" /></permission>
         <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
+        <altmember cref="M:System.Windows.Forms.CommonDialog.RunDialog(System.IntPtr)" />
+        <altmember cref="T:System.Windows.Forms.DialogResult" />
       </Docs>
     </Member>
     <Member MemberName="ShowDialog">
@@ -365,5 +370,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ShowDialog">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Runs a common dialog box.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

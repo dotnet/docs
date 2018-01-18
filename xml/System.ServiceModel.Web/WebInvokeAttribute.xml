@@ -55,7 +55,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebGetAttribute" /> class.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebInvokeAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,7 +111,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the <see cref="P:System.ServiceModel.Web.WebInvokeAttribute.IsBodyStyleSetExplicitly" /> property.</summary>
-        <value>A value that specifies whether the <see cref="P:System.ServiceModel.Web.WebGetAttribute.BodyStyle" /> property was set explicitly.</value>
+        <value>A value that specifies whether the <see cref="P:System.ServiceModel.Web.WebInvokeAttribute.BodyStyle" /> property was set explicitly.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -137,7 +137,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the <see cref="P:System.ServiceModel.Web.WebInvokeAttribute.IsRequestFormatSetExplicitly" /> property.</summary>
-        <value>A value that specifies whether the <see cref="P:System.ServiceModel.Web.WebGetAttribute.RequestFormat" /> property was set.</value>
+        <value>A value that specifies whether the <see cref="P:System.ServiceModel.Web.WebInvokeAttribute.RequestFormat" /> property was set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -163,7 +163,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the <see cref="P:System.ServiceModel.Web.WebInvokeAttribute.IsResponseFormatSetExplicitly" /> property.</summary>
-        <value>A value that specifies whether the <see cref="P:System.ServiceModel.Web.WebGetAttribute.ResponseFormat" /> property was set.</value>
+        <value>A value that specifies whether the <see cref="P:System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat" /> property was set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

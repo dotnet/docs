@@ -57,6 +57,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.Label" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -132,7 +133,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Windows.FrameworkElement.ArrangeOverride%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Windows.FrameworkElement.ArrangeOverride%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -223,7 +224,7 @@
 ## Remarks  
  The baseline is the imaginary horizontal line with which the base of each character in a line of text is aligned.  
   
- This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is `<`*object* <xref:System.Windows.Controls.TextBlock.BaselineOffset%2A?displayProperty=fullName>`="`*double*`".../>`, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Controls.TextBlock>. In code, the attached property usage is supported by <xref:System.Windows.Controls.TextBlock.GetBaselineOffset%2A> and <xref:System.Windows.Controls.TextBlock.SetBaselineOffset%2A>.  
+ This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is `<`*object* <xref:System.Windows.Controls.TextBlock.BaselineOffset%2A?displayProperty=nameWithType>`="`*double*`".../>`, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Controls.TextBlock>. In code, the attached property usage is supported by <xref:System.Windows.Controls.TextBlock.GetBaselineOffset%2A> and <xref:System.Windows.Controls.TextBlock.SetBaselineOffset%2A>.  
   
  ]]></format>
         </remarks>
@@ -269,6 +270,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.TextBlock.BreakBefore" />
       </Docs>
     </Member>
     <Member MemberName="BreakBefore">
@@ -294,6 +296,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.TextBlock.BreakAfter" />
       </Docs>
     </Member>
     <Member MemberName="ContentEnd">
@@ -321,6 +324,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.TextBlock.ContentStart" />
       </Docs>
     </Member>
     <Member MemberName="ContentStart">
@@ -348,6 +352,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.TextBlock.ContentEnd" />
       </Docs>
     </Member>
     <Member MemberName="FontFamily">
@@ -380,7 +385,7 @@
   
  This property specifies a preference only.  If the specified font family is not available, the <xref:System.Windows.Controls.TextBlock> silently falls back to the font determined by the <xref:System.Windows.SystemFonts.MessageFontFamily%2A> value.  
   
- This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is `<`*object* <xref:System.Windows.Controls.TextBlock.FontFamily%2A?displayProperty=fullName>`="`*value*`".../>`, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Controls.TextBlock>, and *value* is one of the string-format values as explained in XAML Values. In code, the attached property usage is supported by <xref:System.Windows.Controls.TextBlock.GetFontFamily%2A> and <xref:System.Windows.Controls.TextBlock.SetFontFamily%2A>. The attached property usage is not common, because most elements that can be contained in a <xref:System.Windows.Controls.TextBlock> support an analogous nonattached `FontFamily` property, which the <xref:System.Windows.Controls.TextBlock> uses for rendering.  
+ This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is `<`*object* <xref:System.Windows.Controls.TextBlock.FontFamily%2A?displayProperty=nameWithType>`="`*value*`".../>`, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Controls.TextBlock>, and *value* is one of the string-format values as explained in XAML Values. In code, the attached property usage is supported by <xref:System.Windows.Controls.TextBlock.GetFontFamily%2A> and <xref:System.Windows.Controls.TextBlock.SetFontFamily%2A>. The attached property usage is not common, because most elements that can be contained in a <xref:System.Windows.Controls.TextBlock> support an analogous nonattached `FontFamily` property, which the <xref:System.Windows.Controls.TextBlock> uses for rendering.  
   
 <a name="xamlAttributeUsage_FontFamily"></a>   
 ## XAML Attribute Usage  
@@ -479,7 +484,7 @@
 ## Remarks  
  Any <xref:System.Windows.Controls.TextBlock.FontSize%2A> settings on child elements override this top-level setting.  
   
- This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is `<`*object* <xref:System.Windows.Controls.TextBlock.FontSize%2A?displayProperty=fullName>`="`*value*`".../>`, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Controls.TextBlock>, and *value* is one of the string-format values as explained in XAML Values. In code, the attached property usage is supported by <xref:System.Windows.Controls.TextBlock.GetFontSize%2A> and <xref:System.Windows.Controls.TextBlock.SetFontSize%2A>. The attached property usage is not common, because most elements that can be contained in a <xref:System.Windows.Controls.TextBlock> support an analogous nonattached `FontSize` property, which the <xref:System.Windows.Controls.TextBlock> uses for rendering.  
+ This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is `<`*object* <xref:System.Windows.Controls.TextBlock.FontSize%2A?displayProperty=nameWithType>`="`*value*`".../>`, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Controls.TextBlock>, and *value* is one of the string-format values as explained in XAML Values. In code, the attached property usage is supported by <xref:System.Windows.Controls.TextBlock.GetFontSize%2A> and <xref:System.Windows.Controls.TextBlock.SetFontSize%2A>. The attached property usage is not common, because most elements that can be contained in a <xref:System.Windows.Controls.TextBlock> support an analogous nonattached `FontSize` property, which the <xref:System.Windows.Controls.TextBlock> uses for rendering.  
   
 <a name="xamlAttributeUsage_FontSize"></a>   
 ## XAML Attribute Usage  
@@ -570,7 +575,7 @@
 ## Remarks  
  Any <xref:System.Windows.Controls.TextBlock.FontStretch%2A> settings on child elements override this top-level setting.  
   
- This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is `<`*object* <xref:System.Windows.Controls.TextBlock.FontStretch%2A?displayProperty=fullName>`="`*value*`".../>`, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Controls.TextBlock>, and *value* is one of the string-format property names of the <xref:System.Windows.FontStretch> class. In code, the attached property usage is supported by <xref:System.Windows.Controls.TextBlock.GetFontStretch%2A> and <xref:System.Windows.Controls.TextBlock.SetFontStretch%2A>. The attached property usage is not common, because most elements that can be contained in a <xref:System.Windows.Controls.TextBlock> support an analogous nonattached `FontStretch` property, which the <xref:System.Windows.Controls.TextBlock> uses for rendering.  
+ This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is `<`*object* <xref:System.Windows.Controls.TextBlock.FontStretch%2A?displayProperty=nameWithType>`="`*value*`".../>`, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Controls.TextBlock>, and *value* is one of the string-format property names of the <xref:System.Windows.FontStretch> class. In code, the attached property usage is supported by <xref:System.Windows.Controls.TextBlock.GetFontStretch%2A> and <xref:System.Windows.Controls.TextBlock.SetFontStretch%2A>. The attached property usage is not common, because most elements that can be contained in a <xref:System.Windows.Controls.TextBlock> support an analogous nonattached `FontStretch` property, which the <xref:System.Windows.Controls.TextBlock> uses for rendering.  
   
 <a name="dependencyPropertyInfo_FontStretch"></a>   
 ## Dependency Property Information  
@@ -634,7 +639,7 @@
 ## Remarks  
  Any <xref:System.Windows.Controls.TextBlock.FontStyle%2A> settings on child elements override this top-level setting.  
   
- This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is `<`*object* <xref:System.Windows.Controls.TextBlock.FontStyle%2A?displayProperty=fullName>`="`*value*`".../>`, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Controls.TextBlock>, and *value* is one of the string-format property names in the <xref:System.Windows.FontStyles> class. In code, the attached property usage is supported by <xref:System.Windows.Controls.TextBlock.GetFontStyle%2A> and <xref:System.Windows.Controls.TextBlock.SetFontStyle%2A>. The attached property usage is not common, because most elements that can be contained in a <xref:System.Windows.Controls.TextBlock> support an analogous nonattached `FontStyle` property, which the <xref:System.Windows.Controls.TextBlock> uses for rendering.  
+ This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is `<`*object* <xref:System.Windows.Controls.TextBlock.FontStyle%2A?displayProperty=nameWithType>`="`*value*`".../>`, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Controls.TextBlock>, and *value* is one of the string-format property names in the <xref:System.Windows.FontStyles> class. In code, the attached property usage is supported by <xref:System.Windows.Controls.TextBlock.GetFontStyle%2A> and <xref:System.Windows.Controls.TextBlock.SetFontStyle%2A>. The attached property usage is not common, because most elements that can be contained in a <xref:System.Windows.Controls.TextBlock> support an analogous nonattached `FontStyle` property, which the <xref:System.Windows.Controls.TextBlock> uses for rendering.  
   
 <a name="dependencyPropertyInfo_FontStyle"></a>   
 ## Dependency Property Information  
@@ -700,7 +705,7 @@
   
  For a list of valid values of font weights, see the <xref:System.Windows.FontWeights> class.  
   
- This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is `<`*object* <xref:System.Windows.Controls.TextBlock.FontWeight%2A?displayProperty=fullName>`="`*value*`".../>`, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Controls.TextBlock>, and *value* is one of the string-format values of a property of the <xref:System.Windows.FontWeights> class. In code, the attached property usage is supported by <xref:System.Windows.Controls.TextBlock.GetFontWeight%2A> and <xref:System.Windows.Controls.TextBlock.SetFontWeight%2A>. The attached property usage is not common, because most elements that can be contained in a <xref:System.Windows.Controls.TextBlock> support an analogous nonattached `FontWeight` property, which the <xref:System.Windows.Controls.TextBlock> uses for rendering.  
+ This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is `<`*object* <xref:System.Windows.Controls.TextBlock.FontWeight%2A?displayProperty=nameWithType>`="`*value*`".../>`, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Controls.TextBlock>, and *value* is one of the string-format values of a property of the <xref:System.Windows.FontWeights> class. In code, the attached property usage is supported by <xref:System.Windows.Controls.TextBlock.GetFontWeight%2A> and <xref:System.Windows.Controls.TextBlock.SetFontWeight%2A>. The attached property usage is not common, because most elements that can be contained in a <xref:System.Windows.Controls.TextBlock> support an analogous nonattached `FontWeight` property, which the <xref:System.Windows.Controls.TextBlock> uses for rendering.  
   
 <a name="dependencyPropertyInfo_FontWeight"></a>   
 ## Dependency Property Information  
@@ -766,7 +771,7 @@
   
  Any <xref:System.Windows.Controls.TextBlock.Foreground%2A> settings on child elements override this top-level setting.  
   
- This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is `<`*object* <xref:System.Windows.Controls.TextBlock.Foreground%2A?displayProperty=fullName>`="`*value*`".../>`, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Controls.TextBlock>, and *value* is a string that resolves to a <xref:System.Windows.Media.Brush> implementation value. In code, the attached property usage is supported by <xref:System.Windows.Controls.TextBlock.GetForeground%2A> and <xref:System.Windows.Controls.TextBlock.SetForeground%2A>. The attached property usage is not common, because most elements that can be contained in a <xref:System.Windows.Controls.TextBlock> support an analogous nonattached `Foreground` property, which the <xref:System.Windows.Controls.TextBlock> uses for rendering.  
+ This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is `<`*object* <xref:System.Windows.Controls.TextBlock.Foreground%2A?displayProperty=nameWithType>`="`*value*`".../>`, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Controls.TextBlock>, and *value* is a string that resolves to a <xref:System.Windows.Media.Brush> implementation value. In code, the attached property usage is supported by <xref:System.Windows.Controls.TextBlock.GetForeground%2A> and <xref:System.Windows.Controls.TextBlock.SetForeground%2A>. The attached property usage is not common, because most elements that can be contained in a <xref:System.Windows.Controls.TextBlock> support an analogous nonattached `Foreground` property, which the <xref:System.Windows.Controls.TextBlock> uses for rendering.  
   
 <a name="dependencyPropertyInfo_Foreground"></a>   
 ## Dependency Property Information  
@@ -831,6 +836,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Controls.TextBlock.SetBaselineOffset(System.Windows.DependencyObject,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="GetFontFamily">
@@ -855,6 +861,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Controls.TextBlock.SetFontFamily(System.Windows.DependencyObject,System.Windows.Media.FontFamily)" />
       </Docs>
     </Member>
     <Member MemberName="GetFontSize">
@@ -884,6 +891,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Controls.TextBlock.SetFontSize(System.Windows.DependencyObject,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="GetFontStretch">
@@ -908,6 +916,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Controls.TextBlock.SetFontStretch(System.Windows.DependencyObject,System.Windows.FontStretch)" />
       </Docs>
     </Member>
     <Member MemberName="GetFontStyle">
@@ -932,6 +941,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Controls.TextBlock.SetFontStyle(System.Windows.DependencyObject,System.Windows.FontStyle)" />
       </Docs>
     </Member>
     <Member MemberName="GetFontWeight">
@@ -956,6 +966,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Controls.TextBlock.SetFontWeight(System.Windows.DependencyObject,System.Windows.FontWeight)" />
       </Docs>
     </Member>
     <Member MemberName="GetForeground">
@@ -980,6 +991,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Controls.TextBlock.SetForeground(System.Windows.DependencyObject,System.Windows.Media.Brush)" />
       </Docs>
     </Member>
     <Member MemberName="GetLineHeight">
@@ -1009,6 +1021,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Controls.TextBlock.SetLineHeight(System.Windows.DependencyObject,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="GetLineStackingStrategy">
@@ -1033,6 +1046,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Controls.TextBlock.SetLineStackingStrategy(System.Windows.DependencyObject,System.Windows.LineStackingStrategy)" />
       </Docs>
     </Member>
     <Member MemberName="GetPositionFromPoint">
@@ -1121,6 +1135,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Controls.TextBlock.SetTextAlignment(System.Windows.DependencyObject,System.Windows.TextAlignment)" />
       </Docs>
     </Member>
     <Member MemberName="GetVisualChild">
@@ -1146,7 +1161,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Windows.FrameworkElement.GetVisualChild%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Windows.FrameworkElement.GetVisualChild%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1179,7 +1194,7 @@
 ## Remarks  
  This method is intended to enable precise hit testing for rendered content.  
   
- This method overrides <xref:System.Windows.UIElement.HitTestCore%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Windows.UIElement.HitTestCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1289,6 +1304,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.FlowDocument.IsHyphenationEnabled" />
       </Docs>
     </Member>
     <Member MemberName="IsHyphenationEnabledProperty">
@@ -1336,7 +1352,7 @@
   
  In addition to this property, the layout of lines in a <xref:System.Windows.Controls.TextBlock> is affected by its <xref:System.Windows.Controls.TextBlock.LineStackingStrategy%2A> property.  
   
- This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is `<`*object* <xref:System.Windows.Controls.TextBlock.LineHeight%2A?displayProperty=fullName>`="`*value*`".../>`, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Controls.TextBlock>, and *value* is a string as explained in XAML Values. In code, the attached property usage is supported by <xref:System.Windows.Controls.TextBlock.GetLineHeight%2A> and <xref:System.Windows.Controls.TextBlock.SetLineHeight%2A>. The attached property usage is not common.  
+ This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is `<`*object* <xref:System.Windows.Controls.TextBlock.LineHeight%2A?displayProperty=nameWithType>`="`*value*`".../>`, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Controls.TextBlock>, and *value* is a string as explained in XAML Values. In code, the attached property usage is supported by <xref:System.Windows.Controls.TextBlock.GetLineHeight%2A> and <xref:System.Windows.Controls.TextBlock.SetLineHeight%2A>. The attached property usage is not common.  
   
 <a name="xamlAttributeUsage_LineHeight"></a>   
 ## XAML Attribute Usage  
@@ -1368,7 +1384,7 @@
  `pt` is points; 1pt==(96/72) px  
   
  Auto  
- Causes the line height to be determined automatically from the current font characteristics.  Equivalent to a property value of <xref:System.Double.NaN?displayProperty=fullName>.  
+ Causes the line height to be determined automatically from the current font characteristics.  Equivalent to a property value of <xref:System.Double.NaN?displayProperty=nameWithType>.  
   
 <a name="dependencyPropertyInfo_LineHeight"></a>   
 ## Dependency Property Information  
@@ -1394,6 +1410,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <see cref="P:System.Windows.Controls.TextBlock.LineHeight" /> is set to a non-positive value.</exception>
+        <altmember cref="P:System.Windows.Documents.FlowDocument.LineHeight" />
       </Docs>
     </Member>
     <Member MemberName="LineHeightProperty">
@@ -1432,7 +1449,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is `<`*object* <xref:System.Windows.Controls.TextBlock.LineStackingStrategy%2A?displayProperty=fullName>`="`*value*`".../>`, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Controls.TextBlock>, and *value* is a string value of the <xref:System.Windows.LineStackingStrategy> enumeration. In code, the attached property usage is supported by <xref:System.Windows.Controls.TextBlock.GetLineStackingStrategy%2A> and <xref:System.Windows.Controls.TextBlock.SetLineStackingStrategy%2A>. The attached property usage is not common.  
+ This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is `<`*object* <xref:System.Windows.Controls.TextBlock.LineStackingStrategy%2A?displayProperty=nameWithType>`="`*value*`".../>`, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Controls.TextBlock>, and *value* is a string value of the <xref:System.Windows.LineStackingStrategy> enumeration. In code, the attached property usage is supported by <xref:System.Windows.Controls.TextBlock.GetLineStackingStrategy%2A> and <xref:System.Windows.Controls.TextBlock.SetLineStackingStrategy%2A>. The attached property usage is not common.  
   
 <a name="dependencyPropertyInfo_LineStackingStrategy"></a>   
 ## Dependency Property Information  
@@ -1517,7 +1534,7 @@
 ## Remarks  
  Override this method to implement custom sizing behavior.  
   
- This method overrides <xref:System.Windows.FrameworkElement.MeasureOverride%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Windows.FrameworkElement.MeasureOverride%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1564,7 +1581,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Windows.ContentElement.OnCreateAutomationPeer%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Windows.ContentElement.OnCreateAutomationPeer%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1592,10 +1609,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Windows.FrameworkElement.OnPropertyChanged%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Windows.FrameworkElement.OnPropertyChanged%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.DependencyPropertyChangedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="OnRender">
@@ -1754,6 +1772,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Controls.TextBlock.GetBaselineOffset(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetFontFamily">
@@ -1779,6 +1798,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Controls.TextBlock.GetFontFamily(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetFontSize">
@@ -1804,6 +1824,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Controls.TextBlock.GetFontSize(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetFontStretch">
@@ -1829,6 +1850,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Controls.TextBlock.GetFontStretch(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetFontStyle">
@@ -1854,6 +1876,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Controls.TextBlock.GetFontStyle(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetFontWeight">
@@ -1879,6 +1902,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Controls.TextBlock.GetFontWeight(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetForeground">
@@ -1904,6 +1928,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Controls.TextBlock.GetForeground(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetLineHeight">
@@ -1931,6 +1956,7 @@
           <paramref name="element" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <see cref="P:System.Windows.Controls.TextBlock.LineHeight" /> is set to a non-positive value.</exception>
+        <altmember cref="M:System.Windows.Controls.TextBlock.GetLineHeight(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetLineStackingStrategy">
@@ -1956,6 +1982,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Controls.TextBlock.SetFontSize(System.Windows.DependencyObject,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="SetTextAlignment">
@@ -1981,6 +2008,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Controls.TextBlock.GetTextAlignment(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeBaselineOffset">
@@ -2281,7 +2309,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is `<`*object* <xref:System.Windows.Controls.TextBlock.TextAlignment%2A?displayProperty=fullName>`="`*value*`".../>`, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Controls.TextBlock>, and *value* is a string value of the <xref:System.Windows.TextAlignment> enumeration. In code, the attached property usage is supported by <xref:System.Windows.Controls.TextBlock.GetTextAlignment%2A> and <xref:System.Windows.Controls.TextBlock.SetTextAlignment%2A>. The attached property usage is not common.  
+ This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is `<`*object* <xref:System.Windows.Controls.TextBlock.TextAlignment%2A?displayProperty=nameWithType>`="`*value*`".../>`, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Controls.TextBlock>, and *value* is a string value of the <xref:System.Windows.TextAlignment> enumeration. In code, the attached property usage is supported by <xref:System.Windows.Controls.TextBlock.GetTextAlignment%2A> and <xref:System.Windows.Controls.TextBlock.SetTextAlignment%2A>. The attached property usage is not common.  
   
 <a name="dependencyPropertyInfo_TextAlignment"></a>   
 ## Dependency Property Information  
@@ -2305,6 +2333,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.FlowDocument.TextAlignment" />
       </Docs>
     </Member>
     <Member MemberName="TextAlignmentProperty">
@@ -2620,6 +2649,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.FlowDocument.Typography" />
       </Docs>
     </Member>
     <Member MemberName="VisualChildrenCount">
@@ -2640,5 +2670,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.TextBlock" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

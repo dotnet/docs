@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is used by the protected <xref:System.Windows.Forms.DataGridViewCell.Paint%2A?displayProperty=fullName> method and by handlers for the <xref:System.Windows.Forms.DataGridView.CellPainting>, <xref:System.Windows.Forms.DataGridView.RowPrePaint>, and <xref:System.Windows.Forms.DataGridView.RowPostPaint> events of the <xref:System.Windows.Forms.DataGridView> control.  
+ This enumeration is used by the protected <xref:System.Windows.Forms.DataGridViewCell.Paint%2A?displayProperty=nameWithType> method and by handlers for the <xref:System.Windows.Forms.DataGridView.CellPainting>, <xref:System.Windows.Forms.DataGridView.RowPrePaint>, and <xref:System.Windows.Forms.DataGridView.RowPostPaint> events of the <xref:System.Windows.Forms.DataGridView> control.  
   
    
   
@@ -32,6 +32,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellPainting" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.RowPrePaint" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.RowPostPaint" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+    <altmember cref="M:System.Windows.Forms.DataGridViewCell.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DataGridViewElementStates,System.Object,System.Object,System.String,System.Windows.Forms.DataGridViewCellStyle,System.Windows.Forms.DataGridViewAdvancedBorderStyle,System.Windows.Forms.DataGridViewPaintParts)" />
   </Docs>
   <Members>
     <Member MemberName="All">

@@ -1,45 +1,26 @@
 ---
 title: "Stop Statement (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Stop"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "breakpoints, Stop statements"
-  - "Stop statements, syntax"
-  - "Stop statements"
-  - "execution, suspending"
+  - "Stop statements [Visual Basic], syntax"
+  - "Stop statements [Visual Basic]"
+  - "execution [Visual Basic], suspending"
   - "processing, interrupting"
   - "processes, interrupting"
-  - "execution, stopping"
+  - "execution [Visual Basic], stopping"
 ms.assetid: c9a9fde0-d649-4662-9bef-bd0146ebc2a7
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Stop Statement (Visual Basic)
 Suspends execution.  

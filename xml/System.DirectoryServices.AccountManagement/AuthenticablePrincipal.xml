@@ -22,6 +22,7 @@
   <Docs>
     <summary>Encapsulates the account and contact data common to principals that can be authenticated.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="N:System.DirectoryServices.AccountManagement" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -39,6 +40,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -65,6 +67,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -97,6 +100,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="AccountExpirationDate">
@@ -126,6 +130,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="AccountLockoutTime">
@@ -157,6 +162,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="AdvancedSearchFilter">
@@ -183,6 +189,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <altmember cref="T:System.DirectoryServices.AccountManagement.AdvancedFilters" />
       </Docs>
     </Member>
     <Member MemberName="AllowReversiblePasswordEncryption">
@@ -204,6 +212,7 @@
           <see langword="true" /> if reversible password encryption is enabled for this account; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="BadLogonCount">
@@ -224,6 +233,7 @@
         <value>The number of logon attempts using incorrect credentials for this account.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Certificates">
@@ -244,6 +254,7 @@
         <value>A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2Collection" /> that contains the X509 certificates for this account.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="ChangePassword">
@@ -278,6 +289,7 @@
         <exception cref="T:System.InvalidOperationException">The principal has not been persisted.</exception>
         <exception cref="T:System.DirectoryServices.AccountManagement.PasswordException">The new password does not meet the complexity requirements.</exception>
         <exception cref="T:System.NotSupportedException">The principal is not a user.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="DelegationPermitted">
@@ -299,6 +311,7 @@
           <see langword="true" /> if the account may be delegated; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -328,6 +341,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <exception cref="T:System.ArgumentNullException">The application tried to set a null value for this property.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="ExpirePasswordNow">
@@ -355,6 +369,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException">An exception occurred when saving the changes to the store.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="FindByBadPasswordAttempt">
@@ -389,6 +404,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="FindByBadPasswordAttempt&lt;T&gt;">
@@ -423,10 +439,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="FindByExpirationTime">
@@ -457,10 +474,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="FindByExpirationTime&lt;T&gt;">
@@ -495,10 +513,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="FindByLockoutTime">
@@ -529,10 +548,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="FindByLockoutTime&lt;T&gt;">
@@ -567,10 +587,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="FindByLogonTime">
@@ -601,7 +622,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.  
   
    
   
@@ -634,6 +655,7 @@ ctx.Dispose();
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="FindByLogonTime&lt;T&gt;">
@@ -668,10 +690,11 @@ ctx.Dispose();
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="FindByPasswordSetTime">
@@ -702,10 +725,11 @@ ctx.Dispose();
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="FindByPasswordSetTime&lt;T&gt;">
@@ -740,10 +764,11 @@ ctx.Dispose();
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="HomeDirectory">
@@ -764,6 +789,7 @@ ctx.Dispose();
         <value>The home directory for this account, or null if no home directory exists.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="HomeDrive">
@@ -784,6 +810,7 @@ ctx.Dispose();
         <value>The home drive for the account, or null if no home drive exists.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="IsAccountLockedOut">
@@ -812,6 +839,7 @@ ctx.Dispose();
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="LastBadPasswordAttempt">
@@ -839,6 +867,7 @@ ctx.Dispose();
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="LastLogon">
@@ -866,6 +895,7 @@ ctx.Dispose();
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="LastPasswordSet">
@@ -893,6 +923,7 @@ ctx.Dispose();
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="PasswordNeverExpires">
@@ -914,6 +945,7 @@ ctx.Dispose();
           <see langword="true" /> if the password expires for this account; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="PasswordNotRequired">
@@ -935,6 +967,7 @@ ctx.Dispose();
           <see langword="true" /> if a password is required for this account; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="PermittedLogonTimes">
@@ -955,6 +988,7 @@ ctx.Dispose();
         <value>The permitted logon times for this account.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="PermittedWorkstations">
@@ -975,6 +1009,7 @@ ctx.Dispose();
         <value>The mutable list of workstations that this principal is permitted to log into.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="RefreshExpiredPassword">
@@ -995,6 +1030,7 @@ ctx.Dispose();
         <summary>Refreshes an expired password.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException">An exception occurred when saving the changes to the store.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="ScriptPath">
@@ -1015,6 +1051,7 @@ ctx.Dispose();
         <value>A path of the script for this account, or null if there is no script path.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="SetPassword">
@@ -1038,6 +1075,7 @@ ctx.Dispose();
         <summary>Sets the account password to the specified value.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.AccountManagement.PasswordException">Throws an exception if the caller does not have appropriate rights, the new password does not meet password complexity requirements, or for any other reason that the underlying stores reject the password change.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="SmartcardLogonRequired">
@@ -1059,6 +1097,7 @@ ctx.Dispose();
           <see langword="true" /> if a smartcard is required to log on to this account; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="UnlockAccount">
@@ -1106,6 +1145,7 @@ ctx.Dispose();
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException">An exception occurred when saving the changes to the store.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="UserCannotChangePassword">
@@ -1135,6 +1175,7 @@ ctx.Dispose();
         </remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <exception cref="T:System.NotSupportedException">This principal object is not a user.</exception>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
   </Members>

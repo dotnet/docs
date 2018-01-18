@@ -252,6 +252,7 @@
  -or-  
   
  The <paramref name="entitySetName" /> does not qualify.</exception>
+        <altmember cref="M:System.Data.Objects.ObjectSet`1.AddObject(`0)" />
       </Docs>
     </Member>
     <Member MemberName="ApplyCurrentValues&lt;TEntity&gt;">
@@ -308,6 +309,8 @@
  The entity key of the supplied object is invalid.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="entitySetName" /> is an empty string.</exception>
+        <altmember cref="M:System.Data.Objects.ObjectSet`1.ApplyCurrentValues(`0)" />
+        <altmember cref="M:System.Data.Objects.ObjectStateEntry.ApplyCurrentValues(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ApplyOriginalValues&lt;TEntity&gt;">
@@ -366,6 +369,8 @@
  The entity key of the supplied object is invalid or has property changes.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="entitySetName" /> is an empty string.</exception>
+        <altmember cref="M:System.Data.Objects.ObjectSet`1.ApplyOriginalValues(`0)" />
+        <altmember cref="M:System.Data.Objects.ObjectStateEntry.ApplyOriginalValues(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ApplyPropertyChanges">
@@ -486,6 +491,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="entity" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">Invalid entity key.</exception>
+        <altmember cref="M:System.Data.Objects.ObjectSet`1.Attach(`0)" />
       </Docs>
     </Member>
     <Member MemberName="AttachTo">
@@ -558,6 +564,7 @@
  -or-  
   
  Any object from the object graph already exists in another state manager.</exception>
+        <altmember cref="M:System.Data.Objects.ObjectSet`1.Attach(`0)" />
       </Docs>
     </Member>
     <Member MemberName="CommandTimeout">
@@ -675,6 +682,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.Objects.ObjectContext.CreateDatabaseScript" />
+        <altmember cref="M:System.Data.Objects.ObjectContext.DatabaseExists" />
       </Docs>
     </Member>
     <Member MemberName="CreateDatabaseScript">
@@ -705,6 +714,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.Objects.ObjectContext.CreateDatabase" />
+        <altmember cref="M:System.Data.Objects.ObjectContext.DatabaseExists" />
       </Docs>
     </Member>
     <Member MemberName="CreateEntityKey">
@@ -895,7 +906,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateQuery&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;T&gt; CreateQuery&lt;T&gt; (string queryString, System.Data.Objects.ObjectParameter[] parameters);" />
+      <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;T&gt; CreateQuery&lt;T&gt; (string queryString, params System.Data.Objects.ObjectParameter[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectQuery`1&lt;!!T&gt; CreateQuery&lt;T&gt;(string queryString, class System.Data.Objects.ObjectParameter[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.CreateQuery``1(System.String,System.Data.Objects.ObjectParameter[])" />
       <MemberType>Method</MemberType>
@@ -973,6 +984,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.Objects.ObjectContext.CreateDatabase" />
+        <altmember cref="M:System.Data.Objects.ObjectContext.CreateDatabaseScript" />
       </Docs>
     </Member>
     <Member MemberName="DefaultContainerName">
@@ -1027,6 +1040,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.Objects.ObjectContext.CreateDatabase" />
+        <altmember cref="M:System.Data.Objects.ObjectContext.CreateDatabaseScript" />
+        <altmember cref="M:System.Data.Objects.ObjectContext.DatabaseExists" />
       </Docs>
     </Member>
     <Member MemberName="DeleteObject">
@@ -1078,6 +1094,7 @@
           <paramref name="entity" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="entity" /> does not exist.</exception>
+        <altmember cref="M:System.Data.Objects.ObjectSet`1.DeleteObject(`0)" />
       </Docs>
     </Member>
     <Member MemberName="Detach">
@@ -1129,6 +1146,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="entity" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <paramref name="entity" /> is not associated with this <see cref="T:System.Data.Objects.ObjectContext" /> (for example, was newly created and not associated with any context yet, or was obtained through some other context, or was already detached).</exception>
+        <altmember cref="M:System.Data.Objects.ObjectSet`1.Detach(`0)" />
       </Docs>
     </Member>
     <Member MemberName="DetectChanges">
@@ -1168,7 +1186,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method closes the connection if it was opened by the Entity Framework. After <xref:System.Data.Objects.ObjectContext.Dispose%2A> is called, operations that require an open connection, such as executing a query or calling the<xref:System.Data.Objects.ObjectQuery.ToTraceString%2A> method, will cause an exception. Operations that do not require an open connection, such as composing a query or attaching objects, will not cause an exception. The <xref:System.Data.Objects.ObjectContext.Dispose%2A> method does not close any explicitly opened connections.  
+ This method closes the connection if it was opened by the Entity Framework. After <xref:System.Data.Objects.ObjectContext.Dispose%2A> is called, operations that require an open connection, such as executing a query or calling the <xref:System.Data.Objects.ObjectQuery.ToTraceString%2A> method, will cause an exception. Operations that do not require an open connection, such as composing a query or attaching objects, will not cause an exception. The <xref:System.Data.Objects.ObjectContext.Dispose%2A> method does not close any explicitly opened connections.  
   
  Limiting the scope of an <xref:System.Data.Objects.ObjectContext> within a `using` block (`Using` in Visual Basic) ensures that resources are correctly disposed. For more information, see [Managing Connections and Transactions](http://msdn.microsoft.com/en-us/b6659d2a-9a45-4e98-acaa-d7a8029e5b99).  
   
@@ -1210,7 +1228,7 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteFunction">
-      <MemberSignature Language="C#" Value="public int ExecuteFunction (string functionName, System.Data.Objects.ObjectParameter[] parameters);" />
+      <MemberSignature Language="C#" Value="public int ExecuteFunction (string functionName, params System.Data.Objects.ObjectParameter[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ExecuteFunction(string functionName, class System.Data.Objects.ObjectParameter[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.ExecuteFunction(System.String,System.Data.Objects.ObjectParameter[])" />
       <MemberType>Method</MemberType>
@@ -1251,7 +1269,7 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteFunction&lt;TElement&gt;">
-      <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectResult&lt;TElement&gt; ExecuteFunction&lt;TElement&gt; (string functionName, System.Data.Objects.ObjectParameter[] parameters);" />
+      <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectResult&lt;TElement&gt; ExecuteFunction&lt;TElement&gt; (string functionName, params System.Data.Objects.ObjectParameter[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectResult`1&lt;!!TElement&gt; ExecuteFunction&lt;TElement&gt;(string functionName, class System.Data.Objects.ObjectParameter[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.ExecuteFunction``1(System.String,System.Data.Objects.ObjectParameter[])" />
       <MemberType>Method</MemberType>
@@ -1307,7 +1325,7 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteFunction&lt;TElement&gt;">
-      <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectResult&lt;TElement&gt; ExecuteFunction&lt;TElement&gt; (string functionName, System.Data.Objects.MergeOption mergeOption, System.Data.Objects.ObjectParameter[] parameters);" />
+      <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectResult&lt;TElement&gt; ExecuteFunction&lt;TElement&gt; (string functionName, System.Data.Objects.MergeOption mergeOption, params System.Data.Objects.ObjectParameter[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectResult`1&lt;!!TElement&gt; ExecuteFunction&lt;TElement&gt;(string functionName, valuetype System.Data.Objects.MergeOption mergeOption, class System.Data.Objects.ObjectParameter[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.ExecuteFunction``1(System.String,System.Data.Objects.MergeOption,System.Data.Objects.ObjectParameter[])" />
       <MemberType>Method</MemberType>
@@ -1363,7 +1381,7 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteStoreCommand">
-      <MemberSignature Language="C#" Value="public int ExecuteStoreCommand (string commandText, object[] parameters);" />
+      <MemberSignature Language="C#" Value="public int ExecuteStoreCommand (string commandText, params object[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ExecuteStoreCommand(string commandText, object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.ExecuteStoreCommand(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1410,7 +1428,7 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteStoreQuery&lt;TElement&gt;">
-      <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectResult&lt;TElement&gt; ExecuteStoreQuery&lt;TElement&gt; (string commandText, object[] parameters);" />
+      <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectResult&lt;TElement&gt; ExecuteStoreQuery&lt;TElement&gt; (string commandText, params object[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectResult`1&lt;!!TElement&gt; ExecuteStoreQuery&lt;TElement&gt;(string commandText, object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.ExecuteStoreQuery``1(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1467,7 +1485,7 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteStoreQuery&lt;TEntity&gt;">
-      <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectResult&lt;TEntity&gt; ExecuteStoreQuery&lt;TEntity&gt; (string commandText, string entitySetName, System.Data.Objects.MergeOption mergeOption, object[] parameters);" />
+      <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectResult&lt;TEntity&gt; ExecuteStoreQuery&lt;TEntity&gt; (string commandText, string entitySetName, System.Data.Objects.MergeOption mergeOption, params object[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectResult`1&lt;!!TEntity&gt; ExecuteStoreQuery&lt;TEntity&gt;(string commandText, string entitySetName, valuetype System.Data.Objects.MergeOption mergeOption, object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.ExecuteStoreQuery``1(System.String,System.String,System.Data.Objects.MergeOption,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1638,7 +1656,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When using POCO custom data classes, related objects cannot be explicitly loaded like instances of entity types that are generated by the Entity Data Model tools. This is because the tools generate the navigation properties that return an <xref:System.Data.Objects.DataClasses.EntityCollection%601> or <xref:System.Data.Objects.DataClasses.EntityReference%601> of related objects when <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> is called on a <xref:System.Data.Objects.DataClasses.RelatedEnd>. POCO entities can still be loaded by using lazy loading by setting the <xref:System.Data.Objects.ObjectContextOptions.LazyLoadingEnabled%2A> property to `true` on the instance of <xref:System.Data.Objects.ObjectContextOptions> that is returned by the <xref:System.Data.Objects.ObjectContext.ContextOptions%2A?displayProperty=fullName> property, or by using eager loading with the <xref:System.Data.Objects.ObjectQuery%601.Include%2A> method on the <xref:System.Data.Objects.ObjectQuery%601>.  
+ When using POCO custom data classes, related objects cannot be explicitly loaded like instances of entity types that are generated by the Entity Data Model tools. This is because the tools generate the navigation properties that return an <xref:System.Data.Objects.DataClasses.EntityCollection%601> or <xref:System.Data.Objects.DataClasses.EntityReference%601> of related objects when <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> is called on a <xref:System.Data.Objects.DataClasses.RelatedEnd>. POCO entities can still be loaded by using lazy loading by setting the <xref:System.Data.Objects.ObjectContextOptions.LazyLoadingEnabled%2A> property to `true` on the instance of <xref:System.Data.Objects.ObjectContextOptions> that is returned by the <xref:System.Data.Objects.ObjectContext.ContextOptions%2A?displayProperty=nameWithType> property, or by using eager loading with the <xref:System.Data.Objects.ObjectQuery%601.Include%2A> method on the <xref:System.Data.Objects.ObjectQuery%601>.  
   
  ]]></format>
         </remarks>
@@ -1672,7 +1690,7 @@
   
  After calling <xref:System.Data.Objects.ObjectContext.LoadProperty%2A>, the related object can be accessed through the navigation properties of the source entity.  
   
- When using POCO custom data classes, related objects cannot be explicitly loaded like instances of entity types that are generated by the Entity Data Model tools. This is because the tools generate the navigation properties that return an <xref:System.Data.Objects.DataClasses.EntityCollection%601> or <xref:System.Data.Objects.DataClasses.EntityReference%601> of related objects when <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> is called on a <xref:System.Data.Objects.DataClasses.RelatedEnd>. POCO entities can still be loaded by using lazy loading by setting the <xref:System.Data.Objects.ObjectContextOptions.LazyLoadingEnabled%2A> property to `true` on the instance of <xref:System.Data.Objects.ObjectContextOptions> that is returned by the <xref:System.Data.Objects.ObjectContext.ContextOptions%2A?displayProperty=fullName> property, or by using eager loading with the <xref:System.Data.Objects.ObjectQuery%601.Include%2A> method on the <xref:System.Data.Objects.ObjectQuery%601>.  
+ When using POCO custom data classes, related objects cannot be explicitly loaded like instances of entity types that are generated by the Entity Data Model tools. This is because the tools generate the navigation properties that return an <xref:System.Data.Objects.DataClasses.EntityCollection%601> or <xref:System.Data.Objects.DataClasses.EntityReference%601> of related objects when <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> is called on a <xref:System.Data.Objects.DataClasses.RelatedEnd>. POCO entities can still be loaded by using lazy loading by setting the <xref:System.Data.Objects.ObjectContextOptions.LazyLoadingEnabled%2A> property to `true` on the instance of <xref:System.Data.Objects.ObjectContextOptions> that is returned by the <xref:System.Data.Objects.ObjectContext.ContextOptions%2A?displayProperty=nameWithType> property, or by using eager loading with the <xref:System.Data.Objects.ObjectQuery%601.Include%2A> method on the <xref:System.Data.Objects.ObjectQuery%601>.  
   
  When the <xref:System.Data.Objects.ObjectContext.LoadProperty%2A> method is called, objects are loaded into the <xref:System.Data.Objects.ObjectContext> by using the default <xref:System.Data.Objects.MergeOption> value of <xref:System.Data.Objects.MergeOption.AppendOnly>.  
   
@@ -1715,7 +1733,7 @@
   
  After calling <xref:System.Data.Objects.ObjectContext.LoadProperty%2A>, the related object can be accessed through the navigation properties of the source entity.  
   
- When using POCO custom data classes, related objects cannot be explicitly loaded like instances of entity types that are generated by the Entity Data Model tools. This is because the tools generate the navigation properties that return an <xref:System.Data.Objects.DataClasses.EntityCollection%601> or <xref:System.Data.Objects.DataClasses.EntityReference%601> of related objects when <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> is called on a <xref:System.Data.Objects.DataClasses.RelatedEnd>. POCO entities can still be loaded by using lazy loading by setting the <xref:System.Data.Objects.ObjectContextOptions.LazyLoadingEnabled%2A> property to `true` on the instance of <xref:System.Data.Objects.ObjectContextOptions> that is returned by the <xref:System.Data.Objects.ObjectContext.ContextOptions%2A?displayProperty=fullName> property, or by using eager loading with the <xref:System.Data.Objects.ObjectQuery%601.Include%2A> method on the <xref:System.Data.Objects.ObjectQuery%601>.  
+ When using POCO custom data classes, related objects cannot be explicitly loaded like instances of entity types that are generated by the Entity Data Model tools. This is because the tools generate the navigation properties that return an <xref:System.Data.Objects.DataClasses.EntityCollection%601> or <xref:System.Data.Objects.DataClasses.EntityReference%601> of related objects when <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> is called on a <xref:System.Data.Objects.DataClasses.RelatedEnd>. POCO entities can still be loaded by using lazy loading by setting the <xref:System.Data.Objects.ObjectContextOptions.LazyLoadingEnabled%2A> property to `true` on the instance of <xref:System.Data.Objects.ObjectContextOptions> that is returned by the <xref:System.Data.Objects.ObjectContext.ContextOptions%2A?displayProperty=nameWithType> property, or by using eager loading with the <xref:System.Data.Objects.ObjectQuery%601.Include%2A> method on the <xref:System.Data.Objects.ObjectQuery%601>.  
   
  ]]></format>
         </remarks>
@@ -1760,7 +1778,7 @@
   
  The property to load is specified by a LINQ expression, which must be in the form of a simple property member access, as in `(entity) => entity.PropertyName`, where *PropertyName* is the navigation property that returns the related objects to be loaded. An exception will occur if other forms of the LINQ expression are used.  
   
- When using POCO custom data classes, related objects cannot be explicitly loaded like instances of entity types that are generated by the Entity Data Model tools. This is because the tools generate the navigation properties that return an <xref:System.Data.Objects.DataClasses.EntityCollection%601> or <xref:System.Data.Objects.DataClasses.EntityReference%601> of related objects when <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> is called on a <xref:System.Data.Objects.DataClasses.RelatedEnd>. POCO entities can still be loaded by using lazy loading by setting the <xref:System.Data.Objects.ObjectContextOptions.LazyLoadingEnabled%2A> property to `true` on the instance of <xref:System.Data.Objects.ObjectContextOptions> that is returned by the <xref:System.Data.Objects.ObjectContext.ContextOptions%2A?displayProperty=fullName> property, or by using eager loading with the <xref:System.Data.Objects.ObjectQuery%601.Include%2A> method on the <xref:System.Data.Objects.ObjectQuery%601>.  
+ When using POCO custom data classes, related objects cannot be explicitly loaded like instances of entity types that are generated by the Entity Data Model tools. This is because the tools generate the navigation properties that return an <xref:System.Data.Objects.DataClasses.EntityCollection%601> or <xref:System.Data.Objects.DataClasses.EntityReference%601> of related objects when <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> is called on a <xref:System.Data.Objects.DataClasses.RelatedEnd>. POCO entities can still be loaded by using lazy loading by setting the <xref:System.Data.Objects.ObjectContextOptions.LazyLoadingEnabled%2A> property to `true` on the instance of <xref:System.Data.Objects.ObjectContextOptions> that is returned by the <xref:System.Data.Objects.ObjectContext.ContextOptions%2A?displayProperty=nameWithType> property, or by using eager loading with the <xref:System.Data.Objects.ObjectQuery%601.Include%2A> method on the <xref:System.Data.Objects.ObjectQuery%601>.  
   
  ]]></format>
         </remarks>
@@ -1811,7 +1829,7 @@
   
  The property to load is specified by a LINQ expression, which must be in the form of a simple property member access, as in `(entity) => entity.PropertyName` where *PropertyName* is the navigation property that returns the related objects to be loaded. An exception will occur if other forms of the LINQ expression are used.  
   
- When using POCO custom data classes, related objects cannot be explicitly loaded like instances of entity types that are generated by the Entity Data Model tools. This is because the tools generate the navigation properties that return an <xref:System.Data.Objects.DataClasses.EntityCollection%601> or <xref:System.Data.Objects.DataClasses.EntityReference%601> of related objects when <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> is called on a <xref:System.Data.Objects.DataClasses.RelatedEnd>. POCO entities can still be loaded by using lazy loading by setting the <xref:System.Data.Objects.ObjectContextOptions.LazyLoadingEnabled%2A> property to `true` on the instance of <xref:System.Data.Objects.ObjectContextOptions> that is returned by the <xref:System.Data.Objects.ObjectContext.ContextOptions%2A?displayProperty=fullName> property, or by using eager loading with the <xref:System.Data.Objects.ObjectQuery%601.Include%2A> method on the <xref:System.Data.Objects.ObjectQuery%601>.  
+ When using POCO custom data classes, related objects cannot be explicitly loaded like instances of entity types that are generated by the Entity Data Model tools. This is because the tools generate the navigation properties that return an <xref:System.Data.Objects.DataClasses.EntityCollection%601> or <xref:System.Data.Objects.DataClasses.EntityReference%601> of related objects when <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> is called on a <xref:System.Data.Objects.DataClasses.RelatedEnd>. POCO entities can still be loaded by using lazy loading by setting the <xref:System.Data.Objects.ObjectContextOptions.LazyLoadingEnabled%2A> property to `true` on the instance of <xref:System.Data.Objects.ObjectContextOptions> that is returned by the <xref:System.Data.Objects.ObjectContext.ContextOptions%2A?displayProperty=nameWithType> property, or by using eager loading with the <xref:System.Data.Objects.ObjectQuery%601.Include%2A> method on the <xref:System.Data.Objects.ObjectQuery%601>.  
   
  ]]></format>
         </remarks>
@@ -2288,7 +2306,7 @@
     </Member>
     <Member MemberName="TryGetObjectByKey">
       <MemberSignature Language="C#" Value="public bool TryGetObjectByKey (System.Data.EntityKey key, out object value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetObjectByKey(class System.Data.EntityKey key, object value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetObjectByKey(class System.Data.EntityKey key, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectContext.TryGetObjectByKey(System.Data.EntityKey,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2337,5 +2355,32 @@
           <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Objects.ObjectContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SaveChanges">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Persists all updates to the data source.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the object context.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

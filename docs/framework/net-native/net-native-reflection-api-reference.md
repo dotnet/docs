@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # .NET Native Reflection API Reference
 [!INCLUDE[net_native](../../../includes/net-native-md.md)] includes three new exception types: [System.Runtime.CompilerServices.MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md), [System.Reflection.MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md), and [System.Reflection.MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md). Note the following about all three exception types:  
@@ -51,7 +53,7 @@ manager: "wpickett"
  For documentation about the other types in this namespace, see the <xref:System.Runtime.CompilerServices> reference pages in the .NET Framework documentation set.  
   
 ## See Also  
- [MissingInteropDataException Class](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md)   
- [MissingMetadataException Class](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md)   
- [MissingRuntimeArtifactException Class](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md)   
+ [MissingInteropDataException Class](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md)  
+ [MissingMetadataException Class](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md)  
+ [MissingRuntimeArtifactException Class](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md)  
  [Getting Started](../../../docs/framework/net-native/getting-started-with-net-native.md)

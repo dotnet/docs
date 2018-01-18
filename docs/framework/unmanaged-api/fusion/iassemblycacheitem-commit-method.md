@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyCacheItem::Commit"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IAssemblyCacheItem::Commit method [.NET Framework fusion]"
   - "Commit method, IAssemblyCacheItem interface [.NET Framework fusion]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IAssemblyCacheItem::Commit Method
 Commits the cached assembly reference to memory.  

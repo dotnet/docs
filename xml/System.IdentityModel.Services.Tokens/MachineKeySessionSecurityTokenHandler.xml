@@ -31,7 +31,7 @@
 <machineKey compatibilityMode="Framework45" decryptionKey="CC510D … 8925E6" validationKey="BEAC8 … 6A4B1DE" />  
 ```  
   
- The following XML shows how to add the <xref:System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler> to a token handler collection. The default <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler> is first removed from the collection. Token handlers are configured under the [\&lt;securityTokenHandlers\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlers.md) element.  
+ The following XML shows how to add the <xref:System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler> to a token handler collection. The default <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler> is first removed from the collection. Token handlers are configured under the [&lt;securityTokenHandlers&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlers.md) element.  
   
 ```xml  
 <securityTokenHandlers>  
@@ -42,6 +42,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Tokens.SessionSecurityTokenHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,5 +80,14 @@
           <paramref name="tokenLifetime" /> is shorter than or equal to <see cref="F:System.TimeSpan.Zero" /></exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

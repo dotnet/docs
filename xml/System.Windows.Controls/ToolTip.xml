@@ -28,11 +28,11 @@
   
  You use a <xref:System.Windows.Controls.ToolTip> control to provide information to the user. For example, you can use a <xref:System.Windows.Controls.ToolTip> to provide the name of a <xref:System.Windows.Controls.Button> or a <xref:System.Windows.Controls.ToolBar> in a <xref:System.Windows.Controls.ToolBarTray>. The content of a <xref:System.Windows.Controls.ToolTip> control can vary from a simple text string to more complex content such as a <xref:System.Windows.Controls.StackPanel> that has embedded text and images. The content of a <xref:System.Windows.Controls.ToolTip> cannot receive focus.  
   
- A <xref:System.Windows.Controls.ToolTip> control cannot have a parent.  For example, you cannot set the <xref:System.Windows.Controls.ContentControl.Content%2A> property of a <xref:System.Windows.Controls.Button> to a <xref:System.Windows.Controls.ToolTip> Instead, assign a <xref:System.Windows.Controls.ToolTip> to the <xref:System.Windows.FrameworkContentElement.ToolTip%2A?displayProperty=fullName> and <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> properties.  
+ A <xref:System.Windows.Controls.ToolTip> control cannot have a parent.  For example, you cannot set the <xref:System.Windows.Controls.ContentControl.Content%2A> property of a <xref:System.Windows.Controls.Button> to a <xref:System.Windows.Controls.ToolTip> Instead, assign a <xref:System.Windows.Controls.ToolTip> to the <xref:System.Windows.FrameworkContentElement.ToolTip%2A?displayProperty=nameWithType> and <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> properties.  
   
  You can use a <xref:System.Windows.Controls.ToolTip> on multiple elements by defining a <xref:System.Windows.Controls.ToolTip> in a <xref:System.Windows.ResourceDictionary>.  
   
- The properties of the <xref:System.Windows.Controls.ToolTip> class are used to define the position and behavior of the tooltip. Many of these properties are also defined in the <xref:System.Windows.Controls.ToolTipService> class. If the value of one of these properties is specified by both the <xref:System.Windows.Controls.ToolTip> property and the <xref:System.Windows.Controls.ToolTipService>attached property, the value of the <xref:System.Windows.Controls.ToolTipService> property is used. In addition, the <xref:System.Windows.Controls.ToolTipService> class provides properties to set timing behavior. These attached properties are not included in the <xref:System.Windows.Controls.ToolTip> class but can be used by the control.  
+ The properties of the <xref:System.Windows.Controls.ToolTip> class are used to define the position and behavior of the tooltip. Many of these properties are also defined in the <xref:System.Windows.Controls.ToolTipService> class. If the value of one of these properties is specified by both the <xref:System.Windows.Controls.ToolTip> property and the <xref:System.Windows.Controls.ToolTipService> attached property, the value of the <xref:System.Windows.Controls.ToolTipService> property is used. In addition, the <xref:System.Windows.Controls.ToolTipService> class provides properties to set timing behavior. These attached properties are not included in the <xref:System.Windows.Controls.ToolTip> class but can be used by the control.  
   
 ## Customizing the ToolTip Control  
  To apply the same property settings to multiple <xref:System.Windows.Controls.ToolTip> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.ToolTip>, see [ToolTip Styles and Templates](~/docs/framework/wpf/controls/tooltip-styles-and-templates.md).  
@@ -62,6 +62,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.ToolTipEventArgs" />
+    <altmember cref="T:System.Windows.Controls.ToolTipEventHandler" />
+    <altmember cref="T:System.Windows.Controls.ToolTipService" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -97,7 +100,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.FrameworkElement.ToolTipClosing?displayProperty=fullName> event is also raised when the <xref:System.Windows.Controls.ToolTip> control is closed.  
+ The <xref:System.Windows.FrameworkElement.ToolTipClosing?displayProperty=nameWithType> event is also raised when the <xref:System.Windows.Controls.ToolTip> control is closed.  
   
 <a name="routedEventInfo_Closed"></a>   
 ## Routed Event Information  
@@ -121,6 +124,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.ToolTip.Opened" />
+        <altmember cref="E:System.Windows.FrameworkElement.ToolTipClosing" />
       </Docs>
     </Member>
     <Member MemberName="ClosedEvent">
@@ -192,6 +197,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Primitives.CustomPopupPlacementCallback" />
       </Docs>
     </Member>
     <Member MemberName="CustomPopupPlacementCallbackProperty">
@@ -231,7 +237,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Windows.Controls.ToolTip> opens, the value is set to the value of <xref:System.Windows.SystemParameters.DropShadow%2A?displayProperty=fullName>. Setting this property to `true` has no effect if the <xref:System.Windows.SystemParameters.DropShadow%2A?displayProperty=fullName> property is `false`.  
+ When the <xref:System.Windows.Controls.ToolTip> opens, the value is set to the value of <xref:System.Windows.SystemParameters.DropShadow%2A?displayProperty=nameWithType>. Setting this property to `true` has no effect if the <xref:System.Windows.SystemParameters.DropShadow%2A?displayProperty=nameWithType> property is `false`.  
   
 <a name="dependencyPropertyInfo_HasDropShadow"></a>   
 ## Dependency Property Information  
@@ -250,6 +256,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.ToolTipService.HasDropShadow" />
       </Docs>
     </Member>
     <Member MemberName="HasDropShadowProperty">
@@ -321,6 +328,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.ToolTip.VerticalOffset" />
+        <altmember cref="P:System.Windows.Controls.Primitives.Popup.HorizontalOffset" />
+        <altmember cref="T:System.Windows.Controls.Primitives.Popup" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalOffsetProperty">
@@ -385,6 +395,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.ToolTip.StaysOpen" />
       </Docs>
     </Member>
     <Member MemberName="IsOpenProperty">
@@ -423,6 +434,8 @@
         <param name="e">The event information.</param>
         <summary>Responds to the <see cref="E:System.Windows.Controls.ToolTip.Closed" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.Controls.ToolTip.Closed" />
+        <altmember cref="E:System.Windows.Controls.ToolTip.Opened" />
       </Docs>
     </Member>
     <Member MemberName="OnContentChanged">
@@ -486,6 +499,8 @@
         <param name="e">The event information.</param>
         <summary>Responds to the <see cref="E:System.Windows.Controls.ToolTip.Opened" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.Controls.ToolTip.Opened" />
+        <altmember cref="E:System.Windows.Controls.ToolTip.Closed" />
       </Docs>
     </Member>
     <Member MemberName="OnVisualParentChanged">
@@ -527,7 +542,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=fullName> event is also raised when the <xref:System.Windows.Controls.ToolTip> control opens.  
+ The <xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=nameWithType> event is also raised when the <xref:System.Windows.Controls.ToolTip> control opens.  
   
 <a name="routedEventInfo_Opened"></a>   
 ## Routed Event Information  
@@ -551,6 +566,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.ToolTip.Closed" />
+        <altmember cref="E:System.Windows.FrameworkElement.ToolTipOpening" />
       </Docs>
     </Member>
     <Member MemberName="OpenedEvent">
@@ -619,6 +636,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.ToolTip.PlacementTarget" />
+        <altmember cref="P:System.Windows.Controls.ToolTip.HorizontalOffset" />
+        <altmember cref="P:System.Windows.Controls.ToolTip.VerticalOffset" />
+        <altmember cref="P:System.Windows.Controls.ToolTip.PlacementRectangle" />
       </Docs>
     </Member>
     <Member MemberName="PlacementProperty">
@@ -687,6 +708,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.ToolTip.PlacementTarget" />
+        <altmember cref="P:System.Windows.Controls.ToolTip.HorizontalOffset" />
+        <altmember cref="P:System.Windows.Controls.ToolTip.VerticalOffset" />
+        <altmember cref="P:System.Windows.Controls.ToolTip.Placement" />
+        <altmember cref="P:System.Windows.Controls.Primitives.Popup.Placement" />
       </Docs>
     </Member>
     <Member MemberName="PlacementRectangleProperty">
@@ -758,6 +784,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.ToolTip.Placement" />
+        <altmember cref="P:System.Windows.Controls.ToolTip.HorizontalOffset" />
+        <altmember cref="P:System.Windows.Controls.ToolTip.VerticalOffset" />
+        <altmember cref="P:System.Windows.Controls.ToolTip.PlacementRectangle" />
       </Docs>
     </Member>
     <Member MemberName="PlacementTargetProperty">
@@ -889,6 +919,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.ToolTip.HorizontalOffset" />
+        <altmember cref="P:System.Windows.Controls.Primitives.Popup.VerticalOffset" />
+        <altmember cref="T:System.Windows.Controls.Primitives.Popup" />
       </Docs>
     </Member>
     <Member MemberName="VerticalOffsetProperty">

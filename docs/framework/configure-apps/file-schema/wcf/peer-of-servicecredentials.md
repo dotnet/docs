@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b134e21d-e5b5-458e-9309-626dbf8db4ed
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;peer&gt; of &lt;serviceCredentials&gt;
 Specifies the current credentials for a peer node.  
@@ -56,12 +58,12 @@ Specifies the current credentials for a peer node.
 |[\<serviceCredentials>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md)|Specifies the credential to be used in authenticating the service, and the client credential validation-related settings.|  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.PeerCredentialElement>   
- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.Peer%2A>   
- <xref:System.ServiceModel.Description.ServiceCredentials.Peer%2A>   
- <xref:System.ServiceModel.Security.PeerCredential>   
- [Peer-to-Peer Networking](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md)   
- [Peer Channel Message Authentication](http://msdn.microsoft.com/en-us/80e73386-514e-4c30-9e4a-b9ca8c173a95)   
- [Peer Channel Custom Authentication](http://msdn.microsoft.com/en-us/4aa8a82e-41a8-48e2-8621-7e1cbabdca7c)   
- [Securing Peer Channel Applications](../../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md)   
+ <xref:System.ServiceModel.Configuration.PeerCredentialElement>  
+ <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.Peer%2A>  
+ <xref:System.ServiceModel.Description.ServiceCredentials.Peer%2A>  
+ <xref:System.ServiceModel.Security.PeerCredential>  
+ [Peer-to-Peer Networking](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md)  
+ [Peer Channel Message Authentication](http://msdn.microsoft.com/en-us/80e73386-514e-4c30-9e4a-b9ca8c173a95)  
+ [Peer Channel Custom Authentication](http://msdn.microsoft.com/en-us/4aa8a82e-41a8-48e2-8621-7e1cbabdca7c)  
+ [Securing Peer Channel Applications](../../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md)  
  [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

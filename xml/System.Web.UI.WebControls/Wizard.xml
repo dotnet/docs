@@ -124,7 +124,7 @@
   
 <a name="formatting_using_layout_templates"></a>   
 ## Formatting Using Layout Templates  
- The <xref:System.Web.UI.WebControls.Wizard> control lets you specify the layout of the control without requiring you to use an HTML `table` element. Instead, you can use a `LayoutTemplate` element to specify the layout. In the template, you create placeholder controls to indicate where items should be dynamically inserted into the control. (This is similar to how the template model for the <xref:System.Web.UI.WebControls.ListView> control works.) For more information, see the <xref:System.Web.UI.WebControls.Wizard.LayoutTemplate%2A?displayProperty=fullName> property.  
+ The <xref:System.Web.UI.WebControls.Wizard> control lets you specify the layout of the control without requiring you to use an HTML `table` element. Instead, you can use a `LayoutTemplate` element to specify the layout. In the template, you create placeholder controls to indicate where items should be dynamically inserted into the control. (This is similar to how the template model for the <xref:System.Web.UI.WebControls.ListView> control works.) For more information, see the <xref:System.Web.UI.WebControls.Wizard.LayoutTemplate%2A?displayProperty=nameWithType> property.  
   
 <a name="accessibility"></a>   
 ## Accessibility  
@@ -289,8 +289,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.Wizard#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Wizard/CS/wizardclasscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.Wizard#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Wizard/VB/wizardclassvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.Wizard#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Wizard/CS/wizardclasscs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.Wizard#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Wizard/VB/wizardclassvb.aspx#1)]  
   
  The following code example is the code-behind file for the Web page used in the preceding example.  
   
@@ -299,6 +299,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.CompositeControl" />
+    <altmember cref="T:System.Web.UI.Control" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -357,12 +359,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property to determine which step to set as the next <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control. If the value of `CheckBox1.Checked` is `true`, the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property is set to `Wizard1.Step3`; otherwise, the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property is set to `Wizard1.Step2`.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardActiveStep#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStep/CS/wizardactivestepcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardActiveStep#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStep/VB/wizardactivestepvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardActiveStep#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStep/CS/wizardactivestepcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardActiveStep#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStep/VB/wizardactivestepvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The corresponding <see cref="P:System.Web.UI.WebControls.Wizard.ActiveStepIndex" /> is less than -1 or greater than the number of <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> objects in the <see cref="T:System.Web.UI.WebControls.Wizard" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.ActiveStepIndex" />
       </Docs>
     </Member>
     <Member MemberName="ActiveStepChanged">
@@ -392,11 +395,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Wizard.ActiveStepChanged> event to update the <xref:System.Web.UI.WebControls.Wizard.HeaderText%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepChanged/CS/wizardactivestepchangedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepChanged/VB/wizardactivestepchangedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepChanged/CS/wizardactivestepchangedcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepChanged/VB/wizardactivestepchangedvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Wizard.OnActiveStepChanged(System.Object,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ActiveStepIndex">
@@ -444,12 +448,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Wizard.ActiveStepIndex%2A> property to set the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control. If the value of `CheckBox1.Checked` is `true`, the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property is set to `Wizard1.Step3`; otherwise, the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property is set to `Wizard1.Step2`.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardActiveStepIndex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepIndex/CS/wizardactivestepindexcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardActiveStepIndex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepIndex/VB/wizardactivestepindexvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardActiveStepIndex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepIndex/CS/wizardactivestepindexcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardActiveStepIndex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepIndex/VB/wizardactivestepindexvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is higher than the number of wizard steps defined in the <see cref="P:System.Web.UI.WebControls.Wizard.WizardSteps" /> collection.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.ActiveStep" />
+        <altmember cref="M:System.Web.UI.WebControls.Wizard.MoveTo(System.Web.UI.WebControls.WizardStepBase)" />
       </Docs>
     </Member>
     <Member MemberName="AllowNavigationToStep">
@@ -483,11 +489,13 @@
 ## Examples  
  The following code example demonstrates how to create a derived class named `CustomWizard` and override the <xref:System.Web.UI.WebControls.Wizard.OnSideBarButtonClick%2A> method. When a button on the sidebar area of the `CustomWizard` control is clicked, the <xref:System.Web.UI.WebControls.Wizard.AllowNavigationToStep%2A> method is called to determine whether the selected step can be accessed. A message is then written to the containing Web page informing the user of what has occurred.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardAllowNavigationToStep#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardAllowNavigationToStep/CS/wizardallownavigationtostepcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardAllowNavigationToStep#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardAllowNavigationToStep/VB/wizardallownavigationtostepvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardAllowNavigationToStep#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardAllowNavigationToStep/CS/wizardallownavigationtostepcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardAllowNavigationToStep#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardAllowNavigationToStep/VB/wizardallownavigationtostepvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.ActiveStepIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.WizardStepBase.AllowReturn" />
       </Docs>
     </Member>
     <Member MemberName="CancelButtonClick">
@@ -517,11 +525,12 @@
 ## Examples  
  The following code example demonstrates how to specify an event handler for the <xref:System.Web.UI.WebControls.Wizard.CancelButtonClick> event. When the **Cancel** button is clicked, the page is redirected to http://www.wingtiptoys.com/.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardCancelButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCancelButtonClick/CS/wizardcancelbuttonclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardCancelButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCancelButtonClick/VB/wizardcancelbuttonclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardCancelButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCancelButtonClick/CS/wizardcancelbuttonclickcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardCancelButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCancelButtonClick/VB/wizardcancelbuttonclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Wizard.OnCancelButtonClick(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="CancelButtonID">
@@ -546,6 +555,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
       </Docs>
     </Member>
     <Member MemberName="CancelButtonImageUrl">
@@ -582,6 +592,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplayCancelButton" />
       </Docs>
     </Member>
     <Member MemberName="CancelButtonStyle">
@@ -623,6 +638,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.NavigationButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplayCancelButton" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="CancelButtonText">
@@ -664,6 +686,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplayCancelButton" />
       </Docs>
     </Member>
     <Member MemberName="CancelButtonType">
@@ -687,6 +714,10 @@
         <summary>Gets or sets the type of button that is rendered as the **Cancel** button.</summary>
         <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values. The default is <see cref="F:System.Web.UI.WebControls.ButtonType.Button" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonText" />
       </Docs>
     </Member>
     <Member MemberName="CancelCommandName">
@@ -711,6 +742,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CommandName" />
       </Docs>
     </Member>
     <Member MemberName="CancelDestinationPageUrl">
@@ -752,6 +784,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplayCancelButton" />
       </Docs>
     </Member>
     <Member MemberName="CellPadding">
@@ -785,11 +822,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Wizard.CellPadding%2A> and <xref:System.Web.UI.WebControls.Wizard.CellSpacing%2A> properties to program the layout of the <xref:System.Web.UI.WebControls.Wizard> control declaratively.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCellPadding/CS/wizardcellpaddingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCellPadding/VB/wizardcellpaddingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCellPadding/CS/wizardcellpaddingcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCellPadding/VB/wizardcellpaddingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CellSpacing" />
       </Docs>
     </Member>
     <Member MemberName="CellSpacing">
@@ -823,11 +861,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Wizard.CellPadding%2A> and <xref:System.Web.UI.WebControls.Wizard.CellSpacing%2A> properties to program the layout of the <xref:System.Web.UI.WebControls.Wizard> control declaratively.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCellPadding/CS/wizardcellpaddingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCellPadding/VB/wizardcellpaddingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCellPadding/CS/wizardcellpaddingcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCellPadding/VB/wizardcellpaddingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CellPadding" />
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -884,6 +923,9 @@
         <summary>Creates the hierarchy of child controls that make up the control.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The sidebar template does not contain a <see cref="T:System.Web.UI.WebControls.DataList" /> control.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.Wizard.CreateChildControls" />
+        <altmember cref="M:System.Web.UI.WebControls.Wizard.CreateControlCollection" />
+        <altmember cref="M:System.Web.UI.WebControls.Wizard.CreateControlStyle" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -927,6 +969,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
       </Docs>
     </Member>
     <Member MemberName="CustomNextButtonID">
@@ -951,6 +994,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
       </Docs>
     </Member>
     <Member MemberName="CustomPreviousButtonID">
@@ -975,6 +1019,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
       </Docs>
     </Member>
     <Member MemberName="DataListID">
@@ -999,6 +1044,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataList" />
       </Docs>
     </Member>
     <Member MemberName="DisplayCancelButton">
@@ -1028,6 +1074,11 @@
   
  This property cannot be set by themes or style sheet themes. For more information, see <see cref="T:System.Web.UI.ThemeableAttribute" /> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl" />
       </Docs>
     </Member>
     <Member MemberName="DisplaySideBar">
@@ -1064,6 +1115,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarButtonStyle" />
       </Docs>
     </Member>
     <Member MemberName="FinishButtonClick">
@@ -1093,11 +1147,12 @@
 ## Examples  
  The following code example demonstrates how to specify an event handler for the <xref:System.Web.UI.WebControls.Wizard.FinishButtonClick> event. When the **Finish** button is clicked, a confirmation message is written to `Label1` and the `Label1.Visible` property is set to `true` so that the message is displayed on the step.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardFinishButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishButtonClick/CS/wizardfinishbuttonclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardFinishButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishButtonClick/VB/wizardfinishbuttonclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardFinishButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishButtonClick/CS/wizardfinishbuttonclickcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardFinishButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishButtonClick/VB/wizardfinishbuttonclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Wizard.OnFinishButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="FinishButtonID">
@@ -1122,6 +1177,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
       </Docs>
     </Member>
     <Member MemberName="FinishCompleteButtonImageUrl">
@@ -1158,6 +1214,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonStyle" />
       </Docs>
     </Member>
     <Member MemberName="FinishCompleteButtonStyle">
@@ -1199,6 +1258,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.NavigationButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonImageUrl" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="FinishCompleteButtonText">
@@ -1240,6 +1304,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="FinishCompleteButtonType">
@@ -1263,6 +1330,9 @@
         <summary>Gets or sets the type of button that is rendered as the **Finish** button.</summary>
         <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values. The default is <see cref="F:System.Web.UI.WebControls.ButtonType.Button" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="FinishDestinationPageUrl">
@@ -1304,6 +1374,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonText" />
       </Docs>
     </Member>
     <Member MemberName="FinishNavigationTemplate">
@@ -1356,11 +1429,14 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardFinishNavigationTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishNavigationTemplate/CS/wizardfinishnavigationtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardFinishNavigationTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishNavigationTemplate/VB/wizardfinishnavigationtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardFinishNavigationTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishNavigationTemplate/CS/wizardfinishnavigationtemplatecs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardFinishNavigationTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishNavigationTemplate/VB/wizardfinishnavigationtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.WebControls.WizardStepType.Finish" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNavigationTemplate" />
       </Docs>
     </Member>
     <Member MemberName="FinishPreviousButtonID">
@@ -1385,6 +1461,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
       </Docs>
     </Member>
     <Member MemberName="FinishPreviousButtonImageUrl">
@@ -1421,6 +1498,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonType" />
       </Docs>
     </Member>
     <Member MemberName="FinishPreviousButtonStyle">
@@ -1462,6 +1542,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonImageUrl" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="FinishPreviousButtonText">
@@ -1503,6 +1587,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonStyle" />
       </Docs>
     </Member>
     <Member MemberName="FinishPreviousButtonType">
@@ -1526,6 +1613,9 @@
         <summary>Gets or sets the type of button that is rendered as the **Previous** button on the <see cref="F:System.Web.UI.WebControls.WizardStepType.Finish" /> step.</summary>
         <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values. The default is <see cref="F:System.Web.UI.WebControls.ButtonType.Button" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonStyle" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignModeState">
@@ -1605,11 +1695,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Wizard.GetStepType%2A> method to determine the associated <xref:System.Web.UI.WebControls.WizardStepType> value for the current step of the <xref:System.Web.UI.WebControls.Wizard> control. Each time the <xref:System.Web.UI.WebControls.Wizard.ActiveStepChanged> event is raised, the new <xref:System.Web.UI.WebControls.WizardStepType> value is retrieved and a message is written to `Label1`.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardGetStepType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardGetStepType/CS/wizardgetsteptypecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardGetStepType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardGetStepType/VB/wizardgetsteptypevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardGetStepType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardGetStepType/CS/wizardgetsteptypecs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardGetStepType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardGetStepType/VB/wizardgetsteptypevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepType" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
       </Docs>
     </Member>
     <Member MemberName="HeaderPlaceholderId">
@@ -1675,6 +1767,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.HeaderText" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplate">
@@ -1718,6 +1813,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.HeaderText" />
       </Docs>
     </Member>
     <Member MemberName="HeaderText">
@@ -1761,11 +1858,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Wizard.ActiveStepChanged> event to update the <xref:System.Web.UI.WebControls.Wizard.HeaderText%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepChanged/CS/wizardactivestepchangedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepChanged/VB/wizardactivestepchangedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepChanged/CS/wizardactivestepchangedcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepChanged/VB/wizardactivestepchangedvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.HeaderTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.HeaderStyle" />
       </Docs>
     </Member>
     <Member MemberName="LayoutTemplate">
@@ -1883,6 +1982,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.Wizard.MoveNextCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.Wizard.MovePreviousCommandName" />
+        <altmember cref="F:System.Web.UI.WebControls.Wizard.MoveToCommandName" />
       </Docs>
     </Member>
     <Member MemberName="MoveNextCommandName">
@@ -1907,6 +2010,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CommandName" />
       </Docs>
     </Member>
     <Member MemberName="MovePreviousCommandName">
@@ -1931,6 +2035,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CommandName" />
       </Docs>
     </Member>
     <Member MemberName="MoveTo">
@@ -1962,13 +2067,17 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Wizard.MoveTo%2A> method to control the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control. If the value of `CheckBox1.Checked` is `true`, the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property is set to `Wizard1.Step3`; otherwise, the <xref:System.Web.UI.WebControls.Wizard.ActiveStep%2A> property is set to `Wizard1.Step2`.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardMoveTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardMoveTo/CS/wizardmovetocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardMoveTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardMoveTo/VB/wizardmovetovb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardMoveTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardMoveTo/CS/wizardmovetocs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardMoveTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardMoveTo/VB/wizardmovetovb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value of the <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object passed in is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Web.UI.WebControls.Wizard.ActiveStepIndex" /> of the associated <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object passed in is equal to -1.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.ActiveStep" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.ActiveStepIndex" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
       </Docs>
     </Member>
     <Member MemberName="MoveToCommandName">
@@ -1993,6 +2102,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CommandName" />
       </Docs>
     </Member>
     <Member MemberName="NavigationButtonStyle">
@@ -2052,6 +2162,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.NavigationStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="NavigationPlaceholderId">
@@ -2137,6 +2249,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.NavigationButtonStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="NextButtonClick">
@@ -2166,11 +2280,12 @@
 ## Examples  
  The following code example demonstrates how to specify an event handler for the <xref:System.Web.UI.WebControls.Wizard.NextButtonClick> event. Each time the **Next** button is clicked, the <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A> property for the <xref:System.Web.UI.WebControls.Wizard> control is increased by 1 pixel, as measured by the <xref:System.Web.UI.WebControls.Unit> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/CS/wizardnextpreviousbuttonclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/VB/wizardnextpreviousbuttonclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/CS/wizardnextpreviousbuttonclickcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/VB/wizardnextpreviousbuttonclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Wizard.OnNextButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnActiveStepChanged">
@@ -2208,14 +2323,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Wizard.ActiveStepChanged> event to update the <xref:System.Web.UI.WebControls.Wizard.HeaderText%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepChanged/CS/wizardactivestepchangedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepChanged/VB/wizardactivestepchangedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepChanged/CS/wizardactivestepchangedcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardActiveStepChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardActiveStepChanged/VB/wizardactivestepchangedvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.Wizard.OnActiveStepChanged(System.Object,System.EventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.Wizard.OnActiveStepChanged(System.Object,System.EventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.Wizard.ActiveStepChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -2276,14 +2392,15 @@
 ## Examples  
  The following code example demonstrates how to specify an event handler for the <xref:System.Web.UI.WebControls.Wizard.CancelButtonClick> event. When the **Cancel** button is clicked, the step is redirected to http://www.wingtiptoys.com/.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardCancelButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCancelButtonClick/CS/wizardcancelbuttonclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardCancelButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCancelButtonClick/VB/wizardcancelbuttonclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardCancelButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCancelButtonClick/CS/wizardcancelbuttonclickcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardCancelButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardCancelButtonClick/VB/wizardcancelbuttonclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.Wizard.OnCancelButtonClick(System.EventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.Wizard.OnCancelButtonClick(System.EventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.Wizard.CancelButtonClick" />
       </Docs>
     </Member>
     <Member MemberName="OnFinishButtonClick">
@@ -2319,14 +2436,15 @@
 ## Examples  
  The following code example demonstrates how to specify an event handler for the <xref:System.Web.UI.WebControls.Wizard.FinishButtonClick> event. When the **Finish** button is clicked, a confirmation message is written to `Label1` and the `Label1.Visible` property is set to `true` so that the message is displayed on the step.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardFinishButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishButtonClick/CS/wizardfinishbuttonclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardFinishButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishButtonClick/VB/wizardfinishbuttonclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardFinishButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishButtonClick/CS/wizardfinishbuttonclickcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardFinishButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishButtonClick/VB/wizardfinishbuttonclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.Wizard.OnFinishButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.Wizard.OnFinishButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.Wizard.FinishButtonClick" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -2383,14 +2501,15 @@
 ## Examples  
  The following code example demonstrates how to specify an event handler for the <xref:System.Web.UI.WebControls.Wizard.NextButtonClick> event. Each time the **Next** button is clicked, the <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A> property for the <xref:System.Web.UI.WebControls.Wizard> control is increased by 1 pixel, as measured by the <xref:System.Web.UI.WebControls.Unit> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/CS/wizardnextpreviousbuttonclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/VB/wizardnextpreviousbuttonclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/CS/wizardnextpreviousbuttonclickcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/VB/wizardnextpreviousbuttonclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.Wizard.OnNextButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.Wizard.OnNextButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.Wizard.NextButtonClick" />
       </Docs>
     </Member>
     <Member MemberName="OnPreviousButtonClick">
@@ -2426,14 +2545,15 @@
 ## Examples  
  The following code example demonstrates how to specify an event handler for the <xref:System.Web.UI.WebControls.Wizard.PreviousButtonClick> event. Each time the **Previous** button is clicked, the <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A> property for the <xref:System.Web.UI.WebControls.Wizard> control is decreased by 1 pixel, as measured by the <xref:System.Web.UI.WebControls.Unit> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/CS/wizardnextpreviousbuttonclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/VB/wizardnextpreviousbuttonclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/CS/wizardnextpreviousbuttonclickcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/VB/wizardnextpreviousbuttonclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.Wizard.OnPreviousButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.Wizard.OnPreviousButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.Wizard.PreviousButtonClick" />
       </Docs>
     </Member>
     <Member MemberName="OnSideBarButtonClick">
@@ -2472,14 +2592,15 @@
 ## Examples  
  The following code example demonstrates how to specify an event handler for the <xref:System.Web.UI.WebControls.Wizard.SideBarButtonClick> event. Each time the <xref:System.Web.UI.WebControls.Wizard.SideBarButtonClick> event is raised, a message is written to the <xref:System.Web.UI.WebControls.Label.Text%2A> property for `Label1` with information on which sidebar area button was clicked.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardSideBarButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSideBarButtonClick/CS/wizardsidebarbuttonclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardSideBarButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSideBarButtonClick/VB/wizardsidebarbuttonclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardSideBarButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSideBarButtonClick/CS/wizardsidebarbuttonclickcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardSideBarButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSideBarButtonClick/VB/wizardsidebarbuttonclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.Wizard.OnSideBarButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.Wizard.OnSideBarButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.Wizard.SideBarButtonClick" />
       </Docs>
     </Member>
     <Member MemberName="PreviousButtonClick">
@@ -2509,11 +2630,12 @@
 ## Examples  
  The following code example demonstrates how to specify an event handler for the <xref:System.Web.UI.WebControls.Wizard.PreviousButtonClick> event. Each time the **Previous** button is clicked, the <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A> property for the <xref:System.Web.UI.WebControls.Wizard> control is decreased by 1 pixel, as measured by the <xref:System.Web.UI.WebControls.Unit> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/CS/wizardnextpreviousbuttonclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/VB/wizardnextpreviousbuttonclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/CS/wizardnextpreviousbuttonclickcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardNextPreviousButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardNextPreviousButtonClick/VB/wizardnextpreviousbuttonclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Wizard.OnPreviousButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterCommandEvents">
@@ -2626,11 +2748,12 @@
 ## Examples  
  The following code example demonstrates how to specify an event handler for the <xref:System.Web.UI.WebControls.Wizard.SideBarButtonClick> event. Each time the <xref:System.Web.UI.WebControls.Wizard.SideBarButtonClick> event is raised, a message is written to the <xref:System.Web.UI.WebControls.Label.Text%2A> property for `Label1` with information on which sidebar area button was clicked.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardSideBarButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSideBarButtonClick/CS/wizardsidebarbuttonclickcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardSideBarButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSideBarButtonClick/VB/wizardsidebarbuttonclickvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardSideBarButtonClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSideBarButtonClick/CS/wizardsidebarbuttonclickcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardSideBarButtonClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSideBarButtonClick/VB/wizardsidebarbuttonclickvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Wizard.OnSideBarButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="SideBarButtonID">
@@ -2655,6 +2778,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
       </Docs>
     </Member>
     <Member MemberName="SideBarButtonStyle">
@@ -2718,6 +2842,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplaySideBar" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="SideBarPlaceholderId">
@@ -2806,6 +2934,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplaySideBar" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="SideBarTemplate">
@@ -2872,6 +3004,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplaySideBar" />
       </Docs>
     </Member>
     <Member MemberName="SkipLinkText">
@@ -2953,6 +3088,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.WebControls.WizardStepType.Start" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishNavigationTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNavigationTemplate" />
       </Docs>
     </Member>
     <Member MemberName="StartNextButtonID">
@@ -2977,6 +3115,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
       </Docs>
     </Member>
     <Member MemberName="StartNextButtonImageUrl">
@@ -3013,6 +3152,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
       </Docs>
     </Member>
     <Member MemberName="StartNextButtonStyle">
@@ -3054,6 +3197,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.NavigationButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="StartNextButtonText">
@@ -3095,6 +3244,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
       </Docs>
     </Member>
     <Member MemberName="StartNextButtonType">
@@ -3118,6 +3271,10 @@
         <summary>Gets or sets the type of button that is rendered as the **Next** button on the <see cref="F:System.Web.UI.WebControls.WizardStepType.Start" /> step.</summary>
         <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values. The default is <see cref="F:System.Web.UI.WebControls.ButtonType.Button" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
       </Docs>
     </Member>
     <Member MemberName="StepNavigationTemplate">
@@ -3164,6 +3321,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishNavigationTemplate" />
       </Docs>
     </Member>
     <Member MemberName="StepNextButtonID">
@@ -3188,6 +3347,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
       </Docs>
     </Member>
     <Member MemberName="StepNextButtonImageUrl">
@@ -3224,6 +3384,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonType" />
       </Docs>
     </Member>
     <Member MemberName="StepNextButtonStyle">
@@ -3265,6 +3428,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.NavigationButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonType" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="StepNextButtonText">
@@ -3306,6 +3474,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonType" />
       </Docs>
     </Member>
     <Member MemberName="StepNextButtonType">
@@ -3329,6 +3500,9 @@
         <summary>Gets or sets the type of button that is rendered as the **Next** button.</summary>
         <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values. The default is <see cref="F:System.Web.UI.WebControls.ButtonType.Button" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonText" />
       </Docs>
     </Member>
     <Member MemberName="StepPreviousButtonID">
@@ -3353,6 +3527,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
       </Docs>
     </Member>
     <Member MemberName="StepPreviousButtonImageUrl">
@@ -3389,6 +3564,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonType" />
       </Docs>
     </Member>
     <Member MemberName="StepPreviousButtonStyle">
@@ -3430,6 +3608,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.NavigationButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonText" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonType" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="StepPreviousButtonText">
@@ -3471,6 +3654,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonType" />
       </Docs>
     </Member>
     <Member MemberName="StepPreviousButtonType">
@@ -3494,6 +3680,9 @@
         <summary>Gets or sets the type of button that is rendered as the **Previous** button.</summary>
         <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values. The default is <see cref="F:System.Web.UI.WebControls.ButtonType.Button" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonText" />
       </Docs>
     </Member>
     <Member MemberName="StepStyle">
@@ -3557,6 +3746,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="TagKey">
@@ -3582,6 +3773,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -3673,11 +3865,13 @@
 ## Examples  
  The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.Wizard> control programmatically and how to use the <xref:System.Web.UI.WebControls.WizardStepCollection.Add%2A> method to add <xref:System.Web.UI.WebControls.WizardStepBase> objects to the <xref:System.Web.UI.WebControls.Wizard.WizardSteps%2A> collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardSteps#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSteps/CS/wizardstepscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardSteps#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSteps/VB/wizardstepsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.WizardSteps#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSteps/CS/wizardstepscs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.WizardSteps#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSteps/VB/wizardstepsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
       </Docs>
     </Member>
   </Members>

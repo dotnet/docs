@@ -13,20 +13,22 @@ helpviewer_keywords:
   - "typography [WPF]"
   - "media [WPF]"
   - "code-behind [WPF]"
-  - "Windows Presentation Foundation, about Windows Presentation Foundation"
+  - "Windows Presentation Foundation [WPF], about Windows Presentation Foundation"
   - "2-D shapes [WPF]"
   - "animation [WPF]"
   - "standalone applications [WPF]"
   - "markup [WPF]"
   - "2-D effects [WPF]"
   - "browser-hosted applications [WPF]"
-  - "WPF, about Windows Presentation Foundation"
+  - "WPF [WPF], about Windows Presentation Foundation"
   - "3-D rendering [WPF]"
 ms.assetid: 582a314e-e23d-4144-b45b-acbbd5579252
 caps.latest.revision: 54
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Introduction to WPF in Visual Studio 2015
 Windows Presentation Foundation (WPF) in Visual Studio 2015 provides developers with a unified programming model for building modern line-of-business desktop applications on Windows.  

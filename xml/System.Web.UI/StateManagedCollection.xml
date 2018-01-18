@@ -40,6 +40,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.IStateManager" />
+    <altmember cref="T:System.Web.UI.StateBag" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -87,6 +89,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnClear" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnClearComplete" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -176,7 +180,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.StateManagedCollection.CreateKnownType%2A> method is called internally by the <xref:System.Web.UI.StateManagedCollection> collection in its implementation of the <xref:System.Web.UI.StateManagedCollection.System%23Web%23UI%23IStateManager%23LoadViewState%2A?displayProperty=fullName> method. Derived collections override the <xref:System.Web.UI.StateManagedCollection.CreateKnownType%2A> method to return a default instance of the <xref:System.Web.UI.IStateManager> type identified by the provided `index`, which maps to one of the types returned by the <xref:System.Web.UI.StateManagedCollection.GetKnownTypes%2A> method.  
+ The <xref:System.Web.UI.StateManagedCollection.CreateKnownType%2A> method is called internally by the <xref:System.Web.UI.StateManagedCollection> collection in its implementation of the <xref:System.Web.UI.StateManagedCollection.System%23Web%23UI%23IStateManager%23LoadViewState%2A?displayProperty=nameWithType> method. Derived collections override the <xref:System.Web.UI.StateManagedCollection.CreateKnownType%2A> method to return a default instance of the <xref:System.Web.UI.IStateManager> type identified by the provided `index`, which maps to one of the types returned by the <xref:System.Web.UI.StateManagedCollection.GetKnownTypes%2A> method.  
   
    
   
@@ -189,6 +193,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">In all cases when not overridden in a derived class.</exception>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.GetKnownTypes" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -208,6 +213,7 @@
         <summary>Returns an iterator that iterates through the <see cref="T:System.Web.UI.StateManagedCollection" /> collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the <see cref="T:System.Web.UI.StateManagedCollection" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.IEnumerable.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="GetKnownTypes">
@@ -242,6 +248,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.CreateKnownType(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="OnClear">
@@ -267,6 +274,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.Clear" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnClearComplete" />
       </Docs>
     </Member>
     <Member MemberName="OnClearComplete">
@@ -292,6 +301,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.Clear" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnClear" />
       </Docs>
     </Member>
     <Member MemberName="OnInsert">
@@ -322,6 +333,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Add(System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnInsertComplete(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="OnInsertComplete">
@@ -352,6 +366,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Add(System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnInsert(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="OnRemove">
@@ -382,6 +399,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Remove(System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnRemoveComplete(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="OnRemoveComplete">
@@ -412,6 +432,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Remove(System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnRemove(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="OnValidate">
@@ -442,6 +465,12 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Add(System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Contains(System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#IndexOf(System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Remove(System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="SetDirty">
@@ -467,6 +496,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.SetDirtyObject(System.Object)" />
+        <altmember cref="M:System.Web.UI.StateBag.SetDirty(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="SetDirtyObject">
@@ -503,6 +534,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Web#UI#IStateManager#SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.Count">
@@ -540,6 +572,7 @@
         <value>
           <see langword="false" /> in all cases.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.StateManagedCollection.System#Collections#ICollection#SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -559,6 +592,7 @@
         <value>
           <see langword="null" /> in all cases.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.StateManagedCollection.System#Collections#ICollection#IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -578,6 +612,7 @@
         <summary>Returns an iterator that iterates through the <see cref="T:System.Web.UI.StateManagedCollection" /> collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the <see cref="T:System.Web.UI.StateManagedCollection" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.IEnumerable.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -608,6 +643,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnInsert(System.Int32,System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnInsertComplete(System.Int32,System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnValidate(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Clear">
@@ -633,6 +672,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -663,6 +703,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnValidate(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -692,6 +733,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.StateManagedCollection.System#Collections#IList#Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -725,6 +767,9 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The specified <paramref name="index" /> is out of range of the collection.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.UI.StateManagedCollection" /> is read-only.</exception>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Add(System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnInsert(System.Int32,System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnInsertComplete(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -744,6 +789,7 @@
         <value>
           <see langword="false" /> in all cases.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.StateManagedCollection.System#Collections#IList#IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsReadOnly">
@@ -763,6 +809,7 @@
         <value>
           <see langword="true" /> if the <see cref="T:System.Web.UI.StateManagedCollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.StateManagedCollection.System#Collections#IList#IsFixedSize" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Item">
@@ -786,6 +833,7 @@
         <value>The element at the specified index.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified <paramref name="index" /> is out of range of the collection.</exception>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#IndexOf(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -815,6 +863,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.UI.StateManagedCollection" /> is read-only.</exception>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnRemove(System.Int32,System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnRemoveComplete(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.RemoveAt">
@@ -844,6 +895,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.UI.StateManagedCollection" /> is read-only.</exception>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Remove(System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnRemove(System.Int32,System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.OnRemoveComplete(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -863,6 +917,9 @@
         <value>
           <see langword="true" /> if the collection is marked to save its own state and the state of all the <see cref="T:System.Web.UI.IStateManager" /> items it contains; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Web#UI#IStateManager#LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Web#UI#IStateManager#SaveViewState" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Web#UI#IStateManager#TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -895,6 +952,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.StateManagedCollection.System#Web#UI#IStateManager#IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Web#UI#IStateManager#SaveViewState" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Web#UI#IStateManager#TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -925,6 +985,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.StateManagedCollection.System#Web#UI#IStateManager#IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Web#UI#IStateManager#LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Web#UI#IStateManager#TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -950,6 +1013,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.StateManagedCollection.System#Web#UI#IStateManager#IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Web#UI#IStateManager#LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.StateManagedCollection.System#Web#UI#IStateManager#SaveViewState" />
       </Docs>
     </Member>
   </Members>

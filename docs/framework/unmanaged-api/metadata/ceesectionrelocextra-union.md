@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CeeSectionRelocExtra"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CeeSectionRelocExtra union [.NET Framework metadata]"
 ms.assetid: d9568cf6-7f98-4cd6-ab36-0a2bd509afcc
@@ -28,6 +26,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CeeSectionRelocExtra Union
 Represents an address offset that is used by the [ICeeGen](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md) interface to relocate a section.  

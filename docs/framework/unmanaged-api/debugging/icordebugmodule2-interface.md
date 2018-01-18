@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModule2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugModule2 interface [.NET Framework debugging]"
 ms.assetid: 0847e64f-fdbe-4c96-8168-da20fdc84d80
@@ -28,6 +26,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugModule2 Interface1
 Serves as a logical extension to the ICorDebugModule interface.  

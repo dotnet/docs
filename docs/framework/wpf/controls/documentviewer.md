@@ -19,6 +19,8 @@ caps.latest.revision: 64
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # DocumentViewer
 The <xref:System.Windows.Controls.DocumentViewer> control is used to view <xref:System.Windows.Documents.FixedDocument> content (such as [!INCLUDE[TLA#tla_metro](../../../../includes/tlasharptla-metro-md.md)] documents) in a paginated format.  
@@ -29,6 +31,6 @@ The <xref:System.Windows.Controls.DocumentViewer> control is used to view <xref:
  <xref:System.Windows.Documents.FixedDocument>  
   
 ## See Also  
- [Documents](../../../../docs/framework/wpf/advanced/documents.md)   
- [Document Serialization and Storage](../../../../docs/framework/wpf/advanced/document-serialization-and-storage.md)   
+ [Documents](../../../../docs/framework/wpf/advanced/documents.md)  
+ [Document Serialization and Storage](../../../../docs/framework/wpf/advanced/document-serialization-and-storage.md)  
  [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)

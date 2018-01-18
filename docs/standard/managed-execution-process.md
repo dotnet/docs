@@ -20,6 +20,9 @@ caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Managed Execution Process
 <a name="introduction"></a> The managed execution process includes the following steps, which are discussed in detail later in this topic:  
@@ -110,12 +113,12 @@ manager: "wpickett"
  [Back to top](#introduction)  
   
 ## See Also  
- [Overview](../../docs/framework/get-started/overview.md)   
- [Language Independence and Language-Independent Components](../../docs/standard/language-independence-and-language-independent-components.md)   
- [Metadata and Self-Describing Components](../../docs/standard/metadata-and-self-describing-components.md)   
- [Ilasm.exe (IL Assembler)](../../docs/framework/tools/ilasm-exe-il-assembler.md)   
- [Security](../../docs/standard/security/index.md)   
- [Interoperating with Unmanaged Code](../../docs/framework/interop/index.md)   
- [Deployment](../../docs/framework/deployment/net-framework-applications.md)   
- [Assemblies in the Common Language Runtime](../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)   
+ [Overview](../../docs/framework/get-started/overview.md)  
+ [Language Independence and Language-Independent Components](../../docs/standard/language-independence-and-language-independent-components.md)  
+ [Metadata and Self-Describing Components](../../docs/standard/metadata-and-self-describing-components.md)  
+ [Ilasm.exe (IL Assembler)](../../docs/framework/tools/ilasm-exe-il-assembler.md)  
+ [Security](../../docs/standard/security/index.md)  
+ [Interoperating with Unmanaged Code](../../docs/framework/interop/index.md)  
+ [Deployment](../../docs/framework/deployment/net-framework-applications.md)  
+ [Assemblies in the Common Language Runtime](../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)  
  [Application Domains](../../docs/framework/app-domains/application-domains.md)

@@ -81,7 +81,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The root designer may return any type of object, but the object must be compatible with an adapter for the technology of the host. Hosting environments such as [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] provide a way to plug in new view technology adapters. The default view object for the Windows Forms designer is a <xref:System.Windows.Forms.Control?displayProperty=fullName> instance.  
+ The root designer may return any type of object, but the object must be compatible with an adapter for the technology of the host. Hosting environments such as [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] provide a way to plug in new view technology adapters. The default view object for the Windows Forms designer is a <xref:System.Windows.Forms.Control?displayProperty=nameWithType> instance.  
   
    
   

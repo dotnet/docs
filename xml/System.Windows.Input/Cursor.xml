@@ -51,6 +51,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.Cursors" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,6 +80,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="cursorStream" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.IOException">This constructor was unable to create a temporary file.</exception>
+        <altmember cref="T:System.Windows.Input.Cursors" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -101,6 +103,7 @@
           <paramref name="cursorFile" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="cursorFile" /> is not an *.ani* or *.cur* file name.</exception>
+        <altmember cref="T:System.Windows.Input.Cursors" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -207,5 +210,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.Cursor" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

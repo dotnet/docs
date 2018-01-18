@@ -60,6 +60,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Windows.Forms.Control.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
+    <altmember cref="E:System.Windows.Forms.Control.KeyDown" />
+    <altmember cref="M:System.Windows.Forms.Control.OnKeyUp(System.Windows.Forms.KeyEventArgs)" />
+    <altmember cref="E:System.Windows.Forms.Control.KeyUp" />
+    <altmember cref="T:System.Windows.Forms.KeyPressEventArgs" />
+    <altmember cref="M:System.Windows.Forms.Control.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)" />
+    <altmember cref="E:System.Windows.Forms.Control.KeyPress" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -78,6 +85,7 @@
         <param name="keyData">A <see cref="T:System.Windows.Forms.Keys" /> representing the key that was pressed, combined with any modifier flags that indicate which CTRL, SHIFT, and ALT keys were pressed at the same time. Possible values are obtained be applying the bitwise OR (|) operator to constants from the <see cref="T:System.Windows.Forms.Keys" /> enumeration.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.KeyEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.KeyPressEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="Alt">
@@ -118,6 +126,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Control" />
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Shift" />
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Modifiers" />
       </Docs>
     </Member>
     <Member MemberName="Control">
@@ -148,6 +159,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Alt" />
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Shift" />
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Modifiers" />
       </Docs>
     </Member>
     <Member MemberName="Handled">
@@ -185,6 +199,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.SuppressKeyPress" />
       </Docs>
     </Member>
     <Member MemberName="KeyCode">
@@ -234,6 +249,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.KeyData" />
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.KeyValue" />
       </Docs>
     </Member>
     <Member MemberName="KeyData">
@@ -260,15 +277,17 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.KeyDown?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.KeyDown?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.KeyDown?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.KeyDown?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#48](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#48)]
  [!code-vb[System.Windows.Forms.EventExamples#48](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#48)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.KeyCode" />
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.KeyValue" />
       </Docs>
     </Member>
     <Member MemberName="KeyValue">
@@ -290,15 +309,17 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.KeyDown?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.KeyDown?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.KeyDown?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.KeyDown?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#48](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#48)]
  [!code-vb[System.Windows.Forms.EventExamples#48](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#48)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.KeyData" />
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.KeyCode" />
       </Docs>
     </Member>
     <Member MemberName="Modifiers">
@@ -333,6 +354,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Alt" />
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Control" />
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Shift" />
+        <altmember cref="P:System.Windows.Forms.Control.ModifierKeys" />
       </Docs>
     </Member>
     <Member MemberName="Shift">
@@ -363,6 +388,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Alt" />
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Control" />
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Modifiers" />
       </Docs>
     </Member>
     <Member MemberName="SuppressKeyPress">
@@ -399,6 +427,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.KeyEventArgs.Handled" />
       </Docs>
     </Member>
   </Members>

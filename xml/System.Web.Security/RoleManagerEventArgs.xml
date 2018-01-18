@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.RoleManagerEventArgs> object provides event information to the <xref:System.Web.Security.RoleManagerModule.GetRoles> event of the <xref:System.Web.Security.RoleManagerModule> class. The <xref:System.Web.Security.RoleManagerEventArgs> object provides access to the <xref:System.Web.HttpContext> of the current request, and a `Boolean`<xref:System.Web.Security.RoleManagerEventArgs.RolesPopulated%2A> property is used to enable or cancel creation of a <xref:System.Web.Security.RolePrincipal> by the<xref:System.Web.Security.RoleManagerModule>.  
+ The <xref:System.Web.Security.RoleManagerEventArgs> object provides event information to the <xref:System.Web.Security.RoleManagerModule.GetRoles> event of the <xref:System.Web.Security.RoleManagerModule> class. The <xref:System.Web.Security.RoleManagerEventArgs> object provides access to the <xref:System.Web.HttpContext> of the current request, and a `Boolean`<xref:System.Web.Security.RoleManagerEventArgs.RolesPopulated%2A> property is used to enable or cancel creation of a <xref:System.Web.Security.RolePrincipal> by the <xref:System.Web.Security.RoleManagerModule>.  
   
  ]]></format>
     </remarks>

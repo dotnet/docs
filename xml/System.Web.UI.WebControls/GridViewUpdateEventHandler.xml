@@ -33,15 +33,19 @@
 ## Examples  
  The following example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.GridViewUpdateEventHandler> delegate to the <xref:System.Web.UI.WebControls.GridView.RowUpdating> event of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewUpdateEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdateEventHandler/CS/gridviewupdateeventhandlercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewUpdateEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdateEventHandler/VB/gridviewupdateeventhandlervb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewUpdateEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdateEventHandler/CS/gridviewupdateeventhandlercs.aspx#1)]
+ [!code-aspx-vb[GridViewUpdateEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdateEventHandler/VB/gridviewupdateeventhandlervb.aspx#1)]  
   
  The following example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.GridViewUpdateEventHandler> delegate to the <xref:System.Web.UI.WebControls.GridView.RowUpdating> event of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowUpdating#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowUpdating/CS/gridviewrowupdatingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowUpdating#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowUpdating/VB/gridviewrowupdatingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowUpdating#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowUpdating/CS/gridviewrowupdatingcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowUpdating#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowUpdating/VB/gridviewrowupdatingvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewEditEventArgs" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdating" />
+    <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowUpdating(System.Web.UI.WebControls.GridViewUpdateEventArgs)" />
   </Docs>
 </Type>

@@ -18,13 +18,13 @@
 ## Remarks  
  These event arguments contain information about the navigation that was requested, and are passed to handlers of the **Navigating** event, which is implemented by the following:  
   
--   <xref:System.Windows.Navigation.NavigationService.Navigating?displayProperty=fullName>  
+-   <xref:System.Windows.Navigation.NavigationService.Navigating?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Navigation.NavigationWindow.Navigating?displayProperty=fullName>  
+-   <xref:System.Windows.Navigation.NavigationWindow.Navigating?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Controls.Frame.Navigating?displayProperty=fullName>  
+-   <xref:System.Windows.Controls.Frame.Navigating?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Application.Navigating?displayProperty=fullName>  
+-   <xref:System.Windows.Application.Navigating?displayProperty=nameWithType>  
   
  <xref:System.Windows.Navigation.NavigatingCancelEventArgs> encapsulates the following details of the navigation request:  
   
@@ -52,6 +52,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.Windows.Navigation.NavigationService.Navigating" />
   </Docs>
   <Members>
     <Member MemberName="Content">
@@ -73,7 +74,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can navigate to content using either a [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] or an object. When navigating to an object, which occurs when calling <xref:System.Windows.Navigation.NavigationService.Navigate%2A?displayProperty=fullName> and <xref:System.Windows.Navigation.NavigationService.Navigate%2A?displayProperty=fullName>, <xref:System.Windows.Navigation.NavigatingCancelEventArgs.Content%2A> contains a reference to the content object that is being navigated to. Additionally, the <xref:System.Windows.Navigation.NavigatingCancelEventArgs.Uri%2A> property will be `null`.  
+ You can navigate to content using either a [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] or an object. When navigating to an object, which occurs when calling <xref:System.Windows.Navigation.NavigationService.Navigate%2A?displayProperty=nameWithType> and <xref:System.Windows.Navigation.NavigationService.Navigate%2A?displayProperty=nameWithType>, <xref:System.Windows.Navigation.NavigatingCancelEventArgs.Content%2A> contains a reference to the content object that is being navigated to. Additionally, the <xref:System.Windows.Navigation.NavigatingCancelEventArgs.Uri%2A> property will be `null`.  
   
  ]]></format>
         </remarks>
@@ -123,7 +124,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Navigation.NavigatingCancelEventArgs.ExtraData%2A> can be used to pass context-specific data that is specific to a particular navigation. <xref:System.Windows.Navigation.NavigatingCancelEventArgs.ExtraData%2A> contains a reference to the object that is passed as the second argument when calling either <xref:System.Windows.Navigation.NavigationService.Navigate%2A?displayProperty=fullName> or <xref:System.Windows.Navigation.NavigationService.Navigate%2A?displayProperty=fullName>. Otherwise, it is `null`.  
+ <xref:System.Windows.Navigation.NavigatingCancelEventArgs.ExtraData%2A> can be used to pass context-specific data that is specific to a particular navigation. <xref:System.Windows.Navigation.NavigatingCancelEventArgs.ExtraData%2A> contains a reference to the object that is passed as the second argument when calling either <xref:System.Windows.Navigation.NavigationService.Navigate%2A?displayProperty=nameWithType> or <xref:System.Windows.Navigation.NavigationService.Navigate%2A?displayProperty=nameWithType>. Otherwise, it is `null`.  
   
  ]]></format>
         </remarks>
@@ -249,7 +250,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can navigate to content using either an [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] or an object. When navigating to an [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)], which occurs when calling <xref:System.Windows.Navigation.NavigationService.Navigate%2A?displayProperty=fullName> and <xref:System.Windows.Navigation.NavigationService.Navigate%2A?displayProperty=fullName>, <xref:System.Windows.Navigation.NavigatingCancelEventArgs.Uri%2A> contains the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the content being navigated to. Additionally, the <xref:System.Windows.Navigation.NavigatingCancelEventArgs.Content%2A> property will be `null`.  
+ You can navigate to content using either an [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] or an object. When navigating to an [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)], which occurs when calling <xref:System.Windows.Navigation.NavigationService.Navigate%2A?displayProperty=nameWithType> and <xref:System.Windows.Navigation.NavigationService.Navigate%2A?displayProperty=nameWithType>, <xref:System.Windows.Navigation.NavigatingCancelEventArgs.Uri%2A> contains the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the content being navigated to. Additionally, the <xref:System.Windows.Navigation.NavigatingCancelEventArgs.Content%2A> property will be `null`.  
   
  ]]></format>
         </remarks>
@@ -274,7 +275,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Net.WebRequest?displayProperty=fullName> is an abstract base class that encapsulates a Web request, and is protocol agnostic. For each common protocol, the [!INCLUDE[TLA#tla_titlewinfx](~/includes/tlasharptla-titlewinfx-md.md)] includes a class that derives from <xref:System.Net.WebRequest?displayProperty=fullName> and extends it with protocol specific state and behavior, including:  
+ <xref:System.Net.WebRequest?displayProperty=nameWithType> is an abstract base class that encapsulates a Web request, and is protocol agnostic. For each common protocol, the [!INCLUDE[TLA#tla_titlewinfx](~/includes/tlasharptla-titlewinfx-md.md)] includes a class that derives from <xref:System.Net.WebRequest?displayProperty=nameWithType> and extends it with protocol specific state and behavior, including:  
   
 -   <xref:System.IO.Packaging.PackWebRequest>: [!INCLUDE[TLA2#tla_uri#plural](~/includes/tla2sharptla-urisharpplural-md.md)] that use the `pack://` scheme to request application data files (see [WPF Application Resource, Content, and Data Files](~/docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)).  
   
@@ -292,7 +293,7 @@
   
 -   Calling <xref:System.Windows.Navigation.NavigationService.Navigate%2A>  
   
--   Setting <xref:System.Windows.Navigation.NavigationService.Content%2A?displayProperty=fullName>.  
+-   Setting <xref:System.Windows.Navigation.NavigationService.Content%2A?displayProperty=nameWithType>.  
   
 -   Navigating through HTML content in a <xref:System.Windows.Controls.Frame>.  
   

@@ -9,10 +9,8 @@ ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Portable Class Library [.NET Framework], and MVVM"
   - "MVVM, and Portable Class Library"
@@ -21,6 +19,9 @@ caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Using Portable Class Library with Model-View-View Model
 You can use the .NET Framework [Portable Class Library](../../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md) to implement the Model-View-View Model (MVVM) pattern and share assemblies across multiple platforms.  
@@ -29,32 +30,32 @@ You can use the .NET Framework [Portable Class Library](../../../docs/standard/c
   
  ![Portable with MVVM diagram](../../../docs/standard/cross-platform/media/portablemvvmdiagram.png "PortableMVVMdiagram")  
   
- This topic does not provide general information about the MVVM pattern. It only provides information about how to use [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] to implement MVVM. For more information about MVVM, see the [MVVM Quickstart](http://go.microsoft.com/fwlink/?LinkId=234934) in the MSDN Library.  
+ This topic does not provide general information about the MVVM pattern. It only provides information about how to use [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] to implement MVVM. For more information about MVVM, see the [MVVM Quickstart](https://msdn.microsoft.com/library/gg430869(v=PandP.40).aspx).  
   
 ## Classes That Support MVVM  
  When you target the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)], Silverlight, or Windows Phone 7.5 for your [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] project, the following classes are available for implementing the MVVM pattern:  
   
--   <xref:System.Collections.ObjectModel.ObservableCollection%601?displayProperty=fullName> class  
+-   <xref:System.Collections.ObjectModel.ObservableCollection%601?displayProperty=nameWithType> class  
   
--   <xref:System.Collections.ObjectModel.ReadOnlyObservableCollection%601?displayProperty=fullName> class  
+-   <xref:System.Collections.ObjectModel.ReadOnlyObservableCollection%601?displayProperty=nameWithType> class  
   
--   <xref:System.Collections.Specialized.INotifyCollectionChanged?displayProperty=fullName> class  
+-   <xref:System.Collections.Specialized.INotifyCollectionChanged?displayProperty=nameWithType> class  
   
--   <xref:System.Collections.Specialized.NotifyCollectionChangedAction?displayProperty=fullName> class  
+-   <xref:System.Collections.Specialized.NotifyCollectionChangedAction?displayProperty=nameWithType> class  
   
--   <xref:System.Collections.Specialized.NotifyCollectionChangedEventArgs?displayProperty=fullName> class  
+-   <xref:System.Collections.Specialized.NotifyCollectionChangedEventArgs?displayProperty=nameWithType> class  
   
--   <xref:System.Collections.Specialized.NotifyCollectionChangedEventHandler?displayProperty=fullName> class  
+-   <xref:System.Collections.Specialized.NotifyCollectionChangedEventHandler?displayProperty=nameWithType> class  
   
--   <xref:System.ComponentModel.DataErrorsChangedEventArgs?displayProperty=fullName> class  
+-   <xref:System.ComponentModel.DataErrorsChangedEventArgs?displayProperty=nameWithType> class  
   
--   <xref:System.ComponentModel.INotifyDataErrorInfo?displayProperty=fullName> class  
+-   <xref:System.ComponentModel.INotifyDataErrorInfo?displayProperty=nameWithType> class  
   
--   <xref:System.ComponentModel.INotifyPropertyChanged?displayProperty=fullName> class  
+-   <xref:System.ComponentModel.INotifyPropertyChanged?displayProperty=nameWithType> class  
   
--   <xref:System.Windows.Input.ICommand?displayProperty=fullName> class  
+-   <xref:System.Windows.Input.ICommand?displayProperty=nameWithType> class  
   
--   All classes in the <xref:System.ComponentModel.DataAnnotations?displayProperty=fullName> namespace  
+-   All classes in the <xref:System.ComponentModel.DataAnnotations?displayProperty=nameWithType> namespace  
   
 ## Implementing MVVM  
  To implement MVVM, you typically create both the model and the view model in a [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] project, because a [!INCLUDE[net_portable](../../../includes/net-portable-md.md)] project cannot reference a non-portable project. The model and view model can be in the same project or in separate projects. If you use separate projects, add a reference from the view model project to the model project.  

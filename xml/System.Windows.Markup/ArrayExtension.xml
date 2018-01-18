@@ -33,10 +33,8 @@
   
  In previous versions of the .NET Framework, this class existed in the WPF-specific assembly PresentationFramework. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.ArrayExtension> is in the System.Xaml assembly. This makes the `x:Array` usage available to frameworks or technologies such as [!INCLUDE[TLA#tla_workflow](~/includes/tlasharptla-workflow-md.md)] that are built on .NET Framework XAML Services. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
   
- The System.Xaml assembly uses <xref:System.Windows.Markup.XmlnsDefinitionAttribute> to map types from the<xref:System.Windows.Markup> CLR namespace in the assembly to the XAML namespace for the XAML language ([!INCLUDE[TLA#tla_xamlxmlnsv1](~/includes/tlasharptla-xamlxmlnsv1-md.md)]). In typical XAML markup, you declare a prefix for [!INCLUDE[TLA#tla_xamlxmlnsv1](~/includes/tlasharptla-xamlxmlnsv1-md.md)] in a root element mapping and use the prefix `x`.  
+ The System.Xaml assembly uses <xref:System.Windows.Markup.XmlnsDefinitionAttribute> to map types from the <xref:System.Windows.Markup> CLR namespace in the assembly to the XAML namespace for the XAML language ([!INCLUDE[TLA#tla_xamlxmlnsv1](~/includes/tlasharptla-xamlxmlnsv1-md.md)]). In typical XAML markup, you declare a prefix for [!INCLUDE[TLA#tla_xamlxmlnsv1](~/includes/tlasharptla-xamlxmlnsv1-md.md)] in a root element mapping and use the prefix `x`.  
   
-<a name="xamlTextUsage_ArrayExtension"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
   </Docs>
@@ -196,8 +194,6 @@
   
  For XAML usage information, see [x:Array Markup Extension](~/docs/framework/xaml-services/x-array-markup-extension.md).  
   
-<a name="xamlTextUsage_Items"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
       </Docs>
@@ -268,11 +264,18 @@
 ## Remarks  
  For XAML usage information, see [x:Array Markup Extension](~/docs/framework/xaml-services/x-array-markup-extension.md).  
   
-<a name="xamlTextUsage_Type"></a>   
-## XAML Text Usage  
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.ArrayExtension" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -45,6 +45,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.HttpModuleActionCollection" />
+    <altmember cref="T:System.Web.Configuration.HttpModuleAction" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,6 +69,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConfigurationAllowDefinition" />
       </Docs>
     </Member>
     <Member MemberName="Modules">
@@ -105,6 +108,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.HttpModuleActionCollection" />
+        <altmember cref="T:System.Web.Configuration.HttpModuleAction" />
       </Docs>
     </Member>
     <Member MemberName="Properties">

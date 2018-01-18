@@ -21,7 +21,7 @@ uid: System.Linq.Expressions.InvocationExpression.Type
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

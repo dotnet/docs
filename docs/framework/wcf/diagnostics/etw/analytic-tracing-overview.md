@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "analytic tracing [WCF], overview"
 ms.assetid: ae55e9cc-0809-442f-921f-d644290ebf15
 caps.latest.revision: 22
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Analytic Tracing Overview
 Analytic tracing in [!INCLUDE[netfx_current_long](../../../../../includes/netfx-current-long-md.md)] is a high performance and low verbosity tracing feature set on top of Event Tracing for Windows (ETW). ETW runs at the kernel-level to greatly reduce the overhead of tracing operations. It efficiently buffers user- and kernel-mode events, and allows dynamic enabling of logging without requiring service restarts. The tracing data is available in the event logs after it has been emitted and received.  
@@ -47,7 +49,7 @@ Analytic tracing in [!INCLUDE[netfx_current_long](../../../../../includes/netfx-
  `ServiceModelReg.exe -i -c:etw`  
   
 ### Dynamic Configuration  
- The ETW infrastructure allows tracing to be enabled and configured dynamically using standard Windows tools. [!INCLUDE[crdefault](../../../../../includes/crdefault-md.md)][Dynamically Enabling Analytic Tracing](../../../../../docs/framework/wcf/diagnostics/etw/dynamically-enabling-analytic-tracing.md).  
+ The ETW infrastructure allows tracing to be enabled and configured dynamically using standard Windows tools. [!INCLUDE[crdefault](../../../../../includes/crdefault-md.md)] [Dynamically Enabling Analytic Tracing](../../../../../docs/framework/wcf/diagnostics/etw/dynamically-enabling-analytic-tracing.md).  
   
 ### Message Flow Tracing  
  [!INCLUDE[crabout](../../../../../includes/crabout-md.md)] how to enable message flow tracing, see [Configuring Message Flow Tracing](../../../../../docs/framework/wcf/diagnostics/etw/configuring-message-flow-tracing.md).  

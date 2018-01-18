@@ -83,7 +83,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Discovery can be performed in two modes, ad-hoc and managed. In ad-hoc discovery, discovery messages are sent out in a multicast manner to all available services. In managed discovery, messages are sent in a unicast manner to a discovery proxy. [!INCLUDE[crabout](~/includes/crabout-md.md)]the discovery modes, see [WCF Discovery Overview](~/docs/framework/wcf/feature-details/wcf-discovery-overview.md).  
+ Discovery can be performed in two modes, ad-hoc and managed. In ad-hoc discovery, discovery messages are sent out in a multicast manner to all available services. In managed discovery, messages are sent in a unicast manner to a discovery proxy. [!INCLUDE[crabout](~/includes/crabout-md.md)] the discovery modes, see [WCF Discovery Overview](~/docs/framework/wcf/feature-details/wcf-discovery-overview.md).  
   
  ]]></format>
         </remarks>
@@ -316,5 +316,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OnInitializeAndValidate">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When called or overridden by a derived class, initializes and validates the specified endpoint element.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OnApplyConfiguration">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When called or overridden by a derived class, converts the specified <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to a UDP discovery endpoint.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

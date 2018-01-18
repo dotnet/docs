@@ -154,13 +154,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.WebResponse.Close%2A> method cleans up the resources used by a <xref:System.Net.WebResponse> and closes the underlying stream by calling the <xref:System.IO.Stream.Close%2A?displayProperty=fullName> method.  
+ The <xref:System.Net.WebResponse.Close%2A> method cleans up the resources used by a <xref:System.Net.WebResponse> and closes the underlying stream by calling the <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
->  The response must be closed to avoid running out of system resources. The response stream can be closed by calling <xref:System.IO.Stream.Close%2A?displayProperty=fullName> or <xref:System.Net.WebResponse.Close%2A>.  
+>  The response must be closed to avoid running out of system resources. The response stream can be closed by calling <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> or <xref:System.Net.WebResponse.Close%2A>.  
   
 > [!NOTE]
->  The <xref:System.Net.WebResponse> class is an `abstract` class. The actual behavior of <xref:System.Net.WebResponse> instances at run time is determined by the descendant class returned by <xref:System.Net.WebRequest.GetResponse%2A?displayProperty=fullName>. For more information about default values and exceptions, please see the documentation for the descendant classes, such as <xref:System.Net.HttpWebResponse> and <xref:System.Net.FileWebResponse>.  
+>  The <xref:System.Net.WebResponse> class is an `abstract` class. The actual behavior of <xref:System.Net.WebResponse> instances at run time is determined by the descendant class returned by <xref:System.Net.WebRequest.GetResponse%2A?displayProperty=nameWithType>. For more information about default values and exceptions, please see the documentation for the descendant classes, such as <xref:System.Net.HttpWebResponse> and <xref:System.Net.FileWebResponse>.  
   
    
   
@@ -208,7 +208,7 @@
  The <xref:System.Net.WebResponse.ContentLength%2A> property contains the length, in bytes, of the response from the Internet resource. For request methods that contain header information, the <xref:System.Net.WebResponse.ContentLength%2A> does not include the length of the header information.  
   
 > [!NOTE]
->  The <xref:System.Net.WebResponse> class is an `abstract` class. The actual behavior of <xref:System.Net.WebResponse> instances at run time is determined by the descendant class returned by <xref:System.Net.WebRequest.GetResponse%2A?displayProperty=fullName>. For more information about default values and exceptions, please see the documentation for the descendant classes, such as <xref:System.Net.HttpWebResponse> and <xref:System.Net.FileWebResponse>.  
+>  The <xref:System.Net.WebResponse> class is an `abstract` class. The actual behavior of <xref:System.Net.WebResponse> instances at run time is determined by the descendant class returned by <xref:System.Net.WebRequest.GetResponse%2A?displayProperty=nameWithType>. For more information about default values and exceptions, please see the documentation for the descendant classes, such as <xref:System.Net.HttpWebResponse> and <xref:System.Net.FileWebResponse>.  
   
    
   
@@ -222,6 +222,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Any attempt is made to get or set the property, when the property is not overridden in a descendant class.</exception>
+        <altmember cref="P:System.Net.HttpWebResponse.ContentLength" />
       </Docs>
     </Member>
     <Member MemberName="ContentType">
@@ -256,7 +257,7 @@
  The <xref:System.Net.WebResponse.ContentType%2A> property contains the MIME content type of the response from the Internet resource, if known.  
   
 > [!NOTE]
->  The <xref:System.Net.WebResponse> class is an `abstract` class. The actual behavior of <xref:System.Net.WebResponse> instances at run time is determined by the descendant class returned by <xref:System.Net.WebRequest.GetResponse%2A?displayProperty=fullName>. For more information about default values and exceptions, please see the documentation for the descendant classes, such as <xref:System.Net.HttpWebResponse> and <xref:System.Net.FileWebResponse>.  
+>  The <xref:System.Net.WebResponse> class is an `abstract` class. The actual behavior of <xref:System.Net.WebResponse> instances at run time is determined by the descendant class returned by <xref:System.Net.WebRequest.GetResponse%2A?displayProperty=nameWithType>. For more information about default values and exceptions, please see the documentation for the descendant classes, such as <xref:System.Net.HttpWebResponse> and <xref:System.Net.FileWebResponse>.  
   
    
   
@@ -270,6 +271,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Any attempt is made to get or set the property, when the property is not overridden in a descendant class.</exception>
+        <altmember cref="P:System.Net.HttpWebResponse.ContentType" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -416,7 +418,7 @@
  The <xref:System.Net.WebResponse.GetResponseStream%2A> method returns the data stream from the Internet resource.  
   
 > [!NOTE]
->  The response stream must be closed to avoid running out of system resources. The response stream can be closed by calling <xref:System.IO.Stream.Close%2A?displayProperty=fullName> or <xref:System.Net.WebResponse.Close%2A>  
+>  The response stream must be closed to avoid running out of system resources. The response stream can be closed by calling <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> or <xref:System.Net.WebResponse.Close%2A>  
   
    
   
@@ -464,7 +466,7 @@
  The <xref:System.Net.WebResponse.Headers%2A> property contains the name-value header pairs returned in the response.  
   
 > [!NOTE]
->  The <xref:System.Net.WebResponse> class is an `abstract` class. The actual behavior of <xref:System.Net.WebResponse> instances at run time is determined by the descendant class returned by <xref:System.Net.WebRequest.GetResponse%2A?displayProperty=fullName>. For more information about default values and exceptions, please see the documentation for the descendant classes, such as <xref:System.Net.HttpWebResponse> and <xref:System.Net.FileWebResponse>.  
+>  The <xref:System.Net.WebResponse> class is an `abstract` class. The actual behavior of <xref:System.Net.WebResponse> instances at run time is determined by the descendant class returned by <xref:System.Net.WebRequest.GetResponse%2A?displayProperty=nameWithType>. For more information about default values and exceptions, please see the documentation for the descendant classes, such as <xref:System.Net.HttpWebResponse> and <xref:System.Net.FileWebResponse>.  
   
    
   
@@ -478,6 +480,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Any attempt is made to get or set the property, when the property is not overridden in a descendant class.</exception>
+        <altmember cref="T:System.Net.WebHeaderCollection" />
+        <altmember cref="P:System.Net.HttpWebResponse.Headers" />
       </Docs>
     </Member>
     <Member MemberName="IsFromCache">
@@ -546,7 +550,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To request mutual authentication, set the <xref:System.Net.WebRequest.AuthenticationLevel%2A?displayProperty=fullName> property using the <xref:System.Net.Security.AuthenticationLevel.MutualAuthRequested> or <xref:System.Net.Security.AuthenticationLevel.MutualAuthRequired> enumeration value. The default value for the <xref:System.Net.WebRequest.AuthenticationLevel%2A?displayProperty=fullName> property contains <xref:System.Security.Principal.TokenImpersonationLevel.Delegation> and <xref:System.Net.Security.AuthenticationLevel.MutualAuthRequested>.  
+ To request mutual authentication, set the <xref:System.Net.WebRequest.AuthenticationLevel%2A?displayProperty=nameWithType> property using the <xref:System.Net.Security.AuthenticationLevel.MutualAuthRequested> or <xref:System.Net.Security.AuthenticationLevel.MutualAuthRequired> enumeration value. The default value for the <xref:System.Net.WebRequest.AuthenticationLevel%2A?displayProperty=nameWithType> property contains <xref:System.Security.Principal.TokenImpersonationLevel.Delegation> and <xref:System.Net.Security.AuthenticationLevel.MutualAuthRequested>.  
   
  Note that getting this property can throw <xref:System.ObjectDisposedException>.  
   
@@ -594,7 +598,7 @@
  The <xref:System.Net.WebResponse.ResponseUri%2A> property contains the URI of the Internet resource that actually provided the response data. This resource might not be the originally requested URI if the underlying protocol allows redirection of the request.  
   
 > [!NOTE]
->  The <xref:System.Net.WebResponse> class is an `abstract` class. The actual behavior of <xref:System.Net.WebResponse> instances at run time is determined by the descendant class returned by <xref:System.Net.WebRequest.GetResponse%2A?displayProperty=fullName>. For more information about default values and exceptions, please see the documentation for the descendant classes, such as <xref:System.Net.HttpWebResponse> and <xref:System.Net.FileWebResponse>.  
+>  The <xref:System.Net.WebResponse> class is an `abstract` class. The actual behavior of <xref:System.Net.WebResponse> instances at run time is determined by the descendant class returned by <xref:System.Net.WebRequest.GetResponse%2A?displayProperty=nameWithType>. For more information about default values and exceptions, please see the documentation for the descendant classes, such as <xref:System.Net.HttpWebResponse> and <xref:System.Net.FileWebResponse>.  
   
    
   
@@ -679,5 +683,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.WebResponse" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Net.WebResponse" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

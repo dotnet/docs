@@ -1,51 +1,33 @@
 ---
 title: "Procedure Parameters and Arguments (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "procedures, arguments"
-  - "procedures, argument lists"
-  - "values, passing to procedures"
+  - "procedures [Visual Basic], arguments"
+  - "procedures [Visual Basic], argument lists"
+  - "values [Visual Basic], passing to procedures"
   - "arguments [Visual Basic], passing"
-  - "procedures, parameters"
+  - "procedures [Visual Basic], parameters"
   - "Visual Basic code, argument lists"
   - "Visual Basic code, procedures"
-  - "parameters, Visual Basic procedures"
-  - "parameters, lists"
+  - "parameters [Visual Basic], Visual Basic procedures"
+  - "parameters [Visual Basic], lists"
   - "arguments [Visual Basic], Visual Basic procedures"
   - "arguments [Visual Basic], procedures"
-  - "parameter lists"
+  - "parameter lists [Visual Basic]"
   - "Visual Basic code, parameter lists"
-  - "argument lists"
-  - "procedures, parameter lists"
+  - "argument lists [Visual Basic]"
+  - "procedures [Visual Basic], parameter lists"
 ms.assetid: ff275aff-aa13-40df-bd4c-63486db8c1e9
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Procedure Parameters and Arguments (Visual Basic)
 In most cases, a procedure needs some information about the circumstances in which it has been called. A procedure that performs repeated or shared tasks uses different information for each call. This information consists of variables, constants, and expressions that you pass to the procedure when you call it.  
@@ -82,13 +64,13 @@ Passing an argument to a parameter
  A *generic procedure* also defines one or more *type parameters* in addition to its normal parameters. A generic procedure allows the calling code to pass different data types each time it calls the procedure, so it can tailor the data types to the requirements of each individual call. See [Generic Procedures in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-procedures.md).  
   
 ## See Also  
- [Procedures](./index.md)   
- [Sub Procedures](./sub-procedures.md)   
- [Function Procedures](./function-procedures.md)   
- [Property Procedures](./property-procedures.md)   
- [Operator Procedures](./operator-procedures.md)   
- [How to: Define a Parameter for a Procedure](./how-to-define-a-parameter-for-a-procedure.md)   
- [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)   
- [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)   
- [Procedure Overloading](./procedure-overloading.md)   
+ [Procedures](./index.md)  
+ [Sub Procedures](./sub-procedures.md)  
+ [Function Procedures](./function-procedures.md)  
+ [Property Procedures](./property-procedures.md)  
+ [Operator Procedures](./operator-procedures.md)  
+ [How to: Define a Parameter for a Procedure](./how-to-define-a-parameter-for-a-procedure.md)  
+ [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)  
+ [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)  
+ [Procedure Overloading](./procedure-overloading.md)  
  [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)

@@ -50,10 +50,10 @@ public class Example
       // <SnippetByte>
       byte byteValue1 = 201;
       Console.WriteLine(byteValue1);
-      
+
       byte byteValue2 = 0x00C9;
       Console.WriteLine(byteValue2);
-      
+
       byte byteValue3 = 0b1100_1001;
       Console.WriteLine(byteValue3);
       // The example displays the following output:
@@ -66,9 +66,13 @@ public class Example
    private static void AssignByteWithSeparator()
    {
       // <SnippetByteS>
-      byte byteValue3 = 0b1100_1001;
+      byte byteValue4 = 0b1100_1001;
       Console.WriteLine(byteValue3);
+
+      byte byteValue5 = 0b_1100_1001;
+      Console.WriteLine(byteValue3);       // C# 7.2 onwards
       // The example displays the following output:
+      //          201
       //          201
       // </SnippetByteS>
    }
@@ -78,10 +82,10 @@ public class Example
       // <SnippetShort>
       short shortValue1 = 1034;
       Console.WriteLine(shortValue1);
-      
+
       short shortValue2 = 0x040A;
       Console.WriteLine(shortValue2);
-      
+
       short shortValue3 = 0b0100_00001010;
       Console.WriteLine(shortValue3);
       // The example displays the following output:
@@ -96,10 +100,14 @@ public class Example
       // <SnippetShortS>
       short shortValue1 = 1_034;
       Console.WriteLine(shortValue1);
-      
-      short shortValue3 = 0b00000100_00001010;
+
+      short shortValue2 = 0b00000100_00001010;
+      Console.WriteLine(shortValue2);
+
+      short shortValue3 = 0b_00000100_00001010;       // C# 7.2 onwards
       Console.WriteLine(shortValue3);
       // The example displays the following output:
+      //          1034
       //          1034
       //          1034
       // </SnippetShortS>
@@ -112,7 +120,7 @@ public class Example
       Console.WriteLine(intValue1);
       int intValue2 = 0x16342;
       Console.WriteLine(intValue2);
-      
+
       int intValue3 = 0b0001_0110_0011_0100_0010;
       Console.WriteLine(intValue3);
       // The example displays the following output:
@@ -127,13 +135,21 @@ public class Example
       // <SnippetIntS>
       int intValue1 = 90_946;
       Console.WriteLine(intValue1);
-      
+
       int intValue2 = 0x0001_6342;
       Console.WriteLine(intValue2);
-      
+
       int intValue3 = 0b0001_0110_0011_0100_0010;
       Console.WriteLine(intValue3);
+
+      int intValue4 = 0x_0001_6342;       // C# 7.2 onwards
+      Console.WriteLine(intValue4);
+
+      int intValue5 = 0b_0001_0110_0011_0100_0010;       // C# 7.2 onwards
+      Console.WriteLine(intValue5);
       // The example displays the following output:
+      //          90946
+      //          90946
       //          90946
       //          90946
       //          90946
@@ -145,10 +161,10 @@ public class Example
       // <SnippetLong>
       long longValue1 = 4294967296;
       Console.WriteLine(longValue1);
-      
+
       long longValue2 = 0x100000000;
       Console.WriteLine(longValue2);
-      
+
       long longValue3 = 0b1_0000_0000_0000_0000_0000_0000_0000_0000;
       Console.WriteLine(longValue3);
       // The example displays the following output:
@@ -163,13 +179,21 @@ public class Example
       // <SnippetLongS>
       long longValue1 = 4_294_967_296;
       Console.WriteLine(longValue1);
-      
+
       long longValue2 = 0x1_0000_0000;
       Console.WriteLine(longValue2);
-      
+
       long longValue3 = 0b1_0000_0000_0000_0000_0000_0000_0000_0000;
       Console.WriteLine(longValue3);
+
+      long longValue4 = 0x_1_0000_0000;       // C# 7.2 onwards
+      Console.WriteLine(longValue4);
+
+      long longValue5 = 0b_1_0000_0000_0000_0000_0000_0000_0000_0000;       // C# 7.2 onwards
+      Console.WriteLine(longValue5);
       // The example displays the following output:
+      //          4294967296
+      //          4294967296
       //          4294967296
       //          4294967296
       //          4294967296
@@ -181,13 +205,13 @@ public class Example
       // <SnippetSByte>
       sbyte sbyteValue1 = -102;
       Console.WriteLine(sbyteValue1);
-      
+
       unchecked {
-         sbyte sbyteValue4 = (sbyte)0x9A;
-         Console.WriteLine(sbyteValue4);
-         
-         sbyte sbyteValue5 = (sbyte)0b1001_1010;
-         Console.WriteLine(sbyteValue5);
+         sbyte sbyteValue2 = (sbyte)0x9A;
+         Console.WriteLine(sbyteValue2);
+
+         sbyte sbyteValue3 = (sbyte)0b1001_1010;
+         Console.WriteLine(sbyteValue3);
       }
       // The example displays the following output:
       //          -102
@@ -200,10 +224,14 @@ public class Example
    {
       // <SnippetSByteS>
       unchecked {
-         sbyte sbyteValue3 = (sbyte)0b1001_1010;
-         Console.WriteLine(sbyteValue3);
+         sbyte sbyteValue4 = (sbyte)0b1001_1010;
+         Console.WriteLine(sbyteValue4);
+
+         sbyte sbyteValue5 = (sbyte)0b_1001_1010;       // C# 7.2 onwards
+         Console.WriteLine(sbyteValue5);
       }
       // The example displays the following output:
+      //          -102
       //          -102
       // </SnippetSByteS>
    }
@@ -213,10 +241,10 @@ public class Example
       // <SnippetUShort>
       ushort ushortValue1 = 65034;
       Console.WriteLine(ushortValue1);
-      
+
       ushort ushortValue2 = 0xFE0A;
       Console.WriteLine(ushortValue2);
-      
+
       ushort ushortValue3 = 0b1111_1110_0000_1010;
       Console.WriteLine(ushortValue3);
       // The example displays the following output:
@@ -231,10 +259,14 @@ public class Example
       // <SnippetUShortS>
       ushort ushortValue1 = 65_034;
       Console.WriteLine(ushortValue1);
-      
-      ushort ushortValue3 = 0b11111110_00001010;
+
+      ushort ushortValue2 = 0b11111110_00001010;
+      Console.WriteLine(ushortValue2);
+
+      ushort ushortValue3 = 0b_11111110_00001010;     // C# 7.2 onwards
       Console.WriteLine(ushortValue3);
       // The example displays the following output:
+      //          65034
       //          65034
       //          65034
       // </SnippetUShortS>
@@ -245,10 +277,10 @@ public class Example
       // <SnippetUInt>
       uint uintValue1 = 3000000000;
       Console.WriteLine(uintValue1);
-      
+
       uint uintValue2 = 0xB2D05E00;
       Console.WriteLine(uintValue2);
-      
+
       uint uintValue3 = 0b1011_0010_1101_0000_0101_1110_0000_0000;
       Console.WriteLine(uintValue3);
       // The example displays the following output:
@@ -263,13 +295,21 @@ public class Example
       // <SnippetUIntS>
       uint uintValue1 = 3_000_000_000;
       Console.WriteLine(uintValue1);
-      
+
       uint uintValue2 = 0xB2D0_5E00;
       Console.WriteLine(uintValue2);
-      
+
       uint uintValue3 = 0b1011_0010_1101_0000_0101_1110_0000_0000;
       Console.WriteLine(uintValue3);
+
+      uint uintValue4 = 0x_B2D0_5E00;       // C# 7.2 onwards
+      Console.WriteLine(uintValue4);
+
+      uint uintValue5 = 0b_1011_0010_1101_0000_0101_1110_0000_0000;       // C# 7.2 onwards
+      Console.WriteLine(uintValue5);
       // The example displays the following output:
+      //          3000000000
+      //          3000000000
       //          3000000000
       //          3000000000
       //          3000000000
@@ -281,10 +321,10 @@ public class Example
       // <SnippetULong>
       ulong ulongValue1 = 7934076125;
       Console.WriteLine(ulongValue1);
-      
+
       ulong ulongValue2 = 0x0001D8e864DD;
       Console.WriteLine(ulongValue2);
-      
+
       ulong ulongValue3 = 0b0001_1101_1000_1110_1000_0110_0100_1101_1101;
       Console.WriteLine(ulongValue3);
       // The example displays the following output:
@@ -299,13 +339,21 @@ public class Example
       // <SnippetIntULong>
       ulong ulongValue1 = 7_934_076_125;
       Console.WriteLine(ulongValue1);
-      
+
       ulong ulongValue2 = 0x0001_D8e8_64DD;
       Console.WriteLine(ulongValue2);
-      
+
       ulong ulongValue3 = 0b0000_0001_1101_1000_1110_1000_0110_0100_1101_1101;
       Console.WriteLine(ulongValue3);
+
+      ulong ulongValue4 = 0x_0001_D8e8_64DD;       // C# 7.2 onwards
+      Console.WriteLine(ulongValue4);
+
+      ulong ulongValue5 = 0b_0000_0001_1101_1000_1110_1000_0110_0100_1101_1101;       // C# 7.2 onwards
+      Console.WriteLine(ulongValue5);
       // The example displays the following output:
+      //          7934076125
+      //          7934076125
       //          7934076125
       //          7934076125
       //          7934076125

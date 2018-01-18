@@ -8,11 +8,6 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "Windows Store apps, .NET Framework support for"
   - "Windows Runtime, .NET Framework support for"
@@ -24,6 +19,9 @@ caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # .NET Framework Support for Windows Store Apps and Windows Runtime
 The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] supports a number of software development scenarios with the [!INCLUDE[wrt](../../../includes/wrt-md.md)]. These scenarios fall into three categories:  
@@ -63,11 +61,11 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] supports a number of so
   
 -   Topics such as the [IIterable interface](http://go.microsoft.com/fwlink/p/?LinkId=238321) don't have declaration syntax for Visual Basic or C#. Instead, a note appears above the syntax section (in this case, ".NET: This interface appears as System.Collections.Generic.IEnumerable\<T>"). This is because the .NET Framework and the [!INCLUDE[wrt](../../../includes/wrt-md.md)] provide similar functionality with different interfaces. In addition, there are behavioral differences: `IIterable` has a `First` method instead of a <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> method to return the enumerator. Instead of forcing you to learn a different way of performing a common task, the .NET Framework supports the [!INCLUDE[wrt](../../../includes/wrt-md.md)] by making your managed code appear to use the type you're familiar with. You won't see the `IIterable` interface in the IDE, and therefore the only way you'll encounter it in the [!INCLUDE[wrt](../../../includes/wrt-md.md)] reference documentation is by browsing through that documentation directly.  
   
--   The [SyndicationFeed constructor](http://go.microsoft.com/fwlink/p/?LinkId=238322) documentation illustrates a closely related issue: Its parameter types appear to be different for different languages. For C# and Visual Basic, the parameter types are <xref:System.String?displayProperty=fullName> and <xref:System.Uri?displayProperty=fullName>. Again, this is because the .NET Framework has its own `String` and `Uri` types, and for such commonly used types it doesn't make sense to force .NET Framework users to learn a different way of doing things. In the IDE, the .NET Framework hides the corresponding [!INCLUDE[wrt](../../../includes/wrt-md.md)] types.  
+-   The [SyndicationFeed constructor](http://go.microsoft.com/fwlink/p/?LinkId=238322) documentation illustrates a closely related issue: Its parameter types appear to be different for different languages. For C# and Visual Basic, the parameter types are <xref:System.String?displayProperty=nameWithType> and <xref:System.Uri?displayProperty=nameWithType>. Again, this is because the .NET Framework has its own `String` and `Uri` types, and for such commonly used types it doesn't make sense to force .NET Framework users to learn a different way of doing things. In the IDE, the .NET Framework hides the corresponding [!INCLUDE[wrt](../../../includes/wrt-md.md)] types.  
   
 -   In a few cases, such as the [Windows.UI.Xaml.GridLength](http://go.microsoft.com/fwlink/p/?LinkId=251059) structure, the .NET Framework provides a type with the same name but more functionality. For example, a set of constructor and property topics are associated with `GridLength`, but they have syntax blocks only for Visual Basic and C# because the members are available only in managed code. In the [!INCLUDE[wrt](../../../includes/wrt-md.md)], structures have only fields. The [!INCLUDE[wrt](../../../includes/wrt-md.md)] structure requires a helper class, [Windows.UI.Xaml.GridLengthHelper](http://go.microsoft.com/fwlink/p/?LinkId=251060), to provide equivalent functionality. You won't see that helper class in the IDE when you're writing managed code.  
   
--   In the IDE, [!INCLUDE[wrt](../../../includes/wrt-md.md)] types appear to derive from <xref:System.Object?displayProperty=fullName>. They appear to have members inherited from <xref:System.Object>, such as <xref:System.Object.ToString%2A?displayProperty=fullName>. These members operate as they would if the types actually inherited from <xref:System.Object>, and [!INCLUDE[wrt](../../../includes/wrt-md.md)] types can be cast to <xref:System.Object>. This functionality is part of the support that the .NET Framework provides for the [!INCLUDE[wrt](../../../includes/wrt-md.md)]. However, if you view the types in the [!INCLUDE[wrt](../../../includes/wrt-md.md)] reference documentation, no such members appear. The documentation for these apparent inherited members is provided by the <xref:System.Object?displayProperty=fullName> reference documentation.  
+-   In the IDE, [!INCLUDE[wrt](../../../includes/wrt-md.md)] types appear to derive from <xref:System.Object?displayProperty=nameWithType>. They appear to have members inherited from <xref:System.Object>, such as <xref:System.Object.ToString%2A?displayProperty=nameWithType>. These members operate as they would if the types actually inherited from <xref:System.Object>, and [!INCLUDE[wrt](../../../includes/wrt-md.md)] types can be cast to <xref:System.Object>. This functionality is part of the support that the .NET Framework provides for the [!INCLUDE[wrt](../../../includes/wrt-md.md)]. However, if you view the types in the [!INCLUDE[wrt](../../../includes/wrt-md.md)] reference documentation, no such members appear. The documentation for these apparent inherited members is provided by the <xref:System.Object?displayProperty=nameWithType> reference documentation.  
   
 <a name="DifferencesVisibleInIDE"></a>   
 ### Differences That Are Visible in the IDE  
@@ -108,10 +106,10 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] supports a number of so
   
  As with interface types, the only time you might see evidence of this representation is when your .NET Framework project is a [!INCLUDE[wrt](../../../includes/wrt-md.md)] component that is used by a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app built using JavaScript.  
   
- Other basic, commonly used [!INCLUDE[wrt](../../../includes/wrt-md.md)] types that appear in managed code as their .NET Framework equivalents include the `Windows.Foundation.DateTime` structure, which appears in managed code as the <xref:System.DateTimeOffset?displayProperty=fullName> structure, and the `Windows.Foundation.TimeSpan` structure, which appears as the <xref:System.TimeSpan?displayProperty=fullName> structure.  
+ Other basic, commonly used [!INCLUDE[wrt](../../../includes/wrt-md.md)] types that appear in managed code as their .NET Framework equivalents include the `Windows.Foundation.DateTime` structure, which appears in managed code as the <xref:System.DateTimeOffset?displayProperty=nameWithType> structure, and the `Windows.Foundation.TimeSpan` structure, which appears as the <xref:System.TimeSpan?displayProperty=nameWithType> structure.  
   
 ### Other Differences  
- In a few cases, the fact that .NET Framework types appear in your code instead of [!INCLUDE[wrt](../../../includes/wrt-md.md)] types requires action on your part. For example, the [Windows.Foundation.Uri](http://go.microsoft.com/fwlink/p/?LinkId=238376) class appears as <xref:System.Uri?displayProperty=fullName> in .NET Framework code. <xref:System.Uri?displayProperty=fullName> allows a relative URI, but [Windows.Foundation.Uri](http://go.microsoft.com/fwlink/p/?LinkId=238376) requires an absolute URI. Therefore, when you pass a URI to a [!INCLUDE[wrt](../../../includes/wrt-md.md)] method, you must ensure that it's absolute. (See [Passing a URI to the Windows Runtime](../../../docs/standard/cross-platform/passing-a-uri-to-the-windows-runtime.md).)  
+ In a few cases, the fact that .NET Framework types appear in your code instead of [!INCLUDE[wrt](../../../includes/wrt-md.md)] types requires action on your part. For example, the [Windows.Foundation.Uri](http://go.microsoft.com/fwlink/p/?LinkId=238376) class appears as <xref:System.Uri?displayProperty=nameWithType> in .NET Framework code. <xref:System.Uri?displayProperty=nameWithType> allows a relative URI, but [Windows.Foundation.Uri](http://go.microsoft.com/fwlink/p/?LinkId=238376) requires an absolute URI. Therefore, when you pass a URI to a [!INCLUDE[wrt](../../../includes/wrt-md.md)] method, you must ensure that it's absolute. (See [Passing a URI to the Windows Runtime](../../../docs/standard/cross-platform/passing-a-uri-to-the-windows-runtime.md).)  
   
 <a name="WindowsRuntimeComponents"></a>   
 ## Scenarios for Developing Windows Runtime Components  
@@ -157,5 +155,5 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] supports a number of so
 |[Roadmap for Windows Store apps using C# or Visual Basic](http://go.microsoft.com/fwlink/p/?LinkId=242212)|Provides key resources to help you get started developing [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps by using C# or Visual Basic, including many Quickstart topics, guidelines, and best practices. (In the Windows Dev Center.)|  
 |[Developing Windows Store apps (VB/C#/C++ and XAML)](http://go.microsoft.com/fwlink/p/?LinkId=238311)|Provides key resources to help you get started developing [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps by using C# or Visual Basic, including many Quickstart topics, guidelines, and best practices. (In the Windows Dev Center.)|  
 |[Creating Windows Runtime Components in C# and Visual Basic](http://go.microsoft.com/fwlink/p/?LinkId=238313)|Describes how to create a [!INCLUDE[wrt](../../../includes/wrt-md.md)] component using the .NET Framework, explains how to use it as part of a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app built for Windows using JavaScript, and describes how to debug the combination with Visual Studio. (In the Windows Dev Center.)|  
-|[Windows Runtime reference](http://go.microsoft.com/fwlink/?LinkId=238319)|The reference documentation for the [!INCLUDE[wrt](../../../includes/wrt-md.md)]. (In the Windows Dev Center.)|  
+|[Windows Runtime reference](/uwp/api/)|The reference documentation for the [!INCLUDE[wrt](../../../includes/wrt-md.md)]. (In the Windows Dev Center.)|  
 |[Passing a URI to the Windows Runtime](../../../docs/standard/cross-platform/passing-a-uri-to-the-windows-runtime.md)|Describes an issue that can arise when you pass a URI from managed code to the [!INCLUDE[wrt](../../../includes/wrt-md.md)], and how to avoid it.|

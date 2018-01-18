@@ -25,19 +25,19 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.RowNotInTableException> is thrown when invoking the following methods on a row that has been deleted with either the <xref:System.Data.DataRow.Delete%2A> or the <xref:System.Data.DataRowCollection.Remove%2A?displayProperty=fullName> method.  
+ The <xref:System.Data.RowNotInTableException> is thrown when invoking the following methods on a row that has been deleted with either the <xref:System.Data.DataRow.Delete%2A> or the <xref:System.Data.DataRowCollection.Remove%2A?displayProperty=nameWithType> method.  
   
--   <xref:System.Data.DataRow.AcceptChanges%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRow.AcceptChanges%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.DataRow.GetChildRows%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRow.GetChildRows%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.DataRow.GetParentRow%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRow.GetParentRow%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.DataRow.GetParentRows%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRow.GetParentRows%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.DataRow.RejectChanges%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRow.RejectChanges%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.DataRow.SetParentRow%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRow.SetParentRow%2A?displayProperty=nameWithType>  
   
    
   
@@ -129,6 +129,8 @@
         <param name="context">Description of the source and destination of the specified serialized stream.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.RowNotInTableException" /> class with serialization information.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -160,5 +162,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.RowNotInTableException" /> class without arguments.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

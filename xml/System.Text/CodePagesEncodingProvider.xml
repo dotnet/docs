@@ -29,19 +29,19 @@
   
  The .NET Framework for the Windows desktop supports a large set of Unicode and code page encodings. The Universal Windows platform and .NET Native, on the other hand, support only the following encodings:  
   
--   ASCII (code page 20127), which is returned by the <xref:System.Text.Encoding.ASCII%2A?displayProperty=fullName> property.  
+-   ASCII (code page 20127), which is returned by the <xref:System.Text.Encoding.ASCII%2A?displayProperty=nameWithType> property.  
   
 -   ISO-8859-1 (code page 28591).  
   
--   UTF-7 (code page 65000), which is returned by the <xref:System.Text.Encoding.UTF7%2A?displayProperty=fullName> property.  
+-   UTF-7 (code page 65000), which is returned by the <xref:System.Text.Encoding.UTF7%2A?displayProperty=nameWithType> property.  
   
--   UTF-8 (code page 65001), which is returned by the <xref:System.Text.Encoding.UTF8%2A?displayProperty=fullName> property.  
+-   UTF-8 (code page 65001), which is returned by the <xref:System.Text.Encoding.UTF8%2A?displayProperty=nameWithType> property.  
   
--   UTF-16 and UTF-16LE (code page 1200), which is returned by the <xref:System.Text.Encoding.Unicode%2A?displayProperty=fullName> property.  
+-   UTF-16 and UTF-16LE (code page 1200), which is returned by the <xref:System.Text.Encoding.Unicode%2A?displayProperty=nameWithType> property.  
   
--   UTF-16BE (code page 1201), which is instantiated by calling the <xref:System.Text.UnicodeEncoding.%23ctor%2A?displayProperty=fullName> or <xref:System.Text.UnicodeEncoding.%23ctor%2A?displayProperty=fullName> constructor with a `bigEndian` value of `true`.  
+-   UTF-16BE (code page 1201), which is instantiated by calling the <xref:System.Text.UnicodeEncoding.%23ctor%2A?displayProperty=nameWithType> or <xref:System.Text.UnicodeEncoding.%23ctor%2A?displayProperty=nameWithType> constructor with a `bigEndian` value of `true`.  
   
--   UTF-32 and UTF-32LE (code page 12000), which is returned by the <xref:System.Text.Encoding.UTF32%2A?displayProperty=fullName> property.  
+-   UTF-32 and UTF-32LE (code page 12000), which is returned by the <xref:System.Text.Encoding.UTF32%2A?displayProperty=nameWithType> property.  
   
 -   UTF-32BE (code page 12001), which is instantiated by calling an <xref:System.Text.UTF32Encoding> constructor that has a `bigEndian` parameter and providing a value of `true` in the method call.  
   
@@ -51,11 +51,11 @@
   
 -   Add a reference to the System.Text.Encoding.CodePages.dll assembly to your project.  
   
--   Retrieve a <xref:System.Text.CodePagesEncodingProvider> object from the static <xref:System.Text.CodePagesEncodingProvider.Instance%2A?displayProperty=fullName> property.  
+-   Retrieve a <xref:System.Text.CodePagesEncodingProvider> object from the static <xref:System.Text.CodePagesEncodingProvider.Instance%2A?displayProperty=nameWithType> property.  
   
--   Pass the <xref:System.Text.CodePagesEncodingProvider> object to the <xref:System.Text.Encoding.RegisterProvider%2A?displayProperty=fullName> method.  
+-   Pass the <xref:System.Text.CodePagesEncodingProvider> object to the <xref:System.Text.Encoding.RegisterProvider%2A?displayProperty=nameWithType> method.  
   
- After an <xref:System.Text.EncodingProvider> object is registered, the encodings that it supports are available by calling the overloads of <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=fullName>; you should not call the <xref:System.Text.EncodingProvider.GetEncoding%2A?displayProperty=fullName> overloads.  
+ After an <xref:System.Text.EncodingProvider> object is registered, the encodings that it supports are available by calling the overloads of <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType>; you should not call the <xref:System.Text.EncodingProvider.GetEncoding%2A?displayProperty=nameWithType> overloads.  
   
  ]]></format>
     </remarks>
@@ -84,21 +84,21 @@
 ## Remarks  
  The <xref:System.Text.CodePagesEncodingProvider.Instance%2A> property returns an <xref:System.Text.EncodingProvider> object that makes encodings available to apps that target the [!INCLUDE[net_v46](~/includes/net-v46-md.md)] or a later version  and that otherwise are available only in the .NET Framework on the Windows desktop.  
   
- The .NET Framework on the Windows desktop supports a large number of character encodings and code pages. You can get a complete list of encodings by calling the <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName> method, which is available in the full .NET Framework on the Windows desktop. .NET Native for UWP apps, on the other hand, supports only the following encodings by default:  
+ The .NET Framework on the Windows desktop supports a large number of character encodings and code pages. You can get a complete list of encodings by calling the <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=nameWithType> method, which is available in the full .NET Framework on the Windows desktop. .NET Native for UWP apps, on the other hand, supports only the following encodings by default:  
   
--   ASCII (code page 20127), which is returned by the <xref:System.Text.Encoding.ASCII%2A?displayProperty=fullName> property.  
+-   ASCII (code page 20127), which is returned by the <xref:System.Text.Encoding.ASCII%2A?displayProperty=nameWithType> property.  
   
 -   ISO-8859-1 (code page 28591).  
   
--   UTF-7 (code page 65000), which is returned by the <xref:System.Text.Encoding.UTF7%2A?displayProperty=fullName> property.  
+-   UTF-7 (code page 65000), which is returned by the <xref:System.Text.Encoding.UTF7%2A?displayProperty=nameWithType> property.  
   
--   UTF-8 (code page 65001), which is returned by the <xref:System.Text.Encoding.UTF8%2A?displayProperty=fullName> property.  
+-   UTF-8 (code page 65001), which is returned by the <xref:System.Text.Encoding.UTF8%2A?displayProperty=nameWithType> property.  
   
--   UTF-16 and UTF-16LE (code page 1200), which is returned by the <xref:System.Text.Encoding.Unicode%2A?displayProperty=fullName> property.  
+-   UTF-16 and UTF-16LE (code page 1200), which is returned by the <xref:System.Text.Encoding.Unicode%2A?displayProperty=nameWithType> property.  
   
--   UTF-16BE (code page 1201), which is instantiated by calling the <xref:System.Text.UnicodeEncoding.%23ctor%2A?displayProperty=fullName> or <xref:System.Text.UnicodeEncoding.%23ctor%2A?displayProperty=fullName> constructor with a `bigEndian` value of `true`.  
+-   UTF-16BE (code page 1201), which is instantiated by calling the <xref:System.Text.UnicodeEncoding.%23ctor%2A?displayProperty=nameWithType> or <xref:System.Text.UnicodeEncoding.%23ctor%2A?displayProperty=nameWithType> constructor with a `bigEndian` value of `true`.  
   
--   UTF-32 and UTF-32LE (code page 12000), which is returned by the <xref:System.Text.Encoding.UTF32%2A?displayProperty=fullName> property.  
+-   UTF-32 and UTF-32LE (code page 12000), which is returned by the <xref:System.Text.Encoding.UTF32%2A?displayProperty=nameWithType> property.  
   
 -   UTF-32BE (code page 12001), which is instantiated by calling an <xref:System.Text.UTF32Encoding> constructor that has a `bigEndian` parameter and providing a value of `true` in the method call.  
   
@@ -106,11 +106,11 @@
   
 -   Add a reference to the System.Text.Encoding.CodePages.dll assembly to your project.  
   
--   Get the <xref:System.Text.EncodingProvider> object from the static <xref:System.Text.CodePagesEncodingProvider.Instance%2A?displayProperty=fullName> property.  
+-   Get the <xref:System.Text.EncodingProvider> object from the static <xref:System.Text.CodePagesEncodingProvider.Instance%2A?displayProperty=nameWithType> property.  
   
--   Pass the <xref:System.Text.EncodingProvider> object to the <xref:System.Text.Encoding.RegisterProvider%2A?displayProperty=fullName> method to make the encodings supplied by the <xref:System.Text.EncodingProvider> object available to the common language runtime.  
+-   Pass the <xref:System.Text.EncodingProvider> object to the <xref:System.Text.Encoding.RegisterProvider%2A?displayProperty=nameWithType> method to make the encodings supplied by the <xref:System.Text.EncodingProvider> object available to the common language runtime.  
   
--   Call an <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=fullName> overload to retrieve the encoding. The <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=fullName> method will call the corresponding <xref:System.Text.EncodingProvider.GetEncoding%2A?displayProperty=fullName> method to determine whether it can supply the requested encoding.  
+-   Call an <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType> overload to retrieve the encoding. The <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType> method will call the corresponding <xref:System.Text.EncodingProvider.GetEncoding%2A?displayProperty=nameWithType> method to determine whether it can supply the requested encoding.  
   
  ]]></format>
         </remarks>

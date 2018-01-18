@@ -57,6 +57,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Text.EncoderFallback" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -126,7 +127,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.Encoding.GetBytes%2A?displayProperty=fullName> and <xref:System.Text.Encoder.Convert%2A?displayProperty=fullName> methods call <xref:System.Text.DecoderFallbackBuffer.Fallback%28System.Byte%5B%5D%2CSystem.Int32%29> if they encounter an unknown input character that cannot be encoded. A return value of `true` indicates that the fallback buffer can process the input character, which causes the calling method to call the <xref:System.Text.EncoderFallbackBuffer.GetNextChar%2A> method to obtain each character of the fallback buffer. Because it does not process individual characters, the <xref:System.Text.EncoderFallbackBuffer.Fallback%2A> method in an exception fallback handler throws an exception.  
+ The <xref:System.Text.Encoding.GetBytes%2A?displayProperty=nameWithType> and <xref:System.Text.Encoder.Convert%2A?displayProperty=nameWithType> methods call <xref:System.Text.DecoderFallbackBuffer.Fallback%28System.Byte%5B%5D%2CSystem.Int32%29> if they encounter an unknown input character that cannot be encoded. A return value of `true` indicates that the fallback buffer can process the input character, which causes the calling method to call the <xref:System.Text.EncoderFallbackBuffer.GetNextChar%2A> method to obtain each character of the fallback buffer. Because it does not process individual characters, the <xref:System.Text.EncoderFallbackBuffer.Fallback%2A> method in an exception fallback handler throws an exception.  
   
  ]]></format>
         </remarks>
@@ -173,7 +174,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.Encoding.GetBytes%2A?displayProperty=fullName> and <xref:System.Text.Encoder.Convert%2A?displayProperty=fullName> methods call <xref:System.Text.EncoderFallbackBuffer.Fallback%28System.Char%2CSystem.Char%2CSystem.Int32%29> if they encounter a surrogate pair in their input. A return value of `true` indicates that the fallback buffer can process the surrogate pair, which causes the calling method to call the <xref:System.Text.EncoderFallbackBuffer.GetNextChar%2A> method to obtain each character of the fallback buffer.  Because it does not process individual characters, the <xref:System.Text.EncoderFallbackBuffer.Fallback%2A> method in an exception fallback handler throws an exception.  
+ The <xref:System.Text.Encoding.GetBytes%2A?displayProperty=nameWithType> and <xref:System.Text.Encoder.Convert%2A?displayProperty=nameWithType> methods call <xref:System.Text.EncoderFallbackBuffer.Fallback%28System.Char%2CSystem.Char%2CSystem.Int32%29> if they encounter a surrogate pair in their input. A return value of `true` indicates that the fallback buffer can process the surrogate pair, which causes the calling method to call the <xref:System.Text.EncoderFallbackBuffer.GetNextChar%2A> method to obtain each character of the fallback buffer.  Because it does not process individual characters, the <xref:System.Text.EncoderFallbackBuffer.Fallback%2A> method in an exception fallback handler throws an exception.  
   
  ]]></format>
         </remarks>
@@ -334,5 +335,14 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Fallback">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a substitute string is available when the original input cannot be encoded, or whether the original input should be ignored.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

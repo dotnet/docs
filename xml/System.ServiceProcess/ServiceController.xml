@@ -40,7 +40,7 @@
 > [!NOTE]
 >  By default, <xref:System.ServiceProcess.ServiceController.MachineName%2A> is set to the local computer, so you do not need to change it unless you want to set the instance to point to another computer.  
   
- Generally, the service author writes code that customizes the action associated with a specific command. For example, a service can contain code to respond to an <xref:System.ServiceProcess.ServiceBase.OnPause%2A?displayProperty=fullName> command. In that case, the custom processing for the <xref:System.ServiceProcess.ServiceController.Pause%2A> task runs before the system pauses the service.  
+ Generally, the service author writes code that customizes the action associated with a specific command. For example, a service can contain code to respond to an <xref:System.ServiceProcess.ServiceBase.OnPause%2A?displayProperty=nameWithType> command. In that case, the custom processing for the <xref:System.ServiceProcess.ServiceController.Pause%2A> task runs before the system pauses the service.  
   
  The set of commands a service can process depends on its properties; for example, you can set the <xref:System.ServiceProcess.ServiceController.CanStop%2A> property for a service to `false`. This setting renders the `Stop` command unavailable on that particular service; it prevents you from stopping the service from the SCM by disabling the necessary button. If you try to stop the service from your code, the system raises an error and displays the error message "Failed to stop `servicename`."  
   
@@ -54,6 +54,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ServiceProcess.ServiceBase" />
+    <altmember cref="T:System.ServiceProcess.ServiceControllerStatus" />
+    <altmember cref="T:System.ServiceProcess.ServiceType" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -95,7 +98,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController.%23ctor%28System.String%29?displayProperty=fullName> constructor to create a <xref:System.ServiceProcess.ServiceController> object that is used to control a sample service. This example is part of a larger example that is provided for the <xref:System.ServiceProcess.ServiceController> class.  
+ The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController.%23ctor%28System.String%29?displayProperty=nameWithType> constructor to create a <xref:System.ServiceProcess.ServiceController> object that is used to control a sample service. This example is part of a larger example that is provided for the <xref:System.ServiceProcess.ServiceController> class.  
   
  [!code-csharp[ServiceControllerClass#2](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#2)]
  [!code-vb[ServiceControllerClass#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#2)]  
@@ -343,6 +346,9 @@
         <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
         <permission cref="T:System.ServiceProcess.ServiceControllerPermission">for controlling services on the computer. Associated enumeration: <see cref="F:System.ServiceProcess.ServiceControllerPermissionAccess.Control" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for unrestricted access to service information. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.ServiceProcess.ServiceController.CanPauseAndContinue" />
+        <altmember cref="M:System.ServiceProcess.ServiceController.Pause" />
+        <altmember cref="P:System.ServiceProcess.ServiceController.Status" />
       </Docs>
     </Member>
     <Member MemberName="DependentServices">
@@ -536,7 +542,7 @@
    
   
 ## Examples  
- The following code example shows the use of the <xref:System.ServiceProcess.ServiceController.ExecuteCommand%28System.Int32%29?displayProperty=fullName> method to execute custom commands in the `SimpleService` service example.  
+ The following code example shows the use of the <xref:System.ServiceProcess.ServiceController.ExecuteCommand%28System.Int32%29?displayProperty=nameWithType> method to execute custom commands in the `SimpleService` service example.  
   
  [!code-csharp[ServiceContoller_ExecuteCommand#1](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceContoller_ExecuteCommand/CS/program.cs#1)]
  [!code-vb[ServiceContoller_ExecuteCommand#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceContoller_ExecuteCommand/VB/module1.vb#1)]  
@@ -547,6 +553,7 @@
         <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
         <permission cref="T:System.ServiceProcess.ServiceControllerPermission">for controlling services on the computer. Associated enumeration: <see cref="F:System.ServiceProcess.ServiceControllerPermissionAccess.Control" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for unrestricted access to service information. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="M:System.ServiceProcess.ServiceBase.OnCustomCommand(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetDevices">
@@ -588,6 +595,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
+        <altmember cref="M:System.ServiceProcess.ServiceController.GetServices" />
       </Docs>
     </Member>
     <Member MemberName="GetDevices">
@@ -624,6 +632,7 @@
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="machineName" /> parameter has invalid syntax.</exception>
+        <altmember cref="M:System.ServiceProcess.ServiceController.GetServices" />
       </Docs>
     </Member>
     <Member MemberName="GetServices">
@@ -665,6 +674,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
+        <altmember cref="M:System.ServiceProcess.ServiceController.GetDevices" />
       </Docs>
     </Member>
     <Member MemberName="GetServices">
@@ -701,6 +711,7 @@
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="machineName" /> parameter has invalid syntax.</exception>
+        <altmember cref="M:System.ServiceProcess.ServiceController.GetDevices" />
       </Docs>
     </Member>
     <Member MemberName="MachineName">
@@ -788,6 +799,9 @@
         <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
         <permission cref="T:System.ServiceProcess.ServiceControllerPermission">for controlling services on the computer. Associated enumeration: <see cref="F:System.ServiceProcess.ServiceControllerPermissionAccess.Control" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for unrestricted access to service information. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.ServiceProcess.ServiceController.CanPauseAndContinue" />
+        <altmember cref="M:System.ServiceProcess.ServiceController.Continue" />
+        <altmember cref="P:System.ServiceProcess.ServiceController.Status" />
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -1012,6 +1026,7 @@
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
         <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
+        <altmember cref="T:System.ServiceProcess.ServiceType" />
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -1055,6 +1070,8 @@
         <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
         <permission cref="T:System.ServiceProcess.ServiceControllerPermission">for controlling services on the computer. Associated enumeration: <see cref="F:System.ServiceProcess.ServiceControllerPermissionAccess.Control" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for unrestricted access to service information. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="M:System.ServiceProcess.ServiceController.Stop" />
+        <altmember cref="P:System.ServiceProcess.ServiceController.Status" />
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -1098,6 +1115,8 @@
  A member of the array is <see langword="null" />.</exception>
         <permission cref="T:System.ServiceProcess.ServiceControllerPermission">for controlling services on the computer. Associated enumeration: <see cref="F:System.ServiceProcess.ServiceControllerPermissionAccess.Control" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for unrestricted access to service information. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="M:System.ServiceProcess.ServiceController.Stop" />
+        <altmember cref="P:System.ServiceProcess.ServiceController.Status" />
       </Docs>
     </Member>
     <Member MemberName="StartType">
@@ -1131,6 +1150,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">An error occurred when accessing a system API.</exception>
         <permission cref="T:System.ServiceProcess.ServiceControllerPermission">for browsing services on the computer. Associated enumeration: <see cref="F:System.ServiceProcess.ServiceControllerPermissionAccess.Browse" />.</permission>
+        <altmember cref="T:System.ServiceProcess.ServiceStartMode" />
       </Docs>
     </Member>
     <Member MemberName="Status">
@@ -1225,6 +1245,9 @@
         <exception cref="T:System.InvalidOperationException">The service was not found.</exception>
         <permission cref="T:System.ServiceProcess.ServiceControllerPermission">for controlling services on the computer. Associated enumeration: <see cref="F:System.ServiceProcess.ServiceControllerPermissionAccess.Control" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for unrestricted access to service information. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="P:System.ServiceProcess.ServiceController.CanStop" />
+        <altmember cref="M:System.ServiceProcess.ServiceController.Start" />
+        <altmember cref="P:System.ServiceProcess.ServiceController.Status" />
       </Docs>
     </Member>
     <Member MemberName="WaitForStatus">
@@ -1271,6 +1294,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="desiredStatus" /> parameter is not any of the values defined in the <see cref="T:System.ServiceProcess.ServiceControllerStatus" /> enumeration.</exception>
+        <altmember cref="P:System.ServiceProcess.ServiceController.Status" />
       </Docs>
     </Member>
     <Member MemberName="WaitForStatus">
@@ -1311,7 +1335,57 @@
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="desiredStatus" /> parameter is not any of the values defined in the <see cref="T:System.ServiceProcess.ServiceControllerStatus" /> enumeration.</exception>
         <exception cref="T:System.ServiceProcess.TimeoutException">The value specified for the <paramref name="timeout" /> parameter expires.</exception>
+        <altmember cref="P:System.ServiceProcess.ServiceController.Status" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDevices">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the device driver services on a computer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetServices">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the non-device driver services on a computer, and those that are not drivers.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Start">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Starts the service.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WaitForStatus">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Waits for the service to reach the specified status.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceController" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRRuntimeHost::ExecuteInDefaultAppDomain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRRuntimeHost::ExecuteInDefaultAppDomain method [.NET Framework hosting]"
   - "ExecuteInDefaultAppDomain method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRRuntimeHost::ExecuteInDefaultAppDomain Method
 Calls the specified method of the specified type in the specified managed assembly.  

@@ -81,6 +81,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.File" />
+    <altmember cref="T:System.IO.FileAccess" />
+    <altmember cref="T:System.IO.FileMode" />
+    <altmember cref="T:System.IO.FileShare" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -293,6 +297,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="mode" /> contains an invalid value.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading, writing, and appending to files. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" />, and <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Append" />.</permission>
+        <altmember cref="F:System.IO.Path.InvalidPathChars" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -987,6 +992,7 @@
         <exception cref="T:System.UnauthorizedAccessException">The <paramref name="access" /> requested is not permitted by the operating system for the specified <paramref name="path" />, such as when <paramref name="access" /> is <see langword="Write" /> or <see langword="ReadWrite" /> and the file or directory is set for read-only access.</exception>
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading, writing, and appending to files. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" />, and <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Append" />.</permission>
+        <altmember cref="T:System.IO.File" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -1813,17 +1819,17 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.IO.Stream.Flush%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.IO.Stream.Flush%2A?displayProperty=nameWithType>.  
   
- When you call the <xref:System.IO.FileStream.Flush%2A?displayProperty=fullName> method, the operating system I/O buffer is also flushed.  
+ When you call the <xref:System.IO.FileStream.Flush%2A?displayProperty=nameWithType> method, the operating system I/O buffer is also flushed.  
   
- A stream’s encoder is not flushed unless you explicitly call <xref:System.IO.FileStream.Flush%2A> or dispose of the object. Setting <xref:System.IO.StreamWriter.AutoFlush%2A?displayProperty=fullName> to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can only be encoded after the encoder receives the adjacent character or characters.  
+ A stream’s encoder is not flushed unless you explicitly call <xref:System.IO.FileStream.Flush%2A> or dispose of the object. Setting <xref:System.IO.StreamWriter.AutoFlush%2A?displayProperty=nameWithType> to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can only be encoded after the encoder receives the adjacent character or characters.  
   
  Because a buffer can be used for either reading or writing, <xref:System.IO.FileStream.Flush> performs the following two functions:  
   
 -   Any data previously written to the buffer is copied to the file and the buffer is cleared except for its encoder state.  
   
--   If <xref:System.IO.BufferedStream.CanSeek%2A?displayProperty=fullName> is `true` and data was previously copied from the file to the buffer for reading, the current position within the file is decremented by the number of unread bytes in the buffer. The buffer is then cleared.  
+-   If <xref:System.IO.BufferedStream.CanSeek%2A?displayProperty=nameWithType> is `true` and data was previously copied from the file to the buffer for reading, the current position within the file is decremented by the number of unread bytes in the buffer. The buffer is then cleared.  
   
  Use the <xref:System.IO.FileStream.Flush%28System.Boolean%29> method overload when you want to ensure that all buffered data in intermediate file buffers is written to disk.  
   
@@ -1840,6 +1846,7 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
+        <altmember cref="M:System.IO.FileStream.Flush(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -1884,6 +1891,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IO.FileStream.Flush" />
       </Docs>
     </Member>
     <Member MemberName="FlushAsync">
@@ -1952,7 +1960,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- While the <xref:System.IO.FileStream> class and <xref:System.IO.FileStream.GetAccessControl%2A> can be used to retrieve the access control list (ACL) entries of an existing file, consider using <xref:System.IO.File.GetAccessControl%2A?displayProperty=fullName> method, as it is easier to use.  
+ While the <xref:System.IO.FileStream> class and <xref:System.IO.FileStream.GetAccessControl%2A> can be used to retrieve the access control list (ACL) entries of an existing file, consider using <xref:System.IO.File.GetAccessControl%2A?displayProperty=nameWithType> method, as it is easier to use.  
   
  Use the <xref:System.IO.FileStream.GetAccessControl%2A> method to retrieve the ACL entries for a file.  
   
@@ -2278,7 +2286,7 @@
     </Member>
     <Member MemberName="Read">
       <MemberSignature Language="C#" Value="public override int Read (byte[] array, int offset, int count);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read(unsigned int8[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read([out] unsigned int8[] array, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.Read(System.Byte[],System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2557,10 +2565,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.IO.Stream.Seek%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.IO.Stream.Seek%2A?displayProperty=nameWithType>.  
   
 > [!NOTE]
->  Use the <xref:System.IO.FileStream.CanSeek%2A?displayProperty=fullName> property to determine whether the current instance supports seeking. For additional information, see <xref:System.IO.Stream.CanSeek%2A?displayProperty=fullName>.  
+>  Use the <xref:System.IO.FileStream.CanSeek%2A?displayProperty=nameWithType> property to determine whether the current instance supports seeking. For additional information, see <xref:System.IO.Stream.CanSeek%2A?displayProperty=nameWithType>.  
   
  You can seek to any location beyond the length of the stream. When you seek beyond the length of the file, the file size grows. In Windows NT and later versions, data added to the end of the file is set to zero. In Windows 98 or earlier versions, data added to the end of the file is not set to zero, which means that previously deleted data is visible to the stream.  
   
@@ -2611,7 +2619,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- While the <xref:System.IO.FileStream> class and <xref:System.IO.FileStream.SetAccessControl%2A> can be used on an existing file, consider using the <xref:System.IO.File.SetAccessControl%2A?displayProperty=fullName> method as it is easier to use.  
+ While the <xref:System.IO.FileStream> class and <xref:System.IO.FileStream.SetAccessControl%2A> can be used on an existing file, consider using the <xref:System.IO.File.SetAccessControl%2A?displayProperty=nameWithType> method as it is easier to use.  
   
  The <xref:System.IO.FileStream.SetAccessControl%2A> method applies access control list (ACL) entries to a file that represents the noninherited ACL list.  
   
@@ -2937,5 +2945,23 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Flush">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears buffers for this stream and causes any buffered data to be written to the file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.FileStream" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

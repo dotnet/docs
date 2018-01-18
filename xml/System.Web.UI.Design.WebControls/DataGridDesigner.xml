@@ -31,6 +31,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.DataGridComponentEditor" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,6 +66,7 @@
         <summary>Gets the <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> object associated with this designer.</summary>
         <value>The <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> associated with this designer.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" />
       </Docs>
     </Member>
     <Member MemberName="CreateTemplateEditingFrame">
@@ -125,6 +128,7 @@
   
  For more information about the <see cref="M:System.Web.UI.Control.Dispose" /> and <see cref="M:System.Object.Finalize" /> methods, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
       </Docs>
     </Member>
     <Member MemberName="GetCachedTemplateEditingVerbs">
@@ -277,7 +281,7 @@
     </Member>
     <Member MemberName="GetTemplateContent">
       <MemberSignature Language="C#" Value="public override string GetTemplateContent (System.Web.UI.Design.ITemplateEditingFrame editingFrame, string templateName, out bool allowEditing);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetTemplateContent(class System.Web.UI.Design.ITemplateEditingFrame editingFrame, string templateName, bool allowEditing) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetTemplateContent(class System.Web.UI.Design.ITemplateEditingFrame editingFrame, string templateName, [out] bool&amp; allowEditing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridDesigner.GetTemplateContent(System.Web.UI.Design.ITemplateEditingFrame,System.String,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -339,6 +343,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.TemplateDefinition" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -371,6 +376,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.IDesigner" />
       </Docs>
     </Member>
     <Member MemberName="OnColumnsChanged">

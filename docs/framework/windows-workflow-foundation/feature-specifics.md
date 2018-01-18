@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Windows Workflow Foundation Feature Specifics
 [!INCLUDE[netfx40_long](../../../includes/netfx40-long-md.md)] adds a number of features to Windows Workflow Foundation. This document describes a number of the new features, and gives details about scenarios in which they may be useful.  
@@ -77,7 +79,7 @@ manager: "erikre"
   
 -   An example of correlation used to group messages together is a Request-Reply correlation that groups messages together.  
   
-    -   On a <xref:System.ServiceModel.Activities.Receive> activity, click on the <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> property and add a a <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer> using the CorrelationHandle created in the first step above.  
+    -   On a <xref:System.ServiceModel.Activities.Receive> activity, click on the <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> property and add a <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer> using the CorrelationHandle created in the first step above.  
   
     -   Create a <xref:System.ServiceModel.Activities.SendReply> activity by right-clicking on the <xref:System.ServiceModel.Activities.Receive> and clicking "Create SendReply". Paste it into your workflow after the <xref:System.ServiceModel.Activities.Receive> activity.  
   
@@ -221,7 +223,7 @@ manager: "erikre"
   
 ### Procedural Activity Scenarios  
   
--   <xref:System.Activities.Statements.Parallel>Parallel: An intranet document management system has a document approval workflow. Documents need to be approved by people in several departments before they can be published to the intranet. There isn’t an established order for the approvals; they can occur at any time while the document is in the "approval pending" phase. When a user submits a document for review it must be approved by her direct manager, the intranet administrator, and the internal communications manager.  
+-   <xref:System.Activities.Statements.Parallel>: An intranet document management system has a document approval workflow. Documents need to be approved by people in several departments before they can be published to the intranet. There isn’t an established order for the approvals; they can occur at any time while the document is in the "approval pending" phase. When a user submits a document for review it must be approved by her direct manager, the intranet administrator, and the internal communications manager.  
   
 -   <xref:System.Activities.Statements.ParallelForEach%601>: A WF application manages corporate buys within a large company. The corporate rules dictate that before planning any purchase operation, the valuations of three different vendors is required. An employee from the buying department selects three vendors from the company’s vendor list. After these vendors have been selected and notified, the company will wait for their economic proposals. The proposals can come in any order. To implement this scenario in WF, we use a <xref:System.Activities.Statements.ParallelForEach%601> that will iterate through our collection of vendors and ask for their economic proposals. After all offers are gathered, the best one is selected and displayed.  
   

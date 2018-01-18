@@ -27,6 +27,9 @@
   <Docs>
     <summary>The <see cref="T:System.Diagnostics.SymbolStore.SymbolToken" /> structure is an object representation of a token that represents symbolic information.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Diagnostics.SymbolStore.ISymbolMethod" />
+    <altmember cref="T:System.Diagnostics.SymbolStore.ISymbolReader" />
+    <altmember cref="T:System.Diagnostics.SymbolStore.ISymbolWriter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -208,7 +211,7 @@
         <returns>
           <see langword="true" /> if <paramref name="a" /> and <paramref name="b" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Diagnostics.SymbolStore.SymbolToken.Equals%28System.Diagnostics.SymbolStore.SymbolToken%29?displayProperty=fullName>.]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Diagnostics.SymbolStore.SymbolToken.Equals%28System.Diagnostics.SymbolStore.SymbolToken%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -244,9 +247,19 @@
         <returns>
           <see langword="true" /> if <paramref name="a" /> and <paramref name="b" /> are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Diagnostics.SymbolStore.SymbolToken.Equals%28System.Diagnostics.SymbolStore.SymbolToken%29?displayProperty=fullName>.]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Diagnostics.SymbolStore.SymbolToken.Equals%28System.Diagnostics.SymbolStore.SymbolToken%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the specified <see cref="T:System.Diagnostics.SymbolStore.SymbolToken" /> is equal to this instance.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

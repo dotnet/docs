@@ -43,6 +43,7 @@
     <block subset="none" type="overrides">
       <para>If you to specify keys in this configuration section, as is required in Web-farm scenarios, it is recommended that you encrypt this section by using protected configuration.</para>
     </block>
+    <altmember cref="T:System.Configuration.ConfigurationSection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -94,7 +95,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property must be set if you set the <xref:System.Web.Configuration.MachineKeySection.DataProtectorType%2A> property. The property value is passed to the <xref:System.Security.Cryptography.DataProtector.Create%2A?displayProperty=fullName> factory method.  
+ This property must be set if you set the <xref:System.Web.Configuration.MachineKeySection.DataProtectorType%2A> property. The property value is passed to the <xref:System.Security.Cryptography.DataProtector.Create%2A?displayProperty=nameWithType> factory method.  
   
  ]]></format>
         </remarks>
@@ -177,7 +178,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To specify custom data protection algorithms for ASP.NET, set the <xref:System.Web.Configuration.MachineKeySection.CompatibilityMode%2A?displayProperty=fullName> property to <xref:System.Web.Configuration.MachineKeyCompatibilityMode.Framework45> and set this property to a string that represents a class that derives from the <xref:System.Security.Cryptography.DataProtector> class. This string corresponds to the `providerClass` parameter that is passed to the static <xref:System.Security.Cryptography.DataProtector.Create%2A?displayProperty=fullName> factory method. The class you specify is used by the <xref:System.Web.Security.MachineKey.Protect%2A?displayProperty=fullName> and <xref:System.Web.Security.MachineKey.Unprotect%2A?displayProperty=fullName> methods even if you do not specify the <xref:System.Web.Configuration.MachineKeyCompatibilityMode.Framework45> option.  
+ To specify custom data protection algorithms for ASP.NET, set the <xref:System.Web.Configuration.MachineKeySection.CompatibilityMode%2A?displayProperty=nameWithType> property to <xref:System.Web.Configuration.MachineKeyCompatibilityMode.Framework45> and set this property to a string that represents a class that derives from the <xref:System.Security.Cryptography.DataProtector> class. This string corresponds to the `providerClass` parameter that is passed to the static <xref:System.Security.Cryptography.DataProtector.Create%2A?displayProperty=nameWithType> factory method. The class you specify is used by the <xref:System.Web.Security.MachineKey.Protect%2A?displayProperty=nameWithType> and <xref:System.Web.Security.MachineKey.Unprotect%2A?displayProperty=nameWithType> methods even if you do not specify the <xref:System.Web.Configuration.MachineKeyCompatibilityMode.Framework45> option.  
   
  If you set this property, you must also set the <xref:System.Web.Configuration.MachineKeySection.ApplicationName%2A> property.  
   
@@ -230,6 +231,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The selected value is not one of the decryption values.</exception>
+        <altmember cref="T:System.Web.Configuration.MachineKeyValidation" />
       </Docs>
     </Member>
     <Member MemberName="DecryptionKey">
@@ -268,7 +270,7 @@
   
  If you add the "IsolateApps" modifier to the "AutoGenerate" <xref:System.Web.Configuration.MachineKeySection.ValidationKey%2A> value, ASP.NET generates a unique encrypted key for each application by using each application's <xref:System.Web.HttpRuntime.AppDomainAppVirtualPath%2A>. This is the default setting.  
   
- If you add the "IsolateByAppId" modifier to the "AutoGenerate" <xref:System.Web.Configuration.MachineKeySection.ValidationKey%2A> value, ASP.NET generates a unique encrypted key for each application by using each application's <xref:System.Web.HttpRuntime.AppDomainAppId%2A>. If two distinct applications share a virtual path (perhaps because those applications are running on different ports), this flag can be used to further distinguish them from one another. The "IsolateByAppId" flag is understood only by ASP.NET 4.5, but it can be used regardless of the <xref:System.Web.Configuration.MachineKeySection.CompatibilityMode?displayProperty=fullName> setting.  
+ If you add the "IsolateByAppId" modifier to the "AutoGenerate" <xref:System.Web.Configuration.MachineKeySection.ValidationKey%2A> value, ASP.NET generates a unique encrypted key for each application by using each application's <xref:System.Web.HttpRuntime.AppDomainAppId%2A>. If two distinct applications share a virtual path (perhaps because those applications are running on different ports), this flag can be used to further distinguish them from one another. The "IsolateByAppId" flag is understood only by ASP.NET 4.5, but it can be used regardless of the <xref:System.Web.Configuration.MachineKeySection.CompatibilityMode?displayProperty=nameWithType> setting.  
   
  If you need to support configuration across a network of Web servers (a Web farm), set the <xref:System.Web.Configuration.MachineKeySection.DecryptionKey%2A> property manually to ensure consistent configuration. For information about how to manually generate values for the `DecryptionKey` attribute, see [How To: Configure MachineKey in ASP.NET 2.0](http://go.microsoft.com/fwlink/?linkid=155113).  
   
@@ -284,6 +286,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.MachineKeySection" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -374,6 +377,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.MachineKeySection" />
       </Docs>
     </Member>
     <Member MemberName="ValidationAlgorithm">
@@ -454,7 +458,7 @@
   
  If you add the "IsolateApps" modifier to the "AutoGenerate" <xref:System.Web.Configuration.MachineKeySection.ValidationKey%2A> value, ASP.NET generates a unique encrypted key for each application by using each application's <xref:System.Web.HttpRuntime.AppDomainAppVirtualPath%2A>. This is the default setting.  
   
- If you add the "IsolateByAppId" modifier to the "AutoGenerate" <xref:System.Web.Configuration.MachineKeySection.ValidationKey%2A> value, ASP.NET generates a unique encrypted key for each application by using each application's <xref:System.Web.HttpRuntime.AppDomainAppId%2A>. If two distinct applications share a virtual path (perhaps because those applications are running on different ports), this flag can be used to further distinguish them from one another. The "IsolateByAppId" flag is understood only by ASP.NET 4.5, but it can be used regardless of the <xref:System.Web.Configuration.MachineKeySection.CompatibilityMode?displayProperty=fullName> setting.  
+ If you add the "IsolateByAppId" modifier to the "AutoGenerate" <xref:System.Web.Configuration.MachineKeySection.ValidationKey%2A> value, ASP.NET generates a unique encrypted key for each application by using each application's <xref:System.Web.HttpRuntime.AppDomainAppId%2A>. If two distinct applications share a virtual path (perhaps because those applications are running on different ports), this flag can be used to further distinguish them from one another. The "IsolateByAppId" flag is understood only by ASP.NET 4.5, but it can be used regardless of the <xref:System.Web.Configuration.MachineKeySection.CompatibilityMode?displayProperty=nameWithType> setting.  
   
  If you need to support configuration across a network of Web servers (a Web farm), set the <xref:System.Web.Configuration.MachineKeySection.ValidationKey%2A> property manually to ensure consistent configuration. For information about how to manually generate values for the `DecryptionKey` attribute, see [How To: Configure MachineKey in ASP.NET 2.0](http://go.microsoft.com/fwlink/?linkid=155113).  
   

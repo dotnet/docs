@@ -36,12 +36,12 @@
  Instances of <xref:System.Messaging.MessageEnumerator> for a given queue work independently. You can create two <xref:System.Messaging.MessageEnumerator> instances that apply to the same queue. The changes that one <xref:System.Messaging.MessageEnumerator> makes to the messages in the queue will be reflected immediately in a second enumerator if the second enumerator is positioned before the first. However, if two enumerators have the same position and one of them removes the message at that position, an exception is thrown if the other enumerator attempts to get the value of the <xref:System.Messaging.MessageEnumerator.Current%2A> property on the now-deleted message.  
   
 > [!NOTE]
->  If you create an instance of <xref:System.Messaging.MessageQueue> with <xref:System.Messaging.MessageQueue.DenySharedReceive%2A?displayProperty=fullName> set to `true`, no other application can modify the messages in your enumerator while you have the connection to the queue.  
+>  If you create an instance of <xref:System.Messaging.MessageQueue> with <xref:System.Messaging.MessageQueue.DenySharedReceive%2A?displayProperty=nameWithType> set to `true`, no other application can modify the messages in your enumerator while you have the connection to the queue.  
   
    
   
 ## Examples  
- The following example gets a dynamic list of messages in a queue and counts all messages with the <xref:System.Messaging.Message.Priority%2A> property set to <xref:System.Messaging.MessagePriority?displayProperty=fullName>.  
+ The following example gets a dynamic list of messages in a queue and counts all messages with the <xref:System.Messaging.Message.Priority%2A> property set to <xref:System.Messaging.MessagePriority.Lowest?displayProperty=nameWithType>.  
   
  [!code-cpp[MessageQueue.GetMessageEnumerator#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueue.GetMessageEnumerator/CPP/mqgetmessageenumerator.cpp#1)]
  [!code-csharp[MessageQueue.GetMessageEnumerator#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueue.GetMessageEnumerator/CS/mqgetmessageenumerator.cs#1)]
@@ -49,6 +49,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Messaging.Message" />
+    <altmember cref="M:System.Messaging.MessageQueue.GetMessageEnumerator2" />
   </Docs>
   <Members>
     <Member MemberName="Close">
@@ -74,6 +76,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageEnumerator.MoveNext" />
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -105,6 +108,9 @@
   
  You called <see cref="P:System.Messaging.MessageEnumerator.Current" /> after a call to <see cref="M:System.Messaging.MessageEnumerator.MoveNext" /> had returned <see langword="false" /> (indicating the cursor is located after the last element of the message enumeration.)</exception>
         <exception cref="T:System.Messaging.MessageQueueException">The message the enumerator is currently pointing to no longer exists. It might have been deleted.</exception>
+        <altmember cref="M:System.Messaging.MessageEnumerator.MoveNext" />
+        <altmember cref="M:System.Messaging.MessageEnumerator.Reset" />
+        <altmember cref="M:System.Messaging.MessageQueue.GetMessageEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="CursorHandle">
@@ -131,6 +137,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">The handle does not exist.</exception>
+        <altmember cref="P:System.Messaging.MessageEnumerator.Current" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -243,6 +250,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Messaging.MessageQueueException">An exception specific to Message Queuing was thrown.</exception>
+        <altmember cref="P:System.Messaging.MessageEnumerator.Current" />
+        <altmember cref="M:System.Messaging.MessageEnumerator.Reset" />
+        <altmember cref="T:System.Messaging.Message" />
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -283,6 +293,9 @@
  -or-  
   
  The timeout has expired.</exception>
+        <altmember cref="P:System.Messaging.MessageEnumerator.Current" />
+        <altmember cref="M:System.Messaging.MessageEnumerator.Reset" />
+        <altmember cref="T:System.Messaging.Message" />
       </Docs>
     </Member>
     <MemberGroup MemberName="RemoveCurrent">
@@ -332,6 +345,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageEnumerator.MoveNext" />
+        <altmember cref="P:System.Messaging.MessageEnumerator.Current" />
       </Docs>
     </Member>
     <Member MemberName="RemoveCurrent">
@@ -368,6 +383,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="transaction" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.Messaging.MessageEnumerator.MoveNext" />
+        <altmember cref="P:System.Messaging.MessageEnumerator.Current" />
+        <altmember cref="T:System.Messaging.MessageQueueTransaction" />
       </Docs>
     </Member>
     <Member MemberName="RemoveCurrent">
@@ -406,6 +424,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="transactionType" /> parameter is not one of the <see cref="T:System.Messaging.MessageQueueTransactionType" /> members.</exception>
+        <altmember cref="M:System.Messaging.MessageEnumerator.MoveNext" />
+        <altmember cref="P:System.Messaging.MessageEnumerator.Current" />
+        <altmember cref="T:System.Messaging.MessageQueueTransactionType" />
       </Docs>
     </Member>
     <Member MemberName="RemoveCurrent">
@@ -443,6 +464,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The value specified for the <paramref name="timeout" /> parameter is invalid.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">The timeout has expired.</exception>
+        <altmember cref="M:System.Messaging.MessageEnumerator.MoveNext" />
+        <altmember cref="P:System.Messaging.MessageEnumerator.Current" />
       </Docs>
     </Member>
     <Member MemberName="RemoveCurrent">
@@ -483,6 +506,9 @@
         <exception cref="T:System.ArgumentException">The value specified for the <paramref name="timeout" /> parameter is invalid.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="transaction" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">The timeout has expired.</exception>
+        <altmember cref="M:System.Messaging.MessageEnumerator.MoveNext" />
+        <altmember cref="P:System.Messaging.MessageEnumerator.Current" />
+        <altmember cref="T:System.Messaging.MessageQueueTransaction" />
       </Docs>
     </Member>
     <Member MemberName="RemoveCurrent">
@@ -525,6 +551,9 @@
         <exception cref="T:System.ArgumentException">The value specified for the <paramref name="timeout" /> parameter is invalid.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">The timeout has expired.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="transactionType" /> parameter is not one of the <see cref="T:System.Messaging.MessageQueueTransactionType" /> members.</exception>
+        <altmember cref="M:System.Messaging.MessageEnumerator.MoveNext" />
+        <altmember cref="P:System.Messaging.MessageEnumerator.Current" />
+        <altmember cref="T:System.Messaging.MessageQueueTransactionType" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -552,6 +581,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageEnumerator.MoveNext" />
+        <altmember cref="P:System.Messaging.MessageEnumerator.Current" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerator.Current">
@@ -572,5 +603,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="MoveNext">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Advances the enumerator to the next message in the queue.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Messaging.MessageEnumerator" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -331,7 +331,7 @@
     </Member>
     <Member MemberName="EndRtfConstruction">
       <MemberSignature Language="C#" Value="public System.Xml.XPath.XPathNavigator EndRtfConstruction (out System.Xml.Xsl.Runtime.XmlQueryOutput output);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XPath.XPathNavigator EndRtfConstruction(class System.Xml.Xsl.Runtime.XmlQueryOutput output) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XPath.XPathNavigator EndRtfConstruction([out] class System.Xml.Xsl.Runtime.XmlQueryOutput&amp; output) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.EndRtfConstruction(System.Xml.Xsl.Runtime.XmlQueryOutput@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -357,7 +357,7 @@
     </Member>
     <Member MemberName="EndSequenceConstruction">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; EndSequenceConstruction (out System.Xml.Xsl.Runtime.XmlQueryOutput output);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class System.Xml.XPath.XPathItem&gt; EndSequenceConstruction(class System.Xml.Xsl.Runtime.XmlQueryOutput output) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class System.Xml.XPath.XPathItem&gt; EndSequenceConstruction([out] class System.Xml.Xsl.Runtime.XmlQueryOutput&amp; output) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.EndSequenceConstruction(System.Xml.Xsl.Runtime.XmlQueryOutput@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -405,7 +405,7 @@
     </Member>
     <Member MemberName="FindIndex">
       <MemberSignature Language="C#" Value="public bool FindIndex (System.Xml.XPath.XPathNavigator context, int indexId, out System.Xml.Xsl.Runtime.XmlILIndex index);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool FindIndex(class System.Xml.XPath.XPathNavigator context, int32 indexId, class System.Xml.Xsl.Runtime.XmlILIndex index) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool FindIndex(class System.Xml.XPath.XPathNavigator context, int32 indexId, [out] class System.Xml.Xsl.Runtime.XmlILIndex&amp; index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.FindIndex(System.Xml.XPath.XPathNavigator,System.Int32,System.Xml.Xsl.Runtime.XmlILIndex@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1005,7 +1005,7 @@
     </Member>
     <Member MemberName="StartRtfConstruction">
       <MemberSignature Language="C#" Value="public void StartRtfConstruction (string baseUri, out System.Xml.Xsl.Runtime.XmlQueryOutput output);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void StartRtfConstruction(string baseUri, class System.Xml.Xsl.Runtime.XmlQueryOutput output) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void StartRtfConstruction(string baseUri, [out] class System.Xml.Xsl.Runtime.XmlQueryOutput&amp; output) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.StartRtfConstruction(System.String,System.Xml.Xsl.Runtime.XmlQueryOutput@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1032,7 +1032,7 @@
     </Member>
     <Member MemberName="StartSequenceConstruction">
       <MemberSignature Language="C#" Value="public void StartSequenceConstruction (out System.Xml.Xsl.Runtime.XmlQueryOutput output);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void StartSequenceConstruction(class System.Xml.Xsl.Runtime.XmlQueryOutput output) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void StartSequenceConstruction([out] class System.Xml.Xsl.Runtime.XmlQueryOutput&amp; output) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.StartSequenceConstruction(System.Xml.Xsl.Runtime.XmlQueryOutput@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1130,5 +1130,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="MatchesXmlType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns <see langword="true" /> if the type of the specified item matches the specified XML type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ParseTagName">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Parses the specified tag name.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsQNameEqual">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares the <see cref="P:System.Xml.XPath.XPathNavigator.LocalName" /> and <see cref="P:System.Xml.XPath.XPathNavigator.NamespaceURI" /> properties of two <see cref="T:System.Xml.XPath.XPathNavigator" /> instances to check if they are equal.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

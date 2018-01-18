@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::RemotingClientReceivingReply"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerCallback::RemotingClientReceivingReply method [.NET Framework profiling]"
   - "RemotingClientReceivingReply method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::RemotingClientReceivingReply Method
 Notifies the profiler that the server-side portion of a remoting call has completed and the client is now receiving and about to process the reply.  

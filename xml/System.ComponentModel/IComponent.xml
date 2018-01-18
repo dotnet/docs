@@ -48,7 +48,7 @@
   
  You can contain components in a container. In this context, containment refers to logical containment, not visual containment. You can use components and containers in a variety of scenarios, both visual and non visual.  
   
- <xref:System.Windows.Forms.Control?displayProperty=fullName> inherits from <xref:System.ComponentModel.Component>, the default implementation of <xref:System.ComponentModel.IComponent>.  
+ <xref:System.Windows.Forms.Control?displayProperty=nameWithType> inherits from <xref:System.ComponentModel.Component>, the default implementation of <xref:System.ComponentModel.IComponent>.  
   
  A component interacts with its container primarily through a container-provided <xref:System.ComponentModel.ISite>, which is a repository of container-specific per-component information.  
   
@@ -66,6 +66,10 @@
     <block subset="none" type="overrides">
       <para>To be a component, a class must implement the <see cref="T:System.ComponentModel.IComponent" /> interface and provide a basic constructor that requires no parameters or a single parameter of type <see cref="T:System.ComponentModel.IContainer" />. For more information about implementing <see cref="T:System.ComponentModel.IComponent" />, see [Programming with Components](http://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3).</para>
     </block>
+    <altmember cref="T:System.ComponentModel.Container" />
+    <altmember cref="T:System.ComponentModel.IContainer" />
+    <altmember cref="T:System.ComponentModel.ISite" />
+    <altmember cref="T:System.Windows.Forms.Control" />
   </Docs>
   <Members>
     <Member MemberName="Disposed">
@@ -100,6 +104,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.EventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Site">
@@ -135,6 +140,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ISite" />
       </Docs>
     </Member>
   </Members>

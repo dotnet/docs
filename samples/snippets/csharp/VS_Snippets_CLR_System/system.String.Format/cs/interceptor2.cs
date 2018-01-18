@@ -17,7 +17,7 @@ public class InterceptProvider : IFormatProvider, ICustomFormatter
       // Display information about method call.
       string formatString = format ?? "<null>";
       Console.WriteLine("Provider: {0}, Object: {1}, Format String: {2}",
-                        provider, obj ?? "<null>", formatString);
+                        provider.GetType().Name, obj ?? "<null>", formatString);
                         
       if (obj == null) return String.Empty;
             

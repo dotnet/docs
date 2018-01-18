@@ -361,7 +361,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Channels.BufferManager> minimizes the cost of using buffers by using a buffer pool. Buffers are required to process messages by the service when they come out of the channel. If there is not sufficient memory in the buffer pool to process the message load, the <xref:System.ServiceModel.Channels.BufferManager> must allocate additional memory from the CLR heap, which increases the garbage collection overhead. Extensive allocation from the CLR garbage heap is an indication that the buffer pool size is too small and that performance can be improved with a larger allocation by increasing the <xref:System.ServiceModel.BasicHttpBinding.MaxBufferPoolSize%2A> limit.  
+ The <xref:System.ServiceModel.Channels.BufferManager> minimizes the cost of using buffers by using a buffer pool. Buffers are required to process messages by the service when they come out of the channel. If there is not sufficient memory in the buffer pool to process the message load, the <xref:System.ServiceModel.Channels.BufferManager> must allocate additional memory from the CLR heap, which increases the garbage collection overhead. Extensive allocation from the CLR garbage heap is an indication that the buffer pool size is too small and that performance can be improved with a larger allocation by increasing the <xref:System.ServiceModel.HttpBindingBase.MaxBufferPoolSize%2A> limit.  
   
  ]]></format>
         </remarks>
@@ -617,7 +617,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This run-time behavior for receiving messages in either a service or client application can be changed using the [\&lt;synchronousReceive\&gt;](~/docs/framework/configure-apps/file-schema/wcf/synchronousreceive-element.md).  
+ This run-time behavior for receiving messages in either a service or client application can be changed using the [&lt;synchronousReceive&gt;](~/docs/framework/configure-apps/file-schema/wcf/synchronousreceive-element.md).  
   
  ]]></format>
         </remarks>
@@ -698,5 +698,15 @@
         <exception cref="T:System.ArgumentNullException">The value set is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WebHttpBinding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

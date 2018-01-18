@@ -54,11 +54,13 @@
   
  The following code example demonstrates how to declaratively bind a <xref:System.Web.UI.WebControls.TreeView> control to file system data using the `FileSystemDataSource` example.  
   
- <!-- TODO: review snippet reference [!code-csharp[Urtue.Samples.Alexkr.FileSystemDataSource_webform_1#50](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.FileSystemDataSource_webform_1/CS/webform7cs.aspx#50)]  -->
- <!-- TODO: review snippet reference [!code-vb[Urtue.Samples.Alexkr.FileSystemDataSource_webform_1#50](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.FileSystemDataSource_webform_1/VB/webform7vb.aspx#50)]  -->  
+ [!code-aspx-csharp[Urtue.Samples.Alexkr.FileSystemDataSource_webform_1#50](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.FileSystemDataSource_webform_1/CS/webform7cs.aspx#50)]
+ [!code-aspx-vb[Urtue.Samples.Alexkr.FileSystemDataSource_webform_1#50](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.FileSystemDataSource_webform_1/VB/webform7vb.aspx#50)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.IHierarchicalDataSource" />
+    <altmember cref="T:System.Web.UI.DataSourceControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -162,6 +164,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ClientIDMode" />
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -249,6 +252,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set the value of the <see cref="P:System.Web.UI.HierarchicalDataSourceControl.EnableTheming" /> property.</exception>
+        <altmember cref="P:System.Web.UI.HierarchicalDataSourceControl.SkinID" />
+        <altmember cref="P:System.Web.UI.HierarchicalDataSourceControl.Visible" />
       </Docs>
     </Member>
     <Member MemberName="FindControl">
@@ -307,6 +312,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to call the <see cref="M:System.Web.UI.HierarchicalDataSourceControl.Focus" /> method.</exception>
+        <altmember cref="P:System.Web.UI.HierarchicalDataSourceControl.Visible" />
       </Docs>
     </Member>
     <Member MemberName="GetHierarchicalView">
@@ -344,6 +350,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HierarchicalDataSourceView" />
       </Docs>
     </Member>
     <Member MemberName="HasControls">
@@ -404,6 +411,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.HierarchicalDataSourceControl.OnDataSourceChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HierarchicalDataSourceControl.OnDataSourceChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.IHierarchicalDataSource.DataSourceChanged" />
       </Docs>
     </Member>
     <Member MemberName="RenderControl">
@@ -430,6 +438,7 @@
         <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> object that receives the control content.</param>
         <summary>Outputs server control content to a provided <see cref="T:System.Web.UI.HtmlTextWriter" /> object and stores tracing information about the control if tracing is enabled.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.RenderControl(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="SkinID">
@@ -497,6 +506,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HierarchicalDataSourceControl.GetHierarchicalView(System.String)" />
+        <altmember cref="T:System.Web.UI.HierarchicalDataSourceView" />
       </Docs>
     </Member>
     <Member MemberName="Visible">

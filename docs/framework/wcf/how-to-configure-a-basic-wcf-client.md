@@ -9,16 +9,15 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "WCF clients [WCF], configuring"
 ms.assetid: d067b86d-afb0-47bf-94f6-45180a3d8d78
 caps.latest.revision: 47
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Configure a Basic Windows Communication Foundation Client
 This is the fifth of six tasks required to create a basic [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] application. For an overview of all six of the tasks, see the [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md) topic.  
@@ -54,27 +53,6 @@ This is the fifth of six tasks required to create a basic [!INCLUDE[indigo1](../
                 </endpoint>  
             </client>  
         </system.serviceModel>  
-    </configuration><?xml version="1.0" encoding="utf-8" ?>  
-    <configuration>  
-        <startup>   
-            <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5,Profile=Client" />  
-        </startup>  
-        <system.serviceModel>  
-            <bindings>  
-                <wsHttpBinding>  
-                    <binding name="WSHttpBinding_ICalculator" />  
-                </wsHttpBinding>  
-            </bindings>  
-            <client>  
-                <endpoint address="http://localhost:8000/ServiceModelSamples/Service/CalculatorService"  
-                    binding="wsHttpBinding" bindingConfiguration="WSHttpBinding_ICalculator"  
-                    contract="ServiceReference1.ICalculator" name="WSHttpBinding_ICalculator">  
-                    <identity>  
-                        <userPrincipalName value="migree@redmond.corp.microsoft.com" />  
-                    </identity>  
-                </endpoint>  
-            </client>  
-        </system.serviceModel>  
     </configuration>   
     ```  
   
@@ -85,8 +63,8 @@ This is the fifth of six tasks required to create a basic [!INCLUDE[indigo1](../
 2.  [!INCLUDE[crabout](../../../includes/crabout-md.md)] how to use the generated client with this configuration, see [How to: Use a Client](../../../docs/framework/wcf/how-to-use-a-wcf-client.md).  
   
 ## See Also  
- [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)   
- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)   
- [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)   
- [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md)   
+ [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
+ [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)  
+ [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)  
+ [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md)  
  [Self-Host](../../../docs/framework/wcf/samples/self-host.md)

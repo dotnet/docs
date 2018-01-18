@@ -44,7 +44,7 @@
 >  If a Web site is precompiled for deployment, content provided by a <xref:System.Web.Hosting.VirtualPathProvider> instance is not compiled, and no <xref:System.Web.Hosting.VirtualPathProvider> instances are used by the precompiled site.  
   
 ## Registering a VirtualPathProvider  
- A custom <xref:System.Web.Hosting.VirtualPathProvider> instance should be registered with the ASP.NET compilation system by using the <xref:System.Web.Hosting.HostingEnvironment.RegisterVirtualPathProvider%2A?displayProperty=fullName> method before any page parsing or compilation is performed by the Web application.  
+ A custom <xref:System.Web.Hosting.VirtualPathProvider> instance should be registered with the ASP.NET compilation system by using the <xref:System.Web.Hosting.HostingEnvironment.RegisterVirtualPathProvider%2A?displayProperty=nameWithType> method before any page parsing or compilation is performed by the Web application.  
   
  Typically, a <xref:System.Web.Hosting.VirtualPathProvider> instance is registered in an `AppInitialize` method defined in the `App_Code` directory, or during the `Application_Start` event in the `Global.asax` file. For an example of registering a <xref:System.Web.Hosting.VirtualPathProvider> instance in an `AppInitialize` method, see the Example section.  
   
@@ -138,8 +138,8 @@
   
  The last example is an ASP.NET page that contains links to the virtual files contained in the virtual file system.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Hosting.VirtualPathProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.hosting.virtualpathprovider/CS/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Hosting.VirtualPathProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.hosting.virtualpathprovider/VB/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Hosting.VirtualPathProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.hosting.virtualpathprovider/CS/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.Hosting.VirtualPathProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.hosting.virtualpathprovider/VB/Default.aspx#1)]  
   
  ]]></format>
     </remarks>

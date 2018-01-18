@@ -19,7 +19,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use <xref:System.Configuration.ConfigurationUserLevel> to specify which configuration file is to be represented by the Configuration object returned by <xref:System.Configuration.ConfigurationManager.OpenExeConfiguration%2A?displayProperty=fullName> and <xref:System.Web.Configuration.WebConfigurationManager.OpenMachineConfiguration%2A?displayProperty=fullName>.  
+ Use <xref:System.Configuration.ConfigurationUserLevel> to specify which configuration file is to be represented by the Configuration object returned by <xref:System.Configuration.ConfigurationManager.OpenExeConfiguration%2A?displayProperty=nameWithType> and <xref:System.Web.Configuration.WebConfigurationManager.OpenMachineConfiguration%2A?displayProperty=nameWithType>.  
   
  Application configuration files are in the same directory as the application and have the same name, but with a .config extension. For example, the configuration file for C:\System\Public.exe is C:\System\Public.exe.config.  
   
@@ -35,6 +35,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ConfigurationManager" />
   </Docs>
   <Members>
     <Member MemberName="None">

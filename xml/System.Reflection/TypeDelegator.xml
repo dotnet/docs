@@ -32,14 +32,14 @@
 ## Remarks  
  Derive from this type and override only those members you have to provide customization in, plus any members that are required by your program and not already implemented by <xref:System.Reflection.TypeDelegator>.  
   
- <xref:System.Reflection.TypeDelegator> derives from <xref:System.Type?displayProperty=fullName> and implements most of the properties and methods of <xref:System.Type>. For each member it implements, <xref:System.Reflection.TypeDelegator> automatically delegates to the corresponding member of an internal <xref:System.Type> object, which is supplied as an argument to the constructor. This internal <xref:System.Type> object is exposed to deriving classes by the `protected`<xref:System.Reflection.TypeDelegator.typeImpl> field.  
+ <xref:System.Reflection.TypeDelegator> derives from <xref:System.Type?displayProperty=nameWithType> and implements most of the properties and methods of <xref:System.Type>. For each member it implements, <xref:System.Reflection.TypeDelegator> automatically delegates to the corresponding member of an internal <xref:System.Type> object, which is supplied as an argument to the constructor. This internal <xref:System.Type> object is exposed to deriving classes by the `protected`<xref:System.Reflection.TypeDelegator.typeImpl> field.  
   
 > [!NOTE]
 >  Some members of <xref:System.Reflection.TypeDelegator> have implementations even though the members themselves are simply inherited from <xref:System.Type>. In these cases, the implementation is provided by an overridden `protected` method that has a name that ends in "Impl". For example, the implementation for all overloads of the <xref:System.Reflection.TypeDelegator.GetMethods%2A> method is supplied by the overridden <xref:System.Reflection.TypeDelegator.GetMethodImpl%2A> method. The implementation for inherited properties such as <xref:System.Type.IsPublic%2A> and <xref:System.Type.IsNestedAssembly%2A> is provided by the overridden <xref:System.Reflection.TypeDelegator.GetAttributeFlagsImpl%2A> method.  
   
  Deriving classes can provide a public constructor that takes a <xref:System.Type> object as its parameter and simply passes that object to the <xref:System.Reflection.TypeDelegator.%23ctor%28System.Type%29> constructor, or can set the internal <xref:System.Type> object in some other way.  
   
- If a deriving class uses a member that is not implemented by <xref:System.Reflection.TypeDelegator>, it must override that member and provide an implementation. The simplest implementation is to call the corresponding member on the internal <xref:System.Type> object exposed by the <xref:System.Reflection.TypeDelegator.typeImpl> field, but you can provide any implementation your application requires. It is not necessary to override these members if they are not used by your application or by library functions your application calls (for example, by the <xref:System.CodeDom.CodeTypeReference.%23ctor%28System.Type%29?displayProperty=fullName> constructor).  
+ If a deriving class uses a member that is not implemented by <xref:System.Reflection.TypeDelegator>, it must override that member and provide an implementation. The simplest implementation is to call the corresponding member on the internal <xref:System.Type> object exposed by the <xref:System.Reflection.TypeDelegator.typeImpl> field, but you can provide any implementation your application requires. It is not necessary to override these members if they are not used by your application or by library functions your application calls (for example, by the <xref:System.CodeDom.CodeTypeReference.%23ctor%28System.Type%29?displayProperty=nameWithType> constructor).  
   
  The following virtual methods (`Overridable` methods in Visual Basic) of <xref:System.Type> are not implemented by <xref:System.Reflection.TypeDelegator>: <xref:System.Type.MakeGenericType%2A>, <xref:System.Type.GetGenericTypeDefinition%2A>, <xref:System.Type.GetGenericArguments%2A>, <xref:System.Type.GetGenericParameterConstraints%2A>, <xref:System.Type.MakeArrayType%2A>, <xref:System.Type.MakeByRefType%2A>, <xref:System.Type.MakePointerType%2A>, <xref:System.Type.GetEnumNames%2A>, <xref:System.Type.GetEnumValues%2A>, <xref:System.Type.GetEnumUnderlyingType%2A>, <xref:System.Type.GetTypeCodeImpl%2A>, <xref:System.Type.IsEnumDefined%2A>, <xref:System.Type.IsEquivalentTo%2A>.  
   
@@ -271,6 +271,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
       </Docs>
     </Member>
     <Member MemberName="GetConstructorImpl">
@@ -317,6 +318,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.CallingConventions" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="T:System.Reflection.Binder" />
       </Docs>
     </Member>
     <Member MemberName="GetConstructors">
@@ -715,6 +719,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.InterfaceMapping" />
       </Docs>
     </Member>
     <Member MemberName="GetInterfaces">
@@ -872,6 +877,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.CallingConventions" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="T:System.Reflection.Binder" />
       </Docs>
     </Member>
     <Member MemberName="GetMethods">
@@ -1074,6 +1082,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Guid" />
       </Docs>
     </Member>
     <Member MemberName="HasElementTypeImpl">
@@ -1159,7 +1168,7 @@
   
  The binder will find all the matching methods. These methods are found based upon the type of binding requested (`BindingFlags.MethodInvoke`, `BindingFlags.GetProperties`, and so on). The set of methods is filtered by the name, number of arguments, and a set of search modifiers defined in the binder.  
   
- After the method is selected, it will be invoked. Accessibility is checked at that point. The search may control which set of methods are searched based upon the accessibility attribute associated with the method. The <xref:System.Reflection.Binder.BindToMethod%2A?displayProperty=fullName> method is responsible for selecting the method to be invoked. The default binder selects the most specific match.  
+ After the method is selected, it will be invoked. Accessibility is checked at that point. The search may control which set of methods are searched based upon the accessibility attribute associated with the method. The <xref:System.Reflection.Binder.BindToMethod%2A?displayProperty=nameWithType> method is responsible for selecting the method to be invoked. The default binder selects the most specific match.  
   
 > [!NOTE]
 >  Access restrictions are ignored for fully trusted code. That is, private constructors, methods, fields, and properties can be accessed and invoked using reflection whenever the code is fully trusted.  
@@ -1186,6 +1195,7 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <Member MemberName="IsArrayImpl">
@@ -1681,6 +1691,7 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.RuntimeTypeHandle" />
       </Docs>
     </Member>
     <Member MemberName="typeImpl">
@@ -1736,5 +1747,35 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.TypeDelegator" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEvents">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an array of <see cref="T:System.Reflection.EventInfo" /> objects representing all the public events declared or inherited by the current <see langword="TypeDelegator" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns all the custom attributes defined for this type.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

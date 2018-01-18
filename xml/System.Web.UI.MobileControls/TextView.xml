@@ -41,7 +41,7 @@
 ## Remarks  
  Unlike literal text in a mobile form, you can set content of a <xref:System.Web.UI.MobileControls.TextView> from code. Unlike a mobile <xref:System.Web.UI.MobileControls.Label> control, you can include markup within the value of the <xref:System.Web.UI.MobileControls.TextView.Text%2A> property. Also, the <xref:System.Web.UI.MobileControls.TextView> control is careful not to break up inserted elements such as links during pagination. For more information, see [Literal Text Inside Form Markup](http://msdn.microsoft.com/en-us/05e061ed-9916-4ece-bfc8-7bf131fe232e).  
   
- If the <xref:System.Web.UI.MobileControls.TextView> control is within a <xref:System.Web.UI.MobileControls.Panel>, set the <xref:System.Web.UI.MobileControls.Panel.Paginate%2A?displayProperty=fullName> property to `true` to allow text to flow across multiple pages on mobile devices. If the <xref:System.Web.UI.MobileControls.TextView> control is not in a <xref:System.Web.UI.MobileControls.Panel>, put the name of the <xref:System.Web.UI.MobileControls.TextView> control into the <xref:System.Web.UI.MobileControls.Form.ControlToPaginate%2A?displayProperty=fullName> property.  
+ If the <xref:System.Web.UI.MobileControls.TextView> control is within a <xref:System.Web.UI.MobileControls.Panel>, set the <xref:System.Web.UI.MobileControls.Panel.Paginate%2A?displayProperty=nameWithType> property to `true` to allow text to flow across multiple pages on mobile devices. If the <xref:System.Web.UI.MobileControls.TextView> control is not in a <xref:System.Web.UI.MobileControls.Panel>, put the name of the <xref:System.Web.UI.MobileControls.TextView> control into the <xref:System.Web.UI.MobileControls.Form.ControlToPaginate%2A?displayProperty=nameWithType> property.  
   
  Most other properties and methods of the mobile <xref:System.Web.UI.MobileControls.TextView> control are of more use to developers of new device adapters for rendering the contents on specific devices.  
   
@@ -56,12 +56,14 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileTextViewSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileTextViewSample/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileTextViewSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileTextViewSample/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileTextViewSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileTextViewSample/cs/Default.aspx#1)]
+ [!code-aspx-vb[MobileTextViewSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileTextViewSample/vb/Default.aspx#1)]  
   
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.Form" />
+    <altmember cref="T:System.Web.UI.MobileControls.Panel" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -190,6 +192,7 @@
         <summary>Gets the number of items in the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The number of items in the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.PagedControl.InternalItemCount" />
       </Docs>
     </Member>
     <Member MemberName="ItemCount">
@@ -267,6 +270,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.PagedControl" />
       </Docs>
     </Member>
     <Member MemberName="ItemWeight">
@@ -285,6 +289,7 @@
         <summary>Gets the approximate weight of a single item in the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>The approximate weight of a single item in the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.PagedControl.ItemWeight" />
       </Docs>
     </Member>
     <Member MemberName="LastVisibleElementIndex">
@@ -386,8 +391,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileTextViewSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileTextViewSample/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileTextViewSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileTextViewSample/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileTextViewSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileTextViewSample/cs/Default.aspx#1)]
+ [!code-aspx-vb[MobileTextViewSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileTextViewSample/vb/Default.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -412,6 +417,7 @@
         <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that will render the content.</param>
         <summary>Raises the <see cref="M:System.Web.UI.MobileControls.MobileControl.Render(System.Web.UI.HtmlTextWriter)" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobileControl.OnRender(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="PaginateRecursive">
@@ -433,6 +439,7 @@
         <param name="pager">The pager.</param>
         <summary>Paginates the control and its children. Called internally by ASP.NET. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.PagedControl.PaginateRecursive(System.Web.UI.MobileControls.ControlPager)" />
       </Docs>
     </Member>
     <Member MemberName="Text">

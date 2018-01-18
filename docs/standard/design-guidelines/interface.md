@@ -8,11 +8,6 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "interfaces [.NET Framework], design guidelines"
   - "type design guidelines, interfaces"
@@ -22,6 +17,9 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Interface Design
 Although most APIs are best modeled using classes and structs, there are cases in which interfaces are more appropriate or are the only option.  
@@ -44,7 +42,7 @@ Although most APIs are best modeled using classes and structs, there are cases i
   
  **✓ DO** provide at least one API that consumes each interface you define (a method taking the interface as a parameter or a property typed as the interface).  
   
- Doing this helps to validate the interface design. For example, <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=fullName> consumes the <xref:System.Collections.Generic.IComparer%601?displayProperty=fullName> interface.  
+ Doing this helps to validate the interface design. For example, <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=nameWithType> consumes the <xref:System.Collections.Generic.IComparer%601?displayProperty=nameWithType> interface.  
   
  **X DO NOT** add members to an interface that has previously shipped.  
   
@@ -57,5 +55,5 @@ Although most APIs are best modeled using classes and structs, there are cases i
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](http://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
 ## See Also  
- [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)   
+ [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)  
  [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)

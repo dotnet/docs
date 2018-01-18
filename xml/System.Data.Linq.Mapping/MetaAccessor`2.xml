@@ -19,6 +19,7 @@
     <typeparam name="TMember">The type of the member of that source.</typeparam>
     <summary>A strongly typed version of the <see cref="T:System.Data.Linq.Mapping.MetaAccessor" /> class.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Data.Linq.Mapping.MetaAccessor" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -82,7 +83,7 @@
     </Member>
     <Member MemberName="SetBoxedValue">
       <MemberSignature Language="C#" Value="public override void SetBoxedValue (ref object instance, object value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetBoxedValue(object instance, object value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetBoxedValue(object&amp; instance, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaAccessor`2.SetBoxedValue(System.Object@,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -105,7 +106,7 @@
     </Member>
     <Member MemberName="SetValue">
       <MemberSignature Language="C#" Value="public abstract void SetValue (ref TEntity instance, TMember value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetValue(!TEntity instance, !TMember value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetValue(!TEntity&amp; instance, !TMember value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaAccessor`2.SetValue(`0@,`1)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

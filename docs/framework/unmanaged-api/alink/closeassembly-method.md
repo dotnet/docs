@@ -18,8 +18,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CloseAssembly"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CloseAssembly method"
 ms.assetid: f66a43bc-a5c5-4190-acbe-63fd27640634
@@ -29,6 +27,8 @@ caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CloseAssembly Method
 Finalizes assembly operations. Call this method before beginning a new assembly or unbound module.  
@@ -52,6 +52,6 @@ HRESULT CloseAssembly(
  Requires alink.h.  
   
 ## See Also  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)   
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)   
+ [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
+ [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
  [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

@@ -21,7 +21,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolTip.Popup> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolTip.Popup> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolTip> named `ToolTip1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolTip.Popup> event.  
   
@@ -30,6 +30,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ToolTip" />
+    <altmember cref="E:System.Windows.Forms.ToolTip.Popup" />
+    <altmember cref="T:System.Windows.Forms.DrawToolTipEventArgs" />
+    <altmember cref="P:System.Windows.Forms.PopupEventArgs.ToolTipSize" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +66,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.PopupEventArgs.AssociatedControl" />
+        <altmember cref="P:System.Windows.Forms.PopupEventArgs.AssociatedWindow" />
+        <altmember cref="P:System.Windows.Forms.PopupEventArgs.IsBalloon" />
+        <altmember cref="P:System.Windows.Forms.PopupEventArgs.ToolTipSize" />
       </Docs>
     </Member>
     <Member MemberName="AssociatedControl">
@@ -83,20 +91,22 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because you can associate the <xref:System.Windows.Forms.ToolTip> with multiple controls through the <xref:System.Windows.Forms.ToolTip.SetToolTip%2A?displayProperty=fullName> method, you can use the <xref:System.Windows.Forms.PopupEventArgs.AssociatedControl%2A> property to determine which control the <xref:System.Windows.Forms.ToolTip.Draw> event is associated with. This is helpful if you want to perform different ToolTip customization based on the associated control.  
+ Because you can associate the <xref:System.Windows.Forms.ToolTip> with multiple controls through the <xref:System.Windows.Forms.ToolTip.SetToolTip%2A?displayProperty=nameWithType> method, you can use the <xref:System.Windows.Forms.PopupEventArgs.AssociatedControl%2A> property to determine which control the <xref:System.Windows.Forms.ToolTip.Draw> event is associated with. This is helpful if you want to perform different ToolTip customization based on the associated control.  
   
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolTip.Popup?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolTip.Popup?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolTip> named `ToolTip1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolTip.Popup?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolTip> named `ToolTip1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolTip.Popup?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#619](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#619)]
  [!code-vb[System.Windows.Forms.EventExamples#619](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#619)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.PopupEventArgs.AssociatedWindow" />
+        <altmember cref="M:System.Windows.Forms.ToolTip.SetToolTip(System.Windows.Forms.Control,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="AssociatedWindow">
@@ -123,15 +133,16 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolTip.Popup?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolTip.Popup?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolTip> named `ToolTip1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolTip.Popup?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolTip> named `ToolTip1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolTip.Popup?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#619](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#619)]
  [!code-vb[System.Windows.Forms.EventExamples#619](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#619)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.PopupEventArgs.AssociatedControl" />
       </Docs>
     </Member>
     <Member MemberName="IsBalloon">
@@ -154,20 +165,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The type of window used for the ToolTip is specified in the <xref:System.Windows.Forms.ToolTip.IsBalloon%2A?displayProperty=fullName> method of the <xref:System.Windows.Forms.ToolTip> class.  
+ The type of window used for the ToolTip is specified in the <xref:System.Windows.Forms.ToolTip.IsBalloon%2A?displayProperty=nameWithType> method of the <xref:System.Windows.Forms.ToolTip> class.  
   
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolTip.Popup?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolTip.Popup?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolTip> named `ToolTip1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolTip.Popup?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolTip> named `ToolTip1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolTip.Popup?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#619](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#619)]
  [!code-vb[System.Windows.Forms.EventExamples#619](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#619)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolTip.IsBalloon" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipSize">
@@ -194,15 +206,17 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolTip.Popup?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolTip.Popup?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolTip> named `ToolTip1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolTip.Popup?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolTip> named `ToolTip1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolTip.Popup?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#619](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#619)]
  [!code-vb[System.Windows.Forms.EventExamples#619](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#619)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.ToolTip.Popup" />
+        <altmember cref="T:System.Windows.Forms.DrawToolTipEventArgs" />
       </Docs>
     </Member>
   </Members>

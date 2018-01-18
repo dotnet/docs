@@ -182,7 +182,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is a simple call to <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>.  
+ This method is a simple call to <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType>.  
   
  Calling `Dispose` allows the resources used by the <xref:System.Security.Cryptography.ToBase64Transform> to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).  
   
@@ -515,5 +515,15 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="inputBuffer" /> parameter requires a non-negative number.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.Security.Cryptography.ToBase64Transform" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

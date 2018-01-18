@@ -170,13 +170,13 @@
 ## Remarks  
  If one of the following cases occurs, this method returns the current <xref:System.Windows.Automation.Peers.MenuItemAutomationPeer> object.  
   
--   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName> and the <xref:System.Windows.Controls.MenuItem> that is associated with this <xref:System.Windows.Automation.Peers.MenuItemAutomationPeer> has child <xref:System.Windows.Controls.MenuItem> objects.  
+-   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface.ExpandCollapse?displayProperty=nameWithType> and the <xref:System.Windows.Controls.MenuItem> that is associated with this <xref:System.Windows.Automation.Peers.MenuItemAutomationPeer> has child <xref:System.Windows.Controls.MenuItem> objects.  
   
--   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName> and the <xref:System.Windows.Controls.MenuItem> that is associated with this <xref:System.Windows.Automation.Peers.MenuItemAutomationPeer> does not have child <xref:System.Windows.Controls.MenuItem> objects.  
+-   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface.Invoke?displayProperty=nameWithType> and the <xref:System.Windows.Controls.MenuItem> that is associated with this <xref:System.Windows.Automation.Peers.MenuItemAutomationPeer> does not have child <xref:System.Windows.Controls.MenuItem> objects.  
   
--   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName> and the <xref:System.Windows.Controls.MenuItem> that is associated with this <xref:System.Windows.Automation.Peers.MenuItemAutomationPeer> has its checkable property set to `true`.  
+-   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface.Toggle?displayProperty=nameWithType> and the <xref:System.Windows.Controls.MenuItem> that is associated with this <xref:System.Windows.Automation.Peers.MenuItemAutomationPeer> has its checkable property set to `true`.  
   
- If `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName>, this method returns an object that implements the <xref:System.Windows.Automation.Provider.ISynchronizedInputProvider> interface.  
+ If `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface.SynchronizedInput?displayProperty=nameWithType>, this method returns an object that implements the <xref:System.Windows.Automation.Provider.ISynchronizedInputProvider> interface.  
   
  ]]></format>
         </remarks>

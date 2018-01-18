@@ -42,13 +42,14 @@
    
   
 ## Examples  
- The following example illustrates the<xref:System.UnauthorizedAccessException> exception that is thrown when attempting to write to a read-only file.  
+ The following example illustrates the <xref:System.UnauthorizedAccessException> exception that is thrown when attempting to write to a read-only file.  
   
  [!code-csharp[System.UnauthorizedAccessException#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.unauthorizedaccessexception/cs/withio.cs#1)]
  [!code-vb[System.UnauthorizedAccessException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.unauthorizedaccessexception/vb/withio.vb#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -214,5 +215,18 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.UnauthorizedAccessException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

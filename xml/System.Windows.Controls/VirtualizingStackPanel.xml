@@ -46,6 +46,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.StackPanel" />
+    <altmember cref="T:System.Windows.Controls.ListBox" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,6 +63,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.VirtualizingStackPanel" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.VirtualizingStackPanel.MeasureOverride(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="AddCleanUpVirtualizedItemHandler">
@@ -116,7 +119,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can override the <xref:System.Windows.Controls.VirtualizingStackPanel.ArrangeOverride%2A>and <xref:System.Windows.Controls.VirtualizingStackPanel.MeasureOverride%2A> methods in a derived class for custom layout behavior.  
+ You can override the <xref:System.Windows.Controls.VirtualizingStackPanel.ArrangeOverride%2A> and <xref:System.Windows.Controls.VirtualizingStackPanel.MeasureOverride%2A> methods in a derived class for custom layout behavior.  
   
  ]]></format>
         </remarks>
@@ -476,6 +479,7 @@
         <summary>Gets a value that represents the <see cref="T:System.Windows.Controls.Orientation" /> of the <see cref="T:System.Windows.Controls.VirtualizingStackPanel" />.</summary>
         <value>An <see cref="T:System.Windows.Controls.Orientation" /> value.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.Orientation" />
       </Docs>
     </Member>
     <Member MemberName="MakeVisible">
@@ -529,6 +533,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.VirtualizingStackPanel.ArrangeOverride(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="MouseWheelDown">

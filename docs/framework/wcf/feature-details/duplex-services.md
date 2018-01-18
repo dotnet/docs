@@ -9,16 +9,21 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 396b875a-d203-4ebe-a3a1-6a330d962e95
 caps.latest.revision: 17
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Duplex Services
 A duplex service contract is a message exchange pattern in which both endpoints can send messages to the other independently. A duplex service, therefore, can send messages back to the client endpoint, providing event-like behavior. Duplex communication occurs when a client connects to a service and provides the service with a channel on which the service can send messages back to the client. Note that the event-like behavior of duplex services only works within a session.  
   
- To create a duplex contract you create a pair of interfaces. The first is the service contract interface that describes the operations that a client can invoke. That service contract must specify a *callback contract* in the <xref:System.ServiceModel.ServiceContractAttribute.CallbackContract%2A?displayProperty=fullName> property. The callback contract is the interface that defines the operations that the service can call on the client endpoint. A duplex contract does not require a session, although the system-provided duplex bindings make use of them.  
+ To create a duplex contract you create a pair of interfaces. The first is the service contract interface that describes the operations that a client can invoke. That service contract must specify a *callback contract* in the <xref:System.ServiceModel.ServiceContractAttribute.CallbackContract%2A?displayProperty=nameWithType> property. The callback contract is the interface that defines the operations that the service can call on the client endpoint. A duplex contract does not require a session, although the system-provided duplex bindings make use of them.  
   
  The following is an example of a duplex contract.  
   
@@ -88,6 +93,6 @@ binding.ClientBaseAddress = new Uri("http://localhost:8000/DuplexTestUsingCode/C
 >  The duplex model does not automatically detect when a service or client closes its channel. So if a client unexpectedly terminates, by default the service will not be notified, or if a client unexpectedly terminates, the service will not be notified. Clients and services can implement their own protocol to notify each other if they so choose.  
   
 ## See Also  
- [Duplex](../../../../docs/framework/wcf/samples/duplex.md)   
- [Specifying Client Run-Time Behavior](../../../../docs/framework/wcf/specifying-client-run-time-behavior.md)   
+ [Duplex](../../../../docs/framework/wcf/samples/duplex.md)  
+ [Specifying Client Run-Time Behavior](../../../../docs/framework/wcf/specifying-client-run-time-behavior.md)  
  [How to: Create a Channel Factory and Use it to Create and Manage Channels](../../../../docs/framework/wcf/feature-details/how-to-create-a-channel-factory-and-use-it-to-create-and-manage-channels.md)

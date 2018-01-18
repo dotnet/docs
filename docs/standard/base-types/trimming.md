@@ -8,6 +8,10 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "strings [.NET Framework], removing characters"
   - "Remove method"
@@ -21,19 +25,22 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Trimming and Removing Characters from Strings in .NET
 If you are parsing a sentence into individual words, you might end up with words that have blank spaces (also called white spaces) on either end of the word. In this situation, you can use one of the trim methods in the **System.String** class to remove any number of spaces or other characters from a specified position in the string. The following table describes the available trim methods.  
   
 |Method name|Use|  
 |-----------------|---------|  
-|<xref:System.String.Trim%2A?displayProperty=fullName>|Removes white spaces or characters specified in an array of characters from the beginning and end of a string.|  
-|<xref:System.String.TrimEnd%2A?displayProperty=fullName>|Removes characters specified in an array of characters from the end of a string.|  
-|<xref:System.String.TrimStart%2A?displayProperty=fullName>|Removes characters specified in an array of characters from the beginning of a string.|  
-|<xref:System.String.Remove%2A?displayProperty=fullName>|Removes a specified number of characters from a specified index position in a string.|  
+|<xref:System.String.Trim%2A?displayProperty=nameWithType>|Removes white spaces or characters specified in an array of characters from the beginning and end of a string.|  
+|<xref:System.String.TrimEnd%2A?displayProperty=nameWithType>|Removes characters specified in an array of characters from the end of a string.|  
+|<xref:System.String.TrimStart%2A?displayProperty=nameWithType>|Removes characters specified in an array of characters from the beginning of a string.|  
+|<xref:System.String.Remove%2A?displayProperty=nameWithType>|Removes a specified number of characters from a specified index position in a string.|  
   
 ## Trim  
- You can easily remove white spaces from both ends of a string by using the <xref:System.String.Trim%2A?displayProperty=fullName> method, as shown in the following example.  
+ You can easily remove white spaces from both ends of a string by using the <xref:System.String.Trim%2A?displayProperty=nameWithType> method, as shown in the following example.  
   
  [!code-cpp[Conceptual.String.BasicOps#17](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/trimming.cpp#17)]
  [!code-csharp[Conceptual.String.BasicOps#17](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/trimming.cs#17)]
@@ -75,7 +82,7 @@ If you are parsing a sentence into individual words, you might end up with words
  This code displays `World!` to the console.  
   
 ## Remove  
- The <xref:System.String.Remove%2A?displayProperty=fullName> method removes a specified number of characters that begin at a specified position in an existing string. This method assumes a zero-based index.  
+ The <xref:System.String.Remove%2A?displayProperty=nameWithType> method removes a specified number of characters that begin at a specified position in an existing string. This method assumes a zero-based index.  
   
  The following example removes ten characters from a string beginning at position five of a zero-based index of the string.  
   
@@ -83,7 +90,7 @@ If you are parsing a sentence into individual words, you might end up with words
  [!code-csharp[Conceptual.String.BasicOps#21](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/trimming.cs#21)]
  [!code-vb[Conceptual.String.BasicOps#21](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/trimming.vb#21)]  
   
- You can also remove a specified character or substring from a string by calling the <xref:System.String.Replace%28System.String%2CSystem.String%29?displayProperty=fullName> method and specifying an empty string (<xref:System.String.Empty?displayProperty=fullName>) as the replacement. The following example removes all commas from a string.  
+ You can also remove a specified character or substring from a string by calling the <xref:System.String.Replace%28System.String%2CSystem.String%29?displayProperty=nameWithType> method and specifying an empty string (<xref:System.String.Empty?displayProperty=nameWithType>) as the replacement. The following example removes all commas from a string.  
   
  [!code-csharp[Conceptual.String.BasicOps#23](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/replace1.cs#23)]
  [!code-vb[Conceptual.String.BasicOps#23](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/replace1.vb#23)]  

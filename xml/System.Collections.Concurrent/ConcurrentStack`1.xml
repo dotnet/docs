@@ -485,7 +485,7 @@
     </Member>
     <Member MemberName="System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt;.TryTake">
       <MemberSignature Language="C#" Value="bool IProducerConsumerCollection&lt;T&gt;.TryTake (out T item);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt;.TryTake(!T item) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt;.TryTake([out] !T&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentStack`1.System#Collections#Concurrent#IProducerConsumerCollection&lt;T&gt;#TryTake(`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -691,7 +691,7 @@
     </Member>
     <Member MemberName="TryPeek">
       <MemberSignature Language="C#" Value="public bool TryPeek (out T result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryPeek(!T result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryPeek([out] !T&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentStack`1.TryPeek(`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -724,7 +724,7 @@
     </Member>
     <Member MemberName="TryPop">
       <MemberSignature Language="C#" Value="public bool TryPop (out T result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryPop(!T result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryPop([out] !T&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentStack`1.TryPop(`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -856,5 +856,27 @@
           <paramref name="startIndex" /> + <paramref name="count" /> is greater than the length of <paramref name="items" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryPopRange">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <remarks />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="PushRange">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <remarks />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

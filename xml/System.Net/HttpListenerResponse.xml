@@ -29,19 +29,16 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When a client makes a request for a resource handled by an <xref:System.Net.HttpListener> object, the request and response are made available to your application in an <xref:System.Net.HttpListenerContext> object. The request is represented by an <xref:System.Net.HttpListenerRequest> object and is available in the <xref:System.Net.HttpListenerContext.Request%2A?displayProperty=fullName> property. The response is represented by an <xref:System.Net.HttpListenerResponse> object and is available in the <xref:System.Net.HttpListenerContext.Response%2A?displayProperty=fullName> property.  
+ When a client makes a request for a resource handled by an <xref:System.Net.HttpListener> object, the request and response are made available to your application in an <xref:System.Net.HttpListenerContext> object. The request is represented by an <xref:System.Net.HttpListenerRequest> object and is available in the <xref:System.Net.HttpListenerContext.Request%2A?displayProperty=nameWithType> property. The response is represented by an <xref:System.Net.HttpListenerResponse> object and is available in the <xref:System.Net.HttpListenerContext.Response%2A?displayProperty=nameWithType> property.  
   
- You can customize the response by setting various properties, such as <xref:System.Net.HttpListenerResponse.StatusCode%2A>, <xref:System.Net.HttpListenerResponse.StatusDescription%2A>, and <xref:System.Net.HttpListenerResponse.Cookies%2A>. Use the <xref:System.Net.HttpListenerResponse.OutputStream%2A?displayProperty=fullName> property to obtain a <xref:System.IO.Stream> instance to which response data can be written. Finally, send the response data to the client by calling the <xref:System.Net.HttpListenerResponse.Close%2A> method.  
-  
-   
-  
-## Examples  
- The following code example demonstrates responding to a client request.  
-  
- [!code-csharp[Net_Listener_Basic#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#2)]  
+ You can customize the response by setting various properties, such as <xref:System.Net.HttpListenerResponse.StatusCode%2A>, <xref:System.Net.HttpListenerResponse.StatusDescription%2A>, and <xref:System.Net.HttpListenerResponse.Cookies%2A>. Use the <xref:System.Net.HttpListenerResponse.OutputStream%2A?displayProperty=nameWithType> property to obtain a <xref:System.IO.Stream> instance to which response data can be written. Finally, send the response data to the client by calling the <xref:System.Net.HttpListenerResponse.Close%2A> method.  
+ 
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.HttpListener" />
+    <altmember cref="T:System.Net.HttpListenerContext" />
+    <altmember cref="T:System.Net.HttpListenerRequest" />
   </Docs>
   <Members>
     <Member MemberName="Abort">
@@ -76,6 +73,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerRequest" />
       </Docs>
     </Member>
     <Member MemberName="AddHeader">
@@ -132,6 +132,10 @@
   
  <paramref name="name" /> or <paramref name="value" /> contains invalid characters.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The length of <paramref name="value" /> is greater than 65,535 characters.</exception>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerRequest" />
+        <altmember cref="T:System.Net.WebHeaderCollection" />
       </Docs>
     </Member>
     <Member MemberName="AppendCookie">
@@ -180,6 +184,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="cookie" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerRequest" />
       </Docs>
     </Member>
     <Member MemberName="AppendHeader">
@@ -232,6 +239,9 @@
   
  <paramref name="name" /> or <paramref name="value" /> contains invalid characters.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The length of <paramref name="value" /> is greater than 65,535 characters.</exception>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerRequest" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -274,6 +284,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerRequest" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -326,6 +339,9 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="responseEntity" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">This object is closed.</exception>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerRequest" />
       </Docs>
     </Member>
     <Member MemberName="ContentEncoding">
@@ -368,6 +384,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerRequest" />
       </Docs>
     </Member>
     <Member MemberName="ContentLength64">
@@ -414,6 +433,9 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified for a set operation is less than zero.</exception>
         <exception cref="T:System.InvalidOperationException">The response is already being sent.</exception>
         <exception cref="T:System.ObjectDisposedException">This object is closed.</exception>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerRequest" />
       </Docs>
     </Member>
     <Member MemberName="ContentType">
@@ -453,6 +475,9 @@
         <exception cref="T:System.ArgumentNullException">The value specified for a set operation is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The value specified for a set operation is an empty string ("").</exception>
         <exception cref="T:System.ObjectDisposedException">This object is closed.</exception>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerRequest" />
       </Docs>
     </Member>
     <Member MemberName="Cookies">
@@ -494,6 +519,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerRequest" />
       </Docs>
     </Member>
     <Member MemberName="CopyFrom">
@@ -553,6 +581,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerRequest" />
       </Docs>
     </Member>
     <Member MemberName="Headers">
@@ -600,6 +631,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.WebHeaderCollection" /> instance specified for a set operation is not valid for a response.</exception>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerRequest" />
       </Docs>
     </Member>
     <Member MemberName="KeepAlive">
@@ -646,6 +680,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This object is closed.</exception>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerRequest" />
       </Docs>
     </Member>
     <Member MemberName="OutputStream">
@@ -691,6 +728,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This object is closed.</exception>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerRequest" />
       </Docs>
     </Member>
     <Member MemberName="ProtocolVersion">
@@ -736,6 +776,9 @@
         <exception cref="T:System.ArgumentNullException">The value specified for a set operation is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The value specified for a set operation does not have its <see cref="P:System.Version.Major" /> property set to 1 or does not have its <see cref="P:System.Version.Minor" /> property set to either 0 or 1.</exception>
         <exception cref="T:System.ObjectDisposedException">This object is closed.</exception>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerRequest" />
       </Docs>
     </Member>
     <Member MemberName="Redirect">
@@ -780,6 +823,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerRequest" />
       </Docs>
     </Member>
     <Member MemberName="RedirectLocation">
@@ -826,6 +872,9 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The value specified for a set operation is an empty string ("").</exception>
         <exception cref="T:System.ObjectDisposedException">This object is closed.</exception>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerRequest" />
       </Docs>
     </Member>
     <Member MemberName="SendChunked">
@@ -908,6 +957,9 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="cookie" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The cookie already exists in the collection and could not be replaced.</exception>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerRequest" />
       </Docs>
     </Member>
     <Member MemberName="StatusCode">
@@ -953,6 +1005,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This object is closed.</exception>
         <exception cref="T:System.Net.ProtocolViolationException">The value specified for a set operation is not valid. Valid values are between 100 and 999 inclusive.</exception>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerRequest" />
       </Docs>
     </Member>
     <Member MemberName="StatusDescription">
@@ -997,6 +1052,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value specified for a set operation is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The value specified for a set operation contains non-printable characters.</exception>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerRequest" />
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">
@@ -1031,7 +1089,20 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.HttpListener" />
+        <altmember cref="T:System.Net.HttpListenerContext" />
+        <altmember cref="T:System.Net.HttpListenerRequest" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Close">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends the response to the client and releases the resources held by this <see cref="T:System.Net.HttpListenerResponse" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Printing.PrintController" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -123,7 +124,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.PrintControllerWithStatusDialog> class calls the <xref:System.Drawing.Printing.PrintController.OnEndPage%2A?displayProperty=fullName> method on the encapsulated <xref:System.Drawing.Printing.PrintController>.  
+ The <xref:System.Windows.Forms.PrintControllerWithStatusDialog> class calls the <xref:System.Drawing.Printing.PrintController.OnEndPage%2A?displayProperty=nameWithType> method on the encapsulated <xref:System.Drawing.Printing.PrintController>.  
   
  The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPage%2A> method is called immediately after the <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event. If an exception is thrown inside a <xref:System.Drawing.Printing.PrintDocument.PrintPage> event of a <xref:System.Drawing.Printing.PrintDocument>, <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPage%2A> is not called.  
   
@@ -157,7 +158,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.PrintControllerWithStatusDialog> class calls the <xref:System.Drawing.Printing.PrintController.OnEndPrint%2A?displayProperty=fullName> method on the encapsulated <xref:System.Drawing.Printing.PrintController>.  
+ The <xref:System.Windows.Forms.PrintControllerWithStatusDialog> class calls the <xref:System.Drawing.Printing.PrintController.OnEndPrint%2A?displayProperty=nameWithType> method on the encapsulated <xref:System.Drawing.Printing.PrintController>.  
   
  The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPrint%2A> method is called immediately after the <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.EndPrint> event.  
   
@@ -192,7 +193,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.PrintControllerWithStatusDialog> class calls the <xref:System.Drawing.Printing.PrintController.OnStartPage%2A?displayProperty=fullName> method on the encapsulated <xref:System.Drawing.Printing.PrintController>.  
+ The <xref:System.Windows.Forms.PrintControllerWithStatusDialog> class calls the <xref:System.Drawing.Printing.PrintController.OnStartPage%2A?displayProperty=nameWithType> method on the encapsulated <xref:System.Drawing.Printing.PrintController>.  
   
  The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPage%2A> method is called immediately before the <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event.  
   
@@ -228,7 +229,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.PrintControllerWithStatusDialog> class calls the <xref:System.Drawing.Printing.PrintController.OnStartPrint%2A?displayProperty=fullName> method on the encapsulated <xref:System.Drawing.Printing.PrintController>.  
+ The <xref:System.Windows.Forms.PrintControllerWithStatusDialog> class calls the <xref:System.Drawing.Printing.PrintController.OnStartPrint%2A?displayProperty=nameWithType> method on the encapsulated <xref:System.Drawing.Printing.PrintController>.  
   
  The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> method is called immediately after the <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.BeginPrint> event.  
   
@@ -240,5 +241,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.PrintControllerWithStatusDialog" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

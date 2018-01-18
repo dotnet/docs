@@ -40,7 +40,7 @@
   
  The comparer determines whether two keys are equal. The default comparer is the <xref:System.Collections.CaseInsensitiveComparer>.  
   
- In .NET Framework version 1.0, this class uses culture-sensitive string comparisons. However, in .NET Framework version 1.1 and later, this class uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> when comparing strings. For more information about how culture affects comparisons and sorting, see [Performing Culture-Insensitive String Operations](~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md).  
+ In .NET Framework version 1.0, this class uses culture-sensitive string comparisons. However, in .NET Framework version 1.1 and later, this class uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> when comparing strings. For more information about how culture affects comparisons and sorting, see [Performing Culture-Insensitive String Operations](~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md).  
   
  `null` is allowed as a key or as a value.  
   
@@ -61,6 +61,7 @@
  This implementation does not provide a synchronized (thread safe) wrapper for a <see cref="T:System.Collections.Specialized.NameValueCollection" />, but derived classes can create their own synchronized versions of the <see cref="T:System.Collections.Specialized.NameValueCollection" /> using the <see cref="P:System.Collections.ICollection.SyncRoot" /> property of the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase" /> class.  
   
  Enumerating through a collection is intrinsically not a thread safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.</threadsafe>
+    <altmember cref="T:System.Collections.Specialized.NameObjectCollectionBase" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -101,6 +102,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.CaseInsensitiveHashCodeProvider" />
+        <altmember cref="T:System.Collections.CaseInsensitiveComparer" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -142,6 +145,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEqualityComparer" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -189,6 +193,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="col" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Collections.CaseInsensitiveHashCodeProvider" />
+        <altmember cref="T:System.Collections.CaseInsensitiveComparer" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -234,6 +240,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than zero.</exception>
+        <altmember cref="T:System.Collections.CaseInsensitiveHashCodeProvider" />
+        <altmember cref="T:System.Collections.CaseInsensitiveComparer" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -283,6 +291,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IHashCodeProvider" />
+        <altmember cref="T:System.Collections.CaseInsensitiveHashCodeProvider" />
+        <altmember cref="T:System.Collections.IComparer" />
+        <altmember cref="T:System.Collections.CaseInsensitiveComparer" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -328,6 +340,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than zero.</exception>
+        <altmember cref="T:System.Collections.IEqualityComparer" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -377,6 +390,8 @@
           <paramref name="capacity" /> is less than zero.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="col" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Collections.CaseInsensitiveHashCodeProvider" />
+        <altmember cref="T:System.Collections.CaseInsensitiveComparer" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -413,6 +428,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Serialization.ISerializable" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -466,6 +484,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than zero.</exception>
+        <altmember cref="T:System.Collections.CaseInsensitiveHashCodeProvider" />
+        <altmember cref="T:System.Collections.CaseInsensitiveComparer" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -511,6 +531,7 @@
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="c" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.Specialized.NameValueCollection.Set(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -595,6 +616,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Specialized.NameValueCollection.GetKey(System.Int32)" />
+        <altmember cref="M:System.Collections.Specialized.NameValueCollection.InvalidateCachedArrays" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -631,6 +654,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
+        <altmember cref="M:System.Collections.Specialized.NameValueCollection.InvalidateCachedArrays" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -669,7 +693,7 @@
 ## Remarks  
  The specified array must be of a compatible type.  
   
- This method uses <xref:System.Array.Copy%2A?displayProperty=fullName> to copy the elements.  
+ This method uses <xref:System.Array.Copy%2A?displayProperty=nameWithType> to copy the elements.  
   
  This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A>.  
   
@@ -727,6 +751,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is outside the valid range of indexes for the collection.</exception>
+        <altmember cref="M:System.Collections.Specialized.NameValueCollection.GetValues(System.String)" />
+        <altmember cref="P:System.Collections.Specialized.NameValueCollection.AllKeys" />
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -770,6 +796,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Specialized.NameValueCollection.GetValues(System.String)" />
+        <altmember cref="P:System.Collections.Specialized.NameValueCollection.AllKeys" />
       </Docs>
     </Member>
     <Member MemberName="GetKey">
@@ -811,6 +839,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is outside the valid range of indexes for the collection.</exception>
+        <altmember cref="P:System.Collections.Specialized.NameValueCollection.AllKeys" />
       </Docs>
     </Member>
     <Member MemberName="GetValues">
@@ -852,6 +881,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is outside the valid range of indexes for the collection.</exception>
+        <altmember cref="M:System.Collections.Specialized.NameValueCollection.Get(System.String)" />
+        <altmember cref="P:System.Collections.Specialized.NameValueCollection.AllKeys" />
       </Docs>
     </Member>
     <Member MemberName="GetValues">
@@ -895,6 +926,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Specialized.NameValueCollection.Get(System.String)" />
+        <altmember cref="P:System.Collections.Specialized.NameValueCollection.AllKeys" />
       </Docs>
     </Member>
     <Member MemberName="HasKeys">
@@ -969,6 +1002,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.Specialized.NameValueCollection.AllKeys" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -1016,6 +1050,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is outside the valid range of indexes for the collection.</exception>
+        <altmember cref="Overload:System.Collections.Specialized.NameValueCollection.Get" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -1067,6 +1102,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only and the operation attempts to modify the collection.</exception>
+        <altmember cref="Overload:System.Collections.Specialized.NameValueCollection.Get" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -1155,7 +1191,58 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
+        <altmember cref="M:System.Collections.Specialized.NameValueCollection.Add(System.Collections.Specialized.NameValueCollection)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.NameValueCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the specified entry of the <see cref="T:System.Collections.Specialized.NameValueCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetValues">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the values of a specified entry in the <see cref="T:System.Collections.Specialized.NameValueCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Get">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the values of a specified entry in the <see cref="T:System.Collections.Specialized.NameValueCollection" /> combined into one comma-separated list.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds entries to the current <see cref="T:System.Collections.Specialized.NameValueCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

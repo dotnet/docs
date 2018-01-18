@@ -37,7 +37,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Reflection.Emit.ILGenerator> is used to generate method bodies for methods and constructors in dynamic assemblies (represented by the <xref:System.Reflection.Emit.MethodBuilder> and <xref:System.Reflection.Emit.ConstructorBuilder> classes) and for standalone dynamic methods (represented by the <xref:System.Reflection.Emit.DynamicMethod> class). To obtain an <xref:System.Reflection.Emit.ILGenerator>, use the <xref:System.Reflection.Emit.ConstructorBuilder.GetILGenerator%2A?displayProperty=fullName>, <xref:System.Reflection.Emit.DynamicMethod.GetILGenerator%2A?displayProperty=fullName>, and <xref:System.Reflection.Emit.MethodBuilder.GetILGenerator%2A?displayProperty=fullName> methods.  
+ <xref:System.Reflection.Emit.ILGenerator> is used to generate method bodies for methods and constructors in dynamic assemblies (represented by the <xref:System.Reflection.Emit.MethodBuilder> and <xref:System.Reflection.Emit.ConstructorBuilder> classes) and for standalone dynamic methods (represented by the <xref:System.Reflection.Emit.DynamicMethod> class). To obtain an <xref:System.Reflection.Emit.ILGenerator>, use the <xref:System.Reflection.Emit.ConstructorBuilder.GetILGenerator%2A?displayProperty=nameWithType>, <xref:System.Reflection.Emit.DynamicMethod.GetILGenerator%2A?displayProperty=nameWithType>, and <xref:System.Reflection.Emit.MethodBuilder.GetILGenerator%2A?displayProperty=nameWithType> methods.  
   
  MSIL is used as input to a just-in-time (JIT) compiler.  
   
@@ -955,7 +955,7 @@
   
  The location of `meth` is recorded so that the instruction stream can be patched if necessary when persisting the module to a portable executable (PE) file.  
   
- If `meth` represents a generic method, it must be a generic method definition. That is, its <xref:System.Reflection.MethodInfo.IsGenericMethodDefinition%2A?displayProperty=fullName> property must be `true`.  
+ If `meth` represents a generic method, it must be a generic method definition. That is, its <xref:System.Reflection.MethodInfo.IsGenericMethodDefinition%2A?displayProperty=nameWithType> property must be `true`.  
   
  ]]></format>
         </remarks>
@@ -1202,7 +1202,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use<xref:System.Reflection.Emit.ILGenerator.EmitCalli%2A> to put a <xref:System.Reflection.Emit.OpCodes.Calli> instruction onto the stream. Do not use <xref:System.Reflection.Emit.ILGenerator.Emit%2A>.  
+ Use <xref:System.Reflection.Emit.ILGenerator.EmitCalli%2A> to put a <xref:System.Reflection.Emit.OpCodes.Calli> instruction onto the stream. Do not use <xref:System.Reflection.Emit.ILGenerator.Emit%2A>.  
   
    
   
@@ -1255,7 +1255,7 @@
 ## Remarks  
  Use <xref:System.Reflection.Emit.ILGenerator.EmitCalli%2A> to put a <xref:System.Reflection.Emit.OpCodes.Calli> instruction onto the stream. Do not use <xref:System.Reflection.Emit.ILGenerator.Emit%2A>.  
   
- If `optionalParameterTypes` specifies optional arguments, `callingConvention` must include the <xref:System.Reflection.CallingConventions?displayProperty=fullName> flag.  
+ If `optionalParameterTypes` specifies optional arguments, `callingConvention` must include the <xref:System.Reflection.CallingConventions.VarArgs?displayProperty=nameWithType> flag.  
   
  ]]></format>
         </remarks>
@@ -1291,7 +1291,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The type of `localBuilder` must match the parameter type of an overload of the <xref:System.Console.WriteLine%2A?displayProperty=fullName> method.  
+ The type of `localBuilder` must match the parameter type of an overload of the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -1341,7 +1341,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The type of `fld` must match the parameter type of an overload of the <xref:System.Console.WriteLine%2A?displayProperty=fullName> method.  
+ The type of `fld` must match the parameter type of an overload of the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -1613,7 +1613,7 @@
     </Member>
     <Member MemberName="System.Runtime.InteropServices._ILGenerator.GetIDsOfNames">
       <MemberSignature Language="C#" Value="void _ILGenerator.GetIDsOfNames (ref Guid riid, IntPtr rgszNames, uint cNames, uint lcid, IntPtr rgDispId);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ILGenerator.GetIDsOfNames(valuetype System.Guid riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ILGenerator.GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.System#Runtime#InteropServices#_ILGenerator#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1685,7 +1685,7 @@
     </Member>
     <Member MemberName="System.Runtime.InteropServices._ILGenerator.GetTypeInfoCount">
       <MemberSignature Language="C#" Value="void _ILGenerator.GetTypeInfoCount (out uint pcTInfo);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ILGenerator.GetTypeInfoCount(unsigned int32 pcTInfo) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ILGenerator.GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.System#Runtime#InteropServices#_ILGenerator#GetTypeInfoCount(System.UInt32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1715,7 +1715,7 @@
     </Member>
     <Member MemberName="System.Runtime.InteropServices._ILGenerator.Invoke">
       <MemberSignature Language="C#" Value="void _ILGenerator.Invoke (uint dispIdMember, ref Guid riid, uint lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ILGenerator.Invoke(unsigned int32 dispIdMember, valuetype System.Guid riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ILGenerator.Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.System#Runtime#InteropServices#_ILGenerator#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1841,5 +1841,45 @@
         <exception cref="T:System.NotSupportedException">This <see cref="T:System.Reflection.Emit.ILGenerator" /> belongs to a <see cref="T:System.Reflection.Emit.DynamicMethod" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EmitWriteLine">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Helper functions to emit a call to <see cref="M:System.Console.WriteLine" /> with different types of values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="EmitCalli">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Puts a <see cref="F:System.Reflection.Emit.OpCodes.Calli" /> instruction onto the Microsoft intermediate language (MSIL) stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DeclareLocal">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Declares a local variable.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Emit">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Puts an instruction onto the Microsoft Intermediate Language (MSIL) stream for the just-in-time (JIT) compiler.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

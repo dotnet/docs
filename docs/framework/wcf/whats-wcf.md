@@ -9,18 +9,17 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "Windows Communication Foundation [WCF], technology overview"
   - "technology overview [WCF]"
   - "WCF [WCF], technology overview"
 ms.assetid: 40e1009d-ef15-450b-9848-62eabe5e5738
 caps.latest.revision: 51
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # What Is Windows Communication Foundation
 [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] is a framework for building service-oriented applications. Using [!INCLUDE[indigo2](../../../includes/indigo2-md.md)], you can send data as asynchronous messages from one service endpoint to another. A service endpoint can be part of a continuously available service hosted by IIS, or it can be a service hosted in an application. An endpoint can be a client of a service that requests data from a service endpoint. The messages can be as simple as a single character or word sent as XML, or as complex as a stream of binary data. A few sample scenarios include:  
@@ -102,11 +101,11 @@ manager: "erikre"
  The [!INCLUDE[dublin](../../../includes/dublin-md.md)] application server is specifically built for deploying and managing applications that use [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] for communication. The [!INCLUDE[dublin2](../../../includes/dublin2-md.md)] includes rich tooling and configuration options specifically designed for [!INCLUDE[indigo2](../../../includes/indigo2-md.md)]-enabled applications.  
   
 ## See Also  
- <xref:System.ServiceModel>   
- [Fundamental Windows Communication Foundation Concepts](../../../docs/framework/wcf/fundamental-concepts.md)   
- [Windows Communication Foundation Architecture](../../../docs/framework/wcf/architecture.md)   
- [Guidelines and Best Practices](../../../docs/framework/wcf/guidelines-and-best-practices.md)   
- [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md)   
- [Guide to the Documentation](../../../docs/framework/wcf/guide-to-the-documentation.md)   
- [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)   
+ <xref:System.ServiceModel>  
+ [Fundamental Windows Communication Foundation Concepts](../../../docs/framework/wcf/fundamental-concepts.md)  
+ [Windows Communication Foundation Architecture](../../../docs/framework/wcf/architecture.md)  
+ [Guidelines and Best Practices](../../../docs/framework/wcf/guidelines-and-best-practices.md)  
+ [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md)  
+ [Guide to the Documentation](../../../docs/framework/wcf/guide-to-the-documentation.md)  
+ [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)  
  [Windows Communication Foundation Samples](http://msdn.microsoft.com/en-us/8ec9d192-5d81-4f64-bfd3-90c5e5858c91)

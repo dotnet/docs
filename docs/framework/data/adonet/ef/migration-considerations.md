@@ -9,15 +9,13 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
 ms.assetid: c85b6fe8-cc32-4642-8f0a-dc0e5a695936
 caps.latest.revision: 6
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Migration Considerations (Entity Framework)
 The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framework provides several benefits to an existing application. One of the most important of these benefits is the ability to use a conceptual model to separate data structures used by the application from the schema in the data source. This enables you to easily make future changes to the storage model or to the data source itself without making compensating changes to the application. For more information about the benefits of using the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)], see [Entity Framework Overview](../../../../../docs/framework/data/adonet/ef/overview.md) and [Entity Data Model](../../../../../docs/framework/data/adonet/entity-data-model.md).  
@@ -106,5 +104,5 @@ The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framewor
  [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] Web applications must frequently maintain the state of a Web page or of a user session. Objects in an <xref:System.Data.Objects.ObjectContext> instance can be stored in the client view state or in the session state on the server, and later retrieved and reattached to a new object context. For more information, see [Attaching and Detaching Objects](http://msdn.microsoft.com/en-us/41d5c1ef-1b78-4502-aa10-7e1438d62d23).  
   
 ## See Also  
- [Deployment Considerations](../../../../../docs/framework/data/adonet/ef/deployment-considerations.md)   
+ [Deployment Considerations](../../../../../docs/framework/data/adonet/ef/deployment-considerations.md)  
  [Entity Framework Terminology](../../../../../docs/framework/data/adonet/ef/terminology.md)

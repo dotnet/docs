@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: db8a83da-95c1-4a21-a9d2-48caeb6398ea
 caps.latest.revision: 26
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Running the Windows Communication Foundation Samples
 The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] samples can be run in a single-machine or cross-machine configuration. As supplied, the samples are ready for running on a single machine. In a cross-machine configuration, it is necessary to modify a sample's configuration file settings. The following procedures explain how to run a sample in same-machine and cross-machine configurations. Note that there are variations in the steps for services hosted in Internet Information Services (IIS) and the self-hosted samples. Most samples are hosted in IIS; see the sample readme information to determine how it is hosted.  
@@ -86,6 +88,6 @@ The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] samples can be run i
 -   If the service is hosted in IIS for security purposes, remove the virtual directory definition and permissions granted in the setup steps when you are finished with the samples.  
   
 ## See Also  
- [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)   
- [Running the Samples in a Workgroup and Across Machines](http://msdn.microsoft.com/en-us/a451a525-e7ce-452d-9da9-620221260113)   
+ [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)  
+ [Running the Samples in a Workgroup and Across Machines](http://msdn.microsoft.com/en-us/a451a525-e7ce-452d-9da9-620221260113)  
  [Troubleshooting Tips](http://msdn.microsoft.com/en-us/8787c877-5e96-42da-8214-fa737a38f10b)

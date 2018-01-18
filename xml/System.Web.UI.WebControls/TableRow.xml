@@ -190,11 +190,15 @@
 ## Examples  
  This following code example creates a table, programmatically adds elements to the table, and displays the table on the Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[TableCell#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TableCell#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TableCell#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#1)]
+ [!code-aspx-vb[TableCell#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Table" />
+    <altmember cref="P:System.Web.UI.WebControls.TableRow.HorizontalAlign" />
+    <altmember cref="P:System.Web.UI.WebControls.TableRow.VerticalAlign" />
+    <altmember cref="P:System.Web.UI.WebControls.TableRow.Cells" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -266,11 +270,14 @@
 ## Examples  
  This following code example creates a table, programmatically adds elements to the table, and displays the table on the Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[TableCell#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TableCell#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TableCell#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#1)]
+ [!code-aspx-vb[TableCell#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Table" />
+        <altmember cref="T:System.Web.UI.WebControls.TableCellCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.TableCell" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -299,6 +306,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableRow.CellControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -320,6 +328,8 @@
   
  The <see cref="M:System.Web.UI.WebControls.TableRow.CreateControlCollection" /> method is primarily of interest to control developers extending the functionality of the <see cref="T:System.Web.UI.WebControls.TableRow" /> control.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlign">
@@ -366,6 +376,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HorizontalAlign" />
+        <altmember cref="P:System.Web.UI.WebControls.TableRow.VerticalAlign" />
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -388,10 +400,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=fullName>.  
+ This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
       </Docs>
     </Member>
     <Member MemberName="TableSection">
@@ -437,12 +452,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TableRow.TableSection%2A> property to define header and footer rows in a <xref:System.Web.UI.WebControls.Table> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[TableRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TableRow/CS/TableRowCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TableRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableRow/VB/TableRowVB.aspx#1)]  -->  
+ [!code-aspx-csharp[TableRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TableRow/CS/TableRowCS.aspx#1)]
+ [!code-aspx-vb[TableRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableRow/VB/TableRowVB.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="T:System.Web.UI.WebControls.TableRowSection" /> is not valid.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.TableRowSection" />
       </Docs>
     </Member>
     <Member MemberName="VerticalAlign">
@@ -488,6 +504,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.VerticalAlign" />
+        <altmember cref="P:System.Web.UI.WebControls.TableRow.HorizontalAlign" />
       </Docs>
     </Member>
   </Members>

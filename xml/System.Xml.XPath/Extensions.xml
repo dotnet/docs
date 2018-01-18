@@ -870,5 +870,15 @@ Next
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="XPathSelectElement">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Selects an <see cref="T:System.Xml.Linq.XElement" /> using a XPath expression.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -96,7 +96,7 @@
       </Docs>
     </Member>
     <Member MemberName="AddRange">
-      <MemberSignature Language="C#" Value="public void AddRange (System.Windows.Forms.NumericUpDownAcceleration[] accelerations);" />
+      <MemberSignature Language="C#" Value="public void AddRange (params System.Windows.Forms.NumericUpDownAcceleration[] accelerations);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.Windows.Forms.NumericUpDownAcceleration[] accelerations) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDownAccelerationCollection.AddRange(System.Windows.Forms.NumericUpDownAcceleration[])" />
       <MemberType>Method</MemberType>

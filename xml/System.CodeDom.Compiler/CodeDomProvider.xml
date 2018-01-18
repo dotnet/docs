@@ -35,7 +35,7 @@
   
  A <xref:System.CodeDom.Compiler.CodeDomProvider> implementation typically provides code generation and/or code compilation interfaces for generating code and managing compilation for a single programming language. Several languages are supported by <xref:System.CodeDom.Compiler.CodeDomProvider> implementations that ship with the [!INCLUDE[winsdklong](~/includes/winsdklong-md.md)]. These languages include C#, Visual Basic, C++, and JScript. Developers or compiler vendors can implement the <xref:System.CodeDom.Compiler.ICodeGenerator> and <xref:System.CodeDom.Compiler.ICodeCompiler> interfaces and provide a <xref:System.CodeDom.Compiler.CodeDomProvider> that extends CodeDOM support to other programming languages.  
   
- The [\&lt;system.codedom\&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file (Machine.config) provides a mechanism for developers and compiler vendors to add configuration settings for additional <xref:System.CodeDom.Compiler.CodeDomProvider> implementations.  
+ The [&lt;system.codedom&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file (Machine.config) provides a mechanism for developers and compiler vendors to add configuration settings for additional <xref:System.CodeDom.Compiler.CodeDomProvider> implementations.  
   
  The <xref:System.CodeDom.Compiler.CodeDomProvider> class provides static methods to discover and enumerate the <xref:System.CodeDom.Compiler.CodeDomProvider> implementations on a computer. The <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A> method returns the settings for all <xref:System.CodeDom.Compiler.CodeDomProvider> implementations on a computer. The <xref:System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo%2A> method returns the settings for a specific <xref:System.CodeDom.Compiler.CodeDomProvider> implementation, based on the programming language name. The <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider%2A> method returns an instance of a <xref:System.CodeDom.Compiler.CodeDomProvider> implementation for a specific language.  
   
@@ -60,6 +60,10 @@
     <block subset="none" type="overrides">
       <para>In the .NET Framework versions 1.0 and 1.1, code providers consist of implementations of <see cref="T:System.CodeDom.Compiler.CodeDomProvider" />, <see cref="T:System.CodeDom.Compiler.ICodeGenerator" />, <see cref="T:System.CodeDom.Compiler.ICodeParser" />, and <see cref="T:System.CodeDom.Compiler.ICodeCompiler" />. In the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)], the <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator" />, <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateParser" />, and <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateCompiler" /> methods are obsolete, and the methods of <see cref="T:System.CodeDom.Compiler.ICodeGenerator" /> and <see cref="T:System.CodeDom.Compiler.ICodeCompiler" /> are directly available in the <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> class. You should override those methods in your code provider implementation and not call the base methods.</para>
     </block>
+    <altmember cref="T:System.CodeDom.Compiler.CompilerInfo" />
+    <altmember cref="T:Microsoft.CSharp.CSharpCodeProvider" />
+    <altmember cref="T:Microsoft.VisualBasic.VBCodeProvider" />
+    <altmember cref="T:Microsoft.JScript.JScriptCodeProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,7 +87,7 @@
       </Docs>
     </Member>
     <Member MemberName="CompileAssemblyFromDom">
-      <MemberSignature Language="C#" Value="public virtual System.CodeDom.Compiler.CompilerResults CompileAssemblyFromDom (System.CodeDom.Compiler.CompilerParameters options, System.CodeDom.CodeCompileUnit[] compilationUnits);" />
+      <MemberSignature Language="C#" Value="public virtual System.CodeDom.Compiler.CompilerResults CompileAssemblyFromDom (System.CodeDom.Compiler.CompilerParameters options, params System.CodeDom.CodeCompileUnit[] compilationUnits);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.CodeDom.Compiler.CompilerResults CompileAssemblyFromDom(class System.CodeDom.Compiler.CompilerParameters options, class System.CodeDom.CodeCompileUnit[] compilationUnits) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromDom(System.CodeDom.Compiler.CompilerParameters,System.CodeDom.CodeCompileUnit[])" />
       <MemberType>Method</MemberType>
@@ -127,10 +131,13 @@
         <block subset="none" type="overrides">
           <para>If you override this method, you must not call the corresponding method of the base class. The base-class method creates a generator in the derived class using the obsolete <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateCompiler" /> method for compatibility with preexisting providers that use code compilers. The base-class method then calls the equivalent method in the <see cref="T:System.CodeDom.Compiler.ICodeCompiler" /> implementation to perform this function. You will get a <see cref="T:System.NotImplementedException" /> if you call the base-class method from a code provider that does not use a code compiler.</para>
         </block>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
+        <altmember cref="T:System.CodeDom.CodeCompileUnit" />
+        <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
       </Docs>
     </Member>
     <Member MemberName="CompileAssemblyFromFile">
-      <MemberSignature Language="C#" Value="public virtual System.CodeDom.Compiler.CompilerResults CompileAssemblyFromFile (System.CodeDom.Compiler.CompilerParameters options, string[] fileNames);" />
+      <MemberSignature Language="C#" Value="public virtual System.CodeDom.Compiler.CompilerResults CompileAssemblyFromFile (System.CodeDom.Compiler.CompilerParameters options, params string[] fileNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.CodeDom.Compiler.CompilerResults CompileAssemblyFromFile(class System.CodeDom.Compiler.CompilerParameters options, string[] fileNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromFile(System.CodeDom.Compiler.CompilerParameters,System.String[])" />
       <MemberType>Method</MemberType>
@@ -174,10 +181,12 @@
         <block subset="none" type="overrides">
           <para>If you override this method, you must not call the corresponding method of the base class. The base-class method creates a generator in the derived class using the obsolete <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateCompiler" /> method for compatibility with preexisting providers that use code compilers. The base-class method then calls the equivalent method in the <see cref="T:System.CodeDom.Compiler.ICodeCompiler" /> implementation to perform this function. You will get a <see cref="T:System.NotImplementedException" /> if you call the base-class method from a code provider that does not use a code compiler.</para>
         </block>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
+        <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
       </Docs>
     </Member>
     <Member MemberName="CompileAssemblyFromSource">
-      <MemberSignature Language="C#" Value="public virtual System.CodeDom.Compiler.CompilerResults CompileAssemblyFromSource (System.CodeDom.Compiler.CompilerParameters options, string[] sources);" />
+      <MemberSignature Language="C#" Value="public virtual System.CodeDom.Compiler.CompilerResults CompileAssemblyFromSource (System.CodeDom.Compiler.CompilerParameters options, params string[] sources);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.CodeDom.Compiler.CompilerResults CompileAssemblyFromSource(class System.CodeDom.Compiler.CompilerParameters options, string[] sources) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromSource(System.CodeDom.Compiler.CompilerParameters,System.String[])" />
       <MemberType>Method</MemberType>
@@ -221,6 +230,8 @@
         <block subset="none" type="overrides">
           <para>If you override this method, you must not call the corresponding method of the base class. The base-class method creates a generator in the derived class using the obsolete <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateCompiler" /> method for compatibility with preexisting providers that use code compilers. The base-class method then calls the equivalent method in the <see cref="T:System.CodeDom.Compiler.ICodeCompiler" /> implementation to perform this function. You will get a <see cref="T:System.NotImplementedException" /> if you call the base-class method from a code provider that does not use a code compiler.</para>
         </block>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
+        <altmember cref="T:System.CodeDom.Compiler.CompilerResults" />
       </Docs>
     </Member>
     <Member MemberName="CreateCompiler">
@@ -373,6 +384,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
     <Member MemberName="CreateGenerator">
@@ -475,15 +487,15 @@
 > [!NOTE]
 >  This method is most commonly used to create an instance of a code provider in an application that may optionally use one of several providers. <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider%2A> allows you to specify at run time the code provider you wish to instantiate. If you know at design time which code provider is to be used, you should create an instance of that code provider rather than use the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider%2A> method.  
   
- The <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider%2A> method returns a <xref:System.CodeDom.Compiler.CodeDomProvider> instance for a specific language name; it is similar to calling the <xref:System.Activator.CreateInstance%2A?displayProperty=fullName> method with the language provider type. Use <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider%2A> when you want to dynamically find a configured provider implementation for a language name.  
+ The <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider%2A> method returns a <xref:System.CodeDom.Compiler.CodeDomProvider> instance for a specific language name; it is similar to calling the <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> method with the language provider type. Use <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider%2A> when you want to dynamically find a configured provider implementation for a language name.  
   
  If more than one provider implementation is configured for the language name, <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider%2A> returns a provider instance for the last matching configuration element.  
   
- Use the <xref:System.Activator.CreateInstance%28System.Type%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%29?displayProperty=fullName> method overload when you want a specific language provider implementation. For example, use the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider%2A> method to get a provider instance that supports the language name `"CSharp"`; use the <xref:System.Activator.CreateInstance%28System.Type%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%29?displayProperty=fullName> method overload to get a provider instance specifically for the <xref:Microsoft.CSharp.CSharpCodeProvider?displayProperty=fullName> implementation. You should use the [\], CultureInfo, Object\<xref:System.Activator.CreateInstance%28System.Type%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%2CSystem.Object%5B%5D%29?displayProperty=fullName> method if you have multiple code providers for a language and you desire to instantiate a specific code provider.  
+ Use the <xref:System.Activator.CreateInstance%28System.Type%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%29?displayProperty=nameWithType> method overload when you want a specific language provider implementation. For example, use the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider%2A> method to get a provider instance that supports the language name `"CSharp"`; use the <xref:System.Activator.CreateInstance%28System.Type%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%29?displayProperty=nameWithType> method overload to get a provider instance specifically for the <xref:Microsoft.CSharp.CSharpCodeProvider?displayProperty=nameWithType> implementation. You should use the [\], CultureInfo, Object\<xref:System.Activator.CreateInstance%28System.Type%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method if you have multiple code providers for a language and you desire to instantiate a specific code provider.  
   
- The <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage%2A> method checks whether at least one provider implementation supports a specific language. You can validate a language name using <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage%2A> before passing it to <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider%2A>. If you pass an unsupported language name to <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider%2A> a <xref:System.Configuration.ConfigurationException?displayProperty=fullName> is thrown.  
+ The <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage%2A> method checks whether at least one provider implementation supports a specific language. You can validate a language name using <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage%2A> before passing it to <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider%2A>. If you pass an unsupported language name to <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider%2A> a <xref:System.Configuration.ConfigurationException?displayProperty=nameWithType> is thrown.  
   
- The <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A> method can be used to determine all <xref:System.CodeDom.Compiler.CodeDomProvider> implementations on a computer, including additional implementations provided by developers and compiler vendors that are identified in the [\&lt;system.codedom\&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file (Machine.config).  
+ The <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A> method can be used to determine all <xref:System.CodeDom.Compiler.CodeDomProvider> implementations on a computer, including additional implementations provided by developers and compiler vendors that are identified in the [&lt;system.codedom&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file (Machine.config).  
   
  The <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider%2A> method returns an instance of a <xref:System.CodeDom.Compiler.CodeDomProvider> implementation for a specific language.  
   
@@ -504,6 +516,7 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="language" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="CreateProvider">
@@ -628,7 +641,7 @@
    
   
 ## Examples  
- The following code example creates an instance of <xref:Microsoft.VisualBasic.VBCodeProvider?displayProperty=fullName>. The example displays the provider name, hash code and default file name extension for the new provider instance.  
+ The following code example creates an instance of <xref:Microsoft.VisualBasic.VBCodeProvider?displayProperty=nameWithType>. The example displays the provider name, hash code and default file name extension for the new provider instance.  
   
  [!code-cpp[CodeDom_CompilerInfo#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeDom_CompilerInfo/CPP/source.cpp#3)]
  [!code-csharp[CodeDom_CompilerInfo#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDom_CompilerInfo/CS/source.cs#3)]
@@ -687,6 +700,9 @@
         <block subset="none" type="overrides">
           <para>If you override this method, you must not call the corresponding method of the base class. The base-class method creates a generator in the derived class using the obsolete <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator" /> method for compatibility with preexisting providers that use code generators. The base-class method then calls the equivalent method in the <see cref="T:System.CodeDom.Compiler.ICodeGenerator" /> implementation to perform this function. You will get a <see cref="T:System.NotImplementedException" /> if you call the base-class method from a code provider that does not use a code generator.</para>
         </block>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.CodeDom.CodeExpression" />
+        <altmember cref="T:System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Docs>
     </Member>
     <Member MemberName="GenerateCodeFromExpression">
@@ -729,6 +745,9 @@
         <block subset="none" type="overrides">
           <para>If you override this method, you must not call the corresponding method of the base class. The base-class method creates a generator in the derived class using the obsolete <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator" /> method for compatibility with preexisting providers that use code generators. The base-class method then calls the equivalent method in the <see cref="T:System.CodeDom.Compiler.ICodeGenerator" /> implementation to perform this function. You will get a <see cref="T:System.NotImplementedException" /> if you call the base-class method from a code provider that does not use a code generator.</para>
         </block>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.CodeDom.CodeExpression" />
+        <altmember cref="T:System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Docs>
     </Member>
     <Member MemberName="GenerateCodeFromMember">
@@ -761,7 +780,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The base class implementation throws a <xref:System.NotImplementedException>. See <xref:Microsoft.CSharp.CSharpCodeProvider.GenerateCodeFromMember%2A?displayProperty=fullName> for documentation describing an implementation of this method.  
+ The base class implementation throws a <xref:System.NotImplementedException>. See <xref:Microsoft.CSharp.CSharpCodeProvider.GenerateCodeFromMember%2A?displayProperty=nameWithType> for documentation describing an implementation of this method.  
   
    
   
@@ -774,6 +793,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">This method is not overridden in a derived class.</exception>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.CodeDom.CodeTypeMember" />
+        <altmember cref="T:System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Docs>
     </Member>
     <Member MemberName="GenerateCodeFromNamespace">
@@ -816,6 +838,9 @@
         <block subset="none" type="overrides">
           <para>If you override this method, you must not call the corresponding method of the base class. The base-class method creates a generator in the derived class using the obsolete <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator" /> method for compatibility with preexisting providers that use code generators. The base-class method then calls the equivalent method in the <see cref="T:System.CodeDom.Compiler.ICodeGenerator" /> implementation to perform this function. You will get a <see cref="T:System.NotImplementedException" /> if you call the base-class method from a code provider that does not use a code generator.</para>
         </block>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.CodeDom.CodeNamespace" />
+        <altmember cref="T:System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Docs>
     </Member>
     <Member MemberName="GenerateCodeFromStatement">
@@ -858,6 +883,9 @@
         <block subset="none" type="overrides">
           <para>If you override this method, you must not call the corresponding method of the base class. The base-class method creates a generator in the derived class using the obsolete <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator" /> method for compatibility with preexisting providers that use code generators. The base-class method then calls the equivalent method in the <see cref="T:System.CodeDom.Compiler.ICodeGenerator" /> implementation to perform this function. You will get a <see cref="T:System.NotImplementedException" /> if you call the base-class method from a code provider that does not use a code generator.</para>
         </block>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.CodeDom.CodeStatement" />
+        <altmember cref="T:System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Docs>
     </Member>
     <Member MemberName="GenerateCodeFromType">
@@ -900,6 +928,9 @@
         <block subset="none" type="overrides">
           <para>If you override this method, you must not call the corresponding method of the base class. The base-class method creates a generator in the derived class using the obsolete <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator" /> method for compatibility with preexisting providers that use code generators. The base-class method then calls the equivalent method in the <see cref="T:System.CodeDom.Compiler.ICodeGenerator" /> implementation to perform this function. You will get a <see cref="T:System.NotImplementedException" /> if you call the base-class method from a code provider that does not use a code generator.</para>
         </block>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.CodeDom.CodeTypeDeclaration" />
+        <altmember cref="T:System.CodeDom.Compiler.CodeGeneratorOptions" />
       </Docs>
     </Member>
     <Member MemberName="GetAllCompilerInfo">
@@ -934,7 +965,7 @@
  Use the <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A> method to enumerate the language provider settings on a computer.  
   
 > [!NOTE]
->  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the default language providers supplied by the .NET Framework are not specified in the [\&lt;system.codedom\&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) compiler configuration section and cannot be removed, so this method returns information about the default providers and any specified in the configuration file.  
+>  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the default language providers supplied by the .NET Framework are not specified in the [&lt;system.codedom&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) compiler configuration section and cannot be removed, so this method returns information about the default providers and any specified in the configuration file.  
   
    
   
@@ -949,6 +980,7 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetCompilerInfo">
@@ -983,9 +1015,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [\&lt;system.codedom\&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. For information about machine configuration files, see the Machine Configuration Files section in [Configuring Apps](http://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f). The <xref:System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo%2A> method searches each provider configuration element for the specified language name. The returned <xref:System.CodeDom.Compiler.CompilerInfo> instance contains the configured language provider and compiler settings.  
+ The [&lt;system.codedom&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. For information about machine configuration files, see the Machine Configuration Files section in [Configuring Apps](http://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f). The <xref:System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo%2A> method searches each provider configuration element for the specified language name. The returned <xref:System.CodeDom.Compiler.CompilerInfo> instance contains the configured language provider and compiler settings.  
   
- The <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage%2A> method checks whether at least one provider implementation supports a specific language. You can validate a language name using <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage%2A> before passing it to <xref:System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo%2A>. This prevents throwing a <xref:System.Configuration.ConfigurationException?displayProperty=fullName> when you access the <xref:System.CodeDom.Compiler.CompilerInfo> instance for an unsupported language name.  
+ The <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage%2A> method checks whether at least one provider implementation supports a specific language. You can validate a language name using <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage%2A> before passing it to <xref:System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo%2A>. This prevents throwing a <xref:System.Configuration.ConfigurationException?displayProperty=nameWithType> when you access the <xref:System.CodeDom.Compiler.CompilerInfo> instance for an unsupported language name.  
   
  If more than one provider implementation is configured for the input language name, <xref:System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo%2A> returns the settings from the last matching provider configuration element.  
   
@@ -1006,6 +1038,8 @@
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The <paramref name="language" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerInfo" />
+        <altmember cref="M:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetConverter">
@@ -1039,6 +1073,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
       </Docs>
     </Member>
     <Member MemberName="GetLanguageFromExtension">
@@ -1073,9 +1108,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [\&lt;system.codedom\&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file (Machine.config) contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. The <xref:System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension%2A> method searches each provider configuration element for the specified file name extension.  
+ The [&lt;system.codedom&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file (Machine.config) contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. The <xref:System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension%2A> method searches each provider configuration element for the specified file name extension.  
   
- The <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension%2A> method checks whether at least one provider implementation supports a specific file name extension. You can validate a file name extension using <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension%2A> before passing it to <xref:System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension%2A>. This prevents <xref:System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension%2A> from throwing a <xref:System.Configuration.ConfigurationException?displayProperty=fullName> for an unsupported file name extension.  
+ The <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension%2A> method checks whether at least one provider implementation supports a specific file name extension. You can validate a file name extension using <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension%2A> before passing it to <xref:System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension%2A>. This prevents <xref:System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension%2A> from throwing a <xref:System.Configuration.ConfigurationException?displayProperty=nameWithType> for an unsupported file name extension.  
   
  If a provider implementation supports the input file name extension, and there are multiple supported languages configured for that provider, then <xref:System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension%2A> returns the first language name for that provider. If more than one provider implementation is configured for the input file name extension, <xref:System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension%2A> returns the language name from the last matching provider configuration element.  
   
@@ -1096,6 +1131,8 @@
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The <paramref name="extension" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension(System.String)" />
+        <altmember cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateProvider(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeOutput">
@@ -1170,7 +1207,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [\&lt;system.codedom\&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file (Machine.config) contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. The <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension%2A> method searches the provider configuration elements for the specified file name extension.  
+ The [&lt;system.codedom&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file (Machine.config) contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. The <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension%2A> method searches the provider configuration elements for the specified file name extension.  
   
  File name extensions are case-insensitive.  
   
@@ -1188,6 +1225,8 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="extension" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension(System.String)" />
+        <altmember cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateProvider(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="IsDefinedLanguage">
@@ -1223,7 +1262,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [\&lt;system.codedom\&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file (Machine.config) contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. The <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage%2A> method searches the provider configuration elements for the specified language name.  
+ The [&lt;system.codedom&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file (Machine.config) contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. The <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage%2A> method searches the provider configuration elements for the specified language name.  
   
  Language names are case-insensitive.  
   
@@ -1241,6 +1280,7 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="language" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <altmember cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateProvider(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="IsValidIdentifier">
@@ -1345,6 +1385,8 @@
         <block subset="none" type="overrides">
           <para>If you override this method, you must not call the corresponding method of the base class. The base-class method creates a parser in the derived class using the obsolete <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateParser" /> method for compatibility with preexisting providers that use code parsers. The base-class method then calls the equivalent method in the <see cref="T:System.CodeDom.Compiler.ICodeParser" /> implementation to perform this function. You will get a <see cref="T:System.NotImplementedException" /> if you call the base-class method from a code provider that does not use a code parser.</para>
         </block>
+        <altmember cref="T:System.CodeDom.CodeCompileUnit" />
+        <altmember cref="T:System.IO.TextReader" />
       </Docs>
     </Member>
     <Member MemberName="Supports">
@@ -1386,7 +1428,26 @@
         <block subset="none" type="overrides">
           <para>If you override this method, you must not call the corresponding method of the base class. The base-class method creates a generator in the derived class using the obsolete <see cref="M:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator" /> method for compatibility with preexisting providers that use code generators. The base-class method then calls the equivalent method in the <see cref="T:System.CodeDom.Compiler.ICodeGenerator" /> implementation to perform this function. You will get a <see cref="T:System.NotImplementedException" /> if you call the base-class method from a code provider that does not use a code generator.</para>
         </block>
+        <altmember cref="T:System.CodeDom.Compiler.GeneratorSupport" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateProvider">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> instance for the specified language.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateGenerator">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, creates a new code generator.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

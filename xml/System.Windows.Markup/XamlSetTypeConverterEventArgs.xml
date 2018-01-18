@@ -18,10 +18,13 @@
 ## Remarks  
  Callbacks for type converter usages use the <xref:System.EventHandler%601> delegate, with <xref:System.Windows.Markup.XamlSetTypeConverterEventArgs> event data constraint.  
   
- Callbacks for type converter usages are referenced by <xref:System.Windows.Markup.XamlSetTypeConverterAttribute> applied at the class level (for example on <xref:System.Windows.Setter> class in WPF). A custom <xref:System.Xaml.Schema.XamlTypeInvoker> might also reference a callback through the <xref:System.Xaml.Schema.XamlTypeInvoker.SetTypeConverterHandler%2A>value.  
+ Callbacks for type converter usages are referenced by <xref:System.Windows.Markup.XamlSetTypeConverterAttribute> applied at the class level (for example on <xref:System.Windows.Setter> class in WPF). A custom <xref:System.Xaml.Schema.XamlTypeInvoker> might also reference a callback through the <xref:System.Xaml.Schema.XamlTypeInvoker.SetTypeConverterHandler%2A> value.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Markup.XamlSetMarkupExtensionEventArgs" />
+    <altmember cref="T:System.Windows.Markup.XamlSetValueEventArgs" />
+    <altmember cref="T:System.Windows.Markup.XamlSetTypeConverterAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

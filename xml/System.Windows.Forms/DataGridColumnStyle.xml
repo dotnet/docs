@@ -31,9 +31,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The collection of <xref:System.Windows.Forms.DataGridColumnStyle> objects (the <xref:System.Windows.Forms.GridColumnStylesCollection>) is accessed through the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control's <xref:System.Windows.Forms.DataGrid.TableStyles%2A> property.  
+ The collection of <xref:System.Windows.Forms.DataGridColumnStyle> objects (the <xref:System.Windows.Forms.GridColumnStylesCollection>) is accessed through the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control's <xref:System.Windows.Forms.DataGrid.TableStyles%2A> property.  
   
- The <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control automatically creates a collection of <xref:System.Windows.Forms.DataGridColumnStyle> objects for you when you set the <xref:System.Windows.Forms.DataGrid.DataSource%2A> property to an appropriate data source. The objects created actually are instances of one of the following classes that inherit from <xref:System.Windows.Forms.DataGridColumnStyle>: <xref:System.Windows.Forms.DataGridBoolColumn> or <xref:System.Windows.Forms.DataGridTextBoxColumn> class.  
+ The <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control automatically creates a collection of <xref:System.Windows.Forms.DataGridColumnStyle> objects for you when you set the <xref:System.Windows.Forms.DataGrid.DataSource%2A> property to an appropriate data source. The objects created actually are instances of one of the following classes that inherit from <xref:System.Windows.Forms.DataGridColumnStyle>: <xref:System.Windows.Forms.DataGridBoolColumn> or <xref:System.Windows.Forms.DataGridTextBoxColumn> class.  
   
  To format the data display, set the <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property of the <xref:System.Windows.Forms.DataGridTextBoxColumn> class to one of the formatting values. For more information about valid formatting values, see [Formatting Types](~/docs/standard/base-types/formatting-types.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
   
@@ -42,13 +42,13 @@
 > [!CAUTION]
 >  Always create <xref:System.Windows.Forms.DataGridColumnStyle> objects and add them to the <xref:System.Windows.Forms.GridColumnStylesCollection> before adding <xref:System.Windows.Forms.DataGridTableStyle> objects to the <xref:System.Windows.Forms.GridTableStylesCollection>. When you add an empty <xref:System.Windows.Forms.DataGridTableStyle> with a valid <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> value to the collection, <xref:System.Windows.Forms.DataGridColumnStyle> objects are automatically generated for you. Consequently, an exception will be thrown if you try to add new <xref:System.Windows.Forms.DataGridColumnStyle> objects with duplicate <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> values to the <xref:System.Windows.Forms.GridColumnStylesCollection>.  
   
- When one of the derived classes is instantiated by a <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control, the class created depends on the <xref:System.Data.DataColumn.DataType%2A> of the <xref:System.Data.DataColumn> associated with the <xref:System.Windows.Forms.DataGridColumnStyle> object. For example, a <xref:System.Data.DataColumn> with its <xref:System.Data.DataColumn.DataType%2A> set to `System.Boolean` will be associated with a <xref:System.Windows.Forms.DataGridBoolColumn>. To determine the type of any <xref:System.Windows.Forms.DataGridColumnStyle>, use the <xref:System.Object.GetType%2A> method.  
+ When one of the derived classes is instantiated by a <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control, the class created depends on the <xref:System.Data.DataColumn.DataType%2A> of the <xref:System.Data.DataColumn> associated with the <xref:System.Windows.Forms.DataGridColumnStyle> object. For example, a <xref:System.Data.DataColumn> with its <xref:System.Data.DataColumn.DataType%2A> set to `System.Boolean` will be associated with a <xref:System.Windows.Forms.DataGridBoolColumn>. To determine the type of any <xref:System.Windows.Forms.DataGridColumnStyle>, use the <xref:System.Object.GetType%2A> method.  
   
  To create your own column classes, you can inherit from <xref:System.Windows.Forms.DataGridColumnStyle>. You might want to do this in order to create special columns that host controls, as exemplified by the <xref:System.Windows.Forms.DataGridTextBox> class, which hosts the <xref:System.Windows.Forms.TextBox> control. For example, you can host an <xref:System.Drawing.Image> control to show pictures in columns, or you can create your own user control to host in the column.  
   
  The functionality of the <xref:System.Windows.Forms.DataGridColumnStyle> shouldn't be confused with that of the <xref:System.Data.DataColumn>. Whereas the <xref:System.Data.DataColumn> contains the properties and methods appropriate to creating a data table's schema, the <xref:System.Windows.Forms.DataGridColumnStyle> contains the properties and methods related to the appearance of an individual column on the screen.  
   
- If a row contains a <xref:System.DBNull.Value?displayProperty=fullName>, the text displayed in the column can be set with the <xref:System.Windows.Forms.DataGridColumnStyle.NullText%2A> property.  
+ If a row contains a <xref:System.DBNull.Value?displayProperty=nameWithType>, the text displayed in the column can be set with the <xref:System.Windows.Forms.DataGridColumnStyle.NullText%2A> property.  
   
  The <xref:System.Windows.Forms.DataGridColumnStyle> class also allows you to specify the behavior of a column while its data is being changed. The <xref:System.Windows.Forms.DataGridColumnStyle.BeginUpdate%2A> and <xref:System.Windows.Forms.DataGridColumnStyle.EndUpdate%2A> methods temporarily suspend the drawing of the column while large updates are being made to the column's data. Without this functionality, every change in every cell of the grid would be immediately drawn; this could be distracting to the user and a performance liability.  
   
@@ -70,6 +70,13 @@
     <block subset="none" type="overrides">
       <para>When you inherit from <see cref="T:System.Windows.Forms.DataGridColumnStyle" />, you must override the following members: <see cref="M:System.Windows.Forms.DataGridColumnStyle.Abort(System.Int32)" />, <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.Forms.CurrencyManager,System.Int32)" />, <see cref="M:System.Windows.Forms.DataGridColumnStyle.Edit(System.Windows.Forms.CurrencyManager,System.Int32,System.Drawing.Rectangle,System.Boolean)" />, and <see cref="M:System.Windows.Forms.DataGridColumnStyle.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.CurrencyManager,System.Int32)" /> (twice).</para>
     </block>
+    <altmember cref="T:System.Data.DataColumn" />
+    <altmember cref="T:System.Windows.Forms.DataGrid" />
+    <altmember cref="T:System.Windows.Forms.DataGridBoolColumn" />
+    <altmember cref="T:System.Windows.Forms.DataGridTextBox" />
+    <altmember cref="P:System.Windows.Forms.DataGridColumnStyle.DataGridTableStyle" />
+    <altmember cref="T:System.Data.DataView" />
+    <altmember cref="T:System.Windows.Forms.GridColumnStylesCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -101,6 +108,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataColumn" />
+        <altmember cref="T:System.Windows.Forms.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -148,6 +157,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataColumn" />
       </Docs>
     </Member>
     <Member MemberName="Abort">
@@ -176,10 +186,13 @@
   
  The <xref:System.Windows.Forms.DataGridColumnStyle> must end any editing operations before returning. Use the <xref:System.Windows.Forms.DataGridColumnStyle.Abort%2A> method to accomplish this.  
   
- The <xref:System.Windows.Forms.DataGrid.EndEdit%2A> method of the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control indirectly invokes <xref:System.Windows.Forms.DataGridColumnStyle.Abort%2A> if its `ShouldAbort` parameter is set to `true`.  
+ The <xref:System.Windows.Forms.DataGrid.EndEdit%2A> method of the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control indirectly invokes <xref:System.Windows.Forms.DataGridColumnStyle.Abort%2A> if its `ShouldAbort` parameter is set to `true`.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.EndEdit(System.Windows.Forms.DataGridColumnStyle,System.Int32,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.Invalidate" />
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.Forms.CurrencyManager,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Alignment">
@@ -209,7 +222,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example sets the <xref:System.Windows.Forms.DataGridColumnStyle.Alignment%2A> property for each column in a <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> to `HorizontalAlignment.Center` if the data isn't a string.  
+ The following code example sets the <xref:System.Windows.Forms.DataGridColumnStyle.Alignment%2A> property for each column in a <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> to `HorizontalAlignment.Center` if the data isn't a string.  
   
  [!code-vb[Classic DataGridColumnStyle.Alignment Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridColumnStyle.Alignment Example/VB/source.vb#1)]  
   
@@ -264,10 +277,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When many changes are made to the appearance of a <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control (whether the changes are in the attributes of the column or the data displayed by the control), you should invoke the <xref:System.Windows.Forms.DataGridColumnStyle.BeginUpdate%2A> method to temporarily freeze the drawing of the control. This results in less distraction to the user, and a performance gain. After all updates have been made, invoke the <xref:System.Windows.Forms.DataGridColumnStyle.EndUpdate%2A> method to resume drawing of the control.  
+ When many changes are made to the appearance of a <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control (whether the changes are in the attributes of the column or the data displayed by the control), you should invoke the <xref:System.Windows.Forms.DataGridColumnStyle.BeginUpdate%2A> method to temporarily freeze the drawing of the control. This results in less distraction to the user, and a performance gain. After all updates have been made, invoke the <xref:System.Windows.Forms.DataGridColumnStyle.EndUpdate%2A> method to resume drawing of the control.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.EndUpdate" />
       </Docs>
     </Member>
     <Member MemberName="CheckValidDataSource">
@@ -326,7 +340,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When called, the <xref:System.Windows.Forms.IDataGridColumnStyleEditingNotificationService.ColumnStartedEditing%2A> method allows the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control to show a pencil in the row header indicating the row is being edited.  
+ When called, the <xref:System.Windows.Forms.IDataGridColumnStyleEditingNotificationService.ColumnStartedEditing%2A> method allows the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control to show a pencil in the row header indicating the row is being edited.  
   
  ]]></format>
         </remarks>
@@ -371,6 +385,8 @@
   
  The <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.Forms.CurrencyManager,System.Int32)" /> method is called by the public method <see cref="M:System.Windows.Forms.DataGrid.OnMouseDown(System.Windows.Forms.MouseEventArgs)" /> of the <see cref="T:System.Windows.Forms.DataGrid" /> control. The method is also called by other private methods, for example, when the current row is changed.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.Edit(System.Windows.Forms.CurrencyManager,System.Int32,System.Drawing.Rectangle,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.SetColumnValueAtRow(System.Windows.Forms.CurrencyManager,System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ConcedeFocus">
@@ -427,18 +443,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is called by a <xref:System.Windows.Forms.DataGridTableStyle> when its <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> property changes. This property is required because any child controls hosted by a <xref:System.Windows.Forms.DataGridColumnStyle> must be added to the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control's `ControlCollection`.  
+ This property is called by a <xref:System.Windows.Forms.DataGridTableStyle> when its <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> property changes. This property is required because any child controls hosted by a <xref:System.Windows.Forms.DataGridColumnStyle> must be added to the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control's `ControlCollection`.  
   
    
   
 ## Examples  
- The following code example gets the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> of a <xref:System.Windows.Forms.DataGridColumnStyle>.  
+ The following code example gets the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> of a <xref:System.Windows.Forms.DataGridColumnStyle>.  
   
  [!code-cpp[Classic DataGridColumnStyle.CreateHeaderAccessibleObject Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridColumnStyle.CreateHeaderAccessibleObject Example/CPP/source.cpp#1)]
  [!code-csharp[Classic DataGridColumnStyle.CreateHeaderAccessibleObject Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridColumnStyle.CreateHeaderAccessibleObject Example/CS/source.cs#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGrid" />
+        <altmember cref="T:System.Windows.Forms.DataGridTableStyle" />
       </Docs>
     </Member>
     <Member MemberName="DataGridTableStyle">
@@ -471,6 +489,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridTableStyle" />
       </Docs>
     </Member>
     <Member MemberName="Edit">
@@ -542,7 +561,7 @@
    
   
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.DataGridColumnStyle.Edit%2A> method to change the text of a clicked cell in the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control.  
+ The following code example uses the <xref:System.Windows.Forms.DataGridColumnStyle.Edit%2A> method to change the text of a clicked cell in the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control.  
   
  [!code-cpp[Classic DataGridColumnStyle.Edit1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridColumnStyle.Edit1 Example/CPP/source.cpp#1)]
  [!code-csharp[Classic DataGridColumnStyle.Edit1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridColumnStyle.Edit1 Example/CS/source.cs#1)]
@@ -609,10 +628,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When many changes are made to the appearance of a <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control (whether the changes are in the attributes of the column or the data displayed by the control), you should invoke the <xref:System.Windows.Forms.DataGridColumnStyle.BeginUpdate%2A> method to temporarily freeze the drawing of the control. This results in less distraction to the user, and a performance gain. After all updates have been made, invoke the <xref:System.Windows.Forms.DataGridColumnStyle.EndUpdate%2A> method to resume drawing of the control.  
+ When many changes are made to the appearance of a <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control (whether the changes are in the attributes of the column or the data displayed by the control), you should invoke the <xref:System.Windows.Forms.DataGridColumnStyle.BeginUpdate%2A> method to temporarily freeze the drawing of the control. This results in less distraction to the user, and a performance gain. After all updates have been made, invoke the <xref:System.Windows.Forms.DataGridColumnStyle.EndUpdate%2A> method to resume drawing of the control.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.BeginUpdate" />
       </Docs>
     </Member>
     <Member MemberName="EnterNullValue">
@@ -647,6 +667,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridColumnStyle.NullText" />
+        <altmember cref="E:System.Windows.Forms.DataGridColumnStyle.NullTextChanged" />
       </Docs>
     </Member>
     <Member MemberName="FontChanged">
@@ -714,6 +736,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ApplicationException">The <see cref="T:System.Data.DataColumn" /> for this <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> hasn't been set yet.</exception>
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.SetColumnValueAtRow(System.Windows.Forms.CurrencyManager,System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetMinimumHeight">
@@ -744,6 +767,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.GetPreferredHeight(System.Drawing.Graphics,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.GetPreferredSize(System.Drawing.Graphics,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetPreferredHeight">
@@ -784,6 +809,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.GetPreferredSize(System.Drawing.Graphics,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.GetMinimumHeight" />
       </Docs>
     </Member>
     <Member MemberName="GetPreferredSize">
@@ -824,6 +851,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.GetPreferredHeight(System.Drawing.Graphics,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.GetMinimumHeight" />
       </Docs>
     </Member>
     <Member MemberName="HeaderAccessibleObject">
@@ -886,6 +915,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataColumn.ColumnName" />
+        <altmember cref="P:System.Data.DataColumn.Caption" />
       </Docs>
     </Member>
     <Member MemberName="HeaderTextChanged">
@@ -939,6 +970,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.Abort(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="MappingName">
@@ -975,7 +1007,7 @@
   
  This <xref:System.Windows.Forms.DataGridColumnStyle> is used to render the data in the indicated data member whenever the data source matches the one indicated by the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> property of the <xref:System.Windows.Forms.DataGridTableStyle> that contains this column style.  
   
- The <xref:System.Windows.Forms.DataGridColumnStyle.MappingName%2A?displayProperty=fullName> property is usually set to the <xref:System.Data.DataColumn.ColumnName%2A> of a <xref:System.Data.DataColumn>.  
+ The <xref:System.Windows.Forms.DataGridColumnStyle.MappingName%2A?displayProperty=nameWithType> property is usually set to the <xref:System.Data.DataColumn.ColumnName%2A> of a <xref:System.Data.DataColumn>.  
   
    
   
@@ -1055,6 +1087,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataColumn.AllowDBNull" />
       </Docs>
     </Member>
     <Member MemberName="NullTextChanged">
@@ -1083,6 +1116,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.EnterNullValue" />
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -1217,6 +1251,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataColumn.Caption" />
+        <altmember cref="P:System.Data.DataColumn.ColumnName" />
+        <altmember cref="P:System.Data.DataColumn.DataType" />
+        <altmember cref="T:System.Data.DataColumn" />
       </Docs>
     </Member>
     <Member MemberName="PropertyDescriptorChanged">
@@ -1282,7 +1320,7 @@
 ## Remarks  
  Make a column read-only if it contains a primary key or if its value is generated automatically (as when the <xref:System.Data.DataColumn> object's <xref:System.Data.DataColumn.AutoIncrement%2A> property is set to `true`).  
   
- Similar read-only properties exist on other classes, each allowing more control over the access to data. For example, the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control can be set to read-only mode by using its <xref:System.Windows.Forms.DataGrid.ReadOnly%2A> property; the <xref:System.Windows.Forms.DataGridTableStyle> also has a <xref:System.Windows.Forms.DataGridTableStyle.ReadOnly%2A> property, and the <xref:System.Data.DataColumn> class has a <xref:System.Data.DataColumn.ReadOnly%2A> property for restricting data updates.  
+ Similar read-only properties exist on other classes, each allowing more control over the access to data. For example, the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control can be set to read-only mode by using its <xref:System.Windows.Forms.DataGrid.ReadOnly%2A> property; the <xref:System.Windows.Forms.DataGridTableStyle> also has a <xref:System.Windows.Forms.DataGridTableStyle.ReadOnly%2A> property, and the <xref:System.Data.DataColumn> class has a <xref:System.Data.DataColumn.ReadOnly%2A> property for restricting data updates.  
   
    
   
@@ -1295,6 +1333,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataColumn.AutoIncrement" />
+        <altmember cref="T:System.Data.DataColumn" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnlyChanged">
@@ -1369,7 +1409,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>, or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+ You typically use this method if you are either creating a designer for the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>, or creating your own control incorporating the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>.  
   
    
   
@@ -1408,6 +1448,7 @@
         <summary>Sets the value in a specified row with the value from a specified <see cref="T:System.Windows.Forms.CurrencyManager" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Windows.Forms.CurrencyManager" /> object's <see cref="P:System.Windows.Forms.BindingManagerBase.Position" /> does not match <paramref name="rowNum" />.</exception>
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.GetColumnValueAtRow(System.Windows.Forms.CurrencyManager,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="SetDataGrid">
@@ -1436,6 +1477,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="SetDataGridInColumn">
@@ -1460,7 +1502,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is typically overridden by derived classes to do special processing when the <xref:System.Windows.Forms.DataGridColumnStyle> is added to <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>. For example, the <xref:System.Windows.Forms.DataGridTextBoxColumn> uses this method to add the <xref:System.Windows.Forms.DataGridTextBox> as a child of the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+ This method is typically overridden by derived classes to do special processing when the <xref:System.Windows.Forms.DataGridColumnStyle> is added to <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>. For example, the <xref:System.Windows.Forms.DataGridTextBoxColumn> uses this method to add the <xref:System.Windows.Forms.DataGridTextBox> as a child of the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1563,6 +1605,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.DataGridColumnStyle.WidthChanged" />
       </Docs>
     </Member>
     <Member MemberName="WidthChanged">
@@ -1593,5 +1636,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Edit">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Prepares the cell for editing a value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Paint">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, paints the column in a <see cref="T:System.Windows.Forms.DataGrid" /> control.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

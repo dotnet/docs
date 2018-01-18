@@ -8,19 +8,17 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: 672a5ac8-8305-4d28-ba10-11089c2c0924
 caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # XSLT Compiler (xsltc.exe)
-The XSLT compiler (xsltc.exe) compiles XSLT style sheets and generates an assembly. The compiled style sheet can then be passed directly into the <xref:System.Xml.Xsl.XslCompiledTransform.Load%28System.Type%29?displayProperty=fullName> method. You cannot generate signed assemblies with xsltc.exe.  
+The XSLT compiler (xsltc.exe) compiles XSLT style sheets and generates an assembly. The compiled style sheet can then be passed directly into the <xref:System.Xml.Xsl.XslCompiledTransform.Load%28System.Type%29?displayProperty=nameWithType> method. You cannot generate signed assemblies with xsltc.exe.  
   
  The xsltc.exe tool is included with Visual Studio 2008. For more information, see the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=89463).  
   
@@ -51,7 +49,7 @@ xsltc [options] [/class:<name>] <sourceFile> [[/class:<name>] <sourceFile>...]
 |`?`|Displays command syntax and options for the tool.|  
   
 ## Remarks  
- XSLT solutions can consist of multiple style sheet modules. The xsltc.exe tool generates assemblies from style sheets. The assemblies can then be passed into the <xref:System.Xml.Xsl.XslCompiledTransform.Load%28System.Type%29?displayProperty=fullName> method. This can help decrease performance costs in some XSLT deployment scenarios.  
+ XSLT solutions can consist of multiple style sheet modules. The xsltc.exe tool generates assemblies from style sheets. The assemblies can then be passed into the <xref:System.Xml.Xsl.XslCompiledTransform.Load%28System.Type%29?displayProperty=nameWithType> method. This can help decrease performance costs in some XSLT deployment scenarios.  
   
 > [!NOTE]
 >  You must also include the compiled assembly as a reference in your application.  
@@ -90,6 +88,6 @@ xsltc booksort.xsl output.xsl
 ```  
   
 ## See Also  
- <xref:System.Xml.Xsl.XslCompiledTransform>   
- [How to: Perform an XSLT Transformation by Using an Assembly](../../../../docs/standard/data/xml/how-to-perform-an-xslt-transformation-by-using-an-assembly.md)   
+ <xref:System.Xml.Xsl.XslCompiledTransform>  
+ [How to: Perform an XSLT Transformation by Using an Assembly](../../../../docs/standard/data/xml/how-to-perform-an-xslt-transformation-by-using-an-assembly.md)  
  [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)

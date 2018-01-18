@@ -292,6 +292,9 @@ Modified: Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.SqlClient.SqlCommand.BeginExecuteReader" />
+        <altmember cref="M:System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery" />
+        <altmember cref="M:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader" />
       </Docs>
     </Member>
     <Member MemberName="AttachDBFilename">
@@ -1174,6 +1177,8 @@ False
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.SqlClient.SqlConnectionStringBuilder.Values" />
+        <altmember cref="P:System.Data.SqlClient.SqlConnectionStringBuilder.Item(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="LoadBalanceTimeout">
@@ -1977,7 +1982,7 @@ Database = AdventureWorks
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public override bool TryGetValue (string keyword, out object value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryGetValue(string keyword, object value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryGetValue(string keyword, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnectionStringBuilder.TryGetValue(System.String,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2229,6 +2234,7 @@ Unable to retrieve value for null key.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.SqlClient.SqlConnectionStringBuilder.Keys" />
       </Docs>
     </Member>
     <Member MemberName="WorkstationID">
@@ -2275,5 +2281,15 @@ Unable to retrieve value for null key.
         <exception cref="T:System.ArgumentNullException">To set the value to null, use <see cref="F:System.DBNull.Value" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlConnectionStringBuilder" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

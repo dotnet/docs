@@ -13,6 +13,17 @@
   <Docs>
     <summary>Provides information about the <see cref="E:System.Windows.Controls.Primitives.Thumb.DragStarted" /> event that occurs when a user drags a <see cref="T:System.Windows.Controls.Primitives.Thumb" /> control with the mouse..</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Controls.Primitives.DragCompletedEventArgs" />
+    <altmember cref="T:System.Windows.Controls.Primitives.DragDeltaEventArgs" />
+    <altmember cref="T:System.Windows.Controls.Primitives.DragCompletedEventHandler" />
+    <altmember cref="T:System.Windows.Controls.Primitives.DragDeltaEventHandler" />
+    <altmember cref="T:System.Windows.Controls.Primitives.DragStartedEventHandler" />
+    <altmember cref="T:System.Windows.Controls.Primitives.Thumb" />
+    <altmember cref="E:System.Windows.Controls.Primitives.Thumb.DragStarted" />
+    <altmember cref="E:System.Windows.Controls.Primitives.Thumb.DragCompleted" />
+    <altmember cref="E:System.Windows.Controls.Primitives.Thumb.DragDelta" />
+    <altmember cref="T:System.Windows.Controls.Slider" />
+    <altmember cref="T:System.Windows.Controls.Primitives.ScrollBar" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,6 +62,7 @@
         <summary>Gets the horizontal offset of the mouse click relative to the screen coordinates of the <see cref="T:System.Windows.Controls.Primitives.Thumb" />.</summary>
         <value>The horizontal offset of the mouse click with respect to the upper-left corner of the bounding box of the <see cref="T:System.Windows.Controls.Primitives.Thumb" />. There is no default value.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.DragStartedEventArgs.VerticalOffset" />
       </Docs>
     </Member>
     <Member MemberName="InvokeEventHandler">
@@ -99,6 +111,7 @@
         <summary>Gets the vertical offset of the mouse click relative to the screen coordinates of the <see cref="T:System.Windows.Controls.Primitives.Thumb" />.</summary>
         <value>The horizontal offset of the mouse click with respect to the upper-left corner of the bounding box of the <see cref="T:System.Windows.Controls.Primitives.Thumb" />. There is no default value.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.DragStartedEventArgs.HorizontalOffset" />
       </Docs>
     </Member>
   </Members>

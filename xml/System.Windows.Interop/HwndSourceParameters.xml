@@ -21,10 +21,11 @@
  The properties whose values are established by this structure are not directly exposed on <xref:System.Windows.Interop.HwndSource> instances when an <xref:System.Windows.Interop.HwndSource> is constructed. However, the values of the <xref:System.Windows.Interop.HwndSourceParameters> structure typically affect general [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] properties such as "Height" and "Width" that might exist in specific hosted objects and their [!INCLUDE[TLA2#tla_api#plural](~/includes/tla2sharptla-apisharpplural-md.md)].  
   
 > [!IMPORTANT]
->  Do not construct instances of this structure using the default (parameterless) constructor. An <xref:System.Windows.Interop.HwndSourceParameters> instance that is created by the default constructor results in <xref:System.Windows.Interop.HwndSourceParameters> that cannot be assigned a <xref:System.Windows.Interop.HwndSourceParameters.WindowName%2A> (even though the <xref:System.Windows.Interop.HwndSourceParameters.WindowName%2A> property appears to be settable). If such an instance is applied as the parameters for an <xref:System.Windows.Interop.HwndSource> constructor, the resulting <xref:System.Windows.Interop.HwndSource>cannot display a window.  
+>  Do not construct instances of this structure using the default (parameterless) constructor. An <xref:System.Windows.Interop.HwndSourceParameters> instance that is created by the default constructor results in <xref:System.Windows.Interop.HwndSourceParameters> that cannot be assigned a <xref:System.Windows.Interop.HwndSourceParameters.WindowName%2A> (even though the <xref:System.Windows.Interop.HwndSourceParameters.WindowName%2A> property appears to be settable). If such an instance is applied as the parameters for an <xref:System.Windows.Interop.HwndSource> constructor, the resulting <xref:System.Windows.Interop.HwndSource> cannot display a window.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Interop.HwndSource" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -62,6 +63,7 @@
         <param name="name">The window's name.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Interop.HwndSourceParameters" /> class with a specified window name.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Interop.HwndSource" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -91,6 +93,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Interop.HwndSource" />
       </Docs>
     </Member>
     <Member MemberName="AcquireHwndFocusInMenuMode">
@@ -136,6 +139,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Interop.HwndSource" />
+        <altmember cref="P:System.Windows.Interop.HwndSourceParameters.PositionX" />
+        <altmember cref="P:System.Windows.Interop.HwndSourceParameters.PositionY" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -214,6 +220,7 @@
         <summary>Gets or sets the extended [!INCLUDE[TLA#tla_win](~/includes/tlasharptla-win-md.md)] styles for the window.</summary>
         <value>The extended window styles. See [CreateWindowEx](http://go.microsoft.com/fwlink/?LinkId=98462) for a list of these styles. The default is 0 (no extended window styles).</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Interop.HwndSource" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -268,6 +275,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Interop.HwndSource" />
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -295,6 +303,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Interop.HwndSource" />
+        <altmember cref="M:System.Windows.Interop.HwndSourceParameters.SetSize(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="HwndSourceHook">
@@ -320,6 +330,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Interop.HwndSource" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -402,6 +413,7 @@
         <summary>Gets or sets the window handle (HWND) of the parent for the created window.</summary>
         <value>The HWND of the parent window.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Interop.HwndSource" />
       </Docs>
     </Member>
     <Member MemberName="PositionX">
@@ -420,6 +432,7 @@
         <summary>Gets or sets the left-edge position of the window.</summary>
         <value>The left-edge position of the window. The default is CW_USEDEFAULT, as processed by <c>CreateWindow</c>.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Interop.HwndSourceParameters.SetPosition(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="PositionY">
@@ -438,6 +451,7 @@
         <summary>Gets or sets the upper-edge position of the window.</summary>
         <value>The upper-edge position of the window. The default is CW_USEDEFAULT, as processed by <c>CreateWindow</c>.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Interop.HwndSource" />
       </Docs>
     </Member>
     <Member MemberName="RestoreFocusMode">
@@ -486,6 +500,7 @@
         <param name="y">The position of the upper edge of the window.</param>
         <summary>Sets the values that are used for the screen position of the window for the <see cref="T:System.Windows.Interop.HwndSource" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Interop.HwndSource" />
       </Docs>
     </Member>
     <Member MemberName="SetSize">
@@ -518,6 +533,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Interop.HwndSource" />
+        <altmember cref="P:System.Windows.Interop.HwndSourceParameters.Height" />
+        <altmember cref="P:System.Windows.Interop.HwndSourceParameters.Width" />
       </Docs>
     </Member>
     <Member MemberName="TreatAncestorsAsNonClientArea">
@@ -586,6 +604,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Interop.HwndSource" />
       </Docs>
     </Member>
     <Member MemberName="UsesPerPixelTransparency">
@@ -632,6 +651,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Interop.HwndSourceParameters.SetSize(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="WindowClassStyle">
@@ -650,6 +670,7 @@
         <summary>Gets or sets the [!INCLUDE[TLA#tla_win](~/includes/tlasharptla-win-md.md)] class style for the window.</summary>
         <value>The window class style. See [Window Class Styles](http://go.microsoft.com/fwlink/?LinkId=178417) for detailed information. The default is 0 (no window class style).</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Interop.HwndSource" />
       </Docs>
     </Member>
     <Member MemberName="WindowName">
@@ -677,6 +698,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Interop.HwndSource" />
       </Docs>
     </Member>
     <Member MemberName="WindowStyle">
@@ -704,7 +726,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Interop.HwndSource" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether this structure is equal to a specified structure.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

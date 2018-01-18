@@ -10,16 +10,18 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
+  - "csharp"
+  - "vb"
 ms.assetid: 1ad69393-3915-4e7f-9b91-b6fc59c6f5ba
 caps.latest.revision: 17
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Create a Windows Communication Foundation Contract with a Class
-The preferred way of creating a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] contract is by using an interface. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][How to: Define a Service Contract](../../../../docs/framework/wcf/how-to-define-a-wcf-service-contract.md). An alternative, outlined here, is to create a class and then apply the <xref:System.ServiceModel.ServiceContractAttribute> attribute to the class directly and the <xref:System.ServiceModel.OperationContractAttribute> attribute to each of the methods in the class that are part of the contract.  
+The preferred way of creating a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] contract is by using an interface. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [How to: Define a Service Contract](../../../../docs/framework/wcf/how-to-define-a-wcf-service-contract.md). An alternative, outlined here, is to create a class and then apply the <xref:System.ServiceModel.ServiceContractAttribute> attribute to the class directly and the <xref:System.ServiceModel.OperationContractAttribute> attribute to each of the methods in the class that are part of the contract.  
   
 > [!WARNING]
 >  `[ServiceContract]` and `[ServiceContractAttribute]` do the same thing. The same thing it true for `[OperationContract]` and `[OperationContractAttribute]`. In each case the former is shorthand for the latter.  
@@ -45,5 +47,5 @@ The preferred way of creating a [!INCLUDE[indigo1](../../../../includes/indigo1-
  The methods that have the <xref:System.ServiceModel.OperationContractAttribute> class applied use a request-reply message pattern by default. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] this message pattern, see [How to: Create a Request-Reply Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-request-reply-contract.md). You can also create and use other message patterns by setting properties of the attribute. For more examples, see [How to: Create a One-Way Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-one-way-contract.md) and [How to: Create a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md).  
   
 ## See Also  
- <xref:System.ServiceModel.ServiceContractAttribute>   
+ <xref:System.ServiceModel.ServiceContractAttribute>  
  <xref:System.ServiceModel.OperationContractAttribute>

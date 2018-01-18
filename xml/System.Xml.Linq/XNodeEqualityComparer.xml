@@ -34,7 +34,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The purpose of this class is to implement <xref:System.Collections.IEqualityComparer?displayProperty=fullName> and <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>. Classes that require identity (such as <xref:System.Collections.Generic.Dictionary%602> ) require an instance of a class that implements one of these interfaces.  
+ The purpose of this class is to implement <xref:System.Collections.IEqualityComparer?displayProperty=nameWithType> and <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=nameWithType>. Classes that require identity (such as <xref:System.Collections.Generic.Dictionary%602> ) require an instance of a class that implements one of these interfaces.  
   
  ]]></format>
     </remarks>
@@ -70,8 +70,7 @@
  The following example uses this class to determine whether two nodes are equal.  
   
 ```csharp  
-  
-                XElement xmlTree1 = new XElement("Root",  
+XElement xmlTree1 = new XElement("Root",  
     new XAttribute("Att1", 1),  
     new XAttribute("Att2", 2),  
     new XElement("Child1", 1),  
@@ -92,8 +91,7 @@ Console.WriteLine(equalityComparer.Equals(xmlTree1, xmlTree2));
  This example produces the following output:  
   
 ```  
-  
-                True  
+True  
 False  
 ```  
   
@@ -161,8 +159,7 @@ False
  The following example uses this class to compare two nodes.  
   
 ```csharp  
-  
-                XElement xmlTree1 = new XElement("Root",  
+XElement xmlTree1 = new XElement("Root",  
     new XAttribute("Att1", 1),  
     new XAttribute("Att2", 2),  
     new XElement("Child1", 1),  
@@ -183,8 +180,7 @@ Console.WriteLine(equalityComparer.Equals(xmlTree1, xmlTree2));
  This example produces the following output:  
   
 ```  
-  
-                True  
+True  
 False  
 ```  
   
@@ -234,8 +230,7 @@ False
  The following example uses this method to get a deep hash code for an XML tree.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XAttribute("Att1", 1),  
     new XAttribute("Att2", 2),  
     new XElement("Child1", 1),  
@@ -250,8 +245,7 @@ Console.WriteLine("HashCode: {0}", equalityComparer.GetHashCode(xmlTree).ToStrin
  This example produces the following output:  
   
 ```  
-  
-                HashCode: 958CCD0  
+HashCode: 958CCD0  
 HashCode: AD26516B  
 ```  
   

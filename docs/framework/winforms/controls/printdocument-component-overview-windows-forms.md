@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "PrintDocument"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "PrintDocument component [Windows Forms], about PrintDocument component"
   - "printing [Windows Forms], PrintDocument component"
@@ -21,6 +19,8 @@ caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # PrintDocument Component Overview (Windows Forms)
 The Windows Forms [PrintDocument](../../../../docs/framework/winforms/controls/printdocument-component-windows-forms.md) component is used to set the properties that describe what to print and the ability to print the document within Windows-based applications. It can be used in conjunction with the [PrintDialog](../../../../docs/framework/winforms/controls/printdialog-component-windows-forms.md) component to be in control of all aspects of document printing.  
@@ -35,7 +35,7 @@ The Windows Forms [PrintDocument](../../../../docs/framework/winforms/controls/p
  When it is added to a form, the <xref:System.Drawing.Printing.PrintDocument> component appears in the tray at the bottom of the Windows Forms Designer.  
   
 ## See Also  
- <xref:System.Drawing.Graphics>   
- <xref:System.Drawing.Printing.PrintDocument>   
- [Windows Forms Print Support](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)   
+ <xref:System.Drawing.Graphics>  
+ <xref:System.Drawing.Printing.PrintDocument>  
+ [Windows Forms Print Support](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)  
  [PrintDocument Component](../../../../docs/framework/winforms/controls/printdocument-component-windows-forms.md)

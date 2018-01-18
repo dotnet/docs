@@ -25,7 +25,7 @@
 ## Remarks  
  The <xref:System.Drawing.Graphics> class provides methods for drawing objects to the display device. A <xref:System.Drawing.Graphics> is associated with a specific device context.  
   
- You can obtain a <xref:System.Drawing.Graphics> object by calling the <xref:System.Windows.Forms.Control.CreateGraphics%2A?displayProperty=fullName> method on an object that inherits from <xref:System.Windows.Forms.Control?displayProperty=fullName>, or by handling a control's <xref:System.Windows.Forms.Control.Paint?displayProperty=fullName> event and accessing the <xref:System.Windows.Forms.PaintEventArgs.Graphics%2A> property of the <xref:System.Windows.Forms.PaintEventArgs?displayProperty=fullName> class. You can also create a <xref:System.Drawing.Graphics> object from an image by using the <xref:System.Drawing.Graphics.FromImage%2A> method. For more information about creating a <xref:System.Drawing.Graphics> object, see [How to: Create Graphics Objects for Drawing](~/docs/framework/winforms/advanced/how-to-create-graphics-objects-for-drawing.md).  
+ You can obtain a <xref:System.Drawing.Graphics> object by calling the <xref:System.Windows.Forms.Control.CreateGraphics%2A?displayProperty=nameWithType> method on an object that inherits from <xref:System.Windows.Forms.Control?displayProperty=nameWithType>, or by handling a control's <xref:System.Windows.Forms.Control.Paint?displayProperty=nameWithType> event and accessing the <xref:System.Windows.Forms.PaintEventArgs.Graphics%2A> property of the <xref:System.Windows.Forms.PaintEventArgs?displayProperty=nameWithType> class. You can also create a <xref:System.Drawing.Graphics> object from an image by using the <xref:System.Drawing.Graphics.FromImage%2A> method. For more information about creating a <xref:System.Drawing.Graphics> object, see [How to: Create Graphics Objects for Drawing](~/docs/framework/winforms/advanced/how-to-create-graphics-objects-for-drawing.md).  
   
  You can draw many different shapes and lines by using a <xref:System.Drawing.Graphics> object. For more information about how to draw lines and shapes, see the specific `Draw`*GraphicalElement* method for the line or shape you want to draw. These methods include <xref:System.Drawing.Graphics.DrawLine%2A>, <xref:System.Drawing.Graphics.DrawArc%2A>, <xref:System.Drawing.Graphics.DrawClosedCurve%2A>, <xref:System.Drawing.Graphics.DrawPolygon%2A>, and <xref:System.Drawing.Graphics.DrawRectangle%2A>. For more information about how to draw lines and shapes, see [Using a Pen to Draw Lines and Shapes](~/docs/framework/winforms/advanced/using-a-pen-to-draw-lines-and-shapes.md) and [Using a Brush to Fill Shapes](~/docs/framework/winforms/advanced/using-a-brush-to-fill-shapes.md).  
   
@@ -5246,7 +5246,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about how to draw a <xref:System.Drawing.RectangleF>, see<xref:System.Drawing.Graphics.DrawRectangles%28System.Drawing.Pen%2CSystem.Drawing.RectangleF%5B%5D%29>.  
+ For information about how to draw a <xref:System.Drawing.RectangleF>, see <xref:System.Drawing.Graphics.DrawRectangles%28System.Drawing.Pen%2CSystem.Drawing.RectangleF%5B%5D%29>.  
   
    
   
@@ -5529,6 +5529,7 @@
  -or-  
   
  <paramref name="s" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.TextRenderer.DrawText(System.Drawing.IDeviceContext,System.String,System.Drawing.Font,System.Drawing.Point,System.Drawing.Color)" />
       </Docs>
     </Member>
     <Member MemberName="DrawString">
@@ -5593,6 +5594,7 @@
  -or-  
   
  <paramref name="s" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.TextRenderer.DrawText(System.Drawing.IDeviceContext,System.String,System.Drawing.Font,System.Drawing.Point,System.Drawing.Color)" />
       </Docs>
     </Member>
     <Member MemberName="DrawString">
@@ -5655,6 +5657,7 @@
  -or-  
   
  <paramref name="s" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.TextRenderer.DrawText(System.Drawing.IDeviceContext,System.String,System.Drawing.Font,System.Drawing.Point,System.Drawing.Color)" />
       </Docs>
     </Member>
     <Member MemberName="DrawString">
@@ -5724,6 +5727,7 @@
  -or-  
   
  <paramref name="s" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.TextRenderer.DrawText(System.Drawing.IDeviceContext,System.String,System.Drawing.Font,System.Drawing.Point,System.Drawing.Color)" />
       </Docs>
     </Member>
     <Member MemberName="DrawString">
@@ -5782,6 +5786,7 @@
  -or-  
   
  <paramref name="s" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.TextRenderer.DrawText(System.Drawing.IDeviceContext,System.String,System.Drawing.Font,System.Drawing.Point,System.Drawing.Color)" />
       </Docs>
     </Member>
     <Member MemberName="DrawString">
@@ -5845,6 +5850,7 @@
  -or-  
   
  <paramref name="s" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.TextRenderer.DrawText(System.Drawing.IDeviceContext,System.String,System.Drawing.Font,System.Drawing.Point,System.Drawing.Color)" />
       </Docs>
     </Member>
     <Member MemberName="EndContainer">
@@ -5980,7 +5986,7 @@
 ## Remarks  
  This method enumerates the records contained in the specified metafile. Each record is individually sent to a callback method specified by the `callback` parameter. Typically, the callback method calls the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method to "play back", or draw, the record.  
   
- If the callback method calls<xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
+ If the callback method calls <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
   
    
   
@@ -6022,7 +6028,7 @@
 ## Remarks  
  This method enumerates the records contained in the specified metafile. Each record is individually sent to a callback method specified by the `callback` parameter. Typically, the callback method calls the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method to "play back", or draw, the record.  
   
- If the callback method calls<xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the<xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
+ If the callback method calls <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
   
    
   
@@ -6063,7 +6069,7 @@
 ## Remarks  
  This method enumerates the records contained in the specified metafile. Each record is individually sent to a callback method specified by the `callback` parameter. Typically, the callback method calls the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method to "play back", or draw, the record.  
   
- If the callback method calls<xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
+ If the callback method calls <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
   
  The `destPoints` parameter specifies three points of a parallelogram. The three <xref:System.Drawing.PointF> structures represent the upper-left, upper-right, and lower-left corners of the parallelogram. The fourth point is extrapolated from the first three to form a parallelogram. The drawn metafile is scaled and sheared to fit the parallelogram.  
   
@@ -6280,7 +6286,7 @@
 ## Remarks  
  This method enumerates the records contained in the specified metafile. Each record is individually sent to a callback method specified by the `callback` parameter. Typically, the callback method calls the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method to "play back", or draw, the record.  
   
- If the callback method calls<xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
+ If the callback method calls <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
   
    
   
@@ -6369,7 +6375,7 @@
 ## Remarks  
  This method enumerates the records contained in the specified metafile. Each record is individually sent to a callback method specified by the `callback` parameter. Typically, the callback method calls the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method to "play back", or draw, the record.  
   
- If the callback method calls<xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
+ If the callback method calls <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
   
    
   
@@ -6553,7 +6559,7 @@
 ## Remarks  
  This method enumerates the records contained in the specified metafile. Each record is individually sent to a callback method specified by the `callback` parameter. Typically, the callback method calls the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method to "play back", or draw, the record.  
   
- If the callback method calls<xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
+ If the callback method calls <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
   
  The `destPoints` parameter specifies three points of a parallelogram. The three <xref:System.Drawing.Point> structures represent the upper-left, upper-right, and lower-left corners of the parallelogram. The fourth point is extrapolated from the first three to form a parallelogram. The drawn metafile is scaled and sheared to fit the parallelogram.  
   
@@ -6603,7 +6609,7 @@
 ## Remarks  
  This method enumerates the records contained in the specified metafile. Each record is individually sent to a callback method specified by the `callback` parameter. Typically, the callback method calls the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method to "play back", or draw, the record.  
   
- If the callback method calls<xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
+ If the callback method calls <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
   
  The `destPoints` parameter specifies three points of a parallelogram. The three <xref:System.Drawing.Point> structures represent the upper-left, upper-right, and lower-left corners of the parallelogram. The fourth point is extrapolated from the first three to form a parallelogram. The drawn metafile is scaled and sheared to fit the parallelogram.  
   
@@ -6654,7 +6660,7 @@
 ## Remarks  
  This method enumerates the records contained in the specified metafile. Each record is individually sent to a callback method specified by the `callback` parameter. Typically, the callback method calls the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method to "play back", or draw, the record.  
   
- If the callback method calls<xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
+ If the callback method calls <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
   
  The image attributes specified by the `imageAttr` parameter replace those specified when the metafile was written.  
   
@@ -6751,7 +6757,7 @@
 ## Remarks  
  This method enumerates the records contained in the specified metafile. Each record is individually sent to a callback method specified by the `callback` parameter. Typically, the callback method calls the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method to "play back", or draw, the record.  
   
- If the callback method calls<xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
+ If the callback method calls <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
   
  The `destPoints` parameter specifies three points of a parallelogram. The three <xref:System.Drawing.PointF> structures represent the upper-left, upper-right, and lower-left corners of the parallelogram. The fourth point is extrapolated from the first three to form a parallelogram. The drawn metafile is scaled and sheared to fit the parallelogram.  
   
@@ -6801,7 +6807,7 @@
 ## Remarks  
  This method enumerates the records contained in the specified metafile. Each record is individually sent to a callback method specified by the `callback` parameter. Typically, the callback method calls the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method to "play back", or draw, the record.  
   
- If the callback method calls<xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
+ If the callback method calls <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
   
  The `destPoints` parameter specifies three points of a parallelogram. The three <xref:System.Drawing.Point> structures represent the upper-left, upper-right, and lower-left corners of the parallelogram. The fourth point is extrapolated from the first three to form a parallelogram. The drawn metafile is scaled and sheared to fit the parallelogram.  
   
@@ -6901,7 +6907,7 @@
 ## Remarks  
  This method enumerates the records contained in the specified metafile. Each record is individually sent to a callback method specified by the `callback` parameter. Typically, the callback method calls the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method to "play back", or draw, the record.  
   
- If the callback method calls<xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
+ If the callback method calls <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
   
  Any drawing that takes place outside of the rectangle specified by the `srcRect` parameter is ignored.  
   
@@ -7050,7 +7056,7 @@
 ## Remarks  
  This method enumerates the records contained in the specified metafile. Each record is individually sent to a callback method specified by the `callback` parameter. Typically, the callback method calls the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method to "play back", or draw, the record.  
   
- If the callback method calls<xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
+ If the callback method calls <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
   
    
   
@@ -7098,7 +7104,7 @@
 ## Remarks  
  This method enumerates the records contained in the specified metafile. Each record is individually sent to a callback method specified by the `callback` parameter. Typically, the callback method calls the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method to "play back", or draw, the record.  
   
- If the callback method calls<xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
+ If the callback method calls <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
   
  The `destPoints` parameter specifies three points of a parallelogram. The three <xref:System.Drawing.Point> structures represent the upper-left, upper-right, and lower-left corners of the parallelogram. The fourth point is extrapolated from the first three to form a parallelogram. The drawn metafile is scaled and sheared to fit the parallelogram.  
   
@@ -7151,7 +7157,7 @@
 ## Remarks  
  This method enumerates the records contained in the specified metafile. Each record is individually sent to a callback method specified by the `callback` parameter. Typically, the callback method calls the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method to "play back", or draw, the record.  
   
- If the callback method calls<xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
+ If the callback method calls <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
   
  Any drawing that takes place outside of the rectangle specified by the `srcRect` parameter is ignored.  
   
@@ -7201,7 +7207,7 @@
 ## Remarks  
  This method enumerates the records contained in the specified metafile. Each record is individually sent to a callback method specified by the `callback` parameter. Typically, the callback method calls the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method to "play back", or draw, the record.  
   
- If the callback method calls<xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
+ If the callback method calls <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
   
  The `destPoints` parameter specifies three points of a parallelogram. The three <xref:System.Drawing.PointF> structures represent the upper-left, upper-right, and lower-left corners of the parallelogram. The fourth point is extrapolated from the first three to form a parallelogram. The drawn metafile is scaled and sheared to fit the parallelogram.  
   
@@ -7359,7 +7365,7 @@
 ## Remarks  
  This method enumerates the records contained in the specified metafile. Each record is individually sent to a callback method specified by the `callback` parameter. Typically, the callback method calls the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method to "play back", or draw, the record.  
   
- If the callback method calls<xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
+ If the callback method calls <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
   
    
   
@@ -7410,7 +7416,7 @@
 ## Remarks  
  This method enumerates the records contained in the specified metafile. Each record is individually sent to a callback method specified by the `callback` parameter. Typically, the callback method calls the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method to "play back", or draw, the record.  
   
- If the callback method calls<xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
+ If the callback method calls <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
   
  The `destPoints` parameter specifies three points of a parallelogram. The three <xref:System.Drawing.Point> structures represent the upper-left, upper-right, and lower-left corners of the parallelogram. The fourth point is extrapolated from the first three to form a parallelogram. The drawn metafile is scaled and sheared to fit the parallelogram.  
   
@@ -7468,7 +7474,7 @@
 ## Remarks  
  This method enumerates the records contained in the specified metafile. Each record is individually sent to a callback method specified by the `callback` parameter. Typically, the callback method calls the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method to "play back", or draw, the record.  
   
- If the callback method calls<xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
+ If the callback method calls <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
   
  Any drawing that takes place outside of the rectangle specified by the `srcRect` parameter is ignored.  
   
@@ -7523,7 +7529,7 @@
 ## Remarks  
  This method enumerates the records contained in the specified metafile. Each record is individually sent to a callback method specified by the `callback` parameter. Typically, the callback method calls the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method to "play back", or draw, the record.  
   
- If the callback method calls<xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
+ If the callback method calls <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
   
  The `destPoints` parameter specifies three points of a parallelogram. The three <xref:System.Drawing.PointF> structures represent the upper-left, upper-right, and lower-left corners of the parallelogram. The fourth point is extrapolated from the first three to form a parallelogram. The drawn metafile is scaled and sheared to fit the parallelogram.  
   
@@ -7581,7 +7587,7 @@
 ## Remarks  
  This method enumerates the records contained in the specified metafile. Each record is individually sent to a callback method specified by the `callback` parameter. Typically, the callback method calls the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method to "play back", or draw, the record.  
   
- If the callback method calls<xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
+ If the callback method calls <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A>, it must do so by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the specific <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
   
  Any drawing that takes place outside of the rectangle specified by the `srcRect` parameter is ignored.  
   
@@ -9361,7 +9367,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You should always call the<xref:System.Drawing.Graphics.Dispose%2A> method to release the <xref:System.Drawing.Graphics> and related resources created by the <xref:System.Drawing.Graphics.FromHwnd%2A> method.  
+ You should always call the <xref:System.Drawing.Graphics.Dispose%2A> method to release the <xref:System.Drawing.Graphics> and related resources created by the <xref:System.Drawing.Graphics.FromHwnd%2A> method.  
   
    
   
@@ -9985,7 +9991,7 @@
 ## Examples  
  The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
   
--   Creates a rectangular clipping region and sets it as the clipping region for the graphics object of the form using<xref:System.Drawing.Drawing2D.CombineMode.Replace>.  
+-   Creates a rectangular clipping region and sets it as the clipping region for the graphics object of the form using <xref:System.Drawing.Drawing2D.CombineMode.Replace>.  
   
 -   Creates the location and size of two rectangles, one inside the clipping region and one outside.  
   
@@ -10315,6 +10321,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Drawing.Graphics.MeasureString(System.String,System.Drawing.Font)" />
+        <altmember cref="M:System.Windows.Forms.TextRenderer.MeasureText(System.Drawing.IDeviceContext,System.String,System.Drawing.Font,System.Drawing.Size,System.Windows.Forms.TextFormatFlags)" />
       </Docs>
     </Member>
     <Member MemberName="MeasureString">
@@ -10368,6 +10376,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="font" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.TextRenderer.MeasureText(System.Drawing.IDeviceContext,System.String,System.Drawing.Font,System.Drawing.Size,System.Windows.Forms.TextFormatFlags)" />
+        <altmember cref="M:System.Drawing.Graphics.MeasureCharacterRanges(System.String,System.Drawing.Font,System.Drawing.RectangleF,System.Drawing.StringFormat)" />
       </Docs>
     </Member>
     <Member MemberName="MeasureString">
@@ -10424,6 +10434,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="font" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.TextRenderer.MeasureText(System.Drawing.IDeviceContext,System.String,System.Drawing.Font,System.Drawing.Size,System.Windows.Forms.TextFormatFlags)" />
+        <altmember cref="M:System.Drawing.Graphics.MeasureCharacterRanges(System.String,System.Drawing.Font,System.Drawing.RectangleF,System.Drawing.StringFormat)" />
       </Docs>
     </Member>
     <Member MemberName="MeasureString">
@@ -10481,6 +10493,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="font" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.TextRenderer.MeasureText(System.Drawing.IDeviceContext,System.String,System.Drawing.Font,System.Drawing.Size,System.Windows.Forms.TextFormatFlags)" />
+        <altmember cref="M:System.Drawing.Graphics.MeasureCharacterRanges(System.String,System.Drawing.Font,System.Drawing.RectangleF,System.Drawing.StringFormat)" />
       </Docs>
     </Member>
     <Member MemberName="MeasureString">
@@ -10546,6 +10560,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="font" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.TextRenderer.MeasureText(System.Drawing.IDeviceContext,System.String,System.Drawing.Font,System.Drawing.Size,System.Windows.Forms.TextFormatFlags)" />
+        <altmember cref="M:System.Drawing.Graphics.MeasureCharacterRanges(System.String,System.Drawing.Font,System.Drawing.RectangleF,System.Drawing.StringFormat)" />
       </Docs>
     </Member>
     <Member MemberName="MeasureString">
@@ -10609,6 +10625,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="font" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.TextRenderer.MeasureText(System.Drawing.IDeviceContext,System.String,System.Drawing.Font,System.Drawing.Size,System.Windows.Forms.TextFormatFlags)" />
+        <altmember cref="M:System.Drawing.Graphics.MeasureCharacterRanges(System.String,System.Drawing.Font,System.Drawing.RectangleF,System.Drawing.StringFormat)" />
       </Docs>
     </Member>
     <Member MemberName="MeasureString">
@@ -10653,7 +10671,7 @@
   
 -   Sets the maximum width of the string.  
   
--   Creates a string format object and sets its format flags to<xref:System.Drawing.StringFormatFlags.DirectionVertical>.  
+-   Creates a string format object and sets its format flags to <xref:System.Drawing.StringFormatFlags.DirectionVertical>.  
   
 -   Creates a size object to measure the string.  
   
@@ -10673,11 +10691,13 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="font" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.TextRenderer.MeasureText(System.Drawing.IDeviceContext,System.String,System.Drawing.Font,System.Drawing.Size,System.Windows.Forms.TextFormatFlags)" />
+        <altmember cref="M:System.Drawing.Graphics.MeasureCharacterRanges(System.String,System.Drawing.Font,System.Drawing.RectangleF,System.Drawing.StringFormat)" />
       </Docs>
     </Member>
     <Member MemberName="MeasureString">
       <MemberSignature Language="C#" Value="public System.Drawing.SizeF MeasureString (string text, System.Drawing.Font font, System.Drawing.SizeF layoutArea, System.Drawing.StringFormat stringFormat, out int charactersFitted, out int linesFilled);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.SizeF MeasureString(string text, class System.Drawing.Font font, valuetype System.Drawing.SizeF layoutArea, class System.Drawing.StringFormat stringFormat, int32 charactersFitted, int32 linesFilled) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.SizeF MeasureString(string text, class System.Drawing.Font font, valuetype System.Drawing.SizeF layoutArea, class System.Drawing.StringFormat stringFormat, [out] int32&amp; charactersFitted, [out] int32&amp; linesFilled) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Graphics.MeasureString(System.String,System.Drawing.Font,System.Drawing.SizeF,System.Drawing.StringFormat,System.Int32@,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -10744,6 +10764,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="font" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.TextRenderer.MeasureText(System.Drawing.IDeviceContext,System.String,System.Drawing.Font,System.Drawing.Size,System.Windows.Forms.TextFormatFlags)" />
+        <altmember cref="M:System.Drawing.Graphics.MeasureCharacterRanges(System.String,System.Drawing.Font,System.Drawing.RectangleF,System.Drawing.StringFormat)" />
       </Docs>
     </Member>
     <Member MemberName="MultiplyTransform">
@@ -10817,7 +10839,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A value of<xref:System.Drawing.Drawing2D.MatrixOrder.Prepend> for the `order` parameter specifies that the order of the multiplication is `matrix` x world transformation. A value of <xref:System.Drawing.Drawing2D.MatrixOrder.Append> for `order` specifies that the order of the multiplication is world transformation x `matrix`.  
+ A value of <xref:System.Drawing.Drawing2D.MatrixOrder.Prepend> for the `order` parameter specifies that the order of the multiplication is `matrix` x world transformation. A value of <xref:System.Drawing.Drawing2D.MatrixOrder.Append> for `order` specifies that the order of the multiplication is world transformation x `matrix`.  
   
    
   
@@ -10930,7 +10952,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this property to specify either higher quality, slower rendering, or lower quality, faster rendering of the contents of this<xref:System.Drawing.Graphics>object.  
+ Use this property to specify either higher quality, slower rendering, or lower quality, faster rendering of the contents of this <xref:System.Drawing.Graphics> object.  
   
  ]]></format>
         </remarks>
@@ -10960,6 +10982,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Related enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
+        <altmember cref="T:System.Drawing.IDeviceContext" />
       </Docs>
     </Member>
     <Member MemberName="ReleaseHdc">
@@ -11177,7 +11200,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you call the <xref:System.Drawing.Graphics.Save%2A> method of a <xref:System.Drawing.Graphics>, an information block that holds the state of the <xref:System.Drawing.Graphics> is put on a stack. The <xref:System.Drawing.Graphics.Save%2A> method returns a <xref:System.Drawing.Drawing2D.GraphicsState> that identifies that information block. When you pass the identifying <xref:System.Drawing.Drawing2D.GraphicsState> to the<xref:System.Drawing.Graphics.Restore%2A> method, the information block is removed from the stack and is used to restore the <xref:System.Drawing.Graphics> to the state it was in at the time of the <xref:System.Drawing.Graphics.Save%2A> method call. Note that the <xref:System.Drawing.Drawing2D.GraphicsState> returned by a given call to the <xref:System.Drawing.Graphics.Save%2A> method can be passed only once to the `Restore` method.  
+ When you call the <xref:System.Drawing.Graphics.Save%2A> method of a <xref:System.Drawing.Graphics>, an information block that holds the state of the <xref:System.Drawing.Graphics> is put on a stack. The <xref:System.Drawing.Graphics.Save%2A> method returns a <xref:System.Drawing.Drawing2D.GraphicsState> that identifies that information block. When you pass the identifying <xref:System.Drawing.Drawing2D.GraphicsState> to the <xref:System.Drawing.Graphics.Restore%2A> method, the information block is removed from the stack and is used to restore the <xref:System.Drawing.Graphics> to the state it was in at the time of the <xref:System.Drawing.Graphics.Save%2A> method call. Note that the <xref:System.Drawing.Drawing2D.GraphicsState> returned by a given call to the <xref:System.Drawing.Graphics.Save%2A> method can be passed only once to the `Restore` method.  
   
  Calls to the <xref:System.Drawing.Graphics.Save%2A> method can be nested; that is, you can call the <xref:System.Drawing.Graphics.Save%2A> method several times before you call the <xref:System.Drawing.Graphics.Restore%2A> method. Each time you call the <xref:System.Drawing.Graphics.Save%2A> method, an information block is put on the stack, and you receive a <xref:System.Drawing.Drawing2D.GraphicsState> for the information block. When you pass one of those objects to the <xref:System.Drawing.Graphics.Restore%2A> method, the <xref:System.Drawing.Graphics> is returned to the state it was in at the time of the <xref:System.Drawing.Graphics.Save%2A> method call that returned that particular <xref:System.Drawing.Drawing2D.GraphicsState>. The information block placed on the stack by that <xref:System.Drawing.Graphics.Save%2A> method call is removed from the stack, and all information blocks placed on that stack after that <xref:System.Drawing.Graphics.Save%2A> method call are also removed.  
   
@@ -11318,7 +11341,7 @@
 ## Remarks  
  When you call the <xref:System.Drawing.Graphics.Save%2A> method of a <xref:System.Drawing.Graphics>, an information block that holds the state of the <xref:System.Drawing.Graphics> is put on a stack. The <xref:System.Drawing.Graphics.Save%2A> method returns a <xref:System.Drawing.Drawing2D.GraphicsState> that identifies that information block. When you pass the identifying <xref:System.Drawing.Drawing2D.GraphicsState> to the <xref:System.Drawing.Graphics.Restore%2A> method, the information block is removed from the stack and is used to restore the <xref:System.Drawing.Graphics> to the state it was in at the time of the <xref:System.Drawing.Graphics.Save%2A> method call. Note that the <xref:System.Drawing.Drawing2D.GraphicsState> returned by a given call to the <xref:System.Drawing.Graphics.Save%2A> method can be passed only once to the <xref:System.Drawing.Graphics.Restore%2A> method.  
   
- Calls to the <xref:System.Drawing.Graphics.Save%2A> method can be nested; that is, you can call the <xref:System.Drawing.Graphics.Save%2A> method several times before you call the <xref:System.Drawing.Graphics.Restore%2A> method. Each time you call the <xref:System.Drawing.Graphics.Save%2A> method, an information block is put on the stack, and you receive a<xref:System.Drawing.Drawing2D.GraphicsState> for the information block. When you pass one of those objects to the <xref:System.Drawing.Graphics.Restore%2A> method, the <xref:System.Drawing.Graphics> is returned to the state it was in at the time of the <xref:System.Drawing.Graphics.Save%2A> method call that returned that particular <xref:System.Drawing.Drawing2D.GraphicsState>. The information block placed on the stack by that <xref:System.Drawing.Graphics.Save%2A> method call is removed from the stack, and all information blocks placed on that stack after that <xref:System.Drawing.Graphics.Save%2A> method call are also removed.  
+ Calls to the <xref:System.Drawing.Graphics.Save%2A> method can be nested; that is, you can call the <xref:System.Drawing.Graphics.Save%2A> method several times before you call the <xref:System.Drawing.Graphics.Restore%2A> method. Each time you call the <xref:System.Drawing.Graphics.Save%2A> method, an information block is put on the stack, and you receive a <xref:System.Drawing.Drawing2D.GraphicsState> for the information block. When you pass one of those objects to the <xref:System.Drawing.Graphics.Restore%2A> method, the <xref:System.Drawing.Graphics> is returned to the state it was in at the time of the <xref:System.Drawing.Graphics.Save%2A> method call that returned that particular <xref:System.Drawing.Drawing2D.GraphicsState>. The information block placed on the stack by that <xref:System.Drawing.Graphics.Save%2A> method call is removed from the stack, and all information blocks placed on that stack after that <xref:System.Drawing.Graphics.Save%2A> method call are also removed.  
   
  Calls to the <xref:System.Drawing.Graphics.BeginContainer%2A> method place information blocks on the same stack as calls to the <xref:System.Drawing.Graphics.Save%2A> method. Just as a <xref:System.Drawing.Graphics.Restore%2A> call is paired with a <xref:System.Drawing.Graphics.Save%2A> call, a <xref:System.Drawing.Graphics.EndContainer%2A> method call is paired with a <xref:System.Drawing.Graphics.BeginContainer%2A> method call.  
   
@@ -12281,5 +12304,356 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ExcludeClip">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates the clip region of this <see cref="T:System.Drawing.Graphics" /> to exclude the area specified by a <see cref="T:System.Drawing.Rectangle" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FillEllipse">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Fills the interior of an ellipse defined by a bounding rectangle specified by a pair of coordinates, a width, and a height.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IntersectClip">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates the clip region of this <see cref="T:System.Drawing.Graphics" /> to the intersection of the current clip region and the specified <see cref="T:System.Drawing.Rectangle" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FillRectangle">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Fills the interior of a rectangle specified by a pair of coordinates, a width, and a height.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ScaleTransform">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Applies the specified scaling operation to the transformation matrix of this <see cref="T:System.Drawing.Graphics" /> by prepending it to the object's transformation matrix.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TranslateTransform">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Changes the origin of the coordinate system by prepending the specified translation to the transformation matrix of this <see cref="T:System.Drawing.Graphics" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FillRectangles">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Fills the interiors of a series of rectangles specified by <see cref="T:System.Drawing.Rectangle" /> structures.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawBezier">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a Bézier spline defined by four <see cref="T:System.Drawing.Point" /> structures.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawClosedCurve">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a closed cardinal spline defined by an array of <see cref="T:System.Drawing.Point" /> structures.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FillPie">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Fills the interior of a pie section defined by an ellipse specified by a pair of coordinates, a width, a height, and two radial lines.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawRectangle">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a rectangle specified by a coordinate pair, a width, and a height.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawCurve">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a cardinal spline through a specified array of <see cref="T:System.Drawing.Point" /> structures.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CopyFromScreen">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a bit-block transfer of color data from the screen to the drawing surface of the <see cref="T:System.Drawing.Graphics" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawImage">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws the specified <see cref="T:System.Drawing.Image" /> at the specified location and with the original size.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TransformPoints">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Transforms an array of points from one coordinate space to another using the current world and page transformations of this <see cref="T:System.Drawing.Graphics" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawPie">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a pie shape defined by an ellipse specified by a coordinate pair, a width, a height, and two radial lines.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawArc">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws an arc representing a portion of an ellipse specified by a pair of coordinates, a width, and a height.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawBeziers">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a series of Bézier splines from an array of <see cref="T:System.Drawing.Point" /> structures.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetClip">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the clipping region of this <see cref="T:System.Drawing.Graphics" /> to the <see langword="Clip" /> property of the specified <see cref="T:System.Drawing.Graphics" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawEllipse">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws an ellipse defined by a bounding rectangle specified by a pair of coordinates, a height, and a width.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MeasureString">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Measures the specified string when drawn with the specified <see cref="T:System.Drawing.Font" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsVisible">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether the point specified by a pair of coordinates is contained within the visible clip region of this <see cref="T:System.Drawing.Graphics" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Flush">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Forces execution of all pending graphics operations and returns immediately without waiting for the operations to finish.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawRectangles">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a series of rectangles specified by <see cref="T:System.Drawing.Rectangle" /> structures.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TranslateClip">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Translates the clipping region of this <see cref="T:System.Drawing.Graphics" /> by specified amounts in the horizontal and vertical directions.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawString">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws the specified text string at the specified location with the specified <see cref="T:System.Drawing.Brush" /> and <see cref="T:System.Drawing.Font" /> objects.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginContainer">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves a graphics container with the current state of this <see cref="T:System.Drawing.Graphics" /> and opens and uses a new graphics container.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawIcon">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws the image represented by the specified <see cref="T:System.Drawing.Icon" /> at the specified coordinates.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FillClosedCurve">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Fills the interior of a closed cardinal spline curve defined by an array of <see cref="T:System.Drawing.Point" /> structures.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="EnumerateMetafile">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends the records in the specified <see cref="T:System.Drawing.Imaging.Metafile" />, one at a time, to a callback method for display at a specified point.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RotateTransform">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Applies the specified rotation to the transformation matrix of this <see cref="T:System.Drawing.Graphics" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawPolygon">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a polygon defined by an array of <see cref="T:System.Drawing.Point" /> structures.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FromHdc">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Drawing.Graphics" /> from the specified handle to a device context.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawLines">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a series of line segments that connect an array of <see cref="T:System.Drawing.Point" /> structures.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawImageUnscaled">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws the specified image using its original physical size at the location specified by a coordinate pair.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DrawLine">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a line connecting the two points specified by the coordinate pairs.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MultiplyTransform">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Multiplies the world transformation of this <see cref="T:System.Drawing.Graphics" /> and specified the <see cref="T:System.Drawing.Drawing2D.Matrix" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReleaseHdc">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases a device context handle obtained by a previous call to the <see cref="M:System.Drawing.Graphics.GetHdc" /> method of this <see cref="T:System.Drawing.Graphics" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FillPolygon">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Fills the interior of a polygon defined by an array of points specified by <see cref="T:System.Drawing.Point" /> structures.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: cc070387-3d11-4b02-a952-bc08ad2df05a
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;synchronousReceive&gt; element
 This configuration element is used to specify run-time behavior for receiving messages in either a service or client application. It does not have any attributes or child elements.  
@@ -49,5 +51,5 @@ This configuration element is used to specify run-time behavior for receiving me
  Use this behavior to instruct the channel listener to use a synchronous receive rather than the default, asynchronous. [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] issues a new thread to pump for each accepted channel. If there are a lot of channels, there is the possibility of running out of threads.  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.SynchronousReceiveElement>   
+ <xref:System.ServiceModel.Configuration.SynchronousReceiveElement>  
  <xref:System.ServiceModel.Description.SynchronousReceiveBehavior>

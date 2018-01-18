@@ -9,8 +9,11 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "WPF layout system"
+  - "WPF layout system [WPF]"
   - "controls [WPF], layout system"
   - "layout system [WPF]"
 ms.assetid: 3eecdced-3623-403a-a077-7595453a9221
@@ -18,6 +21,8 @@ caps.latest.revision: 31
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Layout
 This topic describes the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] layout system. Understanding how and when layout calculations occur is essential for creating user interfaces in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
@@ -152,8 +157,8 @@ This topic describes the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
  Understanding how elements are measured and arranged is the first step in understanding layout. For more information about the available <xref:System.Windows.Controls.Panel> elements, see [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md). To better understand the various positioning properties that can affect layout, see [Alignment, Margins, and Padding Overview](../../../../docs/framework/wpf/advanced/alignment-margins-and-padding-overview.md). For an example of a custom <xref:System.Windows.Controls.Panel> element, see [Custom Radial Panel Sample](http://go.microsoft.com/fwlink/?LinkID=159982). When you are ready to put it all together in a light-weight application, see [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md).  
   
 ## See Also  
- <xref:System.Windows.FrameworkElement>   
- <xref:System.Windows.UIElement>   
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)   
- [Alignment, Margins, and Padding Overview](../../../../docs/framework/wpf/advanced/alignment-margins-and-padding-overview.md)   
+ <xref:System.Windows.FrameworkElement>  
+ <xref:System.Windows.UIElement>  
+ [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
+ [Alignment, Margins, and Padding Overview](../../../../docs/framework/wpf/advanced/alignment-margins-and-padding-overview.md)  
  [Layout and Design](../../../../docs/framework/wpf/advanced/optimizing-performance-layout-and-design.md)

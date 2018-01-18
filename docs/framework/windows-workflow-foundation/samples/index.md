@@ -1,27 +1,25 @@
 ---
 title: "Windows Workflow (WF) Samples"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e0aef017-4381-4f2f-a904-6e1ed898687e
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Windows Workflow (WF) Samples
 These samples provide instruction on various aspects of [!INCLUDE[wf](../../../../includes/wf-md.md)].  
   
- The samples can be downloaded from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=150780).  
+The samples can be downloaded from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=150780).  
   
 > [!NOTE]
->  These samples were created with [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] and [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)], but are compatible with [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] and [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)]. Additional samples for [!INCLUDE[wf2](../../../../includes/wf2-md.md)] in [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] can be found on [Codeplex](http://aka.ms/WF45Samples).  
+>  These samples were created with [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] and [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)], but are compatible with [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] and [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)]. Additional samples for [!INCLUDE[wf2](../../../../includes/wf2-md.md)] in [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] can be found on [Code MSDN](http://aka.ms/WF45Samples).
   
-## In This Section  
+## In this section  
  [Application](../../../../docs/framework/windows-workflow-foundation/samples/application.md)  
  Provides samples that are related to workflow applications.  
   

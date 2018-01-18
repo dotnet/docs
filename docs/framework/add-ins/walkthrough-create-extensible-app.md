@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "views [.NET Framework], add-in pipeline"
   - "host-side adapters for add-ins [.NET Framework]"
@@ -20,6 +23,8 @@ caps.latest.revision: 32
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Walkthrough: Creating an Extensible Application
 This walkthrough describes how to create a pipeline for an add-in that performs simple calculator functions. It does not demonstrate a real-world scenario; rather, it demonstrates the basic functionality of a pipeline and how an add-in can provide services for a host.  
@@ -49,9 +54,6 @@ This walkthrough describes how to create a pipeline for an add-in that performs 
  The contract for this pipeline defines an object model of four arithmetic operations: add, subtract, multiply, and divide. The host provides the add-in with an equation to calculate, such as 2 + 2, and the add-in returns the result to the host.  
   
  Version 2 of the calculator add-in provides more calculating possibilities and demonstrates versioning. It is described in [Walkthrough: Enabling Backward Compatibility as Your Host Changes](http://msdn.microsoft.com/en-us/6fa15bb5-8f04-407d-bd7d-675dc043c848).  
-  
-> [!NOTE]
->  You can find additional sample code, and customer technology previews of tools for building add-in pipelines, at the [Managed Extensibility and Add-In Framework site on CodePlex](http://go.microsoft.com/fwlink/?LinkId=121190).  
   
 ## Prerequisites  
  You need the following to complete this walkthrough:  
@@ -274,7 +276,7 @@ This walkthrough describes how to create a pipeline for an add-in that performs 
   
 8.  In **Solution Explorer**, select the solution and from the **Project** menu choose **Properties**. In the **Solution Property Pages** dialog box, set the **Single Startup Project** to be this host application project.  
   
-9. In the class or module file, use the <xref:System.AddIn.Hosting.AddInStore.Update%2A?displayProperty=fullName> method to update the cache. Use the <xref:System.AddIn.Hosting.AddInStore.FindAddIn%2A?displayProperty=fullName> method to get a collection of tokens, and use the <xref:System.AddIn.Hosting.AddInToken.Activate%2A?displayProperty=fullName> method to activate an add-in.  
+9. In the class or module file, use the <xref:System.AddIn.Hosting.AddInStore.Update%2A?displayProperty=nameWithType> method to update the cache. Use the <xref:System.AddIn.Hosting.AddInStore.FindAddIn%2A?displayProperty=nameWithType> method to get a collection of tokens, and use the <xref:System.AddIn.Hosting.AddInToken.Activate%2A?displayProperty=nameWithType> method to activate an add-in.  
   
      The following code shows the completed host application.  
   
@@ -359,8 +361,8 @@ This walkthrough describes how to create a pipeline for an add-in that performs 
 4.  Type **exit** and press the **Enter** key to close the application.  
   
 ## See Also  
- [Walkthrough: Enabling Backward Compatibility as Your Host Changes](http://msdn.microsoft.com/en-us/6fa15bb5-8f04-407d-bd7d-675dc043c848)   
- [Walkthrough: Passing Collections Between Hosts and Add-Ins](http://msdn.microsoft.com/en-us/b532c604-548e-4fab-b11c-377257dd0ee5)   
- [Pipeline Development Requirements](http://msdn.microsoft.com/en-us/ef9fa986-e80b-43e1-868b-247f4c1d9da5)   
- [Contracts, Views, and Adapters](http://msdn.microsoft.com/en-us/a6460173-9507-4b87-8c07-d4ee245d715c)   
+ [Walkthrough: Enabling Backward Compatibility as Your Host Changes](http://msdn.microsoft.com/en-us/6fa15bb5-8f04-407d-bd7d-675dc043c848)  
+ [Walkthrough: Passing Collections Between Hosts and Add-Ins](http://msdn.microsoft.com/en-us/b532c604-548e-4fab-b11c-377257dd0ee5)  
+ [Pipeline Development Requirements](http://msdn.microsoft.com/en-us/ef9fa986-e80b-43e1-868b-247f4c1d9da5)  
+ [Contracts, Views, and Adapters](http://msdn.microsoft.com/en-us/a6460173-9507-4b87-8c07-d4ee245d715c)  
  [Pipeline Development](../../../docs/framework/add-ins/pipeline-development.md)

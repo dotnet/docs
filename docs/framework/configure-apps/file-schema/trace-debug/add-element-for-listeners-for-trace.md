@@ -11,11 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/trace/listeners/add"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "initializeData attribute"
   - "<add> element for <listeners>"
@@ -25,6 +20,8 @@ caps.latest.revision: 24
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;add&gt; Element for &lt;listeners&gt; for &lt;trace&gt;
 Adds a listener to the **Listeners** collection.  
@@ -86,12 +83,12 @@ Adds a listener to the **Listeners** collection.
   
 |Trace listener class|initializeData attribute value|  
 |--------------------------|------------------------------------|  
-|<xref:System.Diagnostics.ConsoleTraceListener?displayProperty=fullName>|The `useErrorStream` value for the <xref:System.Diagnostics.ConsoleTraceListener.%23ctor%2A> constructor.  Set the `initializeData` attribute to "`true`" to write trace and debug output to <xref:System.Console.Error%2A?displayProperty=fullName>; "`false`" to write to <xref:System.Console.Out%2A?displayProperty=fullName>.|  
-|<xref:System.Diagnostics.DelimitedListTraceListener?displayProperty=fullName>|The name of the file the <xref:System.Diagnostics.DelimitedListTraceListener> writes to.|  
-|<xref:System.Diagnostics.EventLogTraceListener?displayProperty=fullName>|The name of the name of an existing event log source.|  
-|<xref:System.Diagnostics.EventSchemaTraceListener?displayProperty=fullName>|The name of the file that the <xref:System.Diagnostics.EventSchemaTraceListener> writes to.|  
-|<xref:System.Diagnostics.TextWriterTraceListener?displayProperty=fullName>|The name of the file that the <xref:System.Diagnostics.TextWriterTraceListener> writes to.|  
-|<xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=fullName>|The name of the file that the <xref:System.Diagnostics.XmlWriterTraceListener> writes to.|  
+|<xref:System.Diagnostics.ConsoleTraceListener?displayProperty=nameWithType>|The `useErrorStream` value for the <xref:System.Diagnostics.ConsoleTraceListener.%23ctor%2A> constructor.  Set the `initializeData` attribute to "`true`" to write trace and debug output to <xref:System.Console.Error%2A?displayProperty=nameWithType>; "`false`" to write to <xref:System.Console.Out%2A?displayProperty=nameWithType>.|  
+|<xref:System.Diagnostics.DelimitedListTraceListener?displayProperty=nameWithType>|The name of the file the <xref:System.Diagnostics.DelimitedListTraceListener> writes to.|  
+|<xref:System.Diagnostics.EventLogTraceListener?displayProperty=nameWithType>|The name of the name of an existing event log source.|  
+|<xref:System.Diagnostics.EventSchemaTraceListener?displayProperty=nameWithType>|The name of the file that the <xref:System.Diagnostics.EventSchemaTraceListener> writes to.|  
+|<xref:System.Diagnostics.TextWriterTraceListener?displayProperty=nameWithType>|The name of the file that the <xref:System.Diagnostics.TextWriterTraceListener> writes to.|  
+|<xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=nameWithType>|The name of the file that the <xref:System.Diagnostics.XmlWriterTraceListener> writes to.|  
   
 ## Example  
  The following example shows how to use **\<add>** elements to add the listeners `MyListener` and `MyEventListener` to the **Listeners** collection. `MyListener` creates a file called `MyListener.log` and writes the output to the file. `MyEventListener` creates an entry in the event log.  
@@ -113,10 +110,10 @@ Adds a listener to the **Listeners** collection.
 ```  
   
 ## See Also  
- <xref:System.Diagnostics.Trace>   
- <xref:System.Diagnostics.Debug>   
- <xref:System.Diagnostics.EventLogTraceListener>   
- <xref:System.Diagnostics.ConsoleTraceListener>   
- <xref:System.Diagnostics.TextWriterTraceListener>   
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)   
+ <xref:System.Diagnostics.Trace>  
+ <xref:System.Diagnostics.Debug>  
+ <xref:System.Diagnostics.EventLogTraceListener>  
+ <xref:System.Diagnostics.ConsoleTraceListener>  
+ <xref:System.Diagnostics.TextWriterTraceListener>  
+ [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)  
  [Trace Listeners](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModule::GetToken"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugModule::GetToken method [.NET Framework debugging]"
   - "GetToken method, ICorDebugModule interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugModule::GetToken Method
 Gets the token for the table entry for this module.  

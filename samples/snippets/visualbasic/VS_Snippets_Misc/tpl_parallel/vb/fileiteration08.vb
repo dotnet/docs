@@ -125,7 +125,7 @@ Module Example
          Next
 
          ' For diagnostic purposes.
-         Console.WriteLine("Processed {0}  files in {1}  milleseconds", fileCount, sw.ElapsedMilliseconds)
+         Console.WriteLine("Processed {0} files in {1} milliseconds", fileCount, sw.ElapsedMilliseconds)
       End While
    End Sub
 End Module

@@ -8,11 +8,6 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "type design guidelines, enumerations"
   - "simple enumerations"
@@ -24,6 +19,9 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Enum Design
 Enums are a special kind of value type. There are two kinds of enums: simple enums and flag enums.  
@@ -72,13 +70,13 @@ Enums are a special kind of value type. There are two kinds of enums: simple enu
   
  **✓ DO** name flag enums with plural nouns or noun phrases and simple enums with singular nouns or noun phrases.  
   
- **X DO NOT** extend <xref:System.Enum?displayProperty=fullName> directly.  
+ **X DO NOT** extend <xref:System.Enum?displayProperty=nameWithType> directly.  
   
- <xref:System.Enum?displayProperty=fullName> is a special type used by the CLR to create user-defined enumerations. Most programming languages provide a programming element that gives you access to this functionality. For example, in C# the `enum` keyword is used to define an enumeration.  
+ <xref:System.Enum?displayProperty=nameWithType> is a special type used by the CLR to create user-defined enumerations. Most programming languages provide a programming element that gives you access to this functionality. For example, in C# the `enum` keyword is used to define an enumeration.  
   
 <a name="design"></a>   
 ### Designing Flag Enums  
- **✓ DO** apply the <xref:System.FlagsAttribute?displayProperty=fullName> to flag enums. Do not apply this attribute to simple enums.  
+ **✓ DO** apply the <xref:System.FlagsAttribute?displayProperty=nameWithType> to flag enums. Do not apply this attribute to simple enums.  
   
  **✓ DO** use powers of two for the flag enum values so they can be freely combined using the bitwise OR operation.  
   
@@ -105,5 +103,5 @@ Enums are a special kind of value type. There are two kinds of enums: simple enu
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](http://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
 ## See Also  
- [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)   
+ [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)  
  [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)

@@ -31,11 +31,15 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewRowEventArgs> object passed to the event-handling method to access the properties of the row being bound to data.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowDataBound/CS/gridviewrowdataboundcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowDataBound/VB/gridviewrowdataboundvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowDataBound/CS/gridviewrowdataboundcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowDataBound/VB/gridviewrowdataboundvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewRowEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.RowCreated" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.RowDataBound" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,6 +74,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridViewRowEventArgs.Row" />
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -98,11 +103,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewRowEventArgs.Row%2A> property to access the properties of the row being bound to data.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowDataBound/CS/gridviewrowdataboundcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowDataBound/VB/gridviewrowdataboundvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowDataBound/CS/gridviewrowdataboundcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowDataBound/VB/gridviewrowdataboundvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.TableRow.Cells" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewRow.RowType" />
       </Docs>
     </Member>
   </Members>

@@ -20,13 +20,13 @@ caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
-# /doc (C# Compiler Options)
-The **/doc** option allows you to place documentation comments in an XML file.  
+# -doc (C# Compiler Options)
+The **-doc** option allows you to place documentation comments in an XML file.  
   
 ## Syntax  
   
 ```console  
-/doc:file  
+-doc:file  
 ```  
   
 ## Arguments  
@@ -44,10 +44,10 @@ The **/doc** option allows you to place documentation comments in an XML file.
   
  To use the generated .xml file for use with the [IntelliSense](/visualstudio/ide/using-intellisense) feature, let the file name of the .xml file be the same as the assembly you want to support and then make sure the .xml file is in the same directory as the assembly. Thus, when the assembly is referenced in the Visual Studio project, the .xml file is found as well. See [Supplying Code Comments](/visualstudio/ide/supplying-xml-code-comments) and for more information.  
   
- Unless you compile with [/target:module](../../../csharp/language-reference/compiler-options/target-module-compiler-option.md), `file` will contain \<assembly>\</assembly> tags specifying the name of the file containing the assembly manifest for the output file of the compilation.  
+ Unless you compile with [-target:module](../../../csharp/language-reference/compiler-options/target-module-compiler-option.md), `file` will contain \<assembly>\</assembly> tags specifying the name of the file containing the assembly manifest for the output file of the compilation.  
   
 > [!NOTE]
->  The /doc option applies to all input files; or, if set in the Project Settings, all files in the project. To disable warnings related to documentation comments for a specific file or section of code, use [#pragma warning](../../../csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning.md).  
+>  The -doc option applies to all input files; or, if set in the Project Settings, all files in the project. To disable warnings related to documentation comments for a specific file or section of code, use [#pragma warning](../../../csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning.md).  
   
  See [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md) for ways to generate documentation from comments in your code.  
   

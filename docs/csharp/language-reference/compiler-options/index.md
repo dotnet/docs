@@ -21,7 +21,7 @@ ms.author: "wiwagn"
 # C# Compiler Options
 The compiler produces executable (.exe) files, dynamic-link libraries (.dll), or code modules (.netmodule).  
   
- Every compiler option is available in two forms: **-option** and **/option**. The documentation only shows the **/option** form.  
+ Every compiler option is available in two forms: **-option** and **/option**. The documentation only shows the **-option** form.  
   
  In Visual Studio, you set compiler options in the web.config file. For more information, see [\<compiler> Element](../../../framework/configure-apps/file-schema/compiler/compiler-element.md).  
   

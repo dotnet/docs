@@ -19,13 +19,13 @@ caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
-# /resource (C# Compiler Options)
+# -resource (C# Compiler Options)
 Embeds the specified resource into the output file.  
   
 ## Syntax  
   
 ```console  
-/resource:filename[,identifier[,accessibility-modifier]]  
+-resource:filename[,identifier[,accessibility-modifier]]  
 ```  
   
 ## Arguments  
@@ -45,7 +45,7 @@ Embeds the specified resource into the output file.
   
  If `filename` is a .NET Framework resource file created, for example, by [Resgen.exe](../../../framework/tools/resgen-exe-resource-file-generator.md) or in the development environment, it can be accessed with members in the <xref:System.Resources> namespace. For more information, see <xref:System.Resources.ResourceManager?displayProperty=nameWithType>. For all other resources, use the `GetManifestResource` methods in the <xref:System.Reflection.Assembly> class to access the resource at run time.  
   
- **/res** is the short form of **/resource**.  
+ **-res** is the short form of **-resource**.  
   
  The order of the resources in the output file is determined from the order specified on the command line.  
   
@@ -65,7 +65,7 @@ Embeds the specified resource into the output file.
  Compile `in.cs` and attach resource file `rf.resource`:  
   
 ```console  
-csc /resource:rf.resource in.cs  
+csc -resource:rf.resource in.cs  
 ```  
   
 ## See Also  

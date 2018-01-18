@@ -16,13 +16,13 @@ caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
-# /lib (C# Compiler Options)
-The **/lib** option specifies the location of assemblies referenced by means of the [/reference (C# Compiler Options)](../../../csharp/language-reference/compiler-options/reference-compiler-option.md) option.  
+# -lib (C# Compiler Options)
+The **-lib** option specifies the location of assemblies referenced by means of the [/reference (C# Compiler Options)](../../../csharp/language-reference/compiler-options/reference-compiler-option.md) option.  
   
 ## Syntax  
   
 ```console  
-/lib:dir1[,dir2]  
+-lib:dir1[,dir2]  
 ```  
   
 ## Arguments  
@@ -39,15 +39,15 @@ The **/lib** option specifies the location of assemblies referenced by means of 
   
 2.  The common language runtime system directory.  
   
-3.  Directories specified by **/lib**.  
+3.  Directories specified by **-lib**.  
   
 4.  Directories specified by the LIB environment variable.  
   
- Use **/reference** to specify an assembly reference.  
+ Use **-reference** to specify an assembly reference.  
   
- **/lib** is additive; specifying it more than once appends to any prior values.  
+ **-lib** is additive; specifying it more than once appends to any prior values.  
   
- An alternative to using **/lib** is to copy into the working directory any required assemblies; this will allow you to simply pass the assembly name to **/reference**. You can then delete the assemblies from the working directory. Since the path to the dependent assembly is not specified in the assembly manifest, the application can be started on the target computer and will find and use the assembly in the global assembly cache.  
+ An alternative to using **-lib** is to copy into the working directory any required assemblies; this will allow you to simply pass the assembly name to **-reference**. You can then delete the assemblies from the working directory. Since the path to the dependent assembly is not specified in the assembly manifest, the application can be started on the target computer and will find and use the assembly in the global assembly cache.  
   
  Because the compiler can reference the assembly does not imply the common language runtime will be able to find and load the assembly at runtime. See [How the Runtime Locates Assemblies](../../../framework/deployment/how-the-runtime-locates-assemblies.md) for details on how the runtime searches for referenced assemblies.  
   
@@ -65,7 +65,7 @@ The **/lib** option specifies the location of assemblies referenced by means of 
  Compile t2.cs to create an .exe file. The compiler will look in the working directory and in the root directory of the C drive for assembly references.  
   
 ```console  
-csc /lib:c:\ /reference:t2.dll t2.cs  
+csc -lib:c:\ -reference:t2.dll t2.cs  
 ```  
   
 ## See Also  

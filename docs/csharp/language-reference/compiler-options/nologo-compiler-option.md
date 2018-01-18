@@ -17,13 +17,13 @@ caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
-# /nologo (C# Compiler Options)
-The **/nologo** option suppresses display of the sign-on banner when the compiler starts up and display of informational messages during compiling.  
+# -nologo (C# Compiler Options)
+The **-nologo** option suppresses display of the sign-on banner when the compiler starts up and display of informational messages during compiling.  
   
 ## Syntax  
   
 ```console  
-/nologo  
+-nologo  
 ```  
   
 ## Remarks  

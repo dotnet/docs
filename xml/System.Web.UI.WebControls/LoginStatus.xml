@@ -526,7 +526,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.LoginStatus.LoggedOut> event to provide additional processing, such as closing database connections or cleaning up per-user cached data, after the user has logged out of a Web site.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67). Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67). Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.LoginStatus.OnLoggedOut%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -569,7 +569,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.LoginStatus.LoggingOut> event to provide additional processing, such as cleaning up per-user data, before a user logs out of a site. The <xref:System.Web.UI.WebControls.LoginStatus.OnLoggingOut%2A> event can be canceled, so you can give the user the option of saving data such as a shopping cart or database changes before leaving the Web site.  
   
- For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  The <xref:System.Web.UI.WebControls.LoginStatus.OnLoggingOut%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -612,7 +612,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.LoginStatus.OnPreRender%2A> method determines whether the user is logged in by examining the <xref:System.Web.HttpRequest.IsAuthenticated%2A> property of the <xref:System.Web.UI.Page> object's <xref:System.Web.UI.Page.Request%2A> property. If the user is logged in, the <xref:System.Web.UI.WebControls.LoginStatus.LogoutText%2A> or <xref:System.Web.UI.WebControls.LoginStatus.LogoutImageUrl%2A> property is used to render the control. If the user is not logged in, the <xref:System.Web.UI.WebControls.LoginStatus.LoginText%2A> or <xref:System.Web.UI.WebControls.LoginStatus.LoginImageUrl%2A> property is used to render the control.  
   
- For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  The <xref:System.Web.UI.WebControls.LoginStatus.OnPreRender%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

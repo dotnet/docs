@@ -35,7 +35,7 @@
 ## Examples  
  The following code example demonstrates a method, named `WriteSuspendedEventArgs`, which captures a <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowSuspendedEventArgs>. The code writes information from the method's arguments to the console, including the value of the <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowSuspendedEventArgs.Error%2A> property.  
   
- This code example is part of the EventArgs Tracking SDK Sample from the Program.cs file. For more information, see [EventArgs Tracking Sample](http://msdn.microsoft.com/en-us/94818da2-c3c4-4a13-b47a-a0fb30dbbf1c).  
+ This code example is part of the EventArgs Tracking SDK Sample from the Program.cs file. For more information, see [EventArgs Tracking Sample](http://msdn.microsoft.com/library/94818da2-c3c4-4a13-b47a-a0fb30dbbf1c).  
   
  [!code-csharp[WF_Samples#287](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#287)]
  [!code-vb[WF_Samples#287](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#287)]  

@@ -843,7 +843,7 @@ myDataTable.Rows[0][0] = newValue;
 ```  
   
 > [!NOTE]
->  Although it is possible to define a column as data type other than the base .NET Framework data types and `Byte[]`, such a column will be treated as a user-defined type, subject to the following usage restrictions. (For more information on user-defined types, see [Creating and Using User-Defined Types](http://msdn.microsoft.com/en-us/ec0266d2-7e5b-47e4-938a-85ac9d04fa40).)  
+>  Although it is possible to define a column as data type other than the base .NET Framework data types and `Byte[]`, such a column will be treated as a user-defined type, subject to the following usage restrictions. (For more information on user-defined types, see [Creating and Using User-Defined Types](http://msdn.microsoft.com/library/ec0266d2-7e5b-47e4-938a-85ac9d04fa40).)  
   
 -   The column cannot be part of a <xref:System.Data.DataView.RowFilter%2A> or <xref:System.Data.DataTable.Select%2A> expression.  
   

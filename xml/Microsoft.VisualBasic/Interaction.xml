@@ -418,7 +418,7 @@ End Sub
  You can use the `CreateObject` function only to create a COM object. While there is no exact equivalent mechanism for creating a .NET Framework object, the <xref:System.Activator> in the <xref:System> namespace contains methods to create local or remote objects. In particular, the <xref:System.Activator.CreateInstance%2A> method or the <xref:System.Activator.CreateInstanceFrom%2A> method might be useful.  
   
 > [!IMPORTANT]
->  The `CreateObject` function requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  The `CreateObject` function requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
    
   
@@ -520,7 +520,7 @@ End Sub
  If `Expression` contains an integer, the string occupying that numeric position in the environment-string table is returned. In this case, <xref:Microsoft.VisualBasic.Interaction.Environ%2A> returns all of the text, including the name of the environment variable. If there is no environment string in the specified position, <xref:Microsoft.VisualBasic.Interaction.Environ%2A> returns a zero-length string.  
   
 > [!IMPORTANT]
->  The <xref:Microsoft.VisualBasic.Interaction.Environ%2A> function requires environment permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  The <xref:Microsoft.VisualBasic.Interaction.Environ%2A> function requires environment permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
    
   
@@ -564,7 +564,7 @@ End Sub
  If `Expression` contains an integer, the string occupying that numeric position in the environment-string table is returned. In this case, <xref:Microsoft.VisualBasic.Interaction.Environ%2A> returns all of the text, including the name of the environment variable. If there is no environment string in the specified position, <xref:Microsoft.VisualBasic.Interaction.Environ%2A> returns a zero-length string.  
   
 > [!IMPORTANT]
->  The <xref:Microsoft.VisualBasic.Interaction.Environ%2A> function requires environment permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  The <xref:Microsoft.VisualBasic.Interaction.Environ%2A> function requires environment permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
    
   
@@ -719,7 +719,7 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
 >  If an object has registered itself as an ActiveX single-instance object, only one instance of the object is created, no matter how many times `CreateObject` is called. With a single-instance object, `GetObject` always returns the same instance when called with the zero-length string (`""`) syntax, and it causes an error if the `PathName` argument is omitted. You cannot use `GetObject` to obtain a reference to a class created with Visual Basic.  
   
 > [!IMPORTANT]
->  The `GetObject` function requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  The `GetObject` function requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
    
   
@@ -1242,7 +1242,7 @@ ID = Shell("""C:\Program Files\display.exe"" -a -q", , True, 100000)
 >  If you do not enclose the path and file specification in quotation marks, there is a security risk if the file name or a path node contains spaces. In the preceding example, the path node `\Program Files` includes a space. If the specification were not inside quotation marks and a program named `Program.exe` had been installed in C:\\, for example by illicit tampering, Windows would execute it instead of `display.exe`.  
   
 > [!IMPORTANT]
->  The `Shell` function requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  The `Shell` function requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
    
   

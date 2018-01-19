@@ -20,7 +20,7 @@
   
  A <xref:System.Web.UI.WebControls.FormViewInsertEventArgs> object is passed to the event-handling method, which allows you to determine the value of an optional command argument sent to the <xref:System.Web.UI.WebControls.FormView> control and to indicate that the insert operation should be canceled. To determine the value of the command argument, use the <xref:System.Web.UI.WebControls.FormViewInsertEventArgs.CommandArgument%2A> property. To cancel the insert operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. You can also read or modify the field values for the new record by using the <xref:System.Web.UI.WebControls.FormViewInsertEventArgs.Values%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.FormViewInsertEventArgs> class, see the <xref:System.Web.UI.WebControls.FormViewInsertEventArgs.%23ctor%2A> constructor.  
   

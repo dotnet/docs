@@ -25,7 +25,7 @@
  To use the <xref:System.Configuration.ConfigurationManager> class, your project must reference the `System.Configuration` assembly. By default, some project templates, like Console Application, do not reference this assembly so you must manually reference it.  
   
 > [!NOTE]
->  The name and location of the application configuration file depend on the application's host. For more information, see [NIB: Application Configuration Files](http://msdn.microsoft.com/en-us/0d05b1b8-b18b-43d8-bb3c-526ff0c44fe0).  
+>  The name and location of the application configuration file depend on the application's host. For more information, see [NIB: Application Configuration Files](http://msdn.microsoft.com/library/0d05b1b8-b18b-43d8-bb3c-526ff0c44fe0).  
   
  You can use the built-in <xref:System.Configuration> types or derive from them to handle configuration information. By using these types, you can work directly with configuration information and you can extend configuration files to include custom information.  
   

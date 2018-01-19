@@ -26,7 +26,7 @@
   
  SOAP messages formatted in both the `RPC` and `Document` styles can be used to communicate with an XML Web service in a Remote Procedure Call (RPC) manner; however the `Document` style can also easily be used to communicate in a loosely coupled manner. Therefore, `Document` style XML Web services is recommended. For more details, see the `Customizing SOAP Messages` topic.  
   
- For more details, see [&#91;\<topic://cpconCustomizingSOAPInASPNETWebServicesWebServiceClients>&#93;](http://msdn.microsoft.com/en-us/1d777288-c0d9-4e6a-b638-f010da031952).  
+ For more details, see [&#91;\<topic://cpconCustomizingSOAPInASPNETWebServicesWebServiceClients>&#93;](http://msdn.microsoft.com/library/1d777288-c0d9-4e6a-b638-f010da031952).  
   
  This attribute can be applied to an XML Web service method on the server and a proxy class on the client. XML Web service methods that have the <xref:System.Web.Services.Protocols.SoapRpcMethodAttribute.OneWay%2A> property set to `true` do not have access to their <xref:System.Web.HttpContext>. As such, accessing any of the properties of the <xref:System.Web.Services.WebService> class return `null`.  
   

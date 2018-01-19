@@ -18,7 +18,7 @@
 ## Remarks  
  This class is used to store the default provider in the single-provider scenario. In multiple-provider scenarios, you can use this collection to choose a specific personalization provider at run time.  
   
- Personalization providers in the collection are indexed according to the name of each provider as set in the Web.config or the Machine.config configuration file using the [providers Element for personalization for webParts (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/51363b49-eafa-4b9c-b9d0-80086b385195) attribute.  
+ Personalization providers in the collection are indexed according to the name of each provider as set in the Web.config or the Machine.config configuration file using the [providers Element for personalization for webParts (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/51363b49-eafa-4b9c-b9d0-80086b385195) attribute.  
   
  ]]></format>
     </remarks>

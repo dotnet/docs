@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A dependent transaction can be obtained using the <xref:System.Transactions.Transaction.DependentClone%2A> method, with the <xref:System.Transactions.DependentCloneOption> parameter controlling what kind of dependent transaction to create.  For more information on how this enumeration is used, see [Managing Concurrency with DependentTransaction](http://msdn.microsoft.com/en-us/bdad8468-2a90-4b81-8375-278067120cab).  
+ A dependent transaction can be obtained using the <xref:System.Transactions.Transaction.DependentClone%2A> method, with the <xref:System.Transactions.DependentCloneOption> parameter controlling what kind of dependent transaction to create.  For more information on how this enumeration is used, see [Managing Concurrency with DependentTransaction](http://msdn.microsoft.com/library/bdad8468-2a90-4b81-8375-278067120cab).  
   
    
   

@@ -20,7 +20,7 @@
   
  A <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs> object is passed to the event handler. This enables you to determine the index of the row being deleted and to cancel the delete operation. To cancel the delete operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs> object to `true`. You can also manipulate the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Keys%2A> and <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Values%2A> collections before the values are passed to the data source.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs>, see the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.%23ctor%2A> constructor.  
   

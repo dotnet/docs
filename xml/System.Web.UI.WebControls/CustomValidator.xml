@@ -315,7 +315,7 @@ void ServerValidation (object source, ServerValidateEventArgs args)
 ## Remarks  
  The <xref:System.Web.UI.WebControls.CustomValidator.ServerValidate> event is raised when validation is performed on the server.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  The <xref:System.Web.UI.WebControls.CustomValidator.OnServerValidate%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -358,7 +358,7 @@ void ServerValidation (object source, ServerValidateEventArgs args)
 ## Remarks  
  The <xref:System.Web.UI.WebControls.CustomValidator.ServerValidate> event is raised when validation is performed on the server. This event is used to provide a custom validation routine for an input control, such as a <xref:System.Web.UI.WebControls.TextBox> control.  
   
- For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   

@@ -2613,7 +2613,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
   
  You can specify <xref:System.Threading.Timeout.Infinite?displayProperty=nameWithType> for the `millisecondsTimeout` parameter to suspend the thread indefinitely. However, we recommend that you use other <xref:System.Threading?displayProperty=nameWithType> classes such as <xref:System.Threading.Mutex>, <xref:System.Threading.Monitor>, <xref:System.Threading.EventWaitHandle>, or <xref:System.Threading.Semaphore> instead to sychronize threads or manage resources.  
   
- The system clock ticks at a specific rate called the clock resolution. The actual timeout might not be exactly the specified timeout, because the specified timeout will be adjusted to coincide with clock ticks. For more information on clock resolution and the waiting time, see the [Sleep function](http://msdn.microsoft.com/library/windows/desktop/ms686298.aspx) topic. This method calls the [Sleep function](http://msdn.microsoft.com/en-us/library/windows/desktop/ms686298.aspx) from the Windows system APIs.  
+ The system clock ticks at a specific rate called the clock resolution. The actual timeout might not be exactly the specified timeout, because the specified timeout will be adjusted to coincide with clock ticks. For more information on clock resolution and the waiting time, see the [Sleep function](http://msdn.microsoft.com/library/windows/desktop/ms686298.aspx) topic. This method calls the [Sleep function](http://msdn.microsoft.com/library/windows/desktop/ms686298.aspx) from the Windows system APIs.  
   
  This method does not perform standard COM and SendMessage pumping.  
   

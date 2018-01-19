@@ -772,7 +772,7 @@ MsgBox("The formatted date is " & Format(Now, "dddd, d MMM yyyy"))
  To access the current system date as a `Date`, use the <xref:Microsoft.VisualBasic.DateAndTime.Today%2A> property.  
   
 > [!IMPORTANT]
->  Setting the system date or time requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  Setting the system date or time requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
    
   
@@ -1194,7 +1194,7 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
  To get or set the current system date, use the <xref:Microsoft.VisualBasic.DateAndTime.Today%2A> property.  
   
 > [!IMPORTANT]
->  Setting the system date or time requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  Setting the system date or time requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
    
   
@@ -1355,7 +1355,7 @@ MsgBox("The formatted time is " & Format(Now, "hh.mm.ss.fff tt"))
  To access the current system time as a `Date`, use the <xref:Microsoft.VisualBasic.DateAndTime.TimeOfDay%2A> property.  
   
 > [!IMPORTANT]
->  Setting the system date or time requires unmanaged code permission, which might affect its execution in partial trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  Setting the system date or time requires unmanaged code permission, which might affect its execution in partial trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
    
   
@@ -1447,7 +1447,7 @@ MsgBox("The formatted time is " & Format(Now, "hh.mm.ss.fff tt"))
  To get or set the current system time, use the <xref:Microsoft.VisualBasic.DateAndTime.TimeOfDay%2A> property.  
   
 > [!IMPORTANT]
->  Setting the system date or time requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  Setting the system date or time requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
    
   

@@ -26,7 +26,7 @@
 |--------------|-----------------|  
 |`includeVersions`|Specifies whether the formatter will include versioning information. Values are `true` or `false`.|  
 |`strictBinding`|Indicates that a receiving formatter will first try to identify the type using complete version information if it exists before using only the type name and assembly name without version information. Values are `true` or `false`. The default for both system-provided formatters is `false`.|  
-|`typeFilterLevel`|A string value specifying the level of automatic deserialization a server channel attempts. Supported values are `Low` (the default) and `Full`. For details about deserialization levels, see [&#91;\<topic://cpconAutomaticDeserializationInNETRemoting>&#93;](http://msdn.microsoft.com/en-us/313a0e88-5b2b-4a17-8391-0ddf9f7a787b).<br /><br /> This property is supported only by the .NET Framework version 1.1 on the following platforms: Windows 98, Windows NT 4.0, Windows Millennium Edition, Windows 2000, Windows XP Home Edition, Windows XP Professional, and Windows Server 2003 family.|  
+|`typeFilterLevel`|A string value specifying the level of automatic deserialization a server channel attempts. Supported values are `Low` (the default) and `Full`. For details about deserialization levels, see [&#91;\<topic://cpconAutomaticDeserializationInNETRemoting>&#93;](http://msdn.microsoft.com/library/313a0e88-5b2b-4a17-8391-0ddf9f7a787b).<br /><br /> This property is supported only by the .NET Framework version 1.1 on the following platforms: Windows 98, Windows NT 4.0, Windows Millennium Edition, Windows 2000, Windows XP Home Edition, Windows XP Professional, and Windows Server 2003 family.|  
   
 > [!IMPORTANT]
 >  Using an instance of this object with untrusted data or across an unsecure channel is a security risk. Use this object only with trusted data and across a secure channel. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
@@ -188,7 +188,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a <see cref="T:System.Collections.IDictionary" /> of properties for the current channel sink.</summary>
-        <value>A <see cref="T:System.Collections.IDictionary" /> of properties for the current channel sink. For more information, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/en-us/226ecf74-ebbd-4ea0-a701-dcf4441deefe).</value>
+        <value>A <see cref="T:System.Collections.IDictionary" /> of properties for the current channel sink. For more information, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/library/226ecf74-ebbd-4ea0-a701-dcf4441deefe).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,7 +216,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Supported values are `Low` (the default) and `Full`. For details about deserialization levels, see [Automatic Deserialization in .NET Remoting](http://msdn.microsoft.com/en-us/313a0e88-5b2b-4a17-8391-0ddf9f7a787b).  
+ Supported values are `Low` (the default) and `Full`. For details about deserialization levels, see [Automatic Deserialization in .NET Remoting](http://msdn.microsoft.com/library/313a0e88-5b2b-4a17-8391-0ddf9f7a787b).  
   
  ]]></format>
         </remarks>

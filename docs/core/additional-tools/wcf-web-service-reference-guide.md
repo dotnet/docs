@@ -1,4 +1,4 @@
-﻿---
+---
 title: Microsoft WCF Web Service Reference Provider Tool
 description: An overview of the Microsoft WCF Web Service Reference Provider Tool that adds functionality for .NET Core and ASP.NET Core projects, similar to Add Service Reference for .NET Framework projects.
 author: mlacouture

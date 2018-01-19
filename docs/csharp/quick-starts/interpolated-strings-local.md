@@ -4,7 +4,7 @@ description: In this quick start about interpolated strings, you write C# code t
 author: rpetrusha
 ms.author: ronpet
 ms.date: 01/11/2018
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp

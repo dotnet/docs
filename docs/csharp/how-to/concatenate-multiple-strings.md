@@ -24,7 +24,7 @@ The following example uses concatenation to split a long string literal into sma
  [!code-csharp-interactive[Combining strings at compile time](../../../samples/snippets/csharp/how-to/strings/Concatenate.cs#1)]  
   
 
-To concatenate string variables, you can use the `+` or `+=` operators, or the <xref:System.String.Concat%2A?displayProperty=nameWithType>, <xref:System.String.Format%2A?displayProperty=nameWithType> or <xref:System.Text.StringBuilder.Append%2A?displayProperty=nameWithType> methods. The `+` operator is easy to use and makes for intuitive code. Even if you use several + operators in one statement, the string content is copied only once. The following code shows two examples of using the `+` operator to concatenate
+To concatenate string variables, you can use the `+` or `+=` operators, [string interpolation](../tutorials/string-interpolation.md) or the <xref:System.String.Concat%2A?displayProperty=nameWithType>, <xref:System.String.Format%2A?displayProperty=nameWithType> or <xref:System.Text.StringBuilder.Append%2A?displayProperty=nameWithType> methods. The `+` operator is easy to use and makes for intuitive code. Even if you use several + operators in one statement, the string content is copied only once. The following code shows two examples of using the `+` operator to concatenate
 strings:
 
 [!code-csharp-interactive[combining strings using +](../../../samples/snippets/csharp/how-to/strings/Concatenate.cs#2)]  
@@ -45,7 +45,7 @@ In other cases you may be combining strings in a loop, where you don't know how 
 You can read more about the [reasons to choose string concatenation or the `StringBuilder` class](/dotnet/api/system.text.stringbuilder#stringAndSB)
 
 Another option to join strings from a collection is to use [LINQ](../programming-guide/linq/index.md)
-and the <xref:System.Linq.Enumerable.Aggregate%60%601%2A?displayPropery=nameWithType> method. This method combines 
+and the <xref:System.Linq.Enumerable.Aggregate%60%601%2A?displayProperty=nameWithType> method. This method combines 
 the source strings using a lambda expression. The lambda expression does the
 work to add each string to the existing accumulation. The following example
 combines an array of words by adding a space between each word in the array:

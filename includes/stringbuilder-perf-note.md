@@ -6,7 +6,7 @@ Using character-based indexing with the <xref:System.Text.StringBuilder.Chars%2A
 Performance is severely impacted because each character access walks the entire linked list of chunks to find the correct buffer to index into.
 
 > [!NOTE]
->  Even for a large "chunky" <xref:System.Text.StringBuilder> object, using the <xref:System.Text.StringBuilder.Chars%2A>property for index-based access to one or a small number of characters has a negligible performance impact; typically, it is an **0(n)** operation. The significant performance impact occurs when iterating the characters in the <xref:System.Text.StringBuilder> object, which is an **O(n^2)** operation. 
+>  Even for a large "chunky" <xref:System.Text.StringBuilder> object, using the <xref:System.Text.StringBuilder.Chars%2A> property for index-based access to one or a small number of characters has a negligible performance impact; typically, it is an **0(n)** operation. The significant performance impact occurs when iterating the characters in the <xref:System.Text.StringBuilder> object, which is an **O(n^2)** operation. 
 
 If you encounter performance issues when using character-based indexing with <xref:System.Text.StringBuilder> objects, you can use any of the following workarounds:
 

@@ -1,4 +1,4 @@
-# [Welcome](welcome.md)
+﻿# [Welcome](welcome.md)
 
 <!-- Start of .NET Guide -->
 # [.NET Guide](standard/index.md)
@@ -151,6 +151,9 @@
 ##### [dotnet add package](core/tools/dotnet-add-package.md)
 ##### [dotnet remove package](core/tools/dotnet-remove-package.md)
 ### [global.json](core/tools/global-json.md)
+## [.NET Core Additional Tools](core/additional-tools/index.md)
+### [WCF Web Service Reference Provider](core/additional-tools/wcf-web-service-reference-guide.md)
+### [XML Serializer Generator](core/additional-tools/xml-serializer-generator.md)
 ## [Porting from .NET Framework](core/porting/index.md)
 ### [Organizing projects for .NET Core](core/porting/project-structure.md)
 ### [Analyzing third-party dependencies](core/porting/third-party-deps.md)

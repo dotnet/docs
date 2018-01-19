@@ -25,7 +25,7 @@ This topic provides links to the [!INCLUDE[vbprvb](../../../../../../includes/vb
  [Sample Queries (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
   
  C# version of the SampleQueries solution  
- [LINQ C# Samples Solution](http://msdn.microsoft.com/en-us/23852e6b-b9a9-4a06-aedb-b27a5930ed74)  
+ [LINQ C# Samples Solution](http://msdn.microsoft.com/library/23852e6b-b9a9-4a06-aedb-b27a5930ed74)  
   
  Follow these steps to find additional examples of [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] code and applications:  
   
@@ -37,4 +37,4 @@ This topic provides links to the [!INCLUDE[vbprvb](../../../../../../includes/vb
   
 ## See Also  
  [LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/index.md)  
- [LINQ to SQL Walkthroughs](http://msdn.microsoft.com/en-us/308e66ac-f704-4e00-9b4e-7af0045a2374)
+ [LINQ to SQL Walkthroughs](http://msdn.microsoft.com/library/308e66ac-f704-4e00-9b4e-7af0045a2374)

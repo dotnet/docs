@@ -43,7 +43,7 @@
   
  The <xref:System.Web.UI.Page> object serves as the naming container for all server controls in a page, except those that implement the <xref:System.Web.UI.INamingContainer> interface or are child controls of controls that implement this interface.  
   
- The <xref:System.Web.UI.Page> class is a control that acts as the user interface for your Web application, and as such should be scrutinized to make sure best practices for writing secure code and securing applications are followed. For general information on these topics, see [Overview of Web Application Security Threats](http://msdn.microsoft.com/library/88d61678-f84e-4622-ae80-53128821855a), [NIB: Security Policy Best Practices](http://msdn.microsoft.com/en-us/d49bc4d5-efb7-4caa-a2fe-e4d3cec63c05), and [Key Security Concepts](~/docs/standard/security/key-security-concepts.md). For more specific information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Display Safe Error Messages](http://msdn.microsoft.com/library/6f70ac33-6e11-4e98-ab7d-bae9c0e7eefa), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Introduction to the Validation Controls](http://msdn.microsoft.com/en-us/3c0e7514-cff2-4bed-936d-ee3f7b740190).  
+ The <xref:System.Web.UI.Page> class is a control that acts as the user interface for your Web application, and as such should be scrutinized to make sure best practices for writing secure code and securing applications are followed. For general information on these topics, see [Overview of Web Application Security Threats](http://msdn.microsoft.com/library/88d61678-f84e-4622-ae80-53128821855a), [NIB: Security Policy Best Practices](http://msdn.microsoft.com/library/d49bc4d5-efb7-4caa-a2fe-e4d3cec63c05), and [Key Security Concepts](~/docs/standard/security/key-security-concepts.md). For more specific information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Display Safe Error Messages](http://msdn.microsoft.com/library/6f70ac33-6e11-4e98-ab7d-bae9c0e7eefa), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Introduction to the Validation Controls](http://msdn.microsoft.com/library/3c0e7514-cff2-4bed-936d-ee3f7b740190).  
   
    
   
@@ -759,7 +759,7 @@
   
  You can set the alias programmatically using this property, or you can set it declaratively using the `ClientTarget` attribute of the  directive.  
   
- You can define additional aliases in the `clientTarget` section of the application-level Web.config file. For more information, see [clientTarget Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/17a0fa6e-a065-49cc-b900-ef73eda6a922).  
+ You can define additional aliases in the `clientTarget` section of the application-level Web.config file. For more information, see [clientTarget Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/17a0fa6e-a065-49cc-b900-ef73eda6a922).  
   
    
   
@@ -1873,7 +1873,7 @@
 ## Remarks  
  The <xref:System.Web.UI.Page.InitComplete> event is called at the end of the page's initialization stage. At this stage of the page's life cycle, all declared controls on the page are initialized, but the page's state is not yet populated. You can access server controls, but they will not yet contain information returned from the user.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
@@ -2486,7 +2486,7 @@
 ## Remarks  
  The <xref:System.Web.UI.Page.LoadComplete> event occurs after all postback data and view-state data is loaded into the page and after the <xref:System.Web.UI.Control.OnLoad%2A> method has been called for all controls on the page.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
@@ -2567,7 +2567,7 @@
   
  When the <xref:System.Web.UI.Page.MaintainScrollPositionOnPostBack%2A> property is set to `true`, the user is instead returned to the last position on the page.  
   
- You set the <xref:System.Web.UI.Page.MaintainScrollPositionOnPostBack%2A> property in the [@ Page](http://msdn.microsoft.com/en-us/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive.  
+ You set the <xref:System.Web.UI.Page.MaintainScrollPositionOnPostBack%2A> property in the [@ Page](http://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive.  
   
  ]]></format>
         </remarks>
@@ -2969,7 +2969,7 @@
 ## Remarks  
  The <xref:System.Web.UI.Page.OnLoadComplete%2A> method is called at the end of the page load stage. At this point in the page life cycle, all postback data and view-state data is loaded into controls on the page.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.Page.OnLoadComplete%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3283,7 +3283,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Page.PreLoad> event is raised after all postback data processing and before the <xref:System.Web.UI.Control.Load> event. There is a second attempt to load postback data before the <xref:System.Web.UI.Page.OnLoadComplete%2A> event. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ The <xref:System.Web.UI.Page.PreLoad> event is raised after all postback data processing and before the <xref:System.Web.UI.Control.Load> event. There is a second attempt to load postback data before the <xref:System.Web.UI.Page.OnLoadComplete%2A> event. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
@@ -3319,7 +3319,7 @@
   
  This is the last event raised before the page's view state is saved.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>

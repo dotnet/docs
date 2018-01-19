@@ -376,7 +376,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.Button.Command> event is raised through the control hierarchy in the form of the `BubbleEvent`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -555,7 +555,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Button.Click> event is raised when the <xref:System.Web.UI.WebControls.Button> control is clicked. This event is commonly used when no command name is associated with the <xref:System.Web.UI.WebControls.Button> control (for instance, with a Submit button).  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.Button.OnClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -649,7 +649,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.Button.Command> event is raised through the control hierarchy in the form of the `BubbleEvent`.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.Button.OnCommand%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

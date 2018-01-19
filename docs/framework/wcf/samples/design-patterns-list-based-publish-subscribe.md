@@ -132,7 +132,7 @@ public class PriceChangeEventArgs : EventArgs
   
 3.  Run Datasource.exe from \datasource\bin\\, from under the language-specific folder. Data source activity is displayed on the console window. Once the data source sends information to the service, it should be passed on to each client.  
   
-4.  If the client, data source, and service programs are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/en-us/8787c877-5e96-42da-8214-fa737a38f10b).  
+4.  If the client, data source, and service programs are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
   
 ### To run the sample across machines  
   

@@ -104,7 +104,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Web.Configuration.OutputCacheSection.EnableFragmentCache%2A> property is set to `false`, no user control output is cached, regardless of the [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive or caching profile used. For more information, see <xref:System.Web.Configuration.OutputCacheSettingsSection> and <xref:System.Web.Configuration.OutputCacheProfile>.  
+ If the <xref:System.Web.Configuration.OutputCacheSection.EnableFragmentCache%2A> property is set to `false`, no user control output is cached, regardless of the [@ OutputCache](http://msdn.microsoft.com/library/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive or caching profile used. For more information, see <xref:System.Web.Configuration.OutputCacheSettingsSection> and <xref:System.Web.Configuration.OutputCacheProfile>.  
   
    
   
@@ -181,7 +181,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Web.Configuration.OutputCacheSection.EnableFragmentCache%2A> property is set to `false`, no page is cached on the server, regardless of the settings in [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive or caching profile used by the page. For more information, see <xref:System.Web.Configuration.OutputCacheSettingsSection> and <xref:System.Web.Configuration.OutputCacheProfile>.  
+ If the <xref:System.Web.Configuration.OutputCacheSection.EnableFragmentCache%2A> property is set to `false`, no page is cached on the server, regardless of the settings in [@ OutputCache](http://msdn.microsoft.com/library/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive or caching profile used by the page. For more information, see <xref:System.Web.Configuration.OutputCacheSettingsSection> and <xref:System.Web.Configuration.OutputCacheProfile>.  
   
    
   

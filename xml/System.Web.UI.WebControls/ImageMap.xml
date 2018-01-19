@@ -257,7 +257,7 @@
   
  To programmatically control the actions performed when a postback <xref:System.Web.UI.WebControls.HotSpot> is clicked, provide an event handler for the <xref:System.Web.UI.WebControls.ImageMap.Click> event that contains the code to run when the event is raised.  
   
- Raising an event invokes the event handler through a delegate. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -494,7 +494,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ImageMap.Click> event is raised when a <xref:System.Web.UI.WebControls.HotSpot> object in an <xref:System.Web.UI.WebControls.ImageMap> control is clicked. To allow a <xref:System.Web.UI.WebControls.HotSpot> to raise the <xref:System.Web.UI.WebControls.ImageMap.Click> event, you must first set either the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A> property on the <xref:System.Web.UI.WebControls.ImageMap> control or the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A> property on the <xref:System.Web.UI.WebControls.HotSpot> object to `HotSpotMode.Postback`.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.ImageMap.OnClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

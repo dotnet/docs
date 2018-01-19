@@ -232,7 +232,7 @@ interface IDemandStubsItf
  [Specifying an Entry Point](../../../docs/framework/interop/specifying-an-entry-point.md)  
  [Specifying a Character Set](../../../docs/framework/interop/specifying-a-character-set.md)  
  [Platform Invoke Examples](../../../docs/framework/interop/platform-invoke-examples.md)  
- [Platform Invoke Security Considerations](http://msdn.microsoft.com/en-us/bbcc67f7-50b5-4917-88ed-cb15470409fb)  
+ [Platform Invoke Security Considerations](http://msdn.microsoft.com/library/bbcc67f7-50b5-4917-88ed-cb15470409fb)  
  [Identifying Functions in DLLs](../../../docs/framework/interop/identifying-functions-in-dlls.md)  
  [Creating a Class to Hold DLL Functions](../../../docs/framework/interop/creating-a-class-to-hold-dll-functions.md)  
  [Calling a DLL Function](../../../docs/framework/interop/calling-a-dll-function.md)

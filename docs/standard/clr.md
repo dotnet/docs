@@ -82,7 +82,7 @@ The .NET Framework provides a run-time environment called the common language ru
 |-----------|-----------------|  
 |[Managed Execution Process](../../docs/standard/managed-execution-process.md)|Describes the steps required to take advantage of the common language runtime.|  
 |[Automatic Memory Management](../../docs/standard/automatic-memory-management.md)|Describes how the garbage collector allocates and releases memory.|  
-|[NIB: Overview of the .NET Framework](http://msdn.microsoft.com/en-us/ea38ac1e-92af-4d1b-8db1-e8a5ea10ed85)|Describes key .NET Framework concepts such as the common type system, cross-language interoperability, managed execution, application domains, and assemblies.|  
+|[NIB: Overview of the .NET Framework](http://msdn.microsoft.com/library/ea38ac1e-92af-4d1b-8db1-e8a5ea10ed85)|Describes key .NET Framework concepts such as the common type system, cross-language interoperability, managed execution, application domains, and assemblies.|  
 |[Common Type System](../../docs/standard/base-types/common-type-system.md)|Describes how types are declared, used, and managed in the runtime in support of cross-language integration.|  
   
 ## See Also  

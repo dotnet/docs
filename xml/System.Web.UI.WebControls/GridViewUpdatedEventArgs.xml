@@ -24,7 +24,7 @@
   
  By default, the <xref:System.Web.UI.WebControls.GridView> control returns to read-only mode after an update operation. When you handle an exception that occurred during the update operation, you can keep the <xref:System.Web.UI.WebControls.GridView> control in edit mode by setting the <xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs.KeepInEditMode%2A> property to `true`.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs> class, see the <xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs.%23ctor%2A> constructor.  
   

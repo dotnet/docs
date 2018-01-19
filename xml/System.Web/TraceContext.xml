@@ -20,7 +20,7 @@
   
  You can also use the <xref:System.Web.TraceContext> class to obtain a set of trace records at the end of request execution for custom processing. For more information, see [ASP.NET Tracing Overview](http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416).  
   
- To enable tracing, set the `Trace` attribute in the [@ Page](http://msdn.microsoft.com/en-us/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive or the <xref:System.Web.TraceContext.IsEnabled%2A> property to `true`. When tracing is enabled, in addition to showing user-provided trace content, the <xref:System.Web.UI.Page> class automatically includes performance data, control-tree structure information, and state management content for every request.  
+ To enable tracing, set the `Trace` attribute in the [@ Page](http://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive or the <xref:System.Web.TraceContext.IsEnabled%2A> property to `true`. When tracing is enabled, in addition to showing user-provided trace content, the <xref:System.Web.UI.Page> class automatically includes performance data, control-tree structure information, and state management content for every request.  
   
  ]]></format>
     </remarks>

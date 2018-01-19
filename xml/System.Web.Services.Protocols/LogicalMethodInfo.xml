@@ -19,7 +19,7 @@
 ## Remarks  
  <xref:System.Web.Services.Protocols.LogicalMethodInfo> is used primarily by a SOAP extension to interrogate the details of the XML Web service method with which the SOAP extension is configured to run. Depending on how the SOAP extension is configured, it can find out details about the XML Web service method in the <xref:System.Web.Services.Protocols.SoapExtension.GetInitializer%2A> method of <xref:System.Web.Services.Protocols.SoapExtension> that takes a <xref:System.Web.Services.Protocols.LogicalMethodInfo>. The <xref:System.Web.Services.Protocols.LogicalMethodInfo> provides details such as the XML Web service method's parameters by accessing the <xref:System.Web.Services.Protocols.LogicalMethodInfo.Parameters%2A> property and any custom attributes applied to the XML Web service method using the <xref:System.Web.Services.Protocols.LogicalMethodInfo.GetCustomAttributes%2A> property.  
   
- For more details on SOAP extensions see the <xref:System.Web.Services.Protocols.SoapExtension> class or [&#91;\<topic://cpconAlteringSOAPMessageUsingSOAPExtensions>&#93;](http://msdn.microsoft.com/en-us/97d81ace-95e7-4acc-ae39-9692a0021e95).  
+ For more details on SOAP extensions see the <xref:System.Web.Services.Protocols.SoapExtension> class or [&#91;\<topic://cpconAlteringSOAPMessageUsingSOAPExtensions>&#93;](http://msdn.microsoft.com/library/97d81ace-95e7-4acc-ae39-9692a0021e95).  
   
  ]]></format>
     </remarks>
@@ -83,7 +83,7 @@
 ## Remarks  
  The asynchronous design pattern in the common language runtime involves calling a `Begin` method to start the asynchronous method invocation and an `End` method to complete the invocation. The `Begin` method takes two additional parameters besides the parameters defined by the synchronous version of the method: one to store a delegate and one to store any state information that needs to be passed on to the delegate. This property represents the parameter for the delegate with a parameter name of `AsyncCallback`.  
   
- For more information on invoking XML Web services asynchronously, see [&#91;\<topic://cpconInvokingWebServicesAsynchronously>&#93;](http://msdn.microsoft.com/en-us/f9e26a43-063a-440a-8c73-a02f2ccf3ea0).  
+ For more information on invoking XML Web services asynchronously, see [&#91;\<topic://cpconInvokingWebServicesAsynchronously>&#93;](http://msdn.microsoft.com/library/f9e26a43-063a-440a-8c73-a02f2ccf3ea0).  
   
    
   
@@ -121,7 +121,7 @@
 ## Remarks  
  The asynchronous design pattern in the common language runtime involves calling a `Begin` method to start the asynchronous method invocation and an `End` method to complete the invocation. The `Begin` method typically returns immediately with an object implementing the <xref:System.IAsyncResult> interface, which can then be passed to the `End` method at a later time to complete the asynchronous method invocation. The returned object implementing the <xref:System.IAsyncResult> interface is represented by this property.  
   
- For more information on invoking XML Web services asynchronously, see [&#91;\<topic://cpconInvokingWebServicesAsynchronously>&#93;](http://msdn.microsoft.com/en-us/f9e26a43-063a-440a-8c73-a02f2ccf3ea0).  
+ For more information on invoking XML Web services asynchronously, see [&#91;\<topic://cpconInvokingWebServicesAsynchronously>&#93;](http://msdn.microsoft.com/library/f9e26a43-063a-440a-8c73-a02f2ccf3ea0).  
   
    
   
@@ -160,7 +160,7 @@
 ## Remarks  
  The asynchronous design pattern in the common language runtime involves calling a `Begin` method to start the asynchronous method invocation and an `End` method to complete the invocation. The `Begin` method takes two additional parameters besides the parameters defined by the synchronous version of the method: one to store a delegate and one to store any state information that needs to be passed on to the delegate. This property represents the state information that needs to be passed into the delegate.  
   
- For more information on invoking XML Web services asynchronously, see [&#91;\<topic://cpconInvokingWebServicesAsynchronously>&#93;](http://msdn.microsoft.com/en-us/f9e26a43-063a-440a-8c73-a02f2ccf3ea0).  
+ For more information on invoking XML Web services asynchronously, see [&#91;\<topic://cpconInvokingWebServicesAsynchronously>&#93;](http://msdn.microsoft.com/library/f9e26a43-063a-440a-8c73-a02f2ccf3ea0).  
   
    
   

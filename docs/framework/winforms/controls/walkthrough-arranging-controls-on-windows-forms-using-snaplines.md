@@ -56,14 +56,14 @@ Precise placement of controls on your form is a high priority for many applicati
  When you are finished, you will have an understanding of the layout role played by the snaplines feature.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## Creating the Project  
  The first step is to create the project and set up the form.  
   
 #### To create the project  
   
-1.  Create a Windows-based application project called "SnaplineExample". For details, see [How to: Create a Windows Application Project](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+1.  Create a Windows-based application project called "SnaplineExample". For details, see [How to: Create a Windows Application Project](http://msdn.microsoft.com/library/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
 2.  Select the form in the Forms Designer.  
   
@@ -230,7 +230,7 @@ Precise placement of controls on your form is a high priority for many applicati
   
 #### To disable snaplines in the design environment  
   
-1.  From the **Tools** menu, open the **Options** dialog box. Open the Windows Forms Designer dialog box. For details, see [General, Windows Forms Designer, Options Dialog Box](http://msdn.microsoft.com/en-us/8dd170af-72f0-4212-b04b-034ceee92834).  
+1.  From the **Tools** menu, open the **Options** dialog box. Open the Windows Forms Designer dialog box. For details, see [General, Windows Forms Designer, Options Dialog Box](http://msdn.microsoft.com/library/8dd170af-72f0-4212-b04b-034ceee92834).  
   
 2.  Select the **General** node. In the **Layout Mode** section, change the selection from **SnapLines** to **SnapToGrid**.  
   

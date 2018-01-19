@@ -1566,7 +1566,7 @@
 </configuration>  
 ```  
   
- When specifying the [membership Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/b9c1ee8f-33ca-4361-8666-b42a0fe86049) section, you must specify the `defaultProvider` attribute. If you do not specify a [membership Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/b9c1ee8f-33ca-4361-8666-b42a0fe86049) section in your Web.config, the values from the machine configuration are used and the <xref:System.Web.Security.SqlMembershipProvider> instance named `AspNetSqlProvider` is established as the `defaultProvider`.  
+ When specifying the [membership Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/b9c1ee8f-33ca-4361-8666-b42a0fe86049) section, you must specify the `defaultProvider` attribute. If you do not specify a [membership Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/b9c1ee8f-33ca-4361-8666-b42a0fe86049) section in your Web.config, the values from the machine configuration are used and the <xref:System.Web.Security.SqlMembershipProvider> instance named `AspNetSqlProvider` is established as the `defaultProvider`.  
   
  You can obtain a strongly typed reference to a provider from the <xref:System.Web.Security.Membership.Providers%2A> collection by indexing the membership provider by name and casting it as the desired type.  
   

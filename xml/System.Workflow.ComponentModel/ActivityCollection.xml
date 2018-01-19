@@ -49,7 +49,7 @@
    
   
 ## Examples  
- The following example shows access of the <xref:System.Workflow.ComponentModel.ActivityCollection> which is the member of a composite activity class containing all child activities. This code example is part of the Using Throw SDK Sample and is from the ThrowWorkflow.cs file. For more information, see [Using the ThrowActivity Activity](http://msdn.microsoft.com/en-us/82bc0fef-d78a-4750-82b4-e4cb397a10f1).  
+ The following example shows access of the <xref:System.Workflow.ComponentModel.ActivityCollection> which is the member of a composite activity class containing all child activities. This code example is part of the Using Throw SDK Sample and is from the ThrowWorkflow.cs file. For more information, see [Using the ThrowActivity Activity](http://msdn.microsoft.com/library/82bc0fef-d78a-4750-82b4-e4cb397a10f1).  
   
  [!code-csharp[WF_Samples#179](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#179)]
  [!code-vb[WF_Samples#179](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#179)]  
@@ -109,7 +109,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows access of the <xref:System.Workflow.ComponentModel.ActivityCollection> which is the member of a composite activity class containing all child activities. This example illustrates the use of <xref:System.Workflow.ComponentModel.ActivityCollection.Add%2A>. This code example is part of the Throw SDK sample and is from the ThrowWorkflow.cs file. For more information, see [Using the ThrowActivity Activity](http://msdn.microsoft.com/en-us/82bc0fef-d78a-4750-82b4-e4cb397a10f1).  
+ The following example shows access of the <xref:System.Workflow.ComponentModel.ActivityCollection> which is the member of a composite activity class containing all child activities. This example illustrates the use of <xref:System.Workflow.ComponentModel.ActivityCollection.Add%2A>. This code example is part of the Throw SDK sample and is from the ThrowWorkflow.cs file. For more information, see [Using the ThrowActivity Activity](http://msdn.microsoft.com/library/82bc0fef-d78a-4750-82b4-e4cb397a10f1).  
   
  [!code-csharp[WF_Samples#179](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#179)]
  [!code-vb[WF_Samples#179](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#179)]  
@@ -356,7 +356,7 @@
 ## Remarks  
  In this context, adding or removing members raises the event. Modifying a member does not raise this event.  
   
- When you create an <xref:System.Workflow.ComponentModel.ActivityCollection> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ When you create an <xref:System.Workflow.ComponentModel.ActivityCollection> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  ]]></format>
         </remarks>

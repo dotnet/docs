@@ -811,7 +811,7 @@
 ## Remarks  
  Tracing tracks and presents the execution details about a Web request. For trace data to be visible in a rendered page, you must enable tracing for that page.  
   
- By default, page tracing is disabled. To enable tracing for a page, use the [@ Page](http://msdn.microsoft.com/en-us/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive as follows: \<%@ Page trace="true" %>  
+ By default, page tracing is disabled. To enable tracing for a page, use the [@ Page](http://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive as follows: \<%@ Page trace="true" %>  
   
  ]]></format>
         </remarks>

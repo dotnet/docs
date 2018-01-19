@@ -126,7 +126,7 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.Design.WebControls.DataGridDesigner.Dispose(System.Boolean)" /> method can be called multiple times by other objects. When overriding it, be sure that you do not reference objects that have been disposed in an earlier call to <see cref="M:System.Web.UI.Design.WebControls.DataGridDesigner.Dispose(System.Boolean)" />. For more information about how to implement this method, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about the <see cref="M:System.Web.UI.Control.Dispose" /> and <see cref="M:System.Object.Finalize" /> methods, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about the <see cref="M:System.Web.UI.Control.Dispose" /> and <see cref="M:System.Object.Finalize" /> methods, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
       </Docs>

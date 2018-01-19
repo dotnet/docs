@@ -37,7 +37,7 @@
  The <xref:System.Web.UI.WebControls.RadioButton> server control permits you to intersperse the radio buttons in a group with other content in the page. The buttons are grouped logically if they all share the same <xref:System.Web.UI.WebControls.RadioButton.GroupName%2A> property.  
   
 > [!NOTE]
->  You can use the <xref:System.Web.UI.WebControls.RadioButton> control to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+>  You can use the <xref:System.Web.UI.WebControls.RadioButton> control to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
 <a name="accessibility"></a>   
 ## Accessibility  

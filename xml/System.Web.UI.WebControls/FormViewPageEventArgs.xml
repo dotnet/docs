@@ -33,7 +33,7 @@
   
  A <xref:System.Web.UI.WebControls.FormViewPageEventArgs> object is passed to the event-handling method, which allows you to determine the index of the page selected by the user and to indicate whether the paging operation should be canceled. To determine the index of the page selected by the user, use the <xref:System.Web.UI.WebControls.FormViewPageEventArgs.NewPageIndex%2A> property. To cancel the paging operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A?displayProperty=nameWithType> property of the <xref:System.Web.UI.WebControls.FormViewPageEventArgs> object to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.FormViewPageEventArgs> class, see the <xref:System.Web.UI.WebControls.FormViewPageEventArgs.%23ctor%2A> constructor.  
   

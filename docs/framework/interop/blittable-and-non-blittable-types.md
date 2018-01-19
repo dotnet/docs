@@ -55,7 +55,7 @@ Most data types have a common representation in both managed and unmanaged memor
   
 -   One-dimensional arrays of blittable types, such as an array of integers. However, a type that contains a variable array of blittable types is not itself blittable.  
   
--   Formatted value types that contain only blittable types (and classes if they are marshaled as formatted types). For more information about formatted value types, see [Default Marshaling for Value Types](http://msdn.microsoft.com/en-us/4d9a876c-e05a-40ba-bd85-bd22877f984a).  
+-   Formatted value types that contain only blittable types (and classes if they are marshaled as formatted types). For more information about formatted value types, see [Default Marshaling for Value Types](http://msdn.microsoft.com/library/4d9a876c-e05a-40ba-bd85-bd22877f984a).  
   
  Object references are not blittable. This includes an array of references to objects that are blittable by themselves. For example, you can define a structure that is blittable, but you cannot define a blittable type that contains an array of references to those structures.  
   
@@ -63,18 +63,18 @@ Most data types have a common representation in both managed and unmanaged memor
   
  Some managed data types require a different representation in an unmanaged environment. These non-blittable data types must be converted into a form that can be marshaled. For example, managed strings are non-blittable types because they must be converted into string objects before they can be marshaled.  
   
- The following table lists non-blittable types from the <xref:System> namespace. [Delegates](http://msdn.microsoft.com/en-us/d176ee76-f982-494b-b03d-92e4118896e2), which are data structures that refer to a static method or to a class instance, are also non-blittable.  
+ The following table lists non-blittable types from the <xref:System> namespace. [Delegates](http://msdn.microsoft.com/library/d176ee76-f982-494b-b03d-92e4118896e2), which are data structures that refer to a static method or to a class instance, are also non-blittable.  
   
 |Non-blittable type|Description|  
 |-------------------------|-----------------|  
 |[System.Array](../../../docs/framework/interop/default-marshaling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|  
-|[System.Boolean](http://msdn.microsoft.com/en-us/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)|Converts to a 1, 2, or 4-byte value with `true` as 1 or -1.|  
-|[System.Char](http://msdn.microsoft.com/en-us/cecc87c1-075e-4cde-aa56-33d189f66feb)|Converts to a Unicode or ANSI character.|  
-|[System.Class](http://msdn.microsoft.com/en-us/fe334af5-0123-43d8-be84-26f6f023ddb6)|Converts to a class interface.|  
+|[System.Boolean](http://msdn.microsoft.com/library/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)|Converts to a 1, 2, or 4-byte value with `true` as 1 or -1.|  
+|[System.Char](http://msdn.microsoft.com/library/cecc87c1-075e-4cde-aa56-33d189f66feb)|Converts to a Unicode or ANSI character.|  
+|[System.Class](http://msdn.microsoft.com/library/fe334af5-0123-43d8-be84-26f6f023ddb6)|Converts to a class interface.|  
 |[System.Object](../../../docs/framework/interop/default-marshaling-for-objects.md)|Converts to a variant or an interface.|  
 |[System.Mdarray](../../../docs/framework/interop/default-marshaling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|  
 |[System.String](../../../docs/framework/interop/default-marshaling-for-strings.md)|Converts to a string terminating in a null reference or to a BSTR.|  
-|[System.Valuetype](http://msdn.microsoft.com/en-us/4d9a876c-e05a-40ba-bd85-bd22877f984a)|Converts to a structure with a fixed memory layout.|  
+|[System.Valuetype](http://msdn.microsoft.com/library/4d9a876c-e05a-40ba-bd85-bd22877f984a)|Converts to a structure with a fixed memory layout.|  
 |[System.Szarray](../../../docs/framework/interop/default-marshaling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|  
   
  Class and object types are supported only by COM interop. For corresponding types in [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)], C#, and C++, see the [Class Library Overview](../../../docs/standard/class-library-overview.md).  

@@ -20,7 +20,7 @@
   
  A <xref:System.Web.UI.WebControls.DetailsViewDeletedEventArgs> object is passed to the event handler, which allows you to determine the number of records affected and any exceptions that might have occurred. To determine the number of records affected by the delete operation, use the <xref:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.AffectedRows%2A> property. Use the <xref:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.Exception%2A> property to determine whether any exceptions occurred. You can also indicate whether the exception was handled in the event handler by setting the <xref:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.ExceptionHandled%2A> property. If you want to access the name/value pairs of the key fields and non-key fields of the deleted record, use the <xref:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.Keys%2A> and <xref:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.Values%2A> properties, respectively.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.DetailsViewDeletedEventArgs> class, see the <xref:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.%23ctor%2A> constructor.  
   

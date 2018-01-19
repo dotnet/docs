@@ -93,7 +93,7 @@ Example of an image brush applied to the stroke and highlight
  ![Sphere following the path geometry of text](../../../../docs/framework/wpf/advanced/media/textpathgeometry01.gif "TextPathGeometry01")  
 Sphere following the path geometry of text  
   
- For more information, see [How to: Create a PathGeometry Animation for Text](http://msdn.microsoft.com/en-us/29f8051e-798a-463f-a926-a099a99e9c67).  
+ For more information, see [How to: Create a PathGeometry Animation for Text](http://msdn.microsoft.com/library/29f8051e-798a-463f-a926-a099a99e9c67).  
   
  You can create other interesting uses for formatted text once it has been converted to a <xref:System.Windows.Media.PathGeometry> object. For example, you can clip video to display inside it.  
   
@@ -136,4 +136,4 @@ Video displaying in the path geometry of text
  [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
  [Typography in WPF](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)  
  [Create Outlined Text](../../../../docs/framework/wpf/advanced/how-to-create-outlined-text.md)  
- [How to: Create a PathGeometry Animation for Text](http://msdn.microsoft.com/en-us/29f8051e-798a-463f-a926-a099a99e9c67)
+ [How to: Create a PathGeometry Animation for Text](http://msdn.microsoft.com/library/29f8051e-798a-463f-a926-a099a99e9c67)

@@ -79,16 +79,16 @@
   
 |Expression|Description|  
 |----------------|-----------------|  
-|<xref:System.Web.DynamicData.ControlFilterExpression>|(Dynamic Data only) Builds a database query by using the data key that is selected in a source data-bound control.<br /><br /> For information about how to use this filter option, see [How to: Filter Table Rows Using Values from a Parent Table in Dynamic Data](http://msdn.microsoft.com/en-us/a5566986-7c30-4e71-b4a4-81cd16095749).|  
+|<xref:System.Web.DynamicData.ControlFilterExpression>|(Dynamic Data only) Builds a database query by using the data key that is selected in a source data-bound control.<br /><br /> For information about how to use this filter option, see [How to: Filter Table Rows Using Values from a Parent Table in Dynamic Data](http://msdn.microsoft.com/library/a5566986-7c30-4e71-b4a4-81cd16095749).|  
 |<xref:System.Web.UI.WebControls.Expressions.CustomExpression>|Specifies a user-defined expression for a data source. The custom LINQ expression can be invoked in an event handler.|  
-|<xref:System.Web.DynamicData.DynamicFilterExpression>|(Dynamic Data only) Builds a database query by using the specified <xref:System.Web.DynamicData.DynamicFilter> control.<br /><br /> For information about how to use this filter option, see [How to: Filter Table Rows Using Foreign Key in Dynamic Data](http://msdn.microsoft.com/en-us/b774e56a-a5b9-41b7-b114-699313ef2056).|  
+|<xref:System.Web.DynamicData.DynamicFilterExpression>|(Dynamic Data only) Builds a database query by using the specified <xref:System.Web.DynamicData.DynamicFilter> control.<br /><br /> For information about how to use this filter option, see [How to: Filter Table Rows Using Foreign Key in Dynamic Data](http://msdn.microsoft.com/library/b774e56a-a5b9-41b7-b114-699313ef2056).|  
 |<xref:System.Web.UI.WebControls.Expressions.MethodExpression>|Specifies a user-defined LINQ expression for a data source. The expression is invoked in a method.|  
 |<xref:System.Web.UI.WebControls.Expressions.OrderByExpression>|Applies a sort expression to an <xref:System.Linq.IQueryable> data source object. After you apply the <xref:System.Web.UI.WebControls.Expressions.OrderByExpression> value, you can apply additional sort operations by specifying a <xref:System.Web.UI.WebControls.Expressions.OrderByExpression.ThenByExpressions%2A> value.|  
 |<xref:System.Web.UI.WebControls.Expressions.PropertyExpression>|Compares the properties the data field and property values that are specified in the <xref:System.Web.UI.WebControls.LinqDataSource.WhereParameters%2A> collection.|  
 |<xref:System.Web.UI.WebControls.Expressions.RangeExpression>|Determines whether a value is greater than or less than a specified value, or whether a value is between two values.|  
 |<xref:System.Web.UI.WebControls.Expressions.SearchExpression>|Compares values in a field or fields to a specified string value.|  
   
- You can use these <xref:System.Web.UI.WebControls.QueryExtender> options individually or you can combine them to provide complex filtering in a Web page. For more information, see [QueryExtender Web Server Control Overview](http://msdn.microsoft.com/library/b93e32b9-af41-4539-a009-6cbbe809c702). [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/en-us/b305ae31-1a1b-4d07-a678-51457c17614f)  
+ You can use these <xref:System.Web.UI.WebControls.QueryExtender> options individually or you can combine them to provide complex filtering in a Web page. For more information, see [QueryExtender Web Server Control Overview](http://msdn.microsoft.com/library/b93e32b9-af41-4539-a009-6cbbe809c702). [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/library/b305ae31-1a1b-4d07-a678-51457c17614f)  
   
 <a name="Tasks"></a>   
 ## Tasks  
@@ -96,7 +96,7 @@
   
 |Document|Task|  
 |--------------|----------|  
-|[Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/en-us/b305ae31-1a1b-4d07-a678-51457c17614f)|Shows how to use the filter options that the <xref:System.Web.UI.WebControls.QueryExtender> control provides.|  
+|[Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/library/b305ae31-1a1b-4d07-a678-51457c17614f)|Shows how to use the filter options that the <xref:System.Web.UI.WebControls.QueryExtender> control provides.|  
   
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
@@ -157,7 +157,7 @@
    
   
 ## Examples  
- The following example shows how to use the <xref:System.Web.UI.WebControls.QueryExtender> control to provide a search function in a Web page. The <xref:System.Web.UI.WebControls.QueryExtender> control uses the text that is entered in the `TextBoxSearch` control to search for contents in the ProductName and Supplier.CompanyName columns of a Products table in the data that is returned from the <xref:System.Web.UI.WebControls.LinqDataSource> control. The <xref:System.Web.UI.WebControls.Expressions.SearchExpression> object is used to perform the search. The <xref:System.Web.UI.WebControls.Expressions.SearchExpression.DataFields%2A> property specifies the data fields to search. The <xref:System.Web.UI.WebControls.Expressions.SearchExpression.SearchType%2A> property specifies the type of search to perform. The <xref:System.Web.UI.WebControls.ControlParameter> element specifies the control that contains the text to use for the search. This code example is part of a larger example that is provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/en-us/b305ae31-1a1b-4d07-a678-51457c17614f).  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.QueryExtender> control to provide a search function in a Web page. The <xref:System.Web.UI.WebControls.QueryExtender> control uses the text that is entered in the `TextBoxSearch` control to search for contents in the ProductName and Supplier.CompanyName columns of a Products table in the data that is returned from the <xref:System.Web.UI.WebControls.LinqDataSource> control. The <xref:System.Web.UI.WebControls.Expressions.SearchExpression> object is used to perform the search. The <xref:System.Web.UI.WebControls.Expressions.SearchExpression.DataFields%2A> property specifies the data fields to search. The <xref:System.Web.UI.WebControls.Expressions.SearchExpression.SearchType%2A> property specifies the type of search to perform. The <xref:System.Web.UI.WebControls.ControlParameter> element specifies the control that contains the text to use for the search. This code example is part of a larger example that is provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/library/b305ae31-1a1b-4d07-a678-51457c17614f).  
   
 ```  
 <asp:LinqDataSource ID="dataSource" runat="server"   
@@ -171,7 +171,7 @@
 </asp:QueryExtender>  
 ```  
   
- The following example shows how to use the <xref:System.Web.UI.WebControls.QueryExtender> control to search a Web page for values in a specified range. The <xref:System.Web.UI.WebControls.QueryExtender> control uses the values that are entered in the `TextBoxFrom` and `TextBoxTo` controls to search for values in the ProductName and Supplier.CompanyName columns of a Products table in the data that is returned from the <xref:System.Web.UI.WebControls.LinqDataSource> control. The <xref:System.Web.UI.WebControls.ControlParameter> element specifies the text box controls that contain the minimum and maximum values to use for searching the range. The <xref:System.Web.UI.WebControls.Expressions.RangeExpression.MinType%2A> and <xref:System.Web.UI.WebControls.Expressions.RangeExpression.MaxType%2A> properties specify that the minimum and maximum values must be included in the data that is returned. This code example is part of a larger example provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/en-us/b305ae31-1a1b-4d07-a678-51457c17614f).  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.QueryExtender> control to search a Web page for values in a specified range. The <xref:System.Web.UI.WebControls.QueryExtender> control uses the values that are entered in the `TextBoxFrom` and `TextBoxTo` controls to search for values in the ProductName and Supplier.CompanyName columns of a Products table in the data that is returned from the <xref:System.Web.UI.WebControls.LinqDataSource> control. The <xref:System.Web.UI.WebControls.ControlParameter> element specifies the text box controls that contain the minimum and maximum values to use for searching the range. The <xref:System.Web.UI.WebControls.Expressions.RangeExpression.MinType%2A> and <xref:System.Web.UI.WebControls.Expressions.RangeExpression.MaxType%2A> properties specify that the minimum and maximum values must be included in the data that is returned. This code example is part of a larger example provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/library/b305ae31-1a1b-4d07-a678-51457c17614f).  
   
 ```  
 <asp:LinqDataSource ID="dataSource" runat="server"   

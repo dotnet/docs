@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Reads the [deviceFilters Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/2fb323b9-675b-48de-861b-8998fa0c51ba) section of a configuration file that specifies the set of device filters for use with ASP.NET mobile controls. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <summary>Reads the [deviceFilters Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/2fb323b9-675b-48de-861b-8998fa0c51ba) section of a configuration file that specifies the set of device filters for use with ASP.NET mobile controls. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <block subset="none" type="overrides">

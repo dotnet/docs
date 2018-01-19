@@ -33,7 +33,7 @@ When an object derives from `MarshalByRefObject`, an object reference is passed 
  [Binary Serialization](../../../docs/standard/serialization/binary-serialization.md)  
  Describes the binary serialization mechanism that is included with the common language runtime.  
   
- [Remote Objects](http://msdn.microsoft.com/en-us/515686e6-0a8d-42f7-8188-73abede57c58)  
+ [Remote Objects](http://msdn.microsoft.com/library/515686e6-0a8d-42f7-8188-73abede57c58)  
  Describes the various communications methods available in the .NET Framework for remote communications.  
   
  [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)  

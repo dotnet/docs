@@ -227,7 +227,7 @@
 ## Remarks  
  If there is a derived control adapter attached to a <xref:System.Web.UI.Control> object and the <xref:System.Web.UI.Adapters.ControlAdapter.CreateChildControls%2A> method is overridden, the override is called instead of the <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=nameWithType> method. Thus, <xref:System.Web.UI.Adapters.ControlAdapter.CreateChildControls%2A> can be used to create a target-specific child control set.  
   
- For more information about combining controls to create a new control, see [Composite Controls](http://msdn.microsoft.com/en-us/fb174677-d845-467c-8bf3-cc096b2490b0).  
+ For more information about combining controls to create a new control, see [Composite Controls](http://msdn.microsoft.com/library/fb174677-d845-467c-8bf3-cc096b2490b0).  
   
  ]]></format>
         </remarks>

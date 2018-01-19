@@ -1551,7 +1551,7 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The tokens obtained using this property can be passed to the unmanaged reflection API. For more information, see [Unmanaged Reflection API](http://msdn.microsoft.com/en-us/0c5bb9de-0cf6-438d-ba47-134e6c775fb8).  
+ The tokens obtained using this property can be passed to the unmanaged reflection API. For more information, see [Unmanaged Reflection API](http://msdn.microsoft.com/library/0c5bb9de-0cf6-438d-ba47-134e6c775fb8).  
   
  ]]></format>
         </remarks>

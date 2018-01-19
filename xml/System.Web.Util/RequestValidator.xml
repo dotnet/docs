@@ -64,7 +64,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Util.RequestValidator> class has a default constructor. When a new instance of the class is initialized, an internal method retrieves custom validation details from the application's configuration information. The configuration details are contained in the <xref:System.Web.Configuration.HttpRuntimeSection> section. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e9b81350-8aaf-47cc-9843-5f7d0c59f369) and the <xref:System.Web.Configuration.HttpRuntimeSection.RequestValidationType%2A> attribute.  
+ The <xref:System.Web.Util.RequestValidator> class has a default constructor. When a new instance of the class is initialized, an internal method retrieves custom validation details from the application's configuration information. The configuration details are contained in the <xref:System.Web.Configuration.HttpRuntimeSection> section. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369) and the <xref:System.Web.Configuration.HttpRuntimeSection.RequestValidationType%2A> attribute.  
   
  During initialization, a single instance of the <xref:System.Web.Util.RequestValidator> class is created, and a reference to the instance is maintained in the <xref:System.Web.Util.RequestValidator.Current%2A> property. ASP.NET does not create a new request validator instance per request. Therefore, custom implementations of the <xref:System.Web.Util.RequestValidator> class must be thread-safe.  
   

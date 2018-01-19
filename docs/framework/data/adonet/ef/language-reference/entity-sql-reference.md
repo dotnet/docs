@@ -70,7 +70,7 @@ This section contains [!INCLUDE[esql](../../../../../../includes/esql-md.md)] re
 |[! (Logical NOT)](../../../../../../docs/framework/data/adonet/ef/language-reference/not-entity-sql.md)|Logical NOT.|  
 |[&#124;&#124; (Logical OR)](../../../../../../docs/framework/data/adonet/ef/language-reference/or-entity-sql.md)|Logical OR.|  
 |[CASE](../../../../../../docs/framework/data/adonet/ef/language-reference/case-entity-sql.md)|Evaluates a set of Boolean expressions to determine the result.|  
-|[THEN](../../../../../../docs/framework/data/adonet/ef/language-reference/then-entity-sql.md)|The result of a [WHEN](http://msdn.microsoft.com/en-us/6233fe9f-00b0-460e-8372-64e138a5f998) clause when it evaluates to true.|  
+|[THEN](../../../../../../docs/framework/data/adonet/ef/language-reference/then-entity-sql.md)|The result of a [WHEN](http://msdn.microsoft.com/library/6233fe9f-00b0-460e-8372-64e138a5f998) clause when it evaluates to true.|  
   
 ## Query Operators  
  Query operators are used to define query expressions that return entity data. The following table lists query operators.  

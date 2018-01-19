@@ -1962,7 +1962,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.MenuItemBinding.Target%2A> property renders as a `target` attribute. The `target` attribute on `anchor` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.WebControls.MenuItemBinding.Target%2A> property if the rendered output for the <xref:System.Web.UI.WebControls.MenuItemBinding> object must be XHTML 1.1 compliant. For more information, refer to the topic [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
 >   
->  When creating accessible Web pages, it is strongly recommended you avoid using the <xref:System.Web.UI.WebControls.MenuItemBinding.Target%2A> property to target another window. For more information, see [NIB: ASP.NET Accessibility](http://msdn.microsoft.com/en-us/9b5f3e05-e88d-4248-a5f4-9e64850fa0ae).  
+>  When creating accessible Web pages, it is strongly recommended you avoid using the <xref:System.Web.UI.WebControls.MenuItemBinding.Target%2A> property to target another window. For more information, see [NIB: ASP.NET Accessibility](http://msdn.microsoft.com/library/9b5f3e05-e88d-4248-a5f4-9e64850fa0ae).  
   
    
   
@@ -2116,7 +2116,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.MenuItemBinding.Target%2A> property renders as a `target` attribute. The `target` attribute on `anchor` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.WebControls.MenuItemBinding.Target%2A> property if the rendered output for the <xref:System.Web.UI.WebControls.MenuItemBinding> must be XHTML 1.1 compliant. For more information, refer to the topic [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
 >   
->  When creating accessible Web pages, it is strongly recommended you avoid using the <xref:System.Web.UI.WebControls.MenuItemBinding.Target%2A> property to target another window. For more information, see [NIB: ASP.NET Accessibility](http://msdn.microsoft.com/en-us/9b5f3e05-e88d-4248-a5f4-9e64850fa0ae).  
+>  When creating accessible Web pages, it is strongly recommended you avoid using the <xref:System.Web.UI.WebControls.MenuItemBinding.Target%2A> property to target another window. For more information, see [NIB: ASP.NET Accessibility](http://msdn.microsoft.com/library/9b5f3e05-e88d-4248-a5f4-9e64850fa0ae).  
   
  Note that setting this property overrides the <xref:System.Web.UI.WebControls.Menu.Target%2A?displayProperty=nameWithType> property of the <xref:System.Web.UI.WebControls.Menu> control for this menu item. Setting the <xref:System.Web.UI.WebControls.Menu.Target%2A?displayProperty=nameWithType> property to open a new window can make it difficult for users of assistive technology devices to use the page.  
   
@@ -2175,7 +2175,7 @@
 > [!NOTE]
 >  If the <xref:System.Web.UI.WebControls.MenuItemBinding.Text%2A> and <xref:System.Web.UI.WebControls.MenuItemBinding.TextField%2A> properties are both set, the <xref:System.Web.UI.WebControls.MenuItemBinding.TextField%2A> property takes precedence.  
   
- You cannot create empty nodes in a <xref:System.Web.UI.WebControls.Menu> control by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Text%2A> or <xref:System.Web.UI.WebControls.MenuItemBinding.TextField%2A> properties to the empty string (""). Setting these properties to the empty string has the same effect as not setting the properties. In that case, the <xref:System.Web.UI.WebControls.Menu> control creates a default binding using the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property. For more information, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/en-us/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
+ You cannot create empty nodes in a <xref:System.Web.UI.WebControls.Menu> control by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Text%2A> or <xref:System.Web.UI.WebControls.MenuItemBinding.TextField%2A> properties to the empty string (""). Setting these properties to the empty string has the same effect as not setting the properties. In that case, the <xref:System.Web.UI.WebControls.Menu> control creates a default binding using the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property. For more information, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/library/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
   
  The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
@@ -2324,7 +2324,7 @@
   
  If the data source contains multiple tables or attributes, you must first establish the binding criteria by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Depth%2A> property, the <xref:System.Web.UI.WebControls.MenuItemBinding.DataMember%2A> property, or both.  
   
- You cannot create empty nodes in a <xref:System.Web.UI.WebControls.Menu> control by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Text%2A> or <xref:System.Web.UI.WebControls.MenuItemBinding.TextField%2A> properties to the empty string (""). Setting these properties to the empty string has the same effect as not setting the properties. In that case, the <xref:System.Web.UI.WebControls.Menu> control creates a default binding using the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property. For more information, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/en-us/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
+ You cannot create empty nodes in a <xref:System.Web.UI.WebControls.Menu> control by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Text%2A> or <xref:System.Web.UI.WebControls.MenuItemBinding.TextField%2A> properties to the empty string (""). Setting these properties to the empty string has the same effect as not setting the properties. In that case, the <xref:System.Web.UI.WebControls.Menu> control creates a default binding using the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property. For more information, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/library/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
   
  Instead of using this property to bind the <xref:System.Web.UI.WebControls.MenuItem.Text%2A> property of a <xref:System.Web.UI.WebControls.MenuItem> object to a field, you can also bind it to a static value by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Text%2A?displayProperty=nameWithType> property. This allows you to display the same text in each menu item to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied.  
   

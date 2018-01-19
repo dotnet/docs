@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.WizardNavigationEventArgs> class provides the data needed for the various navigation events in a <xref:System.Web.UI.WebControls.Wizard> control. For example, the <xref:System.Web.UI.WebControls.Wizard.NextButtonClick> event of a <xref:System.Web.UI.WebControls.Wizard> control uses the <xref:System.Web.UI.WebControls.WizardNavigationEventArgs> object to indicate the <xref:System.Web.UI.WebControls.WizardNavigationEventArgs.CurrentStepIndex%2A> and <xref:System.Web.UI.WebControls.WizardNavigationEventArgs.NextStepIndex%2A> for the control.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
     </remarks>

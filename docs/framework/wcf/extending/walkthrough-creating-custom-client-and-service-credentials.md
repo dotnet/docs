@@ -32,7 +32,7 @@ This topic shows how to implement custom client and service credentials and how 
   
  Both the <xref:System.ServiceModel.Description.ClientCredentials> and the <xref:System.ServiceModel.Description.ServiceCredentials> classes inherit from the abstract <xref:System.ServiceModel.Security.SecurityCredentialsManager> class that defines the contract for returning the <xref:System.IdentityModel.Selectors.SecurityTokenManager>.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the credentials classes and how they fit into the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security architecture, see [Security Architecture](http://msdn.microsoft.com/en-us/16593476-d36a-408d-808c-ae6fd483e28f).  
+ [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the credentials classes and how they fit into the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security architecture, see [Security Architecture](http://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f).  
   
  The default implementations provided in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] support the system-provided credential types and create a security token manager that is capable of handling those credentials types.  
   

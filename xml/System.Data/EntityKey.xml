@@ -30,12 +30,12 @@
 ## Remarks  
  The <xref:System.Data.EntityKey> objects are immutable; that is, after they are constructed they cannot be modified.  
   
- For more information, see [Working with Entity Keys](http://msdn.microsoft.com/en-us/fe3f4206-d277-43a1-a72f-4e86fdf12b9f).  
+ For more information, see [Working with Entity Keys](http://msdn.microsoft.com/library/fe3f4206-d277-43a1-a72f-4e86fdf12b9f).  
   
    
   
 ## Examples  
- These examples are based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/en-us/f16cd988-673f-4376-b034-129ca93c7832). The examples show you how to create and use an <xref:System.Data.EntityKey>.  
+ These examples are based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). The examples show you how to create and use an <xref:System.Data.EntityKey>.  
   
  [!code-csharp[DP ObjectServices Concepts#EntityKeyClass_TryGetObjectByKey](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#entitykeyclass_trygetobjectbykey)]
  [!code-vb[DP ObjectServices Concepts#EntityKeyClass_TryGetObjectByKey](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#entitykeyclass_trygetobjectbykey)]  
@@ -85,7 +85,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- This example is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/en-us/f16cd988-673f-4376-b034-129ca93c7832). The example shows you how to create and use an <xref:System.Data.EntityKey>.  
+ This example is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). The example shows you how to create and use an <xref:System.Data.EntityKey>.  
   
  [!code-csharp[DP ObjectServices Concepts#AddObjectUsingKey](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#addobjectusingkey)]
  [!code-vb[DP ObjectServices Concepts#AddObjectUsingKey](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#addobjectusingkey)]  
@@ -137,7 +137,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- This example is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/en-us/f16cd988-673f-4376-b034-129ca93c7832). The example shows you how to create and use an <xref:System.Data.EntityKey>.  
+ This example is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). The example shows you how to create and use an <xref:System.Data.EntityKey>.  
   
  [!code-csharp[DP ObjectServices Concepts#AddObjectUsingKey](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#addobjectusingkey)]
  [!code-vb[DP ObjectServices Concepts#AddObjectUsingKey](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#addobjectusingkey)]  
@@ -465,7 +465,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Data.EntityKey.OnDeserialized%2A> is used by Object Services when deserializing an <xref:System.Data.EntityKey>. For more information, see [Serializing Objects](http://msdn.microsoft.com/en-us/06c77f9b-5b2e-4c78-b3e3-8c148ba0ea99).  
+ <xref:System.Data.EntityKey.OnDeserialized%2A> is used by Object Services when deserializing an <xref:System.Data.EntityKey>. For more information, see [Serializing Objects](http://msdn.microsoft.com/library/06c77f9b-5b2e-4c78-b3e3-8c148ba0ea99).  
   
  ]]></format>
         </remarks>
@@ -504,7 +504,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Data.EntityKey.OnDeserializing%2A> is used by Object Services when deserializing an <xref:System.Data.EntityKey>. For more information, see [Serializing Objects](http://msdn.microsoft.com/en-us/06c77f9b-5b2e-4c78-b3e3-8c148ba0ea99).  
+ <xref:System.Data.EntityKey.OnDeserializing%2A> is used by Object Services when deserializing an <xref:System.Data.EntityKey>. For more information, see [Serializing Objects](http://msdn.microsoft.com/library/06c77f9b-5b2e-4c78-b3e3-8c148ba0ea99).  
   
  ]]></format>
         </remarks>

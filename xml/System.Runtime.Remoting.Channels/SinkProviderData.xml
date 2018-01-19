@@ -22,7 +22,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The sink provider data is a tree structure of configuration information stored in the [\<provider> Element (Template)](http://msdn.microsoft.com/en-us/d3e67e16-8ca3-4b7f-b7a4-37e3e1a66364) configuration nodes. All sink providers must have a constructor that accepts a <xref:System.Collections.IDictionary> of properties and a <xref:System.Collections.ICollection> of these structures if they want to be used from a configuration file.  
+ The sink provider data is a tree structure of configuration information stored in the [\<provider> Element (Template)](http://msdn.microsoft.com/library/d3e67e16-8ca3-4b7f-b7a4-37e3e1a66364) configuration nodes. All sink providers must have a constructor that accepts a <xref:System.Collections.IDictionary> of properties and a <xref:System.Collections.ICollection> of these structures if they want to be used from a configuration file.  
   
    
   

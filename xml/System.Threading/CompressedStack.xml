@@ -153,7 +153,7 @@
  If security is enabled, the current compressed stack is returned. If security is disabled, <xref:System.Threading.CompressedStack.GetCompressedStack%2A> returns an empty <xref:System.Threading.CompressedStack> object.  
   
 > [!NOTE]
->  This method uses <xref:System.Security.Permissions.SecurityAction.LinkDemand?displayProperty=nameWithType> to prevent it from being called from untrusted code; only the immediate caller is required to have <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A?displayProperty=nameWithType> permission. For important limitations on using the `LinkDemand` member, see [Demand vs. LinkDemand](http://msdn.microsoft.com/en-us/1ab877f2-70f4-4e0d-8116-943999dfe8f5).  
+>  This method uses <xref:System.Security.Permissions.SecurityAction.LinkDemand?displayProperty=nameWithType> to prevent it from being called from untrusted code; only the immediate caller is required to have <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A?displayProperty=nameWithType> permission. For important limitations on using the `LinkDemand` member, see [Demand vs. LinkDemand](http://msdn.microsoft.com/library/1ab877f2-70f4-4e0d-8116-943999dfe8f5).  
   
 > [!NOTE]
 >  This member also makes a link demand for the ECMA public key, which is not a valid cryptographic key but a pseudo key. Within the .NET Framework the link demand for the ECMA pseudo key is automatically converted to a link demand for the Microsoft public key. The security exception is based on the Microsoft public key, not the ECMA pseudo key.  

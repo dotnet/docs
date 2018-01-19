@@ -78,7 +78,7 @@ Add-in pipeline
 ### Discovery and Activation  
  You can activate an add-in by using a token from a collection that represents the add-ins found from an information store. Add-ins are found by searching for the type that defines the host's view of the add-in. You can also find a specific add-in by the type that defines the add-in. The information store consists of two cache files: the pipeline store and the add-in store.  
   
- For information about updating and rebuilding the information store, see [Add-in Discovery](http://msdn.microsoft.com/en-us/5d268dde-11df-4c4d-a022-f58d88bbc421). For information about activating add-ins, see [Add-in Activation](http://msdn.microsoft.com/en-us/bedcbcdf-5964-4215-b5f3-3299798b2b3f) and [How to: Activate Add-ins with Different Isolation and Security](http://msdn.microsoft.com/en-us/7afe7ec8-5158-4350-9119-5df0ecab8aa5).  
+ For information about updating and rebuilding the information store, see [Add-in Discovery](http://msdn.microsoft.com/library/5d268dde-11df-4c4d-a022-f58d88bbc421). For information about activating add-ins, see [Add-in Activation](http://msdn.microsoft.com/library/bedcbcdf-5964-4215-b5f3-3299798b2b3f) and [How to: Activate Add-ins with Different Isolation and Security](http://msdn.microsoft.com/library/7afe7ec8-5158-4350-9119-5df0ecab8aa5).  
   
 ### Isolation Levels and External Processes  
  The add-in model supports several levels of isolation between an add-in and its host or between add-ins. Starting from the least isolated, these levels are as follows:  
@@ -93,10 +93,10 @@ Add-in pipeline
   
 -   Each add-in is loaded exclusively into its own application domain in an external process. This is the most isolated scenario.  
   
- For more information about using external processes, see [How to: Activate Add-ins with Different Isolation and Security](http://msdn.microsoft.com/en-us/7afe7ec8-5158-4350-9119-5df0ecab8aa5).  
+ For more information about using external processes, see [How to: Activate Add-ins with Different Isolation and Security](http://msdn.microsoft.com/library/7afe7ec8-5158-4350-9119-5df0ecab8aa5).  
   
 ### Lifetime Management  
- Because the add-in model spans application domain and process boundaries, garbage collection by itself is not sufficient to release and reclaim objects. The add-in model provides a lifetime management mechanism that uses tokens and reference counting, and usually does not require additional programming. For more information, see [Lifetime Management](http://msdn.microsoft.com/en-us/57a9c87e-394c-4fef-89f2-aa4223a2aeb5).  
+ Because the add-in model spans application domain and process boundaries, garbage collection by itself is not sufficient to release and reclaim objects. The add-in model provides a lifetime management mechanism that uses tokens and reference counting, and usually does not require additional programming. For more information, see [Lifetime Management](http://msdn.microsoft.com/library/57a9c87e-394c-4fef-89f2-aa4223a2aeb5).  
   
  [Back to top](#top)  
   
@@ -112,7 +112,7 @@ Add-in pipeline
 |Title|Description|  
 |-----------|-----------------|  
 |[Pipeline Development](../../../docs/framework/add-ins/pipeline-development.md)|Describes the communication pipeline of segments from the host application to the add-in. Provides code examples in walkthrough topics that describe how to construct the pipeline and how to deploy segments to the pipeline in [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)].|  
-|[Application Domains and Assemblies](http://msdn.microsoft.com/en-us/433b04ae-4ba8-4849-9dbd-79194f240346)|Describes the relationship between application domains, which provide an isolation boundary for security, reliability, and versioning, and assemblies.|  
+|[Application Domains and Assemblies](http://msdn.microsoft.com/library/433b04ae-4ba8-4849-9dbd-79194f240346)|Describes the relationship between application domains, which provide an isolation boundary for security, reliability, and versioning, and assemblies.|  
   
  [Back to top](#top)  
   

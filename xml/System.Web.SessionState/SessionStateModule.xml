@@ -108,7 +108,7 @@
   
  Though the <xref:System.Web.SessionState.SessionStateModule.End> event is public, you can only handle it by adding an event handler in the Global.asax file. This restriction is implemented because <xref:System.Web.HttpApplication> instances are reused for performance. When a session expires, only the **Session_OnEnd** event specified in the Global.asax file is executed, to prevent code from calling  an <xref:System.Web.SessionState.SessionStateModule.End> event handler associated with an <xref:System.Web.HttpApplication> instance that is currently in use.  
   
- For more information about the Global.asax file, see [Global.asax Syntax](http://msdn.microsoft.com/en-us/9ade9d4d-4d52-4e88-af52-53a9ffa26582).  
+ For more information about the Global.asax file, see [Global.asax Syntax](http://msdn.microsoft.com/library/9ade9d4d-4d52-4e88-af52-53a9ffa26582).  
   
    
   
@@ -173,12 +173,12 @@ public void Session_OnEnd()
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Web.HttpException">The <see langword="mode" /> attribute in the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) configuration element is set to <see cref="F:System.Web.SessionState.SessionStateMode.StateServer" /> or <see cref="F:System.Web.SessionState.SessionStateMode.SQLServer" />, and the ASP.NET application has less than <see cref="F:System.Web.AspNetHostingPermissionLevel.Medium" /> trust.</exception>
-        <exception cref="T:System.Configuration.ConfigurationErrorsException">The <see langword="mode" /> attribute in the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) configuration element is set to <see cref="F:System.Web.SessionState.SessionStateMode.Custom" /> and the <see langword="customProvider" /> attribute is empty or does not exist.  
+        <exception cref="T:System.Web.HttpException">The <see langword="mode" /> attribute in the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) configuration element is set to <see cref="F:System.Web.SessionState.SessionStateMode.StateServer" /> or <see cref="F:System.Web.SessionState.SessionStateMode.SQLServer" />, and the ASP.NET application has less than <see cref="F:System.Web.AspNetHostingPermissionLevel.Medium" /> trust.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The <see langword="mode" /> attribute in the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) configuration element is set to <see cref="F:System.Web.SessionState.SessionStateMode.Custom" /> and the <see langword="customProvider" /> attribute is empty or does not exist.  
   
  -or-  
   
- The <see langword="mode" /> attribute in the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) configuration element is set to <see cref="F:System.Web.SessionState.SessionStateMode.Custom" /> and the provider identified by name in the <see langword="customProvider" /> attribute has not been added to the [providers Element for sessionState (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/219d6778-9fb8-48ac-810d-bec68cf7d6aa) sub-element.</exception>
+ The <see langword="mode" /> attribute in the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) configuration element is set to <see cref="F:System.Web.SessionState.SessionStateMode.Custom" /> and the provider identified by name in the <see langword="customProvider" /> attribute has not been added to the [providers Element for sessionState (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/219d6778-9fb8-48ac-810d-bec68cf7d6aa) sub-element.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReleaseSessionState">
@@ -248,7 +248,7 @@ public void Session_OnEnd()
   
  You can specify a handler for the <xref:System.Web.SessionState.SessionStateModule.Start> event by adding a public subroutine named **Session_OnStart** to the Global.asax file.  
   
- For more information about the Global.asax file, see [Global.asax Syntax](http://msdn.microsoft.com/en-us/9ade9d4d-4d52-4e88-af52-53a9ffa26582).  
+ For more information about the Global.asax file, see [Global.asax Syntax](http://msdn.microsoft.com/library/9ade9d4d-4d52-4e88-af52-53a9ffa26582).  
   
    
   

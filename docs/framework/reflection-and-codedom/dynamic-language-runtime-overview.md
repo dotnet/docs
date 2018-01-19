@@ -1,13 +1,9 @@
 ---
 title: "Dynamic Language Runtime Overview | Microsoft Docs"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "dynamic language runtime"
@@ -49,10 +45,10 @@ The *dynamic language runtime* (DLR) is a runtime environment that adds a set of
   
  `scriptobj.Count += 1;`  
   
- Like the CLR, the DLR is a part of the .NET Framework and is provided with the .NET Framework and Visual Studio installation packages. The open-source version of the DLR is also available for download on the [CodePlex](http://go.microsoft.com/fwlink/?LinkId=141028) Web site.  
+ Like the CLR, the DLR is a part of the .NET Framework and is provided with the .NET Framework and Visual Studio installation packages. The open-source version of the DLR is also available for download on the [IronLanguages/dlr](https://github.com/IronLanguages/dlr) repo on GitHub.  
   
 > [!NOTE]
->  The open-source version of the DLR has all the features of the DLR that is included in Visual Studio and the .NET Framework. It also provides additional support for language implementers. For more information, see the documentation on the [CodePlex](http://go.microsoft.com/fwlink/?LinkId=141028) Web site.  
+>  The open-source version of the DLR has all the features of the DLR that is included in Visual Studio and the .NET Framework. It also provides additional support for language implementers. For more information, see the documentation on the [IronLanguages/dlr](https://github.com/IronLanguages/dlr) repo on GitHub. 
   
  Examples of languages developed by using the DLR include the following:  
   
@@ -95,7 +91,7 @@ DLR architecture
  The DLR uses binders in call sites to communicate not only with the .NET Framework, but with other infrastructures and services, including Silverlight and COM. Binders encapsulate a language's semantics and specify how to perform operations in a call site by using expression trees. This enables dynamic and statically typed languages that use the DLR to share libraries and gain access to all the technologies that the DLR supports.  
   
 ## DLR Documentation  
- For more information about how to use the open source version of the DLR to add dynamic behavior to a language, or about how to enable the use of a dynamic language with the .NET Framework, see the documentation on the [CodePlex](http://go.microsoft.com/fwlink/?LinkId=141028) Web site.  
+ For more information about how to use the open source version of the DLR to add dynamic behavior to a language, or about how to enable the use of a dynamic language with the .NET Framework, see the documentation on the [IronLanguages/dlr](https://github.com/IronLanguages/dlr/tree/master/Docs) repo on GitHub.  
   
 ## See Also  
  <xref:System.Dynamic.ExpandoObject>  

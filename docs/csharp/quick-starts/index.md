@@ -5,7 +5,7 @@ keywords: C#, Get Started, Lessons, Interactive
 author: billwagner
 ms.author: wiwagn
 ms.date: 09/18/2017
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp

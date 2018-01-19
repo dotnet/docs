@@ -102,7 +102,7 @@ Cross-apartment call between a .NET client and COM object
     > [!NOTE]
     >  Once the thread of a C# client is set to STA, calls to MTA COM components will require cross-apartment marshaling.  
   
- For instructions on explicitly selecting an apartment model, see [Managed and Unmanaged Threading](http://msdn.microsoft.com/en-us/db425c20-4b2f-4433-bf96-76071c7881e5).  
+ For instructions on explicitly selecting an apartment model, see [Managed and Unmanaged Threading](http://msdn.microsoft.com/library/db425c20-4b2f-4433-bf96-76071c7881e5).  
   
  [Back to top](#top)  
   
@@ -142,7 +142,7 @@ Reference passing across process and host boundaries
  ![SOAP or TcpChannel](../../../docs/framework/interop/media/interopremotesoap.gif "interopremotesoap")  
 Remote calls across firewalls using SOAP or the TcpChannel class  
   
- Some unmanaged calls can be channeled through SOAP, such as the calls between [serviced components](http://msdn.microsoft.com/en-us/f109ee24-81ad-4d99-9892-51ac6f34978c) and COM.  
+ Some unmanaged calls can be channeled through SOAP, such as the calls between [serviced components](http://msdn.microsoft.com/library/f109ee24-81ad-4d99-9892-51ac6f34978c) and COM.  
   
  [Back to top](#top)  
   
@@ -156,10 +156,10 @@ Remote calls across firewalls using SOAP or the TcpChannel class
 |[Marshaling Data with COM Interop](../../../docs/framework/interop/marshaling-data-with-com-interop.md)|Describes how to customize COM wrappers to alter marshaling behavior.|  
 |[How to: Migrate Managed-Code DCOM to WCF](../../../docs/framework/interop/how-to-migrate-managed-code-dcom-to-wcf.md)|Describes how to migrate from DCOM to WCF.|  
 |[How to: Map HRESULTs and Exceptions](../../../docs/framework/interop/how-to-map-hresults-and-exceptions.md)|Describes how to map custom exceptions to HRESULTs and provides the complete mapping from each HRESULT to its comparable exception class in the .NET Framework.|  
-|[Interoperating Using Generic Types](http://msdn.microsoft.com/en-us/26b88e03-085b-4b53-94ba-a5a9c709ce58)|Describes which actions are supported when using generic types for COM interoperability.|  
+|[Interoperating Using Generic Types](http://msdn.microsoft.com/library/26b88e03-085b-4b53-94ba-a5a9c709ce58)|Describes which actions are supported when using generic types for COM interoperability.|  
 |[Interoperating with Unmanaged Code](../../../docs/framework/interop/index.md)|Describes interoperability services provided by the common language runtime.|  
-|[Advanced COM Interoperability](http://msdn.microsoft.com/en-us/3ada36e5-2390-4d70-b490-6ad8de92f2fb)|Provides links to more information about incorporating COM components into your .NET Framework application.|  
-|[Design Considerations for Interoperation](http://msdn.microsoft.com/en-us/b59637f6-fe35-40d6-ae72-901e7a707689)|Provides tips for writing integrated COM components.|  
+|[Advanced COM Interoperability](http://msdn.microsoft.com/library/3ada36e5-2390-4d70-b490-6ad8de92f2fb)|Provides links to more information about incorporating COM components into your .NET Framework application.|  
+|[Design Considerations for Interoperation](http://msdn.microsoft.com/library/b59637f6-fe35-40d6-ae72-901e7a707689)|Provides tips for writing integrated COM components.|  
   
  [Back to top](#top)  
   

@@ -21,4 +21,4 @@ You have attempted to use `StrConv.LinguisticCasing`, which is only valid in com
   
 ## See Also  
    
- [StrConv Constant Changes in Visual Basic .NET](http://msdn.microsoft.com/en-us/7a8c2781-2716-40dd-90c1-96c1548516e2)
+ [StrConv Constant Changes in Visual Basic .NET](http://msdn.microsoft.com/library/7a8c2781-2716-40dd-90c1-96c1548516e2)

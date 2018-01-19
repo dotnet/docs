@@ -97,7 +97,7 @@ This section describes the best practices to follow when developing world-ready 
   
 4.  Specify the values for the requestEncoding, responseEncoding, fileEncoding, culture, and uiCulture attributes in the following three places in an ASP.NET application:  
   
-    -   In the globalization section of a Web.config file. This file is external to the ASP.NET application. For more information, see [\<globalization> Element](http://msdn.microsoft.com/en-us/e2dffc8e-ebd2-439b-a2fd-e3ac5e620da7).  
+    -   In the globalization section of a Web.config file. This file is external to the ASP.NET application. For more information, see [\<globalization> Element](http://msdn.microsoft.com/library/e2dffc8e-ebd2-439b-a2fd-e3ac5e620da7).  
   
     -   In a page directive. Note that, when an application is in a page, the file has already been read. Therefore, it is too late to specify fileEncoding and requestEncoding. Only uiCulture, Culture, and responseEncoding can be specified in a page directive.  
   

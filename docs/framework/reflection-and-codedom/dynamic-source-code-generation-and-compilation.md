@@ -57,5 +57,5 @@ The .NET Framework includes a mechanism called the Code Document Object Model (C
  Defines interfaces for generating and compiling code at run time.  
   
 ## Related Sections  
- [CodeDOM Quick Reference](http://msdn.microsoft.com/en-us/c77b8bfd-0a32-4e36-b59a-4f687f32c524)  
+ [CodeDOM Quick Reference](http://msdn.microsoft.com/library/c77b8bfd-0a32-4e36-b59a-4f687f32c524)  
  Provides a quick way for developers to find the CodeDOM elements that represent source code elements.

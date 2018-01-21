@@ -17,7 +17,7 @@ author: "BillWagner"
 ms.author: "wiwagn"
 ---
 # -lib (C# Compiler Options)
-The **-lib** option specifies the location of assemblies referenced by means of the [/reference (C# Compiler Options)](../../../csharp/language-reference/compiler-options/reference-compiler-option.md) option.  
+The **-lib** option specifies the location of assemblies referenced by means of the [-reference (C# Compiler Options)](../../../csharp/language-reference/compiler-options/reference-compiler-option.md) option.  
   
 ## Syntax  
   

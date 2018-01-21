@@ -42,7 +42,7 @@ The **-warnaserror+** option treats all warnings as errors
   
 3.  Modify the **Treat Warnings As Errors** property.  
   
-     To set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.TreatWarningsAsErrors%2A>.  
+ To set this compiler option programmatically, see [CSharpProjectConfigurationProperties3.TreatWarningsAsErrors Property](/dotnet/api/vslangproj80.csharpprojectconfigurationproperties3.treatwarningsaserrors).  
   
 ## Example  
  Compile `in.cs` and have the compiler display no warnings:  

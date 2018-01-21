@@ -42,7 +42,7 @@ In other cases you may be combining strings in a loop, where you don't know how 
   
 [!code-csharp-interactive[string concatenation using string builder](../../../samples/snippets/csharp/how-to/strings/Concatenate.cs#4)]  
 
-You can read more about the [reasons to choose string concatenation or the `StringBuilder` class](xref:System.Text.StringBsuilder#stringAndSB)
+You can read more about the [reasons to choose string concatenation or the `StringBuilder` class](xref:System.Text.StringBuilder#stringAndSB)
 
 Another option to join strings from a collection is to use [LINQ](../programming-guide/concepts/linq/index.md)
 and the <xref:System.Linq.Enumerable.Aggregate%2A?displayProperty=nameWithType> method. This method combines 

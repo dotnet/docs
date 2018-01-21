@@ -227,7 +227,7 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about the semantic markup language (SML), see the [Semantic Markup Language Reference](http://msdn.microsoft.com/en-us/f9d83443-2cac-49bc-a447-210feda62f5d).  
+ For information about the semantic markup language (SML), see the [Semantic Markup Language Reference](http://msdn.microsoft.com/library/f9d83443-2cac-49bc-a447-210feda62f5d).  
   
    
   
@@ -382,7 +382,7 @@ private string GetSemanticsSML(RecognizedPhrase result)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A speech recognition grammar can include semantic information. When a speech recognizer generates a recognition result for such a grammar, the semantic information might be included in the recognition result, according to the rules of the grammar and the input to the recognizer. For more information about semantic information, see [Understanding Semantic Results](http://msdn.microsoft.com/en-us/2a9dbd8b-cf6d-42cd-bbb9-ca0b3e534005) and the <xref:System.Speech.Recognition.SemanticResultKey> and <xref:System.Speech.Recognition.SemanticResultValue> classes.  
+ A speech recognition grammar can include semantic information. When a speech recognizer generates a recognition result for such a grammar, the semantic information might be included in the recognition result, according to the rules of the grammar and the input to the recognizer. For more information about semantic information, see [Understanding Semantic Results](http://msdn.microsoft.com/library/2a9dbd8b-cf6d-42cd-bbb9-ca0b3e534005) and the <xref:System.Speech.Recognition.SemanticResultKey> and <xref:System.Speech.Recognition.SemanticResultValue> classes.  
   
    
   

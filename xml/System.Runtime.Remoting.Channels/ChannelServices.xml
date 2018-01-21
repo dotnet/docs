@@ -24,7 +24,7 @@
 ## Remarks  
  Channels transport messages between applications across such remoting boundaries as application domains, processes, and computers. These crossings can be inbound and outbound. A channel can listen on an endpoint for inbound messages, send to an endpoint for outbound messages, or both. This provides an extensibility point in the runtime to plug in a wide range of protocols, even though the runtime might not be at the other end of the channel. Run-time objects can be used to expose a wide range of semantics and entities. The channel provides the extensibility point to convert the messages to and from the specific protocols.  
   
- Channels must expose the <xref:System.Runtime.Remoting.Channels.IChannel> interface, which provides informational properties such as the <xref:System.Runtime.Remoting.Channels.IChannel.ChannelName%2A> and <xref:System.Runtime.Remoting.Channels.IChannel.ChannelPriority%2A>. Channels are registered using the <xref:System.Runtime.Remoting.Channels.ChannelServices.RegisterChannel%2A?displayProperty=nameWithType> method. Channels can also be loaded from the remoting configuration. (See [\<channel> Element (Template)](http://msdn.microsoft.com/en-us/73399d48-f0fd-46e9-828b-6cdafde5ffce) for details.)  
+ Channels must expose the <xref:System.Runtime.Remoting.Channels.IChannel> interface, which provides informational properties such as the <xref:System.Runtime.Remoting.Channels.IChannel.ChannelName%2A> and <xref:System.Runtime.Remoting.Channels.IChannel.ChannelPriority%2A>. Channels are registered using the <xref:System.Runtime.Remoting.Channels.ChannelServices.RegisterChannel%2A?displayProperty=nameWithType> method. Channels can also be loaded from the remoting configuration. (See [\<channel> Element (Template)](http://msdn.microsoft.com/library/73399d48-f0fd-46e9-828b-6cdafde5ffce) for details.)  
   
  On the client side, messages are handed off to the client channel sink chain after they traverse the client <xref:System.Runtime.Remoting.Contexts.Context> chain. The first channel sink is typically a <xref:System.Runtime.Remoting.Channels.IClientFormatterSink>, which serializes the message into a stream that is passed down the channel sink chain to the client transport sink. The client transport sink then writes this stream out to the wire.  
   
@@ -271,7 +271,7 @@
   
  You cannot register two channels with the same name in a <xref:System.AppDomain>. By default, the name of a <xref:System.Runtime.Remoting.Channels.Http.HttpChannel> is "http" and the name of a <xref:System.Runtime.Remoting.Channels.Tcp.TcpChannel> is "tcp." Therefore, if you want to register two channels of the same type, you must specify a different name for one of them through configuration properties.  
   
- For more information about channel configuration properties, see <xref:System.Runtime.Remoting.Channels.Http.HttpChannel>, and [\<channel> Element (Template)](http://msdn.microsoft.com/en-us/73399d48-f0fd-46e9-828b-6cdafde5ffce).  
+ For more information about channel configuration properties, see <xref:System.Runtime.Remoting.Channels.Http.HttpChannel>, and [\<channel> Element (Template)](http://msdn.microsoft.com/library/73399d48-f0fd-46e9-828b-6cdafde5ffce).  
   
    
   
@@ -318,7 +318,7 @@
   
  You cannot register two channels with the same name in a <xref:System.AppDomain>. By default, the name of a <xref:System.Runtime.Remoting.Channels.Http.HttpChannel> is "http" and the name of a <xref:System.Runtime.Remoting.Channels.Tcp.TcpChannel> is "tcp". Therefore, if you want to register two channels of the same type, you must specify a different name for one of them through configuration properties.  
   
- For more information about channel configuration properties, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/en-us/226ecf74-ebbd-4ea0-a701-dcf4441deefe) and [\<channel> Element (Template)](http://msdn.microsoft.com/en-us/73399d48-f0fd-46e9-828b-6cdafde5ffce).  
+ For more information about channel configuration properties, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/library/226ecf74-ebbd-4ea0-a701-dcf4441deefe) and [\<channel> Element (Template)](http://msdn.microsoft.com/library/73399d48-f0fd-46e9-828b-6cdafde5ffce).  
   
  If the `ensureSecurity` parameter is set to `true`, the remoting system determines whether the channel implements <xref:System.Runtime.Remoting.Channels.ISecurableChannel>, and if so, enables encryption and digital signatures. An exception is thrown if the channel does not implement <xref:System.Runtime.Remoting.Channels.ISecurableChannel>.  
   

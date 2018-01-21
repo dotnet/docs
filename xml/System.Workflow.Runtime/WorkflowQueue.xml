@@ -32,7 +32,7 @@
 ## Examples  
  The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.WorkflowQueue> by calling the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A?displayProperty=nameWithType> method. It also uses the <xref:System.Workflow.Runtime.WorkflowQueue.Count%2A> property to determine whether any messages exist in the current queue. Finally, the code uses the <xref:System.Workflow.Runtime.WorkflowQueue.Dequeue%2A> method to remove and return the first object in the queue.  
   
- This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/library/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
   
  [!code-csharp[WF_Samples#227](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#227)]
  [!code-vb[WF_Samples#227](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#227)]  
@@ -62,7 +62,7 @@
 ## Examples  
  The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.WorkflowQueue> by calling the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A?displayProperty=nameWithType> method. It also uses the <xref:System.Workflow.Runtime.WorkflowQueue.Count%2A> property to determine whether any messages exist in the current queue. Finally, the code uses the <xref:System.Workflow.Runtime.WorkflowQueue.Dequeue%2A> method to remove and return the first object in the queue.  
   
- This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/library/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
   
  [!code-csharp[WF_Samples#227](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#227)]
  [!code-vb[WF_Samples#227](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#227)]  
@@ -98,7 +98,7 @@
 ## Examples  
  The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.WorkflowQueue> by calling the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A?displayProperty=nameWithType> method. It also uses the <xref:System.Workflow.Runtime.WorkflowQueue.Count%2A> property to determine whether any messages exist in the current queue. Finally, the code uses the <xref:System.Workflow.Runtime.WorkflowQueue.Dequeue%2A> method to remove and return the first object in the queue.  
   
- This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/library/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
   
  [!code-csharp[WF_Samples#227](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#227)]
  [!code-vb[WF_Samples#227](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#227)]  
@@ -329,7 +329,7 @@
 ## Examples  
  The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.WorkflowQueue> by calling the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A?displayProperty=nameWithType> method. It also uses the <xref:System.Workflow.Runtime.WorkflowQueue.RegisterForQueueItemAvailable%2A> to register the specified listener.  
   
- This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/library/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
   
  [!code-csharp[WF_Samples#225](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#225)]
  [!code-vb[WF_Samples#225](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#225)]  
@@ -426,7 +426,7 @@
 ## Examples  
  The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.WorkflowQueue> by calling the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A?displayProperty=nameWithType> method. It also uses the <xref:System.Workflow.Runtime.WorkflowQueue.UnregisterForQueueItemAvailable%2A> to unregister the specified listener.  
   
- This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/library/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
   
  [!code-csharp[WF_Samples#226](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#226)]
  [!code-vb[WF_Samples#226](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#226)]  

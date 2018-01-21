@@ -140,7 +140,7 @@
         <ReturnType>System.Security.Permissions.SecurityAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ability to access the resource specified by the current permission object is denied to callers, even if they have been granted permission to access it (see [Using the Deny Method](http://msdn.microsoft.com/en-us/6b4d2e01-c504-4ac3-b50e-d6f5e7f5df25)).</summary>
+        <summary>The ability to access the resource specified by the current permission object is denied to callers, even if they have been granted permission to access it (see [Using the Deny Method](http://msdn.microsoft.com/library/6b4d2e01-c504-4ac3-b50e-d6f5e7f5df25)).</summary>
       </Docs>
     </Member>
     <Member MemberName="InheritanceDemand">

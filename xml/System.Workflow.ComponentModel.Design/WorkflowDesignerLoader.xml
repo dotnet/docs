@@ -115,7 +115,7 @@
    
   
 ## Examples  
- The following example demonstrates an implementation of the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.Dispose%2A> method. In this implementation, various services that have been added to the LoaderHost object are removed in preparation for closing the application. This example is from the Tracking Profile Designer SDK sample. For more information, see [Tracking Profile Designer Sample](http://msdn.microsoft.com/en-us/a280199c-3000-4148-ac63-cb5aaeac07c8).  
+ The following example demonstrates an implementation of the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.Dispose%2A> method. In this implementation, various services that have been added to the LoaderHost object are removed in preparation for closing the application. This example is from the Tracking Profile Designer SDK sample. For more information, see [Tracking Profile Designer Sample](http://msdn.microsoft.com/library/a280199c-3000-4148-ac63-cb5aaeac07c8).  
   
  [!code-csharp[WF_Samples#121](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#121)]
  [!code-vb[WF_Samples#121](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#121)]  

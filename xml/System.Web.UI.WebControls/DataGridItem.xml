@@ -32,7 +32,7 @@
  The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.DataGridItem> object to display the contents of each data item in the <xref:System.Web.UI.WebControls.DataGrid> control.  
   
 > [!NOTE]
->  The following code example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+>  The following code example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  [!code-aspx-csharp[DataGridItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridItemDataBound/CS/datagriditemdataboundcs.aspx#1)]
  [!code-aspx-vb[DataGridItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridItemDataBound/VB/datagriditemdataboundvb.aspx#1)]  
@@ -196,7 +196,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridItem.ItemIndex%2A> property to display the index of the <xref:System.Web.UI.WebControls.DataGridItem> object from the <xref:System.Web.UI.WebControls.DataGrid.Items%2A> collection of the <xref:System.Web.UI.WebControls.DataGrid> control.  
   
 > [!NOTE]
->  The following code example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+>  The following code example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  [!code-aspx-csharp[Classic DataGridItem.ItemIndex Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridItem.ItemIndex Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic DataGridItem.ItemIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridItem.ItemIndex Example/VB/sourcevb.aspx#1)]  
@@ -246,7 +246,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridItem.ItemType%2A> property to determine the type of an item in the <xref:System.Web.UI.WebControls.DataGrid> control. The order in which items are created in the <xref:System.Web.UI.WebControls.DataGrid> control is displayed along with the item type.  
   
 > [!NOTE]
->  The following code example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+>  The following code example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  [!code-aspx-csharp[DataGridItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridItemDataBound/CS/datagriditemdataboundcs.aspx#1)]
  [!code-aspx-vb[DataGridItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridItemDataBound/VB/datagriditemdataboundvb.aspx#1)]  

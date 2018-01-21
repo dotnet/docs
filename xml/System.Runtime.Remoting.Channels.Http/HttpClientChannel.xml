@@ -31,7 +31,7 @@
   
  By default, the <xref:System.Runtime.Remoting.Channels.Http.HttpServerChannel> uses a SOAP formatter to serialize all messages.  
   
- A <xref:System.Runtime.Remoting.Channels.Http.HttpClientChannel> object has associated configuration properties that can be set at run time either in a configuration file (by invoking the static <xref:System.Runtime.Remoting.RemotingConfiguration.Configure%2A?displayProperty=nameWithType> method) or programmatically (by passing a <xref:System.Collections.IDictionary> collection to the <xref:System.Runtime.Remoting.Channels.Http.HttpClientChannel.%23ctor%2A> constructor). For a list of these configuration properties, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/en-us/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
+ A <xref:System.Runtime.Remoting.Channels.Http.HttpClientChannel> object has associated configuration properties that can be set at run time either in a configuration file (by invoking the static <xref:System.Runtime.Remoting.RemotingConfiguration.Configure%2A?displayProperty=nameWithType> method) or programmatically (by passing a <xref:System.Collections.IDictionary> collection to the <xref:System.Runtime.Remoting.Channels.Http.HttpClientChannel.%23ctor%2A> constructor). For a list of these configuration properties, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/library/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
   
    
   
@@ -106,7 +106,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about channel configuration properties, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/en-us/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
+ For more information about channel configuration properties, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/library/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
   
  If you do not require sink functionality, set the `sinkProvider` parameter to `null`.  
   
@@ -319,7 +319,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Channel properties are used to configure the channel at run time. For a list of possible channel properties and an example, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/en-us/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
+ Channel properties are used to configure the channel at run time. For a list of possible channel properties and an example, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/library/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
   
    
   

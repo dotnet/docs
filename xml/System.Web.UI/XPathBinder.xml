@@ -20,7 +20,7 @@
   
  You can use a simplified version of data-binding syntax when using the <xref:System.Web.UI.XPathBinder> methods declaratively. Instead of calling `XPathBinder.Eval`(`Container.DataItem`, `xpath`) you can use `XPath`(`xpath`). Similarly, instead of calling `XPathBinder.Select`(`Container.DataItem`,`xpath`), you can use `XPathSelect`(`xpath`) to retrieve an <xref:System.Collections.IEnumerable> set of nodes. When using this simplified syntax, the <xref:System.Web.UI.XPathBinder.Eval%2A> and <xref:System.Web.UI.XPathBinder.Select%2A> methods assume a default `Container.DataItem` context object.  
   
- For more information about data binding to ASP.NET server controls, see [Data-Binding Expression Syntax](http://msdn.microsoft.com/en-us/676beb1d-ddfa-4153-bba8-3c86dcb7ceca).  
+ For more information about data binding to ASP.NET server controls, see [Data-Binding Expression Syntax](http://msdn.microsoft.com/library/676beb1d-ddfa-4153-bba8-3c86dcb7ceca).  
   
    
   

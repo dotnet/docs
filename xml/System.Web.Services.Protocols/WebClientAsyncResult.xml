@@ -23,7 +23,7 @@
 ## Remarks  
  When you call the `BeginMyMethodName` method, where `MyMethodName` is the synchronous version of the method, on an XML Web service proxy class, an instance of the <xref:System.Web.Services.Protocols.WebClientAsyncResult> is returned. Following the standard asynchronous design pattern, that instance of <xref:System.Web.Services.Protocols.WebClientAsyncResult> must later be passed to `EndMyMethodName` to complete the asynchronous method call.  
   
- For details on calling XML Web services asynchronously, see [&#91;\<topic://cpconInvokingWebServicesAsynchronously>&#93;](http://msdn.microsoft.com/en-us/f9e26a43-063a-440a-8c73-a02f2ccf3ea0).  
+ For details on calling XML Web services asynchronously, see [&#91;\<topic://cpconInvokingWebServicesAsynchronously>&#93;](http://msdn.microsoft.com/library/f9e26a43-063a-440a-8c73-a02f2ccf3ea0).  
   
  ]]></format>
     </remarks>

@@ -16,13 +16,13 @@ caps.latest.revision: 24
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
-# /nowarn (C# Compiler Options)
-The **/nowarn** option lets you suppress the compiler from displaying one or more warnings. Separate multiple warning numbers with a comma.  
+# -nowarn (C# Compiler Options)
+The **-nowarn** option lets you suppress the compiler from displaying one or more warnings. Separate multiple warning numbers with a comma.  
   
 ## Syntax  
   
 ```console  
-/nowarn:number1[,number2,...]  
+-nowarn:number1[,number2,...]  
 ```  
   
 ## Arguments  
@@ -30,11 +30,11 @@ The **/nowarn** option lets you suppress the compiler from displaying one or mor
  Warning number(s) that you want the compiler to suppress.  
   
 ## Remarks  
- You should only specify the numeric part of the warning identifier. For example, if you want to suppress CS0028, you could specify `/nowarn:28`.  
+ You should only specify the numeric part of the warning identifier. For example, if you want to suppress CS0028, you could specify `-nowarn:28`.  
   
- The compiler will silently ignore warning numbers passed to `/nowarn` that were valid in previous releases, but that have been removed from the compiler. For example, CS0679 was valid in the compiler in Visual Studio .NET 2002 but was subsequently removed.  
+ The compiler will silently ignore warning numbers passed to `-nowarn` that were valid in previous releases, but that have been removed from the compiler. For example, CS0679 was valid in the compiler in Visual Studio .NET 2002 but was subsequently removed.  
   
- The following warnings cannot be suppressed by the `/nowarn` option:  
+ The following warnings cannot be suppressed by the `-nowarn` option:  
   
 -   Compiler Warning (level 1) CS2002  
   

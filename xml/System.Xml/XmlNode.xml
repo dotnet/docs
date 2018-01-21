@@ -2224,7 +2224,7 @@ nodeList = root.SelectNodes("//book[contains(title,""'Emma'"")]")
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix. See [XPath Examples](http://msdn.microsoft.com/en-us/1431789e-c545-4765-8c09-3057e07d3041).</exception>
+        <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix. See [XPath Examples](http://msdn.microsoft.com/library/1431789e-c545-4765-8c09-3057e07d3041).</exception>
         <altmember cref="M:System.Xml.XmlNode.SelectSingleNode(System.String)" />
       </Docs>
     </Member>
@@ -2254,7 +2254,7 @@ nodeList = root.SelectNodes("//book[contains(title,""'Emma'"")]")
         <Parameter Name="nsmgr" Type="System.Xml.XmlNamespaceManager" />
       </Parameters>
       <Docs>
-        <param name="xpath">The XPath expression. See [XPath Examples](http://msdn.microsoft.com/en-us/1431789e-c545-4765-8c09-3057e07d3041).</param>
+        <param name="xpath">The XPath expression. See [XPath Examples](http://msdn.microsoft.com/library/1431789e-c545-4765-8c09-3057e07d3041).</param>
         <param name="nsmgr">An <see cref="T:System.Xml.XmlNamespaceManager" /> to use for resolving namespaces for prefixes in the XPath expression.</param>
         <summary>Selects a list of nodes matching the XPath expression. Any prefixes found in the XPath expression are resolved using the supplied <see cref="T:System.Xml.XmlNamespaceManager" />.</summary>
         <returns>An <see cref="T:System.Xml.XmlNodeList" /> containing a collection of nodes matching the XPath query.</returns>
@@ -2387,7 +2387,7 @@ nodeList = root.SelectNodes("//ab:book[contains(ab:title,""'Emma'"")]", nsmgr)
         <Parameter Name="xpath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="xpath">The XPath expression. See [XPath Examples](http://msdn.microsoft.com/en-us/1431789e-c545-4765-8c09-3057e07d3041).</param>
+        <param name="xpath">The XPath expression. See [XPath Examples](http://msdn.microsoft.com/library/1431789e-c545-4765-8c09-3057e07d3041).</param>
         <summary>Selects the first <see langword="XmlNode" /> that matches the XPath expression.</summary>
         <returns>The first <see langword="XmlNode" /> that matches the XPath query or <see langword="null" /> if no matching node is found.</returns>
         <remarks>
@@ -2465,7 +2465,7 @@ book = root.SelectSingleNode("descendant::book[title=""'Emma'""]")
         <Parameter Name="nsmgr" Type="System.Xml.XmlNamespaceManager" />
       </Parameters>
       <Docs>
-        <param name="xpath">The XPath expression. See [XPath Examples](http://msdn.microsoft.com/en-us/1431789e-c545-4765-8c09-3057e07d3041).</param>
+        <param name="xpath">The XPath expression. See [XPath Examples](http://msdn.microsoft.com/library/1431789e-c545-4765-8c09-3057e07d3041).</param>
         <param name="nsmgr">An <see cref="T:System.Xml.XmlNamespaceManager" /> to use for resolving namespaces for prefixes in the XPath expression.</param>
         <summary>Selects the first <see langword="XmlNode" /> that matches the XPath expression. Any prefixes found in the XPath expression are resolved using the supplied <see cref="T:System.Xml.XmlNamespaceManager" />.</summary>
         <returns>The first <see langword="XmlNode" /> that matches the XPath query or <see langword="null" /> if no matching node is found.</returns>

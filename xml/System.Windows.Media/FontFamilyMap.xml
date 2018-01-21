@@ -172,7 +172,7 @@
 ## Remarks  
  Each Unicode code point range is represented by the first and last code point in the range, for example, `"0000-00ff"`. The string of Unicode code point ranges is delimited by a comma, for example, `"0000-00ff, 00e0-00ef"`.  
   
- A code page is a list of selected character codes (characters represented as code points) in a certain order. Code pages are usually defined to support specific languages or groups of languages that share common writing systems. Windows code pages contain 256 code points and are zero-based. In most code pages, the code points 0 through 127 represent the same characters. This allows for continuity and legacy code. The code points 128 through 255 differ significantly between code pages. For more information, see [Encoding Support for Code Pages](http://msdn.microsoft.com/en-us/5db4c290-41d5-41f5-a7e6-3ab0f4bfafae).  
+ A code page is a list of selected character codes (characters represented as code points) in a certain order. Code pages are usually defined to support specific languages or groups of languages that share common writing systems. Windows code pages contain 256 code points and are zero-based. In most code pages, the code points 0 through 127 represent the same characters. This allows for continuity and legacy code. The code points 128 through 255 differ significantly between code pages. For more information, see [Encoding Support for Code Pages](http://msdn.microsoft.com/library/5db4c290-41d5-41f5-a7e6-3ab0f4bfafae).  
   
    
   

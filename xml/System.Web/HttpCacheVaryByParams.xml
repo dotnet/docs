@@ -90,7 +90,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting the <xref:System.Web.HttpCacheVaryByParams.IgnoreParams%2A> property to `true` is equivalent to setting the [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive `VaryByParams` attribute to "none" for the resource.  
+ Setting the <xref:System.Web.HttpCacheVaryByParams.IgnoreParams%2A> property to `true` is equivalent to setting the [@ OutputCache](http://msdn.microsoft.com/library/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive `VaryByParams` attribute to "none" for the resource.  
   
  ]]></format>
         </remarks>

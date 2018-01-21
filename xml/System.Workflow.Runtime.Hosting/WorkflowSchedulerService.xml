@@ -50,7 +50,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example demonstrates creating an instance of a <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> object (that inherits from <xref:System.Workflow.Runtime.Hosting.WorkflowPersistenceService>) and adding it to the runtime. This example is from the Nested Exception Handlers SDK sample, from the Program.cs file. For more information, see [Nested Exception Handlers Sample](http://msdn.microsoft.com/en-us/d1da0209-842b-41c8-9b7c-0cbaa1034265).  
+ The following example demonstrates creating an instance of a <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> object (that inherits from <xref:System.Workflow.Runtime.Hosting.WorkflowPersistenceService>) and adding it to the runtime. This example is from the Nested Exception Handlers SDK sample, from the Program.cs file. For more information, see [Nested Exception Handlers Sample](http://msdn.microsoft.com/library/d1da0209-842b-41c8-9b7c-0cbaa1034265).  
   
  [!code-csharp[WF_Samples#161](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#161)]
  [!code-vb[WF_Samples#161](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#161)]  

@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Apply the <xref:System.ServiceModel.ServiceBehaviorAttribute> attribute to a service implementation to specify service-wide execution behavior. (To specify execution behavior at the method level, use the <xref:System.ServiceModel.OperationBehaviorAttribute> attribute.) This attribute can be applied only to service implementations. For working examples, see the [Service Behaviors Samples](http://msdn.microsoft.com/en-us/4e3c6513-a7ff-4b35-8dcf-b5506c6f39a7).  
+ Apply the <xref:System.ServiceModel.ServiceBehaviorAttribute> attribute to a service implementation to specify service-wide execution behavior. (To specify execution behavior at the method level, use the <xref:System.ServiceModel.OperationBehaviorAttribute> attribute.) This attribute can be applied only to service implementations. For working examples, see the [Service Behaviors Samples](http://msdn.microsoft.com/library/4e3c6513-a7ff-4b35-8dcf-b5506c6f39a7).  
   
  <xref:System.ServiceModel.ServiceBehaviorAttribute> properties are a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model feature that enables common features that developers otherwise have to implement. For more information about these and other behaviors, see [Specifying Service Run-Time Behavior](~/docs/framework/wcf/specifying-service-run-time-behavior.md). For more information about the underlying runtime properties that some of the following properties set, see [Extending ServiceHost and the Service Model Layer](~/docs/framework/wcf/extending/extending-servicehost-and-the-service-model-layer.md).  
   

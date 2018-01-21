@@ -266,7 +266,7 @@
  This method ignores the `inherit` parameter for properties and events. To search the inheritance chain for attributes on properties and events, use the appropriate overloads of the <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
->  In the .NET Framework version 2.0, this method returns security attributes on methods, constructors, and types if they are stored in the new metadata format. Assemblies compiled with version 2.0 use this format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/en-us/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
+>  In the .NET Framework version 2.0, this method returns security attributes on methods, constructors, and types if they are stored in the new metadata format. Assemblies compiled with version 2.0 use this format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/library/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
   
    
   
@@ -323,7 +323,7 @@
  This method ignores the `inherit` parameter for properties and events. To search the inheritance chain for attributes on properties and events, use the appropriate overloads of the <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
->  In the .NET Framework version 2.0, this method returns security attributes on methods, constructors, and types if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 use this format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/en-us/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
+>  In the .NET Framework version 2.0, this method returns security attributes on methods, constructors, and types if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 use this format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/library/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
   
    
   
@@ -450,7 +450,7 @@
  This method ignores the `inherit` parameter for properties and events. To search the inheritance chain for attributes on properties and events, use the appropriate overloads of the <xref:System.Attribute.IsDefined%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
->  In the .NET Framework version 2.0, this method returns `true` if a type, method, or constructor has security attributes stored in the new metadata format. Assemblies compiled with version 2.0 use this format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/en-us/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
+>  In the .NET Framework version 2.0, this method returns `true` if a type, method, or constructor has security attributes stored in the new metadata format. Assemblies compiled with version 2.0 use this format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/library/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
   
    
   
@@ -547,7 +547,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The tokens obtained using this property can be passed to the unmanaged reflection API. For more information, please see [Unmanaged Reflection API](http://msdn.microsoft.com/en-us/0c5bb9de-0cf6-438d-ba47-134e6c775fb8).  
+ The tokens obtained using this property can be passed to the unmanaged reflection API. For more information, please see [Unmanaged Reflection API](http://msdn.microsoft.com/library/0c5bb9de-0cf6-438d-ba47-134e6c775fb8).  
   
 > [!NOTE]
 >  Using the unmanaged reflection API requires familiarity with the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics" and "Partition III: CIL Instruction Set". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  

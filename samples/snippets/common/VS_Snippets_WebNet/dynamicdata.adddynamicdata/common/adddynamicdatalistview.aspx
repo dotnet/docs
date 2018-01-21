@@ -20,14 +20,14 @@
     
     <div class="ExampleView"> 
      This example shows how to add dynamic behavior to the 
-     <code><a href="http://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.listview.aspx" 
+     <code><a href="http://msdn.microsoft.com/library/system.web.ui.webcontrols.listview.aspx" 
         target="_blank">System.Web.UI.WebControls.ListView</a></code> control by using the following types:
         <ul>
-            <li><code><a href="http://msdn.microsoft.com/en-us/library/system.web.dynamicdata.dynamicdatamanager.aspx" 
+            <li><code><a href="http://msdn.microsoft.com/library/system.web.dynamicdata.dynamicdatamanager.aspx" 
                 target="_blank">System.Web.DynamicData.DynamicDataManager</a></code></li>
-            <li><code><a href="http://msdn.microsoft.com/en-us/library/system.web.dynamicdata.dynamicvalidator.aspx" 
+            <li><code><a href="http://msdn.microsoft.com/library/system.web.dynamicdata.dynamicvalidator.aspx" 
                 target="_blank">System.Web.DynamicData.DynamicValidator</a></code></li>
-            <li><code><a href="http://msdn.microsoft.com/en-us/library/system.web.dynamicdata.dynamiccontrol.aspx" 
+            <li><code><a href="http://msdn.microsoft.com/library/system.web.dynamicdata.dynamiccontrol.aspx" 
                 target="_blank">System.Web.DynamicData.DynamicControl</a></code></li>
         </ul>
      </div>

@@ -257,7 +257,7 @@ adapter.Fill(ds);
 ```  
   
 ## See Also  
- [Working with DataReaders](http://msdn.microsoft.com/en-us/126a966a-d08d-4d22-a19f-f432908b2b54)  
+ [Working with DataReaders](http://msdn.microsoft.com/library/126a966a-d08d-4d22-a19f-f432908b2b54)  
  [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)  
  [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)  
  [Retrieving Database Schema Information](../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)  

@@ -295,7 +295,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Resource managers with a durable enlistment must be able to perform recovery if they experience a failure. For more information on recovery, see [Performing Recovery](http://msdn.microsoft.com/en-us/d342c5c7-da64-4a4c-8e63-b52f4fbf2691). For more information on volatile and durable resources, as well as how to enlist a resource, see [Implementing A Resource Manager](http://msdn.microsoft.com/en-us/81509719-d579-4530-831e-42e1acdef63e).  For more information on how a resource manager responds to commit notification and prepare the commit in two-phase commit, see [Committing A Transaction In Single-Phase and Multi-Phase](http://msdn.microsoft.com/en-us/74b3cfe1-d33a-45b8-91f4-dfd6f6598c4d).  
+ Resource managers with a durable enlistment must be able to perform recovery if they experience a failure. For more information on recovery, see [Performing Recovery](http://msdn.microsoft.com/library/d342c5c7-da64-4a4c-8e63-b52f4fbf2691). For more information on volatile and durable resources, as well as how to enlist a resource, see [Implementing A Resource Manager](http://msdn.microsoft.com/library/81509719-d579-4530-831e-42e1acdef63e).  For more information on how a resource manager responds to commit notification and prepare the commit in two-phase commit, see [Committing A Transaction In Single-Phase and Multi-Phase](http://msdn.microsoft.com/library/74b3cfe1-d33a-45b8-91f4-dfd6f6598c4d).  
   
  Resource managers enlisted for participation in a transaction through this method receive two phase commit notifications that correspond to the methods defined on the <xref:System.Transactions.IEnlistmentNotification> interface.  
   
@@ -339,9 +339,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Resource managers with a durable enlistment must be able to perform recovery if they experience a failure. For more information on recovery, see [Performing Recovery](http://msdn.microsoft.com/en-us/d342c5c7-da64-4a4c-8e63-b52f4fbf2691). For more information on volatile and durable resources, as well as how to enlist a resource, see [Implementing A Resource Manager](http://msdn.microsoft.com/en-us/81509719-d579-4530-831e-42e1acdef63e).  
+ Resource managers with a durable enlistment must be able to perform recovery if they experience a failure. For more information on recovery, see [Performing Recovery](http://msdn.microsoft.com/library/d342c5c7-da64-4a4c-8e63-b52f4fbf2691). For more information on volatile and durable resources, as well as how to enlist a resource, see [Implementing A Resource Manager](http://msdn.microsoft.com/library/81509719-d579-4530-831e-42e1acdef63e).  
   
- You should note that even when your resource manager implementation enlists with this method, it is not guaranteed that it receives a single phase commit. The transaction manager can still send two phase commit notifications instead. For more information on the single phase commit optimization, see [Optimization Using Single Phase Commit and Promotable Single Phase Notification](http://msdn.microsoft.com/en-us/653d51d1-b4bf-4e34-9a6f-aec073f0f5bb).  
+ You should note that even when your resource manager implementation enlists with this method, it is not guaranteed that it receives a single phase commit. The transaction manager can still send two phase commit notifications instead. For more information on the single phase commit optimization, see [Optimization Using Single Phase Commit and Promotable Single Phase Notification](http://msdn.microsoft.com/library/653d51d1-b4bf-4e34-9a6f-aec073f0f5bb).  
   
  ]]></format>
         </remarks>
@@ -383,7 +383,7 @@
   
  The parameter `promotableSinglePhaseNotification` is used to communicate to the transaction manager the outcome of attempting to commit the resource manager's internal transaction.  If inconsistent data is reported, the transaction manager throws an exception. If an <xref:System.Transactions.TransactionStatus.InDoubt> outcome is reported, the transaction manager looks for the outcome notification in its own internal enlistment and ignores the reported response.  
   
- For more information on enlistments and escalation of a transaction, please see [Transaction Management Escalation](http://msdn.microsoft.com/en-us/5b87ae58-8ccf-4b9b-9715-41e4aade89b7). For more information on PSPE, see [Optimization Using Single Phase Commit and Promotable Single Phase Notification](http://msdn.microsoft.com/en-us/653d51d1-b4bf-4e34-9a6f-aec073f0f5bb).  
+ For more information on enlistments and escalation of a transaction, please see [Transaction Management Escalation](http://msdn.microsoft.com/library/5b87ae58-8ccf-4b9b-9715-41e4aade89b7). For more information on PSPE, see [Optimization Using Single Phase Commit and Promotable Single Phase Notification](http://msdn.microsoft.com/library/653d51d1-b4bf-4e34-9a6f-aec073f0f5bb).  
   
  **Note** This method uses <xref:System.Security.Permissions.SecurityAction.LinkDemand> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.  
   
@@ -455,7 +455,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Volatile resource managers cannot recovery from failure to complete a transaction in which they were participating. For more information on volatile and durable resources, as well as how to enlist a resource, see [Implementing A Resource Manager](http://msdn.microsoft.com/en-us/81509719-d579-4530-831e-42e1acdef63e). For more information on how a resource manager responds to commit notification and prepare the commit, see [Committing A Transaction In Single-Phase and Multi-Phase](http://msdn.microsoft.com/en-us/74b3cfe1-d33a-45b8-91f4-dfd6f6598c4d).  
+ Volatile resource managers cannot recovery from failure to complete a transaction in which they were participating. For more information on volatile and durable resources, as well as how to enlist a resource, see [Implementing A Resource Manager](http://msdn.microsoft.com/library/81509719-d579-4530-831e-42e1acdef63e). For more information on how a resource manager responds to commit notification and prepare the commit, see [Committing A Transaction In Single-Phase and Multi-Phase](http://msdn.microsoft.com/library/74b3cfe1-d33a-45b8-91f4-dfd6f6598c4d).  
   
  ]]></format>
         </remarks>
@@ -545,9 +545,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Volatile resource managers cannot recovery from failure to complete a transaction in which they were participating. To obtain a durable enlistment in a transaction, use the <xref:System.Transactions.Transaction.EnlistDurable%2A> method. For more information on volatile and durable resources, as well as how to enlist a resource, see [Implementing A Resource Manager](http://msdn.microsoft.com/en-us/81509719-d579-4530-831e-42e1acdef63e). For more information on how a resource manager responds to commit notification and prepare the commit, see [Committing A Transaction In Single-Phase and Multi-Phase](http://msdn.microsoft.com/en-us/74b3cfe1-d33a-45b8-91f4-dfd6f6598c4d).  
+ Volatile resource managers cannot recovery from failure to complete a transaction in which they were participating. To obtain a durable enlistment in a transaction, use the <xref:System.Transactions.Transaction.EnlistDurable%2A> method. For more information on volatile and durable resources, as well as how to enlist a resource, see [Implementing A Resource Manager](http://msdn.microsoft.com/library/81509719-d579-4530-831e-42e1acdef63e). For more information on how a resource manager responds to commit notification and prepare the commit, see [Committing A Transaction In Single-Phase and Multi-Phase](http://msdn.microsoft.com/library/74b3cfe1-d33a-45b8-91f4-dfd6f6598c4d).  
   
- You should note that even when your resource manager implementation enlists with this method, it is not guaranteed that it receives a single phase commit. The transaction manager can still send two phase commit notifications instead. For more information on the single phase commit optimization, see [Optimization Using Single Phase Commit and Promotable Single Phase Notification](http://msdn.microsoft.com/en-us/653d51d1-b4bf-4e34-9a6f-aec073f0f5bb).  
+ You should note that even when your resource manager implementation enlists with this method, it is not guaranteed that it receives a single phase commit. The transaction manager can still send two phase commit notifications instead. For more information on the single phase commit optimization, see [Optimization Using Single Phase Commit and Promotable Single Phase Notification](http://msdn.microsoft.com/library/653d51d1-b4bf-4e34-9a6f-aec073f0f5bb).  
   
  ]]></format>
         </remarks>

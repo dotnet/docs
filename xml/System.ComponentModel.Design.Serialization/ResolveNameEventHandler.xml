@@ -35,7 +35,7 @@
 ## Remarks  
  This delegate is used by the <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager> to resolve object names during serialization and deserialization.  
   
- When you create a <xref:System.ComponentModel.Design.Serialization.ResolveNameEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ When you create a <xref:System.ComponentModel.Design.Serialization.ResolveNameEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   

@@ -24,7 +24,7 @@
   
  When metadata is loaded, the <xref:System.Data.EntityClient.EntityConnection> verifies that the conceptual model, the storage model, and the mapping file are all present.  
   
- For code examples, see [Working with EntityClient](http://msdn.microsoft.com/en-us/dec4728c-8dff-4e30-abe0-0f78fb5d5af5).  
+ For code examples, see [Working with EntityClient](http://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5).  
   
  ]]></format>
     </remarks>
@@ -49,7 +49,7 @@
   
  When metadata is loaded, the <xref:System.Data.EntityClient.EntityConnection> verifies that the conceptual model, the storage model, and the mapping file are all present.  
   
- For code examples, see [Working with EntityClient](http://msdn.microsoft.com/en-us/dec4728c-8dff-4e30-abe0-0f78fb5d5af5).  
+ For code examples, see [Working with EntityClient](http://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5).  
   
  ]]></format>
         </remarks>
@@ -79,7 +79,7 @@
   
  When metadata is loaded, the <xref:System.Data.EntityClient.EntityConnection> verifies that the conceptual model, the storage model, and the mapping file are all present.  
   
- For code examples, see [Working with EntityClient](http://msdn.microsoft.com/en-us/dec4728c-8dff-4e30-abe0-0f78fb5d5af5).  
+ For code examples, see [Working with EntityClient](http://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5).  
   
  ]]></format>
         </remarks>
@@ -114,7 +114,7 @@
   
  When metadata is loaded, the <xref:System.Data.EntityClient.EntityConnection> verifies that the conceptual model, the storage model, and the mapping file are all present.  
   
- For code examples, see [Working with EntityClient](http://msdn.microsoft.com/en-us/dec4728c-8dff-4e30-abe0-0f78fb5d5af5).  
+ For code examples, see [Working with EntityClient](http://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5).  
   
  ]]></format>
         </remarks>
@@ -600,7 +600,7 @@ Provider Connection String= 'Data Source=localhost;
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Data.Metadata.Edm.MetadataWorkspace> is automatically created when the <xref:System.Data.EntityClient.EntityConnection> class is created. The creation process might throw metadata-specific exceptions. Metadata is loaded into memory and an Entity Data Model (EDM) application uses that metadata to access information about the underlying data source. For more information, see [ADO.NET Metadata](http://msdn.microsoft.com/en-us/196097a5-a791-4ac4-9e6a-805685d481d5).  
+ A <xref:System.Data.Metadata.Edm.MetadataWorkspace> is automatically created when the <xref:System.Data.EntityClient.EntityConnection> class is created. The creation process might throw metadata-specific exceptions. Metadata is loaded into memory and an Entity Data Model (EDM) application uses that metadata to access information about the underlying data source. For more information, see [ADO.NET Metadata](http://msdn.microsoft.com/library/196097a5-a791-4ac4-9e6a-805685d481d5).  
   
  To avoid inadvertently putting objects such as <xref:System.Data.Common.CommandTrees> and <xref:System.Data.Objects.ObjectContext> out of sync with their metadata, <xref:System.Data.EntityClient.EntityConnection> must lock its metadata. No changes to the connection string are allowed after the metadata is locked. The following are two scenarios in which metadata is locked:  
   

@@ -31,7 +31,7 @@
   
  You can load or play a .wav file synchronously or asynchronously. If you call a synchronous load or play method, the calling thread will wait until the method returns, which may cause painting and other events to be interrupted. Calling an asynchronous load or play method will allow the calling thread to continue without interruption. For more information on asynchronous method calls, see [How to: Run an Operation in the Background](~/docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md).  
   
- When a <xref:System.Media.SoundPlayer> has finished loading a .wav file, it raises the <xref:System.Media.SoundPlayer.LoadCompleted> event. You can examine the <xref:System.ComponentModel.AsyncCompletedEventArgs> in your event handler to determine if the load succeeded or failed. The <xref:System.Media.SoundPlayer.SoundLocationChanged> event is raised when the audio source is set to a new file path or URL. The <xref:System.Media.SoundPlayer.StreamChanged> event is raised when the audio source is set to a new <xref:System.IO.Stream>. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ When a <xref:System.Media.SoundPlayer> has finished loading a .wav file, it raises the <xref:System.Media.SoundPlayer.LoadCompleted> event. You can examine the <xref:System.ComponentModel.AsyncCompletedEventArgs> in your event handler to determine if the load succeeded or failed. The <xref:System.Media.SoundPlayer.SoundLocationChanged> event is raised when the audio source is set to a new file path or URL. The <xref:System.Media.SoundPlayer.StreamChanged> event is raised when the audio source is set to a new <xref:System.IO.Stream>. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For more information about <xref:System.Media.SoundPlayer>, see [SoundPlayer Class Overview](~/docs/framework/winforms/controls/soundplayer-class-overview.md).  
   
@@ -273,7 +273,7 @@
 ## Remarks  
  This event is raised when loading of a .wav file is complete. The event arguments indicate whether the load of the sound was completed successfully or failed.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -338,7 +338,7 @@
 ## Remarks  
  This method is called when loading of a .wav file is complete.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Media.SoundPlayer.OnLoadCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -374,7 +374,7 @@
 ## Remarks  
  This method is called when a new audio source path for this <xref:System.Media.SoundPlayer> has been set.  
   
- Raising an event invokes the event handler through a delegate. For more information, see How to: Provide Event functionality and [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see How to: Provide Event functionality and [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Media.SoundPlayer.OnSoundLocationChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -410,7 +410,7 @@
 ## Remarks  
  This method is called when a new <xref:System.IO.Stream> audio source for this <xref:System.Media.SoundPlayer> has been set.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Media.SoundPlayer.OnStreamChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -608,7 +608,7 @@
 ## Remarks  
  This event is raised when a new audio source path for this <xref:System.Media.SoundPlayer> has been set.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -699,7 +699,7 @@
 ## Remarks  
  This event is raised when a new <xref:System.IO.Stream> audio source for this <xref:System.Media.SoundPlayer> has been set.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>

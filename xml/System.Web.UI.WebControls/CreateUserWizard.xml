@@ -896,7 +896,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonClick> event is raised when the **Continue** button on the <xref:System.Web.UI.WebControls.CreateUserWizard> control is clicked. Use the <xref:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonClick> event to provide additional processing when the **Continue** button is clicked.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
@@ -1437,7 +1437,7 @@
   
  The error handler is passed a <xref:System.Web.Security.MembershipCreateStatus> object that contains the details of the failure from the membership provider. For a list of the possible error conditions, see <xref:System.Web.Security.MembershipCreateStatus>.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
@@ -1520,7 +1520,7 @@
   
  Use the <xref:System.Web.UI.WebControls.CreateUserWizard.CreatingUser> event to establish defaults or modify the information entered by the user before passing the information to the membership provider.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -2877,7 +2877,7 @@ Thank you for creating an account with our Web site.
 ## Remarks  
  The <xref:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonClick> event is raised when the user clicks the **Continue** button on the <xref:System.Web.UI.WebControls.CreateUserWizard> control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.CreateUserWizard.OnContinueButtonClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2915,7 +2915,7 @@ Thank you for creating an account with our Web site.
   
  Use the <xref:System.Web.UI.WebControls.CreateUserWizard.OnCreatedUser%2A> method to set Web site values, such as personalization properties, before the user is logged in for the first time.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.CreateUserWizard.OnCreatedUser%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3682,7 +3682,7 @@ Thank you for creating an account with our Web site.
   
  Because the e-mail message only has automatic replacement fields for the user name and password fields, you can use the <xref:System.Web.UI.WebControls.CreateUserWizard.SendingMail> event to modify the e-mail message before it is sent to the new user.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -3734,7 +3734,7 @@ Thank you for creating an account with our Web site.
   
  The default <xref:System.Web.UI.WebControls.CreateUserWizard.SendMailError> event handler does not catch or handle the SMTP error from the e-mail system. Your <xref:System.Web.UI.WebControls.CreateUserWizard.SendMailError> event handler must set the <xref:System.Web.UI.WebControls.SendMailErrorEventArgs.Handled%2A> property of the <xref:System.Web.UI.WebControls.SendMailErrorEventArgs> object to `true` in order to stop the error from appearing to the Web site user.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   

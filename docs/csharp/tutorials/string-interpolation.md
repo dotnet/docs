@@ -81,7 +81,7 @@ This is line number 5
 
 ## How string interpolation works
 
-Behind the scenes, this string interpolation syntax is translated into String.Format by the compiler. So, you can do the [same type of stuff you've done before with String.Format](https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx).
+Behind the scenes, this string interpolation syntax is translated into String.Format by the compiler. So, you can do the [same type of stuff you've done before with String.Format](https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx).
 
 For instance, you can add padding and numeric formatting:
 

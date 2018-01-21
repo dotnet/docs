@@ -4,7 +4,7 @@ description: In this quick start about branches and loops, you write C# code to 
 author: billwagner
 ms.author: wiwagn
 ms.date: 10/31/2017
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp

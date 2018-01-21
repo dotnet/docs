@@ -22,7 +22,7 @@
   
  A <xref:System.Web.UI.WebControls.GridViewRowEventArgs> object is passed to the event-handling method, which allows you to access the properties of the row that raised the event. To access a specific cell in the row, use the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> property of the <xref:System.Web.UI.WebControls.GridViewRow> object contained in the <xref:System.Web.UI.WebControls.GridViewRowEventArgs.Row%2A> property. You can also determine which row type (header row, data row, and so on) is being created by using the <xref:System.Web.UI.WebControls.GridViewRow.RowType%2A> property of the <xref:System.Web.UI.WebControls.GridViewRow> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.GridViewRowEventArgs>, see the <xref:System.Web.UI.WebControls.GridViewRowEventArgs.%23ctor%2A> constructor.  
   

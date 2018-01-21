@@ -40,7 +40,7 @@
  The <xref:System.Net.WebPermission.ConnectList%2A> and <xref:System.Net.WebPermission.AcceptList%2A> hold the URIs to which you have granted access permission. To add a URI to either of these lists, use <xref:System.Net.WebPermission.AddPermission%2A>. If you pass <xref:System.Net.NetworkAccess.Accept> as the <xref:System.Net.NetworkAccess> parameter, the URI will be added to the <xref:System.Net.WebPermission.AcceptList%2A>. <xref:System.Net.WebPermission> will allow connections to your target class with URIs matching the <xref:System.Net.WebPermission.AcceptList%2A>.  
   
 > [!CAUTION]
->  To deny access to an Internet resource, you must deny access to all the possible paths to that resource. This requires calling <xref:System.Net.WebPermission.%23ctor%2A?displayProperty=nameWithType> with state parameter set to <xref:System.Security.CodeAccessPermission.Deny%2A>. A better approach is to allow access to the specific resource only. For more information about this subject, refer to the [NIB: Using the Deny Method](http://msdn.microsoft.com/en-us/6b4d2e01-c504-4ac3-b50e-d6f5e7f5df25) topic.  
+>  To deny access to an Internet resource, you must deny access to all the possible paths to that resource. This requires calling <xref:System.Net.WebPermission.%23ctor%2A?displayProperty=nameWithType> with state parameter set to <xref:System.Security.CodeAccessPermission.Deny%2A>. A better approach is to allow access to the specific resource only. For more information about this subject, refer to the [NIB: Using the Deny Method](http://msdn.microsoft.com/library/6b4d2e01-c504-4ac3-b50e-d6f5e7f5df25) topic.  
   
 > [!NOTE]
 >  You need to deny access using only the resource canonical path. There is no need to use all the path's syntactical variations.  

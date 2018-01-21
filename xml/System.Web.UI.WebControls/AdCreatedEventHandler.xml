@@ -26,7 +26,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.AdRotator.AdCreated> event is raised when the <xref:System.Web.UI.WebControls.AdRotator> control displays an advertisement on the page.  
   
- When you create an <xref:System.Web.UI.WebControls.AdCreatedEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ When you create an <xref:System.Web.UI.WebControls.AdCreatedEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   

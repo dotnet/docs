@@ -16,25 +16,25 @@ caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
-# /delaysign (C# Compiler Options)
+# -delaysign (C# Compiler Options)
 This option causes the compiler to reserve space in the output file so that a digital signature can be added later.  
   
 ## Syntax  
   
 ```console  
-/delaysign[ + | - ]  
+-delaysign[ + | - ]  
 ```  
   
 ## Arguments  
  `+` &#124; `-`  
- Use **/delaysign-** if you want a fully signed assembly. Use **/delaysign+** if you only want to place the public key in the assembly. The default is **/delaysign-**.  
+ Use **-delaysign-** if you want a fully signed assembly. Use **-delaysign+** if you only want to place the public key in the assembly. The default is **-delaysign-**.  
   
 ## Remarks  
- The **/delaysign** option has no effect unless used with [/keyfile](../../../csharp/language-reference/compiler-options/keyfile-compiler-option.md) or [/keycontainer](../../../csharp/language-reference/compiler-options/keycontainer-compiler-option.md).  
+ The **-delaysign** option has no effect unless used with [/keyfile](../../../csharp/language-reference/compiler-options/keyfile-compiler-option.md) or [/keycontainer](../../../csharp/language-reference/compiler-options/keycontainer-compiler-option.md).  
   
  When you request a fully signed assembly, the compiler hashes the file that contains the manifest (assembly metadata) and signs that hash with the private key. The resulting digital signature is stored in the file that contains the manifest. When an assembly is delay signed, the compiler does not compute and store the signature, but reserves space in the file so the signature can be added later.  
   
- For example, using **/delaysign+** allows a tester to put the assembly in the global cache. After testing, you can fully sign the assembly by placing the private key in the assembly using the [Assembly Linker](../../../framework/tools/al-exe-assembly-linker.md) utility.  
+ For example, using **-delaysign+** allows a tester to put the assembly in the global cache. After testing, you can fully sign the assembly by placing the private key in the assembly using the [Assembly Linker](../../../framework/tools/al-exe-assembly-linker.md) utility.  
   
  For more information, see [Creating and Using Strong-Named Assemblies](../../../framework/app-domains/create-and-use-strong-named-assemblies.md) and [Delay Signing an Assembly](../../../framework/app-domains/delay-sign-assembly.md).  
   

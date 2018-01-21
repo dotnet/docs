@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](http://msdn.microsoft.com/en-us/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
+ Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](http://msdn.microsoft.com/library/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
   
  ]]></format>
     </remarks>
@@ -55,7 +55,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](http://msdn.microsoft.com/en-us/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
+ Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](http://msdn.microsoft.com/library/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
   
  ]]></format>
         </remarks>
@@ -375,7 +375,7 @@
       <Docs>
         <param name="attribute">The name of the attribute to retrieve.</param>
         <summary>Retrieves an attribute of an extended class object.</summary>
-        <returns>Returns an array of objects, or <see langword="null" /> if no attribute exists with that name. See [System.DirectoryServices.AccountManagement Principle Extensions](http://msdn.microsoft.com/en-us/49d1b257-d652-4224-bdae-2edabced8f00) for an example on using this function.</returns>
+        <returns>Returns an array of objects, or <see langword="null" /> if no attribute exists with that name. See [System.DirectoryServices.AccountManagement Principle Extensions](http://msdn.microsoft.com/library/49d1b257-d652-4224-bdae-2edabced8f00) for an example on using this function.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
@@ -410,7 +410,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [System.DirectoryServices.AccountManagement Principle Extensions](http://msdn.microsoft.com/en-us/49d1b257-d652-4224-bdae-2edabced8f00) for an example of this function.  
+ See [System.DirectoryServices.AccountManagement Principle Extensions](http://msdn.microsoft.com/library/49d1b257-d652-4224-bdae-2edabced8f00) for an example of this function.  
   
  ]]></format>
         </remarks>

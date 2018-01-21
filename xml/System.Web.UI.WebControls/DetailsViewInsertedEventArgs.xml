@@ -22,7 +22,7 @@
   
  By default, the <xref:System.Web.UI.WebControls.DetailsView> control returns to the mode specified by the <xref:System.Web.UI.WebControls.DetailsView.DefaultMode%2A> property after an insert operation. To keep the <xref:System.Web.UI.WebControls.DetailsView> control in insert mode, set the <xref:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.KeepInInsertMode%2A> property to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.DetailsViewDeletedEventArgs> class, see the <xref:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.%23ctor%2A> constructor.  
   

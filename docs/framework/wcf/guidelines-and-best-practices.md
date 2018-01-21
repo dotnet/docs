@@ -54,6 +54,6 @@ This section contains topics that provide guidelines for creating [!INCLUDE[indi
   
 ## See Also  
  [What Is Windows Communication Foundation](../../../docs/framework/wcf/whats-wcf.md)  
- [Windows Communication Foundation Samples](http://msdn.microsoft.com/en-us/8ec9d192-5d81-4f64-bfd3-90c5e5858c91)  
+ [Windows Communication Foundation Samples](http://msdn.microsoft.com/library/8ec9d192-5d81-4f64-bfd3-90c5e5858c91)  
  [Conceptual Overview](../../../docs/framework/wcf/conceptual-overview.md)  
  [Building Clients](../../../docs/framework/wcf/building-clients.md)

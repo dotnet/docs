@@ -54,7 +54,7 @@ This topic discusses how clients address services that read from queues and how 
   
  The queue address is used as the Listen URI by the Listener to read messages from. In other words, the queue address is equivalent to the listen port of TCP socket.  
   
- An endpoint that reads from a queue must specify the address of the queue using the same scheme specified previously when opening the ServiceHost. For examples, see [Net MSMQ Binding](../../../../docs/framework/wcf/samples/net-msmq-binding.md) and [Message Queuing Integration Binding Samples](http://msdn.microsoft.com/en-us/997d11cb-f2c5-4ba0-9209-92843d4d0e1a).  
+ An endpoint that reads from a queue must specify the address of the queue using the same scheme specified previously when opening the ServiceHost. For examples, see [Net MSMQ Binding](../../../../docs/framework/wcf/samples/net-msmq-binding.md) and [Message Queuing Integration Binding Samples](http://msdn.microsoft.com/library/997d11cb-f2c5-4ba0-9209-92843d4d0e1a).  
   
 ### Multiple Contracts in a Queue  
  Messages in a queue can implement different contracts. In this case, it is essential that one of the following is true to successfully read and process all messages:  

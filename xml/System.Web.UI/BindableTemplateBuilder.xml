@@ -24,7 +24,7 @@
   
  The <xref:System.Web.UI.BindableTemplateBuilder> is a <xref:System.Web.UI.TemplateBuilder> for data-bound controls that include templated content. If the data-bound control is used in design-time or in a no-compile page, the <xref:System.Web.UI.IBindableTemplate> interface on the <xref:System.Web.UI.BindableTemplateBuilder> is used to parse the two-way data-binding within the templated control. If the data-bound control is compiled, an instance of the <xref:System.Web.UI.CompiledBindableTemplateBuilder> class is created and assigned to the value of the <xref:System.Web.UI.IBindableTemplate> object.  
   
- For more information about ASP.NET data binding, expressions, and syntax, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742) and [Data-Binding Expressions Overview](http://msdn.microsoft.com/library/14cdd57d-0f82-4667-b503-73e1a96f136a).  
+ For more information about ASP.NET data binding, expressions, and syntax, see [Binding to Databases](http://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742) and [Data-Binding Expressions Overview](http://msdn.microsoft.com/library/14cdd57d-0f82-4667-b503-73e1a96f136a).  
   
  ]]></format>
     </remarks>

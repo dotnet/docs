@@ -262,6 +262,7 @@
 ### [Versioning](csharp/versioning.md)
 ## [How To C# Topics](csharp/how-to/index.md)
 ### [How to parse strings using `String.Split`](csharp/how-to/parse-strings-using-split.md)
+### [How to concatenate strings](csharp/how-to/concatenate-multiple-strings.md)
 <!-- End of C# Concepts section -->
 ## [The .NET Compiler Platform SDK (Roslyn APIs)](csharp/roslyn-sdk/)
 ## [C# Programming Guide](csharp/programming-guide/)

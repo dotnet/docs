@@ -129,7 +129,11 @@
   
  -or-  
   
- A file in the specified directory could not be opened.</exception>
+ A file in the specified directory could not be opened.
+        
+ -or-
+        
+ There is not enough space on the disk.</exception>
         <exception cref="T:System.UnauthorizedAccessException">
           <paramref name="destinationArchiveFileName" /> specifies a directory.  
   
@@ -211,7 +215,11 @@
   
  -or-  
   
- A file in the specified directory could not be opened.</exception>
+ A file in the specified directory could not be opened.
+                
+ -or-
+        
+ There is not enough space on the disk.</exception>
         <exception cref="T:System.UnauthorizedAccessException">
           <paramref name="destinationArchiveFileName" /> specifies a directory.  
   
@@ -299,7 +307,11 @@
   
  -or-  
   
- A file in the specified directory could not be opened.</exception>
+ A file in the specified directory could not be opened.        
+ 
+ -or-
+        
+ There is not enough space on the disk.</exception>
         <exception cref="T:System.UnauthorizedAccessException">
           <paramref name="destinationArchiveFileName" /> specifies a directory.  
   
@@ -378,7 +390,11 @@
   
  -or-  
   
- An archive entry to extract has the same name as an entry that has already been extracted from the same archive.</exception>
+ An archive entry to extract has the same name as an entry that has already been extracted from the same archive.
+         
+ -or-
+        
+ There is not enough space on the disk.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission to access the archive or the destination directory.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="destinationDirectoryName" /> or <paramref name="sourceArchiveFileName" /> contains an invalid format.</exception>
@@ -494,7 +510,11 @@
   
  -or-  
   
- An archive entry to extract has the same name as an entry that has already been extracted from the same archive.</exception>
+ An archive entry to extract has the same name as an entry that has already been extracted from the same archive.
+         
+ -or-
+        
+ There is not enough space on the disk.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission to access the archive or the destination directory.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="destinationDirectoryName" /> or <paramref name="sourceArchiveFileName" /> contains an invalid format.</exception>

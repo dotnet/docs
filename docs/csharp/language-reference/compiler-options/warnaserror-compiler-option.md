@@ -22,7 +22,7 @@ The **-warnaserror+** option treats all warnings as errors
 ## Syntax  
   
 ```console  
--warnaserror[<U>+</U> | -][:warning-list]  
+-warnaserror[+ | -][:warning-list]  
 ```  
   
 ## Remarks  

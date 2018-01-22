@@ -815,8 +815,6 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses <xref:System.Array.Copy%2A?displayProperty=nameWithType> to copy the elements.  
-  
  The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Collections.Generic.LinkedList%601>.  
   
  This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.LinkedList%601.Count%2A>.  

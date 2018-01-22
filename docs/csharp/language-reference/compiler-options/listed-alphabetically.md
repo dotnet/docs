@@ -24,10 +24,10 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[-?](../../../csharp/language-reference/compiler-options/help-compiler-option.md)|Displays a usage message to stdout.|  
 |-additionalfile|Names additional files that don't directly affect code generation but may be used by analyzers for producing errors or warnings.|  
 |[-addmodule](../../../csharp/language-reference/compiler-options/addmodule-compiler-option.md)|Links the specified modules into this assembly|  
-|-analyzer|Run the analyzers from this assembly (Short form: /a)|  
+|-analyzer|Run the analyzers from this assembly (Short form: -a)|  
 |[-appconfig](../../../csharp/language-reference/compiler-options/appconfig-compiler-option.md)|Specifies the location of app.config at assembly binding time.|  
 |[-baseaddress](../../../csharp/language-reference/compiler-options/baseaddress-compiler-option.md)|Specifies the base address for the library to be built.|  
-|[-bugreport](../../../csharp/language-reference/compiler-options/bugreport-compiler-option.md)|Creates a 'Bug Report' file. This file will be sent together with any crash information if it is used with /errorreport:prompt or /errorreport:send.|  
+|[-bugreport](../../../csharp/language-reference/compiler-options/bugreport-compiler-option.md)|Creates a 'Bug Report' file. This file will be sent together with any crash information if it is used with -errorreport:prompt or -errorreport:send.|  
 |[-checked](../../../csharp/language-reference/compiler-options/checked-compiler-option.md)|Causes the compiler to generate overflow checks.|  
 |-checksumalgorithm:\<alg>|Specify the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA1 (default) or SHA256.|  
 |[-codepage](../../../csharp/language-reference/compiler-options/codepage-compiler-option.md)|Specifies the codepage to use when opening source files.|  

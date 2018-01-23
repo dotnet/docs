@@ -104,9 +104,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The character stored in this field cannot be in <xref:System.IO.Path.InvalidPathChars>. This field can be set to the same value as <xref:System.IO.Path.DirectorySeparatorChar>. `AltDirectorySeparatorChar` and `DirectorySeparatorChar` are both valid for separating directory levels in a path string.  
+ The character stored in this field cannot be in <xref:System.IO.Path.InvalidPathChars>. This field can be set to the same value as <xref:System.IO.Path.DirectorySeparatorChar>. `AltDirectorySeparatorChar` and <xref:System.IO.Path.DirectorySeparatorChar> are both valid for separating directory levels in a path string.  
   
- The value of this field is a backslash ('\\') on UNIX, and a slash ('/') on Windows and Macintosh operating systems.  
+ The value of this field is a slash ('/') on Windows, UNIX and Macintosh operating systems.  
   
    
   

@@ -45,7 +45,7 @@ public:
         array<DeveloperAttribute^>^ MyAttributes =
             (array<DeveloperAttribute^>^) Attribute::GetCustomAttributes(t, DeveloperAttribute::typeid);
 
-        if (MyAttributes == nullptr)
+        if (MyAttributes->Length == 0)
         {
             Console::WriteLine("The attribute was not found.");
         }

@@ -126,8 +126,18 @@ public partial class Window1 : Window
                     }  
                 }  
   
-                string header = headerClicked.Column.Header as string;  
-                Sort(header, direction);  
+                string sortBy;
+                Binding columnBinding = headerClicked.Column.DisplayMemberBinding as Binding;
+                if (columnBinding != null)
+                {
+                    sortBy = columnBinding.Path.Path;
+                }
+                else
+                {
+                    sortBy = headerClicked.Column.Header as string;
+                }
+
+                Sort(sortBy, direction);
   
                 if (direction == ListSortDirection.Ascending)  
                 {  
@@ -178,9 +188,16 @@ Partial Public Class Window1
 							direction = ListSortDirection.Ascending  
 						End If  
 					End If  
-  
-					Dim header As String = TryCast(headerClicked.Column.Header, String)  
-					Sort(header, direction)  
+
+					Dim sortBy As String
+					Dim columnBinding as Binding = TryCast(headerClicked.Column.DisplayMemberBinding, Binding)
+					If columnBinding IsNot Nothing Then
+						sortBy = columnBinding.Path.Path
+					Else
+						sortBy = TryCast(headerClicked.Column.Header, String)
+					End If
+
+					Sort(sortBy, direction)  
   
 					If direction = ListSortDirection.Ascending Then  
 						headerClicked.Column.HeaderTemplate = TryCast(Resources("HeaderTemplateArrowUp"), DataTemplate)  

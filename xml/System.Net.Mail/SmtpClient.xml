@@ -802,7 +802,7 @@
   
  If you receive an <xref:System.Net.Mail.SmtpException> exception, check the <xref:System.Net.Mail.SmtpException.StatusCode%2A> property to find the reason the operation failed. The <xref:System.Net.Mail.SmtpException> can also contain an inner exception that indicates the reason the operation failed.  
   
- When sending e-mail using <xref:System.Net.Mail.SmtpClient.Send%2A> to multiple recipients and the SMTP server accepts some recipients as valid and rejects others, <xref:System.Net.Mail.SmtpClient.Send%2A> sends e-mail to the accepted recipients and then a <xref:System.Net.Mail.SmtpFailedRecipientsException> is thrown. The exception will contain a listing of the recipients that were rejected.  
+ When sending email using <xref:System.Net.Mail.SmtpClient.Send%2A> to multiple recipients and the SMTP server accepts some recipients as valid and rejects others, <xref:System.Net.Mail.SmtpClient.Send%2A> sends email to the accepted recipients and then a <xref:System.Net.Mail.SmtpFailedRecipientsException> is thrown (or a <xref:System.Net.Mail.SmtpFailedRecipientException> if only one recipient is rejected). A <xref:System.Net.Mail.SmtpFailedRecipientsException> contains a list of the recipients that were rejected.
   
 > [!NOTE]
 >  If the <xref:System.Net.Mail.SmtpClient.EnableSsl%2A> property is set to `true`, and the SMTP mail server does not advertise STARTTLS in the response to the EHLO command, then a call to the <xref:System.Net.Mail.SmtpClient.Send%2A> or <xref:System.Net.Mail.SmtpClient.SendAsync%2A> methods will throw an <xref:System.Net.Mail.SmtpException>.  
@@ -858,8 +858,8 @@
  -or-  
   
  <see cref="P:System.Net.Mail.SmtpClient.EnableSsl" /> is set to <see langword="true," /> but the SMTP mail server did not advertise STARTTLS in the response to the EHLO command.</exception>
-        <exception cref="T:System.Net.Mail.SmtpFailedRecipientsException">The <paramref name="message" /> could not be delivered to one or more of the recipients in <see cref="P:System.Net.Mail.MailMessage.To" />, <see cref="P:System.Net.Mail.MailMessage.CC" />, or <see cref="P:System.Net.Mail.MailMessage.Bcc" />.</exception>
-        <permission cref="T:System.Net.Mail.SmtpPermission">to connect to the SMTP server. Associated enumeration: <see cref="F:System.Net.Mail.SmtpAccess.Connect" /></permission>
+        <exception cref="T:System.Net.Mail.SmtpFailedRecipientException">The <paramref name="message" /> could not be delivered to one of the recipients in <see cref="P:System.Net.Mail.MailMessage.To" />, <see cref="P:System.Net.Mail.MailMessage.CC" />, or <see cref="P:System.Net.Mail.MailMessage.Bcc" />.</exception>
+        <exception cref="T:System.Net.Mail.SmtpFailedRecipientsException">The <paramref name="message" /> could not be delivered to two or more of the recipients in <see cref="P:System.Net.Mail.MailMessage.To" />, <see cref="P:System.Net.Mail.MailMessage.CC" />, or <see cref="P:System.Net.Mail.MailMessage.Bcc" />.</exception>        <permission cref="T:System.Net.Mail.SmtpPermission">to connect to the SMTP server. Associated enumeration: <see cref="F:System.Net.Mail.SmtpAccess.Connect" /></permission>
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -908,9 +908,9 @@
  If the SMTP host requires credentials, you must set them before calling this method. To specify credentials, use the <xref:System.Net.Mail.SmtpClient.UseDefaultCredentials%2A> or <xref:System.Net.Mail.SmtpClient.Credentials%2A> properties.  
   
  If you receive an <xref:System.Net.Mail.SmtpException> exception, check the <xref:System.Net.Mail.SmtpException.StatusCode%2A> property to find the reason the operation failed. The <xref:System.Net.Mail.SmtpException> can also contain an inner exception that indicates the reason the operation failed.  
-  
- When sending e-mail using <xref:System.Net.Mail.SmtpClient.Send%2A> to multiple recipients and the SMTP server accepts some recipients as valid and rejects others, <xref:System.Net.Mail.SmtpClient.Send%2A> sends e-mail to the accepted recipients and then a <xref:System.Net.Mail.SmtpFailedRecipientsException> is thrown. The exception will contain a listing of the recipients that were rejected.  
-  
+
+ When sending email using <xref:System.Net.Mail.SmtpClient.Send%2A> to multiple recipients and the SMTP server accepts some recipients as valid and rejects others, <xref:System.Net.Mail.SmtpClient.Send%2A> sends email to the accepted recipients and then a <xref:System.Net.Mail.SmtpFailedRecipientsException> is thrown (or a <xref:System.Net.Mail.SmtpFailedRecipientException> if only one recipient is rejected). A <xref:System.Net.Mail.SmtpFailedRecipientsException> contains a list of the recipients that were rejected.
+ 
 > [!NOTE]
 >  If the <xref:System.Net.Mail.SmtpClient.EnableSsl%2A> property is set to `true`, and the SMTP mail server does not advertise STARTTLS in the response to the EHLO command, then a call to the <xref:System.Net.Mail.SmtpClient.Send%2A> or <xref:System.Net.Mail.SmtpClient.SendAsync%2A> methods will throw an <xref:System.Net.Mail.SmtpException>.  
   
@@ -959,8 +959,8 @@
  -or-  
   
  <see cref="P:System.Net.Mail.SmtpClient.EnableSsl" /> is set to <see langword="true," /> but the SMTP mail server did not advertise STARTTLS in the response to the EHLO command.</exception>
-        <exception cref="T:System.Net.Mail.SmtpFailedRecipientsException">The message could not be delivered to one or more of the recipients in <paramref name="recipients" />.</exception>
-        <permission cref="T:System.Net.Mail.SmtpPermission">to connect to the SMTP server. Associated enumeration: <see cref="F:System.Net.Mail.SmtpAccess.Connect" /></permission>
+        <exception cref="T:System.Net.Mail.SmtpFailedRecipientException">The <paramref name="message" /> could not be delivered to one of the recipients in <see cref="P:System.Net.Mail.MailMessage.To" />, <see cref="P:System.Net.Mail.MailMessage.CC" />, or <see cref="P:System.Net.Mail.MailMessage.Bcc" />.</exception>
+        <exception cref="T:System.Net.Mail.SmtpFailedRecipientsException">The <paramref name="message" /> could not be delivered to two or more of the recipients in <see cref="P:System.Net.Mail.MailMessage.To" />, <see cref="P:System.Net.Mail.MailMessage.CC" />, or <see cref="P:System.Net.Mail.MailMessage.Bcc" />.</exception>        <permission cref="T:System.Net.Mail.SmtpPermission">to connect to the SMTP server. Associated enumeration: <see cref="F:System.Net.Mail.SmtpAccess.Connect" /></permission>
       </Docs>
     </Member>
     <Member MemberName="SendAsync">

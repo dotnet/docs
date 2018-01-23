@@ -34,10 +34,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/collections/ienumerable.cs#9be451ac13d86a97). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  <xref:System.Collections.IEnumerable> is the base interface for all non-generic collections that can be enumerated. For the generic version of this interface see <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>. <xref:System.Collections.IEnumerable> contains a single method, <xref:System.Collections.IEnumerable.GetEnumerator%2A>, which returns an <xref:System.Collections.IEnumerator>. <xref:System.Collections.IEnumerator> provides the ability to iterate through the collection by exposing a <xref:System.Collections.IEnumerator.Current%2A> property and <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Reset%2A> methods.  
   
  It is a best practice to implement <xref:System.Collections.IEnumerable> and <xref:System.Collections.IEnumerator> on your collection classes to enable the `foreach` (`For Each` in Visual Basic) syntax, however implementing <xref:System.Collections.IEnumerable> is not required. If your collection does not implement <xref:System.Collections.IEnumerable>, you must still follow the iterator pattern to support this syntax by providing a `GetEnumerator` method that returns an interface, class or struct. When using Visual Basic, you must provide an <xref:System.Collections.IEnumerator> implementation, which is returned by `GetEnumerator`. When developing with C# you must provide a class that contains a `Current` property, and `MoveNext` and `Reset` methods as described by <xref:System.Collections.IEnumerator>, but the class does not have to implement <xref:System.Collections.IEnumerator>.  

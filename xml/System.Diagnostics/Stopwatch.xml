@@ -28,10 +28,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#System/services/monitoring/system/diagnosticts/Stopwatch.cs#ceb0ba9cc88de82e). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  A <xref:System.Diagnostics.Stopwatch> instance can measure elapsed time for one interval, or the total of elapsed time across multiple intervals. In a typical <xref:System.Diagnostics.Stopwatch> scenario, you call the <xref:System.Diagnostics.Stopwatch.Start%2A> method, then eventually call the <xref:System.Diagnostics.Stopwatch.Stop%2A> method, and then you check elapsed time using the <xref:System.Diagnostics.Stopwatch.Elapsed%2A> property.  
   
  A <xref:System.Diagnostics.Stopwatch> instance is either running or stopped; use <xref:System.Diagnostics.Stopwatch.IsRunning%2A> to determine the current state of a <xref:System.Diagnostics.Stopwatch>. Use <xref:System.Diagnostics.Stopwatch.Start%2A> to begin measuring elapsed time; use <xref:System.Diagnostics.Stopwatch.Stop%2A> to stop measuring elapsed time. Query the elapsed time value through the properties <xref:System.Diagnostics.Stopwatch.Elapsed%2A>, <xref:System.Diagnostics.Stopwatch.ElapsedMilliseconds%2A>, or <xref:System.Diagnostics.Stopwatch.ElapsedTicks%2A>. You can query the elapsed time properties while the instance is running or stopped. The elapsed time properties steadily increase while the <xref:System.Diagnostics.Stopwatch> is running; they remain constant when the instance is stopped.  

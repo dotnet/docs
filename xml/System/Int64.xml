@@ -50,10 +50,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/int64.cs). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  <xref:System.Int64> is an immutable value type that represents signed integers with values that range from negative 9,223,372,036,854,775,808 (which is represented by the <xref:System.Int64.MinValue?displayProperty=nameWithType> constant) through positive 9,223,372,036,854,775,807 (which is represented by the <xref:System.Int64.MaxValue?displayProperty=nameWithType> constant. The .NET Framework also includes an unsigned 64-bit integer value type, <xref:System.UInt64>, which represents values that range from 0 to 18,446,744,073,709,551,615.  
   
 ## Instantiating an Int64 Value  

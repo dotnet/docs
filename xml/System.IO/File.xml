@@ -31,10 +31,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/io/file.cs#1c7421e464f67b7e). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  Use the <xref:System.IO.File> class for typical operations such as copying, moving, renaming, creating, opening, deleting, and appending to a single file at a time. You can also use the <xref:System.IO.File> class to get and set file attributes or <xref:System.DateTime> information related to the creation, access, and writing of a file. If you want to perform operations on multiple files, see <xref:System.IO.Directory.GetFiles%2A?displayProperty=nameWithType> or <xref:System.IO.DirectoryInfo.GetFiles%2A?displayProperty=nameWithType>.  
   
  Many of the <xref:System.IO.File> methods return other I/O types when you create or open files. You can use these other types to further manipulate a file. For more information, see specific <xref:System.IO.File> members such as <xref:System.IO.File.OpenText%2A>, <xref:System.IO.File.CreateText%2A>, or <xref:System.IO.File.Create%2A>.  

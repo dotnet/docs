@@ -47,10 +47,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/array.cs#156e066ecc4ccedf). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  The <xref:System.Array> class is not part of the <xref:System.Collections> namespaces. However, it is still considered a collection because it is based on the <xref:System.Collections.IList> interface.  
   
  The <xref:System.Array> class is the base class for language implementations that support arrays. However, only the system and compilers can derive explicitly from the <xref:System.Array> class. Users should employ the array constructs provided by the language.  

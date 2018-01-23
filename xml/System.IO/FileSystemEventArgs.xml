@@ -202,7 +202,8 @@
   
 ## Remarks  
  The name returned by the <xref:System.IO.FileSystemEventArgs.Name%2A> property is the relative path of the affected file or directory, with respect to the directory being watched. For example, if a <xref:System.IO.FileSystemWatcher> object is watching the directory "C:\temp" and the file at "C:\temp\test\file.txt" changes, the <xref:System.IO.FileSystemEventArgs.Name%2A> property will return "test\file.txt".  
-  
+ 
+ The <xref:System.IO.FileSystemEventArgs.Name%2A> property may be null for renamed events if the <xref:System.IO.FileSystemWatcher> does not get matching old and new name events from the OS.
  ]]></format>
         </remarks>
       </Docs>

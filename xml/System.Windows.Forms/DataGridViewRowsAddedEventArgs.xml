@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView.RowsAdded> event occurs when rows are added to a <xref:System.Windows.Forms.DataGridView> control. When the user adds a new row using the row for new records, the <xref:System.Windows.Forms.DataGridViewRowsAddedEventArgs.RowIndex%2A> value in the handler for this event is equal to the index of the new location of the row for new records, which is one greater than the row just added. When you add rows programmatically, however, the <xref:System.Windows.Forms.DataGridViewRowsAddedEventArgs.RowIndex%2A> value is the index of the first row added.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   

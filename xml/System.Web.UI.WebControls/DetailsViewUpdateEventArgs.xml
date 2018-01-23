@@ -20,7 +20,7 @@
   
  A <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs> object is passed to the event handler, which allows you to determine the value of an optional command argument sent to the <xref:System.Web.UI.WebControls.DetailsView> control and to indicate whether the update operation should be canceled. To determine the value of the command argument, use the <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.CommandArgument%2A> property. To cancel the update operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. You can also read or modify the new values entered by the user by using the <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.Keys%2A> and <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.NewValues%2A> properties. The <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.Keys%2A> property contains the key fields, while the <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.NewValues%2A> property contains the non-key fields. If you need to access the original non-key field values, use the <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.OldValues%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs> class, see the <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.%23ctor%2A> constructor.  
   

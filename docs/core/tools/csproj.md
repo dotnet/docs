@@ -1,5 +1,5 @@
 ---
-title: csproj reference
+title: Additions to the csproj format for .NET Core
 description: Learn about the differences between existing and .NET Core csproj files
 keywords: reference, csproj, .NET Core
 author: blackdwarf

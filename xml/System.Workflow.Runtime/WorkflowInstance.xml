@@ -35,7 +35,7 @@
 ## Examples  
  The following code example demonstrates how you can create and start a <xref:System.Workflow.Runtime.WorkflowInstance> in a workflow host. The code creates an instance of the <xref:System.Workflow.Runtime.WorkflowRuntime>, adds services to the runtime, and then demonstrates the recommended way to create a <xref:System.Workflow.Runtime.WorkflowInstance> object. The code initializes <xref:System.Workflow.Runtime.WorkflowInstance> by calling the <xref:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow%2A> method and passing the previously created type to it. The <xref:System.Workflow.Runtime.WorkflowInstance> is started with the <xref:System.Workflow.Runtime.WorkflowInstance.Start%2A> method call.  
   
- This code example is part of the Canceling a Workflow SDK sample from the Program.cs file. For more information, see [Canceling a Workflow](http://msdn.microsoft.com/en-us/d5077f56-a78b-48e7-825c-f6c77c8e54fb).  
+ This code example is part of the Canceling a Workflow SDK sample from the Program.cs file. For more information, see [Canceling a Workflow](http://msdn.microsoft.com/library/d5077f56-a78b-48e7-825c-f6c77c8e54fb).  
   
  [!code-csharp[WF_Samples#260](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#260)]
  [!code-vb[WF_Samples#260](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#260)]  
@@ -108,7 +108,7 @@
    
   
 ## Examples  
- The following example demonstrates calling ApplyWorkflowChanges to a <xref:System.Workflow.Runtime.WorkflowInstance> object.  This example is from the Ordering State Machine SDK sample, from the Mainform.cs file.  For more information, see the [Ordering State Machine Sample](http://msdn.microsoft.com/en-us/59272cf4-bc98-439c-bcfa-b66999ebce5c).  
+ The following example demonstrates calling ApplyWorkflowChanges to a <xref:System.Workflow.Runtime.WorkflowInstance> object.  This example is from the Ordering State Machine SDK sample, from the Mainform.cs file.  For more information, see the [Ordering State Machine Sample](http://msdn.microsoft.com/library/59272cf4-bc98-439c-bcfa-b66999ebce5c).  
   
  [!code-csharp[WF_Samples#89](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#89)]
  [!code-vb[WF_Samples#89](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#89)]  
@@ -158,7 +158,7 @@
 ## Examples  
  The following code example demonstrates how to use <xref:System.Workflow.Runtime.WorkflowInstance.EnqueueItem%2A>. When the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowIdled> event occurs, the `OnWorkflowIdled` method defined in this example is called. It determines which workflow is idled using the <xref:System.Workflow.Runtime.WorkflowEventArgs.WorkflowInstance%2A> property and then gets a collection of queued items for the workflow instance by calling the <xref:System.Workflow.Runtime.WorkflowInstance.GetWorkflowQueueData%2A> method. The code iterates over the collection to determine which activity is waiting for the event that idled the workflow. It then sends an exception to the workflow queue using the <xref:System.Workflow.Runtime.WorkflowInstance.EnqueueItem%2A> method along with the name of the event queue item.  
   
- This code example is part of the Canceling a Workflow SDK sample from the Program.cs file. For more information, see [Canceling a Workflow](http://msdn.microsoft.com/en-us/d5077f56-a78b-48e7-825c-f6c77c8e54fb).  
+ This code example is part of the Canceling a Workflow SDK sample from the Program.cs file. For more information, see [Canceling a Workflow](http://msdn.microsoft.com/library/d5077f56-a78b-48e7-825c-f6c77c8e54fb).  
   
  [!code-csharp[WF_Samples#261](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#261)]
  [!code-vb[WF_Samples#261](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#261)]  
@@ -320,7 +320,7 @@
    
   
 ## Examples  
- The following example demonstrates retrieving the workflow definition from a workflow instance.  This example is from the Ordering State Machine SDK sample, from the Mainform.cs file.  For more information, see the [Ordering State Machine Sample](http://msdn.microsoft.com/en-us/59272cf4-bc98-439c-bcfa-b66999ebce5c).  
+ The following example demonstrates retrieving the workflow definition from a workflow instance.  This example is from the Ordering State Machine SDK sample, from the Mainform.cs file.  For more information, see the [Ordering State Machine Sample](http://msdn.microsoft.com/library/59272cf4-bc98-439c-bcfa-b66999ebce5c).  
   
  [!code-csharp[WF_Samples#86](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#86)]
  [!code-vb[WF_Samples#86](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#86)]  
@@ -349,7 +349,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example demonstrates using the <xref:System.Workflow.Runtime.WorkflowInstance.GetWorkflowNextTimerExpiration%2A> method to determine if more workflow timer messages are enqueued. This example is from the WorkflowThreading SDK sample, from the Program.cs file. For more information, see [Workflow Threading Sample](http://msdn.microsoft.com/en-us/5b650be7-09fa-47db-a2f6-523dc8ea5ee9).  
+ The following example demonstrates using the <xref:System.Workflow.Runtime.WorkflowInstance.GetWorkflowNextTimerExpiration%2A> method to determine if more workflow timer messages are enqueued. This example is from the WorkflowThreading SDK sample, from the Program.cs file. For more information, see [Workflow Threading Sample](http://msdn.microsoft.com/library/5b650be7-09fa-47db-a2f6-523dc8ea5ee9).  
   
  [!code-csharp[WF_Samples#284](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#284)]
  [!code-vb[WF_Samples#284](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#284)]  
@@ -386,7 +386,7 @@
 ## Examples  
  The following code example demonstrates how you can use the <xref:System.Workflow.Runtime.WorkflowInstance.GetWorkflowQueueData%2A> method to obtain information about the state of all workflow queues associated with a <xref:System.Workflow.Runtime.WorkflowInstance> object. When the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowIdled> event occurs, the `OnWorkflowIdled` method defined in this example is called. It determines which workflow is idled using the <xref:System.Workflow.Runtime.WorkflowEventArgs.WorkflowInstance%2A> property and then gets a collection of queued items for the workflow instance by calling the <xref:System.Workflow.Runtime.WorkflowInstance.GetWorkflowQueueData%2A> method. The code iterates over the collection to determine which activity is waiting for the event that idled the workflow. It then sends an exception to the workflow queue using the <xref:System.Workflow.Runtime.WorkflowInstance.EnqueueItem%2A> method along with the name of the event queue item.  
   
- This code example is part of the Canceling a Workflow SDK sample from the Program.cs file. For more information, see [Canceling a Workflow](http://msdn.microsoft.com/en-us/d5077f56-a78b-48e7-825c-f6c77c8e54fb).  
+ This code example is part of the Canceling a Workflow SDK sample from the Program.cs file. For more information, see [Canceling a Workflow](http://msdn.microsoft.com/library/d5077f56-a78b-48e7-825c-f6c77c8e54fb).  
   
  [!code-csharp[WF_Samples#261](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#261)]
  [!code-vb[WF_Samples#261](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#261)]  
@@ -427,7 +427,7 @@
   
  The second snippet uses the <xref:System.Workflow.Runtime.WorkflowInstance.InstanceId%2A> property as the first object in an `OrderEventArgs` constructor call when the `CallBackForApproval` method is called.  
   
- This code example is part of the Listen SDK Sample from the OrderServiceImple.cs file. For more information, see [Listen Sample](http://msdn.microsoft.com/en-us/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
+ This code example is part of the Listen SDK Sample from the OrderServiceImple.cs file. For more information, see [Listen Sample](http://msdn.microsoft.com/library/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
   
  [!code-csharp[WF_Samples#211](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#211)]
  [!code-vb[WF_Samples#211](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#211)]  
@@ -520,7 +520,7 @@
    
   
 ## Examples  
- The following example demonstrates calling Resume on a previously suspended workflow instance.  This example is from the Suspend and Terminate SDK sample.  For more information, see [Suspend and Terminate Sample](http://msdn.microsoft.com/en-us/f4dffa58-d01e-44fb-b5a1-3b283d2c4517).  
+ The following example demonstrates calling Resume on a previously suspended workflow instance.  This example is from the Suspend and Terminate SDK sample.  For more information, see [Suspend and Terminate Sample](http://msdn.microsoft.com/library/f4dffa58-d01e-44fb-b5a1-3b283d2c4517).  
   
  [!code-csharp[WF_Samples#172](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#172)]
  [!code-vb[WF_Samples#172](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#172)]  
@@ -556,7 +556,7 @@
 ## Examples  
  The following code example demonstrates how you can use the <xref:System.Workflow.Runtime.WorkflowInstance.Start%2A> method to start a <xref:System.Workflow.Runtime.WorkflowInstance> in a workflow host. The code creates an instance of the <xref:System.Workflow.Runtime.WorkflowRuntime>, adds services to the runtime, and then demonstrates the recommended way to create a <xref:System.Workflow.Runtime.WorkflowInstance> object. It creates a <xref:System.Type> object and casts it to one of the workflow objects with which the host is associated. The code next initializes <xref:System.Workflow.Runtime.WorkflowInstance> by calling the <xref:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow%2A> method and passing the previously created type to it. The <xref:System.Workflow.Runtime.WorkflowInstance> is started with the <xref:System.Workflow.Runtime.WorkflowInstance.Start%2A> method call.  
   
- This code example is part of the Canceling a Workflow SDK sample from the Program.cs file. For more information, see [Canceling a Workflow](http://msdn.microsoft.com/en-us/d5077f56-a78b-48e7-825c-f6c77c8e54fb).  
+ This code example is part of the Canceling a Workflow SDK sample from the Program.cs file. For more information, see [Canceling a Workflow](http://msdn.microsoft.com/library/d5077f56-a78b-48e7-825c-f6c77c8e54fb).  
   
  [!code-csharp[WF_Samples#260](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#260)]
  [!code-vb[WF_Samples#260](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#260)]  
@@ -679,7 +679,7 @@
    
   
 ## Examples  
- The following example demonstrates using the TryUnload method to unload a workflow when the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowIdled> event fires. This example is from the Using Persistence Services SDK sample, from the Program.cs file. For more information, see [Using Persistence Services Sample](http://msdn.microsoft.com/en-us/3176b7e7-ae49-4d5c-802b-85032d6ebde6).  
+ The following example demonstrates using the TryUnload method to unload a workflow when the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowIdled> event fires. This example is from the Using Persistence Services SDK sample, from the Program.cs file. For more information, see [Using Persistence Services Sample](http://msdn.microsoft.com/library/3176b7e7-ae49-4d5c-802b-85032d6ebde6).  
   
  [!code-csharp[WF_Samples#280](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#280)]
  [!code-vb[WF_Samples#280](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#280)]  

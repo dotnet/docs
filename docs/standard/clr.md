@@ -31,7 +31,7 @@ The .NET Framework provides a run-time environment called the common language ru
  Compilers and tools expose the common language runtime's functionality and enable you to write code that benefits from this managed execution environment. Code that you develop with a language compiler that targets the runtime is called managed code; it benefits from features such as cross-language integration, cross-language exception handling, enhanced security, versioning and deployment support, a simplified model for component interaction, and debugging and profiling services.  
   
 > [!NOTE]
->  Compilers and tools are able to produce output that the common language runtime can consume because the type system, the format of metadata, and the runtime environment (the virtual execution system) are all defined by a public standard, the ECMA Common Language Infrastructure specification. For more information, see [ECMA C# and Common Language Infrastructure Specifications](http://go.microsoft.com/fwlink/?LinkId=99212).  
+>  Compilers and tools are able to produce output that the common language runtime can consume because the type system, the format of metadata, and the runtime environment (the virtual execution system) are all defined by a public standard, the ECMA Common Language Infrastructure specification. For more information, see [ECMA C# and Common Language Infrastructure Specifications](https://www.visualstudio.com/license-terms/ecma-c-common-language-infrastructure-standards/).  
   
  To enable the runtime to provide services to managed code, language compilers must emit metadata that describes the types, members, and references in your code. Metadata is stored with the code; every loadable common language runtime portable executable (PE) file contains metadata. The runtime uses metadata to locate and load classes, lay out instances in memory, resolve method invocations, generate native code, enforce security, and set run-time context boundaries.  
   
@@ -82,7 +82,7 @@ The .NET Framework provides a run-time environment called the common language ru
 |-----------|-----------------|  
 |[Managed Execution Process](../../docs/standard/managed-execution-process.md)|Describes the steps required to take advantage of the common language runtime.|  
 |[Automatic Memory Management](../../docs/standard/automatic-memory-management.md)|Describes how the garbage collector allocates and releases memory.|  
-|[NIB: Overview of the .NET Framework](http://msdn.microsoft.com/en-us/ea38ac1e-92af-4d1b-8db1-e8a5ea10ed85)|Describes key .NET Framework concepts such as the common type system, cross-language interoperability, managed execution, application domains, and assemblies.|  
+|[NIB: Overview of the .NET Framework](http://msdn.microsoft.com/library/ea38ac1e-92af-4d1b-8db1-e8a5ea10ed85)|Describes key .NET Framework concepts such as the common type system, cross-language interoperability, managed execution, application domains, and assemblies.|  
 |[Common Type System](../../docs/standard/base-types/common-type-system.md)|Describes how types are declared, used, and managed in the runtime in support of cross-language integration.|  
   
 ## See Also  

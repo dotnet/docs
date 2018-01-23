@@ -454,7 +454,7 @@
   
  While waiting for the value to arrive, the binding reports the <xref:System.Windows.Data.BindingBase.FallbackValue%2A>, if one is available, or the default value of the binding target property.  
   
- However, there should not be many scenarios where you need to use the <xref:System.Windows.Data.Binding.IsAsync%2A> property. The [!INCLUDE[TLA2#tla_net](~/includes/tla2sharptla-net-md.md)] guidelines recommend against defining properties that are orders of magnitude slower than a field set would be. When you are creating your class, consider handling extremely slow operations outside of the `get` accessor and caching the result. For more information, see [NIB: Choosing Between Properties and Methods](http://msdn.microsoft.com/en-us/55825e8f-7e2e-448a-9505-7217cc91b1af).  
+ However, there should not be many scenarios where you need to use the <xref:System.Windows.Data.Binding.IsAsync%2A> property. The [!INCLUDE[TLA2#tla_net](~/includes/tla2sharptla-net-md.md)] guidelines recommend against defining properties that are orders of magnitude slower than a field set would be. When you are creating your class, consider handling extremely slow operations outside of the `get` accessor and caching the result. For more information, see [NIB: Choosing Between Properties and Methods](http://msdn.microsoft.com/library/55825e8f-7e2e-448a-9505-7217cc91b1af).  
   
  ]]></format>
         </remarks>

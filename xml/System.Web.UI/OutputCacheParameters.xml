@@ -11,12 +11,12 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Encapsulates the output cache initialization settings parsed from an [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) page directive by ASP.NET. This class cannot be inherited.</summary>
+    <summary>Encapsulates the output cache initialization settings parsed from an [@ OutputCache](http://msdn.microsoft.com/library/28a9e101-fb44-4198-9cb6-b8a52312fec2) page directive by ASP.NET. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.OutputCacheParameters> class is not used by ASP.NET page or control developers. It provides a data structure used to store cache settings parsed from an [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) page directive by ASP.NET page and control parsers such as <xref:System.Web.UI.PageParser> and <xref:System.Web.UI.TemplateControlParser>. The <xref:System.Web.UI.OutputCacheParameters> object is used with the <xref:System.Web.UI.Page.InitOutputCache%2A?displayProperty=nameWithType> method to initialize the output cache for a page and its contents at run time.  
+ The <xref:System.Web.UI.OutputCacheParameters> class is not used by ASP.NET page or control developers. It provides a data structure used to store cache settings parsed from an [@ OutputCache](http://msdn.microsoft.com/library/28a9e101-fb44-4198-9cb6-b8a52312fec2) page directive by ASP.NET page and control parsers such as <xref:System.Web.UI.PageParser> and <xref:System.Web.UI.TemplateControlParser>. The <xref:System.Web.UI.OutputCacheParameters> object is used with the <xref:System.Web.UI.Page.InitOutputCache%2A?displayProperty=nameWithType> method to initialize the output cache for a page and its contents at run time.  
   
  ]]></format>
     </remarks>

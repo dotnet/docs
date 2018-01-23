@@ -64,4 +64,4 @@ This topic explains the meaning and use of the design-time error list that appea
  [Troubleshooting Design-Time Development](http://msdn.microsoft.com/library/e048d08e-fa7c-4be8-b238-4abaa199a0a6)  
  [Troubleshooting Control and Component Authoring](../../../../docs/framework/winforms/controls/troubleshooting-control-and-component-authoring.md)  
  [Developing Windows Forms Controls at Design Time](../../../../docs/framework/winforms/controls/developing-windows-forms-controls-at-design-time.md)  
- [Windows Forms Designer Error Messages](http://msdn.microsoft.com/en-us/cf610bf4-5fe4-471c-bce7-6a05ece07bd2)
+ [Windows Forms Designer Error Messages](http://msdn.microsoft.com/library/cf610bf4-5fe4-471c-bce7-6a05ece07bd2)

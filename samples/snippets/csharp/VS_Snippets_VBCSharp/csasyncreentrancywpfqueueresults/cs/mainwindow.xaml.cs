@@ -127,14 +127,14 @@ namespace QueueResults
         {
             List<string> urls = new List<string> 
             { 
-                "http://msdn.microsoft.com/en-us/library/hh191443.aspx",
-                "http://msdn.microsoft.com/en-us/library/aa578028.aspx",
-                "http://msdn.microsoft.com/en-us/library/jj155761.aspx",
-                "http://msdn.microsoft.com/en-us/library/hh290140.aspx",
-                "http://msdn.microsoft.com/en-us/library/hh524395.aspx",
-                "http://msdn.microsoft.com/en-us/library/ms404677.aspx",
+                "http://msdn.microsoft.com/library/hh191443.aspx",
+                "http://msdn.microsoft.com/library/aa578028.aspx",
+                "http://msdn.microsoft.com/library/jj155761.aspx",
+                "http://msdn.microsoft.com/library/hh290140.aspx",
+                "http://msdn.microsoft.com/library/hh524395.aspx",
+                "http://msdn.microsoft.com/library/ms404677.aspx",
                 "http://msdn.microsoft.com",
-                "http://msdn.microsoft.com/en-us/library/ff730837.aspx"
+                "http://msdn.microsoft.com/library/ff730837.aspx"
             };
             return urls;
         }

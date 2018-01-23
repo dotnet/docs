@@ -142,7 +142,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
@@ -672,7 +672,7 @@
  You must add references to the <xref:System.Drawing?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> namespaces to run this example.  
   
 > [!NOTE]
->  For instructions about how to run this example in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/en-us/cc447f7e-4c3b-4397-9d05-aeba3ca49416).  
+>  For instructions about how to run this example in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/library/cc447f7e-4c3b-4397-9d05-aeba3ca49416).  
   
  [!code-csharp[Classic ScrollBar Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ScrollBar Example/CS/source.cs#2)]
  [!code-vb[Classic ScrollBar Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ScrollBar Example/VB/source.vb#2)]  
@@ -724,7 +724,7 @@
  You must add references to the <xref:System.Drawing?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> namespaces to run this example.  
   
 > [!NOTE]
->  For instructions about how to run this example in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/en-us/cc447f7e-4c3b-4397-9d05-aeba3ca49416).  
+>  For instructions about how to run this example in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/library/cc447f7e-4c3b-4397-9d05-aeba3ca49416).  
   
  [!code-csharp[Classic ScrollBar Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ScrollBar Example/CS/source.cs#2)]
  [!code-vb[Classic ScrollBar Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ScrollBar Example/VB/source.vb#2)]  
@@ -768,7 +768,7 @@
  You must add references to the <xref:System.Drawing?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> namespaces to run this example.  
   
 > [!NOTE]
->  For instructions about how to run this example in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/en-us/cc447f7e-4c3b-4397-9d05-aeba3ca49416).  
+>  For instructions about how to run this example in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/library/cc447f7e-4c3b-4397-9d05-aeba3ca49416).  
   
  [!code-csharp[Classic ScrollBar Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ScrollBar Example/CS/source.cs#2)]
  [!code-vb[Classic ScrollBar Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ScrollBar Example/VB/source.vb#2)]  
@@ -999,7 +999,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.ScrollBar> control will convert mouse wheel movements to scrolling when the <xref:System.Windows.Forms.ScrollBar> is in focus.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.ScrollBar.OnMouseWheel%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1032,7 +1032,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.ScrollBar.OnScroll%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1076,7 +1076,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.ScrollBar.OnValueChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1086,7 +1086,7 @@
  The following code example uses the derived class <xref:System.Windows.Forms.VScrollBar>. Event handlers for the <xref:System.Windows.Forms.ScrollBar.Scroll> and <xref:System.Windows.Forms.ScrollBar.ValueChanged> events are created. This code assumes that a <xref:System.Windows.Forms.Label> and <xref:System.Windows.Forms.Button> have been created on a form and that the button has an event handler for the <xref:System.Windows.Forms.Control.Click> event. When the button is clicked, the <xref:System.Windows.Forms.ScrollBar.Value%2A> property of the scroll bar is adjusted in code. The label will display the current value of the <xref:System.Windows.Forms.ScrollBar.Value%2A> property and the event that changed it. You will notice that when the scroll value is changed by the button's <xref:System.Windows.Forms.Control.Click> event, only the <xref:System.Windows.Forms.ScrollBar.ValueChanged> event is raised. In contrast, when the scroll bar is scrolled manually, the <xref:System.Windows.Forms.ScrollBar.Scroll> event is raised immediately after the <xref:System.Windows.Forms.ScrollBar.ValueChanged> event.  
   
 > [!NOTE]
->  For instructions about how to run this example in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/en-us/cc447f7e-4c3b-4397-9d05-aeba3ca49416).  
+>  For instructions about how to run this example in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/library/cc447f7e-4c3b-4397-9d05-aeba3ca49416).  
   
  [!code-cpp[Classic ScrollBar.OnScroll Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ScrollBar.OnScroll Example/CPP/source.cpp#1)]
  [!code-csharp[Classic ScrollBar.OnScroll Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ScrollBar.OnScroll Example/CS/source.cs#1)]
@@ -1144,7 +1144,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1152,7 +1152,7 @@
  The following example scrolls an image in a picture box. It uses the <xref:System.Windows.Forms.ScrollBar.Value%2A> of the scrollbar to redraw a new part of the image whenever the user scrolls. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ScrollBar> class overview.  
   
 > [!NOTE]
->  For instructions about how to run this example in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/en-us/cc447f7e-4c3b-4397-9d05-aeba3ca49416).  
+>  For instructions about how to run this example in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/library/cc447f7e-4c3b-4397-9d05-aeba3ca49416).  
   
  [!code-csharp[Classic ScrollBar Example#3](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ScrollBar Example/CS/source.cs#3)]
  [!code-vb[Classic ScrollBar Example#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ScrollBar Example/VB/source.vb#3)]  
@@ -1207,7 +1207,7 @@
  You must add references to the <xref:System.Drawing?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> namespaces to run this example.  
   
 > [!NOTE]
->  For instructions about how to run this example in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/en-us/cc447f7e-4c3b-4397-9d05-aeba3ca49416).  
+>  For instructions about how to run this example in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/library/cc447f7e-4c3b-4397-9d05-aeba3ca49416).  
   
  [!code-csharp[Classic ScrollBar Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ScrollBar Example/CS/source.cs#2)]
  [!code-vb[Classic ScrollBar Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ScrollBar Example/VB/source.vb#2)]  
@@ -1388,7 +1388,7 @@
  The following example scrolls an image in a picture box. It uses the <xref:System.Windows.Forms.ScrollBar.Value%2A> of the scrollbar to redraw a new part of the image whenever the user scrolls. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ScrollBar> class overview.  
   
 > [!NOTE]
->  For instructions about how to run this example in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/en-us/cc447f7e-4c3b-4397-9d05-aeba3ca49416).  
+>  For instructions about how to run this example in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/library/cc447f7e-4c3b-4397-9d05-aeba3ca49416).  
   
  [!code-csharp[Classic ScrollBar Example#3](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ScrollBar Example/CS/source.cs#3)]
  [!code-vb[Classic ScrollBar Example#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ScrollBar Example/VB/source.vb#3)]  
@@ -1420,7 +1420,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1428,7 +1428,7 @@
  The following code example uses the derived class <xref:System.Windows.Forms.VScrollBar>. Event handlers for the <xref:System.Windows.Forms.ScrollBar.Scroll> and <xref:System.Windows.Forms.ScrollBar.ValueChanged> events are created. This code assumes that a <xref:System.Windows.Forms.Label> and <xref:System.Windows.Forms.Button> have been created on a form and that the button has an event handler for the <xref:System.Windows.Forms.Control.Click> event. When the button is clicked, the <xref:System.Windows.Forms.ScrollBar.Value%2A> property of the scroll bar is adjusted in code. The label will display the current value of the <xref:System.Windows.Forms.ScrollBar.Value%2A> property and the event that changed it. You will notice that when the scroll value is changed by the button's <xref:System.Windows.Forms.Control.Click> event, only the <xref:System.Windows.Forms.ScrollBar.ValueChanged> event is raised. In contrast, when the scroll bar is scrolled manually, the <xref:System.Windows.Forms.ScrollBar.Scroll> event is raised immediately after the <xref:System.Windows.Forms.ScrollBar.ValueChanged> event.  
   
 > [!NOTE]
->  For instructions about how to run this example in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/en-us/cc447f7e-4c3b-4397-9d05-aeba3ca49416).  
+>  For instructions about how to run this example in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/library/cc447f7e-4c3b-4397-9d05-aeba3ca49416).  
   
  [!code-cpp[Classic ScrollBar.OnScroll Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ScrollBar.OnScroll Example/CPP/source.cpp#1)]
  [!code-csharp[Classic ScrollBar.OnScroll Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ScrollBar.OnScroll Example/CS/source.cs#1)]

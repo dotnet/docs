@@ -36,10 +36,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/io/memorystream.cs#1a4dcb744a23ba6f). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  The current position of a stream is the position at which the next read or write operation could take place. The current position can be retrieved or set through the <xref:System.IO.MemoryStream.Seek%2A> method. When a new instance of <xref:System.IO.MemoryStream> is created, the current position is set to zero.  
   
 [!INCLUDE[note_unnecessary_dispose](~/includes/note-unnecessary-dispose.md)]

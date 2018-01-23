@@ -18,7 +18,7 @@
 ## Remarks  
  At various points in the life cycle of a Web Parts application, the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> object needs to check the capabilities of the current user to determine what personalization data the user can view and modify. When this need arises, the personalization object checks instances of the <xref:System.Web.UI.WebControls.WebParts.WebPartUserCapability> class.  
   
- The Web Parts personalization feature defines two user capabilities, each of which is represented by a <xref:System.Web.UI.WebControls.WebParts.WebPartUserCapability> object. Both of these objects have corresponding verbs that can be used to specify user capabilities within the `<authorization>` section of a Web.config file. For more information, see [authorization Element for personalization for webParts (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/d190d4ff-1445-4ee1-88eb-9737c7aa1434). The different user capabilities are shown in the following table.  
+ The Web Parts personalization feature defines two user capabilities, each of which is represented by a <xref:System.Web.UI.WebControls.WebParts.WebPartUserCapability> object. Both of these objects have corresponding verbs that can be used to specify user capabilities within the `<authorization>` section of a Web.config file. For more information, see [authorization Element for personalization for webParts (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/d190d4ff-1445-4ee1-88eb-9737c7aa1434). The different user capabilities are shown in the following table.  
   
 |User capability|Description|  
 |---------------------|-----------------|  

@@ -20,7 +20,7 @@
   
  A <xref:System.Web.UI.WebControls.GridViewSelectEventArgs> object is passed to the event-handling method, which allows you to determine the index of the row selected by the user and to indicate that the selection operation should be canceled. To cancel the selection operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.GridViewSelectEventArgs> object to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.GridViewSelectEventArgs>, see the <xref:System.Web.UI.WebControls.GridViewSelectEventArgs.%23ctor%2A> constructor.  
   

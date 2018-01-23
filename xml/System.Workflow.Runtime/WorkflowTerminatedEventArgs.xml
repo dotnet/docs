@@ -32,7 +32,7 @@
 ## Examples  
  The following code example demonstrates an event handler method that takes <xref:System.Workflow.Runtime.WorkflowTerminatedEventArgs> as a parameter. The `OnWorkflowTerminated` method is called when the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowTerminated> event is raised. The code uses the <xref:System.Workflow.Runtime.WorkflowTerminatedEventArgs.Exception%2A> property get the message associated with the exception that caused the workflow to terminate.  
   
- This code example is part of the Sequential Workflow with Parameters SDK Sample from the Program.cs file. For more information, see [Sequential Workflow with Parameters](http://msdn.microsoft.com/en-us/17157f2d-8fed-4848-a386-e4efa381b66b).  
+ This code example is part of the Sequential Workflow with Parameters SDK Sample from the Program.cs file. For more information, see [Sequential Workflow with Parameters](http://msdn.microsoft.com/library/17157f2d-8fed-4848-a386-e4efa381b66b).  
   
  [!code-csharp[WF_Samples#193](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#193)]
  [!code-vb[WF_Samples#193](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#193)]  
@@ -72,7 +72,7 @@
 ## Examples  
  The following code example demonstrates how you can use the <xref:System.Workflow.Runtime.WorkflowTerminatedEventArgs.Exception%2A> property to obtain information about an exception that caused a workflow to terminate. The `OnWorkflowTerminated` method takes a <xref:System.Workflow.Runtime.WorkflowTerminatedEventArgs> as a parameter. This method is called when the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowTerminated> event is raised. The code uses the <xref:System.Workflow.Runtime.WorkflowTerminatedEventArgs.Exception%2A> property get the message associated with the exception that caused the workflow to terminate.  
   
- This code example is part of the Sequential Workflow with Parameters SDK Sample from the Program.cs file. For more information, see [Sequential Workflow with Parameters](http://msdn.microsoft.com/en-us/17157f2d-8fed-4848-a386-e4efa381b66b).  
+ This code example is part of the Sequential Workflow with Parameters SDK Sample from the Program.cs file. For more information, see [Sequential Workflow with Parameters](http://msdn.microsoft.com/library/17157f2d-8fed-4848-a386-e4efa381b66b).  
   
  [!code-csharp[WF_Samples#193](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#193)]
  [!code-vb[WF_Samples#193](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#193)]  

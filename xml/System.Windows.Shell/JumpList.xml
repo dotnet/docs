@@ -64,7 +64,7 @@ Windows Media Player Jump List
 >  You typically create one <xref:System.Windows.Shell.JumpList> that is attached to the <xref:System.Windows.Application> and applied to the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] shell. However, you can create multiple <xref:System.Windows.Shell.JumpList> objects. Only one <xref:System.Windows.Shell.JumpList> at a time can be applied to the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] shell, and only one <xref:System.Windows.Shell.JumpList> at a time can be associated with an <xref:System.Windows.Application>. The .NET Framework does not require that these be the same <xref:System.Windows.Shell.JumpList>.  
   
 > [!NOTE]
->  This class contains a link demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the immediate caller does not have full-trust permission. For more information about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+>  This class contains a link demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the immediate caller does not have full-trust permission. For more information about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/library/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
   
    
   

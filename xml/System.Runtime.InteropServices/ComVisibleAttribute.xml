@@ -45,7 +45,7 @@
   
  Unless you explicitly set a class and its members to `false`, inherited classes can expose to COM base class members that are invisible in the original class. For example, if you set ClassA to `false` and do not apply the attribute to its members, the class and its members are invisible to COM. However, if you derive ClassB from ClassA and export ClassB to COM, ClassA members become visible base class members of ClassB.  
   
- For a detailed description of the export process, see [Assembly to Type Library Conversion Summary](http://msdn.microsoft.com/en-us/3a37eefb-a76c-4000-9080-7dbbf66a4896).  
+ For a detailed description of the export process, see [Assembly to Type Library Conversion Summary](http://msdn.microsoft.com/library/3a37eefb-a76c-4000-9080-7dbbf66a4896).  
   
    
   

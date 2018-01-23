@@ -601,7 +601,7 @@ msxml://<path to xml file>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="config" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Configuration.Provider.ProviderException">The <see langword="connectionStringName" /> attribute is empty or does not exist in the [connectionStrings Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/b6ffbb2e-a4d1-410e-8f7e-9755e92c65de) configuration section.  
+        <exception cref="T:System.Configuration.Provider.ProviderException">The <see langword="connectionStringName" /> attribute is empty or does not exist in the [connectionStrings Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/b6ffbb2e-a4d1-410e-8f7e-9755e92c65de) configuration section.  
   
  -or-  
   

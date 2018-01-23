@@ -31,7 +31,7 @@
 |<xref:System.Web.UI.WebControls.Menu.MenuItemClick>|Occurs when a menu item is clicked. This event is commonly used to synchronize a <xref:System.Web.UI.WebControls.Menu> control with another control on the page.|  
 |<xref:System.Web.UI.WebControls.Menu.MenuItemDataBound>|Occurs when a menu item is bound to data. This event is commonly used to modify a menu item before it is rendered in a <xref:System.Web.UI.WebControls.Menu> control.|  
   
- When you create a <xref:System.Web.UI.WebControls.MenuEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ When you create a <xref:System.Web.UI.WebControls.MenuEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   

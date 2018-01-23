@@ -65,7 +65,7 @@
   
 -   The <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event of the <xref:System.Speech.Recognition.Grammar> class.  
   
- For more information about recognition events, see [Using Speech Recognition Events](http://msdn.microsoft.com/en-us/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
+ For more information about recognition events, see [Using Speech Recognition Events](http://msdn.microsoft.com/library/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
   
    
   
@@ -149,7 +149,7 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
   
  One use for the <xref:System.Speech.Recognition.RecognitionResult.Alternates%2A> collection is for automated error correction. For example, when designing a directory dialog, an application could prompt the user to check if the application has the correct information from a recognition event, as in, "Did you say 'Anna'?" If the user says "no", then the application could query the user about any alternates that had a high enough <xref:System.Speech.Recognition.RecognizedPhrase.Confidence%2A> score.  
   
- For more information about speech recognition and the use of recognition alternates, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Using Speech Recognition Events](http://msdn.microsoft.com/en-us/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
+ For more information about speech recognition and the use of recognition alternates, see [Speech Recognition](http://msdn.microsoft.com/library/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Using Speech Recognition Events](http://msdn.microsoft.com/library/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
   
    
   

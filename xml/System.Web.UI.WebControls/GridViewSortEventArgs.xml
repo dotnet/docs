@@ -23,7 +23,7 @@
   
  A <xref:System.Web.UI.WebControls.GridViewSortEventArgs> object is passed to the event-handling method, which allows you to specify or determine the sort expression and sort direction in which to sort the <xref:System.Web.UI.WebControls.GridView> control. To determine the sort expression, use the <xref:System.Web.UI.WebControls.GridViewSortEventArgs.SortExpression%2A> property. To determine the sort direction, use the <xref:System.Web.UI.WebControls.GridViewSortEventArgs.SortDirection%2A> property. You can also cancel a sorting operation by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.GridViewSortEventArgs>, see the <xref:System.Web.UI.WebControls.GridViewSelectEventArgs.%23ctor%2A> constructor.  
   

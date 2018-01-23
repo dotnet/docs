@@ -187,6 +187,6 @@ public class LoanApp : IAnother {
  [COM Callable Wrapper](../../../docs/framework/interop/com-callable-wrapper.md)  
  [COM Wrappers](../../../docs/framework/interop/com-wrappers.md)  
  [Exposing .NET Framework Components to COM](../../../docs/framework/interop/exposing-dotnet-components-to-com.md)  
- [Simulating COM Interfaces](http://msdn.microsoft.com/en-us/ad2ab959-e2be-411b-aaff-275c3fba606c)  
+ [Simulating COM Interfaces](http://msdn.microsoft.com/library/ad2ab959-e2be-411b-aaff-275c3fba606c)  
  [Qualifying .NET Types for Interoperation](../../../docs/framework/interop/qualifying-net-types-for-interoperation.md)  
  [Runtime Callable Wrapper](../../../docs/framework/interop/runtime-callable-wrapper.md)

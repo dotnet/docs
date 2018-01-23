@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 7f3ffa5f-f819-4730-bcdb-09b23de3b6d0
 caps.latest.revision: 4
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
 ms.workload: 
   - "dotnet"
 ---
@@ -153,7 +153,7 @@ This section provides information about the Language-Integrated Query (LINQ) sta
 |<xref:System.Linq.Queryable.Sum%2A>|Not supported|`Function Sum(Of TSource) ( _ source As IQueryable(Of TSource), _ selector As Expression(Of Func(Of TSource, Nullable(Of Decimal))) _ ) As Nullable(Of Decimal)`|`Nullable<decimal> Sum<TSource>( this IQueryable<TSource> source, Expression<Func<TSource, Nullable<decimal>>> selector )`|  
   
 ## Type Methods  
- The LINQ standard query operators that deal with CLR type conversion and testing are supported in the [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)]. Only CLR types that map to conceptual model types are supported in LINQ to Entities. For a list of conceptual model types, see [Conceptual Model Types (CSDL)](http://msdn.microsoft.com/en-us/987b995f-e429-4569-9559-b4146744def4). The following table lists the supported and unsupported type methods.  
+ The LINQ standard query operators that deal with CLR type conversion and testing are supported in the [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)]. Only CLR types that map to conceptual model types are supported in LINQ to Entities. For a list of conceptual model types, see [Conceptual Model Types (CSDL)](http://msdn.microsoft.com/library/987b995f-e429-4569-9559-b4146744def4). The following table lists the supported and unsupported type methods.  
   
 |Method|Support|Visual Basic function signature|C# method signature|  
 |------------|-------------|-------------------------------------|--------------------------|  

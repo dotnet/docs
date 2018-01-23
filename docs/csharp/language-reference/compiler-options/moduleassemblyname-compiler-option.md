@@ -16,13 +16,13 @@ caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
-# /moduleassemblyname (C# Compiler Option)
+# -moduleassemblyname (C# Compiler Option)
 Specifies an assembly whose non-public types a .netmodule can access.  
   
 ## Syntax  
   
 ```console  
-/moduleassemblyname:assembly_name  
+-moduleassemblyname:assembly_name  
 ```  
   
 ## Arguments  
@@ -30,7 +30,7 @@ Specifies an assembly whose non-public types a .netmodule can access.
  The name of the assembly whose non-public types the .netmodule can access.  
   
 ## Remarks  
- **/moduleassemblyname** should be used when building a .netmodule, and where the following conditions are true:  
+ **-moduleassemblyname** should be used when building a .netmodule, and where the following conditions are true:  
   
 -   The .netmodule needs access to non-public types in an existing assembly.  
   
@@ -38,7 +38,7 @@ Specifies an assembly whose non-public types a .netmodule can access.
   
 -   The existing assembly has granted friend assembly access to the assembly into which the .netmodule will be built.  
   
- For more information on building a .netmodule, see [/target:module (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-module-compiler-option.md).  
+ For more information on building a .netmodule, see [-target:module (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-module-compiler-option.md).  
   
  For more information on friend assemblies, see [Friend Assemblies](../../programming-guide/concepts/assemblies-gac/friend-assemblies.md).  
   
@@ -51,7 +51,7 @@ Specifies an assembly whose non-public types a .netmodule can access.
   
 ```csharp  
 // moduleassemblyname_1.cs  
-// compile with: /target:library  
+// compile with: -target:library  
 using System;  
 using System.Runtime.CompilerServices;  
   
@@ -67,11 +67,11 @@ class An_Internal_Class
 ```  
   
 ## Example  
- This sample builds a .netmodule that accesses a non-public type in the assembly moduleassemblyname_1.dll. By knowing that this .netmodule will be built into an assembly called csman_an_assembly, we can specify **/moduleassemblyname**, allowing the .netmodule to access non-public types in an assembly that has granted friend assembly access to csman_an_assembly.  
+ This sample builds a .netmodule that accesses a non-public type in the assembly moduleassemblyname_1.dll. By knowing that this .netmodule will be built into an assembly called csman_an_assembly, we can specify **-moduleassemblyname**, allowing the .netmodule to access non-public types in an assembly that has granted friend assembly access to csman_an_assembly.  
   
 ```csharp  
 // moduleassemblyname_2.cs  
-// compile with: /moduleassemblyname:csman_an_assembly /target:module /reference:moduleassemblyname_1.dll  
+// compile with: -moduleassemblyname:csman_an_assembly -target:module -reference:moduleassemblyname_1.dll  
 class B {  
     public void Test() {  
         An_Internal_Class x = new An_Internal_Class();  
@@ -85,7 +85,7 @@ class B {
   
 ```csharp  
 // csman_an_assembly.cs  
-// compile with: /addmodule:moduleassemblyname_2.netmodule /reference:moduleassemblyname_1.dll  
+// compile with: -addmodule:moduleassemblyname_2.netmodule -reference:moduleassemblyname_1.dll  
 class A {  
     public static void Main() {  
         B bb = new B();  

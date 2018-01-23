@@ -182,7 +182,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.ActiveDirectoryMembershipUser.Email%2A> property is mapped to the `Mail` directory attribute. This property can be remapped in the Web.config file by setting the `attributeMapUserName` attribute in the [providers Element for profile (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/9e998377-b07f-44c1-ad9b-20a60e83c18f) element for profiles.  
+ The <xref:System.Web.Security.ActiveDirectoryMembershipUser.Email%2A> property is mapped to the `Mail` directory attribute. This property can be remapped in the Web.config file by setting the `attributeMapUserName` attribute in the [providers Element for profile (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/9e998377-b07f-44c1-ad9b-20a60e83c18f) element for profiles.  
   
  ]]></format>
         </remarks>

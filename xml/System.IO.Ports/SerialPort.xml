@@ -25,10 +25,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#System/sys/system/io/ports/SerialPort.cs#ae0a3218c6c9f7fe). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  Use this class to control a serial port file resource. This class provides synchronous and event-driven I/O, access to pin and break states, and access to serial driver properties. Additionally, the functionality of this class can be wrapped in an internal <xref:System.IO.Stream> object, accessible through the <xref:System.IO.Ports.SerialPort.BaseStream%2A> property, and passed to classes that wrap or use streams.  
   
  The <xref:System.IO.Ports.SerialPort> class supports the following encodings: <xref:System.Text.ASCIIEncoding>, <xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, <xref:System.Text.UTF32Encoding>, and any encoding defined in mscorlib.dll where the code page is less than 50000 or the code page is 54936.  You can use alternate encodings, but you must use the <xref:System.IO.Ports.SerialPort.ReadByte%2A> or <xref:System.IO.Ports.SerialPort.Write%2A> method and perform the encoding yourself.  

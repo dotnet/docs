@@ -51,8 +51,7 @@
  [Foreground and background threads](#Foreground)   
  [Culture and threads](#Culture)   
  [Getting information about and controlling threads](#Properties)   
- [Accessing the source code for the Thread class](#Source)  
-  
+   
 <a name="Starting"></a>   
 ## Starting a thread  
  You start a thread by supplying a delegate that represents the method the thread is to execute in its class constructor. You then call the <xref:System.Threading.Thread.Start%2A> method to begin execution.  
@@ -163,12 +162,6 @@
 -   The read-only <xref:System.Threading.Thread.IsThreadPoolThread%2A> property, which indicates whether a thread is  a thread pool thread.  
   
 -   The <xref:System.Threading.Thread.IsBackground%2A> property. For more information, see the [Foreground and background threads](#Foreground) section.  
-  
-<a name="Source"></a>   
-## Accessing the source code for the Thread class  
- To view the .NET Framework source code for the <xref:System.Threading.Thread> class, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/threading/thread.cs#3980e012bae82e96). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
-   
   
 ## Examples  
  The following example demonstrates simple threading functionality.  
@@ -2613,7 +2606,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
   
  You can specify <xref:System.Threading.Timeout.Infinite?displayProperty=nameWithType> for the `millisecondsTimeout` parameter to suspend the thread indefinitely. However, we recommend that you use other <xref:System.Threading?displayProperty=nameWithType> classes such as <xref:System.Threading.Mutex>, <xref:System.Threading.Monitor>, <xref:System.Threading.EventWaitHandle>, or <xref:System.Threading.Semaphore> instead to sychronize threads or manage resources.  
   
- The system clock ticks at a specific rate called the clock resolution. The actual timeout might not be exactly the specified timeout, because the specified timeout will be adjusted to coincide with clock ticks. For more information on clock resolution and the waiting time, see the [Sleep function](http://msdn.microsoft.com/library/windows/desktop/ms686298.aspx) topic. This method calls the [Sleep function](http://msdn.microsoft.com/en-us/library/windows/desktop/ms686298.aspx) from the Windows system APIs.  
+ The system clock ticks at a specific rate called the clock resolution. The actual timeout might not be exactly the specified timeout, because the specified timeout will be adjusted to coincide with clock ticks. For more information on clock resolution and the waiting time, see the [Sleep function](http://msdn.microsoft.com/library/windows/desktop/ms686298.aspx) topic. This method calls the [Sleep function](http://msdn.microsoft.com/library/windows/desktop/ms686298.aspx) from the Windows system APIs.  
   
  This method does not perform standard COM and SendMessage pumping.  
   

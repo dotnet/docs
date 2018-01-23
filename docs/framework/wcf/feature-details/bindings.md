@@ -22,7 +22,7 @@ ms.workload:
   - "dotnet"
 ---
 # Windows Communcation Foundation Bindings
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] separates how the software for an application is written from how it communicates with other software. Bindings are used to specify the transport, encoding, and protocol details required for clients and services to communicate with each other. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses bindings to generate the underlying wire representation of the endpoint, so most of the binding details must be agreed upon by the parties that are communicating. The easiest way to achieve this is for clients of a service to use the same binding that the endpoint for the service uses. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how to do this, see [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb).  
+[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] separates how the software for an application is written from how it communicates with other software. Bindings are used to specify the transport, encoding, and protocol details required for clients and services to communicate with each other. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses bindings to generate the underlying wire representation of the endpoint, so most of the binding details must be agreed upon by the parties that are communicating. The easiest way to achieve this is for clients of a service to use the same binding that the endpoint for the service uses. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how to do this, see [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb).  
   
  A binding is made up of a collection of binding elements. Each element describes some aspect of how the endpoint communicates with clients. A binding must include at least one transport binding element, at least one message-encoding binding element (which the transport binding element can provide by default), and any number of other protocol binding elements. The process that builds a runtime out of this description allows each binding element to contribute code to that runtime.  
   
@@ -34,7 +34,7 @@ ms.workload:
  [Configuring System-Provided Bindings](../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
  Describes how to use and modify the bindings that [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides to support common scenarios.  
   
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
  Describes how to define [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] bindings for services and clients imperatively in code and declaratively using configuration.  
   
  [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md)  

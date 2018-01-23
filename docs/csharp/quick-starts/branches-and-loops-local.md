@@ -4,7 +4,7 @@ description: In this quick start about branches and loops, you write C# code to 
 author: billwagner
 ms.author: wiwagn
 ms.date: 10/31/2017
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
@@ -289,7 +289,7 @@ Try it yourself. Then check how you did. You should get 63 for an answer. You ca
 You've completed the "branches and loops" quick start.
 
 You can continue with
-the [Arrays and collections](arrays-and-collections.md) quick start in
+the [Interpolated strings](interpolated-strings-local.md) quick start in
 your own development environment.
 
 You can learn more about these concepts in these topics:

@@ -46,7 +46,7 @@ for the executable code represented by that lamdba expression.
 
 The `LamdbaExpression` type contains `Compile` and `CompileToMethod`
 members that you would use to convert an expression tree to executable
-code. The `Compile` method creates a delegate. The `ConmpileToMethod`
+code. The `Compile` method creates a delegate. The `CompileToMethod`
 method updates a `MethodBuilder` object with the IL that represents
 the compiled output of the expression tree. Note that `CompileToMethod`
 is only available on the full desktop framework, not on the 

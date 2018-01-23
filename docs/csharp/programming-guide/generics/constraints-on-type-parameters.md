@@ -20,12 +20,12 @@ When you define a generic class, you can apply restrictions to the kinds of type
   
 |Constraint|Description|  
 |----------------|-----------------|  
-|where T: struct|The type argument must be a value type. Any value type except <xref:System.Nullable> can be specified. See [Using Nullable Types](../../../csharp/programming-guide/nullable-types/using-nullable-types.md) for more information.|  
-|where T : class|The type argument must be a reference type; this applies also to any class, interface, delegate, or array type.|  
-|where T : new()|The type argument must have a public parameterless constructor. When used together with other constraints, the `new()` constraint must be specified last.|  
-|where T : \<base class name>|The type argument must be or derive from the specified base class.|  
-|where T : \<interface name>|The type argument must be or implement the specified interface. Multiple interface constraints can be specified. The constraining interface can also be generic.|  
-|where T : U|The type argument supplied for T must be or derive from the argument supplied for U.|  
+|`where T: struct`|The type argument must be a value type. Any value type except <xref:System.Nullable> can be specified. See [Using Nullable Types](../../../csharp/programming-guide/nullable-types/using-nullable-types.md) for more information.|  
+|`where T : class`|The type argument must be a reference type; this applies also to any class, interface, delegate, or array type.|  
+|`where T : new()`|The type argument must have a public parameterless constructor. When used together with other constraints, the `new()` constraint must be specified last.|  
+|`where T : `*\<base class name>*|The type argument must be or derive from the specified base class.|  
+|`where T : `*\<interface name>*|The type argument must be or implement the specified interface. Multiple interface constraints can be specified. The constraining interface can also be generic.|  
+|`where T : U`|The type argument supplied for T must be or derive from the argument supplied for U.|  
   
 ## Why Use Constraints  
  If you want to examine an item in a generic list to determine whether it is valid or to compare it to some other item, the compiler must have some guarantee that the operator or method it has to call will be supported by any type argument that might be specified by client code. This guarantee is obtained by applying one or more constraints to your generic class definition. For example, the base class constraint tells the compiler that only objects of this type or derived from this type will be used as type arguments. Once the compiler has this guarantee, it can allow methods of that type to be called in the generic class. Constraints are applied by using the contextual keyword `where`. The following code example demonstrates the functionality we can add to the `GenericList<T>` class (in [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)) by applying a base class constraint.  

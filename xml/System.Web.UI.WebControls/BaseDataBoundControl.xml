@@ -28,7 +28,7 @@
   
  You can use the data-bound controls that are provided with ASP.NET, including <xref:System.Web.UI.WebControls.GridView>, <xref:System.Web.UI.WebControls.DetailsView>, and <xref:System.Web.UI.WebControls.TreeView>, to perform most Web development tasks that involve displaying data. In scenarios in which these controls do not provide the functionality you need, you can inherit from the base <xref:System.Web.UI.WebControls.DataBoundControl> and <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> classes to implement your own custom data source control.  
   
- While any class that supports the `DataSource` and `DataSourceID` properties and the `DataBind` method is a data-bound control, most ASP.NET data-bound controls extend the abstract <xref:System.Web.UI.WebControls.BaseDataBoundControl> and <xref:System.Web.UI.WebControls.DataBoundControl> classes. Notable exceptions include <xref:System.Web.UI.WebControls.DataGrid>, <xref:System.Web.UI.WebControls.Repeater>, and the <xref:System.Web.UI.WebControls.DropDownList> controls. For more information about data binding, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/en-us/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
+ While any class that supports the `DataSource` and `DataSourceID` properties and the `DataBind` method is a data-bound control, most ASP.NET data-bound controls extend the abstract <xref:System.Web.UI.WebControls.BaseDataBoundControl> and <xref:System.Web.UI.WebControls.DataBoundControl> classes. Notable exceptions include <xref:System.Web.UI.WebControls.DataGrid>, <xref:System.Web.UI.WebControls.Repeater>, and the <xref:System.Web.UI.WebControls.DropDownList> controls. For more information about data binding, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/library/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
   
  ]]></format>
     </remarks>
@@ -138,7 +138,7 @@
 ## Remarks  
  This event notifies the server control that any data binding logic written for it has completed.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
@@ -411,7 +411,7 @@
 > [!IMPORTANT]
 >  The <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method is sealed on all controls derived from <xref:System.Web.UI.WebControls.BaseDataBoundControl>. Data-bound controls should override `PerformDataBinding` instead of the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method to bind data. If <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> is overridden, the <xref:System.Web.UI.Control.OnDataBinding%2A> and <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnDataBound%2A> events are raised out of order.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnDataBound%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

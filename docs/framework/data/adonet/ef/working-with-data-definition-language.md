@@ -14,9 +14,9 @@ dev_langs:
   - "vb"
 ms.assetid: ec50083d-44f4-4093-9b23-5eacd601f96e
 caps.latest.revision: 3
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
 ms.workload: 
   - "dotnet"
 ---
@@ -48,11 +48,11 @@ Starting with the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.
   
 2.  Add an existing model to your application.  
   
-    1.  Add an empty model named `SchoolModel`. To create an empty model, see the [How to: Create a New .edmx File](http://msdn.microsoft.com/en-us/beb8189e-e51c-4051-839c-9902c224abf2) topic.  
+    1.  Add an empty model named `SchoolModel`. To create an empty model, see the [How to: Create a New .edmx File](http://msdn.microsoft.com/library/beb8189e-e51c-4051-839c-9902c224abf2) topic.  
   
      The SchoolModel.edmx file is added to your project.  
   
-    1.  Copy the conceptual, storage, and mapping content for the School model from the [School Model](http://msdn.microsoft.com/en-us/859a9587-81ea-4a45-9bc0-f8d330e1adac) topic.  
+    1.  Copy the conceptual, storage, and mapping content for the School model from the [School Model](http://msdn.microsoft.com/library/859a9587-81ea-4a45-9bc0-f8d330e1adac) topic.  
   
     2.  Open the SchoolModel.edmx file and paste the content within the `edmx:Runtime` tags.  
   

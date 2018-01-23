@@ -3492,7 +3492,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -6758,7 +6758,7 @@ MyControl.Font = New Font(MyControl.Font, _
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A mirrored control displays both layout and text from right to left. For more information, see [How to: Create Mirrored Windows Forms and Controls](http://msdn.microsoft.com/en-us/7c5c4ecc-9bfb-4508-8383-753e306719b1).  
+ A mirrored control displays both layout and text from right to left. For more information, see [How to: Create Mirrored Windows Forms and Controls](http://msdn.microsoft.com/library/7c5c4ecc-9bfb-4508-8383-753e306719b1).  
   
  ]]></format>
         </remarks>
@@ -16307,7 +16307,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
    
   
 ## Examples  
- The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message> structure. The[WM_ACTIVATEAPP](http://msdn.microsoft.com/en-us/library/windows/desktop/ms632614\(v=vs.85\).aspx)operating system message is handled in this example to know when another application is becoming active. See the following topics to understand the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=nameWithType> values. Actual constant values can be found in the Windows.h header file.  
+ The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message> structure. The[WM_ACTIVATEAPP](http://msdn.microsoft.com/library/windows/desktop/ms632614\(v=vs.85\).aspx)operating system message is handled in this example to know when another application is becoming active. See the following topics to understand the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=nameWithType> values. Actual constant values can be found in the Windows.h header file.  
   
  [!code-cpp[System.Windows.Forms.Control.WndProc#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Control.WndProc/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.Control.WndProc#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Control.WndProc/CS/form1.cs#1)]

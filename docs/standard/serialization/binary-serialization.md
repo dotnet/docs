@@ -1,6 +1,6 @@
 ---
 title: "Binary serialization"
-ms.date: "11/20/2017"
+ms.date: "01/02/2018"
 ms.prod: ".net"
 ms.topic: "article"
 helpviewer_keywords: 
@@ -181,6 +181,7 @@ As the nature of binary serialization allows the modification of private members
 - <xref:System.DuplicateWaitObjectException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)
 - <xref:System.EntryPointNotFoundException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)
 - <xref:System.Enum?displayProperty=nameWithType>   
+- <xref:System.EventArgs?displayProperty=nameWithType> (available in .NET Core 2.0.6 and later versions)
 - <xref:System.Exception?displayProperty=nameWithType>   
 - <xref:System.ExecutionEngineException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)
 - <xref:System.FieldAccessException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)
@@ -369,8 +370,8 @@ As the nature of binary serialization allows the modification of private members
  [Security and Serialization](../../../docs/framework/misc/security-and-serialization.md)  
  Describes the secure coding guidelines to follow when writing code that performs serialization.  
   
- [Remote Objects](http://msdn.microsoft.com/en-us/515686e6-0a8d-42f7-8188-73abede57c58)  
+ [Remote Objects](http://msdn.microsoft.com/library/515686e6-0a8d-42f7-8188-73abede57c58)  
  Describes the various communications methods available in the .NET Framework for remote communications.  
   
- [XML Web Services Created Using ASP.NET and XML Web Service Clients](http://msdn.microsoft.com/en-us/1e64af78-d705-4384-b08d-591a45f4379c)  
+ [XML Web Services Created Using ASP.NET and XML Web Service Clients](http://msdn.microsoft.com/library/1e64af78-d705-4384-b08d-591a45f4379c)  
  Provides topics that describe and explain how to program XML Web services created using ASP.NET.

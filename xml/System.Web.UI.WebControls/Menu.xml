@@ -105,7 +105,7 @@
   
  When binding to a data source where each data item contains multiple properties (such as an XML element with several attributes), a menu item displays the value returned by the `ToString` method of the data item by default. In the case of an XML element, the menu item displays the element name, which shows the underlying structure of the menu tree but is not very useful otherwise. You can bind a menu item to a specific data item property by using the <xref:System.Web.UI.WebControls.Menu.DataBindings%2A> collection to specify menu item bindings. The <xref:System.Web.UI.WebControls.Menu.DataBindings%2A> collection contains <xref:System.Web.UI.WebControls.MenuItemBinding> objects that define the relationship between a data item and the menu item it is binding to. You can specify the criteria for binding and the data item property to display in the node. For more information on menu item bindings, see <xref:System.Web.UI.WebControls.MenuItemBinding>.  
   
- You cannot create empty nodes in a <xref:System.Web.UI.WebControls.Menu> control by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Text%2A> or <xref:System.Web.UI.WebControls.MenuItemBinding.TextField%2A> properties to the empty string (""). Setting these properties to the empty string has the same effect as not setting the properties. In that case, the <xref:System.Web.UI.WebControls.Menu> control creates a default binding using the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property. For more information, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742).  
+ You cannot create empty nodes in a <xref:System.Web.UI.WebControls.Menu> control by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Text%2A> or <xref:System.Web.UI.WebControls.MenuItemBinding.TextField%2A> properties to the empty string (""). Setting these properties to the empty string has the same effect as not setting the properties. In that case, the <xref:System.Web.UI.WebControls.Menu> control creates a default binding using the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property. For more information, see [Binding to Databases](http://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742).  
   
 <a name="customizing_the_user_interface"></a>   
 ## Customizing the User Interface  
@@ -2087,7 +2087,7 @@
   
  A <xref:System.Web.UI.WebControls.MenuEventArgs> object is passed to the event handler, which allows you to access the properties of the menu item that raised the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -2151,7 +2151,7 @@
   
  A <xref:System.Web.UI.WebControls.MenuEventArgs> object is passed to the event handler, which allows you to access the properties of the menu item that raised the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -2232,7 +2232,7 @@
   
  This method is generally used by control developers when extending the <xref:System.Web.UI.WebControls.Menu> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  ]]></format>
         </remarks>
@@ -2268,7 +2268,7 @@
 ## Remarks  
  When notified by this method, Web server controls must perform any initialization steps that are required to create and set up an instance. In this stage of the server control's life cycle, the control's view state has yet to be populated. Additionally, you cannot access another server control when this method is called, regardless of whether it is a child or parent to this control. Other server controls are not guaranteed to be created and ready for access.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.Menu.OnInit%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2303,7 +2303,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Menu.OnMenuItemClick%2A> method is called by the <xref:System.Web.UI.WebControls.Menu> control to raise the <xref:System.Web.UI.WebControls.Menu.MenuItemClick> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.Menu> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  The <xref:System.Web.UI.WebControls.Menu.OnMenuItemClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2342,7 +2342,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Menu.OnMenuItemDataBound%2A> method is called by the <xref:System.Web.UI.WebControls.Menu> control to raise the <xref:System.Web.UI.WebControls.Menu.MenuItemDataBound> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.Menu> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  The <xref:System.Web.UI.WebControls.Menu.OnMenuItemDataBound%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2381,7 +2381,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Menu.OnPreRender%2A> method is called by the <xref:System.Web.UI.WebControls.Menu> control to raise the <xref:System.Web.UI.Control.PreRender> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.Menu> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  The <xref:System.Web.UI.WebControls.Menu.OnPreRender%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

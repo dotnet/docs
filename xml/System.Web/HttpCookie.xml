@@ -330,7 +330,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To set the transmission of cookies using SSL for an entire application, enable it in the application's configuration file, Web.config, which resides in the root directory of the application. For more information, see [httpCookies Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/74790718-bfa3-4935-bc9a-59c88797e08f). Values set programmatically using the <xref:System.Web.HttpCookie.Secure%2A> property override values set in the Web.config file.  
+ To set the transmission of cookies using SSL for an entire application, enable it in the application's configuration file, Web.config, which resides in the root directory of the application. For more information, see [httpCookies Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/74790718-bfa3-4935-bc9a-59c88797e08f). Values set programmatically using the <xref:System.Web.HttpCookie.Secure%2A> property override values set in the Web.config file.  
   
  When dealing with sensitive information, it is strongly recommended that you use HTTPS protocol with SSL encryption. SSL protects against data being altered (data integrity), protects a user's identity (confidentiality), and assures that data originates from the expected client (authentication). For more information on the benefits of encryption, see [Cryptographic Services](~/docs/standard/security/cryptographic-services.md). For more information about configuring SSL on an Internet Information Services (IIS) Web server, see [Configuring SSL on a Web Server or a Web Site](http://go.microsoft.com/fwlink/?LinkId=38553).  
   

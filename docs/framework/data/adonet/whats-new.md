@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3bb65d38-cce2-46f5-b979-e5c505e95e10
 caps.latest.revision: 25
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
 ms.workload: 
   - "dotnet"
 ---
@@ -62,5 +62,5 @@ The following features are new in [!INCLUDE[vstecado](../../../../includes/vstec
  [ADO.NET](../../../../docs/framework/data/adonet/index.md)  
  [ADO.NET Overview](../../../../docs/framework/data/adonet/ado-net-overview.md)  
  [SQL Server and ADO.NET](../../../../docs/framework/data/adonet/sql/index.md)  
- [What's New in WCF Data Services](http://msdn.microsoft.com/en-us/cf22cad5-b8d9-472b-8d7c-b863b64eaae8)  
+ [What's New in WCF Data Services](http://msdn.microsoft.com/library/cf22cad5-b8d9-472b-8d7c-b863b64eaae8)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

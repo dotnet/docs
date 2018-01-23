@@ -81,12 +81,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you create a delegate, you identify the method that handles the event. To associate the event with your event handler, add an instance of the delegate to the event. Unless you remove the delegate, the event handler is called whenever the event occurs. Multiple delegates can be added to handle an event. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ When you create a delegate, you identify the method that handles the event. To associate the event with your event handler, add an instance of the delegate to the event. Unless you remove the delegate, the event handler is called whenever the event occurs. Multiple delegates can be added to handle an event. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   
 ## Examples  
- Handlers are added and removed using the following code. This code example is part of the Send E-mail SDK sample and is from the SendMailActivity.cs file. For more information, see [Send E-mail Activity Sample](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
+ Handlers are added and removed using the following code. This code example is part of the Send E-mail SDK sample and is from the SendMailActivity.cs file. For more information, see [Send E-mail Activity Sample](http://msdn.microsoft.com/library/bfb5939e-60a9-4037-af4e-2cea9e654669).  
   
  [!code-csharp[WF_Samples#232](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#232)]
  [!code-vb[WF_Samples#232](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#232)]  
@@ -307,7 +307,7 @@
    
   
 ## Examples  
- The following code shows how to use <xref:System.Workflow.ComponentModel.DependencyObject.GetValue%2A> to return the value represented by a named dependency property in the context of get and set. This code example is part of the Send E-mail SDK sample and is from the SendMailActivity.cs file. For more information, see [Send E-mail Activity Sample](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
+ The following code shows how to use <xref:System.Workflow.ComponentModel.DependencyObject.GetValue%2A> to return the value represented by a named dependency property in the context of get and set. This code example is part of the Send E-mail SDK sample and is from the SendMailActivity.cs file. For more information, see [Send E-mail Activity Sample](http://msdn.microsoft.com/library/bfb5939e-60a9-4037-af4e-2cea9e654669).  
   
  [!code-csharp[WF_Samples#231](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#231)]
  [!code-vb[WF_Samples#231](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#231)]  
@@ -478,12 +478,12 @@
 ## Remarks  
  Provided as a convenient direct method for removing an event delegate.  
   
- When you create a delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. Unless you remove the delegate, the event handler is called whenever the event occurs. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ When you create a delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. Unless you remove the delegate, the event handler is called whenever the event occurs. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   
 ## Examples  
- Handlers are added and removed using the following code. For more information, see [Send E-mail Activity Sample](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
+ Handlers are added and removed using the following code. For more information, see [Send E-mail Activity Sample](http://msdn.microsoft.com/library/bfb5939e-60a9-4037-af4e-2cea9e654669).  
   
  [!code-csharp[WF_Samples#232](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#232)]
  [!code-vb[WF_Samples#232](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#232)]  
@@ -554,7 +554,7 @@
   
  In addition, the use of the <xref:System.Workflow.ComponentModel.DependencyObject.SetBinding%2A> method is illustrated.  
   
- This code example is part of the Throw SDK sample and is from the ThrowWorkFlow.cs file. For more information, see [Using Throw](http://msdn.microsoft.com/en-us/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
+ This code example is part of the Throw SDK sample and is from the ThrowWorkFlow.cs file. For more information, see [Using Throw](http://msdn.microsoft.com/library/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
   
  [!code-csharp[WF_Samples#215](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#215)]
  [!code-vb[WF_Samples#215](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#215)]  

@@ -40,11 +40,11 @@
  To add rules to an existing <xref:System.Speech.Recognition.GrammarBuilder>, use the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A>, <xref:System.Speech.Recognition.GrammarBuilder.Append%2A>, <xref:System.Speech.Recognition.GrammarBuilder.AppendDictation%2A>, <xref:System.Speech.Recognition.GrammarBuilder.AppendRuleReference%2A>, and <xref:System.Speech.Recognition.GrammarBuilder.AppendWildcard%2A> methods.  
   
 > [!IMPORTANT]
->  The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+>  The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/library/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
  To help with debugging, the <xref:System.Speech.Recognition.GrammarBuilder.DebugShowPhrases%2A> property returns the current status of the <xref:System.Speech.Recognition.GrammarBuilder> as a string.  
   
- For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
+ For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/library/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/library/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
   
    
   
@@ -104,9 +104,9 @@ private Grammar CreateColorGrammar()
  To add constraints to an existing <xref:System.Speech.Recognition.GrammarBuilder>, use the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A>, <xref:System.Speech.Recognition.GrammarBuilder.Append%2A>, <xref:System.Speech.Recognition.GrammarBuilder.AppendDictation%2A>, <xref:System.Speech.Recognition.GrammarBuilder.AppendRuleReference%2A>, and <xref:System.Speech.Recognition.GrammarBuilder.AppendWildcard%2A> methods, and the <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operator.  
   
 > [!IMPORTANT]
->  The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+>  The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/library/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
- For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
+ For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/library/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/library/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
   
  ]]></format>
         </remarks>
@@ -135,7 +135,7 @@ private Grammar CreateColorGrammar()
  To add rules to an existing <xref:System.Speech.Recognition.GrammarBuilder> object, use the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A>, <xref:System.Speech.Recognition.GrammarBuilder.Append%2A>, <xref:System.Speech.Recognition.GrammarBuilder.AppendDictation%2A>, <xref:System.Speech.Recognition.GrammarBuilder.AppendRuleReference%2A>, and <xref:System.Speech.Recognition.GrammarBuilder.AppendWildcard%2A> methods, and the <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operator.  
   
 > [!IMPORTANT]
->  The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+>  The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/library/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
    
   
@@ -200,7 +200,7 @@ private Grammar CreateColorGrammar()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about building a speech recognition grammar that contains alternatives, see [Using Choices to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/en-us/5b18db18-a5f6-46a3-aa77-6d3141544efd).  
+ For more information about building a speech recognition grammar that contains alternatives, see [Using Choices to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/library/5b18db18-a5f6-46a3-aa77-6d3141544efd).  
   
    
   
@@ -266,7 +266,7 @@ private Grammar CreateColorGrammar()
  When you create a <xref:System.Speech.Recognition.GrammarBuilder> instance from a <xref:System.Speech.Recognition.SemanticResultValue> object, you add semantic information to the grammar that can be returned in the recognition result. You can access the semantic information in the recognition result using the <xref:System.Speech.Recognition.RecognizedPhrase.Semantics%2A> property of <xref:System.Speech.Recognition.RecognizedPhrase>, which is available in the handler for the `SpeechRecognized` event. If the <xref:System.Speech.Recognition.GrammarBuilder> defines a <xref:System.Speech.Recognition.SemanticResultKey>, this can be used to retrieve the semantic information in a recognition result that is associated with the key. See the example for <xref:System.Speech.Recognition.GrammarBuilder.Append%28System.Speech.Recognition.SemanticResultKey%29>, and also see <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey>.  
   
 > [!IMPORTANT]
->  When you construct <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+>  When you construct <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/library/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
    
   
@@ -353,7 +353,7 @@ private Grammar CreateColorGrammar()
  When you create a <xref:System.Speech.Recognition.GrammarBuilder> instance from a <xref:System.Speech.Recognition.SemanticResultValue> object, you add semantic information to the grammar that can be returned in the recognition result. You can access the semantic information in the recognition result using the <xref:System.Speech.Recognition.RecognizedPhrase.Semantics%2A> property of <xref:System.Speech.Recognition.RecognizedPhrase>, which is available in the handler for the `SpeechRecognized` event. If the <xref:System.Speech.Recognition.GrammarBuilder> defines a <xref:System.Speech.Recognition.SemanticResultKey>, this can be used to retrieve the semantic information in a recognition result that is associated with the key. See the example for <xref:System.Speech.Recognition.GrammarBuilder.Append%28System.Speech.Recognition.SemanticResultKey%29>, and also see <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey>.  
   
 > [!IMPORTANT]
->  When you construct <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+>  When you construct <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/library/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
    
   
@@ -437,7 +437,7 @@ private Grammar CreateColorGrammar()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The phrase represents an exact spoken phrase that the speech recognition grammar can recognize. For more information about building a speech recognition grammar that contains strings, see [Using Strings to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/en-us/0d87b445-a342-4369-9b3f-91d07fd7e114).  
+ The phrase represents an exact spoken phrase that the speech recognition grammar can recognize. For more information about building a speech recognition grammar that contains strings, see [Using Strings to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/library/0d87b445-a342-4369-9b3f-91d07fd7e114).  
   
    
   
@@ -504,7 +504,7 @@ private Grammar CreateColorGrammar()
 ## Remarks  
  The `phrase` parameter represents the phrase that the speech recognition grammar can recognize. The `subsetMatchingMode` parameter specifies a subset of the phrase that can be spoken to achieve successful recognition of the entire phrase. You can use this to create a grammar with a list of entries that have long names, without requiring users to speak an entire name to match an item.  
   
- For more information about the matching modes, see <xref:System.Speech.Recognition.SubsetMatchingMode>. For more information about building a speech recognition grammar that contains strings, see [Using Strings to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/en-us/0d87b445-a342-4369-9b3f-91d07fd7e114).  
+ For more information about the matching modes, see <xref:System.Speech.Recognition.SubsetMatchingMode>. For more information about building a speech recognition grammar that contains strings, see [Using Strings to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/library/0d87b445-a342-4369-9b3f-91d07fd7e114).  
   
    
   
@@ -597,7 +597,7 @@ private static string BreakAtCaps(string item)
  The value of `minRepeat` must be greater than or equal to 0 and less than or equal to the value of `maxRepeat`.  
   
 > [!IMPORTANT]
->  When you specify repeats for <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+>  When you specify repeats for <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/library/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
    
   
@@ -663,7 +663,7 @@ private static Grammar CreatePizzaGrammar()
 ## Remarks  
  If the value of `minRepeat` is 0, then the new <xref:System.Speech.Recognition.GrammarBuilder> represents an optional element.  
   
- The value of `minRepeat` must be greater than or equal to 0 and less than or equal to the value of `maxRepeat`. For more information about building a speech recognition grammar that contains strings, see [Using Strings to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/en-us/0d87b445-a342-4369-9b3f-91d07fd7e114).  
+ The value of `minRepeat` must be greater than or equal to 0 and less than or equal to the value of `maxRepeat`. For more information about building a speech recognition grammar that contains strings, see [Using Strings to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/library/0d87b445-a342-4369-9b3f-91d07fd7e114).  
   
    
   
@@ -720,9 +720,9 @@ private static Grammar CreatePizzaGrammar()
  A <xref:System.Speech.Recognition.GrammarBuilder> can also be obtained from <xref:System.Speech.Recognition.Choices>, <xref:System.Speech.Recognition.SemanticResultKey>, <xref:System.Speech.Recognition.SemanticResultValue>, and [String](http://go.microsoft.com/fwlink/?LinkId=159733) objects. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> and <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operators.  
   
 > [!IMPORTANT]
->  The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+>  The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/library/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
- For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
+ For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/library/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/library/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
   
  ]]></format>
         </remarks>
@@ -817,7 +817,7 @@ private static Grammar CreatePizzaGrammar()
  For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> and <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operators.  
   
 > [!IMPORTANT]
->  When you combine <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances with other grammar elements, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+>  When you combine <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances with other grammar elements, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/library/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
    
   
@@ -896,7 +896,7 @@ private Grammar CreateColorGrammar()
  For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> and <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operators.  
   
 > [!IMPORTANT]
->  When you combine <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances with other grammar elements, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+>  When you combine <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances with other grammar elements, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/library/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
    
   
@@ -1103,9 +1103,9 @@ private Grammar CreateColorGrammar()
  This method has overloads for appending <xref:System.Speech.Recognition.GrammarBuilder>, <xref:System.String>, <xref:System.Speech.Recognition.Choices>, <xref:System.Speech.Recognition.SemanticResultKey>, and <xref:System.Speech.Recognition.SemanticResultValue> objects.  
   
 > [!IMPORTANT]
->  The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+>  The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/library/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
- For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
+ For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/library/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/library/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
   
  ]]></format>
         </remarks>
@@ -1136,7 +1136,7 @@ private Grammar CreateColorGrammar()
  `alternateChoices` is added to the end of the current sequence of elements.  
   
 > [!IMPORTANT]
->  When you append <xref:System.Speech.Recognition.Choices> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances to a <xref:System.Speech.Recognition.GrammarBuilder> object, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+>  When you append <xref:System.Speech.Recognition.Choices> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances to a <xref:System.Speech.Recognition.GrammarBuilder> object, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/library/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
    
   
@@ -1209,7 +1209,7 @@ public static Grammar CreatePhonePhrase()
  `builder` is added to the end of the current sequence of grammar elements.  
   
 > [!NOTE]
->  When you append <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances to a <xref:System.Speech.Recognition.GrammarBuilder> object, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+>  When you append <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances to a <xref:System.Speech.Recognition.GrammarBuilder> object, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/library/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
    
   
@@ -1285,7 +1285,7 @@ public static Grammar CreatePhonePhrase()
  `key` is added to the end of the current sequence of elements.  
   
 > [!IMPORTANT]
->  When you append  <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances to a <xref:System.Speech.Recognition.GrammarBuilder> object, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+>  When you append  <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances to a <xref:System.Speech.Recognition.GrammarBuilder> object, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/library/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
    
   
@@ -1400,7 +1400,7 @@ namespace SampleRecognition
  `value` is added to the end of the current sequence of elements.  
   
 > [!IMPORTANT]
->  When you append  <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances to a <xref:System.Speech.Recognition.GrammarBuilder> object, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+>  When you append  <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances to a <xref:System.Speech.Recognition.GrammarBuilder> object, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/library/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
    
   
@@ -1557,7 +1557,7 @@ namespace SampleRecognition
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The subset element is added to the end of the current sequence of elements. For more information about building a speech recognition grammar using strings, see [Using Strings to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/en-us/0d87b445-a342-4369-9b3f-91d07fd7e114).  
+ The subset element is added to the end of the current sequence of elements. For more information about building a speech recognition grammar using strings, see [Using Strings to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/library/0d87b445-a342-4369-9b3f-91d07fd7e114).  
   
  For detailed information on the use of subset matching modes, see <xref:System.Speech.Recognition.SubsetMatchingMode?displayProperty=nameWithType>.  
   
@@ -1624,7 +1624,7 @@ private Grammar[] CreateSubsetMatchTest()
  The value of `minRepeat` must be greater than or equal to 0 and less than or equal to the value of `maxRepeat`.  
   
 > [!IMPORTANT]
->  When you append <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances to a <xref:System.Speech.Recognition.GrammarBuilder> object, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+>  When you append <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances to a <xref:System.Speech.Recognition.GrammarBuilder> object, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/library/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
    
   
@@ -2302,9 +2302,9 @@ private static Grammar CreatePizzaGrammar()
  The order of the operands determines the order of the elements in the new <xref:System.Speech.Recognition.GrammarBuilder>.  
   
 > [!IMPORTANT]
->  Caution is recommended when combining <xref:System.Speech.Recognition.Choices> or <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances with other grammar elements. The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+>  Caution is recommended when combining <xref:System.Speech.Recognition.Choices> or <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances with other grammar elements. The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/library/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
- For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
+ For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/library/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/library/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
   
  ]]></format>
         </remarks>
@@ -2348,7 +2348,7 @@ private static Grammar CreatePizzaGrammar()
  This method accepts the objects listed above for the `builder` parameter. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> operators.  
   
 > [!IMPORTANT]
->  When you combine <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+>  When you combine <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/library/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
  The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.Speech.Recognition.Choices%2CSystem.Speech.Recognition.GrammarBuilder%29?displayProperty=nameWithType>]]></format>
         </remarks>
@@ -2394,7 +2394,7 @@ private static Grammar CreatePizzaGrammar()
  This method accepts the objects listed above for the `builder` parameter. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> operators.  
   
 > [!IMPORTANT]
->  When you combine <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+>  When you combine <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/library/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
  The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.Speech.Recognition.GrammarBuilder%2CSystem.Speech.Recognition.Choices%29?displayProperty=nameWithType>  
   
@@ -2470,7 +2470,7 @@ private Grammar CreateColorGrammar()
  This method accepts the objects listed above for the `builder1` and `builder2` parameters. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> operators.  
   
 > [!IMPORTANT]
->  When you combine <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+>  When you combine <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/library/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
  The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.Speech.Recognition.GrammarBuilder%2CSystem.Speech.Recognition.GrammarBuilder%29?displayProperty=nameWithType>]]></format>
         </remarks>

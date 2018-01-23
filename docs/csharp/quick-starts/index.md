@@ -5,7 +5,7 @@ keywords: C#, Get Started, Lessons, Interactive
 author: billwagner
 ms.author: wiwagn
 ms.date: 09/18/2017
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
@@ -54,6 +54,12 @@ different actions. This quick start is also available
 
 This beginning lesson assumes that you have finished the [Hello World](hello-world.yml) and
 [Numbers in C#](numbers-in-csharp.yml) lessons.
+
+## [Interpolated strings](interpolated-strings.yml)
+
+The [interpolated strings](interpolated-strings.yml) quick start shows you how to insert an expression into a larger string. You'll learn how to define an interpolated expression, how to create a result string from an interpolated string that has one or more interpolated expressions, and how to control the formatting, column width, and alignment of expressions included in the result string. 
+
+This beginning lesson assumes that you have finished the [Hello World](hello-world.yml), [Numbers in C#](numbers-in-csharp.yml), and [Branches and loops](branches-and-loops.yml) lessons.
 
 ## [List collection](list-collection.yml)
 

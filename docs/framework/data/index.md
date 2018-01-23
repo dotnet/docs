@@ -28,7 +28,7 @@ This section provides information on how to access data using ADO.NET, Language 
  [ADO.NET](../../../docs/framework/data/adonet/index.md)  
  Describes the ADO.NET architecture and how to use the ADO.NET classes to manage application data and interact with data sources, including Microsoft SQL Server, OLE DB data sources, and XML.  
   
- [LINQ Portal](http://msdn.microsoft.com/en-us/6eb15c76-4ee6-4146-981e-b3429a945e6f)  
+ [LINQ Portal](http://msdn.microsoft.com/library/6eb15c76-4ee6-4146-981e-b3429a945e6f)  
  Provides links to relevant documentation for Language Integrated Query (LINQ).  
   
  [Transaction Processing](../../../docs/framework/data/transactions/index.md)  
@@ -40,7 +40,7 @@ This section provides information on how to access data using ADO.NET, Language 
  [XML Documents and Data](../../../docs/standard/data/xml/index.md)  
  Provides an overview to a comprehensive and integrated set of classes that work with XML documents and data in the .NET Framework.  
   
- [XML Standards Reference](http://msdn.microsoft.com/en-us/79c78508-c9d0-423a-a00f-672e855de401)  
+ [XML Standards Reference](http://msdn.microsoft.com/library/79c78508-c9d0-423a-a00f-672e855de401)  
  Provides reference information on XML standards that Microsoft supports.  
   
 ## Related Sections  

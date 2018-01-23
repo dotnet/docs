@@ -38,7 +38,7 @@
 ## Examples  
  The following code example shows a custom designer message filter that derives from <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter>. The class, named `CustomMessageFilter`, overrides a number of its base class methods including <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseDown%2A>, <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseMove%2A>, <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseUp%2A>, <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseDoubleClick%2A>, <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseEnter%2A>, <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseHover%2A>, <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseLeave%2A>, <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragEnter%2A>, <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragOver%2A>, and <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnKeyDown%2A>.  
   
- This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/library/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
   
  [!code-csharp[wf_Samples#237](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#237)]
  [!code-vb[wf_Samples#237](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#237)]  
@@ -110,7 +110,7 @@
 > [!NOTE]
 >  `Dispose` can be called multiple times by other objects. When overriding `Dispose(Boolean)`, be careful not to reference objects that have been previously disposed of in an earlier call to `Dispose`. [!INCLUDE[crabout](~/includes/crabout-md.md)] how to implement `Dispose(Boolean)`, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] `Dispose` and `Finalize`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] `Dispose` and `Finalize`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
   
  ]]></format>
         </remarks>
@@ -255,7 +255,7 @@
 ## Examples  
  The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragEnter%2A> method so that it always returns `true`.  
   
- This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/library/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
   
  [!code-csharp[wf_samples#247](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#247)]
  [!code-vb[wf_samples#247](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#247)]  
@@ -292,7 +292,7 @@
 ## Examples  
  The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragLeave%2A> method so that it always returns `true`.  
   
- This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/library/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
   
  [!code-csharp[wf_samples#249](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#249)]
  [!code-vb[wf_samples#249](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#249)]  
@@ -332,7 +332,7 @@
 ## Examples  
  The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragOver%2A> method so that it always returns `true`.  
   
- This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/library/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
   
  [!code-csharp[wf_samples#248](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#248)]
  [!code-vb[wf_samples#248](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#248)]  
@@ -372,7 +372,7 @@
 ## Examples  
  The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnGiveFeedback%2A> method so that it always returns `true`.  
   
- This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/library/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
   
  [!code-csharp[wf_samples#251](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#251)]
  [!code-vb[wf_samples#251](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#251)]  
@@ -412,7 +412,7 @@
 ## Examples  
  The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnKeyDown%2A> method to customize how to remove activities from a workflow design surface.  
   
- This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/library/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
   
  [!code-csharp[wf_samples#253](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#253)]
  [!code-vb[wf_samples#253](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#253)]  
@@ -452,7 +452,7 @@
 ## Examples  
  The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnKeyUp%2A> method so that it always returns `true`.  
   
- This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/library/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
   
  [!code-csharp[wf_samples#254](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#254)]
  [!code-vb[wf_samples#254](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#254)]  
@@ -517,7 +517,7 @@
 ## Examples  
  The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseCaptureChanged%2A> method to return `false` so that other components in the designer architecture can process the method.  
   
- This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/library/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
   
  [!code-csharp[wf_samples#246](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#246)]
  [!code-vb[wf_samples#246](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#246)]  
@@ -557,7 +557,7 @@
 ## Examples  
  The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseDoubleClick%2A> method to return `false` so that other components in the designer architecture can process the method.  
   
- This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/library/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
   
  [!code-csharp[wf_samples#241](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#241)]
  [!code-vb[wf_samples#241](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#241)]  
@@ -597,7 +597,7 @@
 ## Examples  
  The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseDown%2A> method to return `false` so that other components in the designer architecture can process the method.  
   
- This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/library/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
   
  [!code-csharp[wf_samples#238](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#238)]
  [!code-vb[wf_samples#238](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#238)]  
@@ -637,7 +637,7 @@
 ## Examples  
  The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseDown%2A> method to return `false` so that other components in the designer architecture can process the method.  
   
- This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/library/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
   
  [!code-csharp[wf_samples#242](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#242)]
  [!code-vb[wf_samples#242](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#242)]  
@@ -677,7 +677,7 @@
 ## Examples  
  The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseHover%2A> method to return `false` so that other components in the designer architecture can process the method.  
   
- This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/library/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
   
  [!code-csharp[wf_samples#243](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#243)]
  [!code-vb[wf_samples#243](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#243)]  
@@ -714,7 +714,7 @@
 ## Examples  
  The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseLeave%2A> method to return `false` so that other components in the designer architecture can process the method.  
   
- This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/library/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
   
  [!code-csharp[wf_samples#244](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#244)]
  [!code-vb[wf_samples#244](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#244)]  
@@ -754,7 +754,7 @@
 ## Examples  
  The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseMove%2A> method to return the scroll position and to return `false` so that other components in the designer architecture can process the method.  
   
- This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/library/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
   
  [!code-csharp[wf_samples#239](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#239)]
  [!code-vb[wf_samples#239](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#239)]  
@@ -794,7 +794,7 @@
 ## Examples  
  The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseUp%2A> method to return the scroll position and to return `false` so that other components in the designer architecture can process the method.  
   
- This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/library/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
   
  [!code-csharp[wf_samples#240](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#240)]
  [!code-vb[wf_samples#240](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#240)]  
@@ -940,7 +940,7 @@
 ## Examples  
  The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnQueryContinueDrag%2A> method so that it always returns `true`.  
   
- This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/library/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
   
  [!code-csharp[wf_samples#252](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#252)]
  [!code-vb[wf_samples#252](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#252)]  
@@ -1014,7 +1014,7 @@
 ## Examples  
  The following code example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnShowContextMenu%2A> method so that it always returns `true`.  
   
- This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+ This code example is part of the Basic Designer Hosting SDK Sample from the DesignerShell.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Basic Designer Hosting](http://msdn.microsoft.com/library/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
   
  [!code-csharp[wf_samples#255](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#255)]
  [!code-vb[wf_samples#255](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#255)]  

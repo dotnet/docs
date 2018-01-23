@@ -88,10 +88,10 @@ XML serialization converts (serializes) the public fields and properties of an o
  Adds types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter> class.  
   
 ## Related Sections  
- [Advanced Development Technologies](http://msdn.microsoft.com/en-us/c4a7e341-f0c6-4df4-a74f-223387ac6e4e)  
+ [Advanced Development Technologies](http://msdn.microsoft.com/library/c4a7e341-f0c6-4df4-a74f-223387ac6e4e)  
  Provides links to more information on sophisticated development tasks and techniques in the .NET Framework.  
   
- [XML Web Services Created Using ASP.NET and XML Web Service Clients](http://msdn.microsoft.com/en-us/1e64af78-d705-4384-b08d-591a45f4379c)  
+ [XML Web Services Created Using ASP.NET and XML Web Service Clients](http://msdn.microsoft.com/library/1e64af78-d705-4384-b08d-591a45f4379c)  
  Provides topics that describe and explain how to program XML Web services using ASP.NET.  
   
 ## See Also  

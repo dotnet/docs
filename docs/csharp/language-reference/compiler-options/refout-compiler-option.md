@@ -15,14 +15,14 @@ author: "BillWagner"
 ms.author: "wiwagn"
 ---
 
-# /refout (C# Compiler Options)
+# -refout (C# Compiler Options)
 
-The **/refout** option specifies a file path where the reference assembly should be output. This translates to `metadataPeStream` in the Emit API.
+The **-refout** option specifies a file path where the reference assembly should be output. This translates to `metadataPeStream` in the Emit API.
 
 ## Syntax
 
 ```console
-/refout:filepath
+-refout:filepath
 ```
 
 ## Arguments
@@ -44,7 +44,7 @@ Reference assemblies further remove metadata (private members) from metadata-onl
 - All virtual methods are kept. Explicit interface implementations are kept. Explicitly implemented properties and events are kept, as their accessors are virtual (and are therefore kept).
 - All fields of a struct are kept. (This is a candidate for post-C#-7.1 refinement)
 
-The `/refout` and [`/refonly`](refonly-compiler-option.md) options are mutually exclusive.
+The `-refout` and [`-refonly`](refonly-compiler-option.md) options are mutually exclusive.
 
 ## See Also
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  

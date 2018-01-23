@@ -811,14 +811,14 @@
 ## Remarks  
  The <xref:System.Web.Security.MembershipProvider.MinRequiredNonAlphanumericCharacters%2A> property returns the minimum number of special, non-alphabetic characters that must be entered to create a valid password for the <xref:System.Web.Security.MembershipProvider> object.  
   
- The <xref:System.Web.Security.MembershipProvider.MinRequiredNonAlphanumericCharacters%2A> property value is set in the application configuration using the `minRequiredNonalphanumericCharacters` attribute of the [membership Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/b9c1ee8f-33ca-4361-8666-b42a0fe86049) configuration element.  
+ The <xref:System.Web.Security.MembershipProvider.MinRequiredNonAlphanumericCharacters%2A> property value is set in the application configuration using the `minRequiredNonalphanumericCharacters` attribute of the [membership Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/b9c1ee8f-33ca-4361-8666-b42a0fe86049) configuration element.  
   
  A non-alphanumeric character is a character for which the <xref:System.Char.IsLetterOrDigit%2A> method returns `false`.  
   
    
   
 ## Examples  
- The following example shows the [membership Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/b9c1ee8f-33ca-4361-8666-b42a0fe86049) configuration element in the `system.web` section of the application's Web.config file. It specifies that the application use an instance of the <xref:System.Web.Security.SqlMembershipProvider> class to provide membership services, and sets the `minRequiredNonalphanumericCharacters` attribute to 1 character.  
+ The following example shows the [membership Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/b9c1ee8f-33ca-4361-8666-b42a0fe86049) configuration element in the `system.web` section of the application's Web.config file. It specifies that the application use an instance of the <xref:System.Web.Security.SqlMembershipProvider> class to provide membership services, and sets the `minRequiredNonalphanumericCharacters` attribute to 1 character.  
   
 ```  
 <membership>  
@@ -865,12 +865,12 @@
 ## Remarks  
  The <xref:System.Web.Security.MembershipProvider.MinRequiredPasswordLength%2A> property gets the minimum number of characters that must be entered to create a valid password for the <xref:System.Web.Security.MembershipProvider> object.  
   
- The <xref:System.Web.Security.MembershipProvider.MinRequiredPasswordLength%2A> property value is set in the application configuration using the `minRequiredPasswordLength` attribute of the [membership Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/b9c1ee8f-33ca-4361-8666-b42a0fe86049) configuration element.  
+ The <xref:System.Web.Security.MembershipProvider.MinRequiredPasswordLength%2A> property value is set in the application configuration using the `minRequiredPasswordLength` attribute of the [membership Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/b9c1ee8f-33ca-4361-8666-b42a0fe86049) configuration element.  
   
    
   
 ## Examples  
- The following example shows the [membership Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/b9c1ee8f-33ca-4361-8666-b42a0fe86049) configuration element in the `system.web` section of the application's Web.config file. It specifies that the application use an instance of the <xref:System.Web.Security.SqlMembershipProvider> class to provide membership services, and sets the `minRequiredPasswordLength` attribute to seven characters.  
+ The following example shows the [membership Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/b9c1ee8f-33ca-4361-8666-b42a0fe86049) configuration element in the `system.web` section of the application's Web.config file. It specifies that the application use an instance of the <xref:System.Web.Security.SqlMembershipProvider> class to provide membership services, and sets the `minRequiredPasswordLength` attribute to seven characters.  
   
 ```  
 <membership defaultProvider="SqlProvider"  
@@ -981,7 +981,7 @@
 ## Remarks  
  The <xref:System.Web.Security.MembershipProvider.PasswordFormat%2A> property indicates the format that passwords are stored in. Use `Hashed` only, `Clear` and `Encrypted` are not secure. `Hashed` passwords are hashed using a one-way hash algorithm and a randomly generated salt value when stored in the database. When a password is validated, it is hashed with the salt value in the database for verification. Hashed passwords cannot be retrieved. `Encrypted` passwords are not considered safe, as a breach that reveals your database contents can also expose the encryption key. This means your encrypted passwords could be decrypted and exposed.  
   
- You can use the <xref:System.Web.Security.MembershipProvider.EncryptPassword%2A> and <xref:System.Web.Security.MembershipProvider.DecryptPassword%2A> virtual methods of the <xref:System.Web.Security.MembershipProvider> class to encrypt and decrypt password values, or you can supply your own encryption code. If you use the <xref:System.Web.Security.MembershipProvider.EncryptPassword%2A> and <xref:System.Web.Security.MembershipProvider.DecryptPassword%2A> virtual methods of the <xref:System.Web.Security.MembershipProvider> class, `Encrypted` passwords are encrypted using the key information supplied in the [machineKey Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/4b5699a9-bc21-4c4a-85f1-8b3b8ebd2d46) element in your configuration.  
+ You can use the <xref:System.Web.Security.MembershipProvider.EncryptPassword%2A> and <xref:System.Web.Security.MembershipProvider.DecryptPassword%2A> virtual methods of the <xref:System.Web.Security.MembershipProvider> class to encrypt and decrypt password values, or you can supply your own encryption code. If you use the <xref:System.Web.Security.MembershipProvider.EncryptPassword%2A> and <xref:System.Web.Security.MembershipProvider.DecryptPassword%2A> virtual methods of the <xref:System.Web.Security.MembershipProvider> class, `Encrypted` passwords are encrypted using the key information supplied in the [machineKey Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/4b5699a9-bc21-4c4a-85f1-8b3b8ebd2d46) element in your configuration.  
   
    
   
@@ -1013,12 +1013,12 @@
 ## Remarks  
  The <xref:System.Web.Security.MembershipProvider.PasswordStrengthRegularExpression%2A> property gets the regular expression used to evaluate password complexity for the <xref:System.Web.Security.MembershipProvider> object.  
   
- The <xref:System.Web.Security.MembershipProvider.PasswordStrengthRegularExpression%2A> property is set in the application configuration using the `passwordStrengthRegularExpression` attribute of the [membership Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/b9c1ee8f-33ca-4361-8666-b42a0fe86049) configuration element.  
+ The <xref:System.Web.Security.MembershipProvider.PasswordStrengthRegularExpression%2A> property is set in the application configuration using the `passwordStrengthRegularExpression` attribute of the [membership Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/b9c1ee8f-33ca-4361-8666-b42a0fe86049) configuration element.  
   
    
   
 ## Examples  
- The following example shows the [membership Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/b9c1ee8f-33ca-4361-8666-b42a0fe86049) configuration element in the `system.web` section of the application's Web.config file. It specifies that the application use an instance of the <xref:System.Web.Security.SqlMembershipProvider> class to provide membership services, and sets the `passwordStrengthRegularExpression` attribute to a regular expression that validates that the password meets the following criteria:  
+ The following example shows the [membership Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/b9c1ee8f-33ca-4361-8666-b42a0fe86049) configuration element in the `system.web` section of the application's Web.config file. It specifies that the application use an instance of the <xref:System.Web.Security.SqlMembershipProvider> class to provide membership services, and sets the `passwordStrengthRegularExpression` attribute to a regular expression that validates that the password meets the following criteria:  
   
 -   Is greater than seven characters.  
   

@@ -28,7 +28,7 @@
   
  You can also specify shortcut menus for individual rows rather than individual cells by setting the row <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> property or handling the <xref:System.Windows.Forms.DataGridView> control's <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event. The cell <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A> property setting overrides the row <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> property setting, and the <xref:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded> event overrides both the <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event and the row <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> property setting. You can specify `null` for a cell shortcut menu, however, to prevent a row shortcut menu from being overridden.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   

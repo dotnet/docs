@@ -177,7 +177,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default implementation preserves the source data when read using the <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReadAssertion%2A> method and can re-emit the original data as long as the <xref:System.IdentityModel.Tokens.Saml.SamlAssertion.AssertionId%2A> property has not changed from the time that assertion was read.  
+ The default implementation preserves the source data when read using the <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReadAssertion%2A> method and can re-emit the original data as long as the <xref:System.IdentityModel.Tokens.SamlAssertion.AssertionId%2A> property has not changed from the time that assertion was read.  
   
 > [!IMPORTANT]
 >  It is very important that SAML assertions with different data have different IDs. If implementing a scheme whereby an assertion "template" is loaded and certain bits of data are filled in, the Id must be changed.  
@@ -555,7 +555,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default implementation preserves the source data when read using the <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReadAssertion%2A> method and can re-emit the original data as long as the <xref:System.IdentityModel.Tokens.Saml.SamlAssertion.AssertionId%2A> property has not changed from the time that assertion was read.  
+ The default implementation preserves the source data when read using the <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReadAssertion%2A> method and can re-emit the original data as long as the <xref:System.IdentityModel.Tokens.SamlAssertion.AssertionId%2A> property has not changed from the time that assertion was read.  
   
 > [!IMPORTANT]
 >  It is very important that SAML assertions with different data have different IDs. If implementing a scheme whereby an assertion "template" is loaded and certain bits of data are filled in, the Id must be changed.  

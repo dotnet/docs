@@ -35,8 +35,8 @@ See the following tables for a list of Microsoft technologies you can use to pro
   
 |**Option**|**Description**|  
 |----------------|---------------------|  
-|[XmlLite](http://go.microsoft.com/fwlink/?LinkId=93723)|-   A fast, secure, non-caching, forward-only XML parser that helps you build high-performance XML apps.<br />-   Works with any language that can use dynamic link libraries (DLLs); we recommend using C++.|  
-|[MSXML](http://go.microsoft.com/fwlink/?LinkId=93722)|-   COM-based technology for processing XML that is included with the Windows operating system.<br />-   Provides a native implementation of the DOM with support for XPath and XSLT.<br />-   Contains the SAX2 event-based parser.|  
+|[XmlLite](https://msdn.microsoft.com/library/ms752872.aspx)|-   A fast, secure, non-caching, forward-only XML parser that helps you build high-performance XML apps.<br />-   Works with any language that can use dynamic link libraries (DLLs); we recommend using C++.|  
+|[MSXML](https://msdn.microsoft.com/library/ms763742.aspx)|-   COM-based technology for processing XML that is included with the Windows operating system.<br />-   Provides a native implementation of the DOM with support for XPath and XSLT.<br />-   Contains the SAX2 event-based parser.|  
   
 ## See Also  
  [Process XML Data Using the DOM Model](../../../../docs/standard/data/xml/process-xml-data-using-the-dom-model.md)  

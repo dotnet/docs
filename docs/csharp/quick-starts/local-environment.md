@@ -2,7 +2,7 @@
 title: Quick Start - Local Environment - C# Guide
 description: This quickstart provides the basics for running the quick starts locally
 author: billwagner
-ms.author: wiwagn
+ms.topic: get-started-article
 ms.date: 12/07/2017
 ms.topic: article
 ms.prod: .net

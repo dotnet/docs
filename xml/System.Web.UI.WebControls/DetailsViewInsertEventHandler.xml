@@ -26,7 +26,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.DetailsView> control raises the <xref:System.Web.UI.WebControls.DetailsView.ItemInserting> event when an Insert button (a button with its `CommandName` property set to "Insert") within the control is clicked, but before the <xref:System.Web.UI.WebControls.DetailsView> control inserts the record. This allows you to provide an event handler that performs a custom routine, such as HTML-encoding the values of a record before inserting it in the data source, whenever this event occurs.  
   
- When you create a <xref:System.Web.UI.WebControls.DetailsViewInsertEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ When you create a <xref:System.Web.UI.WebControls.DetailsViewInsertEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   

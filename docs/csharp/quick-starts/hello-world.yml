@@ -5,11 +5,14 @@ metadata:
   description: In this quick start, you'll use your browser to learn C# interactively. You write C# code and see the results of compiling and running your code directly in the browser.
   audience: Developer
   level: Beginner
+  ms.topic: get-started-article
   nextTutorialHref: numbers-in-csharp
   nextTutorialTitle: Numbers in C#
   displayType: two-column
   interactive: csharp
   ms.custom: mvc
+  ms.prod: .net
+  ms.technology: devlang-csharp
 items:
 - durationInMinutes: 1
   content: |
@@ -221,3 +224,4 @@ items:
 
     You can learn more about working with the `string` type in the
     [C# Programming Guide](../programming-guide/index.md) topic on [strings](../programming-guide/strings/index.md).
+    [How to tips on strings](../how-to/index.md#strings).

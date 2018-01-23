@@ -29,7 +29,7 @@
   
  The resource manager can also call the <xref:System.Transactions.Enlistment.Done%2A> method at anytime before it has called the <xref:System.Transactions.PreparingEnlistment.Prepared%2A> method. By doing so, the enlistment is casting a read only vote, meaning that it votes commit on the transaction but does not need to receive the final outcome.  
   
- Durable resource managers can retrieve the information that is be needed by the transaction manager for re-enlistment from the <xref:System.Transactions.PreparingEnlistment.RecoveryInformation%2A> property. For more information on recovery, see [Performing Recovery](http://msdn.microsoft.com/en-us/d342c5c7-da64-4a4c-8e63-b52f4fbf2691).  
+ Durable resource managers can retrieve the information that is be needed by the transaction manager for re-enlistment from the <xref:System.Transactions.PreparingEnlistment.RecoveryInformation%2A> property. For more information on recovery, see [Performing Recovery](http://msdn.microsoft.com/library/d342c5c7-da64-4a4c-8e63-b52f4fbf2691).  
   
    
   

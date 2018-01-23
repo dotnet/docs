@@ -85,6 +85,6 @@ Reference types passed by value and by reference
   
 ## See Also  
  [Default Marshaling Behavior](../../../docs/framework/interop/default-marshaling-behavior.md)  
- [Memory Management with the Interop Marshaler](http://msdn.microsoft.com/en-us/417206ce-ee3e-4619-9529-0c0b686c7bee)  
- [Directional Attributes](http://msdn.microsoft.com/en-us/241ac5b5-928e-4969-8f58-1dbc048f9ea2)  
+ [Memory Management with the Interop Marshaler](http://msdn.microsoft.com/library/417206ce-ee3e-4619-9529-0c0b686c7bee)  
+ [Directional Attributes](http://msdn.microsoft.com/library/241ac5b5-928e-4969-8f58-1dbc048f9ea2)  
  [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)

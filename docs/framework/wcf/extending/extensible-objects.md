@@ -1,18 +1,13 @@
 ---
 title: "Extensible Objects"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "extensible objects [WCF]"
 ms.assetid: bc88cefc-31fb-428e-9447-6d20a7d452af
-caps.latest.revision: 11
 author: "dotnet-bot"
 ms.author: "dotnetcontent"
 manager: "wpickett"
@@ -48,7 +43,7 @@ where T : IExtensibleObject<T>
   
  The object passed to <xref:System.ServiceModel.IExtensionCollection%601.FindAll%2A> or <xref:System.ServiceModel.IExtensionCollection%601.Find%2A> need not be <xref:System.ServiceModel.IExtension%601> (for example, you can pass any object), but the returned extension is an <xref:System.ServiceModel.IExtension%601>.  
   
- If no extension in the collection is an <xref:System.ServiceModel.IExtension%601>, <xref:System.ServiceModel.IExtensionCollection%601.Find%2A> returns null, and <xref:System.ServiceModel.IExtensionCollection%601.FindAll%2A> returns an empty collection. If multiple extensions implement <xref:System.ServiceModel.IExtension%601>, <xref:System.ServiceModel.IExtensionCollection%601.Find%2A> returns one of them. The value returned from <xref:System.ServiceModel.IExtensionCollection%601.FindAll%60%601%2A> is a snapshot.  
+ If no extension in the collection is an <xref:System.ServiceModel.IExtension%601>, <xref:System.ServiceModel.IExtensionCollection%601.Find%2A> returns null, and <xref:System.ServiceModel.IExtensionCollection%601.FindAll%2A> returns an empty collection. If multiple extensions implement <xref:System.ServiceModel.IExtension%601>, <xref:System.ServiceModel.IExtensionCollection%601.Find%2A> returns one of them. The value returned from <xref:System.ServiceModel.IExtensionCollection%601.FindAll%2A> is a snapshot.
   
  There are two main scenarios. The first scenario uses the <xref:System.ServiceModel.IExtensibleObject%601.Extensions%2A> property as a type-based dictionary to insert state on an object to enable another component to look it up using the type.  
   

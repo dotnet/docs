@@ -48,7 +48,7 @@ The .NET Framework, through configuration files, gives developers and administra
  This topic describes the syntax of configuration files and provides information about the three types of configuration files: machine, application, and security.  
   
 ## Configuration File Format  
- Configuration files contain elements, which are logical data structures that set configuration information. Within a configuration file, you use tags to mark the beginning and end of an element. For example, the `<runtime>` element consists of `<runtime>`*child elements*`</runtime>`. An empty element would be written as `<runtime/>` or `<runtime>``</runtime>`.  
+ Configuration files contain elements, which are logical data structures that set configuration information. Within a configuration file, you use tags to mark the beginning and end of an element. For example, the `<runtime>` element consists of `<runtime>`*child elements*`</runtime>`. An empty element would be written as `<runtime/>` or `<runtime></runtime>`.  
   
  As with all XML files, the syntax in configuration files is case-sensitive.  
   

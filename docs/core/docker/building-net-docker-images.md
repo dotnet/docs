@@ -97,7 +97,7 @@ It uses the [Docker multi-stage build feature](https://docs.docker.com/engine/us
 * build the sample in a container based on the **larger** ASP.NET Core Build Docker base image 
 * copies the final build result into a Docker image based on the **smaller** ASP.NET Core Docker Runtime base image
 
-> [!Note]
+> [!NOTE]
 > The build image contains required tools to build applications while the runtime image does not.
 
 ### Prerequisites
@@ -170,7 +170,8 @@ docker build -t aspnetapp .
 docker run -it --rm -p 5000:80 --name aspnetcore_sample aspnetapp
 ```
 
-> [!Note] The `docker run` '-p' argument maps port 5000 on your local machine to port 80 in the container (the port mapping form is `host:container`). For more information, see the [docker run](https://docs.docker.com/engine/reference/commandline/exec/) reference on command-line parameters.
+> [!NOTE]
+> The `docker run` '-p' argument maps port 5000 on your local machine to port 80 in the container (the port mapping form is `host:container`). For more information, see the [docker run](https://docs.docker.com/engine/reference/commandline/exec/) reference on command-line parameters.
 
 After the application starts, visit **http://localhost:5000** in your web browser.
 
@@ -192,7 +193,7 @@ docker run -it --rm --name aspnetcore_sample aspnetapp
 * Run `docker exec aspnetcore_sample ipconfig`.
 * Copy the container IP address and paste into your browser (for example, 172.29.245.43).
 
-> [!Note]
+> [!NOTE]
 > Docker exec supports identifying containers with name or hash. The name (aspnetcore_sample) is used in our example.
 
 See the following example of how to get the IP address of a running Windows container.
@@ -211,7 +212,7 @@ Ethernet adapter Ethernet:
    Default Gateway . . . . . . . . . : 172.29.240.1
 ```
 
-> [!Note]
+> [!NOTE]
 > Docker exec runs a new command in a running container. For more information, see the [docker exec reference](https://docs.docker.com/engine/reference/commandline/exec/) on command-line parameters.
 
 You can produce an application that is ready to deploy to production locally using the [dotnet publish](../tools/dotnet-publish.md) command.
@@ -220,7 +221,7 @@ You can produce an application that is ready to deploy to production locally usi
 dotnet publish -c release -o published
 ```
 
-> [!Note]
+> [!NOTE]
 > The -c release argument builds the application in release mode (the default is debug mode). For more information, see the [dotnet run reference](../tools/dotnet-run.md) on command-line parameters.
 
 You can run the application on **Windows** using the following command.
@@ -261,5 +262,5 @@ Here are some next steps you can take:
 * [Getting hands on with Visual Studio for Mac, containers, and serverless code in the cloud](https://blogs.msdn.microsoft.com/visualstudio/2017/08/31/hands-on-with-visual-studio-for-mac-containers-serverless-code-in-the-cloud/#comments)
 * [Getting Started with Docker and Visual Studio for Mac Lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Docker/Getting-Started)
 
-> [!Note]
+> [!NOTE]
 > If you do not have an Azure subscription, [sign up today](https://azure.microsoft.com/free/?b=16.48) for a free 30-day account and get $200 in Azure Credits to try out any combination of Azure services.

@@ -16,7 +16,7 @@ Module LoopCancellation
     '      it is impossible to say which will start/complete and which won't.
     '   At the end, an OperationCancelledException is surfaced.
     ' Documentation:
-    '   http://msdn.microsoft.com/en-us/library/system.threading.cancellationtokensource(VS.100).aspx
+    '   http://msdn.microsoft.com/library/system.threading.cancellationtokensource(VS.100).aspx
     Private Sub Main()
         Dim cancellationSource As New CancellationTokenSource()
         Dim options As New ParallelOptions()

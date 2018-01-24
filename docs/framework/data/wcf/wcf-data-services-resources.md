@@ -31,7 +31,7 @@ ms.workload:
  [Application Scenarios](../../../../docs/framework/data/wcf/application-scenarios-wcf-data-services.md)  
  Provides a task-based approach to creating [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] and applications that access [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feeds.  
   
- [Visual Studio and .NET Framework Glossary](http://msdn.microsoft.com/en-us/6529d7c6-7e25-4426-a120-d57b239ca4eb)  
+ [Visual Studio and .NET Framework Glossary](http://msdn.microsoft.com/library/6529d7c6-7e25-4426-a120-d57b239ca4eb)  
  Includes terms used in [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] and [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] documentation.  
   
 ## External Resources  

@@ -50,7 +50,7 @@ ms.workload:
   
 -   [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/library/y99d1cd3\(v=vs.110\))  
   
--   [Walkthrough: Creating a Layout That Adjusts Proportion for Localization](http://msdn.microsoft.com/en-us/library/7k9fa71y\(v=vs.110\))  
+-   [Walkthrough: Creating a Layout That Adjusts Proportion for Localization](http://msdn.microsoft.com/library/7k9fa71y\(v=vs.110\))  
   
 -   [How to: Create Message Boxes for Bi-Directional Windows Forms](http://msdn.microsoft.com/library/k1689bxh\(v=vs.110\))  
   

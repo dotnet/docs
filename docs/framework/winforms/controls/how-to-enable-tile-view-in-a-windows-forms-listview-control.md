@@ -72,4 +72,4 @@ Tile view icons and text
  <xref:System.Windows.Forms.ListView.TileSize%2A>  
  [ListView Control](../../../../docs/framework/winforms/controls/listview-control-windows-forms.md)  
  [ListView Control Overview](../../../../docs/framework/winforms/controls/listview-control-overview-windows-forms.md)  
- [Windows XP Features and Windows Forms Controls](http://msdn.microsoft.com/en-us/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)
+ [Windows XP Features and Windows Forms Controls](http://msdn.microsoft.com/library/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)

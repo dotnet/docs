@@ -39,6 +39,6 @@ Windows Presentation Foundation (WPF) in Visual Studio 2015 provides developers 
   
  [Introduction to WPF](/visualstudio/designers/introduction-to-wpf)  
   
- [WPF in the .NET Framework](https://msdn.microsoft.com/en-us/library/ms754130\(v=vs.100\).aspx)  
+ [WPF in the .NET Framework](https://msdn.microsoft.com/library/ms754130\(v=vs.100\).aspx)  
   
  [Get Visual Studio](https://www.visualstudio.com/features/wpf-vs)

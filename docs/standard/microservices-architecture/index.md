@@ -61,7 +61,7 @@ Editors:
 
 Participants and reviewers:
 
-> **Jeffrey Ritcher**, Partner Software Eng, Azure team, Microsoft
+> **Jeffrey Richter**, Partner Software Eng, Azure team, Microsoft
 >
 > **Jimmy Bogard**, Chief Architect at Headspring
 >

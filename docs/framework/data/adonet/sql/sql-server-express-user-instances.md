@@ -14,9 +14,9 @@ dev_langs:
   - "vb"
 ms.assetid: 00c12376-cb26-4317-86ad-e6e9c089be57
 caps.latest.revision: 5
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
 ms.workload: 
   - "dotnet"
 ---
@@ -154,7 +154,7 @@ private static void OpenSqlConnection()
   
 -   Any single-user application where sharing data is not required.  
   
--   ClickOnce deployment. If the .NET Framework 2.0 (or later) and SQL Server Express are already installed on the target computer, the installation package downloaded as a result of a ClickOnce action can be installed and used by non-administrator users. Note that an administrator must install SQL Server Express if that is part of the setup. For more information, see [ClickOnce Deployment for Windows Forms Applications](http://msdn.microsoft.com/en-us/34d8c770-48f2-460c-8d67-4ea5684511df).  
+-   ClickOnce deployment. If the .NET Framework 2.0 (or later) and SQL Server Express are already installed on the target computer, the installation package downloaded as a result of a ClickOnce action can be installed and used by non-administrator users. Note that an administrator must install SQL Server Express if that is part of the setup. For more information, see [ClickOnce Deployment for Windows Forms Applications](http://msdn.microsoft.com/library/34d8c770-48f2-460c-8d67-4ea5684511df).  
   
 -   Dedicated ASP.NET hosting using Windows Authentication. A single SQL Server Express instance can be hosted on an intranet. The application connects using the ASPNET Windows account, not by using impersonation. User instances should not be used for third-party or shared hosting scenarios where all applications would share the same user instance and would no longer remain isolated from each other.  
   

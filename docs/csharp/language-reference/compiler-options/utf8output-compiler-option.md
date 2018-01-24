@@ -16,17 +16,17 @@ caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
-# /utf8output (C# Compiler Options)
-The **/utf8output** option displays compiler output using UTF-8 encoding.  
+# -utf8output (C# Compiler Options)
+The **-utf8output** option displays compiler output using UTF-8 encoding.  
   
 ## Syntax  
   
 ```console  
-/utf8output  
+-utf8output  
 ```  
   
 ## Remarks  
- In some international configurations, compiler output cannot correctly be displayed in the console. In these configurations, use **/utf8output** and redirect compiler output to a file.  
+ In some international configurations, compiler output cannot correctly be displayed in the console. In these configurations, use **-utf8output** and redirect compiler output to a file.  
   
  This compiler option is unavailable in Visual Studio and cannot be changed programmatically.  
   

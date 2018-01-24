@@ -43,7 +43,7 @@ The @ option lets you specify a file that contains compiler options and source c
   
  The compiler processes the command options as they are encountered. Therefore, command line arguments can override previously listed options in response files. Conversely, options in a response file will override options listed previously on the command line or in other response files.  
   
- C# provides the csc.rsp file, which is located in the same directory as the csc.exe file. See [/noconfig](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md) for more information on csc.rsp.  
+ C# provides the csc.rsp file, which is located in the same directory as the csc.exe file. See [-noconfig](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md) for more information on csc.rsp.  
   
  This compiler option cannot be set in the Visual Studio development environment, nor can it be changed programmatically.  
   
@@ -52,7 +52,7 @@ The @ option lets you specify a file that contains compiler options and source c
   
 ```console  
 # build the first output file  
-/target:exe /out:MyExe.exe source1.cs source2.cs  
+-target:exe -out:MyExe.exe source1.cs source2.cs  
 ```  
   
 ## See Also  

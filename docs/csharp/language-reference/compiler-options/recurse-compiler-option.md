@@ -16,13 +16,13 @@ caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
-# /recurse (C# Compiler Options)
-The /recurse option enables you to compile source code files in all child directories of either the specified directory (dir) or of the project directory.  
+# -recurse (C# Compiler Options)
+The -recurse option enables you to compile source code files in all child directories of either the specified directory (dir) or of the project directory.  
   
 ## Syntax  
   
 ```console  
-/recurse:[dir\]file  
+-recurse:[dir\]file  
 ```  
   
 ## Arguments  
@@ -33,9 +33,9 @@ The /recurse option enables you to compile source code files in all child direct
  The file(s) to search for. Wildcard characters are allowed.  
   
 ## Remarks  
- The **/recurse** option lets you compile source code files in all child directories of either the specified directory (`dir`) or of the project directory.  
+ The **-recurse** option lets you compile source code files in all child directories of either the specified directory (`dir`) or of the project directory.  
   
- You can use wildcards in a file name to compile all matching files in the project directory without using **/recurse**.  
+ You can use wildcards in a file name to compile all matching files in the project directory without using **-recurse**.  
   
  This compiler option is unavailable in Visual Studio and cannot be changed programmatically.  
   
@@ -49,7 +49,7 @@ csc *.cs
  Compiles all of the C# files in the dir1\dir2 directory and any directories below it and generates dir2.dll:  
   
 ```console  
-csc /target:library /out:dir2.dll /recurse:dir1\dir2\*.cs  
+csc -target:library -out:dir2.dll -recurse:dir1\dir2\*.cs  
 ```  
   
 ## See Also  

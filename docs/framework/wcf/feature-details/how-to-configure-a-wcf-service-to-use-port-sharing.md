@@ -69,5 +69,5 @@ The easiest way to use net.tcp:// port sharing in your [!INCLUDE[indigo1](../../
 ```  
   
 ## See Also  
- [Net.TCP Port Sharing](http://msdn.microsoft.com/en-us/f13692ee-a179-4439-ae72-50db9534eded)  
+ [Net.TCP Port Sharing](http://msdn.microsoft.com/library/f13692ee-a179-4439-ae72-50db9534eded)  
  [How to: Enable the Net.TCP Port Sharing Service](../../../../docs/framework/wcf/feature-details/how-to-enable-the-net-tcp-port-sharing-service.md)

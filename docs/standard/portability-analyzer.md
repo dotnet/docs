@@ -1,6 +1,6 @@
 ---
 title: The .NET Portability Analyzer - .NET
-description: Learn how to use the .NET Portability Analyzer tool to evaluate how portable your code is among the various .NET implementations.
+description: Learn how to use the .NET Portability Analyzer tool to evaluate how portable your code is among the various .NET implementations, including .NET Core, .NET Standard, UWP, and Xamarin.
 keywords: .NET, .NET Core
 author: blackdwarf
 ms.author: mairaw
@@ -17,7 +17,7 @@ ms.workload:
 
 # The .NET Portability Analyzer
 
-Want to make your libraries multi-platform? Want to see how much work is required to make your application compatible with other .NET implementations? The [.NET Portability Analyzer](http://go.microsoft.com/fwlink/?LinkID=507467) is a tool that provides you with a detailed report on how flexible your program is across .NET implementations by analyzing assemblies. The Portability Analyzer is offered as a Visual Studio Extension and as a console app.
+Want to make your libraries multi-platform? Want to see how much work is required to make your application compatible with other .NET implementations and profiles, including .NET Core, .NET Standard, UWP, and Xamarin for iOS, Android, and Mac? The [.NET Portability Analyzer](http://go.microsoft.com/fwlink/?LinkID=507467) is a tool that provides you with a detailed report on how flexible your program is across .NET implementations by analyzing assemblies. The Portability Analyzer is offered as a Visual Studio Extension and as a console app.
 
 ## New targets
 

@@ -64,4 +64,4 @@ AllowOptimize=0
 ## See Also  
  [Debugging, Tracing, and Profiling](../../../docs/framework/debug-trace-profile/index.md)  
  [Enabling JIT-Attach Debugging](../../../docs/framework/debug-trace-profile/enabling-jit-attach-debugging.md)  
- [Enabling Profiling](http://msdn.microsoft.com/en-us/3b669676-f0e0-4ebf-8674-68986dd2020d)
+ [Enabling Profiling](http://msdn.microsoft.com/library/3b669676-f0e0-4ebf-8674-68986dd2020d)

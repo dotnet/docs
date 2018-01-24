@@ -105,7 +105,7 @@ Let’s go back to the initial issue and its example. If the service crashes aft
 
 As mentioned earlier in the architecture section, you can have several approaches for dealing with this issue:
 
--   Using the full [Event Sourcing pattern](https://msdn.microsoft.com/en-us/library/dn589792.aspx).
+-   Using the full [Event Sourcing pattern](https://msdn.microsoft.com/library/dn589792.aspx).
 
 -   Using [transaction log mining](http://www.scoop.it/t/sql-server-transaction-log-mining).
 
@@ -298,7 +298,7 @@ Some message processing is inherently idempotent. For example, if a system gener
 ### Additional resources
 
 -   **Honoring message idempotency** (subhead on this page)
-    [*https://msdn.microsoft.com/en-us/library/jj591565.aspx*](https://msdn.microsoft.com/en-us/library/jj591565.aspx)
+    [*https://msdn.microsoft.com/library/jj591565.aspx*](https://msdn.microsoft.com/library/jj591565.aspx)
 
 ## Deduplicating integration event messages
 

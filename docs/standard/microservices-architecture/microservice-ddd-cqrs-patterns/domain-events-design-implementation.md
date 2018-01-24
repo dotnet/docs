@@ -59,7 +59,7 @@ On the other hand, if you use domain events, you can create a fine-grained and d
 1.  Send a command (for example, CreateOrder).
 2.  Receive the command in a command handler.
     -   Execute a single aggregate’s transaction.
-    -   (Optional) Raise domain events for side effects (for example, OrderStartedDomainDvent).
+    -   (Optional) Raise domain events for side effects (for example, OrderStartedDomainEvent).
 1.  Handle domain events (within the current process) that will execute an open number of side effects in multiple aggregates or application actions. For example:
     -   Verify or create buyer and payment method.
     -   Create and send a related integration event to the event bus to propagate states across microservices or trigger external actions like sending an email to the buyer.

@@ -348,7 +348,7 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the time span that elapsed during online revocation verification or downloading the certificate revocation list (CRL).</summary>
+        <summary>Gets or sets the maximum amount of time to be spent during online revocation verification or downloading the certificate revocation list (CRL). A value of <see cref="F:System.TimeSpan.Zero" /> means there are no limits.</summary>
         <value>A <see cref="T:System.TimeSpan" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

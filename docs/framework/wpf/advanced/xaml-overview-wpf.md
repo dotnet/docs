@@ -53,7 +53,7 @@ This topic describes the features of the XAML language and demonstrates how you 
 ## XAML Syntax in Brief  
  The following sections explain the basic forms of XAML syntax, and give a short markup example. These sections are not intended to provide complete information about each syntax form, such as how these are represented in the backing type system. For more information about the specifics of XAML syntax for each of the syntax forms introduced in this topic, see [XAML Syntax In Detail](../../../../docs/framework/wpf/advanced/xaml-syntax-in-detail.md).  
   
- Much of the material in the next few sections will be elementary to you, if you have previous familiarity with the XML language. This is a consequence of one of the basic design principles of XAML.  XAML The XAML language defines concepts of its own, but these concepts work within the XML language and markup form.  
+ Much of the material in the next few sections will be elementary to you, if you have previous familiarity with the XML language. This is a consequence of one of the basic design principles of XAML.  The XAML language defines concepts of its own, but these concepts work within the XML language and markup form.  
   
 ### XAML Object Elements  
  An object element typically declares an instance of a type. That type is defined in the assemblies that provide the backing types for a technology that uses XAML as a language.  

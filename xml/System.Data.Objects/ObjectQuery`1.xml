@@ -476,9 +476,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-<xref:System.Data.Objects.ObjectQuery`1.OfType*> is used to filter query results by a specific entity or complex type. This supports a conceptual model with object inheritance. For more information, see [Entity Data Model: Inheritance](~/docs/framework/data/adonet/entity-data-model-inheritance.md). The  
-  
-The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied to an <xref:System.Data.Objects.ObjectQuery%601> of an entity type or complex type that is defined in the EDM.  
+<xref:System.Data.Objects.ObjectQuery`1.OfType*> is used to filter query results by a specific entity or complex type. This supports a conceptual model with object inheritance. For more information, see [Entity Data Model: Inheritance](~/docs/framework/data/adonet/entity-data-model-inheritance.md).
+
+The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied to an <xref:System.Data.Objects.ObjectQuery%601> of an entity type or complex type that is defined in the EDM.
   
  ]]></format>
         </remarks>

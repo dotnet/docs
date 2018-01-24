@@ -222,13 +222,13 @@ private void Sort(string sortBy, ListSortDirection direction)
   
 ```vb  
 Private Sub Sort(ByVal sortBy As String, ByVal direction As ListSortDirection)  
-			Dim dataView As ICollectionView = CollectionViewSource.GetDefaultView(lv.ItemsSource)  
+	Dim dataView As ICollectionView = CollectionViewSource.GetDefaultView(lv.ItemsSource)  
   
-			dataView.SortDescriptions.Clear()  
-			Dim sd As New SortDescription(sortBy, direction)  
-			dataView.SortDescriptions.Add(sd)  
-			dataView.Refresh()  
-		End Sub  
+	dataView.SortDescriptions.Clear()  
+	Dim sd As New SortDescription(sortBy, direction)  
+	dataView.SortDescriptions.Add(sd)  
+	dataView.Refresh()  
+End Sub  
 ```  
   
 ## See Also  

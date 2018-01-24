@@ -23,13 +23,13 @@ The `enum` keyword is used to declare an enumeration, a distinct type that consi
  By default, the first enumerator has the value 0, and the value of each successive enumerator is increased by 1. For example, in the following enumeration, `Sat` is `0`, `Sun` is `1`, `Mon` is `2`, and so forth.  
   
 ```  
-enum Days {Sat, Sun, Mon, Tue, Wed, Thu, Fri};  
+enum Day {Sat, Sun, Mon, Tue, Wed, Thu, Fri};  
 ```  
   
  Enumerators can use initializers to override the default values, as shown in the following example.  
   
 ```  
-enum Days {Sat=1, Sun, Mon, Tue, Wed, Thu, Fri};  
+enum Day {Sat=1, Sun, Mon, Tue, Wed, Thu, Fri};  
 ```  
   
  In this enumeration, the sequence of elements is forced to start from `1` instead of `0`. However, including a constant that has the value of 0 is recommended. For more information, see [Enumeration Types](../../../csharp/programming-guide/enumeration-types.md).  
@@ -37,12 +37,12 @@ enum Days {Sat=1, Sun, Mon, Tue, Wed, Thu, Fri};
  Every enumeration type has an underlying type, which can be any integral type except [char](../../../csharp/language-reference/keywords/char.md). The default underlying type of enumeration elements is [int](../../../csharp/language-reference/keywords/int.md). To declare an enum of another integral type, such as [byte](../../../csharp/language-reference/keywords/byte.md), use a colon after the identifier followed by the type, as shown in the following example.  
   
 ```  
-enum Days : byte {Sat=1, Sun, Mon, Tue, Wed, Thu, Fri};  
+enum Day : byte {Sat=1, Sun, Mon, Tue, Wed, Thu, Fri};  
 ```  
   
  The approved types for an enum are `byte`, [sbyte](../../../csharp/language-reference/keywords/sbyte.md), [short](../../../csharp/language-reference/keywords/short.md), [ushort](../../../csharp/language-reference/keywords/ushort.md), [int](../../../csharp/language-reference/keywords/int.md), [uint](../../../csharp/language-reference/keywords/uint.md), [long](../../../csharp/language-reference/keywords/long.md), or [ulong](../../../csharp/language-reference/keywords/ulong.md).  
   
- A variable of type `Days` can be assigned any value in the range of the underlying type; the values are not limited to the named constants.  
+ A variable of type `Day` can be assigned any value in the range of the underlying type; the values are not limited to the named constants.  
   
  The default value of an `enum E` is the value produced by the expression `(E)0`.  
   
@@ -97,3 +97,4 @@ int x = (int)Days.Sun;
  [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
  [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
  [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)
+ [Enum Naming Conventions](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/names-of-classes-structs-and-interfaces#naming-enumerations)

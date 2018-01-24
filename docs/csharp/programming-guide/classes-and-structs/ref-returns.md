@@ -11,29 +11,27 @@ ms.devlang: "csharp"
 ---
 # Ref returns and ref locals
 
-Starting with C# 7, C# supports reference return values (ref returns). A reference return value allows a method to return a reference to an object, rather than a value, back to a caller. The caller can then choose to treat the returned object  as if it were returned by value or by reference. A value returned by reference that the caller handles as a reference rather than a value is a ref local.
+Starting with C# 7, C# supports reference return values (ref returns). A reference return value allows a method to return a reference to a variable, rather than a value, back to a caller. The caller can then choose to treat the returned variable as if it were returned by value or by reference. The caller can create a new variable that is itself a reference to the returned value, called a ref local.
 
 ## What is a reference return value?
 
-Most developers are familiar with passing an argument to a called method *by reference*. A called method's argument list includes a value passed by reference, and any changes made to its value by the called method are returned to the caller. A *reference return value* means that a method returns a *reference* (or an alias) to some variable whose lifetime is greater than the method:
+Most developers are familiar with passing an argument to a called method *by reference*. A called method's argument list includes a variable passed by reference, and any changes made to its value by the called method are observed by the caller. A *reference return value* means that a method returns a *reference* (or an alias) to some variable whose scope includes the method and whose lifetime must extend beyond the return of the method.
 
 - The called method's return value, rather than an argument passed to it, is a reference.
 
-- Modifications to the method's return value by the caller are reflected in the state of the object whose method was called.
+- Modifications to the method's return value by the caller are made to the variable that is returned by the method.
 
-Declaring that a method returns a *reference return value* indicates that the method returns an alias to another variable. The design intent is often that the calling code should have access to that other variable through the alias, likely to modify it. 
+Declaring that a method returns a *reference return value* indicates that the method returns an alias to a variable. The design intent is often that the calling code should have access to that variable through the alias, including to modify it. It follows that methods returning by reference cannot have the return type `void`.
 
-There are some restrictions on the value that a method can return as a reference return value. These include:
+There are some restrictions on the expression that a method can return as a reference return value. These include:
 
-- The return value cannot be `void`. Attempting to define a method with a `void` reference return value generates compiler error CS1547, "Keyword 'void' cannot be used in this context."
- 
 - The return value must have a lifetime that extends beyond the execution of the method. In other words, it cannot be a local variable in the method that returns it. It can be an instance or static field of a class, or it can be an argument passed to the method. Attempting to return a local variable generates compiler error CS8168, "Cannot return local 'obj' by reference because it is not a ref local."
 
 - The return value cannot be the literal `null`. Attempting to return `null` generates compiler error CS8156, "An expression cannot be used in this context because it may not be returned by reference."
 
    A method with a ref return can return an alias to a variable whose value is currently the null (uninstantiated) value or a [nullable type](../nullable-types/index.md) for a value type.
  
-- The return value cannot be a constant, an enumeration member, or the return value from a property of a `class` or `struct`. Attempting to return these generates compiler error CS8156, "An expression cannot be used in this context because it may not be returned by reference."
+- The return value cannot be a constant, an enumeration member, or the by-value return value from a property, or a method of a `class` or `struct`. Attempting to return these generates compiler error CS8156, "An expression cannot be used in this context because it may not be returned by reference."
 
 In addition, because an asynchronous method may return before it has finished execution, while its return value is still unknown, reference return values are not allowed on async methods.
  
@@ -67,11 +65,10 @@ The ref return value is an alias to another variable in the called method's scop
 Assume the `GetContactInformation` method is declared as a ref return:
 
 ```csharp
-ref Person GetContactInformation(string firstName, string lastName)
+public ref Person GetContactInformation(string fname, string lname)
 ```
 
-A normal assignment reads the value of a variable and assigns it to a new variable:
-
+A by-value assignment reads the value of a variable and assigns it to a new variable:
 
 ```csharp
 Person p = contacts.GetContactInformation("Brandie", "Best");
@@ -85,7 +82,7 @@ You declare a *ref local* variable to copy the alias to the original value. In t
 ref Person p = ref contacts.GetContactInformation("Brandie", "Best");
 ```
 
-Subsequent usage of `p` is the same as using the variable returned by `GetContactInformation` because `p` is an alias for that variable.
+Subsequent usage of `p` is the same as using the variable returned by `GetContactInformation` because `p` is an alias for that variable. Changes to `p` also change the variable returned from `GetContactInformation`.
 
 Note that the `ref` keyword is used both before the local variable declaration *and* before the method call. Failure to include both `ref` keywords in the variable declaration and assignment results in compiler error CS8172, "Cannot initialize a by-reference variable with a value." 
  

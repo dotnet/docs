@@ -52,7 +52,7 @@ enum Day : byte {Sat=1, Sun, Mon, Tue, Wed, Thu, Fri};
  The underlying type specifies how much storage is allocated for each enumerator. However, an explicit cast is necessary to convert from `enum` type to an integral type. For example, the following statement assigns the enumerator `Sun` to a variable of the type [int](../../../csharp/language-reference/keywords/int.md) by using a cast to convert from `enum` to `int`.  
   
 ```  
-int x = (int)Days.Sun;  
+int x = (int)Day.Sun;  
 ```  
   
  When you apply <xref:System.FlagsAttribute?displayProperty=nameWithType> to an enumeration that contains elements that can be combined with a bitwise `OR` operation, the attribute affects the behavior of the `enum` when it is used with some tools. You can notice these changes when you use tools such as the <xref:System.Console> class methods and the Expression Evaluator. (See the third example.)  
@@ -65,7 +65,7 @@ int x = (int)Days.Sun;
  If other developers use your code, you should provide guidelines about how their code should react if new elements are added to any `enum` types.  
   
 ## Example  
- In the following example, an enumeration, `Days`, is declared. Two enumerators are explicitly converted to integer and assigned to integer variables.  
+ In the following example, an enumeration, `Day`, is declared. Two enumerators are explicitly converted to integer and assigned to integer variables.  
   
  [!code-csharp[csrefKeywordsTypes#10](../../../csharp/language-reference/keywords/codesnippet/CSharp/enum_1.cs)]  
   

@@ -236,7 +236,7 @@ Another way to map events to multiple event handlers is by using types registrat
 
 **Figure 9-16**. Domain event dispatcher using IoC
 
-You can build all the plumbing and artifacts to implement that approach by yourself. However, you can also use available libraries like [MediatR](https://github.com/jbogard/MediatR), which underneath the covers uses your IoT container. You can therefore directly use the predefined interfaces and the mediator object’s publish/dispatch methods.
+You can build all the plumbing and artifacts to implement that approach by yourself. However, you can also use available libraries like [MediatR](https://github.com/jbogard/MediatR), which underneath the covers uses your IoC container. You can therefore directly use the predefined interfaces and the mediator object’s publish/dispatch methods.
 
 In code, you first need to register the event handler types in your IoC container, as shown in the following example at [eShopOnContainers Ordering microservice](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Infrastructure/AutofacModules/MediatorModule.cs):
 

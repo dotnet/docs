@@ -436,7 +436,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-This property represents the time parameter for chain validation. This property returns a value indicating the time the chain is to be validated, either as local time or UTC, depending on the value of the <xref:System.DateTime.DateTimeKind?displayProperty=nameWithType> property. 
+This property represents the time parameter for chain validation. This property returns a value indicating the time the chain is to be validated, either as local time or UTC, depending on the value of the <xref:System.DateTime.Kind?displayProperty=nameWithType> property. 
 This property is important when validating signed messages, since the signature must have been valid at the time of signing, not at the time of validation. 
 Every certificate in the chain must have a <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.NotBefore> time no later than this property's value and a 
 <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.NotAfter> time no earlier than this property's value. Otherwise, the <xref:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NotTimeValid?displayProperty=nameWithType> flag is asserted. 

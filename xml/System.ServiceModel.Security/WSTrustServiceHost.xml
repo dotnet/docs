@@ -18,7 +18,7 @@
 ## Remarks  
  By default, the <xref:System.ServiceModel.Security.WSTrustServiceHost> class provides the following:  
   
--   It adds WS-Trust endpoints to the <xref:System.ServiceModel.ServiceHost> based on the <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.TrustEndpoints%2A> property.  
+-   It adds WS-Trust endpoints to the <xref:System.ServiceModel.ServiceHost>.  
   
 -   It enables metadata over the base addresses if the <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.DisableWsdl%2A> property is set to `false`.  
   

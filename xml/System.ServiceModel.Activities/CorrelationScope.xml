@@ -21,7 +21,7 @@
    
   
 ## Examples  
- The following example shows how to create a <xref:System.ServiceModel.Activities.CorrelationScope>. This example creates a <xref:System.ServiceModel.Statements.Sequence> and adds a <xref:System.ServiceModel.Activities.CorrelationScope> (among other activites). The <xref:System.ServiceModel.Activities.CorrelationScope> contains a <xref:System.ServiceModel.Statements.Sequence> that is composed of a <xref:System.ServiceModel.Activities.Send> and <xref:System.ServiceModel.Activities.ReceiveReply> activity.  
+ The following example shows how to create a <xref:System.ServiceModel.Activities.CorrelationScope>. This example creates a <xref:System.Activities.Statements.Sequence> and adds a <xref:System.ServiceModel.Activities.CorrelationScope> (among other activites). The <xref:System.ServiceModel.Activities.CorrelationScope> contains a <xref:System.Activities.Statements.Sequence> that is composed of a <xref:System.ServiceModel.Activities.Send> and <xref:System.ServiceModel.Activities.ReceiveReply> activity.  
   
  [!code-csharp[ContentBasedCorrelation#3](~/samples/snippets/csharp/VS_Snippets_CFX/contentbasedcorrelation/cs/client.cs#3)]  
   

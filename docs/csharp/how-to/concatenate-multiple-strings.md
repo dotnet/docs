@@ -19,6 +19,8 @@ ms.author: "wiwagn"
 
 *Concatenation* is the process of appending one string to the end of another string. You concatenate strings by using the + operator. For string literals and string constants, concatenation occurs at compile time; no run-time concatenation occurs. For string variables, concatenation occurs only at run time.
 
+[!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
+
 The following example uses concatenation to split a long string literal into smaller strings in order to improve readability in the source code. These parts will be concatenated into a single string at compile time. There is no run-time performance cost regardless of the number of strings involved.  
   
  [!code-csharp-interactive[Combining strings at compile time](../../../samples/snippets/csharp/how-to/strings/Concatenate.cs#1)]  

@@ -1,7 +1,7 @@
 ---
 title: "Windows Presentation Foundation"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "01/25/2018"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
@@ -30,12 +30,9 @@ ms.workload:
   - dotnet
 ---
 # Windows Presentation Foundation
-Windows Presentation Foundation (WPF) in Visual Studio 2015 provides developers with a unified programming model for building modern line-of-business desktop applications on Windows.  
+Windows Presentation Foundation (WPF) in Visual Studio provides developers with a unified programming model for building line-of-business desktop applications on Windows.  
   
-> [!NOTE]
->  The Mozilla Firefox browser disables the Microsoft Framework Assistant extension. See [How to remove the .NET Framework Assistant for Firefox](https://support.microsoft.com/en-us/kb/963707) for information on how to remove the extension from Firefox.  
-  
- [Create Modern Desktop Applications with Windows Presentation Foundation](/visualstudio/designers/create-modern-desktop-applications-with-windows-presentation-foundation)  
+ [Create Desktop Applications with Windows Presentation Foundation](/visualstudio/designers/create-modern-desktop-applications-with-windows-presentation-foundation)  
   
  [Designing XAML in Visual Studio and Blend for Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)  
   

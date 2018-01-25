@@ -96,5 +96,5 @@ int x = (int)Day.Sun;
  [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)  
  [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
  [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
- [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)
+ [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)  
  [Enum Naming Conventions](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/names-of-classes-structs-and-interfaces#naming-enumerations)

@@ -19,7 +19,8 @@ public abstract class Example
         Type[] types = { typeof(Example), typeof(NestedClass),
                          typeof(INested), typeof(S) };
 
-        foreach (var t in types) {
+        foreach (var t in types) 
+        {
            Console.WriteLine("Attributes for type {0}:", t.Name);
 
            TypeAttributes attr = t.Attributes;
@@ -55,7 +56,7 @@ public abstract class Example
                    break;
            }
 
-           ' Use the layout mask to test for layout attributes.
+           // Use the layout mask to test for layout attributes.
            TypeAttributes layout = attr & TypeAttributes.LayoutMask;
            switch (layout)
            {
@@ -70,7 +71,7 @@ public abstract class Example
                    break;
            }
 
-           ' Use the class semantics mask to test for class semantics attributes.
+           // Use the class semantics mask to test for class semantics attributes.
            TypeAttributes classSemantics = attr & TypeAttributes.ClassSemanticsMask;
            switch (classSemantics)
            {
@@ -89,15 +90,16 @@ public abstract class Example
                    break;
            }
 
-           if (0!=(attr & TypeAttributes.Abstract))
+           if ((attr & TypeAttributes.Abstract) != 0)
            {
                Console.WriteLine("   ...is abstract");
            }
 
-           if (0!=(attr & TypeAttributes.Sealed))
+           if ((attr & TypeAttributes.Sealed) != 0)
            {
                Console.WriteLine("   ...is sealed");
            }
+           
            Console.WriteLine();
        }
     }

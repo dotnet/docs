@@ -348,7 +348,7 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum amount of time to be spent during online revocation verification or downloading the certificate revocation list (CRL). A value of <see cref="F:System.TimeSpan.Zero" /> means there are no limits.</summary>
+        <summary>Gets or sets the maximum amount of time to be spent during online revocation verification or downloading the certificate revocation list (CRL). A value of <see cref="F:System.TimeSpan.Zero?displayProperty=nameWithType" /> means there are no limits.</summary>
         <value>A <see cref="T:System.TimeSpan" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -438,8 +438,8 @@
 ## Remarks  
 This property represents the time parameter for chain validation. This property returns a value indicating the time the chain is to be validated, either as local time or UTC, depending on the value of the <xref:System.DateTime.Kind?displayProperty=nameWithType> property. 
 This property is important when validating signed messages, since the signature must have been valid at the time of signing, not at the time of validation. 
-Every certificate in the chain must have a <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.NotBefore> time no later than this property's value and a 
-<xref:System.Security.Cryptography.X509Certificates.X509Certificate2.NotAfter> time no earlier than this property's value. Otherwise, the <xref:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NotTimeValid?displayProperty=nameWithType> flag is asserted. 
+Every certificate in the chain must have a <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.NotBefore?displayProperty=nameWithType> time no later than this property's value and a 
+<xref:System.Security.Cryptography.X509Certificates.X509Certificate2.NotAfter?displayProperty=nameWithType> time no earlier than this property's value. Otherwise, the <xref:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NotTimeValid?displayProperty=nameWithType> flag is asserted. 
 This property may also be used to determine the revocation status of a certificate.
 
 The default constructor for the <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy> class sets the <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy.VerificationTime> property to the time the constructor is called.

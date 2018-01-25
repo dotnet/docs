@@ -1,13 +1,9 @@
 ---
-title: "Developing Client Applications with the .NET Framework"
-ms.custom: ""
-ms.date: "03/30/2017"
+title: "Developing Windows-based client applications with the .NET Framework"
+ms.date: "01/09/2018"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "client application services"
@@ -21,45 +17,53 @@ helpviewer_keywords:
   - "Visual C#, creating applications"
   - "client/server applications, Windows applications"
 ms.assetid: 2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68
-caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
 ms.workload: 
   - dotnet
 ---
-# Developing Client Applications with the .NET Framework
-There are multiple ways to develop Windows-based applications with the .NET framework that run locally on users' computers or devices. This section contains topics that describe how to create Windows-based applications by using Windows Presentation Foundation (WPF) or by using Windows Forms. However, you can also create web applications using the .NET Framework, and client applications for computers or devices that you make available through the Windows Store or Windows Phone Store.  
+# Developing client applications with the .NET Framework
+
+There are several ways to develop Windows-based applications with the .NET Framework. You can use any of these tools and frameworks: 
+
+* [Universal Windows Platform (UWP)](https://developer.microsoft.com/windows/apps)
+* [Windows Presentation Foundation (WPF)](../../docs/framework/wpf/index.md)
+* [Windows Forms](../../docs/framework/winforms/index.md)
+
+This section contains topics that describe how to create Windows-based applications by using Windows Presentation Foundation or by using Windows Forms. However, you can also create web applications using the .NET Framework, and client applications for computers or devices that you make available through the Microsoft Store.
+ 
+## In this section
+
+[Windows Presentation Foundation](../../docs/framework/wpf/index.md)  
+Provides information about developing applications by using WPF.
+
+[Windows Forms](../../docs/framework/winforms/index.md)  
+Provides information about developing applications by using Windows Forms.
+
+[Common Client Technologies](../../docs/framework/common-client-technologies/index.md)  
+Provides information about additional technologies that can be used when developing client applications.
+
+## Related sections
+
+[Universal Windows Platform](https://developer.microsoft.com/windows/apps)  
+Describes how to create applications for Windows 10 that you can make available to users through the Windows Store.
+
+[.NET for UWP apps](https://msdn.microsoft.com/library/windows/apps/mt185501.aspx)  
+Describes the .NET Framework support for Store apps, which can be deployed to Windows computers and devices.
+
+[.NET API for Windows Phone Silverlight](https://docs.microsoft.com/en-us/previous-versions/windows/apps/jj207211\(v=vs.105\))  
+Lists the .NET Framework APIs you can use for building apps with Windows Phone Silverlight.
   
-## In This Section  
- [Windows Presentation Foundation](../../docs/framework/wpf/index.md)  
- Provides information about developing applications by using WPF.  
-  
- [Windows Forms](../../docs/framework/winforms/index.md)  
- Provides information about developing applications by using Windows Forms.  
-  
- [Common Client Technologies](../../docs/framework/common-client-technologies/index.md)  
- Provides information about additional technologies that can be used when developing client applications.  
-  
-## Related Sections  
- [Windows Store apps](http://msdn.microsoft.com/windows/apps/)  
- Describes how to create apps that you can make available to users through the Windows Store  
-  
- [.NET for Store apps](http://msdn.microsoft.com/library/windows/apps/br230302.aspx)  
- Describes the .NET Framework support for Store apps, which can be deployed to Windows computers and devices.  
-  
- [.NET API for Windows Phone Silverlight](http://msdn.microsoft.com/library/windows/apps/xaml/jj207211\(v=vs.105\).aspx)  
- List the .NET Framework APIs you can use for building apps with Windows Phone Silverlight  
-  
- [Developing for Multiple Platforms](../../docs/standard/cross-platform/index.md)  
- Describes the different methods you can use the .NET Framework to target multiple client app types.  
-  
- [Get Started with ASP.NET Web Sites](http://www.asp.net/get-started/websites)  
- Describes the ways you can develop web apps using ASP.NET.  
-  
-## See Also  
- [Portable Class Library](../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md)  
- [Overview](../../docs/framework/get-started/overview.md)  
- [Development Guide](../../docs/framework/development-guide.md)  
- [How to: Create a Windows Desktop Application](http://msdn.microsoft.com/library/47021403-eaca-4c34-946a-a26c42a64148)  
- [Windows Service Applications](../../docs/framework/windows-services/index.md)
+[Developing for Multiple Platforms](../../docs/standard/cross-platform/index.md)  
+Describes the different methods you can use the .NET Framework to target multiple client app types.
+
+[Get Started with ASP.NET Web Sites](http://www.asp.net/get-started/websites)  
+Describes the ways you can develop web apps using ASP.NET.
+
+## See also
+
+[.NET Standard](../../docs/standard/net-standard.md)  
+[Overview](../../docs/framework/get-started/overview.md)  
+[Development Guide](../../docs/framework/development-guide.md)  
+[Windows Service Applications](../../docs/framework/windows-services/index.md)  

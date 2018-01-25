@@ -23,19 +23,12 @@ Roslyn-based analyzers report potential issues as errors, warnings, or informati
 
 You install Roslyn-based analyzers as NuGet packages in your project. The configured analyzers and any settings for each analyzer will be restored and run on any developer's machine for that project.
 
-## Workflow for Roslyn based analyzers
-
-The basic workflow for any Roslyn-based analyzer is the same:
-
-1. Find the analyzer on [NuGet](https://nuget.org/packages). 
-1. Add the analyzer to your solution or project.
-1. Run the analyzer on the code you've created already.
-1. Correct any issues.
-1. Continue coding and watch for any new issues.
+> [!NOTE]
+> The user experience for Roslyn-based analyzers is different than that of the Code Analysis libraries like the older versions of FxCop and the Security analysis tools.  You don't need to explicitly run the Roslyn-based analyzers. There's no need to use the "Run Code Analysis" menu items on the "Analyze" menu in Visual Studio. Roslyn-based analyzers run asychronously as you work. 
 
 ## More information on specific analyzers
 
 The following analyzers are covered in this section:
 
 [API Analyzer](api-analyzer.md): This analyzer examines your code for potential compatibility risks or uses of deprecated APIs.    
-[Security Analyzer](security-analyzer.md): This analyzer examines your code for potential security risks. It is part of the larger [FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet package.  
+[Framework Analyzer](framework-analyzer.md): This analyzer examines your code to ensure it follows the guidelines for .NET Framework applications. These rules include several security based recommendations.

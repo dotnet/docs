@@ -1,7 +1,7 @@
 ---
 title: "Application Development"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "01/26/2018"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
@@ -137,5 +137,5 @@ ms.workload:
 |[Navigation Overview](../../../../docs/framework/wpf/app-development/navigation-overview.md)|Provides an overview of managing navigation between pages of your application.|  
 |[Hosting](../../../../docs/framework/wpf/app-development/hosting-wpf-applications.md)|Provides an overview of [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)].|  
 |[Build and Deploy](../../../../docs/framework/wpf/app-development/building-and-deploying-wpf-applications.md)|Describes how to build and deploy your WPF application.|  
-|[Introduction to WPF in Visual Studio 2015](../../../../docs/framework/wpf/getting-started/introduction-to-wpf-in-vs.md)|Describes the main features of WPF.|  
+|[Introduction to WPF in Visual Studio](../../../../docs/framework/wpf/getting-started/introduction-to-wpf-in-vs.md)|Describes the main features of WPF.|  
 |[Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)|A walkthrough that shows how to create a WPF application using page navigation, layout, controls, images, styles, and binding.|

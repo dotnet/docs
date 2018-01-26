@@ -42,7 +42,7 @@ The only time `dotnet` is used as a command on its own is to run [framework-depe
 
 # [.NET Core 2.x](#tab/netcore2x)
 
-`--additionaldeps <PATH>`
+`--additional-deps <PATH>`
 
 Path to additional *deps.json* file.
 

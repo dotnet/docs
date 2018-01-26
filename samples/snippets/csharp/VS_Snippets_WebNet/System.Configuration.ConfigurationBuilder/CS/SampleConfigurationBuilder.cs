@@ -14,9 +14,7 @@ namespace Samples.AspNet.Config
             string rawXmlString = rawXml.OuterXml;
 
             if (String.IsNullOrEmpty(rawXmlString)) {
-             
                 return rawXml;
-
             }
 
             rawXmlString = Environment.ExpandEnvironmentVariables(rawXmlString);
@@ -29,11 +27,8 @@ namespace Samples.AspNet.Config
         }
 
         public override ConfigurationSection ProcessSectionInstance(ConfigurationSection configSection) 
-        {
-        
-            return configSection;
-        
-        }
+            => configSection;
+
     }
 
 }

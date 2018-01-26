@@ -47,7 +47,18 @@ solution.
 
 ## Using the .NET Framework Analyzer
 
-Once the NuGet package is installed, build your solution. The analyzers examine
+Once the NuGet package is installed, build your solution. 
+
+<< Rework with the screenshots.>>
+
+## images to add:
+
+1. show a warning bulb
+2. show build output
+
+<< End notes >>
+
+The analyzers examine
 the code in your solution and provide you with a list of
 warnings for any of these issues:
 
@@ -132,8 +143,4 @@ An attack making it computationally feasible to break this algorithm exists. Thi
 
 [For more information](/visualstudio/code-quality/ca5351-do-not-use-broken-cryptographic-algorithms)
 
-### Examples
-
-
-Code that triggers any of these analyzers generates a warning by default. <<screenshot>>
 

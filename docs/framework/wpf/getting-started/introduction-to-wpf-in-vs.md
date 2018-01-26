@@ -1,7 +1,7 @@
 ---
-title: "Introduction to WPF in Visual Studio 2015"
+title: "Introduction to WPF in Visual Studio"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "01/26/2018"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
@@ -30,10 +30,10 @@ manager: "wpickett"
 ms.workload: 
   - dotnet
 ---
-# Introduction to WPF in Visual Studio 2015
-Windows Presentation Foundation (WPF) in Visual Studio 2015 provides developers with a unified programming model for building modern line-of-business desktop applications on Windows.  
+# Introduction to WPF in Visual Studio
+Windows Presentation Foundation (WPF) in Visual Studio provides developers with a unified programming model for building line-of-business desktop applications on Windows.  
   
- [Create Modern Desktop Applications with Windows Presentation Foundation](/visualstudio/designers/create-modern-desktop-applications-with-windows-presentation-foundation)  
+ [Create Desktop Applications with Windows Presentation Foundation](/visualstudio/designers/create-modern-desktop-applications-with-windows-presentation-foundation)  
   
  [Designing XAML in Visual Studio and Blend for Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)  
   

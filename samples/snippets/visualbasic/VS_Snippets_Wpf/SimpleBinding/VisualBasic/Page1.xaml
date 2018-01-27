@@ -7,13 +7,11 @@
   Title="Simple Data Binding Sample">
 
   <Window.Resources>
-    <!--<SnippetODPCP>-->
     <ObjectDataProvider x:Key="myDataSource" ObjectType="{x:Type src:Person}">
       <ObjectDataProvider.ConstructorParameters>
         <system:String>Joe</system:String>
       </ObjectDataProvider.ConstructorParameters>
     </ObjectDataProvider>
-    <!--</SnippetODPCP>-->
     <Style TargetType="{x:Type Label}">
       <Setter Property="DockPanel.Dock" Value="Top"/>
       <Setter Property="FontSize" Value="12"/>
@@ -32,7 +30,6 @@
 
   <Border Margin="25" BorderBrush="Aqua" BorderThickness="3" Padding="8">
     <DockPanel Width="200" Height="100">
-<!--<SnippetUSTHowTo>-->
       <Label>Enter a Name:</Label>
       <TextBox>
         <TextBox.Text>
@@ -43,7 +40,6 @@
 
       <Label>The name you entered:</Label>
       <TextBlock Text="{Binding Source={StaticResource myDataSource}, Path=Name}"/>
-<!--</SnippetUSTHowTo>-->
     </DockPanel>
   </Border>
 </Window>

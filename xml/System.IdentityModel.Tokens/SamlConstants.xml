@@ -38,8 +38,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the attribute used to specify that the subject of a SAML assertion is specified as an e-mail address. This field is constant.</summary>
-        <value>The name of the attribute used to specify that the subject of a SAML assertion is specified as an e-mail address. This field is constant.</value>
+        <summary>Gets the name of the attribute used to specify that the subject of a SAML assertion is specified as an email address. This field is constant.</summary>
+        <value>The name of the attribute used to specify that the subject of a SAML assertion is specified as an email address. This field is constant.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -63,13 +63,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a URI that states the subject of a SAML assertion is specified as an e-mail address. This field is constant.</summary>
-        <value>A URI that states the subject of a SAML assertion is specified as an e-mail address.</value>
+        <summary>Gets a URI that states the subject of a SAML assertion is specified as an email address. This field is constant.</summary>
+        <value>A URI that states the subject of a SAML assertion is specified as an email address.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.IdentityModel.Tokens.SamlConstants.EmailNamespace%2A> property to set the <xref:System.IdentityModel.Tokens.SamlSubject.NameFormat%2A> property when the subject is specified as an e-mail address.  
+ Use the <xref:System.IdentityModel.Tokens.SamlConstants.EmailNamespace%2A> property to set the <xref:System.IdentityModel.Tokens.SamlSubject.NameFormat%2A> property when the subject is specified as an email address.  
   
  ]]></format>
         </remarks>

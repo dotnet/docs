@@ -27,9 +27,9 @@
         args.IsValid = False    ' Assume False
         ' Loop through table and compare each record against user's entry
         For Each datarow In dv
-            ' Extract e-mail address from the current row
+            ' Extract email address from the current row
             txtEmail = datarow.Item("Alias").ToString()
-            ' Compare e-mail address against user's entry
+            ' Compare email address against user's entry
             If txtEmail = args.Value Then
                 args.IsValid = True
                 Exit For

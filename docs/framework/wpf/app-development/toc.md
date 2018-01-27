@@ -29,7 +29,7 @@
 #### [Get the Return Value of a Page Function](how-to-get-the-return-value-of-a-page-function.md)
 #### [Navigate Forward or Back Through Navigation History](how-to-navigate-forward-or-back-through-navigation-history.md)
 #### [Determine If a Page is Browser Hosted](how-to-determine-if-a-page-is-browser-hosted.md)
-#### [Use mailto: to Send Mail From a Page](how-to-use-mailto-to-send-mail-from-a-page.md)
+#### [Use mailto: to Send Mail From a Page](how-to-usemailto-to-send-mail-from-a-page.md)
 #### [Set the Title of a Window from a Page](how-to-set-the-title-of-a-window-from-a-page.md)
 #### [Set the Width of a Window from a Page](how-to-set-the-width-of-a-window-from-a-page.md)
 #### [Set the Height of a Window from a Page](how-to-set-the-height-of-a-window-from-a-page.md)

@@ -11,14 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Implements an event provider that sends e-mail for event notifications.</summary>
+    <summary>Implements an event provider that sends email for event notifications.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  ASP.NET health monitoring allows production and operations staff to manage  deployed Web applications. The <xref:System.Web.Management> namespace contains the health event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
   
- This class is not intended to be used from your code. It is created, configured and used by the ASP.NET health-monitoring system to send event notifications by e-mail. You can define an event provider in a configuration file, as demonstrated in the Example section of this topic.  
+ This class is not intended to be used from your code. It is created, configured and used by the ASP.NET health-monitoring system to send event notifications by email. You can define an event provider in a configuration file, as demonstrated in the Example section of this topic.  
   
  This provider has a comprehensive set of configuration attributes that you can use to customize the way it works.  
   

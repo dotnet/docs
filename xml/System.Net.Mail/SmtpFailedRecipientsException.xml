@@ -20,17 +20,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The exception that is thrown when e-mail is sent using an <see cref="T:System.Net.Mail.SmtpClient" /> and cannot be delivered to all recipients.</summary>
+    <summary>The exception that is thrown when email is sent using an <see cref="T:System.Net.Mail.SmtpClient" /> and cannot be delivered to all recipients.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Mail.SmtpFailedRecipientsException.InnerExceptions%2A> property contains the exceptions received while attempting to send e-mail. The e-mail might have been successfully delivered to some of the recipients.  
+ The <xref:System.Net.Mail.SmtpFailedRecipientsException.InnerExceptions%2A> property contains the exceptions received while attempting to send email. The email might have been successfully delivered to some of the recipients.  
   
    
   
 ## Examples  
- The following code example resends an e-mail message that was not delivered because a mailbox was busy or unavailable.  
+ The following code example resends an email message that was not delivered because a mailbox was busy or unavailable.  
   
  [!code-cpp[NclMailSync#27](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#27)]
  [!code-csharp[NclMailSync#27](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#27)]  
@@ -245,7 +245,7 @@
         <ReturnType>System.Net.Mail.SmtpFailedRecipientException[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets one or more <see cref="T:System.Net.Mail.SmtpFailedRecipientException" />s that indicate the e-mail recipients with SMTP delivery errors.</summary>
+        <summary>Gets one or more <see cref="T:System.Net.Mail.SmtpFailedRecipientException" />s that indicate the email recipients with SMTP delivery errors.</summary>
         <value>An array of type <see cref="T:System.Net.Mail.SmtpFailedRecipientException" /> that lists the recipients with delivery errors.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />

@@ -292,7 +292,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the <xref:System.Web.HttpException.%23ctor%2A> constructor of the <xref:System.Web.HttpException> class. The user name and e-mail information are entered by the user in the provided text boxes. If any of the text boxes are left blank, an <xref:System.Web.HttpException> object is created and thrown. The error code of the <xref:System.Web.HttpException> is obtained by the <xref:System.Web.HttpException.GetHttpCode%2A> method and displayed on the Web page.  
+ The following code example demonstrates the <xref:System.Web.HttpException.%23ctor%2A> constructor of the <xref:System.Web.HttpException> class. The user name and email information are entered by the user in the provided text boxes. If any of the text boxes are left blank, an <xref:System.Web.HttpException> object is created and thrown. The error code of the <xref:System.Web.HttpException> is obtained by the <xref:System.Web.HttpException.GetHttpCode%2A> method and displayed on the Web page.  
   
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  

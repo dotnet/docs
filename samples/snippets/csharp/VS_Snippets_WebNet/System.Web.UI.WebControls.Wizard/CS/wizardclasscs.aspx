@@ -41,7 +41,7 @@
               width="226px" 
               height="17px" /> 
             <br />
-            E-mail Address:<br />
+            Email Address:<br />
             <asp:TextBox runat="server" 
               id="EmailAddress" 
               width="224px" 

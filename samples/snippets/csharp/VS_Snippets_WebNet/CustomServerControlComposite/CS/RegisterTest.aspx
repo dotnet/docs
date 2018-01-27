@@ -36,7 +36,7 @@
         OnSubmit="Register_Submit" ID="Register1"
         Runat="server" NameLabelText="Name:" 
         EmailLabelText="Email:" 
-        EmailErrorMessage="You must enter your e-mail address." 
+        EmailErrorMessage="You must enter your email address." 
         NameErrorMessage="You must enter your name." />
        <br />
       <asp:Label ID="Label1" Runat="server" Text="Label">

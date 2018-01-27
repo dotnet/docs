@@ -64,7 +64,7 @@ Visual Studio supports a variety of reporting solutions to help you add rich dat
   
 -   Scheduled report processing so that you can specify exactly when reports are run.  
   
--   Subscriber-based report distribution through e-mail or to file share locations.  
+-   Subscriber-based report distribution through email or to file share locations.  
   
 -   Ad hoc reporting so that business users can create reports as needed.  
   

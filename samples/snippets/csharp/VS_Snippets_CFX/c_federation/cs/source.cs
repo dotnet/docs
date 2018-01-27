@@ -246,7 +246,7 @@ public class STS_B_AuthorizationManager : ServiceAuthorizationManager
         }
 
         // This helper method performs a rudimentary check for whether 
-        //a given e-mail is valid.
+        //a given email is valid.
         private static bool IsValidEmailAddress(string emailAddress)
         {
             string[] splitEmail = emailAddress.Split('@');

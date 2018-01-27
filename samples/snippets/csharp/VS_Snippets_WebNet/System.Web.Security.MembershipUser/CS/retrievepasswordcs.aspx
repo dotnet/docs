@@ -67,7 +67,7 @@ public void EmailPassword_OnClick(object sender, EventArgs args)
     }
 
     EmailPassword(u.Email, password);
-    Msg.Text = "Password sent via e-mail.";
+    Msg.Text = "Password sent via email.";
   }
   else
   {

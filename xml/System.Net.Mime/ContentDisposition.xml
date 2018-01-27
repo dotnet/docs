@@ -25,9 +25,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The information in the <xref:System.Net.Mime.ContentDisposition> class accompanies an e-mail message that contains attachments when the e-mail message is sent to its destination. The information in <xref:System.Net.Mime.ContentDisposition> can be used by software that displays e-mail to present the e-mail attachments in the manner intended by the sender.  
+ The information in the <xref:System.Net.Mime.ContentDisposition> class accompanies an email message that contains attachments when the email message is sent to its destination. The information in <xref:System.Net.Mime.ContentDisposition> can be used by software that displays email to present the email attachments in the manner intended by the sender.  
   
- E-mail messages are created using instances of the <xref:System.Net.Mail.MailMessage> class. Instances of the <xref:System.Net.Mail.Attachment> class are used to add attachments to e-mail messages. To modify the <xref:System.Net.Mime.ContentDisposition> for an attachment, get the instance from the <xref:System.Net.Mail.Attachment.ContentDisposition%2A?displayProperty=nameWithType> property.  
+ Email messages are created using instances of the <xref:System.Net.Mail.MailMessage> class. Instances of the <xref:System.Net.Mail.Attachment> class are used to add attachments to email messages. To modify the <xref:System.Net.Mime.ContentDisposition> for an attachment, get the instance from the <xref:System.Net.Mail.Attachment.ContentDisposition%2A?displayProperty=nameWithType> property.  
   
  Content to be displayed as part of the message body has the disposition type of <xref:System.Net.Mime.ContentDisposition.Inline%2A>. Content that is not displayed but is attached in a separate file has the disposition type of <xref:System.Net.Mime.DispositionTypeNames.Attachment>. Use the <xref:System.Net.Mime.ContentDisposition.Inline%2A> property to control the disposition type for the attachment associated with an instance of <xref:System.Net.Mime.ContentDisposition>.  
   
@@ -38,7 +38,7 @@
    
   
 ## Examples  
- The following code example creates an e-mail message with an attachment to be displayed inline.  
+ The following code example creates an email message with an attachment to be displayed inline.  
   
  [!code-cpp[NclMailSync#12](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#12)]
  [!code-csharp[NclMailSync#12](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#12)]  
@@ -153,9 +153,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Mime.ContentDisposition.CreationDate> property is used to send time stamp information with a file being sent in an e-mail message. This value sets the Creation-Date parameter in the Content-Disposition header sent with the email.  
+ The <xref:System.Net.Mime.ContentDisposition.CreationDate> property is used to send time stamp information with a file being sent in an email message. This value sets the Creation-Date parameter in the Content-Disposition header sent with the email.  
   
- The <xref:System.Net.Mail.MailMessage> class is used to compose an e-mail message. The <xref:System.Net.Mail.Attachment> class is used to attach a file to an e-mail message. To set <xref:System.Net.Mime.ContentDisposition.CreationDate>, get the <xref:System.Net.Mime.ContentDisposition> for the attachment from the <xref:System.Net.Mail.Attachment.ContentDisposition%2A?displayProperty=nameWithType> property.  
+ The <xref:System.Net.Mail.MailMessage> class is used to compose an email message. The <xref:System.Net.Mail.Attachment> class is used to attach a file to an email message. To set <xref:System.Net.Mime.ContentDisposition.CreationDate>, get the <xref:System.Net.Mime.ContentDisposition> for the attachment from the <xref:System.Net.Mail.Attachment.ContentDisposition%2A?displayProperty=nameWithType> property.  
   
  The Content-Disposition header is described in RFC 2183 available at [http://www.ietf.org](http://www.ietf.org/).  
   
@@ -193,13 +193,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the disposition type for an e-mail attachment.</summary>
+        <summary>Gets or sets the disposition type for an email attachment.</summary>
         <value>A <see cref="T:System.String" /> that contains the disposition type. The value is not restricted but is typically one of the <see cref="P:System.Net.Mime.ContentDisposition.DispositionType" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Mime.ContentDisposition.DispositionType%2A> property value can be used by software that displays e-mail to determine the correct way to present the e-mail attachments. <xref:System.Net.Mime.DispositionTypeNames.Inline> attachments are usually displayed when the user opens the e-mail. <xref:System.Net.Mime.DispositionTypeNames.Attachment> attachments are usually not opened until the user performs some action, such as clicking an icon that represents the attachment.  
+ The <xref:System.Net.Mime.ContentDisposition.DispositionType%2A> property value can be used by software that displays email to determine the correct way to present the email attachments. <xref:System.Net.Mime.DispositionTypeNames.Inline> attachments are usually displayed when the user opens the email. <xref:System.Net.Mime.DispositionTypeNames.Attachment> attachments are usually not opened until the user performs some action, such as clicking an icon that represents the attachment.  
   
  The Content-Disposition header is described in RFC 2183 available at [http://www.ietf.org](http://www.ietf.org/).  
   
@@ -271,13 +271,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the suggested file name for an e-mail attachment.</summary>
+        <summary>Gets or sets the suggested file name for an email attachment.</summary>
         <value>A <see cref="T:System.String" /> that contains the file name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Mime.ContentDisposition.FileName%2A> property allows the sender to suggest the name to be used to store an e-mail attachment on the recipient's computer. This name is a suggestion only; the receiving system can ignore it. The name must not include path information; any such information is ignored by the receiving computer.  
+ The <xref:System.Net.Mime.ContentDisposition.FileName%2A> property allows the sender to suggest the name to be used to store an email attachment on the recipient's computer. This name is a suggestion only; the receiving system can ignore it. The name must not include path information; any such information is ignored by the receiving computer.  
   
  To remove file name information, you can set this property to `null` or the empty string ("").  
   
@@ -345,14 +345,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a <see cref="T:System.Boolean" /> value that determines the disposition type (Inline or Attachment) for an e-mail attachment.</summary>
+        <summary>Gets or sets a <see cref="T:System.Boolean" /> value that determines the disposition type (Inline or Attachment) for an email attachment.</summary>
         <value>
-          <see langword="true" /> if content in the attachment is presented inline as part of the e-mail body; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if content in the attachment is presented inline as part of the email body; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Mime.ContentDisposition.Inline%2A> property sets the disposition type in the Content-Disposition header sent with the e-mail message. The disposition type can be used by software that displays e-mail to determine the correct way to present the e-mail attachments. Attachments with a disposition type of <xref:System.Net.Mime.DispositionTypeNames.Inline?displayProperty=nameWithType> are usually displayed when the user opens the e-mail. Attachments with a disposition type of <xref:System.Net.Mime.DispositionTypeNames.Attachment?displayProperty=nameWithType> are usually not opened until the user performs some additional action, such as clicking an icon that represents the attachment.  
+ The <xref:System.Net.Mime.ContentDisposition.Inline%2A> property sets the disposition type in the Content-Disposition header sent with the email message. The disposition type can be used by software that displays email to determine the correct way to present the email attachments. Attachments with a disposition type of <xref:System.Net.Mime.DispositionTypeNames.Inline?displayProperty=nameWithType> are usually displayed when the user opens the email. Attachments with a disposition type of <xref:System.Net.Mime.DispositionTypeNames.Attachment?displayProperty=nameWithType> are usually not opened until the user performs some additional action, such as clicking an icon that represents the attachment.  
   
  The Content-Disposition header is described in RFC 2183 available at [http://www.ietf.org](http://www.ietf.org/).  
   
@@ -396,9 +396,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Mime.ContentDisposition.ModificationDate%2A> property is used to send time stamp information with a file being sent in an e-mail message. This value sets the Modification-Date parameter in the Content-Disposition header sent with the e-mail message.  
+ The <xref:System.Net.Mime.ContentDisposition.ModificationDate%2A> property is used to send time stamp information with a file being sent in an email message. This value sets the Modification-Date parameter in the Content-Disposition header sent with the email message.  
   
- The <xref:System.Net.Mail.MailMessage> class is used to compose an e-mail message. The <xref:System.Net.Mail.Attachment> class is used to attach a file to an e-mail message. To set the <xref:System.Net.Mime.ContentDisposition.ModificationDate%2A> property, get the <xref:System.Net.Mime.ContentDisposition> for the attachment using the <xref:System.Net.Mail.Attachment.ContentDisposition%2A?displayProperty=nameWithType> property.  
+ The <xref:System.Net.Mail.MailMessage> class is used to compose an email message. The <xref:System.Net.Mail.Attachment> class is used to attach a file to an email message. To set the <xref:System.Net.Mime.ContentDisposition.ModificationDate%2A> property, get the <xref:System.Net.Mime.ContentDisposition> for the attachment using the <xref:System.Net.Mail.Attachment.ContentDisposition%2A?displayProperty=nameWithType> property.  
   
  The Content-Disposition header is described in RFC 2183 available at [http://www.ietf.org](http://www.ietf.org/).  
   
@@ -486,9 +486,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Mime.ContentDisposition.ReadDate%2A> property is used to send time stamp information with a file being sent in an e-mail message. This value sets the Read-Date parameter in the Content-Disposition header sent with the e-mail message.  
+ The <xref:System.Net.Mime.ContentDisposition.ReadDate%2A> property is used to send time stamp information with a file being sent in an email message. This value sets the Read-Date parameter in the Content-Disposition header sent with the email message.  
   
- The <xref:System.Net.Mail.MailMessage> class is used to compose an e-mail message. The <xref:System.Net.Mail.Attachment> class is used to attach a file to an e-mail message. To set <xref:System.Net.Mime.ContentDisposition.ReadDate%2A>, get the <xref:System.Net.Mime.ContentDisposition> for the attachment by using the <xref:System.Net.Mail.Attachment.ContentDisposition%2A?displayProperty=nameWithType> property.  
+ The <xref:System.Net.Mail.MailMessage> class is used to compose an email message. The <xref:System.Net.Mail.Attachment> class is used to attach a file to an email message. To set <xref:System.Net.Mime.ContentDisposition.ReadDate%2A>, get the <xref:System.Net.Mime.ContentDisposition> for the attachment by using the <xref:System.Net.Mail.Attachment.ContentDisposition%2A?displayProperty=nameWithType> property.  
   
  The Content-Disposition header is described in RFC 2183 available at [http://www.ietf.org](http://www.ietf.org/).  
   
@@ -532,7 +532,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Mime.ContentDisposition.Size%2A> property is used to send time stamp information with a file being sent in an e-mail message. The <xref:System.Net.Mail.MailMessage> class is used to compose the message. The <xref:System.Net.Mail.Attachment> class is used to attach a file to an e-mail message.  
+ The <xref:System.Net.Mime.ContentDisposition.Size%2A> property is used to send time stamp information with a file being sent in an email message. The <xref:System.Net.Mail.MailMessage> class is used to compose the message. The <xref:System.Net.Mail.Attachment> class is used to attach a file to an email message.  
   
  The Content-Disposition header is described in RFC 2183 available at [http://www.ietf.org](http://www.ietf.org/).  
   

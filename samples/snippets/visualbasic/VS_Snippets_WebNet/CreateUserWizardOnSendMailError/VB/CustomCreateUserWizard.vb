@@ -11,7 +11,7 @@ Namespace Samples.AspNet.VB.Controls
     Inherits CreateUserWizard
 
     Private Sub SiteSpecificErrorLoggingProcedure(ByVal e As SendMailErrorEventArgs)
-      ' Site-specific code for logging e-mail errors goes here.
+      ' Site-specific code for logging email errors goes here.
     End Sub
     
     Overloads Sub OnSendMailError(ByVal e As SendMailErrorEventArgs)

@@ -21,12 +21,12 @@ public:
       String^ to = L"jane@contoso.com";
       String^ from = L"ben@contoso.com";
       String^ subject = L"Using the new SMTP client.";
-      String^ body = L"Using this new feature, you can send an e-mail message from an application very easily.";
+      String^ body = L"Using this new feature, you can send an email message from an application very easily.";
       MailMessage^ message = gcnew MailMessage( from,to,subject,body );
       SmtpClient^ client = gcnew SmtpClient( server,port );
       
       // Credentials are necessary if the server requires the client 
-      // to authenticate before it will send e-mail on the client's behalf.
+      // to authenticate before it will send email on the client's behalf.
       client->Credentials = CredentialCache::DefaultNetworkCredentials;
       
       //Display the properties on the service point.
@@ -45,11 +45,11 @@ public:
       String^ from = L"ben@contoso.com";
       MailMessage^ message = gcnew MailMessage( from,to );
       message->Subject = L"Using the new SMTP client.";
-      message->Body = L"Using this new feature, you can send an e-mail message from an application very easily.";
+      message->Body = L"Using this new feature, you can send an email message from an application very easily.";
       SmtpClient^ client = gcnew SmtpClient( server );
       
       // Credentials are necessary if the server requires the client 
-      // to authenticate before it will send e-mail on the client's behalf.
+      // to authenticate before it will send email on the client's behalf.
       client->UseDefaultCredentials = true;
       client->Send( message );
 	  client->~SmtpClient();
@@ -63,14 +63,14 @@ public:
       String^ to = L"jane@contoso.com";
       String^ from = L"ben@contoso.com";
       String^ subject = L"Using the new SMTP client.";
-      String^ body = L"Using this new feature, you can send an e-mail message from an application very easily.";
+      String^ body = L"Using this new feature, you can send an email message from an application very easily.";
       MailMessage^ message = gcnew MailMessage( from,to,subject,body );
       SmtpClient^ client = gcnew SmtpClient( server );
       Console::WriteLine( L"Changing time out from {0} to 100.", client->Timeout );
       client->Timeout = 100;
       
       // Credentials are necessary if the server requires the client 
-      // to authenticate before it will send e-mail on the client's behalf.
+      // to authenticate before it will send email on the client's behalf.
       client->Credentials = CredentialCache::DefaultNetworkCredentials;
       client->Send( message );
    }
@@ -84,12 +84,12 @@ public:
       MailAddress^ from = gcnew MailAddress( L"ben@contoso.com" );
       MailMessage^ message = gcnew MailMessage( from,to );
       message->Subject = L"Using the new SMTP client.";
-      message->Body = L"Using this new feature, you can send an e-mail message from an application very easily.";
+      message->Body = L"Using this new feature, you can send an email message from an application very easily.";
       
       // Use the application or machine configuration to get the 
       // host, port, and credentials.
       SmtpClient^ client = gcnew SmtpClient;
-      Console::WriteLine( L"Sending an e-mail message to {0} at {1} by using the SMTP host {2}.", to->User, to->Host, client->Host );
+      Console::WriteLine( L"Sending an email message to {0} at {1} by using the SMTP host {2}.", to->User, to->Host, client->Host );
       client->Send( message );
    }
 
@@ -100,7 +100,7 @@ public:
    {
       
       // Create a message and set up the recipients.
-      MailMessage^ message = gcnew MailMessage( L"jane@contoso.com",recipients,L"This e-mail message has multiple views.",L"This is some plain text." );
+      MailMessage^ message = gcnew MailMessage( L"jane@contoso.com",recipients,L"This email message has multiple views.",L"This is some plain text." );
       
       // Construct the alternate body as HTML.
       String^ body = L"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\">";
@@ -151,7 +151,7 @@ public:
       // Create a message and set up the recipients.
       MailMessage^ message = gcnew MailMessage( L"jane@contoso.com",L"ben@contoso.com",L"Quarterly data report.",L"See the attached spreadsheet." );
       
-      // Create  the file attachment for this e-mail message.
+      // Create  the file attachment for this email message.
       Attachment^ data = gcnew Attachment(file, MediaTypeNames::Application::Octet);
       
       // Add time stamp information for the file.
@@ -160,7 +160,7 @@ public:
       disposition->ModificationDate = System::IO::File::GetLastWriteTime( file );
       disposition->ReadDate = System::IO::File::GetLastAccessTime( file );
       
-      // Add the file attachment to this e-mail message.
+      // Add the file attachment to this email message.
       message->Attachments->Add( data );
       
       //Send the message.
@@ -201,9 +201,9 @@ public:
       MailAddress^ to = gcnew MailAddress( L"Jane@contoso.com" );
       MailMessage^ message = gcnew MailMessage( from,to );
       message->Subject = L"Using the SmtpClient class.";
-      message->Body = L"Using this feature, you can send an e-mail message from an application very easily.";
+      message->Body = L"Using this feature, you can send an email message from an application very easily.";
       SmtpClient^ client = gcnew SmtpClient( server );
-      Console::WriteLine( L"Sending an e-mail message to {0} by using SMTP host {1} port {2}.", to, client->Host, client->Port );
+      Console::WriteLine( L"Sending an email message to {0} by using SMTP host {1} port {2}.", to, client->Host, client->Port );
       client->Send( message );
       client->~SmtpClient();
    }
@@ -216,7 +216,7 @@ public:
       String^ to = L"jane@contoso.com";
       String^ from = L"ben@contoso.com";
       String^ subject = L"Using the new SMTP client.";
-      String^ body = L"Using this new feature, you can send an e-mail message from an application very easily.";
+      String^ body = L"Using this new feature, you can send an email message from an application very easily.";
       SmtpClient^ client = gcnew SmtpClient( server );
       client->Credentials = CredentialCache::DefaultNetworkCredentials;
       client->Send( from, to, subject, body );
@@ -232,12 +232,12 @@ public:
       MailAddress^ to = gcnew MailAddress( L"jane@contoso.com",L"Jane Clayton" );
       MailMessage^ message = gcnew MailMessage( from,to );
       message->Subject = L"Using the SmtpClient class.";
-      message->Body = L"Using this feature, you can send an e-mail message from an application very easily.";
+      message->Body = L"Using this feature, you can send an email message from an application very easily.";
       MailAddress^ bcc = gcnew MailAddress( L"manager1@contoso.com" );
       message->Bcc->Add( bcc );
       SmtpClient^ client = gcnew SmtpClient( server );
       client->Credentials = CredentialCache::DefaultNetworkCredentials;
-      Console::WriteLine( L"Sending an e-mail message to {0} and {1}.", to->DisplayName, message->Bcc );
+      Console::WriteLine( L"Sending an email message to {0} and {1}.", to->DisplayName, message->Bcc );
       try
       { 
           client->Send( message );
@@ -261,7 +261,7 @@ public:
       
       // message.Subject = "Using the SmtpClient class.";
       message->Subject = L"Using the SmtpClient class.";
-      message->Body = L"Using this feature, you can send an e-mail message from an application very easily.";
+      message->Body = L"Using this feature, you can send an email message from an application very easily.";
       
       // Add a carbon copy recipient.
       MailAddress^ copy = gcnew MailAddress( L"Notification_List@contoso.com" );
@@ -270,7 +270,7 @@ public:
       
       // Include credentials if the server requires them.
       client->Credentials = CredentialCache::DefaultNetworkCredentials;
-      Console::WriteLine( L"Sending an e-mail message to {0} by using the SMTP host {1}.", to->Address, client->Host );
+      Console::WriteLine( L"Sending an email message to {0} by using the SMTP host {1}.", to->Address, client->Host );
       client->Send( message );
       client->~SmtpClient();
    }
@@ -284,7 +284,7 @@ public:
       // Create a message and set up the recipients.
       MailMessage^ message = gcnew MailMessage( L"jane@contoso.com",L"ben@contoso.com",L"A text message for you.",L"Message: " );
       
-      // Attach the message string to this e-mail message.
+      // Attach the message string to this email message.
       Attachment^ data = gcnew Attachment( textMessage,MediaTypeNames::Text::Plain );
       ContentDisposition^ disposition = data->ContentDisposition;
       
@@ -327,10 +327,10 @@ public:
       // Create a message and set up the recipients.
       MailMessage^ message = gcnew MailMessage( L"jane@contoso.com",L"ben@contoso.com",L"An inline text message for you.",L"Message: " );
       
-      // Attach the message string to this e-mail message.
+      // Attach the message string to this email message.
       Attachment^ data = gcnew Attachment( textMessage,MediaTypeNames::Text::Plain );
       
-      // Send textMessage as part of the e-mail body.
+      // Send textMessage as part of the email body.
       message->Attachments->Add( data );
       ContentDisposition^ disposition = data->ContentDisposition;
       disposition->Inline = true;
@@ -353,10 +353,10 @@ public:
       // Create a message and set up the recipients.
       MailMessage^ message = gcnew MailMessage( L"jane@contoso.com",L"ben@contoso.com",L"A text message for you.",L"Message: " );
       
-      // Attach the message string to this e-mail message.
+      // Attach the message string to this email message.
       Attachment^ data = gcnew Attachment( textMessage );
       
-      // Send textMessage as part of the e-mail body.
+      // Send textMessage as part of the email body.
       message->Attachments->Add( data );
       ContentType^ content = data->ContentType;
       content->MediaType = MediaTypeNames::Text::Plain;
@@ -374,7 +374,7 @@ public:
    //</snippet13>
    //<snippet14>
    // The following example sends a summary of a log file as the message
-   // and the log as an e-mail attachment.
+   // and the log as an email attachment.
    static void SendErrorLog( String^ server, String^ recipientList )
    {
       
@@ -407,7 +407,7 @@ public:
       // that is attached is plain text.
       ContentType^ ct = gcnew ContentType( MediaTypeNames::Text::Plain );
       
-      // Attach the log file stream to the e-mail message.
+      // Attach the log file stream to the email message.
       Attachment^ data = gcnew Attachment( fs,ct );
       ContentDisposition^ disposition = data->ContentDisposition;
       
@@ -433,7 +433,7 @@ public:
    //</snippet14>
    //<snippet15>
    // The following example sends a summary of a log file as the message
-   // and the log as an e-mail attachment.
+   // and the log as an email attachment.
    static void SendNamedErrorLog( String^ server, String^ recipientList )
    {
       
@@ -491,7 +491,7 @@ public:
    //</snippet15>
    //<snippet16>
    // The following example sends a summary of a log file as the message
-   // and the log as an e-mail attachment.
+   // and the log as an email attachment.
    static void SendNamedAndTypedErrorLog( String^ server, String^ recipientList )
    {
       
@@ -556,7 +556,7 @@ public:
       String^ recipient = Console::ReadLine();
       
       // Check for recipient data.
-      // A real application would add error checking here for a valid e-mail 
+      // A real application would add error checking here for a valid email 
       // address format. This example accepts any input.
       if ( recipient->Length == 0 )
             return nullptr;
@@ -588,7 +588,7 @@ public:
       MailMessage^ message = gcnew MailMessage( from,recipient );
       message->Subject = subject;
       
-      // Attach the message string to this e-mail message.
+      // Attach the message string to this email message.
       // Set the encoding to the computer's current encoding.
       Attachment^ data = gcnew Attachment( sb->ToString(),MediaTypeNames::Text::Plain);
       
@@ -625,7 +625,7 @@ public:
       message->Subject = L"Monthly Expense report";
       message->Body = L"Please review the attached report.";
       
-      // Attach a file to this e-mail message.
+      // Attach a file to this email message.
       Attachment^ data = gcnew Attachment("data.xls", MediaTypeNames::Application::Octet);
       AttachmentCollection^ attachments = message->Attachments;
       attachments->Add( data );
@@ -667,8 +667,8 @@ public:
       Console::WriteLine( L"Content Type {0}", a->ContentType );
       Console::WriteLine( L"Transfer Encoding {0}", a->TransferEncoding );
       
-      // Note that you cannot close the reader before the e-mail is sent. 
-      // Closing the reader before sending the e-mail will close the 
+      // Note that you cannot close the reader before the email is sent. 
+      // Closing the reader before sending the email will close the 
       // ContentStream and cause an SmtpException.
       reader = nullptr;
    }
@@ -687,7 +687,7 @@ public:
       // Create a message and set up the recipients.
       MailMessage^ message = gcnew MailMessage( L"ReportMailer@contoso.com",to,L"Quarterly data report",L"See the attached spreadsheet." );
       
-      // Create  the file attachment for this e-mail message.
+      // Create  the file attachment for this email message.
       Attachment^ data = gcnew Attachment(file);
       
       // Add time stamp information for the file.
@@ -696,7 +696,7 @@ public:
       disposition->ModificationDate = System::IO::File::GetLastWriteTime( file );
       disposition->ReadDate = System::IO::File::GetLastAccessTime( file );
       
-      // Add the file attachment to this e-mail message.
+      // Add the file attachment to this email message.
       message->Attachments->Add( data );
       
       //Send the message.
@@ -723,7 +723,7 @@ public:
       // Create a message and set up the recipients.
       MailMessage^ message = gcnew MailMessage( L"ReportMailer@contoso.com",to,L"Quarterly data report",L"See the attached spreadsheet." );
       
-      // Create  the file attachment for this e-mail message.
+      // Create  the file attachment for this email message.
       Attachment^ data = gcnew Attachment("Qtr3.xls");
       
       
@@ -733,7 +733,7 @@ public:
       disposition->ModificationDate = System::IO::File::GetLastWriteTime( file );
       disposition->ReadDate = System::IO::File::GetLastAccessTime( file );
       
-      // Add the file attachment to this e-mail message.
+      // Add the file attachment to this email message.
       message->Attachments->Add( data );
       
       //Send the message.
@@ -772,7 +772,7 @@ public:
       // Create a message and set up the recipients.
       MailMessage^ message = gcnew MailMessage( L"ReportMailer@contoso.com",to,L"Quarterly data report",L"See the attached spreadsheet." );
       
-      // Create  the file attachment for this e-mail message.
+      // Create  the file attachment for this email message.
       Attachment^ data = gcnew Attachment("qtr3.xls", MediaTypeNames::Application::Octet);
       
       // Add time stamp information for the file.
@@ -782,7 +782,7 @@ public:
       disposition->ReadDate = System::IO::File::GetLastAccessTime( file );
       disposition->DispositionType = DispositionTypeNames::Attachment;
       
-      // Add the file attachment to this e-mail message.
+      // Add the file attachment to this email message.
       message->Attachments->Add( data );
       
       //Send the message.
@@ -816,7 +816,7 @@ public:
       // Create a message and set up the recipients.
       MailMessage^ message = gcnew MailMessage( L"jane@contoso.com",L"ben@contoso.com",L"A text message for you.",L"Message: " );
       
-      // Attach the message string to this e-mail message.
+      // Attach the message string to this email message.
       Attachment^ data = gcnew Attachment(textMessage,
                                     MediaTypeNames::Text::Plain);
       ContentDisposition^ disposition = data->ContentDisposition;
@@ -842,10 +842,10 @@ public:
       // Create a message and set up the recipients.
       MailMessage^ message = gcnew MailMessage( L"jane@contoso.com",L"ben@contoso.com",L"An inline text message for you.",L"Message: " );
       
-      // Attach the message string to this e-mail message.
+      // Attach the message string to this email message.
       Attachment^ data = gcnew Attachment( textMessage,MediaTypeNames::Text::Plain );
       
-      // Send textMessage as part of the e-mail body.
+      // Send textMessage as part of the email body.
       message->Attachments->Add( data );
       ContentDisposition^ disposition = data->ContentDisposition;
       disposition->DispositionType = DispositionTypeNames::Inline;
@@ -870,7 +870,7 @@ public:
       
       // message.Subject = "Using the SmtpClient class.";
       message->Subject = L"Using the SmtpClient class.";
-      message->Body = L"Using this feature, you can send an e-mail message from an application very easily.";
+      message->Body = L"Using this feature, you can send an email message from an application very easily.";
       
       // Add a carbon copy recipient.
       MailAddress^ copy = gcnew MailAddress( L"Notifications@contoso.com" );
@@ -879,7 +879,7 @@ public:
       
       // Include credentials if the server requires them.
       client->Credentials = dynamic_cast<ICredentialsByHost^>(CredentialCache::DefaultNetworkCredentials);
-      Console::WriteLine( L"Sending an e-mail message to {0} using the SMTP host {1}.", to->Address, client->Host );
+      Console::WriteLine( L"Sending an email message to {0} using the SMTP host {1}.", to->Address, client->Host );
       try
       {
          client->Send( message );

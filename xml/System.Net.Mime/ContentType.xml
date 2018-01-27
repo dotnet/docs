@@ -25,14 +25,14 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The information in the <xref:System.Net.Mime.ContentType> class is used to describe the data contained in an e-mail message in such a way that software that displays e-mail can present the content in an appropriate manner. <xref:System.Net.Mime.ContentType> is used with the <xref:System.Net.Mail.Attachment> class to specify the type of content in the attachment.  
+ The information in the <xref:System.Net.Mime.ContentType> class is used to describe the data contained in an email message in such a way that software that displays email can present the content in an appropriate manner. <xref:System.Net.Mime.ContentType> is used with the <xref:System.Net.Mail.Attachment> class to specify the type of content in the attachment.  
   
  The syntax of the Content-Type header is described in RFC 2045 Section 5.1. RFC 2046 provides detailed information about MIME media types and their parameters. These RFCs are available at [http://www.ietf.org](http://www.ietf.org/).  
   
    
   
 ## Examples  
- The following code example sends an e-mail message with an attachment and displays the <xref:System.Net.Mail.Attachment.ContentDisposition%2A> properties for the attachment.  
+ The following code example sends an email message with an attachment and displays the <xref:System.Net.Mail.Attachment.ContentDisposition%2A> properties for the attachment.  
   
  [!code-cpp[NclMailSync#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#6)]
  [!code-csharp[NclMailSync#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#6)]  

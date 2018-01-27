@@ -23,7 +23,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A user account name (UPN) is the user name (sometimes referred to as the user logon name) and a domain name that identifies the domain in which the user account is located. This is one of the standard ways to log on to a Windows domain. The format is: someone@example.com (as for an e-mail address).  
+ A user account name (UPN) is the user name (sometimes referred to as the user logon name) and a domain name that identifies the domain in which the user account is located. This is one of the standard ways to log on to a Windows domain. The format is: someone@example.com (as for an email address).  
   
  A Down-Level Logon Name can also be used for creating a <xref:System.ServiceModel.UpnEndpointIdentity>.  
   

@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides properties and methods for constructing an e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+    <summary>Provides properties and methods for constructing an email message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -92,8 +92,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a semicolon-delimited list of email addresses that receive a blind carbon copy (BCC) of the e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
-        <value>A semicolon-delimited list of e-mail addresses that receive a blind carbon copy (BCC) of the e-mail message.</value>
+        <summary>Gets or sets a semicolon-delimited list of email addresses that receive a blind carbon copy (BCC) of the email message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <value>A semicolon-delimited list of email addresses that receive a blind carbon copy (BCC) of the email message.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -125,8 +125,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the body of the e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
-        <value>The body of the e-mail message.</value>
+        <summary>Gets or sets the body of the email message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <value>The body of the email message.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,8 +143,8 @@
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the encoding type of the body of the e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
-        <value>One of the <see cref="T:System.Text.Encoding" /> values that indicates the encoding type of the body of the e-mail message.</value>
+        <summary>Gets or sets the encoding type of the body of the email message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <value>One of the <see cref="T:System.Text.Encoding" /> values that indicates the encoding type of the body of the email message.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -169,7 +169,7 @@
         <ReturnType>System.Web.Mail.MailFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the content type of the body of the e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <summary>Gets or sets the content type of the body of the email message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
         <value>One of the <see cref="T:System.Web.Mail.MailFormat" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -195,8 +195,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a semicolon-delimited list of e-mail addresses that receive a carbon copy (CC) of the e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
-        <value>A semicolon-delimited list of e-mail addresses that receive a carbon copy (CC) of the e-mail message.</value>
+        <summary>Gets or sets a semicolon-delimited list of email addresses that receive a carbon copy (CC) of the email message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <value>A semicolon-delimited list of email addresses that receive a carbon copy (CC) of the email message.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -259,8 +259,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the e-mail address of the sender. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
-        <value>The sender's e-mail address.</value>
+        <summary>Gets or sets the email address of the sender. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <value>The sender's email address.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -285,7 +285,7 @@
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the custom headers that are transmitted with the e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <summary>Specifies the custom headers that are transmitted with the email message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
         <value>An <see cref="T:System.Collections.IDictionary" /> collection of custom headers.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -303,7 +303,7 @@
         <ReturnType>System.Web.Mail.MailPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the priority of the e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <summary>Gets or sets the priority of the email message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
         <value>One of the <see cref="T:System.Web.Mail.MailPriority" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -329,8 +329,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the subject line of the e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
-        <value>The subject line of the e-mail message.</value>
+        <summary>Gets or sets the subject line of the email message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <value>The subject line of the email message.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -347,8 +347,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a semicolon-delimited list of recipient e-mail addresses. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
-        <value>A semicolon-delimited list of e-mail addresses.</value>
+        <summary>Gets or sets a semicolon-delimited list of recipient email addresses. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <value>A semicolon-delimited list of email addresses.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -378,7 +378,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see langword="Content-Base" /> HTTP header, the URL base of all relative URLs used within the HTML-encoded body of the e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <summary>Gets or sets the <see langword="Content-Base" /> HTTP header, the URL base of all relative URLs used within the HTML-encoded body of the email message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
         <value>The URL base.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -404,7 +404,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see langword="Content-Location" /> HTTP header for the e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <summary>Gets or sets the <see langword="Content-Location" /> HTTP header for the email message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
         <value>The <see langword="content-base" /> header.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

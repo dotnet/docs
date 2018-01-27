@@ -82,7 +82,7 @@
               </td>
               <td>
                 <asp:LinkButton runat="server" ID="SortByEmailButton"
-                  CommandName="Sort" Text="E-mail Address" 
+                  CommandName="Sort" Text="Email Address" 
                   CommandArgument="EmailAddress" />
                 <asp:Image runat="server" ID="SortImage3" 
                   ImageUrl="~/images/ascending.gif" Visible="false" />

@@ -26,16 +26,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Allows a control to create e-mail messages from text files or strings. This class cannot be inherited.</summary>
+    <summary>Allows a control to create email messages from text files or strings. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.MailDefinition> class can be used by controls to create a <xref:System.Net.Mail.MailMessage> object from a text file or a string that contains the body of the e-mail message. Use the <xref:System.Web.UI.WebControls.MailDefinition> class to simplify creating predefined e-mail messages to be sent by a control. If you want to send e-mail not using a control, see the <xref:System.Net.Mail> class.  
+ The <xref:System.Web.UI.WebControls.MailDefinition> class can be used by controls to create a <xref:System.Net.Mail.MailMessage> object from a text file or a string that contains the body of the email message. Use the <xref:System.Web.UI.WebControls.MailDefinition> class to simplify creating predefined email messages to be sent by a control. If you want to send email not using a control, see the <xref:System.Net.Mail> class.  
   
- You can make text substitutions in the body of the e-mail message by passing to the <xref:System.Web.UI.WebControls.MailDefinition.CreateMailMessage%2A> method an <xref:System.Collections.IDictionary> instance that maps strings to their replacements.  
+ You can make text substitutions in the body of the email message by passing to the <xref:System.Web.UI.WebControls.MailDefinition.CreateMailMessage%2A> method an <xref:System.Collections.IDictionary> instance that maps strings to their replacements.  
   
- The <xref:System.Net.Mail.MailMessage> object created by the <xref:System.Web.UI.WebControls.MailDefinition> class is sent using the <xref:System.Net.Mail.SmtpClient.Send%2A> method of the <xref:System.Net.Mail.SmtpClient> class. To be able to send e-mail, you must configure an SMTP mail server in your Web.config file. For more information, see the [&lt;smtp&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/smtp-element-network-settings.md).  
+ The <xref:System.Net.Mail.MailMessage> object created by the <xref:System.Web.UI.WebControls.MailDefinition> class is sent using the <xref:System.Net.Mail.SmtpClient.Send%2A> method of the <xref:System.Net.Mail.SmtpClient> class. To be able to send email, you must configure an SMTP mail server in your Web.config file. For more information, see the [&lt;smtp&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/smtp-element-network-settings.md).  
   
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.MailDefinition> class does not support data binding. Properties of the <xref:System.Web.UI.WebControls.MailDefinition> class cannot be bound to data using the `<%#   %>` data-binding expression syntax.  
@@ -43,9 +43,9 @@
    
   
 ## Examples  
- The following code example creates an Internet e-mail message from a Web Forms page. You can either enter the text of the message in the form or enter the name of a text file to use as the body of the mail. The code defines two string replacements for the message: the recipient list from the form's To text box will replace the string "\<%To%>", and the text specified in the <xref:System.Web.UI.WebControls.MailDefinition.From%2A> property will replace the string "\<%From%>".  
+ The following code example creates an Internet email message from a Web Forms page. You can either enter the text of the message in the form or enter the name of a text file to use as the body of the mail. The code defines two string replacements for the message: the recipient list from the form's To text box will replace the string "\<%To%>", and the text specified in the <xref:System.Web.UI.WebControls.MailDefinition.From%2A> property will replace the string "\<%From%>".  
   
- On the Web Forms page that this code generates, you can click **Create e-mail and display only** to create an e-mail message and display the properties of the <xref:System.Net.Mail.MailMessage> object in the Web page. Click **Create e-mail and send** to both display the e-mail message in the Web page and send the message to the recipients using Internet e-mail.  
+ On the Web Forms page that this code generates, you can click **Create email and display only** to create an email message and display the properties of the <xref:System.Net.Mail.MailMessage> object in the Web page. Click **Create email and send** to both display the email message in the Web page and send the message to the recipients using Internet email.  
   
 > [!IMPORTANT]
 >  This control has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
@@ -102,13 +102,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the file that contains text for the body of the e-mail message.</summary>
+        <summary>Gets or sets the name of the file that contains text for the body of the email message.</summary>
         <value>The name of the file that contains the message body text. The default is <see cref="F:System.String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.MailDefinition.BodyFileName%2A> property specifies the location of the text file to use for the body of the e-mail message.  
+ The <xref:System.Web.UI.WebControls.MailDefinition.BodyFileName%2A> property specifies the location of the text file to use for the body of the email message.  
   
  The <xref:System.Web.UI.WebControls.MailDefinition.CreateMailMessage%28System.String%2CSystem.Collections.IDictionary%2CSystem.Web.UI.Control%29> method uses its `owner` parameter to map the <xref:System.Web.UI.WebControls.MailDefinition.BodyFileName%2A> property to a path on the server. If the `owner` parameter points to a control on an .aspx page or to the page itself, the <xref:System.Web.UI.WebControls.MailDefinition.BodyFileName%2A> property points to a text file in the same directory as the .aspx page. For example, if the .aspx page is located at C:\inetpub\wwwroot\default.aspx, the <xref:System.Web.UI.WebControls.MailDefinition> control looks for the text file in the directory C:\inetpub\wwwroot.  
   
@@ -152,15 +152,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a comma-separated list of e-mail addresses to send a copy (CC) of the message to.</summary>
-        <value>A comma-separated list of e-mail addresses to send a copy (CC) of the message to. The default is <see cref="F:System.String.Empty" />.</value>
+        <summary>Gets or sets a comma-separated list of email addresses to send a copy (CC) of the message to.</summary>
+        <value>A comma-separated list of email addresses to send a copy (CC) of the message to. The default is <see cref="F:System.String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.MailDefinition.CC%2A> property contains a list of additional recipients of the e-mail message.  
+ The <xref:System.Web.UI.WebControls.MailDefinition.CC%2A> property contains a list of additional recipients of the email message.  
   
- If the <xref:System.Web.UI.WebControls.MailDefinition.CC%2A> property contains an improperly formed e-mail address, the <xref:System.Net.Mail.SmtpClient.Send%2A> method throws an <xref:System.Web.HttpException> exception and the e-mail message is not sent.  
+ If the <xref:System.Web.UI.WebControls.MailDefinition.CC%2A> property contains an improperly formed email address, the <xref:System.Net.Mail.SmtpClient.Send%2A> method throws an <xref:System.Web.HttpException> exception and the email message is not sent.  
   
    
   
@@ -200,8 +200,8 @@
         <param name="recipients">A comma-separated list of message recipients.</param>
         <param name="replacements">An <see cref="T:System.Collections.IDictionary" /> containing a list of strings and their replacement strings.</param>
         <param name="owner">The <see cref="T:System.Web.UI.Control" /> that owns this <see cref="T:System.Web.UI.WebControls.MailDefinition" />.</param>
-        <summary>Creates an e-mail message from a text file to send by means of SMTP (Simple Mail Transfer Protocol).</summary>
-        <returns>The e-mail message from a text file.</returns>
+        <summary>Creates an email message from a text file to send by means of SMTP (Simple Mail Transfer Protocol).</summary>
+        <returns>The email message from a text file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -210,7 +210,7 @@
   
  The <xref:System.Web.Mail.MailMessage.BodyFormat%2A> property must be set to indicate whether the mail message should be formatted as plain text (<xref:System.Web.Mail.MailFormat.Text?displayProperty=nameWithType>) or HTML (<xref:System.Web.Mail.MailFormat.Html?displayProperty=nameWithType>).  
   
- The `recipients` parameter contains a comma-separated list of recipients of the e-mail message. If the `recipients` parameter contains an improperly formatted Internet e-mail address, the <xref:System.Net.Mail.SmtpClient.Send%2A> method throws an <xref:System.Web.HttpException> exception and the e-mail message is not sent.  
+ The `recipients` parameter contains a comma-separated list of recipients of the email message. If the `recipients` parameter contains an improperly formatted Internet email address, the <xref:System.Net.Mail.SmtpClient.Send%2A> method throws an <xref:System.Web.HttpException> exception and the email message is not sent.  
   
  The `replacements` parameter is an <xref:System.Collections.IDictionary> instance that contains a list of strings to substitute. Strings are replaced in the order in which they were added to the <xref:System.Collections.IDictionary> collection, and they can overwrite earlier replacements.  
   
@@ -219,14 +219,14 @@
    
   
 ## Examples  
- The following code example creates a <xref:System.Collections.Specialized.ListDictionary> object that defines two strings ("\<%To%>" and "\<%From%>") that are replaced in the e-mail message.  
+ The following code example creates a <xref:System.Collections.Specialized.ListDictionary> object that defines two strings ("\<%To%>" and "\<%From%>") that are replaced in the email message.  
   
  This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.MailDefinition> class.  
   
  [!code-csharp[MailDefinitionClassSample#7](~/samples/snippets/csharp/VS_Snippets_WebNet/MailDefinitionClassSample/CS/maildefinitionsamplecs.aspx#7)]
  [!code-vb[MailDefinitionClassSample#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MailDefinitionClassSample/VB/maildefinitionsamplevb.aspx#7)]  
   
- The following code example uses the <xref:System.Web.UI.WebControls.MailDefinition.CreateMailMessage%2A> method to create a new e-mail message from a text file.  
+ The following code example uses the <xref:System.Web.UI.WebControls.MailDefinition.CreateMailMessage%2A> method to create a new email message from a text file.  
   
  This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.MailDefinition> class.  
   
@@ -241,7 +241,7 @@
   
  \- or -  
   
- <paramref name="recipients" /> contains an incorrect e-mail address.</exception>
+ <paramref name="recipients" /> contains an incorrect email address.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="owner" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Net.Mail.SmtpClient" />
@@ -270,35 +270,35 @@
       <Docs>
         <param name="recipients">The comma-separated list of recipients.</param>
         <param name="replacements">An <see cref="T:System.Collections.IDictionary" /> containing a list of strings and their replacement strings.</param>
-        <param name="body">The text of the e-mail message.</param>
+        <param name="body">The text of the email message.</param>
         <param name="owner">The <see cref="T:System.Web.UI.Control" /> that owns this <see cref="T:System.Web.UI.WebControls.MailDefinition" />.</param>
-        <summary>Creates an e-mail message with replacements from a text file to send by means of SMTP (Simple Mail Transfer Protocol).</summary>
-        <returns>The e-mail message with replacements from a text file.</returns>
+        <summary>Creates an email message with replacements from a text file to send by means of SMTP (Simple Mail Transfer Protocol).</summary>
+        <returns>The email message with replacements from a text file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The <xref:System.Web.UI.WebControls.MailDefinition.CreateMailMessage%2A> method creates a new <xref:System.Net.Mail.MailMessage> object that can be sent with the <xref:System.Net.Mail.SmtpClient.Send%2A?displayProperty=nameWithType> method.  
   
- The `recipients` parameter contains a comma-separated list of recipients of the e-mail message. If the `recipients` parameter contains an improperly formatted Internet e-mail address, the <xref:System.Net.Mail.SmtpClient.Send%2A> method throws an <xref:System.Web.HttpException> exception and the e-mail message is not sent.  
+ The `recipients` parameter contains a comma-separated list of recipients of the email message. If the `recipients` parameter contains an improperly formatted Internet email address, the <xref:System.Net.Mail.SmtpClient.Send%2A> method throws an <xref:System.Web.HttpException> exception and the email message is not sent.  
   
  The `replacements` parameter is an <xref:System.Collections.IDictionary> instance that contains a list of strings to substitute. Strings are replaced in the order in which they were added to the <xref:System.Collections.IDictionary> collection, and they can overwrite earlier replacements.  
   
- The `body` parameter contains the text of the e-mail message.  
+ The `body` parameter contains the text of the email message.  
   
  The `owner` parameter indicates which control is the parent of the <xref:System.Web.UI.WebControls.MailDefinition> control. It determines which directory to search for the text file specified in the <xref:System.Web.UI.WebControls.MailDefinition.BodyFileName%2A> property.  
   
    
   
 ## Examples  
- The following code example creates a <xref:System.Collections.Specialized.ListDictionary> object that defines two strings ("\<%To%>" and "\<%From%>") that are replaced in the e-mail message.  
+ The following code example creates a <xref:System.Collections.Specialized.ListDictionary> object that defines two strings ("\<%To%>" and "\<%From%>") that are replaced in the email message.  
   
  This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.MailDefinition> class.  
   
  [!code-csharp[MailDefinitionClassSample#7](~/samples/snippets/csharp/VS_Snippets_WebNet/MailDefinitionClassSample/CS/maildefinitionsamplecs.aspx#7)]
  [!code-vb[MailDefinitionClassSample#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MailDefinitionClassSample/VB/maildefinitionsamplevb.aspx#7)]  
   
- The following code example uses the <xref:System.Web.UI.WebControls.MailDefinition.CreateMailMessage%2A> method to create a new e-mail message from text entered in a <xref:System.Web.UI.WebControls.TextBox> control on a Web Forms page.  
+ The following code example uses the <xref:System.Web.UI.WebControls.MailDefinition.CreateMailMessage%2A> method to create a new email message from text entered in a <xref:System.Web.UI.WebControls.TextBox> control on a Web Forms page.  
   
  This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.MailDefinition> class.  
   
@@ -313,7 +313,7 @@
   
  \- or -  
   
- <paramref name="recipients" /> contains an incorrect e-mail address.</exception>
+ <paramref name="recipients" /> contains an incorrect email address.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="owner" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Net.Mail.SmtpClient" />
@@ -345,13 +345,13 @@
         <ReturnType>System.Web.UI.WebControls.EmbeddedMailObjectsCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of <see cref="T:System.Web.UI.WebControls.EmbeddedMailObject" /> instances, typically used to embed images in a <see cref="T:System.Web.UI.WebControls.MailDefinition" /> object before sending an e-mail to a user.</summary>
-        <value>An <see cref="T:System.Web.UI.WebControls.EmbeddedMailObjectsCollection" /> instances used to embed images in a <see cref="T:System.Web.UI.WebControls.MailDefinition" /> object before sending an e-mail to a user.</value>
+        <summary>Gets a collection of <see cref="T:System.Web.UI.WebControls.EmbeddedMailObject" /> instances, typically used to embed images in a <see cref="T:System.Web.UI.WebControls.MailDefinition" /> object before sending an email to a user.</summary>
+        <value>An <see cref="T:System.Web.UI.WebControls.EmbeddedMailObjectsCollection" /> instances used to embed images in a <see cref="T:System.Web.UI.WebControls.MailDefinition" /> object before sending an email to a user.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.EmbeddedMailObject> items in the <xref:System.Web.UI.WebControls.EmbeddedMailObjectsCollection> collection returned by the <xref:System.Web.UI.WebControls.MailDefinition.EmbeddedObjects%2A> property represent items to embed in an e-mail message. These items can include image files such as company logos or other graphics.  
+ The <xref:System.Web.UI.WebControls.EmbeddedMailObject> items in the <xref:System.Web.UI.WebControls.EmbeddedMailObjectsCollection> collection returned by the <xref:System.Web.UI.WebControls.MailDefinition.EmbeddedObjects%2A> property represent items to embed in an email message. These items can include image files such as company logos or other graphics.  
   
  ]]></format>
         </remarks>
@@ -380,13 +380,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the e-mail address of the message sender.</summary>
-        <value>The e-mail address of the message sender. The default is <see cref="F:System.String.Empty" />.</value>
+        <summary>Gets or sets the email address of the message sender.</summary>
+        <value>The email address of the message sender. The default is <see cref="F:System.String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.MailDefinition.From%2A> property contains the e-mail address of the sender of the e-mail message. If the <xref:System.Web.UI.WebControls.MailDefinition.From%2A> property is left blank, or contains an improperly formed e-mail address, the <xref:System.Net.Mail.SmtpClient.Send%2A?displayProperty=nameWithType> method throws an <xref:System.Web.HttpException> exception and the e-mail message is not sent.  
+ The <xref:System.Web.UI.WebControls.MailDefinition.From%2A> property contains the email address of the sender of the email message. If the <xref:System.Web.UI.WebControls.MailDefinition.From%2A> property is left blank, or contains an improperly formed email address, the <xref:System.Net.Mail.SmtpClient.Send%2A?displayProperty=nameWithType> method throws an <xref:System.Web.HttpException> exception and the email message is not sent.  
   
    
   
@@ -426,14 +426,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the body of the e-mail is HTML.</summary>
+        <summary>Gets or sets a value indicating whether the body of the email is HTML.</summary>
         <value>
-          <see langword="true" /> if the body of the e-mail is HTML; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the body of the email is HTML; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.MailDefinition.IsBodyHtml%2A> property to specify whether the body of the e-mail message contains plain text or HTML markup.  
+ Use the <xref:System.Web.UI.WebControls.MailDefinition.IsBodyHtml%2A> property to specify whether the body of the email message contains plain text or HTML markup.  
   
  ]]></format>
         </remarks>
@@ -463,13 +463,13 @@
         <ReturnType>System.Net.Mail.MailPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the priority of the e-mail message.</summary>
+        <summary>Gets or sets the priority of the email message.</summary>
         <value>One of the <see cref="T:System.Net.Mail.MailPriority" /> values. The default is <see cref="F:System.Net.Mail.MailPriority.Normal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.MailDefinition.Priority%2A> property indicates the relative priority of the e-mail message.  
+ The <xref:System.Web.UI.WebControls.MailDefinition.Priority%2A> property indicates the relative priority of the email message.  
   
    
   
@@ -510,13 +510,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the subject line of the e-mail message.</summary>
-        <value>The subject line of the e-mail message. The default is <see cref="F:System.String.Empty" />.</value>
+        <summary>Gets or sets the subject line of the email message.</summary>
+        <value>The subject line of the email message. The default is <see cref="F:System.String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.MailDefinition.Subject%2A> property is used as the subject line of the e-mail message. It can be left empty.  
+ The <xref:System.Web.UI.WebControls.MailDefinition.Subject%2A> property is used as the subject line of the email message. It can be left empty.  
   
    
   
@@ -649,7 +649,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Creates an e-mail message to send by means of SMTP (Simple Mail Transfer Protocol).</summary>
+        <summary>Creates an email message to send by means of SMTP (Simple Mail Transfer Protocol).</summary>
       </Docs>
     </MemberGroup>
   </Members>

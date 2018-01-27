@@ -64,11 +64,11 @@
                             <tr>
                                 <td align="right">
                                     <label for="Email">
-                                        E-mail:</label></td>
+                                        Email:</label></td>
                                 <td>
                                     <asp:TextBox ID="Email" runat="server"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="EmailRequired" runat="server" ControlToValidate="Email"
-                                        ErrorMessage="E-mail is required." ToolTip="E-mail is required." ValidationGroup="CreateUserWizard1">*</asp:RequiredFieldValidator>
+                                        ErrorMessage="Email is required." ToolTip="Email is required." ValidationGroup="CreateUserWizard1">*</asp:RequiredFieldValidator>
                                 </td>
                             </tr>
                             <tr>

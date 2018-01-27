@@ -180,7 +180,7 @@
    
   
 ## Examples  
- The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> property to determine whether the item that is being created is a data item. If the item is a data item, the e-mail address is displayed in italic. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.ListViewItem> class.  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> property to determine whether the item that is being created is a data item. If the item is a data item, the email address is displayed in italic. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.ListViewItem> class.  
   
  [!code-csharp[System.Web.UI.WebControls.ListViewItem#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItem/CS/ListViewItemCS.aspx#2)]
  [!code-vb[System.Web.UI.WebControls.ListViewItem#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItem/VB/ListViewItemVB.aspx#2)]  

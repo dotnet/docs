@@ -25,7 +25,7 @@ public class RegexUtilities
         if (invalid)
            return false;
 
-       // Return true if strIn is in valid e-mail format.
+       // Return true if strIn is in valid email format.
        try {
           return Regex.IsMatch(strIn,
                 @"^(?("")("".+?(?<!\\)""@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-z])@))" +

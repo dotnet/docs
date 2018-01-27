@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class is used to pass information to the e-mail template for a <xref:System.Web.Management.TemplatedMailWebEventProvider> object when an event notification occurs. The e-mail template then formats the event information for the e-mail message body.  
+ This class is used to pass information to the email template for a <xref:System.Web.Management.TemplatedMailWebEventProvider> object when an event notification occurs. The email template then formats the event information for the email message body.  
   
  A notification occurs when buffering is disabled, the event-buffering system sends out messages for accumulated events, or an event occurs and the event-buffering system is disabled.  
   
@@ -202,8 +202,8 @@
         <ReturnType>System.Net.Mail.MailMessage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the e-mail message that will be sent as the current message.</summary>
-        <value>A <see cref="T:System.Web.Mail.MailMessage" /> that specifies the e-mail message to send.</value>
+        <summary>Gets the email message that will be sent as the current message.</summary>
+        <value>A <see cref="T:System.Web.Mail.MailMessage" /> that specifies the email message to send.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

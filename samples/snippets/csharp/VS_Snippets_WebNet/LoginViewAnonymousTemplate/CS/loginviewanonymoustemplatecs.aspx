@@ -37,7 +37,7 @@
                         </tr>
                         <tr>
                             <td colspan="2">
-                                * Check e-mail * Add a link * Local weather *
+                                * Check email * Add a link * Local weather *
                             </td>
                         </tr>
                     </LoggedInTemplate>

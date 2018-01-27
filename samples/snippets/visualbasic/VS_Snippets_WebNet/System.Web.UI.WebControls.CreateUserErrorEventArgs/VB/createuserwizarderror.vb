@@ -11,7 +11,7 @@ Partial Class CreateUserWizardErrorvb_aspx
 
 
             Case MembershipCreateStatus.DuplicateEmail
-                Label1.Text = "A username for that e-mail address already exists. Please enter a different e-mail address."
+                Label1.Text = "A username for that email address already exists. Please enter a different email address."
 
 
             Case MembershipCreateStatus.InvalidPassword
@@ -19,7 +19,7 @@ Partial Class CreateUserWizardErrorvb_aspx
 
 
             Case MembershipCreateStatus.InvalidEmail
-                Label1.Text = "The e-mail address provided is invalid. Please check the value and try again."
+                Label1.Text = "The email address provided is invalid. Please check the value and try again."
 
 
             Case MembershipCreateStatus.InvalidAnswer

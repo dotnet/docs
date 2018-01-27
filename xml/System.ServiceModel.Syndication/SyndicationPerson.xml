@@ -104,8 +104,8 @@
         <Parameter Name="email" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="email">The e-mail address of the person.</param>
-        <summary>Initializes a new <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance with the specified e-mail address.</summary>
+        <param name="email">The email address of the person.</param>
+        <summary>Initializes a new <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance with the specified email address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -138,10 +138,10 @@
         <Parameter Name="uri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="email">The e-mail address of the person.</param>
+        <param name="email">The email address of the person.</param>
         <param name="name">The name of the person.</param>
         <param name="uri">The URI of the person's Web page.</param>
-        <summary>Initializes a new <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance with the specified e-mail address, name, and Uniform Resource Identifier (URI).</summary>
+        <summary>Initializes a new <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance with the specified email address, name, and Uniform Resource Identifier (URI).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -301,8 +301,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the e-mail address of the <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" />.</summary>
-        <value>The e-mail address of the person.</value>
+        <summary>Gets and sets the email address of the <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" />.</summary>
+        <value>The email address of the person.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

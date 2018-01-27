@@ -27,11 +27,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute enables you to mark fields by using a type that is more specific than the database intrinsic type. The type name is selected from the <xref:System.ComponentModel.DataAnnotations.DataType> enumeration type. For example, a string data field that contains e-mail addresses can be specified as the <xref:System.ComponentModel.DataAnnotations.DataType.EmailAddress> type. This information is then accessed by the field templates to modify how the data field is processed.  
+ The <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute enables you to mark fields by using a type that is more specific than the database intrinsic type. The type name is selected from the <xref:System.ComponentModel.DataAnnotations.DataType> enumeration type. For example, a string data field that contains email addresses can be specified as the <xref:System.ComponentModel.DataAnnotations.DataType.EmailAddress> type. This information is then accessed by the field templates to modify how the data field is processed.  
   
  You use the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute for the following reasons:  
   
--   To provide additional type information for a data field. You do this by applying the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute to a data field in the data model and by specifying the additional type name from the <xref:System.ComponentModel.DataAnnotations.DataType> enumeration. The field template that processes the data field can access this additional metadata type information to determine how to process the field. For example, the text field template can generate hyperlinks for e-mail addresses whose intrinsic type is `String`.  
+-   To provide additional type information for a data field. You do this by applying the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute to a data field in the data model and by specifying the additional type name from the <xref:System.ComponentModel.DataAnnotations.DataType> enumeration. The field template that processes the data field can access this additional metadata type information to determine how to process the field. For example, the text field template can generate hyperlinks for email addresses whose intrinsic type is `String`.  
   
 -   To associate a custom field template with a data field. The specified custom field template will then be used to process the data field. This is an alternative to using the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute> attribute.  
   
@@ -47,11 +47,11 @@
 
 
 ## Examples  
- The following example uses the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute to customize the display of the EmailAddress data field. The e-mail addresses are shown as hyperlinks instead of as simple text, which is what Dynamic Data would infer from the intrinsic data type. The example code is in three parts, and it performs the following steps:  
+ The following example uses the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute to customize the display of the EmailAddress data field. The email addresses are shown as hyperlinks instead of as simple text, which is what Dynamic Data would infer from the intrinsic data type. The example code is in three parts, and it performs the following steps:  
   
 -   It implements a metadata partial class and the associated metadata class.  
   
--   In the associated metadata class, it applies the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute to the EmailAddress data field by specifying the <xref:System.ComponentModel.DataAnnotations.DataType.EmailAddress> enumerated value. This indicates to the Text.ascx field template that it should customize the display of e-mail addresses.  
+-   In the associated metadata class, it applies the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute to the EmailAddress data field by specifying the <xref:System.ComponentModel.DataAnnotations.DataType.EmailAddress> enumerated value. This indicates to the Text.ascx field template that it should customize the display of email addresses.  
   
 -   It modifies the Text.ascx field template to customize the display of the EmailAddress data fields.  
   

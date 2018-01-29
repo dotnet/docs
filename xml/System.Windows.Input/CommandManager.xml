@@ -567,7 +567,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event is implemented in such a way that it only holds onto the handler as a weak reference.  Objects that listen for this event should keep a strong reference to their event handler to avoid it being garbage collected. This can be accomplished by having a private field and assigning the handler as the value before or after attaching to this event.  
+ This event holds onto the handler as a weak reference. Objects that listen for this event should keep a strong reference to their event handler to avoid it being garbage collected. This can be accomplished by having a private field and assigning the handler as the value before or after attaching to this event.  
   
  ]]></format>
         </remarks>

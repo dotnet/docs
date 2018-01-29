@@ -52,6 +52,7 @@ Where lists appear in F# Interactive option arguments, list elements are separat
 |**--nologo**|Same as the **fsc.exe** compiler option. For more information, see [Compiler Options](../../language-reference/compiler-options.md).|
 |**--nowarn:&lt;warning-list&gt;**|Same as the **fsc.exe** compiler option. For more information, see [Compiler Options](../../language-reference/compiler-options.md).|
 |**--optimize**[**+**&#124;**-**]|Same as the **fsc.exe** compiler option. For more information, see [Compiler Options](../../language-reference/compiler-options.md).|
+|**--preferreduilang:&lt;lang&gt;**| Specifies the preferred output language culture name (for example, es-ES, ja-JP). |
 |**--quiet**|Suppress F# Interactive's output to the **stdout** stream.|
 |**--quotations-debug**|Specifies that extra debugging information should be emitted for expressions that are derived from F# quotation literals and reflected definitions. The debug information is added to the custom attributes of an F# expression tree node. See [Code Quotations](../../language-reference/code-quotations.md) and [Expr.CustomAttributes](https://msdn.microsoft.com/library/eb89943f-5f5b-474e-b125-030ca412edb3).|
 |**--readline**[**+**&#124;**-**]|Enable or disable tab completion in interactive mode.|

@@ -3,7 +3,7 @@
 ## [Work with syntax](work-with-syntax.md)
 ## [Work with semantics](work-with-semantics.md)
 ## [Work with a workspace](work-with-workspace.md)
-
+1. 
 <!--
 ## Quick starts
 ### Build your first analyzer

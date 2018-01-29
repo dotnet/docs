@@ -117,13 +117,11 @@
   </object.ConstructorParameters>  
 </object>  
 ```  
-  
-   
-  
+
 ## Examples  
  The following example shows how to use this property:  
   
- [!code-xaml[SimpleBinding#ODPCP](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SimpleBinding/VisualBasic/Page1.xaml#odpcp)]  
+ [!code-xaml[SimpleBinding#ObjectDataProvider.ConstructorParameters](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SimpleBinding/VisualBasic/Page1.xaml?highlight=10-14)]  
   
  ]]></format>
         </remarks>

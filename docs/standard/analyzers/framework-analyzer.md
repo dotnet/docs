@@ -47,9 +47,17 @@ solution.
 
 ## Using the .NET Framework Analyzer
 
-Once the NuGet package is installed, build your solution. 
+Once the NuGet package is installed, build your solution. The analyzer will
+report any issues it locates in your codebase. The issues are reported as
+warnings in the Visual Studio Error List window, as shown in the following image:
 
-<< Rework with the screenshots.>>
+![issues reported by the framework analyzer](./media/framework-analyzers-2.png)
+
+As you write code, you'll see squiggles underneath any potential issue in your code.
+Hover over any issue, and you'll be shown details about the issue, and suggestions
+for any possible fix, as shown in the following image:
+
+![interactive report of issues found by the framework analyzer](./media/framework-analyzers-1.png)
 
 ## images to add:
 

@@ -36,7 +36,7 @@ Where lists appear in F# Interactive option arguments, list elements are separat
 |Option|Description|
 |------|-----------|
 |**--**|Used to instruct F# Interactive to treat remaining arguments as command line arguments to the F# program or script, which you can access in code by using the list **fsi.CommandLineArgs**.|
-|**--checked**[**+**&#124;**-**]|Same as the **fsc.exe** compiler option. For more information, see [Compiler Options](language-reference/compiler-options.md).|
+|**--checked**[**+**&#124;**-**]|Same as the **fsc.exe** compiler option. For more information, see [Compiler Options](compiler-options.md).|
 |**--codepage:&lt;int&gt;**|Same as the **fsc.exe** compiler option. For more information, see [Compiler Options](language-reference/compiler-options.md).|
 |**--crossoptimize**[**+**&#124;**-**]|Enable or disable cross-module optimizations.|
 |**--debug**[**+**&#124;**-**]<br /><br />**--debug:**[**full**&#124;**pdbonly**]<br /><br />**-g**[**+**&#124;**-**]<br /><br />**-g:**[**full**&#124;**pdbonly**]|Same as the **fsc.exe** compiler option. For more information, see [Compiler Options](language-reference/compiler-options.md).|

@@ -57,7 +57,7 @@
  For a value type, you should always implement <see cref="T:System.IEquatable`1" /> and override <see cref="M:System.Object.Equals(System.Object)" /> for better performance. <see cref="M:System.Object.Equals(System.Object)" /> boxes value types and relies on reflection to compare two values for equality. Both your implementation of <see cref="M:System.IEquatable`1.Equals(`0)" /> and your override of <see cref="M:System.Object.Equals(System.Object)" /> should return consistent results.  
   
  If you implement <see cref="T:System.IEquatable`1" />, you should also implement <see cref="T:System.IComparable`1" /> if instances of your type can be ordered or sorted. If your type implements <see cref="T:System.IComparable`1" />, you almost always also implement <see cref="T:System.IEquatable`1" />.</para>
-      <para>Note that there are some designs where a type supports an order relation, but equality may be distinct from an ordering relation. Consider a `Person` class where you sort alphabetically. Two people with the same name sort the same, but are not the same person.
+      <para>Note that there are some designs where a type supports an order relation, but equality may be distinct from an ordering relation. Consider a `Person` class where you sort alphabetically. Two people with the same name sort the same, but are not the same person.</para>
     </block>
     <altmember cref="T:System.IComparable`1" />
     <altmember cref="T:System.IComparable" />

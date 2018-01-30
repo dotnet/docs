@@ -190,7 +190,7 @@ Users interact with [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-
   
 <a name="Preventing"></a>   
 #### Preventing Window Activation  
- There are scenarios where windows should not be activated when shown, such as conversation windows of an Internet messenger-style application or notification windows of an e-mail application.  
+ There are scenarios where windows should not be activated when shown, such as conversation windows of an Internet messenger-style application or notification windows of an email application.  
   
  If your application has a window that shouldn't be activated when shown, you can set its <xref:System.Windows.Window.ShowActivated%2A> property to `false` before calling the <xref:System.Windows.Window.Show%2A> method for the first time. As a consequence:  
   

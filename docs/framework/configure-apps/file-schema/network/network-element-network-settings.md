@@ -97,7 +97,7 @@ Configures the network options for an external Simple Mail Transport Protocol (S
  The <xref:System.Net.Configuration.SmtpNetworkElement.EnableSsl%2A?displayProperty=nameWithType> property can be used to get the current value of the `enableSsl` attribute from applicable configuration files.  
   
 ## Example  
- The following example specifies the appropriate SMTP parameters to send e-mail using the default network credentials.  
+ The following example specifies the appropriate SMTP parameters to send email using the default network credentials.  
   
 ```xml  
 <configuration>  

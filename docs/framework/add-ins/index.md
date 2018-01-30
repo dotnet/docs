@@ -102,7 +102,7 @@ Add-in pipeline
   
 <a name="distinguishing_between_addins_and_hosts"></a>   
 ## Distinguishing Between Add-ins and Hosts  
- The difference between an add-in and a host is merely that the host is the one that activates the add-in. The host can be the larger of the two, such as a word processing application and its spell checkers; or the host can be the smaller of the two, such as an instant messaging client that embeds a media player. The add-in model supports add-ins in both client and server scenarios. Examples of server add-ins include add-ins that provide mail servers with virus scanning, spam filters, and IP protection. Client add-in examples include reference add-ins for word processors, specialized features for graphics programs and games, and virus scanning for local e-mail clients.  
+ The difference between an add-in and a host is merely that the host is the one that activates the add-in. The host can be the larger of the two, such as a word processing application and its spell checkers; or the host can be the smaller of the two, such as an instant messaging client that embeds a media player. The add-in model supports add-ins in both client and server scenarios. Examples of server add-ins include add-ins that provide mail servers with virus scanning, spam filters, and IP protection. Client add-in examples include reference add-ins for word processors, specialized features for graphics programs and games, and virus scanning for local email clients.  
   
  [Back to top](#top)  
   

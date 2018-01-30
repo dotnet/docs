@@ -23,7 +23,7 @@ ms.workload:
 # Deferred versus Immediate Loading
 When you query for an object, you actually retrieve only the object you requested. The *related* objects are not automatically fetched at the same time. (For more information, see [Querying Across Relationships](../../../../../../docs/framework/data/adonet/sql/linq/querying-across-relationships.md).) You cannot see the fact that the related objects are not already loaded, because an attempt to access them produces a request that retrieves them.  
   
- For example, you might want to query for a particular set of orders and then only occasionally send an e-mail notification to particular customers. You would not necessarily need initially to retrieve all customer data with every order. You can use deferred loading to defer retrieval of extra information until you absolutely have to. Consider the following example:  
+ For example, you might want to query for a particular set of orders and then only occasionally send an email notification to particular customers. You would not necessarily need initially to retrieve all customer data with every order. You can use deferred loading to defer retrieval of extra information until you absolutely have to. Consider the following example:  
   
  [!code-csharp[DLinqQueryConcepts#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryConcepts/cs/Program.cs#1)]
  [!code-vb[DLinqQueryConcepts#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryConcepts/vb/Module1.vb#1)]  

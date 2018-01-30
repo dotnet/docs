@@ -18,10 +18,10 @@ helpviewer_keywords:
   - "regular expressions [.NET Framework], examples"
   - "examples [Visual Basic], strings"
   - "IsValidEmail"
-  - "validation, e-mail strings"
+  - "validation, email strings"
   - "input, checking"
   - "strings [.NET Framework], examples [Visual Basic]"
-  - "e-mail [.NET Framework], validating"
+  - "email [.NET Framework], validating"
   - "IsMatch method"
 ms.assetid: 7536af08-4e86-4953-98a1-a8298623df92
 caps.latest.revision: 30

@@ -16,7 +16,7 @@
     <div>
       <asp:createuserwizard id="Createuserwizard1" runat="server" 
         emailregularexpression='@"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"' 
-        emailregularexpressionerrormessage="E-mail address must be in a valid format">
+        emailregularexpressionerrormessage="Email address must be in a valid format">
       </asp:createuserwizard>
     </div>
     </form>

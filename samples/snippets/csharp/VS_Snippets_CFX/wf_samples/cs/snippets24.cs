@@ -557,7 +557,7 @@ namespace WF_Snippets
             }
             else if (!activity.To.Contains("@"))
             {
-                validationErrors.Add(new ValidationError("Invalid To e-mail address", InvalidToAddress, false, SendEmailActivity.ToProperty.Name));
+                validationErrors.Add(new ValidationError("Invalid To email address", InvalidToAddress, false, SendEmailActivity.ToProperty.Name));
 
             }
 
@@ -568,7 +568,7 @@ namespace WF_Snippets
             }
             else if (!activity.From.Contains("@"))
             {
-                validationErrors.Add(new ValidationError("Invalid From e-mail address", InvalidFromAddress, false, SendEmailActivity.FromProperty.Name));
+                validationErrors.Add(new ValidationError("Invalid From email address", InvalidFromAddress, false, SendEmailActivity.FromProperty.Name));
 
             }
         }

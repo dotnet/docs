@@ -81,14 +81,14 @@ private:
 public:
    bool ValidEmailAddress( String^ emailAddress, [Out]interior_ptr<String^> errorMessage )
    {
-      // Confirm that the e-mail address String* is not empty.
+      // Confirm that the email address String* is not empty.
       if ( emailAddress->Length == 0 )
       {
-         *errorMessage = "e-mail address is required.";
+         *errorMessage = "email address is required.";
          return false;
       }
 
-      // Confirm that there is an "@" and a "." in the e-mail address, and in the correct order.
+      // Confirm that there is an "@" and a "." in the email address, and in the correct order.
       if ( emailAddress->IndexOf( "@" ) > -1 )
       {
          if ( emailAddress->IndexOf( ".", emailAddress->IndexOf( "@" ) ) > emailAddress->IndexOf( "@" ) )
@@ -98,7 +98,7 @@ public:
          }
       }
 
-      *errorMessage = "e-mail address must be valid e-mail address format.\n" +
+      *errorMessage = "email address must be valid email address format.\n" +
          "For example 'someone@example.com' ";
       return false;
    }

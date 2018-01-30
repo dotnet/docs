@@ -5,7 +5,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.Membership> class is used by ASP.NET applications to validate user credentials and manage user settings such as passwords and e-mail addresses. The <xref:System.Web.Security.Roles> class enables you to manage authorization for your application based on groups of users assigned to roles in the Web application.  
+ The <xref:System.Web.Security.Membership> class is used by ASP.NET applications to validate user credentials and manage user settings such as passwords and email addresses. The <xref:System.Web.Security.Roles> class enables you to manage authorization for your application based on groups of users assigned to roles in the Web application.  
   
  Both the <xref:System.Web.Security.Membership> class and the <xref:System.Web.Security.Roles> class work with providers, classes that access your application's data store to retrieve membership and role information. Membership and role information can be stored in a Microsoft SQL Server database using the <xref:System.Web.Security.SqlMembershipProvider> and <xref:System.Web.Security.SqlRoleProvider> classes; in an Active Directory using the <xref:System.Web.Security.ActiveDirectoryMembershipProvider> and <xref:System.Web.Security.AuthorizationStoreRoleProvider> classes, or in a custom data source using implementations of the <xref:System.Web.Security.MembershipProvider> and <xref:System.Web.Security.RoleProvider> classes.  
   

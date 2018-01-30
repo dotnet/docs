@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.Membership> class is used in ASP.NET applications to validate user credentials and manage user settings such as passwords and e-mail addresses. The <xref:System.Web.Security.Membership> class can be used on its own, or in conjunction with the <xref:System.Web.Security.FormsAuthentication> to create a complete system for authenticating users of a Web application or site. The <xref:System.Web.UI.WebControls.Login> control encapsulates the <xref:System.Web.Security.Membership> class to provide a convenient mechanism for validating users.  
+ The <xref:System.Web.Security.Membership> class is used in ASP.NET applications to validate user credentials and manage user settings such as passwords and email addresses. The <xref:System.Web.Security.Membership> class can be used on its own, or in conjunction with the <xref:System.Web.Security.FormsAuthentication> to create a complete system for authenticating users of a Web application or site. The <xref:System.Web.UI.WebControls.Login> control encapsulates the <xref:System.Web.Security.Membership> class to provide a convenient mechanism for validating users.  
   
 > [!NOTE]
 >  If you are not familiar with the membership features of ASP.NET, see [Introduction to Membership](http://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980) before continuing. For a list of other topics related to membership, see [Managing Users by Using Membership](http://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd).  
@@ -25,7 +25,7 @@
   
 -   Creating new users.  
   
--   Storing membership information (user names, passwords, e-mail addresses, and supporting data) in Microsoft SQL Server or in an alternative data store.  
+-   Storing membership information (user names, passwords, email addresses, and supporting data) in Microsoft SQL Server or in an alternative data store.  
   
 -   Authenticating users who visit your site. You can authenticate users programmatically, or you can use the <xref:System.Web.UI.WebControls.Login> control to create a complete authentication system that requires little or no code.  
   
@@ -159,7 +159,7 @@
   
  If a user already exists in the data source for the application, you can obtain a <xref:System.Web.Security.MembershipUser> object for the existing user with the <xref:System.Web.Security.Membership.GetUser%2A> method.  
   
- The <xref:System.Web.Security.SqlMembershipProvider> provides an option to require a unique e-mail address for each user. If the <xref:System.Web.Security.SqlMembershipProvider.RequiresUniqueEmail%2A> property is `true`, you will need to use one of the <xref:System.Web.Security.Membership.CreateUser%2A> overloads that allows you to specify an e-mail address for the user being created. Otherwise, a <xref:System.Web.Security.MembershipCreateUserException> will be thrown.  
+ The <xref:System.Web.Security.SqlMembershipProvider> provides an option to require a unique email address for each user. If the <xref:System.Web.Security.SqlMembershipProvider.RequiresUniqueEmail%2A> property is `true`, you will need to use one of the <xref:System.Web.Security.Membership.CreateUser%2A> overloads that allows you to specify an email address for the user being created. Otherwise, a <xref:System.Web.Security.MembershipCreateUserException> will be thrown.  
   
  Leading and trailing spaces are trimmed from all parameter values.  
   
@@ -199,8 +199,8 @@
       <Docs>
         <param name="username">The user name for the new user.</param>
         <param name="password">The password for the new user.</param>
-        <param name="email">The e-mail address for the new user.</param>
-        <summary>Adds a new user with a specified e-mail address to the data store.</summary>
+        <param name="email">The email address for the new user.</param>
+        <summary>Adds a new user with a specified email address to the data store.</summary>
         <returns>A <see cref="T:System.Web.Security.MembershipUser" /> object for the newly created user.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -254,7 +254,7 @@
       <Docs>
         <param name="username">The user name for the new user.</param>
         <param name="password">The password for the new user.</param>
-        <param name="email">The e-mail address for the new user.</param>
+        <param name="email">The email address for the new user.</param>
         <param name="passwordQuestion">The password-question value for the membership user.</param>
         <param name="passwordAnswer">The password-answer value for the membership user.</param>
         <param name="isApproved">A Boolean that indicates whether the new user is approved to log on.</param>
@@ -315,7 +315,7 @@
       <Docs>
         <param name="username">The user name for the new user.</param>
         <param name="password">The password for the new user.</param>
-        <param name="email">The e-mail address for the new user.</param>
+        <param name="email">The email address for the new user.</param>
         <param name="passwordQuestion">The password-question value for the membership user.</param>
         <param name="passwordAnswer">The password-answer value for the membership user.</param>
         <param name="isApproved">A Boolean that indicates whether the new user is approved to log on.</param>
@@ -525,10 +525,10 @@
 </membership>  
 ```  
   
- The following code example first verifies that <xref:System.Web.Security.Membership.EnablePasswordRetrieval%2A> is `true`, then retrieves the password for a specified user name and sends it to the e-mail address for the specified user.  
+ The following code example first verifies that <xref:System.Web.Security.Membership.EnablePasswordRetrieval%2A> is `true`, then retrieves the password for a specified user name and sends it to the email address for the specified user.  
   
 > [!IMPORTANT]
->  Returning a password in clear text using e-mail is not recommended for sites that require a high level of security. For high-security sites, we recommend that you return passwords using encryption, such as SSL.  
+>  Returning a password in clear text using email is not recommended for sites that require a high level of security. For high-security sites, we recommend that you return passwords using encryption, such as SSL.  
 >   
 >  This example includes a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
@@ -555,8 +555,8 @@
         <Parameter Name="emailToMatch" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="emailToMatch">The e-mail address to search for.</param>
-        <summary>Gets a collection of membership users where the e-mail address contains the specified e-mail address to match.</summary>
+        <param name="emailToMatch">The email address to search for.</param>
+        <summary>Gets a collection of membership users where the email address contains the specified email address to match.</summary>
         <returns>A <see cref="T:System.Web.Security.MembershipUserCollection" /> that contains all users that match the <paramref name="emailToMatch" /> parameter.  
   
  Leading and trailing spaces are trimmed from the <paramref name="emailToMatch" /> parameter value.</returns>
@@ -564,7 +564,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.Security.Membership.FindUsersByEmail%2A> returns a list of membership users where the e-mail address matches the supplied `emailToMatch` for the configured `applicationName`.  
+ <xref:System.Web.Security.Membership.FindUsersByEmail%2A> returns a list of membership users where the email address matches the supplied `emailToMatch` for the configured `applicationName`.  
   
  The <xref:System.Web.Security.SqlMembershipProvider> performs its search using a LIKE clause against the `emailToMatch` parameter. Any wildcards that are supported by SQL Server in LIKE clauses can be used in the `emailToMatch` parameter value.  
   
@@ -602,21 +602,21 @@
         <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="emailToMatch">The e-mail address to search for.</param>
+        <param name="emailToMatch">The email address to search for.</param>
         <param name="pageIndex">The index of the page of results to return. <c>pageIndex</c> is zero-based.</param>
         <param name="pageSize">The size of the page of results to return.</param>
         <param name="totalRecords">The total number of matched users.</param>
-        <summary>Gets a collection of membership users, in a page of data, where the e-mail address contains the specified e-mail address to match.</summary>
+        <summary>Gets a collection of membership users, in a page of data, where the email address contains the specified email address to match.</summary>
         <returns>A <see cref="T:System.Web.Security.MembershipUserCollection" /> that contains a page of <paramref name="pageSize" /><see cref="T:System.Web.Security.MembershipUser" /> objects beginning at the page specified by <paramref name="pageIndex" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.Security.Membership.FindUsersByEmail%2A> returns a list of membership users where the e-mail address matches the supplied `emailToMatch` for the configured `applicationName`.  
+ <xref:System.Web.Security.Membership.FindUsersByEmail%2A> returns a list of membership users where the email address matches the supplied `emailToMatch` for the configured `applicationName`.  
   
  The <xref:System.Web.Security.SqlMembershipProvider> performs its search using a LIKE clause against the `emailToMatch` parameter. Any wildcards that are supported by SQL Server in LIKE clauses can be used in the `emailToMatch` parameter value.  
   
- The results returned by <xref:System.Web.Security.Membership.FindUsersByEmail%2A> are constrained by the `pageIndex` and `pageSize` parameters. The `pageSize` parameter identifies the maximum number of <xref:System.Web.Security.MembershipUser> objects to return in the <xref:System.Web.Security.MembershipUserCollection>. The `pageIndex` parameter identifies which page of results to return, where 0 identifies the first page. The `totalRecords` parameter is an `out` parameter that is set to the total number of membership users that matched the `emailToMatch` value. For example, if 13 users were found where `emailToMatch` matched part of or the entire e-mail address, and the `pageIndex` value was 1 with a `pageSize` of 5, the <xref:System.Web.Security.MembershipUserCollection> returned would contain the sixth through the tenth users returned. `totalRecords` would be set to 13.  
+ The results returned by <xref:System.Web.Security.Membership.FindUsersByEmail%2A> are constrained by the `pageIndex` and `pageSize` parameters. The `pageSize` parameter identifies the maximum number of <xref:System.Web.Security.MembershipUser> objects to return in the <xref:System.Web.Security.MembershipUserCollection>. The `pageIndex` parameter identifies which page of results to return, where 0 identifies the first page. The `totalRecords` parameter is an `out` parameter that is set to the total number of membership users that matched the `emailToMatch` value. For example, if 13 users were found where `emailToMatch` matched part of or the entire email address, and the `pageIndex` value was 1 with a `pageSize` of 5, the <xref:System.Web.Security.MembershipUserCollection> returned would contain the sixth through the tenth users returned. `totalRecords` would be set to 13.  
   
  Leading and trailing spaces are trimmed from the `emailToMatch` parameter value.  
   
@@ -1061,7 +1061,7 @@
    
   
 ## Examples  
- The following code example uses the <xref:System.Web.Security.Membership.GetUser%2A> method to return a <xref:System.Web.Security.MembershipUser> object for the current logged-on user and updates the e-mail address for the user.  
+ The following code example uses the <xref:System.Web.Security.Membership.GetUser%2A> method to return a <xref:System.Web.Security.MembershipUser> object for the current logged-on user and updates the email address for the user.  
   
  [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/UpdateEmailcs.aspx#11)]
  [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/UpdateEmailvb.aspx#11)]  
@@ -1141,7 +1141,7 @@
    
   
 ## Examples  
- The following code example retrieves the password for a specified user name and sends it to the e-mail address for the specified user. The call to <xref:System.Web.Security.Membership.GetUser%2A> specifies that the last-activity date/time stamp for the user not be updated.  
+ The following code example retrieves the password for a specified user name and sends it to the email address for the specified user. The call to <xref:System.Web.Security.Membership.GetUser%2A> specifies that the last-activity date/time stamp for the user not be updated.  
   
  [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/RetrievePasswordcs.aspx#4)]
  [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/RetrievePasswordvb.aspx#4)]  
@@ -1170,21 +1170,21 @@
         <Parameter Name="emailToMatch" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="emailToMatch">The e-mail address to search for.</param>
-        <summary>Gets a user name where the e-mail address for the user matches the specified e-mail address.</summary>
-        <returns>The user name where the e-mail address for the user matches the specified e-mail address. If no match is found, <see langword="null" /> is returned.</returns>
+        <param name="emailToMatch">The email address to search for.</param>
+        <summary>Gets a user name where the email address for the user matches the specified email address.</summary>
+        <returns>The user name where the email address for the user matches the specified email address. If no match is found, <see langword="null" /> is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.Security.Membership.GetUserNameByEmail%2A> can be used to retrieve the user name for a membership user in the case where a user does not know their user name, but does know their e-mail address. If more than one user in the data store has the same e-mail address, the first user name encountered is returned.  
+ <xref:System.Web.Security.Membership.GetUserNameByEmail%2A> can be used to retrieve the user name for a membership user in the case where a user does not know their user name, but does know their email address. If more than one user in the data store has the same email address, the first user name encountered is returned.  
   
  Leading and trailing spaces are trimmed from all parameter values.  
   
    
   
 ## Examples  
- The following code example retrieves the user name for a specified e-mail address.  
+ The following code example retrieves the user name for a specified email address.  
   
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
@@ -1669,7 +1669,7 @@
    
   
 ## Examples  
- The following code example updates the e-mail address for the current logged-on user.  
+ The following code example updates the email address for the current logged-on user.  
   
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
@@ -1845,7 +1845,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Gets a collection of membership users where the e-mail address contains the specified e-mail address to match.</summary>
+        <summary>Gets a collection of membership users where the email address contains the specified email address to match.</summary>
       </Docs>
     </MemberGroup>
     <MemberGroup MemberName="CreateUser">

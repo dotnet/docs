@@ -739,7 +739,7 @@
    
   
 ## Examples  
- The following example creates an assembly named RegexLib.dll. The assembly includes two compiled regular expressions. The first, `Utilities.RegularExpressions.DuplicatedString`, matches two identical contiguous words. The second, `Utilities.RegularExpressions.EmailAddress`, checks whether a string has the correct format to be an e-mail address.  
+ The following example creates an assembly named RegexLib.dll. The assembly includes two compiled regular expressions. The first, `Utilities.RegularExpressions.DuplicatedString`, matches two identical contiguous words. The second, `Utilities.RegularExpressions.EmailAddress`, checks whether a string has the correct format to be an email address.  
   
  [!code-csharp[System.Text.RegularExpressions.Regex.CompileToAssembly#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.RegularExpressions.Regex.CompileToAssembly/cs/Compile1.cs#1)]
  [!code-vb[System.Text.RegularExpressions.Regex.CompileToAssembly#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.RegularExpressions.Regex.CompileToAssembly/vb/Compile1.vb#1)]  
@@ -823,7 +823,7 @@
    
   
 ## Examples  
- The following example creates an assembly named RegexLib.dll and applies the <xref:System.Reflection.AssemblyTitleAttribute> attribute to it. The assembly includes two compiled regular expressions. The first, `Utilities.RegularExpressions.DuplicatedString`, matches two identical contiguous words. The second, `Utilities.RegularExpressions.EmailAddress`, checks whether a string has the correct format to be an e-mail address.  
+ The following example creates an assembly named RegexLib.dll and applies the <xref:System.Reflection.AssemblyTitleAttribute> attribute to it. The assembly includes two compiled regular expressions. The first, `Utilities.RegularExpressions.DuplicatedString`, matches two identical contiguous words. The second, `Utilities.RegularExpressions.EmailAddress`, checks whether a string has the correct format to be an email address.  
   
  [!code-csharp[System.Text.RegularExpressions.Regex.CompileToAssembly#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.RegularExpressions.Regex.CompileToAssembly/cs/Compile3.cs#3)]
  [!code-vb[System.Text.RegularExpressions.Regex.CompileToAssembly#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.RegularExpressions.Regex.CompileToAssembly/vb/Compile3.vb#3)]  

@@ -21,7 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.RegularExpressionValidator> control checks whether the value of an input control matches a pattern defined by a regular expression. This type of validation allows you to check for predictable sequences of characters, such as those in e-mail addresses, telephone numbers, and postal codes.  
+ The <xref:System.Web.UI.WebControls.RegularExpressionValidator> control checks whether the value of an input control matches a pattern defined by a regular expression. This type of validation allows you to check for predictable sequences of characters, such as those in email addresses, telephone numbers, and postal codes.  
   
 > [!NOTE]
 >  Validation succeeds if the input control is empty. If a value is required for the associated input control, use a <xref:System.Web.UI.WebControls.RequiredFieldValidator> control in addition to the <xref:System.Web.UI.WebControls.RegularExpressionValidator> control.  
@@ -205,7 +205,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this property to specify the pattern used to check for predictable sequences of characters, such as those in social security numbers, e-mail addresses, telephone numbers, and postal codes.  
+ Use this property to specify the pattern used to check for predictable sequences of characters, such as those in social security numbers, email addresses, telephone numbers, and postal codes.  
   
  The <xref:System.Web.UI.WebControls.RegularExpressionValidator> does not perform validation on an empty string. If the string you are testing might be empty, use the <xref:System.Web.UI.WebControls.RequiredFieldValidator> as well as the <xref:System.Web.UI.WebControls.RegularExpressionValidator>.  
   

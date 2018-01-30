@@ -23,7 +23,7 @@
    
   
 ## Examples  
- The following code example uses the <xref:System.Web.UI.WebControls.Login.LoggingIn> event to ensure that the user has entered a well-formed e-mail address in the <xref:System.Web.UI.WebControls.Login.UserName%2A> property. If not, the <xref:System.Web.UI.WebControls.Login.LoggingIn> event handler cancels the logon attempt by setting the <xref:System.Web.UI.WebControls.LoginCancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.LoginCancelEventArgs> object to `true`.Then the error message specified in the <xref:System.Web.UI.WebControls.Login.InstructionText%2A> property is displayed.  
+ The following code example uses the <xref:System.Web.UI.WebControls.Login.LoggingIn> event to ensure that the user has entered a well-formed email address in the <xref:System.Web.UI.WebControls.Login.UserName%2A> property. If not, the <xref:System.Web.UI.WebControls.Login.LoggingIn> event handler cancels the logon attempt by setting the <xref:System.Web.UI.WebControls.LoginCancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.LoginCancelEventArgs> object to `true`.Then the error message specified in the <xref:System.Web.UI.WebControls.Login.InstructionText%2A> property is displayed.  
   
  [!code-csharp[System.Web.UI.WebControls.LoginCancelEventArgs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/CS/logincanceleventargs.cs#2)]
  [!code-vb[System.Web.UI.WebControls.LoginCancelEventArgs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/VB/logincanceleventargs.vb#2)]  
@@ -100,7 +100,7 @@
    
   
 ## Examples  
- The following code example uses the <xref:System.Web.UI.WebControls.Login.LoggingIn> event to ensure that the user has entered a well-formed e-mail address in the <xref:System.Web.UI.WebControls.Login.UserName%2A> property. If not, the <xref:System.Web.UI.WebControls.Login.LoggingIn> event handler sets the <xref:System.Web.UI.WebControls.LoginCancelEventArgs.Cancel%2A> property to `true`, and an error message is displayed. For an .aspx file that can be used to run the example, see the <xref:System.Web.UI.WebControls.LoginCancelEventArgs> topic.  
+ The following code example uses the <xref:System.Web.UI.WebControls.Login.LoggingIn> event to ensure that the user has entered a well-formed email address in the <xref:System.Web.UI.WebControls.Login.UserName%2A> property. If not, the <xref:System.Web.UI.WebControls.Login.LoggingIn> event handler sets the <xref:System.Web.UI.WebControls.LoginCancelEventArgs.Cancel%2A> property to `true`, and an error message is displayed. For an .aspx file that can be used to run the example, see the <xref:System.Web.UI.WebControls.LoginCancelEventArgs> topic.  
   
  [!code-csharp[System.Web.UI.WebControls.LoginCancelEventArgs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/CS/logincanceleventargs.cs#2)]
  [!code-vb[System.Web.UI.WebControls.LoginCancelEventArgs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/VB/logincanceleventargs.vb#2)]  

@@ -38,7 +38,7 @@ Specifies the User Principal Name (UPN) of a service to be authenticated by the 
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|value|A user account name (sometimes referred to as the user logon name) and a domain name identifying the domain in which the user account is located. This is the standard usage for logging on to a Windows domain. The format is: someone@example.com (as for an e-mail address).|  
+|value|A user account name (sometimes referred to as the user logon name) and a domain name identifying the domain in which the user account is located. This is the standard usage for logging on to a Windows domain. The format is: someone@example.com (as for an email address).|  
   
 ### Child Elements  
  None.  

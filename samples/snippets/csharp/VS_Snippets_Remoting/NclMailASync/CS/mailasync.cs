@@ -35,7 +35,7 @@ namespace Examples.SmptExamples.Async
         {
             // Command-line argument must be the SMTP host.
             SmtpClient client = new SmtpClient(args[0]);
-            // Specify the e-mail sender.
+            // Specify the email sender.
             //<snippet2>
             // Create a mailing address that includes a UTF8 character
             // in the display name.
@@ -43,12 +43,12 @@ namespace Examples.SmptExamples.Async
                "Jane " + (char)0xD8+ " Clayton", 
             System.Text.Encoding.UTF8);
             //</snippet2>
-            // Set destinations for the e-mail message.
+            // Set destinations for the email message.
             MailAddress to = new MailAddress("ben@contoso.com");
             // Specify the message content.
             //<snippet3>
             MailMessage message = new MailMessage(from, to);
-            message.Body = "This is a test e-mail message sent by an application. ";
+            message.Body = "This is a test email message sent by an application. ";
             // Include some non-ASCII characters in body and subject.
             string someArrows = new string(new char[] {'\u2190', '\u2191', '\u2192', '\u2193'});
             message.Body += Environment.NewLine + someArrows;

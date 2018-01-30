@@ -12,7 +12,7 @@
         Label EmailAddressLabel;
         if (e.Item.ItemType == ListViewItemType.DataItem)
         {
-            // Display the e-mail address in italics.
+            // Display the email address in italics.
             EmailAddressLabel = (Label)e.Item.FindControl("EmailAddressLabel");
             EmailAddressLabel.Font.Italic = true;
 
@@ -47,7 +47,7 @@
                         Last Name
                     </th>
                     <th runat="server">
-                        E-mail Address
+                        Email Address
                     </th>
                 </tr>
                 <tr runat="server" id="itemPlaceholder" />

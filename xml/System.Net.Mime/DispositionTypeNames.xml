@@ -20,12 +20,12 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Supplies the strings used to specify the disposition type for an e-mail attachment.</summary>
+    <summary>Supplies the strings used to specify the disposition type for an email attachment.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The values in this enumeration can be used to set the <xref:System.Net.Mime.ContentDisposition.DispositionType%2A> property for an e-mail attachment. The information in the <xref:System.Net.Mime.ContentDisposition> class represents the MIME Content-Disposition header. This header is described in RFC 2183 available at [http://www.ietf.org](http://www.ietf.org/).  
+ The values in this enumeration can be used to set the <xref:System.Net.Mime.ContentDisposition.DispositionType%2A> property for an email attachment. The information in the <xref:System.Net.Mime.ContentDisposition> class represents the MIME Content-Disposition header. This header is described in RFC 2183 available at [http://www.ietf.org](http://www.ietf.org/).  
   
    
   
@@ -65,7 +65,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the attachment is to be displayed as a file attached to the e-mail message.</summary>
+        <summary>Specifies that the attachment is to be displayed as a file attached to the email message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -105,7 +105,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the attachment is to be displayed as part of the e-mail message body.</summary>
+        <summary>Specifies that the attachment is to be displayed as part of the email message body.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

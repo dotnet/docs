@@ -10,7 +10,7 @@
       <Fields>
         <asp:BoundField DataField="LastName" HeaderText="Last Name" SortExpression="LastName" />
         <asp:BoundField DataField="FirstName" HeaderText="First Name" SortExpression="FirstName" />
-        <asp:BoundField DataField="EmailAddress" HeaderText="E-mail Address" SortExpression="EmailAddress" />
+        <asp:BoundField DataField="EmailAddress" HeaderText="Email Address" SortExpression="EmailAddress" />
         <asp:BoundField DataField="Phone" HeaderText="Phone" SortExpression="Phone" />
         <asp:BoundField DataField="HireDate" HeaderText="Hire Date" SortExpression="HireDate" />
         <asp:BoundField DataField="VacationHours" HeaderText="Vacation Hours" SortExpression="VacationHours" />

@@ -12,7 +12,7 @@
                                                  ByVal e As ListViewItemEventArgs)
   
         If e.Item.ItemType = ListViewItemType.DataItem Then
-            ' Display the e-mail address in italics.
+            ' Display the email address in italics.
             Dim EmailAddressLabel As Label = _
               CType(e.Item.FindControl("EmailAddressLabel"), Label)
             EmailAddressLabel.Font.Italic = True
@@ -45,7 +45,7 @@
             <tr style="background-color: #ADD8E6" runat="server">
                 <th runat="server">First Name</th>
                 <th runat="server">Last Name</th>
-                <th runat="server">E-mail Address</th>
+                <th runat="server">Email Address</th>
             </tr>
             <tr runat="server" id="itemPlaceholder" />
           </table>

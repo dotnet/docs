@@ -25,9 +25,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Net.Mail.AlternateView> class to specify copies of an e-mail message in different formats. For example, if you send a message in HTML, you might also want provide a plain text version in case some of the recipients use e-mail readers that cannot display HTML content.  
+ Use the <xref:System.Net.Mail.AlternateView> class to specify copies of an email message in different formats. For example, if you send a message in HTML, you might also want provide a plain text version in case some of the recipients use email readers that cannot display HTML content.  
   
- This class has two properties <xref:System.Net.Mail.AlternateView.LinkedResources%2A> and <xref:System.Net.Mail.AlternateView.BaseUri%2A> that are used to resolve URLs within the content of the email. <xref:System.Net.Mail.AlternateView.LinkedResources%2A> is a collection of <xref:System.Net.Mail.LinkedResource> objects. When rendered, URLs within the e-mail's content are first matched against the URLs in the <xref:System.Net.Mail.LinkedResource.ContentLink%2A> of each <xref:System.Net.Mail.LinkedResource> object in the <xref:System.Net.Mail.AlternateView.LinkedResources%2A> collection, and resolved. <xref:System.Net.Mail.AlternateView.BaseUri%2A> is used by the mail reader to resolve relative URLs within the body, and also to resolve relative <xref:System.Net.Mail.LinkedResource.ContentLink%2A> URLs, in the <xref:System.Net.Mail.AlternateView.LinkedResources%2A> collection.  
+ This class has two properties <xref:System.Net.Mail.AlternateView.LinkedResources%2A> and <xref:System.Net.Mail.AlternateView.BaseUri%2A> that are used to resolve URLs within the content of the email. <xref:System.Net.Mail.AlternateView.LinkedResources%2A> is a collection of <xref:System.Net.Mail.LinkedResource> objects. When rendered, URLs within the email's content are first matched against the URLs in the <xref:System.Net.Mail.LinkedResource.ContentLink%2A> of each <xref:System.Net.Mail.LinkedResource> object in the <xref:System.Net.Mail.AlternateView.LinkedResources%2A> collection, and resolved. <xref:System.Net.Mail.AlternateView.BaseUri%2A> is used by the mail reader to resolve relative URLs within the body, and also to resolve relative <xref:System.Net.Mail.LinkedResource.ContentLink%2A> URLs, in the <xref:System.Net.Mail.AlternateView.LinkedResources%2A> collection.  
   
  ]]></format>
     </remarks>
@@ -502,7 +502,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the set of embedded resources referred to by this attachment.</summary>
-        <value>A <see cref="T:System.Net.Mail.LinkedResourceCollection" /> object that stores the collection of linked resources to be sent as part of an e-mail message.</value>
+        <value>A <see cref="T:System.Net.Mail.LinkedResourceCollection" /> object that stores the collection of linked resources to be sent as part of an email message.</value>
         <remarks>To be added.</remarks>
         <altCompliant cref="None." />
       </Docs>

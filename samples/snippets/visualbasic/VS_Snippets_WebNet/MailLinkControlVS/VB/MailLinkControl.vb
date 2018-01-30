@@ -25,7 +25,7 @@ Namespace Samples.AspNet
 
         <Browsable(True), Category("Appearance"), _
         DefaultValue("webmaster@contoso.com"), _
-        Description("The e-mail address.")> _
+        Description("The email address.")> _
         Public Overridable Property Email() As String
             Get
                 Dim s As String = CStr(ViewState("Email"))

@@ -24,7 +24,7 @@
  You typically will not need to use <xref:System.Web.Services.Protocols.UrlEncodedParameterWriter> or its descendant classes directly. Instead, when the Wsdl.exe tool generates client proxy code according to the HTTP-GET or HTTP-POST implementations, it applies the <xref:System.Web.Services.Protocols.HttpMethodAttribute> to each Web method and sets the attribute's <xref:System.Web.Services.Protocols.HttpMethodAttribute.ParameterFormatter%2A> property to the appropriate type.  
   
 > [!NOTE]
->  The Hypertext Transfer Protocol--HTTP/1.1 specifies the use of a variation on Multipurpose Internet Mail Extensions (MIME) message format, which itself allows e-mail messages to specify different content types, both text and binary.  
+>  The Hypertext Transfer Protocol--HTTP/1.1 specifies the use of a variation on Multipurpose Internet Mail Extensions (MIME) message format, which itself allows email messages to specify different content types, both text and binary.  
   
  ]]></format>
     </remarks>

@@ -28,7 +28,7 @@ namespace Samples.AspNet
             Browsable(true),
             Category("Appearance"),
             DefaultValue("webmaster@contoso.com"),
-            Description("The e-mail address.")
+            Description("The email address.")
         ]
         public virtual string Email
         {

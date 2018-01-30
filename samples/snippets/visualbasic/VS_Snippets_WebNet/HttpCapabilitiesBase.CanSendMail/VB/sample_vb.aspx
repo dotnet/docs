@@ -13,9 +13,9 @@
         Dim labelText As String = ""
         Dim myBrowserCaps As System.Web.HttpBrowserCapabilities = Request.Browser
         If (CType(myBrowserCaps, System.Web.Configuration.HttpCapabilitiesBase)).CanSendMail Then
-            labelText = "Browser can send e-mail."
+            labelText = "Browser can send email."
         Else
-            labelText = "Browser cannot send e-mail."
+            labelText = "Browser cannot send email."
         End If
 
         Label1.Text = labelText

@@ -24,14 +24,14 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents an e-mail message that can be sent using the <see cref="T:System.Net.Mail.SmtpClient" /> class.</summary>
+    <summary>Represents an email message that can be sent using the <see cref="T:System.Net.Mail.SmtpClient" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Instances of the <xref:System.Net.Mail.MailMessage> class are used to construct e-mail messages that are transmitted to an SMTP server for delivery using the <xref:System.Net.Mail.SmtpClient> class.  
+ Instances of the <xref:System.Net.Mail.MailMessage> class are used to construct email messages that are transmitted to an SMTP server for delivery using the <xref:System.Net.Mail.SmtpClient> class.  
   
- The sender, recipient, subject, and body of an e-mail message may be specified as parameters when a <xref:System.Net.Mail.MailMessage.%23ctor%2A> is used to initialize a <xref:System.Net.Mail.MailMessage> object. These parameters may also be set or accessed using properties on the <xref:System.Net.Mail.MailMessage> object.  
+ The sender, recipient, subject, and body of an email message may be specified as parameters when a <xref:System.Net.Mail.MailMessage.%23ctor%2A> is used to initialize a <xref:System.Net.Mail.MailMessage> object. These parameters may also be set or accessed using properties on the <xref:System.Net.Mail.MailMessage> object.  
   
  The primary mail message headers and elements for the message may be set using the following properties of the <xref:System.Net.Mail.MailMessage> class.  
   
@@ -85,16 +85,16 @@
   
  If the application does not specify an X-Sender header using the <xref:System.Net.Mail.MailMessage.Headers%2A> property, the <xref:System.Net.Mail.MailMessage> class will create one when the message is sent.  
   
- Use the <xref:System.Net.Mail.MailMessage.AlternateViews%2A> property to specify copies of an e-mail message in different formats. For example, if you send a message in HTML, you might also want to provide a plain text version in case some of the recipients use e-mail readers that cannot display HTML content. For an example that demonstrates creating a message with alternate views, see <xref:System.Net.Mail.MailMessage.AlternateViews%2A>.  
+ Use the <xref:System.Net.Mail.MailMessage.AlternateViews%2A> property to specify copies of an email message in different formats. For example, if you send a message in HTML, you might also want to provide a plain text version in case some of the recipients use email readers that cannot display HTML content. For an example that demonstrates creating a message with alternate views, see <xref:System.Net.Mail.MailMessage.AlternateViews%2A>.  
   
- Use the <xref:System.Net.Mail.MailMessage.Attachments%2A> property to add attachments to an e-mail message. For an example that demonstrates creating a message with an attachment, see <xref:System.Net.Mail.MailMessage.Attachments%2A>.  
+ Use the <xref:System.Net.Mail.MailMessage.Attachments%2A> property to add attachments to an email message. For an example that demonstrates creating a message with an attachment, see <xref:System.Net.Mail.MailMessage.Attachments%2A>.  
   
- After assembling your e-mail message, you can send it by using the <xref:System.Net.Mail.SmtpClient.Send%2A> or <xref:System.Net.Mail.SmtpClient.SendAsync%2A> methods.  
+ After assembling your email message, you can send it by using the <xref:System.Net.Mail.SmtpClient.Send%2A> or <xref:System.Net.Mail.SmtpClient.SendAsync%2A> methods.  
   
    
   
 ## Examples  
- The following code example demonstrates creating and sending an e-mail message that includes an attachment.  
+ The following code example demonstrates creating and sending an email message that includes an attachment.  
   
  [!code-cpp[NclMailSync#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#6)]
  [!code-csharp[NclMailSync#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#6)]  
@@ -157,8 +157,8 @@
         <Parameter Name="to" Type="System.Net.Mail.MailAddress" />
       </Parameters>
       <Docs>
-        <param name="from">A <see cref="T:System.Net.Mail.MailAddress" /> that contains the address of the sender of the e-mail message.</param>
-        <param name="to">A <see cref="T:System.Net.Mail.MailAddress" /> that contains the address of the recipient of the e-mail message.</param>
+        <param name="from">A <see cref="T:System.Net.Mail.MailAddress" /> that contains the address of the sender of the email message.</param>
+        <param name="to">A <see cref="T:System.Net.Mail.MailAddress" /> that contains the address of the recipient of the email message.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.MailMessage" /> class by using the specified <see cref="T:System.Net.Mail.MailAddress" /> class objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -209,8 +209,8 @@
         <Parameter Name="to" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="from">A <see cref="T:System.String" /> that contains the address of the sender of the e-mail message.</param>
-        <param name="to">A <see cref="T:System.String" /> that contains the addresses of the recipients of the e-mail message.</param>
+        <param name="from">A <see cref="T:System.String" /> that contains the address of the sender of the email message.</param>
+        <param name="to">A <see cref="T:System.String" /> that contains the addresses of the recipients of the email message.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.MailMessage" /> class by using the specified <see cref="T:System.String" /> class objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -269,8 +269,8 @@
         <Parameter Name="body" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="from">A <see cref="T:System.String" /> that contains the address of the sender of the e-mail message.</param>
-        <param name="to">A <see cref="T:System.String" /> that contains the address of the recipient of the e-mail message.</param>
+        <param name="from">A <see cref="T:System.String" /> that contains the address of the sender of the email message.</param>
+        <param name="to">A <see cref="T:System.String" /> that contains the address of the recipient of the email message.</param>
         <param name="subject">A <see cref="T:System.String" /> that contains the subject text.</param>
         <param name="body">A <see cref="T:System.String" /> that contains the message body.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.MailMessage" /> class.</summary>
@@ -343,14 +343,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Net.Mail.MailMessage.AlternateViews%2A> property to specify copies of an e-mail message in different formats. For example, if you send a message in HTML, you might also want to provide a plain text version in case some of the recipients use e-mail readers that cannot display HTML content.  
+ Use the <xref:System.Net.Mail.MailMessage.AlternateViews%2A> property to specify copies of an email message in different formats. For example, if you send a message in HTML, you might also want to provide a plain text version in case some of the recipients use email readers that cannot display HTML content.  
   
  To add an alternate view to a <xref:System.Net.Mail.MailMessage> object, create an <xref:System.Net.Mail.Attachment> for the view, and then add it to the collection returned by <xref:System.Net.Mail.MailMessage.AlternateViews%2A>. Use the <xref:System.Net.Mail.MailMessage.Body%2A> property to specify the text version and use the <xref:System.Net.Mail.MailMessage.AlternateViews%2A> collection to specify views with other MIME types. Use the <xref:System.Net.Mime.MediaTypeNames> class members to specify the MIME type for the alternate view.  
   
    
   
 ## Examples  
- The following code example demonstrates creating and sending an e-mail message with a plain text and an HTML alternate view.  
+ The following code example demonstrates creating and sending an email message with a plain text and an HTML alternate view.  
   
  [!code-cpp[NclMailSync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#5)]
  [!code-csharp[NclMailSync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#5)]  
@@ -382,7 +382,7 @@
         <ReturnType>System.Net.Mail.AttachmentCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the attachment collection used to store data attached to this e-mail message.</summary>
+        <summary>Gets the attachment collection used to store data attached to this email message.</summary>
         <value>A writable <see cref="T:System.Net.Mail.AttachmentCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -395,7 +395,7 @@
    
   
 ## Examples  
- The following code example demonstrates creating and sending an e-mail message with an attachment.  
+ The following code example demonstrates creating and sending an email message with an attachment.  
   
  [!code-cpp[NclMailSync#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#6)]
  [!code-csharp[NclMailSync#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#6)]  
@@ -427,15 +427,15 @@
         <ReturnType>System.Net.Mail.MailAddressCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the address collection that contains the blind carbon copy (BCC) recipients for this e-mail message.</summary>
+        <summary>Gets the address collection that contains the blind carbon copy (BCC) recipients for this email message.</summary>
         <value>A writable <see cref="T:System.Net.Mail.MailAddressCollection" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To add a BCC recipient to an e-mail message, create a <xref:System.Net.Mail.MailAddress> for the recipient's address, and then add that object to the collection returned by the <xref:System.Net.Mail.MailMessage.Bcc%2A> property.  
+ To add a BCC recipient to an email message, create a <xref:System.Net.Mail.MailAddress> for the recipient's address, and then add that object to the collection returned by the <xref:System.Net.Mail.MailMessage.Bcc%2A> property.  
   
- When recipients view an e-mail message, the <xref:System.Net.Mail.MailMessage.Bcc%2A> addresses are usually not displayed.  
+ When recipients view an email message, the <xref:System.Net.Mail.MailMessage.Bcc%2A> addresses are usually not displayed.  
   
    
   
@@ -480,7 +480,7 @@
 ## Remarks  
  The <xref:System.Net.Mime.ContentType> of the <xref:System.Net.Mail.MailMessage.Body%2A> content is "text/plain". Specify the encoding used for the body with the <xref:System.Net.Mail.MailMessage.BodyEncoding%2A> property.  
   
- If the body content is available in alternative formats that provide richer presentation options for the recipients, you can specify alternate views for the body content by using the <xref:System.Net.Mail.MailMessage.AlternateViews%2A> property. For example, an application might choose to send both the plain text body and an HTML version of the message body. E-mail readers that can display HTML can present the HTML version of the body to the recipient, while readers that cannot display HTML will display the plain text version of the message instead.  
+ If the body content is available in alternative formats that provide richer presentation options for the recipients, you can specify alternate views for the body content by using the <xref:System.Net.Mail.MailMessage.AlternateViews%2A> property. For example, an application might choose to send both the plain text body and an HTML version of the message body. Email readers that can display HTML can present the HTML version of the body to the recipient, while readers that cannot display HTML will display the plain text version of the message instead.  
   
    
   
@@ -594,13 +594,13 @@
         <ReturnType>System.Net.Mail.MailAddressCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the address collection that contains the carbon copy (CC) recipients for this e-mail message.</summary>
+        <summary>Gets the address collection that contains the carbon copy (CC) recipients for this email message.</summary>
         <value>A writable <see cref="T:System.Net.Mail.MailAddressCollection" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To add a CC recipient to an e-mail message, create a <xref:System.Net.Mail.MailAddress> for the recipient's address and then add that object to the collection returned by the <xref:System.Net.Mail.MailMessage.CC%2A> property.  
+ To add a CC recipient to an email message, create a <xref:System.Net.Mail.MailAddress> for the recipient's address and then add that object to the collection returned by the <xref:System.Net.Mail.MailMessage.CC%2A> property.  
   
    
   
@@ -637,7 +637,7 @@
         <ReturnType>System.Net.Mail.DeliveryNotificationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the delivery notifications for this e-mail message.</summary>
+        <summary>Gets or sets the delivery notifications for this email message.</summary>
         <value>A <see cref="T:System.Net.Mail.DeliveryNotificationOptions" /> value that contains the delivery notifications for this message.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -752,7 +752,7 @@
         <ReturnType>System.Net.Mail.MailAddress</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the from address for this e-mail message.</summary>
+        <summary>Gets or sets the from address for this email message.</summary>
         <value>A <see cref="T:System.Net.Mail.MailAddress" /> that contains the from address information.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -794,8 +794,8 @@
         <ReturnType>System.Collections.Specialized.NameValueCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the e-mail headers that are transmitted with this e-mail message.</summary>
-        <value>A <see cref="T:System.Collections.Specialized.NameValueCollection" /> that contains the e-mail headers.</value>
+        <summary>Gets the email headers that are transmitted with this email message.</summary>
+        <value>A <see cref="T:System.Collections.Specialized.NameValueCollection" /> that contains the email headers.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -836,7 +836,7 @@
   
  If the application does not specify an X-Sender header using the <xref:System.Net.Mail.MailMessage.Headers%2A> property, the <xref:System.Net.Mail.MailMessage> class will create one when the message is sent.  
   
- The sender, recipient, subject, and body of an e-mail message may be specified as parameters when a <xref:System.Net.Mail.MailMessage.%23ctor%2A> is used to initialize a <xref:System.Net.Mail.MailMessage> object. These parameters may also be set or accessed using properties on the <xref:System.Net.Mail.MailMessage> object.  
+ The sender, recipient, subject, and body of an email message may be specified as parameters when a <xref:System.Net.Mail.MailMessage.%23ctor%2A> is used to initialize a <xref:System.Net.Mail.MailMessage> object. These parameters may also be set or accessed using properties on the <xref:System.Net.Mail.MailMessage> object.  
   
  The primary mail message headers and elements for the message may be set using the following properties of the <xref:System.Net.Mail.MailMessage> class.  
   
@@ -888,8 +888,8 @@
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the encoding used for the user-defined custom headers for this e-mail message.</summary>
-        <value>The encoding used for user-defined custom headers for this e-mail message.</value>
+        <summary>Gets or sets the encoding used for the user-defined custom headers for this email message.</summary>
+        <value>The encoding used for user-defined custom headers for this email message.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -956,7 +956,7 @@
         <ReturnType>System.Net.Mail.MailPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the priority of this e-mail message.</summary>
+        <summary>Gets or sets the priority of this email message.</summary>
         <value>A <see cref="T:System.Net.Mail.MailPriority" /> that contains the priority of this message.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1058,7 +1058,7 @@
         <ReturnType>System.Net.Mail.MailAddress</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the sender's address for this e-mail message.</summary>
+        <summary>Gets or sets the sender's address for this email message.</summary>
         <value>A <see cref="T:System.Net.Mail.MailAddress" /> that contains the sender's address information.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1092,7 +1092,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the subject line for this e-mail message.</summary>
+        <summary>Gets or sets the subject line for this email message.</summary>
         <value>A <see cref="T:System.String" /> that contains the subject content.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1134,7 +1134,7 @@
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the encoding used for the subject content for this e-mail message.</summary>
+        <summary>Gets or sets the encoding used for the subject content for this email message.</summary>
         <value>An <see cref="T:System.Text.Encoding" /> that was used to encode the <see cref="P:System.Net.Mail.MailMessage.Subject" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1181,13 +1181,13 @@
         <ReturnType>System.Net.Mail.MailAddressCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the address collection that contains the recipients of this e-mail message.</summary>
+        <summary>Gets the address collection that contains the recipients of this email message.</summary>
         <value>A writable <see cref="T:System.Net.Mail.MailAddressCollection" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Mail.MailMessage.To%2A> property is used to designate the addresses on the To line of an e-mail message. To add a recipient to an e-mail message, create a <xref:System.Net.Mail.MailAddress> for the recipient's address, and then add that object to the collection returned by this property.  
+ The <xref:System.Net.Mail.MailMessage.To%2A> property is used to designate the addresses on the To line of an email message. To add a recipient to an email message, create a <xref:System.Net.Mail.MailAddress> for the recipient's address, and then add that object to the collection returned by this property.  
   
    
   

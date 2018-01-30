@@ -26,7 +26,7 @@
       }
     }
     
-    // Convert the e-mail address to lowercase.
+    // Convert the email address to lowercase.
     String emailValue = e.NewValues["EmailAddress"].ToString();
     e.NewValues["EmailAddress"] = emailValue.ToLower();
 
@@ -93,7 +93,7 @@
               <asp:TextBox ID="LastNameTextBox" runat="server" Width="200px"
                 Text='<%#Bind("LastName") %>' MaxLength="50" /><br />
               <asp:Label runat="server" ID="EmailLabel"
-                AssociatedControlID="EmailTextBox" Text="E-mail" />
+                AssociatedControlID="EmailTextBox" Text="Email" />
               <asp:TextBox ID="EmailTextBox" runat="server" Width="200px"
                 Text='<%#Bind("EmailAddress") %>' MaxLength="50" />
             </td>

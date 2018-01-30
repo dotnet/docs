@@ -127,11 +127,11 @@
                             <tr>
                                 <td align="right">
                                     <asp:Label ID="EmailLabel" runat="server" AssociatedControlID="Email">
-                                        E-mail:</asp:Label></td>
+                                        Email:</asp:Label></td>
                                 <td>
                                     <asp:TextBox ID="Email" runat="server"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="EmailRequired" runat="server" ControlToValidate="Email"
-                                        ErrorMessage="E-mail is required." ToolTip="E-mail is required." ValidationGroup="CreateUserWizard1">*</asp:RequiredFieldValidator>
+                                        ErrorMessage="Email is required." ToolTip="Email is required." ValidationGroup="CreateUserWizard1">*</asp:RequiredFieldValidator>
                                 </td>
                             </tr>
                             <tr>

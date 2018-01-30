@@ -93,7 +93,6 @@ signtool [command] [options] [file_name | ...]
 |`/p7ce` *Value*|Specifies options for the signed PKCS #7 content. Set *Value* to "Embedded" to embed the signed content in the PKCS #7 file, or to "DetachedSignedData" to produce the signed data portion of a detached PKCS #7 file. If the `/p7ce` option is not used, the signed content is embedded by default.|  
 |`/p7co` *\<OID>*|Specifies the object identifier (OID) that identifies the signed PKCS #7 content.|  
 |`/ph`|If supported, generates page hashes for executable files.|  
-|`/r`  *RootSubjectName*|Specifies the name of the subject of the root certificate that the signing certificate must chain to. This value may be a substring of the entire subject name of the root certificate.|  
 |`/s`  *StoreName*|Specifies the store to open when searching for the certificate. If this option is not specified, the `My` store is opened.|  
 |`/sha1`  *Hash*|Specifies the SHA1 hash of the signing certificate. The SHA1 hash is commonly specified when multiple certificates satisfy the criteria specified by the remaining switches.|  
 |`/sm`|Specifies that a machine store, instead of a user store, is used.|  

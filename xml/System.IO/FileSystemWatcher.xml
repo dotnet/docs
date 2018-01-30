@@ -1247,7 +1247,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.IO.FileSystemWatcher.OnRenamed%2A> is called when a file or directory within the directory being monitored is renamed.  
+ <xref:System.IO.FileSystemWatcher.OnRenamed%2A> is called when a file or directory within the directory being monitored is renamed. Its <xref:System.IO.RenamedEventArgs> argument contains information about the renaming operation, such as the type of change, the old and new path, and the old and new name. Note that its <xref:System.IO.FileSystemEventArgs.Name> property may be null for renamed events if the <xref:System.IO.FileSystemWatcher> does not get matching old and new name events from the operating system. 
   
  Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
@@ -1375,6 +1375,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+ The `Renamed` event is an <xref:System.IO.RenamedEventHandler> delegate that has the signature:
+
+ ```csharp
+public delegate void Renamed(object sender, RenamedEventArgs e);
+ ```
+ ```vb
+Public Delegate Sub RenamedEventHandler(sender As Object, e As RenamedEventArgs)
+ ```
+ The <xref:System.IO.RenamedEventArgs> object provides information about the renaming operation, such as the type of the rename (the <xref:System.IO.RenamedEventArgs.ChangeType> property, the original name and new name, and the original path and new path. Note that the <xref:System.IO.FileSystemEventArgs.Name> property may be null for renamed events if the <xref:System.IO.FileSystemWatcher> does not get matching old and new name events from the operating system.
+
  Renaming the directory you are watching will not raise a notification. Notifications are only raised for entries inside the directory you are watching.  
   
    

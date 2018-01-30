@@ -155,7 +155,7 @@ installutil /LogFile=myLog.InstallLog myAssembly.exe
 installutil /LogFile=myLog.InstallLog /reg=true myAssembly.exe  
 ```  
   
- The following command executes the installers in the assembly `myAssembly.exe`, uses the installer's custom `/email` option to specify the user's e-mail address, and suppresses output to the log file.  
+ The following command executes the installers in the assembly `myAssembly.exe`, uses the installer's custom `/email` option to specify the user's email address, and suppresses output to the log file.  
   
 ```  
 installutil /LogFile= /email=admin@mycompany.com myAssembly.exe  

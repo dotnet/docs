@@ -28,18 +28,18 @@ Namespace Examples.SmptExamples.Async
         Public Shared Sub Main(ByVal args() As String)
             ' Command line argument must the SMTP host.
             Dim client As New SmtpClient(args(0))
-            ' Specify the e-mail sender.
+            ' Specify the email sender.
             '<snippet2>
             ' Create a mailing address that includes a UTF8 character
             ' in the display name.
             Dim [from] As New MailAddress("jane@contoso.com", "Jane " & ChrW(&HD8) & " Clayton", System.Text.Encoding.UTF8)
             '</snippet2>
-            ' Set destinations for the e-mail message.
+            ' Set destinations for the email message.
             Dim [to] As New MailAddress("ben@contoso.com")
             ' Specify the message content.
             '<snippet3>
             Dim message As New MailMessage([from], [to])
-            message.Body = "This is a test e-mail message sent by an application. "
+            message.Body = "This is a test email message sent by an application. "
             ' Include some non-ASCII characters in body and subject.
             Dim someArrows As New String(New Char() {ChrW(&H2190), ChrW(&H2191), ChrW(&H2192), ChrW(&H2193)})
             message.Body += Environment.NewLine & someArrows

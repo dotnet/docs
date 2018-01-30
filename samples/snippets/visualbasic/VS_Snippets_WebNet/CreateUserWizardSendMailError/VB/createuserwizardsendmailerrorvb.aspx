@@ -5,7 +5,7 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <script runat="server">
   Sub SiteSpecificLoggingProcedure(ByVal e As SendMailErrorEventArgs)
-    'Code to log e-mail error, e.Exception.ToString, goes here.
+    'Code to log email error, e.Exception.ToString, goes here.
   End Sub
   
   Sub Createuserwizard1_SendMailError1(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.SendMailErrorEventArgs)

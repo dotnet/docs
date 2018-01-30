@@ -22,7 +22,7 @@ Public Sub UpdateEmailButton_OnClick(sender As Object, args As EventArgs)
 
     Membership.UpdateUser(u)
   
-    Msg.Text = "User e-mail updated."
+    Msg.Text = "User email updated."
   Catch e As System.Configuration.Provider.ProviderException
     Msg.Text = e.Message
   End Try
@@ -43,7 +43,7 @@ End Sub
 
   <table cellpadding="3" border="0">
     <tr>
-      <td>E-mail Address:</td>
+      <td>Email Address:</td>
       <td><asp:TextBox id="EmailTextBox" MaxLength="128" Columns="30" runat="server" /></td>
       <td><asp:RequiredFieldValidator id="EmailRequiredValidator" runat="server"
                                     ControlToValidate="EmailTextBox" ForeColor="red"
@@ -52,7 +52,7 @@ End Sub
     <tr>
       <td></td>
       <td><asp:Button id="UpdateEmailButton" 
-                      Text="Update E-mail" 
+                      Text="Update Email" 
                       OnClick="UpdateEmailButton_OnClick" 
                       runat="server" /></td>
     </tr>

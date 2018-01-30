@@ -188,7 +188,7 @@ This topic describes how to create a Windows application that uses client applic
     |**User Name**|`manager`|  
     |**Password**|`manager!`|  
     |**Confirm Password**|`manager!`|  
-    |**E-mail**|`manager@contoso.com`|  
+    |**Email**|`manager@contoso.com`|  
     |**Security Question**|`manager`|  
     |**Security Answer**|`manager`|  
   
@@ -197,7 +197,7 @@ This topic describes how to create a Windows application that uses client applic
      A success message appears.  
   
     > [!NOTE]
-    >  The **E-mail**, **Security Question**, and **Security Answer** values are required by the form, but are not used in this example.  
+    >  The **Email**, **Security Question**, and **Security Answer** values are required by the form, but are not used in this example.  
   
 13. Click **Continue**.  
   
@@ -210,7 +210,7 @@ This topic describes how to create a Windows application that uses client applic
     |**User Name**|`employee`|  
     |**Password**|`employee!`|  
     |**Confirm Password**|`employee!`|  
-    |**E-mail**|`employee@contoso.com`|  
+    |**Email**|`employee@contoso.com`|  
     |**Security Question**|`Employee`|  
     |**Security Answer**|`employee`|  
   

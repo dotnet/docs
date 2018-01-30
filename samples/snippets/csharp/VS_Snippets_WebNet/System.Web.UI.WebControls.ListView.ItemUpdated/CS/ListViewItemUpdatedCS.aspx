@@ -91,7 +91,7 @@
                 <asp:TextBox ID="LastNameTextBox" runat="server" 
                   Text='<%# Bind("LastName") %>' MaxLength="50" Width="200px" /><br />
                 <asp:Label runat="server" ID="EmailLabel" 
-                  AssociatedControlID="EmailTextBox" Text="E-mail" />
+                  AssociatedControlID="EmailTextBox" Text="Email" />
                 <asp:TextBox ID="EmailTextBox" runat="server" 
                   Text='<%# Bind("EmailAddress") %>' MaxLength="50" Width="200px" />
               </td>

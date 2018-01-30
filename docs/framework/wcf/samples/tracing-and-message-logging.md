@@ -76,7 +76,7 @@ This sample demonstrates how to enable tracing and message logging. The resultin
   <system.serviceModel>  
     <diagnostics>  
       <!-- Enable Message Logging here. -->  
-      <!-- log all messages received or sent at the transport or service model levels >  
+      <!-- log all messages received or sent at the transport or service model levels -->  
       <messageLogging logEntireMessage="true"  
                       maxMessagesToLog="300"  
                       logMessagesAtServiceLevel="true"  

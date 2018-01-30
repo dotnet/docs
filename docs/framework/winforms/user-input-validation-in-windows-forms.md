@@ -43,7 +43,7 @@ When users enter data into your application, you may want to verify that the dat
   
  The <xref:System.Windows.Forms.Control.Validating> event is supplied an object of type <xref:System.ComponentModel.CancelEventArgs>. If you determine that the control's data is not valid, you can cancel the <xref:System.Windows.Forms.Control.Validating> event by setting this object's <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. If you do not set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property, Windows Forms will assume that validation succeeded for that control, and raise the <xref:System.Windows.Forms.Control.Validated> event.  
   
- For a code example that validates an e-mail address in a <xref:System.Windows.Controls.TextBox>, see <xref:System.Windows.Forms.Control.Validating>.  
+ For a code example that validates an email address in a <xref:System.Windows.Controls.TextBox>, see <xref:System.Windows.Forms.Control.Validating>.  
   
 ### Data Binding and Event-Driven Validation  
  Validation is very useful when you have bound your controls to a data source, such as a database table. By using validation, you can make sure that your control's data satisfies the format required by the data source, and that it does not contain any special characters such as quotation marks and back slashes that might be unsafe.  

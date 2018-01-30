@@ -50,7 +50,7 @@
               </td>
               <td>
                 <asp:LinkButton runat="server" ID="SortByEmailButton"
-                  CommandName="Sort" Text="E-mail Address" 
+                  CommandName="Sort" Text="Email Address" 
                   CommandArgument="EmailAddress" />
               </td>
             </tr>

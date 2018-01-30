@@ -38,7 +38,7 @@ int main(array<String^>^ args)
     {
         // Command-line argument must be the SMTP host.
         SmtpClient^ client = gcnew SmtpClient(args[1]);
-        // Specify the e-mail sender.
+        // Specify the email sender.
         //<snippet2>
         // Create a mailing address that includes a UTF8 
         // character in the display name.
@@ -46,12 +46,12 @@ int main(array<String^>^ args)
             "Jane " + (wchar_t)0xD8 + " Clayton",
             System::Text::Encoding::UTF8);
         //</snippet2>
-        // Set destinations for the e-mail message.
+        // Set destinations for the email message.
         MailAddress^ to = gcnew MailAddress("ben@contoso.com");
         // Specify the message content.
         //<snippet3>
         MailMessage^ message = gcnew MailMessage(from, to);
-        message->Body = "This is a test e-mail message sent" +
+        message->Body = "This is a test email message sent" +
             " by an application. ";
         // Include some non-ASCII characters in body and 
         // subject.

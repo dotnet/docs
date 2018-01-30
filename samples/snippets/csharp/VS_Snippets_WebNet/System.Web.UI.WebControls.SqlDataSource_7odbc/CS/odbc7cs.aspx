@@ -7,7 +7,7 @@
 
  private void OnDSUpdatedHandler(Object source, SqlDataSourceStatusEventArgs e) {
     if (e.AffectedRows > 0) {
-        // Perform any additional processing, such as sending an e-mail notification.
+        // Perform any additional processing, such as sending an email notification.
         Label1.Text = Request.LogonUserIdentity.Name +
             " changed user information sucessfully!";
     }

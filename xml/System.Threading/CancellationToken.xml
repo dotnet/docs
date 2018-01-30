@@ -510,8 +510,10 @@ For the definition of equality, see the <xref:System.Threading.CancellationToken
 ## Remarks  
  If this token is already in the canceled state, the delegate will be run immediately and synchronously. Any exception the delegate generates will be propagated out of this method call.  
   
- The current <xref:System.Threading.ExecutionContext>, if one exists, will be captured along with the delegate and will be used when executing it.  
-  
+ The current <xref:System.Threading.ExecutionContext> is captured along with the delegate and will be used when executing it. 
+
+ The current <xref:System.Threading.SynchronizationContext> is not captured.
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The associated <see cref="T:System.Threading.CancellationTokenSource" /> has been disposed.</exception>
@@ -560,7 +562,9 @@ For the definition of equality, see the <xref:System.Threading.CancellationToken
 ## Remarks  
  If this token is already in the canceled state, the delegate will be run immediately and synchronously. Any exception the delegate generates will be propogated out of this method call.  
   
- If `useSynchronizationContext` is `true`, the current <xref:System.Threading.ExecutionContext>, if one exists, will be captured along with the delegate and will be used when executing it.  
+ The current <xref:System.Threading.ExecutionContext> is captured along with the delegate and will be used when executing it. 
+
+ If `useSynchronizationContext` is `true`, the current <xref:System.Threading.SynchronizationContext>, if one exists, is also captured along with the delegate and will be used when executing it. Otherwise, <xref:System.Threading.SynchronizationContext> is not captured.
   
  ]]></format>
         </remarks>
@@ -610,7 +614,9 @@ For the definition of equality, see the <xref:System.Threading.CancellationToken
 ## Remarks  
  If this token is already in the canceled state, the delegate will be run immediately and synchronously. Any exception the delegate generates will be propogated out of this method call.  
   
- The current <xref:System.Threading.ExecutionContext>, if one exists, will be captured along with the delegate and will be used when executing it.  
+ The current <xref:System.Threading.ExecutionContext> is captured along with the delegate and will be used when executing it. 
+
+ The current <xref:System.Threading.SynchronizationContext> is not captured.
   
  ]]></format>
         </remarks>
@@ -662,7 +668,9 @@ For the definition of equality, see the <xref:System.Threading.CancellationToken
 ## Remarks  
  If this token is already in the canceled state, the delegate will be run immediately and synchronously. Any exception the delegate generates will be propogated out of this method call.  
   
- The current <xref:System.Threading.ExecutionContext>, if one exists, will be captured along with the delegate and will be used when executing it.  
+ The current <xref:System.Threading.ExecutionContext> is captured along with the delegate and will be used when executing it. 
+
+ If `useSynchronizationContext` is `true`, the current <xref:System.Threading.SynchronizationContext>, if one exists, is also captured along with the delegate and will be used when executing it. Otherwise, <xref:System.Threading.SynchronizationContext> is not captured.
   
  ]]></format>
         </remarks>

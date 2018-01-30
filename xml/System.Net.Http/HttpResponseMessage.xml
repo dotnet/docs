@@ -223,6 +223,8 @@
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.Net.Http.HttpRequestException">
+            The HTTP response is unsuccessful. </exception>
       </Docs>
     </Member>
     <Member MemberName="Headers">

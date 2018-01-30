@@ -1,6 +1,6 @@
 ---
 title: "Byte Data Type (Visual Basic)"
-ms.date: 04/20/2017
+ms.date: 01/31/2018
 ms.prod: .net
 ms.suite: ""
 ms.technology: 
@@ -14,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: eed44dff-eaee-4937-a89f-444e418e74f6
 author: "rpetrusha"
 ms.author: "ronpet"
+ms.manager: "wpickett"
 ---
 # Byte data type (Visual Basic)
 Holds unsigned 8-bit (1-byte) integers that range in value from 0 through 255.
@@ -38,6 +39,20 @@ In the following example, integers equal to 201 that are represented as decimal,
 Starting with Visual Basic 2017, you can also use the underscore character, `_`, as a digit separator to enhance readability, as the following example shows.
 
 [!code-vb[Byte](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#ByteS)]  
+
+Starting with Visual Basic 15.5, you can also use the underscore character (`_`) as a leading separator between the prefix and the hexadecimal, binary, or octal digits. For example:
+
+```vb
+Dim number As Byte = &H_6A
+```
+
+To use the underscore character as a leading separator, you must add the following element to your Visual Basic project (*.vbproj) file:
+
+```xml
+<PropertyGroup>
+  <LangVersion>15.5</LangVersion>
+</PropertyGroup>
+```
 
 ## Programming tips
 

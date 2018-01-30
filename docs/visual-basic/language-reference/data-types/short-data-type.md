@@ -1,6 +1,6 @@
 ---
 title: "Short Data Type (Visual Basic)"
-ms.date: 04/20/2017
+ms.date: 01/31/2018
 ms.prod: .net
 ms.suite: ""
 ms.technology: 
@@ -25,6 +25,7 @@ helpviewer_keywords:
 ms.assetid: 65fcbcf3-a841-400e-885e-301497729a8b
 author: "rpetrusha"
 ms.author: "ronpet"
+ms.manager: "wpickett"
 ---
 # Short data type (Visual Basic)
 Holds signed 16-bit (2-byte) integers that range in value from -32,768 through 32,767.  
@@ -49,10 +50,24 @@ Starting with Visual Basic 2017, you can also use the underscore character, `_`,
 
 [!code-vb[Short](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#ShortS)]
 
+Starting with Visual Basic 15.5, you can also use the underscore character (`_`) as a leading separator between the prefix and the hexadecimal, binary, or octal digits. For example:
+
+```vb
+Dim number As Short = &H_3265
+```
+
+To use the underscore character as a leading separator, you must add the following element to your Visual Basic project (*.vbproj) file:
+
+```xml
+<PropertyGroup>
+  <LangVersion>15.5</LangVersion>
+</PropertyGroup>
+```
+
 Numeric literals can also include the `S` [type character](../../programming-guide\language-features\data-types/type-characters.md) to denote the `Short` data type, as the following example shows.
 
 ```vb
-Dim number = &H0326S
+Dim number = &H326S
 ```
 
 ## Programming tips

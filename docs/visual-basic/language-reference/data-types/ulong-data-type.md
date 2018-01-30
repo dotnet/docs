@@ -1,6 +1,6 @@
 ---
 title: "ULong Data Type (Visual Basic)"
-ms.date: 04/20/2017
+ms.date: 01/31/2018
 ms.prod: .net
 ms.suite: ""
 ms.technology: 
@@ -21,9 +21,9 @@ helpviewer_keywords:
   - "ULong data type"
   - "UL literal type characters [Visual Basic]"
 ms.assetid: 017e0702-774e-44ae-bedc-786b424ca84e
-caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
+ms.manager: "wpickett"
 ---
 # ULong data type (Visual Basic)
 
@@ -49,6 +49,19 @@ In the following example, integers equal to 7,934,076,125 that are represented a
 Starting with Visual Basic 2017, you can also use the underscore character, `_`, as a digit separator to enhance readability, as the following example shows.
 
 [!code-vb[ULong](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#LongS)]
+
+Starting with Visual Basic 15.5, you can also use the underscore character (`_`) as a leading separator between the prefix and the hexadecimal, binary, or octal digits. For example:
+
+```vb
+Dim number As ULong = &H_F9AC_0326_1489_D68C
+```
+To use the underscore character as a leading separator, you must add the following element to your Visual Basic project (*.vbproj) file:
+
+```xml
+<PropertyGroup>
+  <LangVersion>15.5</LangVersion>
+</PropertyGroup>
+```
 
 Numeric literals can also include the `UL` or `ul` [type character](../../programming-guide\language-features\data-types/type-characters.md) to denote the `ULong` data type, as the following example shows.
 

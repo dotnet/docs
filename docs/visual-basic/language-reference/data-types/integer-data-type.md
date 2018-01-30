@@ -1,6 +1,6 @@
 ---
 title: "Integer Data Type (Visual Basic)"
-ms.date: 04/20/2017
+ms.date: 01/31/2018
 ms.prod: .net
 ms.suite: ""
 ms.technology: 
@@ -28,6 +28,7 @@ helpviewer_keywords:
 ms.assetid: a8f233b4-4be3-455c-861b-05af2fbb6c60
 author: "rpetrusha"
 ms.author: "ronpet"
+ms.manager: "wpickett"
 ---
 # Integer data type (Visual Basic)
 Holds signed 32-bit (4-byte) integers that range in value from -2,147,483,648 through 2,147,483,647.  
@@ -51,6 +52,20 @@ In the following example, integers equal to 16,342 that are represented as decim
 Starting with Visual Basic 2017, you can also use the underscore character, `_`, as a digit separator to enhance readability, as the following example shows.
 
 [!code-vb[integer](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#IntS)]  
+
+Starting with Visual Basic 15.5, you can also use the underscore character (`_`) as a leading separator between the prefix and the hexadecimal, binary, or octal digits. For example:
+
+```vb
+Dim number As Integer = &H_C305_F860
+```
+
+To use the underscore character as a leading separator, you must add the following element to your Visual Basic project (*.vbproj) file:
+
+```xml
+<PropertyGroup>
+  <LangVersion>15.5</LangVersion>
+</PropertyGroup>
+```
 
 Numeric literals can also include the `I` [type character](../../programming-guide\language-features\data-types/type-characters.md) to denote the `Integer` data type, as the following example shows.
 

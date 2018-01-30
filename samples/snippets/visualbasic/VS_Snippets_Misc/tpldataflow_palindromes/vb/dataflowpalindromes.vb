@@ -1,73 +1,66 @@
 ﻿' <snippet1> 
-Imports System
-Imports System.Collections.Concurrent
-Imports System.Linq
-Imports System.Net
-Imports System.Threading.Tasks
+Imports System.Net.Http
 Imports System.Threading.Tasks.Dataflow
 
 ' Demonstrates how to create a basic dataflow pipeline.
 ' This program downloads the book "The Iliad of Homer" by Homer from the Web 
 ' and finds all reversed words that appear in that book.
-Friend Class DataflowReversedWords
+Module DataflowReversedWords
 
-   Shared Sub Main(ByVal args() As String)
+   Sub Main()
       ' <snippet3>
       '
       ' Create the members of the pipeline.
       ' 
 
       ' Downloads the requested resource as a string.
-      Dim downloadString = New TransformBlock(Of String, String)(Function(uri)
-                                                                    Console.WriteLine("Downloading '{0}'...", uri)
-                                                                    Return New WebClient().DownloadString(uri)
-                                                                 End Function)
+      Dim downloadString = New TransformBlock(Of String, String)(
+          Async Function(uri)
+             Console.WriteLine("Downloading '{0}'...", uri)
+
+             Return Await New HttpClient().GetStringAsync(uri)
+          End Function)
 
       ' Separates the specified text into an array of words.
-      Dim createWordList = New TransformBlock(Of String, String())(Function(text)
-                                                                      ' Remove common punctuation by replacing all non-letter characters 
-                                                                      ' with a space character to.
-                                                                      ' Separate the text into an array of words.
-                                                                      Console.WriteLine("Creating word list...")
-                                                                      Dim tokens() As Char = text.ToArray()
-                                                                      For i As Integer = 0 To tokens.Length - 1
-                                                                         If Not Char.IsLetter(tokens(i)) Then
-                                                                            tokens(i) = " "c
-                                                                         End If
-                                                                      Next i
-                                                                      text = New String(tokens)
-                                                                      Return text.Split(New Char() {" "c}, StringSplitOptions.RemoveEmptyEntries)
-                                                                   End Function)
+      Dim createWordList = New TransformBlock(Of String, String())(
+         Function(text)
+            Console.WriteLine("Creating word list...")
 
-      ' Removes short words, orders the resulting words alphabetically, 
-      ' and then remove duplicates.
-      Dim filterWordList = New TransformBlock(Of String(), String())(Function(words)
-                                                                        Console.WriteLine("Filtering word list...")
-                                                                        Return words.Where(Function(word) word.Length > 3).OrderBy(Function(word) word).Distinct().ToArray()
-                                                                     End Function)
+            ' Remove common punctuation by replacing all non-letter characters 
+            ' with a space character.
+            Dim tokens() As Char = text.Select(Function(c) If(Char.IsLetter(c), c, " "c)).ToArray()
+            text = New String(tokens)
+
+            ' Separate the text into an array of words.
+            Return text.Split(New Char() {" "c}, StringSplitOptions.RemoveEmptyEntries)
+         End Function)
+
+      ' Removes short words and duplicates.
+      Dim filterWordList = New TransformBlock(Of String(), String())(
+         Function(words)
+            Console.WriteLine("Filtering word list...")
+
+            Return words.Where(Function(word) word.Length > 3).Distinct().ToArray()
+         End Function)
 
       ' Finds all words in the specified collection whose reverse also 
       ' exists in the collection.
-      Dim findReversedWords = New TransformManyBlock(Of String(), String)(Function(words)
-                                                                             ' Holds reversed words.
-                                                                             ' Add each word in the original collection to the result whose 
-                                                                             ' reverse also exists in the collection.
-                                                                             ' Reverse the work.
-                                                                             ' Enqueue the word if the reversed version also exists
-                                                                             ' in the collection.
-                                                                             Console.WriteLine("Finding reversed words...")
-                                                                             Dim reversedWords = New ConcurrentQueue(Of String)()
-                                                                             Parallel.ForEach(words, Sub(word)
-                                                                                                        Dim reverse As New String(word.Reverse().ToArray())
-                                                                                                        If Array.BinarySearch(Of String)(words, reverse) >= 0 AndAlso word <> reverse Then
-                                                                                                           reversedWords.Enqueue(word)
-                                                                                                        End If
-                                                                                                     End Sub)
-                                                                             Return reversedWords
-                                                                          End Function)
+      Dim findReversedWords = New TransformManyBlock(Of String(), String)(
+         Function(words)
+
+            Dim wordsSet = New HashSet(Of String)(words)
+
+            Return From word In words.AsParallel()
+                   Let reverse = New String(word.Reverse().ToArray())
+                   Where word <> reverse AndAlso wordsSet.Contains(reverse)
+                   Select word
+         End Function)
 
       ' Prints the provided reversed words to the console.    
-      Dim printReversedWords = New ActionBlock(Of String)(Sub(reversedWord) Console.WriteLine("Found reversed words {0}/{1}", reversedWord, New String(reversedWord.Reverse().ToArray())))
+      Dim printReversedWords = New ActionBlock(Of String)(
+         Sub(reversedWord)
+            Console.WriteLine("Found reversed words {0}/{1}", reversedWord, New String(reversedWord.Reverse().ToArray()))
+         End Sub)
       ' </snippet3>
 
       ' <snippet4>
@@ -75,49 +68,13 @@ Friend Class DataflowReversedWords
       ' Connect the dataflow blocks to form a pipeline.
       '
 
-      downloadString.LinkTo(createWordList)
-      createWordList.LinkTo(filterWordList)
-      filterWordList.LinkTo(findReversedWords)
-      findReversedWords.LinkTo(printReversedWords)
+      Dim linkOptions = New DataflowLinkOptions With { .PropagateCompletion = True }
+
+      downloadString.LinkTo(createWordList, linkOptions)
+      createWordList.LinkTo(filterWordList, linkOptions)
+      filterWordList.LinkTo(findReversedWords, linkOptions)
+      findReversedWords.LinkTo(printReversedWords, linkOptions)
       ' </snippet4>
-      ' <snippet5>
-      '
-      ' For each completion task in the pipeline, create a continuation task
-      ' that marks the next block in the pipeline as completed.
-      ' A completed dataflow block processes any buffered elements, but does
-      ' not accept new elements.
-      '
-
-      downloadString.Completion.ContinueWith(Sub(t)
-                                                If t.IsFaulted Then
-                                                   CType(createWordList, IDataflowBlock).Fault(t.Exception)
-                                                Else
-                                                   createWordList.Complete()
-                                                End If
-                                             End Sub)
-      createWordList.Completion.ContinueWith(Sub(t)
-                                                If t.IsFaulted Then
-                                                   CType(filterWordList, IDataflowBlock).Fault(t.Exception)
-                                                Else
-                                                   filterWordList.Complete()
-                                                End If
-                                             End Sub)
-      filterWordList.Completion.ContinueWith(Sub(t)
-                                                If t.IsFaulted Then
-                                                   CType(findReversedWords, IDataflowBlock).Fault(t.Exception)
-                                                Else
-                                                   findReversedWords.Complete()
-                                                End If
-                                             End Sub)
-      findReversedWords.Completion.ContinueWith(Sub(t)
-                                                   If t.IsFaulted Then
-                                                      CType(printReversedWords, IDataflowBlock).Fault(t.Exception)
-                                                   Else
-                                                      printReversedWords.Complete()
-                                                   End If
-                                                End Sub)
-
-      ' </snippet5>
 
       ' <snippet6>
       ' Process "The Iliad of Homer" by Homer.
@@ -125,9 +82,7 @@ Friend Class DataflowReversedWords
       ' </snippet6>
 
       ' <snippet7>
-      ' Mark the head of the pipeline as complete. The continuation tasks 
-      ' propagate completion through the pipeline as each part of the 
-      ' pipeline finishes.
+      ' Mark the head of the pipeline as complete.
       downloadString.Complete()
       ' </snippet7>
 
@@ -137,7 +92,7 @@ Friend Class DataflowReversedWords
       ' </snippet8>
    End Sub
 
-End Class
+End Module
 
 ' Sample output:
 'Downloading 'http://www.gutenberg.org/files/6130/6130-0.txt'...
@@ -169,25 +124,3 @@ End Class
 'Found reversed words room/moor
 'Found reversed words ward/draw
 ' </snippet1> 
-
-'
-Namespace shell1
-   ' <snippet2> 
-   Imports System.Collections.Concurrent
-   Imports System.Linq
-   Imports System.Net
-   Imports System.Threading.Tasks
-   Imports System.Threading.Tasks.Dataflow
-
-   ' Demonstrates how to create a basic dataflow pipeline.
-   ' This program downloads the book "The Iliad of Homer" by Homer from the Web 
-   ' and finds all palindromes that appear in that book.
-   Class Program
-      Private Shared Sub Main(args As String())
-      End Sub
-   End Class
-   ' </snippet2> 
-
-End Namespace
-
-

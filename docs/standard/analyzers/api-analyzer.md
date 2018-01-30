@@ -3,7 +3,7 @@ title: .NET API analyzer
 description: Learn how the .NET API Analyzer can help detect deprecated APIs and platform compatibility issues.
 author: oliag
 ms.author: mairaw
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard
@@ -34,7 +34,7 @@ The API Analyzer uses API-specific error codes that begin with DE (which stands 
 
 ### Using the API Analyzer
 
-When a deprecated API, such as <xref:System.Net.WebClient>, is used in a code, API Analyzer highlights it with a green squiggly line. When you hover over the API call, a light bulb is displayed with information about the API deprecation as in the following example:
+When a deprecated API, such as <xref:System.Net.WebClient>, is used in a code, API Analyzer highlights it with a green squiggly line. When you hover over the API call, a light bulb is displayed with information about the API deprecation, as in the following example:
 
 !["Screenshot of WebClient API with green squiggly line and light bulb on the left"](media/api-analyzer/green-squiggle.jpg)
 
@@ -64,7 +64,7 @@ A *GlobalSuppressions.cs* file is added to your project after the first suppress
 
 !["Screenshot of WebClient API with green squiggly line and light bulb on the left"](media/api-analyzer/suppression-file.jpg)
 
-Global suppression is the recommended way to ensure consistency of API usage across their projects.
+Global suppression is the recommended way to ensure consistency of API usage across projects.
 
 ## Discovering cross-platform issues
 

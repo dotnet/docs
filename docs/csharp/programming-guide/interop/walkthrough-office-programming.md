@@ -94,11 +94,11 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
   
      Two new C# features are used in this method. Both of these features already exist in Visual Basic.  
   
-    -   Method [Add](http://go.microsoft.com/fwlink/?LinkId=210910) has an *optional parameter* for specifying a particular template. Optional parameters, new in [!INCLUDE[csharp_dev10_long](~/includes/csharp-dev10-long-md.md)], enable you to omit the argument for that parameter if you want to use the parameter's default value. Because no argument is sent in the previous example, `Add` uses the default template and creates a new workbook. The equivalent statement in earlier versions of C# requires a placeholder argument: `excelApp.Workbooks.Add(Type.Missing)`.  
+    -   Method [Add](https://msdn.microsoft.com/en-us/library/microsoft.office.interop.excel.workbooks.add.aspx) has an *optional parameter* for specifying a particular template. Optional parameters, new in [!INCLUDE[csharp_dev10_long](~/includes/csharp-dev10-long-md.md)], enable you to omit the argument for that parameter if you want to use the parameter's default value. Because no argument is sent in the previous example, `Add` uses the default template and creates a new workbook. The equivalent statement in earlier versions of C# requires a placeholder argument: `excelApp.Workbooks.Add(Type.Missing)`.  
   
          For more information, see [Named and Optional Arguments](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md).  
   
-    -   The `Range` and `Offset` properties of the [Range](http://go.microsoft.com/fwlink/?LinkId=210911) object use the *indexed properties* feature. This feature enables you to consume these properties from COM types by using the following typical C# syntax. Indexed properties also enable you to use the `Value` property of the `Range` object, eliminating the need to use the `Value2` property. The `Value` property is indexed, but the index is optional. Optional arguments and indexed properties work together in the following example.  
+    -   The `Range` and `Offset` properties of the [Range](https://msdn.microsoft.com/en-us/library/microsoft.office.interop.excel.range.aspx) object use the *indexed properties* feature. This feature enables you to consume these properties from COM types by using the following typical C# syntax. Indexed properties also enable you to use the `Value` property of the `Range` object, eliminating the need to use the `Value2` property. The `Value` property is indexed, but the index is optional. Optional arguments and indexed properties work together in the following example.  
   
          [!code-csharp[csOfficeWalkthrough#5](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_5.cs)]  
   
@@ -118,7 +118,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
   
      These additions demonstrate another feature in C#: treating `Object` values returned from COM hosts such as Office as if they have type [dynamic](../../../csharp/language-reference/keywords/dynamic.md). This happens automatically when **Embed Interop Types** is set to its default value, `True`, or, equivalently, when the assembly is referenced by the [/link](../../../csharp/language-reference/compiler-options/link-compiler-option.md) compiler option. Type `dynamic` allows late binding, already available in Visual Basic, and avoids the explicit casting required in Visual C# 2008 and earlier versions of the language.  
   
-     For example, `excelApp.Columns[1]` returns an `Object`, and `AutoFit` is an Excel  [Range](http://go.microsoft.com/fwlink/?LinkId=210911) method. Without `dynamic`, you must cast the object returned by `excelApp.Columns[1]` as an instance of `Range` before calling method `AutoFit`.  
+     For example, `excelApp.Columns[1]` returns an `Object`, and `AutoFit` is an Excel  [Range](https://msdn.microsoft.com/en-us/library/microsoft.office.interop.excel.range.aspx) method. Without `dynamic`, you must cast the object returned by `excelApp.Columns[1]` as an instance of `Range` before calling method `AutoFit`.  
   
      [!code-csharp[csOfficeWalkthrough#8](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_8.cs)]  
   

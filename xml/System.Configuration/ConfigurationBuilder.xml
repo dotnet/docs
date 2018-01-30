@@ -29,6 +29,7 @@
   The following example shows how to implement a simple ConfigurationBuilder to read Environment variables: 
 
   [!code-csharp[System.Configuration.ConfigurationBuilder](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationBuilder/CS/SampleConfigurationBuilder.cs)]
+  [!code-vb[System.Configuration.ConfigurationBuilder](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationBuilder/vb/SampleConfigurationBuilder.vb)]
 
   The following example is an excerpt of the configuration file as it applies to the previous example. This applies environment variables to the appSettings configuration 
   and makes those values available under <xref:System.Configuration.ConfigurationManager.AppSettings?displayProperty=nameWithType>.

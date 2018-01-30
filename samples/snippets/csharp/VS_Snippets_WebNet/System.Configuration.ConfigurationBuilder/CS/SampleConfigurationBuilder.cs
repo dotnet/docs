@@ -26,7 +26,7 @@ namespace Samples.AspNet.Config
 
         }
 
-        public override ConfigurationSection ProcessSectionInstance(ConfigurationSection configSection) 
+        public override ConfigurationSection ProcessConfigurationSection(ConfigurationSection configSection) 
             => configSection;
 
     }

@@ -925,7 +925,7 @@ tw.WriteDocType(name, pubid, sysid, subset);
    
   
 ## Examples  
- The following example uses the `WriteCharEntity` method to write an e-mail address.  
+ The following example uses the `WriteCharEntity` method to write an email address.  
   
  [!code-cpp[Classic WebData XmlTextWriter.WriteTimeSpan Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlTextWriter.WriteTimeSpan Example/CPP/source.cpp#1)]
  [!code-csharp[Classic WebData XmlTextWriter.WriteTimeSpan Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlTextWriter.WriteTimeSpan Example/CS/source.cs#1)]

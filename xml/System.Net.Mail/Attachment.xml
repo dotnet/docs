@@ -20,7 +20,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents an attachment to an e-mail.</summary>
+    <summary>Represents an attachment to an email.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -38,7 +38,7 @@
    
   
 ## Examples  
- The following code example demonstrates attaching a file to an e-mail message.  
+ The following code example demonstrates attaching a file to an email message.  
   
  [!code-cpp[NclMailSync#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#6)]
  [!code-csharp[NclMailSync#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#6)]  

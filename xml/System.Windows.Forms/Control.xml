@@ -1638,7 +1638,7 @@
    
   
 ## Examples  
- The following code example uses the derived class <xref:System.Windows.Forms.TextBox> and validates an e-mail address that the user enters. If the e-mail address is not in the standard format (containing "@" and "."), the validation fails, an <xref:System.Windows.Forms.ErrorProvider> icon is displayed, and the event is canceled. One of the buttons on the form has its <xref:System.Windows.Forms.Control.CausesValidation%2A> property set to `false`. Clicking or setting focus to this button does not trigger validation. This example requires that a <xref:System.Windows.Forms.TextBox>, an <xref:System.Windows.Forms.ErrorProvider> control, and a <xref:System.Windows.Forms.Button> have been created on a form.  
+ The following code example uses the derived class <xref:System.Windows.Forms.TextBox> and validates an email address that the user enters. If the email address is not in the standard format (containing "@" and "."), the validation fails, an <xref:System.Windows.Forms.ErrorProvider> icon is displayed, and the event is canceled. One of the buttons on the form has its <xref:System.Windows.Forms.Control.CausesValidation%2A> property set to `false`. Clicking or setting focus to this button does not trigger validation. This example requires that a <xref:System.Windows.Forms.TextBox>, an <xref:System.Windows.Forms.ErrorProvider> control, and a <xref:System.Windows.Forms.Button> have been created on a form.  
   
  [!code-cpp[Control.Validating#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Control.Validating/CPP/validating.cpp#2)]
  [!code-csharp[Control.Validating#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Control.Validating/CS/validating.cs#2)]
@@ -16027,7 +16027,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
    
   
 ## Examples  
- The following code example uses the derived class <xref:System.Windows.Forms.TextBox> and validates an e-mail address that the user enters. If the e-mail address is not in the standard format (containing "@" and "."), the validation fails, an <xref:System.Windows.Forms.ErrorProvider> icon is displayed, and the event is canceled. This example requires that a <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.ErrorProvider> control have been created on a form.  
+ The following code example uses the derived class <xref:System.Windows.Forms.TextBox> and validates an email address that the user enters. If the email address is not in the standard format (containing "@" and "."), the validation fails, an <xref:System.Windows.Forms.ErrorProvider> icon is displayed, and the event is canceled. This example requires that a <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.ErrorProvider> control have been created on a form.  
   
  [!code-cpp[Control.Validating#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Control.Validating/CPP/validating.cpp#1)]
  [!code-csharp[Control.Validating#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Control.Validating/CS/validating.cs#1)]
@@ -16098,7 +16098,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
    
   
 ## Examples  
- The following code example uses the derived class <xref:System.Windows.Forms.TextBox> and validates an e-mail address that the user enters. If the e-mail address is not in the standard format (containing "@" and "."), the validation fails, an <xref:System.Windows.Forms.ErrorProvider> icon is displayed, and the event is canceled. This example requires that a <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.ErrorProvider> control have been created on a form.  
+ The following code example uses the derived class <xref:System.Windows.Forms.TextBox> and validates an email address that the user enters. If the email address is not in the standard format (containing "@" and "."), the validation fails, an <xref:System.Windows.Forms.ErrorProvider> icon is displayed, and the event is canceled. This example requires that a <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.ErrorProvider> control have been created on a form.  
   
  [!code-cpp[Control.Validating#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Control.Validating/CPP/validating.cpp#1)]
  [!code-csharp[Control.Validating#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Control.Validating/CS/validating.cs#1)]

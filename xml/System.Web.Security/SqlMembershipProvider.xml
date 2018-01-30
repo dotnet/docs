@@ -357,7 +357,7 @@
       <Docs>
         <param name="username">The user name for the new user.</param>
         <param name="password">The password for the new user.</param>
-        <param name="email">The e-mail address for the new user.</param>
+        <param name="email">The email address for the new user.</param>
         <param name="passwordQuestion">The password question for the new user.</param>
         <param name="passwordAnswer">The password answer for the new user.</param>
         <param name="isApproved">Whether or not the new user is approved to be validated.</param>
@@ -373,9 +373,9 @@
   
  New users are identified with the configured <xref:System.Web.Security.SqlMembershipProvider.ApplicationName%2A>.  
   
- If the <xref:System.Web.Security.SqlMembershipProvider.RequiresUniqueEmail%2A> property is set to `true`, and `null` or an empty string ("") is specified for the `email` parameter, the user creation will fail. The user creation will also fail if the <xref:System.Web.Security.SqlMembershipProvider.RequiresUniqueEmail%2A> property is set to `true` and the value specified for the `email` parameter is a duplicate of the e-mail address for an existing user in the database for the configured <xref:System.Web.Security.SqlMembershipProvider.ApplicationName%2A>.  
+ If the <xref:System.Web.Security.SqlMembershipProvider.RequiresUniqueEmail%2A> property is set to `true`, and `null` or an empty string ("") is specified for the `email` parameter, the user creation will fail. The user creation will also fail if the <xref:System.Web.Security.SqlMembershipProvider.RequiresUniqueEmail%2A> property is set to `true` and the value specified for the `email` parameter is a duplicate of the email address for an existing user in the database for the configured <xref:System.Web.Security.SqlMembershipProvider.ApplicationName%2A>.  
   
- The maximum length for the user name is 256 characters. The maximum length for the e-mail address is 256 characters. The maximum length for the password in clear text or after it has been hashed or encrypted is 128 characters.  
+ The maximum length for the user name is 256 characters. The maximum length for the email address is 256 characters. The maximum length for the password in clear text or after it has been hashed or encrypted is 128 characters.  
   
  Other conditions that will cause user creation to fail:  
   
@@ -593,19 +593,19 @@
         <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="emailToMatch">The e-mail address to search for.</param>
+        <param name="emailToMatch">The email address to search for.</param>
         <param name="pageIndex">The index of the page of results to return. <c>pageIndex</c> is zero-based.</param>
         <param name="pageSize">The size of the page of results to return.</param>
         <param name="totalRecords">The total number of matched users.</param>
-        <summary>Returns a collection of membership users for which the e-mail address field contains the specified e-mail address.</summary>
+        <summary>Returns a collection of membership users for which the email address field contains the specified email address.</summary>
         <returns>A <see cref="T:System.Web.Security.MembershipUserCollection" /> that contains a page of <paramref name="pageSize" /><see cref="T:System.Web.Security.MembershipUser" /> objects beginning at the page specified by <paramref name="pageIndex" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.Security.SqlMembershipProvider.FindUsersByEmail%2A> returns a list of membership users in which the e-mail address contains a match with the supplied `emailToMatch` for the configured <xref:System.Web.Security.SqlMembershipProvider.ApplicationName%2A>.  
+ <xref:System.Web.Security.SqlMembershipProvider.FindUsersByEmail%2A> returns a list of membership users in which the email address contains a match with the supplied `emailToMatch` for the configured <xref:System.Web.Security.SqlMembershipProvider.ApplicationName%2A>.  
   
- The <xref:System.Web.Security.SqlMembershipProvider> searches for a user name that matches the `emailToMatch` parameter value, using the LIKE clause. SQL Server wildcard characters can be included in the parameter value. For example, if the `emailToMatch` parameter is set to "address@example.com", then information for users with the e-mail address "address@example.com" is returned, if it exists. If the `emailToMatch` parameter is set to "%@example.com", then information for users with the e-mail address "address@example.com", "address2@example.com", "admin@example.com", and so on is returned.  
+ The <xref:System.Web.Security.SqlMembershipProvider> searches for a user name that matches the `emailToMatch` parameter value, using the LIKE clause. SQL Server wildcard characters can be included in the parameter value. For example, if the `emailToMatch` parameter is set to "address@example.com", then information for users with the email address "address@example.com" is returned, if it exists. If the `emailToMatch` parameter is set to "%@example.com", then information for users with the email address "address@example.com", "address2@example.com", "admin@example.com", and so on is returned.  
   
  The results returned by <xref:System.Web.Security.SqlMembershipProvider.FindUsersByEmail%2A> are constrained by the `pageIndex` and `pageSize` parameters. The `pageSize` parameter identifies the maximum number of <xref:System.Web.Security.MembershipUser> objects to return in the <xref:System.Web.Security.MembershipUserCollection>. The `pageIndex` parameter identifies which page of results to return, where zero identifies the first page. The `totalRecords` parameter is an `out` parameter that is set to the total number of membership users for the configured `applicationName`. For example, if there are 13 users for the configured `applicationName`, and the `pageIndex` value was 1 with a `pageSize` of 5, the <xref:System.Web.Security.MembershipUserCollection> returned would contain the sixth through tenth users returned. The `totalRecords` parameter would be set to 13.  
   
@@ -884,10 +884,10 @@
    
   
 ## Examples  
- The following code example retrieves the password for a specified user name and sends it to the user in an e-mail message.  
+ The following code example retrieves the password for a specified user name and sends it to the user in an email message.  
   
 > [!NOTE]
->  Returning a password in clear text using e-mail is not recommended for sites that require a high level of security. For high-security sites, we recommend that you return passwords using encryption, such as SSL.  
+>  Returning a password in clear text using email is not recommended for sites that require a high level of security. For high-security sites, we recommend that you return passwords using encryption, such as SSL.  
   
 > [!NOTE]
 >  This sample calls the <xref:System.Web.Security.SqlMembershipProvider> specified as the `defaultProvider` in the Web.config file by using the <xref:System.Web.Security.Membership> class. If you need to access the default provider as the type <xref:System.Web.Security.SqlMembershipProvider>, you can cast the <xref:System.Web.Security.Membership.Provider%2A> property of the <xref:System.Web.Security.Membership> class. To access other configured providers as a specific provider type, you can access them by their configured name with the <xref:System.Web.Security.Membership.Providers%2A> property of the <xref:System.Web.Security.Membership> class and cast them as the specific provider type.  
@@ -1043,23 +1043,23 @@
         <Parameter Name="email" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="email">The e-mail address to search for.</param>
-        <summary>Gets the user name associated with the specified e-mail address.</summary>
-        <returns>The user name associated with the specified e-mail address. If no match is found, this method returns <see langword="null" />.</returns>
+        <param name="email">The email address to search for.</param>
+        <summary>Gets the user name associated with the specified email address.</summary>
+        <returns>The user name associated with the specified email address. If no match is found, this method returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is called by the <xref:System.Web.Security.Membership> class with an e-mail address, which it uses to retrieve an associated user name from the SQL Server database specified in the ASP.NET application's configuration file (Web.config).  
+ This method is called by the <xref:System.Web.Security.Membership> class with an email address, which it uses to retrieve an associated user name from the SQL Server database specified in the ASP.NET application's configuration file (Web.config).  
   
- If more than one user in the membership database has the same e-mail address, the first user name encountered is returned. You can set the `requiresUniqueEmail` attribute to `true` in the application-configuration file to ensure that each e-mail address in the database is unique.  
+ If more than one user in the membership database has the same email address, the first user name encountered is returned. You can set the `requiresUniqueEmail` attribute to `true` in the application-configuration file to ensure that each email address in the database is unique.  
   
  Leading and trailing spaces are trimmed from the `email` parameter value.  
   
    
   
 ## Examples  
- The following code example retrieves the user name for a specified e-mail address.  
+ The following code example retrieves the user name for a specified email address.  
   
 > [!NOTE]
 >  This example uses the <xref:System.Web.Security.Membership> class to call the <xref:System.Web.Security.SqlMembershipProvider> specified as the `defaultProvider` in the Web.config file. If you need to access the default provider as the type <xref:System.Web.Security.SqlMembershipProvider>, you can cast the <xref:System.Web.Security.Membership.Provider%2A> property of the <xref:System.Web.Security.Membership> class. To access other configured providers as a specific provider type, you can access them by their configured name with the <xref:System.Web.Security.Membership.Providers%2A> property of the <xref:System.Web.Security.Membership> class and cast them as the specific provider type.  
@@ -1071,7 +1071,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="email" /> exceeds 256 characters.</exception>
-        <exception cref="T:System.Configuration.Provider.ProviderException">More than one user with the same e-mail address exists in the database and <see cref="P:System.Web.Security.SqlMembershipProvider.RequiresUniqueEmail" /> is <see langword="true" />.</exception>
+        <exception cref="T:System.Configuration.Provider.ProviderException">More than one user with the same email address exists in the database and <see cref="P:System.Web.Security.SqlMembershipProvider.RequiresUniqueEmail" /> is <see langword="true" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -1522,14 +1522,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the SQL Server membership provider is configured to require a unique e-mail address for each user name.</summary>
+        <summary>Gets a value indicating whether the SQL Server membership provider is configured to require a unique email address for each user name.</summary>
         <value>
-          <see langword="true" /> if the membership provider requires a unique e-mail address; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+          <see langword="true" /> if the membership provider requires a unique email address; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows the  element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the <xref:System.Web.Security.SqlMembershipProvider> instance and configures it to require a unique e-mail address for each user name.  
+ The following code example shows the  element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the <xref:System.Web.Security.SqlMembershipProvider> instance and configures it to require a unique email address for each user name.  
   
 ```  
 <membership defaultProvider="SqlProvider" userIsOnlineTimeWindow="20">  
@@ -1706,7 +1706,7 @@
    
   
 ## Examples  
- The following code example updates the e-mail address for a user.  
+ The following code example updates the email address for a user.  
   
 > [!NOTE]
 >  This example uses the <xref:System.Web.Security.Membership> class to call the <xref:System.Web.Security.SqlMembershipProvider> specified as the `defaultProvider` in the Web.config file. If you need to access the default provider as the type <xref:System.Web.Security.SqlMembershipProvider>, you can cast the <xref:System.Web.Security.Membership.Provider%2A> property of the <xref:System.Web.Security.Membership> class. To access other configured providers as a specific provider type, you can access them by their configured name with the <xref:System.Web.Security.Membership.Providers%2A> property of the <xref:System.Web.Security.Membership> class and cast them as the specific provider type.  
@@ -1739,7 +1739,7 @@
   
  \- or -  
   
- The <see cref="P:System.Web.Security.MembershipUser.Email" /> property of <paramref name="user" /> was equal to an existing e-mail address in the database and <see cref="P:System.Web.Security.SqlMembershipProvider.RequiresUniqueEmail" /> is set to true.  
+ The <see cref="P:System.Web.Security.MembershipUser.Email" /> property of <paramref name="user" /> was equal to an existing email address in the database and <see cref="P:System.Web.Security.SqlMembershipProvider.RequiresUniqueEmail" /> is set to true.  
   
  \- or -  
   

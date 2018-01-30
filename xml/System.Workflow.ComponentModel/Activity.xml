@@ -73,7 +73,7 @@
    
   
 ## Examples  
- This example defines an activity whose purpose is to send an email. The activity defines one property, `Subject`, that uses a dependency property in its implementation. Other properties can be defined in a similar way. The `Execute` method is overridden to provide the logic for sending the email. For a complete example, see the [Send E-mail Activity Sample](http://msdn.microsoft.com/library/bfb5939e-60a9-4037-af4e-2cea9e654669).  
+ This example defines an activity whose purpose is to send an email. The activity defines one property, `Subject`, that uses a dependency property in its implementation. Other properties can be defined in a similar way. The `Execute` method is overridden to provide the logic for sending the email. For a complete example, see the [Send Email Activity Sample](http://msdn.microsoft.com/library/bfb5939e-60a9-4037-af4e-2cea9e654669).  
   
 ```csharp  
 public class SendEmail : Activity  
@@ -91,7 +91,7 @@ public class SendEmail : Activity
   
     protected override ActivityExecutionStatus Execute(ActivityExecutionContext executionContext)  
     {  
-        // Logic to send the e-mail goes here...  
+        // Logic to send the email goes here...  
         return ActivityExecutionStatus.Closed;  
     }  
 }  
@@ -511,7 +511,7 @@ public class SendEmail : Activity
    
   
 ## Examples  
- The following code example shows an implementation of the `Execute` method. In this example, an Outlook e-mail message is constructed and sent. This example is from the Outlook Workflow Wizard SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Outlook Workflow Wizard Sample](http://msdn.microsoft.com/library/7b2ba92b-8456-43f3-87fc-184ffdec4408).  
+ The following code example shows an implementation of the `Execute` method. In this example, an Outlook email message is constructed and sent. This example is from the Outlook Workflow Wizard SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Outlook Workflow Wizard Sample](http://msdn.microsoft.com/library/7b2ba92b-8456-43f3-87fc-184ffdec4408).  
   
  [!code-csharp[WF_Samples#98](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#98)]
  [!code-vb[WF_Samples#98](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#98)]  
@@ -1240,7 +1240,7 @@ public class SendEmail : Activity
 ## Examples  
  The following code invokes this method to raise an event that is defined as a <xref:System.Workflow.ComponentModel.DependencyProperty>.  
   
- This code example is part of the Send E-mail Activity sample and is from the SendEmailActivity.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Send E-mail Activity Sample](http://msdn.microsoft.com/library/bfb5939e-60a9-4037-af4e-2cea9e654669)  
+ This code example is part of the Send Email Activity sample and is from the SendEmailActivity.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Send Email Activity Sample](http://msdn.microsoft.com/library/bfb5939e-60a9-4037-af4e-2cea9e654669)  
   
  [!code-csharp[WF_Samples#233](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#233)]
  [!code-vb[WF_Samples#233](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#233)]  

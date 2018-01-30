@@ -1484,7 +1484,7 @@
    
   
 ## Examples  
- The following code example uses the <xref:System.Web.UI.WebControls.Login.LoggingIn> event to ensure that the user has entered a well-formed e-mail address in the <xref:System.Web.UI.WebControls.Login.UserName%2A> property. If not, the <xref:System.Web.UI.WebControls.Login.LoggingIn> event cancels the login attempt and displays an error message using the <xref:System.Web.UI.WebControls.Login.InstructionText%2A> property.  
+ The following code example uses the <xref:System.Web.UI.WebControls.Login.LoggingIn> event to ensure that the user has entered a well-formed email address in the <xref:System.Web.UI.WebControls.Login.UserName%2A> property. If not, the <xref:System.Web.UI.WebControls.Login.LoggingIn> event cancels the login attempt and displays an error message using the <xref:System.Web.UI.WebControls.Login.InstructionText%2A> property.  
   
  [!code-aspx-csharp[LoginBeforeLogin#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginBeforeLogin/CS/loginbeforelogincs.aspx#1)]
  [!code-aspx-vb[LoginBeforeLogin#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginBeforeLogin/VB/loginbeforeloginvb.aspx#1)]  
@@ -1970,7 +1970,7 @@
    
   
 ## Examples  
- The following code example uses the <xref:System.Web.UI.WebControls.Login.LoggingIn> event to ensure that the user has entered a well-formed e-mail address in the <xref:System.Web.UI.WebControls.Login.UserName%2A> property. If not, the <xref:System.Web.UI.WebControls.Login.LoggingIn> event handler cancels the login attempt and displays the error message specified in the <xref:System.Web.UI.WebControls.Login.InstructionText%2A> property.  
+ The following code example uses the <xref:System.Web.UI.WebControls.Login.LoggingIn> event to ensure that the user has entered a well-formed email address in the <xref:System.Web.UI.WebControls.Login.UserName%2A> property. If not, the <xref:System.Web.UI.WebControls.Login.LoggingIn> event handler cancels the login attempt and displays the error message specified in the <xref:System.Web.UI.WebControls.Login.InstructionText%2A> property.  
   
  [!code-aspx-csharp[LoginOnBeforeLogin#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginOnBeforeLogin/CS/loginonbeforelogincs.aspx#1)]
  [!code-aspx-vb[LoginOnBeforeLogin#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginOnBeforeLogin/VB/loginonbeforeloginvb.aspx#1)]  

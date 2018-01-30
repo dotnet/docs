@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-The <xref:System.Net.Mail.MailAddress> class is used by the <xref:System.Net.Mail.SmtpClient> and <xref:System.Net.Mail.MailMessage> classes to store address information for e-mail messages.  
+The <xref:System.Net.Mail.MailAddress> class is used by the <xref:System.Net.Mail.SmtpClient> and <xref:System.Net.Mail.MailMessage> classes to store address information for email messages.  
   
 A mail address is composed of a <xref:System.Net.Mail.MailAddress.User%2A> name, <xref:System.Net.Mail.MailAddress.Host%2A> name and optionally, a <xref:System.Net.Mail.MailAddress.DisplayName%2A>. The <xref:System.Net.Mail.MailAddress.DisplayName%2A> can contain non-ASCII characters if you encode them.  
   
@@ -84,7 +84,7 @@ The <xref:System.Net.Mail.MailAddress> class does not support the following mail
    
   
 ## Examples  
-The following code example demonstrates sending an e-mail message by using the <xref:System.Net.Mail.SmtpClient>, <xref:System.Net.Mail.MailAddress>, and <xref:System.Net.Mail.MailMessage> classes.  
+The following code example demonstrates sending an email message by using the <xref:System.Net.Mail.SmtpClient>, <xref:System.Net.Mail.MailAddress>, and <xref:System.Net.Mail.MailMessage> classes.  
   
 [!code-cpp[NclMailSync#10](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#10)]
 [!code-csharp[NclMailSync#10](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#10)]  
@@ -115,13 +115,13 @@ The following code example demonstrates sending an e-mail message by using the <
         <Parameter Name="address" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="address">A <see cref="T:System.String" /> that contains an e-mail address.</param>
+        <param name="address">A <see cref="T:System.String" /> that contains an email address.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.MailAddress" /> class using the specified address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `address` parameter can contain a display name and the associated e-mail address if you enclose the address in angle brackets. For example:  
+ The `address` parameter can contain a display name and the associated email address if you enclose the address in angle brackets. For example:  
   
  `"Tom Smith <tsmith@contoso.com>"`  
   
@@ -139,7 +139,7 @@ The following code example demonstrates sending an e-mail message by using the <
    
   
 ## Examples  
- The following code example uses this constructor to create a <xref:System.Net.Mail.MailAddress> object for the <xref:System.Net.Mail.MailMessage.Bcc%2A> recipient of an e-mail message.  
+ The following code example uses this constructor to create a <xref:System.Net.Mail.MailAddress> object for the <xref:System.Net.Mail.MailMessage.Bcc%2A> recipient of an email message.  
   
  [!code-cpp[NclMailSync#9](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#9)]
  [!code-csharp[NclMailSync#9](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#9)]  
@@ -177,7 +177,7 @@ The following code example demonstrates sending an e-mail message by using the <
         <Parameter Name="displayName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="address">A <see cref="T:System.String" /> that contains an e-mail address.</param>
+        <param name="address">A <see cref="T:System.String" /> that contains an email address.</param>
         <param name="displayName">A <see cref="T:System.String" /> that contains the display name associated with <c>address</c>. This parameter can be <see langword="null" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.MailAddress" /> class using the specified address and display name.</summary>
         <remarks>
@@ -193,7 +193,7 @@ The following code example demonstrates sending an e-mail message by using the <
    
   
 ## Examples  
- The following code example uses this constructor to create <xref:System.Net.Mail.MailAddress> instances for the sender and recipient of an e-mail message.  
+ The following code example uses this constructor to create <xref:System.Net.Mail.MailAddress> instances for the sender and recipient of an email message.  
   
  [!code-cpp[NclMailSync#9](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#9)]
  [!code-csharp[NclMailSync#9](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#9)]  
@@ -241,7 +241,7 @@ The following code example demonstrates sending an e-mail message by using the <
         <Parameter Name="displayNameEncoding" Type="System.Text.Encoding" />
       </Parameters>
       <Docs>
-        <param name="address">A <see cref="T:System.String" /> that contains an e-mail address.</param>
+        <param name="address">A <see cref="T:System.String" /> that contains an email address.</param>
         <param name="displayName">A <see cref="T:System.String" /> that contains the display name associated with <c>address</c>.</param>
         <param name="displayNameEncoding">The <see cref="T:System.Text.Encoding" /> that defines the character set used for <c>displayName</c>.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.MailAddress" /> class using the specified address, display name, and encoding.</summary>
@@ -260,7 +260,7 @@ The following code example demonstrates sending an e-mail message by using the <
    
   
 ## Examples  
- The following code example uses this constructor to create <xref:System.Net.Mail.MailAddress> instances for the sender of an e-mail message.  
+ The following code example uses this constructor to create <xref:System.Net.Mail.MailAddress> instances for the sender of an email message.  
   
  [!code-cpp[NclMailASync#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailASync/cpp/mailasync.cpp#2)]
  [!code-csharp[NclMailASync#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailASync/CS/mailasync.cs#2)]
@@ -310,8 +310,8 @@ The following code example demonstrates sending an e-mail message by using the <
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the e-mail address specified when this instance was created.</summary>
-        <value>A <see cref="T:System.String" /> that contains the e-mail address.</value>
+        <summary>Gets the email address specified when this instance was created.</summary>
+        <value>A <see cref="T:System.String" /> that contains the email address.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -321,7 +321,7 @@ The following code example demonstrates sending an e-mail message by using the <
    
   
 ## Examples  
- The following code example displays the address for an e-mail message recipient.  
+ The following code example displays the address for an email message recipient.  
   
  [!code-cpp[NclMailSync#10](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#10)]
  [!code-csharp[NclMailSync#10](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#10)]  
@@ -360,12 +360,12 @@ The following code example demonstrates sending an e-mail message by using the <
 ## Remarks  
  Display names that contain non-ASCII characters are returned in human-readable form. Use the <xref:System.Net.Mail.MailAddress.ToString%2A> method to get the encoded form of the <xref:System.Net.Mail.MailAddress.DisplayName%2A>.  
   
- Some software programs that are used to read e-mail display the <xref:System.Net.Mail.MailAddress.DisplayName%2A> property value instead of, or in addition to, the e-mail address.  
+ Some software programs that are used to read email display the <xref:System.Net.Mail.MailAddress.DisplayName%2A> property value instead of, or in addition to, the email address.  
   
    
   
 ## Examples  
- The following code example displays the <xref:System.Net.Mail.MailAddress.DisplayName%2A> for the recipient of an e-mail message.  
+ The following code example displays the <xref:System.Net.Mail.MailAddress.DisplayName%2A> for the recipient of an email message.  
   
  [!code-cpp[NclMailSync#9](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#9)]
  [!code-csharp[NclMailSync#9](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#9)]  
@@ -464,17 +464,17 @@ The following code example demonstrates sending an e-mail message by using the <
       </ReturnValue>
       <Docs>
         <summary>Gets the host portion of the address specified when this instance was created.</summary>
-        <value>A <see cref="T:System.String" /> that contains the name of the host computer that accepts e-mail for the <see cref="P:System.Net.Mail.MailAddress.User" /> property.</value>
+        <value>A <see cref="T:System.String" /> that contains the name of the host computer that accepts email for the <see cref="P:System.Net.Mail.MailAddress.User" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In a typical e-mail address, the host string includes all information following the "`@`" sign. For example, in `"tsmith@contoso.com"`, the host is `"contoso.com"`.  
+ In a typical email address, the host string includes all information following the "`@`" sign. For example, in `"tsmith@contoso.com"`, the host is `"contoso.com"`.  
   
    
   
 ## Examples  
- The following code example displays the destination of an e-mail message.  
+ The following code example displays the destination of an email message.  
   
  [!code-cpp[NclMailSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#4)]
  [!code-csharp[NclMailSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#4)]  
@@ -521,7 +521,7 @@ The following code example demonstrates sending an e-mail message by using the <
    
   
 ## Examples  
- The following code example displays the destination of an e-mail message.  
+ The following code example displays the destination of an email message.  
   
  [!code-cpp[NclMailSync#7](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#7)]
  [!code-csharp[NclMailSync#7](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#7)]  
@@ -558,12 +558,12 @@ The following code example demonstrates sending an e-mail message by using the <
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In a typical e-mail address, the user string includes all information preceding the "`@`" sign. For example, in `"tsmith@contoso.com"`, the user is `"tsmith"`.  
+ In a typical email address, the user string includes all information preceding the "`@`" sign. For example, in `"tsmith@contoso.com"`, the user is `"tsmith"`.  
   
    
   
 ## Examples  
- The following code example displays the destination of an e-mail message.  
+ The following code example displays the destination of an email message.  
   
  [!code-cpp[NclMailSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#4)]
  [!code-csharp[NclMailSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#4)]  

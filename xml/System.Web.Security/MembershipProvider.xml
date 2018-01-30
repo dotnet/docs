@@ -203,7 +203,7 @@
       <Docs>
         <param name="username">The user name for the new user.</param>
         <param name="password">The password for the new user.</param>
-        <param name="email">The e-mail address for the new user.</param>
+        <param name="email">The email address for the new user.</param>
         <param name="passwordQuestion">The password question for the new user.</param>
         <param name="passwordAnswer">The password answer for the new user</param>
         <param name="isApproved">Whether or not the new user is approved to be validated.</param>
@@ -215,7 +215,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Takes, as input, the name of a new user, a password, and an e-mail address and inserts a new user for the application into the data source. The <xref:System.Web.Security.MembershipProvider.CreateUser%2A> method returns a <xref:System.Web.Security.MembershipUser> object populated with the information for the newly created user. The <xref:System.Web.Security.MembershipProvider.CreateUser%2A> method also defines an `out` parameter (in Visual Basic, you can use `ByRef`) that returns a <xref:System.Web.Security.MembershipCreateStatus> value that indicates that the user was successfully created, or a reason that user creation failed.  
+ Takes, as input, the name of a new user, a password, and an email address and inserts a new user for the application into the data source. The <xref:System.Web.Security.MembershipProvider.CreateUser%2A> method returns a <xref:System.Web.Security.MembershipUser> object populated with the information for the newly created user. The <xref:System.Web.Security.MembershipProvider.CreateUser%2A> method also defines an `out` parameter (in Visual Basic, you can use `ByRef`) that returns a <xref:System.Web.Security.MembershipCreateStatus> value that indicates that the user was successfully created, or a reason that user creation failed.  
   
  The <xref:System.Web.Security.MembershipProvider.CreateUser%2A> method raises the <xref:System.Web.Security.MembershipProvider.ValidatingPassword> event, if a <xref:System.Web.Security.MembershipValidatePasswordEventHandler> event handler has been specified, and continues or cancels the create-user action based on the results of the event. You can use the <xref:System.Web.Security.MembershipProvider.OnValidatingPassword%2A> virtual method to execute the specified <xref:System.Web.Security.MembershipValidatePasswordEventHandler> event handler.  
   
@@ -464,19 +464,19 @@
         <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="emailToMatch">The e-mail address to search for.</param>
+        <param name="emailToMatch">The email address to search for.</param>
         <param name="pageIndex">The index of the page of results to return. <c>pageIndex</c> is zero-based.</param>
         <param name="pageSize">The size of the page of results to return.</param>
         <param name="totalRecords">The total number of matched users.</param>
-        <summary>Gets a collection of membership users where the e-mail address contains the specified e-mail address to match.</summary>
+        <summary>Gets a collection of membership users where the email address contains the specified email address to match.</summary>
         <returns>A <see cref="T:System.Web.Security.MembershipUserCollection" /> collection that contains a page of <paramref name="pageSize" /><see cref="T:System.Web.Security.MembershipUser" /> objects beginning at the page specified by <paramref name="pageIndex" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.Security.MembershipProvider.FindUsersByEmail%2A> returns a list of membership users where the user's e-mail address matches the supplied `emailToMatch` for the configured <xref:System.Web.Security.MembershipProvider.ApplicationName%2A> property. If your data source supports additional search capabilities, such as wildcard characters, you can provide more extensive search capabilities for e-mail addresses.  
+ <xref:System.Web.Security.MembershipProvider.FindUsersByEmail%2A> returns a list of membership users where the user's email address matches the supplied `emailToMatch` for the configured <xref:System.Web.Security.MembershipProvider.ApplicationName%2A> property. If your data source supports additional search capabilities, such as wildcard characters, you can provide more extensive search capabilities for email addresses.  
   
- The results returned by <xref:System.Web.Security.MembershipProvider.FindUsersByEmail%2A> are constrained by the `pageIndex` and `pageSize` parameters. The `pageSize` parameter identifies the number of <xref:System.Web.Security.MembershipUser> objects to return in the <xref:System.Web.Security.MembershipUserCollection> collection. The `pageIndex` parameter identifies which page of results to return where 0 identifies the first page. The `totalRecords` parameter is an `out` parameter that is set to the total number of membership users that matched the `emailToMatch` value. For example, if 13 users were found where `emailToMatch` matched part of or the entire e-mail address, and the `pageIndex` value was 1 with a `pageSize` of 5, then the <xref:System.Web.Security.MembershipUserCollection> would contain the sixth through the tenth users returned. `totalRecords` would be set to 13.  
+ The results returned by <xref:System.Web.Security.MembershipProvider.FindUsersByEmail%2A> are constrained by the `pageIndex` and `pageSize` parameters. The `pageSize` parameter identifies the number of <xref:System.Web.Security.MembershipUser> objects to return in the <xref:System.Web.Security.MembershipUserCollection> collection. The `pageIndex` parameter identifies which page of results to return where 0 identifies the first page. The `totalRecords` parameter is an `out` parameter that is set to the total number of membership users that matched the `emailToMatch` value. For example, if 13 users were found where `emailToMatch` matched part of or the entire email address, and the `pageIndex` value was 1 with a `pageSize` of 5, then the <xref:System.Web.Security.MembershipUserCollection> would contain the sixth through the tenth users returned. `totalRecords` would be set to 13.  
   
    
   
@@ -732,18 +732,18 @@
         <Parameter Name="email" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="email">The e-mail address to search for.</param>
-        <summary>Gets the user name associated with the specified e-mail address.</summary>
-        <returns>The user name associated with the specified e-mail address. If no match is found, return <see langword="null" />.</returns>
+        <param name="email">The email address to search for.</param>
+        <summary>Gets the user name associated with the specified email address.</summary>
+        <returns>The user name associated with the specified email address. If no match is found, return <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Takes, as input, an e-mail address and returns the first user name from the data source where the e-mail address matches the supplied `email` parameter value.  
+ Takes, as input, an email address and returns the first user name from the data source where the email address matches the supplied `email` parameter value.  
   
- If no user name is found with a matching e-mail address, `null` is returned.  
+ If no user name is found with a matching email address, `null` is returned.  
   
- If multiple user names are found that match a particular e-mail address, only the first user name found should be returned. You can implement a custom mechanism for ensuring a unique e-mail address for each user name such as the <xref:System.Web.Security.SqlMembershipProvider.RequiresUniqueEmail%2A> property supported by the <xref:System.Web.Security.SqlMembershipProvider> provider.  
+ If multiple user names are found that match a particular email address, only the first user name found should be returned. You can implement a custom mechanism for ensuring a unique email address for each user name such as the <xref:System.Web.Security.SqlMembershipProvider.RequiresUniqueEmail%2A> property supported by the <xref:System.Web.Security.SqlMembershipProvider> provider.  
   
    
   
@@ -1093,14 +1093,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the membership provider is configured to require a unique e-mail address for each user name.</summary>
+        <summary>Gets a value indicating whether the membership provider is configured to require a unique email address for each user name.</summary>
         <value>
-          <see langword="true" /> if the membership provider requires a unique e-mail address; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+          <see langword="true" /> if the membership provider requires a unique email address; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.MembershipProvider.RequiresUniqueEmail%2A> property indicates whether users must supply a unique e-mail address value when creating a user. If a user already exists in the data source for the current <xref:System.Web.Security.MembershipProvider.ApplicationName%2A>, then the <xref:System.Web.Security.MembershipProvider.CreateUser%2A> method returns `null` and a status value of <xref:System.Web.Security.MembershipCreateStatus.DuplicateEmail>.  
+ The <xref:System.Web.Security.MembershipProvider.RequiresUniqueEmail%2A> property indicates whether users must supply a unique email address value when creating a user. If a user already exists in the data source for the current <xref:System.Web.Security.MembershipProvider.ApplicationName%2A>, then the <xref:System.Web.Security.MembershipProvider.CreateUser%2A> method returns `null` and a status value of <xref:System.Web.Security.MembershipCreateStatus.DuplicateEmail>.  
   
    
   

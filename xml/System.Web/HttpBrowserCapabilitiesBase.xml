@@ -400,9 +400,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a value that indicates whether the browser supports sending e-mail messages by using the HTML <see langword="mailto" /> scheme.</summary>
+        <summary>When overridden in a derived class, gets a value that indicates whether the browser supports sending email messages by using the HTML <see langword="mailto" /> scheme.</summary>
         <value>
-          <see langword="true" /> if the browser supports sending e-mail message by using the HTML <see langword="mailto" /> scheme; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the browser supports sending email message by using the HTML <see langword="mailto" /> scheme; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>

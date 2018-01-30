@@ -106,8 +106,8 @@
       </Parameters>
       <Docs>
         <param name="statusCode">An <see cref="T:System.Net.Mail.SmtpStatusCode" /> value.</param>
-        <param name="failedRecipient">A <see cref="T:System.String" /> that contains the e-mail address.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpFailedRecipientException" /> class with the specified status code and e-mail address.</summary>
+        <param name="failedRecipient">A <see cref="T:System.String" /> that contains the email address.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpFailedRecipientException" /> class with the specified status code and email address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -208,9 +208,9 @@
       </Parameters>
       <Docs>
         <param name="statusCode">An <see cref="T:System.Net.Mail.SmtpStatusCode" /> value.</param>
-        <param name="failedRecipient">A <see cref="T:System.String" /> that contains the e-mail address.</param>
+        <param name="failedRecipient">A <see cref="T:System.String" /> that contains the email address.</param>
         <param name="serverResponse">A <see cref="T:System.String" /> that contains the server response.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpFailedRecipientException" /> class with the specified status code, e-mail address, and server response.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpFailedRecipientException" /> class with the specified status code, email address, and server response.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -246,9 +246,9 @@
       </Parameters>
       <Docs>
         <param name="message">A <see cref="T:System.String" /> that describes the error that occurred.</param>
-        <param name="failedRecipient">A <see cref="T:System.String" /> that contains the e-mail address.</param>
+        <param name="failedRecipient">A <see cref="T:System.String" /> that contains the email address.</param>
         <param name="innerException">The exception that is the cause of the current exception.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpException" /> class with the specified error message, e-mail address, and inner exception.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpException" /> class with the specified error message, email address, and inner exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,8 +274,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates the e-mail address with delivery difficulties.</summary>
-        <value>A <see cref="T:System.String" /> that contains the e-mail address.</value>
+        <summary>Indicates the email address with delivery difficulties.</summary>
+        <value>A <see cref="T:System.String" /> that contains the email address.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

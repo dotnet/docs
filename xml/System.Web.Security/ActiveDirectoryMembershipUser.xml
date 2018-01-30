@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.ActiveDirectoryMembershipUser> object is used to represent a single membership user in the Active Directory membership data store. It exposes information about the membership user such as the e-mail address, and provides functionality for the membership user such as the ability to change or reset his or her password.  
+ The <xref:System.Web.Security.ActiveDirectoryMembershipUser> object is used to represent a single membership user in the Active Directory membership data store. It exposes information about the membership user such as the email address, and provides functionality for the membership user such as the ability to change or reset his or her password.  
   
  An <xref:System.Web.Security.ActiveDirectoryMembershipUser> object is returned by the application's membership provider whenever the application is configured to use an Active Directory data store. In an application that can be configured to use different data stores, or in an application that uses multiple data stores, you can refer to the base class, <xref:System.Web.Security.MembershipUser>. Because the <xref:System.Web.Security.ActiveDirectoryMembershipUser> object does not implement the <xref:System.Web.Security.ActiveDirectoryMembershipUser.LastActivityDate%2A> and <xref:System.Web.Security.ActiveDirectoryMembershipUser.LastLoginDate%2A> properties, you must be prepared to handle the <xref:System.NotSupportedException> that is thrown when these members are accessed on an <xref:System.Web.Security.ActiveDirectoryMembershipUser> object.  
   
@@ -176,8 +176,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the e-mail address of the membership user.</summary>
-        <value>The e-mail address of the membership user.</value>
+        <summary>Gets or sets the email address of the membership user.</summary>
+        <value>The email address of the membership user.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

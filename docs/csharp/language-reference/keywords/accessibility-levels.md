@@ -14,16 +14,16 @@ ms.author: "wiwagn"
 ---
 # Accessibility Levels (C# Reference)
 
-Use the access modifiers, [public](../../../csharp/language-reference/keywords/public.md), [protected](../../../csharp/language-reference/keywords/protected.md), [internal](../../../csharp/language-reference/keywords/internal.md), or [private](../../../csharp/language-reference/keywords/private.md), to specify one of the following declared accessibility levels for members.  
+Use the access modifiers, `public`, `protected`, `internal`, or `private`, to specify one of the following declared accessibility levels for members.  
   
 |Declared accessibility|Meaning|  
 |----------------------------|-------------|  
-|`public`|Access is not restricted.|  
-|`protected`|Access is limited to the containing class or types derived from the containing class.|  
-|`internal`|Access is limited to the current assembly.|  
-|`protected internal`|Access is limited to the current assembly or types derived from the containing class.|  
-|`private`|Access is limited to the containing type.|  
-|`private protected`|Access is limited to the containing class or types derived from the containing class within the current assembly. Available since C# 7.2. |  
+|[`public`](public.md)|Access is not restricted.|  
+|[`protected`](protected.md)|Access is limited to the containing class or types derived from the containing class.|  
+|[`internal`](internal.md)|Access is limited to the current assembly.|  
+|[`protected internal`](protected-internal.md)|Access is limited to the current assembly or types derived from the containing class.|  
+|[`private`](private.md)|Access is limited to the containing type.|  
+|[`private protected`](private-protected.md)|Access is limited to the containing class or types derived from the containing class within the current assembly. Available since C# 7.2. |  
   
  Only one access modifier is allowed for a member or type, except when you use the `protected internal` or `private protected` combinations.  
   

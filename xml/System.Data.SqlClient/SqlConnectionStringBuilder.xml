@@ -1612,7 +1612,7 @@ False
 ## Remarks  
  When connection pooling is enabled and  a timeout error or other login error occurs, an exception will be thrown and subsequent connection attempts will fail for the next five seconds, the "blocking period". If the application attempts to connect within the blocking period, the first exception will be thrown again. Subsequent failures after a blocking period ends will result in a new blocking period that is twice as long as the previous blocking period, up to a maximum of one minute.  
   
- Attempting to connect to Azure SQL databases can fail with transient errors which are typically recovered within a few seconds. However, with the connection pool blocking period behavior, you may not be able to reach your database for extensive periods even though the database is  available. This is especially problematic for apps that need to render fast. The **PoolBlockingPeriod** enables you to select the blocking period best suited for your app. See the [PoolBlockingPeriod Enumeration](../Topic/PoolBlockingPeriod%20Enumeration.md) for available settings.  
+ Attempting to connect to Azure SQL databases can fail with transient errors which are typically recovered within a few seconds. However, with the connection pool blocking period behavior, you may not be able to reach your database for extensive periods even though the database is  available. This is especially problematic for apps that need to render fast. The **PoolBlockingPeriod** enables you to select the blocking period best suited for your app. See the <xref:System.Data.SqlClient.PoolBlockingPeriod> enumeration for available settings.  
   
  ]]></format>
         </remarks>

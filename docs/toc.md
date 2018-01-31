@@ -25,7 +25,9 @@
 ### [Class Library Overview](standard/class-library-overview.md)
 ### [Base Types](standard/base-types/)
 ## [.NET Class libraries](standard/class-libraries.md)
-## [Portability Analyzer](standard/portability-analyzer.md)
+## Analyzers
+### [API Analyzer](standard/analyzers/api-analyzer.md) 
+### [Portability Analyzer](standard/analyzers/portability-analyzer.md)
 ## [Handling and throwing exceptions](standard/exceptions/)
 ## [.NET Assembly File Format](standard/assembly-format.md)
 ## [Garbage Collection](standard/garbage-collection/)
@@ -207,7 +209,7 @@
 <!-- Start of C# Content -->
 # [C# Guide](csharp/index.md)
 ## [Get Started](csharp/getting-started/)
-## [Quick Starts](csharp/quick-starts/)
+## [Quickstarts](csharp/quick-starts/)
 ## [Tutorials](csharp/tutorials/)
 ## [Tour of C#](csharp/tour-of-csharp/)
 <!-- The "What's New" section is short, and one level

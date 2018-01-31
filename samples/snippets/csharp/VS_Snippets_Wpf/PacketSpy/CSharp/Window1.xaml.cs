@@ -278,7 +278,7 @@ namespace PacketSpy
             ReadOnlyCollection<StylusPointPropertyInfo> properties = 
                 pointsDescription.GetStylusPointProperties();
             
-            // Write the name and and value of each property in
+            // Write the name and value of each property in
             // every stylus point.
             StringWriter packetWriter = new StringWriter();
             packetWriter.WriteLine("{0} stylus points", points.Count.ToString());

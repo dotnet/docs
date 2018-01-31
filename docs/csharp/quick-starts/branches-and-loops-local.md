@@ -1,6 +1,6 @@
 ---
-title: Quick Start - Branches and loops - C# Guide
-description: In this quick start about branches and loops, you write C# code to explore the language syntax that supports conditional branches and loops to execute statements repeatedly.
+title: Branches and loops tutorial - C# local quickstarts
+description: In this quickstart about branches and loops, you write C# code to explore the language syntax that supports conditional branches and loops to execute statements repeatedly.
 author: billwagner
 ms.author: wiwagn
 ms.date: 10/31/2017
@@ -10,16 +10,15 @@ ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.custom: mvc
 ---
-
 # Branches and loops
 
-This quick start teaches you how to write code that examines variables and changes the execution path based on those variables. You write C# code and see the results of compiling and running it. The quick start contains a series of lessons that explore branching and looping constructs in C#. These lessons teach you the fundamentals of the C# language.
+This quickstart teaches you how to write code that examines variables and changes the execution path based on those variables. You write C# code and see the results of compiling and running it. The quickstart contains a series of lessons that explore branching and looping constructs in C#. These lessons teach you the fundamentals of the C# language.
 
-This quick start expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [introduction to the local quick starts](local-environment.md) with links to more details.
+This quickstart expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [introduction to the local quickstarts](local-environment.md) with links to more details.
 
 ## Make decisions using the `if` statement
 
-Create a directory named **branches-quickstart**. Make that the current directory and run `dotnet new console -n BranchesAndLoops -o .`. This command creates a new .NET Core console application in the current directory. 
+Create a directory named **branches-quickstart**. Make that the current directory and run `dotnet new console -n BranchesAndLoops -o .`. This command creates a new .NET Core console application in the current directory.
 
 Open **Program.cs** in your favorite editor, and replace the line `Console.Writeline("Hello World!");` with the following code:
 
@@ -46,12 +45,11 @@ written one of the possible branches for an `if` statement: the true branch.
 > make mistakes when you write code. The compiler will
 > find and report the errors. Look closely at the error 
 > output and the code that generated the error. The compler
-> error can usually help you find the problem. 
+> error can usually help you find the problem.
 
-This first sample shows the power of `if` and Boolean types. A *Boolean* is a variable that can have one of two values: `true` or `false`. C# defines a special type, `bool` for Boolean variables. The `if` statement checks the value of a `bool`. When the value is `true`, the statement following the `if` executes. Otherwise, it is skipped. 
+This first sample shows the power of `if` and Boolean types. A *Boolean* is a variable that can have one of two values: `true` or `false`. C# defines a special type, `bool` for Boolean variables. The `if` statement checks the value of a `bool`. When the value is `true`, the statement following the `if` executes. Otherwise, it is skipped.
 
 This process of checking conditions and executing statements based on those conditions is very powerful.
-
 
 ## Make if and else work together
 
@@ -73,7 +71,7 @@ The statement following the `else` keyword executes only when the condition bein
 > The indentation under the `if` and `else` statements is for human readers.
 > The C# language doesn't treat indentation or whitespace as significant. 
 > The statement following the `if` or `else` keyword will be executed based
-> on the condition. All the samples in this quick start follow a common
+> on the condition. All the samples in this quickstart follow a common
 > practice to indent lines based on the control flow of statements.
 
 Because indentation is not significant, you need to use `{` and `}` to
@@ -96,7 +94,7 @@ else
 ```
 
 > [!TIP]
-> Through the rest of this quick start, the code samples all include the braces,
+> Through the rest of this quickstart, the code samples all include the braces,
 > following accepted practices.
 
 You can test more complicated conditions. Add the following code in your `Main` method after the code you've written so far:
@@ -252,7 +250,7 @@ for(int index = 0; index < 10; index++)
 
 This does the same work as the `while` loop and the `do` loop you've
 already used. The `for` statement has three parts that control
-how it works. 
+how it works.
 
 The first part is the **for initializer**: `for index = 0;` declares
 that `index` is the loop variable, and sets its initial value to `0`.
@@ -286,15 +284,15 @@ by 3.  Here are a few hints:
 Try it yourself. Then check how you did. You should get 63 for an answer. You can see one possible answer by
 [viewing the completed code on GitHub](https://github.com/dotnet/docs/tree/master/samples/csharp/branches-quickstart/Program.cs#L46-L54).
 
-You've completed the "branches and loops" quick start.
+You've completed the "branches and loops" quickstart.
 
 You can continue with
-the [Interpolated strings](interpolated-strings-local.md) quick start in
+the [Interpolated strings](interpolated-strings-local.md) quickstart in
 your own development environment.
 
 You can learn more about these concepts in these topics:
 
-[If and else statement](../language-reference/keywords/if-else.md)   
-[While statement](../language-reference/keywords/while.md)   
-[Do statement](../language-reference/keywords/do.md)   
-[For statement](../language-reference/keywords/for.md)   
+[If and else statement](../language-reference/keywords/if-else.md)  
+[While statement](../language-reference/keywords/while.md)  
+[Do statement](../language-reference/keywords/do.md)  
+[For statement](../language-reference/keywords/for.md)  

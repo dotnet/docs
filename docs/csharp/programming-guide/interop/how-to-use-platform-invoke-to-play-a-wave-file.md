@@ -19,7 +19,7 @@ ms.author: "wiwagn"
 The following C# code example illustrates how to use platform invoke services to play a wave sound file on the Windows operating system.  
   
 ## Example  
- This example code uses `DllImport` to import `winmm.dll`'s `PlaySound` method entry point as `Form1 PlaySound()`. The example has a simple Windows Form with a button. Clicking the button opens a standard windows <xref:System.Windows.Forms.OpenFileDialog> dialog box so that you can open a file to play. When a wave file is selected, it is played by using the `PlaySound()` method of the winmm.DLL assembly method. For more information about winmm.dll's `PlaySound` method, see [Using the PlaySound function with Waveform-Audio Files](http://go.microsoft.com/fwlink/?LinkId=148553). Browse and select a file that has a .wav extension, and then click **Open** to play the wave file by using platform invoke. A text box shows the full path of the file selected.  
+ This example code uses `DllImport` to import `winmm.dll`'s `PlaySound` method entry point as `Form1 PlaySound()`. The example has a simple Windows Form with a button. Clicking the button opens a standard windows <xref:System.Windows.Forms.OpenFileDialog> dialog box so that you can open a file to play. When a wave file is selected, it is played by using the `PlaySound()` method of the winmm.DLL assembly method. For more information about winmm.dll's `PlaySound` method, see [Using the PlaySound function with Waveform-Audio Files](https://msdn.microsoft.com/library/aa910379.aspx). Browse and select a file that has a .wav extension, and then click **Open** to play the wave file by using platform invoke. A text box shows the full path of the file selected.  
   
  The **Open Files** dialog box is filtered to show only files that have a .wav extension through the filter settings:  
   
@@ -42,11 +42,10 @@ The following C# code example illustrates how to use platform invoke services to
 4.  Compile and run the code.  
   
 ## .NET Framework Security  
- For more information, see [.NET Framework Security](http://go.microsoft.com/fwlink/?LinkId=37122).  
+ For more information, see [.NET Framework Security](https://technet.microsoft.com/en-us/security/).  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [Interoperability Overview](../../../csharp/programming-guide/interop/interoperability-overview.md)  
- [Interoperability Overview](../../../csharp/programming-guide/interop/interoperability-overview.md)  
- [A Closer Look at Platform Invoke](http://msdn.microsoft.com/library/ba9dd55b-2eaa-45cd-8afd-75cb8d64d243)  
+ [A Closer Look at Platform Invoke](../../../framework/interop/consuming-unmanaged-dll-functions.md#a-closer-look-at-platform-invoke)  
  [Marshaling Data with Platform Invoke](../../../framework/interop/marshaling-data-with-platform-invoke.md)

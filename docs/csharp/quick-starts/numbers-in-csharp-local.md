@@ -1,5 +1,5 @@
 ---
-title: Numbers tutorial - C# local quickstarts
+title: Numbers in C# tutorial - C# local quickstarts
 description: Learn C# by exploring numeric types, their properties and methods.
 author: billwagner
 ms.author: wiwagn

@@ -1,5 +1,5 @@
 ---
-title: Quick Start - Numbers in C# - C# Guide
+title: Numbers in C# tutorial - C# local quickstarts
 description: Learn C# by exploring numeric types, their properties and methods.
 author: billwagner
 ms.author: wiwagn
@@ -11,11 +11,11 @@ ms.devlang: csharp
 ms.custom: mvc
 ---
 
-# Numbers in C# quick start #
+# Numbers in C# quickstart
 
-This quick start teaches you about the number types in C# interactively. You'll write small amounts of code, then you'll compile and run that code. The quick start contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
+This quickstart teaches you about the number types in C# interactively. You'll write small amounts of code, then you'll compile and run that code. The quickstart contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
 
-This quick start expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [introduction to the local quick starts](local-environment.md) with links to more details.
+This quickstart expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [introduction to the local quickstarts](local-environment.md) with links to more details.
 
 ## Explore integer math
 
@@ -356,8 +356,8 @@ You can check your answer by [looking at the finished sample code on GitHub](htt
 
 Try some other formulas if you'd like. 
 
-You've completed the "Numbers in C#" quick start. You can continue with
-the [Branches and loops](branches-and-loops-local.md) quick start in
+You've completed the "Numbers in C#" quickstart. You can continue with
+the [Branches and loops](branches-and-loops-local.md) quickstart in
 your own development environment.
 
 You can learn more about numbers in C# in the following topics:

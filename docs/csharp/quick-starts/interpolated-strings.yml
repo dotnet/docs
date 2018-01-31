@@ -1,7 +1,7 @@
 ### YamlMime:Tutorial
 title: Interpolated strings in C#
 metadata:
-  title:  Interpolated strings in C#. Learn to construct a string that includes other values, such as dates or numbers.
+  title: Interpolated strings interactive tutorial - C# quickstarts
   description: In this tutorial, you'll use your browser to use the C# interpolated string feature interactively. You write C# code and see the results of compiling and running your code directly in the browser.
   audience: Developer
   ms.custom: mvc
@@ -14,7 +14,7 @@ metadata:
 items:
 - durationInMinutes: 2
   content: |
-    This quick start teaches you how to use interpolated strings in C# to insert values into a single ouput string interactively. You use your browser to write C# code and can immediately see the results of compiling and running your code. The quick start contains a series of lessons that concatenate strings, insert values into strings, and format those values in different ways.
+    This quickstart teaches you how to use interpolated strings in C# to insert values into a single ouput string interactively. You use your browser to write C# code and can immediately see the results of compiling and running your code. The quickstart contains a series of lessons that concatenate strings, insert values into strings, and format those values in different ways.
 - title: Create an interpolated string
   durationInMinutes: 2
   content: |
@@ -41,7 +41,7 @@ items:
 - title: Include different data types
   durationInMinutes: 3
   content: |
-    In the previous quick start, you used an interpolated string to insert one string inside of another. An interpolated string expression can be any data type, though. Let's try an interpolated string that has values of multiple data types. 
+    In the previous quickstart, you used an interpolated string to insert one string inside of another. An interpolated string expression can be any data type, though. Let's try an interpolated string that has values of multiple data types. 
     
     The following example includes interpolated expressions with a `Vegetable` object, a member of the `Unit` enumeration, a <xref:System.DateTime> value, and a <xref:System.Decimal> value. Run it in the interactive window.
 
@@ -143,9 +143,9 @@ items:
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
 - content: |
-    You've completed the interpolated strings quick start. 
+    You've completed the interpolated strings quickstart. 
     
-    You can continue these quick starts on your own local development environment. Learn the basics of [local development](local-environment.md) and then pick a quick start. You can try this same exercise, move directly to the next quick start, or start again with the [numbers in C#](numbers-in-csharp-local.md) quickstart.
+    You can continue these quickstarts on your own local development environment. Learn the basics of [local development](local-environment.md) and then pick a quickstart. You can try this same exercise, move directly to the next quickstart, or start again with the [numbers in C#](numbers-in-csharp-local.md) quickstart.
 
     You can learn more about working with interpolated strings in the [Interpolated Strings](../language-reference/keywords/interpolated-strings.md) topic in the C# Reference.
 

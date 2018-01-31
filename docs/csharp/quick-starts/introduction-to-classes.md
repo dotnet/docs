@@ -1,5 +1,5 @@
 ---
-title: Quick Starts - Introduction to Classes - C# Guide
+title: Introduction to classes tutorial - C# local quickstarts
 description: Create your first C# program and explore object oriented concepts
 author: billwagner
 ms.author: wiwagn
@@ -12,7 +12,7 @@ ms.custom: mvc
 ---
 # Introduction to classes
 
-This quick start expects that you have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [introduction to the local quick starts](local-environment.md) with links to more details.
+This quickstart expects that you have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [introduction to the local quickstarts](local-environment.md) with links to more details.
 
 ## Create your application
 
@@ -33,9 +33,9 @@ namespace classes
 }
 ```
 
-In this quick start, you're going to create new types that represent a bank account. Typically developers define each class in a different text file. That makes it easier to manage as a program grows in size.  Create a new file named **BankAccount.cs** in the **classes** directory. 
+In this quickstart, you're going to create new types that represent a bank account. Typically developers define each class in a different text file. That makes it easier to manage as a program grows in size.  Create a new file named **BankAccount.cs** in the **classes** directory. 
 
-This file will contain the definition of a ***bank account***. Object Oriented programming organizes code by creating types in the form of ***classes***. These classes contain the code that represents a specific entity. The `BankAccount` class represents a bank account. The code implements specific operations through methods and properties. In this quick start, the bank account supports this behavior:
+This file will contain the definition of a ***bank account***. Object Oriented programming organizes code by creating types in the form of ***classes***. These classes contain the code that represents a specific entity. The `BankAccount` class represents a bank account. The code implements specific operations through methods and properties. In this quickstart, the bank account supports this behavior:
 
 1. It has a 10-digit number that uniquely identifies the bank account.
 1. It has a string that stores the name or names of the owners.
@@ -71,7 +71,7 @@ namespace classes
 }
 ```
 
-Before going on, let's take a look at what you've built.  The `namespace` declaration provides a way to logically organize your code. This quick start is relatively small, so you'll put all the code in one namespace. 
+Before going on, let's take a look at what you've built.  The `namespace` declaration provides a way to logically organize your code. This quickstart is relatively small, so you'll put all the code in one namespace. 
 
 `public class BankAccount` defines the class, or type, you are creating. Everything inside the `{` and `}` that follows the class declaration defines the behavior of the class. There are five ***members*** of the `BankAccount` class. The first three are ***properties***. Properties are data elements and can have code that enforces validation or other rules. The last two are ***methods***. Methods are blocks of code that peform a single function. Reading the names of each of the members should provide enough information for you or another developer to understand what the class does.
 
@@ -194,11 +194,11 @@ Save the file and type `dotnet run` to try it.
 
 ## Challenge - log all transactions
 
-To finish this quick start, you can write the `GetAccountHistory` method that creates a `string` for the transaction history. add this method to the `BankAccount` type:
+To finish this quickstart, you can write the `GetAccountHistory` method that creates a `string` for the transaction history. add this method to the `BankAccount` type:
 
 [!code-csharp[History](../../../samples/csharp/classes-quickstart/BankAccount.cs#History "Display transaction history")]
 
-This uses the <xref:System.Text.StringBuilder> class to format a string that contains one line for each transaction. You've seen the string formatting code earlier in these quick starts. One new character is `\t`. That inserts a tab to format the output.
+This uses the <xref:System.Text.StringBuilder> class to format a string that contains one line for each transaction. You've seen the string formatting code earlier in these quickstarts. One new character is `\t`. That inserts a tab to format the output.
 
 Add this line to test it in **Program.cs**:
 
@@ -210,6 +210,6 @@ Type `dotnet run` to see the results.
 
 ## Next Steps
 
-If you got stuck, you can see the source for this quick start [in our GitHub repo](https://github.com/dotnet/docs/tree/master/samples/csharp/classes-quickstart/)
+If you got stuck, you can see the source for this quickstart [in our GitHub repo](https://github.com/dotnet/docs/tree/master/samples/csharp/classes-quickstart/)
 
-Congratulations, you've finished all our Quick Starts. If you're eager to learn more, try our [tutorials](../tutorials/index.md)
+Congratulations, you've finished all our Quickstarts. If you're eager to learn more, try our [tutorials](../tutorials/index.md)

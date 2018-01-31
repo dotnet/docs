@@ -1,6 +1,6 @@
 ---
 title: "Byte Data Type (Visual Basic)"
-ms.date: 04/20/2017
+ms.date: 01/31/2018
 ms.prod: .net
 ms.suite: ""
 ms.technology: 
@@ -38,6 +38,14 @@ In the following example, integers equal to 201 that are represented as decimal,
 Starting with Visual Basic 2017, you can also use the underscore character, `_`, as a digit separator to enhance readability, as the following example shows.
 
 [!code-vb[Byte](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#ByteS)]  
+
+Starting with Visual Basic 15.5, you can also use the underscore character (`_`) as a leading separator between the prefix and the hexadecimal, binary, or octal digits. For example:
+
+```vb
+Dim number As Byte = &H_6A
+```
+
+[!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
 
 ## Programming tips
 

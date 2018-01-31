@@ -1,6 +1,6 @@
 ---
 title: "UInteger Data Type"
-ms.date: 04/20/2017
+ms.date: 01/31/2018
 ms.prod: .net
 ms.suite: ""
 ms.technology: 
@@ -21,7 +21,6 @@ helpviewer_keywords:
   - "UI literal type characters [Visual Basic]"
   - "data types [Visual Basic], integral"
 ms.assetid: db7ddd34-4f23-46f5-84dd-8b0f83bb8729
-caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
@@ -50,10 +49,18 @@ Starting with Visual Basic 2017, you can also use the underscore character, `_`,
 
 [!code-vb[UInteger](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#UIntS)]  
 
+Starting with Visual Basic 15.5, you can also use the underscore character (`_`) as a leading separator between the prefix and the hexadecimal, binary, or octal digits. For example:
+
+```vb
+Dim number As UInteger = &H_0F8C_0326
+```
+
+[!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
+
 Numeric literals can also include the `UI` or `ui` [type character](../../programming-guide\language-features\data-types/type-characters.md) to denote the `UInteger` data type, as the following example shows.
 
 ```vb
-Dim number = &H0FAC14D7ui
+Dim number = &H_0FAC_14D7ui
 ```
 
 ## Programming tips

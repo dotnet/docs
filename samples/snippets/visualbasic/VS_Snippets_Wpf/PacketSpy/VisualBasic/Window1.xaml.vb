@@ -265,7 +265,7 @@ Class Window1
         Dim properties As ReadOnlyCollection(Of StylusPointPropertyInfo) = _
                                 pointsDescription.GetStylusPointProperties()
         
-        ' Write the name and and value of each property in
+        ' Write the name and value of each property in
         ' every stylus point.
         Dim packetWriter As New StringWriter()
 

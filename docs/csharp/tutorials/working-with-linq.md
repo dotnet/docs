@@ -53,7 +53,7 @@ var startingDeck = from s in Suits()
 
 foreach (var c in startingDeck)
 {
-    Console.WriteLine(c);
+    Console.WriteLine($"{c.Rank} of {c.Suit}");
 }
 ```
 

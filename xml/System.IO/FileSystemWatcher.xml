@@ -1383,7 +1383,7 @@ public delegate void Renamed(object sender, RenamedEventArgs e);
  ```vb
 Public Delegate Sub RenamedEventHandler(sender As Object, e As RenamedEventArgs)
  ```
- The <xref:System.IO.RenamedEventArgs> object provides information about the renaming operation, such as the type of the rename (the <xref:System.IO.RenamedEventArgs.ChangeType> property), the old and new name, and the old and new path. Note that the <xref:System.IO.FileSystemEventArgs.Name> property may be null for renamed events if the <xref:System.IO.FileSystemWatcher> does not get matching old and new name events from the operating system.
+ The <xref:System.IO.RenamedEventArgs> object provides information about the renaming operation, such as the type of the rename (the <xref:System.IO.FileSystemEventArgs.ChangeType> property), the old and new name, and the old and new path. Note that the <xref:System.IO.FileSystemEventArgs.Name> property may be null for renamed events if the <xref:System.IO.FileSystemWatcher> does not get matching old and new name events from the operating system.
 
  Renaming the directory you are watching will not raise a notification. Notifications are only raised for entries inside the directory you are watching.  
   

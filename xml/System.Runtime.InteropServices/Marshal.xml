@@ -170,20 +170,6 @@
         <summary>Allocates memory from the unmanaged memory of the process.</summary>
       </Docs>
     </MemberGroup>
-    <MemberGroup MemberName="AllocHGlobal">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Allocates memory from the unmanaged memory of the process.</summary>
-      </Docs>
-    </MemberGroup>
     <Member MemberName="AllocHGlobal">
       <MemberSignature Language="C#" Value="public static IntPtr AllocHGlobal (int cb);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int AllocHGlobal(int32 cb) cil managed" />
@@ -517,20 +503,6 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Copy">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Copies data from a managed array to an unmanaged memory pointer, or from an unmanaged memory pointer to a managed array.</summary>
-      </Docs>
-    </MemberGroup>
     <MemberGroup MemberName="Copy">
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -2257,20 +2229,6 @@
         <summary>Returns an interface pointer that represents an interface for an object.</summary>
       </Docs>
     </MemberGroup>
-    <MemberGroup MemberName="GetComInterfaceForObject">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an interface pointer that represents an interface for an object.</summary>
-      </Docs>
-    </MemberGroup>
     <Member MemberName="GetComInterfaceForObject">
       <MemberSignature Language="C#" Value="public static IntPtr GetComInterfaceForObject (object o, Type T);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetComInterfaceForObject(object o, class System.Type T) cil managed" />
@@ -2848,20 +2806,6 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetExceptionForHR">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts an HRESULT error code to a corresponding <see cref="T:System.Exception" /> object.</summary>
-      </Docs>
-    </MemberGroup>
     <MemberGroup MemberName="GetExceptionForHR">
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -4280,20 +4224,6 @@
         <summary>Retrieves the name of the type represented by an [ITypeInfo](http://msdn.microsoft.com/library/f3356463-3373-4279-bae1-953378aa2680) object.</summary>
       </Docs>
     </MemberGroup>
-    <MemberGroup MemberName="GetTypeInfoName">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the name of the type represented by an [ITypeInfo](http://msdn.microsoft.com/en-us/f3356463-3373-4279-bae1-953378aa2680) object.</summary>
-      </Docs>
-    </MemberGroup>
     <Member MemberName="GetTypeInfoName">
       <MemberSignature Language="C#" Value="public static string GetTypeInfoName (System.Runtime.InteropServices.ComTypes.ITypeInfo typeInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetTypeInfoName(class System.Runtime.InteropServices.ComTypes.ITypeInfo typeInfo) cil managed" />
@@ -4383,16 +4313,6 @@
         <altmember cref="M:System.Runtime.InteropServices.UCOMITypeInfo.GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetTypeLibGuid">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the library identifier (LIBID) of a type library.</summary>
-      </Docs>
-    </MemberGroup>
     <MemberGroup MemberName="GetTypeLibGuid">
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4534,16 +4454,6 @@
         <summary>Retrieves the LCID of a type library.</summary>
       </Docs>
     </MemberGroup>
-    <MemberGroup MemberName="GetTypeLibLcid">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the LCID of a type library.</summary>
-      </Docs>
-    </MemberGroup>
     <Member MemberName="GetTypeLibLcid">
       <MemberSignature Language="C#" Value="public static int GetTypeLibLcid (System.Runtime.InteropServices.ComTypes.ITypeLib typelib);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetTypeLibLcid(class System.Runtime.InteropServices.ComTypes.ITypeLib typelib) cil managed" />
@@ -4603,16 +4513,6 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetTypeLibName">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the name of a type library.</summary>
-      </Docs>
-    </MemberGroup>
     <MemberGroup MemberName="GetTypeLibName">
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5185,20 +5085,6 @@
         <summary>Allocates a managed <see cref="T:System.String" /> and copies all or part of an unmanaged ANSI string into it.</summary>
       </Docs>
     </MemberGroup>
-    <MemberGroup MemberName="PtrToStringAnsi">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Allocates a managed <see cref="T:System.String" /> and copies all or part of an unmanaged ANSI string into it.</summary>
-      </Docs>
-    </MemberGroup>
     <Member MemberName="PtrToStringAnsi">
       <MemberSignature Language="C#" Value="public static string PtrToStringAnsi (IntPtr ptr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string PtrToStringAnsi(native int ptr) cil managed" />
@@ -5315,16 +5201,6 @@
         <altmember cref="M:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi(System.String)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="PtrToStringAuto">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Allocates a managed <see cref="T:System.String" /> and copies all or part of an unmanaged string into it.</summary>
-      </Docs>
-    </MemberGroup>
     <MemberGroup MemberName="PtrToStringAuto">
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5509,20 +5385,6 @@
         <summary>Allocates a managed <see cref="T:System.String" /> and copies all or part of an unmanaged Unicode string into it.</summary>
       </Docs>
     </MemberGroup>
-    <MemberGroup MemberName="PtrToStringUni">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Allocates a managed <see cref="T:System.String" /> and copies all or part of an unmanaged Unicode string into it.</summary>
-      </Docs>
-    </MemberGroup>
     <Member MemberName="PtrToStringUni">
       <MemberSignature Language="C#" Value="public static string PtrToStringUni (IntPtr ptr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string PtrToStringUni(native int ptr) cil managed" />
@@ -5677,20 +5539,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="PtrToStructure">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Marshals data from an unmanaged block of memory to a managed object.</summary>
-      </Docs>
-    </MemberGroup>
     <MemberGroup MemberName="PtrToStructure">
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -6021,20 +5869,6 @@
         <summary>Reads a single byte from unmanaged memory. Reading from unaligned memory locations is supported.</summary>
       </Docs>
     </MemberGroup>
-    <MemberGroup MemberName="ReadByte">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reads a single byte from unmanaged memory. Reading from unaligned memory locations is supported.</summary>
-      </Docs>
-    </MemberGroup>
     <Member MemberName="ReadByte">
       <MemberSignature Language="C#" Value="public static byte ReadByte (IntPtr ptr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8 ReadByte(native int ptr) cil managed" />
@@ -6232,20 +6066,6 @@
         <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="ReadInt16">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reads a 16-bit signed integer from unmanaged memory. Reading from unaligned memory locations is supported.</summary>
-      </Docs>
-    </MemberGroup>
     <MemberGroup MemberName="ReadInt16">
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -6458,20 +6278,6 @@
         <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="ReadInt32">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reads a 32-bit signed integer from unmanaged memory. Reading from unaligned memory locations is supported.</summary>
-      </Docs>
-    </MemberGroup>
     <MemberGroup MemberName="ReadInt32">
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -6711,20 +6517,6 @@
         <summary>Reads a 64-bit signed integer from unmanaged memory. Reading from unaligned memory locations is supported.</summary>
       </Docs>
     </MemberGroup>
-    <MemberGroup MemberName="ReadInt64">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reads a 64-bit signed integer from unmanaged memory. Reading from unaligned memory locations is supported.</summary>
-      </Docs>
-    </MemberGroup>
     <Member MemberName="ReadInt64">
       <MemberSignature Language="C#" Value="public static long ReadInt64 (IntPtr ptr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 ReadInt64(native int ptr) cil managed" />
@@ -6931,20 +6723,6 @@
         <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="ReadIntPtr">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reads a processor native sized integer from unmanaged memory. Reading from unaligned memory locations is supported.</summary>
-      </Docs>
-    </MemberGroup>
     <MemberGroup MemberName="ReadIntPtr">
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -7755,20 +7533,6 @@
         <altmember cref="M:System.Runtime.InteropServices.Marshal.GetComObjectData(System.Object,System.Object)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="SizeOf">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the unmanaged size, in bytes, of a class.</summary>
-      </Docs>
-    </MemberGroup>
     <MemberGroup MemberName="SizeOf">
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -8688,20 +8452,6 @@
         <summary>Throws an exception with a specific failure HRESULT value.</summary>
       </Docs>
     </MemberGroup>
-    <MemberGroup MemberName="ThrowExceptionForHR">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Throws an exception with a specific failure HRESULT value.</summary>
-      </Docs>
-    </MemberGroup>
     <Member MemberName="ThrowExceptionForHR">
       <MemberSignature Language="C#" Value="public static void ThrowExceptionForHR (int errorCode);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ThrowExceptionForHR(int32 errorCode) cil managed" />
@@ -8938,20 +8688,6 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
         <summary>Writes a single byte value to unmanaged memory.</summary>
       </Docs>
     </MemberGroup>
-    <MemberGroup MemberName="WriteByte">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a single byte value to unmanaged memory.</summary>
-      </Docs>
-    </MemberGroup>
     <Member MemberName="WriteByte">
       <MemberSignature Language="C#" Value="public static void WriteByte (IntPtr ptr, byte val);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteByte(native int ptr, unsigned int8 val) cil managed" />
@@ -9138,20 +8874,6 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
         <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteInt16">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a 16-bit signed integer value to unmanaged memory. Writing to unaligned memory locations is supported.</summary>
-      </Docs>
-    </MemberGroup>
     <MemberGroup MemberName="WriteInt16">
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -9561,20 +9283,6 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
         <summary>Writes a 32-bit signed integer value to unmanaged memory. Writing to unaligned memory locations is supported.</summary>
       </Docs>
     </MemberGroup>
-    <MemberGroup MemberName="WriteInt32">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a 32-bit signed integer value to unmanaged memory. Writing to unaligned memory locations is supported.</summary>
-      </Docs>
-    </MemberGroup>
     <Member MemberName="WriteInt32">
       <MemberSignature Language="C#" Value="public static void WriteInt32 (IntPtr ptr, int val);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt32(native int ptr, int32 val) cil managed" />
@@ -9782,20 +9490,6 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
         <summary>Writes a 64-bit signed integer value to unmanaged memory. Writing to unaligned memory locations is supported.</summary>
       </Docs>
     </MemberGroup>
-    <MemberGroup MemberName="WriteInt64">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a 64-bit signed integer value to unmanaged memory. Writing to unaligned memory locations is supported.</summary>
-      </Docs>
-    </MemberGroup>
     <Member MemberName="WriteInt64">
       <MemberSignature Language="C#" Value="public static void WriteInt64 (IntPtr ptr, long val);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt64(native int ptr, int64 val) cil managed" />
@@ -9989,20 +9683,6 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
         <altmember cref="M:System.Runtime.InteropServices.Marshal.Copy(System.Int32[],System.Int32,System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteIntPtr">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a processor native-sized integer value to unmanaged memory. 32-bit integers are written on 32-bit systems, and 64-bit integers are written on 64-bit systems. Writing to unaligned memory locations is supported.</summary>
-      </Docs>
-    </MemberGroup>
     <MemberGroup MemberName="WriteIntPtr">
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

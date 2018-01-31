@@ -47,5 +47,5 @@ The following C# code example illustrates how to use platform invoke services to
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [Interoperability Overview](../../../csharp/programming-guide/interop/interoperability-overview.md)  
- [A Closer Look at Platform Invoke](https://docs.microsoft.com/en-us/dotnet/framework/interop/consuming-unmanaged-dll-functions#a-closer-look-at-platform-invoke)  
+ [A Closer Look at Platform Invoke](../../../framework/interop/consuming-unmanaged-dll-functions.md#a-closer-look-at-platform-invoke)  
  [Marshaling Data with Platform Invoke](../../../framework/interop/marshaling-data-with-platform-invoke.md)

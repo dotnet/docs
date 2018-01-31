@@ -29,9 +29,9 @@ ms.workload:
   - "dotnet"
 ---
 # Consuming Unmanaged DLL Functions
-Platform invoke is a service that enables managed code to call unmanaged functions implemented in dynamic link libraries (DLLs), such as those in the Win32 API. It locates and invokes an exported function and marshals its arguments (integers, strings, arrays, structures, and so on) across the interoperation boundary as needed. For more information about this service, see [A Closer Look at Platform Invoke](http://msdn.microsoft.com/library/ba9dd55b-2eaa-45cd-8afd-75cb8d64d243).  
+Platform invoke is a service that enables managed code to call unmanaged functions implemented in dynamic link libraries (DLLs), such as those in the Win32 API. It locates and invokes an exported function and marshals its arguments (integers, strings, arrays, structures, and so on) across the interoperation boundary as needed.  
   
- This section introduces several tasks associated with consuming unmanaged DLL functions. In addition to the following tasks, there are general considerations and a link providing additional information and examples.  
+ This section introduces tasks associated with consuming unmanaged DLL functions and provides more information about platform invoke. In addition to the following tasks, there are general considerations and a link providing additional information and examples.  
   
 #### To consume exported DLL functions  
   
@@ -82,4 +82,3 @@ A platform invoke call to an unmanaged DLL function
  [Interoperating with Unmanaged Code](../../../docs/framework/interop/index.md)  
  [Platform Invoke Examples](../../../docs/framework/interop/platform-invoke-examples.md)  
  [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)  
- [Consuming Unmanaged DLL Functions](../../../docs/framework/interop/consuming-unmanaged-dll-functions.md)

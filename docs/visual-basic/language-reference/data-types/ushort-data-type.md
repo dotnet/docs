@@ -23,7 +23,6 @@ helpviewer_keywords:
 ms.assetid: 138db892-665d-4ba8-9cae-d8d91c4a8f39
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.manager: "wpickett"
 ---
 # UShort data type (Visual Basic)
 
@@ -56,18 +55,12 @@ Starting with Visual Basic 15.5, you can also use the underscore character (`_`)
 Dim number As UShort = &H_FF8C
 ```
 
-To use the underscore character as a leading separator, you must add the following element to your Visual Basic project (*.vbproj) file:
-
-```xml
-<PropertyGroup>
-  <LangVersion>15.5</LangVersion>
-</PropertyGroup>
-```
+[!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
 
 Numeric literals can also include the `US` or `us` [type character](../../programming-guide\language-features\data-types/type-characters.md) to denote the `UShort` data type, as the following example shows.
 
 ```vb
-Dim number = &H5826us
+Dim number = &H_5826us
 ```
 
 ## Programming tips

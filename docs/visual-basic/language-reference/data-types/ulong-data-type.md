@@ -23,7 +23,6 @@ helpviewer_keywords:
 ms.assetid: 017e0702-774e-44ae-bedc-786b424ca84e
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.manager: "wpickett"
 ---
 # ULong data type (Visual Basic)
 
@@ -55,18 +54,13 @@ Starting with Visual Basic 15.5, you can also use the underscore character (`_`)
 ```vb
 Dim number As ULong = &H_F9AC_0326_1489_D68C
 ```
-To use the underscore character as a leading separator, you must add the following element to your Visual Basic project (*.vbproj) file:
 
-```xml
-<PropertyGroup>
-  <LangVersion>15.5</LangVersion>
-</PropertyGroup>
-```
+[!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
 
 Numeric literals can also include the `UL` or `ul` [type character](../../programming-guide\language-features\data-types/type-characters.md) to denote the `ULong` data type, as the following example shows.
 
 ```vb
-Dim number = &H00_00_0A_96_2F_AC_14_D7ul
+Dim number = &H_00_00_0A_96_2F_AC_14_D7ul
 ```
 
 ## Programming tips

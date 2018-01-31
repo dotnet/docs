@@ -27,7 +27,6 @@ helpviewer_keywords:
 ms.assetid: b4770c34-1804-4f8c-b512-c10b0893e516
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.manager: "wpickett"
 ---
 # Long data type (Visual Basic)
 
@@ -60,17 +59,12 @@ Starting with Visual Basic 15.5, you can also use the underscore character (`_`)
 Dim number As Long = &H_0FAC_0326_1489_D68C
 ```
 
-To use the underscore character as a leading separator, you must add the following element to your Visual Basic project (*.vbproj) file:
+[!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
 
-```xml
-<PropertyGroup>
-  <LangVersion>15.5</LangVersion>
-</PropertyGroup>
-```
 Numeric literals can also include the `L` [type character](../../programming-guide\language-features\data-types/type-characters.md) to denote the `Long` data type, as the following example shows.
 
 ```vb
-Dim number = &H0FAC0326L
+Dim number = &H_0FAC_0326_1489_D68CL
 ```
 
 ## Programming tips

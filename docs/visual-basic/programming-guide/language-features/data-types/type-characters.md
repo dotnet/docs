@@ -142,13 +142,7 @@ Starting with Visual Basic 15.5, you can also use the underscore character (`_`)
 Dim number As Integer = &H_C305_F860
 ```
 
-To use the underscore character as a leading separator, you must add the following element to your Visual Basic project (*.vbproj) file:
-
-```xml
-<PropertyGroup>
-  <LangVersion>15.5</LangVersion>
-</PropertyGroup>
-```
+[!INCLUDE [supporting-underscores](../../../../../includes/vb-separator-langversion.md)]
 
 ## See Also
 

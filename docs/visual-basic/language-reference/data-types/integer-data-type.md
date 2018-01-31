@@ -28,7 +28,6 @@ helpviewer_keywords:
 ms.assetid: a8f233b4-4be3-455c-861b-05af2fbb6c60
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.manager: "wpickett"
 ---
 # Integer data type (Visual Basic)
 Holds signed 32-bit (4-byte) integers that range in value from -2,147,483,648 through 2,147,483,647.  
@@ -59,18 +58,12 @@ Starting with Visual Basic 15.5, you can also use the underscore character (`_`)
 Dim number As Integer = &H_C305_F860
 ```
 
-To use the underscore character as a leading separator, you must add the following element to your Visual Basic project (*.vbproj) file:
-
-```xml
-<PropertyGroup>
-  <LangVersion>15.5</LangVersion>
-</PropertyGroup>
-```
+[!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
 
 Numeric literals can also include the `I` [type character](../../programming-guide\language-features\data-types/type-characters.md) to denote the `Integer` data type, as the following example shows.
 
 ```vb
-Dim number = &H035826I
+Dim number = &H_035826I
 ```
 
 ## Programming tips

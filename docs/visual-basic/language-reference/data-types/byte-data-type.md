@@ -14,7 +14,6 @@ helpviewer_keywords:
 ms.assetid: eed44dff-eaee-4937-a89f-444e418e74f6
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.manager: "wpickett"
 ---
 # Byte data type (Visual Basic)
 Holds unsigned 8-bit (1-byte) integers that range in value from 0 through 255.
@@ -46,13 +45,7 @@ Starting with Visual Basic 15.5, you can also use the underscore character (`_`)
 Dim number As Byte = &H_6A
 ```
 
-To use the underscore character as a leading separator, you must add the following element to your Visual Basic project (*.vbproj) file:
-
-```xml
-<PropertyGroup>
-  <LangVersion>15.5</LangVersion>
-</PropertyGroup>
-```
+[!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
 
 ## Programming tips
 

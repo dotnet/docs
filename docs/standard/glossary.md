@@ -40,9 +40,9 @@ See [ASP.NET Core documentation](/aspnet/#pivot=core).
 
 ## assembly
 
-A *.dll* file that contains a collection of APIs that can be called by apps or other assemblies.
+A *.dll*/*.exe* file that can contain a collection of APIs that can be called by apps or other assemblies.
 
-A .NET assembly is a collection of types. An assembly includes interfaces, classes, structures, enumerations, and delegates.  Assemblies in a project's *bin* folder are sometimes referred to as *binaries*. See also [library](#library).
+An assembly may include types such as interfaces, classes, structures, enumerations, and delegates. Assemblies in a project's *bin* folder are sometimes referred to as *binaries*. See also [library](#library).
 
 ## CLR
 
@@ -206,7 +206,7 @@ You can think of this technology as a persistent JIT compiler. It usually compil
 
 A NuGet package &mdash; or just a package &mdash; is a *.zip* file with one or more assemblies of the same name along with additional metadata such as the author name.
 
-The *.zip* file has a *.nupkg* extension and may contain assets, such as *.dll* files and *.xml* files, for use with multiple frameworks and versions. When installed in an app or library, the appropriate assets are selected based on the target framework specified by the app or library. The assets that define the interface are in the *ref* folder, and the assets that define the implementation are in the *lib* folder.
+The *.zip* file has a *.nupkg* extension and may contain assets, such as *.dll* files and *.xml* files, for use with multiple target frameworks and versions. When installed in an app or library, the appropriate assets are selected based on the target framework specified by the app or library. The assets that define the interface are in the *ref* folder, and the assets that define the implementation are in the *lib* folder.
 
 ## platform
 

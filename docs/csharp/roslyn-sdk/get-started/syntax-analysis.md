@@ -11,26 +11,47 @@ ms.devlang: devlang-csharp
 ms.custom: mvc
 ---
 
-## Prerequisites
-* [Visual Studio 2015](https://www.visualstudio.com/downloads)
-* [.NET Compiler Platform SDK](https://aka.ms/roslynsdktemplates)
+# Get Started with Syntax Analysis
 
-## Introduction
-Today, the Visual Basic and C# compilers are black boxes - text goes in and bytes come out - with no transparency into the intermediate phases of the compilation pipeline. With the **.NET Compiler Platform** (formerly known as "Roslyn"), tools and developers can leverage the exact same data structures and algorithms the compiler uses to analyze and understand code with confidence that that information is accurate and complete.
+In this walkthrough we'll explore the **Syntax API**. The syntax API provides access to the data structures that describe a C# or Visual Basic program. These data structures have enough detail that the can fully represent any program of any size. These structures can describe complete programs that compile and run correctly. They can describe the program you are writing, while you are editing, including text that does not yet represent valid C# syntax.
 
-In this walkthrough we'll explore the **Syntax API**. The **Syntax API** exposes the parsers, the syntax trees themselves, and utilities for reasoning about and constructing them.
+To enable this rich expression, the data structures and APIs that make up the syntax API are necessarily complex. As is traditional, let's start with what the data structure looks like for the typical "Hello World" program:
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace HelloWorld
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
+```
+
+The syntax tree that represents this program has a root node that is a **compilation unit**. A compilation unit represents the text in one source file. The children of that compilation unit represent syntax elements you're already familiar with: three **using directives** and a **namespace declaration**. The namespace declaration contains a child **class declaration**. The class declaration contains one **method declaration**. The tree structure continues down to the lowest levels: the string "Hello World!" is a **string literal token** that is a descendent of an **argument**. The syntax API provides access to the structure of the program. You can query for specific code practices, walk the entire tree to understand the code, and create new trees by modifying the existing tree.
+
+That brief description provides an overview of the kind of information accessible using the syntax API. The full capabilities go deeper to include information about how the code is formatted including line breaks, whitespace and indenting. Using this information you can fully represent the code as written and read by human programmers or the compiler. Using this structure enables you to interact with the source code on a deeply meaningful level. It's no longer text strings, but data that represents the structure of a C# program. 
+
+You'll use the Syntax API for any analysis that uses the structure of C# code. The **Syntax API** exposes the parsers, the syntax trees themselves, and utilities for reasoning about and constructing them. It's how you search code for specific syntax elements or read the code for a program. 
 
 ## Understanding Syntax Trees
-The **Syntax API** exposes the syntax trees the compilers use to understand Visual Basic and C# programs. They are produced by the same parser that runs when a project is built or a developer hits F5. The syntax trees have full-fidelity with the language; every bit of information in a code file is represented in the tree, including things like comments or whitespace. Writing a syntax tree to text will reproduce the exact original text that was parsed. The syntax trees are also immutable; once created a syntax tree can never be changed. This means consumers of the trees can analyze the trees on multiple threads, without locks or other concurrency measures, with the security that the data will never change under.
+
+A syntax tree is a data structure used by the C# and Visual Basic compilers to understand C# and Visual Basic programs. Syntax trees are produced by the same parser that runs when a project is built or a developer hits F5. The syntax trees have full-fidelity with the language; every bit of information in a code file is represented in the tree. Writing a syntax tree to text will reproduce the exact original text that was parsed. The syntax trees are also **immutable**; once created a syntax tree can never be changed. This means consumers of the trees can analyze the trees on multiple threads, without locks or other concurrency measures, with the security that the data will never change. You can use APIs to create new trees that are the result of modifying an existing tree.
 
 The four primary building blocks of syntax trees are:
 
-* The **SyntaxTree** class, an instance of which represents an entire parse tree. **SyntaxTree** is an abstract class which has language-specific derivatives. To parse syntax in a particular language you will need to use the parse methods on the **CSharpSyntaxTree** (or **VisualBasicSyntaxTree**) class.
-* The **SyntaxNode** class, instances of which represent syntactic constructs such as declarations, statements, clauses, and expressions.
-* The **SyntaxToken** structure, which represents an individual keyword, identifier, operator, or punctuation.
-* And lastly the **SyntaxTrivia** structure, which represents syntactically insignificant bits of information such as the whitespace between tokens, preprocessing directives, and comments.
+* The <xref:Microsoft.CodeAnalysis.SyntaxTree?displayProperty=nameWithType> class, an instance of which represents an entire parse tree. <xref:Microsoft.CodeAnalysis.SyntaxTree> is an abstract class which has language-specific derivatives. To parse syntax in a particular language you will need to use the parse methods on the <xref:Microsoft.CodeAnalysis.CSharp.SyntaxTree?displayProperty=nameWithType> (or <xref:Microsoft.CodeAnalysis.VisualBasic.VisualBasicSyntaxTree?displayProperty=nameWithType>) class.
+* The <xref:Microsoft.CodeAnalysis.SyntaxNode?displayProperty=nameWithType> class, instances of which represent syntactic constructs such as declarations, statements, clauses, and expressions.
+* The <xref:Microsoft.CodeAnalysis.SyntaxToken?displayProperty=nameWithType> structure, which represents an individual keyword, identifier, operator, or punctuation.
+* And lastly the <xref:Microsoft.CodeAnalysis.SyntaxTrivia?displayProperty=nameWithType> structure, which represents syntactically insignificant bits of information such as the whitespace between tokens, preprocessing directives, and comments.
 
-Trivia, tokens, and nodes are composed hierarchically to form a tree that completely represents everything in a fragment of Visual Basic or C# code. For example, were you to examine the following C# source file using the **Syntax Visualizer** (In Visual Studio, choose **View -> Other Windows -> Syntax Visualizer**) it tree view would look like this:
+Trivia, tokens, and nodes are composed hierarchically to form a tree that completely represents everything in a fragment of Visual Basic or C# code. For example, were you to examine the preceding C# source file using the **Syntax Visualizer** (In Visual Studio, choose **View -> Other Windows -> Syntax Visualizer**) it tree view would look like this:
 
 **SyntaxNode**: Blue | **SyntaxToken**: Green | **SyntaxTrivia**: Red
 ![C# Code File](media/walkthrough-csharp-syntax-figure1.png)
@@ -38,93 +59,55 @@ Trivia, tokens, and nodes are composed hierarchically to form a tree that comple
 By navigating this tree structure you can find any statement, expression, token, or bit of whitespace in a code file!
 
 ## Traversing Trees
+
+You can examine the nodes in a syntax tree in two ways. You can traverse the tree to examine each node. Alternatively, you can query for specific elements or nodes.
+
+> [!IMPORTANT]
+> The samples below require the **.NET Compiler SDK** installed as part of Visual Studio 2017. You can find the .NET Compiler SDK as the last optional component listed under the **Visual Studio extension development** workload. Without this component, you won't have the templates listed below.
+
 ### Manual Traversal
-The following steps use **Edit and Continue** to demonstrate how to parse C# source text and find a parameter declaration contained in the source.
+
+You can see the finished code for this sample in [our GitHub repository](https://github.com/dotnet/docs/samples/csharp/roslyn-sdk/SyntaxQuickStart).
+
+> [!NOTE]
+> The Syntax Tree types use inheritance to describe the different syntax elements that are valid at different locations in the program. Using these APIs often means casting properties or collection members to specific derived types. In the examples, the assignment and the casts are separate statments, using explicitly typed variables. That was done to help you see the return types of the API and the runtime type of the objects returned.
 
 #### Example - Manually traversing the tree
-1) Create a new C# **Stand-Alone Code Analysis Tool** project.
+
+Create a new C# **Stand-Alone Code Analysis Tool** project:
   * In Visual Studio, choose **File -> New -> Project...** to display the New Project dialog.
   * Under **Visual C# -> Extensibility**, choose **Stand-Alone Code Analysis Tool**.
   * Name your project "**GettingStartedCS**" and click OK. 
 
-2) Add the following using directives to your Program.cs file:
-```C#
-using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
-```
+You're going to analyze the basic "Hello World!" program shown above. 
+Add the text for the hello world program as a constant in your `Program` class:
 
-3) Enter the following code into your **Main** method:
-```C#
-SyntaxTree tree = CSharpSyntaxTree.ParseText(
-@"using System;
-using System.Collections;
-using System.Linq;
-using System.Text;
- 
-namespace HelloWorld
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine(""Hello, World!"");
-        }
-    }
-}");
- 
-var root = (CompilationUnitSyntax)tree.GetRoot();
-```
+[!code-csharp[Declare the program text](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/SyntaxQuickStart/Proram.cs#1 "Declare a constant string for the program text to analyze")]
 
-4) Move your cursor to the line containing the **closing brace** of your **Main** method and set a breakpoint there.
-  * In Visual Studio, choose **Debug -> Toggle Breakpoint**.
+Next, add the following code to build the **syntax tree** for the code text in the `programText` constant.  Add the following line to your `Main` method:
 
-5) Run the program.
-  * In Visual Studio, choose **Debug -> Start Debugging**.
+[!code-csharp[Create the tree](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/SyntaxQuickStart/Proram.cs#2 "Create the syntax tree")]
 
-6) Inspect the root variable in the debugger by hovering over it and expanding the datatip.
-  * Note that its **Usings** property is a collection with four elements; one for each using directive in the parsed text.
-  * Note that the **KindText** of the root node is **CompilationUnit**.
-  * Note that the **Members** collection of the **CompilationUnitSyntax** node has one element.
+Those two lines create the tree and retrieve the root node of that tree. You can now examine the nodes in the tree. Add these lines to your `Main` method to display some of the properties of the root node in the tree:
 
-7) Insert the following statement at the end of the Main method to store the first member of the root **CompilationUnitSyntax** variable into a new variable:
-```C#
-            var firstMember = root.Members[0];
-```
+[!code-csharp[Examine the root node](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/SyntaxQuickStart/Proram.cs#3 "Examine the root node")]
 
-8) Set this statement as the next statement to be executed and execute it.
-  * Right-click this line and choose **Set Next Statement**.
-  * In Visual Studio, choose **Debug -> Step Over**, to execute this statement and initialize the new variable.
-  * You will need to repeat this process for each of the following steps as we introduce new variables and inspect them with the debugger.
+Run the application to see what your code has discovered about the root node in this tree.
 
-9) Hover over the **firstMember** variable and expand the datatips to inspect it. 
-  * Note that its **KindText** is **NamespaceDeclaration**.
-  * Note that its run-time type is **NamespaceDeclarationSyntax**. 
+Typically, you'd traverse the tree to learn about the code. In this example, you know what the code is and you're exploring the APIs to learn how to traverse the code and understand what was written. Add the following code to examine the first member of the `root` node:
 
-10) Cast this node to **NamespaceDeclarationSyntax** and store it in a new variable:
-```C#
-            var helloWorldDeclaration = (NamespaceDeclarationSyntax)firstMember;
-```
+[!code-csharp[Find the first member](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/SyntaxQuickStart/Proram.cs#4 "Find the first member")]
 
-11) Execute this statement and examine the **helloWorldDeclaration** variable.
-  * Note that like the **CompilationUnitSyntax**, **NamespaceDeclarationSyntax** also has a **Members** collection.
+That member is a <xref:Microsoft.CodeAnalysis.CSharp.NamespaceDeclarationSyntax?displayProperty=nameWithType>. It represents everything in the scope of the `namespace Hello World` declaration. Add the following code to examine what nodes are declared inside the `HelloWorld` namespace:
 
-12) Examine the **Members** collection.
-  * Note that it contains a single member. Examine it.
-    * Note that its **KindText** is **ClassDeclaration.**
-    * Note that its run-time type is **ClassDeclarationSyntax**.
+[!code-csharp[Find the class declaration](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/SyntaxQuickStart/Proram.cs#5 "Find the class declaration")]
 
-13) Cast this node to **ClassDeclarationSyntax** and store it in a new variable:
-```C#
-            var programDeclaration = (ClassDeclarationSyntax)helloWorldDeclaration.Members[0];
-```
+Run the program to see what you've learned.
 
-14) Execute this statement.
+Now that you know the declaration is a <xref:Microsoft.CodeAnalysis.CSharp.ClassDeclarationSyntax?displayProperty=nameWithType>, declare a new variable of that type to examine the class declaration. This class only contains one member: the `Main` method. Add the following code to find the `Main` method, and cast it to a <xref:Microsoft.CodeAnalysis.CSharp.MethodDeclarationSyntax?displayProperty=nameWithType>.
 
-15) Locate the **Main** declaration in the **programDeclaration.Members** collection and store it in a new variable:
-```C#
-            var mainDeclaration = (MethodDeclarationSyntax)programDeclaration.Members[0];
-```
+[!code-csharp[Find the main declaration](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/SyntaxQuickStart/Proram.cs#6 "Find the main declaration")]
+
 
 16) Execute this statement and examine the members of the **MethodDeclarationSyntax** object.
   * Note the **ReturnType**, and **Identifier** properties.
@@ -195,6 +178,7 @@ namespace HelloWorld
     }
 }
 ```
+The sample uses `WriteLine` statements to display information about the syntax trees as they are traversed. You can also learn much more by running the finished program under the debugger and examining more of the properties and methods that are part of the syntax tree created for the hello world program.
 
 ### Query Methods
 In addition to traversing trees using the properties of the **SyntaxNode** derived classes you can also explore the syntax tree using the query methods defined on **SyntaxNode**. These methods should be immediately familiar to anyone familiar with XPath. You can use these methods with LINQ to quickly find things in a tree. 

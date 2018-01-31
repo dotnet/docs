@@ -1,6 +1,6 @@
 ---
 title: "UShort Data Type (Visual Basic)"
-ms.date: 04/20/2017
+ms.date: 01/31/2018
 ms.prod: .net
 ms.suite: ""
 ms.technology: 
@@ -21,7 +21,6 @@ helpviewer_keywords:
   - "UShort data type"
   - "US literal type characters [Visual Basic]"
 ms.assetid: 138db892-665d-4ba8-9cae-d8d91c4a8f39
-caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
@@ -50,10 +49,18 @@ Starting with Visual Basic 2017, you can also use the underscore character, `_`,
 
 [!code-vb[UShort](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#UShortS)]
 
+Starting with Visual Basic 15.5, you can also use the underscore character (`_`) as a leading separator between the prefix and the hexadecimal, binary, or octal digits. For example:
+
+```vb
+Dim number As UShort = &H_FF8C
+```
+
+[!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
+
 Numeric literals can also include the `US` or `us` [type character](../../programming-guide\language-features\data-types/type-characters.md) to denote the `UShort` data type, as the following example shows.
 
 ```vb
-Dim number = &H035826us
+Dim number = &H_5826us
 ```
 
 ## Programming tips

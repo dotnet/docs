@@ -70,7 +70,7 @@ public class SignXML
 
         // Add the key to the SignedXml document.
         // <snippet6>
-        signedXml.SigningKey = rsaKey;
+        signedXml.SigningKey = Key;
         // </snippet6>
 
         // <snippet7>

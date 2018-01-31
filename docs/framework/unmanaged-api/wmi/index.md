@@ -5,7 +5,7 @@ author: rpetrusha
 ms.author: ronpet
 manager: wpickett
 ms.date: 11/06/2017
-ms.topic: article-type-from-white-list
+ms.topic: reference
 ms.prod: .net-framework
 ms.devlang: cpp
 ms.workload: 

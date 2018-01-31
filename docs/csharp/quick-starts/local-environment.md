@@ -1,6 +1,6 @@
 ---
-title: Quick Start - Local Environment - C# Guide
-description: This quickstart provides the basics for running the quick starts locally
+title: Local environment tutorial - C# local quickstarts
+description: This quickstart provides the basics for running the quickstarts locally
 author: billwagner
 ms.topic: get-started-article
 ms.date: 12/07/2017
@@ -12,7 +12,7 @@ ms.custom: mvc
 ---
 # Local environment
 
-The first step to trying a quick start locally is to setup a development environment on your local machine.
+The first step to trying a quickstart locally is to setup a development environment on your local machine.
 The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting
 up your local development environment on Mac, PC or Linux.
 
@@ -30,20 +30,20 @@ and [`dotnet run`](../../core/tools/dotnet-run.md) to run the executable.
 
 ## Pick your quickstart
 
-You can start with any of the following quick starts:
+You can start with any of the following quickstarts:
 
 ## [Numbers in C#](numbers-in-csharp-local.md)
 
-In the [Numbers in C#](numbers-in-csharp-local.md) quick start, you'll learn
+In the [Numbers in C#](numbers-in-csharp-local.md) quickstart, you'll learn
 how computers store numbers and how to perform calculations with different
 numeric types. You'll learn the basics of rounding, and how to perform
 mathematical calculations using C#. 
 
-This quick start assumes that you have finished the [Hello world](hello-world.yml) tutorial.
+This quickstart assumes that you have finished the [Hello world](hello-world.yml) tutorial.
 
 ## [Branches and loops](branches-and-loops-local.md)
 
-The [Branches and loops](branches-and-loops-local.md) quick start teaches the basics of selecting
+The [Branches and loops](branches-and-loops-local.md) quickstart teaches the basics of selecting
 different paths of code execution based on the values stored in variables. You'll learn the
 basics of control flow, which is the basis of how programs make decisions and choose
 different actions. 
@@ -56,7 +56,7 @@ This beginning lesson assumes that you have finished the [Hello World](hello-wor
 The [List collection](arrays-and-collections.md) lesson gives you
 a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and sort the lists. You'll explore different kinds of lists. 
 
-This beginning quick start assumes that you have finished the quick starts listed above.
+This beginning quickstart assumes that you have finished the quickstarts listed above.
 
 ## [Introduction to classes](introduction-to-classes.md)
 

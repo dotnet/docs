@@ -1,6 +1,6 @@
 ---
-title: Quick Start - Interpolated strings - C# Guide
-description: In this quick start about interpolated strings, you write C# code to incude the result of an expression in a larger string.
+title: Interpolated strings tutorial - C# local quickstarts
+description: In this quickstart about interpolated strings, you write C# code to incude the result of an expression in a larger string.
 author: rpetrusha
 ms.author: ronpet
 ms.date: 01/11/2018
@@ -12,9 +12,9 @@ ms.custom: mvc
 ---
 # Interpolated strings
 
-This quick start teaches you how to use interpolated strings in C# to insert values into a single ouput string. You write C# code and see the results of compiling and running it. The quick start contains a series of lessons that insert values into strings, and format those values in different ways.
+This quickstart teaches you how to use interpolated strings in C# to insert values into a single ouput string. You write C# code and see the results of compiling and running it. The quickstart contains a series of lessons that insert values into strings, and format those values in different ways.
 
-This quick start expects that you have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [introduction to the local quick starts](local-environment.md) with links to more details. 
+This quickstart expects that you have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [introduction to the local quickstarts](local-environment.md) with links to more details. 
 
 ## Create an interpolated string
 
@@ -157,9 +157,9 @@ The output looks something like the following:
 1/11/2018            Hour 09                1,063.34 feet
 ```
 
-You've completed the interpolated strings quick start. 
+You've completed the interpolated strings quickstart. 
     
-You can continue with the [Arrays and collections](arrays-and-collections.md) quick start in your own development environment.
+You can continue with the [Arrays and collections](arrays-and-collections.md) quickstart in your own development environment.
 
 You can learn more about working with interpolated strings in the [Interpolated Strings](../language-reference/keywords/interpolated-strings.md) topic in the C# Reference.
 

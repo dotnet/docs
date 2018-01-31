@@ -2370,7 +2370,7 @@
 |-------------|-----------------|  
 |*ws*|Optional white space.|  
 |-|An optional minus sign, which indicates a negative <xref:System.TimeSpan>.|  
-|*d*|Optional days, ranging from 0 to 10675199.|  
+|*d*|Days, ranging from 0 to 10675199.|  
 |.|A culture-sensitive symbol that separates days from hours. The invariant format uses a period (".") character.|  
 |*hh*|Hours, ranging from 0 to 23.|  
 |:|The culture-sensitive time separator symbol. The invariant format uses a colon (":") character.|  

@@ -31,7 +31,7 @@ This example converts a hexadecimal string to an integer using the <xref:System.
 - Note that the hexadecimal string has the following restrictions:
 
    - It cannot include the `&h` prefix.
-   - It cannot include the "_" digit separator.
+   - It cannot include the `_` digit separator.
 
    If the prefix or a digit separator is present, the call to the <xref:System.Convert.ToInt32(System.String,System.Int32)> method throws a <xref:System.FormatException>.
 

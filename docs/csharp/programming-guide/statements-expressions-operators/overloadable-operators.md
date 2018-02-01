@@ -58,4 +58,4 @@ For more information, see [How to: Use Operator Overloading to Create a Complex 
 [Statements, Expressions, and Operators](../../../csharp/programming-guide/statements-expressions-operators/index.md)  
 [Operators](../../../csharp/programming-guide/statements-expressions-operators/operators.md)  
 [C# Operators](../../../csharp/language-reference/operators/index.md)  
-[Why are overloaded operators always static in C#?](http://go.microsoft.com/fwlink/?LinkId=112383)
+[Why are overloaded operators always static in C#?](https://blogs.msdn.microsoft.com/ericlippert/2007/05/14/why-are-overloaded-operators-always-static-in-c/)

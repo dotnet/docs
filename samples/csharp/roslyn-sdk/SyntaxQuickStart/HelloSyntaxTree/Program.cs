@@ -1,16 +1,10 @@
-using System;
 using static System.Console;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
-using Microsoft.CodeAnalysis.CSharp.Symbols;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using Microsoft.CodeAnalysis.MSBuild;
-using Microsoft.CodeAnalysis.Text;
 
-namespace SyntaxQuickStart
+namespace HelloSyntaxTree
 {
     class Program
     {
@@ -69,13 +63,25 @@ namespace HelloWorld
 
             // <Snippet7>
             WriteLine($"The return type of the {mainDeclaration.Identifier.ValueText} method is {mainDeclaration.ReturnType.ToString()}");
-            WriteLine($"The body text of the {mainDeclaration.Identifier.ValueText} method follows:");
-            WriteLine(mainDeclaration.Body.ToFullString());
-            WriteLine();
             WriteLine($"The method has {mainDeclaration.ParameterList.Parameters.Count} parameters");
             foreach (ParameterSyntax item in mainDeclaration.ParameterList.Parameters)
                 WriteLine($"The type of the {item.Identifier.ValueText} parameter is {item.Type.ToString()}");
+            WriteLine($"The body text of the {mainDeclaration.Identifier.ValueText} method follows:");
+            WriteLine(mainDeclaration.Body.ToFullString());
+
+            var argsParameter = mainDeclaration.ParameterList.Parameters[0];
             // </Snippet7>
+
+            // <Snippet8>
+            var firstParameters = from methodDeclaration in root.DescendantNodes()
+                                                    .OfType<MethodDeclarationSyntax>()
+                                  where methodDeclaration.Identifier.ValueText == "Main"
+                                  select methodDeclaration.ParameterList.Parameters.First();
+
+            var argsParameter2 = firstParameters.Single();
+
+            WriteLine(argsParameter == argsParameter2);
+            // </Snippet8
         }
     }
 }

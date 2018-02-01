@@ -72,340 +72,142 @@ You can see the finished code for this sample in [our GitHub repository](https:/
 > [!NOTE]
 > The Syntax Tree types use inheritance to describe the different syntax elements that are valid at different locations in the program. Using these APIs often means casting properties or collection members to specific derived types. In the examples, the assignment and the casts are separate statments, using explicitly typed variables. That was done to help you see the return types of the API and the runtime type of the objects returned.
 
-#### Example - Manually traversing the tree
-
 Create a new C# **Stand-Alone Code Analysis Tool** project:
   * In Visual Studio, choose **File -> New -> Project...** to display the New Project dialog.
   * Under **Visual C# -> Extensibility**, choose **Stand-Alone Code Analysis Tool**.
-  * Name your project "**GettingStartedCS**" and click OK. 
+  * Name your project "**SyntaxTreeManualTraversal**" and click OK. 
 
 You're going to analyze the basic "Hello World!" program shown above. 
 Add the text for the hello world program as a constant in your `Program` class:
 
-[!code-csharp[Declare the program text](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/SyntaxQuickStart/Proram.cs#1 "Declare a constant string for the program text to analyze")]
+[!code-csharp[Declare the program text](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/HelloSyntaxTree/Program.cs#1 "Declare a constant string for the program text to analyze")]
 
 Next, add the following code to build the **syntax tree** for the code text in the `programText` constant.  Add the following line to your `Main` method:
 
-[!code-csharp[Create the tree](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/SyntaxQuickStart/Proram.cs#2 "Create the syntax tree")]
+[!code-csharp[Create the tree](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/HelloSyntaxTree/Program.cs#2 "Create the syntax tree")]
 
 Those two lines create the tree and retrieve the root node of that tree. You can now examine the nodes in the tree. Add these lines to your `Main` method to display some of the properties of the root node in the tree:
 
-[!code-csharp[Examine the root node](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/SyntaxQuickStart/Proram.cs#3 "Examine the root node")]
+[!code-csharp[Examine the root node](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/HelloSyntaxTree/Program.cs#3 "Examine the root node")]
 
 Run the application to see what your code has discovered about the root node in this tree.
 
 Typically, you'd traverse the tree to learn about the code. In this example, you know what the code is and you're exploring the APIs to learn how to traverse the code and understand what was written. Add the following code to examine the first member of the `root` node:
 
-[!code-csharp[Find the first member](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/SyntaxQuickStart/Proram.cs#4 "Find the first member")]
+[!code-csharp[Find the first member](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/HelloSyntaxTree/Program.cs#4 "Find the first member")]
 
 That member is a <xref:Microsoft.CodeAnalysis.CSharp.NamespaceDeclarationSyntax?displayProperty=nameWithType>. It represents everything in the scope of the `namespace Hello World` declaration. Add the following code to examine what nodes are declared inside the `HelloWorld` namespace:
 
-[!code-csharp[Find the class declaration](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/SyntaxQuickStart/Proram.cs#5 "Find the class declaration")]
+[!code-csharp[Find the class declaration](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/HelloSyntaxTree/Program.cs#5 "Find the class declaration")]
 
 Run the program to see what you've learned.
 
 Now that you know the declaration is a <xref:Microsoft.CodeAnalysis.CSharp.ClassDeclarationSyntax?displayProperty=nameWithType>, declare a new variable of that type to examine the class declaration. This class only contains one member: the `Main` method. Add the following code to find the `Main` method, and cast it to a <xref:Microsoft.CodeAnalysis.CSharp.MethodDeclarationSyntax?displayProperty=nameWithType>.
 
-[!code-csharp[Find the main declaration](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/SyntaxQuickStart/Proram.cs#6 "Find the main declaration")]
+[!code-csharp[Find the main declaration](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/HelloSyntaxTree/Program.cs#6 "Find the main declaration")]
 
+The method declaration node contains all the syntactic information about the method. Add the following code to display the return type of the `Main` method, the number and types of the arguments, and the body text of the method:
 
-16) Execute this statement and examine the members of the **MethodDeclarationSyntax** object.
-  * Note the **ReturnType**, and **Identifier** properties.
-  * Note the **Body** property.
-  * Note the **ParameterList** property; examine it.
-    * Note that it contains both the open and close parentheses of the parameter list in addition to the list of parameters themselves.
-    * Note that the parameters are stored as a **SeparatedSyntaxList**<**ParameterSyntax**>.
+[!code-csharp[Examine the syntax of the main method](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/HelloSyntaxTree/Program.cs#7 "Display information about the main method")]
 
-17) Store the first parameter of the **Main** declaration in a variable. 
-```C#
-            var argsParameter = mainDeclaration.ParameterList.Parameters[0];
+Run the program to see all the information you've discovered about this program:
+
+```text
+The tree is a CompilationUnit node.
+The tree has 1 elements in it.
+The tree has 4 using statements. They are:
+        System
+        System.Collections
+        System.Linq
+        System.Text
+The first member is a NamespaceDeclaration
+There are 1 members declared in this namespace.
+The first member is a ClassDeclaration
+There are 1 members declared in the Program class
+The first member is a MethodDeclaration
+The return type of the Main method is void
+The method has 1 parameters
+The type of the args parameter is string[]
+The body text of the Main method follows:
+        {
+            Console.WriteLine("Hello, World!");
+        }
 ```
 
-18) Execute this statement and examine the **argsParameter** variable.
-  * Examine the **Identifier** property; note that it is of the structure type **SyntaxToken**.
-  * Examine the properties of the **Identifier** **SyntaxToken**; note that the text of the identifier can be found in the **ValueText** property.
+### Query methods
 
-19) Stop the program.
-  * In Visual Studio, choose **Debug -> Stop Debugging**.
+In addition to traversing trees using the properties of the <xref:Microsoft.CodeAnalysis.SyntaxNode?displayProperty=nameWithType> derived classes you can also explore the syntax tree using the query methods defined on <xref:Microsoft.CodeAnalysis.SyntaxNode?displayProperty=nameWithType>. These methods should be immediately familiar to anyone familiar with XPath. You can use these methods with LINQ to quickly find things in a tree. The <xref:Microsoft.CodeAnalysis.SyntaxNode?displayProperty=nameWithType> has query methods such as <xref:Microsoft.CodeAnalysis.SyntaxNode.DescendentNodes%2A>, <xref:Microsoft.CodeAnalysis.SyntaxNode.AncestorsAndSelf%2A> and <xref:Microsoft.CodeAnalysis.SyntaxNode.ChildNodes>.
 
-20) Your program should look like this now:
-```C#
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
- 
-namespace GettingStartedCS
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            SyntaxTree tree = CSharpSyntaxTree.ParseText(
-@"using System;
-using System.Collections;
-using System.Linq;
-using System.Text;
- 
-namespace HelloWorld
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine(""Hello, World!"");
-        }
-    }
-}");
- 
-            var root = (CompilationUnitSyntax)tree.GetRoot();
- 
-            var firstMember = root.Members[0];
- 
-            var helloWorldDeclaration = (NamespaceDeclarationSyntax)firstMember;
- 
-            var programDeclaration = (ClassDeclarationSyntax)helloWorldDeclaration.Members[0];
- 
-            var mainDeclaration = (MethodDeclarationSyntax)programDeclaration.Members[0];
- 
-            var argsParameter = mainDeclaration.ParameterList.Parameters[0];
- 
-        }
-    }
-}
-```
+You can use these query methods to find the argument to the `Main` method as an alternative to navigating the tree. Add the following code to the bottom of your `Main` method:
+
+[!code-csharp[Query the tree for the arguments to Main](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/HelloSyntaxTree/Program.cs#8 "Query the tree for the arguments to Main")]
+
+The first statement uses a LINQ expression and the <xref:Microsoft.CodeAnalysis.SyntaxNode.DescendentNodes%2A> method to locate the same parameter as in the previous example.
+
+Run the program, and you can see that the LINQ expression found the same parameter as manually navigating the tree.
+
 The sample uses `WriteLine` statements to display information about the syntax trees as they are traversed. You can also learn much more by running the finished program under the debugger and examining more of the properties and methods that are part of the syntax tree created for the hello world program.
 
-### Query Methods
-In addition to traversing trees using the properties of the **SyntaxNode** derived classes you can also explore the syntax tree using the query methods defined on **SyntaxNode**. These methods should be immediately familiar to anyone familiar with XPath. You can use these methods with LINQ to quickly find things in a tree. 
+### Syntax walkers
 
-#### Example - Using query methods
-1) Using IntelliSense, examine the members of the **SyntaxNode** class through the root variable.
-  * Note query methods such as **DescendantNodes**, **AncestorsAndSelf**, and **ChildNodes**.
+Often you'll want to find all nodes of a specific type in a syntax tree, for example, every property declaration in a file. By extending the <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxWalker?displayProperty=nameWithType> class and overriding the <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxWalker.VisitPropertyDeclaration> method you can process every property declaration in a syntax tree without knowing its structure beforehand. <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxWalker?displayProperty=nameWithType> is a specific kind of <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxVisitor?displayProperty=nameWithType>* which recursively visits a node and each of its children.
 
-2) Add the following statements to the end of the Main method. The first statement uses a LINQ expression and the **DescendantNodes** method to locate the same parameter as in the previous example:
-```C#
-var firstParameters = from methodDeclaration in root.DescendantNodes()
-                                                    .OfType<MethodDeclarationSyntax>()
-                      where methodDeclaration.Identifier.ValueText == "Main"
-                      select methodDeclaration.ParameterList.Parameters.First();
- 
-var argsParameter2 = firstParameters.Single();
-```
+This example shows how to implement a <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxWalker?displayProperty=nameWithType>* which examines an entire syntax tree and collects any `using` directives it finds which aren't importing a `System` namespace.
 
-3) Start debugging the program.
+Create a new C# **Stand-Alone Code Analysis Tool** project; name it "**SyntaxWalker**".
 
-4) Open the **Immediate Window**.
-  * In Visual Studio, choose **Debug -> Windows -> Immediate**.
+You can see the finished code for this sample in [our GitHub repository](https://github.com/dotnet/docs/samples/csharp/roslyn-sdk/SyntaxQuickStart). The sample on GitHub contains both projects described in this quick start.
 
-5) Using the Immediate window, type the expression **argsParameter == argsParameter2** and press enter to evaluate it. 
-  * Note that the LINQ expression found the same parameter as manually navigating the tree.
+As in the previous sample, you can define a string constant to hold the text of the program you're going to analyze:
 
-6) Stop the program.
+[!code-csharp[Define the code text to analyzer](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/SyntaxWalker/Program.cs#1 "Define the program text to anlayze")]
 
-### SyntaxWalkers
-Often you'll want to find all nodes of a specific type in a syntax tree, for example, every property declaration in a file. By extending the **CSharpSyntaxWalker** class and overriding the **VisitPropertyDeclaration** method you can process every property declaration in a syntax tree without knowing its structure beforehand. **CSharpSyntaxWalker** is a specific kind of **SyntaxVisitor** which recursively visits a node and each of its children.
+This source text contains `using` directives scattered across four different locations: the file-level, in the top-level namespace, and in the two nested namespaces. You'll write the code to examine all the `using` statements and build a collection of those that aren't in the `System` namespace. You'll do that task using a <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxWalker?displayProperty=nameWithType> that will examine all the `using` statements, but only the `using` statements.
 
-#### Example - Implementing a SyntaxWalker
-This example shows how to implement a **CSharpSyntaxWalker** which examines an entire syntax tree and collects any **using** directives it finds which aren't importing a **System** namespace.
+Now that you've define the program text, you'll need to create a `SyntaxTree` and get the root of that tree:
 
-1) Create a new C# **Stand-Alone Code Analysis Tool** project; name it "**UsingCollectorCS**".
+[!code-csharp[Create the Syntax tree and access the root](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/SyntaxWalker/Program.cs#2 "Create the Syntax tree and access the root node.")]
 
-2) Add the following using directives to your **Program.cs** file:
-```C#
-using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
-```
+Next, create a new class. In Visual Studio, choose **Project -> Add New Item...**. In the "Add New Item" dialog type **UsingCollector.cs** as the filename.
 
-3) Enter the following code into your **Main** method:
-```C#
-            SyntaxTree tree = CSharpSyntaxTree.ParseText(
-@"using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp;
- 
-namespace TopLevel
-{
-    using Microsoft;
-    using System.ComponentModel;
- 
-    namespace Child1
-    {
-        using Microsoft.Win32;
-        using System.Runtime.InteropServices;
- 
-        class Foo { }
-    }
- 
-    namespace Child2
-    {
-        using System.CodeDom;
-        using Microsoft.CSharp;
- 
-        class Bar { }
-    }
-}");
- 
-            var root = (CompilationUnitSyntax)tree.GetRoot();
-```
+You'll implement the `using` visitor functionality in the `UsingCollector` class. Start by making the `UsingCollector` class derive from <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxWalker?displayProperty=nameWithType>.
 
-4) Note that this source text contains **using** directives scattered across four different locations: the file-level, in the top-level namespace, and in the two nested namespaces.
+[!code-csharp[Declare the base class for the using collector](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/SyntaxWalker/UsingCollector.cs#3 "Declare the base class for the UsingCollector")]
 
-5) Add a new class file to the project.
-  * In Visual Studio, choose **Project -> Add New Item...** 
-  * In the "Add New Item" dialog type **UsingCollector.cs** as the filename.
+You'll need storage to hold the namespace nodes that you're collecting.  Declare a public read-only property in the `UsingCollector` class; you'll use this variable to store the <xref:Microsoft.CodeAnalysis.CSharp.UsingDirectiveSyntax?displayProeprty=nameWithType> nodes you find:
 
-6) Add the following using directives to the top of the UsingCollector.cs file 
-```C#
-using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
-```
+[!code-csharp[Declare storage for the using syntax nodes](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/SyntaxWalker/UsingCollector.cs#4 "Declare storage for the using syntax nodes")]
 
-7) Make the new **UsingCollector** class in this file extend the **CSharpSyntaxWalker** class:
-```C#
-    class UsingCollector : CSharpSyntaxWalker
-```
+The base class, <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxWalker?displayProperty=nameWithType> implements the logic to visit each node in the syntax tree. The derived class needs to override the methods that will be called for the specific nodes you're interested in. In this case, you're interested in any `using` directive. That means you must override the <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxWalker.VisitUsingDirective> method. The one argument to this method is a <xref:Microsoft.CodeAnalysis.CSharp.UsingDirectiveSyntax?displayProperty=nameWithType> object. This class has a <xref:Microsoft.CodeAnalysis.CSharp.UsingDirectiveSyntax.Name> property that stores the name of the namespace being imported. It is a <xref:Microsoft.CodeAnalysis.CSharp.NameSyntax?displayProperty=nameWithType>. Add the following code in the <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxWalker.VisitUsingDirective> override:
 
-8) Declare a public read-only field in the **UsingCollector** class; we'll use this variable to store the **UsingDirectiveSyntax** nodes we find:
-```C#
-        public readonly List<UsingDirectiveSyntax> Usings = new List<UsingDirectiveSyntax>();
-```
+[!code-csharp[Examine using nodes for the System namespace](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/SyntaxWalker/UsingCollector.cs#5 "Examine all using nodes for the System namespace.")]
 
-9) Override the **VisitUsingDirective** method:
-```C#
-        public override void VisitUsingDirective(UsingDirectiveSyntax node)
-        {
-            
-        }
-```
+As with the earlier example, you've added a variety of `WriteLine` statements to aid in understanding when this method is called, and what it does.
 
-10) Using IntelliSense, examine the **UsingDirectiveSyntax** class through the **node** parameter of this method.
-  * Note the **Name** property of type **NameSyntax**; this stores the name of the namespace being imported.
+Finally, you need to add two lines of code to create the `UsingCollector` and have it visit the root node, collecting all the usings. Then, add a `foreach` loop to display all the usings your collector found:
 
-11) Replace the code in the **VisitUsingDirective** method with the following to conditionally add the found **node** to the **Usings** collection if **Name** doesn't refer to the **System** namespace or any of its descendant namespaces:
-```C#
-            if (node.Name.ToString() != "System" &&
-                !node.Name.ToString().StartsWith("System."))
-            {
-                this.Usings.Add(node);
-            }
-```
+[!code-csharp[Create the UsingCollector and visit the root node.](../../../../samples/csharp/roslyn-sdk/SyntaxQuickStart/SyntaxWalker/Program.cs#6 "Create the UsingCollector and visit the root node.")]
 
-12) The **UsingCollector.cs** file should now look like this:
-```C#
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
- 
-namespace UsingCollectorCS
-{
-    class UsingCollector : CSharpSyntaxWalker
-    {
-        public readonly List<UsingDirectiveSyntax> Usings = new List<UsingDirectiveSyntax>();
+Compile and run the program. You should see the following output:
 
-        public override void VisitUsingDirective(UsingDirectiveSyntax node)
-        {
-            if (node.Name.ToString() != "System" &&
-                !node.Name.ToString().StartsWith("System."))
-            {
-                this.Usings.Add(node);
-            }
-        }
-    }
-}
-```
-
-13) Return to the **Program.cs** file.
-
-14) Add the following code to the end of the **Main** method to create an instance of the **UsingCollector**, use that instance to visit the root of the parsed tree, and iterate over the **UsingDirectiveSyntax** nodes collected and print their names to the **Console**:
-```C#
-            var collector = new UsingCollector();
-            collector.Visit(root);
- 
-            foreach (var directive in collector.Usings)
-            {
-                Console.WriteLine(directive.Name);
-            }
-```
-
-15) Your **Program.cs** file should now look like this:
-```C#
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
- 
-namespace UsingCollectorCS
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            SyntaxTree tree = CSharpSyntaxTree.ParseText(
-@"using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp;
- 
-namespace TopLevel
-{
-    using Microsoft;
-    using System.ComponentModel;
- 
-    namespace Child1
-    {
-        using Microsoft.Win32;
-        using System.Runtime.InteropServices;
- 
-        class Foo { }
-    }
- 
-    namespace Child2
-    {
-        using System.CodeDom;
-        using Microsoft.CSharp;
- 
-        class Bar { }
-    }
-}");
- 
-            var root = (CompilationUnitSyntax)tree.GetRoot();
- 
-            var collector = new UsingCollector();
-            collector.Visit(root);
- 
-            foreach (var directive in collector.Usings)
-            {
-                Console.WriteLine(directive.Name);
-            }
-        }
-    }
-}
-```
-
-16) Press **Ctrl+F5** to run the program without debugging it. You should see the following output:
-
-```
+```console
+        VisitUsingDirective called with System
+        VisitUsingDirective called with System.Collections.Generic
+        VisitUsingDirective called with System.Linq
+        VisitUsingDirective called with System.Text
+        VisitUsingDirective called with Microsoft.CodeAnalysis
+                Success. Adding Microsoft.CodeAnalysis
+        VisitUsingDirective called with Microsoft.CodeAnalysis.CSharp
+                Success. Adding Microsoft.CodeAnalysis.CSharp
+        VisitUsingDirective called with Microsoft
+                Success. Adding Microsoft
+        VisitUsingDirective called with System.ComponentModel
+        VisitUsingDirective called with Microsoft.Win32
+                Success. Adding Microsoft.Win32
+        VisitUsingDirective called with System.Runtime.InteropServices
+        VisitUsingDirective called with System.CodeDom
+        VisitUsingDirective called with Microsoft.CSharp
+                Success. Adding Microsoft.CSharp
 Microsoft.CodeAnalysis
 Microsoft.CodeAnalysis.CSharp
 Microsoft
@@ -414,6 +216,4 @@ Microsoft.CSharp
 Press any key to continue . . .
 ```
 
-17) Observe that the walker has located all non-**System** namespace **using** directives in all four places.
-
-18) Congratulations! You've just used the **Syntax API** to locate specific kinds of C# statements and declarations in C# source code.
+Congratulations! You've just used the **Syntax API** to locate specific kinds of C# statements and declarations in C# source code.

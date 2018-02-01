@@ -10,7 +10,7 @@ ms.assetid: b446e9e0-72f6-48f6-92c6-70ad0ce3f86a
 ---
 # Analyze your third-party dependencies
 
-If you're looking to port your code to .NET Core or .NET Standard, the first step in the porting process is to understand your third-party dependencies. Third-party dependencies are either [NuGet packages](#analyze-referenced-nuget-packages-on-your-project) or [DLLs](#analyze-dependencies-that-arent-nuget-packages) you're referencing on your project or DLLs. Evaluate each dependency and develop a contingency plan for the dependencies that aren't compatible with .NET Core. This topic shows you how to determine if the dependency is compatible with .NET Core.
+If you're looking to port your code to .NET Core or .NET Standard, the first step in the porting process is to understand your third-party dependencies. Third-party dependencies are either [NuGet packages](#analyze-referenced-nuget-packages-on-your-project) or [DLLs](#analyze-dependencies-that-arent-nuget-packages) you're referencing on your project. Evaluate each dependency and develop a contingency plan for the dependencies that aren't compatible with .NET Core. This topic shows you how to determine if the dependency is compatible with .NET Core.
 
 ## Analyze referenced NuGet packages in your project
 

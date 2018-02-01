@@ -2690,14 +2690,14 @@ Directory::CreateDirectory("Public\\Html");
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.IO.IOException">The directory specified by <paramref name="path" /> is read-only.</exception>
-        <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains one or more invalid characters. You can query for invalid characters with the  <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does not have the required permissions.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="path" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="path" /> contains a colon (":") that is not part of a volume identifier (for example, "c:\\").</exception>
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters and file names must be less than 260 characters.</exception>
-        <exception cref="T:System.IO.DirectoryNotFoundException">The specified path was not found.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from files or directories. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <altmember cref="T:System.IO.DirectoryInfo" />
       </Docs>

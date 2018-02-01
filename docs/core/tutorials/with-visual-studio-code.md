@@ -18,7 +18,7 @@ ms.workload:
 
 1. Install [Visual Studio Code](https://code.visualstudio.com/).
 2. Install the [.NET Core SDK](https://www.microsoft.com/net/download/core).
-3. Install the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp). For more information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
+3. Install the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) for Visual Studio Code. For more information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
 
 ## Hello World
 

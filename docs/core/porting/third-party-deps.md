@@ -15,16 +15,16 @@ If you're looking to port your code to .NET Core or .NET Standard, the first ste
 ## Analyze referenced NuGet packages in your project
 
 If you're referencing NuGet packages in your project, you need to verify if they're compatible with .NET Core.
-There are a few ways to accomplish that:
+There are two ways to accomplish that:
 
-* Using the NuGet Package Explorer app (most reliable method).
-* Using [nuget.org](https://www.nuget.org/) site.
+* [Using the NuGet Package Explorer app](#analyze-nuget-packages-using-nuget-package-explorer) (the most reliable method).
+* [Using the nuget.org site](#analyze-nuget-packages-using-nugetorg).
 
-After analyzing the packages, if they're not compatible with .NET Core and only target .NET Framework, you can check if the [.NET Framework compatibility mode](#net-framework-compatibility-mode) can help on your porting process.
+After analyzing the packages, if they're not compatible with .NET Core and only target .NET Framework, you can check if the [.NET Framework compatibility mode](#net-framework-compatibility-mode) can help with your porting process.
 
 ### Analyze NuGet packages using NuGet Package Explorer
 
-A NuGet package is itself a set of folders that contain platform-specific assemblies. So, you need to check if there's a folder that contains a compatible assembly inside the package.
+A NuGet package is itself a set of folders that contain platform-specific assemblies. So you need to check if there's a folder that contains a compatible assembly inside the package.
 
 The easiest way to inspect NuGet Package folders is to use the [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer) tool. After installing it, use the following steps to see the folder names:
 
@@ -54,7 +54,7 @@ portable-net451-win81
 portable-net45-win8-wpa8-wpa81
 ```
 
-These values are the [Target Framework Monikers (TFM)](../../standard/frameworks.md) that map to versions of the [.NET Standard](../../standard/net-standard.md), .NET Core, and traditional Portable Class Library (PCL) profiles that are compatible with .NET Core. Note that `netcoreapp`, while compatible, is for .NET Core projects only and not for .NET Standard. Although there's nothing wrong with using a .NET Core library (`netcoreapp`-based), that library can only be consumed by other .NET Core apps.
+These values are the [Target Framework Monikers (TFMs)](../../standard/frameworks.md) that map to versions of the [.NET Standard](../../standard/net-standard.md), .NET Core, and traditional Portable Class Library (PCL) profiles that are compatible with .NET Core. Note that `netcoreapp`, while compatible, is for .NET Core projects only and not for .NET Standard. Although there's nothing wrong with using a .NET Core library (`netcoreapp`-based), that library can only be consumed by other .NET Core apps.
 
 There are also some legacy TFMs used in pre-release versions of .NET Core that may also be compatible:
 
@@ -86,7 +86,7 @@ After analyzing the NuGet packages, you might find that they only target the .NE
 
 Starting with .NET Standard 2.0, the .NET Framework compatibility mode was introduced. This compatibility mode allows .NET Standard and .NET Core projects to reference .NET Framework libraries. Referencing .NET Framework libraries doesn't work for all projects, such as if the library uses Windows Presentation Foundation (WPF) APIs, but it does unblock many porting scenarios.
 
-When you reference NuGet packages that target the .NET Framework on your project, such as [Huitian.PowerCollections](https://www.nuget.org/packages/Huitian.PowerCollections), you get a package fallback warning ([NU1701](/nuget/reference/errors-and-warnings#nu1701)) similar to the following example:
+When you reference NuGet packages that target the .NET Framework in your project, such as [Huitian.PowerCollections](https://www.nuget.org/packages/Huitian.PowerCollections), you get a package fallback warning ([NU1701](/nuget/reference/errors-and-warnings#nu1701)) similar to the following example:
 
 `NU1701: Package ‘Huitian.PowerCollections 1.0.0’ was restored using ‘.NETFramework,Version=v4.6.1’ instead of the project target framework ‘.NETStandard,Version=v2.0’. This package may not be fully compatible with your project.`
 
@@ -110,17 +110,17 @@ There are a few things you can do if a NuGet package you depend on doesn't run o
 2. You can contact the author directly on [nuget.org](https://www.nuget.org/). Search for the package and click **Contact Owners** on the left-hand side of the package's page.
 3. You can search for another package that runs on .NET Core that accomplishes the same task as the package you were using.
 4. You can attempt to write the code the package was doing yourself.
-5. You could eliminate the dependency on the package by changing the functionality of your app. At least, until a compatible version of the package becomes available.
+5. You could eliminate the dependency on the package by changing the functionality of your app, at least until a compatible version of the package becomes available.
 
 Remember that open-source project maintainers and NuGet package publishers are often volunteers. They contribute because they care about a given domain, do it for free, and often have a different daytime job. So, be mindful of that when contacting them to ask for .NET Core support.
 
 If you can't resolve your issue with any of the above, you may have to port to .NET Core at a later date.
 
-The .NET Team would like to know which libraries are the most important to support next with .NET Core. You can send an email to dotnet@microsoft.com about the libraries you'd like to use.
+The .NET Team would like to know which libraries are the most important to support with .NET Core. You can send an email to dotnet@microsoft.com about the libraries you'd like to use.
 
 ## Analyze dependencies that aren't NuGet packages
 
-You may have a dependency that isn't a NuGet package, such as a DLL in the filesystem. The only way to determine the portability of that dependency is to run the [ApiPort tool](https://github.com/Microsoft/dotnet-apiport/blob/master/docs/HowTo/).
+You may have a dependency that isn't a NuGet package, such as a DLL in the file system. The only way to determine the portability of that dependency is to run the [.NET Portability Analyzer](https://github.com/Microsoft/dotnet-apiport) tool. The tool can analyze assemblies that target the .NET Framework and identify APIs that aren't portable to other .NET platforms such as .NET Core. You can run the tool as a console application or as a [Visual Studio extension](../../standard/analyzers/portability-analyzer.md).
 
 ## Next steps
 

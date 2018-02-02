@@ -6,8 +6,7 @@ class Program
 {
     public static void Main()
     {
-        SameVehicleComparer compareVehicles = new SameVehicleComparer();
-        HashSet<string> allVehicles = new HashSet<string>(compareVehicles);
+        HashSet<string> allVehicles = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
         List<string> someVehicles = new List<string>();
 
         someVehicles.Add("Planes");
@@ -43,7 +42,7 @@ class Program
             Console.WriteLine("'Some' vechicles list.");
         }
 
-        // Check for Rockets. Here the SameVehicleComparer will compare
+        // Check for Rockets. Here the OrdinalIgnoreCase comparer will compare
         // true for the mixed-case vehicle type.
         if (allVehicles.Contains("roCKeTs"))
         {
@@ -73,20 +72,6 @@ class Program
         bool superCool = (vehicle == "Helicopters") || (vehicle == "Motorcycles");
 
         return !superCool;
-    }
-}
-
-class SameVehicleComparer : EqualityComparer<string>
-{
-    public override bool Equals(string s1, string s2)
-    {
-        return s1.Equals(s2, StringComparison.CurrentCultureIgnoreCase);
-    }
-
-
-    public override int GetHashCode(string s)
-    {
-        return base.GetHashCode();
     }
 }
 

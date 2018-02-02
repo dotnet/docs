@@ -81,7 +81,7 @@ namespace HelloWorld
             var argsParameter2 = firstParameters.Single();
 
             WriteLine(argsParameter == argsParameter2);
-            // </Snippet8
+            // </Snippet8>
         }
     }
 }

@@ -487,7 +487,7 @@
   
  In Visual Basic, you can use the conversions defined by the class, but you cannot override them or create your own. If Option Strict is set, you must use the \<CType operator> to convert the <xref:System.Data.OracleClient.OracleBinary> to a binary object.  
   
- The equivalent method for this operator is <xref:System.Data.OracleClient.OracleBinary.Value?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Data.OracleClient.OracleBinary.Value?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>

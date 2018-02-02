@@ -887,7 +887,7 @@
         <summary>Converts a <see cref="T:System.Data.SqlTypes.SqlBinary" /> structure to a <see cref="T:System.Byte" /> array.</summary>
         <returns>A <see cref="T:System.Byte" /> array.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBinary.Value?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBinary.Value?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -924,7 +924,7 @@
         <summary>Converts a <see cref="T:System.Data.SqlTypes.SqlGuid" /> structure to a <see cref="T:System.Data.SqlTypes.SqlBinary" /> structure.</summary>
         <returns>The <see cref="T:System.Data.SqlTypes.SqlGuid" /> structure to be converted.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBinary.ToSqlGuid?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBinary.ToSqlGuid?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>

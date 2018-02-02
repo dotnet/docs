@@ -1464,7 +1464,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts the specified <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to <see cref="T:System.Data.SqlTypes.SqlString" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlString" /> that contains the string representation of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> parameter.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.ToSqlString?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1501,7 +1501,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts the specified <see cref="T:System.Data.SqlTypes.SqlByte" /> structure to <see cref="T:System.Data.SqlTypes.SqlString" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlString" /> object that contains the string representation of the <see cref="T:System.Data.SqlTypes.SqlByte" /> parameter.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlByte.ToSqlString?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlByte.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1538,7 +1538,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts the specified <see cref="T:System.Data.SqlTypes.SqlDateTime" /> parameter to <see cref="T:System.Data.SqlTypes.SqlString" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlString" /> that contains the string representation of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> parameter.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDateTime.ToSqlString?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDateTime.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1575,7 +1575,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts the specified <see cref="T:System.Data.SqlTypes.SqlDecimal" /> parameter to <see cref="T:System.Data.SqlTypes.SqlString" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlString" /> that contains the string representation of the <see langword="SqlDecimal" /> parameter.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.ToSqlString?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1612,7 +1612,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts the specified <see cref="T:System.Data.SqlTypes.SqlDouble" /> parameter to <see cref="T:System.Data.SqlTypes.SqlString" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlString" /> that contains the string representation of the <see cref="T:System.Data.SqlTypes.SqlDouble" /> parameter.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDouble.ToSqlString?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDouble.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1649,7 +1649,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts the specified <see cref="T:System.Data.SqlTypes.SqlGuid" /> parameter to <see cref="T:System.Data.SqlTypes.SqlString" />.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlString" /> whose value is the string representation of the specified <see cref="T:System.Data.SqlTypes.SqlGuid" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlGuid.ToSqlString?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlGuid.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1686,7 +1686,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts the specified <see cref="T:System.Data.SqlTypes.SqlInt16" /> parameter to <see cref="T:System.Data.SqlTypes.SqlString" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlString" /> object that contains the string representation of the <see cref="T:System.Data.SqlTypes.SqlInt16" /> parameter.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.ToSqlString?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1723,7 +1723,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts the specified <see cref="T:System.Data.SqlTypes.SqlInt32" /> parameter to <see cref="T:System.Data.SqlTypes.SqlString" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlString" /> object that contains the string representation of the <see cref="T:System.Data.SqlTypes.SqlInt32" /> parameter.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt32.ToSqlString?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt32.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1760,7 +1760,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts the specified <see cref="T:System.Data.SqlTypes.SqlInt64" /> parameter to <see cref="T:System.Data.SqlTypes.SqlString" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlString" /> object that contains the string representation of the <see cref="T:System.Data.SqlTypes.SqlInt64" /> parameter.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt64.ToSqlString?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt64.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1797,7 +1797,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts the specified <see cref="T:System.Data.SqlTypes.SqlMoney" /> parameter to <see cref="T:System.Data.SqlTypes.SqlString" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlString" /> that contains the string representation of the <see cref="T:System.Data.SqlTypes.SqlMoney" /> parameter.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlMoney.ToSqlString?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlMoney.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>

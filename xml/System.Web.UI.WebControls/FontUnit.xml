@@ -589,7 +589,7 @@
         <summary>Implicitly creates a <see cref="T:System.Web.UI.WebControls.FontUnit" /> of type <see cref="T:System.Drawing.Point" /> from an integer value.</summary>
         <returns>A <see cref="T:System.Web.UI.WebControls.FontUnit" /> of type <see cref="T:System.Drawing.Point" /> that represents the font size specified the <paramref name="n" /> parameter.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Web.UI.WebControls.FontUnit.Point%28System.Int32%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Web.UI.WebControls.FontUnit.Point%28System.Int32%29?displayProperty=nameWithType>]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.FontUnit.Point(System.Int32)" />
       </Docs>

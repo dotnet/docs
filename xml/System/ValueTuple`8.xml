@@ -831,7 +831,7 @@ The <xref:System.ValueTuple%608> type is not serializable in .NET Core 1.x or in
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ValueTuple%608.System%23Runtime%23CompilerServices%23ITuple%23Item%2A?displayProperty=fullName> property is an explicit interface implementation. To call it, you must cast or convert the <xref:System.ValueTuple%608> object to an <xref:System.Runtime.CompilerServices.ITuple> interface object.  
+ The <xref:System.ValueTuple%608.System%23Runtime%23CompilerServices%23ITuple%23Item%2A?displayProperty=nameWithType> property is an explicit interface implementation. To call it, you must cast or convert the <xref:System.ValueTuple%608> object to an <xref:System.Runtime.CompilerServices.ITuple> interface object.  
   
  ]]></format>
         </remarks>
@@ -866,7 +866,7 @@ The <xref:System.ValueTuple%608> type is not serializable in .NET Core 1.x or in
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ValueTuple%608.System%23Runtime%23CompilerServices%23ITuple%23Length%2A?displayProperty=fullName> property is an explicit interface implementation. To call it, you must cast or convert the <xref:System.ValueTuple%608> object to an <xref:System.Runtime.CompilerServices.ITuple> interface object.  
+ The <xref:System.ValueTuple%608.System%23Runtime%23CompilerServices%23ITuple%23Length%2A?displayProperty=nameWithType> property is an explicit interface implementation. To call it, you must cast or convert the <xref:System.ValueTuple%608> object to an <xref:System.Runtime.CompilerServices.ITuple> interface object.  
   
  ]]></format>
         </remarks>

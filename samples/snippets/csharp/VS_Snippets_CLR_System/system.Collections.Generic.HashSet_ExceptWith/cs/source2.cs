@@ -86,7 +86,7 @@ class SameVehicleComparer : EqualityComparer<string>
 
     public override int GetHashCode(string s)
     {
-        return base.GetHashCode();
+        return s.ToLower().GetHashCode();
     }
 }
 

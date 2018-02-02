@@ -2647,7 +2647,7 @@ private Grammar CreateColorGrammar()
 ## Remarks  
  Implicit conversion creates a new instance of <xref:System.Speech.Recognition.GrammarBuilder>.This conversion operator is equivalent to calling <xref:System.Speech.Recognition.GrammarBuilder.%23ctor%2A> and specifying `choices` for the `alternateChoices`.  
   
- The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.%23ctor%28System.Speech.Recognition.Choices%29?displayProperty=fullName>  
+ The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.%23ctor%28System.Speech.Recognition.Choices%29?displayProperty=nameWithType>  
   
 ## Examples  
  The following example creates a speech recognition grammar that can recognize a response to a "yes" or "no" question. The implicit conversion operator is used in the construction of a <xref:System.Speech.Recognition.SemanticResultValue> object from a <xref:System.Speech.Recognition.Choices> object, in the construction of a <xref:System.Speech.Recognition.Choices> object from two <xref:System.Speech.Recognition.SemanticResultValue> objects, and in the construction of a <xref:System.Speech.Recognition.Grammar> object from a <xref:System.Speech.Recognition.SemanticResultKey> object.  
@@ -2698,7 +2698,7 @@ yesnoGrammar.Name = "yesno";
 ## Remarks  
  Implicit conversion creates a new instance of <xref:System.Speech.Recognition.GrammarBuilder>. This conversion operator is equivalent to calling <xref:System.Speech.Recognition.GrammarBuilder.%23ctor%2A> and specifying `semanticKey` for the `key`.  
   
- The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.%23ctor%28System.Speech.Recognition.SemanticResultKey%29?displayProperty=fullName>  
+ The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.%23ctor%28System.Speech.Recognition.SemanticResultKey%29?displayProperty=nameWithType>  
   
 ## Examples  
  The following example creates a speech recognition grammar that can recognize a response to a "yes" or "no" question. The implicit conversion operator is used in the construction of a <xref:System.Speech.Recognition.SemanticResultValue> object from a <xref:System.Speech.Recognition.Choices> object, in the construction of a <xref:System.Speech.Recognition.Choices> object from two <xref:System.Speech.Recognition.SemanticResultValue> objects, and in the construction of a <xref:System.Speech.Recognition.Grammar> object from a <xref:System.Speech.Recognition.SemanticResultKey> object.  
@@ -2750,7 +2750,7 @@ yesnoGrammar.Name = "yesno";
 ## Remarks  
  Implicit conversion creates a new instance of <xref:System.Speech.Recognition.GrammarBuilder>. This conversion operator is equivalent to calling <xref:System.Speech.Recognition.GrammarBuilder.%23ctor%2A> and specifying `semanticValue` for the `value`.  
   
- The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.%23ctor%28System.Speech.Recognition.SemanticResultValue%29?displayProperty=fullName>  
+ The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.%23ctor%28System.Speech.Recognition.SemanticResultValue%29?displayProperty=nameWithType>  
   
 ## Examples  
  The following example creates a speech recognition grammar that can recognize a response to a "yes" or "no" question. The implicit conversion operator is used in the construction of a <xref:System.Speech.Recognition.SemanticResultValue> object from a <xref:System.Speech.Recognition.Choices>object, in the construction of a <xref:System.Speech.Recognition.Choices> object from two <xref:System.Speech.Recognition.SemanticResultValue> objects, and in the construction of a <xref:System.Speech.Recognition.Grammar> object from a <xref:System.Speech.Recognition.SemanticResultKey> object.  
@@ -2802,7 +2802,7 @@ yesnoGrammar.Name = "yesno";
 ## Remarks  
  Implicit conversion creates a new instance of <xref:System.Speech.Recognition.GrammarBuilder>. This conversion operator is equivalent to calling <xref:System.Speech.Recognition.GrammarBuilder.%23ctor%2A> and specifying the same `phrase`.  
   
- The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.%23ctor%28System.String%29?displayProperty=fullName>  
+ The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.%23ctor%28System.String%29?displayProperty=nameWithType>  
   
 ## Examples  
  The following example uses  <xref:System.Speech.Recognition.GrammarBuilder> and <xref:System.Speech.Recognition.Choices> objects to construct a grammar that can recognize either of the two phrases, "Make background *colorChoice*" or "Set background to *colorChoice*".  

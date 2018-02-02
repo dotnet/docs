@@ -404,9 +404,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This operator supports the explicit conversion of the current <xref:System.Nullable%601> instance to type `T`, the type of <xref:System.Nullable%601.Value%2A>. The syntax for such explicit conversions is language-dependent. You may also be able to perform the conversion by calling the <xref:System.Convert.ChangeType%2A?displayProperty=fullName> method.  
+ This operator supports the explicit conversion of the current <xref:System.Nullable%601> instance to type `T`, the type of <xref:System.Nullable%601.Value%2A>. The syntax for such explicit conversions is language-dependent. You may also be able to perform the conversion by calling the <xref:System.Convert.ChangeType%2A?displayProperty=nameWithType> method.  
   
- The equivalent method for this operator is <xref:System.Nullable%601.Value?displayProperty=fullName>  
+ The equivalent method for this operator is <xref:System.Nullable%601.Value?displayProperty=nameWithType>  
   
 ## Examples  
  The <xref:System.Nullable%601.op_Explicit%2A> operator enables code such as the following, which converts a `Nullable(Of Int32)` value to an <xref:System.Int32> value.  
@@ -458,7 +458,7 @@
   
  If the `value` parameter is `null`, the <xref:System.Nullable%601.Value%2A> property of the new <xref:System.Nullable%601> value is initialized to the default value, which is the value that is all binary zeroes, and the <xref:System.Nullable%601.HasValue%2A> property is initialized to `false`.  
   
- The equivalent method for this operator is <xref:System.Nullable%601.%23ctor%28%600%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Nullable%601.%23ctor%28%600%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>

@@ -714,7 +714,7 @@ Console.WriteLine("(bool)BoolValue={0}", bv)
   
  Behavior is lax when casting to a <xref:System.DateTime> from an attribute or element. Even if the attribute or element value is not formatted exactly per the W3C specification, the value is appropriately converted to a <xref:System.DateTime>.  
   
- This conversion operator uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> to convert from a <xref:System.DateTime>.  
+ This conversion operator uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> to convert from a <xref:System.DateTime>.  
  
 ## Examples  
  The following example creates an attribute with date and time content. It then casts it to <xref:System.DateTime> to retrieve the value.  
@@ -1308,7 +1308,7 @@ Nullable boolean: BoolValue2=False
   
  Behavior is lax when casting to a <xref:System.Nullable%601> of <xref:System.DateTime> from an attribute or element. Even if the attribute or element value is not formatted exactly per the W3C specification, the value is appropriately converted to a <xref:System.Nullable%601> of <xref:System.DateTime>.  
   
- This conversion operator uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> to convert from a <xref:System.DateTime>.  
+ This conversion operator uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> to convert from a <xref:System.DateTime>.  
   
 ## Examples  
  The following example creates an attribute with a date and time as content. It then retrieves the value by casting to <xref:System.Nullable%601> of <xref:System.DateTime>.  
